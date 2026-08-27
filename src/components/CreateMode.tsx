@@ -39,8 +39,14 @@ export function CreateMode({ state, setState, portrait, onAddRound }: Props) {
 
   const addState: AddState = justAdded ? 'added' : !original || !colors ? 'disabled' : state.editIdx != null ? 'save' : 'add'
 
-  const selectOriginal = (t: Team) => setState((s) => ({ ...s, oId: t.id, step: 2 }))
-  const selectColors = (t: Team) => setState((s) => ({ ...s, cId: t.id, step: 3 }))
+  // Clicking the already-selected tile deselects it.
+  const selectOriginal = (t: Team) =>
+    setState((s) => (s.oId === t.id ? { ...s, oId: null, step: 1 } : { ...s, oId: t.id, step: 2 }))
+  const selectColors = (t: Team) =>
+    setState((s) => (s.cId === t.id ? { ...s, cId: null, perm: 0, step: 2 } : { ...s, cId: t.id, step: 3 }))
+  const clearOriginal = () => setState((s) => ({ ...s, oId: null, step: 1 }))
+  const clearColors = () => setState((s) => ({ ...s, cId: null, perm: 0, step: 2 }))
+  const clearAll = () => setState((s) => ({ ...s, oId: null, cId: null, perm: 0, editIdx: null, step: 1 }))
   const shuffle = () => {
     if (colors) setState((s) => ({ ...s, perm: (s.perm + 1) % 6 }))
   }
@@ -58,7 +64,18 @@ export function CreateMode({ state, setState, portrait, onAddRound }: Props) {
   }
 
   const canvas = (
-    <RemixCanvas original={original} colors={colors} perm={state.perm} addState={addState} onShuffle={shuffle} onAdd={add} portrait={portrait} />
+    <RemixCanvas
+      original={original}
+      colors={colors}
+      perm={state.perm}
+      addState={addState}
+      onShuffle={shuffle}
+      onAdd={add}
+      onClearOriginal={clearOriginal}
+      onClearColors={clearColors}
+      onClearAll={clearAll}
+      portrait={portrait}
+    />
   )
 
   if (portrait) {

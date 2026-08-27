@@ -1,8 +1,6 @@
 import data from './teams.json'
 
 export type League = 'PRO' | 'COL'
-export type Shape = 'shield' | 'circle' | 'hex' | 'diamond' | 'square' | 'pennant'
-export type Deco = 'stripe' | 'star' | 'dots' | 'none'
 
 export interface Team {
   id: string
@@ -12,8 +10,10 @@ export interface Team {
   name: string
   abbr: string
   palette: [string, string, string]
-  shape: Shape
-  deco: Deco
+  /** Optional exact source colors when the downloaded PNG differs from the displayed palette. */
+  sourcePalette?: [string, string, string]
+  /** Path under public/ to the team's logo, e.g. "/logos/svg/nfl/kc.svg" (SVG preferred; PNGs fall back to canvas recolor). */
+  logo: string
 }
 
 export interface Round {
@@ -37,7 +37,8 @@ export const LS = data.localStorage_keys
 
 const byId = new Map(TEAMS.map((t) => [t.id, t]))
 export const findTeam = (id: string): Team | undefined => byId.get(id)
-export const fullName = (t: Team) => `${t.region} ${t.name}`
+// Conference entries carry an empty name; trim keeps their display clean.
+export const fullName = (t: Team) => `${t.region} ${t.name}`.trim()
 
 export const norm = (s: string) => String(s).toLowerCase().replace(/[^a-z0-9]/g, '')
 

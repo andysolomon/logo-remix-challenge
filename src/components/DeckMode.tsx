@@ -44,7 +44,7 @@ export function DeckMode({ deck, portrait, timer, gameMode, highScore, onDeck, o
                     <Logo team={ot} palette={ct.palette} perm={r.v} />
                   </div>
                   <div className="round-name">{fullName(ot)}</div>
-                  <div className="round-sub">in {ct.name} colors</div>
+                  <div className="round-sub">in {fullName(ct)} colors</div>
                   <div className="round-ctl">
                     <button className={`icon-btn${i === 0 ? ' dim' : ''}`} aria-label="Move earlier" onClick={() => i > 0 && mut((d) => swap(d, i - 1, i))}>
                       ◀

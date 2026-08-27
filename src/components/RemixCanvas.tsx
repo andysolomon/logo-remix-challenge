@@ -10,28 +10,45 @@ interface Props {
   addState: AddState
   onShuffle: () => void
   onAdd: () => void
+  onClearOriginal: () => void
+  onClearColors: () => void
+  onClearAll: () => void
   portrait?: boolean
 }
 
-export function RemixCanvas({ original, colors, perm, addState, onShuffle, onAdd, portrait }: Props) {
+export function RemixCanvas({ original, colors, perm, addState, onShuffle, onAdd, onClearOriginal, onClearColors, onClearAll, portrait }: Props) {
   const label = addState === 'added' ? 'ADDED ✓' : addState === 'save' ? 'SAVE ROUND' : '+ ADD ROUND'
   const colorText = colors ? fullName(colors) : original ? 'Now pick a color team →' : 'Pick a team'
   // Key forces the pop animation to replay whenever the remix changes.
   const remixKey = `${original?.id}-${colors?.id}-${colors ? perm : 0}`
   return (
     <section className="canvas">
-      <div className="micro">ORIGINAL</div>
+      <div className="micro-row">
+        <div className="micro">ORIGINAL</div>
+        {original && (
+          <button className="btn-clear" onClick={onClearOriginal} aria-label="Clear original team">
+            clear
+          </button>
+        )}
+      </div>
       <div className={`canvas-name${original ? '' : ' placeholder'}`}>{original ? fullName(original) : 'Pick a team'}</div>
       <div className="canvas-hero">
         {original ? (
           <div key={remixKey} className="hero-logo pop">
-            <Logo team={original} palette={colors ? colors.palette : original.palette} perm={colors ? perm : 0} />
+            {colors ? <Logo team={original} palette={colors.palette} perm={perm} /> : <Logo team={original} />}
           </div>
         ) : (
           <div className="empty-circle">{portrait ? 'Pick an original team in step 1' : 'Pick an original team on the left to start a remix'}</div>
         )}
       </div>
-      <div className="micro">COLORS</div>
+      <div className="micro-row">
+        <div className="micro">COLORS</div>
+        {colors && (
+          <button className="btn-clear" onClick={onClearColors} aria-label="Clear color team">
+            clear
+          </button>
+        )}
+      </div>
       <div className="color-row">
         <div className={`color-name${colors ? '' : ' placeholder'}`}>{colorText}</div>
         {colors && (
@@ -54,6 +71,11 @@ export function RemixCanvas({ original, colors, perm, addState, onShuffle, onAdd
           {label}
         </button>
       </div>
+      {(original || colors) && (
+        <button className="btn-clear all" onClick={onClearAll}>
+          Clear both
+        </button>
+      )}
     </section>
   )
 }

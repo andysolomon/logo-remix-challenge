@@ -57,11 +57,12 @@ export function RandomDeckModal({ deckCount, guessTarget, onRoll, onClose }: Pro
         <PoolPicker label="COLORS FROM" value={opts.colorPools} count={colorCount} onChange={(v) => setOpts((o) => ({ ...o, colorPools: v }))} />
 
         <div className="rail-label">GUESS</div>
-        <div className="grid3">
+        <div className="grid4">
           {(
             [
               ['team', 'Logo'],
               ['colors', 'Colors'],
+              ['both', 'Both'],
               ['mix', 'Mix'],
             ] as [RandomGuess, string][]
           ).map(([g, lb]) => (
@@ -71,7 +72,7 @@ export function RandomDeckModal({ deckCount, guessTarget, onRoll, onClose }: Pro
           ))}
         </div>
         <div className="mode-hint">
-          {opts.guess === 'mix' ? 'Each round randomly asks for the logo or the colors.' : opts.guess === 'colors' ? 'Every round asks whose colors the logo is wearing.' : 'Every round asks which team the logo belongs to.'}
+          {opts.guess === 'mix' ? 'Each round randomly asks for the logo or the colors.' : opts.guess === 'both' ? 'Every round asks for the logo’s team and the colors’ team.' : opts.guess === 'colors' ? 'Every round asks whose colors the logo is wearing.' : 'Every round asks which team the logo belongs to.'}
         </div>
 
         <div className="rail-label">HINTS</div>

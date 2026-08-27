@@ -172,7 +172,7 @@ input::placeholder { color: var(--faint); }
 .round-sub { width: 100%; font: 500 13px/1.3 var(--ui); color: var(--muted); text-align: center; overflow-wrap: anywhere; }
 .round-target { width: 100%; display: flex; align-items: center; gap: 8px; margin-top: 10px; }
 .round-target-lb { flex: none; font: 600 10px var(--ui); letter-spacing: 1.5px; color: var(--faint); }
-.seg-group { flex: 1; min-width: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 3px; padding: 3px; background: var(--chip-bg); border-radius: 10px; }
+.seg-group { flex: 1; min-width: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 3px; padding: 3px; background: var(--chip-bg); border-radius: 10px; }
 .seg { min-width: 0; height: 30px; display: flex; align-items: center; justify-content: center; border: none; border-radius: 7px; background: none; color: var(--chip-fg); font: 600 12px var(--ui); line-height: 1; white-space: nowrap; cursor: pointer; transition: background 0.15s, color 0.15s; }
 .seg:hover:not(.active) { background: var(--surface); }
 .seg.active { background: var(--ink); color: #FFFFFF; }
@@ -287,6 +287,19 @@ input::placeholder { color: var(--faint); }
 .guess-form { display: flex; gap: 12px; width: min(640px, 86%); margin: 16px auto 24px; }
 .guess-input { flex: 1; height: 60px; background: var(--dark-input); border: 2px solid var(--dark-input-line); border-radius: 14px; color: var(--dark-ink); font: 500 20px var(--ui); padding: 0 18px; outline-color: var(--accent); min-width: 0; }
 .guess-input::placeholder { color: var(--dark-faint); }
+.guess-form.both { flex-direction: column; gap: 10px; }
+.guess-field { display: flex; align-items: center; gap: 12px; }
+.guess-field-lb { flex: none; width: 74px; text-align: right; font: 600 12px var(--ui); letter-spacing: 1.5px; color: var(--dark-faint); }
+.guess-form.both .guess-input { height: 52px; font-size: 18px; }
+.guess-form.both .btn-submit { align-self: flex-end; }
+.reveal-pair { display: flex; gap: 32px; justify-content: center; align-items: flex-start; flex-wrap: wrap; margin: 4px 0; }
+.reveal-part { display: flex; flex-direction: column; align-items: center; gap: 8px; width: 200px; }
+.reveal-part .reveal-logo { width: 120px; height: 120px; margin: 0; }
+.reveal-part .reveal-name { font-size: 24px; }
+.reveal-part-lb { font: 600 12px var(--ui); letter-spacing: 2px; color: var(--dark-faint); }
+.reveal-part-mark { font: 700 16px var(--ui); }
+.reveal-part-mark.ok { color: var(--success-dark); }
+.reveal-part-mark.no { color: var(--danger-dark); }
 .btn-submit { width: 150px; height: 60px; background: var(--accent); color: #FFFFFF; border: none; border-radius: 14px; font: 700 17px var(--display); letter-spacing: 2px; cursor: pointer; }
 .btn-submit:hover { filter: brightness(0.94); }
 .host { display: flex; flex-direction: column; align-items: center; gap: 10px; width: min(640px, 86%); margin: 14px auto 24px; }

@@ -27,8 +27,16 @@ export interface Round {
 }
 
 export type GameMode = 'type' | 'host'
-/** What the player is asked to identify: the team behind the logo, or the team whose colors it wears. */
-export type GuessTarget = 'team' | 'colors'
+/** What the player is asked to identify: the team behind the logo, the team whose colors it wears, or both. */
+export type GuessTarget = 'team' | 'colors' | 'both'
+export const GUESS_TARGETS: GuessTarget[] = ['team', 'colors', 'both']
+export const isGuessTarget = (v: unknown): v is GuessTarget => GUESS_TARGETS.includes(v as GuessTarget)
+/** Short and long labels for each guess target, shared by the settings, deck cards and random deck modal. */
+export const GUESS_LABEL: Record<GuessTarget, { short: string; long: string }> = {
+  team: { short: 'Logo', long: 'Guess the Logo' },
+  colors: { short: 'Colors', long: 'Guess the Colors' },
+  both: { short: 'Both', long: 'Guess Both' },
+}
 export const TIMER_OPTIONS = [5, 10, 15, 30] as const
 export type TimerSeconds = number
 export const TIMER_MIN = 3
@@ -83,7 +91,7 @@ const safeSet = (k: string, v: string) => {
 export function loadDeck(): Round[] {
   try {
     const d = JSON.parse(safeGet(LS.deck) ?? 'null')
-    if (Array.isArray(d) && d.length && d.every((r) => findTeam(r.o) && findTeam(r.c) && typeof r.v === 'number' && (r.g === undefined || r.g === 'team' || r.g === 'colors') && (r.h === undefined || typeof r.h === 'boolean'))) return d
+    if (Array.isArray(d) && d.length && d.every((r) => findTeam(r.o) && findTeam(r.c) && typeof r.v === 'number' && (r.g === undefined || isGuessTarget(r.g)) && (r.h === undefined || typeof r.h === 'boolean'))) return d
   } catch {
     /* ignore */
   }
@@ -146,7 +154,8 @@ export function loadGameMode(): GameMode {
 }
 export const saveGameMode = (m: GameMode) => safeSet(LS.gameMode, m)
 export function loadGuessTarget(): GuessTarget {
-  return safeGet(LS.guessTarget) === 'colors' ? 'colors' : 'team'
+  const t = safeGet(LS.guessTarget)
+  return isGuessTarget(t) ? t : 'team'
 }
 export const saveGuessTarget = (t: GuessTarget) => safeSet(LS.guessTarget, t)
 export const loadVoice = (): boolean => safeGet(LS.voice) === '1'
@@ -167,7 +176,7 @@ export function speak(text: string) {
   }
 }
 export const roundTarget = (r: Round, fallback: GuessTarget): GuessTarget => r.g ?? fallback
-export const guessPrompt = (t: GuessTarget) => (t === 'colors' ? 'Guess the Colors!' : 'Guess the Logo!')
+export const guessPrompt = (t: GuessTarget) => (t === 'both' ? 'Guess the Logo and the Colors!' : t === 'colors' ? 'Guess the Colors!' : 'Guess the Logo!')
 /** Where a team plays: the league label for pro teams, the conference for college. */
 export const teamHint = (t: Team) => (t.league === 'COL' ? t.conference : LEAGUES[t.league].label)
 /** Hint lines for a round, one for the logo team and one for the colors team. */

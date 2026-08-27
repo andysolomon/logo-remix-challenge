@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { findTeam, fullName, guessPrompt, GUESS_TARGETS, GUESS_LABEL, roundHints, roundTarget, speak, voiceSupported, TIMER_OPTIONS, HIGH_SCORE_LIMIT, type GameMode, type HighScore, type GuessTarget, type Round, type TimerSeconds } from '../lib/teams'
+import { findTeam, fullName, GUESS_TARGETS, GUESS_LABEL, roundHints, roundTarget, speak, voiceSupported, TIMER_OPTIONS, HIGH_SCORE_LIMIT, type GameMode, type HighScore, type GuessTarget, type Round, type TimerSeconds } from '../lib/teams'
 import { Logo } from './Logo'
 import { RandomDeckModal } from './RandomDeckModal'
 
@@ -200,7 +200,7 @@ export function DeckMode({ deck, portrait, timer, gameMode, guessTarget, voice, 
           </div>
           <div className="mode-hint">
             {voiceSupported()
-              ? `Announces “${guessPrompt(guessTarget)}” at the start of every round.`
+              ? `Announces the prompt each round, then correct or not quite, and the final score.`
               : 'Voice is not supported in this browser.'}
           </div>
 

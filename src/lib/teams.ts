@@ -157,19 +157,96 @@ export const saveGuessTarget = (t: GuessTarget) => safeSet(LS.guessTarget, t)
 export const loadVoice = (): boolean => safeGet(LS.voice) === '1'
 export const saveVoice = (on: boolean) => safeSet(LS.voice, on ? '1' : '0')
 
-/** Baked Chatterbox clips in public/voice/; one file per guess prompt. */
-const VOICE_CLIPS: Record<GuessTarget, string> = {
-  team: '/voice/guess-logo.wav',
-  colors: '/voice/guess-colors.wav',
-  both: '/voice/guess-both.wav',
+/** Round prompt or reveal verdict. Score lines go through `speakScore`. */
+export type VoiceClipId = GuessTarget | 'correct' | 'wrong' | 'timeout'
+
+/** Baked Chatterbox clips in public/voice/. Score uses you-scored-N + out-of-M joined in-browser. */
+const VOICE_CLIPS: Record<VoiceClipId, readonly string[]> = {
+  team: [
+    '/voice/guess-logo.wav',
+    '/voice/guess-logo-2.wav',
+    '/voice/guess-logo-3.wav',
+    '/voice/guess-logo-4.wav',
+  ],
+  colors: [
+    '/voice/guess-colors.wav',
+    '/voice/guess-colors-2.wav',
+    '/voice/guess-colors-3.wav',
+    '/voice/guess-colors-4.wav',
+  ],
+  both: [
+    '/voice/guess-both.wav',
+    '/voice/guess-both-2.wav',
+    '/voice/guess-both-3.wav',
+    '/voice/guess-both-4.wav',
+  ],
+  correct: [
+    '/voice/correct.wav',
+    '/voice/correct-2.wav',
+    '/voice/correct-3.wav',
+    '/voice/correct-4.wav',
+  ],
+  wrong: [
+    '/voice/wrong.wav',
+    '/voice/wrong-2.wav',
+    '/voice/wrong-3.wav',
+    '/voice/wrong-4.wav',
+  ],
+  timeout: [
+    '/voice/timeout.wav',
+    '/voice/timeout-2.wav',
+    '/voice/timeout-3.wav',
+    '/voice/timeout-4.wav',
+  ],
 }
 
+const voiceClipBags = new Map<VoiceClipId, string[]>()
+const lastVoiceClips = new Map<VoiceClipId, string>()
+
+const nextVoiceClip = (id: VoiceClipId) => {
+  let bag = voiceClipBags.get(id)
+  if (!bag?.length) {
+    bag = [...VOICE_CLIPS[id]]
+    for (let i = bag.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1))
+      ;[bag[i], bag[j]] = [bag[j], bag[i]]
+    }
+    const last = lastVoiceClips.get(id)
+    if (last && bag[bag.length - 1] === last) {
+      ;[bag[0], bag[bag.length - 1]] = [bag[bag.length - 1], bag[0]]
+    }
+    voiceClipBags.set(id, bag)
+  }
+  const clip = bag.pop()!
+  lastVoiceClips.set(id, clip)
+  return clip
+}
+
+const VOICE_SCORE_MAX = 20
+const VOICE_GAME_OVER = '/voice/game-over.wav'
+
 let voicePlayer: HTMLAudioElement | null = null
+let scoreBlobUrl: string | null = null
+let speakGen = 0
+const wavCache = new Map<string, ArrayBuffer>()
 
 export const voiceSupported = () => typeof Audio !== 'undefined'
 
+const ensurePlayer = () => {
+  if (!voicePlayer) voicePlayer = new Audio()
+  return voicePlayer
+}
+
+const revokeScoreBlob = () => {
+  if (!scoreBlobUrl) return
+  URL.revokeObjectURL(scoreBlobUrl)
+  scoreBlobUrl = null
+}
+
 /** Stop the current announcer clip, if any. */
 export function stopSpeak() {
+  speakGen += 1
+  revokeScoreBlob()
   if (!voicePlayer) return
   try {
     voicePlayer.pause()
@@ -179,17 +256,160 @@ export function stopSpeak() {
   }
 }
 
-/** Play the Chatterbox clip for a guess target. Reuses one Audio element so iPad stays unlocked after the first tap. */
-export function speak(target: GuessTarget) {
+const playSrc = (src: string) => {
   if (!voiceSupported()) return
-  const src = VOICE_CLIPS[target]
+  const player = ensurePlayer()
+  const keepBlob = src === scoreBlobUrl
+  speakGen += 1
+  if (!keepBlob) revokeScoreBlob()
   try {
-    if (!voicePlayer) voicePlayer = new Audio()
-    stopSpeak()
-    if (!voicePlayer.src.endsWith(src)) voicePlayer.src = src
-    void voicePlayer.play().catch(() => {})
+    player.pause()
+    player.src = src
+    void player.play().catch(() => {})
   } catch {
     /* ignore */
+  }
+}
+
+/** Play a prompt or verdict clip. Reuses one Audio element so iPad stays unlocked after the first tap. */
+export function speak(id: VoiceClipId) {
+  playSrc(nextVoiceClip(id))
+}
+
+/** Announce the final score as one joined wav: “You scored N” + “out of M”. */
+export function speakScore(score: number, total: number) {
+  const s = Math.round(score)
+  const t = Math.round(total)
+  if (s < 0 || t < 1 || s > VOICE_SCORE_MAX || t > VOICE_SCORE_MAX) {
+    playSrc(VOICE_GAME_OVER)
+    return
+  }
+  void playJoined([`/voice/you-scored-${s}.wav`, `/voice/out-of-${t}.wav`])
+}
+
+const ascii = (buf: ArrayBuffer, off: number, n: number) =>
+  String.fromCharCode(...new Uint8Array(buf, off, n))
+
+const extractWavPcm = (buf: ArrayBuffer) => {
+  const v = new DataView(buf)
+  if (ascii(buf, 0, 4) !== 'RIFF' || ascii(buf, 8, 4) !== 'WAVE') throw new Error('not wav')
+  let off = 12
+  let format = 0
+  let channels = 0
+  let sampleRate = 0
+  let bits = 0
+  let pcm: Uint8Array | null = null
+  while (off + 8 <= buf.byteLength) {
+    const id = ascii(buf, off, 4)
+    const size = v.getUint32(off + 4, true)
+    const start = off + 8
+    if (id === 'fmt ') {
+      format = v.getUint16(start, true)
+      channels = v.getUint16(start + 2, true)
+      sampleRate = v.getUint32(start + 4, true)
+      bits = v.getUint16(start + 14, true)
+    } else if (id === 'data') {
+      pcm = new Uint8Array(buf, start, size)
+    }
+    off = start + size + (size & 1)
+  }
+  if (!pcm || !sampleRate || !channels || !bits) throw new Error('bad wav')
+  return { format, channels, sampleRate, bits, pcm }
+}
+
+const writeWav = (
+  pcm: Uint8Array,
+  meta: { format: number; channels: number; sampleRate: number; bits: number },
+) => {
+  const blockAlign = meta.channels * (meta.bits / 8)
+  const byteRate = meta.sampleRate * blockAlign
+  const fmtSize = 16
+  const factSize = meta.format === 1 ? 0 : 4
+  const riffSize = 4 + 8 + fmtSize + (factSize ? 8 + factSize : 0) + 8 + pcm.byteLength
+  const out = new ArrayBuffer(8 + riffSize)
+  const view = new DataView(out)
+  const bytes = new Uint8Array(out)
+  let o = 0
+  const str = (s: string) => {
+    for (let i = 0; i < s.length; i++) bytes[o++] = s.charCodeAt(i)
+  }
+  const u16 = (n: number) => {
+    view.setUint16(o, n, true)
+    o += 2
+  }
+  const u32 = (n: number) => {
+    view.setUint32(o, n, true)
+    o += 4
+  }
+  str('RIFF')
+  u32(riffSize)
+  str('WAVE')
+  str('fmt ')
+  u32(fmtSize)
+  u16(meta.format)
+  u16(meta.channels)
+  u32(meta.sampleRate)
+  u32(byteRate)
+  u16(blockAlign)
+  u16(meta.bits)
+  if (factSize) {
+    str('fact')
+    u32(factSize)
+    u32(pcm.byteLength / blockAlign)
+  }
+  str('data')
+  u32(pcm.byteLength)
+  bytes.set(pcm, o)
+  return new Blob([out], { type: 'audio/wav' })
+}
+
+const joinWavs = (buffers: ArrayBuffer[]) => {
+  const parts = buffers.map(extractWavPcm)
+  const meta = { format: parts[0].format, channels: parts[0].channels, sampleRate: parts[0].sampleRate, bits: parts[0].bits }
+  for (const p of parts) {
+    if (p.format !== meta.format || p.channels !== meta.channels || p.sampleRate !== meta.sampleRate || p.bits !== meta.bits) {
+      throw new Error('wav mismatch')
+    }
+  }
+  const gapBytes = Math.round(meta.sampleRate * 0.06) * (meta.bits / 8) * meta.channels
+  const gap = new Uint8Array(gapBytes)
+  const chunks = parts.flatMap((p, i) => (i ? [gap, p.pcm] : [p.pcm]))
+  const pcm = new Uint8Array(chunks.reduce((n, c) => n + c.byteLength, 0))
+  let w = 0
+  for (const c of chunks) {
+    pcm.set(c, w)
+    w += c.byteLength
+  }
+  return writeWav(pcm, meta)
+}
+
+const loadWav = async (url: string) => {
+  const hit = wavCache.get(url)
+  if (hit) return hit
+  const res = await fetch(url)
+  if (!res.ok) throw new Error(`voice ${res.status}`)
+  const buf = await res.arrayBuffer()
+  wavCache.set(url, buf)
+  return buf
+}
+
+const playJoined = async (urls: string[]) => {
+  if (!voiceSupported()) return
+  const gen = ++speakGen
+  try {
+    const bufs = await Promise.all(urls.map(loadWav))
+    if (gen !== speakGen) return
+    const blob = joinWavs(bufs)
+    revokeScoreBlob()
+    scoreBlobUrl = URL.createObjectURL(blob)
+    const player = ensurePlayer()
+    if (gen !== speakGen) return
+    player.pause()
+    player.src = scoreBlobUrl
+    void player.play().catch(() => {})
+  } catch {
+    if (gen !== speakGen) return
+    playSrc(urls[0])
   }
 }
 export const roundTarget = (r: Round, fallback: GuessTarget): GuessTarget => r.g ?? fallback

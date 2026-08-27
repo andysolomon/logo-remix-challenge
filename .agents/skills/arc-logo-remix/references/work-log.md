@@ -90,8 +90,22 @@ Files touched in Logo Remix:
 
 Not verified on a physical iPad. The singleton Audio pattern is the standard unlock workaround; confirm on device if iOS autoplay misbehaves.
 
-## 6. What was left undone
+## 6. Verdicts and final score (same day)
 
-- No git commit / PR in either repo
+Closed vocabulary grew past the three guess prompts. Still bake-and-serve; still one `HTMLAudioElement`.
+
+New lines (Turbo, builtin speaker, silence-trimmed):
+
+- Reveal: `Correct!` / `Not quite!` / `Time's up!` — match on-screen titles
+- Score: `You scored {n}` + `out of {m}.` for n,m in 0–20 (m ≥ 1), joined in-browser into one blob
+- Fallback: `That's the game! Check the board for your score.`
+
+`speak()` now takes `VoiceClipId`. `speakScore(score, total)` is the end-of-game entry. `PlayMode.reveal` speaks the verdict; `finish` speaks the score; `restart` also `stopSpeak()`.
+
+Regen skips existing files unless `--force`.
+
+## 7. What was left undone
+
 - Builtin Turbo voice, not a cloned sports PA (no reference wav supplied)
-- Default guess target may have been flipped to `both` in the agent-browser profile only (separate Chrome), not in the user’s daily browser
+- Numbers above 20 use `game-over.wav`
+- Physical iPad not re-tested for the joined score clip

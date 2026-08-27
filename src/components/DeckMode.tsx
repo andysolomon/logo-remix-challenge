@@ -92,7 +92,7 @@ export function DeckMode({ deck, portrait, timer, gameMode, guessTarget, voice, 
                   <div className="round-target">
                     <span className="round-target-lb">GUESS</span>
                     <div className="seg-group" role="group" aria-label={`Round ${i + 1}: what to guess`}>
-                      {GUESS_TARGETS.map((t) => [t, GUESS_LABEL[t].short] as const).map(([t, lb]) => (
+                      {GUESS_TARGETS.map((t) => [t, GUESS_LABEL[t]] as const).map(([t, lb]) => (
                         <button
                           key={t}
                           className={`seg${roundTarget(r, guessTarget) === t ? ' active' : ''}`}
@@ -161,21 +161,21 @@ export function DeckMode({ deck, portrait, timer, gameMode, guessTarget, voice, 
           {!(TIMER_OPTIONS as readonly number[]).includes(timer) && <div className="mode-hint">Custom: {timer}s per round (change in ⚙ Settings)</div>}
           <div className="rail-label">DEFAULT GUESS MODE</div>
           <div className="grid3">
-            {GUESS_TARGETS.map((t) => [t, GUESS_LABEL[t].long] as const).map(([t, lb]) => (
+            {GUESS_TARGETS.map((t) => [t, GUESS_LABEL[t]] as const).map(([t, lb]) => (
               <button key={t} className={`opt mode${guessTarget === t ? ' active' : ''}`} onClick={() => onGuessTarget(t)}>
                 {lb}
               </button>
             ))}
           </div>
           <div className="mode-hint">
-            Applies to rounds without their own setting — switch any card between Logo, Colors, or Both (name both teams to score).
+            Sets every card in the deck — afterwards you can still switch any single card between Logo, Colors, or Both (name both teams to score).
           </div>
 
           <div className="rail-label">ANSWER STYLE</div>
           <div className="grid2">
             {(
               [
-                ['type', 'Type the Answer'],
+                ['type', 'Type'],
                 ['host', 'Host Mode'],
               ] as [GameMode, string][]
             ).map(([m, lb]) => (

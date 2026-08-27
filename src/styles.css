@@ -290,6 +290,12 @@ input::placeholder { color: var(--faint); }
 .guess-form.both { flex-direction: column; gap: 10px; }
 .guess-field { display: flex; align-items: center; gap: 12px; }
 .guess-field-lb { flex: none; width: 74px; text-align: right; font: 600 12px var(--ui); letter-spacing: 1.5px; color: var(--dark-faint); }
+.guess-field-mark { flex: none; width: 28px; text-align: center; font: 700 22px var(--ui); }
+.guess-field.ok .guess-field-mark { color: var(--success-dark); }
+.guess-field.no .guess-field-mark { color: var(--danger-dark); }
+.guess-field.ok .guess-input { border-color: var(--success-dark); }
+.guess-field.no .guess-input { border-color: var(--danger-dark); }
+.guess-field .guess-input:read-only { opacity: 0.75; }
 .guess-form.both .guess-input { height: 52px; font-size: 18px; }
 .guess-form.both .btn-submit { align-self: flex-end; }
 .reveal-pair { display: flex; gap: 32px; justify-content: center; align-items: flex-start; flex-wrap: wrap; margin: 4px 0; }

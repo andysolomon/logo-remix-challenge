@@ -55,6 +55,8 @@ export default function App() {
   const setGuessTarget = (t: GuessTarget) => {
     saveGuessTarget(t)
     setGuessTargetState(t)
+    // Changing the default re-applies to every card: drop per-round overrides so all rounds follow it.
+    if (deck.some((r) => r.g !== undefined)) setDeck(deck.map(({ g: _g, ...r }) => r))
   }
   const setVoice = (on: boolean) => {
     saveVoice(on)

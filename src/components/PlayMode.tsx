@@ -28,6 +28,9 @@ export function PlayMode({ deck, timer, gameMode, guessTarget, voice, highScores
   const [guess2, setGuess2] = useState('')
   // Per-part verdict for "both" rounds in type mode, shown on the reveal (host mode judges as a whole).
   const [parts, setParts] = useState<[boolean, boolean] | null>(null)
+  // "Both" rounds: verdict on the logo answer once the player presses Enter on it, before moving on.
+  const [logoChecked, setLogoChecked] = useState<boolean | null>(null)
+  const input2Ref = useRef<HTMLInputElement>(null)
   const [kind, setKind] = useState<Kind>('correct')
   const [results, setResults] = useState<boolean[]>([])
   // Slot-machine initials: one alphabet index per reel, plus which reel has focus.
@@ -58,6 +61,7 @@ export function PlayMode({ deck, timer, gameMode, guessTarget, voice, highScores
       setGuess('')
       setGuess2('')
       setParts(null)
+      setLogoChecked(null)
       setTimeLeft(timer)
       setPhase('question')
       if (voice) speak(guessPrompt(roundTarget(deck[i], guessTarget)))
@@ -164,13 +168,22 @@ export function PlayMode({ deck, timer, gameMode, guessTarget, voice, highScores
     const c = findTeam(deck[rIdx].c)!
     if (target === 'both') {
       if (!guess.trim() && !guess2.trim()) return
-      const p: [boolean, boolean] = [isCorrectGuess(guess, o), isCorrectGuess(guess2, c)]
+      const p: [boolean, boolean] = [logoChecked ?? isCorrectGuess(guess, o), isCorrectGuess(guess2, c)]
       setParts(p)
       reveal(p[0] && p[1] ? 'correct' : 'wrong')
       return
     }
     if (!guess.trim()) return
     reveal(isCorrectGuess(guess, target === 'colors' ? c : o) ? 'correct' : 'wrong')
+  }
+
+  // Enter on the logo field grades that answer, locks it in, and hands focus to the colors field.
+  const checkLogo = (e: KeyboardEvent<HTMLInputElement>) => {
+    if (e.key !== 'Enter') return
+    e.preventDefault()
+    if (!guess.trim()) return
+    setLogoChecked(isCorrectGuess(guess, findTeam(deck[rIdx].o)!))
+    input2Ref.current?.focus()
   }
 
   // The intro promises what the deck actually asks, which may be one mode or both.
@@ -245,13 +258,15 @@ export function PlayMode({ deck, timer, gameMode, guessTarget, voice, highScores
           {gameMode === 'type' ? (
             target === 'both' ? (
               <form className="guess-form both" onSubmit={submit}>
-                <label className="guess-field">
+                <label className={`guess-field${logoChecked == null ? '' : logoChecked ? ' ok' : ' no'}`}>
                   <span className="guess-field-lb">LOGO</span>
                   <input
                     ref={inputRef}
                     className="guess-input"
                     value={guess}
                     onChange={(e) => setGuess(e.target.value)}
+                    onKeyDown={checkLogo}
+                    readOnly={logoChecked != null}
                     placeholder="Team behind the logo…"
                     autoComplete="off"
                     autoCorrect="off"
@@ -260,10 +275,14 @@ export function PlayMode({ deck, timer, gameMode, guessTarget, voice, highScores
                     enterKeyHint="next"
                     aria-label="Team behind the logo"
                   />
+                  <span className="guess-field-mark" aria-live="polite">
+                    {logoChecked == null ? '' : logoChecked ? '✓' : '✕'}
+                  </span>
                 </label>
                 <label className="guess-field">
                   <span className="guess-field-lb">COLORS</span>
                   <input
+                    ref={input2Ref}
                     className="guess-input"
                     value={guess2}
                     onChange={(e) => setGuess2(e.target.value)}
@@ -275,6 +294,7 @@ export function PlayMode({ deck, timer, gameMode, guessTarget, voice, highScores
                     enterKeyHint="go"
                     aria-label="Team whose colors the logo wears"
                   />
+                  <span className="guess-field-mark" aria-hidden="true" />
                 </label>
                 <button type="submit" className="btn-submit">
                   SUBMIT

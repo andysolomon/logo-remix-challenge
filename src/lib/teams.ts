@@ -31,12 +31,8 @@ export type GameMode = 'type' | 'host'
 export type GuessTarget = 'team' | 'colors' | 'both'
 export const GUESS_TARGETS: GuessTarget[] = ['team', 'colors', 'both']
 export const isGuessTarget = (v: unknown): v is GuessTarget => GUESS_TARGETS.includes(v as GuessTarget)
-/** Short and long labels for each guess target, shared by the settings, deck cards and random deck modal. */
-export const GUESS_LABEL: Record<GuessTarget, { short: string; long: string }> = {
-  team: { short: 'Logo', long: 'Guess the Logo' },
-  colors: { short: 'Colors', long: 'Guess the Colors' },
-  both: { short: 'Both', long: 'Guess Both' },
-}
+/** Button labels for each guess target, shared by the settings, deck cards and random deck modal. */
+export const GUESS_LABEL: Record<GuessTarget, string> = { team: 'Logo', colors: 'Colors', both: 'Both' }
 export const TIMER_OPTIONS = [5, 10, 15, 30] as const
 export type TimerSeconds = number
 export const TIMER_MIN = 3

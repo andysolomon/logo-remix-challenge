@@ -157,16 +157,37 @@ export const saveGuessTarget = (t: GuessTarget) => safeSet(LS.guessTarget, t)
 export const loadVoice = (): boolean => safeGet(LS.voice) === '1'
 export const saveVoice = (on: boolean) => safeSet(LS.voice, on ? '1' : '0')
 
-export const voiceSupported = () => typeof window !== 'undefined' && 'speechSynthesis' in window
-/** Announce a line via the browser's built-in voice; silently no-ops where unsupported. */
-export function speak(text: string) {
-  if (!voiceSupported()) return
+/** Baked Chatterbox clips in public/voice/; one file per guess prompt. */
+const VOICE_CLIPS: Record<GuessTarget, string> = {
+  team: '/voice/guess-logo.wav',
+  colors: '/voice/guess-colors.wav',
+  both: '/voice/guess-both.wav',
+}
+
+let voicePlayer: HTMLAudioElement | null = null
+
+export const voiceSupported = () => typeof Audio !== 'undefined'
+
+/** Stop the current announcer clip, if any. */
+export function stopSpeak() {
+  if (!voicePlayer) return
   try {
-    window.speechSynthesis.cancel()
-    const u = new SpeechSynthesisUtterance(text)
-    u.rate = 1.05
-    u.pitch = 1.1
-    window.speechSynthesis.speak(u)
+    voicePlayer.pause()
+    if (voicePlayer.src) voicePlayer.currentTime = 0
+  } catch {
+    /* ignore */
+  }
+}
+
+/** Play the Chatterbox clip for a guess target. Reuses one Audio element so iPad stays unlocked after the first tap. */
+export function speak(target: GuessTarget) {
+  if (!voiceSupported()) return
+  const src = VOICE_CLIPS[target]
+  try {
+    if (!voicePlayer) voicePlayer = new Audio()
+    stopSpeak()
+    if (!voicePlayer.src.endsWith(src)) voicePlayer.src = src
+    void voicePlayer.play().catch(() => {})
   } catch {
     /* ignore */
   }

@@ -11,6 +11,7 @@
     "logos:svg": "python3 scripts/download_svgs.py",
     "logos:hbcu": "python3 scripts/download_hbcu_svgs.py",
     "teams": "python3 scripts/build_teams.py",
+    "voice": "python3 scripts/generate_voice.py",
     "release": "semantic-release"
   },
   "dependencies": {

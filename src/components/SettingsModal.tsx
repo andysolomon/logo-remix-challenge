@@ -73,7 +73,7 @@ export function SettingsModal({ timer, gameMode, guessTarget, voice, onTimer, on
 
         <div className="rail-label">DEFAULT GUESS MODE</div>
         <div className="grid3">
-          {GUESS_TARGETS.map((t) => [t, GUESS_LABEL[t].long] as const).map(([t, lb]) => (
+          {GUESS_TARGETS.map((t) => [t, GUESS_LABEL[t]] as const).map(([t, lb]) => (
             <button key={t} className={`opt mode${guessTarget === t ? ' active' : ''}`} onClick={() => onGuessTarget(t)}>
               {lb}
             </button>
@@ -82,14 +82,14 @@ export function SettingsModal({ timer, gameMode, guessTarget, voice, onTimer, on
         <div className="mode-hint">
           {guessTarget === 'both'
             ? 'Both: name the logo’s team and the team whose colors it wears — a point only when both are right.'
-            : 'Applies to rounds without their own setting — each deck card can override this.'}
+            : 'Sets every card in the deck — each deck card can still be switched individually afterwards.'}
         </div>
 
         <div className="rail-label">ANSWER STYLE</div>
         <div className="grid2">
           {(
             [
-              ['type', 'Type the Answer'],
+              ['type', 'Type'],
               ['host', 'Host Mode'],
             ] as [GameMode, string][]
           ).map(([m, lb]) => (

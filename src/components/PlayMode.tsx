@@ -1,5 +1,5 @@
-import { useCallback, useEffect, useRef, useState, type FormEvent } from 'react'
-import { findTeam, fullName, guessPrompt, roundTarget, speak, isCorrectGuess, insertHighScore, normalizeInitials, qualifiesForHighScore, INITIALS_LENGTH, type GameMode, type GuessTarget, type HighScore, type Round, type TimerSeconds } from '../lib/teams'
+import { useCallback, useEffect, useRef, useState, type FormEvent, type KeyboardEvent } from 'react'
+import { findTeam, fullName, guessPrompt, roundHints, roundTarget, speak, isCorrectGuess, insertHighScore, qualifiesForHighScore, INITIALS_LENGTH, INITIALS_ALPHABET, type GameMode, type GuessTarget, type HighScore, type Round, type TimerSeconds } from '../lib/teams'
 import { Logo } from './Logo'
 
 type Phase = 'intro' | 'question' | 'reveal' | 'initials' | 'results'
@@ -26,14 +26,16 @@ export function PlayMode({ deck, timer, gameMode, guessTarget, voice, highScores
   const [guess, setGuess] = useState('')
   const [kind, setKind] = useState<Kind>('correct')
   const [results, setResults] = useState<boolean[]>([])
-  const [initials, setInitials] = useState('')
+  // Slot-machine initials: one alphabet index per reel, plus which reel has focus.
+  const [reels, setReels] = useState<number[]>(() => Array(INITIALS_LENGTH).fill(0))
+  const [reelIdx, setReelIdx] = useState(0)
   // Timestamp of the entry this run just added, so the board can highlight it.
   const [entryDate, setEntryDate] = useState<number | null>(null)
 
   const iv = useRef<number | undefined>(undefined)
   const tm = useRef<number | undefined>(undefined)
   const inputRef = useRef<HTMLInputElement>(null)
-  const initialsRef = useRef<HTMLInputElement>(null)
+  const initialsRef = useRef<HTMLDivElement>(null)
   const phaseRef = useRef<Phase>('intro')
   phaseRef.current = phase
   const scoreRef = useRef(0)
@@ -101,10 +103,28 @@ export function PlayMode({ deck, timer, gameMode, guessTarget, voice, highScores
     if (phase === 'initials') initialsRef.current?.focus()
   }, [phase, rIdx, gameMode])
 
+  const spinReel = (i: number, dir: 1 | -1) =>
+    setReels((r) => r.map((v, j) => (j === i ? (v + dir + INITIALS_ALPHABET.length) % INITIALS_ALPHABET.length : v)))
+  const setReel = (i: number, ch: string) => {
+    const v = INITIALS_ALPHABET.indexOf(ch.toUpperCase())
+    if (v < 0) return false
+    setReels((r) => r.map((x, j) => (j === i ? v : x)))
+    return true
+  }
+  const onReelsKey = (e: KeyboardEvent) => {
+    if (e.key === 'ArrowUp') spinReel(reelIdx, 1)
+    else if (e.key === 'ArrowDown') spinReel(reelIdx, -1)
+    else if (e.key === 'ArrowLeft') setReelIdx((i) => Math.max(0, i - 1))
+    else if (e.key === 'ArrowRight') setReelIdx((i) => Math.min(INITIALS_LENGTH - 1, i + 1))
+    else if (e.key === 'Backspace') setReelIdx((i) => Math.max(0, i - 1))
+    else if (e.key.length === 1 && setReel(reelIdx, e.key)) setReelIdx((i) => Math.min(INITIALS_LENGTH - 1, i + 1))
+    else return
+    e.preventDefault()
+  }
+
   const submitInitials = (e: FormEvent) => {
     e.preventDefault()
-    const ini = normalizeInitials(initials)
-    if (ini.length !== INITIALS_LENGTH) return
+    const ini = reels.map((v) => INITIALS_ALPHABET[v]).join('')
     const entry: HighScore = { initials: ini, score: scoreRef.current, total: deck.length, date: Date.now() }
     onHighScores(insertHighScore(highScores, entry))
     setEntryDate(entry.date)
@@ -116,7 +136,8 @@ export function PlayMode({ deck, timer, gameMode, guessTarget, voice, highScores
     setScore(0)
     setRIdx(0)
     setResults([])
-    setInitials('')
+    setReels(Array(INITIALS_LENGTH).fill(0))
+    setReelIdx(0)
     setEntryDate(null)
     setGuess('')
     setPhase('intro')
@@ -193,6 +214,13 @@ export function PlayMode({ deck, timer, gameMode, guessTarget, voice, highScores
             </div>
           </div>
           <div className="prompt">{target === 'colors' ? "WHICH TEAM'S COLORS?" : 'WHOSE LOGO IS THIS?'}</div>
+          {round.h && (
+            <div className="hints" aria-label="Hints">
+              {roundHints(round).map((h) => (
+                <span key={h} className="hint-chip">{h}</span>
+              ))}
+            </div>
+          )}
           {gameMode === 'type' ? (
             <form className="guess-form" onSubmit={submit}>
               <input
@@ -249,22 +277,39 @@ export function PlayMode({ deck, timer, gameMode, guessTarget, voice, highScores
           <div className="final-score">
             {score} / {deck.length}
           </div>
-          <label className="final-label" htmlFor="initials">ENTER YOUR INITIALS</label>
-          <input
-            id="initials"
+          <div id="initials-label" className="final-label">ENTER YOUR INITIALS</div>
+          <div
             ref={initialsRef}
-            className="initials-input"
-            value={initials}
-            onChange={(e) => setInitials(normalizeInitials(e.target.value))}
-            maxLength={INITIALS_LENGTH}
-            autoComplete="off"
-            autoCapitalize="characters"
-            spellCheck={false}
-            placeholder={'A'.repeat(INITIALS_LENGTH)}
+            className="reels"
+            role="group"
+            aria-labelledby="initials-label"
             aria-describedby="initials-hint"
-          />
-          <div id="initials-hint" className="intro-sub">{INITIALS_LENGTH} letters or numbers</div>
-          <button type="submit" className="btn-again" disabled={initials.length !== INITIALS_LENGTH}>
+            tabIndex={0}
+            onKeyDown={onReelsKey}
+          >
+            {reels.map((v, i) => {
+              const ch = INITIALS_ALPHABET[v]
+              const prev = INITIALS_ALPHABET[(v - 1 + INITIALS_ALPHABET.length) % INITIALS_ALPHABET.length]
+              const next = INITIALS_ALPHABET[(v + 1) % INITIALS_ALPHABET.length]
+              return (
+                <div key={i} className={`reel${i === reelIdx ? ' active' : ''}`} onPointerDown={() => setReelIdx(i)}>
+                  <button type="button" className="reel-step" tabIndex={-1} aria-label={`Initial ${i + 1}: next letter`} onClick={() => spinReel(i, 1)}>
+                    ▲
+                  </button>
+                  <div className="reel-window" aria-live={i === reelIdx ? 'polite' : undefined}>
+                    <span className="reel-ghost" aria-hidden="true">{next}</span>
+                    <span className="reel-letter">{ch}</span>
+                    <span className="reel-ghost" aria-hidden="true">{prev}</span>
+                  </div>
+                  <button type="button" className="reel-step" tabIndex={-1} aria-label={`Initial ${i + 1}: previous letter`} onClick={() => spinReel(i, -1)}>
+                    ▼
+                  </button>
+                </div>
+              )
+            })}
+          </div>
+          <div id="initials-hint" className="intro-sub">Tap ▲▼ or use arrow keys · type to jump · Enter to save</div>
+          <button type="submit" className="btn-again">
             SAVE SCORE
           </button>
         </form>

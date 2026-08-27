@@ -9,6 +9,7 @@
     "preview": "vite preview",
     "logos": "python3 scripts/download_logos.py",
     "logos:svg": "python3 scripts/download_svgs.py",
+    "logos:hbcu": "python3 scripts/download_hbcu_svgs.py",
     "teams": "python3 scripts/build_teams.py",
     "release": "semantic-release"
   },

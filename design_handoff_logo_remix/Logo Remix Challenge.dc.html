@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600;700&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:'Space Grotesk',system-ui,sans-serif;background:#F7F5F1;color:#17150F}
+a{color:#B9331D}a:hover{color:#8F2716}
+input::placeholder{color:#9B958A}
+::-webkit-scrollbar{width:8px}::-webkit-scrollbar-thumb{background:#D8D3C8;border-radius:4px}
+@keyframes pop{0%{transform:scale(0.5);opacity:0}70%{transform:scale(1.06)}100%{transform:scale(1);opacity:1}}
+@keyframes rise{from{transform:translateY(14px);opacity:0}to{transform:translateY(0);opacity:1}}
+@media (prefers-reduced-motion: reduce){*{animation:none !important;transition:none !important}}
+</style>
+</helmet>
+<div data-screen-label="Logo Remix" style="height:100vh;display:flex;flex-direction:column;overflow:hidden;background:#F7F5F1">
+<sc-if value="{{isChrome}}" hint-placeholder-val="{{true}}">
+<div style="height:64px;flex:none;display:flex;align-items:center;gap:16px;padding:0 20px;border-bottom:1px solid #E5E1D8;background:#FFFFFF">
+<div style="font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:20px;letter-spacing:1px">LOGO <span style="color:#D8442B">REMIX</span></div>
+<div style="display:flex;gap:4px;margin:0 auto;background:#F0EDE6;border-radius:12px;padding:4px">
+<button onClick="{{goCreate}}" style="min-width:110px;height:44px;border:none;border-radius:9px;font:600 15px 'Space Grotesk',sans-serif;cursor:pointer;background:{{tabCBg}};color:{{tabCFg}}">Create</button>
+<button onClick="{{goDeck}}" style="min-width:110px;height:44px;border:none;border-radius:9px;font:600 15px 'Space Grotesk',sans-serif;cursor:pointer;background:{{tabDBg}};color:{{tabDFg}}">Deck · {{deckCount}}</button>
+</div>
+<button onClick="{{onPlay}}" style-hover="filter:brightness(0.92)" style="min-width:120px;height:46px;border:none;border-radius:12px;background:#D8442B;color:#FFFFFF;font:700 15px 'Chakra Petch',sans-serif;letter-spacing:2px;cursor:pointer">PLAY ▶</button>
+</div>
+</sc-if>
+<sc-if value="{{isCreateLand}}" hint-placeholder-val="{{true}}">
+<div data-screen-label="Create" style="flex:1;min-height:0;display:grid;grid-template-columns:28fr 44fr 28fr;gap:14px;padding:14px 16px 16px">
+<div style="min-height:0;display:flex;flex-direction:column;background:#FFFFFF;border:1px solid #E5E1D8;border-radius:16px;padding:12px;gap:10px">
+<div style="display:flex;align-items:center;justify-content:space-between;gap:8px">
+<div style="font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:13px;letter-spacing:2px;color:#6E6A61">ORIGINAL</div>
+<div style="display:flex;background:#F0EDE6;border-radius:10px;padding:3px;gap:2px">
+<sc-for list="{{lgOItems}}" as="g" hint-placeholder-count="2"><button onClick="{{g.on}}" style="min-width:54px;height:38px;border:none;border-radius:8px;font:600 12px 'Space Grotesk',sans-serif;cursor:pointer;background:{{g.bg}};color:{{g.fg}}">{{g.lb}}</button></sc-for>
+</div>
+</div>
+<input value="{{qO}}" onChange="{{setQO}}" placeholder="Search teams" style="height:46px;border:1.5px solid #E5E1D8;border-radius:12px;padding:0 14px;font:500 15px 'Space Grotesk',sans-serif;background:#FBFAF7;outline-color:#D8442B;width:100%">
+<div style="display:flex;gap:6px;flex-wrap:wrap">
+<sc-for list="{{chipsO}}" as="c" hint-placeholder-count="3"><button onClick="{{c.on}}" style="height:38px;padding:0 14px;border:none;border-radius:19px;font:600 13px 'Space Grotesk',sans-serif;cursor:pointer;background:{{c.bg}};color:{{c.fg}}">{{c.lb}}</button></sc-for>
+</div>
+<div style="flex:1;min-height:0;overflow-y:auto;display:grid;grid-template-columns:1fr 1fr;gap:10px;align-content:start;padding:2px">
+<sc-for list="{{listO}}" as="t" hint-placeholder-count="8">
+<button onClick="{{t.on}}" style="position:relative;display:flex;flex-direction:column;align-items:center;gap:8px;padding:14px 8px 12px;border-radius:14px;cursor:pointer;background:{{t.bg}};border:2.5px solid {{t.bd}}">
+<div style="width:70px;height:70px">{{t.el}}</div>
+<div style="font:600 13px/1.25 'Space Grotesk',sans-serif;text-align:center;color:#17150F">{{t.nm}}</div>
+<sc-if value="{{t.sel}}" hint-placeholder-val="{{false}}"><div style="position:absolute;top:8px;right:8px;width:22px;height:22px;border-radius:11px;background:#17150F;color:#FFFFFF;font:700 13px/22px 'Space Grotesk',sans-serif;text-align:center">✓</div></sc-if>
+</button>
+</sc-for>
+</div>
+</div>
+<div style="min-height:0;display:flex;flex-direction:column;align-items:center;background:#FFFFFF;border:1px solid #E5E1D8;border-radius:16px;padding:16px 20px;gap:2px">
+<div style="font:600 11px 'Space Grotesk',sans-serif;letter-spacing:3px;color:#9B958A">ORIGINAL</div>
+<div style="font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:22px;color:{{origNmCol}}">{{origNm}}</div>
+<sc-if value="{{hasOrig}}" hint-placeholder-val="{{true}}">
+<div style="flex:1;min-height:0;display:flex;align-items:center;justify-content:center;width:100%">
+<div style="width:min(36vh,340px);height:min(36vh,340px);animation:pop 0.3s ease">{{remixEl}}</div>
+</div>
+</sc-if>
+<sc-if value="{{noOrig}}" hint-placeholder-val="{{false}}">
+<div style="flex:1;display:flex;align-items:center;justify-content:center;width:100%">
+<div style="width:290px;height:290px;border:2.5px dashed #D8D3C8;border-radius:145px;display:flex;align-items:center;justify-content:center;padding:44px;text-align:center;color:#9B958A;font:500 16px/1.5 'Space Grotesk',sans-serif">Pick an original team on the left to start a remix</div>
+</div>
+</sc-if>
+<div style="font:600 11px 'Space Grotesk',sans-serif;letter-spacing:3px;color:#9B958A">COLORS</div>
+<div style="display:flex;align-items:center;gap:10px">
+<div style="font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:18px;color:{{colorNmCol}}">{{colorNm}}</div>
+<sc-if value="{{hasColor}}" hint-placeholder-val="{{false}}">
+<div style="display:flex;gap:5px">
+<sc-for list="{{cSw}}" as="s" hint-placeholder-count="3"><span style="width:16px;height:16px;border-radius:8px;border:1px solid rgba(0,0,0,0.15);background:{{s.h}}"></span></sc-for>
+</div>
+</sc-if>
+</div>
+<div style="display:flex;gap:12px;width:100%;margin-top:12px">
+<button onClick="{{shuffle}}" style-hover="background:#F7F5F1" style="flex:1;height:54px;border:2px solid #17150F;background:#FFFFFF;border-radius:14px;font:700 15px 'Space Grotesk',sans-serif;cursor:pointer;color:#17150F">Shuffle Colors</button>
+<button onClick="{{addRound}}" style-hover="filter:brightness(0.94)" style="flex:1.5;height:54px;border:none;background:{{addBg}};color:#FFFFFF;border-radius:14px;font:700 16px 'Chakra Petch',sans-serif;letter-spacing:1px;cursor:pointer">{{addLabel}}</button>
+</div>
+</div>
+<div style="min-height:0;display:flex;flex-direction:column;background:#FFFFFF;border:1px solid #E5E1D8;border-radius:16px;padding:12px;gap:10px">
+<div style="display:flex;align-items:center;justify-content:space-between;gap:8px">
+<div style="font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:13px;letter-spacing:2px;color:#6E6A61">COLORS</div>
+<div style="display:flex;background:#F0EDE6;border-radius:10px;padding:3px;gap:2px">
+<sc-for list="{{lgCItems}}" as="g" hint-placeholder-count="2"><button onClick="{{g.on}}" style="min-width:54px;height:38px;border:none;border-radius:8px;font:600 12px 'Space Grotesk',sans-serif;cursor:pointer;background:{{g.bg}};color:{{g.fg}}">{{g.lb}}</button></sc-for>
+</div>
+</div>
+<input value="{{qC}}" onChange="{{setQC}}" placeholder="Search teams" style="height:46px;border:1.5px solid #E5E1D8;border-radius:12px;padding:0 14px;font:500 15px 'Space Grotesk',sans-serif;background:#FBFAF7;outline-color:#D8442B;width:100%">
+<div style="display:flex;gap:6px;flex-wrap:wrap">
+<sc-for list="{{chipsC}}" as="c" hint-placeholder-count="3"><button onClick="{{c.on}}" style="height:38px;padding:0 14px;border:none;border-radius:19px;font:600 13px 'Space Grotesk',sans-serif;cursor:pointer;background:{{c.bg}};color:{{c.fg}}">{{c.lb}}</button></sc-for>
+</div>
+<div style="flex:1;min-height:0;overflow-y:auto;display:grid;grid-template-columns:1fr 1fr;gap:10px;align-content:start;padding:2px">
+<sc-for list="{{listC}}" as="t" hint-placeholder-count="8">
+<button onClick="{{t.on}}" style="position:relative;display:flex;flex-direction:column;align-items:center;gap:7px;padding:14px 8px 12px;border-radius:14px;cursor:pointer;background:{{t.bg}};border:2.5px solid {{t.bd}}">
+<div style="width:64px;height:64px">{{t.el}}</div>
+<div style="font:600 13px/1.25 'Space Grotesk',sans-serif;text-align:center;color:#17150F">{{t.nm}}</div>
+<div style="display:flex;gap:5px">
+<span style="width:12px;height:12px;border-radius:6px;border:1px solid rgba(0,0,0,0.15);background:{{t.d1}}"></span>
+<span style="width:12px;height:12px;border-radius:6px;border:1px solid rgba(0,0,0,0.15);background:{{t.d2}}"></span>
+<span style="width:12px;height:12px;border-radius:6px;border:1px solid rgba(0,0,0,0.15);background:{{t.d3}}"></span>
+</div>
+<sc-if value="{{t.sel}}" hint-placeholder-val="{{false}}"><div style="position:absolute;top:8px;right:8px;width:22px;height:22px;border-radius:11px;background:#17150F;color:#FFFFFF;font:700 13px/22px 'Space Grotesk',sans-serif;text-align:center">✓</div></sc-if>
+</button>
+</sc-for>
+</div>
+</div>
+</div>
+</sc-if>
+<sc-if value="{{isCreatePort}}" hint-placeholder-val="{{false}}">
+<div data-screen-label="Create Portrait" style="flex:1;min-height:0;display:flex;flex-direction:column;gap:12px;padding:14px 16px 16px">
+<div style="display:flex;background:#F0EDE6;border-radius:12px;padding:4px;gap:4px">
+<sc-for list="{{stepItems}}" as="st" hint-placeholder-count="3"><button onClick="{{st.on}}" style="flex:1;height:48px;border:none;border-radius:9px;font:600 15px 'Space Grotesk',sans-serif;cursor:pointer;background:{{st.bg}};color:{{st.fg}}">{{st.lb}}</button></sc-for>
+</div>
+<sc-if value="{{isStep1}}" hint-placeholder-val="{{false}}">
+<div style="flex:1;min-height:0;display:flex;flex-direction:column;background:#FFFFFF;border:1px solid #E5E1D8;border-radius:16px;padding:12px;gap:10px">
+<div style="display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap">
+<div style="font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:13px;letter-spacing:2px;color:#6E6A61">CHOOSE THE ORIGINAL TEAM</div>
+<div style="display:flex;background:#F0EDE6;border-radius:10px;padding:3px;gap:2px">
+<sc-for list="{{lgOItems}}" as="g" hint-placeholder-count="2"><button onClick="{{g.on}}" style="min-width:64px;height:38px;border:none;border-radius:8px;font:600 12px 'Space Grotesk',sans-serif;cursor:pointer;background:{{g.bg}};color:{{g.fg}}">{{g.lb}}</button></sc-for>
+</div>
+</div>
+<input value="{{qO}}" onChange="{{setQO}}" placeholder="Search teams" style="height:48px;border:1.5px solid #E5E1D8;border-radius:12px;padding:0 14px;font:500 16px 'Space Grotesk',sans-serif;background:#FBFAF7;outline-color:#D8442B;width:100%">
+<div style="display:flex;gap:6px;flex-wrap:wrap">
+<sc-for list="{{chipsO}}" as="c" hint-placeholder-count="3"><button onClick="{{c.on}}" style="height:40px;padding:0 16px;border:none;border-radius:20px;font:600 14px 'Space Grotesk',sans-serif;cursor:pointer;background:{{c.bg}};color:{{c.fg}}">{{c.lb}}</button></sc-for>
+</div>
+<div style="flex:1;min-height:0;overflow-y:auto;display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px;align-content:start;padding:2px">
+<sc-for list="{{listO}}" as="t" hint-placeholder-count="8">
+<button onClick="{{t.on}}" style="position:relative;display:flex;flex-direction:column;align-items:center;gap:8px;padding:16px 8px 12px;border-radius:14px;cursor:pointer;background:{{t.bg}};border:2.5px solid {{t.bd}}">
+<div style="width:84px;height:84px">{{t.el}}</div>
+<div style="font:600 14px/1.25 'Space Grotesk',sans-serif;text-align:center;color:#17150F">{{t.nm}}</div>
+<sc-if value="{{t.sel}}" hint-placeholder-val="{{false}}"><div style="position:absolute;top:8px;right:8px;width:22px;height:22px;border-radius:11px;background:#17150F;color:#FFFFFF;font:700 13px/22px 'Space Grotesk',sans-serif;text-align:center">✓</div></sc-if>
+</button>
+</sc-for>
+</div>
+</div>
+</sc-if>
+<sc-if value="{{isStep2}}" hint-placeholder-val="{{false}}">
+<div style="flex:1;min-height:0;display:flex;flex-direction:column;background:#FFFFFF;border:1px solid #E5E1D8;border-radius:16px;padding:12px;gap:10px">
+<div style="display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap">
+<div style="font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:13px;letter-spacing:2px;color:#6E6A61">CHOOSE THE COLOR TEAM</div>
+<div style="display:flex;background:#F0EDE6;border-radius:10px;padding:3px;gap:2px">
+<sc-for list="{{lgCItems}}" as="g" hint-placeholder-count="2"><button onClick="{{g.on}}" style="min-width:64px;height:38px;border:none;border-radius:8px;font:600 12px 'Space Grotesk',sans-serif;cursor:pointer;background:{{g.bg}};color:{{g.fg}}">{{g.lb}}</button></sc-for>
+</div>
+</div>
+<input value="{{qC}}" onChange="{{setQC}}" placeholder="Search teams" style="height:48px;border:1.5px solid #E5E1D8;border-radius:12px;padding:0 14px;font:500 16px 'Space Grotesk',sans-serif;background:#FBFAF7;outline-color:#D8442B;width:100%">
+<div style="display:flex;gap:6px;flex-wrap:wrap">
+<sc-for list="{{chipsC}}" as="c" hint-placeholder-count="3"><button onClick="{{c.on}}" style="height:40px;padding:0 16px;border:none;border-radius:20px;font:600 14px 'Space Grotesk',sans-serif;cursor:pointer;background:{{c.bg}};color:{{c.fg}}">{{c.lb}}</button></sc-for>
+</div>
+<div style="flex:1;min-height:0;overflow-y:auto;display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px;align-content:start;padding:2px">
+<sc-for list="{{listC}}" as="t" hint-placeholder-count="8">
+<button onClick="{{t.on}}" style="position:relative;display:flex;flex-direction:column;align-items:center;gap:7px;padding:16px 8px 12px;border-radius:14px;cursor:pointer;background:{{t.bg}};border:2.5px solid {{t.bd}}">
+<div style="width:76px;height:76px">{{t.el}}</div>
+<div style="font:600 14px/1.25 'Space Grotesk',sans-serif;text-align:center;color:#17150F">{{t.nm}}</div>
+<div style="display:flex;gap:5px">
+<span style="width:13px;height:13px;border-radius:7px;border:1px solid rgba(0,0,0,0.15);background:{{t.d1}}"></span>
+<span style="width:13px;height:13px;border-radius:7px;border:1px solid rgba(0,0,0,0.15);background:{{t.d2}}"></span>
+<span style="width:13px;height:13px;border-radius:7px;border:1px solid rgba(0,0,0,0.15);background:{{t.d3}}"></span>
+</div>
+<sc-if value="{{t.sel}}" hint-placeholder-val="{{false}}"><div style="position:absolute;top:8px;right:8px;width:22px;height:22px;border-radius:11px;background:#17150F;color:#FFFFFF;font:700 13px/22px 'Space Grotesk',sans-serif;text-align:center">✓</div></sc-if>
+</button>
+</sc-for>
+</div>
+</div>
+</sc-if>
+<sc-if value="{{isStep3}}" hint-placeholder-val="{{false}}">
+<div style="flex:1;min-height:0;display:flex;flex-direction:column;align-items:center;background:#FFFFFF;border:1px solid #E5E1D8;border-radius:16px;padding:20px;gap:3px">
+<div style="font:600 11px 'Space Grotesk',sans-serif;letter-spacing:3px;color:#9B958A">ORIGINAL</div>
+<div style="font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:24px;color:{{origNmCol}};text-align:center">{{origNm}}</div>
+<sc-if value="{{hasOrig}}" hint-placeholder-val="{{true}}">
+<div style="flex:1;min-height:0;display:flex;align-items:center;justify-content:center;width:100%">
+<div style="width:min(52vw,400px);height:min(52vw,400px);animation:pop 0.3s ease">{{remixEl}}</div>
+</div>
+</sc-if>
+<sc-if value="{{noOrig}}" hint-placeholder-val="{{false}}">
+<div style="flex:1;display:flex;align-items:center;justify-content:center;width:100%">
+<div style="width:280px;height:280px;border:2.5px dashed #D8D3C8;border-radius:140px;display:flex;align-items:center;justify-content:center;padding:44px;text-align:center;color:#9B958A;font:500 16px/1.5 'Space Grotesk',sans-serif">Pick an original team in step 1</div>
+</div>
+</sc-if>
+<div style="font:600 11px 'Space Grotesk',sans-serif;letter-spacing:3px;color:#9B958A">COLORS</div>
+<div style="display:flex;align-items:center;gap:10px">
+<div style="font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:19px;color:{{colorNmCol}}">{{colorNm}}</div>
+<sc-if value="{{hasColor}}" hint-placeholder-val="{{false}}">
+<div style="display:flex;gap:5px">
+<sc-for list="{{cSw}}" as="s" hint-placeholder-count="3"><span style="width:16px;height:16px;border-radius:8px;border:1px solid rgba(0,0,0,0.15);background:{{s.h}}"></span></sc-for>
+</div>
+</sc-if>
+</div>
+<div style="display:flex;gap:12px;width:min(560px,100%);margin-top:14px">
+<button onClick="{{shuffle}}" style-hover="background:#F7F5F1" style="flex:1;height:56px;border:2px solid #17150F;background:#FFFFFF;border-radius:14px;font:700 16px 'Space Grotesk',sans-serif;cursor:pointer;color:#17150F">Shuffle Colors</button>
+<button onClick="{{addRound}}" style-hover="filter:brightness(0.94)" style="flex:1.5;height:56px;border:none;background:{{addBg}};color:#FFFFFF;border-radius:14px;font:700 17px 'Chakra Petch',sans-serif;letter-spacing:1px;cursor:pointer">{{addLabel}}</button>
+</div>
+</div>
+</sc-if>
+</div>
+</sc-if>
+<sc-if value="{{isDeck}}" hint-placeholder-val="{{false}}">
+<div data-screen-label="Game Deck" style="flex:1;min-height:0;display:flex;gap:16px;padding:16px;flex-direction:{{deckDir}}">
+<div style="flex:1;min-height:0;overflow-y:auto">
+<sc-if value="{{deckEmpty}}" hint-placeholder-val="{{false}}">
+<div style="height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;color:#9B958A">
+<div style="font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:26px;color:#6E6A61">Your deck is empty</div>
+<div style="font:500 16px 'Space Grotesk',sans-serif">Remix a logo to add your first round.</div>
+<button onClick="{{goCreate}}" style="margin-top:8px;height:54px;padding:0 28px;border:none;border-radius:14px;background:#D8442B;color:#FFFFFF;font:700 16px 'Chakra Petch',sans-serif;letter-spacing:1px;cursor:pointer">CREATE A ROUND</button>
+</div>
+</sc-if>
+<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(225px,1fr));gap:14px">
+<sc-for list="{{deckCards}}" as="r" hint-placeholder-count="4">
+<div style="background:#FFFFFF;border:1px solid #E5E1D8;border-radius:16px;padding:14px;display:flex;flex-direction:column;align-items:center;gap:6px">
+<div style="font:600 11px 'Space Grotesk',sans-serif;letter-spacing:2px;color:#9B958A">ROUND {{r.n}}</div>
+<div style="width:104px;height:104px;margin:4px 0">{{r.el}}</div>
+<div style="font:700 15px/1.25 'Space Grotesk',sans-serif;text-align:center">{{r.nm}}</div>
+<div style="font:500 13px 'Space Grotesk',sans-serif;color:#6E6A61">{{r.sub}}</div>
+<div style="display:flex;gap:6px;margin-top:6px">
+<button onClick="{{r.up}}" aria-label="Move earlier" style="width:44px;height:44px;border:1.5px solid #E5E1D8;background:#FFFFFF;border-radius:11px;font-size:15px;cursor:pointer;opacity:{{r.upOp}}">◀</button>
+<button onClick="{{r.down}}" aria-label="Move later" style="width:44px;height:44px;border:1.5px solid #E5E1D8;background:#FFFFFF;border-radius:11px;font-size:15px;cursor:pointer;opacity:{{r.dnOp}}">▶</button>
+<button onClick="{{r.edit}}" style="height:44px;padding:0 14px;border:1.5px solid #17150F;background:#FFFFFF;border-radius:11px;font:600 14px 'Space Grotesk',sans-serif;cursor:pointer">Edit</button>
+<button onClick="{{r.dup}}" aria-label="Duplicate" style="width:44px;height:44px;border:1.5px solid #E5E1D8;background:#FFFFFF;border-radius:11px;font-size:15px;cursor:pointer">⧉</button>
+<button onClick="{{r.del}}" aria-label="Delete" style="width:44px;height:44px;border:1.5px solid #E5E1D8;background:#FFFFFF;border-radius:11px;font-size:15px;cursor:pointer;color:#B9331D">✕</button>
+</div>
+</div>
+</sc-for>
+</div>
+</div>
+<div style="width:{{railW}};flex:none;display:flex;flex-direction:{{railDir}};gap:14px;align-items:stretch">
+<div style="background:#FFFFFF;border:1px solid #E5E1D8;border-radius:16px;padding:18px;display:flex;flex-direction:column;gap:14px;flex:{{cardFlex}}">
+<div style="font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:14px;letter-spacing:2px;color:#6E6A61">GAME SETUP</div>
+<div style="font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:34px">{{deckCount}} <span style="font-size:16px;letter-spacing:2px;color:#6E6A61">ROUNDS</span></div>
+<div style="font:600 12px 'Space Grotesk',sans-serif;letter-spacing:2px;color:#9B958A">TIME PER ROUND</div>
+<div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:6px">
+<sc-for list="{{timerItems}}" as="o" hint-placeholder-count="4"><button onClick="{{o.on}}" style="height:52px;border:none;border-radius:12px;font:700 16px 'Space Grotesk',sans-serif;cursor:pointer;background:{{o.bg}};color:{{o.fg}}">{{o.lb}}</button></sc-for>
+</div>
+<div style="font:600 12px 'Space Grotesk',sans-serif;letter-spacing:2px;color:#9B958A">GAME MODE</div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:6px">
+<sc-for list="{{modeItems}}" as="m" hint-placeholder-count="2"><button onClick="{{m.on}}" style="height:52px;border:none;border-radius:12px;font:600 14px 'Space Grotesk',sans-serif;cursor:pointer;background:{{m.bg}};color:{{m.fg}}">{{m.lb}}</button></sc-for>
+</div>
+<div style="font:500 12px/1.4 'Space Grotesk',sans-serif;color:#9B958A">{{modeHint}}</div>
+<button onClick="{{startGame}}" style-hover="filter:brightness(0.94)" style="height:64px;border:none;border-radius:16px;background:{{startBg}};color:#FFFFFF;font:700 19px 'Chakra Petch',sans-serif;letter-spacing:2px;cursor:pointer">START GAME</button>
+</div>
+<div style="background:#FFFFFF;border:1px solid #E5E1D8;border-radius:16px;padding:18px;display:flex;flex-direction:column;gap:4px;flex:{{cardFlex}}">
+<div style="font:600 12px 'Space Grotesk',sans-serif;letter-spacing:2px;color:#9B958A">HIGH SCORE</div>
+<div style="font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:30px">{{hsText}}</div>
+</div>
+</div>
+</div>
+</sc-if>
+<sc-if value="{{isPlay}}" hint-placeholder-val="{{false}}">
+<div style="flex:1;min-height:0;background:#12100D;color:#F5F2EC;display:flex;flex-direction:column">
+<sc-if value="{{isIntro}}" hint-placeholder-val="{{false}}">
+<div data-screen-label="Game Intro" style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;animation:rise 0.4s ease;padding:24px">
+<div style="font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:62px;letter-spacing:5px;line-height:1.08;text-align:center">LOGO REMIX<br>CHALLENGE</div>
+<div style="font:600 21px 'Space Grotesk',sans-serif;letter-spacing:2px;color:#B7B0A3">{{introMeta}}</div>
+<div style="font:500 18px 'Space Grotesk',sans-serif;color:#8F887B">Ignore the colors. Recognize the team.</div>
+<button onClick="{{beginFirst}}" style-hover="filter:brightness(0.94)" style="margin-top:14px;width:280px;height:64px;border:none;border-radius:16px;background:#D8442B;color:#FFFFFF;font:700 20px 'Chakra Petch',sans-serif;letter-spacing:3px;cursor:pointer">START</button>
+<button onClick="{{quit}}" style="margin-top:2px;height:44px;padding:0 16px;background:none;border:none;color:#8F887B;font:500 15px 'Space Grotesk',sans-serif;cursor:pointer">← Back to deck</button>
+</div>
+</sc-if>
+<sc-if value="{{isQuestion}}" hint-placeholder-val="{{false}}">
+<div data-screen-label="Gameplay Round" style="flex:1;min-height:0;display:flex;flex-direction:column">
+<div style="display:flex;align-items:center;justify-content:space-between;padding:14px 24px 0;font:600 18px 'Space Grotesk',sans-serif;color:#B7B0A3;letter-spacing:2px">
+<div>ROUND {{roundNo}} / {{roundTotal}}</div>
+<div style="display:flex;align-items:center;gap:14px"><div>SCORE {{score}}</div><button onClick="{{quit}}" aria-label="End game" style="width:44px;height:44px;background:none;border:none;color:#6E6A61;font-size:20px;cursor:pointer">✕</button></div>
+</div>
+<div style="display:flex;flex-direction:column;align-items:center;gap:6px;padding:0 24px">
+<div style="font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:54px;line-height:1;color:{{tCol}}">{{tNum}}</div>
+<div style="width:min(560px,80%);height:6px;border-radius:3px;background:rgba(255,255,255,0.12);overflow:hidden"><div style="height:100%;border-radius:3px;background:{{tCol}};width:{{tW}}"></div></div>
+</div>
+<div style="flex:1;min-height:0;display:flex;align-items:center;justify-content:center"><div style="width:min(40vh,430px);height:min(40vh,430px);animation:pop 0.28s ease">{{playLogo}}</div></div>
+<div style="text-align:center;font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:26px;letter-spacing:4px">WHOSE LOGO IS THIS?</div>
+<sc-if value="{{isTypeMode}}" hint-placeholder-val="{{true}}">
+<form onSubmit="{{submitGuess}}" style="display:flex;gap:12px;width:min(640px,86%);margin:16px auto 24px">
+<input ref="{{setInp}}" value="{{guess}}" onChange="{{setGuess}}" placeholder="Type the team…" autoComplete="off" autoCorrect="off" autoCapitalize="off" spellCheck="false" style="flex:1;height:60px;background:#221E18;border:2px solid #3A352C;border-radius:14px;color:#F5F2EC;font:500 20px 'Space Grotesk',sans-serif;padding:0 18px;outline-color:#D8442B;min-width:0">
+<button type="submit" style-hover="filter:brightness(0.94)" style="width:150px;height:60px;background:#D8442B;color:#FFFFFF;border:none;border-radius:14px;font:700 17px 'Chakra Petch',sans-serif;letter-spacing:2px;cursor:pointer">SUBMIT</button>
+</form>
+</sc-if>
+<sc-if value="{{isHostMode}}" hint-placeholder-val="{{false}}">
+<div style="display:flex;flex-direction:column;align-items:center;gap:10px;width:min(640px,86%);margin:14px auto 24px">
+<div style="font:500 14px 'Space Grotesk',sans-serif;color:#8F887B">Shout it out — the host taps the verdict</div>
+<div style="display:flex;gap:14px;width:100%">
+<button onClick="{{hostCorrect}}" style-hover="filter:brightness(0.94)" style="flex:1;height:68px;border:none;border-radius:16px;background:#4CBF6B;color:#12100D;font:700 19px 'Chakra Petch',sans-serif;letter-spacing:2px;cursor:pointer">✓ CORRECT</button>
+<button onClick="{{hostWrong}}" style-hover="background:rgba(255,107,74,0.12)" style="flex:1;height:68px;border:2.5px solid #FF6B4A;border-radius:16px;background:none;color:#FF6B4A;font:700 19px 'Chakra Petch',sans-serif;letter-spacing:2px;cursor:pointer">✕ INCORRECT</button>
+</div>
+</div>
+</sc-if>
+</div>
+</sc-if>
+<sc-if value="{{isReveal}}" hint-placeholder-val="{{false}}">
+<div data-screen-label="Answer Reveal" style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;animation:pop 0.3s ease;padding:24px">
+<div style="width:80px;height:80px;border-radius:40px;display:flex;align-items:center;justify-content:center;font-size:40px;font-weight:700;background:{{rvBg}};color:#12100D">{{rvIcon}}</div>
+<div style="font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:44px;letter-spacing:5px;color:{{rvCol}}">{{rvTitle}}</div>
+<div style="width:150px;height:150px;margin:4px 0">{{rvLogo}}</div>
+<div style="font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:38px;text-align:center">{{rvAnswer}}</div>
+<div style="font:500 17px 'Space Grotesk',sans-serif;color:#8F887B">{{rvNote}}</div>
+<sc-if value="{{plusOne}}" hint-placeholder-val="{{false}}"><div style="font:700 28px 'Chakra Petch',sans-serif;color:#4CBF6B">+1</div></sc-if>
+</div>
+</sc-if>
+<sc-if value="{{isResults}}" hint-placeholder-val="{{false}}">
+<div data-screen-label="Results" style="flex:1;min-height:0;overflow-y:auto;display:flex;flex-direction:column;align-items:center;padding:36px 24px;animation:rise 0.4s ease">
+<div style="font:600 14px 'Space Grotesk',sans-serif;letter-spacing:4px;color:#8F887B">FINAL SCORE</div>
+<div style="font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:90px;line-height:1.1">{{finalScore}}</div>
+<sc-if value="{{newHigh}}" hint-placeholder-val="{{false}}"><div style="font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:22px;letter-spacing:4px;color:#F2B72E">NEW HIGH SCORE</div></sc-if>
+<div style="display:flex;flex-direction:column;gap:8px;width:min(520px,90%);margin:22px 0">
+<sc-for list="{{recap}}" as="q" hint-placeholder-count="4">
+<div style="display:flex;align-items:center;gap:12px;background:#1C1915;border-radius:12px;padding:9px 14px">
+<div style="width:24px;font:700 18px 'Space Grotesk',sans-serif;color:{{q.col}}">{{q.mk}}</div>
+<div style="width:40px;height:40px">{{q.el}}</div>
+<div style="font:600 16px 'Space Grotesk',sans-serif">{{q.nm}}</div>
+</div>
+</sc-for>
+</div>
+<div style="display:flex;gap:12px;flex-wrap:wrap;justify-content:center">
+<button onClick="{{playAgain}}" style-hover="filter:brightness(0.94)" style="height:60px;padding:0 32px;border:none;border-radius:14px;background:#D8442B;color:#FFFFFF;font:700 17px 'Chakra Petch',sans-serif;letter-spacing:2px;cursor:pointer">PLAY AGAIN</button>
+<button onClick="{{quit}}" style="height:60px;padding:0 32px;border:2px solid #F5F2EC;border-radius:14px;background:none;color:#F5F2EC;font:700 17px 'Chakra Petch',sans-serif;letter-spacing:2px;cursor:pointer">EDIT GAME</button>
+</div>
+</div>
+</sc-if>
+</div>
+</sc-if>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1194,&quot;height&quot;:834},&quot;timerSeconds&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[5,10,15,30],&quot;default&quot;:15,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Gameplay&quot;},&quot;revealMs&quot;:{&quot;editor&quot;:&quot;range&quot;,&quot;min&quot;:700,&quot;max&quot;:2500,&quot;step&quot;:100,&quot;unit&quot;:&quot;ms&quot;,&quot;default&quot;:1700,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Gameplay&quot;},&quot;strictAnswers&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:false,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Gameplay&quot;}}">
+class Component extends DCLogic {
+  PERMS = [[0,1,2],[1,0,2],[2,1,0],[0,2,1],[1,2,0],[2,0,1]];
+  TEAMS = [
+    ['PRO','Atlantic','Cedar Falls','Lumberjacks','CF','#1D4A2C','#F2B72E','#F6F1E3','shield','stripe'],
+    ['PRO','Atlantic','Bayou City','Kings','BK','#141210','#C9A34F','#F5F0E4','circle','star'],
+    ['PRO','Atlantic','Steelport','Forge','SF','#16161A','#F5C51D','#B7BCC4','hex','none'],
+    ['PRO','Atlantic','Harborview','Sharks','HV','#0A5B6E','#8FD8E8','#F26D21','pennant','stripe'],
+    ['PRO','Atlantic','Northgate','Norsemen','NG','#3E2A6E','#F0B32C','#F5F2EC','diamond','none'],
+    ['PRO','Atlantic','Rustbelt','Bulldogs','RB','#4A2C17','#E8631C','#F5F0E4','square','dots'],
+    ['PRO','Atlantic','Capital','Sentinels','CS','#6E1E2C','#D9B23A','#F5F0E4','shield','star'],
+    ['PRO','Atlantic','Liberty','Hawks','LH','#1E2B5C','#C43A2F','#F5F0E4','circle','stripe'],
+    ['PRO','Pacific','Gold Coast','Miners','GC','#B4231F','#D9A441','#F5EDD8','hex','star'],
+    ['PRO','Pacific','Blackwater','Marauders','BW','#101014','#A6ACB5','#E8EAED','shield','none'],
+    ['PRO','Pacific','Lone Star','Wranglers','LS','#1C2E52','#9BA3AF','#FFFFFF','diamond','star'],
+    ['PRO','Pacific','Redrock','Coyotes','RR','#8E2B25','#D9B98A','#37AFA8','pennant','dots'],
+    ['PRO','Pacific','Cascade','Thunder','CT','#20304F','#8CD421','#A5ACB8','square','stripe'],
+    ['PRO','Pacific','Sunbelt','Scorpions','SB','#E0641B','#191410','#F2E6D8','circle','none'],
+    ['PRO','Pacific','Pacific','Breakers','PB','#0E8A93','#F58A3C','#F2F7F6','shield','dots'],
+    ['PRO','Pacific','Valley','Vipers','VV','#7CB518','#141414','#F2F5E9','hex','stripe'],
+    ['COL','Heartland','Prairie State','Hammers','PS','#141210','#C9A227','#EFE9DA','square','star'],
+    ['COL','Heartland','Capitol State','Generals','CG','#B0221E','#9EA3A8','#FFFFFF','shield','stripe'],
+    ['COL','Heartland','Great Lakes','Huskies','GL','#1B2F6B','#F5C518','#FFFFFF','circle','dots'],
+    ['COL','Heartland','Midland A&M','Bison','MA','#5C1F2B','#E8E2D6','#8C8377','hex','none'],
+    ['COL','Heartland','Heartland Tech','Rockets','HT','#E8681C','#16294A','#F5F0E4','pennant','star'],
+    ['COL','Heartland','Twin Rivers','Owls','TR','#4B2E83','#C7C9CC','#FFFFFF','diamond','stripe'],
+    ['COL','Heartland','Dakota Plains','Blizzard','DP','#1E6E8C','#DCE9EF','#17150F','square','none'],
+    ['COL','Heartland','Ozark','Bobcats','OZ','#8A1E3C','#F5EFE3','#C79A55','circle','star'],
+    ['COL','Coastal','Pacifica','Gladiators','PG','#A5182E','#E8B93B','#F5F0E4','shield','stripe'],
+    ['COL','Coastal','Cascadia','Mallards','CD','#12523A','#E4F53A','#101613','circle','stripe'],
+    ['COL','Coastal','Bayshore Tech','Stingers','BT','#0F2340','#D4A93F','#F5F0E4','hex','dots'],
+    ['COL','Coastal','Highland Tech','Ramblers','HR','#611E3C','#D96C2B','#F2ECE2','pennant','none'],
+    ['COL','Coastal','Gulf Coast','Pelicans','GP','#0E7C86','#F2A54A','#F7F3EA','square','stripe'],
+    ['COL','Coastal','Sierra State','Prospectors','SP','#2455A4','#F2C744','#FFFFFF','diamond','dots'],
+    ['COL','Coastal','Atlantic A&M','Mariners','AA','#13294B','#7FB2E5','#F2F5F8','shield','star'],
+    ['COL','Coastal','Palmetto','Panthers','PM','#E4611D','#3F2A6E','#F5EFE3','hex','star']
+  ].map(r => ({lg:r[0], div:r[1], region:r[2], name:r[3], abbr:r[4], pal:[r[5],r[6],r[7]], shape:r[8], deco:r[9], id:r[0]+'-'+r[4]}));
+  DIVS = {PRO:['Atlantic','Pacific'], COL:['Heartland','Coastal']};
+  SEED = [{o:'COL-PG',c:'PRO-CF',v:0},{o:'COL-CD',c:'PRO-GC',v:0},{o:'COL-HT',c:'PRO-BK',v:1},{o:'PRO-VV',c:'COL-GL',v:0},{o:'PRO-RR',c:'PRO-NG',v:2}];
+  state = {mode:'create', lgO:'PRO', lgC:'PRO', qO:'', qC:'', divO:'All', divC:'All', oId:null, cId:null, perm:0, deck:this.SEED, editIdx:null, justAdded:false, timer:15, gameMode:'type', step:1, isPortrait:(typeof window !== 'undefined' && window.innerHeight > window.innerWidth), phase:'intro', rIdx:0, score:0, timeLeft:15, guess:'', revealKind:null, results:[], hs:0, newHigh:false};
+
+  componentDidMount() {
+    this.onRz = () => this.setState({isPortrait:window.innerHeight > window.innerWidth});
+    window.addEventListener('resize', this.onRz);
+    try {
+      const d = JSON.parse(localStorage.getItem('lrx-deck'));
+      const t = parseInt(localStorage.getItem('lrx-timer'), 10);
+      const h = parseInt(localStorage.getItem('lrx-hs'), 10);
+      const up = {};
+      if (Array.isArray(d) && d.length && d.every(r => this.find(r.o) && this.find(r.c))) up.deck = d;
+      if ([5,10,15,30].includes(t)) up.timer = t;
+      const gm = localStorage.getItem('lrx-mode');
+      if (gm === 'host' || gm === 'type') up.gameMode = gm;
+      if (h > 0) up.hs = h;
+      if (this.props.timerSeconds) up.timer = this.props.timerSeconds;
+      if (Object.keys(up).length) this.setState(up);
+    } catch (e) {}
+  }
+  componentDidUpdate(prevProps, prevState) {
+    if (this.props.timerSeconds && this.props.timerSeconds !== prevProps.timerSeconds) this.setState({timer:this.props.timerSeconds});
+    if (this.state.phase === 'question' && (prevState.phase !== 'question' || prevState.rIdx !== this.state.rIdx)) { if (this.inp) this.inp.focus(); }
+  }
+  componentWillUnmount() { clearInterval(this.iv); clearTimeout(this.tm); clearTimeout(this._ja); window.removeEventListener('resize', this.onRz); }
+
+  find(id) { return this.TEAMS.find(t => t.id === id); }
+  saveDeck(d) { try { localStorage.setItem('lrx-deck', JSON.stringify(d)); } catch (e) {} }
+  norm(s) { return String(s).toLowerCase().replace(/[^a-z0-9]/g, ''); }
+
+  logo(team, pal, v) {
+    const R = React.createElement, p = this.PERMS[(v || 0) % 6];
+    const a = pal[p[0]], b = pal[p[1]], c = pal[p[2]];
+    const kids = [];
+    const sw = {stroke:c, strokeWidth:3, fill:a};
+    if (team.shape === 'shield') kids.push(R('path', {key:'s', d:'M50 5 L87 18 V50 C87 72 70 87 50 95 C30 87 13 72 13 50 V18 Z', ...sw}));
+    if (team.shape === 'circle') kids.push(R('circle', {key:'s', cx:50, cy:50, r:44, ...sw}));
+    if (team.shape === 'hex') kids.push(R('polygon', {key:'s', points:'50,4 90,26 90,74 50,96 10,74 10,26', ...sw}));
+    if (team.shape === 'diamond') kids.push(R('polygon', {key:'s', points:'50,5 95,50 50,95 5,50', ...sw}));
+    if (team.shape === 'square') kids.push(R('rect', {key:'s', x:9, y:9, width:82, height:82, rx:18, ...sw}));
+    if (team.shape === 'pennant') kids.push(R('polygon', {key:'s', points:'15,7 85,7 85,60 50,93 15,60', ...sw}));
+    if (team.deco === 'stripe') kids.push(R('rect', {key:'d', x:27, y:66, width:46, height:6, rx:3, fill:c}));
+    if (team.deco === 'star') kids.push(R('polygon', {key:'d', points:'50,14 55,23 50,32 45,23', fill:c}));
+    if (team.deco === 'dots') kids.push(R('g', {key:'d', fill:c}, R('circle',{cx:38,cy:77,r:3.4}), R('circle',{cx:50,cy:77,r:3.4}), R('circle',{cx:62,cy:77,r:3.4})));
+    const fs = team.abbr.length >= 3 ? 24 : (team.abbr.length === 2 ? 32 : 40);
+    kids.push(R('text', {key:'t', x:50, y:59, textAnchor:'middle', fontFamily:"'Chakra Petch',sans-serif", fontWeight:700, fontSize:fs, letterSpacing:1, fill:b}, team.abbr));
+    return R('svg', {viewBox:'0 0 100 100', width:'100%', height:'100%', style:{display:'block', filter:'drop-shadow(0 2px 6px rgba(0,0,0,0.18))'}}, kids);
+  }
+
+  list(side) {
+    const S = this.state;
+    const lg = side === 'O' ? S.lgO : S.lgC, q = (side === 'O' ? S.qO : S.qC).trim().toLowerCase();
+    const dv = side === 'O' ? S.divO : S.divC, sel = side === 'O' ? S.oId : S.cId;
+    return this.TEAMS.filter(t => t.lg === lg && (dv === 'All' || t.div === dv) && (!q || (t.region + ' ' + t.name + ' ' + t.abbr).toLowerCase().includes(q)))
+      .map(t => ({k:t.id, nm:t.region + ' ' + t.name, el:this.logo(t, t.pal, 0), sel:t.id === sel,
+        bd:t.id === sel ? '#17150F' : '#E5E1D8', bg:t.id === sel ? '#FBF3E4' : '#FFFFFF',
+        d1:t.pal[0], d2:t.pal[1], d3:t.pal[2],
+        on:() => side === 'O' ? this.setState({oId:t.id, step:2}) : this.setState({cId:t.id, step:3})}));
+  }
+  seg(side) {
+    const cur = side === 'O' ? this.state.lgO : this.state.lgC;
+    return [['PRO','PRO'],['COL','COLLEGE']].map(([v, lb]) => ({lb, bg:cur === v ? '#17150F' : 'transparent', fg:cur === v ? '#FFFFFF' : '#6E6A61',
+      on:() => this.setState(side === 'O' ? {lgO:v, divO:'All'} : {lgC:v, divC:'All'})}));
+  }
+  chips(side) {
+    const lg = side === 'O' ? this.state.lgO : this.state.lgC, cur = side === 'O' ? this.state.divO : this.state.divC;
+    return ['All', ...this.DIVS[lg]].map(d => ({lb:d, bg:cur === d ? '#17150F' : '#F0EDE6', fg:cur === d ? '#FFFFFF' : '#57534A',
+      on:() => this.setState(side === 'O' ? {divO:d} : {divC:d})}));
+  }
+
+  addRound() {
+    const {oId, cId, perm, deck, editIdx} = this.state;
+    if (!oId || !cId) return;
+    const r = {o:oId, c:cId, v:perm}, d = [...deck];
+    if (editIdx != null && d[editIdx]) d[editIdx] = r; else d.push(r);
+    this.saveDeck(d);
+    this.setState({deck:d, editIdx:null, justAdded:true});
+    clearTimeout(this._ja);
+    this._ja = setTimeout(() => this.setState({justAdded:false}), 1000);
+  }
+  mutDeck(fn) { const d = fn([...this.state.deck]); this.saveDeck(d); this.setState({deck:d}); }
+  editRound(i) {
+    const r = this.state.deck[i], o = this.find(r.o);
+    this.setState({mode:'create', editIdx:i, oId:r.o, cId:r.c, perm:r.v, lgO:o.lg, lgC:this.find(r.c).lg, divO:'All', divC:'All', qO:'', qC:'', step:3});
+  }
+
+  startGame() {
+    if (!this.state.deck.length) { this.setState({mode:'deck'}); return; }
+    clearInterval(this.iv); clearTimeout(this.tm);
+    this.setState({mode:'play', phase:'intro', score:0, rIdx:0, results:[], newHigh:false, guess:''});
+  }
+  beginRound(i) {
+    clearInterval(this.iv);
+    this.setState({phase:'question', rIdx:i, guess:'', timeLeft:this.state.timer});
+    this.iv = setInterval(() => {
+      const t = this.state.timeLeft - 0.1;
+      if (t <= 0) this.reveal('timeout'); else this.setState({timeLeft:t});
+    }, 100);
+  }
+  reveal(k) {
+    clearInterval(this.iv);
+    const ok = k === 'correct';
+    this.setState(s => ({phase:'reveal', revealKind:k, score:s.score + (ok ? 1 : 0), results:[...s.results, ok]}));
+    this.tm = setTimeout(() => {
+      const n = this.state.rIdx + 1;
+      if (n >= this.state.deck.length) this.finish(); else this.beginRound(n);
+    }, this.props.revealMs ?? 1700);
+  }
+  finish() {
+    const {score, hs} = this.state, nh = score > hs;
+    if (nh) { try { localStorage.setItem('lrx-hs', String(score)); } catch (e) {} }
+    this.setState({phase:'results', hs:nh ? score : hs, newHigh:nh});
+  }
+  submitGuess(e) {
+    if (e && e.preventDefault) e.preventDefault();
+    if (this.state.phase !== 'question') return;
+    const g = this.norm(this.state.guess);
+    if (!g) return;
+    const t = this.find(this.state.deck[this.state.rIdx].o);
+    const acc = this.props.strictAnswers ? [t.region + t.name] : [t.region + t.name, t.region, t.name, t.abbr];
+    this.reveal(acc.map(x => this.norm(x)).includes(g) ? 'correct' : 'wrong');
+  }
+  quit() { clearInterval(this.iv); clearTimeout(this.tm); this.setState({mode:'deck', phase:'intro'}); }
+
+  renderVals() {
+    const S = this.state, deck = S.deck;
+    const o = S.oId && this.find(S.oId), c = S.cId && this.find(S.cId);
+    const v = {
+      isChrome:S.mode !== 'play', isCreate:S.mode === 'create', isDeck:S.mode === 'deck', isPlay:S.mode === 'play',
+      isCreateLand:S.mode === 'create' && !S.isPortrait, isCreatePort:S.mode === 'create' && S.isPortrait,
+      isStep1:S.step === 1, isStep2:S.step === 2, isStep3:S.step === 3,
+      stepItems:[[1,'1 · Original'],[2,'2 · Colors'],[3,'3 · Remix']].map(([n, lb]) => ({lb, bg:S.step === n ? '#17150F' : 'transparent', fg:S.step === n ? '#FFFFFF' : '#57534A', on:() => this.setState({step:n})})),
+      deckDir:S.isPortrait ? 'column' : 'row', railW:S.isPortrait ? '100%' : '300px',
+      railDir:S.isPortrait ? 'row' : 'column', cardFlex:S.isPortrait ? '1 1 0' : '0 0 auto',
+      deckCount:deck.length, deckEmpty:deck.length === 0,
+      goCreate:() => this.setState({mode:'create'}), goDeck:() => this.setState({mode:'deck'}),
+      onPlay:() => this.startGame(),
+      tabCBg:S.mode === 'create' ? '#17150F' : 'transparent', tabCFg:S.mode === 'create' ? '#FFFFFF' : '#57534A',
+      tabDBg:S.mode === 'deck' ? '#17150F' : 'transparent', tabDFg:S.mode === 'deck' ? '#FFFFFF' : '#57534A',
+      lgOItems:this.seg('O'), lgCItems:this.seg('C'), chipsO:this.chips('O'), chipsC:this.chips('C'),
+      qO:S.qO, qC:S.qC, setQO:e => this.setState({qO:e.target.value}), setQC:e => this.setState({qC:e.target.value}),
+      listO:this.list('O'), listC:this.list('C'),
+      hasOrig:!!o, noOrig:!o, hasColor:!!c,
+      origNm:o ? o.region + ' ' + o.name : 'Pick a team', origNmCol:o ? '#17150F' : '#B7B0A3',
+      colorNm:c ? c.region + ' ' + c.name : (o ? 'Now pick a color team →' : 'Pick a team'), colorNmCol:c ? '#17150F' : '#B7B0A3',
+      cSw:c ? c.pal.map(h => ({h})) : [],
+      remixEl:o ? this.logo(o, c ? c.pal : o.pal, c ? S.perm : 0) : null,
+      shuffle:() => { if (c) this.setState({perm:(S.perm + 1) % 6}); },
+      addRound:() => this.addRound(),
+      addLabel:S.justAdded ? 'ADDED ✓' : (S.editIdx != null ? 'SAVE ROUND' : '+ ADD ROUND'),
+      addBg:S.justAdded ? '#3BA55C' : (o && c ? '#D8442B' : '#D8D3C8'),
+      deckCards:deck.map((r, i) => {
+        const ot = this.find(r.o), ct = this.find(r.c);
+        return {k:i + '-' + r.o, n:i + 1, nm:ot.region + ' ' + ot.name, sub:'in ' + ct.name + ' colors', el:this.logo(ot, ct.pal, r.v),
+          upOp:i === 0 ? 0.35 : 1, dnOp:i === deck.length - 1 ? 0.35 : 1,
+          up:() => { if (i > 0) this.mutDeck(d => { [d[i-1], d[i]] = [d[i], d[i-1]]; return d; }); },
+          down:() => { if (i < deck.length - 1) this.mutDeck(d => { [d[i+1], d[i]] = [d[i], d[i+1]]; return d; }); },
+          edit:() => this.editRound(i), dup:() => this.mutDeck(d => { d.splice(i + 1, 0, {...d[i]}); return d; }),
+          del:() => this.mutDeck(d => { d.splice(i, 1); return d; })};
+      }),
+      timerItems:[5,10,15,30].map(t => ({lb:t + 's', bg:S.timer === t ? '#17150F' : '#F0EDE6', fg:S.timer === t ? '#FFFFFF' : '#57534A',
+        on:() => { this.setState({timer:t}); try { localStorage.setItem('lrx-timer', String(t)); } catch (e) {} }})),
+      startBg:deck.length ? '#D8442B' : '#D8D3C8', startGame:() => this.startGame(),
+      modeItems:[['type','Type the Team'],['host','Host Mode']].map(([m, lb]) => ({lb, bg:S.gameMode === m ? '#17150F' : '#F0EDE6', fg:S.gameMode === m ? '#FFFFFF' : '#57534A',
+        on:() => { this.setState({gameMode:m}); try { localStorage.setItem('lrx-mode', m); } catch (e) {} }})),
+      modeHint:S.gameMode === 'host' ? 'Everyone shouts the answer — the host taps Correct or Incorrect. No typing.' : 'One player types the team name each round.',
+      isTypeMode:S.gameMode === 'type', isHostMode:S.gameMode === 'host',
+      hostCorrect:() => { if (S.phase === 'question') this.reveal('correct'); },
+      hostWrong:() => { if (S.phase === 'question') this.reveal('wrong'); },
+      hsText:S.hs > 0 ? S.hs + ' correct' : '—',
+      isIntro:S.phase === 'intro', isQuestion:S.phase === 'question', isReveal:S.phase === 'reveal', isResults:S.phase === 'results',
+      introMeta:deck.length + ' ROUND' + (deck.length === 1 ? '' : 'S') + ' · ' + S.timer + ' SECONDS EACH',
+      beginFirst:() => this.beginRound(0), quit:() => this.quit(),
+      roundNo:S.rIdx + 1, roundTotal:deck.length, score:S.score,
+      tNum:Math.ceil(S.timeLeft), tCol:S.timeLeft <= 5 ? '#FF6B4A' : '#F5F2EC',
+      tW:Math.max(0, S.timeLeft / S.timer * 100) + '%',
+      guess:S.guess, setGuess:e => this.setState({guess:e.target.value}),
+      setInp:el => { this.inp = el; }, submitGuess:e => this.submitGuess(e),
+      playAgain:() => this.startGame(),
+      finalScore:S.score + ' / ' + deck.length, newHigh:S.newHigh,
+      recap:S.results.map((ok, i) => {
+        const r = deck[i]; if (!r) return {k:i, mk:'', col:'#8F887B', nm:'', el:null};
+        const ot = this.find(r.o);
+        return {k:i, mk:ok ? '✓' : '✕', col:ok ? '#4CBF6B' : '#FF6B4A', nm:ot.region + ' ' + ot.name, el:this.logo(ot, this.find(r.c).pal, r.v)};
+      })
+    };
+    const r = deck[S.rIdx];
+    if (S.mode === 'play' && r) {
+      const ot = this.find(r.o), ct = this.find(r.c);
+      v.playLogo = this.logo(ot, ct.pal, r.v);
+      const k = S.revealKind;
+      v.rvIcon = k === 'correct' ? '✓' : (k === 'wrong' ? '✕' : '!');
+      v.rvBg = k === 'correct' ? '#4CBF6B' : (k === 'wrong' ? '#FF6B4A' : '#F2B72E');
+      v.rvCol = v.rvBg;
+      v.rvTitle = k === 'correct' ? 'CORRECT' : (k === 'wrong' ? 'NOT QUITE' : "TIME'S UP");
+      v.rvLogo = this.logo(ot, ot.pal, 0);
+      v.rvAnswer = ot.region + ' ' + ot.name;
+      v.rvNote = 'wearing ' + ct.region + ' ' + ct.name + ' colors';
+      v.plusOne = k === 'correct';
+    }
+    return v;
+  }
+}
+</script>
+</body>
+</html>

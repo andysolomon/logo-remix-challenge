@@ -1,0 +1,50 @@
+{
+  "leagues": {
+    "PRO": { "label": "PRO", "conferences": ["Atlantic", "Pacific"] },
+    "COL": { "label": "COLLEGE", "conferences": ["Heartland", "Coastal"] }
+  },
+  "palette_order": ["primary", "secondary", "light"],
+  "permutations": [[0,1,2],[1,0,2],[2,1,0],[0,2,1],[1,2,0],[2,0,1]],
+  "seed_deck": [
+    { "o": "COL-PG", "c": "PRO-CF", "v": 0 },
+    { "o": "COL-CD", "c": "PRO-GC", "v": 0 },
+    { "o": "COL-HT", "c": "PRO-BK", "v": 1 },
+    { "o": "PRO-VV", "c": "COL-GL", "v": 0 },
+    { "o": "PRO-RR", "c": "PRO-NG", "v": 2 }
+  ],
+  "localStorage_keys": { "deck": "lrx-deck", "timer": "lrx-timer", "highScore": "lrx-hs", "gameMode": "lrx-mode" },
+  "teams": [
+    { "id": "PRO-CF", "league": "PRO", "conference": "Atlantic", "region": "Cedar Falls", "name": "Lumberjacks", "abbr": "CF", "palette": ["#1D4A2C", "#F2B72E", "#F6F1E3"], "shape": "shield", "deco": "stripe" },
+    { "id": "PRO-BK", "league": "PRO", "conference": "Atlantic", "region": "Bayou City", "name": "Kings", "abbr": "BK", "palette": ["#141210", "#C9A34F", "#F5F0E4"], "shape": "circle", "deco": "star" },
+    { "id": "PRO-SF", "league": "PRO", "conference": "Atlantic", "region": "Steelport", "name": "Forge", "abbr": "SF", "palette": ["#16161A", "#F5C51D", "#B7BCC4"], "shape": "hex", "deco": "none" },
+    { "id": "PRO-HV", "league": "PRO", "conference": "Atlantic", "region": "Harborview", "name": "Sharks", "abbr": "HV", "palette": ["#0A5B6E", "#8FD8E8", "#F26D21"], "shape": "pennant", "deco": "stripe" },
+    { "id": "PRO-NG", "league": "PRO", "conference": "Atlantic", "region": "Northgate", "name": "Norsemen", "abbr": "NG", "palette": ["#3E2A6E", "#F0B32C", "#F5F2EC"], "shape": "diamond", "deco": "none" },
+    { "id": "PRO-RB", "league": "PRO", "conference": "Atlantic", "region": "Rustbelt", "name": "Bulldogs", "abbr": "RB", "palette": ["#4A2C17", "#E8631C", "#F5F0E4"], "shape": "square", "deco": "dots" },
+    { "id": "PRO-CS", "league": "PRO", "conference": "Atlantic", "region": "Capital", "name": "Sentinels", "abbr": "CS", "palette": ["#6E1E2C", "#D9B23A", "#F5F0E4"], "shape": "shield", "deco": "star" },
+    { "id": "PRO-LH", "league": "PRO", "conference": "Atlantic", "region": "Liberty", "name": "Hawks", "abbr": "LH", "palette": ["#1E2B5C", "#C43A2F", "#F5F0E4"], "shape": "circle", "deco": "stripe" },
+    { "id": "PRO-GC", "league": "PRO", "conference": "Pacific", "region": "Gold Coast", "name": "Miners", "abbr": "GC", "palette": ["#B4231F", "#D9A441", "#F5EDD8"], "shape": "hex", "deco": "star" },
+    { "id": "PRO-BW", "league": "PRO", "conference": "Pacific", "region": "Blackwater", "name": "Marauders", "abbr": "BW", "palette": ["#101014", "#A6ACB5", "#E8EAED"], "shape": "shield", "deco": "none" },
+    { "id": "PRO-LS", "league": "PRO", "conference": "Pacific", "region": "Lone Star", "name": "Wranglers", "abbr": "LS", "palette": ["#1C2E52", "#9BA3AF", "#FFFFFF"], "shape": "diamond", "deco": "star" },
+    { "id": "PRO-RR", "league": "PRO", "conference": "Pacific", "region": "Redrock", "name": "Coyotes", "abbr": "RR", "palette": ["#8E2B25", "#D9B98A", "#37AFA8"], "shape": "pennant", "deco": "dots" },
+    { "id": "PRO-CT", "league": "PRO", "conference": "Pacific", "region": "Cascade", "name": "Thunder", "abbr": "CT", "palette": ["#20304F", "#8CD421", "#A5ACB8"], "shape": "square", "deco": "stripe" },
+    { "id": "PRO-SB", "league": "PRO", "conference": "Pacific", "region": "Sunbelt", "name": "Scorpions", "abbr": "SB", "palette": ["#E0641B", "#191410", "#F2E6D8"], "shape": "circle", "deco": "none" },
+    { "id": "PRO-PB", "league": "PRO", "conference": "Pacific", "region": "Pacific", "name": "Breakers", "abbr": "PB", "palette": ["#0E8A93", "#F58A3C", "#F2F7F6"], "shape": "shield", "deco": "dots" },
+    { "id": "PRO-VV", "league": "PRO", "conference": "Pacific", "region": "Valley", "name": "Vipers", "abbr": "VV", "palette": ["#7CB518", "#141414", "#F2F5E9"], "shape": "hex", "deco": "stripe" },
+    { "id": "COL-PS", "league": "COL", "conference": "Heartland", "region": "Prairie State", "name": "Hammers", "abbr": "PS", "palette": ["#141210", "#C9A227", "#EFE9DA"], "shape": "square", "deco": "star" },
+    { "id": "COL-CG", "league": "COL", "conference": "Heartland", "region": "Capitol State", "name": "Generals", "abbr": "CG", "palette": ["#B0221E", "#9EA3A8", "#FFFFFF"], "shape": "shield", "deco": "stripe" },
+    { "id": "COL-GL", "league": "COL", "conference": "Heartland", "region": "Great Lakes", "name": "Huskies", "abbr": "GL", "palette": ["#1B2F6B", "#F5C518", "#FFFFFF"], "shape": "circle", "deco": "dots" },
+    { "id": "COL-MA", "league": "COL", "conference": "Heartland", "region": "Midland A&M", "name": "Bison", "abbr": "MA", "palette": ["#5C1F2B", "#E8E2D6", "#8C8377"], "shape": "hex", "deco": "none" },
+    { "id": "COL-HT", "league": "COL", "conference": "Heartland", "region": "Heartland Tech", "name": "Rockets", "abbr": "HT", "palette": ["#E8681C", "#16294A", "#F5F0E4"], "shape": "pennant", "deco": "star" },
+    { "id": "COL-TR", "league": "COL", "conference": "Heartland", "region": "Twin Rivers", "name": "Owls", "abbr": "TR", "palette": ["#4B2E83", "#C7C9CC", "#FFFFFF"], "shape": "diamond", "deco": "stripe" },
+    { "id": "COL-DP", "league": "COL", "conference": "Heartland", "region": "Dakota Plains", "name": "Blizzard", "abbr": "DP", "palette": ["#1E6E8C", "#DCE9EF", "#17150F"], "shape": "square", "deco": "none" },
+    { "id": "COL-OZ", "league": "COL", "conference": "Heartland", "region": "Ozark", "name": "Bobcats", "abbr": "OZ", "palette": ["#8A1E3C", "#F5EFE3", "#C79A55"], "shape": "circle", "deco": "star" },
+    { "id": "COL-PG", "league": "COL", "conference": "Coastal", "region": "Pacifica", "name": "Gladiators", "abbr": "PG", "palette": ["#A5182E", "#E8B93B", "#F5F0E4"], "shape": "shield", "deco": "stripe" },
+    { "id": "COL-CD", "league": "COL", "conference": "Coastal", "region": "Cascadia", "name": "Mallards", "abbr": "CD", "palette": ["#12523A", "#E4F53A", "#101613"], "shape": "circle", "deco": "stripe" },
+    { "id": "COL-BT", "league": "COL", "conference": "Coastal", "region": "Bayshore Tech", "name": "Stingers", "abbr": "BT", "palette": ["#0F2340", "#D4A93F", "#F5F0E4"], "shape": "hex", "deco": "dots" },
+    { "id": "COL-HR", "league": "COL", "conference": "Coastal", "region": "Highland Tech", "name": "Ramblers", "abbr": "HR", "palette": ["#611E3C", "#D96C2B", "#F2ECE2"], "shape": "pennant", "deco": "none" },
+    { "id": "COL-GP", "league": "COL", "conference": "Coastal", "region": "Gulf Coast", "name": "Pelicans", "abbr": "GP", "palette": ["#0E7C86", "#F2A54A", "#F7F3EA"], "shape": "square", "deco": "stripe" },
+    { "id": "COL-SP", "league": "COL", "conference": "Coastal", "region": "Sierra State", "name": "Prospectors", "abbr": "SP", "palette": ["#2455A4", "#F2C744", "#FFFFFF"], "shape": "diamond", "deco": "dots" },
+    { "id": "COL-AA", "league": "COL", "conference": "Coastal", "region": "Atlantic A&M", "name": "Mariners", "abbr": "AA", "palette": ["#13294B", "#7FB2E5", "#F2F5F8"], "shape": "shield", "deco": "star" },
+    { "id": "COL-PM", "league": "COL", "conference": "Coastal", "region": "Palmetto", "name": "Panthers", "abbr": "PM", "palette": ["#E4611D", "#3F2A6E", "#F5EFE3"], "shape": "hex", "deco": "star" }
+  ]
+}

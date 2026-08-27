@@ -1,0 +1,9 @@
+node_modules
+dist
+.vercel
+*.local
+.DS_Store
+
+# Local design handoff artifacts
+.thumbnail
+Fictional League Logo Guessing Game.zip

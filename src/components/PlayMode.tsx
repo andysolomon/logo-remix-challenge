@@ -122,6 +122,14 @@ export function PlayMode({ deck, timer, gameMode, guessTarget, voice, highScore,
     reveal(isCorrectGuess(guess, t) ? 'correct' : 'wrong')
   }
 
+  // The intro promises what the deck actually asks, which may be one mode or both.
+  const targets = new Set(deck.map((r) => roundTarget(r, guessTarget)))
+  const introSub = targets.size > 1
+    ? 'Some rounds want the logo’s team, some want whose colors it wears. Always name a team.'
+    : targets.has('colors')
+      ? 'Ignore the logo. Name the team whose colors it wears.'
+      : 'Ignore the colors. Name the team behind the logo.'
+
   const round = deck[rIdx]
   const target: GuessTarget = round ? roundTarget(round, guessTarget) : guessTarget
   const ot = round ? findTeam(round.o)! : null
@@ -139,7 +147,7 @@ export function PlayMode({ deck, timer, gameMode, guessTarget, voice, highScore,
           <div className="intro-meta">
             {deck.length} ROUND{deck.length === 1 ? '' : 'S'} · {timer} SECONDS EACH
           </div>
-          <div className="intro-sub">{guessTarget === 'colors' ? 'Ignore the logo. Recognize the colors.' : 'Ignore the colors. Recognize the team.'}</div>
+          <div className="intro-sub">{introSub}</div>
           <button className="btn-begin" onClick={() => beginRound(0)}>
             START
           </button>
@@ -173,7 +181,7 @@ export function PlayMode({ deck, timer, gameMode, guessTarget, voice, highScore,
               <Logo team={ot} palette={ct.palette} perm={round.v} />
             </div>
           </div>
-          <div className="prompt">{target === 'colors' ? 'WHOSE COLORS ARE THESE?' : 'WHOSE LOGO IS THIS?'}</div>
+          <div className="prompt">{target === 'colors' ? "WHICH TEAM'S COLORS?" : 'WHOSE LOGO IS THIS?'}</div>
           {gameMode === 'type' ? (
             <form className="guess-form" onSubmit={submit}>
               <input
@@ -181,7 +189,7 @@ export function PlayMode({ deck, timer, gameMode, guessTarget, voice, highScore,
                 className="guess-input"
                 value={guess}
                 onChange={(e) => setGuess(e.target.value)}
-                placeholder={target === 'colors' ? 'Whose colors…' : 'Type the team…'}
+                placeholder="Type the team…"
                 autoComplete="off"
                 autoCorrect="off"
                 autoCapitalize="off"
@@ -195,7 +203,7 @@ export function PlayMode({ deck, timer, gameMode, guessTarget, voice, highScore,
             </form>
           ) : (
             <div className="host">
-              <div className="host-hint">Shout it out — the host taps the verdict</div>
+              <div className="host-hint">Shout the team — the host taps the verdict</div>
               <div className="host-row">
                 <button className="btn-correct" onClick={() => reveal('correct')}>
                   ✓ CORRECT

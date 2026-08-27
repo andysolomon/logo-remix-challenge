@@ -170,8 +170,11 @@ input::placeholder { color: var(--faint); }
 .round-logo { width: 96px; height: 96px; margin: 6px 0; flex: none; }
 .round-name { width: 100%; font: 700 15px/1.25 var(--ui); text-align: center; overflow-wrap: anywhere; }
 .round-sub { width: 100%; font: 500 13px/1.3 var(--ui); color: var(--muted); text-align: center; overflow-wrap: anywhere; }
-.round-target { width: 100%; display: grid; grid-template-columns: 1fr 1fr; gap: 4px; margin-top: 8px; padding: 3px; background: var(--chip-bg); border-radius: 10px; }
-.seg { height: 32px; border: none; border-radius: 8px; background: none; color: var(--chip-fg); font: 600 12px var(--ui); cursor: pointer; }
+.round-target { width: 100%; display: flex; align-items: center; gap: 8px; margin-top: 10px; }
+.round-target-lb { flex: none; font: 600 10px var(--ui); letter-spacing: 1.5px; color: var(--faint); }
+.seg-group { flex: 1; min-width: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 3px; padding: 3px; background: var(--chip-bg); border-radius: 10px; }
+.seg { min-width: 0; height: 30px; display: flex; align-items: center; justify-content: center; border: none; border-radius: 7px; background: none; color: var(--chip-fg); font: 600 12px var(--ui); line-height: 1; white-space: nowrap; cursor: pointer; transition: background 0.15s, color 0.15s; }
+.seg:hover:not(.active) { background: var(--surface); }
 .seg.active { background: var(--ink); color: #FFFFFF; }
 .round-ctl { width: 100%; display: grid; grid-template-columns: 1fr 1fr 1.6fr 1fr 1fr; gap: 6px; margin-top: 10px; }
 .icon-btn { min-width: 0; height: 44px; border: 1.5px solid var(--line); background: var(--surface); border-radius: 11px; font-size: 15px; cursor: pointer; color: var(--ink); padding: 0; display: flex; align-items: center; justify-content: center; }

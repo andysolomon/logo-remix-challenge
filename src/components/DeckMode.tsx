@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react'
 import { findTeam, fullName, guessPrompt, roundHints, roundTarget, speak, voiceSupported, TIMER_OPTIONS, HIGH_SCORE_LIMIT, type GameMode, type HighScore, type GuessTarget, type Round, type TimerSeconds } from '../lib/teams'
 import { Logo } from './Logo'
 
@@ -20,7 +21,27 @@ interface Props {
 }
 
 export function DeckMode({ deck, portrait, timer, gameMode, guessTarget, voice, highScores, onDeck, onEdit, onTimer, onGameMode, onGuessTarget, onVoice, onStart, onCreate }: Props) {
+  const [hsOpen, setHsOpen] = useState(false)
+  const [confirmClear, setConfirmClear] = useState(false)
+  useEffect(() => {
+    if (!confirmClear) return
+    const t = setTimeout(() => setConfirmClear(false), 4000)
+    return () => clearTimeout(t)
+  }, [confirmClear])
   const mut = (fn: (d: Round[]) => Round[]) => onDeck(fn([...deck]))
+  const shuffle = () =>
+    mut((d) => {
+      for (let i = d.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1))
+        ;[d[i], d[j]] = [d[j], d[i]]
+      }
+      return d
+    })
+  const clear = () => {
+    if (!confirmClear) return setConfirmClear(true)
+    setConfirmClear(false)
+    onDeck([])
+  }
   const swap = (d: Round[], a: number, b: number) => {
     ;[d[a], d[b]] = [d[b], d[a]]
     return d
@@ -37,6 +58,15 @@ export function DeckMode({ deck, portrait, timer, gameMode, guessTarget, voice, 
             </button>
           </div>
         ) : (
+          <>
+            <div className="deck-toolbar">
+              <button className="tool-btn" onClick={shuffle} disabled={deck.length < 2} title="Randomize the round order">
+                <span aria-hidden="true">🔀</span> Shuffle
+              </button>
+              <button className={`tool-btn${confirmClear ? ' confirm' : ' danger'}`} onClick={clear} onBlur={() => setConfirmClear(false)} title="Remove every round from the deck">
+                {confirmClear ? 'Tap again to clear all' : <><span aria-hidden="true">🗑</span> Clear deck</>}
+              </button>
+            </div>
           <div className="card-grid">
             {deck.map((r, i) => {
               const ot = findTeam(r.o)!
@@ -106,6 +136,7 @@ export function DeckMode({ deck, portrait, timer, gameMode, guessTarget, voice, 
               )
             })}
           </div>
+          </>
         )}
       </div>
       <aside className="rail">
@@ -177,23 +208,56 @@ export function DeckMode({ deck, portrait, timer, gameMode, guessTarget, voice, 
             START GAME
           </button>
         </div>
-        <div className="rail-card hs">
-          <div className="rail-label">HIGH SCORES</div>
-          {highScores.length ? (
-            <ol className="hs-board">
-              {highScores.map((h, i) => (
-                <li key={`${h.date}-${i}`} className="hs-row">
-                  <span className="hs-rank">{String(i + 1).padStart(2, '0')}</span>
-                  <span className="hs-initials">{h.initials}</span>
-                  <span className="hs-score">{h.score}</span>
-                </li>
-              ))}
-            </ol>
-          ) : (
-            <div className="hs-empty">No scores yet — top {HIGH_SCORE_LIMIT} runs go here.</div>
-          )}
-        </div>
+        <button className="rail-card hs-btn" onClick={() => setHsOpen(true)} aria-haspopup="dialog">
+          <span className="rail-label">HIGH SCORES</span>
+          <span className="hs-top">
+            {highScores.length ? (
+              <>
+                <span className="hs-initials">{highScores[0].initials}</span>
+                <span className="hs-score">{highScores[0].score}</span>
+              </>
+            ) : (
+              <span className="hs-empty">No scores yet</span>
+            )}
+          </span>
+          <span className="hs-view">View board ▸</span>
+        </button>
       </aside>
+      {hsOpen && <HighScoresModal highScores={highScores} onClose={() => setHsOpen(false)} />}
+    </div>
+  )
+}
+
+function HighScoresModal({ highScores, onClose }: { highScores: HighScore[]; onClose: () => void }) {
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => e.key === 'Escape' && onClose()
+    window.addEventListener('keydown', onKey)
+    return () => window.removeEventListener('keydown', onKey)
+  }, [onClose])
+  return (
+    <div className="modal-backdrop" onClick={onClose}>
+      <div className="modal" role="dialog" aria-modal="true" aria-labelledby="hs-title" onClick={(e) => e.stopPropagation()}>
+        <div className="modal-head">
+          <div id="hs-title" className="rail-title">HIGH SCORES</div>
+          <button className="close-btn" aria-label="Close high scores" onClick={onClose}>
+            <span aria-hidden="true">✕</span>
+            <span>Close</span>
+          </button>
+        </div>
+        {highScores.length ? (
+          <ol className="hs-board">
+            {highScores.map((h, i) => (
+              <li key={`${h.date}-${i}`} className="hs-row">
+                <span className="hs-rank">{String(i + 1).padStart(2, '0')}</span>
+                <span className="hs-initials">{h.initials}</span>
+                <span className="hs-score">{h.score}</span>
+              </li>
+            ))}
+          </ol>
+        ) : (
+          <div className="hs-empty">No scores yet — top {HIGH_SCORE_LIMIT} runs go here.</div>
+        )}
+      </div>
     </div>
   )
 }

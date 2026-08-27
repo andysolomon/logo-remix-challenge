@@ -1,4 +1,4 @@
-import { findTeam, fullName, guessPrompt, roundTarget, speak, voiceSupported, TIMER_OPTIONS, type GameMode, type GuessTarget, type Round, type TimerSeconds } from '../lib/teams'
+import { findTeam, fullName, guessPrompt, roundTarget, speak, voiceSupported, TIMER_OPTIONS, HIGH_SCORE_LIMIT, type GameMode, type HighScore, type GuessTarget, type Round, type TimerSeconds } from '../lib/teams'
 import { Logo } from './Logo'
 
 interface Props {
@@ -8,7 +8,7 @@ interface Props {
   gameMode: GameMode
   guessTarget: GuessTarget
   voice: boolean
-  highScore: number
+  highScores: HighScore[]
   onDeck: (d: Round[]) => void
   onEdit: (i: number) => void
   onTimer: (t: TimerSeconds) => void
@@ -19,7 +19,7 @@ interface Props {
   onCreate: () => void
 }
 
-export function DeckMode({ deck, portrait, timer, gameMode, guessTarget, voice, highScore, onDeck, onEdit, onTimer, onGameMode, onGuessTarget, onVoice, onStart, onCreate }: Props) {
+export function DeckMode({ deck, portrait, timer, gameMode, guessTarget, voice, highScores, onDeck, onEdit, onTimer, onGameMode, onGuessTarget, onVoice, onStart, onCreate }: Props) {
   const mut = (fn: (d: Round[]) => Round[]) => onDeck(fn([...deck]))
   const swap = (d: Round[], a: number, b: number) => {
     ;[d[a], d[b]] = [d[b], d[a]]
@@ -167,8 +167,20 @@ export function DeckMode({ deck, portrait, timer, gameMode, guessTarget, voice, 
           </button>
         </div>
         <div className="rail-card hs">
-          <div className="rail-label">HIGH SCORE</div>
-          <div className="hs-value">{highScore > 0 ? `${highScore} correct` : '—'}</div>
+          <div className="rail-label">HIGH SCORES</div>
+          {highScores.length ? (
+            <ol className="hs-board">
+              {highScores.map((h, i) => (
+                <li key={`${h.date}-${i}`} className="hs-row">
+                  <span className="hs-rank">{String(i + 1).padStart(2, '0')}</span>
+                  <span className="hs-initials">{h.initials}</span>
+                  <span className="hs-score">{h.score}</span>
+                </li>
+              ))}
+            </ol>
+          ) : (
+            <div className="hs-empty">No scores yet — top {HIGH_SCORE_LIMIT} runs go here.</div>
+          )}
         </div>
       </aside>
     </div>

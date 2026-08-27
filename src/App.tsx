@@ -10,15 +10,16 @@ import {
   loadGameMode,
   loadGuessTarget,
   loadVoice,
-  loadHighScore,
+  loadHighScores,
   loadTimer,
   saveDeck,
   saveGameMode,
   saveGuessTarget,
   saveVoice,
-  saveHighScore,
+  saveHighScores,
   saveTimer,
   type GameMode,
+  type HighScore,
   type GuessTarget,
   type Round,
   type TimerSeconds,
@@ -35,7 +36,7 @@ export default function App() {
   const [gameMode, setGameModeState] = useState<GameMode>(loadGameMode)
   const [guessTarget, setGuessTargetState] = useState<GuessTarget>(loadGuessTarget)
   const [voice, setVoiceState] = useState<boolean>(loadVoice)
-  const [highScore, setHighScoreState] = useState<number>(loadHighScore)
+  const [highScores, setHighScoresState] = useState<HighScore[]>(loadHighScores)
   const [create, setCreate] = useState<CreateState>(initialCreateState)
   const [settingsOpen, setSettingsOpen] = useState(false)
 
@@ -59,9 +60,9 @@ export default function App() {
     saveVoice(on)
     setVoiceState(on)
   }
-  const setHighScore = useCallback((h: number) => {
-    saveHighScore(h)
-    setHighScoreState(h)
+  const setHighScores = useCallback((list: HighScore[]) => {
+    saveHighScores(list)
+    setHighScoresState(list)
   }, [])
 
   const addRound = (round: Round, editIdx: number | null) => {
@@ -93,7 +94,7 @@ export default function App() {
   if (mode === 'play') {
     return (
       <div className="app dark">
-        <PlayMode deck={deck} timer={timer} gameMode={gameMode} guessTarget={guessTarget} voice={voice} highScore={highScore} onHighScore={setHighScore} onQuit={() => setMode('deck')} />
+        <PlayMode deck={deck} timer={timer} gameMode={gameMode} guessTarget={guessTarget} voice={voice} highScores={highScores} onHighScores={setHighScores} onQuit={() => setMode('deck')} />
       </div>
     )
   }
@@ -114,7 +115,7 @@ export default function App() {
           gameMode={gameMode}
           guessTarget={guessTarget}
           voice={voice}
-          highScore={highScore}
+          highScores={highScores}
           onDeck={setDeck}
           onEdit={editRound}
           onTimer={setTimer}

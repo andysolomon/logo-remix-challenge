@@ -24,8 +24,8 @@ export function Header({ mode, deckCount, onCreate, onDeck, onPlay, onSettings }
       <button className="settings-btn" onClick={onSettings} aria-label="Settings">
         ⚙
       </button>
-      <button className="play-btn" onClick={onPlay}>
-        PLAY ▶
+      <button className="play-btn" onClick={onPlay} aria-label="Play">
+        <span className="play-txt">PLAY </span>▶
       </button>
     </header>
   )

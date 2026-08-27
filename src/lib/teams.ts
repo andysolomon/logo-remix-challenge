@@ -20,9 +20,13 @@ export interface Round {
   o: string
   c: string
   v: number
+  /** Per-round guess target; falls back to the deck default when unset. */
+  g?: GuessTarget
 }
 
 export type GameMode = 'type' | 'host'
+/** What the player is asked to identify: the team behind the logo, or the team whose colors it wears. */
+export type GuessTarget = 'team' | 'colors'
 export const TIMER_OPTIONS = [5, 10, 15, 30] as const
 export type TimerSeconds = number
 export const TIMER_MIN = 3
@@ -77,7 +81,7 @@ const safeSet = (k: string, v: string) => {
 export function loadDeck(): Round[] {
   try {
     const d = JSON.parse(safeGet(LS.deck) ?? 'null')
-    if (Array.isArray(d) && d.length && d.every((r) => findTeam(r.o) && findTeam(r.c) && typeof r.v === 'number')) return d
+    if (Array.isArray(d) && d.length && d.every((r) => findTeam(r.o) && findTeam(r.c) && typeof r.v === 'number' && (r.g === undefined || r.g === 'team' || r.g === 'colors'))) return d
   } catch {
     /* ignore */
   }
@@ -102,3 +106,26 @@ export function loadGameMode(): GameMode {
   return m === 'host' ? 'host' : 'type'
 }
 export const saveGameMode = (m: GameMode) => safeSet(LS.gameMode, m)
+export function loadGuessTarget(): GuessTarget {
+  return safeGet(LS.guessTarget) === 'colors' ? 'colors' : 'team'
+}
+export const saveGuessTarget = (t: GuessTarget) => safeSet(LS.guessTarget, t)
+export const loadVoice = (): boolean => safeGet(LS.voice) === '1'
+export const saveVoice = (on: boolean) => safeSet(LS.voice, on ? '1' : '0')
+
+export const voiceSupported = () => typeof window !== 'undefined' && 'speechSynthesis' in window
+/** Announce a line via the browser's built-in voice; silently no-ops where unsupported. */
+export function speak(text: string) {
+  if (!voiceSupported()) return
+  try {
+    window.speechSynthesis.cancel()
+    const u = new SpeechSynthesisUtterance(text)
+    u.rate = 1.05
+    u.pitch = 1.1
+    window.speechSynthesis.speak(u)
+  } catch {
+    /* ignore */
+  }
+}
+export const roundTarget = (r: Round, fallback: GuessTarget): GuessTarget => r.g ?? fallback
+export const guessPrompt = (t: GuessTarget) => (t === 'colors' ? 'Guess the Colors!' : 'Guess the Logo!')

@@ -7,3 +7,6 @@ dist
 # Local design handoff artifacts
 .thumbnail
 Fictional League Logo Guessing Game.zip
+
+# Python bytecode
+__pycache__/

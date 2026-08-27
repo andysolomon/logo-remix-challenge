@@ -8,13 +8,18 @@ import {
   findTeam,
   loadDeck,
   loadGameMode,
+  loadGuessTarget,
+  loadVoice,
   loadHighScore,
   loadTimer,
   saveDeck,
   saveGameMode,
+  saveGuessTarget,
+  saveVoice,
   saveHighScore,
   saveTimer,
   type GameMode,
+  type GuessTarget,
   type Round,
   type TimerSeconds,
 } from './lib/teams'
@@ -28,6 +33,8 @@ export default function App() {
   const [deck, setDeckState] = useState<Round[]>(loadDeck)
   const [timer, setTimerState] = useState<TimerSeconds>(loadTimer)
   const [gameMode, setGameModeState] = useState<GameMode>(loadGameMode)
+  const [guessTarget, setGuessTargetState] = useState<GuessTarget>(loadGuessTarget)
+  const [voice, setVoiceState] = useState<boolean>(loadVoice)
   const [highScore, setHighScoreState] = useState<number>(loadHighScore)
   const [create, setCreate] = useState<CreateState>(initialCreateState)
   const [settingsOpen, setSettingsOpen] = useState(false)
@@ -43,6 +50,14 @@ export default function App() {
   const setGameMode = (m: GameMode) => {
     saveGameMode(m)
     setGameModeState(m)
+  }
+  const setGuessTarget = (t: GuessTarget) => {
+    saveGuessTarget(t)
+    setGuessTargetState(t)
+  }
+  const setVoice = (on: boolean) => {
+    saveVoice(on)
+    setVoiceState(on)
   }
   const setHighScore = useCallback((h: number) => {
     saveHighScore(h)
@@ -78,7 +93,7 @@ export default function App() {
   if (mode === 'play') {
     return (
       <div className="app dark">
-        <PlayMode deck={deck} timer={timer} gameMode={gameMode} highScore={highScore} onHighScore={setHighScore} onQuit={() => setMode('deck')} />
+        <PlayMode deck={deck} timer={timer} gameMode={gameMode} guessTarget={guessTarget} voice={voice} highScore={highScore} onHighScore={setHighScore} onQuit={() => setMode('deck')} />
       </div>
     )
   }
@@ -87,7 +102,7 @@ export default function App() {
     <div className="app">
       <Header mode={mode} deckCount={deck.length} onCreate={() => setMode('create')} onDeck={() => setMode('deck')} onPlay={startGame} onSettings={() => setSettingsOpen(true)} />
       {settingsOpen && (
-        <SettingsModal timer={timer} gameMode={gameMode} onTimer={setTimer} onGameMode={setGameMode} onClose={() => setSettingsOpen(false)} />
+        <SettingsModal timer={timer} gameMode={gameMode} guessTarget={guessTarget} voice={voice} onTimer={setTimer} onGameMode={setGameMode} onGuessTarget={setGuessTarget} onVoice={setVoice} onClose={() => setSettingsOpen(false)} />
       )}
       {mode === 'create' ? (
         <CreateMode state={create} setState={setCreate} portrait={portrait} onAddRound={addRound} />
@@ -97,11 +112,15 @@ export default function App() {
           portrait={portrait}
           timer={timer}
           gameMode={gameMode}
+          guessTarget={guessTarget}
+          voice={voice}
           highScore={highScore}
           onDeck={setDeck}
           onEdit={editRound}
           onTimer={setTimer}
           onGameMode={setGameMode}
+          onGuessTarget={setGuessTarget}
+          onVoice={setVoice}
           onStart={startGame}
           onCreate={() => setMode('create')}
         />

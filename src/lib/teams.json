@@ -12,7 +12,7 @@
     { "o": "COL-P12", "c": "PRO-DEN", "v": 2 },
     { "o": "PRO-GB", "c": "PRO-CHI", "v": 0 }
   ],
-  "localStorage_keys": { "deck": "lrx-deck", "timer": "lrx-timer", "highScore": "lrx-hs", "gameMode": "lrx-mode" },
+  "localStorage_keys": { "deck": "lrx-deck", "timer": "lrx-timer", "highScore": "lrx-hs", "gameMode": "lrx-mode", "guessTarget": "lrx-target", "voice": "lrx-voice" },
   "teams": [
     {"id": "PRO-BAL", "league": "PRO", "conference": "AFC", "region": "Baltimore", "name": "Ravens", "abbr": "BAL", "palette": ["#29126F", "#000000", "#9E7C0C"], "sourcePalette": ["#24135F", "#000000", "#9A7611"], "logo": "/logos/svg/nfl/bal.svg"},
     {"id": "PRO-BUF", "league": "PRO", "conference": "AFC", "region": "Buffalo", "name": "Bills", "abbr": "BUF", "palette": ["#00338D", "#D50A0A", "#FFFFFF"], "sourcePalette": ["#00338D", "#C60C3D", "#FFFFFF"], "logo": "/logos/svg/nfl/buf.svg"},

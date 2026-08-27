@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useRef, useState, type FormEvent } from 'react'
-import { findTeam, fullName, isCorrectGuess, type GameMode, type Round, type TimerSeconds } from '../lib/teams'
+import { findTeam, fullName, guessPrompt, roundTarget, speak, isCorrectGuess, type GameMode, type GuessTarget, type Round, type TimerSeconds } from '../lib/teams'
 import { Logo } from './Logo'
 
 type Phase = 'intro' | 'question' | 'reveal' | 'results'
@@ -11,12 +11,14 @@ interface Props {
   deck: Round[]
   timer: TimerSeconds
   gameMode: GameMode
+  guessTarget: GuessTarget
+  voice: boolean
   highScore: number
   onHighScore: (n: number) => void
   onQuit: () => void
 }
 
-export function PlayMode({ deck, timer, gameMode, highScore, onHighScore, onQuit }: Props) {
+export function PlayMode({ deck, timer, gameMode, guessTarget, voice, highScore, onHighScore, onQuit }: Props) {
   const [phase, setPhase] = useState<Phase>('intro')
   const [rIdx, setRIdx] = useState(0)
   const [score, setScore] = useState(0)
@@ -47,6 +49,7 @@ export function PlayMode({ deck, timer, gameMode, highScore, onHighScore, onQuit
       setGuess('')
       setTimeLeft(timer)
       setPhase('question')
+      if (voice) speak(guessPrompt(roundTarget(deck[i], guessTarget)))
       const started = performance.now()
       iv.current = window.setInterval(() => {
         const t = timer - (performance.now() - started) / 1000
@@ -57,7 +60,7 @@ export function PlayMode({ deck, timer, gameMode, highScore, onHighScore, onQuit
         } else setTimeLeft(Math.round(t * 10) / 10)
       }, TICK_MS)
     },
-    [timer],
+    [timer, voice, guessTarget, deck],
   )
 
   const reveal = useCallback(
@@ -109,16 +112,18 @@ export function PlayMode({ deck, timer, gameMode, highScore, onHighScore, onQuit
   }
   const quit = () => {
     clearTimers()
+    if (voice) window.speechSynthesis?.cancel()
     onQuit()
   }
   const submit = (e: FormEvent) => {
     e.preventDefault()
     if (phase !== 'question' || !guess.trim()) return
-    const t = findTeam(deck[rIdx].o)!
+    const t = findTeam(target === 'colors' ? deck[rIdx].c : deck[rIdx].o)!
     reveal(isCorrectGuess(guess, t) ? 'correct' : 'wrong')
   }
 
   const round = deck[rIdx]
+  const target: GuessTarget = round ? roundTarget(round, guessTarget) : guessTarget
   const ot = round ? findTeam(round.o)! : null
   const ct = round ? findTeam(round.c)! : null
 
@@ -134,7 +139,7 @@ export function PlayMode({ deck, timer, gameMode, highScore, onHighScore, onQuit
           <div className="intro-meta">
             {deck.length} ROUND{deck.length === 1 ? '' : 'S'} · {timer} SECONDS EACH
           </div>
-          <div className="intro-sub">Ignore the colors. Recognize the team.</div>
+          <div className="intro-sub">{guessTarget === 'colors' ? 'Ignore the logo. Recognize the colors.' : 'Ignore the colors. Recognize the team.'}</div>
           <button className="btn-begin" onClick={() => beginRound(0)}>
             START
           </button>
@@ -168,7 +173,7 @@ export function PlayMode({ deck, timer, gameMode, highScore, onHighScore, onQuit
               <Logo team={ot} palette={ct.palette} perm={round.v} />
             </div>
           </div>
-          <div className="prompt">WHOSE LOGO IS THIS?</div>
+          <div className="prompt">{target === 'colors' ? 'WHOSE COLORS ARE THESE?' : 'WHOSE LOGO IS THIS?'}</div>
           {gameMode === 'type' ? (
             <form className="guess-form" onSubmit={submit}>
               <input
@@ -176,7 +181,7 @@ export function PlayMode({ deck, timer, gameMode, highScore, onHighScore, onQuit
                 className="guess-input"
                 value={guess}
                 onChange={(e) => setGuess(e.target.value)}
-                placeholder="Type the team…"
+                placeholder={target === 'colors' ? 'Whose colors…' : 'Type the team…'}
                 autoComplete="off"
                 autoCorrect="off"
                 autoCapitalize="off"
@@ -209,10 +214,12 @@ export function PlayMode({ deck, timer, gameMode, highScore, onHighScore, onQuit
           <div className={`reveal-icon k-${kind}`}>{kind === 'correct' ? '✓' : kind === 'wrong' ? '✕' : '!'}</div>
           <div className={`reveal-title k-${kind}`}>{kind === 'correct' ? 'CORRECT' : kind === 'wrong' ? 'NOT QUITE' : "TIME'S UP"}</div>
           <div className="reveal-logo">
-            <Logo team={ot} />
+            <Logo team={target === 'colors' ? ct : ot} />
           </div>
-          <div className="reveal-name">{fullName(ot)}</div>
-          <div className="reveal-note">wearing {fullName(ct)} colors</div>
+          <div className="reveal-name">{fullName(target === 'colors' ? ct : ot)}</div>
+          <div className="reveal-note">
+            {target === 'colors' ? `colors worn by the ${fullName(ot)} logo` : `wearing ${fullName(ct)} colors`}
+          </div>
           {kind === 'correct' && <div className="plus-one">+1</div>}
         </div>
       )}
@@ -236,7 +243,7 @@ export function PlayMode({ deck, timer, gameMode, highScore, onHighScore, onQuit
                   <div className="recap-thumb">
                     <Logo team={o} palette={c.palette} perm={r.v} />
                   </div>
-                  <div className="recap-name">{fullName(o)}</div>
+                  <div className="recap-name">{fullName(roundTarget(r, guessTarget) === 'colors' ? c : o)}</div>
                 </div>
               )
             })}

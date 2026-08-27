@@ -1,0 +1,423 @@
+{
+  "assets": [
+    {
+      "id": "COL-COPP",
+      "league": "COL",
+      "conference": "HBCU",
+      "region": "Coppin State",
+      "name": "Eagles",
+      "abbr": "COPP",
+      "displayName": "Coppin State Eagles",
+      "path": "/logos/svg/ncaa/copp.svg",
+      "format": "svg",
+      "colors": [
+        "#FFFFFF",
+        "#003056",
+        "#FFCD00"
+      ],
+      "brand": [
+        "#003056",
+        "#FFC915"
+      ],
+      "palette": [
+        "#003056",
+        "#FFCD00",
+        "#FFFFFF"
+      ]
+    },
+    {
+      "id": "COL-UMES",
+      "league": "COL",
+      "conference": "HBCU",
+      "region": "Maryland Eastern Shore",
+      "name": "Hawks",
+      "abbr": "UMES",
+      "displayName": "Maryland Eastern Shore Hawks",
+      "path": "/logos/svg/ncaa/umes.svg",
+      "format": "svg",
+      "colors": [
+        "#D9D9D6",
+        "#651D32",
+        "#888B8D"
+      ],
+      "brand": [
+        "#822433",
+        "#8B8D8E"
+      ],
+      "palette": [
+        "#651D32",
+        "#888B8D",
+        "#FFFFFF"
+      ]
+    },
+    {
+      "id": "COL-ALBY",
+      "league": "COL",
+      "conference": "HBCU",
+      "region": "Albany State",
+      "name": "Golden Rams",
+      "abbr": "ALBY",
+      "displayName": "Albany State Golden Rams",
+      "path": "/logos/svg/ncaa/alby.svg",
+      "format": "svg",
+      "colors": [
+        "#0039A6",
+        "#FFFFFF",
+        "#EAAB00"
+      ],
+      "brand": [
+        "#0033A0",
+        "#EAAA00"
+      ],
+      "palette": [
+        "#0039A6",
+        "#EAAB00",
+        "#FFFFFF"
+      ]
+    },
+    {
+      "id": "COL-ALLN",
+      "league": "COL",
+      "conference": "HBCU",
+      "region": "Allen",
+      "name": "Yellow Jackets",
+      "abbr": "ALLN",
+      "displayName": "Allen Yellow Jackets",
+      "path": "/logos/svg/ncaa/alln.png",
+      "format": "png",
+      "colors": [
+        "#000000",
+        "#FEFEFE",
+        "#F3C726",
+        "#1C4075",
+        "#10377A",
+        "#264573",
+        "#FED61D",
+        "#FDD220"
+      ],
+      "brand": [
+        "#025399",
+        "#F3CF3E"
+      ],
+      "palette": [
+        "#10377A",
+        "#F3C726",
+        "#FFFFFF"
+      ]
+    },
+    {
+      "id": "COL-BEN",
+      "league": "COL",
+      "conference": "HBCU",
+      "region": "Benedict",
+      "name": "Tigers",
+      "abbr": "BEN",
+      "displayName": "Benedict Tigers",
+      "path": "/logos/svg/ncaa/ben.png",
+      "format": "png",
+      "colors": [
+        "#FFFFFF",
+        "#330B54",
+        "#F7D128",
+        "#FEFEFE",
+        "#320A51",
+        "#FDFDFD",
+        "#330B52",
+        "#FCFCFC"
+      ],
+      "brand": [],
+      "palette": [
+        "#330B54",
+        "#F7D128",
+        "#FFFFFF"
+      ]
+    },
+    {
+      "id": "COL-CENT",
+      "league": "COL",
+      "conference": "HBCU",
+      "region": "Central State",
+      "name": "Marauders",
+      "abbr": "CENT",
+      "displayName": "Central State Marauders",
+      "path": "/logos/svg/ncaa/cent.png",
+      "format": "png",
+      "colors": [
+        "#4D0E32",
+        "#EEC62F",
+        "#FFFFFF",
+        "#4E0F32",
+        "#EFC730",
+        "#4D0F33"
+      ],
+      "brand": [
+        "#A40046",
+        "#FFD700"
+      ],
+      "palette": [
+        "#4E0F32",
+        "#EEC62F",
+        "#FFFFFF"
+      ]
+    },
+    {
+      "id": "COL-CAU",
+      "league": "COL",
+      "conference": "HBCU",
+      "region": "Clark Atlanta",
+      "name": "Panthers",
+      "abbr": "CAU",
+      "displayName": "Clark Atlanta Panthers",
+      "path": "/logos/svg/ncaa/cau.svg",
+      "format": "svg",
+      "colors": [
+        "#C8102E"
+      ],
+      "brand": [],
+      "palette": [
+        "#C8102E",
+        "#000000",
+        "#FFFFFF"
+      ]
+    },
+    {
+      "id": "COL-EWU",
+      "league": "COL",
+      "conference": "HBCU",
+      "region": "Edward Waters",
+      "name": "Tigers",
+      "abbr": "EWU",
+      "displayName": "Edward Waters Tigers",
+      "path": "/logos/svg/ncaa/ewu.png",
+      "format": "png",
+      "colors": [
+        "#752983",
+        "#F16626",
+        "#000000",
+        "#762983",
+        "#040606",
+        "#DBBFAA",
+        "#F06626",
+        "#EF6526"
+      ],
+      "brand": [],
+      "palette": [
+        "#752983",
+        "#F16626",
+        "#FFFFFF"
+      ]
+    },
+    {
+      "id": "COL-FVSU",
+      "league": "COL",
+      "conference": "HBCU",
+      "region": "Fort Valley State",
+      "name": "Wildcats",
+      "abbr": "FVSU",
+      "displayName": "Fort Valley State Wildcats",
+      "path": "/logos/svg/ncaa/fvsu.svg",
+      "format": "svg",
+      "colors": [
+        "#F7BD0A",
+        "#2A307F",
+        "#F9BD0A",
+        "#29307C",
+        "#E6B50F",
+        "#25295F",
+        "#29307E",
+        "#29317F"
+      ],
+      "brand": [
+        "#003087",
+        "#FFCD00"
+      ],
+      "palette": [
+        "#29317F",
+        "#F9BD0A",
+        "#FFFFFF"
+      ]
+    },
+    {
+      "id": "COL-KYST",
+      "league": "COL",
+      "conference": "HBCU",
+      "region": "Kentucky State",
+      "name": "Thorobreds",
+      "abbr": "KYST",
+      "displayName": "Kentucky State Thorobreds",
+      "path": "/logos/svg/ncaa/kyst.png",
+      "format": "png",
+      "colors": [
+        "#353125",
+        "#0F6838",
+        "#6C6D70",
+        "#FFE700"
+      ],
+      "brand": [
+        "#0A8137",
+        "#EDCB04"
+      ],
+      "palette": [
+        "#0F6838",
+        "#FFE700",
+        "#FFFFFF"
+      ]
+    },
+    {
+      "id": "COL-LANE",
+      "league": "COL",
+      "conference": "HBCU",
+      "region": "Lane",
+      "name": "Dragons",
+      "abbr": "LANE",
+      "displayName": "Lane Dragons",
+      "path": "/logos/svg/ncaa/lane.svg",
+      "format": "svg",
+      "colors": [
+        "#232D62",
+        "#193050"
+      ],
+      "brand": [
+        "#002366",
+        "#C41E3A"
+      ],
+      "palette": [
+        "#193050",
+        "#000000",
+        "#FFFFFF"
+      ]
+    },
+    {
+      "id": "COL-LEMO",
+      "league": "COL",
+      "conference": "HBCU",
+      "region": "LeMoyne-Owen",
+      "name": "Magicians",
+      "abbr": "LEMO",
+      "displayName": "LeMoyne-Owen Magicians",
+      "path": "/logos/svg/ncaa/lemo.svg",
+      "format": "svg",
+      "colors": [
+        "#662D91",
+        "#F7941E"
+      ],
+      "brand": [
+        "#800080",
+        "#FFD700"
+      ],
+      "palette": [
+        "#662D91",
+        "#F7941E",
+        "#FFFFFF"
+      ]
+    },
+    {
+      "id": "COL-MILE",
+      "league": "COL",
+      "conference": "HBCU",
+      "region": "Miles",
+      "name": "Golden Bears",
+      "abbr": "MILE",
+      "displayName": "Miles Golden Bears",
+      "path": "/logos/svg/ncaa/mile.png",
+      "format": "png",
+      "colors": [
+        "#FFFFFF",
+        "#FFFEFF",
+        "#FEFEFE",
+        "#FFFDFF",
+        "#FDFDFD",
+        "#5F0F70",
+        "#FFFCFF",
+        "#FFFFFE"
+      ],
+      "brand": [
+        "#FFD700",
+        ""
+      ],
+      "palette": [
+        "#5F0F70",
+        "#000000",
+        "#FFFFFF"
+      ]
+    },
+    {
+      "id": "COL-MORE",
+      "league": "COL",
+      "conference": "HBCU",
+      "region": "Morehouse",
+      "name": "Maroon Tigers",
+      "abbr": "MORE",
+      "displayName": "Morehouse Maroon Tigers",
+      "path": "/logos/svg/ncaa/more.svg",
+      "format": "svg",
+      "colors": [
+        "#8A152B"
+      ],
+      "brand": [
+        "#84002B",
+        ""
+      ],
+      "palette": [
+        "#8A152B",
+        "#000000",
+        "#FFFFFF"
+      ]
+    },
+    {
+      "id": "COL-SAV",
+      "league": "COL",
+      "conference": "HBCU",
+      "region": "Savannah State",
+      "name": "Tigers",
+      "abbr": "SAV",
+      "displayName": "Savannah State Tigers",
+      "path": "/logos/svg/ncaa/sav.svg",
+      "format": "svg",
+      "colors": [
+        "#FF5B00",
+        "#002395",
+        "#FFFFFF"
+      ],
+      "brand": [
+        "#CC5500",
+        ""
+      ],
+      "palette": [
+        "#FF5B00",
+        "#002395",
+        "#FFFFFF"
+      ]
+    },
+    {
+      "id": "COL-TUSK",
+      "league": "COL",
+      "conference": "HBCU",
+      "region": "Tuskegee",
+      "name": "Golden Tigers",
+      "abbr": "TUSK",
+      "displayName": "Tuskegee Golden Tigers",
+      "path": "/logos/svg/ncaa/tusk.svg",
+      "format": "svg",
+      "colors": [
+        "#231F20",
+        "#EBA900",
+        "#FFFFFF",
+        "#A32035",
+        "#000000",
+        "#A7A9AC",
+        "#B5B7B9",
+        "#C3C5C7"
+      ],
+      "brand": [
+        "#7B0707",
+        "#F2BD2C"
+      ],
+      "palette": [
+        "#A32035",
+        "#EBA900",
+        "#FFFFFF"
+      ]
+    }
+  ]
+}

@@ -1,15 +1,19 @@
 import { useEffect, useState } from 'react'
-import { clampTimer, TIMER_MAX, TIMER_MIN, TIMER_OPTIONS, type GameMode, type TimerSeconds } from '../lib/teams'
+import { clampTimer, guessPrompt, speak, voiceSupported, TIMER_MAX, TIMER_MIN, TIMER_OPTIONS, type GameMode, type GuessTarget, type TimerSeconds } from '../lib/teams'
 
 interface Props {
   timer: TimerSeconds
   gameMode: GameMode
+  guessTarget: GuessTarget
+  voice: boolean
   onTimer: (t: TimerSeconds) => void
   onGameMode: (m: GameMode) => void
+  onGuessTarget: (t: GuessTarget) => void
+  onVoice: (on: boolean) => void
   onClose: () => void
 }
 
-export function SettingsModal({ timer, gameMode, onTimer, onGameMode, onClose }: Props) {
+export function SettingsModal({ timer, gameMode, guessTarget, voice, onTimer, onGameMode, onGuessTarget, onVoice, onClose }: Props) {
   const [custom, setCustom] = useState(String(timer))
   useEffect(() => setCustom(String(timer)), [timer])
   useEffect(() => {
@@ -30,8 +34,9 @@ export function SettingsModal({ timer, gameMode, onTimer, onGameMode, onClose }:
       <div className="modal" role="dialog" aria-modal="true" aria-labelledby="settings-title" onClick={(e) => e.stopPropagation()}>
         <div className="modal-head">
           <div id="settings-title" className="rail-title">SETTINGS</div>
-          <button className="icon-btn" aria-label="Close settings" onClick={onClose}>
-            ✕
+          <button className="close-btn" aria-label="Close settings" onClick={onClose}>
+            <span aria-hidden="true">✕</span>
+            <span>Close</span>
           </button>
         </div>
 
@@ -66,11 +71,28 @@ export function SettingsModal({ timer, gameMode, onTimer, onGameMode, onClose }:
         </div>
         <div className="mode-hint">Currently {timer} seconds per round.</div>
 
-        <div className="rail-label">GAME MODE</div>
+        <div className="rail-label">DEFAULT GUESS MODE</div>
         <div className="grid2">
           {(
             [
-              ['type', 'Type the Team'],
+              ['team', 'Guess the Logo'],
+              ['colors', 'Guess the Colors'],
+            ] as [GuessTarget, string][]
+          ).map(([t, lb]) => (
+            <button key={t} className={`opt mode${guessTarget === t ? ' active' : ''}`} onClick={() => onGuessTarget(t)}>
+              {lb}
+            </button>
+          ))}
+        </div>
+        <div className="mode-hint">
+          Applies to rounds without their own setting — each deck card can override this.
+        </div>
+
+        <div className="rail-label">ANSWER STYLE</div>
+        <div className="grid2">
+          {(
+            [
+              ['type', 'Type the Answer'],
               ['host', 'Host Mode'],
             ] as [GameMode, string][]
           ).map(([m, lb]) => (
@@ -82,7 +104,22 @@ export function SettingsModal({ timer, gameMode, onTimer, onGameMode, onClose }:
         <div className="mode-hint">
           {gameMode === 'host'
             ? 'Everyone shouts the answer — the host taps Correct or Incorrect. No typing.'
-            : 'One player types the team name each round.'}
+            : 'One player types the answer each round.'}
+        </div>
+
+        <div className="rail-label">VOICE ANNOUNCER</div>
+        <div className="grid2">
+          <button className={`opt mode${voice ? ' active' : ''}`} onClick={() => { onVoice(true); speak(guessPrompt(guessTarget)) }} disabled={!voiceSupported()}>
+            🔊 On
+          </button>
+          <button className={`opt mode${voice ? '' : ' active'}`} onClick={() => onVoice(false)}>
+            Off
+          </button>
+        </div>
+        <div className="mode-hint">
+          {voiceSupported()
+            ? `Announces “${guessPrompt(guessTarget)}” at the start of every round.`
+            : 'Voice is not supported in this browser.'}
         </div>
 
         <button className="btn-start" onClick={onClose}>

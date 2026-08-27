@@ -1,4 +1,4 @@
-import { findTeam, fullName, TIMER_OPTIONS, type GameMode, type Round, type TimerSeconds } from '../lib/teams'
+import { findTeam, fullName, guessPrompt, roundTarget, speak, voiceSupported, TIMER_OPTIONS, type GameMode, type GuessTarget, type Round, type TimerSeconds } from '../lib/teams'
 import { Logo } from './Logo'
 
 interface Props {
@@ -6,16 +6,20 @@ interface Props {
   portrait: boolean
   timer: TimerSeconds
   gameMode: GameMode
+  guessTarget: GuessTarget
+  voice: boolean
   highScore: number
   onDeck: (d: Round[]) => void
   onEdit: (i: number) => void
   onTimer: (t: TimerSeconds) => void
   onGameMode: (m: GameMode) => void
+  onGuessTarget: (t: GuessTarget) => void
+  onVoice: (on: boolean) => void
   onStart: () => void
   onCreate: () => void
 }
 
-export function DeckMode({ deck, portrait, timer, gameMode, highScore, onDeck, onEdit, onTimer, onGameMode, onStart, onCreate }: Props) {
+export function DeckMode({ deck, portrait, timer, gameMode, guessTarget, voice, highScore, onDeck, onEdit, onTimer, onGameMode, onGuessTarget, onVoice, onStart, onCreate }: Props) {
   const mut = (fn: (d: Round[]) => Round[]) => onDeck(fn([...deck]))
   const swap = (d: Round[], a: number, b: number) => {
     ;[d[a], d[b]] = [d[b], d[a]]
@@ -45,6 +49,23 @@ export function DeckMode({ deck, portrait, timer, gameMode, highScore, onDeck, o
                   </div>
                   <div className="round-name">{fullName(ot)}</div>
                   <div className="round-sub">in {fullName(ct)} colors</div>
+                  <div className="round-target" role="group" aria-label={`Round ${i + 1} guess mode`}>
+                    {(
+                      [
+                        ['team', 'Logo'],
+                        ['colors', 'Colors'],
+                      ] as [GuessTarget, string][]
+                    ).map(([t, lb]) => (
+                      <button
+                        key={t}
+                        className={`seg${roundTarget(r, guessTarget) === t ? ' active' : ''}`}
+                        aria-pressed={roundTarget(r, guessTarget) === t}
+                        onClick={() => mut((d) => { d[i] = { ...d[i], g: t }; return d })}
+                      >
+                        Guess the {lb}
+                      </button>
+                    ))}
+                  </div>
                   <div className="round-ctl">
                     <button className={`icon-btn${i === 0 ? ' dim' : ''}`} aria-label="Move earlier" onClick={() => i > 0 && mut((d) => swap(d, i - 1, i))}>
                       ◀
@@ -87,11 +108,28 @@ export function DeckMode({ deck, portrait, timer, gameMode, highScore, onDeck, o
             ))}
           </div>
           {!(TIMER_OPTIONS as readonly number[]).includes(timer) && <div className="mode-hint">Custom: {timer}s per round (change in ⚙ Settings)</div>}
-          <div className="rail-label">GAME MODE</div>
+          <div className="rail-label">DEFAULT GUESS MODE</div>
           <div className="grid2">
             {(
               [
-                ['type', 'Type the Team'],
+                ['team', 'Guess the Logo'],
+                ['colors', 'Guess the Colors'],
+              ] as [GuessTarget, string][]
+            ).map(([t, lb]) => (
+              <button key={t} className={`opt mode${guessTarget === t ? ' active' : ''}`} onClick={() => onGuessTarget(t)}>
+                {lb}
+              </button>
+            ))}
+          </div>
+          <div className="mode-hint">
+            Applies to rounds without their own setting — switch any card between Logo and Colors.
+          </div>
+
+          <div className="rail-label">ANSWER STYLE</div>
+          <div className="grid2">
+            {(
+              [
+                ['type', 'Type the Answer'],
                 ['host', 'Host Mode'],
               ] as [GameMode, string][]
             ).map(([m, lb]) => (
@@ -103,8 +141,23 @@ export function DeckMode({ deck, portrait, timer, gameMode, highScore, onDeck, o
           <div className="mode-hint">
             {gameMode === 'host'
               ? 'Everyone shouts the answer — the host taps Correct or Incorrect. No typing.'
-              : 'One player types the team name each round.'}
+              : 'One player types the answer each round.'}
           </div>
+          <div className="rail-label">VOICE ANNOUNCER</div>
+          <div className="grid2">
+            <button className={`opt mode${voice ? ' active' : ''}`} onClick={() => { onVoice(true); speak(guessPrompt(guessTarget)) }} disabled={!voiceSupported()}>
+              🔊 On
+            </button>
+            <button className={`opt mode${voice ? '' : ' active'}`} onClick={() => onVoice(false)}>
+              Off
+            </button>
+          </div>
+          <div className="mode-hint">
+            {voiceSupported()
+              ? `Announces “${guessPrompt(guessTarget)}” at the start of every round.`
+              : 'Voice is not supported in this browser.'}
+          </div>
+
           <button className={`btn-start${deck.length ? '' : ' disabled'}`} onClick={onStart} aria-disabled={deck.length === 0}>
             START GAME
           </button>

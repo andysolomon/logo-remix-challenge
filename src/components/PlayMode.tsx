@@ -24,6 +24,10 @@ export function PlayMode({ deck, timer, gameMode, guessTarget, voice, highScores
   const [score, setScore] = useState(0)
   const [timeLeft, setTimeLeft] = useState<number>(timer)
   const [guess, setGuess] = useState('')
+  // Second answer for "both" rounds: the team whose colors the logo wears.
+  const [guess2, setGuess2] = useState('')
+  // Per-part verdict for "both" rounds in type mode, shown on the reveal (host mode judges as a whole).
+  const [parts, setParts] = useState<[boolean, boolean] | null>(null)
   const [kind, setKind] = useState<Kind>('correct')
   const [results, setResults] = useState<boolean[]>([])
   // Slot-machine initials: one alphabet index per reel, plus which reel has focus.
@@ -52,6 +56,8 @@ export function PlayMode({ deck, timer, gameMode, guessTarget, voice, highScores
       window.clearInterval(iv.current)
       setRIdx(i)
       setGuess('')
+      setGuess2('')
+      setParts(null)
       setTimeLeft(timer)
       setPhase('question')
       if (voice) speak(guessPrompt(roundTarget(deck[i], guessTarget)))
@@ -153,18 +159,29 @@ export function PlayMode({ deck, timer, gameMode, guessTarget, voice, highScores
   }
   const submit = (e: FormEvent) => {
     e.preventDefault()
-    if (phase !== 'question' || !guess.trim()) return
-    const t = findTeam(target === 'colors' ? deck[rIdx].c : deck[rIdx].o)!
-    reveal(isCorrectGuess(guess, t) ? 'correct' : 'wrong')
+    if (phase !== 'question') return
+    const o = findTeam(deck[rIdx].o)!
+    const c = findTeam(deck[rIdx].c)!
+    if (target === 'both') {
+      if (!guess.trim() && !guess2.trim()) return
+      const p: [boolean, boolean] = [isCorrectGuess(guess, o), isCorrectGuess(guess2, c)]
+      setParts(p)
+      reveal(p[0] && p[1] ? 'correct' : 'wrong')
+      return
+    }
+    if (!guess.trim()) return
+    reveal(isCorrectGuess(guess, target === 'colors' ? c : o) ? 'correct' : 'wrong')
   }
 
   // The intro promises what the deck actually asks, which may be one mode or both.
   const targets = new Set(deck.map((r) => roundTarget(r, guessTarget)))
   const introSub = targets.size > 1
-    ? 'Some rounds want the logo’s team, some want whose colors it wears. Always name a team.'
-    : targets.has('colors')
-      ? 'Ignore the logo. Name the team whose colors it wears.'
-      : 'Ignore the colors. Name the team behind the logo.'
+    ? 'Rounds vary: some want the logo’s team, some want whose colors it wears, some want both. Read each prompt.'
+    : targets.has('both')
+      ? 'Name the team behind the logo and the team whose colors it wears. Both right scores the point.'
+      : targets.has('colors')
+        ? 'Ignore the logo. Name the team whose colors it wears.'
+        : 'Ignore the colors. Name the team behind the logo.'
 
   const round = deck[rIdx]
   const target: GuessTarget = round ? roundTarget(round, guessTarget) : guessTarget
@@ -217,7 +234,7 @@ export function PlayMode({ deck, timer, gameMode, guessTarget, voice, highScores
               <Logo team={ot} palette={ct.palette} perm={round.v} />
             </div>
           </div>
-          <div className="prompt">{target === 'colors' ? "WHICH TEAM'S COLORS?" : 'WHOSE LOGO IS THIS?'}</div>
+          <div className="prompt">{target === 'both' ? 'WHOSE LOGO · WHOSE COLORS?' : target === 'colors' ? "WHICH TEAM'S COLORS?" : 'WHOSE LOGO IS THIS?'}</div>
           {round.h && (
             <div className="hints" aria-label="Hints">
               {roundHints(round).map((h) => (
@@ -226,27 +243,66 @@ export function PlayMode({ deck, timer, gameMode, guessTarget, voice, highScores
             </div>
           )}
           {gameMode === 'type' ? (
-            <form className="guess-form" onSubmit={submit}>
-              <input
-                ref={inputRef}
-                className="guess-input"
-                value={guess}
-                onChange={(e) => setGuess(e.target.value)}
-                placeholder="Type the team…"
-                autoComplete="off"
-                autoCorrect="off"
-                autoCapitalize="off"
-                spellCheck={false}
-                enterKeyHint="go"
-                aria-label="Your guess"
-              />
-              <button type="submit" className="btn-submit">
-                SUBMIT
-              </button>
-            </form>
+            target === 'both' ? (
+              <form className="guess-form both" onSubmit={submit}>
+                <label className="guess-field">
+                  <span className="guess-field-lb">LOGO</span>
+                  <input
+                    ref={inputRef}
+                    className="guess-input"
+                    value={guess}
+                    onChange={(e) => setGuess(e.target.value)}
+                    placeholder="Team behind the logo…"
+                    autoComplete="off"
+                    autoCorrect="off"
+                    autoCapitalize="off"
+                    spellCheck={false}
+                    enterKeyHint="next"
+                    aria-label="Team behind the logo"
+                  />
+                </label>
+                <label className="guess-field">
+                  <span className="guess-field-lb">COLORS</span>
+                  <input
+                    className="guess-input"
+                    value={guess2}
+                    onChange={(e) => setGuess2(e.target.value)}
+                    placeholder="Team whose colors these are…"
+                    autoComplete="off"
+                    autoCorrect="off"
+                    autoCapitalize="off"
+                    spellCheck={false}
+                    enterKeyHint="go"
+                    aria-label="Team whose colors the logo wears"
+                  />
+                </label>
+                <button type="submit" className="btn-submit">
+                  SUBMIT
+                </button>
+              </form>
+            ) : (
+              <form className="guess-form" onSubmit={submit}>
+                <input
+                  ref={inputRef}
+                  className="guess-input"
+                  value={guess}
+                  onChange={(e) => setGuess(e.target.value)}
+                  placeholder="Type the team…"
+                  autoComplete="off"
+                  autoCorrect="off"
+                  autoCapitalize="off"
+                  spellCheck={false}
+                  enterKeyHint="go"
+                  aria-label="Your guess"
+                />
+                <button type="submit" className="btn-submit">
+                  SUBMIT
+                </button>
+              </form>
+            )
           ) : (
             <div className="host">
-              <div className="host-hint">Shout the team — the host taps the verdict</div>
+              <div className="host-hint">{target === 'both' ? 'Shout both teams — the host taps the verdict' : 'Shout the team — the host taps the verdict'}</div>
               <div className="host-row">
                 <button className="btn-correct" onClick={() => reveal('correct')}>
                   ✓ CORRECT
@@ -264,13 +320,30 @@ export function PlayMode({ deck, timer, gameMode, guessTarget, voice, highScores
         <div className="reveal pop">
           <div className={`reveal-icon k-${kind}`}>{kind === 'correct' ? '✓' : kind === 'wrong' ? '✕' : '!'}</div>
           <div className={`reveal-title k-${kind}`}>{kind === 'correct' ? 'CORRECT' : kind === 'wrong' ? 'NOT QUITE' : "TIME'S UP"}</div>
-          <div className="reveal-logo">
-            <Logo team={target === 'colors' ? ct : ot} />
-          </div>
-          <div className="reveal-name">{fullName(target === 'colors' ? ct : ot)}</div>
-          <div className="reveal-note">
-            {target === 'colors' ? `colors worn by the ${fullName(ot)} logo` : `wearing ${fullName(ct)} colors`}
-          </div>
+          {target === 'both' ? (
+            <div className="reveal-pair">
+              {([[ot, 'LOGO'], [ct, 'COLORS']] as const).map(([t, lb], i) => (
+                <div key={lb} className="reveal-part">
+                  <div className="reveal-part-lb">{lb}</div>
+                  <div className="reveal-logo">
+                    <Logo team={t} />
+                  </div>
+                  <div className="reveal-name">{fullName(t)}</div>
+                  {parts && <div className={`reveal-part-mark ${parts[i] ? 'ok' : 'no'}`}>{parts[i] ? '✓ got it' : '✕ missed'}</div>}
+                </div>
+              ))}
+            </div>
+          ) : (
+            <>
+              <div className="reveal-logo">
+                <Logo team={target === 'colors' ? ct : ot} />
+              </div>
+              <div className="reveal-name">{fullName(target === 'colors' ? ct : ot)}</div>
+              <div className="reveal-note">
+                {target === 'colors' ? `colors worn by the ${fullName(ot)} logo` : `wearing ${fullName(ct)} colors`}
+              </div>
+            </>
+          )}
           {kind === 'correct' && <div className="plus-one">+1</div>}
         </div>
       )}
@@ -349,7 +422,9 @@ export function PlayMode({ deck, timer, gameMode, guessTarget, voice, highScores
                   <div className="recap-thumb">
                     <Logo team={o} palette={c.palette} perm={r.v} />
                   </div>
-                  <div className="recap-name">{fullName(roundTarget(r, guessTarget) === 'colors' ? c : o)}</div>
+                  <div className="recap-name">
+                    {roundTarget(r, guessTarget) === 'both' ? `${fullName(o)} · ${fullName(c)}` : fullName(roundTarget(r, guessTarget) === 'colors' ? c : o)}
+                  </div>
                 </div>
               )
             })}

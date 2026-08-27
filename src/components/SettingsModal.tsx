@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { clampTimer, guessPrompt, speak, voiceSupported, TIMER_MAX, TIMER_MIN, TIMER_OPTIONS, type GameMode, type GuessTarget, type TimerSeconds } from '../lib/teams'
+import { clampTimer, guessPrompt, GUESS_TARGETS, GUESS_LABEL, speak, voiceSupported, TIMER_MAX, TIMER_MIN, TIMER_OPTIONS, type GameMode, type GuessTarget, type TimerSeconds } from '../lib/teams'
 
 interface Props {
   timer: TimerSeconds
@@ -72,20 +72,17 @@ export function SettingsModal({ timer, gameMode, guessTarget, voice, onTimer, on
         <div className="mode-hint">Currently {timer} seconds per round.</div>
 
         <div className="rail-label">DEFAULT GUESS MODE</div>
-        <div className="grid2">
-          {(
-            [
-              ['team', 'Guess the Logo'],
-              ['colors', 'Guess the Colors'],
-            ] as [GuessTarget, string][]
-          ).map(([t, lb]) => (
+        <div className="grid3">
+          {GUESS_TARGETS.map((t) => [t, GUESS_LABEL[t].long] as const).map(([t, lb]) => (
             <button key={t} className={`opt mode${guessTarget === t ? ' active' : ''}`} onClick={() => onGuessTarget(t)}>
               {lb}
             </button>
           ))}
         </div>
         <div className="mode-hint">
-          Applies to rounds without their own setting — each deck card can override this.
+          {guessTarget === 'both'
+            ? 'Both: name the logo’s team and the team whose colors it wears — a point only when both are right.'
+            : 'Applies to rounds without their own setting — each deck card can override this.'}
         </div>
 
         <div className="rail-label">ANSWER STYLE</div>

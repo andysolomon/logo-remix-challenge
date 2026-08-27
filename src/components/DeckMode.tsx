@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { findTeam, fullName, guessPrompt, roundHints, roundTarget, speak, voiceSupported, TIMER_OPTIONS, HIGH_SCORE_LIMIT, type GameMode, type HighScore, type GuessTarget, type Round, type TimerSeconds } from '../lib/teams'
+import { findTeam, fullName, guessPrompt, GUESS_TARGETS, GUESS_LABEL, roundHints, roundTarget, speak, voiceSupported, TIMER_OPTIONS, HIGH_SCORE_LIMIT, type GameMode, type HighScore, type GuessTarget, type Round, type TimerSeconds } from '../lib/teams'
 import { Logo } from './Logo'
 import { RandomDeckModal } from './RandomDeckModal'
 
@@ -92,12 +92,7 @@ export function DeckMode({ deck, portrait, timer, gameMode, guessTarget, voice, 
                   <div className="round-target">
                     <span className="round-target-lb">GUESS</span>
                     <div className="seg-group" role="group" aria-label={`Round ${i + 1}: what to guess`}>
-                      {(
-                        [
-                          ['team', 'Logo'],
-                          ['colors', 'Colors'],
-                        ] as [GuessTarget, string][]
-                      ).map(([t, lb]) => (
+                      {GUESS_TARGETS.map((t) => [t, GUESS_LABEL[t].short] as const).map(([t, lb]) => (
                         <button
                           key={t}
                           className={`seg${roundTarget(r, guessTarget) === t ? ' active' : ''}`}
@@ -165,20 +160,15 @@ export function DeckMode({ deck, portrait, timer, gameMode, guessTarget, voice, 
           </div>
           {!(TIMER_OPTIONS as readonly number[]).includes(timer) && <div className="mode-hint">Custom: {timer}s per round (change in ⚙ Settings)</div>}
           <div className="rail-label">DEFAULT GUESS MODE</div>
-          <div className="grid2">
-            {(
-              [
-                ['team', 'Guess the Logo'],
-                ['colors', 'Guess the Colors'],
-              ] as [GuessTarget, string][]
-            ).map(([t, lb]) => (
+          <div className="grid3">
+            {GUESS_TARGETS.map((t) => [t, GUESS_LABEL[t].long] as const).map(([t, lb]) => (
               <button key={t} className={`opt mode${guessTarget === t ? ' active' : ''}`} onClick={() => onGuessTarget(t)}>
                 {lb}
               </button>
             ))}
           </div>
           <div className="mode-hint">
-            Applies to rounds without their own setting — switch any card between Logo and Colors.
+            Applies to rounds without their own setting — switch any card between Logo, Colors, or Both (name both teams to score).
           </div>
 
           <div className="rail-label">ANSWER STYLE</div>

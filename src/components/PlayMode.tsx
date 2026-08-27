@@ -112,7 +112,8 @@ export function PlayMode({ deck, timer, gameMode, guessTarget, voice, highScores
     return true
   }
   const onReelsKey = (e: KeyboardEvent) => {
-    if (e.key === 'ArrowUp') spinReel(reelIdx, 1)
+    if (e.key === 'Enter') saveInitials()
+    else if (e.key === 'ArrowUp') spinReel(reelIdx, 1)
     else if (e.key === 'ArrowDown') spinReel(reelIdx, -1)
     else if (e.key === 'ArrowLeft') setReelIdx((i) => Math.max(0, i - 1))
     else if (e.key === 'ArrowRight') setReelIdx((i) => Math.min(INITIALS_LENGTH - 1, i + 1))
@@ -124,6 +125,9 @@ export function PlayMode({ deck, timer, gameMode, guessTarget, voice, highScores
 
   const submitInitials = (e: FormEvent) => {
     e.preventDefault()
+    saveInitials()
+  }
+  const saveInitials = () => {
     const ini = reels.map((v) => INITIALS_ALPHABET[v]).join('')
     const entry: HighScore = { initials: ini, score: scoreRef.current, total: deck.length, date: Date.now() }
     onHighScores(insertHighScore(highScores, entry))

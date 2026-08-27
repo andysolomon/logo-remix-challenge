@@ -202,8 +202,6 @@ input::placeholder { color: var(--faint); }
 .deck.portrait .round-ctl { grid-area: ctl; margin-top: 10px; }
 .deck.portrait .rail { width: 100%; flex: none; flex-direction: column; gap: 12px; }
 .deck.portrait .rail-card { flex: none; }
-.deck.portrait .rail-card.hs { flex-direction: row; align-items: center; justify-content: space-between; }
-.deck.portrait .hs-value { font-size: 22px; }
 .rail-title { font-family: var(--display); font-weight: 700; font-size: 14px; letter-spacing: 2px; color: var(--muted); }
 .rounds-count { font-family: var(--display); font-weight: 700; font-size: 34px; }
 .rounds-count span { font-size: 16px; letter-spacing: 2px; color: var(--muted); }
@@ -218,7 +216,22 @@ input::placeholder { color: var(--faint); }
 .btn-start { height: 64px; border: none; border-radius: 16px; background: var(--accent); color: #FFFFFF; font: 700 19px var(--display); letter-spacing: 2px; cursor: pointer; }
 .btn-start:hover { filter: brightness(0.94); }
 .btn-start.disabled { background: var(--disabled); }
-.hs-value { font-family: var(--display); font-weight: 700; font-size: 30px; }
+.hs-board { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 4px; width: 100%; }
+.hs-row { display: grid; grid-template-columns: 28px 1fr auto; align-items: center; gap: 10px; padding: 4px 8px; border-radius: 8px; font-family: var(--display); font-weight: 700; font-size: 17px; letter-spacing: 2px; }
+.hs-rank { font: 600 12px var(--ui); letter-spacing: 1px; color: var(--faint); }
+.hs-initials { font-variant-numeric: tabular-nums; }
+.hs-score { font-variant-numeric: tabular-nums; }
+.hs-empty { font: 500 12px/1.4 var(--ui); color: var(--faint); }
+.hs-board.dark { width: min(360px, 90%); margin: 18px 0 4px; }
+.hs-board.dark .hs-row { background: var(--dark-surface); font-size: 19px; }
+.hs-board.dark .hs-rank { color: var(--dark-faint); }
+.hs-board.dark .hs-row.mine { background: var(--gold); color: var(--dark-bg); }
+.hs-board.dark .hs-row.mine .hs-rank { color: var(--dark-bg); }
+.deck.portrait .rail-card.hs { flex-direction: column; align-items: stretch; }
+.initials { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px; padding: 24px; }
+.initials-input { width: 200px; height: 84px; border: 2px solid var(--gold); border-radius: 16px; background: var(--dark-surface); color: var(--dark-ink); font: 700 48px var(--display); letter-spacing: 14px; text-indent: 14px; text-align: center; text-transform: uppercase; outline: none; }
+.initials-input:focus-visible { box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.15); }
+.initials .btn-again:disabled { background: var(--disabled); cursor: not-allowed; filter: none; }
 
 /* ---------- Play ---------- */
 .play { flex: 1; min-height: 0; background: var(--dark-bg); color: var(--dark-ink); display: flex; flex-direction: column; }

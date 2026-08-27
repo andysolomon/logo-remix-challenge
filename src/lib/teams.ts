@@ -95,11 +95,50 @@ export function loadTimer(): TimerSeconds {
 }
 export const saveTimer = (t: TimerSeconds) => safeSet(LS.timer, String(t))
 
-export function loadHighScore(): number {
-  const h = parseInt(safeGet(LS.highScore) ?? '', 10)
-  return h > 0 ? h : 0
+// ---------- High scores (arcade-style top 10) ----------
+export const HIGH_SCORE_LIMIT = 10
+export const INITIALS_LENGTH = 3
+const LEGACY_INITIALS = '???'
+
+export interface HighScore {
+  initials: string
+  score: number
+  total: number
+  date: number
 }
-export const saveHighScore = (h: number) => safeSet(LS.highScore, String(h))
+
+export const normalizeInitials = (s: string) =>
+  String(s).toUpperCase().replace(/[^A-Z0-9]/g, '').slice(0, INITIALS_LENGTH)
+
+// Higher score first; on ties the earlier entry keeps its spot, like an arcade cabinet.
+const rankHighScores = (list: HighScore[]) =>
+  [...list].sort((a, b) => b.score - a.score || a.date - b.date).slice(0, HIGH_SCORE_LIMIT)
+
+const isHighScore = (h: unknown): h is HighScore =>
+  typeof h === 'object' && h !== null &&
+  typeof (h as HighScore).initials === 'string' &&
+  typeof (h as HighScore).score === 'number' && (h as HighScore).score >= 0 &&
+  typeof (h as HighScore).total === 'number' &&
+  typeof (h as HighScore).date === 'number'
+
+export function loadHighScores(): HighScore[] {
+  try {
+    const list = JSON.parse(safeGet(LS.highScores) ?? 'null')
+    if (Array.isArray(list)) return rankHighScores(list.filter(isHighScore))
+  } catch {
+    /* ignore */
+  }
+  // Migrate the pre-leaderboard single best score so it is not lost.
+  const legacy = parseInt(safeGet(LS.highScore) ?? '', 10)
+  return legacy > 0 ? [{ initials: LEGACY_INITIALS, score: legacy, total: legacy, date: 0 }] : []
+}
+export const saveHighScores = (list: HighScore[]) => safeSet(LS.highScores, JSON.stringify(rankHighScores(list)))
+
+// A run makes the board when there is an open slot or it beats the lowest entry (ties do not bump anyone).
+export const qualifiesForHighScore = (score: number, list: HighScore[]) =>
+  score > 0 && (list.length < HIGH_SCORE_LIMIT || score > list[list.length - 1].score)
+
+export const insertHighScore = (list: HighScore[], entry: HighScore) => rankHighScores([...list, entry])
 
 export function loadGameMode(): GameMode {
   const m = safeGet(LS.gameMode)

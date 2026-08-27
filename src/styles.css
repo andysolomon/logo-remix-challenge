@@ -188,9 +188,18 @@ input::placeholder { color: var(--faint); }
 .icon-btn.danger { color: var(--link); }
 .edit-btn { min-width: 0; height: 44px; padding: 0; border: 1.5px solid var(--ink); background: var(--surface); border-radius: 11px; font: 600 14px var(--ui); cursor: pointer; color: var(--ink); }
 .edit-btn:hover { background: var(--bg); }
-.rail { width: 300px; flex: none; display: flex; flex-direction: column; gap: 14px; align-items: stretch; }
+.rail { width: 300px; flex: none; min-height: 0; overflow-y: auto; -webkit-overflow-scrolling: touch; display: flex; flex-direction: column; gap: 14px; align-items: stretch; }
 .rail-card { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 18px; display: flex; flex-direction: column; gap: 14px; flex: 0 0 auto; }
-.rail-card.hs { gap: 4px; }
+.rail-card.hs-btn { gap: 6px; cursor: pointer; text-align: left; font: inherit; color: inherit; align-items: stretch; }
+.rail-card.hs-btn:hover { border-color: var(--muted); }
+.hs-top { display: flex; justify-content: space-between; align-items: baseline; font-family: var(--display); font-weight: 700; font-size: 20px; letter-spacing: 2px; }
+.hs-view { font: 600 12px var(--ui); color: var(--accent); }
+.deck-toolbar { display: flex; gap: 8px; justify-content: flex-end; margin-bottom: 12px; }
+.tool-btn { height: 36px; padding: 0 14px; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); color: var(--muted); font: 600 13px var(--ui); cursor: pointer; }
+.tool-btn:hover:not(:disabled) { border-color: var(--muted); }
+.tool-btn:disabled { opacity: 0.4; cursor: default; }
+.tool-btn.danger:hover { color: var(--accent); border-color: var(--accent); }
+.tool-btn.confirm { background: var(--accent); border-color: var(--accent); color: #FFFFFF; }
 
 /* Deck (portrait / mobile): whole screen scrolls, cards become list rows, rail stacks below */
 .deck.portrait { flex-direction: column; overflow-y: auto; -webkit-overflow-scrolling: touch; padding: 12px; gap: 12px; }
@@ -205,7 +214,7 @@ input::placeholder { color: var(--faint); }
 .deck.portrait .round-target { grid-area: target; margin-top: 8px; }
 .deck.portrait .round-hint { grid-area: hint; margin-top: 6px; }
 .deck.portrait .round-ctl { grid-area: ctl; margin-top: 10px; }
-.deck.portrait .rail { width: 100%; flex: none; flex-direction: column; gap: 12px; }
+.deck.portrait .rail { width: 100%; flex: none; overflow: visible; flex-direction: column; gap: 12px; }
 .deck.portrait .rail-card { flex: none; }
 .rail-title { font-family: var(--display); font-weight: 700; font-size: 14px; letter-spacing: 2px; color: var(--muted); }
 .rounds-count { font-family: var(--display); font-weight: 700; font-size: 34px; }
@@ -232,7 +241,6 @@ input::placeholder { color: var(--faint); }
 .hs-board.dark .hs-rank { color: var(--dark-faint); }
 .hs-board.dark .hs-row.mine { background: var(--gold); color: var(--dark-bg); }
 .hs-board.dark .hs-row.mine .hs-rank { color: var(--dark-bg); }
-.deck.portrait .rail-card.hs { flex-direction: column; align-items: stretch; }
 .initials { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px; padding: 24px; }
 .reels { display: flex; gap: 14px; outline: none; border-radius: 20px; padding: 6px; }
 .reels:focus-visible { box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.2); }

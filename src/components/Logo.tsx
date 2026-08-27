@@ -213,10 +213,15 @@ async function recolorRaster(src: string, from: RGB[], to: RGB[]): Promise<strin
 // ---------------------------------------------------------------- dispatcher
 const isSvg = (src: string) => /\.svg(\?|#|$)/i.test(src)
 
+/** Some downloaded "SVGs" are just a wrapper around an embedded bitmap; fill rewriting can't touch those. */
+const hasEmbeddedRaster = (markup: string) => /<image\b/i.test(markup)
+
 async function renderRecolor(src: string, from: RGB[], to: RGB[]): Promise<string | null> {
   if (isSvg(src)) {
     const markup = await loadSvg(src)
-    return markup ? svgToDataUrl(recolorSvg(markup, from, to)) : null
+    if (!markup) return null
+    // Vector art: rewrite fills as text. Embedded bitmaps: rasterize the SVG and recolor pixels.
+    if (!hasEmbeddedRaster(markup)) return svgToDataUrl(recolorSvg(markup, from, to))
   }
   return recolorRaster(src, from, to)
 }

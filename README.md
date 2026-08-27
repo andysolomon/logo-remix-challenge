@@ -4,7 +4,9 @@ iPad-first sports-logo guessing game. A creator picks the **logo of one team** a
 
 Real logos for all 32 NFL teams, the ACC, Big 12, Big Ten, Pac-12, SEC and Ivy League conference marks, and 120 college teams (those conferences plus an HBCU grouping) live as local SVGs under `public/logos/svg/` and are recolored at render time by rewriting fills: colors matching the original team's three palette colors are swapped to the other team's palette while all other artwork is preserved. PNG logos (used only where Wikipedia has no SVG) fall back to a canvas-based pixel recolor.
 
-Client-only SPA — no backend, no auth. Deck, timer, game mode, and high score persist in `localStorage`.
+Each round asks for either the **logo's team** or the **team whose colors it wears** — set per round on its deck card, with a deck-wide default for rounds left alone. An optional voice announcer speaks the prompt as each round opens, using the browser's own `speechSynthesis`.
+
+Client-only SPA — no backend, no auth. Deck, timer, game mode, guess mode, voice, and high score persist in `localStorage`.
 
 ## Stack
 
@@ -74,6 +76,8 @@ src/
     CreateMode.tsx         landscape 3-column / portrait stepped composition
     DeckMode.tsx           round cards, game setup rail, high score
     PlayMode.tsx           intro → question (type / host) → reveal → results
+    DeckMode.tsx           deck cards (per-round guess mode) + settings rail
+    SettingsModal.tsx      timer, defaults, voice announcer
 scripts/
   download_logos.py        fetch the 37 logo PNGs from ESPN into public/logos/
   download_svgs.py         fetch NFL, conference and ESPN-rostered college SVGs

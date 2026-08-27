@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { findTeam, fullName, guessPrompt, roundHints, roundTarget, speak, voiceSupported, TIMER_OPTIONS, HIGH_SCORE_LIMIT, type GameMode, type HighScore, type GuessTarget, type Round, type TimerSeconds } from '../lib/teams'
 import { Logo } from './Logo'
+import { RandomDeckModal } from './RandomDeckModal'
 
 interface Props {
   deck: Round[]
@@ -23,6 +24,8 @@ interface Props {
 export function DeckMode({ deck, portrait, timer, gameMode, guessTarget, voice, highScores, onDeck, onEdit, onTimer, onGameMode, onGuessTarget, onVoice, onStart, onCreate }: Props) {
   const [hsOpen, setHsOpen] = useState(false)
   const [confirmClear, setConfirmClear] = useState(false)
+  const [rndOpen, setRndOpen] = useState(false)
+  const rollDeck = (rounds: Round[], replace: boolean) => onDeck(replace ? rounds : [...deck, ...rounds])
   useEffect(() => {
     if (!confirmClear) return
     const t = setTimeout(() => setConfirmClear(false), 4000)
@@ -56,10 +59,17 @@ export function DeckMode({ deck, portrait, timer, gameMode, guessTarget, voice, 
             <button className="btn-create" onClick={onCreate}>
               CREATE A ROUND
             </button>
+            <span className="deck-empty-or">OR</span>
+            <button className="btn-roll" onClick={() => setRndOpen(true)}>
+              🎲 ROLL A RANDOM DECK
+            </button>
           </div>
         ) : (
           <>
             <div className="deck-toolbar">
+              <button className="tool-btn accent" onClick={() => setRndOpen(true)} title="Generate random rounds from the leagues you pick">
+                <span aria-hidden="true">🎲</span> Random deck
+              </button>
               <button className="tool-btn" onClick={shuffle} disabled={deck.length < 2} title="Randomize the round order">
                 <span aria-hidden="true">🔀</span> Shuffle
               </button>
@@ -223,6 +233,7 @@ export function DeckMode({ deck, portrait, timer, gameMode, guessTarget, voice, 
           <span className="hs-view">View board ▸</span>
         </button>
       </aside>
+      {rndOpen && <RandomDeckModal deckCount={deck.length} guessTarget={guessTarget} onRoll={rollDeck} onClose={() => setRndOpen(false)} />}
       {hsOpen && <HighScoresModal highScores={highScores} onClose={() => setHsOpen(false)} />}
     </div>
   )

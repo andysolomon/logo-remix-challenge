@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useRef, useState, type FormEvent, type KeyboardEvent } from 'react'
-import { findTeam, fullName, guessPrompt, roundHints, roundTarget, speak, isCorrectGuess, insertHighScore, qualifiesForHighScore, INITIALS_LENGTH, INITIALS_ALPHABET, type GameMode, type GuessTarget, type HighScore, type Round, type TimerSeconds } from '../lib/teams'
+import { findTeam, fullName, roundHints, roundTarget, speak, stopSpeak, isCorrectGuess, insertHighScore, qualifiesForHighScore, INITIALS_LENGTH, INITIALS_ALPHABET, type GameMode, type GuessTarget, type HighScore, type Round, type TimerSeconds } from '../lib/teams'
 import { Logo } from './Logo'
 
 type Phase = 'intro' | 'question' | 'reveal' | 'initials' | 'results'
@@ -64,7 +64,7 @@ export function PlayMode({ deck, timer, gameMode, guessTarget, voice, highScores
       setLogoChecked(null)
       setTimeLeft(timer)
       setPhase('question')
-      if (voice) speak(guessPrompt(roundTarget(deck[i], guessTarget)))
+      if (voice) speak(roundTarget(deck[i], guessTarget))
       const started = performance.now()
       iv.current = window.setInterval(() => {
         const t = timer - (performance.now() - started) / 1000
@@ -158,7 +158,7 @@ export function PlayMode({ deck, timer, gameMode, guessTarget, voice, highScores
   }
   const quit = () => {
     clearTimers()
-    if (voice) window.speechSynthesis?.cancel()
+    if (voice) stopSpeak()
     onQuit()
   }
   const submit = (e: FormEvent) => {

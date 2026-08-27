@@ -191,7 +191,7 @@ export function DeckMode({ deck, portrait, timer, gameMode, guessTarget, voice, 
           </div>
           <div className="rail-label">VOICE ANNOUNCER</div>
           <div className="grid2">
-            <button className={`opt mode${voice ? ' active' : ''}`} onClick={() => { onVoice(true); speak(guessPrompt(guessTarget)) }} disabled={!voiceSupported()}>
+            <button className={`opt mode${voice ? ' active' : ''}`} onClick={() => { onVoice(true); speak(guessTarget) }} disabled={!voiceSupported()}>
               🔊 On
             </button>
             <button className={`opt mode${voice ? '' : ' active'}`} onClick={() => onVoice(false)}>

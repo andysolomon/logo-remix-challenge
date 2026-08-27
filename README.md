@@ -4,7 +4,7 @@ iPad-first sports-logo guessing game. A creator picks the **logo of one team** a
 
 Real logos for all 32 NFL teams, the ACC, Big 12, Big Ten, Pac-12, SEC and Ivy League conference marks, and 120 college teams (those conferences plus an HBCU grouping) live as local SVGs under `public/logos/svg/` and are recolored at render time by rewriting fills: colors matching the original team's three palette colors are swapped to the other team's palette while all other artwork is preserved. PNG logos (used only where Wikipedia has no SVG) fall back to a canvas-based pixel recolor.
 
-Each round asks for either the **logo's team** or the **team whose colors it wears** — set per round on its deck card, with a deck-wide default for rounds left alone. An optional voice announcer speaks the prompt as each round opens, using the browser's own `speechSynthesis`.
+Each round asks for either the **logo's team** or the **team whose colors it wears** — set per round on its deck card, with a deck-wide default for rounds left alone. An optional voice announcer plays a Chatterbox clip (`public/voice/`) as each round opens.
 
 Client-only SPA — no backend, no auth. Deck, timer, game mode, guess mode, voice, and high score persist in `localStorage`.
 
@@ -14,6 +14,7 @@ Client-only SPA — no backend, no auth. Deck, timer, game mode, guess mode, voi
 - Plain CSS with design tokens from `design_handoff_logo_remix/DESIGN_SYSTEM.md` (`src/styles.css`)
 - Google Fonts: Chakra Petch (600/700), Space Grotesk (400–700)
 - Local SVG logos recolored in-browser by fill substitution, with a canvas fallback for PNGs (`src/components/Logo.tsx`, `public/logos/svg/`)
+- Voice announcer: three baked Chatterbox Turbo wavs in `public/voice/` (regenerate with `scripts/generate_voice.py`)
 
 ## Run
 
@@ -23,6 +24,14 @@ bun run dev      # http://localhost:5173
 bun run build    # type-check + production build to dist/
 bun run preview
 ```
+
+Announcer clips live in `public/voice/`. To regenerate them you need a Chatterbox install:
+
+```sh
+~/Documents/Github/chatterbox/.venv/bin/python scripts/generate_voice.py
+```
+
+Agent Skill for this app (Voice Announcer, clip map, regen): `.agents/skills/arc-logo-remix/`. The bake workflow lives with Chatterbox as `creating-audio`.
 
 ## Logos
 
@@ -78,12 +87,14 @@ src/
     PlayMode.tsx           intro → question (type / host) → reveal → results
     DeckMode.tsx           deck cards (per-round guess mode) + settings rail
     SettingsModal.tsx      timer, defaults, voice announcer
+public/voice/              Chatterbox clips for Guess the Logo / Colors / both
 scripts/
   download_logos.py        fetch the 37 logo PNGs from ESPN into public/logos/
   download_svgs.py         fetch NFL, conference and ESPN-rostered college SVGs
   download_hbcu_svgs.py    fetch the SIAC + non-football MEAC logos from Wikipedia
   hbcu_roster.py           HBCU roster, official colors, and logo-file overrides
   build_teams.py           merge both manifests into src/lib/teams.json
+  generate_voice.py        bake Chatterbox announcer clips into public/voice/
 public/logos/
   nfl/                     32 team PNGs (ESPN CDN naming, e.g. wsh.png)
   conferences/             acc, big-12, big-ten, pac-12, sec PNGs

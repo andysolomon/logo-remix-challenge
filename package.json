@@ -7,6 +7,9 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "preview": "vite preview",
+    "logos": "python3 scripts/download_logos.py",
+    "logos:svg": "python3 scripts/download_svgs.py",
+    "teams": "python3 scripts/build_teams.py",
     "release": "semantic-release"
   },
   "dependencies": {

@@ -1,0 +1,2829 @@
+{
+  "season": 2026,
+  "source": "Wikipedia (SVG) + ESPN (rosters, colors)",
+  "items": [
+    {
+      "id": "PRO-ARI",
+      "league": "PRO",
+      "conference": "NFC",
+      "region": "Arizona",
+      "name": "Cardinals",
+      "abbr": "ARI",
+      "displayName": "Arizona Cardinals",
+      "espnId": "22",
+      "color": "a40227",
+      "alternateColor": "ffffff",
+      "file": "nfl/ari.svg",
+      "path": "/logos/svg/nfl/ari.svg",
+      "format": "svg",
+      "fills": [
+        "#97233f",
+        "#ffffff",
+        "#ffb612"
+      ]
+    },
+    {
+      "id": "PRO-ATL",
+      "league": "PRO",
+      "conference": "NFC",
+      "region": "Atlanta",
+      "name": "Falcons",
+      "abbr": "ATL",
+      "displayName": "Atlanta Falcons",
+      "espnId": "1",
+      "color": "a71930",
+      "alternateColor": "000000",
+      "file": "nfl/atl.svg",
+      "path": "/logos/svg/nfl/atl.svg",
+      "format": "svg",
+      "fills": [
+        "#a5acaf",
+        "#ffffff",
+        "#a71930"
+      ]
+    },
+    {
+      "id": "PRO-BAL",
+      "league": "PRO",
+      "conference": "AFC",
+      "region": "Baltimore",
+      "name": "Ravens",
+      "abbr": "BAL",
+      "displayName": "Baltimore Ravens",
+      "espnId": "33",
+      "color": "29126f",
+      "alternateColor": "000000",
+      "file": "nfl/bal.svg",
+      "path": "/logos/svg/nfl/bal.svg",
+      "format": "svg",
+      "fills": [
+        "#ffffff",
+        "#9a7611",
+        "#24135f",
+        "#c8102e"
+      ]
+    },
+    {
+      "id": "PRO-BUF",
+      "league": "PRO",
+      "conference": "AFC",
+      "region": "Buffalo",
+      "name": "Bills",
+      "abbr": "BUF",
+      "displayName": "Buffalo Bills",
+      "espnId": "2",
+      "color": "00338d",
+      "alternateColor": "d50a0a",
+      "file": "nfl/buf.svg",
+      "path": "/logos/svg/nfl/buf.svg",
+      "format": "svg",
+      "fills": [
+        "#ffffff",
+        "#c60c3d",
+        "#00338d"
+      ]
+    },
+    {
+      "id": "PRO-CAR",
+      "league": "PRO",
+      "conference": "NFC",
+      "region": "Carolina",
+      "name": "Panthers",
+      "abbr": "CAR",
+      "displayName": "Carolina Panthers",
+      "espnId": "29",
+      "color": "0085ca",
+      "alternateColor": "000000",
+      "file": "nfl/car.svg",
+      "path": "/logos/svg/nfl/car.svg",
+      "format": "svg",
+      "fills": [
+        "#0085ca",
+        "#000000",
+        "#bfc0bf"
+      ]
+    },
+    {
+      "id": "PRO-CHI",
+      "league": "PRO",
+      "conference": "NFC",
+      "region": "Chicago",
+      "name": "Bears",
+      "abbr": "CHI",
+      "displayName": "Chicago Bears",
+      "espnId": "3",
+      "color": "0b1c3a",
+      "alternateColor": "e64100",
+      "file": "nfl/chi.svg",
+      "path": "/logos/svg/nfl/chi.svg",
+      "format": "svg",
+      "fills": [
+        "#ffffff",
+        "#e64100",
+        "#0b162a"
+      ]
+    },
+    {
+      "id": "PRO-CIN",
+      "league": "PRO",
+      "conference": "AFC",
+      "region": "Cincinnati",
+      "name": "Bengals",
+      "abbr": "CIN",
+      "displayName": "Cincinnati Bengals",
+      "espnId": "4",
+      "color": "fb4f14",
+      "alternateColor": "000000",
+      "file": "nfl/cin.svg",
+      "path": "/logos/svg/nfl/cin.svg",
+      "format": "svg",
+      "fills": [
+        "#fb4f14",
+        "#ffffff"
+      ]
+    },
+    {
+      "id": "PRO-CLE",
+      "league": "PRO",
+      "conference": "AFC",
+      "region": "Cleveland",
+      "name": "Browns",
+      "abbr": "CLE",
+      "displayName": "Cleveland Browns",
+      "espnId": "5",
+      "color": "472a08",
+      "alternateColor": "ff3c00",
+      "file": "nfl/cle.svg",
+      "path": "/logos/svg/nfl/cle.svg",
+      "format": "svg",
+      "fills": [
+        "#311d00",
+        "#ffffff",
+        "#ff3c00"
+      ]
+    },
+    {
+      "id": "PRO-DAL",
+      "league": "PRO",
+      "conference": "NFC",
+      "region": "Dallas",
+      "name": "Cowboys",
+      "abbr": "DAL",
+      "displayName": "Dallas Cowboys",
+      "espnId": "6",
+      "color": "002a5c",
+      "alternateColor": "b0b7bc",
+      "file": "nfl/dal.svg",
+      "path": "/logos/svg/nfl/dal.svg",
+      "format": "svg",
+      "fills": [
+        "#002244",
+        "#ffffff"
+      ]
+    },
+    {
+      "id": "PRO-DEN",
+      "league": "PRO",
+      "conference": "AFC",
+      "region": "Denver",
+      "name": "Broncos",
+      "abbr": "DEN",
+      "displayName": "Denver Broncos",
+      "espnId": "7",
+      "color": "0a2343",
+      "alternateColor": "fc4c02",
+      "file": "nfl/den.svg",
+      "path": "/logos/svg/nfl/den.svg",
+      "format": "svg",
+      "fills": [
+        "#0a2343",
+        "#ffffff",
+        "#fc4c02"
+      ]
+    },
+    {
+      "id": "PRO-DET",
+      "league": "PRO",
+      "conference": "NFC",
+      "region": "Detroit",
+      "name": "Lions",
+      "abbr": "DET",
+      "displayName": "Detroit Lions",
+      "espnId": "8",
+      "color": "0076b6",
+      "alternateColor": "bbbbbb",
+      "file": "nfl/det.svg",
+      "path": "/logos/svg/nfl/det.svg",
+      "format": "svg",
+      "fills": [
+        "#b0b7bc",
+        "#ffffff",
+        "#0076b6"
+      ]
+    },
+    {
+      "id": "PRO-GB",
+      "league": "PRO",
+      "conference": "NFC",
+      "region": "Green Bay",
+      "name": "Packers",
+      "abbr": "GB",
+      "displayName": "Green Bay Packers",
+      "espnId": "9",
+      "color": "204e32",
+      "alternateColor": "ffb612",
+      "file": "nfl/gb.svg",
+      "path": "/logos/svg/nfl/gb.svg",
+      "format": "svg",
+      "fills": [
+        "#ffb612",
+        "#203731",
+        "#ffffff"
+      ]
+    },
+    {
+      "id": "PRO-HOU",
+      "league": "PRO",
+      "conference": "AFC",
+      "region": "Houston",
+      "name": "Texans",
+      "abbr": "HOU",
+      "displayName": "Houston Texans",
+      "espnId": "34",
+      "color": "021018",
+      "alternateColor": "eb0028",
+      "file": "nfl/hou.svg",
+      "path": "/logos/svg/nfl/hou.svg",
+      "format": "svg",
+      "fills": [
+        "#ffffff",
+        "#021018",
+        "#ea0028"
+      ]
+    },
+    {
+      "id": "PRO-IND",
+      "league": "PRO",
+      "conference": "AFC",
+      "region": "Indianapolis",
+      "name": "Colts",
+      "abbr": "IND",
+      "displayName": "Indianapolis Colts",
+      "espnId": "11",
+      "color": "003b75",
+      "alternateColor": "ffffff",
+      "file": "nfl/ind.svg",
+      "path": "/logos/svg/nfl/ind.svg",
+      "format": "svg",
+      "fills": [
+        "#ffffff",
+        "#013369"
+      ]
+    },
+    {
+      "id": "PRO-JAX",
+      "league": "PRO",
+      "conference": "AFC",
+      "region": "Jacksonville",
+      "name": "Jaguars",
+      "abbr": "JAX",
+      "displayName": "Jacksonville Jaguars",
+      "espnId": "30",
+      "color": "007487",
+      "alternateColor": "d7a22a",
+      "file": "nfl/jax.svg",
+      "path": "/logos/svg/nfl/jax.svg",
+      "format": "svg",
+      "fills": [
+        "#9f792c",
+        "#ffffff",
+        "#d7a22a",
+        "#006778"
+      ]
+    },
+    {
+      "id": "PRO-KC",
+      "league": "PRO",
+      "conference": "AFC",
+      "region": "Kansas City",
+      "name": "Chiefs",
+      "abbr": "KC",
+      "displayName": "Kansas City Chiefs",
+      "espnId": "12",
+      "color": "e31837",
+      "alternateColor": "ffb612",
+      "file": "nfl/kc.svg",
+      "path": "/logos/svg/nfl/kc.svg",
+      "format": "svg",
+      "fills": [
+        "#e31837",
+        "#100f0d",
+        "#ffffff",
+        "#000000"
+      ]
+    },
+    {
+      "id": "PRO-LV",
+      "league": "PRO",
+      "conference": "AFC",
+      "region": "Las Vegas",
+      "name": "Raiders",
+      "abbr": "LV",
+      "displayName": "Las Vegas Raiders",
+      "espnId": "13",
+      "color": "000000",
+      "alternateColor": "a5acaf",
+      "file": "nfl/lv.svg",
+      "path": "/logos/svg/nfl/lv.svg",
+      "format": "svg",
+      "fills": [
+        "#ffffff",
+        "#0a0a09",
+        "#231f20",
+        "#c8c7c7"
+      ]
+    },
+    {
+      "id": "PRO-LAC",
+      "league": "PRO",
+      "conference": "AFC",
+      "region": "Los Angeles",
+      "name": "Chargers",
+      "abbr": "LAC",
+      "displayName": "Los Angeles Chargers",
+      "espnId": "24",
+      "color": "0080c6",
+      "alternateColor": "ffc20e",
+      "file": "nfl/lac.svg",
+      "path": "/logos/svg/nfl/lac.svg",
+      "format": "svg",
+      "fills": [
+        "#ffffff",
+        "#0080c6",
+        "#ffc20e"
+      ]
+    },
+    {
+      "id": "PRO-LAR",
+      "league": "PRO",
+      "conference": "NFC",
+      "region": "Los Angeles",
+      "name": "Rams",
+      "abbr": "LAR",
+      "displayName": "Los Angeles Rams",
+      "espnId": "14",
+      "color": "003594",
+      "alternateColor": "ffd100",
+      "file": "nfl/lar.svg",
+      "path": "/logos/svg/nfl/lar.svg",
+      "format": "svg",
+      "fills": [
+        "#ffd100",
+        "#003594"
+      ]
+    },
+    {
+      "id": "PRO-MIA",
+      "league": "PRO",
+      "conference": "AFC",
+      "region": "Miami",
+      "name": "Dolphins",
+      "abbr": "MIA",
+      "displayName": "Miami Dolphins",
+      "espnId": "15",
+      "color": "008e97",
+      "alternateColor": "fc4c02",
+      "file": "nfl/mia.svg",
+      "path": "/logos/svg/nfl/mia.svg",
+      "format": "svg",
+      "fills": [
+        "#ffffff",
+        "#fc4c02",
+        "#008e97",
+        "#005778"
+      ]
+    },
+    {
+      "id": "PRO-MIN",
+      "league": "PRO",
+      "conference": "NFC",
+      "region": "Minnesota",
+      "name": "Vikings",
+      "abbr": "MIN",
+      "displayName": "Minnesota Vikings",
+      "espnId": "16",
+      "color": "4f2683",
+      "alternateColor": "ffc62f",
+      "file": "nfl/min.svg",
+      "path": "/logos/svg/nfl/min.svg",
+      "format": "svg",
+      "fills": [
+        "#ffffff",
+        "#e9bf9b",
+        "#ffc62f",
+        "#000000",
+        "#4f2683"
+      ]
+    },
+    {
+      "id": "PRO-NE",
+      "league": "PRO",
+      "conference": "AFC",
+      "region": "New England",
+      "name": "Patriots",
+      "abbr": "NE",
+      "displayName": "New England Patriots",
+      "espnId": "17",
+      "color": "002a5c",
+      "alternateColor": "c60c30",
+      "file": "nfl/ne.svg",
+      "path": "/logos/svg/nfl/ne.svg",
+      "format": "svg",
+      "fills": [
+        "#ffffff",
+        "#002244",
+        "#c60c30",
+        "#b0b7bc"
+      ]
+    },
+    {
+      "id": "PRO-NO",
+      "league": "PRO",
+      "conference": "NFC",
+      "region": "New Orleans",
+      "name": "Saints",
+      "abbr": "NO",
+      "displayName": "New Orleans Saints",
+      "espnId": "18",
+      "color": "d3bc8d",
+      "alternateColor": "000000",
+      "file": "nfl/no.svg",
+      "path": "/logos/svg/nfl/no.svg",
+      "format": "svg",
+      "fills": [
+        "#ffffff",
+        "#d3bc8d"
+      ]
+    },
+    {
+      "id": "PRO-NYG",
+      "league": "PRO",
+      "conference": "NFC",
+      "region": "New York",
+      "name": "Giants",
+      "abbr": "NYG",
+      "displayName": "New York Giants",
+      "espnId": "19",
+      "color": "003c7f",
+      "alternateColor": "c9243f",
+      "file": "nfl/nyg.svg",
+      "path": "/logos/svg/nfl/nyg.svg",
+      "format": "svg",
+      "fills": [
+        "#a71930",
+        "#0b2265"
+      ]
+    },
+    {
+      "id": "PRO-NYJ",
+      "league": "PRO",
+      "conference": "AFC",
+      "region": "New York",
+      "name": "Jets",
+      "abbr": "NYJ",
+      "displayName": "New York Jets",
+      "espnId": "20",
+      "color": "115740",
+      "alternateColor": "ffffff",
+      "file": "nfl/nyj.svg",
+      "path": "/logos/svg/nfl/nyj.svg",
+      "format": "svg",
+      "fills": [
+        "#ffffff",
+        "#115740"
+      ]
+    },
+    {
+      "id": "PRO-PHI",
+      "league": "PRO",
+      "conference": "NFC",
+      "region": "Philadelphia",
+      "name": "Eagles",
+      "abbr": "PHI",
+      "displayName": "Philadelphia Eagles",
+      "espnId": "21",
+      "color": "06424d",
+      "alternateColor": "000000",
+      "file": "nfl/phi.svg",
+      "path": "/logos/svg/nfl/phi.svg",
+      "format": "svg",
+      "fills": [
+        "#ffffff",
+        "#004851",
+        "#a2aaad"
+      ]
+    },
+    {
+      "id": "PRO-PIT",
+      "league": "PRO",
+      "conference": "AFC",
+      "region": "Pittsburgh",
+      "name": "Steelers",
+      "abbr": "PIT",
+      "displayName": "Pittsburgh Steelers",
+      "espnId": "23",
+      "color": "000000",
+      "alternateColor": "ffb612",
+      "file": "nfl/pit.svg",
+      "path": "/logos/svg/nfl/pit.svg",
+      "format": "svg",
+      "fills": [
+        "#a5acaf",
+        "#ffffff",
+        "#eead1e",
+        "#c60c30",
+        "#00539b"
+      ]
+    },
+    {
+      "id": "PRO-SF",
+      "league": "PRO",
+      "conference": "NFC",
+      "region": "San Francisco",
+      "name": "49ers",
+      "abbr": "SF",
+      "displayName": "San Francisco 49ers",
+      "espnId": "25",
+      "color": "aa0000",
+      "alternateColor": "b3995d",
+      "file": "nfl/sf.svg",
+      "path": "/logos/svg/nfl/sf.svg",
+      "format": "svg",
+      "fills": [
+        "#ffffff",
+        "#000000",
+        "#b3995d",
+        "#aa0000"
+      ]
+    },
+    {
+      "id": "PRO-SEA",
+      "league": "PRO",
+      "conference": "NFC",
+      "region": "Seattle",
+      "name": "Seahawks",
+      "abbr": "SEA",
+      "displayName": "Seattle Seahawks",
+      "espnId": "26",
+      "color": "002a5c",
+      "alternateColor": "69be28",
+      "file": "nfl/sea.svg",
+      "path": "/logos/svg/nfl/sea.svg",
+      "format": "svg",
+      "fills": [
+        "#ffffff",
+        "#002244",
+        "#69be28",
+        "#a5acaf"
+      ]
+    },
+    {
+      "id": "PRO-TB",
+      "league": "PRO",
+      "conference": "NFC",
+      "region": "Tampa Bay",
+      "name": "Buccaneers",
+      "abbr": "TB",
+      "displayName": "Tampa Bay Buccaneers",
+      "espnId": "27",
+      "color": "bd1c36",
+      "alternateColor": "3e3a35",
+      "file": "nfl/tb.svg",
+      "path": "/logos/svg/nfl/tb.svg",
+      "format": "svg",
+      "fills": [
+        "#b1babf",
+        "#a71930",
+        "#dc4405",
+        "#ffffff",
+        "#c2242b"
+      ]
+    },
+    {
+      "id": "PRO-TEN",
+      "league": "PRO",
+      "conference": "AFC",
+      "region": "Tennessee",
+      "name": "Titans",
+      "abbr": "TEN",
+      "displayName": "Tennessee Titans",
+      "espnId": "10",
+      "color": "4495d2",
+      "alternateColor": "001532",
+      "file": "nfl/ten.svg",
+      "path": "/logos/svg/nfl/ten.svg",
+      "format": "svg",
+      "fills": [
+        "white",
+        "#d50a0a",
+        "#4495d2"
+      ]
+    },
+    {
+      "id": "PRO-WAS",
+      "league": "PRO",
+      "conference": "NFC",
+      "region": "Washington",
+      "name": "Commanders",
+      "abbr": "WAS",
+      "displayName": "Washington Commanders",
+      "espnId": "28",
+      "color": "5a1414",
+      "alternateColor": "ffb612",
+      "file": "nfl/was.svg",
+      "path": "/logos/svg/nfl/was.svg",
+      "format": "svg",
+      "fills": [
+        "#ffb612",
+        "#5a1414"
+      ]
+    },
+    {
+      "id": "COL-ACC",
+      "league": "COL",
+      "conference": "ACC",
+      "region": "ACC",
+      "name": "",
+      "abbr": "ACC",
+      "displayName": "Atlantic Coast Conference",
+      "espnId": null,
+      "color": null,
+      "alternateColor": null,
+      "file": "conferences/acc.svg",
+      "path": "/logos/svg/conferences/acc.svg",
+      "format": "svg",
+      "fills": [
+        "#013ca6",
+        "#a8a9aa"
+      ]
+    },
+    {
+      "id": "COL-BIG12",
+      "league": "COL",
+      "conference": "Big 12",
+      "region": "Big 12",
+      "name": "",
+      "abbr": "BIG12",
+      "displayName": "Big 12 Conference",
+      "espnId": null,
+      "color": null,
+      "alternateColor": null,
+      "file": "conferences/big-12.svg",
+      "path": "/logos/svg/conferences/big-12.svg",
+      "format": "svg",
+      "fills": [
+        "#c1c5c8",
+        "#ff4438",
+        "#ffffff"
+      ]
+    },
+    {
+      "id": "COL-BIGTEN",
+      "league": "COL",
+      "conference": "Big Ten",
+      "region": "Big Ten",
+      "name": "",
+      "abbr": "BIGTEN",
+      "displayName": "Big Ten Conference",
+      "espnId": null,
+      "color": null,
+      "alternateColor": null,
+      "file": "conferences/big-ten.svg",
+      "path": "/logos/svg/conferences/big-ten.svg",
+      "format": "svg",
+      "fills": [
+        "#0088ce"
+      ]
+    },
+    {
+      "id": "COL-PAC12",
+      "league": "COL",
+      "conference": "Pac-12",
+      "region": "Pac-12",
+      "name": "",
+      "abbr": "PAC-12",
+      "displayName": "Pac-12 Conference",
+      "espnId": null,
+      "color": null,
+      "alternateColor": null,
+      "file": "conferences/pac-12.svg",
+      "path": "/logos/svg/conferences/pac-12.svg",
+      "format": "svg",
+      "fills": [
+        "black",
+        "white"
+      ]
+    },
+    {
+      "id": "COL-SEC",
+      "league": "COL",
+      "conference": "SEC",
+      "region": "SEC",
+      "name": "",
+      "abbr": "SEC",
+      "displayName": "Southeastern Conference",
+      "espnId": null,
+      "color": null,
+      "alternateColor": null,
+      "file": "conferences/sec.svg",
+      "path": "/logos/svg/conferences/sec.svg",
+      "format": "svg",
+      "fills": [
+        "#ffffff",
+        "#1d366c",
+        "#fdd540"
+      ]
+    },
+    {
+      "id": "COL-IVY",
+      "league": "COL",
+      "conference": "Ivy",
+      "region": "Ivy",
+      "name": "",
+      "abbr": "IVY",
+      "displayName": "Ivy League",
+      "espnId": null,
+      "color": null,
+      "alternateColor": null,
+      "file": "conferences/ivy.svg",
+      "path": "/logos/svg/conferences/ivy.svg",
+      "format": "svg",
+      "wikiArticle": "Ivy League",
+      "wikiFile": "Ivy League Logo.svg",
+      "fills": [
+        "#026937"
+      ]
+    },
+    {
+      "id": "COL-STAN",
+      "league": "COL",
+      "conference": "ACC",
+      "region": "Stanford",
+      "name": "Cardinal",
+      "abbr": "STAN",
+      "displayName": "Stanford Cardinal",
+      "espnId": "24",
+      "color": "8c1515",
+      "alternateColor": "ffffff",
+      "file": "ncaa/stan.svg",
+      "path": "/logos/svg/ncaa/stan.svg",
+      "format": "svg",
+      "fills": [
+        "#8c1515",
+        "#ffffff"
+      ]
+    },
+    {
+      "id": "COL-CAL",
+      "league": "COL",
+      "conference": "ACC",
+      "region": "California",
+      "name": "Golden Bears",
+      "abbr": "CAL",
+      "displayName": "California Golden Bears",
+      "espnId": "25",
+      "color": "041e42",
+      "alternateColor": "ffc72c",
+      "file": "ncaa/cal.svg",
+      "path": "/logos/svg/ncaa/cal.svg",
+      "format": "svg",
+      "fills": [
+        "#041e42"
+      ]
+    },
+    {
+      "id": "COL-FSU",
+      "league": "COL",
+      "conference": "ACC",
+      "region": "Florida State",
+      "name": "Seminoles",
+      "abbr": "FSU",
+      "displayName": "Florida State Seminoles",
+      "espnId": "52",
+      "color": "782f40",
+      "alternateColor": "ceb888",
+      "file": "ncaa/fsu.svg",
+      "path": "/logos/svg/ncaa/fsu.svg",
+      "format": "svg",
+      "fills": [
+        "#2c2a29",
+        "#ffffff",
+        "#ceb888",
+        "#782f40"
+      ]
+    },
+    {
+      "id": "COL-GT",
+      "league": "COL",
+      "conference": "ACC",
+      "region": "Georgia Tech",
+      "name": "Yellow Jackets",
+      "abbr": "GT",
+      "displayName": "Georgia Tech Yellow Jackets",
+      "espnId": "59",
+      "color": "b3a369",
+      "alternateColor": "ffffff",
+      "file": "ncaa/gt.svg",
+      "path": "/logos/svg/ncaa/gt.svg",
+      "format": "svg",
+      "fills": [
+        "#003057",
+        "#b3a369"
+      ]
+    },
+    {
+      "id": "COL-LOU",
+      "league": "COL",
+      "conference": "ACC",
+      "region": "Louisville",
+      "name": "Cardinals",
+      "abbr": "LOU",
+      "displayName": "Louisville Cardinals",
+      "espnId": "97",
+      "color": "c9001f",
+      "alternateColor": "ffffff",
+      "file": "ncaa/lou.svg",
+      "path": "/logos/svg/ncaa/lou.svg",
+      "format": "svg",
+      "fills": [
+        "#ffffff",
+        "#fdb913",
+        "#c9001f"
+      ]
+    },
+    {
+      "id": "COL-BC",
+      "league": "COL",
+      "conference": "ACC",
+      "region": "Boston College",
+      "name": "Eagles",
+      "abbr": "BC",
+      "displayName": "Boston College Eagles",
+      "espnId": "103",
+      "color": "8c2232",
+      "alternateColor": "dbcca6",
+      "file": "ncaa/bc.svg",
+      "path": "/logos/svg/ncaa/bc.svg",
+      "format": "svg",
+      "fills": [
+        "#dbcca6",
+        "#8c2232",
+        "#ffffff"
+      ]
+    },
+    {
+      "id": "COL-DUKE",
+      "league": "COL",
+      "conference": "ACC",
+      "region": "Duke",
+      "name": "Blue Devils",
+      "abbr": "DUKE",
+      "displayName": "Duke Blue Devils",
+      "espnId": "150",
+      "color": "00539b",
+      "alternateColor": "ffffff",
+      "file": "ncaa/duke.svg",
+      "path": "/logos/svg/ncaa/duke.svg",
+      "format": "svg",
+      "fills": [
+        "#013088"
+      ]
+    },
+    {
+      "id": "COL-NCSU",
+      "league": "COL",
+      "conference": "ACC",
+      "region": "NC State",
+      "name": "Wolfpack",
+      "abbr": "NCSU",
+      "displayName": "NC State Wolfpack",
+      "espnId": "152",
+      "color": "cc0000",
+      "alternateColor": "ffffff",
+      "file": "ncaa/ncsu.svg",
+      "path": "/logos/svg/ncaa/ncsu.svg",
+      "format": "svg",
+      "fills": [
+        "#cc0000",
+        "#ffffff"
+      ]
+    },
+    {
+      "id": "COL-UNC",
+      "league": "COL",
+      "conference": "ACC",
+      "region": "North Carolina",
+      "name": "Tar Heels",
+      "abbr": "UNC",
+      "displayName": "North Carolina Tar Heels",
+      "espnId": "153",
+      "color": "7bafd4",
+      "alternateColor": "13294b",
+      "file": "ncaa/unc.svg",
+      "path": "/logos/svg/ncaa/unc.svg",
+      "format": "svg",
+      "fills": [
+        "#13294b",
+        "#7bafd4"
+      ]
+    },
+    {
+      "id": "COL-WAKE",
+      "league": "COL",
+      "conference": "ACC",
+      "region": "Wake Forest",
+      "name": "Demon Deacons",
+      "abbr": "WAKE",
+      "displayName": "Wake Forest Demon Deacons",
+      "espnId": "154",
+      "color": "ceb888",
+      "alternateColor": "2c2a29",
+      "file": "ncaa/wake.svg",
+      "path": "/logos/svg/ncaa/wake.svg",
+      "format": "svg",
+      "fills": [
+        "#ceb888"
+      ]
+    },
+    {
+      "id": "COL-SYR",
+      "league": "COL",
+      "conference": "ACC",
+      "region": "Syracuse",
+      "name": "Orange",
+      "abbr": "SYR",
+      "displayName": "Syracuse Orange",
+      "espnId": "183",
+      "color": "000e54",
+      "alternateColor": "ff431b",
+      "file": "ncaa/syr.svg",
+      "path": "/logos/svg/ncaa/syr.svg",
+      "format": "svg",
+      "fills": [
+        "#000e54",
+        "#ff431b"
+      ]
+    },
+    {
+      "id": "COL-PITT",
+      "league": "COL",
+      "conference": "ACC",
+      "region": "Pittsburgh",
+      "name": "Panthers",
+      "abbr": "PITT",
+      "displayName": "Pittsburgh Panthers",
+      "espnId": "221",
+      "color": "003594",
+      "alternateColor": "ffb81c",
+      "file": "ncaa/pitt.svg",
+      "path": "/logos/svg/ncaa/pitt.svg",
+      "format": "svg",
+      "fills": [
+        "#ffb81c",
+        "#003594"
+      ]
+    },
+    {
+      "id": "COL-CLEM",
+      "league": "COL",
+      "conference": "ACC",
+      "region": "Clemson",
+      "name": "Tigers",
+      "abbr": "CLEM",
+      "displayName": "Clemson Tigers",
+      "espnId": "228",
+      "color": "f56600",
+      "alternateColor": "ffffff",
+      "file": "ncaa/clem.svg",
+      "path": "/logos/svg/ncaa/clem.svg",
+      "format": "svg",
+      "fills": [
+        "#f56600"
+      ]
+    },
+    {
+      "id": "COL-UVA",
+      "league": "COL",
+      "conference": "ACC",
+      "region": "Virginia",
+      "name": "Cavaliers",
+      "abbr": "UVA",
+      "displayName": "Virginia Cavaliers",
+      "espnId": "258",
+      "color": "232d4b",
+      "alternateColor": "f84c1e",
+      "file": "ncaa/uva.svg",
+      "path": "/logos/svg/ncaa/uva.svg",
+      "format": "svg",
+      "fills": [
+        "#ff6a14",
+        "#f84c1e",
+        "#232d4b",
+        "#003a70"
+      ]
+    },
+    {
+      "id": "COL-VT",
+      "league": "COL",
+      "conference": "ACC",
+      "region": "Virginia Tech",
+      "name": "Hokies",
+      "abbr": "VT",
+      "displayName": "Virginia Tech Hokies",
+      "espnId": "259",
+      "color": "6a2c3e",
+      "alternateColor": "cf4520",
+      "file": "ncaa/vt.svg",
+      "path": "/logos/svg/ncaa/vt.svg",
+      "format": "svg",
+      "fills": [
+        "#cf4520",
+        "#ffffff",
+        "#6a2c3e"
+      ]
+    },
+    {
+      "id": "COL-MIA",
+      "league": "COL",
+      "conference": "ACC",
+      "region": "Miami",
+      "name": "Hurricanes",
+      "abbr": "MIA",
+      "displayName": "Miami Hurricanes",
+      "espnId": "2390",
+      "color": "f47423",
+      "alternateColor": "035131",
+      "file": "ncaa/mia.svg",
+      "path": "/logos/svg/ncaa/mia.svg",
+      "format": "svg",
+      "fills": [
+        "#ffffff",
+        "#005030",
+        "#f47321"
+      ]
+    },
+    {
+      "id": "COL-SMU",
+      "league": "COL",
+      "conference": "ACC",
+      "region": "SMU",
+      "name": "Mustangs",
+      "abbr": "SMU",
+      "displayName": "SMU Mustangs",
+      "espnId": "2567",
+      "color": "a80000",
+      "alternateColor": "0033a1",
+      "file": "ncaa/smu.svg",
+      "path": "/logos/svg/ncaa/smu.svg",
+      "format": "svg",
+      "fills": [
+        "#cc0035"
+      ]
+    },
+    {
+      "id": "COL-ASU",
+      "league": "COL",
+      "conference": "Big 12",
+      "region": "Arizona State",
+      "name": "Sun Devils",
+      "abbr": "ASU",
+      "displayName": "Arizona State Sun Devils",
+      "espnId": "9",
+      "color": "ffc627",
+      "alternateColor": "8c1d40",
+      "file": "ncaa/asu.svg",
+      "path": "/logos/svg/ncaa/asu.svg",
+      "format": "svg",
+      "fills": [
+        "#7d2248",
+        "#ffc72c"
+      ]
+    },
+    {
+      "id": "COL-ARIZ",
+      "league": "COL",
+      "conference": "Big 12",
+      "region": "Arizona",
+      "name": "Wildcats",
+      "abbr": "ARIZ",
+      "displayName": "Arizona Wildcats",
+      "espnId": "12",
+      "color": "cc0033",
+      "alternateColor": "003366",
+      "file": "ncaa/ariz.svg",
+      "path": "/logos/svg/ncaa/ariz.svg",
+      "format": "svg",
+      "fills": [
+        "#ffffff",
+        "#00205c",
+        "#c10230"
+      ]
+    },
+    {
+      "id": "COL-COLO",
+      "league": "COL",
+      "conference": "Big 12",
+      "region": "Colorado",
+      "name": "Buffaloes",
+      "abbr": "COLO",
+      "displayName": "Colorado Buffaloes",
+      "espnId": "38",
+      "color": "cfb87c",
+      "alternateColor": "000000",
+      "file": "ncaa/colo.svg",
+      "path": "/logos/svg/ncaa/colo.svg",
+      "format": "svg",
+      "fills": [
+        "#ffffff",
+        "#cfb87c"
+      ]
+    },
+    {
+      "id": "COL-ISU",
+      "league": "COL",
+      "conference": "Big 12",
+      "region": "Iowa State",
+      "name": "Cyclones",
+      "abbr": "ISU",
+      "displayName": "Iowa State Cyclones",
+      "espnId": "66",
+      "color": "ae192d",
+      "alternateColor": "ffc72a",
+      "file": "ncaa/isu.svg",
+      "path": "/logos/svg/ncaa/isu.svg",
+      "format": "svg",
+      "fills": [
+        "#fdc82f",
+        "#a71930",
+        "#822433",
+        "#fada63"
+      ]
+    },
+    {
+      "id": "COL-OKST",
+      "league": "COL",
+      "conference": "Big 12",
+      "region": "Oklahoma State",
+      "name": "Cowboys",
+      "abbr": "OKST",
+      "displayName": "Oklahoma State Cowboys",
+      "espnId": "197",
+      "color": "fe5c00",
+      "alternateColor": "000000",
+      "file": "ncaa/okst.svg",
+      "path": "/logos/svg/ncaa/okst.svg",
+      "format": "svg",
+      "fills": [
+        "#fe5c00",
+        "#231f20"
+      ]
+    },
+    {
+      "id": "COL-BAY",
+      "league": "COL",
+      "conference": "Big 12",
+      "region": "Baylor",
+      "name": "Bears",
+      "abbr": "BAY",
+      "displayName": "Baylor Bears",
+      "espnId": "239",
+      "color": "154734",
+      "alternateColor": "ffb81c",
+      "file": "ncaa/bay.svg",
+      "path": "/logos/svg/ncaa/bay.svg",
+      "format": "svg",
+      "fills": [
+        "#154734"
+      ]
+    },
+    {
+      "id": "COL-HOU",
+      "league": "COL",
+      "conference": "Big 12",
+      "region": "Houston",
+      "name": "Cougars",
+      "abbr": "HOU",
+      "displayName": "Houston Cougars",
+      "espnId": "248",
+      "color": "c8102e",
+      "alternateColor": "ffffff",
+      "file": "ncaa/hou.svg",
+      "path": "/logos/svg/ncaa/hou.svg",
+      "format": "svg",
+      "fills": [
+        "#c92a39",
+        "#ffffff"
+      ]
+    },
+    {
+      "id": "COL-BYU",
+      "league": "COL",
+      "conference": "Big 12",
+      "region": "BYU",
+      "name": "Cougars",
+      "abbr": "BYU",
+      "displayName": "BYU Cougars",
+      "espnId": "252",
+      "color": "0047ba",
+      "alternateColor": "002e5d",
+      "file": "ncaa/byu.svg",
+      "path": "/logos/svg/ncaa/byu.svg",
+      "format": "svg",
+      "fills": [
+        "#003da5",
+        "#ffffff"
+      ]
+    },
+    {
+      "id": "COL-UTAH",
+      "league": "COL",
+      "conference": "Big 12",
+      "region": "Utah",
+      "name": "Utes",
+      "abbr": "UTAH",
+      "displayName": "Utah Utes",
+      "espnId": "254",
+      "color": "be0000",
+      "alternateColor": "ffffff",
+      "file": "ncaa/utah.svg",
+      "path": "/logos/svg/ncaa/utah.svg",
+      "format": "svg",
+      "fills": [
+        "#be0000"
+      ]
+    },
+    {
+      "id": "COL-WVU",
+      "league": "COL",
+      "conference": "Big 12",
+      "region": "West Virginia",
+      "name": "Mountaineers",
+      "abbr": "WVU",
+      "displayName": "West Virginia Mountaineers",
+      "espnId": "277",
+      "color": "eaaa00",
+      "alternateColor": "002855",
+      "file": "ncaa/wvu.svg",
+      "path": "/logos/svg/ncaa/wvu.svg",
+      "format": "svg",
+      "fills": [
+        "#002855"
+      ]
+    },
+    {
+      "id": "COL-UCF",
+      "league": "COL",
+      "conference": "Big 12",
+      "region": "UCF",
+      "name": "Knights",
+      "abbr": "UCF",
+      "displayName": "UCF Knights",
+      "espnId": "2116",
+      "color": "000000",
+      "alternateColor": "b4a169",
+      "file": "ncaa/ucf.svg",
+      "path": "/logos/svg/ncaa/ucf.svg",
+      "format": "svg",
+      "fills": [
+        "#ffffff",
+        "#b7a369"
+      ]
+    },
+    {
+      "id": "COL-CIN",
+      "league": "COL",
+      "conference": "Big 12",
+      "region": "Cincinnati",
+      "name": "Bearcats",
+      "abbr": "CIN",
+      "displayName": "Cincinnati Bearcats",
+      "espnId": "2132",
+      "color": "000000",
+      "alternateColor": "e00122",
+      "file": "ncaa/cin.svg",
+      "path": "/logos/svg/ncaa/cin.svg",
+      "format": "svg",
+      "fills": [
+        "#e00122"
+      ]
+    },
+    {
+      "id": "COL-KU",
+      "league": "COL",
+      "conference": "Big 12",
+      "region": "Kansas",
+      "name": "Jayhawks",
+      "abbr": "KU",
+      "displayName": "Kansas Jayhawks",
+      "espnId": "2305",
+      "color": "0051ba",
+      "alternateColor": "e8000d",
+      "file": "ncaa/ku.svg",
+      "path": "/logos/svg/ncaa/ku.svg",
+      "format": "svg",
+      "fills": [
+        "#ffffff",
+        "#0051ba",
+        "#e8000d",
+        "#ffc82d"
+      ]
+    },
+    {
+      "id": "COL-KSU",
+      "league": "COL",
+      "conference": "Big 12",
+      "region": "Kansas State",
+      "name": "Wildcats",
+      "abbr": "KSU",
+      "displayName": "Kansas State Wildcats",
+      "espnId": "2306",
+      "color": "330a57",
+      "alternateColor": "e2e3e4",
+      "file": "ncaa/ksu.svg",
+      "path": "/logos/svg/ncaa/ksu.svg",
+      "format": "svg",
+      "fills": [
+        "#330a57"
+      ]
+    },
+    {
+      "id": "COL-TCU",
+      "league": "COL",
+      "conference": "Big 12",
+      "region": "TCU",
+      "name": "Horned Frogs",
+      "abbr": "TCU",
+      "displayName": "TCU Horned Frogs",
+      "espnId": "2628",
+      "color": "4d1979",
+      "alternateColor": "ffffff",
+      "file": "ncaa/tcu.svg",
+      "path": "/logos/svg/ncaa/tcu.svg",
+      "format": "svg",
+      "fills": [
+        "#4d1979"
+      ]
+    },
+    {
+      "id": "COL-TTU",
+      "league": "COL",
+      "conference": "Big 12",
+      "region": "Texas Tech",
+      "name": "Red Raiders",
+      "abbr": "TTU",
+      "displayName": "Texas Tech Red Raiders",
+      "espnId": "2641",
+      "color": "da291c",
+      "alternateColor": "000000",
+      "file": "ncaa/ttu.svg",
+      "path": "/logos/svg/ncaa/ttu.svg",
+      "format": "svg",
+      "fills": [
+        "#c30020",
+        "#000000"
+      ]
+    },
+    {
+      "id": "COL-UCLA",
+      "league": "COL",
+      "conference": "Big Ten",
+      "region": "UCLA",
+      "name": "Bruins",
+      "abbr": "UCLA",
+      "displayName": "UCLA Bruins",
+      "espnId": "26",
+      "color": "2774ae",
+      "alternateColor": "f2a900",
+      "file": "ncaa/ucla.svg",
+      "path": "/logos/svg/ncaa/ucla.svg",
+      "format": "svg",
+      "fills": [
+        "#2774ae"
+      ]
+    },
+    {
+      "id": "COL-USC",
+      "league": "COL",
+      "conference": "Big Ten",
+      "region": "USC",
+      "name": "Trojans",
+      "abbr": "USC",
+      "displayName": "USC Trojans",
+      "espnId": "30",
+      "color": "9d2235",
+      "alternateColor": "ffc72c",
+      "file": "ncaa/usc.svg",
+      "path": "/logos/svg/ncaa/usc.svg",
+      "format": "svg",
+      "fills": [
+        "#ffc72c",
+        "#9d2235"
+      ]
+    },
+    {
+      "id": "COL-NU",
+      "league": "COL",
+      "conference": "Big Ten",
+      "region": "Northwestern",
+      "name": "Wildcats",
+      "abbr": "NU",
+      "displayName": "Northwestern Wildcats",
+      "espnId": "77",
+      "color": "492f92",
+      "alternateColor": "ffffff",
+      "file": "ncaa/nu.svg",
+      "path": "/logos/svg/ncaa/nu.svg",
+      "format": "svg",
+      "fills": [
+        "#ffffff",
+        "#59118e"
+      ]
+    },
+    {
+      "id": "COL-IU",
+      "league": "COL",
+      "conference": "Big Ten",
+      "region": "Indiana",
+      "name": "Hoosiers",
+      "abbr": "IU",
+      "displayName": "Indiana Hoosiers",
+      "espnId": "84",
+      "color": "970310",
+      "alternateColor": "ffffff",
+      "file": "ncaa/iu.svg",
+      "path": "/logos/svg/ncaa/iu.svg",
+      "format": "svg",
+      "fills": [
+        "#990000"
+      ]
+    },
+    {
+      "id": "COL-MD",
+      "league": "COL",
+      "conference": "Big Ten",
+      "region": "Maryland",
+      "name": "Terrapins",
+      "abbr": "MD",
+      "displayName": "Maryland Terrapins",
+      "espnId": "120",
+      "color": "ce1126",
+      "alternateColor": "ffffff",
+      "file": "ncaa/md.svg",
+      "path": "/logos/svg/ncaa/md.svg",
+      "format": "svg",
+      "fills": [
+        "#ffd200",
+        "#e21833",
+        "#ffffff"
+      ]
+    },
+    {
+      "id": "COL-MSU",
+      "league": "COL",
+      "conference": "Big Ten",
+      "region": "Michigan State",
+      "name": "Spartans",
+      "abbr": "MSU",
+      "displayName": "Michigan State Spartans",
+      "espnId": "127",
+      "color": "173f35",
+      "alternateColor": "ffffff",
+      "file": "ncaa/msu.svg",
+      "path": "/logos/svg/ncaa/msu.svg",
+      "format": "svg",
+      "fills": [
+        "#18453b"
+      ]
+    },
+    {
+      "id": "COL-MICH",
+      "league": "COL",
+      "conference": "Big Ten",
+      "region": "Michigan",
+      "name": "Wolverines",
+      "abbr": "MICH",
+      "displayName": "Michigan Wolverines",
+      "espnId": "130",
+      "color": "00274c",
+      "alternateColor": "ffcb05",
+      "file": "ncaa/mich.svg",
+      "path": "/logos/svg/ncaa/mich.svg",
+      "format": "svg",
+      "fills": [
+        "#00274c",
+        "#f5c300"
+      ]
+    },
+    {
+      "id": "COL-MINN",
+      "league": "COL",
+      "conference": "Big Ten",
+      "region": "Minnesota",
+      "name": "Golden Gophers",
+      "abbr": "MINN",
+      "displayName": "Minnesota Golden Gophers",
+      "espnId": "135",
+      "color": "5e0a2f",
+      "alternateColor": "fab41c",
+      "file": "ncaa/minn.svg",
+      "path": "/logos/svg/ncaa/minn.svg",
+      "format": "svg",
+      "fills": [
+        "#5b0013",
+        "#ffb71e"
+      ]
+    },
+    {
+      "id": "COL-NEB",
+      "league": "COL",
+      "conference": "Big Ten",
+      "region": "Nebraska",
+      "name": "Cornhuskers",
+      "abbr": "NEB",
+      "displayName": "Nebraska Cornhuskers",
+      "espnId": "158",
+      "color": "e31937",
+      "alternateColor": "ffffff",
+      "file": "ncaa/neb.svg",
+      "path": "/logos/svg/ncaa/neb.svg",
+      "format": "svg",
+      "fills": [
+        "#dd0000"
+      ]
+    },
+    {
+      "id": "COL-RUTG",
+      "league": "COL",
+      "conference": "Big Ten",
+      "region": "Rutgers",
+      "name": "Scarlet Knights",
+      "abbr": "RUTG",
+      "displayName": "Rutgers Scarlet Knights",
+      "espnId": "164",
+      "color": "ce0e2d",
+      "alternateColor": "ffffff",
+      "file": "ncaa/rutg.svg",
+      "path": "/logos/svg/ncaa/rutg.svg",
+      "format": "svg",
+      "fills": [
+        "#000000",
+        "#cc0033"
+      ]
+    },
+    {
+      "id": "COL-OSU",
+      "league": "COL",
+      "conference": "Big Ten",
+      "region": "Ohio State",
+      "name": "Buckeyes",
+      "abbr": "OSU",
+      "displayName": "Ohio State Buckeyes",
+      "espnId": "194",
+      "color": "ba0c2f",
+      "alternateColor": "a8adb4",
+      "file": "ncaa/osu.svg",
+      "path": "/logos/svg/ncaa/osu.svg",
+      "format": "svg",
+      "fills": [
+        "#ba0c2f",
+        "#a7b1b7"
+      ]
+    },
+    {
+      "id": "COL-PSU",
+      "league": "COL",
+      "conference": "Big Ten",
+      "region": "Penn State",
+      "name": "Nittany Lions",
+      "abbr": "PSU",
+      "displayName": "Penn State Nittany Lions",
+      "espnId": "213",
+      "color": "061440",
+      "alternateColor": "ffffff",
+      "file": "ncaa/psu.svg",
+      "path": "/logos/svg/ncaa/psu.svg",
+      "format": "svg",
+      "fills": [
+        "#ffffff",
+        "#001e44"
+      ]
+    },
+    {
+      "id": "COL-WASH",
+      "league": "COL",
+      "conference": "Big Ten",
+      "region": "Washington",
+      "name": "Huskies",
+      "abbr": "WASH",
+      "displayName": "Washington Huskies",
+      "espnId": "264",
+      "color": "33006f",
+      "alternateColor": "e8d3a2",
+      "file": "ncaa/wash.svg",
+      "path": "/logos/svg/ncaa/wash.svg",
+      "format": "svg",
+      "fills": [
+        "#e8d3a2",
+        "#33006f"
+      ]
+    },
+    {
+      "id": "COL-WIS",
+      "league": "COL",
+      "conference": "Big Ten",
+      "region": "Wisconsin",
+      "name": "Badgers",
+      "abbr": "WIS",
+      "displayName": "Wisconsin Badgers",
+      "espnId": "275",
+      "color": "a00000",
+      "alternateColor": "ffffff",
+      "file": "ncaa/wis.svg",
+      "path": "/logos/svg/ncaa/wis.svg",
+      "format": "svg",
+      "fills": [
+        "#c5050c"
+      ]
+    },
+    {
+      "id": "COL-ILL",
+      "league": "COL",
+      "conference": "Big Ten",
+      "region": "Illinois",
+      "name": "Fighting Illini",
+      "abbr": "ILL",
+      "displayName": "Illinois Fighting Illini",
+      "espnId": "356",
+      "color": "ff5f05",
+      "alternateColor": "13294b",
+      "file": "ncaa/ill.svg",
+      "path": "/logos/svg/ncaa/ill.svg",
+      "format": "svg",
+      "fills": [
+        "#13294b",
+        "#ff5f05"
+      ]
+    },
+    {
+      "id": "COL-IOWA",
+      "league": "COL",
+      "conference": "Big Ten",
+      "region": "Iowa",
+      "name": "Hawkeyes",
+      "abbr": "IOWA",
+      "displayName": "Iowa Hawkeyes",
+      "espnId": "2294",
+      "color": "231f20",
+      "alternateColor": "fcd116",
+      "file": "ncaa/iowa.svg",
+      "path": "/logos/svg/ncaa/iowa.svg",
+      "format": "svg",
+      "fills": [
+        "#fcd116"
+      ]
+    },
+    {
+      "id": "COL-ORE",
+      "league": "COL",
+      "conference": "Big Ten",
+      "region": "Oregon",
+      "name": "Ducks",
+      "abbr": "ORE",
+      "displayName": "Oregon Ducks",
+      "espnId": "2483",
+      "color": "00934b",
+      "alternateColor": "fff41b",
+      "file": "ncaa/ore.svg",
+      "path": "/logos/svg/ncaa/ore.svg",
+      "format": "svg",
+      "fills": [
+        "#00934b"
+      ]
+    },
+    {
+      "id": "COL-PUR",
+      "league": "COL",
+      "conference": "Big Ten",
+      "region": "Purdue",
+      "name": "Boilermakers",
+      "abbr": "PUR",
+      "displayName": "Purdue Boilermakers",
+      "espnId": "2509",
+      "color": "ceb888",
+      "alternateColor": "000000",
+      "file": "ncaa/pur.svg",
+      "path": "/logos/svg/ncaa/pur.svg",
+      "format": "svg",
+      "fills": [
+        "#9d9795",
+        "#cfb991"
+      ]
+    },
+    {
+      "id": "COL-SDSU",
+      "league": "COL",
+      "conference": "Pac-12",
+      "region": "San Diego State",
+      "name": "Aztecs",
+      "abbr": "SDSU",
+      "displayName": "San Diego State Aztecs",
+      "espnId": "21",
+      "color": "a6192e",
+      "alternateColor": "000000",
+      "file": "ncaa/sdsu.svg",
+      "path": "/logos/svg/ncaa/sdsu.svg",
+      "format": "svg",
+      "fills": [
+        "#ffffff",
+        "#c41230"
+      ]
+    },
+    {
+      "id": "COL-CSU",
+      "league": "COL",
+      "conference": "Pac-12",
+      "region": "Colorado State",
+      "name": "Rams",
+      "abbr": "CSU",
+      "displayName": "Colorado State Rams",
+      "espnId": "36",
+      "color": "004c23",
+      "alternateColor": "c8c372",
+      "file": "ncaa/csu.svg",
+      "path": "/logos/svg/ncaa/csu.svg",
+      "format": "svg",
+      "fills": [
+        "#ffffff",
+        "#cbc46e",
+        "#004c23"
+      ]
+    },
+    {
+      "id": "COL-BOIS",
+      "league": "COL",
+      "conference": "Pac-12",
+      "region": "Boise State",
+      "name": "Broncos",
+      "abbr": "BOIS",
+      "displayName": "Boise State Broncos",
+      "espnId": "68",
+      "color": "0033a0",
+      "alternateColor": "d64309",
+      "file": "ncaa/bois.svg",
+      "path": "/logos/svg/ncaa/bois.svg",
+      "format": "svg",
+      "fills": [
+        "#ffffff",
+        "#d64309",
+        "#0033a0"
+      ]
+    },
+    {
+      "id": "COL-ORST",
+      "league": "COL",
+      "conference": "Pac-12",
+      "region": "Oregon State",
+      "name": "Beavers",
+      "abbr": "ORST",
+      "displayName": "Oregon State Beavers",
+      "espnId": "204",
+      "color": "dc4405",
+      "alternateColor": "000000",
+      "file": "ncaa/orst.svg",
+      "path": "/logos/svg/ncaa/orst.svg",
+      "format": "svg",
+      "fills": [
+        "#d73f09",
+        "#ffffff"
+      ]
+    },
+    {
+      "id": "COL-WSU",
+      "league": "COL",
+      "conference": "Pac-12",
+      "region": "Washington State",
+      "name": "Cougars",
+      "abbr": "WSU",
+      "displayName": "Washington State Cougars",
+      "espnId": "265",
+      "color": "a60f2d",
+      "alternateColor": "4d4d4d",
+      "file": "ncaa/wsu.svg",
+      "path": "/logos/svg/ncaa/wsu.svg",
+      "format": "svg",
+      "fills": [
+        "#ffffff",
+        "#981e32"
+      ]
+    },
+    {
+      "id": "COL-FRES",
+      "league": "COL",
+      "conference": "Pac-12",
+      "region": "Fresno State",
+      "name": "Bulldogs",
+      "abbr": "FRES",
+      "displayName": "Fresno State Bulldogs",
+      "espnId": "278",
+      "color": "b1102b",
+      "alternateColor": "13284c",
+      "file": "ncaa/fres.svg",
+      "path": "/logos/svg/ncaa/fres.svg",
+      "format": "svg",
+      "fills": [
+        "#ffffff",
+        "#13284c",
+        "#c41230",
+        "#007935"
+      ]
+    },
+    {
+      "id": "COL-TXST",
+      "league": "COL",
+      "conference": "Pac-12",
+      "region": "Texas State",
+      "name": "Bobcats",
+      "abbr": "TXST",
+      "displayName": "Texas State Bobcats",
+      "espnId": "326",
+      "color": "501214",
+      "alternateColor": "6a5638",
+      "file": "ncaa/txst.svg",
+      "path": "/logos/svg/ncaa/txst.svg",
+      "format": "svg",
+      "fills": [
+        "#6a5638",
+        "#501214"
+      ]
+    },
+    {
+      "id": "COL-USU",
+      "league": "COL",
+      "conference": "Pac-12",
+      "region": "Utah State",
+      "name": "Aggies",
+      "abbr": "USU",
+      "displayName": "Utah State Aggies",
+      "espnId": "328",
+      "color": "0f2439",
+      "alternateColor": "ffffff",
+      "file": "ncaa/usu.svg",
+      "path": "/logos/svg/ncaa/usu.svg",
+      "format": "svg",
+      "fills": [
+        "#00263a",
+        "#8a8d8f"
+      ]
+    },
+    {
+      "id": "COL-AUB",
+      "league": "COL",
+      "conference": "SEC",
+      "region": "Auburn",
+      "name": "Tigers",
+      "abbr": "AUB",
+      "displayName": "Auburn Tigers",
+      "espnId": "2",
+      "color": "002b5c",
+      "alternateColor": "f26522",
+      "file": "ncaa/aub.svg",
+      "path": "/logos/svg/ncaa/aub.svg",
+      "format": "svg",
+      "fills": [
+        "#f26522",
+        "#03244d"
+      ]
+    },
+    {
+      "id": "COL-ARK",
+      "league": "COL",
+      "conference": "SEC",
+      "region": "Arkansas",
+      "name": "Razorbacks",
+      "abbr": "ARK",
+      "displayName": "Arkansas Razorbacks",
+      "espnId": "8",
+      "color": "a32136",
+      "alternateColor": "ffffff",
+      "file": "ncaa/ark.svg",
+      "path": "/logos/svg/ncaa/ark.png",
+      "format": "png"
+    },
+    {
+      "id": "COL-FLA",
+      "league": "COL",
+      "conference": "SEC",
+      "region": "Florida",
+      "name": "Gators",
+      "abbr": "FLA",
+      "displayName": "Florida Gators",
+      "espnId": "57",
+      "color": "0021a5",
+      "alternateColor": "fa4616",
+      "file": "ncaa/fla.svg",
+      "path": "/logos/svg/ncaa/fla.svg",
+      "format": "svg",
+      "fills": [
+        "#003087",
+        "#ffffff",
+        "#fa4616",
+        "#046a38"
+      ]
+    },
+    {
+      "id": "COL-UGA",
+      "league": "COL",
+      "conference": "SEC",
+      "region": "Georgia",
+      "name": "Bulldogs",
+      "abbr": "UGA",
+      "displayName": "Georgia Bulldogs",
+      "espnId": "61",
+      "color": "ba0c2f",
+      "alternateColor": "2c2a29",
+      "file": "ncaa/uga.svg",
+      "path": "/logos/svg/ncaa/uga.svg",
+      "format": "svg",
+      "fills": [
+        "#ffffff",
+        "#ba0c2f",
+        "#2c2a29"
+      ]
+    },
+    {
+      "id": "COL-UK",
+      "league": "COL",
+      "conference": "SEC",
+      "region": "Kentucky",
+      "name": "Wildcats",
+      "abbr": "UK",
+      "displayName": "Kentucky Wildcats",
+      "espnId": "96",
+      "color": "0033a0",
+      "alternateColor": "ffffff",
+      "file": "ncaa/uk.svg",
+      "path": "/logos/svg/ncaa/uk.svg",
+      "format": "svg",
+      "fills": [
+        "#0033a0",
+        "#ffffff"
+      ]
+    },
+    {
+      "id": "COL-LSU",
+      "league": "COL",
+      "conference": "SEC",
+      "region": "LSU",
+      "name": "Tigers",
+      "abbr": "LSU",
+      "displayName": "LSU Tigers",
+      "espnId": "99",
+      "color": "461d76",
+      "alternateColor": "fdd023",
+      "file": "ncaa/lsu.svg",
+      "path": "/logos/svg/ncaa/lsu.svg",
+      "format": "svg",
+      "fills": [
+        "#fdd023",
+        "#461d7c"
+      ]
+    },
+    {
+      "id": "COL-MIZ",
+      "league": "COL",
+      "conference": "SEC",
+      "region": "Missouri",
+      "name": "Tigers",
+      "abbr": "MIZ",
+      "displayName": "Missouri Tigers",
+      "espnId": "142",
+      "color": "f1b82d",
+      "alternateColor": "000000",
+      "file": "ncaa/miz.svg",
+      "path": "/logos/svg/ncaa/miz.svg",
+      "format": "svg",
+      "fills": [
+        "#fdb719",
+        "#ffffff"
+      ]
+    },
+    {
+      "id": "COL-MISS",
+      "league": "COL",
+      "conference": "SEC",
+      "region": "Ole Miss",
+      "name": "Rebels",
+      "abbr": "MISS",
+      "displayName": "Ole Miss Rebels",
+      "espnId": "145",
+      "color": "13294b",
+      "alternateColor": "cf142b",
+      "file": "ncaa/miss.svg",
+      "path": "/logos/svg/ncaa/miss.svg",
+      "format": "svg",
+      "fills": [
+        "#173a79",
+        "#e51636"
+      ]
+    },
+    {
+      "id": "COL-OU",
+      "league": "COL",
+      "conference": "SEC",
+      "region": "Oklahoma",
+      "name": "Sooners",
+      "abbr": "OU",
+      "displayName": "Oklahoma Sooners",
+      "espnId": "201",
+      "color": "990000",
+      "alternateColor": "ffffff",
+      "file": "ncaa/ou.svg",
+      "path": "/logos/svg/ncaa/ou.svg",
+      "format": "svg",
+      "fills": [
+        "#ffffff",
+        "#841617"
+      ]
+    },
+    {
+      "id": "COL-VAN",
+      "league": "COL",
+      "conference": "SEC",
+      "region": "Vanderbilt",
+      "name": "Commodores",
+      "abbr": "VAN",
+      "displayName": "Vanderbilt Commodores",
+      "espnId": "238",
+      "color": "000000",
+      "alternateColor": "cfae70",
+      "file": "ncaa/van.svg",
+      "path": "/logos/svg/ncaa/van.svg",
+      "format": "svg",
+      "fills": [
+        "#000000"
+      ]
+    },
+    {
+      "id": "COL-TA&M",
+      "league": "COL",
+      "conference": "SEC",
+      "region": "Texas A&M",
+      "name": "Aggies",
+      "abbr": "TA&M",
+      "displayName": "Texas A&M Aggies",
+      "espnId": "245",
+      "color": "500000",
+      "alternateColor": "ffffff",
+      "file": "ncaa/tam.svg",
+      "path": "/logos/svg/ncaa/tam.svg",
+      "format": "svg",
+      "fills": [
+        "#ffffff",
+        "#500000"
+      ]
+    },
+    {
+      "id": "COL-TEX",
+      "league": "COL",
+      "conference": "SEC",
+      "region": "Texas",
+      "name": "Longhorns",
+      "abbr": "TEX",
+      "displayName": "Texas Longhorns",
+      "espnId": "251",
+      "color": "af5c37",
+      "alternateColor": "ffffff",
+      "file": "ncaa/tex.svg",
+      "path": "/logos/svg/ncaa/tex.svg",
+      "format": "svg",
+      "fills": [
+        "#bf5700"
+      ]
+    },
+    {
+      "id": "COL-ALA",
+      "league": "COL",
+      "conference": "SEC",
+      "region": "Alabama",
+      "name": "Crimson Tide",
+      "abbr": "ALA",
+      "displayName": "Alabama Crimson Tide",
+      "espnId": "333",
+      "color": "9e1b32",
+      "alternateColor": "ffffff",
+      "file": "ncaa/ala.svg",
+      "path": "/logos/svg/ncaa/ala.svg",
+      "format": "svg",
+      "fills": [
+        "#b30838"
+      ]
+    },
+    {
+      "id": "COL-MSST",
+      "league": "COL",
+      "conference": "SEC",
+      "region": "Mississippi State",
+      "name": "Bulldogs",
+      "abbr": "MSST",
+      "displayName": "Mississippi State Bulldogs",
+      "espnId": "344",
+      "color": "5d1725",
+      "alternateColor": "c1c6c8",
+      "file": "ncaa/msst.svg",
+      "path": "/logos/svg/ncaa/msst.svg",
+      "format": "svg",
+      "fills": [
+        "#c1c5c8",
+        "#702e3e",
+        "#fefefe"
+      ]
+    },
+    {
+      "id": "COL-SC",
+      "league": "COL",
+      "conference": "SEC",
+      "region": "South Carolina",
+      "name": "Gamecocks",
+      "abbr": "SC",
+      "displayName": "South Carolina Gamecocks",
+      "espnId": "2579",
+      "color": "73000a",
+      "alternateColor": "000000",
+      "file": "ncaa/sc.svg",
+      "path": "/logos/svg/ncaa/sc.svg",
+      "format": "svg",
+      "fills": [
+        "#ffffff",
+        "#73000a"
+      ]
+    },
+    {
+      "id": "COL-TENN",
+      "league": "COL",
+      "conference": "SEC",
+      "region": "Tennessee",
+      "name": "Volunteers",
+      "abbr": "TENN",
+      "displayName": "Tennessee Volunteers",
+      "espnId": "2633",
+      "color": "ff8200",
+      "alternateColor": "ffffff",
+      "file": "ncaa/tenn.svg",
+      "path": "/logos/svg/ncaa/tenn.svg",
+      "format": "svg",
+      "fills": [
+        "#ff8200"
+      ]
+    },
+    {
+      "id": "COL-YALE",
+      "league": "COL",
+      "conference": "Ivy",
+      "region": "Yale",
+      "name": "Bulldogs",
+      "abbr": "YALE",
+      "displayName": "Yale Bulldogs",
+      "espnId": "43",
+      "color": "004a81",
+      "alternateColor": "286dc0",
+      "file": "ncaa/yale.svg",
+      "path": "/logos/svg/ncaa/yale.svg",
+      "format": "svg",
+      "wikiArticle": "Yale Bulldogs",
+      "wikiFile": "Yale Bulldogs script.svg",
+      "fills": [
+        "#0a2240",
+        "#ffffff"
+      ]
+    },
+    {
+      "id": "COL-HARV",
+      "league": "COL",
+      "conference": "Ivy",
+      "region": "Harvard",
+      "name": "Crimson",
+      "abbr": "HARV",
+      "displayName": "Harvard Crimson",
+      "espnId": "108",
+      "color": "990000",
+      "alternateColor": "dbdbdb",
+      "file": "ncaa/harv.svg",
+      "path": "/logos/svg/ncaa/harv.svg",
+      "format": "svg",
+      "wikiArticle": "Harvard Crimson",
+      "wikiFile": "Harvard Crimson logo 2020.svg",
+      "fills": [
+        "#ffffff",
+        "#a31f36"
+      ]
+    },
+    {
+      "id": "COL-DART",
+      "league": "COL",
+      "conference": "Ivy",
+      "region": "Dartmouth",
+      "name": "Big Green",
+      "abbr": "DART",
+      "displayName": "Dartmouth Big Green",
+      "espnId": "159",
+      "color": "005730",
+      "alternateColor": "000000",
+      "file": "ncaa/dart.svg",
+      "path": "/logos/svg/ncaa/dart.svg",
+      "format": "svg",
+      "wikiArticle": "Dartmouth Big Green",
+      "wikiFile": "Dartmouth College Big Green logo.svg",
+      "fills": [
+        "#ffffff",
+        "#00693e"
+      ]
+    },
+    {
+      "id": "COL-PRIN",
+      "league": "COL",
+      "conference": "Ivy",
+      "region": "Princeton",
+      "name": "Tigers",
+      "abbr": "PRIN",
+      "displayName": "Princeton Tigers",
+      "espnId": "163",
+      "color": "000000",
+      "alternateColor": "ff6000",
+      "file": "ncaa/prin.svg",
+      "path": "/logos/svg/ncaa/prin.svg",
+      "format": "svg",
+      "wikiArticle": "Princeton Tigers",
+      "wikiFile": "Princeton Tigers logo.svg",
+      "fills": [
+        "#ffffff",
+        "#000000",
+        "#ff6000"
+      ]
+    },
+    {
+      "id": "COL-COLU",
+      "league": "COL",
+      "conference": "Ivy",
+      "region": "Columbia",
+      "name": "Lions",
+      "abbr": "COLU",
+      "displayName": "Columbia Lions",
+      "espnId": "171",
+      "color": "7ba4db",
+      "alternateColor": "183863",
+      "file": "ncaa/colu.svg",
+      "path": "/logos/svg/ncaa/colu.svg",
+      "format": "svg",
+      "wikiArticle": "Columbia Lions",
+      "wikiFile": "Columbia Lions logo.svg",
+      "fills": [
+        "#183863",
+        "#ffffff",
+        "#99caea"
+      ]
+    },
+    {
+      "id": "COL-COR",
+      "league": "COL",
+      "conference": "Ivy",
+      "region": "Cornell",
+      "name": "Big Red",
+      "abbr": "COR",
+      "displayName": "Cornell Big Red",
+      "espnId": "172",
+      "color": "b31b1b",
+      "alternateColor": "ffffff",
+      "file": "ncaa/cor.svg",
+      "path": "/logos/svg/ncaa/cor.svg",
+      "format": "svg",
+      "wikiArticle": "Cornell Big Red",
+      "wikiFile": "Cornell Big Red logo.svg",
+      "fills": [
+        "#89572e",
+        "#5e3920",
+        "#b31b1b",
+        "#ffffff"
+      ]
+    },
+    {
+      "id": "COL-PENN",
+      "league": "COL",
+      "conference": "Ivy",
+      "region": "Pennsylvania",
+      "name": "Quakers",
+      "abbr": "PENN",
+      "displayName": "Pennsylvania Quakers",
+      "espnId": "219",
+      "color": "082A74",
+      "alternateColor": "a6163d",
+      "file": "ncaa/penn.svg",
+      "path": "/logos/svg/ncaa/penn.svg",
+      "format": "svg",
+      "wikiArticle": "Penn Quakers",
+      "wikiFile": "Penn Quakers logo.svg",
+      "fills": [
+        "#ffffff",
+        "#011f5b",
+        "#154281",
+        "#990000"
+      ]
+    },
+    {
+      "id": "COL-BRWN",
+      "league": "COL",
+      "conference": "Ivy",
+      "region": "Brown",
+      "name": "Bears",
+      "abbr": "BRWN",
+      "displayName": "Brown Bears",
+      "espnId": "225",
+      "color": "411e09",
+      "alternateColor": "949300",
+      "file": "ncaa/brwn.svg",
+      "path": "/logos/svg/ncaa/brwn.svg",
+      "format": "svg",
+      "wikiArticle": "Brown Bears football",
+      "wikiFile": "Brown Bears Athletics logo.svg",
+      "fills": [
+        "#4e3629",
+        "#c00404"
+      ]
+    },
+    {
+      "id": "COL-FAMU",
+      "league": "COL",
+      "conference": "HBCU",
+      "region": "Florida A&M",
+      "name": "Rattlers",
+      "abbr": "FAMU",
+      "displayName": "Florida A&M Rattlers",
+      "espnId": "50",
+      "color": "F89728",
+      "alternateColor": "00843d",
+      "file": "ncaa/famu.svg",
+      "path": "/logos/svg/ncaa/famu.svg",
+      "format": "svg",
+      "wikiArticle": "Florida A&M Rattlers and Lady Rattlers",
+      "wikiFile": "Florida A&M Rattlers logo.svg",
+      "fills": [
+        "#ee7623",
+        "#231f20",
+        "#ffffff",
+        "#1d5732"
+      ]
+    },
+    {
+      "id": "COL-AAMU",
+      "league": "COL",
+      "conference": "HBCU",
+      "region": "Alabama A&M",
+      "name": "Bulldogs",
+      "abbr": "AAMU",
+      "displayName": "Alabama A&M Bulldogs",
+      "espnId": "2010",
+      "color": "790000",
+      "alternateColor": "ffffff",
+      "file": "ncaa/aamu.svg",
+      "path": "/logos/svg/ncaa/aamu.svg",
+      "format": "svg",
+      "wikiArticle": "Alabama A&M Bulldogs football",
+      "wikiFile": "Alabama A&M Bulldogs logo.svg",
+      "fills": [
+        "#660000"
+      ]
+    },
+    {
+      "id": "COL-ALST",
+      "league": "COL",
+      "conference": "HBCU",
+      "region": "Alabama State",
+      "name": "Hornets",
+      "abbr": "ALST",
+      "displayName": "Alabama State Hornets",
+      "espnId": "2011",
+      "color": "e9a900",
+      "alternateColor": "0a0a0a",
+      "file": "ncaa/alst.svg",
+      "path": "/logos/svg/ncaa/alst.svg",
+      "format": "svg",
+      "wikiArticle": "Alabama State Hornets and Lady Hornets",
+      "wikiFile": "Alabama State Hornets logo.svg",
+      "fills": [
+        "#6a666e",
+        "#e7b721",
+        "#ffcb05",
+        "#a3a5ae",
+        "#d4ac2a",
+        "#c0c1c8",
+        "#ffea00",
+        "#dce0e2",
+        "#ffffff"
+      ]
+    },
+    {
+      "id": "COL-BCU",
+      "league": "COL",
+      "conference": "HBCU",
+      "region": "Bethune-Cookman",
+      "name": "Wildcats",
+      "abbr": "BCU",
+      "displayName": "Bethune-Cookman Wildcats",
+      "espnId": "2065",
+      "color": "7b1831",
+      "alternateColor": "e9aa12",
+      "file": "ncaa/bcu.svg",
+      "path": "/logos/svg/ncaa/bcu.svg",
+      "format": "svg",
+      "wikiArticle": "Bethune\u2013Cookman Wildcats",
+      "wikiFile": "Bethune\u2013Cookman Wildcats logo.svg",
+      "fills": [
+        "#fdb913",
+        "#ffffff",
+        "#860038"
+      ]
+    },
+    {
+      "id": "COL-JKST",
+      "league": "COL",
+      "conference": "HBCU",
+      "region": "Jackson State",
+      "name": "Tigers",
+      "abbr": "JKST",
+      "displayName": "Jackson State Tigers",
+      "espnId": "2296",
+      "color": "123297",
+      "alternateColor": "b5b7ba",
+      "file": "ncaa/jkst.svg",
+      "path": "/logos/svg/ncaa/jkst.svg",
+      "format": "svg",
+      "wikiArticle": "Jackson State Tigers and Lady Tigers",
+      "wikiFile": "Jackson State athletics logo.svg",
+      "fills": [
+        "#ffffff",
+        "#002147"
+      ]
+    },
+    {
+      "id": "COL-MVSU",
+      "league": "COL",
+      "conference": "HBCU",
+      "region": "Mississippi Valley State",
+      "name": "Delta Devils",
+      "abbr": "MVSU",
+      "displayName": "Mississippi Valley State Delta Devils",
+      "espnId": "2400",
+      "color": "005328",
+      "alternateColor": "cf2d34",
+      "file": "ncaa/mvsu.svg",
+      "path": "/logos/svg/ncaa/mvsu.svg",
+      "format": "svg",
+      "wikiArticle": "Mississippi Valley State Delta Devils and Devilettes",
+      "wikiFile": "Mississippi Valley State University athletics logo.svg",
+      "fills": [
+        "url",
+        "#ffffff",
+        "#c8102e",
+        "#002e08",
+        "#00703c"
+      ]
+    },
+    {
+      "id": "COL-ALCN",
+      "league": "COL",
+      "conference": "HBCU",
+      "region": "Alcorn State",
+      "name": "Braves",
+      "abbr": "ALCN",
+      "displayName": "Alcorn State Braves",
+      "espnId": "2016",
+      "color": "4b0058",
+      "alternateColor": "46166a",
+      "file": "ncaa/alcn.svg",
+      "path": "/logos/svg/ncaa/alcn.svg",
+      "format": "svg",
+      "wikiArticle": "Alcorn State Braves and Lady Braves",
+      "wikiFile": "Alcorn State athletics logo.svg",
+      "fills": [
+        "url",
+        "#b6862d",
+        "#5a2f00",
+        "#5e3d7f",
+        "#2c0047",
+        "#553077"
+      ]
+    },
+    {
+      "id": "COL-UAPB",
+      "league": "COL",
+      "conference": "HBCU",
+      "region": "Arkansas-Pine Bluff",
+      "name": "Golden Lions",
+      "abbr": "UAPB",
+      "displayName": "Arkansas-Pine Bluff Golden Lions",
+      "espnId": "2029",
+      "color": "e0aa0f",
+      "alternateColor": "eaaa00",
+      "file": "ncaa/uapb.svg",
+      "path": "/logos/svg/ncaa/uapb.svg",
+      "format": "svg",
+      "wikiArticle": "Arkansas\u2013Pine Bluff Golden Lions",
+      "wikiFile": "Arkansas\u2013Pine Bluff Golden Lions logo.svg",
+      "fills": [
+        "#eeb310",
+        "#e31837",
+        "#ffffff"
+      ]
+    },
+    {
+      "id": "COL-PV",
+      "league": "COL",
+      "conference": "HBCU",
+      "region": "Prairie View A&M",
+      "name": "Panthers",
+      "abbr": "PV",
+      "displayName": "Prairie View A&M Panthers",
+      "espnId": "2504",
+      "color": "582c83",
+      "alternateColor": "eaaa00",
+      "file": "ncaa/pv.svg",
+      "path": "/logos/svg/ncaa/pv.png",
+      "format": "png",
+      "wikiArticle": "Prairie View A&M Panthers and Lady Panthers",
+      "wikiFile": "Prairie view univ athletics textlogo.png"
+    },
+    {
+      "id": "COL-SOU",
+      "league": "COL",
+      "conference": "HBCU",
+      "region": "Southern",
+      "name": "Jaguars",
+      "abbr": "SOU",
+      "displayName": "Southern Jaguars",
+      "espnId": "2582",
+      "color": "004B97",
+      "alternateColor": "ffc82d",
+      "file": "ncaa/sou.svg",
+      "path": "/logos/svg/ncaa/sou.svg",
+      "format": "svg",
+      "wikiArticle": "Southern Jaguars and Lady Jaguars",
+      "wikiFile": "Southern-u logo from NCAA.svg",
+      "fills": [
+        "#ffc82f",
+        "#fffffe",
+        "#61aee1",
+        "#fefefe"
+      ]
+    },
+    {
+      "id": "COL-TXSO",
+      "league": "COL",
+      "conference": "HBCU",
+      "region": "Texas Southern",
+      "name": "Tigers",
+      "abbr": "TXSO",
+      "displayName": "Texas Southern Tigers",
+      "espnId": "2640",
+      "color": "860038",
+      "alternateColor": "ffffff",
+      "file": "ncaa/txso.svg",
+      "path": "/logos/svg/ncaa/txso.svg",
+      "format": "svg",
+      "wikiArticle": "Texas Southern Tigers",
+      "wikiFile": "Texas Southern Tigers logo.svg",
+      "fills": [
+        "#6f263d",
+        "#ffffff",
+        "#a2aaad"
+      ]
+    },
+    {
+      "id": "COL-GRAM",
+      "league": "COL",
+      "conference": "HBCU",
+      "region": "Grambling",
+      "name": "Tigers",
+      "abbr": "GRAM",
+      "displayName": "Grambling Tigers",
+      "espnId": "2755",
+      "color": "ee8601",
+      "alternateColor": "ffd10a",
+      "file": "ncaa/gram.svg",
+      "path": "/logos/svg/ncaa/gram.svg",
+      "format": "svg",
+      "wikiArticle": "Grambling State Tigers",
+      "wikiFile": "Grambling State Tigers logo.svg",
+      "fills": [
+        "#ecaa00"
+      ]
+    },
+    {
+      "id": "COL-HOW",
+      "league": "COL",
+      "conference": "HBCU",
+      "region": "Howard",
+      "name": "Bison",
+      "abbr": "HOW",
+      "displayName": "Howard Bison",
+      "espnId": "47",
+      "color": "003a63",
+      "alternateColor": "e51937",
+      "file": "ncaa/how.svg",
+      "path": "/logos/svg/ncaa/how.svg",
+      "format": "svg",
+      "wikiArticle": "Howard Bison",
+      "wikiFile": "Howard Bison logo.svg",
+      "fills": [
+        "#ffffff",
+        "#003a63",
+        "#6b818d"
+      ]
+    },
+    {
+      "id": "COL-DSU",
+      "league": "COL",
+      "conference": "HBCU",
+      "region": "Delaware State",
+      "name": "Hornets",
+      "abbr": "DSU",
+      "displayName": "Delaware State Hornets",
+      "espnId": "2169",
+      "color": "009cdb",
+      "alternateColor": "d51c28",
+      "file": "ncaa/dsu.svg",
+      "path": "/logos/svg/ncaa/dsu.svg",
+      "format": "svg",
+      "wikiArticle": "Delaware State Hornets",
+      "wikiFile": "Delaware State Hornets logo.svg",
+      "fills": [
+        "#231f20",
+        "#72cdf4",
+        "#009ddc",
+        "#ffffff",
+        "#ee3124",
+        "#8a1f03"
+      ]
+    },
+    {
+      "id": "COL-MORG",
+      "league": "COL",
+      "conference": "HBCU",
+      "region": "Morgan State",
+      "name": "Bears",
+      "abbr": "MORG",
+      "displayName": "Morgan State Bears",
+      "espnId": "2415",
+      "color": "014786",
+      "alternateColor": "f47937",
+      "file": "ncaa/morg.svg",
+      "path": "/logos/svg/ncaa/morg.svg",
+      "format": "svg",
+      "wikiArticle": "Morgan State Bears and Lady Bears",
+      "wikiFile": "Morgan State Bears logo.svg",
+      "fills": [
+        "#ffffff",
+        "#ffba36",
+        "#e3ba81",
+        "#f47937",
+        "#1b4383"
+      ]
+    },
+    {
+      "id": "COL-NCCU",
+      "league": "COL",
+      "conference": "HBCU",
+      "region": "North Carolina Central",
+      "name": "Eagles",
+      "abbr": "NCCU",
+      "displayName": "North Carolina Central Eagles",
+      "espnId": "2428",
+      "color": "880023",
+      "alternateColor": "c2c3c0",
+      "file": "ncaa/nccu.svg",
+      "path": "/logos/svg/ncaa/nccu.svg",
+      "format": "svg",
+      "wikiArticle": "North Carolina Central Eagles",
+      "wikiFile": "NCCU Eagles head mark logo.svg",
+      "fills": [
+        "#880023",
+        "#ffffff",
+        "#8e9093"
+      ]
+    },
+    {
+      "id": "COL-NORF",
+      "league": "COL",
+      "conference": "HBCU",
+      "region": "Norfolk State",
+      "name": "Spartans",
+      "abbr": "NORF",
+      "displayName": "Norfolk State Spartans",
+      "espnId": "2450",
+      "color": "0c8968",
+      "alternateColor": "fdb813",
+      "file": "ncaa/norf.svg",
+      "path": "/logos/svg/ncaa/norf.svg",
+      "format": "svg",
+      "wikiArticle": "Norfolk State Spartans",
+      "wikiFile": "Norfork State Spartans logo.svg",
+      "fills": [
+        "#007a53",
+        "#ffebb7",
+        "url",
+        "#f3cc2f",
+        "#ffffff"
+      ]
+    },
+    {
+      "id": "COL-SCST",
+      "league": "COL",
+      "conference": "HBCU",
+      "region": "South Carolina State",
+      "name": "Bulldogs",
+      "abbr": "SCST",
+      "displayName": "South Carolina State Bulldogs",
+      "espnId": "2569",
+      "color": "7d1315",
+      "alternateColor": "104897",
+      "file": "ncaa/scst.svg",
+      "path": "/logos/svg/ncaa/scst.svg",
+      "format": "svg",
+      "wikiArticle": "South Carolina State Bulldogs and Lady Bulldogs",
+      "wikiFile": "South Carolina State Bulldogs logo.svg",
+      "fills": [
+        "#084897",
+        "#ffffff",
+        "#900028"
+      ]
+    },
+    {
+      "id": "COL-TNST",
+      "league": "COL",
+      "conference": "HBCU",
+      "region": "Tennessee State",
+      "name": "Tigers",
+      "abbr": "TNST",
+      "displayName": "Tennessee State Tigers",
+      "espnId": "2634",
+      "color": "171796",
+      "alternateColor": "f0f0f0",
+      "file": "ncaa/tnst.svg",
+      "path": "/logos/svg/ncaa/tnst.svg",
+      "format": "svg",
+      "wikiArticle": "Tennessee State Tigers and Lady Tigers",
+      "wikiFile": "Tennessee State Athletics logo.svg",
+      "fills": [
+        "#ffffff",
+        "#171796"
+      ]
+    },
+    {
+      "id": "COL-HAMP",
+      "league": "COL",
+      "conference": "HBCU",
+      "region": "Hampton",
+      "name": "Pirates",
+      "abbr": "HAMP",
+      "displayName": "Hampton Pirates",
+      "espnId": "2261",
+      "color": "0067AC",
+      "alternateColor": null,
+      "file": "ncaa/hamp.svg",
+      "path": "/logos/svg/ncaa/hamp.png",
+      "format": "png",
+      "wikiArticle": "Hampton Pirates and Lady Pirates",
+      "wikiFile": "Hampton pirates athletics logo.png"
+    },
+    {
+      "id": "COL-NCAT",
+      "league": "COL",
+      "conference": "HBCU",
+      "region": "North Carolina A&T",
+      "name": "Aggies",
+      "abbr": "NCAT",
+      "displayName": "North Carolina A&T Aggies",
+      "espnId": "2448",
+      "color": "0505aa",
+      "alternateColor": "004684",
+      "file": "ncaa/ncat.svg",
+      "path": "/logos/svg/ncaa/ncat.svg",
+      "format": "svg",
+      "wikiArticle": "North Carolina A&T Aggies",
+      "wikiFile": "North Carolina A&T Aggies logo.svg",
+      "fills": [
+        "#004684",
+        "#fdb927",
+        "#ffffff"
+      ]
+    }
+  ]
+}

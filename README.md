@@ -4,7 +4,7 @@ iPad-first sports-logo guessing game. A creator picks the **logo of one team** a
 
 Real logos for all 32 NFL teams, the ACC, Big 12, Big Ten, Pac-12, SEC and Ivy League conference marks, and 120 college teams (those conferences plus an HBCU grouping) live as local SVGs under `public/logos/svg/` and are recolored at render time by rewriting fills: colors matching the original team's three palette colors are swapped to the other team's palette while all other artwork is preserved. PNG logos (used only where Wikipedia has no SVG) fall back to a canvas-based pixel recolor.
 
-Each round asks for either the **logo's team** or the **team whose colors it wears** — set per round on its deck card, with a deck-wide default for rounds left alone. An optional voice announcer plays a Chatterbox clip (`public/voice/`) as each round opens.
+Each round asks for either the **logo's team** or the **team whose colors it wears** — set per round on its deck card, with a deck-wide default for rounds left alone. An optional voice announcer plays Chatterbox clips (`public/voice/`) for the round prompt, the verdict, and the final score.
 
 Client-only SPA — no backend, no auth. Deck, timer, game mode, guess mode, voice, and high score persist in `localStorage`.
 
@@ -14,7 +14,7 @@ Client-only SPA — no backend, no auth. Deck, timer, game mode, guess mode, voi
 - Plain CSS with design tokens from `design_handoff_logo_remix/DESIGN_SYSTEM.md` (`src/styles.css`)
 - Google Fonts: Chakra Petch (600/700), Space Grotesk (400–700)
 - Local SVG logos recolored in-browser by fill substitution, with a canvas fallback for PNGs (`src/components/Logo.tsx`, `public/logos/svg/`)
-- Voice announcer: three baked Chatterbox Turbo wavs in `public/voice/` (regenerate with `scripts/generate_voice.py`)
+- Voice announcer: baked Chatterbox Turbo wavs in `public/voice/` — round prompts, correct / not quite / time's up, and score fragments (regenerate with `scripts/generate_voice.py`)
 
 ## Run
 

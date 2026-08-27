@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { clampTimer, guessPrompt, GUESS_TARGETS, GUESS_LABEL, speak, voiceSupported, TIMER_MAX, TIMER_MIN, TIMER_OPTIONS, type GameMode, type GuessTarget, type TimerSeconds } from '../lib/teams'
+import { clampTimer, GUESS_TARGETS, GUESS_LABEL, speak, voiceSupported, TIMER_MAX, TIMER_MIN, TIMER_OPTIONS, type GameMode, type GuessTarget, type TimerSeconds } from '../lib/teams'
 
 interface Props {
   timer: TimerSeconds
@@ -115,7 +115,7 @@ export function SettingsModal({ timer, gameMode, guessTarget, voice, onTimer, on
         </div>
         <div className="mode-hint">
           {voiceSupported()
-            ? `Announces “${guessPrompt(guessTarget)}” at the start of every round.`
+            ? `Announces the prompt each round, then correct or not quite, and the final score.`
             : 'Voice is not supported in this browser.'}
         </div>
 

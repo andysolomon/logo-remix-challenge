@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useRef, useState, type FormEvent, type KeyboardEvent } from 'react'
-import { findTeam, fullName, roundHints, roundTarget, speak, stopSpeak, isCorrectGuess, insertHighScore, qualifiesForHighScore, INITIALS_LENGTH, INITIALS_ALPHABET, type GameMode, type GuessTarget, type HighScore, type Round, type TimerSeconds } from '../lib/teams'
+import { findTeam, fullName, roundHints, roundTarget, speak, speakScore, stopSpeak, isCorrectGuess, insertHighScore, qualifiesForHighScore, INITIALS_LENGTH, INITIALS_ALPHABET, type GameMode, type GuessTarget, type HighScore, type Round, type TimerSeconds } from '../lib/teams'
 import { Logo } from './Logo'
 
 type Phase = 'intro' | 'question' | 'reveal' | 'initials' | 'results'
@@ -30,6 +30,8 @@ export function PlayMode({ deck, timer, gameMode, guessTarget, voice, highScores
   const [parts, setParts] = useState<[boolean, boolean] | null>(null)
   // "Both" rounds: verdict on the logo answer once the player presses Enter on it, before moving on.
   const [logoChecked, setLogoChecked] = useState<boolean | null>(null)
+  // Host mode, "both" rounds: the host's verdict on each half before locking the round in.
+  const [hostParts, setHostParts] = useState<[boolean | null, boolean | null]>([null, null])
   const input2Ref = useRef<HTMLInputElement>(null)
   const [kind, setKind] = useState<Kind>('correct')
   const [results, setResults] = useState<boolean[]>([])
@@ -62,6 +64,7 @@ export function PlayMode({ deck, timer, gameMode, guessTarget, voice, highScores
       setGuess2('')
       setParts(null)
       setLogoChecked(null)
+      setHostParts([null, null])
       setTimeLeft(timer)
       setPhase('question')
       if (voice) speak(roundTarget(deck[i], guessTarget))
@@ -87,6 +90,7 @@ export function PlayMode({ deck, timer, gameMode, guessTarget, voice, highScores
       setPhase('reveal')
       setScore((s) => s + (ok ? 1 : 0))
       setResults((r) => [...r, ok])
+      if (voice) speak(k)
       tm.current = window.setTimeout(() => {
         setRIdx((cur) => {
           const n = cur + 1
@@ -96,14 +100,15 @@ export function PlayMode({ deck, timer, gameMode, guessTarget, voice, highScores
         })
       }, REVEAL_MS)
     },
-    [deck.length, beginRound],
+    [deck.length, beginRound, voice],
   )
   const revealRef = useRef(reveal)
   revealRef.current = reveal
 
   const finish = useCallback(() => {
+    if (voice) speakScore(scoreRef.current, deck.length)
     setPhase(qualifiesForHighScore(scoreRef.current, highScores) ? 'initials' : 'results')
-  }, [highScores])
+  }, [highScores, voice, deck.length])
   const finishRef = useRef(finish)
   finishRef.current = finish
 
@@ -147,6 +152,7 @@ export function PlayMode({ deck, timer, gameMode, guessTarget, voice, highScores
 
   const restart = () => {
     clearTimers()
+    if (voice) stopSpeak()
     setScore(0)
     setRIdx(0)
     setResults([])
@@ -175,6 +181,16 @@ export function PlayMode({ deck, timer, gameMode, guessTarget, voice, highScores
     }
     if (!guess.trim()) return
     reveal(isCorrectGuess(guess, target === 'colors' ? c : o) ? 'correct' : 'wrong')
+  }
+
+  // Host mode, "both" rounds: each half gets its own verdict; the point needs both.
+  const setHostPart = (i: 0 | 1, ok: boolean) =>
+    setHostParts((hp) => (i === 0 ? [ok, hp[1]] : [hp[0], ok]))
+  const lockHostVerdict = () => {
+    const [a, b] = hostParts
+    if (a === null || b === null) return
+    setParts([a, b])
+    reveal(a && b ? 'correct' : 'wrong')
   }
 
   // Enter on the logo field grades that answer, locks it in, and hands focus to the colors field.
@@ -322,15 +338,42 @@ export function PlayMode({ deck, timer, gameMode, guessTarget, voice, highScores
             )
           ) : (
             <div className="host">
-              <div className="host-hint">{target === 'both' ? 'Shout both teams — the host taps the verdict' : 'Shout the team — the host taps the verdict'}</div>
-              <div className="host-row">
-                <button className="btn-correct" onClick={() => reveal('correct')}>
-                  ✓ CORRECT
-                </button>
-                <button className="btn-wrong" onClick={() => reveal('wrong')}>
-                  ✕ INCORRECT
-                </button>
-              </div>
+              {target === 'both' ? (
+                <>
+                  <div className="host-hint">Shout both teams — the host grades each half</div>
+                  {(['LOGO', 'COLORS'] as const).map((lb, i) => {
+                    const v = hostParts[i]
+                    return (
+                      <div key={lb} className="host-part">
+                        <div className="host-part-lb">{lb}</div>
+                        <div className="host-row">
+                          <button className={`btn-correct${v === false ? ' dim' : ''}`} aria-pressed={v === true} onClick={() => setHostPart(i as 0 | 1, true)}>
+                            ✓ CORRECT
+                          </button>
+                          <button className={`btn-wrong${v === true ? ' dim' : ''}`} aria-pressed={v === false} onClick={() => setHostPart(i as 0 | 1, false)}>
+                            ✕ INCORRECT
+                          </button>
+                        </div>
+                      </div>
+                    )
+                  })}
+                  <button className="btn-submit host-lock" disabled={hostParts[0] === null || hostParts[1] === null} onClick={lockHostVerdict}>
+                    LOCK IN
+                  </button>
+                </>
+              ) : (
+                <>
+                  <div className="host-hint">Shout the team — the host taps the verdict</div>
+                  <div className="host-row">
+                    <button className="btn-correct" onClick={() => reveal('correct')}>
+                      ✓ CORRECT
+                    </button>
+                    <button className="btn-wrong" onClick={() => reveal('wrong')}>
+                      ✕ INCORRECT
+                    </button>
+                  </div>
+                </>
+              )}
             </div>
           )}
         </div>

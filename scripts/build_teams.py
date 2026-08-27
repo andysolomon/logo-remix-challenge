@@ -1,5 +1,13 @@
 #!/usr/bin/env python3
-"""Merge college teams from public/logos/svg/manifest.json into src/lib/teams.json.
+"""Merge college teams from the logo manifests into src/lib/teams.json.
+
+Reads two manifests, both under public/logos/svg/:
+  * ``manifest.json``       every ESPN-fed team, written by download_svgs.py
+  * ``hbcu-manifest.json``  the SIAC and non-football MEAC schools ESPN does
+                            not carry, written by download_hbcu_svgs.py
+The second is optional but, when present, must be merged here rather than in a
+script of its own: this one rewrites the whole ``COL-*`` block, so anything it
+does not know about is dropped on the next run.
 
 Run after ``scripts/download_svgs.py``. Idempotent: every ``COL-*`` *team*
 entry is regenerated from the manifest; the hand-tuned conference logo
@@ -30,6 +38,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 MANIFEST = ROOT / "public" / "logos" / "svg" / "manifest.json"
+HBCU_MANIFEST = ROOT / "public" / "logos" / "svg" / "hbcu-manifest.json"
 TEAMS_JSON = ROOT / "src" / "lib" / "teams.json"
 CONFERENCE_ORDER = ["ACC", "Big 12", "Big Ten", "Pac-12", "SEC", "Ivy", "HBCU"]
 # Conference ids already used by teams.json for the original five.
@@ -103,6 +112,25 @@ def build_palette(item: dict) -> tuple[list[str], list[str] | None]:
     return [primary, alt, WHITE], None
 
 
+def hbcu_entry(item: dict) -> dict:
+    """A team entry from the HBCU manifest, whose palette is already resolved.
+
+    download_hbcu_svgs.py reads these palettes out of the artwork itself, so
+    unlike the ESPN path there is nothing to snap here and no ``sourcePalette``:
+    the hexes and the file already agree.
+    """
+    return {
+        "id": item["id"],
+        "league": "COL",
+        "conference": item["conference"],
+        "region": item["region"],
+        "name": item["name"],
+        "abbr": item["abbr"],
+        "palette": item["palette"],
+        "logo": item["path"],
+    }
+
+
 def team_entry(item: dict) -> dict:
     palette, source = build_palette(item)
     entry = {
@@ -158,6 +186,17 @@ def main() -> int:
         print(f"error: logo files missing for {', '.join(missing)}; run scripts/download_svgs.py", file=sys.stderr)
         return 1
 
+    if HBCU_MANIFEST.is_file():
+        hbcu_items = json.loads(HBCU_MANIFEST.read_text())["assets"]
+        gone = [i["abbr"] for i in hbcu_items if not (ROOT / "public" / i["path"].lstrip("/")).is_file()]
+        if gone:
+            print(f"error: logo files missing for {', '.join(gone)}; run scripts/download_hbcu_svgs.py", file=sys.stderr)
+            return 1
+    else:
+        hbcu_items = []
+        print(f"note: {HBCU_MANIFEST.name} absent; SIAC and non-football MEAC schools will be left out", file=sys.stderr)
+    college_items += hbcu_items
+
     conferences = [c for c in CONFERENCE_ORDER if any(i["conference"] == c for i in college_items)]
     conf_order = {c: n for n, c in enumerate(conferences)}
 
@@ -166,7 +205,8 @@ def main() -> int:
     for conf, item in conf_items.items():
         kept_confs.setdefault(conf, conference_entry(item))
 
-    teams = sorted((team_entry(i) for i in team_items), key=lambda t: (conf_order[t["conference"]], t["region"], t["name"]))
+    entries = [team_entry(i) for i in team_items] + [hbcu_entry(i) for i in hbcu_items]
+    teams = sorted(entries, key=lambda t: (conf_order[t["conference"]], t["region"], t["name"]))
     ids = [t["id"] for t in teams]
     dupes = sorted({x for x in ids if ids.count(x) > 1})
     if dupes:
@@ -179,7 +219,7 @@ def main() -> int:
     before = {t["id"] for t in existing}
     added = [t["id"] for t in college if t["id"] not in before]
     print(f"{len(nfl)} NFL + {len(college)} college entries ({len(teams)} teams, {len(college) - len(teams)} conference logos); "
-          f"{len(added)} new, conferences: {', '.join(conferences)}")
+          f"{len(added)} new ({len(hbcu_items)} from {HBCU_MANIFEST.name}), conferences: {', '.join(conferences)}")
     if args.dry_run:
         return 0
 

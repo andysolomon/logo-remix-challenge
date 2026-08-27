@@ -49,22 +49,26 @@ export function DeckMode({ deck, portrait, timer, gameMode, guessTarget, voice, 
                   </div>
                   <div className="round-name">{fullName(ot)}</div>
                   <div className="round-sub">in {fullName(ct)} colors</div>
-                  <div className="round-target" role="group" aria-label={`Round ${i + 1} guess mode`}>
-                    {(
-                      [
-                        ['team', 'Logo'],
-                        ['colors', 'Colors'],
-                      ] as [GuessTarget, string][]
-                    ).map(([t, lb]) => (
-                      <button
-                        key={t}
-                        className={`seg${roundTarget(r, guessTarget) === t ? ' active' : ''}`}
-                        aria-pressed={roundTarget(r, guessTarget) === t}
-                        onClick={() => mut((d) => { d[i] = { ...d[i], g: t }; return d })}
-                      >
-                        Guess the {lb}
-                      </button>
-                    ))}
+                  <div className="round-target">
+                    <span className="round-target-lb">GUESS</span>
+                    <div className="seg-group" role="group" aria-label={`Round ${i + 1}: what to guess`}>
+                      {(
+                        [
+                          ['team', 'Logo'],
+                          ['colors', 'Colors'],
+                        ] as [GuessTarget, string][]
+                      ).map(([t, lb]) => (
+                        <button
+                          key={t}
+                          className={`seg${roundTarget(r, guessTarget) === t ? ' active' : ''}`}
+                          aria-pressed={roundTarget(r, guessTarget) === t}
+                          title={`Guess the ${lb}`}
+                          onClick={() => mut((d) => { d[i] = { ...d[i], g: t }; return d })}
+                        >
+                          {lb}
+                        </button>
+                      ))}
+                    </div>
                   </div>
                   <div className="round-ctl">
                     <button className={`icon-btn${i === 0 ? ' dim' : ''}`} aria-label="Move earlier" onClick={() => i > 0 && mut((d) => swap(d, i - 1, i))}>

@@ -175,3 +175,64 @@ export const roundHints = (r: Round): [string, string] => [
   `Logo: ${teamHint(findTeam(r.o)!)}`,
   `Colors: ${teamHint(findTeam(r.c)!)}`,
 ]
+
+// ---------- Random deck generator ----------
+/** A selectable slice of teams: the NFL as a whole, or one college conference. */
+export interface TeamPool {
+  id: string
+  label: string
+  match: (t: Team) => boolean
+}
+export const TEAM_POOLS: TeamPool[] = [
+  { id: 'NFL', label: LEAGUES.PRO.label, match: (t) => t.league === 'PRO' },
+  ...LEAGUES.COL.conferences.map((c) => ({ id: c, label: c, match: (t: Team) => t.league === 'COL' && t.conference === c })),
+]
+export const ALL_POOL_IDS = TEAM_POOLS.map((p) => p.id)
+export const RANDOM_ROUND_OPTIONS = [5, 10, 15, 20] as const
+
+export type RandomGuess = GuessTarget | 'mix'
+export interface RandomDeckOptions {
+  rounds: number
+  logoPools: string[]
+  colorPools: string[]
+  guess: RandomGuess
+  hints: boolean
+}
+
+export const poolTeams = (ids: string[]) => {
+  const pools = TEAM_POOLS.filter((p) => ids.includes(p.id))
+  return TEAMS.filter((t) => pools.some((p) => p.match(t)))
+}
+
+const pick = <T,>(list: T[]) => list[Math.floor(Math.random() * list.length)]
+const samePalette = (a: Team, b: Team) => a.palette.join() === b.palette.join()
+
+/**
+ * Build random remix rounds from the chosen pools. Never pairs a team with itself or with a
+ * look-alike palette, never repeats a pairing already in `existing`, and spreads originals out
+ * so the same logo does not show up twice until every candidate has been used.
+ * May return fewer rounds than asked for when the pools are too small.
+ */
+export function randomDeck(opts: RandomDeckOptions, existing: Round[] = []): Round[] {
+  const logos = poolTeams(opts.logoPools)
+  const colors = poolTeams(opts.colorPools)
+  if (!logos.length || !colors.length) return []
+  const seen = new Set(existing.map((r) => `${r.o}|${r.c}`))
+  const out: Round[] = []
+  let fresh = [...logos]
+  for (let attempt = 0; out.length < opts.rounds && attempt < opts.rounds * 40; attempt++) {
+    if (!fresh.length) fresh = [...logos]
+    const o = pick(fresh)
+    const options = colors.filter((c) => c.id !== o.id && !samePalette(c, o) && !seen.has(`${o.id}|${c.id}`))
+    if (!options.length) {
+      fresh = fresh.filter((t) => t.id !== o.id)
+      continue
+    }
+    const c = pick(options)
+    seen.add(`${o.id}|${c.id}`)
+    fresh = fresh.filter((t) => t.id !== o.id)
+    const g: GuessTarget = opts.guess === 'mix' ? (Math.random() < 0.5 ? 'team' : 'colors') : opts.guess
+    out.push({ o: o.id, c: c.id, v: Math.floor(Math.random() * PERMS.length), g, h: opts.hints || undefined })
+  }
+  return out
+}

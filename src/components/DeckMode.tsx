@@ -1,4 +1,4 @@
-import { findTeam, fullName, guessPrompt, roundTarget, speak, voiceSupported, TIMER_OPTIONS, HIGH_SCORE_LIMIT, type GameMode, type HighScore, type GuessTarget, type Round, type TimerSeconds } from '../lib/teams'
+import { findTeam, fullName, guessPrompt, roundHints, roundTarget, speak, voiceSupported, TIMER_OPTIONS, HIGH_SCORE_LIMIT, type GameMode, type HighScore, type GuessTarget, type Round, type TimerSeconds } from '../lib/teams'
 import { Logo } from './Logo'
 
 interface Props {
@@ -69,6 +69,17 @@ export function DeckMode({ deck, portrait, timer, gameMode, guessTarget, voice, 
                         </button>
                       ))}
                     </div>
+                  </div>
+                  <div className="round-hint">
+                    <span className="round-target-lb">HINT</span>
+                    <button
+                      className={`hint-toggle${r.h ? ' active' : ''}`}
+                      aria-pressed={!!r.h}
+                      title={r.h ? 'Hide the league/conference hint' : 'Show the league/conference hint'}
+                      onClick={() => mut((d) => { d[i] = { ...d[i], h: !d[i].h }; return d })}
+                    >
+                      {r.h ? roundHints(r).join(' · ') : 'Off'}
+                    </button>
                   </div>
                   <div className="round-ctl">
                     <button className={`icon-btn${i === 0 ? ' dim' : ''}`} aria-label="Move earlier" onClick={() => i > 0 && mut((d) => swap(d, i - 1, i))}>

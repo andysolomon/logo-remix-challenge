@@ -22,6 +22,8 @@ export interface Round {
   v: number
   /** Per-round guess target; falls back to the deck default when unset. */
   g?: GuessTarget
+  /** Show league/conference hints for this round (e.g. "Logo: NFL · Colors: ACC"). */
+  h?: boolean
 }
 
 export type GameMode = 'type' | 'host'
@@ -81,7 +83,7 @@ const safeSet = (k: string, v: string) => {
 export function loadDeck(): Round[] {
   try {
     const d = JSON.parse(safeGet(LS.deck) ?? 'null')
-    if (Array.isArray(d) && d.length && d.every((r) => findTeam(r.o) && findTeam(r.c) && typeof r.v === 'number' && (r.g === undefined || r.g === 'team' || r.g === 'colors'))) return d
+    if (Array.isArray(d) && d.length && d.every((r) => findTeam(r.o) && findTeam(r.c) && typeof r.v === 'number' && (r.g === undefined || r.g === 'team' || r.g === 'colors') && (r.h === undefined || typeof r.h === 'boolean'))) return d
   } catch {
     /* ignore */
   }
@@ -98,6 +100,7 @@ export const saveTimer = (t: TimerSeconds) => safeSet(LS.timer, String(t))
 // ---------- High scores (arcade-style top 10) ----------
 export const HIGH_SCORE_LIMIT = 10
 export const INITIALS_LENGTH = 3
+export const INITIALS_ALPHABET = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 const LEGACY_INITIALS = '???'
 
 export interface HighScore {
@@ -106,9 +109,6 @@ export interface HighScore {
   total: number
   date: number
 }
-
-export const normalizeInitials = (s: string) =>
-  String(s).toUpperCase().replace(/[^A-Z0-9]/g, '').slice(0, INITIALS_LENGTH)
 
 // Higher score first; on ties the earlier entry keeps its spot, like an arcade cabinet.
 const rankHighScores = (list: HighScore[]) =>
@@ -168,3 +168,10 @@ export function speak(text: string) {
 }
 export const roundTarget = (r: Round, fallback: GuessTarget): GuessTarget => r.g ?? fallback
 export const guessPrompt = (t: GuessTarget) => (t === 'colors' ? 'Guess the Colors!' : 'Guess the Logo!')
+/** Where a team plays: the league label for pro teams, the conference for college. */
+export const teamHint = (t: Team) => (t.league === 'COL' ? t.conference : LEAGUES[t.league].label)
+/** Hint lines for a round, one for the logo team and one for the colors team. */
+export const roundHints = (r: Round): [string, string] => [
+  `Logo: ${teamHint(findTeam(r.o)!)}`,
+  `Colors: ${teamHint(findTeam(r.c)!)}`,
+]

@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
-import { findTeam, type Round, type Team } from '../lib/teams'
+import { findTeam, MAX_DECK_ROUNDS, nextContrastSafePermutation, type Round, type Team } from '../lib/teams'
 import { RemixCanvas, type AddState } from './RemixCanvas'
 import { TeamBrowser, type BrowserState } from './TeamBrowser'
 
@@ -27,17 +27,20 @@ interface Props {
   state: CreateState
   setState: (fn: (s: CreateState) => CreateState) => void
   portrait: boolean
-  onAddRound: (round: Round, editIdx: number | null) => void
+  deckCount: number
+  onAddRound: (round: Round, editIdx: number | null) => boolean
 }
 
-export function CreateMode({ state, setState, portrait, onAddRound }: Props) {
+export function CreateMode({ state, setState, portrait, deckCount, onAddRound }: Props) {
   const original = state.oId ? findTeam(state.oId) ?? null : null
   const colors = state.cId ? findTeam(state.cId) ?? null : null
   const [justAdded, setJustAdded] = useState(false)
   const addedTimer = useRef<number | undefined>(undefined)
+  const addLock = useRef(false)
   useEffect(() => () => window.clearTimeout(addedTimer.current), [])
 
-  const addState: AddState = justAdded ? 'added' : !original || !colors ? 'disabled' : state.editIdx != null ? 'save' : 'add'
+  const deckFull = state.editIdx == null && deckCount >= MAX_DECK_ROUNDS
+  const addState: AddState = justAdded ? 'added' : deckFull ? 'full' : !original || !colors ? 'disabled' : state.editIdx != null ? 'save' : 'add'
 
   // Clicking the already-selected tile deselects it.
   const selectOriginal = (t: Team) =>
@@ -48,16 +51,22 @@ export function CreateMode({ state, setState, portrait, onAddRound }: Props) {
   const clearColors = () => setState((s) => ({ ...s, cId: null, perm: 0, step: 2 }))
   const clearAll = () => setState((s) => ({ ...s, oId: null, cId: null, perm: 0, editIdx: null, step: 1 }))
   const shuffle = () => {
-    if (colors) setState((s) => ({ ...s, perm: (s.perm + 1) % 6 }))
+    if (original && colors) setState((s) => ({ ...s, perm: nextContrastSafePermutation(original, colors.palette, s.perm) }))
   }
   const add = () => {
-    if (!original || !colors) return
-    onAddRound({ o: original.id, c: colors.id, v: state.perm }, state.editIdx)
+    if (!original || !colors || deckFull || addLock.current) return
+    addLock.current = true
+    const added = onAddRound({ o: original.id, c: colors.id, v: state.perm }, state.editIdx)
+    if (!added) {
+      addLock.current = false
+      return
+    }
     setState((s) => ({ ...s, editIdx: null }))
     setJustAdded(true)
     window.clearTimeout(addedTimer.current)
     addedTimer.current = window.setTimeout(() => {
       setJustAdded(false)
+      addLock.current = false
       // Reset the canvas to its default state for the next remix.
       setState((s) => ({ ...s, oId: null, cId: null, perm: 0, step: 1 }))
     }, 1000)

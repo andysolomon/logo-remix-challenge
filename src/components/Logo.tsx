@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { PERMS, type Team } from '../lib/teams'
+import { resolveRemixTargetColors, type Team } from '../lib/teams'
 
 interface Props {
   team: Team
@@ -250,11 +250,8 @@ function recolor(key: string, src: string, from: RGB[], to: RGB[]): Promise<stri
  * the image stays transparent until that cached recolor is ready.
  */
 export function Logo({ team, palette, perm = 0 }: Props) {
-  const permIndex = Number.isFinite(perm) ? Math.trunc(perm) : 0
-  const normalizedPerm = ((permIndex % PERMS.length) + PERMS.length) % PERMS.length
-  const p = PERMS[normalizedPerm]
   const hasTargetPalette = palette != null
-  const target = hasTargetPalette ? [palette[p[0]], palette[p[1]], palette[p[2]]] : null
+  const target = hasTargetPalette ? resolveRemixTargetColors(team, palette, perm) : null
   const source = team.sourcePalette ?? team.palette
   const key = target ? `${team.logo}|${source.join('|')}|${target.join('|')}` : null
   const [, setTick] = useState(0)

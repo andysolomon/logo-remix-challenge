@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react'
-import { ALL_POOL_IDS, RANDOM_ROUND_OPTIONS, TEAM_POOLS, poolTeams, randomDeck, type GuessTarget, type RandomDeckOptions, type RandomGuess, type Round } from '../lib/teams'
+import { ALL_POOL_IDS, MAX_DECK_ROUNDS, RANDOM_ROUND_OPTIONS, TEAM_POOLS, poolTeams, randomDeck, type GuessTarget, type RandomDeckOptions, type RandomGuess, type Round } from '../lib/teams'
 
 interface Props {
-  deckCount: number
+  deck: Round[]
   guessTarget: GuessTarget
   onRoll: (rounds: Round[], replace: boolean) => void
   onClose: () => void
@@ -11,7 +11,7 @@ interface Props {
 // Remember the last roll so re-rolling with the same recipe is one tap.
 let lastOptions: RandomDeckOptions | null = null
 
-export function RandomDeckModal({ deckCount, guessTarget, onRoll, onClose }: Props) {
+export function RandomDeckModal({ deck, guessTarget, onRoll, onClose }: Props) {
   const [opts, setOpts] = useState<RandomDeckOptions>(
     () => lastOptions ?? { rounds: 10, logoPools: ['SEC'], colorPools: ['NFL'], guess: guessTarget, hints: false },
   )
@@ -24,12 +24,15 @@ export function RandomDeckModal({ deckCount, guessTarget, onRoll, onClose }: Pro
 
   const logoCount = poolTeams(opts.logoPools).length
   const colorCount = poolTeams(opts.colorPools).length
-  const ready = logoCount > 0 && colorCount > 0
+  const capacity = replace ? MAX_DECK_ROUNDS : Math.max(0, MAX_DECK_ROUNDS - deck.length)
+  const rollCount = Math.min(opts.rounds, capacity)
+  const ready = logoCount > 0 && colorCount > 0 && rollCount > 0
 
   const roll = () => {
     if (!ready) return
     lastOptions = opts
-    onRoll(randomDeck(opts), replace)
+    const rollOpts = { ...opts, rounds: rollCount }
+    onRoll(randomDeck(rollOpts, replace ? [] : deck), replace)
     onClose()
   }
 
@@ -44,66 +47,70 @@ export function RandomDeckModal({ deckCount, guessTarget, onRoll, onClose }: Pro
           </button>
         </div>
 
-        <div className="rail-label">ROUNDS</div>
-        <div className="grid4">
-          {RANDOM_ROUND_OPTIONS.map((n) => (
-            <button key={n} className={`opt${opts.rounds === n ? ' active' : ''}`} onClick={() => setOpts((o) => ({ ...o, rounds: n }))}>
-              {n}
-            </button>
-          ))}
-        </div>
-
-        <PoolPicker label="LOGOS FROM" value={opts.logoPools} count={logoCount} onChange={(v) => setOpts((o) => ({ ...o, logoPools: v }))} />
-        <PoolPicker label="COLORS FROM" value={opts.colorPools} count={colorCount} onChange={(v) => setOpts((o) => ({ ...o, colorPools: v }))} />
-
-        <div className="rail-label">GUESS</div>
-        <div className="grid4">
-          {(
-            [
-              ['team', 'Logo'],
-              ['colors', 'Colors'],
-              ['both', 'Both'],
-              ['mix', 'Mix'],
-            ] as [RandomGuess, string][]
-          ).map(([g, lb]) => (
-            <button key={g} className={`opt mode${opts.guess === g ? ' active' : ''}`} onClick={() => setOpts((o) => ({ ...o, guess: g }))}>
-              {lb}
-            </button>
-          ))}
-        </div>
-        <div className="mode-hint">
-          {opts.guess === 'mix' ? 'Each round randomly asks for the logo or the colors.' : opts.guess === 'both' ? 'Every round asks for the logo’s team and the colors’ team.' : opts.guess === 'colors' ? 'Every round asks whose colors the logo is wearing.' : 'Every round asks which team the logo belongs to.'}
-        </div>
-
-        <div className="rail-label">HINTS</div>
-        <div className="grid2">
-          <button className={`opt mode${opts.hints ? ' active' : ''}`} onClick={() => setOpts((o) => ({ ...o, hints: true }))}>
-            Show league
-          </button>
-          <button className={`opt mode${opts.hints ? '' : ' active'}`} onClick={() => setOpts((o) => ({ ...o, hints: false }))}>
-            Off
-          </button>
-        </div>
-
-        {deckCount > 0 && (
-          <>
-            <div className="rail-label">CURRENT DECK</div>
-            <div className="grid2">
-              <button className={`opt mode${replace ? '' : ' active'}`} onClick={() => setReplace(false)}>
-                Add to deck
+        <div className="modal-body">
+          <div className="rail-label">ROUNDS</div>
+          <div className="grid4">
+            {RANDOM_ROUND_OPTIONS.map((n) => (
+              <button key={n} className={`opt${opts.rounds === n ? ' active' : ''}`} onClick={() => setOpts((o) => ({ ...o, rounds: n }))}>
+                {n}
               </button>
-              <button className={`opt mode${replace ? ' active' : ''}`} onClick={() => setReplace(true)}>
-                Replace deck
-              </button>
-            </div>
-            <div className="mode-hint">{replace ? `Clears your ${deckCount} current round${deckCount === 1 ? '' : 's'} first.` : `Appends after your ${deckCount} current round${deckCount === 1 ? '' : 's'}.`}</div>
-          </>
-        )}
+            ))}
+          </div>
 
-        <button className={`btn-start${ready ? '' : ' disabled'}`} onClick={roll} aria-disabled={!ready}>
-          🎲 ROLL {opts.rounds} ROUNDS
-        </button>
-        {!ready && <div className="mode-hint">Pick at least one league for logos and one for colors.</div>}
+          <PoolPicker label="LOGOS FROM" value={opts.logoPools} count={logoCount} onChange={(v) => setOpts((o) => ({ ...o, logoPools: v }))} />
+          <PoolPicker label="COLORS FROM" value={opts.colorPools} count={colorCount} onChange={(v) => setOpts((o) => ({ ...o, colorPools: v }))} />
+
+          <div className="rail-label">GUESS</div>
+          <div className="grid4">
+            {(
+              [
+                ['team', 'Logo'],
+                ['colors', 'Colors'],
+                ['both', 'Both'],
+                ['mix', 'Mix'],
+              ] as [RandomGuess, string][]
+            ).map(([g, lb]) => (
+              <button key={g} className={`opt mode${opts.guess === g ? ' active' : ''}`} onClick={() => setOpts((o) => ({ ...o, guess: g }))}>
+                {lb}
+              </button>
+            ))}
+          </div>
+          <div className="mode-hint">
+            {opts.guess === 'mix' ? 'Each round randomly asks for the logo or the colors.' : opts.guess === 'both' ? 'Every round asks for the logo’s team and the colors’ team.' : opts.guess === 'colors' ? 'Every round asks whose colors the logo is wearing.' : 'Every round asks which team the logo belongs to.'}
+          </div>
+
+          <div className="rail-label">HINTS</div>
+          <div className="grid2">
+            <button className={`opt mode${opts.hints ? ' active' : ''}`} onClick={() => setOpts((o) => ({ ...o, hints: true }))}>
+              Show league
+            </button>
+            <button className={`opt mode${opts.hints ? '' : ' active'}`} onClick={() => setOpts((o) => ({ ...o, hints: false }))}>
+              Off
+            </button>
+          </div>
+
+          {deck.length > 0 && (
+            <>
+              <div className="rail-label">CURRENT DECK</div>
+              <div className="grid2">
+                <button className={`opt mode${replace ? '' : ' active'}`} onClick={() => setReplace(false)}>
+                  Add to deck
+                </button>
+                <button className={`opt mode${replace ? ' active' : ''}`} onClick={() => setReplace(true)}>
+                  Replace deck
+                </button>
+              </div>
+              <div className="mode-hint">{replace ? `Clears your ${deck.length} current round${deck.length === 1 ? '' : 's'} first.` : capacity ? `Adds up to ${rollCount} new round${rollCount === 1 ? '' : 's'} after your current deck (20 maximum).` : 'Your deck is at the 20-round maximum.'}</div>
+            </>
+          )}
+        </div>
+
+        <div className="modal-footer">
+          <button className={`btn-start${ready ? '' : ' disabled'}`} onClick={roll} disabled={!ready}>
+            🎲 ROLL {rollCount || opts.rounds} ROUND{(rollCount || opts.rounds) === 1 ? '' : 'S'}
+          </button>
+          {!ready && <div className="mode-hint">{capacity === 0 ? 'Replace the deck to roll new rounds.' : 'Pick at least one league for logos and one for colors.'}</div>}
+        </div>
       </div>
     </div>
   )

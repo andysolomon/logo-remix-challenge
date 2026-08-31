@@ -47,6 +47,8 @@ export function PlayMode({ deck, timer, gameMode, guessTarget, voice, highScores
   const initialsRef = useRef<HTMLDivElement>(null)
   const phaseRef = useRef<Phase>('intro')
   phaseRef.current = phase
+  const rIdxRef = useRef(0)
+  rIdxRef.current = rIdx
   const scoreRef = useRef(0)
   scoreRef.current = score
 
@@ -59,6 +61,8 @@ export function PlayMode({ deck, timer, gameMode, guessTarget, voice, highScores
   const beginRound = useCallback(
     (i: number) => {
       window.clearInterval(iv.current)
+      phaseRef.current = 'question'
+      rIdxRef.current = i
       setRIdx(i)
       setGuess('')
       setGuess2('')
@@ -84,6 +88,7 @@ export function PlayMode({ deck, timer, gameMode, guessTarget, voice, highScores
   const reveal = useCallback(
     (k: Kind) => {
       if (phaseRef.current !== 'question') return
+      phaseRef.current = 'reveal'
       window.clearInterval(iv.current)
       const ok = k === 'correct'
       setKind(k)
@@ -91,13 +96,10 @@ export function PlayMode({ deck, timer, gameMode, guessTarget, voice, highScores
       setScore((s) => s + (ok ? 1 : 0))
       setResults((r) => [...r, ok])
       if (voice) speak(k)
+      const next = rIdxRef.current + 1
       tm.current = window.setTimeout(() => {
-        setRIdx((cur) => {
-          const n = cur + 1
-          if (n >= deck.length) finishRef.current()
-          else beginRound(n)
-          return cur
-        })
+        if (next >= deck.length) finishRef.current()
+        else beginRound(next)
       }, REVEAL_MS)
     },
     [deck.length, beginRound, voice],
@@ -107,7 +109,9 @@ export function PlayMode({ deck, timer, gameMode, guessTarget, voice, highScores
 
   const finish = useCallback(() => {
     if (voice) speakScore(scoreRef.current, deck.length)
-    setPhase(qualifiesForHighScore(scoreRef.current, highScores) ? 'initials' : 'results')
+    const nextPhase = qualifiesForHighScore(scoreRef.current, highScores) ? 'initials' : 'results'
+    phaseRef.current = nextPhase
+    setPhase(nextPhase)
   }, [highScores, voice, deck.length])
   const finishRef = useRef(finish)
   finishRef.current = finish
@@ -160,6 +164,7 @@ export function PlayMode({ deck, timer, gameMode, guessTarget, voice, highScores
     setReelIdx(0)
     setEntryDate(null)
     setGuess('')
+    phaseRef.current = 'intro'
     setPhase('intro')
   }
   const quit = () => {

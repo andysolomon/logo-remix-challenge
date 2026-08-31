@@ -40,88 +40,92 @@ export function SettingsModal({ timer, gameMode, guessTarget, voice, onTimer, on
           </button>
         </div>
 
-        <div className="rail-label">TIME PER ROUND</div>
-        <div className="grid4">
-          {TIMER_OPTIONS.map((t) => (
-            <button key={t} className={`opt${timer === t ? ' active' : ''}`} onClick={() => onTimer(t)}>
-              {t}s
+        <div className="modal-body">
+          <div className="rail-label">TIME PER ROUND</div>
+          <div className="grid4">
+            {TIMER_OPTIONS.map((t) => (
+              <button key={t} className={`opt${timer === t ? ' active' : ''}`} onClick={() => onTimer(t)}>
+                {t}s
+              </button>
+            ))}
+          </div>
+          <div className="rail-label">CUSTOM ({TIMER_MIN}–{TIMER_MAX}s)</div>
+          <div className="stepper">
+            <button className="opt" aria-label="Decrease time" onClick={() => step(-1)}>
+              −
             </button>
-          ))}
-        </div>
-        <div className="rail-label">CUSTOM ({TIMER_MIN}–{TIMER_MAX}s)</div>
-        <div className="stepper">
-          <button className="opt" aria-label="Decrease time" onClick={() => step(-1)}>
-            −
-          </button>
-          <input
-            className="stepper-input"
-            type="number"
-            inputMode="numeric"
-            min={TIMER_MIN}
-            max={TIMER_MAX}
-            value={custom}
-            onChange={(e) => setCustom(e.target.value)}
-            onBlur={commitCustom}
-            onKeyDown={(e) => e.key === 'Enter' && commitCustom()}
-            aria-label="Seconds per round"
-          />
-          <button className="opt" aria-label="Increase time" onClick={() => step(1)}>
-            +
-          </button>
-        </div>
-        <div className="mode-hint">Currently {timer} seconds per round.</div>
-
-        <div className="rail-label">DEFAULT GUESS MODE</div>
-        <div className="grid3">
-          {GUESS_TARGETS.map((t) => [t, GUESS_LABEL[t]] as const).map(([t, lb]) => (
-            <button key={t} className={`opt mode${guessTarget === t ? ' active' : ''}`} onClick={() => onGuessTarget(t)}>
-              {lb}
+            <input
+              className="stepper-input"
+              type="number"
+              inputMode="numeric"
+              min={TIMER_MIN}
+              max={TIMER_MAX}
+              value={custom}
+              onChange={(e) => setCustom(e.target.value)}
+              onBlur={commitCustom}
+              onKeyDown={(e) => e.key === 'Enter' && commitCustom()}
+              aria-label="Seconds per round"
+            />
+            <button className="opt" aria-label="Increase time" onClick={() => step(1)}>
+              +
             </button>
-          ))}
-        </div>
-        <div className="mode-hint">
-          {guessTarget === 'both'
-            ? 'Both: name the logo’s team and the team whose colors it wears — a point only when both are right.'
-            : 'Sets every card in the deck — each deck card can still be switched individually afterwards.'}
-        </div>
+          </div>
+          <div className="mode-hint">Currently {timer} seconds per round.</div>
 
-        <div className="rail-label">ANSWER STYLE</div>
-        <div className="grid2">
-          {(
-            [
-              ['type', 'Type'],
-              ['host', 'Host Mode'],
-            ] as [GameMode, string][]
-          ).map(([m, lb]) => (
-            <button key={m} className={`opt mode${gameMode === m ? ' active' : ''}`} onClick={() => onGameMode(m)}>
-              {lb}
+          <div className="rail-label">DEFAULT GUESS MODE</div>
+          <div className="grid3">
+            {GUESS_TARGETS.map((t) => [t, GUESS_LABEL[t]] as const).map(([t, lb]) => (
+              <button key={t} className={`opt mode${guessTarget === t ? ' active' : ''}`} onClick={() => onGuessTarget(t)}>
+                {lb}
+              </button>
+            ))}
+          </div>
+          <div className="mode-hint">
+            {guessTarget === 'both'
+              ? 'Both: name the logo’s team and the team whose colors it wears — a point only when both are right.'
+              : 'Sets every card in the deck — each deck card can still be switched individually afterwards.'}
+          </div>
+
+          <div className="rail-label">ANSWER STYLE</div>
+          <div className="grid2">
+            {(
+              [
+                ['type', 'Type'],
+                ['host', 'Host Mode'],
+              ] as [GameMode, string][]
+            ).map(([m, lb]) => (
+              <button key={m} className={`opt mode${gameMode === m ? ' active' : ''}`} onClick={() => onGameMode(m)}>
+                {lb}
+              </button>
+            ))}
+          </div>
+          <div className="mode-hint">
+            {gameMode === 'host'
+              ? 'Everyone shouts the answer — the host taps Correct or Incorrect. No typing.'
+              : 'One player types the answer each round.'}
+          </div>
+
+          <div className="rail-label">VOICE ANNOUNCER</div>
+          <div className="grid2">
+            <button className={`opt mode${voice ? ' active' : ''}`} onClick={() => { onVoice(true); speak(guessTarget) }} disabled={!voiceSupported()}>
+              🔊 On
             </button>
-          ))}
-        </div>
-        <div className="mode-hint">
-          {gameMode === 'host'
-            ? 'Everyone shouts the answer — the host taps Correct or Incorrect. No typing.'
-            : 'One player types the answer each round.'}
-        </div>
-
-        <div className="rail-label">VOICE ANNOUNCER</div>
-        <div className="grid2">
-          <button className={`opt mode${voice ? ' active' : ''}`} onClick={() => { onVoice(true); speak(guessTarget) }} disabled={!voiceSupported()}>
-            🔊 On
-          </button>
-          <button className={`opt mode${voice ? '' : ' active'}`} onClick={() => onVoice(false)}>
-            Off
-          </button>
-        </div>
-        <div className="mode-hint">
-          {voiceSupported()
-            ? `Announces the prompt each round, then correct or not quite, and the final score.`
-            : 'Voice is not supported in this browser.'}
+            <button className={`opt mode${voice ? '' : ' active'}`} onClick={() => onVoice(false)}>
+              Off
+            </button>
+          </div>
+          <div className="mode-hint">
+            {voiceSupported()
+              ? `Announces the prompt each round, then correct or not quite, and the final score.`
+              : 'Voice is not supported in this browser.'}
+          </div>
         </div>
 
-        <button className="btn-start" onClick={onClose}>
-          DONE
-        </button>
+        <div className="modal-footer">
+          <button className="btn-start" onClick={onClose}>
+            DONE
+          </button>
+        </div>
       </div>
     </div>
   )

@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { findTeam, fullName, GUESS_TARGETS, GUESS_LABEL, roundHints, roundTarget, speak, voiceSupported, TIMER_OPTIONS, HIGH_SCORE_LIMIT, type GameMode, type HighScore, type GuessTarget, type Round, type TimerSeconds } from '../lib/teams'
+import { findTeam, fullName, GUESS_TARGETS, GUESS_LABEL, roundHints, roundTarget, speak, voiceSupported, TIMER_OPTIONS, HIGH_SCORE_LIMIT, MAX_DECK_ROUNDS, type GameMode, type HighScore, type GuessTarget, type Round, type TimerSeconds } from '../lib/teams'
 import { Logo } from './Logo'
 import { RandomDeckModal } from './RandomDeckModal'
 
@@ -25,13 +25,29 @@ export function DeckMode({ deck, portrait, timer, gameMode, guessTarget, voice, 
   const [hsOpen, setHsOpen] = useState(false)
   const [confirmClear, setConfirmClear] = useState(false)
   const [rndOpen, setRndOpen] = useState(false)
-  const rollDeck = (rounds: Round[], replace: boolean) => onDeck(replace ? rounds : [...deck, ...rounds])
+  const [undo, setUndo] = useState<{ deck: Round[]; label: string } | null>(null)
+  const rollDeck = (rounds: Round[], replace: boolean) => {
+    setUndo(null)
+    onDeck((replace ? rounds : [...deck, ...rounds]).slice(0, MAX_DECK_ROUNDS))
+  }
   useEffect(() => {
     if (!confirmClear) return
     const t = setTimeout(() => setConfirmClear(false), 4000)
     return () => clearTimeout(t)
   }, [confirmClear])
-  const mut = (fn: (d: Round[]) => Round[]) => onDeck(fn([...deck]))
+  useEffect(() => {
+    if (!undo) return
+    const t = setTimeout(() => setUndo(null), 6000)
+    return () => clearTimeout(t)
+  }, [undo])
+  const mut = (fn: (d: Round[]) => Round[]) => {
+    setUndo(null)
+    onDeck(fn([...deck]))
+  }
+  const destructive = (next: Round[], label: string) => {
+    setUndo({ deck: [...deck], label })
+    onDeck(next)
+  }
   const shuffle = () =>
     mut((d) => {
       for (let i = d.length - 1; i > 0; i--) {
@@ -43,7 +59,7 @@ export function DeckMode({ deck, portrait, timer, gameMode, guessTarget, voice, 
   const clear = () => {
     if (!confirmClear) return setConfirmClear(true)
     setConfirmClear(false)
-    onDeck([])
+    destructive([], `Cleared ${deck.length} round${deck.length === 1 ? '' : 's'}.`)
   }
   const swap = (d: Round[], a: number, b: number) => {
     ;[d[a], d[b]] = [d[b], d[a]]
@@ -130,10 +146,10 @@ export function DeckMode({ deck, portrait, timer, gameMode, guessTarget, voice, 
                     <button className="edit-btn" onClick={() => onEdit(i)}>
                       Edit
                     </button>
-                    <button className="icon-btn" aria-label="Duplicate" onClick={() => mut((d) => { d.splice(i + 1, 0, { ...d[i] }); return d })}>
+                    <button className="icon-btn" aria-label="Duplicate" title={deck.length >= MAX_DECK_ROUNDS ? 'Deck is full' : 'Duplicate round'} disabled={deck.length >= MAX_DECK_ROUNDS} onClick={() => mut((d) => { d.splice(i + 1, 0, { ...d[i] }); return d })}>
                       ⧉
                     </button>
-                    <button className="icon-btn danger" aria-label="Delete" onClick={() => mut((d) => { d.splice(i, 1); return d })}>
+                    <button className="icon-btn danger" aria-label="Delete" onClick={() => destructive(deck.filter((_, j) => j !== i), `Deleted round ${i + 1}.`)}>
                       ✕
                     </button>
                   </div>
@@ -145,68 +161,72 @@ export function DeckMode({ deck, portrait, timer, gameMode, guessTarget, voice, 
         )}
       </div>
       <aside className="rail">
-        <div className="rail-card">
-          <div className="rail-title">GAME SETUP</div>
-          <div className="rounds-count">
-            {deck.length} <span>ROUNDS</span>
-          </div>
-          <div className="rail-label">TIME PER ROUND</div>
-          <div className="grid4">
-            {TIMER_OPTIONS.map((t) => (
-              <button key={t} className={`opt${timer === t ? ' active' : ''}`} onClick={() => onTimer(t)}>
-                {t}s
+        <div className="rail-card setup-card">
+          <div className="setup-body">
+            <div className="rail-title">GAME SETUP</div>
+            <div className="rounds-count">
+              {deck.length} <span>ROUNDS</span>
+            </div>
+            <div className="rail-label">TIME PER ROUND</div>
+            <div className="grid4">
+              {TIMER_OPTIONS.map((t) => (
+                <button key={t} className={`opt${timer === t ? ' active' : ''}`} onClick={() => onTimer(t)}>
+                  {t}s
+                </button>
+              ))}
+            </div>
+            {!(TIMER_OPTIONS as readonly number[]).includes(timer) && <div className="mode-hint">Custom: {timer}s per round (change in ⚙ Settings)</div>}
+            <div className="rail-label">DEFAULT GUESS MODE</div>
+            <div className="grid3">
+              {GUESS_TARGETS.map((t) => [t, GUESS_LABEL[t]] as const).map(([t, lb]) => (
+                <button key={t} className={`opt mode${guessTarget === t ? ' active' : ''}`} onClick={() => onGuessTarget(t)}>
+                  {lb}
+                </button>
+              ))}
+            </div>
+            <div className="mode-hint">
+              Sets every card in the deck — afterwards you can still switch any single card between Logo, Colors, or Both (name both teams to score).
+            </div>
+
+            <div className="rail-label">ANSWER STYLE</div>
+            <div className="grid2">
+              {(
+                [
+                  ['type', 'Type'],
+                  ['host', 'Host Mode'],
+                ] as [GameMode, string][]
+              ).map(([m, lb]) => (
+                <button key={m} className={`opt mode${gameMode === m ? ' active' : ''}`} onClick={() => onGameMode(m)}>
+                  {lb}
+                </button>
+              ))}
+            </div>
+            <div className="mode-hint">
+              {gameMode === 'host'
+                ? 'Everyone shouts the answer — the host taps Correct or Incorrect. No typing.'
+                : 'One player types the answer each round.'}
+            </div>
+            <div className="rail-label">VOICE ANNOUNCER</div>
+            <div className="grid2">
+              <button className={`opt mode${voice ? ' active' : ''}`} onClick={() => { onVoice(true); speak(guessTarget) }} disabled={!voiceSupported()}>
+                🔊 On
               </button>
-            ))}
-          </div>
-          {!(TIMER_OPTIONS as readonly number[]).includes(timer) && <div className="mode-hint">Custom: {timer}s per round (change in ⚙ Settings)</div>}
-          <div className="rail-label">DEFAULT GUESS MODE</div>
-          <div className="grid3">
-            {GUESS_TARGETS.map((t) => [t, GUESS_LABEL[t]] as const).map(([t, lb]) => (
-              <button key={t} className={`opt mode${guessTarget === t ? ' active' : ''}`} onClick={() => onGuessTarget(t)}>
-                {lb}
+              <button className={`opt mode${voice ? '' : ' active'}`} onClick={() => onVoice(false)}>
+                Off
               </button>
-            ))}
-          </div>
-          <div className="mode-hint">
-            Sets every card in the deck — afterwards you can still switch any single card between Logo, Colors, or Both (name both teams to score).
+            </div>
+            <div className="mode-hint">
+              {voiceSupported()
+                ? `Announces the prompt each round, then correct or not quite, and the final score.`
+                : 'Voice is not supported in this browser.'}
+            </div>
           </div>
 
-          <div className="rail-label">ANSWER STYLE</div>
-          <div className="grid2">
-            {(
-              [
-                ['type', 'Type'],
-                ['host', 'Host Mode'],
-              ] as [GameMode, string][]
-            ).map(([m, lb]) => (
-              <button key={m} className={`opt mode${gameMode === m ? ' active' : ''}`} onClick={() => onGameMode(m)}>
-                {lb}
-              </button>
-            ))}
-          </div>
-          <div className="mode-hint">
-            {gameMode === 'host'
-              ? 'Everyone shouts the answer — the host taps Correct or Incorrect. No typing.'
-              : 'One player types the answer each round.'}
-          </div>
-          <div className="rail-label">VOICE ANNOUNCER</div>
-          <div className="grid2">
-            <button className={`opt mode${voice ? ' active' : ''}`} onClick={() => { onVoice(true); speak(guessTarget) }} disabled={!voiceSupported()}>
-              🔊 On
-            </button>
-            <button className={`opt mode${voice ? '' : ' active'}`} onClick={() => onVoice(false)}>
-              Off
+          <div className="rail-footer">
+            <button className={`btn-start${deck.length ? '' : ' disabled'}`} onClick={onStart} disabled={deck.length === 0}>
+              START GAME
             </button>
           </div>
-          <div className="mode-hint">
-            {voiceSupported()
-              ? `Announces the prompt each round, then correct or not quite, and the final score.`
-              : 'Voice is not supported in this browser.'}
-          </div>
-
-          <button className={`btn-start${deck.length ? '' : ' disabled'}`} onClick={onStart} aria-disabled={deck.length === 0}>
-            START GAME
-          </button>
         </div>
         <button className="rail-card hs-btn" onClick={() => setHsOpen(true)} aria-haspopup="dialog">
           <span className="rail-label">HIGH SCORES</span>
@@ -223,7 +243,13 @@ export function DeckMode({ deck, portrait, timer, gameMode, guessTarget, voice, 
           <span className="hs-view">View board ▸</span>
         </button>
       </aside>
-      {rndOpen && <RandomDeckModal deckCount={deck.length} guessTarget={guessTarget} onRoll={rollDeck} onClose={() => setRndOpen(false)} />}
+      {undo && (
+        <div className="undo-bar" role="status" aria-live="polite">
+          <span>{undo.label}</span>
+          <button onClick={() => { onDeck(undo.deck); setUndo(null) }}>UNDO</button>
+        </div>
+      )}
+      {rndOpen && <RandomDeckModal deck={deck} guessTarget={guessTarget} onRoll={rollDeck} onClose={() => setRndOpen(false)} />}
       {hsOpen && <HighScoresModal highScores={highScores} onClose={() => setHsOpen(false)} />}
     </div>
   )
@@ -245,19 +271,21 @@ function HighScoresModal({ highScores, onClose }: { highScores: HighScore[]; onC
             <span>Close</span>
           </button>
         </div>
-        {highScores.length ? (
-          <ol className="hs-board">
-            {highScores.map((h, i) => (
-              <li key={`${h.date}-${i}`} className="hs-row">
-                <span className="hs-rank">{String(i + 1).padStart(2, '0')}</span>
-                <span className="hs-initials">{h.initials}</span>
-                <span className="hs-score">{h.score}</span>
-              </li>
-            ))}
-          </ol>
-        ) : (
-          <div className="hs-empty">No scores yet — top {HIGH_SCORE_LIMIT} runs go here.</div>
-        )}
+        <div className="modal-body">
+          {highScores.length ? (
+            <ol className="hs-board">
+              {highScores.map((h, i) => (
+                <li key={`${h.date}-${i}`} className="hs-row">
+                  <span className="hs-rank">{String(i + 1).padStart(2, '0')}</span>
+                  <span className="hs-initials">{h.initials}</span>
+                  <span className="hs-score">{h.score}</span>
+                </li>
+              ))}
+            </ol>
+          ) : (
+            <div className="hs-empty">No scores yet — top {HIGH_SCORE_LIMIT} runs go here.</div>
+          )}
+        </div>
       </div>
     </div>
   )

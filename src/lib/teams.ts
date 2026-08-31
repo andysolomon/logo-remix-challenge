@@ -44,6 +44,8 @@ export const LEAGUES = data.leagues as Record<League, { label: string; conferenc
 export const PERMS = data.permutations as number[][]
 export const SEED_DECK = data.seed_deck as Round[]
 export const LS = data.localStorage_keys
+/** Matches the baked score vocabulary (`you-scored-0..20` / `out-of-1..20`). */
+export const MAX_DECK_ROUNDS = 20
 
 const byId = new Map(TEAMS.map((t) => [t.id, t]))
 export const findTeam = (id: string): Team | undefined => byId.get(id)
@@ -87,13 +89,13 @@ const safeSet = (k: string, v: string) => {
 export function loadDeck(): Round[] {
   try {
     const d = JSON.parse(safeGet(LS.deck) ?? 'null')
-    if (Array.isArray(d) && d.length && d.every((r) => findTeam(r.o) && findTeam(r.c) && typeof r.v === 'number' && (r.g === undefined || isGuessTarget(r.g)) && (r.h === undefined || typeof r.h === 'boolean'))) return d
+    if (Array.isArray(d) && d.every(isRound)) return normalizeDeck(d)
   } catch {
     /* ignore */
   }
-  return SEED_DECK
+  return normalizeDeck(SEED_DECK)
 }
-export const saveDeck = (d: Round[]) => safeSet(LS.deck, JSON.stringify(d))
+export const saveDeck = (d: Round[]) => safeSet(LS.deck, JSON.stringify(normalizeDeck(d)))
 
 export function loadTimer(): TimerSeconds {
   const t = parseInt(safeGet(LS.timer) ?? '', 10)
@@ -453,6 +455,159 @@ export const poolTeams = (ids: string[]) => {
 const pick = <T,>(list: T[]) => list[Math.floor(Math.random() * list.length)]
 const samePalette = (a: Team, b: Team) => a.palette.join() === b.palette.join()
 
+const channelLuminance = (hex: string) => {
+  const values = [1, 3, 5].map((i) => parseInt(hex.slice(i, i + 2), 16) / 255)
+  const [r, g, b] = values.map((v) => (v <= 0.04045 ? v / 12.92 : ((v + 0.055) / 1.055) ** 2.4))
+  return 0.2126 * r + 0.7152 * g + 0.0722 * b
+}
+
+const contrastRatio = (a: string, b: string) => {
+  const l1 = channelLuminance(a)
+  const l2 = channelLuminance(b)
+  return (Math.max(l1, l2) + 0.05) / (Math.min(l1, l2) + 0.05)
+}
+
+const palettePairs = [[0, 1], [0, 2], [1, 2]] as const
+const DETAIL_CONTRAST = 1.5
+const LIGHT_SURFACE = '#FFFFFF'
+const SURFACE_CONTRAST = 1.5
+const ARTWORK_ROLES = [0, 1] as const
+
+type PermutationScore = {
+  primary: number
+  secondary: number
+  weakestDetail: number
+}
+
+const permutationScore = (
+  targetPalette: readonly string[],
+  permutation: readonly number[],
+  criticalPairs: readonly (readonly [number, number])[],
+): PermutationScore => ({
+  primary: contrastRatio(targetPalette[permutation[0]], LIGHT_SURFACE),
+  secondary: contrastRatio(targetPalette[permutation[1]], LIGHT_SURFACE),
+  weakestDetail: criticalPairs.length
+    ? Math.min(...criticalPairs.map(([a, b]) => contrastRatio(targetPalette[permutation[a]], targetPalette[permutation[b]])))
+    : Infinity,
+})
+
+const exactContrastSafePermutations = (original: Team, targetPalette: readonly string[]): number[] => {
+  if (targetPalette.length < 3) return [0]
+  const source = original.sourcePalette ?? original.palette
+  const criticalPairs = palettePairs.filter(([a, b]) => contrastRatio(source[a], source[b]) >= DETAIL_CONTRAST)
+  const surfaceRoles = ARTWORK_ROLES.filter((role) => contrastRatio(source[role], LIGHT_SURFACE) >= SURFACE_CONTRAST)
+  return PERMS.map((_, i) => i).filter((i) => {
+    const p = PERMS[i]
+    return criticalPairs.every(([a, b]) => contrastRatio(targetPalette[p[a]], targetPalette[p[b]]) >= DETAIL_CONTRAST) &&
+      surfaceRoles.every((role) => contrastRatio(targetPalette[p[role]], LIGHT_SURFACE) >= SURFACE_CONTRAST)
+  })
+}
+
+const hexFromChannels = (channels: readonly number[]) =>
+  '#' + channels.map((channel) => channel.toString(16).padStart(2, '0')).join('').toUpperCase()
+
+/** Preserve hue while applying the least whole-channel darkening needed on the light canvas. */
+const darkenForLightSurface = (hex: string): string => {
+  if (contrastRatio(hex, LIGHT_SURFACE) >= SURFACE_CONTRAST) return hex
+  const channels = [1, 3, 5].map((i) => parseInt(hex.slice(i, i + 2), 16))
+  let low = 0
+  let high = 255
+  let best = '#000000'
+  while (low <= high) {
+    const factor = Math.floor((low + high) / 2)
+    const candidate = hexFromChannels(channels.map((channel) => Math.round(channel * factor / 255)))
+    if (contrastRatio(candidate, LIGHT_SURFACE) >= SURFACE_CONTRAST) {
+      best = candidate
+      low = factor + 1
+    } else {
+      high = factor - 1
+    }
+  }
+  return best
+}
+
+/**
+ * Permutations that keep visibly separate source colors distinct and keep source artwork roles that
+ * were readable on the light canvas readable after recoloring. If no perfect mapping exists, retain
+ * a deterministic fallback that preserves critical artwork detail first, then prioritizes primary
+ * and secondary light-surface contrast. The fallback's artwork roles are restyled by
+ * `resolveRemixTargetColors` below.
+ */
+export function contrastSafePermutations(original: Team, targetPalette: readonly string[]): number[] {
+  const safe = exactContrastSafePermutations(original, targetPalette)
+  if (safe.length) return safe
+
+  const source = original.sourcePalette ?? original.palette
+  const criticalPairs = palettePairs.filter(([a, b]) => contrastRatio(source[a], source[b]) >= DETAIL_CONTRAST)
+
+  let fallback = 0
+  let best = permutationScore(targetPalette, PERMS[0], criticalPairs)
+  for (let i = 1; i < PERMS.length; i++) {
+    const score = permutationScore(targetPalette, PERMS[i], criticalPairs)
+    if (score.weakestDetail > best.weakestDetail ||
+      (score.weakestDetail === best.weakestDetail && score.primary > best.primary) ||
+      (score.weakestDetail === best.weakestDetail && score.primary === best.primary && score.secondary > best.secondary)) {
+      best = score
+      fallback = i
+    }
+  }
+  return [fallback]
+}
+
+/** Resolve an arbitrary/stale permutation index to a contrast-safe permutation for this remix. */
+export function contrastSafePermutation(original: Team, targetPalette: readonly string[], requested: number): number {
+  const safe = contrastSafePermutations(original, targetPalette)
+  const n = Number.isFinite(requested) ? Math.trunc(requested) : 0
+  const normalized = ((n % PERMS.length) + PERMS.length) % PERMS.length
+  if (safe.includes(normalized)) return normalized
+  return safe[((normalized % safe.length) + safe.length) % safe.length]
+}
+
+/**
+ * Resolve target colors by source slot. Exact safe mappings retain the team palette verbatim. When
+ * no exact permutation exists, only source artwork roles 0/1 are darkened for the light canvas;
+ * source slot 2 remains the target palette's exact light/negative-space color.
+ */
+export function resolveRemixTargetColors(
+  original: Team,
+  targetPalette: readonly string[],
+  requested: number,
+): [string, string, string] {
+  const permutation = contrastSafePermutation(original, targetPalette, requested)
+  const p = PERMS[permutation]
+  const mapped: [string, string, string] = [
+    targetPalette[p[0]] ?? original.palette[0],
+    targetPalette[p[1]] ?? original.palette[1],
+    targetPalette[p[2]] ?? original.palette[2],
+  ]
+  if (exactContrastSafePermutations(original, targetPalette).length) return mapped
+  for (const role of ARTWORK_ROLES) mapped[role] = darkenForLightSurface(mapped[role])
+  return mapped
+}
+
+export function nextContrastSafePermutation(original: Team, targetPalette: readonly string[], current: number): number {
+  const safe = contrastSafePermutations(original, targetPalette)
+  const at = safe.indexOf(contrastSafePermutation(original, targetPalette, current))
+  return safe[(at + 1) % safe.length]
+}
+
+function isRound(r: unknown): r is Round {
+  if (typeof r !== 'object' || r === null) return false
+  const round = r as Round
+  return !!findTeam(round.o) && !!findTeam(round.c) && Number.isFinite(round.v) &&
+    (round.g === undefined || isGuessTarget(round.g)) &&
+    (round.h === undefined || typeof round.h === 'boolean')
+}
+
+export function normalizeRound(round: Round): Round {
+  const original = findTeam(round.o)
+  const colors = findTeam(round.c)
+  if (!original || !colors) return round
+  return { ...round, v: contrastSafePermutation(original, colors.palette, round.v) }
+}
+
+export const normalizeDeck = (deck: Round[]) => deck.slice(0, MAX_DECK_ROUNDS).map(normalizeRound)
+
 /**
  * Build random remix rounds from the chosen pools. Never pairs a team with itself or with a
  * look-alike palette, never repeats a pairing already in `existing`, and spreads originals out
@@ -466,7 +621,9 @@ export function randomDeck(opts: RandomDeckOptions, existing: Round[] = []): Rou
   const seen = new Set(existing.map((r) => `${r.o}|${r.c}`))
   const out: Round[] = []
   let fresh = [...logos]
-  for (let attempt = 0; out.length < opts.rounds && attempt < opts.rounds * 40; attempt++) {
+  const capacity = Math.max(0, MAX_DECK_ROUNDS - existing.length)
+  const requested = Math.min(capacity, Math.max(0, Math.floor(opts.rounds)))
+  for (let attempt = 0; out.length < requested && attempt < requested * 40; attempt++) {
     if (!fresh.length) fresh = [...logos]
     const o = pick(fresh)
     const options = colors.filter((c) => c.id !== o.id && !samePalette(c, o) && !seen.has(`${o.id}|${c.id}`))
@@ -478,7 +635,8 @@ export function randomDeck(opts: RandomDeckOptions, existing: Round[] = []): Rou
     seen.add(`${o.id}|${c.id}`)
     fresh = fresh.filter((t) => t.id !== o.id)
     const g: GuessTarget = opts.guess === 'mix' ? (Math.random() < 0.5 ? 'team' : 'colors') : opts.guess
-    out.push({ o: o.id, c: c.id, v: Math.floor(Math.random() * PERMS.length), g, h: opts.hints || undefined })
+    const safePerms = contrastSafePermutations(o, c.palette)
+    out.push({ o: o.id, c: c.id, v: pick(safePerms), g, h: opts.hints || undefined })
   }
   return out
 }

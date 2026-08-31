@@ -1,7 +1,7 @@
 import { fullName, type Team } from '../lib/teams'
 import { Logo } from './Logo'
 
-export type AddState = 'disabled' | 'add' | 'save' | 'added'
+export type AddState = 'disabled' | 'full' | 'add' | 'save' | 'added'
 
 interface Props {
   original: Team | null
@@ -17,7 +17,8 @@ interface Props {
 }
 
 export function RemixCanvas({ original, colors, perm, addState, onShuffle, onAdd, onClearOriginal, onClearColors, onClearAll, portrait }: Props) {
-  const label = addState === 'added' ? 'ADDED ✓' : addState === 'save' ? 'SAVE ROUND' : '+ ADD ROUND'
+  const label = addState === 'added' ? 'ADDED ✓' : addState === 'full' ? 'DECK FULL · 20' : addState === 'save' ? 'SAVE ROUND' : '+ ADD ROUND'
+  const addDisabled = addState === 'disabled' || addState === 'full' || addState === 'added'
   const colorText = colors ? fullName(colors) : original ? 'Now pick a color team →' : 'Pick a team'
   // Key forces the pop animation to replay whenever the remix changes.
   const remixKey = `${original?.id}-${colors?.id}-${colors ? perm : 0}`
@@ -59,23 +60,25 @@ export function RemixCanvas({ original, colors, perm, addState, onShuffle, onAdd
           </div>
         )}
       </div>
-      <div className="action-row">
-        <button className="btn-shuffle" onClick={onShuffle}>
-          Shuffle Colors
-        </button>
-        <button
-          className={`btn-add${addState === 'disabled' ? ' disabled' : ''}${addState === 'added' ? ' added' : ''}`}
-          onClick={onAdd}
-          aria-disabled={addState === 'disabled'}
-        >
-          {label}
-        </button>
+      <div className="canvas-footer">
+        <div className="action-row">
+          <button className="btn-shuffle" onClick={onShuffle} disabled={!original || !colors}>
+            Shuffle Colors
+          </button>
+          <button
+            className={`btn-add${addDisabled ? ' disabled' : ''}${addState === 'added' ? ' added' : ''}`}
+            onClick={onAdd}
+            disabled={addDisabled}
+          >
+            {label}
+          </button>
+        </div>
+        {(original || colors) && (
+          <button className="btn-clear all" onClick={onClearAll}>
+            Clear both
+          </button>
+        )}
       </div>
-      {(original || colors) && (
-        <button className="btn-clear all" onClick={onClearAll}>
-          Clear both
-        </button>
-      )}
     </section>
   )
 }

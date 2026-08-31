@@ -12,6 +12,9 @@ import {
   loadVoice,
   loadHighScores,
   loadTimer,
+  MAX_DECK_ROUNDS,
+  normalizeDeck,
+  normalizeRound,
   saveDeck,
   saveGameMode,
   saveGuessTarget,
@@ -41,8 +44,9 @@ export default function App() {
   const [settingsOpen, setSettingsOpen] = useState(false)
 
   const setDeck = useCallback((d: Round[]) => {
-    saveDeck(d)
-    setDeckState(d)
+    const normalized = normalizeDeck(d)
+    saveDeck(normalized)
+    setDeckState(normalized)
   }, [])
   const setTimer = (t: TimerSeconds) => {
     saveTimer(t)
@@ -69,9 +73,13 @@ export default function App() {
 
   const addRound = (round: Round, editIdx: number | null) => {
     const d = [...deck]
-    if (editIdx != null && d[editIdx]) d[editIdx] = round
-    else d.push(round)
+    if (editIdx != null && d[editIdx]) d[editIdx] = normalizeRound(round)
+    else {
+      if (d.length >= MAX_DECK_ROUNDS) return false
+      d.push(normalizeRound(round))
+    }
     setDeck(d)
+    return true
   }
 
   const editRound = (i: number) => {
@@ -108,7 +116,7 @@ export default function App() {
         <SettingsModal timer={timer} gameMode={gameMode} guessTarget={guessTarget} voice={voice} onTimer={setTimer} onGameMode={setGameMode} onGuessTarget={setGuessTarget} onVoice={setVoice} onClose={() => setSettingsOpen(false)} />
       )}
       {mode === 'create' ? (
-        <CreateMode state={create} setState={setCreate} portrait={portrait} onAddRound={addRound} />
+        <CreateMode state={create} setState={setCreate} portrait={portrait} deckCount={deck.length} onAddRound={addRound} />
       ) : (
         <DeckMode
           deck={deck}

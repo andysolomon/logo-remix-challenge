@@ -29,9 +29,16 @@ interface Props {
   portrait: boolean
   deckCount: number
   onAddRound: (round: Round, editIdx: number | null) => boolean
+  hidden?: boolean
 }
 
-export function CreateMode({ state, setState, portrait, deckCount, onAddRound }: Props) {
+const panelProps = {
+  id: 'panel-create',
+  role: 'tabpanel' as const,
+  'aria-labelledby': 'tab-create',
+}
+
+export function CreateMode({ state, setState, portrait, deckCount, onAddRound, hidden }: Props) {
   const original = state.oId ? findTeam(state.oId) ?? null : null
   const colors = state.cId ? findTeam(state.cId) ?? null : null
   const [justAdded, setJustAdded] = useState(false)
@@ -94,10 +101,16 @@ export function CreateMode({ state, setState, portrait, deckCount, onAddRound }:
       [3, '3 · Remix'],
     ]
     return (
-      <div className="create-port portrait">
-        <div className="steps">
+      <div className="create-port portrait" {...panelProps} hidden={hidden}>
+        <div className="steps" role="group" aria-label="Create remix steps">
           {steps.map(([n, lb]) => (
-            <button key={n} className={`step${state.step === n ? ' active' : ''}`} onClick={() => setState((s) => ({ ...s, step: n }))}>
+            <button
+              key={n}
+              type="button"
+              className={`step${state.step === n ? ' active' : ''}`}
+              aria-current={state.step === n ? 'step' : undefined}
+              onClick={() => setState((s) => ({ ...s, step: n }))}
+            >
               {lb}
             </button>
           ))}
@@ -129,7 +142,7 @@ export function CreateMode({ state, setState, portrait, deckCount, onAddRound }:
   }
 
   return (
-    <div className="create-land">
+    <div className="create-land" {...panelProps} hidden={hidden}>
       <TeamBrowser
         title="ORIGINAL"
         state={state.browserO}

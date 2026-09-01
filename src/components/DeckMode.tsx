@@ -1,7 +1,8 @@
-import { useEffect, useState } from 'react'
-import { findTeam, fullName, GUESS_TARGETS, GUESS_LABEL, roundHints, roundTarget, speak, voiceSupported, TIMER_OPTIONS, HIGH_SCORE_LIMIT, MAX_DECK_ROUNDS, type GameMode, type HighScore, type GuessTarget, type Round, type TimerSeconds } from '../lib/teams'
+import { useCallback, useEffect, useReducer, useRef, useState } from 'react'
+import { deckUndoReducer, findTeam, fullName, GUESS_TARGETS, GUESS_LABEL, roundHints, roundTarget, speak, voiceSupported, TIMER_OPTIONS, HIGH_SCORE_LIMIT, MAX_DECK_ROUNDS, type GameMode, type HighScore, type GuessTarget, type Round, type TimerSeconds } from '../lib/teams'
 import { Logo } from './Logo'
 import { RandomDeckModal } from './RandomDeckModal'
+import { useDialogA11y } from './SettingsModal'
 
 interface Props {
   deck: Round[]
@@ -11,6 +12,7 @@ interface Props {
   guessTarget: GuessTarget
   voice: boolean
   highScores: HighScore[]
+  deckWideMutationVersion: number
   onDeck: (d: Round[]) => void
   onEdit: (i: number) => void
   onTimer: (t: TimerSeconds) => void
@@ -19,15 +21,18 @@ interface Props {
   onVoice: (on: boolean) => void
   onStart: () => void
   onCreate: () => void
+  hidden?: boolean
 }
 
-export function DeckMode({ deck, portrait, timer, gameMode, guessTarget, voice, highScores, onDeck, onEdit, onTimer, onGameMode, onGuessTarget, onVoice, onStart, onCreate }: Props) {
+export function DeckMode({ deck, portrait, timer, gameMode, guessTarget, voice, highScores, deckWideMutationVersion, onDeck, onEdit, onTimer, onGameMode, onGuessTarget, onVoice, onStart, onCreate, hidden }: Props) {
   const [hsOpen, setHsOpen] = useState(false)
   const [confirmClear, setConfirmClear] = useState(false)
   const [rndOpen, setRndOpen] = useState(false)
-  const [undo, setUndo] = useState<{ deck: Round[]; label: string } | null>(null)
+  const closeRandom = useCallback(() => setRndOpen(false), [])
+  const closeHighScores = useCallback(() => setHsOpen(false), [])
+  const [undo, dispatchUndo] = useReducer(deckUndoReducer, null)
   const rollDeck = (rounds: Round[], replace: boolean) => {
-    setUndo(null)
+    dispatchUndo({ type: 'ordinary' })
     onDeck((replace ? rounds : [...deck, ...rounds]).slice(0, MAX_DECK_ROUNDS))
   }
   useEffect(() => {
@@ -37,15 +42,25 @@ export function DeckMode({ deck, portrait, timer, gameMode, guessTarget, voice, 
   }, [confirmClear])
   useEffect(() => {
     if (!undo) return
-    const t = setTimeout(() => setUndo(null), 6000)
+    const t = setTimeout(() => dispatchUndo({ type: 'ordinary' }), 6000)
     return () => clearTimeout(t)
   }, [undo])
+  useEffect(() => {
+    dispatchUndo({ type: 'deck-wide' })
+  }, [deckWideMutationVersion])
+  useEffect(() => {
+    if (!hidden) return
+    setHsOpen(false)
+    setRndOpen(false)
+    setConfirmClear(false)
+    dispatchUndo({ type: 'ordinary' })
+  }, [hidden])
   const mut = (fn: (d: Round[]) => Round[]) => {
-    setUndo(null)
+    dispatchUndo({ type: 'ordinary' })
     onDeck(fn([...deck]))
   }
   const destructive = (next: Round[], label: string) => {
-    setUndo({ deck: [...deck], label })
+    dispatchUndo({ type: 'destructive', deck, label })
     onDeck(next)
   }
   const shuffle = () =>
@@ -66,7 +81,7 @@ export function DeckMode({ deck, portrait, timer, gameMode, guessTarget, voice, 
     return d
   }
   return (
-    <div className={`deck${portrait ? ' portrait' : ''}`}>
+    <div className={`deck${portrait ? ' portrait' : ''}`} id="panel-deck" role="tabpanel" aria-labelledby="tab-deck" hidden={hidden}>
       <div className="deck-cards">
         {deck.length === 0 ? (
           <div className="deck-empty">
@@ -167,19 +182,19 @@ export function DeckMode({ deck, portrait, timer, gameMode, guessTarget, voice, 
             <div className="rounds-count">
               {deck.length} <span>ROUNDS</span>
             </div>
-            <div className="rail-label">TIME PER ROUND</div>
-            <div className="grid4">
+            <div className="rail-label" id="deck-timer-label">TIME PER ROUND</div>
+            <div className="grid4" role="group" aria-labelledby="deck-timer-label">
               {TIMER_OPTIONS.map((t) => (
-                <button key={t} className={`opt${timer === t ? ' active' : ''}`} onClick={() => onTimer(t)}>
+                <button key={t} type="button" className={`opt${timer === t ? ' active' : ''}`} aria-pressed={timer === t} onClick={() => onTimer(t)}>
                   {t}s
                 </button>
               ))}
             </div>
             {!(TIMER_OPTIONS as readonly number[]).includes(timer) && <div className="mode-hint">Custom: {timer}s per round (change in ⚙ Settings)</div>}
-            <div className="rail-label">DEFAULT GUESS MODE</div>
-            <div className="grid3">
+            <div className="rail-label" id="deck-guess-label">DEFAULT GUESS MODE</div>
+            <div className="grid3" role="group" aria-labelledby="deck-guess-label">
               {GUESS_TARGETS.map((t) => [t, GUESS_LABEL[t]] as const).map(([t, lb]) => (
-                <button key={t} className={`opt mode${guessTarget === t ? ' active' : ''}`} onClick={() => onGuessTarget(t)}>
+                <button key={t} type="button" className={`opt mode${guessTarget === t ? ' active' : ''}`} aria-pressed={guessTarget === t} onClick={() => onGuessTarget(t)}>
                   {lb}
                 </button>
               ))}
@@ -188,15 +203,15 @@ export function DeckMode({ deck, portrait, timer, gameMode, guessTarget, voice, 
               Sets every card in the deck — afterwards you can still switch any single card between Logo, Colors, or Both (name both teams to score).
             </div>
 
-            <div className="rail-label">ANSWER STYLE</div>
-            <div className="grid2">
+            <div className="rail-label" id="deck-mode-label">ANSWER STYLE</div>
+            <div className="grid2" role="group" aria-labelledby="deck-mode-label">
               {(
                 [
                   ['type', 'Type'],
                   ['host', 'Host Mode'],
                 ] as [GameMode, string][]
               ).map(([m, lb]) => (
-                <button key={m} className={`opt mode${gameMode === m ? ' active' : ''}`} onClick={() => onGameMode(m)}>
+                <button key={m} type="button" className={`opt mode${gameMode === m ? ' active' : ''}`} aria-pressed={gameMode === m} onClick={() => onGameMode(m)}>
                   {lb}
                 </button>
               ))}
@@ -206,12 +221,12 @@ export function DeckMode({ deck, portrait, timer, gameMode, guessTarget, voice, 
                 ? 'Everyone shouts the answer — the host taps Correct or Incorrect. No typing.'
                 : 'One player types the answer each round.'}
             </div>
-            <div className="rail-label">VOICE ANNOUNCER</div>
-            <div className="grid2">
-              <button className={`opt mode${voice ? ' active' : ''}`} onClick={() => { onVoice(true); speak(guessTarget) }} disabled={!voiceSupported()}>
+            <div className="rail-label" id="deck-voice-label">VOICE ANNOUNCER</div>
+            <div className="grid2" role="group" aria-labelledby="deck-voice-label">
+              <button type="button" className={`opt mode${voice ? ' active' : ''}`} aria-pressed={voice} onClick={() => { onVoice(true); speak(guessTarget) }} disabled={!voiceSupported()}>
                 🔊 On
               </button>
-              <button className={`opt mode${voice ? '' : ' active'}`} onClick={() => onVoice(false)}>
+              <button type="button" className={`opt mode${voice ? '' : ' active'}`} aria-pressed={!voice} onClick={() => onVoice(false)}>
                 Off
               </button>
             </div>
@@ -246,27 +261,27 @@ export function DeckMode({ deck, portrait, timer, gameMode, guessTarget, voice, 
       {undo && (
         <div className="undo-bar" role="status" aria-live="polite">
           <span>{undo.label}</span>
-          <button onClick={() => { onDeck(undo.deck); setUndo(null) }}>UNDO</button>
+          <button onClick={() => { onDeck(undo.deck); dispatchUndo({ type: 'restored' }) }}>UNDO</button>
         </div>
       )}
-      {rndOpen && <RandomDeckModal deck={deck} guessTarget={guessTarget} onRoll={rollDeck} onClose={() => setRndOpen(false)} />}
-      {hsOpen && <HighScoresModal highScores={highScores} onClose={() => setHsOpen(false)} />}
+      {rndOpen && <RandomDeckModal deck={deck} guessTarget={guessTarget} onRoll={rollDeck} onClose={closeRandom} />}
+      {hsOpen && <HighScoresModal highScores={highScores} onClose={closeHighScores} />}
     </div>
   )
 }
 
 function HighScoresModal({ highScores, onClose }: { highScores: HighScore[]; onClose: () => void }) {
-  useEffect(() => {
-    const onKey = (e: KeyboardEvent) => e.key === 'Escape' && onClose()
-    window.addEventListener('keydown', onKey)
-    return () => window.removeEventListener('keydown', onKey)
-  }, [onClose])
+  const dialogRef = useRef<HTMLDivElement>(null)
+  const closeRef = useRef<HTMLButtonElement>(null)
+
+  useDialogA11y(dialogRef, closeRef, onClose)
+
   return (
     <div className="modal-backdrop" onClick={onClose}>
-      <div className="modal" role="dialog" aria-modal="true" aria-labelledby="hs-title" onClick={(e) => e.stopPropagation()}>
+      <div ref={dialogRef} className="modal" role="dialog" aria-modal="true" aria-labelledby="hs-title" onClick={(e) => e.stopPropagation()}>
         <div className="modal-head">
           <div id="hs-title" className="rail-title">HIGH SCORES</div>
-          <button className="close-btn" aria-label="Close high scores" onClick={onClose}>
+          <button ref={closeRef} type="button" className="close-btn" aria-label="Close high scores" onClick={onClose}>
             <span aria-hidden="true">✕</span>
             <span>Close</span>
           </button>

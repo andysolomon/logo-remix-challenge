@@ -85,20 +85,23 @@ const safeSet = (k: string, v: string) => {
     /* ignore */
   }
 }
+const storedInteger = (value: string | null) =>
+  value !== null && /^(0|[1-9]\d*)$/.test(value) ? Number(value) : NaN
 
-export function loadDeck(): Round[] {
+export function deckFromStorage(value: string | null): Round[] {
   try {
-    const d = JSON.parse(safeGet(LS.deck) ?? 'null')
+    const d = JSON.parse(value ?? 'null')
     if (Array.isArray(d) && d.every(isRound)) return normalizeDeck(d)
   } catch {
     /* ignore */
   }
   return normalizeDeck(SEED_DECK)
 }
+export const loadDeck = (): Round[] => deckFromStorage(safeGet(LS.deck))
 export const saveDeck = (d: Round[]) => safeSet(LS.deck, JSON.stringify(normalizeDeck(d)))
 
 export function loadTimer(): TimerSeconds {
-  const t = parseInt(safeGet(LS.timer) ?? '', 10)
+  const t = storedInteger(safeGet(LS.timer))
   return Number.isFinite(t) && t >= TIMER_MIN && t <= TIMER_MAX ? t : 15
 }
 export const saveTimer = (t: TimerSeconds) => safeSet(LS.timer, String(t))
@@ -120,12 +123,32 @@ export interface HighScore {
 const rankHighScores = (list: HighScore[]) =>
   [...list].sort((a, b) => b.score - a.score || a.date - b.date).slice(0, HIGH_SCORE_LIMIT)
 
-const isHighScore = (h: unknown): h is HighScore =>
-  typeof h === 'object' && h !== null &&
-  typeof (h as HighScore).initials === 'string' &&
-  typeof (h as HighScore).score === 'number' && (h as HighScore).score >= 0 &&
-  typeof (h as HighScore).total === 'number' &&
-  typeof (h as HighScore).date === 'number'
+const isSafeNonNegInt = (n: unknown, max = Number.MAX_SAFE_INTEGER): n is number =>
+  typeof n === 'number' &&
+  Number.isFinite(n) &&
+  Number.isInteger(n) &&
+  Number.isSafeInteger(n) &&
+  n >= 0 &&
+  n <= max
+
+const isValidInitials = (initials: unknown): initials is string =>
+  typeof initials === 'string' &&
+  (initials === LEGACY_INITIALS ||
+    (initials.length === INITIALS_LENGTH &&
+      [...initials].every((ch) => INITIALS_ALPHABET.includes(ch))))
+
+const isHighScore = (h: unknown): h is HighScore => {
+  if (typeof h !== 'object' || h === null) return false
+  const { initials, score, total, date } = h as HighScore
+  return (
+    isValidInitials(initials) &&
+    isSafeNonNegInt(score, MAX_DECK_ROUNDS) &&
+    isSafeNonNegInt(total, MAX_DECK_ROUNDS) &&
+    total > 0 &&
+    score <= total &&
+    isSafeNonNegInt(date)
+  )
+}
 
 export function loadHighScores(): HighScore[] {
   try {
@@ -135,10 +158,13 @@ export function loadHighScores(): HighScore[] {
     /* ignore */
   }
   // Migrate the pre-leaderboard single best score so it is not lost.
-  const legacy = parseInt(safeGet(LS.highScore) ?? '', 10)
-  return legacy > 0 ? [{ initials: LEGACY_INITIALS, score: legacy, total: legacy, date: 0 }] : []
+  const legacy = storedInteger(safeGet(LS.highScore))
+  return legacy >= 1 && legacy <= MAX_DECK_ROUNDS
+    ? [{ initials: LEGACY_INITIALS, score: legacy, total: legacy, date: 0 }]
+    : []
 }
-export const saveHighScores = (list: HighScore[]) => safeSet(LS.highScores, JSON.stringify(rankHighScores(list)))
+export const saveHighScores = (list: HighScore[]) =>
+  safeSet(LS.highScores, JSON.stringify(rankHighScores(list.filter(isHighScore))))
 
 // A run makes the board when there is an open slot or it beats the lowest entry (ties do not bump anyone).
 export const qualifiesForHighScore = (score: number, list: HighScore[]) =>
@@ -607,6 +633,21 @@ export function normalizeRound(round: Round): Round {
 }
 
 export const normalizeDeck = (deck: Round[]) => deck.slice(0, MAX_DECK_ROUNDS).map(normalizeRound)
+
+export interface DeckUndoSnapshot {
+  deck: Round[]
+  label: string
+}
+
+export type DeckUndoAction =
+  | { type: 'destructive'; deck: Round[]; label: string }
+  | { type: 'ordinary' | 'deck-wide' | 'restored' }
+
+/** One-shot destructive deck history. Every other deck mutation invalidates the snapshot. */
+export function deckUndoReducer(state: DeckUndoSnapshot | null, action: DeckUndoAction): DeckUndoSnapshot | null {
+  if (action.type === 'destructive') return { deck: normalizeDeck(action.deck), label: action.label }
+  return state === null ? state : null
+}
 
 /**
  * Build random remix rounds from the chosen pools. Never pairs a team with itself or with a

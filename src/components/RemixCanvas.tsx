@@ -20,14 +20,33 @@ export function RemixCanvas({ original, colors, perm, addState, onShuffle, onAdd
   const label = addState === 'added' ? 'ADDED ✓' : addState === 'full' ? 'DECK FULL · 20' : addState === 'save' ? 'SAVE ROUND' : '+ ADD ROUND'
   const addDisabled = addState === 'disabled' || addState === 'full' || addState === 'added'
   const colorText = colors ? fullName(colors) : original ? 'Now pick a color team →' : 'Pick a team'
+  const liveStatus =
+    addState === 'added'
+      ? 'Round added to deck.'
+      : addState === 'full'
+        ? 'Deck is full. Remove a round before adding more.'
+        : addState === 'save'
+          ? 'Ready to save round changes.'
+          : ''
+  const addAriaLabel =
+    addState === 'added'
+      ? 'Round added'
+      : addState === 'full'
+        ? 'Deck full, cannot add round'
+        : addState === 'save'
+          ? 'Save round changes'
+          : 'Add round to deck'
   // Key forces the pop animation to replay whenever the remix changes.
   const remixKey = `${original?.id}-${colors?.id}-${colors ? perm : 0}`
   return (
-    <section className="canvas">
+    <section className="canvas" aria-label="Remix preview">
+      <div className="sr-only" role="status" aria-live="polite" aria-atomic="true">
+        {liveStatus}
+      </div>
       <div className="micro-row">
         <div className="micro">ORIGINAL</div>
         {original && (
-          <button className="btn-clear" onClick={onClearOriginal} aria-label="Clear original team">
+          <button type="button" className="btn-clear" onClick={onClearOriginal} aria-label="Clear original team">
             clear
           </button>
         )}
@@ -45,7 +64,7 @@ export function RemixCanvas({ original, colors, perm, addState, onShuffle, onAdd
       <div className="micro-row">
         <div className="micro">COLORS</div>
         {colors && (
-          <button className="btn-clear" onClick={onClearColors} aria-label="Clear color team">
+          <button type="button" className="btn-clear" onClick={onClearColors} aria-label="Clear color team">
             clear
           </button>
         )}
@@ -62,19 +81,21 @@ export function RemixCanvas({ original, colors, perm, addState, onShuffle, onAdd
       </div>
       <div className="canvas-footer">
         <div className="action-row">
-          <button className="btn-shuffle" onClick={onShuffle} disabled={!original || !colors}>
+          <button type="button" className="btn-shuffle" onClick={onShuffle} disabled={!original || !colors} aria-label="Shuffle color assignment">
             Shuffle Colors
           </button>
           <button
+            type="button"
             className={`btn-add${addDisabled ? ' disabled' : ''}${addState === 'added' ? ' added' : ''}`}
             onClick={onAdd}
             disabled={addDisabled}
+            aria-label={addAriaLabel}
           >
             {label}
           </button>
         </div>
         {(original || colors) && (
-          <button className="btn-clear all" onClick={onClearAll}>
+          <button type="button" className="btn-clear all" onClick={onClearAll} aria-label="Clear original and color teams">
             Clear both
           </button>
         )}

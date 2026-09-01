@@ -1,5 +1,6 @@
-import { useEffect, useState } from 'react'
+import { useRef, useState } from 'react'
 import { ALL_POOL_IDS, MAX_DECK_ROUNDS, RANDOM_ROUND_OPTIONS, TEAM_POOLS, poolTeams, randomDeck, type GuessTarget, type RandomDeckOptions, type RandomGuess, type Round } from '../lib/teams'
+import { useDialogA11y } from './SettingsModal'
 
 interface Props {
   deck: Round[]
@@ -16,11 +17,10 @@ export function RandomDeckModal({ deck, guessTarget, onRoll, onClose }: Props) {
     () => lastOptions ?? { rounds: 10, logoPools: ['SEC'], colorPools: ['NFL'], guess: guessTarget, hints: false },
   )
   const [replace, setReplace] = useState(true)
-  useEffect(() => {
-    const onKey = (e: KeyboardEvent) => e.key === 'Escape' && onClose()
-    window.addEventListener('keydown', onKey)
-    return () => window.removeEventListener('keydown', onKey)
-  }, [onClose])
+  const dialogRef = useRef<HTMLDivElement>(null)
+  const closeRef = useRef<HTMLButtonElement>(null)
+
+  useDialogA11y(dialogRef, closeRef, onClose)
 
   const logoCount = poolTeams(opts.logoPools).length
   const colorCount = poolTeams(opts.colorPools).length
@@ -38,20 +38,20 @@ export function RandomDeckModal({ deck, guessTarget, onRoll, onClose }: Props) {
 
   return (
     <div className="modal-backdrop" onClick={onClose}>
-      <div className="modal" role="dialog" aria-modal="true" aria-labelledby="rnd-title" onClick={(e) => e.stopPropagation()}>
+      <div ref={dialogRef} className="modal" role="dialog" aria-modal="true" aria-labelledby="rnd-title" onClick={(e) => e.stopPropagation()}>
         <div className="modal-head">
           <div id="rnd-title" className="rail-title">RANDOM DECK</div>
-          <button className="close-btn" aria-label="Close random deck" onClick={onClose}>
+          <button ref={closeRef} type="button" className="close-btn" aria-label="Close random deck" onClick={onClose}>
             <span aria-hidden="true">✕</span>
             <span>Close</span>
           </button>
         </div>
 
         <div className="modal-body">
-          <div className="rail-label">ROUNDS</div>
-          <div className="grid4">
+          <div className="rail-label" id="rnd-rounds-label">ROUNDS</div>
+          <div className="grid4" role="group" aria-labelledby="rnd-rounds-label">
             {RANDOM_ROUND_OPTIONS.map((n) => (
-              <button key={n} className={`opt${opts.rounds === n ? ' active' : ''}`} onClick={() => setOpts((o) => ({ ...o, rounds: n }))}>
+              <button key={n} type="button" className={`opt${opts.rounds === n ? ' active' : ''}`} aria-pressed={opts.rounds === n} onClick={() => setOpts((o) => ({ ...o, rounds: n }))}>
                 {n}
               </button>
             ))}
@@ -60,8 +60,8 @@ export function RandomDeckModal({ deck, guessTarget, onRoll, onClose }: Props) {
           <PoolPicker label="LOGOS FROM" value={opts.logoPools} count={logoCount} onChange={(v) => setOpts((o) => ({ ...o, logoPools: v }))} />
           <PoolPicker label="COLORS FROM" value={opts.colorPools} count={colorCount} onChange={(v) => setOpts((o) => ({ ...o, colorPools: v }))} />
 
-          <div className="rail-label">GUESS</div>
-          <div className="grid4">
+          <div className="rail-label" id="rnd-guess-label">GUESS</div>
+          <div className="grid4" role="group" aria-labelledby="rnd-guess-label">
             {(
               [
                 ['team', 'Logo'],
@@ -70,7 +70,7 @@ export function RandomDeckModal({ deck, guessTarget, onRoll, onClose }: Props) {
                 ['mix', 'Mix'],
               ] as [RandomGuess, string][]
             ).map(([g, lb]) => (
-              <button key={g} className={`opt mode${opts.guess === g ? ' active' : ''}`} onClick={() => setOpts((o) => ({ ...o, guess: g }))}>
+              <button key={g} type="button" className={`opt mode${opts.guess === g ? ' active' : ''}`} aria-pressed={opts.guess === g} onClick={() => setOpts((o) => ({ ...o, guess: g }))}>
                 {lb}
               </button>
             ))}
@@ -79,24 +79,24 @@ export function RandomDeckModal({ deck, guessTarget, onRoll, onClose }: Props) {
             {opts.guess === 'mix' ? 'Each round randomly asks for the logo or the colors.' : opts.guess === 'both' ? 'Every round asks for the logo’s team and the colors’ team.' : opts.guess === 'colors' ? 'Every round asks whose colors the logo is wearing.' : 'Every round asks which team the logo belongs to.'}
           </div>
 
-          <div className="rail-label">HINTS</div>
-          <div className="grid2">
-            <button className={`opt mode${opts.hints ? ' active' : ''}`} onClick={() => setOpts((o) => ({ ...o, hints: true }))}>
+          <div className="rail-label" id="rnd-hints-label">HINTS</div>
+          <div className="grid2" role="group" aria-labelledby="rnd-hints-label">
+            <button type="button" className={`opt mode${opts.hints ? ' active' : ''}`} aria-pressed={opts.hints} onClick={() => setOpts((o) => ({ ...o, hints: true }))}>
               Show league
             </button>
-            <button className={`opt mode${opts.hints ? '' : ' active'}`} onClick={() => setOpts((o) => ({ ...o, hints: false }))}>
+            <button type="button" className={`opt mode${opts.hints ? '' : ' active'}`} aria-pressed={!opts.hints} onClick={() => setOpts((o) => ({ ...o, hints: false }))}>
               Off
             </button>
           </div>
 
           {deck.length > 0 && (
             <>
-              <div className="rail-label">CURRENT DECK</div>
-              <div className="grid2">
-                <button className={`opt mode${replace ? '' : ' active'}`} onClick={() => setReplace(false)}>
+              <div className="rail-label" id="rnd-deck-label">CURRENT DECK</div>
+              <div className="grid2" role="group" aria-labelledby="rnd-deck-label">
+                <button type="button" className={`opt mode${replace ? '' : ' active'}`} aria-pressed={!replace} onClick={() => setReplace(false)}>
                   Add to deck
                 </button>
-                <button className={`opt mode${replace ? ' active' : ''}`} onClick={() => setReplace(true)}>
+                <button type="button" className={`opt mode${replace ? ' active' : ''}`} aria-pressed={replace} onClick={() => setReplace(true)}>
                   Replace deck
                 </button>
               </div>
@@ -106,7 +106,7 @@ export function RandomDeckModal({ deck, guessTarget, onRoll, onClose }: Props) {
         </div>
 
         <div className="modal-footer">
-          <button className={`btn-start${ready ? '' : ' disabled'}`} onClick={roll} disabled={!ready}>
+          <button type="button" className={`btn-start${ready ? '' : ' disabled'}`} onClick={roll} disabled={!ready} aria-label={ready ? `Roll ${rollCount} random round${rollCount === 1 ? '' : 's'}` : 'Roll disabled, adjust options'}>
             🎲 ROLL {rollCount || opts.rounds} ROUND{(rollCount || opts.rounds) === 1 ? '' : 'S'}
           </button>
           {!ready && <div className="mode-hint">{capacity === 0 ? 'Replace the deck to roll new rounds.' : 'Pick at least one league for logos and one for colors.'}</div>}
@@ -126,13 +126,13 @@ function PoolPicker({ label, value, count, onChange }: { label: string; value: s
         <span className="pool-count">{count} teams</span>
       </div>
       <div className="chips" role="group" aria-label={label}>
-        <button className={`chip${all ? ' active' : ''}`} aria-pressed={all} onClick={() => onChange(all ? [] : ALL_POOL_IDS)}>
+        <button type="button" className={`chip${all ? ' active' : ''}`} aria-pressed={all} onClick={() => onChange(all ? [] : ALL_POOL_IDS)}>
           All
         </button>
         {TEAM_POOLS.map((p) => {
           const on = value.includes(p.id)
           return (
-            <button key={p.id} className={`chip${on ? ' active' : ''}`} aria-pressed={on} onClick={() => toggle(p.id)}>
+            <button key={p.id} type="button" className={`chip${on ? ' active' : ''}`} aria-pressed={on} onClick={() => toggle(p.id)}>
               {p.label}
             </button>
           )

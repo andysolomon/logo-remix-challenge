@@ -108,6 +108,7 @@ export function PlayMode({ deck, timer, gameMode, guessTarget, voice, highScores
   revealRef.current = reveal
 
   const finish = useCallback(() => {
+    if (phaseRef.current !== 'reveal') return
     if (voice) speakScore(scoreRef.current, deck.length)
     const nextPhase = qualifiesForHighScore(scoreRef.current, highScores) ? 'initials' : 'results'
     phaseRef.current = nextPhase
@@ -147,10 +148,12 @@ export function PlayMode({ deck, timer, gameMode, guessTarget, voice, highScores
     saveInitials()
   }
   const saveInitials = () => {
+    if (phaseRef.current !== 'initials') return
     const ini = reels.map((v) => INITIALS_ALPHABET[v]).join('')
     const entry: HighScore = { initials: ini, score: scoreRef.current, total: deck.length, date: Date.now() }
     onHighScores(insertHighScore(highScores, entry))
     setEntryDate(entry.date)
+    phaseRef.current = 'results'
     setPhase('results')
   }
 
@@ -174,7 +177,7 @@ export function PlayMode({ deck, timer, gameMode, guessTarget, voice, highScores
   }
   const submit = (e: FormEvent) => {
     e.preventDefault()
-    if (phase !== 'question') return
+    if (phaseRef.current !== 'question') return
     const o = findTeam(deck[rIdx].o)!
     const c = findTeam(deck[rIdx].c)!
     if (target === 'both') {
@@ -192,6 +195,7 @@ export function PlayMode({ deck, timer, gameMode, guessTarget, voice, highScores
   const setHostPart = (i: 0 | 1, ok: boolean) =>
     setHostParts((hp) => (i === 0 ? [ok, hp[1]] : [hp[0], ok]))
   const lockHostVerdict = () => {
+    if (phaseRef.current !== 'question') return
     const [a, b] = hostParts
     if (a === null || b === null) return
     setParts([a, b])
@@ -202,9 +206,15 @@ export function PlayMode({ deck, timer, gameMode, guessTarget, voice, highScores
   const checkLogo = (e: KeyboardEvent<HTMLInputElement>) => {
     if (e.key !== 'Enter') return
     e.preventDefault()
+    if (phaseRef.current !== 'question' || logoChecked != null) return
     if (!guess.trim()) return
     setLogoChecked(isCorrectGuess(guess, findTeam(deck[rIdx].o)!))
     input2Ref.current?.focus()
+  }
+
+  const startGame = () => {
+    if (phaseRef.current !== 'intro') return
+    beginRound(0)
   }
 
   // The intro promises what the deck actually asks, which may be one mode or both.
@@ -221,9 +231,24 @@ export function PlayMode({ deck, timer, gameMode, guessTarget, voice, highScores
   const target: GuessTarget = round ? roundTarget(round, guessTarget) : guessTarget
   const ot = round ? findTeam(round.o)! : null
   const ct = round ? findTeam(round.c)! : null
+  const questionLocked = phase !== 'question'
+  const promptStatus =
+    target === 'both' ? 'Name the logo team and the color team.' : target === 'colors' ? 'Name the color team.' : 'Name the logo team.'
+  const revealStatus =
+    phase === 'reveal' && ot && ct
+      ? `${kind === 'correct' ? 'Correct' : kind === 'wrong' ? 'Not quite' : "Time's up"}. ${
+          target === 'both'
+            ? `Logo: ${fullName(ot)}. Colors: ${fullName(ct)}.`
+            : `${fullName(target === 'colors' ? ct : ot)}.`
+        }${kind === 'correct' ? ' Plus one.' : ''}`
+      : ''
+  const liveStatus = phase === 'question' && ot ? `Round ${rIdx + 1} of ${deck.length}. Score ${score}. ${promptStatus}` : revealStatus
 
   return (
     <div className="play">
+      <div className="sr-only" role="status" aria-live="polite" aria-atomic="true">
+        {liveStatus}
+      </div>
       {phase === 'intro' && (
         <div className="intro rise">
           <div className="intro-title">
@@ -235,7 +260,7 @@ export function PlayMode({ deck, timer, gameMode, guessTarget, voice, highScores
             {deck.length} ROUND{deck.length === 1 ? '' : 'S'} · {timer} SECONDS EACH
           </div>
           <div className="intro-sub">{introSub}</div>
-          <button className="btn-begin" onClick={() => beginRound(0)}>
+          <button className="btn-begin" onClick={startGame}>
             START
           </button>
           <button className="btn-text" onClick={quit}>
@@ -317,7 +342,7 @@ export function PlayMode({ deck, timer, gameMode, guessTarget, voice, highScores
                   />
                   <span className="guess-field-mark" aria-hidden="true" />
                 </label>
-                <button type="submit" className="btn-submit">
+                <button type="submit" className="btn-submit" disabled={questionLocked}>
                   SUBMIT
                 </button>
               </form>
@@ -336,7 +361,7 @@ export function PlayMode({ deck, timer, gameMode, guessTarget, voice, highScores
                   enterKeyHint="go"
                   aria-label="Your guess"
                 />
-                <button type="submit" className="btn-submit">
+                <button type="submit" className="btn-submit" disabled={questionLocked}>
                   SUBMIT
                 </button>
               </form>
@@ -348,21 +373,22 @@ export function PlayMode({ deck, timer, gameMode, guessTarget, voice, highScores
                   <div className="host-hint">Shout both teams — the host grades each half</div>
                   {(['LOGO', 'COLORS'] as const).map((lb, i) => {
                     const v = hostParts[i]
+                    const labelId = lb === 'LOGO' ? 'host-both-logo-label' : 'host-both-colors-label'
                     return (
-                      <div key={lb} className="host-part">
-                        <div className="host-part-lb">{lb}</div>
+                      <div key={lb} className="host-part" role="group" aria-labelledby={labelId}>
+                        <div id={labelId} className="host-part-lb">{lb}</div>
                         <div className="host-row">
-                          <button className={`btn-correct${v === false ? ' dim' : ''}`} aria-pressed={v === true} onClick={() => setHostPart(i as 0 | 1, true)}>
+                          <button className={`btn-correct${v === false ? ' dim' : ''}`} aria-pressed={v === true} disabled={questionLocked} onClick={() => setHostPart(i as 0 | 1, true)}>
                             ✓ CORRECT
                           </button>
-                          <button className={`btn-wrong${v === true ? ' dim' : ''}`} aria-pressed={v === false} onClick={() => setHostPart(i as 0 | 1, false)}>
+                          <button className={`btn-wrong${v === true ? ' dim' : ''}`} aria-pressed={v === false} disabled={questionLocked} onClick={() => setHostPart(i as 0 | 1, false)}>
                             ✕ INCORRECT
                           </button>
                         </div>
                       </div>
                     )
                   })}
-                  <button className="btn-submit host-lock" disabled={hostParts[0] === null || hostParts[1] === null} onClick={lockHostVerdict}>
+                  <button className="btn-submit host-lock" disabled={questionLocked || hostParts[0] === null || hostParts[1] === null} onClick={lockHostVerdict}>
                     LOCK IN
                   </button>
                 </>
@@ -370,10 +396,10 @@ export function PlayMode({ deck, timer, gameMode, guessTarget, voice, highScores
                 <>
                   <div className="host-hint">Shout the team — the host taps the verdict</div>
                   <div className="host-row">
-                    <button className="btn-correct" onClick={() => reveal('correct')}>
+                    <button className="btn-correct" disabled={questionLocked} onClick={() => reveal('correct')}>
                       ✓ CORRECT
                     </button>
-                    <button className="btn-wrong" onClick={() => reveal('wrong')}>
+                    <button className="btn-wrong" disabled={questionLocked} onClick={() => reveal('wrong')}>
                       ✕ INCORRECT
                     </button>
                   </div>

@@ -8,6 +8,7 @@ interface Props {
 }
 
 type RGB = readonly [number, number, number]
+type RemixStatus = 'idle' | 'loading' | 'ready' | 'error'
 
 /**
  * Max Euclidean RGB distance for an artwork color to count as one of the three
@@ -83,6 +84,8 @@ const imageCache = new Map<string, Promise<HTMLImageElement | null>>()
 const urlCache = new Map<string, string>()
 /** In-flight recolors so concurrent <Logo> instances share one pass. */
 const pendingCache = new Map<string, Promise<string | null>>()
+/** Keys whose recolor already failed; prevents loading→error loops on re-render. */
+const failedCache = new Set<string>()
 
 function loadSvg(src: string): Promise<string | null> {
   let p = svgCache.get(src)
@@ -255,19 +258,65 @@ export function Logo({ team, palette, perm = 0 }: Props) {
   const source = team.sourcePalette ?? team.palette
   const key = target ? `${team.logo}|${source.join('|')}|${target.join('|')}` : null
   const [, setTick] = useState(0)
+  const [remixStatus, setRemixStatus] = useState<RemixStatus>(() =>
+    !hasTargetPalette
+      ? 'idle'
+      : key && urlCache.has(key)
+        ? 'ready'
+        : key && failedCache.has(key)
+          ? 'error'
+          : 'loading',
+  )
 
   useEffect(() => {
-    // key embeds the logo URL, source slots, and target hexes.
-    if (!key || !target || urlCache.has(key)) return
+    if (!key || !target) {
+      setRemixStatus('idle')
+      return
+    }
+    if (urlCache.has(key)) {
+      setRemixStatus('ready')
+      return
+    }
+    if (failedCache.has(key)) {
+      setRemixStatus('error')
+      return
+    }
     let alive = true
+    setRemixStatus('loading')
     recolor(key, team.logo, source.map(hexToRgb), target.map(hexToRgb)).then((url) => {
-      if (alive && url) setTick((n) => n + 1)
+      if (!alive) return
+      if (url) {
+        setRemixStatus('ready')
+        setTick((n) => n + 1)
+      } else {
+        failedCache.add(key)
+        setRemixStatus('error')
+      }
     })
     return () => {
       alive = false
     }
-  }, [key, team])
+  }, [key, team.logo])
 
-  const imageSrc = !hasTargetPalette ? team.logo : key ? urlCache.get(key) ?? TRANSPARENT_PIXEL : TRANSPARENT_PIXEL
-  return <img className="logo" src={imageSrc} alt="" aria-hidden="true" draggable={false} />
+  const imageSrc = !hasTargetPalette ? team.logo : key && remixStatus === 'ready' ? urlCache.get(key) ?? TRANSPARENT_PIXEL : TRANSPARENT_PIXEL
+  const liveStatus =
+    remixStatus === 'loading' ? 'Loading remix logo.' : remixStatus === 'error' ? 'Remix logo unavailable.' : ''
+
+  return (
+    <>
+      {hasTargetPalette && liveStatus && (
+        <span className="sr-only" role="status" aria-live="polite" aria-atomic="true">
+          {liveStatus}
+        </span>
+      )}
+      <img
+        className="logo"
+        src={imageSrc}
+        alt=""
+        aria-hidden="true"
+        draggable={false}
+        data-remix-status={hasTargetPalette ? remixStatus : 'raw'}
+      />
+    </>
+  )
 }

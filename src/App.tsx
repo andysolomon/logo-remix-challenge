@@ -1,4 +1,4 @@
-import { useCallback, useState } from 'react'
+import { useCallback, useEffect, useRef, useState } from 'react'
 import { CreateMode, initialCreateState, type CreateState } from './components/CreateMode'
 import { DeckMode } from './components/DeckMode'
 import { Header } from './components/Header'
@@ -42,6 +42,7 @@ export default function App() {
   const [highScores, setHighScoresState] = useState<HighScore[]>(loadHighScores)
   const [create, setCreate] = useState<CreateState>(initialCreateState)
   const [settingsOpen, setSettingsOpen] = useState(false)
+  const [deckWideMutationVersion, setDeckWideMutationVersion] = useState(0)
 
   const setDeck = useCallback((d: Round[]) => {
     const normalized = normalizeDeck(d)
@@ -61,6 +62,7 @@ export default function App() {
     setGuessTargetState(t)
     // Changing the default re-applies to every card: drop per-round overrides so all rounds follow it.
     if (deck.some((r) => r.g !== undefined)) setDeck(deck.map(({ g: _g, ...r }) => r))
+    setDeckWideMutationVersion((version) => version + 1)
   }
   const setVoice = (on: boolean) => {
     saveVoice(on)
@@ -70,6 +72,15 @@ export default function App() {
     saveHighScores(list)
     setHighScoresState(list)
   }, [])
+  const closeSettings = useCallback(() => setSettingsOpen(false), [])
+  const prevModeRef = useRef<Mode>('create')
+
+  useEffect(() => {
+    if (prevModeRef.current === 'deck' && mode === 'create') {
+      document.getElementById('tab-create')?.focus()
+    }
+    prevModeRef.current = mode
+  }, [mode])
 
   const addRound = (round: Round, editIdx: number | null) => {
     const d = [...deck]
@@ -113,29 +124,28 @@ export default function App() {
     <div className="app">
       <Header mode={mode} deckCount={deck.length} onCreate={() => setMode('create')} onDeck={() => setMode('deck')} onPlay={startGame} onSettings={() => setSettingsOpen(true)} />
       {settingsOpen && (
-        <SettingsModal timer={timer} gameMode={gameMode} guessTarget={guessTarget} voice={voice} onTimer={setTimer} onGameMode={setGameMode} onGuessTarget={setGuessTarget} onVoice={setVoice} onClose={() => setSettingsOpen(false)} />
+        <SettingsModal timer={timer} gameMode={gameMode} guessTarget={guessTarget} voice={voice} onTimer={setTimer} onGameMode={setGameMode} onGuessTarget={setGuessTarget} onVoice={setVoice} onClose={closeSettings} />
       )}
-      {mode === 'create' ? (
-        <CreateMode state={create} setState={setCreate} portrait={portrait} deckCount={deck.length} onAddRound={addRound} />
-      ) : (
-        <DeckMode
-          deck={deck}
-          portrait={portrait}
-          timer={timer}
-          gameMode={gameMode}
-          guessTarget={guessTarget}
-          voice={voice}
-          highScores={highScores}
-          onDeck={setDeck}
-          onEdit={editRound}
-          onTimer={setTimer}
-          onGameMode={setGameMode}
-          onGuessTarget={setGuessTarget}
-          onVoice={setVoice}
-          onStart={startGame}
-          onCreate={() => setMode('create')}
-        />
-      )}
+      <CreateMode state={create} setState={setCreate} portrait={portrait} deckCount={deck.length} onAddRound={addRound} hidden={mode !== 'create'} />
+      <DeckMode
+        deck={deck}
+        portrait={portrait}
+        timer={timer}
+        gameMode={gameMode}
+        guessTarget={guessTarget}
+        voice={voice}
+        highScores={highScores}
+        deckWideMutationVersion={deckWideMutationVersion}
+        onDeck={setDeck}
+        onEdit={editRound}
+        onTimer={setTimer}
+        onGameMode={setGameMode}
+        onGuessTarget={setGuessTarget}
+        onVoice={setVoice}
+        onStart={startGame}
+        onCreate={() => setMode('create')}
+        hidden={mode !== 'deck'}
+      />
     </div>
   )
 }

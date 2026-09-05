@@ -47,31 +47,31 @@
       "name": "Spartans",
       "abbr": "CAMP",
       "displayName": "Campbell Spartans",
-      "sourceUrl": "https://upload.wikimedia.org/wikipedia/en/7/75/Campbell_High_School_Logo.png",
-      "sourceKind": "wikipedia",
-      "sourcePage": "https://en.wikipedia.org/wiki/Campbell_High_School_(Georgia)",
+      "sourceUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2Dc7xR9vXzUm1UcCanCk9WMqsmQCmgIb-jeevyNINl2lUN7_z2oc0CW0&s=10",
+      "sourceKind": "community",
+      "sourcePage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2Dc7xR9vXzUm1UcCanCk9WMqsmQCmgIb-jeevyNINl2lUN7_z2oc0CW0&s=10",
       "path": "/logos/svg/high-school/camp.png",
       "format": "png",
       "colors": [
-        "#FFFFFF",
-        "#0000AA"
+        "#1B518D",
+        "#1D518D"
       ],
       "brand": [
-        "#1A17A8",
-        "#000000"
+        "#1B518D",
+        "#A099AB"
       ],
       "palette": [
-        "#0000AA",
-        "#000000",
+        "#1B518D",
+        "#A099AB",
         "#FFFFFF"
       ],
       "sourcePalette": [
-        "#0000AA",
-        "#000000",
+        "#1B518D",
+        "#A099AB",
         "#FFFFFF"
       ],
       "unusedSourceSlots": [
-        1
+        2
       ]
     },
     {
@@ -199,33 +199,33 @@
       "name": "Longhorns",
       "abbr": "KELL",
       "displayName": "Kell Longhorns",
-      "sourceUrl": "https://upload.wikimedia.org/wikipedia/en/f/f3/Carlton_J._Kell_High_School_logo.png",
-      "sourceKind": "wikipedia",
-      "sourcePage": "https://en.wikipedia.org/wiki/Kell_High_School",
+      "sourceUrl": "https://sportshub2-uploads.vnn-prod.zone/files/sites/1059/2022/03/01181411/New-Kell-logo.png",
+      "sourceKind": "community",
+      "sourcePage": "https://sportshub2-uploads.vnn-prod.zone/files/sites/1059/2022/03/01181411/New-Kell-logo.png",
       "path": "/logos/svg/high-school/kell.png",
       "format": "png",
       "colors": [
+        "#010101",
         "#000000",
+        "#F1E6B2",
         "#FFFFFF",
-        "#0A0A0A",
-        "#090909",
-        "#0B0B0B",
-        "#0C0C0C",
-        "#080808",
-        "#0D0D0D"
+        "#020202",
+        "#030303",
+        "#FEFEFE",
+        "#040404"
       ],
       "brand": [
-        "#D96C2C",
-        "#000000"
+        "#000000",
+        "#F1E6B2"
       ],
       "palette": [
-        "#D4762F",
         "#000000",
+        "#F1E6B2",
         "#FFFFFF"
       ],
       "sourcePalette": [
-        "#D4762F",
         "#000000",
+        "#F1E6B2",
         "#FFFFFF"
       ],
       "unusedSourceSlots": []
@@ -311,33 +311,33 @@
       "name": "Indians",
       "abbr": "MCEA",
       "displayName": "McEachern Indians",
-      "sourceUrl": "https://upload.wikimedia.org/wikipedia/en/e/e3/McEachernHSseal.png",
-      "sourceKind": "wikipedia",
-      "sourcePage": "https://en.wikipedia.org/wiki/McEachern_High_School",
+      "sourceUrl": "https://s3-us-west-2.amazonaws.com/scorestream-team-profile-pictures/4530/20190119073353_718_mascot300.png",
+      "sourceKind": "community",
+      "sourcePage": "https://s3-us-west-2.amazonaws.com/scorestream-team-profile-pictures/4530/20190119073353_718_mascot300.png",
       "path": "/logos/svg/high-school/mcea.png",
       "format": "png",
       "colors": [
+        "#CCCC99",
+        "#000099",
         "#FFFFFF",
-        "#293189",
-        "#2A3289",
-        "#CBCB98",
-        "#CCCC98",
-        "#2A328A",
-        "#2B338A",
-        "#CACA98"
+        "#2222AA",
+        "#EEEEFF",
+        "#111199",
+        "#DDDDEE",
+        "#3333AA"
       ],
       "brand": [
-        "#1D3C88",
-        "#C1A035"
+        "#000099",
+        "#CCCC99"
       ],
       "palette": [
-        "#293189",
-        "#B1B081",
+        "#000099",
+        "#CCCC99",
         "#FFFFFF"
       ],
       "sourcePalette": [
-        "#293189",
-        "#B1B081",
+        "#000099",
+        "#CCCC99",
         "#FFFFFF"
       ],
       "unusedSourceSlots": []
@@ -350,33 +350,29 @@
       "name": "Warriors",
       "abbr": "NCOB",
       "displayName": "North Cobb Warriors",
-      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a5/North_Cobb_High_School_%22NC%22_logo.png",
-      "sourceKind": "wikipedia",
-      "sourcePage": "https://en.wikipedia.org/wiki/North_Cobb_High_School",
+      "sourceUrl": "https://www.vhv.rs/dpng/d/607-6077206_north-cobb-high-school-home-page-north-cobb.png",
+      "sourceKind": "community",
+      "sourcePage": "https://www.vhv.rs/dpng/d/607-6077206_north-cobb-high-school-home-page-north-cobb.png",
       "path": "/logos/svg/high-school/ncob.png",
       "format": "png",
       "colors": [
         "#FFFFFF",
-        "#FF7D35",
-        "#FF7C34",
-        "#FF7D34",
-        "#FFFFFE",
-        "#FF7B35",
-        "#FF7B33",
-        "#FF7B34"
+        "#EEEEEE",
+        "#15284C",
+        "#E77204"
       ],
       "brand": [
         "#E1622E",
         "#232F6B"
       ],
       "palette": [
-        "#FF7B33",
-        "#331F6F",
+        "#E77204",
+        "#15284C",
         "#FFFFFF"
       ],
       "sourcePalette": [
-        "#FF7B33",
-        "#331F6F",
+        "#E77204",
+        "#15284C",
         "#FFFFFF"
       ],
       "unusedSourceSlots": []
@@ -424,36 +420,34 @@
       "name": "Falcons",
       "abbr": "PEBB",
       "displayName": "Pebblebrook Falcons",
-      "sourceUrl": "https://upload.wikimedia.org/wikipedia/en/8/87/Pebblebrook_High_School_logo.png",
-      "sourceKind": "wikipedia",
-      "sourcePage": "https://en.wikipedia.org/wiki/Pebblebrook_High_School",
+      "sourceUrl": "https://sportshub2-uploads.vnn-prod.zone/files/sites/1201/2025/03/28150340/Pebblebrook-Falcons-1.png",
+      "sourceKind": "community",
+      "sourcePage": "https://sportshub2-uploads.vnn-prod.zone/files/sites/1201/2025/03/28150340/Pebblebrook-Falcons-1.png",
       "path": "/logos/svg/high-school/pebb.png",
       "format": "png",
       "colors": [
-        "#000000",
-        "#FFFFFF",
-        "#FDFDFD",
-        "#FCFCFC",
-        "#FEFEFE",
-        "#F5F5F5",
-        "#FBFBFB",
-        "#F4F4F4"
+        "#003B5C",
+        "#AF272F",
+        "#DDCBA4",
+        "#FFC72C"
       ],
       "brand": [
-        "#1B2A41",
-        "#000000"
+        "#003B5C",
+        "#AF272F"
       ],
       "palette": [
-        "#24333F",
-        "#000000",
+        "#003B5C",
+        "#AF272F",
         "#FFFFFF"
       ],
       "sourcePalette": [
-        "#24333F",
-        "#000000",
+        "#003B5C",
+        "#AF272F",
         "#FFFFFF"
       ],
-      "unusedSourceSlots": []
+      "unusedSourceSlots": [
+        2
+      ]
     },
     {
       "id": "HS-POPE",

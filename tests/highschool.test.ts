@@ -35,6 +35,18 @@ const COBB_SCHOOLS = [
   'Wheeler',
 ]
 
+// Provenance classes a roster entry may claim. `community` covers third-party
+// mirrors (VNN sportshub uploads outside a school's own site, vhv.rs,
+// scorestream) for schools whose real mark no official/district/Wikipedia page
+// carries. scripts/download_cobb_svgs.py owns the canonical set.
+const SOURCE_KINDS = ['official', 'district', 'wikipedia', 'community']
+
+// Tests that drive a builder or downloader end to end re-read every pixel of
+// all 17 marks, twice, in pure Python. The community mirrors are far larger
+// files than the Wikipedia thumbnails they replaced, which puts those two
+// tests over bun's 5s default, so they state their own budget.
+const FULL_PIPELINE_TIMEOUT = 30_000
+
 const HEX = /^#[0-9A-F]{6}$/
 const PNG_MAGIC = Buffer.from([0x89, 0x50, 0x4e, 0x47, 0x0d, 0x0a, 0x1a, 0x0a])
 const hsTeams = TEAMS.filter((t) => t.league === 'HS')
@@ -96,7 +108,7 @@ assert all(is_valid_cobb_image((p := pathlib.Path('public') / a['path'].lstrip('
       expect(team).toBeDefined()
       expect(a.path).toBe(team.logo)
       expect(a.palette).toEqual(team.palette)
-      expect(['official', 'district', 'wikipedia']).toContain(a.sourceKind)
+      expect(SOURCE_KINDS).toContain(a.sourceKind)
       expect(a.sourceUrl).toMatch(/^https:\/\//)
       expect(['svg', 'png']).toContain(a.format)
       expect(a.sourcePalette).toHaveLength(3)
@@ -110,7 +122,7 @@ import json, pathlib, sys
 sys.path.insert(0, 'scripts')
 from download_cobb_svgs import UNUSED_SOURCE_SLOTS, artwork_colors
 items = json.load(open('public/logos/svg/hs-manifest.json'))['assets']
-assert UNUSED_SOURCE_SLOTS == {'CAMP': [1], 'HORZ': [2], 'LASS': [1], 'OSBO': [1], 'WALT': [1]}
+assert UNUSED_SOURCE_SLOTS == {'CAMP': [2], 'HORZ': [2], 'LASS': [1], 'OSBO': [1], 'PEBB': [2], 'WALT': [1]}
 for a in items:
     colors, _ = artwork_colors(pathlib.Path('public') / a['path'].lstrip('/'))
     for slot, source in enumerate(a['sourcePalette']):
@@ -118,13 +130,120 @@ for a in items:
             assert source in colors, (a['abbr'], slot)
 `)
     expect(checked).toEqual({ status: 0, stdout: '', stderr: '' })
-    for (const abbr of ['CAMP', 'HORZ', 'LASS', 'OSBO', 'WALT']) {
+    for (const abbr of ['CAMP', 'HORZ', 'LASS', 'OSBO', 'PEBB', 'WALT']) {
       expect(hsTeams.find((t) => t.abbr === abbr)?.unusedSourceSlots).toBeDefined()
     }
   })
 })
 
 describe('high-school asset pipeline regressions', () => {
+  test('downloader and builder share one source-kind set that admits community mirrors', () => {
+    const run = python(`
+import json, pathlib, sys, tempfile
+sys.path.insert(0, 'scripts')
+import build_hs_teams as b
+from download_cobb_svgs import SOURCE_KINDS
+import download_cobb_svgs as d
+
+assert SOURCE_KINDS == {'official', 'district', 'wikipedia', 'community'}, SOURCE_KINDS
+# The builder validates against the downloader's set, not a copy of its own.
+assert b.SOURCE_KINDS is SOURCE_KINDS
+assert {s[4] for s in b.SCHOOLS} <= SOURCE_KINDS
+
+# The five schools whose real mark only a third-party mirror carries, in the
+# roster and in the manifest the builder validates.
+MIRRORED = {'CAMP', 'KELL', 'MCEA', 'NCOB', 'PEBB'}
+assert {s[0] for s in b.SCHOOLS if s[4] == 'community'} == MIRRORED
+rows = b.validate_manifest()
+assert len(rows) == 17
+assert {r['abbr'] for r in rows if r['sourceKind'] == 'community'} == MIRRORED
+# A mirror with no richer page than the asset cites the asset itself.
+for row in rows:
+    if row['abbr'] in MIRRORED:
+        assert row['sourcePage'] == row['sourceUrl'], row['abbr']
+
+# An invented kind is still refused by both halves of the pipeline.
+payload = json.loads(b.MANIFEST.read_text())
+b.MANIFEST = pathlib.Path(tempfile.mkdtemp()) / 'hs-manifest.json'
+b.SCHOOLS = [s[:4] + ('fanart',) + s[5:] if s[0] == 'CAMP' else s for s in b.SCHOOLS]
+for a in payload['assets']:
+    if a['abbr'] == 'CAMP':
+        a['sourceKind'] = 'fanart'
+b.MANIFEST.write_text(json.dumps(payload))
+try: b.validate_manifest()
+except ValueError: pass
+else: raise AssertionError('builder accepted an unknown sourceKind')
+d.SCHOOLS = [s[:4] + ('fanart',) + s[5:] if s[0] == 'CAMP' else s for s in d.SCHOOLS]
+d.fetch = lambda _: (_ for _ in ()).throw(AssertionError('network should not be used'))
+sys.argv = ['download_cobb_svgs.py']
+assert d.main() == 2
+`)
+    expect(run.status).toBe(0)
+  })
+
+  test('a JPEG mirror is re-encoded as PNG and a post-IEND tail is dropped', () => {
+    const run = python(`
+import base64, pathlib, sys, tempfile
+sys.path.insert(0, 'scripts')
+import download_cobb_svgs as d
+
+# 16x16 baseline JPEG, 2x2 chroma subsampled: left half #C81E28, right #1E46C8.
+JPEG = base64.b64decode(
+    '/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsK'
+    'CwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRT/2wBDAQMEBAUEBQkFBQkUDQsNFBQUFBQU'
+    'FBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBT/wAARCAAQABADASIA'
+    'AhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAABQf/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFAEB'
+    'AAAAAAAAAAAAAAAAAAAAB//EABoRAAICAwAAAAAAAAAAAAAAAAAHRINFwsP/2gAMAwEAAhEDEQA/'
+    'AIIHMByAp51e4junH28z/9k='
+)
+png = d.jpeg_to_png(JPEG)
+width, height, depth, ctype, interlace = d.validate_png(png)[:5]
+assert (width, height, depth, ctype, interlace) == (16, 16, 8, 2, 0)
+
+# Both halves land in the right place: sampling inside each one proves the
+# Huffman decode, dequantization, IDCT and chroma upsampling all line up,
+# which counting colors cannot -- ringing splits a flat fill into many shades.
+w, h, channels, samples = d.decode_jpeg(JPEG)
+assert (w, h, channels) == (16, 16, 3)
+def pixel(x, y):
+    at = (y * w + x) * channels
+    return tuple(samples[at : at + channels])
+def near(got, want):
+    return all(abs(a - b) <= 3 for a, b in zip(got, want))
+assert near(pixel(3, 8), (0xC8, 0x1E, 0x28)), pixel(3, 8)
+assert near(pixel(12, 8), (0x1E, 0x46, 0xC8)), pixel(12, 8)
+assert near(bytes.fromhex(d.png_colors_any(png)[0][0][1:]), (0xC8, 0x1E, 0x28))
+
+# Only the shapes the league stores are converted, and only for a PNG asset.
+assert d.normalize_asset(JPEG, pathlib.Path('x.png')) == png
+assert d.normalize_asset(JPEG, pathlib.Path('x.svg')) == JPEG
+assert not d.is_valid_cobb_image(JPEG, pathlib.Path('x.png'))
+
+# Kell's mirror appends bytes after IEND. Trimming them restores exactly the
+# stored asset, and nothing inside the datastream is touched.
+kell = (d.DEST_DIR / 'kell.png').read_bytes()
+tail = kell + b'\\x00trailing junk'
+assert not d.is_valid_cobb_image(tail, pathlib.Path('kell.png'))
+assert d.normalize_asset(tail, pathlib.Path('kell.png')) == kell
+assert d.normalize_asset(kell, pathlib.Path('kell.png')) == kell
+# A file whose chunk list cannot be walked is left for the validator to reject.
+assert d.trim_after_iend(d.PNG_MAGIC + b'\\x00\\x00') == d.PNG_MAGIC + b'\\x00\\x00'
+
+# install_download validates what it stores, so the JPEG lands on disk as PNG.
+scratch = pathlib.Path(tempfile.mkdtemp())
+d.OUT, d.DEST_DIR = scratch, scratch / 'high-school'
+d.DEST_DIR.mkdir()
+dest = d.DEST_DIR / 'test.png'
+school = ('TEST', 'Test', 'Testers', 'https://example.test/x.jpg', 'community', 'https://example.test/x.jpg')
+item = d.install_download(school, dest, JPEG)
+assert dest.read_bytes() == png
+assert item['format'] == 'png' and item['path'] == '/logos/svg/high-school/test.png'
+assert list(d.DEST_DIR.iterdir()) == [dest], 'staged file left behind'
+`)
+    expect(run.status).toBe(0)
+    expect(run.stderr).toBe('')
+  })
+
   test('--only merges local success and forced fetch failure preserves the complete manifest', () => {
     const run = python(`
 import pathlib, sys
@@ -144,7 +263,7 @@ assert d.MANIFEST.read_bytes() == after_only
 assert (d.DEST_DIR / 'camp.png').is_file()
 `)
     expect(run.status).toBe(0)
-  })
+  }, FULL_PIPELINE_TIMEOUT)
 
   test('truncated, CRC-invalid, and decoded-scanline-invalid PNGs are rejected', () => {
     const run = python(`
@@ -261,7 +380,7 @@ with tempfile.TemporaryDirectory() as tmp:
         os.replace = native_replace
 `)
     expect(run).toEqual({ status: 0, stdout: '', stderr: '' })
-  })
+  }, FULL_PIPELINE_TIMEOUT)
 
   test('the HS builder rejects an incomplete manifest without altering teams JSON', () => {
     const run = python(`

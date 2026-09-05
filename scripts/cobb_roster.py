@@ -13,6 +13,10 @@ explicit source URL, resolved by hand and verified against the artwork:
                   no athletics program at all -- its entry is the school's
                   primary institutional mark)
   * ``wikipedia`` the infobox logo of the school's Wikipedia article
+  * ``community`` a third-party community or aggregator mirror (VNN sportshub
+                  uploads reached outside the school's own site, vhv.rs,
+                  scorestream and the like), used when none of the three
+                  sources above carries the mark the school actually uses
 
 Each entry is ``(abbr, region, nickname, url, source_kind, source_page)``:
   abbr         id/file stem used in src/lib/teams.json ("HS-<abbr>")
@@ -20,8 +24,11 @@ Each entry is ``(abbr, region, nickname, url, source_kind, source_page)``:
   nickname     athletics nickname; empty for Cobb Horizon, which fields no
                teams and has no mascot
   url          direct URL of the logo asset to download
-  source_kind  one of official / district / wikipedia, per the table above
-  source_page  the page the asset was found on, for re-verification
+  source_kind  one of official / district / wikipedia / community, per the
+               table above; the set is pinned in ``download_cobb_svgs``
+  source_page  the page the asset was found on, for re-verification. When a
+               community mirror exposes no richer page than the asset itself,
+               this repeats the asset URL rather than inventing a citation.
 """
 
 from __future__ import annotations
@@ -30,9 +37,12 @@ SCHOOLS: list[tuple[str, str, str, str, str, str]] = [
     ("ALLA", "Allatoona", "Buccaneers",
      "https://allatoonabucs.com/wp-content/uploads/2021/03/FULL-COLOR-BUCS-1-02.svg",
      "official", "https://allatoonabucs.com"),
+    # The Spartan head the school actually fields, mirrored on a search-result
+    # CDN. It is served as JPEG; the downloader re-encodes it to PNG so every
+    # high-school asset stays a format Logo.tsx can recolor.
     ("CAMP", "Campbell", "Spartans",
-     "https://upload.wikimedia.org/wikipedia/en/7/75/Campbell_High_School_Logo.png",
-     "wikipedia", "https://en.wikipedia.org/wiki/Campbell_High_School_(Georgia)"),
+     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2Dc7xR9vXzUm1UcCanCk9WMqsmQCmgIb-jeevyNINl2lUN7_z2oc0CW0&s=10",
+     "community", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2Dc7xR9vXzUm1UcCanCk9WMqsmQCmgIb-jeevyNINl2lUN7_z2oc0CW0&s=10"),
     # Cobb Horizon is the district's non-traditional high school: no athletics
     # program, no mascot. Its primary institutional mark stands in.
     ("HORZ", "Cobb Horizon", "",
@@ -45,28 +55,26 @@ SCHOOLS: list[tuple[str, str, str, str, str, str]] = [
      "https://sportshub2-uploads.vnn-prod.zone/files/sites/376/2018/01/30200846/logo_outline.png",
      "official", "https://www.hillgroveathletics.com"),
     ("KELL", "Kell", "Longhorns",
-     "https://upload.wikimedia.org/wikipedia/en/f/f3/Carlton_J._Kell_High_School_logo.png",
-     "wikipedia", "https://en.wikipedia.org/wiki/Kell_High_School"),
+     "https://sportshub2-uploads.vnn-prod.zone/files/sites/1059/2022/03/01181411/New-Kell-logo.png",
+     "community", "https://sportshub2-uploads.vnn-prod.zone/files/sites/1059/2022/03/01181411/New-Kell-logo.png"),
     ("KMHS", "Kennesaw Mountain", "Mustangs",
      "https://upload.wikimedia.org/wikipedia/en/f/fa/Kennesaw_Mountain_High_School_%28logo%29.svg",
      "wikipedia", "https://en.wikipedia.org/wiki/Kennesaw_Mountain_High_School"),
     ("LASS", "Lassiter", "Trojans",
      "https://sportshub2-uploads.vnn-prod.zone/files/sites/1992/2018/05/14151445/logo.png",
      "official", "https://www.lassiterathletics.com"),
-    # McEachern's VNN header asset is named for another school's mascot, so the
-    # school seal from Wikipedia is the mark whose provenance actually checks out.
     ("MCEA", "McEachern", "Indians",
-     "https://upload.wikimedia.org/wikipedia/en/e/e3/McEachernHSseal.png",
-     "wikipedia", "https://en.wikipedia.org/wiki/McEachern_High_School"),
+     "https://s3-us-west-2.amazonaws.com/scorestream-team-profile-pictures/4530/20190119073353_718_mascot300.png",
+     "community", "https://s3-us-west-2.amazonaws.com/scorestream-team-profile-pictures/4530/20190119073353_718_mascot300.png"),
     ("NCOB", "North Cobb", "Warriors",
-     "https://upload.wikimedia.org/wikipedia/commons/a/a5/North_Cobb_High_School_%22NC%22_logo.png",
-     "wikipedia", "https://en.wikipedia.org/wiki/North_Cobb_High_School"),
+     "https://www.vhv.rs/dpng/d/607-6077206_north-cobb-high-school-home-page-north-cobb.png",
+     "community", "https://www.vhv.rs/dpng/d/607-6077206_north-cobb-high-school-home-page-north-cobb.png"),
     ("OSBO", "Osborne", "Cardinals",
      "https://sbcobbstor.blob.core.windows.net/media/WWWCobb/fgg/1293/Osborne_Footer-4.png",
      "district", "https://www.cobbk12.org/osborne"),
     ("PEBB", "Pebblebrook", "Falcons",
-     "https://upload.wikimedia.org/wikipedia/en/8/87/Pebblebrook_High_School_logo.png",
-     "wikipedia", "https://en.wikipedia.org/wiki/Pebblebrook_High_School"),
+     "https://sportshub2-uploads.vnn-prod.zone/files/sites/1201/2025/03/28150340/Pebblebrook-Falcons-1.png",
+     "community", "https://sportshub2-uploads.vnn-prod.zone/files/sites/1201/2025/03/28150340/Pebblebrook-Falcons-1.png"),
     ("POPE", "Pope", "Greyhounds",
      "https://sportshub2-uploads.vnn-prod.zone/files/sites/195/2023/06/22174707/Pope-HS.png",
      "official", "https://www.popeathletics.com"),
@@ -91,17 +99,22 @@ SCHOOLS: list[tuple[str, str, str, str, str, str]] = [
 # here fall back to frequency order.
 BRAND_COLORS: dict[str, tuple[str, str]] = {
     "ALLA": ("#EF3D33", "#000000"),   # red and black
-    "CAMP": ("#1A17A8", "#000000"),   # spartan blue
+    # The Spartan head is blue on blue: the field is the school's royal blue and
+    # the helmet its silver. JPEG ringing scatters that silver across thousands
+    # of shades, none big enough to read as a fill, so it is named exactly.
+    "CAMP": ("#1B518D", "#A099AB"),   # spartan blue and silver
     "HORZ": ("#1B3D6D", "#C5A46D"),   # navy and vegas gold (institutional mark)
     "HARR": ("#1E7B34", "#12294B"),   # green and navy
     "HILL": ("#6D1A2E", "#6D6E71"),   # maroon and gray
-    "KELL": ("#D96C2C", "#000000"),   # burnt orange and black
+    "KELL": ("#000000", "#F1E6B2"),   # black and vegas gold (the longhorn mark)
     "KMHS": ("#02A653", "#BBBCBF"),   # green and silver
     "LASS": ("#6D1418", "#000000"),   # maroon (the mark carries no gold)
-    "MCEA": ("#1D3C88", "#C1A035"),   # royal blue and gold (school seal)
+    # This mark is drawn in web-safe navy and khaki rather than the seal's
+    # deeper blue and gold, so the roster names the colors the artwork uses.
+    "MCEA": ("#000099", "#CCCC99"),   # navy and khaki gold
     "NCOB": ("#E1622E", "#232F6B"),   # orange and navy
     "OSBO": ("#D22030", "#000000"),   # cardinal red
-    "PEBB": ("#1B2A41", "#000000"),   # navy and black
+    "PEBB": ("#003B5C", "#AF272F"),   # navy and red (the falcon mark)
     "POPE": ("#8CB7DB", "#1B2A4A"),   # columbia blue and navy
     "SCOB": ("#1B2A4A", "#E87C22"),   # navy and orange
     "SPRA": ("#AF9A5B", "#241F20"),   # old gold and black

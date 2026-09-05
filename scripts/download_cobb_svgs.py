@@ -4,12 +4,16 @@
 No feed covers Georgia high schools the way ESPN covers the NFL and NCAA, so
 ``scripts/cobb_roster.py`` pins one hand-verified source URL per school --
 the school's own athletics site where one is scrapeable, the Cobb County
-School District site otherwise, and Wikipedia's infobox logo as the fallback.
-Cobb Horizon has no athletics program, so its entry is the school's primary
-institutional mark from the district site.
+School District site otherwise, Wikipedia's infobox logo as the fallback, and a
+third-party mirror for the five schools whose real mark none of those three
+carries. Cobb Horizon has no athletics program, so its entry is the school's
+primary institutional mark from the district site.
 
 Assets fetched (one per school in ``cobb_roster.SCHOOLS``):
     public/logos/svg/high-school/<abbr>.svg   (or .png when no SVG exists)
+
+A source that serves JPEG is decoded and re-encoded as PNG on the way in, so
+the league only ever stores the two formats ``Logo.tsx`` can recolor.
 
 Palettes come from the official colors in ``cobb_roster.BRAND_COLORS``, each
 snapped to the color the artwork actually uses. The manifest records both the
@@ -31,6 +35,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import math
 import os
 import struct
 import sys
@@ -56,6 +61,14 @@ DEST_DIR = OUT / "high-school"
 MANIFEST = OUT / "hs-manifest.json"
 CONFERENCE = "Cobb County"
 
+# Every provenance class a roster entry may claim, documented in
+# ``cobb_roster``. ``community`` covers third-party mirrors (VNN sportshub
+# uploads reached outside the school's own site, vhv.rs, scorestream) for the
+# schools whose real mark no official, district, or Wikipedia page carries.
+# ``build_hs_teams`` validates the manifest against this same set, so the
+# downloader and the builder can never disagree about what is allowed.
+SOURCE_KINDS = frozenset({"official", "district", "wikipedia", "community"})
+
 # Adam7 interlace passes: (x_start, y_start, x_step, y_step).
 ADAM7 = [(0, 0, 8, 8), (4, 0, 8, 8), (0, 4, 4, 8), (2, 0, 4, 4), (0, 2, 2, 4), (1, 0, 2, 2), (0, 1, 1, 2)]
 PNG_MAGIC = b"\x89PNG\r\n\x1a\n"
@@ -70,10 +83,11 @@ PNG_CRITICAL = {b"IHDR", b"PLTE", b"IDAT", b"IEND"}
 # palettes stay intact, but the absent artwork slot is explicit instead of
 # pretending the fallback color is present in the file.
 UNUSED_SOURCE_SLOTS = {
-    "CAMP": [1],
+    "CAMP": [2],
     "HORZ": [2],
     "LASS": [1],
     "OSBO": [1],
+    "PEBB": [2],
     "WALT": [1],
 }
 # Kennesaw Mountain has green, silver, and black artwork; white remains its
@@ -309,6 +323,374 @@ def validate_png(data: bytes) -> tuple[int, int, int, int, int, bytes, bytes, by
     return width, height, depth, ctype, interlace, bytes(raw), palette, trns
 
 
+# ----------------------------------------------------------------- JPEG -> PNG
+# Campbell's mark is only mirrored as JPEG. Logo.tsx recolors PNG and SVG, and
+# the manifest's palette work reads PNG, so a JPEG download is decoded here and
+# re-encoded as PNG rather than stored in a third format. Baseline sequential
+# only -- the shape every mirror of a logo actually uses; anything else fails
+# loudly instead of being half-decoded.
+JPEG_MAGIC = b"\xff\xd8\xff"
+JPEG_ZIGZAG = [
+    0, 1, 8, 16, 9, 2, 3, 10,
+    17, 24, 32, 25, 18, 11, 4, 5,
+    12, 19, 26, 33, 40, 48, 41, 34,
+    27, 20, 13, 6, 7, 14, 21, 28,
+    35, 42, 49, 56, 57, 50, 43, 36,
+    29, 22, 15, 23, 30, 37, 44, 51,
+    58, 59, 52, 45, 38, 31, 39, 46,
+    53, 60, 61, 54, 47, 55, 62, 63,
+]
+# IDCT basis: COS[x][u] folds in the 1/sqrt(2) DC scale, so applying it across
+# rows and then down columns is the full 2-D transform.
+COS = [
+    [(0.3535533905932738 if u == 0 else 0.5) * math.cos((2 * x + 1) * u * math.pi / 16) for u in range(8)]
+    for x in range(8)
+]
+# Saturating lookup for color conversion: index by value+256, which keeps every
+# YCbCr->RGB result (-227..480) inside the table.
+CLAMP = bytes(min(255, max(0, i - 256)) for i in range(768))
+# Frame markers this decoder cannot honor: progressive, lossless, arithmetic and
+# hierarchical coding all need machinery baseline does not.
+JPEG_UNSUPPORTED_SOF = frozenset({0xC2, 0xC3, 0xC5, 0xC6, 0xC7, 0xC9, 0xCA, 0xCB, 0xCD, 0xCE, 0xCF})
+
+
+class JpegBits:
+    """Entropy-coded bit reader: unstuffs 0xFF00 and stops at the next marker."""
+
+    def __init__(self, data: bytes, pos: int) -> None:
+        self.data, self.pos, self.bits, self.nbits, self.marker = data, pos, 0, 0, None
+
+    def bit(self) -> int:
+        if not self.nbits:
+            if self.marker is not None:
+                # Past the end of the scan: pad with zero bits, as the spec's
+                # final incomplete byte requires, instead of reading the marker.
+                self.bits = 0
+            else:
+                if self.pos >= len(self.data):
+                    raise ValueError("truncated JPEG entropy data")
+                b = self.data[self.pos]
+                if b == 0xFF:
+                    nxt = self.data[self.pos + 1] if self.pos + 1 < len(self.data) else 0xD9
+                    if nxt == 0x00:
+                        self.pos += 2
+                    else:
+                        self.marker, b = nxt, 0
+                else:
+                    self.pos += 1
+                self.bits = b
+            self.nbits = 8
+        self.nbits -= 1
+        return (self.bits >> self.nbits) & 1
+
+    def receive(self, n: int) -> int:
+        v = 0
+        for _ in range(n):
+            v = (v << 1) | self.bit()
+        return v
+
+    def extend(self, v: int, n: int) -> int:
+        """Sign-extend an n-bit magnitude per JPEG's EXTEND procedure."""
+        return v - (1 << n) + 1 if n and v < (1 << (n - 1)) else v
+
+    def huffman(self, table: dict[tuple[int, int], int]) -> int:
+        code = 0
+        for length in range(1, 17):
+            code = (code << 1) | self.bit()
+            if (length, code) in table:
+                return table[(length, code)]
+        raise ValueError("invalid Huffman code")
+
+
+def _huffman_table(counts: bytes, symbols: bytes) -> dict[tuple[int, int], int]:
+    """(bit length, code) -> symbol, built in canonical JPEG code order."""
+    table: dict[tuple[int, int], int] = {}
+    code = index = 0
+    for length in range(1, 17):
+        for _ in range(counts[length - 1]):
+            table[(length, code)] = symbols[index]
+            code += 1
+            index += 1
+        code <<= 1
+    return table
+
+
+def _idct_block(coef: list[float], plane: bytearray, stride: int, ox: int, oy: int) -> None:
+    """Inverse DCT one 8x8 block of dequantized coefficients into ``plane``."""
+    tmp = [0.0] * 64
+    for y in range(8):
+        row = coef[y * 8 : y * 8 + 8]
+        if not any(row[1:]):
+            flat = row[0] * COS[0][0]
+            for x in range(8):
+                tmp[y * 8 + x] = flat
+            continue
+        for x in range(8):
+            c = COS[x]
+            tmp[y * 8 + x] = (
+                row[0] * c[0] + row[1] * c[1] + row[2] * c[2] + row[3] * c[3]
+                + row[4] * c[4] + row[5] * c[5] + row[6] * c[6] + row[7] * c[7]
+            )
+    for x in range(8):
+        col = tmp[x::8]
+        for y in range(8):
+            c = COS[y]
+            s = (
+                col[0] * c[0] + col[1] * c[1] + col[2] * c[2] + col[3] * c[3]
+                + col[4] * c[4] + col[5] * c[5] + col[6] * c[6] + col[7] * c[7]
+            )
+            v = int(s + 128.5)  # undo the encoder's level shift, then round
+            plane[(oy + y) * stride + ox + x] = 0 if v < 0 else (255 if v > 255 else v)
+
+
+def _decode_scan(data: bytes, pos: int, frame: dict, scan: list, quant: dict, restart: int) -> int:
+    """Decode one interleaved baseline scan; returns the offset just past it."""
+    comps = frame["comps"]
+    if len(scan) != len(comps):
+        raise ValueError("unsupported non-interleaved JPEG scan")
+    max_h = max(c["h"] for c in comps)
+    max_v = max(c["v"] for c in comps)
+    mcus_x = (frame["w"] + 8 * max_h - 1) // (8 * max_h)
+    mcus_y = (frame["h"] + 8 * max_v - 1) // (8 * max_v)
+    for c in comps:
+        if c["tq"] not in quant:
+            raise ValueError(f"JPEG component {c['id']} names a missing quantization table")
+        c["stride"] = mcus_x * c["h"] * 8
+        c["plane"] = bytearray(c["stride"] * mcus_y * c["v"] * 8)
+        c["pred"] = 0
+    bits = JpegBits(data, pos)
+    for mcu in range(mcus_x * mcus_y):
+        if restart and mcu and mcu % restart == 0:
+            p = bits.pos
+            while p + 1 < len(data) and not (data[p] == 0xFF and 0xD0 <= data[p + 1] <= 0xD7):
+                p += 1
+            if p + 1 >= len(data):
+                raise ValueError("JPEG restart interval with no restart marker")
+            bits = JpegBits(data, p + 2)
+            for comp, _, _ in scan:
+                comp["pred"] = 0
+        mx, my = mcu % mcus_x, mcu // mcus_x
+        for comp, dc_table, ac_table in scan:
+            q = quant[comp["tq"]]
+            for by in range(comp["v"]):
+                for bx in range(comp["h"]):
+                    coef = [0.0] * 64
+                    t = bits.huffman(dc_table)
+                    comp["pred"] += bits.extend(bits.receive(t), t) if t else 0
+                    coef[0] = comp["pred"] * q[0]
+                    k = 1
+                    while k < 64:
+                        rs = bits.huffman(ac_table)
+                        run, size = rs >> 4, rs & 15
+                        if not size:
+                            if run != 15:  # end of block
+                                break
+                            k += 16  # ZRL: sixteen zero coefficients
+                            continue
+                        k += run
+                        if k > 63:
+                            raise ValueError("JPEG AC coefficient index out of range")
+                        coef[JPEG_ZIGZAG[k]] = bits.extend(bits.receive(size), size) * q[k]
+                        k += 1
+                    _idct_block(coef, comp["plane"], comp["stride"],
+                                (mx * comp["h"] + bx) * 8, (my * comp["v"] + by) * 8)
+    p = bits.pos
+    while p + 1 < len(data) and not (data[p] == 0xFF and data[p + 1] != 0x00 and not 0xD0 <= data[p + 1] <= 0xD7):
+        p += 1
+    return p
+
+
+def _assemble(frame: dict, transform: int | None) -> tuple[int, int, int, bytearray]:
+    """Upsample the decoded planes to full size and convert to gray or RGB."""
+    comps, w, h = frame["comps"], frame["w"], frame["h"]
+    if any("plane" not in c for c in comps):
+        raise ValueError("JPEG frame has undecoded components")
+    max_h = max(c["h"] for c in comps)
+    max_v = max(c["v"] for c in comps)
+    if len(comps) == 1:
+        c = comps[0]
+        out = bytearray(w * h)
+        for y in range(h):
+            row = c["stride"] * (y * c["v"] // max_v)
+            plane = c["plane"]
+            out[y * w : (y + 1) * w] = bytes(plane[row + x * c["h"] // max_h] for x in range(w))
+        return w, h, 1, out
+    if len(comps) != 3:
+        raise ValueError(f"unsupported JPEG component count {len(comps)}")
+    # Three components are YCbCr unless an Adobe APP14 marker says otherwise.
+    ycc = transform != 0
+    yc, cbc, crc = comps
+    out = bytearray(w * h * 3)
+    for y in range(h):
+        yp, bp, rp = yc["plane"], cbc["plane"], crc["plane"]
+        yo = yc["stride"] * (y * yc["v"] // max_v)
+        bo = cbc["stride"] * (y * cbc["v"] // max_v)
+        ro = crc["stride"] * (y * crc["v"] // max_v)
+        o = y * w * 3
+        for x in range(w):
+            luma = yp[yo + x * yc["h"] // max_h]
+            cb = bp[bo + x * cbc["h"] // max_h] - 128
+            cr = rp[ro + x * crc["h"] // max_h] - 128
+            if ycc:
+                out[o] = CLAMP[int(luma + 1.402 * cr + 256.5)]
+                out[o + 1] = CLAMP[int(luma - 0.344136 * cb - 0.714136 * cr + 256.5)]
+                out[o + 2] = CLAMP[int(luma + 1.772 * cb + 256.5)]
+            else:
+                out[o], out[o + 1], out[o + 2] = luma, cb + 128, cr + 128
+            o += 3
+    return w, h, 3, out
+
+
+def decode_jpeg(data: bytes) -> tuple[int, int, int, bytearray]:
+    """(width, height, channels, samples) for a baseline sequential JPEG."""
+    if not data.startswith(JPEG_MAGIC):
+        raise ValueError("invalid JPEG signature")
+    quant: dict[int, list[int]] = {}
+    dc_tables: dict[int, dict] = {}
+    ac_tables: dict[int, dict] = {}
+    frame: dict | None = None
+    restart = 0
+    transform: int | None = None
+    pos = 2
+    while pos < len(data):
+        if data[pos] != 0xFF:
+            raise ValueError("lost JPEG marker sync")
+        while pos < len(data) and data[pos] == 0xFF:
+            pos += 1
+        if pos >= len(data):
+            raise ValueError("truncated JPEG marker")
+        marker, pos = data[pos], pos + 1
+        if marker == 0xD9:  # EOI
+            break
+        if marker == 0x01 or 0xD0 <= marker <= 0xD8:  # standalone markers
+            continue
+        if pos + 2 > len(data):
+            raise ValueError("truncated JPEG segment")
+        length = int.from_bytes(data[pos : pos + 2], "big")
+        if length < 2 or pos + length > len(data):
+            raise ValueError("truncated JPEG segment body")
+        body, end = data[pos + 2 : pos + length], pos + length
+        if marker == 0xDB:  # DQT
+            i = 0
+            while i < len(body):
+                wide, target = body[i] >> 4, body[i] & 15
+                i += 1
+                if wide:
+                    quant[target] = [int.from_bytes(body[i + 2 * k : i + 2 * k + 2], "big") for k in range(64)]
+                    i += 128
+                else:
+                    quant[target] = list(body[i : i + 64])
+                    i += 64
+                if len(quant[target]) != 64:
+                    raise ValueError("truncated JPEG quantization table")
+        elif marker == 0xC4:  # DHT
+            i = 0
+            while i < len(body):
+                kind, target = body[i] >> 4, body[i] & 15
+                counts = body[i + 1 : i + 17]
+                total = sum(counts)
+                symbols = body[i + 17 : i + 17 + total]
+                if len(symbols) != total:
+                    raise ValueError("truncated JPEG Huffman table")
+                (ac_tables if kind else dc_tables)[target] = _huffman_table(counts, symbols)
+                i += 17 + total
+        elif marker in (0xC0, 0xC1):  # SOF0/SOF1: baseline and extended sequential
+            if body[0] != 8:
+                raise ValueError(f"unsupported JPEG sample precision {body[0]}")
+            h, w, count = int.from_bytes(body[1:3], "big"), int.from_bytes(body[3:5], "big"), body[5]
+            if not w or not h or not count:
+                raise ValueError("invalid JPEG frame header")
+            comps = [
+                {"id": body[6 + 3 * c], "h": body[7 + 3 * c] >> 4, "v": body[7 + 3 * c] & 15, "tq": body[8 + 3 * c]}
+                for c in range(count)
+            ]
+            if any(not c["h"] or not c["v"] for c in comps):
+                raise ValueError("invalid JPEG component sampling factors")
+            frame = {"w": w, "h": h, "comps": comps}
+        elif marker in JPEG_UNSUPPORTED_SOF:
+            raise ValueError("unsupported JPEG (only baseline sequential is decoded)")
+        elif marker == 0xDD:  # DRI
+            restart = int.from_bytes(body[0:2], "big")
+        elif marker == 0xEE and body[:5] == b"Adobe":  # APP14
+            transform = body[11] if len(body) > 11 else None
+        elif marker == 0xDA:  # SOS
+            if frame is None:
+                raise ValueError("JPEG scan before frame header")
+            scan = []
+            for s in range(body[0]):
+                selector, tables = body[1 + 2 * s], body[2 + 2 * s]
+                comp = next((c for c in frame["comps"] if c["id"] == selector), None)
+                if comp is None or (tables >> 4) not in dc_tables or (tables & 15) not in ac_tables:
+                    raise ValueError("JPEG scan names a missing component or Huffman table")
+                scan.append((comp, dc_tables[tables >> 4], ac_tables[tables & 15]))
+            pos = _decode_scan(data, end, frame, scan, quant, restart)
+            continue
+        pos = end
+    if frame is None:
+        raise ValueError("JPEG has no frame header")
+    return _assemble(frame, transform)
+
+
+def encode_png(width: int, height: int, channels: int, samples: bytes) -> bytes:
+    """Non-interlaced 8-bit gray/RGB PNG with unfiltered scanlines."""
+    stride = width * channels
+    raw = bytearray()
+    for y in range(height):
+        raw.append(0)  # filter type None
+        raw += samples[y * stride : (y + 1) * stride]
+
+    def chunk(kind: bytes, payload: bytes) -> bytes:
+        crc = zlib.crc32(kind + payload) & 0xFFFFFFFF
+        return len(payload).to_bytes(4, "big") + kind + payload + crc.to_bytes(4, "big")
+
+    ihdr = width.to_bytes(4, "big") + height.to_bytes(4, "big") + bytes([8, {1: 0, 3: 2}[channels], 0, 0, 0])
+    return (
+        PNG_MAGIC
+        + chunk(b"IHDR", ihdr)
+        + chunk(b"IDAT", zlib.compress(bytes(raw), 9))
+        + chunk(b"IEND", b"")
+    )
+
+
+def jpeg_to_png(data: bytes) -> bytes:
+    return encode_png(*decode_jpeg(data))
+
+
+def trim_after_iend(data: bytes) -> bytes:
+    """Drop bytes past IEND, which are no part of the image the file encodes.
+
+    Kell's mirror serves ~9 KB of stray bytes after IEND. Renderers ignore
+    them, but the validator refuses trailing data rather than guess how much of
+    a file is real, so the tail is cut here -- before validation, which still
+    has to accept every chunk, the whole IDAT stream and the scanlines it
+    decodes to. A file whose chunk list cannot be walked is left alone for the
+    validator to reject.
+    """
+    pos = len(PNG_MAGIC)
+    while pos + 12 <= len(data):
+        length, kind = struct.unpack(">I4s", data[pos : pos + 8])
+        if length > 0x7FFFFFFF:
+            return data
+        pos += 12 + length
+        if kind == b"IEND":
+            return data[:pos] if pos <= len(data) else data
+    return data
+
+
+def normalize_asset(data: bytes, dest: Path) -> bytes:
+    """Re-encode a JPEG download as PNG and drop any post-IEND tail.
+
+    Both fixes are lossless for the picture itself: the JPEG is decoded and
+    re-encoded whole, and only bytes outside the PNG datastream are dropped.
+    Every other asset passes through untouched.
+    """
+    if dest.suffix.lower() != ".png":
+        return data
+    if data.startswith(JPEG_MAGIC):
+        return jpeg_to_png(data)
+    return trim_after_iend(data) if data.startswith(PNG_MAGIC) else data
+
+
 def is_valid_cobb_image(data: bytes, path: Path) -> bool:
     try:
         if path.suffix.lower() == ".png":
@@ -429,6 +811,7 @@ def valid_local_item(school: tuple[str, str, str, str, str, str], dest: Path) ->
 
 def install_download(school: tuple[str, str, str, str, str, str], dest: Path, data: bytes) -> dict:
     """Validate a staged download completely before atomically replacing dest."""
+    data = normalize_asset(data, dest)
     fd, tmp_name = tempfile.mkstemp(prefix=f".{dest.stem}.", suffix=dest.suffix, dir=dest.parent)
     tmp = Path(tmp_name)
     try:
@@ -458,6 +841,10 @@ def main() -> int:
     unknown = sorted(only - expected)
     if unknown:
         print(f"error: unknown school abbreviation(s): {', '.join(unknown)}", file=sys.stderr)
+        return 2
+    bad_kinds = sorted(f"{s[0]} ({s[4]})" for s in SCHOOLS if s[4] not in SOURCE_KINDS)
+    if bad_kinds:
+        print(f"error: unknown source kind(s): {', '.join(bad_kinds)}", file=sys.stderr)
         return 2
 
     DEST_DIR.mkdir(parents=True, exist_ok=True)

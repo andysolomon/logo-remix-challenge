@@ -56,7 +56,7 @@ input::placeholder { color: var(--faint); }
   box-shadow: 0 0 0 4px rgba(216, 68, 43, 0.18);
 }
 .tab:focus-visible,
-.seg-btn:focus-visible,
+.league-seg-btn:focus-visible,
 .chip:focus-visible,
 .tile:focus-visible,
 .btn-shuffle:focus-visible,
@@ -119,10 +119,11 @@ input::placeholder { color: var(--faint); }
 .panel-head { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
 .panel-head.wrap { flex-wrap: wrap; }
 .panel-title { font-family: var(--display); font-weight: 700; font-size: 13px; letter-spacing: 2px; color: var(--muted); }
-.seg { display: flex; background: var(--chip-bg); border-radius: 10px; padding: 3px; gap: 2px; }
-.seg-btn { min-width: 54px; height: 38px; border: none; border-radius: 8px; font: 600 12px var(--ui); cursor: pointer; background: transparent; color: var(--muted); }
-.seg-btn.active { background: var(--ink); color: #FFFFFF; }
-.portrait .seg-btn { min-width: 64px; }
+.browser-head { flex-wrap: wrap; }
+.league-seg { flex: 1 1 180px; min-width: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); background: var(--chip-bg); border-radius: 10px; padding: 3px; gap: 2px; }
+.league-seg-btn { min-width: 0; height: 38px; padding: 0 4px; border: none; border-radius: 8px; font: 600 11px/1.05 var(--ui); cursor: pointer; background: transparent; color: var(--muted); overflow-wrap: anywhere; }
+.league-seg-btn.active { background: var(--ink); color: #FFFFFF; }
+.portrait .league-seg { flex-basis: 210px; }
 .search { height: 46px; border: 1.5px solid var(--line); border-radius: 12px; padding: 0 14px; font: 500 15px var(--ui); background: var(--input-bg); outline-color: var(--accent); width: 100%; color: var(--ink); }
 .portrait .search { height: 48px; font-size: 16px; }
 .chips { display: flex; gap: 6px; flex-wrap: wrap; }
@@ -441,7 +442,7 @@ input::placeholder { color: var(--faint); }
 
 /* iPad / coarse pointer — 44px minimum interaction targets */
 @media (pointer: coarse) {
-  .seg-btn { height: 44px; min-width: 58px; }
+  .league-seg-btn { height: 44px; }
   .chip { height: 44px; min-height: 44px; padding: 0 16px; }
   .btn-clear { min-height: 44px; min-width: 44px; padding: 10px 12px; }
   .close-btn { height: 44px; min-width: 44px; padding: 0 16px; }

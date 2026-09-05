@@ -1,0 +1,638 @@
+{
+  "assets": [
+    {
+      "id": "HS-ALLA",
+      "league": "HS",
+      "conference": "Cobb County",
+      "region": "Allatoona",
+      "name": "Buccaneers",
+      "abbr": "ALLA",
+      "displayName": "Allatoona Buccaneers",
+      "sourceUrl": "https://allatoonabucs.com/wp-content/uploads/2021/03/FULL-COLOR-BUCS-1-02.svg",
+      "sourceKind": "official",
+      "sourcePage": "https://allatoonabucs.com",
+      "path": "/logos/svg/high-school/alla.svg",
+      "format": "svg",
+      "colors": [
+        "#97999B",
+        "#EF3D33",
+        "#8F989E",
+        "#FFEED3",
+        "#FEFEFE",
+        "#FFF100",
+        "#8F979D",
+        "#FEEDD2"
+      ],
+      "brand": [
+        "#EF3D33",
+        "#000000"
+      ],
+      "palette": [
+        "#EF3D33",
+        "#0B0A0B",
+        "#FFFFFF"
+      ],
+      "sourcePalette": [
+        "#EF3D33",
+        "#0B0A0B",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": []
+    },
+    {
+      "id": "HS-CAMP",
+      "league": "HS",
+      "conference": "Cobb County",
+      "region": "Campbell",
+      "name": "Spartans",
+      "abbr": "CAMP",
+      "displayName": "Campbell Spartans",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/en/7/75/Campbell_High_School_Logo.png",
+      "sourceKind": "wikipedia",
+      "sourcePage": "https://en.wikipedia.org/wiki/Campbell_High_School_(Georgia)",
+      "path": "/logos/svg/high-school/camp.png",
+      "format": "png",
+      "colors": [
+        "#FFFFFF",
+        "#0000AA"
+      ],
+      "brand": [
+        "#1A17A8",
+        "#000000"
+      ],
+      "palette": [
+        "#0000AA",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "sourcePalette": [
+        "#0000AA",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [
+        1
+      ]
+    },
+    {
+      "id": "HS-HORZ",
+      "league": "HS",
+      "conference": "Cobb County",
+      "region": "Cobb Horizon",
+      "name": "",
+      "abbr": "HORZ",
+      "displayName": "Cobb Horizon",
+      "sourceUrl": "https://sbcobbstor.blob.core.windows.net/media/WWWCobb/fgg/695/cobbhorizon-primary.png",
+      "sourceKind": "district",
+      "sourcePage": "https://www.cobbk12.org/cobbhorizon",
+      "path": "/logos/svg/high-school/horz.png",
+      "format": "png",
+      "colors": [
+        "#11284B",
+        "#C7B783",
+        "#C5B582",
+        "#11274A",
+        "#C6B683",
+        "#132A4C",
+        "#12294B",
+        "#11284A"
+      ],
+      "brand": [
+        "#1B3D6D",
+        "#C5A46D"
+      ],
+      "palette": [
+        "#122B51",
+        "#C5B582",
+        "#FFFFFF"
+      ],
+      "sourcePalette": [
+        "#122B51",
+        "#C5B582",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [
+        2
+      ]
+    },
+    {
+      "id": "HS-HARR",
+      "league": "HS",
+      "conference": "Cobb County",
+      "region": "Harrison",
+      "name": "Hoyas",
+      "abbr": "HARR",
+      "displayName": "Harrison Hoyas",
+      "sourceUrl": "https://sbcobbstor.blob.core.windows.net/media/WWWCobb/fgg/753/Harrison-header.png",
+      "sourceKind": "district",
+      "sourcePage": "https://www.cobbk12.org/harrison",
+      "path": "/logos/svg/high-school/harr.png",
+      "format": "png",
+      "colors": [
+        "#FFFFFF",
+        "#00943A",
+        "#0B2240",
+        "#243953",
+        "#00560D",
+        "#F1F1F2"
+      ],
+      "brand": [
+        "#1E7B34",
+        "#12294B"
+      ],
+      "palette": [
+        "#00943A",
+        "#0B2240",
+        "#FFFFFF"
+      ],
+      "sourcePalette": [
+        "#00943A",
+        "#0B2240",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": []
+    },
+    {
+      "id": "HS-HILL",
+      "league": "HS",
+      "conference": "Cobb County",
+      "region": "Hillgrove",
+      "name": "Hawks",
+      "abbr": "HILL",
+      "displayName": "Hillgrove Hawks",
+      "sourceUrl": "https://sportshub2-uploads.vnn-prod.zone/files/sites/376/2018/01/30200846/logo_outline.png",
+      "sourceKind": "official",
+      "sourcePage": "https://www.hillgroveathletics.com",
+      "path": "/logos/svg/high-school/hill.png",
+      "format": "png",
+      "colors": [
+        "#650422",
+        "#FFFFFF",
+        "#4E4E4E",
+        "#000000",
+        "#FEFEFE",
+        "#010101",
+        "#040404",
+        "#202020"
+      ],
+      "brand": [
+        "#6D1A2E",
+        "#6D6E71"
+      ],
+      "palette": [
+        "#650422",
+        "#4E4E4E",
+        "#FFFFFF"
+      ],
+      "sourcePalette": [
+        "#650422",
+        "#4E4E4E",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": []
+    },
+    {
+      "id": "HS-KELL",
+      "league": "HS",
+      "conference": "Cobb County",
+      "region": "Kell",
+      "name": "Longhorns",
+      "abbr": "KELL",
+      "displayName": "Kell Longhorns",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/en/f/f3/Carlton_J._Kell_High_School_logo.png",
+      "sourceKind": "wikipedia",
+      "sourcePage": "https://en.wikipedia.org/wiki/Kell_High_School",
+      "path": "/logos/svg/high-school/kell.png",
+      "format": "png",
+      "colors": [
+        "#000000",
+        "#FFFFFF",
+        "#0A0A0A",
+        "#090909",
+        "#0B0B0B",
+        "#0C0C0C",
+        "#080808",
+        "#0D0D0D"
+      ],
+      "brand": [
+        "#D96C2C",
+        "#000000"
+      ],
+      "palette": [
+        "#D4762F",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "sourcePalette": [
+        "#D4762F",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": []
+    },
+    {
+      "id": "HS-KMHS",
+      "league": "HS",
+      "conference": "Cobb County",
+      "region": "Kennesaw Mountain",
+      "name": "Mustangs",
+      "abbr": "KMHS",
+      "displayName": "Kennesaw Mountain Mustangs",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/en/f/fa/Kennesaw_Mountain_High_School_%28logo%29.svg",
+      "sourceKind": "wikipedia",
+      "sourcePage": "https://en.wikipedia.org/wiki/Kennesaw_Mountain_High_School",
+      "path": "/logos/svg/high-school/kmhs.svg",
+      "format": "svg",
+      "colors": [
+        "#000000",
+        "#BBBCBF",
+        "#02A653"
+      ],
+      "brand": [
+        "#02A653",
+        "#BBBCBF"
+      ],
+      "palette": [
+        "#02A653",
+        "#BBBCBF",
+        "#FFFFFF"
+      ],
+      "sourcePalette": [
+        "#02A653",
+        "#BBBCBF",
+        "#000000"
+      ],
+      "unusedSourceSlots": []
+    },
+    {
+      "id": "HS-LASS",
+      "league": "HS",
+      "conference": "Cobb County",
+      "region": "Lassiter",
+      "name": "Trojans",
+      "abbr": "LASS",
+      "displayName": "Lassiter Trojans",
+      "sourceUrl": "https://sportshub2-uploads.vnn-prod.zone/files/sites/1992/2018/05/14151445/logo.png",
+      "sourceKind": "official",
+      "sourcePage": "https://www.lassiterathletics.com",
+      "path": "/logos/svg/high-school/lass.png",
+      "format": "png",
+      "colors": [
+        "#FFFFFF",
+        "#90152A",
+        "#8F152A",
+        "#92142A",
+        "#91142A",
+        "#91152A"
+      ],
+      "brand": [
+        "#6D1418",
+        "#000000"
+      ],
+      "palette": [
+        "#8F152A",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "sourcePalette": [
+        "#8F152A",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [
+        1
+      ]
+    },
+    {
+      "id": "HS-MCEA",
+      "league": "HS",
+      "conference": "Cobb County",
+      "region": "McEachern",
+      "name": "Indians",
+      "abbr": "MCEA",
+      "displayName": "McEachern Indians",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/en/e/e3/McEachernHSseal.png",
+      "sourceKind": "wikipedia",
+      "sourcePage": "https://en.wikipedia.org/wiki/McEachern_High_School",
+      "path": "/logos/svg/high-school/mcea.png",
+      "format": "png",
+      "colors": [
+        "#FFFFFF",
+        "#293189",
+        "#2A3289",
+        "#CBCB98",
+        "#CCCC98",
+        "#2A328A",
+        "#2B338A",
+        "#CACA98"
+      ],
+      "brand": [
+        "#1D3C88",
+        "#C1A035"
+      ],
+      "palette": [
+        "#293189",
+        "#B1B081",
+        "#FFFFFF"
+      ],
+      "sourcePalette": [
+        "#293189",
+        "#B1B081",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": []
+    },
+    {
+      "id": "HS-NCOB",
+      "league": "HS",
+      "conference": "Cobb County",
+      "region": "North Cobb",
+      "name": "Warriors",
+      "abbr": "NCOB",
+      "displayName": "North Cobb Warriors",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a5/North_Cobb_High_School_%22NC%22_logo.png",
+      "sourceKind": "wikipedia",
+      "sourcePage": "https://en.wikipedia.org/wiki/North_Cobb_High_School",
+      "path": "/logos/svg/high-school/ncob.png",
+      "format": "png",
+      "colors": [
+        "#FFFFFF",
+        "#FF7D35",
+        "#FF7C34",
+        "#FF7D34",
+        "#FFFFFE",
+        "#FF7B35",
+        "#FF7B33",
+        "#FF7B34"
+      ],
+      "brand": [
+        "#E1622E",
+        "#232F6B"
+      ],
+      "palette": [
+        "#FF7B33",
+        "#331F6F",
+        "#FFFFFF"
+      ],
+      "sourcePalette": [
+        "#FF7B33",
+        "#331F6F",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": []
+    },
+    {
+      "id": "HS-OSBO",
+      "league": "HS",
+      "conference": "Cobb County",
+      "region": "Osborne",
+      "name": "Cardinals",
+      "abbr": "OSBO",
+      "displayName": "Osborne Cardinals",
+      "sourceUrl": "https://sbcobbstor.blob.core.windows.net/media/WWWCobb/fgg/1293/Osborne_Footer-4.png",
+      "sourceKind": "district",
+      "sourcePage": "https://www.cobbk12.org/osborne",
+      "path": "/logos/svg/high-school/osbo.png",
+      "format": "png",
+      "colors": [
+        "#D02030",
+        "#FFFFFF"
+      ],
+      "brand": [
+        "#D22030",
+        "#000000"
+      ],
+      "palette": [
+        "#D02030",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "sourcePalette": [
+        "#D02030",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [
+        1
+      ]
+    },
+    {
+      "id": "HS-PEBB",
+      "league": "HS",
+      "conference": "Cobb County",
+      "region": "Pebblebrook",
+      "name": "Falcons",
+      "abbr": "PEBB",
+      "displayName": "Pebblebrook Falcons",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/en/8/87/Pebblebrook_High_School_logo.png",
+      "sourceKind": "wikipedia",
+      "sourcePage": "https://en.wikipedia.org/wiki/Pebblebrook_High_School",
+      "path": "/logos/svg/high-school/pebb.png",
+      "format": "png",
+      "colors": [
+        "#000000",
+        "#FFFFFF",
+        "#FDFDFD",
+        "#FCFCFC",
+        "#FEFEFE",
+        "#F5F5F5",
+        "#FBFBFB",
+        "#F4F4F4"
+      ],
+      "brand": [
+        "#1B2A41",
+        "#000000"
+      ],
+      "palette": [
+        "#24333F",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "sourcePalette": [
+        "#24333F",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": []
+    },
+    {
+      "id": "HS-POPE",
+      "league": "HS",
+      "conference": "Cobb County",
+      "region": "Pope",
+      "name": "Greyhounds",
+      "abbr": "POPE",
+      "displayName": "Pope Greyhounds",
+      "sourceUrl": "https://sportshub2-uploads.vnn-prod.zone/files/sites/195/2023/06/22174707/Pope-HS.png",
+      "sourceKind": "official",
+      "sourcePage": "https://www.popeathletics.com",
+      "path": "/logos/svg/high-school/pope.png",
+      "format": "png",
+      "colors": [
+        "#FFFFFF",
+        "#6BB1E2",
+        "#14284B",
+        "#15294C"
+      ],
+      "brand": [
+        "#8CB7DB",
+        "#1B2A4A"
+      ],
+      "palette": [
+        "#6BB1E2",
+        "#15294C",
+        "#FFFFFF"
+      ],
+      "sourcePalette": [
+        "#6BB1E2",
+        "#15294C",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": []
+    },
+    {
+      "id": "HS-SCOB",
+      "league": "HS",
+      "conference": "Cobb County",
+      "region": "South Cobb",
+      "name": "Eagles",
+      "abbr": "SCOB",
+      "displayName": "South Cobb Eagles",
+      "sourceUrl": "https://sbcobbstor.blob.core.windows.net/media/WWWCobb/fgg/1476/southcobb.png",
+      "sourceKind": "district",
+      "sourcePage": "https://www.cobbk12.org/southcobb",
+      "path": "/logos/svg/high-school/scob.png",
+      "format": "png",
+      "colors": [
+        "#081F3F",
+        "#FFFFFF",
+        "#F78D29",
+        "#D2D3D5",
+        "#091F3F",
+        "#091F40",
+        "#081F40",
+        "#FFFFFE"
+      ],
+      "brand": [
+        "#1B2A4A",
+        "#E87C22"
+      ],
+      "palette": [
+        "#0A1F40",
+        "#F68D28",
+        "#FFFFFF"
+      ],
+      "sourcePalette": [
+        "#0A1F40",
+        "#F68D28",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": []
+    },
+    {
+      "id": "HS-SPRA",
+      "league": "HS",
+      "conference": "Cobb County",
+      "region": "Sprayberry",
+      "name": "Yellow Jackets",
+      "abbr": "SPRA",
+      "displayName": "Sprayberry Yellow Jackets",
+      "sourceUrl": "https://sportshub2-uploads.vnn-prod.zone/files/sites/317/2023/08/07151535/Full-Color-White-Outline-Yellow-Jacket-Mark.png",
+      "sourceKind": "official",
+      "sourcePage": "https://www.sprayberryathletics.com",
+      "path": "/logos/svg/high-school/spra.png",
+      "format": "png",
+      "colors": [
+        "#211E16",
+        "#FFFFFF",
+        "#B3A369"
+      ],
+      "brand": [
+        "#AF9A5B",
+        "#241F20"
+      ],
+      "palette": [
+        "#B3A369",
+        "#211E16",
+        "#FFFFFF"
+      ],
+      "sourcePalette": [
+        "#B3A369",
+        "#211E16",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": []
+    },
+    {
+      "id": "HS-WALT",
+      "league": "HS",
+      "conference": "Cobb County",
+      "region": "Walton",
+      "name": "Raiders",
+      "abbr": "WALT",
+      "displayName": "Walton Raiders",
+      "sourceUrl": "https://sportshub2-uploads.vnn-prod.zone/files/sites/632/2018/02/16205342/logo_outline_9336.png",
+      "sourceKind": "official",
+      "sourcePage": "https://www.waltonathletics.com",
+      "path": "/logos/svg/high-school/walt.png",
+      "format": "png",
+      "colors": [
+        "#FFFFFF",
+        "#19187E",
+        "#D9D9EA"
+      ],
+      "brand": [
+        "#1B2A5B",
+        "#000000"
+      ],
+      "palette": [
+        "#19187E",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "sourcePalette": [
+        "#19187E",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [
+        1
+      ]
+    },
+    {
+      "id": "HS-WHEE",
+      "league": "HS",
+      "conference": "Cobb County",
+      "region": "Wheeler",
+      "name": "Wildcats",
+      "abbr": "WHEE",
+      "displayName": "Wheeler Wildcats",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/en/7/7f/Wheeler_High_School_%28Georgia%29_logo.png",
+      "sourceKind": "wikipedia",
+      "sourcePage": "https://en.wikipedia.org/wiki/Wheeler_High_School_(Georgia)",
+      "path": "/logos/svg/high-school/whee.png",
+      "format": "png",
+      "colors": [
+        "#081F3F",
+        "#F3C414",
+        "#FFFFFF",
+        "#092040"
+      ],
+      "brand": [
+        "#F2BE39",
+        "#1B2A4A"
+      ],
+      "palette": [
+        "#F3C414",
+        "#092040",
+        "#FFFFFF"
+      ],
+      "sourcePalette": [
+        "#F3C414",
+        "#092040",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": []
+    }
+  ]
+}

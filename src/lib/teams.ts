@@ -1,6 +1,6 @@
 import data from './teams.json'
 
-export type League = 'PRO' | 'COL'
+export type League = 'PRO' | 'COL' | 'HS'
 
 export interface Team {
   id: string
@@ -12,6 +12,8 @@ export interface Team {
   palette: [string, string, string]
   /** Optional exact source colors when the downloaded PNG differs from the displayed palette. */
   sourcePalette?: [string, string, string]
+  /** Source palette slots intentionally absent from genuinely two-color artwork. */
+  unusedSourceSlots?: number[]
   /** Path under public/ to the team's logo, e.g. "/logos/svg/nfl/kc.svg" (SVG preferred; PNGs fall back to canvas recolor). */
   logo: string
 }
@@ -442,8 +444,8 @@ const playJoined = async (urls: string[]) => {
 }
 export const roundTarget = (r: Round, fallback: GuessTarget): GuessTarget => r.g ?? fallback
 export const guessPrompt = (t: GuessTarget) => (t === 'both' ? 'Guess the Logo and the Colors!' : t === 'colors' ? 'Guess the Colors!' : 'Guess the Logo!')
-/** Where a team plays: the league label for pro teams, the conference for college. */
-export const teamHint = (t: Team) => (t.league === 'COL' ? t.conference : LEAGUES[t.league].label)
+/** Where a team plays: the league label for pro teams, the conference for college and high school. */
+export const teamHint = (t: Team) => (t.league === 'PRO' ? LEAGUES[t.league].label : t.conference)
 /** Hint lines for a round, one for the logo team and one for the colors team. */
 export const roundHints = (r: Round): [string, string] => [
   `Logo: ${teamHint(findTeam(r.o)!)}`,
@@ -451,7 +453,7 @@ export const roundHints = (r: Round): [string, string] => [
 ]
 
 // ---------- Random deck generator ----------
-/** A selectable slice of teams: the NFL as a whole, or one college conference. */
+/** A selectable slice of teams: the NFL as a whole, one college conference, or a high-school district. */
 export interface TeamPool {
   id: string
   label: string
@@ -460,6 +462,7 @@ export interface TeamPool {
 export const TEAM_POOLS: TeamPool[] = [
   { id: 'NFL', label: LEAGUES.PRO.label, match: (t) => t.league === 'PRO' },
   ...LEAGUES.COL.conferences.map((c) => ({ id: c, label: c, match: (t: Team) => t.league === 'COL' && t.conference === c })),
+  ...LEAGUES.HS.conferences.map((c) => ({ id: c, label: c, match: (t: Team) => t.league === 'HS' && t.conference === c })),
 ]
 export const ALL_POOL_IDS = TEAM_POOLS.map((p) => p.id)
 export const RANDOM_ROUND_OPTIONS = [5, 10, 15, 20] as const

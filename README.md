@@ -2,7 +2,7 @@
 
 iPad-first sports-logo guessing game. A creator picks the **logo of one team** and the **colors of another**; players must name the original team while the colors misdirect them.
 
-Real logos for all 32 NFL teams, the ACC, Big 12, Big Ten, Pac-12, SEC and Ivy League conference marks, and 120 college teams (those conferences plus an HBCU grouping) live as local SVGs under `public/logos/svg/` and are recolored at render time by rewriting fills: colors matching the original team's three palette colors are swapped to the other team's palette while all other artwork is preserved. PNG logos (used only where Wikipedia has no SVG) fall back to a canvas-based pixel recolor.
+Real logos for all 32 NFL teams, 120 college teams, 6 college conference marks, and the 17 Cobb County high schools (the HIGH SCHOOL league) live as local SVG or PNG assets under `public/logos/svg/`. SVG fills are rewritten in-browser; PNGs from Wikipedia, official athletics sites, and Cobb County School District sources use a canvas-based pixel recolor.
 
 Each round asks for either the **logo's team** or the **team whose colors it wears** — set per round on its deck card, with a deck-wide default for rounds left alone. An optional voice announcer plays Chatterbox clips (`public/voice/`) for the round prompt, the verdict, and the final score.
 
@@ -35,20 +35,24 @@ Agent Skill for this app (Voice Announcer, clip map, regen): `.agents/skills/arc
 
 ## Logos
 
-Logo SVGs are downloaded from Wikipedia and checked into `public/logos/svg/`, alongside a manifest describing each asset and its fill colors. Two scripts feed it, because one roster source does not cover everything:
+Logo assets are acquired from ESPN-linked Wikipedia files, direct Wikipedia files, official athletics sites, and Cobb County School District pages, then checked into `public/logos/svg/` with manifests describing their sources and artwork colors. Three download scripts cover the separate rosters:
 
 `download_svgs.py` takes its rosters and brand colors from ESPN — 32 NFL teams, 6 conference logos (ACC, Big 12, Big Ten, Pac-12, SEC, Ivy), and every football member of those conferences for the configured season, plus the 21 Division I football HBCUs (SWAC, the MEAC schools that field football, and Hampton, North Carolina A&T and Tennessee State). It writes `manifest.json`.
 
 `download_hbcu_svgs.py` covers the HBCUs that ESPN's football feed cannot reach: Coppin State and Maryland Eastern Shore, the two MEAC members with no football team, and all 14 HBCUs of the Division II SIAC. ESPN carries no brand colors for Division II, so palettes come from the official colors in `scripts/hbcu_roster.py` snapped onto the artwork's own fills. It writes `hbcu-manifest.json`. Between them the HBCU chip is the complete SWAC, MEAC and SIAC membership — 37 schools. (Spring Hill College is a SIAC member but not an HBCU, so it is deliberately absent.)
 
-`build_teams.py` merges both manifests into `src/lib/teams.json`. It rewrites the whole `COL-*` block, so run it after either downloader. To fetch or refresh (stdlib Python 3, idempotent):
+`download_cobb_svgs.py` fetches the HIGH SCHOOL league: the 17 Cobb County high schools. No feed covers Georgia high schools, so `scripts/cobb_roster.py` pins one hand-verified source URL per school — the school's own athletics site where one is scrapeable, the Cobb County School District site otherwise, and Wikipedia as the fallback (Cobb Horizon fields no teams, so its primary institutional mark stands in). Palettes come from the official colors snapped onto the artwork's own fills, and each asset lands in `public/logos/svg/high-school/` with its source recorded in `hs-manifest.json`.
+
+`build_teams.py` merges the NFL/college manifests into `src/lib/teams.json`, rewriting the whole `COL-*` block (high-school entries are carried through untouched); `build_hs_teams.py` does the same for the `HS-*` block from `hs-manifest.json`. Run each after its downloader. To fetch or refresh (stdlib Python 3, idempotent):
 
 ```sh
 bun run logos:svg                              # or: python3 scripts/download_svgs.py
 python3 scripts/download_svgs.py --force       # re-download everything
 python3 scripts/download_svgs.py --only nfl    # subset: nfl, conferences, ncaa
 bun run logos:hbcu                             # or: python3 scripts/download_hbcu_svgs.py
+bun run logos:hs                               # or: python3 scripts/download_cobb_svgs.py
 bun run teams                                  # regenerate college entries in src/lib/teams.json from both manifests
+bun run teams:hs                               # regenerate high-school entries from hs-manifest.json
 ```
 
 The legacy ESPN PNGs (32 NFL teams + 5 conferences) can still be fetched into `public/logos/`:
@@ -75,7 +79,7 @@ src/
   App.tsx                  mode router (create / deck / play) + persisted state
   styles.css               tokens, keyframes, all component styles
   lib/teams.ts             dataset, answer matching, filtering, localStorage
-  lib/teams.json           32 NFL teams + 5 conferences, permutations, seed deck
+  lib/teams.json           32 NFL + 126 college + 17 high-school entries, permutations, seed deck
   lib/useOrientation.ts    portrait = innerHeight > innerWidth
   components/
     Logo.tsx               local PNG rendering + canvas palette-swap recoloring
@@ -93,11 +97,15 @@ scripts/
   download_svgs.py         fetch NFL, conference and ESPN-rostered college SVGs
   download_hbcu_svgs.py    fetch the SIAC + non-football MEAC logos from Wikipedia
   hbcu_roster.py           HBCU roster, official colors, and logo-file overrides
-  build_teams.py           merge both manifests into src/lib/teams.json
+  download_cobb_svgs.py    fetch the 17 Cobb County high-school logos
+  cobb_roster.py           Cobb roster, official colors, and per-school source URLs
+  build_teams.py           merge the NFL/college manifests into src/lib/teams.json
+  build_hs_teams.py        merge hs-manifest.json into src/lib/teams.json
   generate_voice.py        bake Chatterbox announcer clips into public/voice/
 public/logos/
   nfl/                     32 team PNGs (ESPN CDN naming, e.g. wsh.png)
   conferences/             acc, big-12, big-ten, pac-12, sec PNGs
+  svg/high-school/         17 checked-in Cobb high-school SVG/PNG marks
 ```
 
 The design prototype and spec live in `design_handoff_logo_remix/` (reference only).

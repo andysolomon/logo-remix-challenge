@@ -23,14 +23,14 @@ export function TeamBrowser({ title, state, onState, selectedId, onSelect, showS
   const panelId = `browser-${title.replace(/\s+/g, '-').toLowerCase()}`
   return (
     <section className="panel" aria-labelledby={panelId}>
-      <div className={`panel-head${portrait ? ' wrap' : ''}`}>
+      <div className={`panel-head browser-head${portrait ? ' wrap' : ''}`}>
         <div id={panelId} className="panel-title">{title}</div>
-        <div className="seg" role="group" aria-label="League">
-          {(['PRO', 'COL'] as League[]).map((lg) => (
+        <div className="league-seg" role="group" aria-label="League">
+          {(Object.keys(LEAGUES) as League[]).map((lg) => (
             <button
               key={lg}
               type="button"
-              className={`seg-btn${state.league === lg ? ' active' : ''}`}
+              className={`league-seg-btn${state.league === lg ? ' active' : ''}`}
               aria-pressed={state.league === lg}
               onClick={() => onState({ ...state, league: lg, conference: 'All' })}
             >

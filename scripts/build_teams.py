@@ -11,7 +11,8 @@ does not know about is dropped on the next run.
 
 Run after ``scripts/download_svgs.py``. Idempotent: every ``COL-*`` *team*
 entry is regenerated from the manifest; the hand-tuned conference logo
-entries (``COL-ACC`` etc.) and all NFL entries are left untouched. New
+entries (``COL-ACC`` etc.), all NFL entries, and the high-school entries
+owned by ``scripts/build_hs_teams.py`` are left untouched. New
 conference logos in the manifest (e.g. Ivy) are added if missing, and the
 ``leagues.COL.conferences`` chip list is updated to the manifest's order.
 
@@ -32,9 +33,17 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import re
 import sys
+import tempfile
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+
+from cobb_roster import SCHOOLS  # noqa: E402
+from build_hs_teams import hs_entry as hs_entry_from_manifest  # noqa: E402
+from build_hs_teams import validate_manifest as validate_hs_manifest  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 MANIFEST = ROOT / "public" / "logos" / "svg" / "manifest.json"
@@ -50,6 +59,21 @@ SAME_COLOR_SQ = 40 * 40
 WHITE, BLACK = "#FFFFFF", "#000000"
 SHAPE_NO_FILL_RE = re.compile(r"<(?:path|polygon|rect|circle|ellipse|polyline)\b(?![^>]*\bfill\b)[^>]*>", re.I)
 ROOT_FILL_RE = re.compile(r"<svg\b[^>]*\bfill\s*=", re.I)
+HS_REQUIRED_FIELDS = {
+    "id": str,
+    "league": str,
+    "conference": str,
+    "region": str,
+    "name": str,
+    "abbr": str,
+    "palette": list,
+    "logo": str,
+}
+HS_HEX_RE = re.compile(r"^#[0-9A-F]{6}$")
+HS_IDS = {f"HS-{school[0]}" for school in SCHOOLS}
+HS_ABBRS = {school[0] for school in SCHOOLS}
+HS_CONFERENCE = "Cobb County"
+HS_LEAGUE_CONFIG = {"label": "HIGH SCHOOL", "conferences": [HS_CONFERENCE]}
 
 
 def rgb(h: str) -> tuple[int, int, int]:
@@ -164,9 +188,84 @@ def conference_entry(item: dict) -> dict:
     }
 
 
+def atomic_write_text(path: Path, text: str) -> None:
+    """Write beside ``path`` and atomically replace it after fsync.
+
+    teams.json holds the NFL, college, and high-school rosters at once, so a
+    crash or a full disk part-way through a rewrite would take all three with
+    it. Staging the whole file first means the destination only ever moves
+    between two complete versions.
+    """
+    fd, tmp_name = tempfile.mkstemp(prefix=f".{path.name}.", suffix=".tmp", dir=path.parent)
+    tmp = Path(tmp_name)
+    try:
+        with os.fdopen(fd, "w", encoding="utf-8", newline="") as fh:
+            fh.write(text)
+            fh.flush()
+            os.fsync(fh.fileno())
+        os.replace(tmp, path)
+    except BaseException:
+        tmp.unlink(missing_ok=True)
+        raise
+
+
 def fmt_entry(e: dict) -> str:
     """One team per line, matching the existing hand-written style."""
     return "    " + json.dumps(e, ensure_ascii=False, separators=(", ", ": "))
+
+
+def validate_hs_slice(data: dict, entries: list[dict]) -> None:
+    """Reject a partial or stale HS feature before the college rewrite stages."""
+    leagues = data.get("leagues") if isinstance(data, dict) else None
+    has_config = isinstance(leagues, dict) and "HS" in leagues
+    has_entries = bool(entries)
+    if not has_config and not has_entries:
+        return
+    if not has_config:
+        raise ValueError("HS entries exist without an HS league configuration")
+    if not has_entries:
+        raise ValueError("HS league configuration exists without HS entries")
+
+    config = leagues["HS"]
+    if not isinstance(config, dict) or any(config.get(k) != v for k, v in HS_LEAGUE_CONFIG.items()):
+        raise ValueError("HS league configuration must be HIGH SCHOOL / Cobb County")
+    if len(entries) != len(HS_IDS):
+        raise ValueError(f"HS slice has {len(entries)} entries; expected {len(HS_IDS)}")
+
+    seen_ids: set[str] = set()
+    seen_abbrs: set[str] = set()
+    for n, entry in enumerate(entries):
+        if not isinstance(entry, dict):
+            raise ValueError(f"HS entry {n} is not an object")
+        for field, kind in HS_REQUIRED_FIELDS.items():
+            if field not in entry or not isinstance(entry[field], kind):
+                raise ValueError(f"HS entry {n} has invalid or missing {field}")
+        if entry["id"] in seen_ids or entry["abbr"] in seen_abbrs:
+            raise ValueError(f"HS entry {n} has a duplicate id or abbreviation")
+        seen_ids.add(entry["id"])
+        seen_abbrs.add(entry["abbr"])
+        if entry["league"] != "HS" or entry["conference"] != HS_CONFERENCE:
+            raise ValueError(f"HS entry {n} must use the HS league and Cobb County conference")
+        palette = entry["palette"]
+        if (len(palette) != 3 or any(not isinstance(color, str) or not HS_HEX_RE.fullmatch(color) for color in palette)
+                or len(set(palette)) != 3):
+            raise ValueError(f"HS entry {n} has an invalid three-color palette")
+        if not entry["logo"].startswith("/logos/svg/high-school/"):
+            raise ValueError(f"HS entry {n} has an invalid logo path")
+
+    if seen_ids != HS_IDS or seen_abbrs != HS_ABBRS:
+        raise ValueError("HS slice does not contain exactly the canonical 17 ids and abbreviations")
+
+    try:
+        manifest_items = validate_hs_manifest()
+    except (OSError, ValueError, json.JSONDecodeError) as exc:
+        raise ValueError(f"HS manifest/assets are incomplete or invalid: {exc}") from exc
+    expected = {item["id"]: hs_entry_from_manifest(item) for item in manifest_items}
+    if set(expected) != HS_IDS:
+        raise ValueError("HS manifest does not contain exactly the canonical 17 schools")
+    for entry in entries:
+        if entry != expected.get(entry["id"]):
+            raise ValueError(f"HS entry {entry['id']} does not match the validated HS manifest")
 
 
 def main() -> int:
@@ -201,6 +300,15 @@ def main() -> int:
     conf_order = {c: n for n, c in enumerate(conferences)}
 
     nfl = [t for t in existing if t["league"] == "PRO"]
+    # High-school entries are owned by scripts/build_hs_teams.py; carry them
+    # through untouched so a college rebuild cannot drop them, but never carry
+    # a partial or stale slice through a successful college rebuild.
+    hs = [t for t in existing if isinstance(t, dict) and t.get("league") == "HS"]
+    try:
+        validate_hs_slice(data, hs)
+    except ValueError as exc:
+        print(f"error: {exc}; run scripts/build_hs_teams.py", file=sys.stderr)
+        return 1
     kept_confs = {t["conference"]: t for t in existing if t["league"] == "COL" and t["name"] == ""}
     for conf, item in conf_items.items():
         kept_confs.setdefault(conf, conference_entry(item))
@@ -227,7 +335,7 @@ def main() -> int:
     text = TEAMS_JSON.read_text()
     start = text.index('"teams": [')
     end = text.index("\n  ]", start)
-    body = ",\n".join(fmt_entry(t) for t in nfl + college)
+    body = ",\n".join(fmt_entry(t) for t in nfl + college + hs)
     head = text[:start] + '"teams": [\n'
     text = head + body + text[end:]
     # Conference chip list.
@@ -236,9 +344,9 @@ def main() -> int:
         lambda m: m.group(1) + json.dumps(conferences),
         text,
     )
-    TEAMS_JSON.write_text(text)
-    json.loads(TEAMS_JSON.read_text())  # sanity: still valid JSON
-    print(f"wrote {TEAMS_JSON.relative_to(ROOT)}")
+    json.loads(text)  # sanity: reject an invalid rewrite before it lands
+    atomic_write_text(TEAMS_JSON, text)
+    print(f"wrote {TEAMS_JSON.relative_to(ROOT) if TEAMS_JSON.is_relative_to(ROOT) else TEAMS_JSON}")
     return 0
 
 

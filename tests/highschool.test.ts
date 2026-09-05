@@ -340,13 +340,41 @@ describe('high-school league gameplay integration', () => {
     expect(TEAM_POOLS.map((p) => p.id)).toEqual(['NFL', ...LEAGUES.COL.conferences, 'Cobb County'])
   })
 
-  test('the team browser derives its league buttons from LEAGUES', () => {
+  test('the team browser uses original league controls with compact HS copy', () => {
     const browser = readFileSync(join(root, 'src/components/TeamBrowser.tsx'), 'utf8')
     const css = readFileSync(join(root, 'src/styles.css'), 'utf8')
     expect(browser).toContain('Object.keys(LEAGUES) as League[]')
-    expect(browser).toContain('className="league-seg"')
-    expect(css).toContain('grid-template-columns: repeat(3, minmax(0, 1fr))')
-    expect(css).toContain('.browser-head { flex-wrap: wrap; }')
-    expect(css).not.toMatch(/^\.seg \{ display: flex/m)
+    expect(browser).toContain('className="seg"')
+    expect(browser).toContain('className={`seg-btn${state.league === lg ? \' active\' : \'\'}`}')
+    expect(browser).toContain("{lg === 'HS' ? 'HS' : LEAGUES[lg].label}")
+    expect(browser).toContain("onState({ ...state, league: lg, conference: 'All' })")
+    expect(browser).not.toContain('browser-head')
+    expect(browser).not.toContain('league-seg')
+
+    const leagueKeys = Object.keys(LEAGUES)
+    expect(leagueKeys).toEqual(['PRO', 'COL', 'HS'])
+    expect(leagueKeys.map((lg) => (lg === 'HS' ? 'HS' : LEAGUES[lg as keyof typeof LEAGUES].label))).toEqual(['NFL', 'COLLEGE', 'HS'])
+    expect(css).toMatch(/^\.seg \{ display: flex; background: var\(--chip-bg\); border-radius: 10px; padding: 3px; gap: 2px; \}$/m)
+    expect(css).toMatch(/^\.seg-btn \{ min-width: 54px; height: 38px; border: none; border-radius: 8px; font: 600 12px var\(--ui\); cursor: pointer; background: transparent; color: var\(--muted\); \}$/m)
+    expect(css).not.toContain('.league-seg')
+    expect(css).not.toContain('.browser-head')
+  })
+
+  test('hidden mode panels override explicit create and deck display rules', () => {
+    const css = readFileSync(join(root, 'src/styles.css'), 'utf8')
+    const hidden = css.indexOf('[hidden] { display: none !important; }')
+    const createLand = css.indexOf('.create-land { flex: 1; min-height: 0; display: grid;')
+    const createPort = css.indexOf('.create-port { flex: 1; min-height: 0; display: flex;')
+    const deck = css.indexOf('.deck { flex: 1; min-height: 0; display: flex;')
+    expect(hidden).toBeGreaterThanOrEqual(0)
+    expect(createLand).toBeGreaterThan(hidden)
+    expect(createPort).toBeGreaterThan(hidden)
+    expect(deck).toBeGreaterThan(hidden)
+    expect(css.match(/\[hidden\]\s*\{\s*display:\s*none\s*!important;\s*\}/g)).toHaveLength(1)
+  })
+
+  test('all 17 HS teams remain accessible through the browser filter', () => {
+    expect(filterTeams('HS', 'All', '').map((t) => t.region).sort()).toEqual(COBB_SCHOOLS)
+    expect(filterTeams('HS', 'Cobb County', '').map((t) => t.region).sort()).toEqual(COBB_SCHOOLS)
   })
 })

@@ -308,6 +308,7 @@ input::placeholder { color: var(--faint); }
 .reel-step:hover { background: var(--gold); color: var(--dark-bg); }
 .reel-step:active { transform: translateY(1px); }
 @media (pointer: coarse) {
+  .guess-suggest-item { min-height: 44px; }
   .reel-step { height: 48px; }
 }
 .initials .btn-again:disabled { background: var(--disabled); cursor: not-allowed; filter: none; }
@@ -351,6 +352,14 @@ input::placeholder { color: var(--faint); }
 .guess-field .guess-input:read-only { opacity: 0.75; }
 .guess-form.both .guess-input { height: 52px; font-size: 18px; }
 .guess-form.both .btn-submit { align-self: flex-end; }
+.guess-ac { position: relative; display: flex; flex: 1; min-width: 0; }
+.guess-ac .guess-input { width: 100%; }
+/* Suggestions open upward so a phone keyboard can't sit on top of them. */
+.guess-suggest { position: absolute; left: 0; right: 0; bottom: calc(100% + 8px); z-index: 20; margin: 0; padding: 6px; list-style: none; text-align: left; background: var(--dark-input); border: 2px solid var(--dark-input-line); border-radius: 14px; box-shadow: 0 14px 34px rgba(0, 0, 0, 0.5); max-height: 240px; overflow-y: auto; }
+.guess-suggest-item { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 10px 12px; border-radius: 10px; color: var(--dark-ink); font: 500 17px var(--ui); cursor: pointer; }
+.guess-suggest-item.active, .guess-suggest-item:hover { background: rgba(255, 255, 255, 0.1); }
+.guess-suggest-name { min-width: 0; }
+.guess-suggest-tag { flex: none; white-space: nowrap; font: 600 12px var(--ui); letter-spacing: 1px; color: var(--dark-faint); }
 .reveal-pair { display: flex; gap: 32px; justify-content: center; align-items: flex-start; flex-wrap: wrap; margin: 4px 0; }
 .reveal-part { display: flex; flex-direction: column; align-items: center; gap: 8px; width: 200px; }
 .reveal-part .reveal-logo { width: 120px; height: 120px; margin: 0; }

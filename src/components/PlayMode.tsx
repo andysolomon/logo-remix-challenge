@@ -1,11 +1,17 @@
 import { useCallback, useEffect, useRef, useState, type FormEvent, type KeyboardEvent } from 'react'
 import { findTeam, fullName, roundHints, roundTarget, speak, speakScore, stopSpeak, isCorrectGuess, insertHighScore, qualifiesForHighScore, INITIALS_LENGTH, INITIALS_ALPHABET, type GameMode, type GuessTarget, type HighScore, type Round, type TimerSeconds } from '../lib/teams'
 import { Logo } from './Logo'
+import { GuessInput } from './GuessInput'
 
 type Phase = 'intro' | 'question' | 'reveal' | 'initials' | 'results'
 type Kind = 'correct' | 'wrong' | 'timeout'
 const REVEAL_MS = 1700
 const TICK_MS = 100
+/** Mouse/trackpad devices get the caret handed to them; touch devices don't. */
+const prefersAutoFocus = () =>
+  typeof window === 'undefined' || typeof window.matchMedia !== 'function'
+    ? true
+    : window.matchMedia('(hover: hover) and (pointer: fine)').matches
 
 interface Props {
   deck: Round[]
@@ -117,9 +123,11 @@ export function PlayMode({ deck, timer, gameMode, guessTarget, voice, highScores
   const finishRef = useRef(finish)
   finishRef.current = finish
 
-  // Auto-focus the guess input each round (type mode only).
+  // Auto-focus the guess input each round (type mode, pointer devices only): on a
+  // phone that would throw the on-screen keyboard over the logo before it's seen,
+  // so touch players tap the field when they're ready to answer.
   useEffect(() => {
-    if (phase === 'question' && gameMode === 'type') inputRef.current?.focus()
+    if (phase === 'question' && gameMode === 'type' && prefersAutoFocus()) inputRef.current?.focus()
     if (phase === 'initials') initialsRef.current?.focus()
   }, [phase, rIdx, gameMode])
 
@@ -306,20 +314,15 @@ export function PlayMode({ deck, timer, gameMode, guessTarget, voice, highScores
               <form className="guess-form both" onSubmit={submit}>
                 <label className={`guess-field${logoChecked == null ? '' : logoChecked ? ' ok' : ' no'}`}>
                   <span className="guess-field-lb">LOGO</span>
-                  <input
+                  <GuessInput
                     ref={inputRef}
-                    className="guess-input"
                     value={guess}
-                    onChange={(e) => setGuess(e.target.value)}
+                    onChange={setGuess}
                     onKeyDown={checkLogo}
                     readOnly={logoChecked != null}
                     placeholder="Team behind the logo…"
-                    autoComplete="off"
-                    autoCorrect="off"
-                    autoCapitalize="off"
-                    spellCheck={false}
                     enterKeyHint="next"
-                    aria-label="Team behind the logo"
+                    ariaLabel="Team behind the logo"
                   />
                   <span className="guess-field-mark" aria-live="polite">
                     {logoChecked == null ? '' : logoChecked ? '✓' : '✕'}
@@ -327,18 +330,13 @@ export function PlayMode({ deck, timer, gameMode, guessTarget, voice, highScores
                 </label>
                 <label className="guess-field">
                   <span className="guess-field-lb">COLORS</span>
-                  <input
+                  <GuessInput
                     ref={input2Ref}
-                    className="guess-input"
                     value={guess2}
-                    onChange={(e) => setGuess2(e.target.value)}
+                    onChange={setGuess2}
                     placeholder="Team whose colors these are…"
-                    autoComplete="off"
-                    autoCorrect="off"
-                    autoCapitalize="off"
-                    spellCheck={false}
                     enterKeyHint="go"
-                    aria-label="Team whose colors the logo wears"
+                    ariaLabel="Team whose colors the logo wears"
                   />
                   <span className="guess-field-mark" aria-hidden="true" />
                 </label>
@@ -348,18 +346,13 @@ export function PlayMode({ deck, timer, gameMode, guessTarget, voice, highScores
               </form>
             ) : (
               <form className="guess-form" onSubmit={submit}>
-                <input
+                <GuessInput
                   ref={inputRef}
-                  className="guess-input"
                   value={guess}
-                  onChange={(e) => setGuess(e.target.value)}
+                  onChange={setGuess}
                   placeholder="Type the team…"
-                  autoComplete="off"
-                  autoCorrect="off"
-                  autoCapitalize="off"
-                  spellCheck={false}
                   enterKeyHint="go"
-                  aria-label="Your guess"
+                  ariaLabel="Your guess"
                 />
                 <button type="submit" className="btn-submit" disabled={questionLocked}>
                   SUBMIT

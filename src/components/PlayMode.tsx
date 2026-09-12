@@ -1,11 +1,14 @@
-import { useCallback, useEffect, useRef, useState, type FormEvent, type KeyboardEvent } from 'react'
+import { useCallback, useEffect, useRef, useState, type CSSProperties, type FormEvent, type KeyboardEvent } from 'react'
 import { findTeam, fullName, roundHints, roundTarget, speak, speakScore, stopSpeak, isCorrectGuess, insertHighScore, qualifiesForHighScore, INITIALS_LENGTH, INITIALS_ALPHABET, type GameMode, type GuessTarget, type HighScore, type Round, type TimerSeconds } from '../lib/teams'
 import { Logo } from './Logo'
 import { GuessInput } from './GuessInput'
+import { useKeyboardInset } from '../lib/useKeyboardInset'
 
 type Phase = 'intro' | 'question' | 'reveal' | 'initials' | 'results'
 type Kind = 'correct' | 'wrong' | 'timeout'
 const REVEAL_MS = 1700
+/** Below this visible height the round drops to its compact layout. */
+const COMPACT_MAX_HEIGHT = 620
 const TICK_MS = 100
 /** Mouse/trackpad devices get the caret handed to them; touch devices don't. */
 const prefersAutoFocus = () =>
@@ -25,6 +28,7 @@ interface Props {
 }
 
 export function PlayMode({ deck, timer, gameMode, guessTarget, voice, highScores, onHighScores, onQuit }: Props) {
+  const keyboard = useKeyboardInset()
   const [phase, setPhase] = useState<Phase>('intro')
   const [rIdx, setRIdx] = useState(0)
   const [score, setScore] = useState(0)
@@ -252,8 +256,17 @@ export function PlayMode({ deck, timer, gameMode, guessTarget, voice, highScores
       : ''
   const liveStatus = phase === 'question' && ot ? `Round ${rIdx + 1} of ${deck.length}. Score ${score}. ${promptStatus}` : revealStatus
 
+  // With the keyboard up the page is taller than what's visible, so the logo
+  // scrolls out of sight. Resize to the visible strip and compact the round —
+  // also on any short window, since a keyboard that resizes the layout viewport
+  // (Android) leaves nothing for the inset to measure.
+  const tight = phase === 'question' && (keyboard.open || keyboard.height < COMPACT_MAX_HEIGHT)
+
   return (
-    <div className="play">
+    <div
+      className={`play${tight ? ' tight' : ''}`}
+      style={tight ? ({ '--vv-h': `${keyboard.height}px`, '--vv-top': `${keyboard.top}px` } as CSSProperties) : undefined}
+    >
       <div className="sr-only" role="status" aria-live="polite" aria-atomic="true">
         {liveStatus}
       </div>

@@ -73,4 +73,34 @@ describe('gameplay polish scaffolding', () => {
     expect(play).toContain("window.matchMedia('(hover: hover) and (pointer: fine)')")
     expect(play).toContain("gameMode === 'type' && prefersAutoFocus()")
   })
+
+  test('rounds resize to the visual viewport so the keyboard cannot bury the logo', () => {
+    const hook = read('src/lib/useKeyboardInset.ts')
+    expect(hook).toContain('window.visualViewport')
+    expect(hook).toContain("vv?.addEventListener('resize', sync)")
+    expect(hook).toContain("vv?.addEventListener('scroll', sync)")
+    expect(hook).toContain('window.innerHeight - height - top')
+
+    const play = read('src/components/PlayMode.tsx')
+    expect(play).toContain('useKeyboardInset')
+    expect(play).toContain('keyboard.open || keyboard.height < COMPACT_MAX_HEIGHT')
+    expect(play).toContain("'--vv-h'")
+    expect(play).toContain("'--vv-top'")
+    expect(play).toContain("`play${tight ? ' tight' : ''}`")
+  })
+
+  test('compact rounds shrink the logo and lay suggestions out as one strip', () => {
+    const css = read('src/styles.css')
+    expect(css).toContain('.play.tight { flex: none; height: var(--vv-h);')
+    expect(css).toContain('.play.tight .q-logo')
+    expect(css).toContain('.play.tight .guess-suggest {')
+    expect(css).toContain('.play.tight:has(.guess-suggest) .guess-form { margin-top:')
+    // The full-size logo has to give way when the hero is squeezed.
+    expect(css).toContain('max-height: 100%')
+    // Both-mode suggestions anchor above the pair, never over the other answer.
+    expect(css).toContain('.guess-form.both .guess-ac { position: static; }')
+
+    const html = read('index.html')
+    expect(html).toContain('interactive-widget=resizes-content')
+  })
 })

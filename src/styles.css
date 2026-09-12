@@ -334,14 +334,17 @@ input::placeholder { color: var(--faint); }
 .timer.urgent .timer-num { color: var(--danger-dark); }
 .timer.urgent .timer-fill { background: var(--danger-dark); }
 .q-hero { flex: 1; min-height: 0; display: flex; align-items: center; justify-content: center; }
-.q-logo { width: min(40vh, 430px); height: min(40vh, 430px); }
+/* max-height keeps the logo inside the hero when a keyboard or a short window squeezes it. */
+.q-logo { width: min(40vh, 430px); height: auto; aspect-ratio: 1; max-width: 86vw; max-height: 100%; }
 .prompt { text-align: center; font-family: var(--display); font-weight: 700; font-size: 26px; letter-spacing: 4px; }
 .hints { display: flex; justify-content: center; gap: 8px; flex-wrap: wrap; margin-top: 8px; }
 .hint-chip { padding: 5px 12px; border-radius: 14px; background: rgba(255, 255, 255, 0.1); color: var(--dark-muted); font: 600 13px var(--ui); letter-spacing: 1px; }
 .guess-form { display: flex; gap: 12px; width: min(640px, 86%); margin: 16px auto 24px; }
 .guess-input { flex: 1; height: 60px; background: var(--dark-input); border: 2px solid var(--dark-input-line); border-radius: 14px; color: var(--dark-ink); font: 500 20px var(--ui); padding: 0 18px; outline-color: var(--accent); min-width: 0; }
 .guess-input::placeholder { color: var(--dark-faint); }
-.guess-form.both { flex-direction: column; gap: 10px; }
+.guess-form.both { position: relative; flex-direction: column; gap: 10px; }
+/* Anchor both fields' suggestions above the pair, never over the other answer. */
+.guess-form.both .guess-ac { position: static; }
 .guess-field { display: flex; align-items: center; gap: 12px; }
 .guess-field-lb { flex: none; width: 74px; text-align: right; font: 600 12px var(--ui); letter-spacing: 1.5px; color: var(--dark-faint); }
 .guess-field-mark { flex: none; width: 28px; text-align: center; font: 700 22px var(--ui); }
@@ -360,6 +363,34 @@ input::placeholder { color: var(--faint); }
 .guess-suggest-item.active, .guess-suggest-item:hover { background: rgba(255, 255, 255, 0.1); }
 .guess-suggest-name { min-width: 0; }
 .guess-suggest-tag { flex: none; white-space: nowrap; font: 600 12px var(--ui); letter-spacing: 1px; color: var(--dark-faint); }
+
+/* ---------- Compact round ----------
+   iOS keeps the layout viewport full height behind the keyboard, so the round
+   would scroll its logo off screen. `.tight` pins the round to the strip the
+   browser is actually showing and shrinks every part to fit inside it; it also
+   covers short windows, where a keyboard resizes the layout viewport instead. */
+.play.tight { flex: none; height: var(--vv-h); transform: translateY(var(--vv-top, 0px)); }
+.play.tight .q-top { padding-top: 6px; font-size: 14px; }
+.play.tight .quit-btn { height: 36px; }
+.play.tight .timer { gap: 2px; }
+.play.tight .timer-num { font-size: 26px; }
+.play.tight .q-hero { padding: 6px 0; }
+.play.tight .q-logo { width: auto; height: 100%; max-width: 86vw; aspect-ratio: 1; }
+.play.tight .prompt { font-size: 15px; letter-spacing: 2px; }
+.play.tight .hints { margin-top: 4px; }
+.play.tight .hint-chip { padding: 3px 9px; font-size: 11px; }
+.play.tight .guess-form { margin: 8px auto 10px; gap: 10px; }
+.play.tight .guess-input, .play.tight .btn-submit { height: 48px; }
+.play.tight .btn-submit { width: 108px; font-size: 15px; }
+.play.tight .guess-form.both .guess-input { height: 44px; }
+/* Suggestions become a one-line strip so they cost the logo 50px, not 240px. */
+.play.tight .guess-suggest { bottom: calc(100% + 6px); display: flex; gap: 8px; padding: 0; max-height: none; overflow-x: auto; overflow-y: hidden; background: none; border: none; box-shadow: none; scrollbar-width: none; }
+.play.tight .guess-suggest::-webkit-scrollbar { display: none; }
+.play.tight .guess-suggest-item { flex: none; min-height: 0; padding: 9px 14px; background: var(--dark-input); border: 2px solid var(--dark-input-line); border-radius: 999px; font-size: 15px; white-space: nowrap; }
+.play.tight .guess-suggest-item.active { background: var(--accent); border-color: var(--accent); color: #FFFFFF; }
+.play.tight .guess-suggest-tag { display: none; }
+/* Open a gap for the strip so it lands between prompt and field, over neither. */
+.play.tight:has(.guess-suggest) .guess-form { margin-top: 54px; }
 .reveal-pair { display: flex; gap: 32px; justify-content: center; align-items: flex-start; flex-wrap: wrap; margin: 4px 0; }
 .reveal-part { display: flex; flex-direction: column; align-items: center; gap: 8px; width: 200px; }
 .reveal-part .reveal-logo { width: 120px; height: 120px; margin: 0; }

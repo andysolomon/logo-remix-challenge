@@ -62,6 +62,24 @@ export function isCorrectGuess(guess: string, team: Team): boolean {
   return [fullName(team), team.region, team.name, team.abbr].map(norm).includes(g)
 }
 
+/**
+ * Autocomplete candidates for a typed guess: name-start matches first, then
+ * anywhere-matches, so "mia" offers Miami before Miami-adjacent spellings.
+ * Needs two characters so the list doesn't fire on the first keystroke.
+ */
+export function suggestTeams(query: string, limit = 6): Team[] {
+  const q = norm(query)
+  if (q.length < 2) return []
+  const starts: Team[] = []
+  const inside: Team[] = []
+  for (const t of TEAMS) {
+    const keys = [fullName(t), t.region, t.name, t.abbr].map(norm)
+    if (keys.some((k) => k.startsWith(q))) starts.push(t)
+    else if (keys.some((k) => k.includes(q))) inside.push(t)
+  }
+  return [...starts, ...inside].slice(0, limit)
+}
+
 export function filterTeams(league: League, conference: string, query: string): Team[] {
   const q = query.trim().toLowerCase()
   return TEAMS.filter(

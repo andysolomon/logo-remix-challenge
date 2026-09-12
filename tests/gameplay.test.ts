@@ -51,4 +51,26 @@ describe('gameplay polish scaffolding', () => {
     expect(logo).toContain('}, [key, team.logo])')
     expect(logo).not.toContain('[key, target, team.logo, source]')
   })
+
+  test('guess fields autocomplete team names and leave native keyboard suggestions on', () => {
+    const gi = read('src/components/GuessInput.tsx')
+    expect(gi).toContain('suggestTeams')
+    expect(gi).toContain('role="combobox"')
+    expect(gi).toContain('role="listbox"')
+    expect(gi).toContain('role="option"')
+    expect(gi).toContain('aria-activedescendant')
+    expect(gi).toContain('autoCorrect="on"')
+    expect(gi).toContain('autoCapitalize="words"')
+    expect(gi).not.toContain('spellCheck={false}')
+
+    const play = read('src/components/PlayMode.tsx')
+    expect(play).toContain('<GuessInput')
+    expect(play).not.toContain('className="guess-input"')
+  })
+
+  test('type mode only steals focus on pointer devices, so touch keyboards stay down', () => {
+    const play = read('src/components/PlayMode.tsx')
+    expect(play).toContain("window.matchMedia('(hover: hover) and (pointer: fine)')")
+    expect(play).toContain("gameMode === 'type' && prefersAutoFocus()")
+  })
 })

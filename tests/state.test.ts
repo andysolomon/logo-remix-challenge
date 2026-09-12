@@ -12,15 +12,18 @@ import {
   deckUndoReducer,
   findTeam,
   insertHighScore,
+  isCorrectGuess,
   loadDeck,
   loadHighScores,
   loadTimer,
+  norm,
   normalizeDeck,
   normalizeRound,
   randomDeck,
   resolveRemixTargetColors,
   saveDeck,
   saveHighScores,
+  suggestTeams,
   type DeckUndoSnapshot,
   type HighScore,
   type RandomDeckOptions,
@@ -309,5 +312,31 @@ describe('high score persistence and validation', () => {
     expect(bumped).toHaveLength(HIGH_SCORE_LIMIT)
     expect(bumped.some((entry) => entry.initials === 'NEW')).toBe(true)
     expect(bumped.at(-1)?.score).toBe(2)
+  })
+})
+
+describe('guess autocomplete suggestions', () => {
+  test('needs two characters before offering anything', () => {
+    expect(suggestTeams('')).toEqual([])
+    expect(suggestTeams('m')).toEqual([])
+    expect(suggestTeams('ch').length).toBeGreaterThan(0)
+  })
+
+  test('ranks name-start matches ahead of anywhere-matches and caps the list', () => {
+    const picks = suggestTeams('chi', 6)
+    expect(picks.length).toBeLessThanOrEqual(6)
+    expect(picks.some((t) => `${t.region} ${t.name}`.toLowerCase().includes('chi'))).toBe(true)
+    const firstStarts = norm(`${picks[0].region} ${picks[0].name}`).startsWith('chi') || norm(picks[0].name).startsWith('chi') || norm(picks[0].abbr).startsWith('chi')
+    expect(firstStarts).toBe(true)
+  })
+
+  test('ignores punctuation and case the way grading does', () => {
+    const picks = suggestTeams('49ers')
+    expect(picks.length).toBeGreaterThan(0)
+    expect(picks.some((t) => isCorrectGuess(`${t.region} ${t.name}`, t))).toBe(true)
+  })
+
+  test('every suggestion grades as correct for its own team', () => {
+    for (const t of suggestTeams('state', 6)) expect(isCorrectGuess(`${t.region} ${t.name}`.trim(), t)).toBe(true)
   })
 })

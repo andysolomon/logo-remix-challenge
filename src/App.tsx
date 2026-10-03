@@ -84,10 +84,10 @@ export default function App() {
 
   const addRound = (round: Round, editIdx: number | null) => {
     const d = [...deck]
-    if (editIdx != null && d[editIdx]) d[editIdx] = normalizeRound(round)
+    if (editIdx != null && d[editIdx]) d[editIdx] = normalizeRound({ ...d[editIdx], ...round })
     else {
       if (d.length >= MAX_DECK_ROUNDS) return false
-      d.push(normalizeRound(round))
+      d.push(normalizeRound({ ...round, h: round.h ?? true }))
     }
     setDeck(d)
     return true

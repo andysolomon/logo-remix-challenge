@@ -44,7 +44,7 @@ export const clampTimer = (n: number) => Math.min(TIMER_MAX, Math.max(TIMER_MIN,
 export const TEAMS = data.teams as Team[]
 export const LEAGUES = data.leagues as Record<League, { label: string; conferences: string[] }>
 export const PERMS = data.permutations as number[][]
-export const SEED_DECK = data.seed_deck as Round[]
+export const SEED_DECK: Round[] = data.seed_deck.map((r) => ({ ...r, h: true }))
 export const LS = data.localStorage_keys
 /** Matches the baked score vocabulary (`you-scored-0..20` / `out-of-1..20`). */
 export const MAX_DECK_ROUNDS = 20
@@ -199,7 +199,7 @@ export function loadGameMode(): GameMode {
 export const saveGameMode = (m: GameMode) => safeSet(LS.gameMode, m)
 export function loadGuessTarget(): GuessTarget {
   const t = safeGet(LS.guessTarget)
-  return isGuessTarget(t) ? t : 'team'
+  return isGuessTarget(t) ? t : 'both'
 }
 export const saveGuessTarget = (t: GuessTarget) => safeSet(LS.guessTarget, t)
 export const loadVoice = (): boolean => safeGet(LS.voice) === '1'

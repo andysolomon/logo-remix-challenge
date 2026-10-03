@@ -14,7 +14,7 @@ let lastOptions: RandomDeckOptions | null = null
 
 export function RandomDeckModal({ deck, guessTarget, onRoll, onClose }: Props) {
   const [opts, setOpts] = useState<RandomDeckOptions>(
-    () => lastOptions ?? { rounds: 10, logoPools: ['SEC'], colorPools: ['NFL'], guess: guessTarget, hints: false },
+    () => lastOptions ?? { rounds: 10, logoPools: ['SEC'], colorPools: ['NFL'], guess: guessTarget, hints: true },
   )
   const [replace, setReplace] = useState(true)
   const dialogRef = useRef<HTMLDivElement>(null)

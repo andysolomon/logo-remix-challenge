@@ -2,7 +2,9 @@
 
 iPad-first sports-logo guessing game. A creator picks the **logo of one team** and the **colors of another**; players must name the original team while the colors misdirect them.
 
-Real logos for all 32 NFL teams, 120 college teams, 6 college conference marks, and the 17 Cobb County high schools (the HIGH SCHOOL league) live as local SVG or PNG assets under `public/logos/svg/`. SVG fills are rewritten in-browser; PNGs from Wikipedia, official athletics sites, and Cobb County School District sources use a canvas-based pixel recolor.
+Real logos for all 32 NFL teams, all 30 NBA teams, 120 college teams, 6 college conference marks, and the 17 Cobb County high schools (the HIGH SCHOOL league) live as local SVG or PNG assets under `public/logos/svg/`. SVG fills are rewritten in-browser; PNGs from Wikipedia, official athletics sites, and Cobb County School District sources use a canvas-based pixel recolor.
+
+NBA teams are available as both logo and color donors. Filter them by Eastern or Western conference, or select NBA in Random Deck to create NBA-only or mixed-league rounds. Common answers such as Sixers, Cavs, GSW, NYK and SAS work in search, autocomplete and grading.
 
 Each round asks for either the **logo's team** or the **team whose colors it wears** — set per round on its deck card, with a deck-wide default for rounds left alone. An optional voice announcer plays Chatterbox clips (`public/voice/`) for the round prompt, the verdict, and the final score.
 
@@ -35,7 +37,9 @@ Agent Skill for this app (Voice Announcer, clip map, regen): `.agents/skills/arc
 
 ## Logos
 
-Logo assets are acquired from ESPN-linked Wikipedia files, direct Wikipedia files, official athletics sites, and Cobb County School District pages, then checked into `public/logos/svg/` with manifests describing their sources and artwork colors. Three download scripts cover the separate rosters:
+Logo assets are acquired from the official NBA CDN, ESPN-linked Wikipedia files, direct Wikipedia files, official athletics sites, and Cobb County School District pages, then checked into `public/logos/svg/` with manifests describing their sources and artwork colors. Four download scripts cover the separate rosters:
+
+`download_nba_svgs.py` downloads the 30 primary SVG marks from the official NBA CDN, snapshots names and brand colors from ESPN, and records actual artwork colors in `nba-manifest.json`. `nba_roster.py` pins NBA IDs and conference alignment from NBA.com. `build_nba_teams.py` validates the complete roster and replaces only NBA entries; the college and high-school builders preserve NBA entries. All logos stay local at runtime.
 
 `download_svgs.py` takes its rosters and brand colors from ESPN — 32 NFL teams, 6 conference logos (ACC, Big 12, Big Ten, Pac-12, SEC, Ivy), and every football member of those conferences for the configured season, plus the 21 Division I football HBCUs (SWAC, the MEAC schools that field football, and Hampton, North Carolina A&T and Tennessee State). It writes `manifest.json`.
 
@@ -51,8 +55,10 @@ python3 scripts/download_svgs.py --force       # re-download everything
 python3 scripts/download_svgs.py --only nfl    # subset: nfl, conferences, ncaa
 bun run logos:hbcu                             # or: python3 scripts/download_hbcu_svgs.py
 bun run logos:hs                               # or: python3 scripts/download_cobb_svgs.py
+bun run logos:nba                              # fetch official NBA SVGs and refresh the manifest
 bun run teams                                  # regenerate college entries in src/lib/teams.json from both manifests
 bun run teams:hs                               # regenerate high-school entries from hs-manifest.json
+bun run teams:nba                              # regenerate NBA entries from nba-manifest.json
 ```
 
 The legacy ESPN PNGs (32 NFL teams + 5 conferences) can still be fetched into `public/logos/`:
@@ -62,7 +68,7 @@ bun run logos                                  # or: python3 scripts/download_lo
 python3 scripts/download_logos.py --force      # re-download everything
 ```
 
-Trademarks belong to the NFL, the conferences and the schools; assets are used here for a private party game.
+Trademarks belong to the NFL, NBA, their teams, the conferences and the schools; assets are used here for a private party game.
 
 ## Deploy
 
@@ -79,7 +85,7 @@ src/
   App.tsx                  mode router (create / deck / play) + persisted state
   styles.css               tokens, keyframes, all component styles
   lib/teams.ts             dataset, answer matching, filtering, localStorage
-  lib/teams.json           32 NFL + 126 college + 17 high-school entries, permutations, seed deck
+  lib/teams.json           32 NFL + 30 NBA + 126 college + 17 high-school entries, permutations, seed deck
   lib/useOrientation.ts    portrait = innerHeight > innerWidth
   components/
     Logo.tsx               local PNG rendering + canvas palette-swap recoloring
@@ -98,6 +104,9 @@ scripts/
   download_hbcu_svgs.py    fetch the SIAC + non-football MEAC logos from Wikipedia
   hbcu_roster.py           HBCU roster, official colors, and logo-file overrides
   download_cobb_svgs.py    fetch the 17 Cobb County high-school logos
+  download_nba_svgs.py     fetch the 30 official NBA SVGs and snapshot ESPN metadata
+  nba_roster.py            pinned NBA IDs, conferences and answer aliases
+  build_nba_teams.py       validate and rebuild only NBA entries
   cobb_roster.py           Cobb roster, official colors, and per-school source URLs
   build_teams.py           merge the NFL/college manifests into src/lib/teams.json
   build_hs_teams.py        merge hs-manifest.json into src/lib/teams.json
@@ -106,6 +115,7 @@ public/logos/
   nfl/                     32 team PNGs (ESPN CDN naming, e.g. wsh.png)
   conferences/             acc, big-12, big-ten, pac-12, sec PNGs
   svg/high-school/         17 checked-in Cobb high-school SVG/PNG marks
+  svg/nba/                 30 checked-in official NBA SVG marks
 ```
 
 The design prototype and spec live in `design_handoff_logo_remix/` (reference only).

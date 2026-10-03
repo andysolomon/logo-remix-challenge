@@ -117,7 +117,7 @@ input::placeholder { color: var(--faint); }
 /* ---------- Create (landscape) ---------- */
 .create-land { flex: 1; min-height: 0; display: grid; grid-template-columns: 28fr 44fr 28fr; gap: 14px; padding: 14px 16px 16px; }
 .panel { min-height: 0; display: flex; flex-direction: column; background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 12px; gap: 10px; }
-.panel-head { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+.panel-head { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px; }
 .panel-head.wrap { flex-wrap: wrap; }
 .panel-title { font-family: var(--display); font-weight: 700; font-size: 13px; letter-spacing: 2px; color: var(--muted); }
 .seg { display: flex; background: var(--chip-bg); border-radius: 10px; padding: 3px; gap: 2px; }

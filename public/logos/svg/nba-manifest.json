@@ -1,0 +1,667 @@
+{
+  "assets": [
+    {
+      "id": "NBA-ATL",
+      "league": "NBA",
+      "conference": "Eastern",
+      "region": "Atlanta",
+      "name": "Hawks",
+      "abbr": "ATL",
+      "aliases": [],
+      "nbaId": 1610612737,
+      "color": "c8102e",
+      "alternateColor": "fdb927",
+      "sourceUrl": "https://cdn.nba.com/logos/nba/1610612737/primary/L/logo.svg",
+      "rosterSource": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/teams?limit=50",
+      "path": "/logos/svg/nba/atl.svg",
+      "format": "svg",
+      "fills": [
+        "#FFFFFF",
+        "#E03A3E"
+      ]
+    },
+    {
+      "id": "NBA-BKN",
+      "league": "NBA",
+      "conference": "Eastern",
+      "region": "Brooklyn",
+      "name": "Nets",
+      "abbr": "BKN",
+      "aliases": [],
+      "nbaId": 1610612751,
+      "color": "000000",
+      "alternateColor": "ffffff",
+      "sourceUrl": "https://cdn.nba.com/logos/nba/1610612751/primary/L/logo.svg",
+      "rosterSource": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/teams?limit=50",
+      "path": "/logos/svg/nba/bkn.svg",
+      "format": "svg",
+      "fills": [
+        "#000000",
+        "#FFFFFF"
+      ]
+    },
+    {
+      "id": "NBA-BOS",
+      "league": "NBA",
+      "conference": "Eastern",
+      "region": "Boston",
+      "name": "Celtics",
+      "abbr": "BOS",
+      "aliases": [],
+      "nbaId": 1610612738,
+      "color": "008348",
+      "alternateColor": "ffffff",
+      "sourceUrl": "https://cdn.nba.com/logos/nba/1610612738/primary/L/logo.svg",
+      "rosterSource": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/teams?limit=50",
+      "path": "/logos/svg/nba/bos.svg",
+      "format": "svg",
+      "fills": [
+        "#000000",
+        "#BB9753",
+        "#008348",
+        "#F9A980",
+        "#A73832",
+        "#FFFFFF"
+      ]
+    },
+    {
+      "id": "NBA-CHA",
+      "league": "NBA",
+      "conference": "Eastern",
+      "region": "Charlotte",
+      "name": "Hornets",
+      "abbr": "CHA",
+      "aliases": [],
+      "nbaId": 1610612766,
+      "color": "008ca8",
+      "alternateColor": "1d1060",
+      "sourceUrl": "https://cdn.nba.com/logos/nba/1610612766/primary/L/logo.svg",
+      "rosterSource": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/teams?limit=50",
+      "path": "/logos/svg/nba/cha.svg",
+      "format": "svg",
+      "fills": [
+        "#1D1160",
+        "#00788C",
+        "#FFFFFF",
+        "#A1A1A4"
+      ]
+    },
+    {
+      "id": "NBA-CHI",
+      "league": "NBA",
+      "conference": "Eastern",
+      "region": "Chicago",
+      "name": "Bulls",
+      "abbr": "CHI",
+      "aliases": [],
+      "nbaId": 1610612741,
+      "color": "ce1141",
+      "alternateColor": "000000",
+      "sourceUrl": "https://cdn.nba.com/logos/nba/1610612741/primary/L/logo.svg",
+      "rosterSource": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/teams?limit=50",
+      "path": "/logos/svg/nba/chi.svg",
+      "format": "svg",
+      "fills": [
+        "#000000",
+        "#CD1F43",
+        "#FFFFFF"
+      ]
+    },
+    {
+      "id": "NBA-CLE",
+      "league": "NBA",
+      "conference": "Eastern",
+      "region": "Cleveland",
+      "name": "Cavaliers",
+      "abbr": "CLE",
+      "aliases": [
+        "Cavs"
+      ],
+      "nbaId": 1610612739,
+      "color": "860038",
+      "alternateColor": "bc945c",
+      "sourceUrl": "https://cdn.nba.com/logos/nba/1610612739/primary/L/logo.svg",
+      "rosterSource": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/teams?limit=50",
+      "path": "/logos/svg/nba/cle.svg",
+      "format": "svg",
+      "fills": [
+        "#BC945C",
+        "#860038"
+      ]
+    },
+    {
+      "id": "NBA-DAL",
+      "league": "NBA",
+      "conference": "Western",
+      "region": "Dallas",
+      "name": "Mavericks",
+      "abbr": "DAL",
+      "aliases": [
+        "Mavs"
+      ],
+      "nbaId": 1610612742,
+      "color": "0064b1",
+      "alternateColor": "bbc4ca",
+      "sourceUrl": "https://cdn.nba.com/logos/nba/1610612742/primary/L/logo.svg",
+      "rosterSource": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/teams?limit=50",
+      "path": "/logos/svg/nba/dal.svg",
+      "format": "svg",
+      "fills": [
+        "#FFFFFF",
+        "#061922",
+        "#BBC4CA",
+        "#0064B1"
+      ]
+    },
+    {
+      "id": "NBA-DEN",
+      "league": "NBA",
+      "conference": "Western",
+      "region": "Denver",
+      "name": "Nuggets",
+      "abbr": "DEN",
+      "aliases": [],
+      "nbaId": 1610612743,
+      "color": "0e2240",
+      "alternateColor": "fec524",
+      "sourceUrl": "https://cdn.nba.com/logos/nba/1610612743/primary/L/logo.svg",
+      "rosterSource": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/teams?limit=50",
+      "path": "/logos/svg/nba/den.svg",
+      "format": "svg",
+      "fills": [
+        "#FFC627",
+        "#8B2332",
+        "#0D2240",
+        "#FFFFFF"
+      ]
+    },
+    {
+      "id": "NBA-DET",
+      "league": "NBA",
+      "conference": "Eastern",
+      "region": "Detroit",
+      "name": "Pistons",
+      "abbr": "DET",
+      "aliases": [],
+      "nbaId": 1610612765,
+      "color": "1d428a",
+      "alternateColor": "c8102e",
+      "sourceUrl": "https://cdn.nba.com/logos/nba/1610612765/primary/L/logo.svg",
+      "rosterSource": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/teams?limit=50",
+      "path": "/logos/svg/nba/det.svg",
+      "format": "svg",
+      "fills": [
+        "#B3B2B1",
+        "#1D428A",
+        "#C8102E",
+        "#FFFFFF"
+      ]
+    },
+    {
+      "id": "NBA-GS",
+      "league": "NBA",
+      "conference": "Western",
+      "region": "Golden State",
+      "name": "Warriors",
+      "abbr": "GS",
+      "aliases": [
+        "GSW"
+      ],
+      "nbaId": 1610612744,
+      "color": "fdb927",
+      "alternateColor": "1d428a",
+      "sourceUrl": "https://cdn.nba.com/logos/nba/1610612744/primary/L/logo.svg",
+      "rosterSource": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/teams?limit=50",
+      "path": "/logos/svg/nba/gs.svg",
+      "format": "svg",
+      "fills": [
+        "#1D428A",
+        "#FDB927"
+      ]
+    },
+    {
+      "id": "NBA-HOU",
+      "league": "NBA",
+      "conference": "Western",
+      "region": "Houston",
+      "name": "Rockets",
+      "abbr": "HOU",
+      "aliases": [],
+      "nbaId": 1610612745,
+      "color": "ce0e2d",
+      "alternateColor": "000000",
+      "sourceUrl": "https://cdn.nba.com/logos/nba/1610612745/primary/L/logo.svg",
+      "rosterSource": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/teams?limit=50",
+      "path": "/logos/svg/nba/hou.svg",
+      "format": "svg",
+      "fills": [
+        "#FFD520",
+        "#CE0E2D"
+      ]
+    },
+    {
+      "id": "NBA-IND",
+      "league": "NBA",
+      "conference": "Eastern",
+      "region": "Indiana",
+      "name": "Pacers",
+      "abbr": "IND",
+      "aliases": [],
+      "nbaId": 1610612754,
+      "color": "0c2340",
+      "alternateColor": "ffd520",
+      "sourceUrl": "https://cdn.nba.com/logos/nba/1610612754/primary/L/logo.svg",
+      "rosterSource": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/teams?limit=50",
+      "path": "/logos/svg/nba/ind.svg",
+      "format": "svg",
+      "fills": [
+        "#9EA2A2",
+        "#0C2340",
+        "#FFD520"
+      ]
+    },
+    {
+      "id": "NBA-LAC",
+      "league": "NBA",
+      "conference": "Western",
+      "region": "LA",
+      "name": "Clippers",
+      "abbr": "LAC",
+      "aliases": [
+        "Los Angeles Clippers"
+      ],
+      "nbaId": 1610612746,
+      "color": "12173f",
+      "alternateColor": "c8102e",
+      "sourceUrl": "https://cdn.nba.com/logos/nba/1610612746/primary/L/logo.svg",
+      "rosterSource": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/teams?limit=50",
+      "path": "/logos/svg/nba/lac.svg",
+      "format": "svg",
+      "fills": [
+        "#FFFFFF",
+        "#12173F"
+      ]
+    },
+    {
+      "id": "NBA-LAL",
+      "league": "NBA",
+      "conference": "Western",
+      "region": "Los Angeles",
+      "name": "Lakers",
+      "abbr": "LAL",
+      "aliases": [],
+      "nbaId": 1610612747,
+      "color": "552583",
+      "alternateColor": "fdb927",
+      "sourceUrl": "https://cdn.nba.com/logos/nba/1610612747/primary/L/logo.svg",
+      "rosterSource": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/teams?limit=50",
+      "path": "/logos/svg/nba/lal.svg",
+      "format": "svg",
+      "fills": [
+        "#FFFFFF",
+        "#FAB624",
+        "#0B1A23",
+        "#542C81"
+      ]
+    },
+    {
+      "id": "NBA-MEM",
+      "league": "NBA",
+      "conference": "Western",
+      "region": "Memphis",
+      "name": "Grizzlies",
+      "abbr": "MEM",
+      "aliases": [],
+      "nbaId": 1610612763,
+      "color": "5d76a9",
+      "alternateColor": "12173f",
+      "sourceUrl": "https://cdn.nba.com/logos/nba/1610612763/primary/L/logo.svg",
+      "rosterSource": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/teams?limit=50",
+      "path": "/logos/svg/nba/mem.svg",
+      "format": "svg",
+      "fills": [
+        "#707271",
+        "#12173F",
+        "#5D76A9",
+        "#FFBB22"
+      ]
+    },
+    {
+      "id": "NBA-MIA",
+      "league": "NBA",
+      "conference": "Eastern",
+      "region": "Miami",
+      "name": "Heat",
+      "abbr": "MIA",
+      "aliases": [],
+      "nbaId": 1610612748,
+      "color": "98002e",
+      "alternateColor": "000000",
+      "sourceUrl": "https://cdn.nba.com/logos/nba/1610612748/primary/L/logo.svg",
+      "rosterSource": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/teams?limit=50",
+      "path": "/logos/svg/nba/mia.svg",
+      "format": "svg",
+      "fills": [
+        "#000000",
+        "#961A31",
+        "#F9A11E",
+        "#FFFFFF"
+      ]
+    },
+    {
+      "id": "NBA-MIL",
+      "league": "NBA",
+      "conference": "Eastern",
+      "region": "Milwaukee",
+      "name": "Bucks",
+      "abbr": "MIL",
+      "aliases": [],
+      "nbaId": 1610612749,
+      "color": "00471b",
+      "alternateColor": "eee1c6",
+      "sourceUrl": "https://cdn.nba.com/logos/nba/1610612749/primary/L/logo.svg",
+      "rosterSource": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/teams?limit=50",
+      "path": "/logos/svg/nba/mil.svg",
+      "format": "svg",
+      "fills": [
+        "#EDE0C5",
+        "#00471A",
+        "#FFFFFF"
+      ]
+    },
+    {
+      "id": "NBA-MIN",
+      "league": "NBA",
+      "conference": "Western",
+      "region": "Minnesota",
+      "name": "Timberwolves",
+      "abbr": "MIN",
+      "aliases": [
+        "Wolves"
+      ],
+      "nbaId": 1610612750,
+      "color": "266092",
+      "alternateColor": "79bc43",
+      "sourceUrl": "https://cdn.nba.com/logos/nba/1610612750/primary/L/logo.svg",
+      "rosterSource": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/teams?limit=50",
+      "path": "/logos/svg/nba/min.svg",
+      "format": "svg",
+      "fills": [
+        "#009A44",
+        "#FFFFFF",
+        "#1D428A",
+        "#C1C6C8"
+      ]
+    },
+    {
+      "id": "NBA-NO",
+      "league": "NBA",
+      "conference": "Western",
+      "region": "New Orleans",
+      "name": "Pelicans",
+      "abbr": "NO",
+      "aliases": [
+        "NOP"
+      ],
+      "nbaId": 1610612740,
+      "color": "0a2240",
+      "alternateColor": "b4975a",
+      "sourceUrl": "https://cdn.nba.com/logos/nba/1610612740/primary/L/logo.svg",
+      "rosterSource": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/teams?limit=50",
+      "path": "/logos/svg/nba/no.svg",
+      "format": "svg",
+      "fills": [
+        "#B4975A",
+        "#0A2240",
+        "#FFFFFF",
+        "#CE0E2D"
+      ]
+    },
+    {
+      "id": "NBA-NY",
+      "league": "NBA",
+      "conference": "Eastern",
+      "region": "New York",
+      "name": "Knicks",
+      "abbr": "NY",
+      "aliases": [
+        "NYK"
+      ],
+      "nbaId": 1610612752,
+      "color": "1d428a",
+      "alternateColor": "f58426",
+      "sourceUrl": "https://cdn.nba.com/logos/nba/1610612752/primary/L/logo.svg",
+      "rosterSource": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/teams?limit=50",
+      "path": "/logos/svg/nba/ny.svg",
+      "format": "svg",
+      "fills": [
+        "#FFFFFF",
+        "#9EA2A2",
+        "#1D428A",
+        "#F58426"
+      ]
+    },
+    {
+      "id": "NBA-OKC",
+      "league": "NBA",
+      "conference": "Western",
+      "region": "Oklahoma City",
+      "name": "Thunder",
+      "abbr": "OKC",
+      "aliases": [],
+      "nbaId": 1610612760,
+      "color": "007ac1",
+      "alternateColor": "ef3b24",
+      "sourceUrl": "https://cdn.nba.com/logos/nba/1610612760/primary/L/logo.svg",
+      "rosterSource": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/teams?limit=50",
+      "path": "/logos/svg/nba/okc.svg",
+      "format": "svg",
+      "fills": [
+        "#057DC1",
+        "#EE3C33",
+        "#FFFFFF",
+        "#F9B82F",
+        "#1E3160"
+      ]
+    },
+    {
+      "id": "NBA-ORL",
+      "league": "NBA",
+      "conference": "Eastern",
+      "region": "Orlando",
+      "name": "Magic",
+      "abbr": "ORL",
+      "aliases": [],
+      "nbaId": 1610612753,
+      "color": "0150b5",
+      "alternateColor": "9ca0a3",
+      "sourceUrl": "https://cdn.nba.com/logos/nba/1610612753/primary/L/logo.svg",
+      "rosterSource": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/teams?limit=50",
+      "path": "/logos/svg/nba/orl.svg",
+      "format": "svg",
+      "fills": [
+        "#061922",
+        "#0050B5",
+        "#FFFFFF",
+        "#2155A5"
+      ]
+    },
+    {
+      "id": "NBA-PHI",
+      "league": "NBA",
+      "conference": "Eastern",
+      "region": "Philadelphia",
+      "name": "76ers",
+      "abbr": "PHI",
+      "aliases": [
+        "Sixers",
+        "Philadelphia Sixers"
+      ],
+      "nbaId": 1610612755,
+      "color": "1d428a",
+      "alternateColor": "e01234",
+      "sourceUrl": "https://cdn.nba.com/logos/nba/1610612755/primary/L/logo.svg",
+      "rosterSource": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/teams?limit=50",
+      "path": "/logos/svg/nba/phi.svg",
+      "format": "svg",
+      "fills": [
+        "#1D428A",
+        "#C8102E"
+      ]
+    },
+    {
+      "id": "NBA-PHX",
+      "league": "NBA",
+      "conference": "Western",
+      "region": "Phoenix",
+      "name": "Suns",
+      "abbr": "PHX",
+      "aliases": [],
+      "nbaId": 1610612756,
+      "color": "29127a",
+      "alternateColor": "e56020",
+      "sourceUrl": "https://cdn.nba.com/logos/nba/1610612756/primary/L/logo.svg",
+      "rosterSource": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/teams?limit=50",
+      "path": "/logos/svg/nba/phx.svg",
+      "format": "svg",
+      "fills": [
+        "#F79E1E",
+        "#E46025",
+        "#B65B27",
+        "#000000"
+      ]
+    },
+    {
+      "id": "NBA-POR",
+      "league": "NBA",
+      "conference": "Western",
+      "region": "Portland",
+      "name": "Trail Blazers",
+      "abbr": "POR",
+      "aliases": [
+        "Blazers"
+      ],
+      "nbaId": 1610612757,
+      "color": "e03a3e",
+      "alternateColor": "000000",
+      "sourceUrl": "https://cdn.nba.com/logos/nba/1610612757/primary/L/logo.svg",
+      "rosterSource": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/teams?limit=50",
+      "path": "/logos/svg/nba/por.svg",
+      "format": "svg",
+      "fills": [
+        "#000000",
+        "#FFFFFF",
+        "#CF0A2C"
+      ]
+    },
+    {
+      "id": "NBA-SA",
+      "league": "NBA",
+      "conference": "Western",
+      "region": "San Antonio",
+      "name": "Spurs",
+      "abbr": "SA",
+      "aliases": [
+        "SAS"
+      ],
+      "nbaId": 1610612759,
+      "color": "000000",
+      "alternateColor": "c4ced4",
+      "sourceUrl": "https://cdn.nba.com/logos/nba/1610612759/primary/L/logo.svg",
+      "rosterSource": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/teams?limit=50",
+      "path": "/logos/svg/nba/sa.svg",
+      "format": "svg",
+      "fills": [
+        "#FFFFFF",
+        "#000000",
+        "#C2CCD2"
+      ]
+    },
+    {
+      "id": "NBA-SAC",
+      "league": "NBA",
+      "conference": "Western",
+      "region": "Sacramento",
+      "name": "Kings",
+      "abbr": "SAC",
+      "aliases": [],
+      "nbaId": 1610612758,
+      "color": "5a2d81",
+      "alternateColor": "6a7a82",
+      "sourceUrl": "https://cdn.nba.com/logos/nba/1610612758/primary/L/logo.svg",
+      "rosterSource": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/teams?limit=50",
+      "path": "/logos/svg/nba/sac.svg",
+      "format": "svg",
+      "fills": [
+        "#FFFFFF",
+        "#63717A",
+        "#592D81"
+      ]
+    },
+    {
+      "id": "NBA-TOR",
+      "league": "NBA",
+      "conference": "Eastern",
+      "region": "Toronto",
+      "name": "Raptors",
+      "abbr": "TOR",
+      "aliases": [],
+      "nbaId": 1610612761,
+      "color": "d91244",
+      "alternateColor": "000000",
+      "sourceUrl": "https://cdn.nba.com/logos/nba/1610612761/primary/L/logo.svg",
+      "rosterSource": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/teams?limit=50",
+      "path": "/logos/svg/nba/tor.svg",
+      "format": "svg",
+      "fills": [
+        "#000000",
+        "#BC2126"
+      ]
+    },
+    {
+      "id": "NBA-UTAH",
+      "league": "NBA",
+      "conference": "Western",
+      "region": "Utah",
+      "name": "Jazz",
+      "abbr": "UTAH",
+      "aliases": [
+        "UTA"
+      ],
+      "nbaId": 1610612762,
+      "color": "4e008e",
+      "alternateColor": "79a3dc",
+      "sourceUrl": "https://cdn.nba.com/logos/nba/1610612762/primary/L/logo.svg",
+      "rosterSource": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/teams?limit=50",
+      "path": "/logos/svg/nba/utah.svg",
+      "format": "svg",
+      "fills": [
+        "#4E008E"
+      ]
+    },
+    {
+      "id": "NBA-WSH",
+      "league": "NBA",
+      "conference": "Eastern",
+      "region": "Washington",
+      "name": "Wizards",
+      "abbr": "WSH",
+      "aliases": [
+        "WAS"
+      ],
+      "nbaId": 1610612764,
+      "color": "e31837",
+      "alternateColor": "002b5c",
+      "sourceUrl": "https://cdn.nba.com/logos/nba/1610612764/primary/L/logo.svg",
+      "rosterSource": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/teams?limit=50",
+      "path": "/logos/svg/nba/wsh.svg",
+      "format": "svg",
+      "fills": [
+        "#FFFFFF",
+        "#C4CDD3",
+        "#002B5C",
+        "#E21936"
+      ]
+    }
+  ]
+}

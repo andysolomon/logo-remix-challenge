@@ -1,0 +1,775 @@
+{
+  "assets": [
+    {
+      "id": "MLB-ATH",
+      "league": "MLB",
+      "conference": "American League",
+      "region": "",
+      "name": "Athletics",
+      "abbr": "ATH",
+      "aliases": [
+        "A's",
+        "As",
+        "Oakland Athletics"
+      ],
+      "path": "/logos/svg/mlb/ath.svg",
+      "format": "svg",
+      "sourceUrl": "https://www.mlbstatic.com/team-logos/133.svg",
+      "sourcePage": "https://statsapi.mlb.com/api/v1/teams?sportId=1&activeStatus=Yes&season=2026",
+      "colors": [
+        "#003831"
+      ],
+      "palette": [
+        "#003831",
+        "#EFB21E",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "MLB-ATL",
+      "league": "MLB",
+      "conference": "National League",
+      "region": "Atlanta",
+      "name": "Braves",
+      "abbr": "ATL",
+      "aliases": [],
+      "path": "/logos/svg/mlb/atl.svg",
+      "format": "svg",
+      "sourceUrl": "https://www.mlbstatic.com/team-logos/144.svg",
+      "sourcePage": "https://statsapi.mlb.com/api/v1/teams?sportId=1&activeStatus=Yes&season=2026",
+      "colors": [
+        "#13274F",
+        "#CE1141"
+      ],
+      "palette": [
+        "#CE1141",
+        "#13274F",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [
+        2
+      ]
+    },
+    {
+      "id": "MLB-AZ",
+      "league": "MLB",
+      "conference": "National League",
+      "region": "Arizona",
+      "name": "Diamondbacks",
+      "abbr": "AZ",
+      "aliases": [
+        "ARI",
+        "Dbacks",
+        "D-backs"
+      ],
+      "path": "/logos/svg/mlb/az.svg",
+      "format": "svg",
+      "sourceUrl": "https://www.mlbstatic.com/team-logos/109.svg",
+      "sourcePage": "https://statsapi.mlb.com/api/v1/teams?sportId=1&activeStatus=Yes&season=2026",
+      "colors": [
+        "#3EC1CC",
+        "#AA182C",
+        "#000000"
+      ],
+      "palette": [
+        "#AA182C",
+        "#3EC1CC",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [
+        2
+      ]
+    },
+    {
+      "id": "MLB-BAL",
+      "league": "MLB",
+      "conference": "American League",
+      "region": "Baltimore",
+      "name": "Orioles",
+      "abbr": "BAL",
+      "aliases": [],
+      "path": "/logos/svg/mlb/bal.svg",
+      "format": "svg",
+      "sourceUrl": "https://www.mlbstatic.com/team-logos/110.svg",
+      "sourcePage": "https://statsapi.mlb.com/api/v1/teams?sportId=1&activeStatus=Yes&season=2026",
+      "colors": [
+        "#DF4601",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "palette": [
+        "#DF4601",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": []
+    },
+    {
+      "id": "MLB-BOS",
+      "league": "MLB",
+      "conference": "American League",
+      "region": "Boston",
+      "name": "Red Sox",
+      "abbr": "BOS",
+      "aliases": [],
+      "path": "/logos/svg/mlb/bos.svg",
+      "format": "svg",
+      "sourceUrl": "https://www.mlbstatic.com/team-logos/111.svg",
+      "sourcePage": "https://statsapi.mlb.com/api/v1/teams?sportId=1&activeStatus=Yes&season=2026",
+      "colors": [
+        "#FFFFFF",
+        "#0D2B56",
+        "#BD3039"
+      ],
+      "palette": [
+        "#BD3039",
+        "#0D2B56",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": []
+    },
+    {
+      "id": "MLB-CHC",
+      "league": "MLB",
+      "conference": "National League",
+      "region": "Chicago",
+      "name": "Cubs",
+      "abbr": "CHC",
+      "aliases": [],
+      "path": "/logos/svg/mlb/chc.svg",
+      "format": "svg",
+      "sourceUrl": "https://www.mlbstatic.com/team-logos/112.svg",
+      "sourcePage": "https://statsapi.mlb.com/api/v1/teams?sportId=1&activeStatus=Yes&season=2026",
+      "colors": [
+        "#FFFFFF",
+        "#0E3386",
+        "#CC3433"
+      ],
+      "palette": [
+        "#0E3386",
+        "#CC3433",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": []
+    },
+    {
+      "id": "MLB-CIN",
+      "league": "MLB",
+      "conference": "National League",
+      "region": "Cincinnati",
+      "name": "Reds",
+      "abbr": "CIN",
+      "aliases": [],
+      "path": "/logos/svg/mlb/cin.svg",
+      "format": "svg",
+      "sourceUrl": "https://www.mlbstatic.com/team-logos/113.svg",
+      "sourcePage": "https://statsapi.mlb.com/api/v1/teams?sportId=1&activeStatus=Yes&season=2026",
+      "colors": [
+        "#000000",
+        "#C6011F"
+      ],
+      "palette": [
+        "#C6011F",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [
+        2
+      ]
+    },
+    {
+      "id": "MLB-CLE",
+      "league": "MLB",
+      "conference": "American League",
+      "region": "Cleveland",
+      "name": "Guardians",
+      "abbr": "CLE",
+      "aliases": [],
+      "path": "/logos/svg/mlb/cle.svg",
+      "format": "svg",
+      "sourceUrl": "https://www.mlbstatic.com/team-logos/114.svg",
+      "sourcePage": "https://statsapi.mlb.com/api/v1/teams?sportId=1&activeStatus=Yes&season=2026",
+      "colors": [
+        "#002B5C",
+        "#E31937"
+      ],
+      "palette": [
+        "#E31937",
+        "#002B5C",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [
+        2
+      ]
+    },
+    {
+      "id": "MLB-COL",
+      "league": "MLB",
+      "conference": "National League",
+      "region": "Colorado",
+      "name": "Rockies",
+      "abbr": "COL",
+      "aliases": [],
+      "path": "/logos/svg/mlb/col.svg",
+      "format": "svg",
+      "sourceUrl": "https://www.mlbstatic.com/team-logos/115.svg",
+      "sourcePage": "https://statsapi.mlb.com/api/v1/teams?sportId=1&activeStatus=Yes&season=2026",
+      "colors": [
+        "#000000",
+        "#C4CED4"
+      ],
+      "palette": [
+        "#000000",
+        "#C4CED4",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": []
+    },
+    {
+      "id": "MLB-CWS",
+      "league": "MLB",
+      "conference": "American League",
+      "region": "Chicago",
+      "name": "White Sox",
+      "abbr": "CWS",
+      "aliases": [
+        "CHW"
+      ],
+      "path": "/logos/svg/mlb/cws.svg",
+      "format": "svg",
+      "sourceUrl": "https://www.mlbstatic.com/team-logos/145.svg",
+      "sourcePage": "https://statsapi.mlb.com/api/v1/teams?sportId=1&activeStatus=Yes&season=2026",
+      "colors": [
+        "#FFFFFF",
+        "#000000"
+      ],
+      "palette": [
+        "#000000",
+        "#C4CED4",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": []
+    },
+    {
+      "id": "MLB-DET",
+      "league": "MLB",
+      "conference": "American League",
+      "region": "Detroit",
+      "name": "Tigers",
+      "abbr": "DET",
+      "aliases": [],
+      "path": "/logos/svg/mlb/det.svg",
+      "format": "svg",
+      "sourceUrl": "https://www.mlbstatic.com/team-logos/116.svg",
+      "sourcePage": "https://statsapi.mlb.com/api/v1/teams?sportId=1&activeStatus=Yes&season=2026",
+      "colors": [
+        "#0C2C56"
+      ],
+      "palette": [
+        "#0C2C56",
+        "#FA4616",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "MLB-HOU",
+      "league": "MLB",
+      "conference": "American League",
+      "region": "Houston",
+      "name": "Astros",
+      "abbr": "HOU",
+      "aliases": [],
+      "path": "/logos/svg/mlb/hou.svg",
+      "format": "svg",
+      "sourceUrl": "https://www.mlbstatic.com/team-logos/117.svg",
+      "sourcePage": "https://statsapi.mlb.com/api/v1/teams?sportId=1&activeStatus=Yes&season=2026",
+      "colors": [
+        "#002D62",
+        "#EB6E1F",
+        "#F4911E",
+        "#FFFFFF",
+        "#E7E9EA"
+      ],
+      "palette": [
+        "#002D62",
+        "#EB6E1F",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": []
+    },
+    {
+      "id": "MLB-KC",
+      "league": "MLB",
+      "conference": "American League",
+      "region": "Kansas City",
+      "name": "Royals",
+      "abbr": "KC",
+      "aliases": [
+        "KCR"
+      ],
+      "path": "/logos/svg/mlb/kc.svg",
+      "format": "svg",
+      "sourceUrl": "https://www.mlbstatic.com/team-logos/118.svg",
+      "sourcePage": "https://statsapi.mlb.com/api/v1/teams?sportId=1&activeStatus=Yes&season=2026",
+      "colors": [
+        "#004687"
+      ],
+      "palette": [
+        "#004687",
+        "#BD9B60",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "MLB-LAA",
+      "league": "MLB",
+      "conference": "American League",
+      "region": "Los Angeles",
+      "name": "Angels",
+      "abbr": "LAA",
+      "aliases": [],
+      "path": "/logos/svg/mlb/laa.svg",
+      "format": "svg",
+      "sourceUrl": "https://www.mlbstatic.com/team-logos/108.svg",
+      "sourcePage": "https://statsapi.mlb.com/api/v1/teams?sportId=1&activeStatus=Yes&season=2026",
+      "colors": [
+        "#FFFFFF",
+        "#003263",
+        "#BA0021",
+        "#862633",
+        "#C4CED4"
+      ],
+      "palette": [
+        "#BA0021",
+        "#003263",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": []
+    },
+    {
+      "id": "MLB-LAD",
+      "league": "MLB",
+      "conference": "National League",
+      "region": "Los Angeles",
+      "name": "Dodgers",
+      "abbr": "LAD",
+      "aliases": [],
+      "path": "/logos/svg/mlb/lad.svg",
+      "format": "svg",
+      "sourceUrl": "https://www.mlbstatic.com/team-logos/119.svg",
+      "sourcePage": "https://statsapi.mlb.com/api/v1/teams?sportId=1&activeStatus=Yes&season=2026",
+      "colors": [
+        "#005A9C"
+      ],
+      "palette": [
+        "#005A9C",
+        "#EF3E42",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "MLB-MIA",
+      "league": "MLB",
+      "conference": "National League",
+      "region": "Miami",
+      "name": "Marlins",
+      "abbr": "MIA",
+      "aliases": [],
+      "path": "/logos/svg/mlb/mia.svg",
+      "format": "svg",
+      "sourceUrl": "https://www.mlbstatic.com/team-logos/146.svg",
+      "sourcePage": "https://statsapi.mlb.com/api/v1/teams?sportId=1&activeStatus=Yes&season=2026",
+      "colors": [
+        "#FFFFFF",
+        "#000000",
+        "#EF3340",
+        "#00A3E0",
+        "#41748D"
+      ],
+      "palette": [
+        "#00A3E0",
+        "#EF3340",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": []
+    },
+    {
+      "id": "MLB-MIL",
+      "league": "MLB",
+      "conference": "National League",
+      "region": "Milwaukee",
+      "name": "Brewers",
+      "abbr": "MIL",
+      "aliases": [],
+      "path": "/logos/svg/mlb/mil.svg",
+      "format": "svg",
+      "sourceUrl": "https://www.mlbstatic.com/team-logos/158.svg",
+      "sourcePage": "https://statsapi.mlb.com/api/v1/teams?sportId=1&activeStatus=Yes&season=2026",
+      "colors": [
+        "#FFC52F",
+        "#12284B",
+        "#FFFFFF"
+      ],
+      "palette": [
+        "#12284B",
+        "#FFC52F",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": []
+    },
+    {
+      "id": "MLB-MIN",
+      "league": "MLB",
+      "conference": "American League",
+      "region": "Minnesota",
+      "name": "Twins",
+      "abbr": "MIN",
+      "aliases": [],
+      "path": "/logos/svg/mlb/min.svg",
+      "format": "svg",
+      "sourceUrl": "https://www.mlbstatic.com/team-logos/142.svg",
+      "sourcePage": "https://statsapi.mlb.com/api/v1/teams?sportId=1&activeStatus=Yes&season=2026",
+      "colors": [
+        "#091F40",
+        "#E31E34"
+      ],
+      "palette": [
+        "#091F40",
+        "#E31E34",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [
+        2
+      ]
+    },
+    {
+      "id": "MLB-NYM",
+      "league": "MLB",
+      "conference": "National League",
+      "region": "New York",
+      "name": "Mets",
+      "abbr": "NYM",
+      "aliases": [],
+      "path": "/logos/svg/mlb/nym.svg",
+      "format": "svg",
+      "sourceUrl": "https://www.mlbstatic.com/team-logos/121.svg",
+      "sourcePage": "https://statsapi.mlb.com/api/v1/teams?sportId=1&activeStatus=Yes&season=2026",
+      "colors": [
+        "#FF5910"
+      ],
+      "palette": [
+        "#FF5910",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "MLB-NYY",
+      "league": "MLB",
+      "conference": "American League",
+      "region": "New York",
+      "name": "Yankees",
+      "abbr": "NYY",
+      "aliases": [
+        "Yanks"
+      ],
+      "path": "/logos/svg/mlb/nyy.svg",
+      "format": "svg",
+      "sourceUrl": "https://www.mlbstatic.com/team-logos/147.svg",
+      "sourcePage": "https://statsapi.mlb.com/api/v1/teams?sportId=1&activeStatus=Yes&season=2026",
+      "colors": [
+        "#132448"
+      ],
+      "palette": [
+        "#132448",
+        "#C4CED4",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "MLB-PHI",
+      "league": "MLB",
+      "conference": "National League",
+      "region": "Philadelphia",
+      "name": "Phillies",
+      "abbr": "PHI",
+      "aliases": [],
+      "path": "/logos/svg/mlb/phi.svg",
+      "format": "svg",
+      "sourceUrl": "https://www.mlbstatic.com/team-logos/143.svg",
+      "sourcePage": "https://statsapi.mlb.com/api/v1/teams?sportId=1&activeStatus=Yes&season=2026",
+      "colors": [
+        "#E81828",
+        "#FFFFFF"
+      ],
+      "palette": [
+        "#E81828",
+        "#002D72",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [
+        1
+      ]
+    },
+    {
+      "id": "MLB-PIT",
+      "league": "MLB",
+      "conference": "National League",
+      "region": "Pittsburgh",
+      "name": "Pirates",
+      "abbr": "PIT",
+      "aliases": [],
+      "path": "/logos/svg/mlb/pit.svg",
+      "format": "svg",
+      "sourceUrl": "https://www.mlbstatic.com/team-logos/134.svg",
+      "sourcePage": "https://statsapi.mlb.com/api/v1/teams?sportId=1&activeStatus=Yes&season=2026",
+      "colors": [
+        "#FFCE34"
+      ],
+      "palette": [
+        "#FFCE34",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "MLB-SD",
+      "league": "MLB",
+      "conference": "National League",
+      "region": "San Diego",
+      "name": "Padres",
+      "abbr": "SD",
+      "aliases": [
+        "SDP"
+      ],
+      "path": "/logos/svg/mlb/sd.svg",
+      "format": "svg",
+      "sourceUrl": "https://www.mlbstatic.com/team-logos/135.svg",
+      "sourcePage": "https://statsapi.mlb.com/api/v1/teams?sportId=1&activeStatus=Yes&season=2026",
+      "colors": [
+        "#2F241C"
+      ],
+      "palette": [
+        "#2F241C",
+        "#FFC425",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "MLB-SEA",
+      "league": "MLB",
+      "conference": "American League",
+      "region": "Seattle",
+      "name": "Mariners",
+      "abbr": "SEA",
+      "aliases": [],
+      "path": "/logos/svg/mlb/sea.svg",
+      "format": "svg",
+      "sourceUrl": "https://www.mlbstatic.com/team-logos/136.svg",
+      "sourcePage": "https://statsapi.mlb.com/api/v1/teams?sportId=1&activeStatus=Yes&season=2026",
+      "colors": [
+        "#005C5C",
+        "#C4CED4",
+        "#0C2C56",
+        "#FFFFFF",
+        "#D50032"
+      ],
+      "palette": [
+        "#0C2C56",
+        "#005C5C",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": []
+    },
+    {
+      "id": "MLB-SF",
+      "league": "MLB",
+      "conference": "National League",
+      "region": "San Francisco",
+      "name": "Giants",
+      "abbr": "SF",
+      "aliases": [
+        "SFG"
+      ],
+      "path": "/logos/svg/mlb/sf.svg",
+      "format": "svg",
+      "sourceUrl": "https://www.mlbstatic.com/team-logos/137.svg",
+      "sourcePage": "https://statsapi.mlb.com/api/v1/teams?sportId=1&activeStatus=Yes&season=2026",
+      "colors": [
+        "#FD5A1E"
+      ],
+      "palette": [
+        "#FD5A1E",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "MLB-STL",
+      "league": "MLB",
+      "conference": "National League",
+      "region": "St. Louis",
+      "name": "Cardinals",
+      "abbr": "STL",
+      "aliases": [],
+      "path": "/logos/svg/mlb/stl.svg",
+      "format": "svg",
+      "sourceUrl": "https://www.mlbstatic.com/team-logos/138.svg",
+      "sourcePage": "https://statsapi.mlb.com/api/v1/teams?sportId=1&activeStatus=Yes&season=2026",
+      "colors": [
+        "#BE0A14"
+      ],
+      "palette": [
+        "#BE0A14",
+        "#0C2340",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "MLB-TB",
+      "league": "MLB",
+      "conference": "American League",
+      "region": "Tampa Bay",
+      "name": "Rays",
+      "abbr": "TB",
+      "aliases": [
+        "TBR"
+      ],
+      "path": "/logos/svg/mlb/tb.svg",
+      "format": "svg",
+      "sourceUrl": "https://www.mlbstatic.com/team-logos/139.svg",
+      "sourcePage": "https://statsapi.mlb.com/api/v1/teams?sportId=1&activeStatus=Yes&season=2026",
+      "colors": [
+        "#092C5C",
+        "#8FBCE6"
+      ],
+      "palette": [
+        "#092C5C",
+        "#8FBCE6",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [
+        2
+      ]
+    },
+    {
+      "id": "MLB-TEX",
+      "league": "MLB",
+      "conference": "American League",
+      "region": "Texas",
+      "name": "Rangers",
+      "abbr": "TEX",
+      "aliases": [],
+      "path": "/logos/svg/mlb/tex.svg",
+      "format": "svg",
+      "sourceUrl": "https://www.mlbstatic.com/team-logos/140.svg",
+      "sourcePage": "https://statsapi.mlb.com/api/v1/teams?sportId=1&activeStatus=Yes&season=2026",
+      "colors": [
+        "#003278",
+        "#C0111F"
+      ],
+      "palette": [
+        "#003278",
+        "#C0111F",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [
+        2
+      ]
+    },
+    {
+      "id": "MLB-TOR",
+      "league": "MLB",
+      "conference": "American League",
+      "region": "Toronto",
+      "name": "Blue Jays",
+      "abbr": "TOR",
+      "aliases": [],
+      "path": "/logos/svg/mlb/tor.svg",
+      "format": "svg",
+      "sourceUrl": "https://www.mlbstatic.com/team-logos/141.svg",
+      "sourcePage": "https://statsapi.mlb.com/api/v1/teams?sportId=1&activeStatus=Yes&season=2026",
+      "colors": [
+        "#134A8E",
+        "#1D2D5C",
+        "#FFFFFF",
+        "#E8291C"
+      ],
+      "palette": [
+        "#134A8E",
+        "#E8291C",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": []
+    },
+    {
+      "id": "MLB-WSH",
+      "league": "MLB",
+      "conference": "National League",
+      "region": "Washington",
+      "name": "Nationals",
+      "abbr": "WSH",
+      "aliases": [
+        "WAS",
+        "Nationals",
+        "Nats"
+      ],
+      "path": "/logos/svg/mlb/wsh.svg",
+      "format": "svg",
+      "sourceUrl": "https://www.mlbstatic.com/team-logos/120.svg",
+      "sourcePage": "https://statsapi.mlb.com/api/v1/teams?sportId=1&activeStatus=Yes&season=2026",
+      "colors": [
+        "#AB0003"
+      ],
+      "palette": [
+        "#AB0003",
+        "#14225A",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [
+        1,
+        2
+      ]
+    }
+  ]
+}

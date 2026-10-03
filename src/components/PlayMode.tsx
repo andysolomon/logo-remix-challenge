@@ -228,12 +228,12 @@ export function PlayMode({ deck, timer, gameMode, guessTarget, voice, highScores
   // The intro promises what the deck actually asks, which may be one mode or both.
   const targets = new Set(deck.map((r) => roundTarget(r, guessTarget)))
   const introSub = targets.size > 1
-    ? 'Rounds vary: some want the logo’s team, some want whose colors it wears, some want both. Read each prompt.'
+    ? 'Rounds vary: some want the name behind the logo, some want whose colors it wears, some want both. Read each prompt.'
     : targets.has('both')
-      ? 'Name the team behind the logo and the team whose colors it wears. Both right scores the point.'
+      ? 'Name the team or brand behind the logo and whose colors it wears. Both right scores the point.'
       : targets.has('colors')
-        ? 'Ignore the logo. Name the team whose colors it wears.'
-        : 'Ignore the colors. Name the team behind the logo.'
+        ? 'Ignore the logo. Name the team or brand whose colors it wears.'
+        : 'Ignore the colors. Name the team or brand behind the logo.'
 
   const round = deck[rIdx]
   const target: GuessTarget = round ? roundTarget(round, guessTarget) : guessTarget
@@ -241,7 +241,7 @@ export function PlayMode({ deck, timer, gameMode, guessTarget, voice, highScores
   const ct = round ? findTeam(round.c)! : null
   const questionLocked = phase !== 'question'
   const promptStatus =
-    target === 'both' ? 'Name the logo team and the color team.' : target === 'colors' ? 'Name the color team.' : 'Name the logo team.'
+    target === 'both' ? 'Name the logo and color sources.' : target === 'colors' ? 'Name the color source.' : 'Name the logo source.'
   const revealStatus =
     phase === 'reveal' && ot && ct
       ? `${kind === 'correct' ? 'Correct' : kind === 'wrong' ? 'Not quite' : "Time's up"}. ${
@@ -301,7 +301,7 @@ export function PlayMode({ deck, timer, gameMode, guessTarget, voice, highScores
               <Logo team={ot} palette={ct.palette} perm={round.v} />
             </div>
           </div>
-          <div className="prompt">{target === 'both' ? 'WHOSE LOGO · WHOSE COLORS?' : target === 'colors' ? "WHICH TEAM'S COLORS?" : 'WHOSE LOGO IS THIS?'}</div>
+          <div className="prompt">{target === 'both' ? 'WHOSE LOGO · WHOSE COLORS?' : target === 'colors' ? 'WHOSE COLORS ARE THESE?' : 'WHOSE LOGO IS THIS?'}</div>
           {round.h && (
             <div className="hints" aria-label="Hints">
               {roundHints(round).map((h) => (
@@ -320,9 +320,9 @@ export function PlayMode({ deck, timer, gameMode, guessTarget, voice, highScores
                     onChange={setGuess}
                     onKeyDown={checkLogo}
                     readOnly={logoChecked != null}
-                    placeholder="Team behind the logo…"
+                    placeholder="Team or brand behind the logo…"
                     enterKeyHint="next"
-                    ariaLabel="Team behind the logo"
+                    ariaLabel="Team or brand behind the logo"
                   />
                   <span className="guess-field-mark" aria-live="polite">
                     {logoChecked == null ? '' : logoChecked ? '✓' : '✕'}
@@ -334,9 +334,9 @@ export function PlayMode({ deck, timer, gameMode, guessTarget, voice, highScores
                     ref={input2Ref}
                     value={guess2}
                     onChange={setGuess2}
-                    placeholder="Team whose colors these are…"
+                    placeholder="Whose colors are these?"
                     enterKeyHint="go"
-                    ariaLabel="Team whose colors the logo wears"
+                    ariaLabel="Team or brand whose colors the logo wears"
                   />
                   <span className="guess-field-mark" aria-hidden="true" />
                 </label>
@@ -350,7 +350,7 @@ export function PlayMode({ deck, timer, gameMode, guessTarget, voice, highScores
                   ref={inputRef}
                   value={guess}
                   onChange={setGuess}
-                  placeholder="Type the team…"
+                  placeholder="Type the team or brand…"
                   enterKeyHint="go"
                   ariaLabel="Your guess"
                 />
@@ -363,7 +363,7 @@ export function PlayMode({ deck, timer, gameMode, guessTarget, voice, highScores
             <div className="host">
               {target === 'both' ? (
                 <>
-                  <div className="host-hint">Shout both teams — the host grades each half</div>
+                  <div className="host-hint">Shout both names — the host grades each half</div>
                   {(['LOGO', 'COLORS'] as const).map((lb, i) => {
                     const v = hostParts[i]
                     const labelId = lb === 'LOGO' ? 'host-both-logo-label' : 'host-both-colors-label'
@@ -387,7 +387,7 @@ export function PlayMode({ deck, timer, gameMode, guessTarget, voice, highScores
                 </>
               ) : (
                 <>
-                  <div className="host-hint">Shout the team — the host taps the verdict</div>
+                  <div className="host-hint">Shout the name — the host taps the verdict</div>
                   <div className="host-row">
                     <button className="btn-correct" disabled={questionLocked} onClick={() => reveal('correct')}>
                       ✓ CORRECT

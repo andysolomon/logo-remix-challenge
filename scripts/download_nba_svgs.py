@@ -15,6 +15,7 @@ from xml.etree import ElementTree as ET
 from build_teams import atomic_write_text
 from download_svgs import fetch, fetch_json
 from nba_roster import ALIASES, ROSTER
+from download_hbcu_svgs import to_hex
 
 ROOT = Path(__file__).resolve().parent.parent
 ESPN_TEAMS = "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/teams?limit=50"
@@ -50,11 +51,9 @@ def artwork_colors(data: bytes) -> list[str]:
         paint.update(dict(re.findall(r"([\w-]+)\s*:\s*([^;]+)", node.get("style", ""))))
         if node.tag.rsplit("}", 1)[-1] in {"path", "polygon", "rect", "circle", "ellipse", "polyline", "line"}:
             for key in ("fill", "stroke"):
-                color = paint.get(key, "none").strip().upper()
-                color = {"WHITE": "#FFFFFF", "BLACK": "#000000"}.get(color, color)
-                if re.fullmatch(r"#[0-9A-F]{3}", color):
-                    color = "#" + "".join(c * 2 for c in color[1:])
-                if re.fullmatch(r"#[0-9A-F]{6}", color) and color not in colors:
+                normalized = to_hex(paint.get(key, "none").strip())
+                color = normalized.upper() if normalized else ""
+                if color and color not in colors:
                     colors.append(color)
         for child in node:
             walk(child, paint)

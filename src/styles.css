@@ -120,8 +120,9 @@ input::placeholder { color: var(--faint); }
 .panel-head { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px; }
 .panel-head.wrap { flex-wrap: wrap; }
 .panel-title { font-family: var(--display); font-weight: 700; font-size: 13px; letter-spacing: 2px; color: var(--muted); }
-.seg { display: flex; background: var(--chip-bg); border-radius: 10px; padding: 3px; gap: 2px; }
-.seg-btn { min-width: 54px; height: 38px; border: none; border-radius: 8px; font: 600 12px var(--ui); cursor: pointer; background: transparent; color: var(--muted); }
+.seg { display: flex; flex-wrap: wrap; max-width: 100%; background: var(--chip-bg); border-radius: 10px; padding: 3px; gap: 2px; }
+.panel-head .seg { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); width: 100%; }
+.seg-btn { min-width: 54px; flex: 1 0 auto; height: 38px; padding: 0 8px; border: none; border-radius: 8px; font: 600 12px var(--ui); cursor: pointer; background: transparent; color: var(--muted); }
 .seg-btn.active { background: var(--ink); color: #FFFFFF; }
 .portrait .seg-btn { min-width: 64px; }
 .search { height: 46px; border: 1.5px solid var(--line); border-radius: 12px; padding: 0 14px; font: 500 15px var(--ui); background: var(--input-bg); outline-color: var(--accent); width: 100%; color: var(--ink); }

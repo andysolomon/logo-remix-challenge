@@ -1,0 +1,1001 @@
+{
+  "assets": [
+    {
+      "id": "FOOD-ARB",
+      "league": "FOOD",
+      "conference": "Sandwiches",
+      "region": "Arby's",
+      "name": "",
+      "abbr": "ARB",
+      "aliases": [
+        "Arbys"
+      ],
+      "path": "/logos/svg/fast-food/arb.svg",
+      "format": "svg",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Arby%27s_logo.svg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "sourcePage": "https://en.wikipedia.org/wiki/Arby%27s",
+      "colors": [
+        "#D71921"
+      ],
+      "palette": [
+        "#D71921",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "FOOD-BK",
+      "league": "FOOD",
+      "conference": "Burgers",
+      "region": "Burger King",
+      "name": "",
+      "abbr": "BK",
+      "aliases": [
+        "BK"
+      ],
+      "path": "/logos/svg/fast-food/bk.svg",
+      "format": "svg",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Burger_King_2020.svg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "sourcePage": "https://en.wikipedia.org/wiki/Burger_King",
+      "colors": [
+        "#F5EBDC",
+        "#FF8732",
+        "#D62300"
+      ],
+      "palette": [
+        "#D62300",
+        "#FF8732",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": []
+    },
+    {
+      "id": "FOOD-BOJ",
+      "league": "FOOD",
+      "conference": "Chicken",
+      "region": "Bojangles",
+      "name": "",
+      "abbr": "BOJ",
+      "aliases": [],
+      "path": "/logos/svg/fast-food/boj.svg",
+      "format": "svg",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/en/9/92/Bojangles_2020.svg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "sourcePage": "https://en.wikipedia.org/wiki/Bojangles_%28restaurant%29",
+      "colors": [
+        "#D0191A"
+      ],
+      "palette": [
+        "#D0191A",
+        "#F8C437",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "FOOD-CANE",
+      "league": "FOOD",
+      "conference": "Chicken",
+      "region": "Raising Cane's",
+      "name": "",
+      "abbr": "CANE",
+      "aliases": [
+        "Raising Canes",
+        "Canes"
+      ],
+      "path": "/logos/svg/fast-food/cane.svg",
+      "format": "svg",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/9/98/Raising_Cane%27s_Chicken_Fingers_logo.svg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "sourcePage": "https://en.wikipedia.org/wiki/Raising_Cane%27s_Chicken_Fingers",
+      "colors": [
+        "#020000",
+        "#E71A2A",
+        "#FEBD11",
+        "#9C5614",
+        "#FFFFFF",
+        "#B4271B",
+        "#FFF101"
+      ],
+      "palette": [
+        "#E71A2A",
+        "#FEBD11",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": []
+    },
+    {
+      "id": "FOOD-CARL",
+      "league": "FOOD",
+      "conference": "Burgers",
+      "region": "Carl's Jr.",
+      "name": "",
+      "abbr": "CARL",
+      "aliases": [
+        "Carls Jr",
+        "Carl's Junior"
+      ],
+      "path": "/logos/svg/fast-food/carl.svg",
+      "format": "svg",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/c/cd/Carl%27s_Jr._logo_%282022%29.svg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "sourcePage": "https://en.wikipedia.org/wiki/Carl%27s_Jr.",
+      "colors": [
+        "#000000",
+        "#FFCF21",
+        "#2C2523",
+        "#E40425"
+      ],
+      "palette": [
+        "#FFCF21",
+        "#E40425",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [
+        2
+      ]
+    },
+    {
+      "id": "FOOD-CFA",
+      "league": "FOOD",
+      "conference": "Chicken",
+      "region": "Chick-fil-A",
+      "name": "",
+      "abbr": "CFA",
+      "aliases": [
+        "Chick fil a",
+        "CFA"
+      ],
+      "path": "/logos/svg/fast-food/cfa.svg",
+      "format": "svg",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/0/02/Chick-fil-A_Logo.svg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "sourcePage": "https://en.wikipedia.org/wiki/Chick-fil-A",
+      "colors": [
+        "#E51636"
+      ],
+      "palette": [
+        "#E51636",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "FOOD-CHECK",
+      "league": "FOOD",
+      "conference": "Burgers",
+      "region": "Checkers",
+      "name": "",
+      "abbr": "CHECK",
+      "aliases": [
+        "Rally's",
+        "Rallys",
+        "Checkers and Rally's"
+      ],
+      "path": "/logos/svg/fast-food/check.svg",
+      "format": "svg",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/en/a/aa/Checkers_and_Rally%27s_logo_%282025%29.svg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "sourcePage": "https://en.wikipedia.org/wiki/Checkers_and_Rally%27s",
+      "colors": [
+        "#E81D2D",
+        "#231F20"
+      ],
+      "palette": [
+        "#E81D2D",
+        "#231F20",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [
+        2
+      ]
+    },
+    {
+      "id": "FOOD-CHIP",
+      "league": "FOOD",
+      "conference": "Mexican & Asian",
+      "region": "Chipotle",
+      "name": "",
+      "abbr": "CHIP",
+      "aliases": [
+        "Chipotle Mexican Grill"
+      ],
+      "path": "/logos/svg/fast-food/chip.svg",
+      "format": "svg",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/en/3/3b/Chipotle_Mexican_Grill_logo.svg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "sourcePage": "https://en.wikipedia.org/wiki/Chipotle_Mexican_Grill",
+      "colors": [
+        "#AC2318",
+        "#441500",
+        "#FEFEFE"
+      ],
+      "palette": [
+        "#AC2318",
+        "#441500",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": []
+    },
+    {
+      "id": "FOOD-CUL",
+      "league": "FOOD",
+      "conference": "Burgers",
+      "region": "Culver's",
+      "name": "",
+      "abbr": "CUL",
+      "aliases": [
+        "Culvers"
+      ],
+      "path": "/logos/svg/fast-food/cul.svg",
+      "format": "svg",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Culver%27s_logo.svg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "sourcePage": "https://en.wikipedia.org/wiki/Culver%27s",
+      "colors": [
+        "#000000",
+        "#155195"
+      ],
+      "palette": [
+        "#155195",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [
+        2
+      ]
+    },
+    {
+      "id": "FOOD-DOM",
+      "league": "FOOD",
+      "conference": "Pizza",
+      "region": "Domino's",
+      "name": "",
+      "abbr": "DOM",
+      "aliases": [
+        "Dominos",
+        "Domino's Pizza"
+      ],
+      "path": "/logos/svg/fast-food/dom.svg",
+      "format": "svg",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/6/64/Domino%27s_2025.svg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "sourcePage": "https://en.wikipedia.org/wiki/Domino%27s",
+      "colors": [
+        "#0090E2",
+        "#FFFFFF",
+        "#FF0000"
+      ],
+      "palette": [
+        "#0090E2",
+        "#FF0000",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": []
+    },
+    {
+      "id": "FOOD-DQ",
+      "league": "FOOD",
+      "conference": "Coffee & Treats",
+      "region": "Dairy Queen",
+      "name": "",
+      "abbr": "DQ",
+      "aliases": [
+        "DQ"
+      ],
+      "path": "/logos/svg/fast-food/dq.svg",
+      "format": "svg",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Dairy_Queen_logo.svg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "sourcePage": "https://en.wikipedia.org/wiki/Dairy_Queen",
+      "colors": [
+        "#FFFFFF",
+        "#EE3E42",
+        "#F9AA53",
+        "#007AC1"
+      ],
+      "palette": [
+        "#EE3E42",
+        "#007AC1",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": []
+    },
+    {
+      "id": "FOOD-DUNK",
+      "league": "FOOD",
+      "conference": "Coffee & Treats",
+      "region": "Dunkin'",
+      "name": "",
+      "abbr": "DUNK",
+      "aliases": [
+        "Dunkin",
+        "Dunkin Donuts"
+      ],
+      "path": "/logos/svg/fast-food/dunk.svg",
+      "format": "svg",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/1/14/Dunkin%27_2022.svg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "sourcePage": "https://en.wikipedia.org/wiki/Dunkin%27",
+      "colors": [
+        "#EF6A00",
+        "#C63663"
+      ],
+      "palette": [
+        "#EF6A00",
+        "#C63663",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [
+        2
+      ]
+    },
+    {
+      "id": "FOOD-FIVE",
+      "league": "FOOD",
+      "conference": "Burgers",
+      "region": "Five Guys",
+      "name": "",
+      "abbr": "FIVE",
+      "aliases": [],
+      "path": "/logos/svg/fast-food/five.svg",
+      "format": "svg",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/8/80/Five_Guys_logo.svg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "sourcePage": "https://en.wikipedia.org/wiki/Five_Guys",
+      "colors": [
+        "#C92027"
+      ],
+      "palette": [
+        "#C92027",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "FOOD-HARD",
+      "league": "FOOD",
+      "conference": "Burgers",
+      "region": "Hardee's",
+      "name": "",
+      "abbr": "HARD",
+      "aliases": [
+        "Hardees"
+      ],
+      "path": "/logos/svg/fast-food/hard.svg",
+      "format": "svg",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/en/e/e2/Hardee%27s_logo_since_2022.svg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "sourcePage": "https://en.wikipedia.org/wiki/Hardee%27s",
+      "colors": [
+        "#FFC72C",
+        "#000000",
+        "#CE1329",
+        "#2C2523"
+      ],
+      "palette": [
+        "#FFC72C",
+        "#CE1329",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [
+        2
+      ]
+    },
+    {
+      "id": "FOOD-INO",
+      "league": "FOOD",
+      "conference": "Burgers",
+      "region": "In-N-Out Burger",
+      "name": "",
+      "abbr": "INO",
+      "aliases": [
+        "In N Out",
+        "In-N-Out"
+      ],
+      "path": "/logos/svg/fast-food/ino.svg",
+      "format": "svg",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8c/InNOut_2021_logo.svg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "sourcePage": "https://en.wikipedia.org/wiki/In-N-Out_Burger",
+      "colors": [
+        "#E02A27",
+        "#FFCB05"
+      ],
+      "palette": [
+        "#E02A27",
+        "#FFCB05",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [
+        2
+      ]
+    },
+    {
+      "id": "FOOD-JACK",
+      "league": "FOOD",
+      "conference": "Burgers",
+      "region": "Jack in the Box",
+      "name": "",
+      "abbr": "JACK",
+      "aliases": [],
+      "path": "/logos/svg/fast-food/jack.svg",
+      "format": "svg",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/4/42/Jack_in_the_Box_2022_logo.svg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "sourcePage": "https://en.wikipedia.org/wiki/Jack_in_the_Box",
+      "colors": [
+        "#000000",
+        "#FFFFFF",
+        "#E31635",
+        "#B71A2E",
+        "#F0EFE7"
+      ],
+      "palette": [
+        "#E31635",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": []
+    },
+    {
+      "id": "FOOD-KFC",
+      "league": "FOOD",
+      "conference": "Chicken",
+      "region": "KFC",
+      "name": "",
+      "abbr": "KFC",
+      "aliases": [
+        "Kentucky Fried Chicken"
+      ],
+      "path": "/logos/svg/fast-food/kfc.png",
+      "format": "png",
+      "sourceUrl": "https://cdn.sanity.io/images/kbqq3e0r/production/afcc23c7797d1ad1d55bd0e200e2128cfe163eba-4096x3802.png?w=512&q=100&fm=png",
+      "sourcePage": "https://global.kfc.com/media-assets",
+      "colors": [
+        "#FFFFFF",
+        "#F4002C",
+        "#000000",
+        "#FEFEFE",
+        "#010101",
+        "#020202",
+        "#FDFDFD",
+        "#FFFEFF",
+        "#F4012A",
+        "#FFFFFD",
+        "#F2012C",
+        "#030303",
+        "#F4002E",
+        "#F5012D",
+        "#F6002C",
+        "#FCFBFC",
+        "#FDFFFF",
+        "#FFFDFE",
+        "#F5022B",
+        "#FFFDFF",
+        "#050505",
+        "#F2012A",
+        "#FAFAFA",
+        "#F4022D",
+        "#060606",
+        "#F50229",
+        "#F8F8F8",
+        "#F3002B",
+        "#F9F9F9",
+        "#070707",
+        "#080808",
+        "#FFFBFD",
+        "#FFFCFE",
+        "#FFFDFC",
+        "#F7F7F7",
+        "#0D0D0D",
+        "#090909",
+        "#F6F6F6",
+        "#F4022B",
+        "#F5F5F5",
+        "#FFF9FC",
+        "#1A1A1A",
+        "#0A0A0A",
+        "#F6002E",
+        "#F1F1F1",
+        "#F3F3F3",
+        "#F2032D",
+        "#F2012E",
+        "#F6002A",
+        "#0C0C0C",
+        "#F40128",
+        "#0F0F0F",
+        "#101010",
+        "#F0F0F0",
+        "#F2F2F2",
+        "#FEFCFD",
+        "#161616",
+        "#A3A3A3",
+        "#FFFBFE",
+        "#0E0E0E",
+        "#ECECEC",
+        "#131313",
+        "#EBEBEB",
+        "#151515",
+        "#111111",
+        "#EFEFEF",
+        "#FDFFFD",
+        "#F1022C",
+        "#242424",
+        "#F0042D",
+        "#E9E9E9",
+        "#FFFAFC",
+        "#E3E3E3",
+        "#171717",
+        "#FFF8FB",
+        "#141414",
+        "#1D1D1D",
+        "#1B1B1B",
+        "#DADADA",
+        "#FEFEFC",
+        "#E7E7E7",
+        "#D7D7D7",
+        "#181818",
+        "#EF032C",
+        "#FFF7FB",
+        "#1E1E1E",
+        "#E4E4E4",
+        "#212121",
+        "#FFFBFC",
+        "#F6032C",
+        "#D2D2D2",
+        "#E8E8E8",
+        "#FFF6FA",
+        "#DEDEDE",
+        "#EEEEEE",
+        "#1F1F1F",
+        "#FFFCFD",
+        "#222222",
+        "#E1E1E1",
+        "#282828"
+      ],
+      "palette": [
+        "#EF032C",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": []
+    },
+    {
+      "id": "FOOD-LC",
+      "league": "FOOD",
+      "conference": "Pizza",
+      "region": "Little Caesars",
+      "name": "",
+      "abbr": "LC",
+      "aliases": [],
+      "path": "/logos/svg/fast-food/lc.svg",
+      "format": "svg",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/en/7/7e/Little_Caesars_logo.svg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "sourcePage": "https://en.wikipedia.org/wiki/Little_Caesars",
+      "colors": [
+        "#000000",
+        "#FF6000",
+        "#FFFFFF"
+      ],
+      "palette": [
+        "#FF6000",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": []
+    },
+    {
+      "id": "FOOD-MCD",
+      "league": "FOOD",
+      "conference": "Burgers",
+      "region": "McDonald's",
+      "name": "",
+      "abbr": "MCD",
+      "aliases": [
+        "McDonalds",
+        "Mickey D's"
+      ],
+      "path": "/logos/svg/fast-food/mcd.svg",
+      "format": "svg",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/3/36/McDonald%27s_Golden_Arches.svg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "sourcePage": "https://en.wikipedia.org/wiki/McDonald%27s",
+      "colors": [
+        "#FFCC00"
+      ],
+      "palette": [
+        "#FFCC00",
+        "#DA291C",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "FOOD-PANDA",
+      "league": "FOOD",
+      "conference": "Mexican & Asian",
+      "region": "Panda Express",
+      "name": "",
+      "abbr": "PANDA",
+      "aliases": [],
+      "path": "/logos/svg/fast-food/panda.svg",
+      "format": "svg",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/en/8/85/Panda_Express_logo.svg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "sourcePage": "https://en.wikipedia.org/wiki/Panda_Express",
+      "colors": [
+        "#C02827",
+        "#1A1B21",
+        "#FFFFFF",
+        "#231F20"
+      ],
+      "palette": [
+        "#C02827",
+        "#1A1B21",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": []
+    },
+    {
+      "id": "FOOD-PAPA",
+      "league": "FOOD",
+      "conference": "Pizza",
+      "region": "Papa Johns",
+      "name": "",
+      "abbr": "PAPA",
+      "aliases": [
+        "Papa John's",
+        "Papa John's Pizza"
+      ],
+      "path": "/logos/svg/fast-food/papa.svg",
+      "format": "svg",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/9/92/Papa_Johns_logo.svg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "sourcePage": "https://en.wikipedia.org/wiki/Papa_John%27s",
+      "colors": [
+        "#FF0000"
+      ],
+      "palette": [
+        "#FF0000",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "FOOD-PH",
+      "league": "FOOD",
+      "conference": "Pizza",
+      "region": "Pizza Hut",
+      "name": "",
+      "abbr": "PH",
+      "aliases": [],
+      "path": "/logos/svg/fast-food/ph.svg",
+      "format": "svg",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Pizza_Hut_2025.svg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "sourcePage": "https://en.wikipedia.org/wiki/Pizza_Hut",
+      "colors": [
+        "#EA1C24",
+        "#C70307"
+      ],
+      "palette": [
+        "#EA1C24",
+        "#C70307",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [
+        2
+      ]
+    },
+    {
+      "id": "FOOD-POP",
+      "league": "FOOD",
+      "conference": "Chicken",
+      "region": "Popeyes",
+      "name": "",
+      "abbr": "POP",
+      "aliases": [
+        "Popeyes Louisiana Kitchen"
+      ],
+      "path": "/logos/svg/fast-food/pop.png",
+      "format": "png",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/2/26/Logo_Popeyes_en_letras.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "sourcePage": "https://en.wikipedia.org/wiki/Popeyes",
+      "colors": [
+        "#FF7D00"
+      ],
+      "palette": [
+        "#FF7D00",
+        "#D22630",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "FOOD-SON",
+      "league": "FOOD",
+      "conference": "Burgers",
+      "region": "Sonic",
+      "name": "",
+      "abbr": "SON",
+      "aliases": [
+        "Sonic Drive-In"
+      ],
+      "path": "/logos/svg/fast-food/son.svg",
+      "format": "svg",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/f/ff/SONIC_New_Logo_2020.svg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "sourcePage": "https://en.wikipedia.org/wiki/Sonic_Drive-In",
+      "colors": [
+        "#0088D7",
+        "#FFFFFF",
+        "#EA0045"
+      ],
+      "palette": [
+        "#EA0045",
+        "#0088D7",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": []
+    },
+    {
+      "id": "FOOD-STAR",
+      "league": "FOOD",
+      "conference": "Coffee & Treats",
+      "region": "Starbucks",
+      "name": "",
+      "abbr": "STAR",
+      "aliases": [],
+      "path": "/logos/svg/fast-food/star.svg",
+      "format": "svg",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/en/d/d3/Starbucks_Corporation_Logo_2011.svg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "sourcePage": "https://en.wikipedia.org/wiki/Starbucks",
+      "colors": [
+        "#FFFFFF",
+        "#00643C"
+      ],
+      "palette": [
+        "#00643C",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [
+        1
+      ]
+    },
+    {
+      "id": "FOOD-SUB",
+      "league": "FOOD",
+      "conference": "Sandwiches",
+      "region": "Subway",
+      "name": "",
+      "abbr": "SUB",
+      "aliases": [],
+      "path": "/logos/svg/fast-food/sub.svg",
+      "format": "svg",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Subway_2016_logo.svg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "sourcePage": "https://en.wikipedia.org/wiki/Subway_%28restaurant%29",
+      "colors": [
+        "#F2B700",
+        "#008938"
+      ],
+      "palette": [
+        "#008938",
+        "#F2B700",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [
+        2
+      ]
+    },
+    {
+      "id": "FOOD-TB",
+      "league": "FOOD",
+      "conference": "Mexican & Asian",
+      "region": "Taco Bell",
+      "name": "",
+      "abbr": "TB",
+      "aliases": [],
+      "path": "/logos/svg/fast-food/tb.svg",
+      "format": "svg",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/en/b/b7/Taco_Bell_2023.svg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "sourcePage": "https://en.wikipedia.org/wiki/Taco_Bell",
+      "colors": [
+        "#5B2994",
+        "#000000"
+      ],
+      "palette": [
+        "#5B2994",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [
+        2
+      ]
+    },
+    {
+      "id": "FOOD-WEN",
+      "league": "FOOD",
+      "conference": "Burgers",
+      "region": "Wendy's",
+      "name": "",
+      "abbr": "WEN",
+      "aliases": [
+        "Wendys"
+      ],
+      "path": "/logos/svg/fast-food/wen.svg",
+      "format": "svg",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/en/3/32/Wendy%27s_full_logo_2012.svg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "sourcePage": "https://en.wikipedia.org/wiki/Wendy%27s",
+      "colors": [
+        "#FFFFFF",
+        "#453635",
+        "#CF202E",
+        "#00A0DD",
+        "#A51D36",
+        "#F4D3D6"
+      ],
+      "palette": [
+        "#CF202E",
+        "#453635",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": []
+    },
+    {
+      "id": "FOOD-WHAT",
+      "league": "FOOD",
+      "conference": "Burgers",
+      "region": "Whataburger",
+      "name": "",
+      "abbr": "WHAT",
+      "aliases": [],
+      "path": "/logos/svg/fast-food/what.svg",
+      "format": "svg",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/9/94/Whataburger_logo.svg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "sourcePage": "https://en.wikipedia.org/wiki/Whataburger",
+      "colors": [
+        "#FF770F"
+      ],
+      "palette": [
+        "#FF770F",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "FOOD-ZAX",
+      "league": "FOOD",
+      "conference": "Chicken",
+      "region": "Zaxby's",
+      "name": "",
+      "abbr": "ZAX",
+      "aliases": [
+        "Zaxbys"
+      ],
+      "path": "/logos/svg/fast-food/zax.png",
+      "format": "png",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/en/d/dd/Zaxby%27s_logo.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "sourcePage": "https://en.wikipedia.org/wiki/Zaxby%27s",
+      "colors": [
+        "#EA0A2A",
+        "#0D1D41",
+        "#F7F3ED",
+        "#0C1D41",
+        "#0D1D40",
+        "#EA092A",
+        "#0D1C41",
+        "#F7F2EC",
+        "#EA0B2B",
+        "#EA0A29",
+        "#0C1D42",
+        "#EA0C2C",
+        "#0C1D40",
+        "#0C1C41",
+        "#F7F1EB",
+        "#F6E1DE",
+        "#EB223E",
+        "#F6E4E0",
+        "#EA102F",
+        "#0D1D42",
+        "#EB1E3B",
+        "#F6DEDB",
+        "#EB1432",
+        "#EC3B53",
+        "#F6E5E1",
+        "#F07584",
+        "#ED3E56",
+        "#EB1D3A",
+        "#EB1937",
+        "#F4BABD",
+        "#F6ECE7",
+        "#EA0D2C",
+        "#F6E6E2",
+        "#EB1A37",
+        "#F6ECE6",
+        "#F7F1EC",
+        "#F6E9E5",
+        "#F3B0B5",
+        "#F7EEE9",
+        "#0D1C40",
+        "#EB213D",
+        "#F6E8E4",
+        "#F4C1C3",
+        "#F5D0CF",
+        "#EB1634",
+        "#ED3A53",
+        "#F06A7A",
+        "#ED4259",
+        "#F6EBE6",
+        "#F18691",
+        "#F5CBCB",
+        "#F6DFDC",
+        "#ED3850",
+        "#F5D7D6",
+        "#EB1C39",
+        "#F6EAE6",
+        "#EB1130",
+        "#EB1735",
+        "#EE596C",
+        "#F29CA4",
+        "#F7ECE7",
+        "#F2939D",
+        "#F6DAD8",
+        "#EB1936",
+        "#EE5468",
+        "#F2959E",
+        "#EA0B2A",
+        "#EC223E",
+        "#EF6375",
+        "#EE4B61",
+        "#EB1B38",
+        "#F18B96",
+        "#EA1231",
+        "#F0838F",
+        "#F17E8B",
+        "#F07987",
+        "#EF6C7C",
+        "#F7EDE8",
+        "#EE4F64",
+        "#EF6576",
+        "#F6E2DF",
+        "#F7EFE9",
+        "#F6E3E0",
+        "#F7F0EB",
+        "#EA0F2E",
+        "#EB1534",
+        "#EB1332",
+        "#F298A1",
+        "#EC314A",
+        "#EB2A45",
+        "#EB1331",
+        "#F6DBD9",
+        "#0E1D41",
+        "#0D1E40",
+        "#0D1E41",
+        "#0C1C40",
+        "#EC364F",
+        "#EB2641",
+        "#F297A0",
+        "#ED3C54"
+      ],
+      "palette": [
+        "#0C1D42",
+        "#EA092A",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": []
+    }
+  ]
+}

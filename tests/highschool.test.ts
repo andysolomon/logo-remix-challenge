@@ -456,7 +456,7 @@ describe('high-school league gameplay integration', () => {
     expect(TEAMS.filter((t) => t.league === 'COL')).toHaveLength(126)
     expect(LEAGUES.PRO.label).toBe('NFL')
     expect(LEAGUES.COL.conferences).toEqual(['ACC', 'Big 12', 'Big Ten', 'Pac-12', 'SEC', 'Ivy', 'HBCU'])
-    expect(TEAM_POOLS.map((p) => p.id)).toEqual(['NFL', ...LEAGUES.COL.conferences, 'Cobb County'])
+    expect(TEAM_POOLS.map((p) => p.id)).toEqual(['NFL', 'NBA', ...LEAGUES.COL.conferences, 'Cobb County'])
   })
 
   test('the team browser uses original league controls with compact HS copy', () => {
@@ -471,8 +471,8 @@ describe('high-school league gameplay integration', () => {
     expect(browser).not.toContain('league-seg')
 
     const leagueKeys = Object.keys(LEAGUES)
-    expect(leagueKeys).toEqual(['PRO', 'COL', 'HS'])
-    expect(leagueKeys.map((lg) => (lg === 'HS' ? 'HS' : LEAGUES[lg as keyof typeof LEAGUES].label))).toEqual(['NFL', 'COLLEGE', 'HS'])
+    expect(leagueKeys).toEqual(['PRO', 'NBA', 'COL', 'HS'])
+    expect(leagueKeys.map((lg) => (lg === 'HS' ? 'HS' : LEAGUES[lg as keyof typeof LEAGUES].label))).toEqual(['NFL', 'NBA', 'COLLEGE', 'HS'])
     expect(css).toMatch(/^\.seg \{ display: flex; background: var\(--chip-bg\); border-radius: 10px; padding: 3px; gap: 2px; \}$/m)
     expect(css).toMatch(/^\.seg-btn \{ min-width: 54px; height: 38px; border: none; border-radius: 8px; font: 600 12px var\(--ui\); cursor: pointer; background: transparent; color: var\(--muted\); \}$/m)
     expect(css).not.toContain('.league-seg')

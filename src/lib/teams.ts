@@ -1,6 +1,6 @@
 import data from './teams.json'
 
-export type League = 'PRO' | 'COL' | 'HS'
+export type League = 'PRO' | 'NBA' | 'COL' | 'HS'
 
 export interface Team {
   id: string
@@ -9,8 +9,10 @@ export interface Team {
   region: string
   name: string
   abbr: string
+  /** Common nicknames and alternate abbreviations accepted in guesses and search. */
+  aliases?: string[]
   palette: [string, string, string]
-  /** Optional exact source colors when the downloaded PNG differs from the displayed palette. */
+  /** Optional exact source colors when the artwork differs from the displayed palette. */
   sourcePalette?: [string, string, string]
   /** Source palette slots intentionally absent from genuinely two-color artwork. */
   unusedSourceSlots?: number[]
@@ -59,7 +61,7 @@ export const norm = (s: string) => String(s).toLowerCase().replace(/[^a-z0-9]/g,
 export function isCorrectGuess(guess: string, team: Team): boolean {
   const g = norm(guess)
   if (!g) return false
-  return [fullName(team), team.region, team.name, team.abbr].map(norm).includes(g)
+  return [fullName(team), team.region, team.name, team.abbr, ...(team.aliases ?? [])].map(norm).includes(g)
 }
 
 /**
@@ -73,7 +75,7 @@ export function suggestTeams(query: string, limit = 6): Team[] {
   const starts: Team[] = []
   const inside: Team[] = []
   for (const t of TEAMS) {
-    const keys = [fullName(t), t.region, t.name, t.abbr].map(norm)
+    const keys = [fullName(t), t.region, t.name, t.abbr, ...(t.aliases ?? [])].map(norm)
     if (keys.some((k) => k.startsWith(q))) starts.push(t)
     else if (keys.some((k) => k.includes(q))) inside.push(t)
   }
@@ -86,7 +88,7 @@ export function filterTeams(league: League, conference: string, query: string): 
     (t) =>
       t.league === league &&
       (conference === 'All' || t.conference === conference) &&
-      (!q || `${t.region} ${t.name} ${t.abbr}`.toLowerCase().includes(q)),
+      (!q || `${t.region} ${t.name} ${t.abbr} ${(t.aliases ?? []).join(' ')}`.toLowerCase().includes(q)),
   )
 }
 
@@ -463,7 +465,7 @@ const playJoined = async (urls: string[]) => {
 export const roundTarget = (r: Round, fallback: GuessTarget): GuessTarget => r.g ?? fallback
 export const guessPrompt = (t: GuessTarget) => (t === 'both' ? 'Guess the Logo and the Colors!' : t === 'colors' ? 'Guess the Colors!' : 'Guess the Logo!')
 /** Where a team plays: the league label for pro teams, the conference for college and high school. */
-export const teamHint = (t: Team) => (t.league === 'PRO' ? LEAGUES[t.league].label : t.conference)
+export const teamHint = (t: Team) => (t.league === 'PRO' || t.league === 'NBA' ? LEAGUES[t.league].label : t.conference)
 /** Hint lines for a round, one for the logo team and one for the colors team. */
 export const roundHints = (r: Round): [string, string] => [
   `Logo: ${teamHint(findTeam(r.o)!)}`,
@@ -471,7 +473,7 @@ export const roundHints = (r: Round): [string, string] => [
 ]
 
 // ---------- Random deck generator ----------
-/** A selectable slice of teams: the NFL as a whole, one college conference, or a high-school district. */
+/** A selectable slice of teams: a pro league, one college conference, or a high-school district. */
 export interface TeamPool {
   id: string
   label: string
@@ -479,6 +481,7 @@ export interface TeamPool {
 }
 export const TEAM_POOLS: TeamPool[] = [
   { id: 'NFL', label: LEAGUES.PRO.label, match: (t) => t.league === 'PRO' },
+  { id: 'NBA', label: LEAGUES.NBA.label, match: (t) => t.league === 'NBA' },
   ...LEAGUES.COL.conferences.map((c) => ({ id: c, label: c, match: (t: Team) => t.league === 'COL' && t.conference === c })),
   ...LEAGUES.HS.conferences.map((c) => ({ id: c, label: c, match: (t: Team) => t.league === 'HS' && t.conference === c })),
 ]

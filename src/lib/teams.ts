@@ -1,6 +1,6 @@
 import data from './teams.json'
 
-export type League = 'PRO' | 'NBA' | 'COL' | 'HS'
+export type League = 'PRO' | 'NBA' | 'MLB' | 'COL' | 'HS' | 'FOOD'
 
 export interface Team {
   id: string
@@ -83,12 +83,12 @@ export function suggestTeams(query: string, limit = 6): Team[] {
 }
 
 export function filterTeams(league: League, conference: string, query: string): Team[] {
-  const q = query.trim().toLowerCase()
+  const q = norm(query)
   return TEAMS.filter(
     (t) =>
       t.league === league &&
       (conference === 'All' || t.conference === conference) &&
-      (!q || `${t.region} ${t.name} ${t.abbr} ${(t.aliases ?? []).join(' ')}`.toLowerCase().includes(q)),
+      (!q || [fullName(t), t.abbr, ...(t.aliases ?? [])].some((name) => norm(name).includes(q))),
   )
 }
 
@@ -465,7 +465,7 @@ const playJoined = async (urls: string[]) => {
 export const roundTarget = (r: Round, fallback: GuessTarget): GuessTarget => r.g ?? fallback
 export const guessPrompt = (t: GuessTarget) => (t === 'both' ? 'Guess the Logo and the Colors!' : t === 'colors' ? 'Guess the Colors!' : 'Guess the Logo!')
 /** Where a team plays: the league label for pro teams, the conference for college and high school. */
-export const teamHint = (t: Team) => (t.league === 'PRO' || t.league === 'NBA' ? LEAGUES[t.league].label : t.conference)
+export const teamHint = (t: Team) => (t.league === 'COL' || t.league === 'HS' ? t.conference : LEAGUES[t.league].label)
 /** Hint lines for a round, one for the logo team and one for the colors team. */
 export const roundHints = (r: Round): [string, string] => [
   `Logo: ${teamHint(findTeam(r.o)!)}`,
@@ -482,6 +482,8 @@ export interface TeamPool {
 export const TEAM_POOLS: TeamPool[] = [
   { id: 'NFL', label: LEAGUES.PRO.label, match: (t) => t.league === 'PRO' },
   { id: 'NBA', label: LEAGUES.NBA.label, match: (t) => t.league === 'NBA' },
+  { id: 'MLB', label: LEAGUES.MLB.label, match: (t) => t.league === 'MLB' },
+  { id: 'Fast Food', label: LEAGUES.FOOD.label, match: (t) => t.league === 'FOOD' },
   ...LEAGUES.COL.conferences.map((c) => ({ id: c, label: c, match: (t: Team) => t.league === 'COL' && t.conference === c })),
   ...LEAGUES.HS.conferences.map((c) => ({ id: c, label: c, match: (t: Team) => t.league === 'HS' && t.conference === c })),
 ]

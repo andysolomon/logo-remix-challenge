@@ -200,7 +200,7 @@ export function DeckMode({ deck, portrait, timer, gameMode, guessTarget, voice, 
               ))}
             </div>
             <div className="mode-hint">
-              Sets every card in the deck — afterwards you can still switch any single card between Logo, Colors, or Both (name both teams to score).
+              Sets every card in the deck — afterwards you can still switch any single card between Logo, Colors, or Both (name both sources to score).
             </div>
 
             <div className="rail-label" id="deck-mode-label">ANSWER STYLE</div>

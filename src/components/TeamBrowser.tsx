@@ -43,12 +43,12 @@ export function TeamBrowser({ title, state, onState, selectedId, onSelect, showS
         className="search"
         value={state.query}
         onChange={(e) => onState({ ...state, query: e.target.value })}
-        placeholder="Search teams"
+        placeholder={state.league === 'FOOD' ? 'Search brands' : 'Search teams'}
         type="search"
         autoComplete="off"
-        aria-label={`Search ${title.toLowerCase()} teams`}
+        aria-label={`Search ${title.toLowerCase()} ${state.league === 'FOOD' ? 'brands' : 'teams'}`}
       />
-      <div className="chips" role="group" aria-label="Conference filter">
+      <div className="chips" role="group" aria-label={state.league === 'FOOD' ? 'Category filter' : 'Conference filter'}>
         {chips.map((c) => (
           <button
             key={c}
@@ -61,7 +61,7 @@ export function TeamBrowser({ title, state, onState, selectedId, onSelect, showS
           </button>
         ))}
       </div>
-      <div className="tile-grid" role="list" aria-label={`${title} results, ${teams.length} team${teams.length === 1 ? '' : 's'}`}>
+      <div className="tile-grid" role="list" aria-label={`${title} results, ${teams.length} ${state.league === 'FOOD' ? 'brand' : 'team'}${teams.length === 1 ? '' : 's'}`}>
         {teams.map((t) => {
           const sel = t.id === selectedId
           return (

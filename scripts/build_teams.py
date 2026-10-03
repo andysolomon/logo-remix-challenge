@@ -301,6 +301,7 @@ def main() -> int:
 
     nfl = [t for t in existing if t["league"] == "PRO"]
     nba = [t for t in existing if t["league"] == "NBA"]
+    other_leagues = [t for t in existing if t["league"] not in ("PRO", "NBA", "COL", "HS")]
     # High-school entries are owned by scripts/build_hs_teams.py; carry them
     # through untouched so a college rebuild cannot drop them, but never carry
     # a partial or stale slice through a successful college rebuild.
@@ -336,7 +337,7 @@ def main() -> int:
     text = TEAMS_JSON.read_text()
     start = text.index('"teams": [')
     end = text.index("\n  ]", start)
-    body = ",\n".join(fmt_entry(t) for t in nfl + nba + college + hs)
+    body = ",\n".join(fmt_entry(t) for t in nfl + nba + college + hs + other_leagues)
     head = text[:start] + '"teams": [\n'
     text = head + body + text[end:]
     # Conference chip list.

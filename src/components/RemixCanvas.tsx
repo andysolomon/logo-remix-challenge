@@ -19,7 +19,7 @@ interface Props {
 export function RemixCanvas({ original, colors, perm, addState, onShuffle, onAdd, onClearOriginal, onClearColors, onClearAll, portrait }: Props) {
   const label = addState === 'added' ? 'ADDED ✓' : addState === 'full' ? 'DECK FULL · 20' : addState === 'save' ? 'SAVE ROUND' : '+ ADD ROUND'
   const addDisabled = addState === 'disabled' || addState === 'full' || addState === 'added'
-  const colorText = colors ? fullName(colors) : original ? 'Now pick a color team →' : 'Pick a team'
+  const colorText = colors ? fullName(colors) : original ? 'Now pick a color source →' : 'Pick a color source'
   const liveStatus =
     addState === 'added'
       ? 'Round added to deck.'
@@ -51,14 +51,14 @@ export function RemixCanvas({ original, colors, perm, addState, onShuffle, onAdd
           </button>
         )}
       </div>
-      <div className={`canvas-name${original ? '' : ' placeholder'}`}>{original ? fullName(original) : 'Pick a team'}</div>
+      <div className={`canvas-name${original ? '' : ' placeholder'}`}>{original ? fullName(original) : 'Pick a team or brand'}</div>
       <div className="canvas-hero">
         {original ? (
           <div key={remixKey} className="hero-logo pop">
             {colors ? <Logo team={original} palette={colors.palette} perm={perm} /> : <Logo team={original} />}
           </div>
         ) : (
-          <div className="empty-circle">{portrait ? 'Pick an original team in step 1' : 'Pick an original team on the left to start a remix'}</div>
+          <div className="empty-circle">{portrait ? 'Pick an original logo in step 1' : 'Pick an original logo on the left to start a remix'}</div>
         )}
       </div>
       <div className="micro-row">

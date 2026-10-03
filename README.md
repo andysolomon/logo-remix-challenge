@@ -1,10 +1,12 @@
 # Logo Remix Challenge
 
-iPad-first sports-logo guessing game. A creator picks the **logo of one team** and the **colors of another**; players must name the original team while the colors misdirect them.
+iPad-first logo guessing game. A creator picks the **logo of one team or fast-food chain** and the **colors of another**; players name the logo and/or color sources while the remix misdirects them.
 
-Real logos for all 32 NFL teams, all 30 NBA teams, 120 college teams, 6 college conference marks, and the 17 Cobb County high schools (the HIGH SCHOOL league) live as local SVG or PNG assets under `public/logos/svg/`. SVG fills are rewritten in-browser; PNGs from Wikipedia, official athletics sites, and Cobb County School District sources use a canvas-based pixel recolor.
+Real logos for all 32 NFL teams, all 30 NBA teams, all 30 MLB teams, 30 fast-food chains, 120 college teams, 6 college conference marks, and the 17 Cobb County high schools (the HIGH SCHOOL league) live as local SVG or PNG assets under `public/logos/svg/`. SVG fills are rewritten in-browser; PNGs use a canvas-based pixel recolor.
 
 NBA teams are available as both logo and color donors. Filter them by Eastern or Western conference, or select NBA in Random Deck to create NBA-only or mixed-league rounds. Common answers such as Sixers, Cavs, GSW, NYK and SAS work in search, autocomplete and grading.
+
+MLB teams have American/National League filters and use official MLB SVGs. Team colors remain available even when a cap mark uses only one of them. Fast-food chains are grouped into Burgers, Chicken, Sandwiches, Pizza, Mexican & Asian, and Coffee & Treats. Both collections work in the logo picker, color picker, Random Deck, hints, autocomplete and saved rounds. Try a Braves logo in McDonald's colors, or the Golden Arches in Yankees colors. Six collection buttons use two rows of three on every screen size.
 
 Each round asks for either the **logo's team** or the **team whose colors it wears** — set per round on its deck card, with a deck-wide default for rounds left alone. An optional voice announcer plays Chatterbox clips (`public/voice/`) for the round prompt, the verdict, and the final score.
 
@@ -37,9 +39,13 @@ Agent Skill for this app (Voice Announcer, clip map, regen): `.agents/skills/arc
 
 ## Logos
 
-Logo assets are acquired from the official NBA CDN, ESPN-linked Wikipedia files, direct Wikipedia files, official athletics sites, and Cobb County School District pages, then checked into `public/logos/svg/` with manifests describing their sources and artwork colors. Four download scripts cover the separate rosters:
+Logo assets are acquired from official NBA/MLB CDNs, ESPN-linked Wikipedia files, direct Wikipedia files, official athletics sites, brand media libraries, and Cobb County School District pages, then checked into `public/logos/svg/` with manifests describing their sources and artwork colors.
 
 `download_nba_svgs.py` downloads the 30 primary SVG marks from the official NBA CDN, snapshots names and brand colors from ESPN, and records actual artwork colors in `nba-manifest.json`. `nba_roster.py` pins NBA IDs and conference alignment from NBA.com. `build_nba_teams.py` validates the complete roster and replaces only NBA entries; the college and high-school builders preserve NBA entries. All logos stay local at runtime.
+
+`download_extra_logos.py --league MLB` validates the current roster against MLB's official Stats API and downloads MLB's team SVGs. `--league FOOD` resolves the 30 chains' Wikipedia infobox logos, with KFC's 2026 primary mark coming directly from its official media library. The separate `mlb-manifest.json` and `fast-food-manifest.json` record sources, artwork colors, palettes, and unused color slots. `build_extra_teams.py --league MLB|FOOD` validates and replaces only the requested collection. Every roster builder preserves the other collections. The downloader validates the whole collection before replacing checked-in files; an optional `--cache-dir /tmp/logo-remix-assets` resumes interrupted downloads.
+
+The fast-food PNG inspection path requires Pillow (`python3 -m pip install Pillow`). The application itself has no new runtime dependencies.
 
 `download_svgs.py` takes its rosters and brand colors from ESPN — 32 NFL teams, 6 conference logos (ACC, Big 12, Big Ten, Pac-12, SEC, Ivy), and every football member of those conferences for the configured season, plus the 21 Division I football HBCUs (SWAC, the MEAC schools that field football, and Hampton, North Carolina A&T and Tennessee State). It writes `manifest.json`.
 
@@ -56,9 +62,13 @@ python3 scripts/download_svgs.py --only nfl    # subset: nfl, conferences, ncaa
 bun run logos:hbcu                             # or: python3 scripts/download_hbcu_svgs.py
 bun run logos:hs                               # or: python3 scripts/download_cobb_svgs.py
 bun run logos:nba                              # fetch official NBA SVGs and refresh the manifest
+bun run logos:mlb                              # fetch official MLB SVGs and refresh the manifest
+bun run logos:food                             # fetch the 30 fast-food logos and refresh the manifest
 bun run teams                                  # regenerate college entries in src/lib/teams.json from both manifests
 bun run teams:hs                               # regenerate high-school entries from hs-manifest.json
 bun run teams:nba                              # regenerate NBA entries from nba-manifest.json
+bun run teams:mlb                              # regenerate MLB entries from mlb-manifest.json
+bun run teams:food                             # regenerate fast-food entries from fast-food-manifest.json
 ```
 
 The legacy ESPN PNGs (32 NFL teams + 5 conferences) can still be fetched into `public/logos/`:
@@ -68,7 +78,7 @@ bun run logos                                  # or: python3 scripts/download_lo
 python3 scripts/download_logos.py --force      # re-download everything
 ```
 
-Trademarks belong to the NFL, NBA, their teams, the conferences and the schools; assets are used here for a private party game.
+Trademarks belong to the NFL, NBA, MLB, their teams, the restaurant brands, the conferences and the schools; assets are used here for a private party game.
 
 ## Deploy
 
@@ -85,7 +95,7 @@ src/
   App.tsx                  mode router (create / deck / play) + persisted state
   styles.css               tokens, keyframes, all component styles
   lib/teams.ts             dataset, answer matching, filtering, localStorage
-  lib/teams.json           32 NFL + 30 NBA + 126 college + 17 high-school entries, permutations, seed deck
+  lib/teams.json           32 NFL + 30 NBA + 30 MLB + 30 food + 126 college + 17 high-school entries
   lib/useOrientation.ts    portrait = innerHeight > innerWidth
   components/
     Logo.tsx               local PNG rendering + canvas palette-swap recoloring
@@ -107,6 +117,9 @@ scripts/
   download_nba_svgs.py     fetch the 30 official NBA SVGs and snapshot ESPN metadata
   nba_roster.py            pinned NBA IDs, conferences and answer aliases
   build_nba_teams.py       validate and rebuild only NBA entries
+  download_extra_logos.py  fetch official MLB and fast-food SVG/PNG marks
+  extra_rosters.py         pinned MLB IDs/conferences, chain roster and aliases
+  build_extra_teams.py     validate and rebuild only MLB or fast-food entries
   cobb_roster.py           Cobb roster, official colors, and per-school source URLs
   build_teams.py           merge the NFL/college manifests into src/lib/teams.json
   build_hs_teams.py        merge hs-manifest.json into src/lib/teams.json
@@ -116,6 +129,8 @@ public/logos/
   conferences/             acc, big-12, big-ten, pac-12, sec PNGs
   svg/high-school/         17 checked-in Cobb high-school SVG/PNG marks
   svg/nba/                 30 checked-in official NBA SVG marks
+  svg/mlb/                 30 checked-in official MLB SVG marks
+  svg/fast-food/           30 checked-in chain SVG/PNG marks
 ```
 
 The design prototype and spec live in `design_handoff_logo_remix/` (reference only).

@@ -76,7 +76,7 @@ export function RandomDeckModal({ deck, guessTarget, onRoll, onClose }: Props) {
             ))}
           </div>
           <div className="mode-hint">
-            {opts.guess === 'mix' ? 'Each round randomly asks for the logo or the colors.' : opts.guess === 'both' ? 'Every round asks for the logo’s team and the colors’ team.' : opts.guess === 'colors' ? 'Every round asks whose colors the logo is wearing.' : 'Every round asks which team the logo belongs to.'}
+            {opts.guess === 'mix' ? 'Each round randomly asks for the logo or the colors.' : opts.guess === 'both' ? 'Every round asks for the names behind the logo and the colors.' : opts.guess === 'colors' ? 'Every round asks whose colors the logo is wearing.' : 'Every round asks which team or brand the logo belongs to.'}
           </div>
 
           <div className="rail-label" id="rnd-hints-label">HINTS</div>
@@ -109,7 +109,7 @@ export function RandomDeckModal({ deck, guessTarget, onRoll, onClose }: Props) {
           <button type="button" className={`btn-start${ready ? '' : ' disabled'}`} onClick={roll} disabled={!ready} aria-label={ready ? `Roll ${rollCount} random round${rollCount === 1 ? '' : 's'}` : 'Roll disabled, adjust options'}>
             🎲 ROLL {rollCount || opts.rounds} ROUND{(rollCount || opts.rounds) === 1 ? '' : 'S'}
           </button>
-          {!ready && <div className="mode-hint">{capacity === 0 ? 'Replace the deck to roll new rounds.' : 'Pick at least one league for logos and one for colors.'}</div>}
+          {!ready && <div className="mode-hint">{capacity === 0 ? 'Replace the deck to roll new rounds.' : 'Pick at least one collection for logos and one for colors.'}</div>}
         </div>
       </div>
     </div>
@@ -123,7 +123,7 @@ function PoolPicker({ label, value, count, onChange }: { label: string; value: s
     <>
       <div className="pool-head">
         <span className="rail-label">{label}</span>
-        <span className="pool-count">{count} teams</span>
+        <span className="pool-count">{count} logos</span>
       </div>
       <div className="chips" role="group" aria-label={label}>
         <button type="button" className={`chip${all ? ' active' : ''}`} aria-pressed={all} onClick={() => onChange(all ? [] : ALL_POOL_IDS)}>

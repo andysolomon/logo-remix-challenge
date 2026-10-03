@@ -126,7 +126,7 @@ export function SettingsModal({ timer, gameMode, guessTarget, voice, onTimer, on
           </div>
           <div className="mode-hint">
             {guessTarget === 'both'
-              ? 'Both: name the logo’s team and the team whose colors it wears — a point only when both are right.'
+              ? 'Both: name the team or brand behind the logo and whose colors it wears — a point only when both are right.'
               : 'Sets every card in the deck — each deck card can still be switched individually afterwards.'}
           </div>
 

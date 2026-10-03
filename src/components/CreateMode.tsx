@@ -117,7 +117,7 @@ export function CreateMode({ state, setState, portrait, deckCount, onAddRound, h
         </div>
         {state.step === 1 && (
           <TeamBrowser
-            title="CHOOSE THE ORIGINAL TEAM"
+            title="CHOOSE THE ORIGINAL"
             state={state.browserO}
             onState={(b) => setState((s) => ({ ...s, browserO: b }))}
             selectedId={state.oId}
@@ -127,7 +127,7 @@ export function CreateMode({ state, setState, portrait, deckCount, onAddRound, h
         )}
         {state.step === 2 && (
           <TeamBrowser
-            title="CHOOSE THE COLOR TEAM"
+            title="CHOOSE THE COLORS"
             state={state.browserC}
             onState={(b) => setState((s) => ({ ...s, browserC: b }))}
             selectedId={state.cId}

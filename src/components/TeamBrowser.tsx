@@ -1,3 +1,4 @@
+import { useEffect, useRef } from 'react'
 import { filterTeams, fullName, LEAGUES, type League, type Team } from '../lib/teams'
 import { Logo } from './Logo'
 
@@ -18,6 +19,17 @@ interface Props {
 }
 
 export function TeamBrowser({ title, state, onState, selectedId, onSelect, showSwatches, portrait }: Props) {
+  const leagueRef = useRef<HTMLDivElement>(null)
+  useEffect(() => {
+    const group = leagueRef.current
+    const active = group?.querySelector<HTMLButtonElement>('[aria-pressed="true"]')
+    if (!group || !active || group.scrollWidth <= group.clientWidth) return
+    // Keep a restored selection visible without scrolling the page or logo list.
+    const bounds = group.getBoundingClientRect()
+    const button = active.getBoundingClientRect()
+    if (button.left < bounds.left + 6) group.scrollLeft -= bounds.left + 6 - button.left
+    else if (button.right > bounds.right - 6) group.scrollLeft += button.right - bounds.right + 6
+  }, [state.league, portrait])
   const teams = filterTeams(state.league, state.conference, state.query)
   const chips = ['All', ...LEAGUES[state.league].conferences]
   const panelId = `browser-${title.replace(/\s+/g, '-').toLowerCase()}`
@@ -25,7 +37,7 @@ export function TeamBrowser({ title, state, onState, selectedId, onSelect, showS
     <section className="panel" aria-labelledby={panelId}>
       <div className={`panel-head${portrait ? ' wrap' : ''}`}>
         <div id={panelId} className="panel-title">{title}</div>
-        <div className="seg" role="group" aria-label="League">
+        <div ref={leagueRef} className="seg" role="group" aria-label="League or category">
           {(Object.keys(LEAGUES) as League[]).map((lg) => (
             <button
               key={lg}
@@ -77,6 +89,7 @@ export function TeamBrowser({ title, state, onState, selectedId, onSelect, showS
                   <Logo team={t} />
                 </div>
                 <div className="tile-name">{fullName(t)}</div>
+                {!showSwatches && t.alternateLogos?.length ? <div className="tile-variants">{t.alternateLogos.length + 1} logos</div> : null}
                 {showSwatches && (
                   <div className="swatches">
                     {t.palette.map((h, i) => (

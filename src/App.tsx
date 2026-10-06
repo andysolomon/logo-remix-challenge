@@ -102,6 +102,7 @@ export default function App() {
       oId: r.o,
       cId: r.c,
       perm: r.v,
+      logoVariant: r.l,
       editIdx: i,
       step: 3,
       browserO: { league: o.league, conference: 'All', query: '' },

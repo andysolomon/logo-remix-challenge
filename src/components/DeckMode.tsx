@@ -116,7 +116,7 @@ export function DeckMode({ deck, portrait, timer, gameMode, guessTarget, voice, 
                 <div key={`${i}-${r.o}-${r.c}`} className="round-card">
                   <div className="round-label">ROUND {i + 1}</div>
                   <div className="round-logo">
-                    <Logo team={ot} palette={ct.palette} perm={r.v} />
+                    <Logo team={ot} palette={ct.palette} perm={r.v} variantId={r.l} />
                   </div>
                   <div className="round-name">{fullName(ot)}</div>
                   <div className="round-sub">in {fullName(ct)} colors</div>

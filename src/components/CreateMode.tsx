@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
-import { findTeam, MAX_DECK_ROUNDS, nextContrastSafePermutation, type Round, type Team } from '../lib/teams'
+import { findTeam, MAX_DECK_ROUNDS, nextContrastSafePermutation, nextLogoVariant, withLogoVariant, type Round, type Team } from '../lib/teams'
 import { RemixCanvas, type AddState } from './RemixCanvas'
 import { TeamBrowser, type BrowserState } from './TeamBrowser'
 
@@ -7,6 +7,7 @@ export interface CreateState {
   oId: string | null
   cId: string | null
   perm: number
+  logoVariant?: string
   editIdx: number | null
   step: 1 | 2 | 3
   browserO: BrowserState
@@ -39,7 +40,8 @@ const panelProps = {
 }
 
 export function CreateMode({ state, setState, portrait, deckCount, onAddRound, hidden }: Props) {
-  const original = state.oId ? findTeam(state.oId) ?? null : null
+  const originalTeam = state.oId ? findTeam(state.oId) ?? null : null
+  const original = originalTeam ? withLogoVariant(originalTeam, state.logoVariant) : null
   const colors = state.cId ? findTeam(state.cId) ?? null : null
   const [justAdded, setJustAdded] = useState(false)
   const addedTimer = useRef<number | undefined>(undefined)
@@ -51,19 +53,22 @@ export function CreateMode({ state, setState, portrait, deckCount, onAddRound, h
 
   // Clicking the already-selected tile deselects it.
   const selectOriginal = (t: Team) =>
-    setState((s) => (s.oId === t.id ? { ...s, oId: null, step: 1 } : { ...s, oId: t.id, step: 2 }))
+    setState((s) => (s.oId === t.id ? { ...s, oId: null, logoVariant: undefined, step: 1 } : { ...s, oId: t.id, logoVariant: undefined, step: 2 }))
   const selectColors = (t: Team) =>
     setState((s) => (s.cId === t.id ? { ...s, cId: null, perm: 0, step: 2 } : { ...s, cId: t.id, step: 3 }))
-  const clearOriginal = () => setState((s) => ({ ...s, oId: null, step: 1 }))
+  const clearOriginal = () => setState((s) => ({ ...s, oId: null, logoVariant: undefined, step: 1 }))
   const clearColors = () => setState((s) => ({ ...s, cId: null, perm: 0, step: 2 }))
-  const clearAll = () => setState((s) => ({ ...s, oId: null, cId: null, perm: 0, editIdx: null, step: 1 }))
+  const clearAll = () => setState((s) => ({ ...s, oId: null, cId: null, perm: 0, logoVariant: undefined, editIdx: null, step: 1 }))
   const shuffle = () => {
     if (original && colors) setState((s) => ({ ...s, perm: nextContrastSafePermutation(original, colors.palette, s.perm) }))
+  }
+  const shuffleLogo = () => {
+    if (originalTeam) setState((s) => ({ ...s, logoVariant: nextLogoVariant(originalTeam, s.logoVariant) }))
   }
   const add = () => {
     if (!original || !colors || deckFull || addLock.current) return
     addLock.current = true
-    const added = onAddRound({ o: original.id, c: colors.id, v: state.perm }, state.editIdx)
+    const added = onAddRound({ o: original.id, c: colors.id, v: state.perm, l: state.logoVariant }, state.editIdx)
     if (!added) {
       addLock.current = false
       return
@@ -75,7 +80,7 @@ export function CreateMode({ state, setState, portrait, deckCount, onAddRound, h
       setJustAdded(false)
       addLock.current = false
       // Reset the canvas to its default state for the next remix.
-      setState((s) => ({ ...s, oId: null, cId: null, perm: 0, step: 1 }))
+      setState((s) => ({ ...s, oId: null, cId: null, perm: 0, logoVariant: undefined, step: 1 }))
     }, 1000)
   }
 
@@ -86,6 +91,8 @@ export function CreateMode({ state, setState, portrait, deckCount, onAddRound, h
       perm={state.perm}
       addState={addState}
       onShuffle={shuffle}
+      onShuffleLogo={shuffleLogo}
+      logoVariant={state.logoVariant}
       onAdd={add}
       onClearOriginal={clearOriginal}
       onClearColors={clearColors}

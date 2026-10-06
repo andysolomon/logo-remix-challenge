@@ -2,6 +2,14 @@ import data from './teams.json'
 
 export type League = 'PRO' | 'NBA' | 'MLB' | 'COL' | 'HS' | 'FOOD'
 
+export interface LogoVariant {
+  id: string
+  label: string
+  logo: string
+  sourcePalette?: [string, string, string]
+  unusedSourceSlots?: number[]
+}
+
 export interface Team {
   id: string
   league: League
@@ -18,6 +26,7 @@ export interface Team {
   unusedSourceSlots?: number[]
   /** Path under public/ to the team's logo, e.g. "/logos/svg/nfl/kc.svg" (SVG preferred; PNGs fall back to canvas recolor). */
   logo: string
+  alternateLogos?: LogoVariant[]
 }
 
 export interface Round {
@@ -28,6 +37,8 @@ export interface Round {
   g?: GuessTarget
   /** Show league/conference hints for this round (e.g. "Logo: NFL · Colors: ACC"). */
   h?: boolean
+  /** Stable alternate artwork id for the original team; unset uses its primary logo. */
+  l?: string
 }
 
 export type GameMode = 'type' | 'host'
@@ -55,6 +66,24 @@ const byId = new Map(TEAMS.map((t) => [t.id, t]))
 export const findTeam = (id: string): Team | undefined => byId.get(id)
 // Conference entries carry an empty name; trim keeps their display clean.
 export const fullName = (t: Team) => `${t.region} ${t.name}`.trim()
+
+export const logoVariants = (team: Team): LogoVariant[] => [
+  { id: 'primary', label: 'Primary', logo: team.logo, sourcePalette: team.sourcePalette, unusedSourceSlots: team.unusedSourceSlots },
+  ...(team.alternateLogos ?? []),
+]
+
+/** Resolve artwork only: team identity, donor palette and guessing answers stay the same. */
+export function withLogoVariant(team: Team, id?: string): Team {
+  const variant = team.alternateLogos?.find((v) => v.id === id)
+  return variant ? { ...team, logo: variant.logo, sourcePalette: variant.sourcePalette ?? team.palette, unusedSourceSlots: variant.unusedSourceSlots } : team
+}
+
+export function nextLogoVariant(team: Team, current?: string): string | undefined {
+  const variants = logoVariants(team)
+  const at = Math.max(0, variants.findIndex((v) => v.id === (current ?? 'primary')))
+  const next = variants[(at + 1) % variants.length].id
+  return next === 'primary' ? undefined : next
+}
 
 export const norm = (s: string) => String(s).toLowerCase().replace(/[^a-z0-9]/g, '')
 
@@ -648,14 +677,17 @@ function isRound(r: unknown): r is Round {
   const round = r as Round
   return !!findTeam(round.o) && !!findTeam(round.c) && Number.isFinite(round.v) &&
     (round.g === undefined || isGuessTarget(round.g)) &&
-    (round.h === undefined || typeof round.h === 'boolean')
+    (round.h === undefined || typeof round.h === 'boolean') &&
+    (round.l === undefined || typeof round.l === 'string')
 }
 
 export function normalizeRound(round: Round): Round {
   const original = findTeam(round.o)
   const colors = findTeam(round.c)
   if (!original || !colors) return round
-  return { ...round, v: contrastSafePermutation(original, colors.palette, round.v) }
+  const { l, ...base } = round
+  const validLogo = original.alternateLogos?.some((variant) => variant.id === l)
+  return { ...base, ...(validLogo ? { l } : {}), v: contrastSafePermutation(withLogoVariant(original, l), colors.palette, round.v) }
 }
 
 export const normalizeDeck = (deck: Round[]) => deck.slice(0, MAX_DECK_ROUNDS).map(normalizeRound)

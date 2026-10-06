@@ -6,7 +6,9 @@ Real logos for all 32 NFL teams, all 30 NBA teams, all 30 MLB teams, 30 fast-foo
 
 NBA teams are available as both logo and color donors. Filter them by Eastern or Western conference, or select NBA in Random Deck to create NBA-only or mixed-league rounds. Common answers such as Sixers, Cavs, GSW, NYK and SAS work in search, autocomplete and grading.
 
-MLB teams have American/National League filters and use official MLB SVGs. Team colors remain available even when a cap mark uses only one of them. Fast-food chains are grouped into Burgers, Chicken, Sandwiches, Pizza, Mexican & Asian, and Coffee & Treats. Both collections work in the logo picker, color picker, Random Deck, hints, autocomplete and saved rounds. Try a Braves logo in McDonald's colors, or the Golden Arches in Yankees colors. Six collection buttons use two rows of three on every screen size.
+MLB teams have American/National League filters and use official MLB SVGs. Team colors remain available even when a cap mark uses only one of them. Fast-food chains are grouped into Burgers, Chicken, Sandwiches, Pizza, Mexican & Asian, and Coffee & Treats. Both collections work in the logo picker, color picker, Random Deck, hints, autocomplete and saved rounds. Try a Braves logo in McDonald's colors, or the Golden Arches in Yankees colors. Collection buttons form a single horizontally scrollable row on phones and smaller tablets; larger layouts retain two rows of three.
+
+Every NFL team has alternate artwork. Pick an NFL original, then use **Shuffle Logo** in the remix preview to cycle its primary, alternate and available throwback marks. **Shuffle Colors** changes the color assignment independently. The preview shows the artwork label and position; the chosen logo is retained when saving, editing, playing and revealing a round. Team names, accepted answers and donor colors stay the same. Teams outside the NFL continue to use their primary marks. Random Deck uses primary logos until you edit a round and choose an alternate.
 
 Each round asks for either the **logo's team** or the **team whose colors it wears** — set per round on its deck card, with a deck-wide default for rounds left alone. An optional voice announcer plays Chatterbox clips (`public/voice/`) for the round prompt, the verdict, and the final score.
 
@@ -38,6 +40,8 @@ Announcer clips live in `public/voice/`. To regenerate them you need a Chatterbo
 Agent Skill for this app (Voice Announcer, clip map, regen): `.agents/skills/arc-logo-remix/`. The bake workflow lives with Chatterbox as `creating-audio`.
 
 ## Logos
+
+`download_nfl_alternates.py` refreshes the curated sources in `scripts/nfl_alternate_sources.json` and records provenance, checksums, artwork palettes and unused slots in `nfl-alternates-manifest.json`. PNGs require Pillow; assets are checked in locally, so gameplay needs no external image service. The complete NFL catalog validates before any team data is replaced. Re-run with `bun run logos:nfl-alternates`, or add `--force` to refresh source images. Alternate and throwback marks come from Sports Logo History, Logos Download and Wikipedia; artwork labels distinguish historical variants. Stable variant ids are stored in the optional round `l` field. Older decks and missing variant ids use the primary artwork.
 
 Logo assets are acquired from official NBA/MLB CDNs, ESPN-linked Wikipedia files, direct Wikipedia files, official athletics sites, brand media libraries, and Cobb County School District pages, then checked into `public/logos/svg/` with manifests describing their sources and artwork colors.
 
@@ -101,7 +105,7 @@ src/
     Logo.tsx               local PNG rendering + canvas palette-swap recoloring
     Header.tsx             wordmark, Create / Deck tabs, PLAY
     TeamBrowser.tsx        league toggle, search, conference chips, tile grid
-    RemixCanvas.tsx        hero remix logo, Shuffle Colors, + ADD ROUND
+    RemixCanvas.tsx        hero remix logo, Shuffle Logo, Shuffle Colors, + ADD ROUND
     CreateMode.tsx         landscape 3-column / portrait stepped composition
     DeckMode.tsx           round cards, game setup rail, high score
     PlayMode.tsx           intro → question (type / host) → reveal → results

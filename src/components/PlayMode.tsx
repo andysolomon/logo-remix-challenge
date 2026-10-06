@@ -298,7 +298,7 @@ export function PlayMode({ deck, timer, gameMode, guessTarget, voice, highScores
           </div>
           <div className="q-hero">
             <div key={rIdx} className="q-logo pop-fast">
-              <Logo team={ot} palette={ct.palette} perm={round.v} />
+              <Logo team={ot} palette={ct.palette} perm={round.v} variantId={round.l} />
             </div>
           </div>
           <div className="prompt">{target === 'both' ? 'WHOSE LOGO · WHOSE COLORS?' : target === 'colors' ? 'WHOSE COLORS ARE THESE?' : 'WHOSE LOGO IS THIS?'}</div>
@@ -413,7 +413,7 @@ export function PlayMode({ deck, timer, gameMode, guessTarget, voice, highScores
                 <div key={lb} className="reveal-part">
                   <div className="reveal-part-lb">{lb}</div>
                   <div className="reveal-logo">
-                    <Logo team={t} />
+                    <Logo team={t} variantId={i === 0 ? round?.l : undefined} />
                   </div>
                   <div className="reveal-name">{fullName(t)}</div>
                   {parts && <div className={`reveal-part-mark ${parts[i] ? 'ok' : 'no'}`}>{parts[i] ? '✓ got it' : '✕ missed'}</div>}
@@ -423,7 +423,7 @@ export function PlayMode({ deck, timer, gameMode, guessTarget, voice, highScores
           ) : (
             <>
               <div className="reveal-logo">
-                <Logo team={target === 'colors' ? ct : ot} />
+                <Logo team={target === 'colors' ? ct : ot} variantId={target === 'colors' ? undefined : round?.l} />
               </div>
               <div className="reveal-name">{fullName(target === 'colors' ? ct : ot)}</div>
               <div className="reveal-note">
@@ -507,7 +507,7 @@ export function PlayMode({ deck, timer, gameMode, guessTarget, voice, highScores
                 <div key={i} className="recap-row">
                   <div className={`recap-mark ${ok ? 'ok' : 'no'}`}>{ok ? '✓' : '✕'}</div>
                   <div className="recap-thumb">
-                    <Logo team={o} palette={c.palette} perm={r.v} />
+                    <Logo team={o} palette={c.palette} perm={r.v} variantId={r.l} />
                   </div>
                   <div className="recap-name">
                     {roundTarget(r, guessTarget) === 'both' ? `${fullName(o)} · ${fullName(c)}` : fullName(roundTarget(r, guessTarget) === 'colors' ? c : o)}

@@ -13,6 +13,7 @@
     "logos:hbcu": "python3 scripts/download_hbcu_svgs.py",
     "logos:hs": "python3 scripts/download_cobb_svgs.py",
     "logos:nba": "python3 scripts/download_nba_svgs.py",
+    "logos:nfl-alternates": "python3 scripts/download_nfl_alternates.py",
     "logos:mlb": "python3 scripts/download_extra_logos.py --league MLB",
     "logos:food": "python3 scripts/download_extra_logos.py --league FOOD",
     "teams": "python3 scripts/build_teams.py",

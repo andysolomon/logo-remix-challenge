@@ -463,7 +463,7 @@ describe('high-school league gameplay integration', () => {
     const browser = readFileSync(join(root, 'src/components/TeamBrowser.tsx'), 'utf8')
     const css = readFileSync(join(root, 'src/styles.css'), 'utf8')
     expect(browser).toContain('Object.keys(LEAGUES) as League[]')
-    expect(browser).toContain('className="seg"')
+    expect(browser).toContain('className="seg" role="group" aria-label="League or category"')
     expect(browser).toContain('className={`seg-btn${state.league === lg ? \' active\' : \'\'}`}')
     expect(browser).toContain("{lg === 'HS' ? 'HS' : LEAGUES[lg].label}")
     expect(browser).toContain("onState({ ...state, league: lg, conference: 'All' })")

@@ -1,10 +1,11 @@
 import { useEffect, useState } from 'react'
-import { resolveRemixTargetColors, type Team } from '../lib/teams'
+import { resolveRemixTargetColors, withLogoVariant, type Team } from '../lib/teams'
 
 interface Props {
   team: Team
   palette?: readonly string[]
   perm?: number
+  variantId?: string
 }
 
 type RGB = readonly [number, number, number]
@@ -252,7 +253,8 @@ function recolor(key: string, src: string, from: RGB[], to: RGB[]): Promise<stri
  * target palette (SVG fills rewritten as text; PNGs recolored on a canvas) and
  * the image stays transparent until that cached recolor is ready.
  */
-export function Logo({ team, palette, perm = 0 }: Props) {
+export function Logo({ team: baseTeam, palette, perm = 0, variantId }: Props) {
+  const team = withLogoVariant(baseTeam, variantId)
   const hasTargetPalette = palette != null
   const target = hasTargetPalette ? resolveRemixTargetColors(team, palette, perm) : null
   const source = team.sourcePalette ?? team.palette

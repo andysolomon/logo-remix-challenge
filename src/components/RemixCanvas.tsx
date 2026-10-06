@@ -9,6 +9,8 @@ interface Props {
   perm: number
   addState: AddState
   onShuffle: () => void
+  onShuffleLogo: () => void
+  logoVariant?: string
   onAdd: () => void
   onClearOriginal: () => void
   onClearColors: () => void
@@ -16,7 +18,10 @@ interface Props {
   portrait?: boolean
 }
 
-export function RemixCanvas({ original, colors, perm, addState, onShuffle, onAdd, onClearOriginal, onClearColors, onClearAll, portrait }: Props) {
+export function RemixCanvas({ original, colors, perm, addState, onShuffle, onShuffleLogo, logoVariant, onAdd, onClearOriginal, onClearColors, onClearAll, portrait }: Props) {
+  const alternates = original?.alternateLogos ?? []
+  const variantIndex = alternates.findIndex((v) => v.id === logoVariant)
+  const variantLabel = variantIndex < 0 ? 'Primary' : alternates[variantIndex].label
   const label = addState === 'added' ? 'ADDED ✓' : addState === 'full' ? 'DECK FULL · 20' : addState === 'save' ? 'SAVE ROUND' : '+ ADD ROUND'
   const addDisabled = addState === 'disabled' || addState === 'full' || addState === 'added'
   const colorText = colors ? fullName(colors) : original ? 'Now pick a color source →' : 'Pick a color source'
@@ -37,7 +42,7 @@ export function RemixCanvas({ original, colors, perm, addState, onShuffle, onAdd
           ? 'Save round changes'
           : 'Add round to deck'
   // Key forces the pop animation to replay whenever the remix changes.
-  const remixKey = `${original?.id}-${colors?.id}-${colors ? perm : 0}`
+  const remixKey = `${original?.id}-${logoVariant ?? 'primary'}-${colors?.id}-${colors ? perm : 0}`
   return (
     <section className="canvas" aria-label="Remix preview">
       <div className="sr-only" role="status" aria-live="polite" aria-atomic="true">
@@ -52,6 +57,11 @@ export function RemixCanvas({ original, colors, perm, addState, onShuffle, onAdd
         )}
       </div>
       <div className={`canvas-name${original ? '' : ' placeholder'}`}>{original ? fullName(original) : 'Pick a team or brand'}</div>
+      {alternates.length > 0 && (
+        <div className="logo-variant-label" role="status" aria-live="polite">
+          {variantLabel} · {variantIndex + 2} of {alternates.length + 1}
+        </div>
+      )}
       <div className="canvas-hero">
         {original ? (
           <div key={remixKey} className="hero-logo pop">
@@ -81,9 +91,14 @@ export function RemixCanvas({ original, colors, perm, addState, onShuffle, onAdd
       </div>
       <div className="canvas-footer">
         <div className="action-row">
+          <button type="button" className="btn-shuffle" onClick={onShuffleLogo} disabled={!alternates.length} aria-label="Shuffle logo alternate">
+            Shuffle Logo
+          </button>
           <button type="button" className="btn-shuffle" onClick={onShuffle} disabled={!original || !colors} aria-label="Shuffle color assignment">
             Shuffle Colors
           </button>
+        </div>
+        <div className="action-row add-row">
           <button
             type="button"
             className={`btn-add${addDisabled ? ' disabled' : ''}${addState === 'added' ? ' added' : ''}`}

@@ -9,6 +9,48 @@ const root = join(import.meta.dir, '..')
 const nfl = TEAMS.filter((team) => team.league === 'PRO')
 
 describe('NFL logo variants', () => {
+  test('every NFL team offers real vector artwork that stays editable at any size', () => {
+    for (const team of nfl) {
+      expect(team.alternateLogos!.some((variant) => variant.logo.endsWith('.svg'))).toBe(true)
+    }
+    execFileSync('python3', ['-c', `
+import json, sys
+from pathlib import Path
+sys.path.insert(0, 'scripts')
+from nfl_vector_artwork import validate_vector
+manifest = json.loads(Path('public/logos/svg/nfl-alternates-manifest.json').read_text())
+for item in manifest:
+    if item['format'] == 'svg':
+        validate_vector((Path('public') / item['path'].lstrip('/')).read_bytes())
+    else:
+        from PIL import Image
+        image = Image.open(Path('public') / item['path'].lstrip('/')).convert('RGBA')
+        assert max(image.crop(image.getbbox()).size) >= item['minRasterSize']
+`], { cwd: root })
+  })
+
+  test('vector imports reject bitmap wrappers, live fonts, missing dimensions and external resources', () => {
+    execFileSync('python3', ['-c', `
+import sys
+sys.path.insert(0, 'scripts')
+from nfl_vector_artwork import import_vector, validate_vector
+def svg(body, box='0 0 100 100'):
+    return f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="{box}">{body}</svg>'.encode()
+for raw in [svg('<image href="data:image/png;base64,AAAA"/>'),
+            svg('<text>Font dependency</text>'), svg('<path d="M0 0h10v10z"/>', '0 0 0 0'),
+            svg('<use href="https://example.com/logo.svg#mark"/>'), svg('')]:
+    try: validate_vector(raw)
+    except ValueError: pass
+    else: raise AssertionError('invalid vector source accepted')
+raw = svg('<path fill="#fff" d="M0 0h100v100H0z"/><path fill="#fff" d="M10 10h10v10z"/>')
+root = validate_vector(import_vector(raw, {'removePaths': ['M0 0h100v100H0z']}))
+assert len(root) == 1 and root[0].get('fill') == '#fff', 'white artwork was removed with the page'
+try: import_vector(raw, {'removePaths': ['changed-source-background']})
+except ValueError: pass
+else: raise AssertionError('changed background accepted without review')
+`], { cwd: root })
+  })
+
   test('refresh reuses verified assets, preserves the roster and rejects incomplete sources before writing', () => {
     execFileSync('python3', ['-c', `
 import contextlib, io, json, shutil, sys, tempfile
@@ -31,6 +73,26 @@ with tempfile.TemporaryDirectory() as folder:
     assert n.TEAMS.read_bytes() == original, 'refresh changed unrelated data or serialization'
     before = n.MANIFEST.read_bytes()
     sources = json.loads(n.SOURCES.read_text())
+    assets = {p: p.read_bytes() for p in (n.ROOT / 'public/logos/svg/nfl/alternates').iterdir()}
+    bad = [dict(s) for s in sources]
+    bad[0]['sourceUrl'] = 'https://example.com/bitmap-wrapper.svg'
+    n.SOURCES.write_text(json.dumps(bad))
+    n.fetch = lambda _: b'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><image href="data:image/png;base64,AAAA"/></svg>'
+    try:
+        with contextlib.redirect_stdout(io.StringIO()): n.refresh()
+    except ValueError: pass
+    else: raise AssertionError('bitmap wrapper accepted')
+    assert n.TEAMS.read_bytes() == original and n.MANIFEST.read_bytes() == before
+    assert all(p.read_bytes() == raw for p, raw in assets.items()), 'failed import changed artwork'
+    bad = [dict(s) for s in sources]
+    next(s for s in bad if s['id'] == 'dawg-2023')['minRasterSize'] = 4096
+    n.SOURCES.write_text(json.dumps(bad))
+    try:
+        with contextlib.redirect_stdout(io.StringIO()): n.refresh()
+    except ValueError: pass
+    else: raise AssertionError('undersized raster accepted')
+    assert n.TEAMS.read_bytes() == original and n.MANIFEST.read_bytes() == before
+    assert all(p.read_bytes() == raw for p, raw in assets.items())
     sources = [s for s in sources if s['teamId'] != 'PRO-ARI']
     n.SOURCES.write_text(json.dumps(sources))
     try: n.refresh()

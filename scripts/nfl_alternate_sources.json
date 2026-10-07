@@ -2,128 +2,174 @@
   {
     "teamId": "PRO-ARI",
     "id": "alternate",
-    "label": "Alternate (2002\u20132004)",
-    "sourceUrl": "https://sportslogohistory.com/wp-content/uploads/2018/08/arizona_cardinals-2002-2004_a.png",
-    "sourcePage": "https://sportslogohistory.com/nfl-alternate-logo/"
+    "label": "Arizona state flag",
+    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Flag_of_Arizona.svg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Arizona.svg",
+    "format": "svg"
   },
   {
     "teamId": "PRO-ATL",
     "id": "alternate",
-    "label": "Alternate (2020\u2013Present)",
-    "sourceUrl": "https://sportslogohistory.com/wp-content/uploads/2020/04/atlanta_falcons_2020-pres_a.png",
-    "sourcePage": "https://sportslogohistory.com/nfl-alternate-logo/"
+    "label": "Winged ATL wordmark",
+    "sourceUrl": "https://1000logos.net/wp-content/uploads/2017/11/Atlanta-Falcons-Logo-10.svg",
+    "sourcePage": "https://1000logos.net/atlanta-falcons-logo/",
+    "format": "svg",
+    "cropToArtwork": true
   },
   {
     "teamId": "PRO-BAL",
     "id": "alternate",
-    "label": "Alternate (1999\u2013Present)",
-    "sourceUrl": "https://sportslogohistory.com/wp-content/uploads/2018/03/baltimore_ravens_1999-pres-ww.png",
-    "sourcePage": "https://sportslogohistory.com/nfl-alternate-logo/"
+    "label": "Front-facing raven",
+    "sourceUrl": "https://1000logos.net/wp-content/uploads/2016/10/Baltimore-Ravens-Logo-6.svg",
+    "sourcePage": "https://1000logos.net/baltimore-ravens-logo/",
+    "format": "svg",
+    "cropToArtwork": true,
+    "removePaths": [
+      "M0 0h192.756v192.756H0V0z"
+    ]
   },
   {
     "teamId": "PRO-BUF",
     "id": "alternate",
-    "label": "Alternate (1974\u20132010)",
-    "sourceUrl": "https://sportslogohistory.com/wp-content/uploads/2018/01/buffalo_bills_1974-2010_a.png",
-    "sourcePage": "https://sportslogohistory.com/nfl-alternate-logo/"
+    "label": "Bills wordmark",
+    "sourceUrl": "https://i.logos-download.com/24914/35830-ce0cc6e4c211e25057f15f3cb6341eaa.svg/Buffalo_Bills_Logo_1974_wordmark.svg",
+    "sourcePage": "https://logos-download.com/brands/buffalo-bills",
+    "format": "svg"
   },
   {
     "teamId": "PRO-CAR",
     "id": "alternate",
-    "label": "Alternate (2012\u2013Present)",
-    "sourceUrl": "https://sportslogohistory.com/wp-content/uploads/2018/01/carolina_panther_2012-present-a.png",
-    "sourcePage": "https://sportslogohistory.com/nfl-alternate-logo/"
+    "label": "Panther head (throwback)",
+    "sourceUrl": "https://1000logos.net/wp-content/uploads/2016/10/Carolina-Panthers-Logo-2.svg",
+    "sourcePage": "https://1000logos.net/carolina-panthers-logo/",
+    "format": "svg",
+    "cropToArtwork": true,
+    "removePaths": [
+      "M0 0h192.756v192.756H0V0z"
+    ]
   },
   {
     "teamId": "PRO-CHI",
     "id": "alternate",
-    "label": "Alternate (2023\u2013Present)",
-    "sourceUrl": "https://sportslogohistory.com/wp-content/uploads/2023/08/chicago_bears_2023-pres_a-1.png",
-    "sourcePage": "https://sportslogohistory.com/nfl-alternate-logo/"
+    "label": "Wishbone C",
+    "sourceUrl": "https://1000logos.net/wp-content/uploads/2016/11/Chicago-Bears-Logo-1.svg",
+    "sourcePage": "https://1000logos.net/chicago-bears-logo/",
+    "format": "svg",
+    "cropToArtwork": true
   },
   {
     "teamId": "PRO-CIN",
     "id": "alternate",
-    "label": "Alternate (2021\u2013Present)",
-    "sourceUrl": "https://sportslogohistory.com/wp-content/uploads/2021/04/cincinnati_bengals_2021-pres_a.png",
-    "sourcePage": "https://sportslogohistory.com/nfl-alternate-logo/"
+    "label": "Tiger head",
+    "sourceUrl": "https://1000logos.net/wp-content/uploads/2017/08/Cincinnati-Bengals-Logo-7.svg",
+    "sourcePage": "https://1000logos.net/cincinnati-bengals-logo/",
+    "format": "svg",
+    "cropToArtwork": true
   },
   {
     "teamId": "PRO-CLE",
     "id": "alternate",
-    "label": "Alternate (2015\u2013Present)",
-    "sourceUrl": "https://sportslogohistory.com/wp-content/uploads/2018/01/cleveland_browns_2015-present_a.png",
-    "sourcePage": "https://sportslogohistory.com/nfl-alternate-logo/"
+    "label": "Football B mark",
+    "sourceUrl": "https://1000logos.net/wp-content/uploads/2016/10/Cleveland-Browns-Logo-4.svg",
+    "sourcePage": "https://1000logos.net/browns-logo/",
+    "format": "svg",
+    "cropToArtwork": true
   },
   {
     "teamId": "PRO-DAL",
     "id": "alternate",
-    "label": "Alternate (1960\u20131970)",
-    "sourceUrl": "https://sportslogohistory.com/wp-content/uploads/2018/01/dallas_cowboys_1960-1970-a.png",
-    "sourcePage": "https://sportslogohistory.com/nfl-alternate-logo/"
+    "label": "Star and Cowboys wordmark",
+    "sourceUrl": "https://1000logos.net/wp-content/uploads/2016/12/Dallas_Cowboys-Logo-8.svg",
+    "sourcePage": "https://1000logos.net/dallas-cowboys-logo/",
+    "format": "svg",
+    "cropToArtwork": true
   },
   {
     "teamId": "PRO-DEN",
     "id": "alternate",
-    "label": "Alternate (1997\u2013Present)",
-    "sourceUrl": "https://sportslogohistory.com/wp-content/uploads/2018/01/denver_broncos_1997-present_aa.png",
-    "sourcePage": "https://sportslogohistory.com/nfl-alternate-logo/"
+    "label": "Bronco D (throwback)",
+    "sourceUrl": "https://1000logos.net/wp-content/uploads/2017/01/Denver_Broncos_logo-3.svg",
+    "sourcePage": "https://1000logos.net/denver-broncos-logo/",
+    "format": "svg",
+    "cropToArtwork": true
   },
   {
     "teamId": "PRO-DET",
     "id": "alternate",
-    "label": "Alternate (2017\u2013Present)",
-    "sourceUrl": "https://sportslogohistory.com/wp-content/uploads/2018/01/detroit_lions_2017-pres_a.png",
-    "sourcePage": "https://sportslogohistory.com/nfl-alternate-logo/"
+    "label": "Lion and Lions wordmark",
+    "sourceUrl": "https://1000logos.net/wp-content/uploads/2017/08/Detroit-Lions-Logo-SVG_006.svg",
+    "sourcePage": "https://1000logos.net/detroit-lions-logo/",
+    "format": "svg",
+    "cropToArtwork": true
   },
   {
     "teamId": "PRO-GB",
     "id": "alternate",
-    "label": "Alternate (1980\u2013Present)",
-    "sourceUrl": "https://sportslogohistory.com/wp-content/uploads/2018/02/green_bay_packers_1980-pres_a.png",
-    "sourcePage": "https://sportslogohistory.com/nfl-alternate-logo/"
+    "label": "Green and white G",
+    "sourceUrl": "https://operaglassnetworks.com/temp/NFL%20Logos/Team%20Logos/Packers/Marks/pac%20cl%20mark%202%20n.eps",
+    "sourcePage": "https://operaglassnetworks.com/temp/NFL%20Logos/Team%20Logos/Packers/",
+    "format": "svg",
+    "inputFormat": "eps"
   },
   {
     "teamId": "PRO-HOU",
     "id": "alternate",
-    "label": "Alternate (2024\u2013Present)",
-    "sourceUrl": "https://sportslogohistory.com/wp-content/uploads/2024/05/houston_texans_2024-pres_a.png",
-    "sourcePage": "https://sportslogohistory.com/nfl-alternate-logo/"
+    "label": "Bull and Texans wordmark",
+    "sourceUrl": "https://1000logos.net/wp-content/uploads/2018/03/Houston-Texans-Logo-1.svg",
+    "sourcePage": "https://1000logos.net/houston-texans-logo/",
+    "format": "svg",
+    "cropToArtwork": true,
+    "removePaths": [
+      "M0 0h192.756v192.756H0V0z"
+    ]
   },
   {
     "teamId": "PRO-IND",
     "id": "alternate",
-    "label": "Alternate (2020\u2013Present)",
-    "sourceUrl": "https://sportslogohistory.com/wp-content/uploads/2020/04/indianapolis_colts_2020-pres_a.png",
-    "sourcePage": "https://sportslogohistory.com/nfl-alternate-logo/"
+    "label": "Colt mascot (throwback)",
+    "sourceUrl": "https://1000logos.net/wp-content/uploads/2016/12/Indianapolis-Colts-Logo-1.svg",
+    "sourcePage": "https://1000logos.net/indianapolis-colts-logo/",
+    "format": "svg",
+    "cropToArtwork": true,
+    "removePaths": [
+      "M0 0h192.756v192.756H0V0z"
+    ]
   },
   {
     "teamId": "PRO-JAX",
     "id": "alternate",
-    "label": "Alternate (2013\u2013Present)",
-    "sourceUrl": "https://sportslogohistory.com/wp-content/uploads/2017/12/jacksonville_jaguars_2013-present-aa.png",
-    "sourcePage": "https://sportslogohistory.com/nfl-alternate-logo/"
+    "label": "Jaguars shield (throwback)",
+    "sourceUrl": "https://operaglassnetworks.com/temp/NFL%20Logos/Team%20Logos/Jaguars/Marks/jag%20cl%20mark%204%20k.eps",
+    "sourcePage": "https://operaglassnetworks.com/temp/NFL%20Logos/Team%20Logos/Jaguars/",
+    "format": "svg",
+    "inputFormat": "eps"
   },
   {
     "teamId": "PRO-KC",
     "id": "alternate",
-    "label": "Alternate (1967\u20131969)",
-    "sourceUrl": "https://sportslogohistory.com/wp-content/uploads/2025/02/kansas_city_chiefs_1967-1969_a.png",
-    "sourcePage": "https://sportslogohistory.com/nfl-alternate-logo/"
+    "label": "Chiefs wordmark",
+    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/7/79/Kansas_City_Chiefs_wordmark.svg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Kansas_City_Chiefs_wordmark.svg",
+    "format": "svg"
   },
   {
     "teamId": "PRO-LAC",
     "id": "alternate",
-    "label": "Alternate (2020\u2013Present)",
-    "sourceUrl": "https://sportslogohistory.com/wp-content/uploads/2020/03/los_angeles_chargers_2020-pres_a.png",
-    "sourcePage": "https://sportslogohistory.com/nfl-alternate-logo/"
+    "label": "Bolt and Chargers wordmark",
+    "sourceUrl": "https://1000logos.net/wp-content/uploads/2023/02/Los-Angeles-Chargers-Logo-6.svg",
+    "sourcePage": "https://1000logos.net/los-angeles-chargers-logo/",
+    "format": "svg",
+    "cropToArtwork": true
   },
   {
     "teamId": "PRO-LAR",
     "id": "alternate",
-    "label": "Alternate (2020\u20132025)",
-    "sourceUrl": "https://sportslogohistory.com/wp-content/uploads/2020/03/los_angeles_rams_2020-pres_a.png",
-    "sourcePage": "https://sportslogohistory.com/nfl-alternate-logo/"
+    "label": "Ram head",
+    "sourceUrl": "https://www.dropbox.com/scl/fi/813nkeu7ovhdz551pj5bc/Los-Angeles-Rams-Brand-Assets.zip?rlkey=z2hidixhowlioon9gximtfq1g&dl=1",
+    "sourcePage": "https://stage-static.clubs.nfl.com/image/upload/browns/fw6klbpa6smlcmbemfhx.pdf",
+    "format": "svg",
+    "inputFormat": "ai",
+    "archiveMember": "Los Angeles Rams Brand Assets/RGB - Digital Design/Full Color/Ram Head/Rams_Head_RGB.ai"
   },
   {
     "teamId": "PRO-LV",
@@ -135,93 +181,124 @@
   {
     "teamId": "PRO-MIA",
     "id": "alternate",
-    "label": "Alternate (1997\u20132012)",
-    "sourceUrl": "https://sportslogohistory.com/wp-content/uploads/2018/01/miami_dolphins_1997-2012_a.png",
-    "sourcePage": "https://sportslogohistory.com/nfl-alternate-logo/"
+    "label": "Leaping dolphin (throwback)",
+    "sourceUrl": "https://operaglassnetworks.com/temp/NFL%20Logos/Team%20Logos/Dolphins/Marks/dol%20cl%20mark%202%20n.eps",
+    "sourcePage": "https://operaglassnetworks.com/temp/NFL%20Logos/Team%20Logos/Dolphins/",
+    "format": "svg",
+    "inputFormat": "eps"
   },
   {
     "teamId": "PRO-MIN",
     "id": "alternate",
-    "label": "Alternate (1998\u2013Present)",
-    "sourceUrl": "https://sportslogohistory.com/wp-content/uploads/2017/12/minnesota_vikings_1998-present_a.png",
-    "sourcePage": "https://sportslogohistory.com/nfl-alternate-logo/"
+    "label": "Helmet horns",
+    "sourceUrl": "https://1000logos.net/wp-content/uploads/2017/06/Minnesota-Vikings-Logo-1.svg",
+    "sourcePage": "https://1000logos.net/minnesota-vikings-logo/",
+    "format": "svg",
+    "cropToArtwork": true,
+    "removePaths": [
+      "M0 0h192.756v192.756H0V0z"
+    ]
   },
   {
     "teamId": "PRO-NE",
     "id": "alternate",
-    "label": "Alternate (2000\u2013Present)",
-    "sourceUrl": "https://sportslogohistory.com/wp-content/uploads/2018/01/new_england_patriots_2000-present-a.png",
-    "sourcePage": "https://sportslogohistory.com/nfl-alternate-logo/"
+    "label": "Patriots script (throwback)",
+    "sourceUrl": "https://1000logos.net/wp-content/uploads/2017/05/New-England-Patriots-Logo-2.svg",
+    "sourcePage": "https://1000logos.net/new-england-patriots-logo/",
+    "format": "svg",
+    "cropToArtwork": true,
+    "removePaths": [
+      "M0 0h192.756v192.756H0V0z"
+    ]
   },
   {
     "teamId": "PRO-NO",
     "id": "alternate",
-    "label": "Alternate (2006\u2013Present)",
-    "sourceUrl": "https://sportslogohistory.com/wp-content/uploads/2018/01/new_oleans_saints_2006-present_a.png",
-    "sourcePage": "https://sportslogohistory.com/nfl-alternate-logo/"
+    "label": "Louisiana mark",
+    "sourceUrl": "https://operaglassnetworks.com/temp/NFL%20Logos/Team%20Logos/Saints/marks/sai%20mark%203%20cl%20n.eps",
+    "sourcePage": "https://operaglassnetworks.com/temp/NFL%20Logos/Team%20Logos/Saints/",
+    "format": "svg",
+    "inputFormat": "eps"
   },
   {
     "teamId": "PRO-NYG",
     "id": "alternate",
-    "label": "Alternate (2000\u2013Present)",
-    "sourceUrl": "https://sportslogohistory.com/wp-content/uploads/2018/01/new_york_giants_2000-present_a.png",
-    "sourcePage": "https://sportslogohistory.com/nfl-alternate-logo/"
+    "label": "Player and stadium",
+    "sourceUrl": "https://operaglassnetworks.com/temp/NFL%20Logos/Team%20Logos/Giants/marks/gia%20mark%20cl%203%20n.eps",
+    "sourcePage": "https://operaglassnetworks.com/temp/NFL%20Logos/Team%20Logos/Giants/",
+    "format": "svg",
+    "inputFormat": "eps"
   },
   {
     "teamId": "PRO-NYJ",
     "id": "alternate",
-    "label": "Alternate (2024\u2013Present)",
-    "sourceUrl": "https://sportslogohistory.com/wp-content/uploads/2024/04/new_york_jets_2024-pres_a.png",
-    "sourcePage": "https://sportslogohistory.com/nfl-alternate-logo/"
+    "label": "Jet plane (throwback)",
+    "sourceUrl": "https://i.logos-download.com/114651/34234-099b3e047f2476d6bbdaf29a7319e4f3.svg/New_York_Jets_Logo_1963.svg",
+    "sourcePage": "https://logos-download.com/brands/new-york-jets",
+    "format": "svg"
   },
   {
     "teamId": "PRO-PHI",
     "id": "alternate",
-    "label": "Alternate (2022\u2013Present)",
-    "sourceUrl": "https://sportslogohistory.com/wp-content/uploads/2022/07/philadelphia_eagles_2022-pres_a.png",
-    "sourcePage": "https://sportslogohistory.com/nfl-alternate-logo/"
+    "label": "Eagle and Eagles wordmark",
+    "sourceUrl": "https://1000logos.net/wp-content/uploads/2017/05/Philadelphia-Eagles-Logo-21.svg",
+    "sourcePage": "https://1000logos.net/philadelphia-eagles-logo/",
+    "format": "svg",
+    "cropToArtwork": true
   },
   {
     "teamId": "PRO-PIT",
     "id": "alternate",
-    "label": "Alternate (1954\u20131959)",
-    "sourceUrl": "https://sportslogohistory.com/wp-content/uploads/2018/01/pittsburgh_steelers_1954-1959_a.png",
-    "sourcePage": "https://sportslogohistory.com/nfl-alternate-logo/"
+    "label": "Steelers roundel",
+    "sourceUrl": "https://1000logos.net/wp-content/uploads/2017/06/Pittsburgh-Steelers-Logo-6.svg",
+    "sourcePage": "https://1000logos.net/pittsburgh-steelers-logo/",
+    "format": "svg",
+    "cropToArtwork": true
   },
   {
     "teamId": "PRO-SEA",
     "id": "alternate",
-    "label": "Alternate (2017\u2013Present)",
-    "sourceUrl": "https://sportslogohistory.com/wp-content/uploads/2018/01/seattle_seahawks_2017-present-a.png",
-    "sourcePage": "https://sportslogohistory.com/nfl-alternate-logo/"
+    "label": "Front-facing Seahawk",
+    "sourceUrl": "https://i.logos-download.com/21066/35813-6e8e6e3144a229b8c1aa7132b5948150.svg/Seattle_Seahawks_Logo_2012_alternative.svg",
+    "sourcePage": "https://logos-download.com/brands/seattle-seahawks",
+    "format": "svg"
   },
   {
     "teamId": "PRO-SF",
     "id": "alternate",
-    "label": "Alternate (2009\u20132011)",
-    "sourceUrl": "https://sportslogohistory.com/wp-content/uploads/2018/01/san_francisco_49ers_2009-2011_a.png",
-    "sourcePage": "https://sportslogohistory.com/nfl-alternate-logo/"
+    "label": "49ers wordmark",
+    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/2/24/San_Francisco_49ers_wordmark.svg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:San_Francisco_49ers_wordmark.svg",
+    "format": "svg"
   },
   {
     "teamId": "PRO-TB",
     "id": "alternate",
-    "label": "Alternate (2020\u2013Present)",
-    "sourceUrl": "https://sportslogohistory.com/wp-content/uploads/2020/04/tampa_bay_buccaneers_2020-pres-a.png",
-    "sourcePage": "https://sportslogohistory.com/nfl-alternate-logo/"
+    "label": "Pirate ship (throwback)",
+    "sourceUrl": "https://operaglassnetworks.com/temp/NFL%20Logos/Team%20Logos/Buccaneers/Marks/buc%20cl%20mark%202%20n.eps",
+    "sourcePage": "https://operaglassnetworks.com/temp/NFL%20Logos/Team%20Logos/Buccaneers/",
+    "format": "svg",
+    "inputFormat": "eps"
   },
   {
     "teamId": "PRO-TEN",
     "id": "alternate",
-    "label": "Alternate (2026\u2013Present)",
-    "sourceUrl": "https://sportslogohistory.com/wp-content/uploads/2026/03/tennessee_titans_2026-pres-a.png",
-    "sourcePage": "https://sportslogohistory.com/nfl-alternate-logo/"
+    "label": "Sword mark (throwback)",
+    "sourceUrl": "https://1000logos.net/wp-content/uploads/2018/07/Tennessee-Titans-Logo-8.svg",
+    "sourcePage": "https://1000logos.net/tennessee-titans-logo/",
+    "format": "svg",
+    "cropToArtwork": true,
+    "removePaths": [
+      "M0 0h192.756v192.756H0V0z"
+    ]
   },
   {
     "teamId": "PRO-WAS",
     "id": "alternate",
-    "label": "Alternate (2022\u2013Present)",
-    "sourceUrl": "https://sportslogohistory.com/wp-content/uploads/2022/02/washington_commanders_2022-present_a.png",
-    "sourcePage": "https://sportslogohistory.com/nfl-alternate-logo/"
+    "label": "Commanders wordmark",
+    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/9/99/Washington_Commanders_wordmark.svg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Washington_Commanders_wordmark.svg",
+    "format": "svg"
   },
   {
     "teamId": "PRO-BUF",
@@ -241,14 +318,18 @@
     "teamId": "PRO-CLE",
     "id": "brownie",
     "label": "Brownie the Elf",
-    "sourceUrl": "https://upload.wikimedia.org/wikipedia/en/e/e8/Brownie_Elf_logo.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-    "sourcePage": "https://en.wikipedia.org/wiki/File:Brownie_Elf_logo.png"
+    "sourceUrl": "https://images.seeklogo.com/logo-png/54/1/cleveland-browns-logo-png_seeklogo-545048.png",
+    "sourcePage": "https://seeklogo.com/vector-logo/545048/cleveland-browns",
+    "minRasterSize": 512,
+    "removeWhitePage": true
   },
   {
     "teamId": "PRO-CLE",
     "id": "dawg-2023",
     "label": "Dawg (2023)",
-    "sourceUrl": "https://upload.wikimedia.org/wikipedia/en/6/62/Browns_Dawg_logo.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-    "sourcePage": "https://en.wikipedia.org/wiki/File:Browns_Dawg_logo.png"
+    "sourceUrl": "https://images.seeklogo.com/logo-png/49/1/cleveland-browns-logo-png_seeklogo-495072.png",
+    "sourcePage": "https://seeklogo.com/vector-logo/495072/cleveland-browns",
+    "minRasterSize": 512,
+    "removeWhitePage": true
   }
 ]

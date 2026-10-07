@@ -327,9 +327,10 @@
     "teamId": "PRO-CLE",
     "id": "dawg-2023",
     "label": "Dawg (2023)",
-    "sourceUrl": "https://images.seeklogo.com/logo-png/49/1/cleveland-browns-logo-png_seeklogo-495072.png",
-    "sourcePage": "https://seeklogo.com/vector-logo/495072/cleveland-browns",
-    "minRasterSize": 512,
-    "removeWhitePage": true
+    "sourceUrl": "https://logowik.com/cleveland-browns-dawg-pound-new-logo-vector-58589.html",
+    "sourcePage": "https://logowik.com/cleveland-browns-dawg-pound-new-logo-vector-58589.html",
+    "format": "svg",
+    "downloadForm": "logowik",
+    "cropToArtwork": true
   }
 ]

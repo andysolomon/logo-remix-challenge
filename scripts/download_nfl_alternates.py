@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """Refresh the pinned NFL alternate marks without changing team identities or palettes.
 
-Requires Pillow for PNG validation. Existing assets are reused unless --force is
+Requires Pillow for PNG validation; original AI/EPS sources need Inkscape and
+Ghostscript. Existing assets are reused unless --force is
 provided. All sources and all 32 teams must validate before any data is replaced.
 Source dates describe the artwork, not a claim that historical logos are primary.
 """
@@ -11,11 +12,11 @@ import io
 import json
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
-from xml.etree import ElementTree as ET
 
 from build_teams import atomic_write_text, fmt_entry
 from download_extra_logos import inspect_artwork, palette_for
 from download_svgs import fetch
+from nfl_vector_artwork import import_vector, validate_vector
 
 ROOT = Path(__file__).resolve().parent.parent
 SOURCES = ROOT / 'scripts/nfl_alternate_sources.json'
@@ -36,33 +37,45 @@ def refresh(force=False):
 
     def download(source):
         team = teams[source['teamId']]
-        suffix = 'svg' if '.svg' in source['sourceUrl'].lower() else 'png'
+        suffix = source.get('format') or ('svg' if '.svg' in source['sourceUrl'].lower() else 'png')
+        if suffix not in {'svg', 'png'}:
+            raise ValueError(f"unsupported artwork format: {suffix}")
         path = f"/logos/svg/nfl/alternates/{team['abbr'].lower()}-{source['id']}.{suffix}"
         target = ROOT / 'public' / path.lstrip('/')
         previous = cached.get((team['id'], source['id']))
-        reuse = not force and previous and previous['sourceUrl'] == source['sourceUrl'] and target.exists()
+        source_keys = ('sourceUrl', 'inputFormat', 'archiveMember', 'removeElements', 'removePaths', 'cropToArtwork', 'removeWhitePage')
+        reuse = not force and previous and all(previous.get(k) == source.get(k) for k in source_keys) and previous['format'] == suffix and target.exists()
         raw = target.read_bytes() if reuse else fetch(source['sourceUrl'])
         if reuse and hashlib.sha256(raw).hexdigest() != previous['sha256']:
             raise ValueError(f"{team['id']}: cached artwork checksum differs; review or refresh with --force")
         if suffix == 'png':
-            from PIL import Image
+            from PIL import Image, ImageDraw
             image = Image.open(io.BytesIO(raw)).convert('RGBA')
             image.load()
+            if source.get('removeWhitePage') and not reuse:
+                corners = [(0, 0), (image.width - 1, 0), (0, image.height - 1),
+                           (image.width - 1, image.height - 1)]
+                if any(image.getpixel(corner) != (255, 255, 255, 255) for corner in corners):
+                    raise ValueError('reviewed white page background changed')
+                # Remove only white connected to the page edge; enclosed white
+                # details in these reviewed mascot sources remain artwork.
+                for corner in corners:
+                    if image.getpixel(corner)[3]:
+                        ImageDraw.floodfill(image, corner, (255, 255, 255, 0))
             if not image.getbbox() or (not reuse and image.getextrema()[3][0] == 255 and team['id'] != 'PRO-ARI'):
                 raise ValueError(f"{team['id']}: empty artwork or opaque background")
             image = image.crop(image.getbbox())
-            image.thumbnail((768, 768))
+            if source.get('minRasterSize') and max(image.size) < source['minRasterSize']:
+                raise ValueError(f"{team['id']}: raster source is too small; upscaling is not a quality upgrade")
             padded = Image.new('RGBA', (image.width + 6, image.height + 6))
             padded.paste(image, (3, 3))
             output = io.BytesIO()
             padded.save(output, format='PNG', optimize=True)
             raw = output.getvalue()
         else:
-            root = ET.fromstring(raw)
-            if not root.get('viewBox'):
-                root.set('viewBox', f"0 0 {root.get('width')} {root.get('height')}")
-                raw = ET.tostring(root, encoding='utf-8', xml_declaration=True)
-            raw = ('\n'.join(line.rstrip() for line in raw.decode().splitlines()) + '\n').encode()
+            if not reuse:
+                raw = import_vector(raw, source)
+            validate_vector(raw)
         colors = inspect_artwork(raw, suffix)
         palette, unused = palette_for(colors, team['palette'][0].lstrip('#'), team['palette'][1].lstrip('#'))
         item = {**source, 'path': path, 'format': suffix, 'sourcePalette': palette,

@@ -10,6 +10,8 @@ const nfl = TEAMS.filter((team) => team.league === 'PRO')
 
 describe('NFL logo variants', () => {
   test('every NFL team offers real vector artwork that stays editable at any size', () => {
+    const cleveland = nfl.find((team) => team.id === 'PRO-CLE')!
+    expect(withLogoVariant(cleveland, 'dawg-2023').logo).toEndWith('.svg')
     for (const team of nfl) {
       expect(team.alternateLogos!.some((variant) => variant.logo.endsWith('.svg'))).toBe(true)
     }
@@ -51,6 +53,37 @@ else: raise AssertionError('changed background accepted without review')
 `], { cwd: root })
   })
 
+  test('source refresh follows the guest SVG form and stops when the download is unavailable', () => {
+    execFileSync('python3', ['-c', `
+import io, sys, urllib.parse
+from unittest.mock import patch
+sys.path.insert(0, 'scripts')
+from nfl_source_download import fetch_logowik_svg
+url = 'https://logowik.com/example-logo.html'
+svg = b'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10"><path d="M0 0h10v10z"/></svg>'
+form = b'<input type="hidden" name="_token" value="normal-session-token">'
+links = b'<a href="https://logowik.com/down?file=pdf"><img src="download/svg/pdf.svg"></a><a href="https://logowik.com/down?file=svg"><img src="download/svg/svg.svg"></a>'
+class Opener:
+    def __init__(self, pages): self.pages, self.requests = list(pages), []
+    def open(self, request, timeout):
+        self.requests.append(request)
+        return io.BytesIO(self.pages.pop(0))
+opener = Opener([form, links, svg])
+with patch('urllib.request.build_opener', return_value=opener):
+    assert fetch_logowik_svg(url) == svg
+assert [r.full_url for r in opener.requests] == [url, url, 'https://logowik.com/down?file=svg']
+assert opener.requests[1].get_method() == 'POST'
+assert urllib.parse.parse_qs(opener.requests[1].data.decode()) == {'_token': ['normal-session-token']}
+for pages in [[b'<p>Sign in or verification required</p>'],
+              [form, b'<p>No download available</p>'],
+              [form, links.replace(b'https://logowik.com/down?file=svg', b'https://example.com/other.svg')]]:
+    with patch('urllib.request.build_opener', return_value=Opener(pages)):
+        try: fetch_logowik_svg(url)
+        except ValueError: pass
+        else: raise AssertionError('unavailable or foreign download accepted')
+`], { cwd: root })
+  })
+
   test('refresh reuses verified assets, preserves the roster and rejects incomplete sources before writing', () => {
     execFileSync('python3', ['-c', `
 import contextlib, io, json, shutil, sys, tempfile
@@ -85,7 +118,7 @@ with tempfile.TemporaryDirectory() as folder:
     assert n.TEAMS.read_bytes() == original and n.MANIFEST.read_bytes() == before
     assert all(p.read_bytes() == raw for p, raw in assets.items()), 'failed import changed artwork'
     bad = [dict(s) for s in sources]
-    next(s for s in bad if s['id'] == 'dawg-2023')['minRasterSize'] = 4096
+    next(s for s in bad if s['id'] == 'brownie')['minRasterSize'] = 4096
     n.SOURCES.write_text(json.dumps(bad))
     try:
         with contextlib.redirect_stdout(io.StringIO()): n.refresh()

@@ -17,6 +17,7 @@ from build_teams import atomic_write_text, fmt_entry
 from download_extra_logos import inspect_artwork, palette_for
 from download_svgs import fetch
 from nfl_vector_artwork import import_vector, validate_vector
+from nfl_source_download import fetch_logowik_svg
 
 ROOT = Path(__file__).resolve().parent.parent
 SOURCES = ROOT / 'scripts/nfl_alternate_sources.json'
@@ -43,9 +44,13 @@ def refresh(force=False):
         path = f"/logos/svg/nfl/alternates/{team['abbr'].lower()}-{source['id']}.{suffix}"
         target = ROOT / 'public' / path.lstrip('/')
         previous = cached.get((team['id'], source['id']))
-        source_keys = ('sourceUrl', 'inputFormat', 'archiveMember', 'removeElements', 'removePaths', 'cropToArtwork', 'removeWhitePage')
+        source_keys = ('sourceUrl', 'downloadForm', 'inputFormat', 'archiveMember', 'removeElements', 'removePaths', 'cropToArtwork', 'removeWhitePage')
         reuse = not force and previous and all(previous.get(k) == source.get(k) for k in source_keys) and previous['format'] == suffix and target.exists()
-        raw = target.read_bytes() if reuse else fetch(source['sourceUrl'])
+        if source.get('downloadForm') not in {None, 'logowik'}:
+            raise ValueError('unsupported source download form')
+        raw = target.read_bytes() if reuse else (
+            fetch_logowik_svg(source['sourceUrl']) if source.get('downloadForm') == 'logowik'
+            else fetch(source['sourceUrl']))
         if reuse and hashlib.sha256(raw).hexdigest() != previous['sha256']:
             raise ValueError(f"{team['id']}: cached artwork checksum differs; review or refresh with --force")
         if suffix == 'png':

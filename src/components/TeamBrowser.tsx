@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react'
-import { filterTeams, fullName, LEAGUES, type League, type Team } from '../lib/teams'
+import { filterTeams, fullName, isBrandLeague, LEAGUES, type League, type Team } from '../lib/teams'
 import { Logo } from './Logo'
 
 export interface BrowserState {
@@ -32,6 +32,7 @@ export function TeamBrowser({ title, state, onState, selectedId, onSelect, showS
   }, [state.league, portrait])
   const teams = filterTeams(state.league, state.conference, state.query)
   const chips = ['All', ...LEAGUES[state.league].conferences]
+  const brands = isBrandLeague(state.league)
   const panelId = `browser-${title.replace(/\s+/g, '-').toLowerCase()}`
   return (
     <section className="panel" aria-labelledby={panelId}>
@@ -55,12 +56,12 @@ export function TeamBrowser({ title, state, onState, selectedId, onSelect, showS
         className="search"
         value={state.query}
         onChange={(e) => onState({ ...state, query: e.target.value })}
-        placeholder={state.league === 'FOOD' ? 'Search brands' : 'Search teams'}
+        placeholder={brands ? 'Search brands' : 'Search teams'}
         type="search"
         autoComplete="off"
-        aria-label={`Search ${title.toLowerCase()} ${state.league === 'FOOD' ? 'brands' : 'teams'}`}
+        aria-label={`Search ${title.toLowerCase()} ${brands ? 'brands' : 'teams'}`}
       />
-      <div className="chips" role="group" aria-label={state.league === 'FOOD' ? 'Category filter' : 'Conference filter'}>
+      <div className="chips" role="group" aria-label={state.league === 'BRAND' ? 'Brand type filter' : brands ? 'Category filter' : 'Conference filter'}>
         {chips.map((c) => (
           <button
             key={c}
@@ -73,7 +74,7 @@ export function TeamBrowser({ title, state, onState, selectedId, onSelect, showS
           </button>
         ))}
       </div>
-      <div className="tile-grid" role="list" aria-label={`${title} results, ${teams.length} ${state.league === 'FOOD' ? 'brand' : 'team'}${teams.length === 1 ? '' : 's'}`}>
+      <div className="tile-grid" role="list" aria-label={`${title} results, ${teams.length} ${brands ? 'brand' : 'team'}${teams.length === 1 ? '' : 's'}`}>
         {teams.map((t) => {
           const sel = t.id === selectedId
           return (

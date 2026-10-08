@@ -5,7 +5,8 @@
     "MLB": {"label": "MLB", "conferences": ["American League", "National League"]},
     "COL": { "label": "COLLEGE", "conferences": ["ACC", "Big 12", "Big Ten", "Pac-12", "SEC", "Ivy", "HBCU"] },
     "HS": { "label": "HIGH SCHOOL", "conferences": ["Cobb County"] },
-    "FOOD": {"label": "FAST FOOD", "conferences": ["Burgers", "Chicken", "Sandwiches", "Pizza", "Mexican & Asian", "Coffee & Treats"]}
+    "FOOD": {"label": "FAST FOOD", "conferences": ["Burgers", "Chicken", "Sandwiches", "Pizza", "Mexican & Asian", "Coffee & Treats"]},
+    "BRAND": {"label": "BRANDS", "conferences": ["Product", "Service", "Corporate", "Personal", "Store", "Place"]}
   },
   "palette_order": ["primary", "secondary", "light"],
   "permutations": [[0,1,2],[1,0,2],[2,1,0],[0,2,1],[1,2,0],[2,0,1]],

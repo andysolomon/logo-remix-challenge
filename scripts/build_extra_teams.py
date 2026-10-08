@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
-"""Validate and rebuild only MLB or fast-food entries; preserve all other data."""
+"""Validate and rebuild only MLB entries; preserve all other data.
+
+Fast-food and brand entries are rebuilt by build_brand_teams.py.
+"""
 import argparse
 import json
 import re
@@ -7,7 +10,7 @@ from pathlib import Path
 
 from build_teams import atomic_write_text, fmt_entry
 from download_extra_logos import inspect_artwork
-from extra_rosters import MLB, FOOD, LEAGUES
+from extra_rosters import MLB, LEAGUES
 
 ROOT = Path(__file__).resolve().parent.parent
 TEAMS_JSON = ROOT / "src/lib/teams.json"
@@ -15,12 +18,12 @@ TEAMS_JSON = ROOT / "src/lib/teams.json"
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--league", choices=["MLB", "FOOD"], required=True)
+    parser.add_argument("--league", choices=["MLB"], required=True)
     parser.add_argument("--dry-run", action="store_true")
     args = parser.parse_args()
-    slug = "mlb" if args.league == "MLB" else "fast-food"
+    slug = "mlb"
     items = json.loads((ROOT / f"public/logos/svg/{slug}-manifest.json").read_text())["assets"]
-    roster = set(MLB) if args.league == "MLB" else {r[0] for r in FOOD}
+    roster = set(MLB)
     if len(items) != len(roster) or {i["abbr"] for i in items} != roster:
         raise ValueError(f"{args.league} manifest must contain exactly {len(roster)} entries")
     entries = []
@@ -32,7 +35,7 @@ def main() -> None:
             raise ValueError(f"invalid identity/path for {abbr}")
         if item["conference"] not in LEAGUES[args.league]["conferences"]:
             raise ValueError(f"invalid grouping for {abbr}")
-        if args.league == "MLB" and item["conference"] != MLB[abbr][1]:
+        if item["conference"] != MLB[abbr][1]:
             raise ValueError(f"invalid MLB conference for {abbr}")
         colors = inspect_artwork((ROOT / "public" / expected_path.lstrip("/")).read_bytes(), format)
         if colors != item["colors"]:
@@ -42,17 +45,12 @@ def main() -> None:
             raise ValueError(f"invalid palette for {abbr}")
         entry = {k: item[k] for k in ("id", "league", "conference", "region", "name", "abbr", "palette")}
         entry["logo"] = expected_path
-        if args.league == "MLB":
-            # Cap marks can omit primary or secondary team colors entirely.
-            # Keep the complete donor palette and map the actual cap artwork separately.
-            brand = ["#" + MLB[abbr][2], "#" + MLB[abbr][3], "#FFFFFF"]
-            if brand != palette:
-                entry["sourcePalette"] = palette
-                entry["palette"] = brand
-        if args.league == "FOOD" and abbr == "KFC":
-            # The current official mark is black/white; KFC's donor colors are red/black/white.
+        # Cap marks can omit primary or secondary team colors entirely.
+        # Keep the complete donor palette and map the actual cap artwork separately.
+        brand = ["#" + MLB[abbr][2], "#" + MLB[abbr][3], "#FFFFFF"]
+        if brand != palette:
             entry["sourcePalette"] = palette
-            entry["palette"] = ["#E4002B", "#000000", "#FFFFFF"]
+            entry["palette"] = brand
         if item["aliases"]:
             entry["aliases"] = item["aliases"]
         if item["unusedSourceSlots"]:
@@ -67,11 +65,8 @@ def main() -> None:
     config = json.dumps(LEAGUES[args.league], separators=(", ", ": "))
     if args.league in data["leagues"]:
         text = re.sub(r'"' + args.league + r'":\s*\{[^}]*\}', lambda _: f'"{args.league}": {config}', text, count=1)
-    elif args.league == "MLB":
-        text = text.replace('    "COL":', f'    "MLB": {config},\n    "COL":', 1)
     else:
-        marker = text.index('\n  },', text.index('"leagues"'))
-        text = text[:marker] + f',\n    "FOOD": {config}' + text[marker:]
+        text = text.replace('    "COL":', f'    "MLB": {config},\n    "COL":', 1)
     json.loads(text)
     if not args.dry_run:
         atomic_write_text(TEAMS_JSON, text)

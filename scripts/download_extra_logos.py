@@ -1,21 +1,21 @@
 #!/usr/bin/env python3
-"""Download MLB or fast-food logos locally and record source/palette metadata.
+"""Download MLB logos locally and record source/palette metadata.
 
-Usage: python3 scripts/download_extra_logos.py --league MLB|FOOD [--force]
-Then run build_extra_teams.py with the same --league argument.
+Usage: python3 scripts/download_extra_logos.py --league MLB [--force]
+Then run build_extra_teams.py with the same --league argument. Fast-food and brand
+artwork is pinned separately; see download_brand_logos.py.
 """
 import argparse
 import io
 import json
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
-from urllib.parse import quote
 from xml.etree import ElementTree as ET
 
 from build_teams import atomic_write_text, dist_sq, nearest
 from download_nba_svgs import artwork_colors
-from download_svgs import fetch, fetch_json, wikitext, logo_from_wikitext, file_url
-from extra_rosters import MLB, FOOD, FOOD_SOURCE_OVERRIDES
+from download_svgs import fetch, fetch_json
+from extra_rosters import MLB
 
 ET.register_namespace("", "http://www.w3.org/2000/svg")
 ET.register_namespace("xlink", "http://www.w3.org/1999/xlink")
@@ -61,31 +61,27 @@ def palette_for(colors: list[str], primary: str, secondary: str) -> tuple[list[s
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--league", choices=["MLB", "FOOD"], required=True)
+    parser.add_argument("--league", choices=["MLB"], required=True)
     parser.add_argument("--force", action="store_true")
     parser.add_argument("--cache-dir", type=Path, help="optional staging cache for resuming interrupted downloads")
     args = parser.parse_args()
-    slug = "mlb" if args.league == "MLB" else "fast-food"
+    slug = "mlb"
     manifest = ROOT / f"public/logos/svg/{slug}-manifest.json"
     cached = {item["abbr"]: item for item in json.loads(manifest.read_text())["assets"]} if manifest.is_file() else {}
-    if args.league == "MLB":
-        teams = fetch_json(MLB_API)["teams"]
-        if len(teams) != 30 or {t["id"] for t in teams} != {row[0] for row in MLB.values()}:
-            raise ValueError("MLB roster differs from the pinned 30 teams; review extra_rosters.py")
-        by_id = {t["id"]: t for t in teams}
-        rows = []
-        for abbr, (mlb_id, conference, primary, secondary, aliases) in MLB.items():
-            team = by_id[mlb_id]
-            if team["league"]["name"] != conference:
-                raise ValueError(f"conference changed for {abbr}")
-            name = team["teamName"]
-            region = team["name"].removesuffix(" " + name) if abbr != "ATH" else ""
-            if abbr == "AZ":
-                region, name = "Arizona", "Diamondbacks"
-            rows.append((abbr, region, name, conference, primary, secondary, aliases, f"https://www.mlbstatic.com/team-logos/{mlb_id}.svg", MLB_API))
-    else:
-        rows = [(abbr, name, "", category, primary, secondary, aliases, article, "https://en.wikipedia.org/wiki/" + quote(article.replace(" ", "_")))
-                for abbr, name, article, category, primary, secondary, aliases in FOOD]
+    teams = fetch_json(MLB_API)["teams"]
+    if len(teams) != 30 or {t["id"] for t in teams} != {row[0] for row in MLB.values()}:
+        raise ValueError("MLB roster differs from the pinned 30 teams; review extra_rosters.py")
+    by_id = {t["id"]: t for t in teams}
+    rows = []
+    for abbr, (mlb_id, conference, primary, secondary, aliases) in MLB.items():
+        team = by_id[mlb_id]
+        if team["league"]["name"] != conference:
+            raise ValueError(f"conference changed for {abbr}")
+        name = team["teamName"]
+        region = team["name"].removesuffix(" " + name) if abbr != "ATH" else ""
+        if abbr == "AZ":
+            region, name = "Arizona", "Diamondbacks"
+        rows.append((abbr, region, name, conference, primary, secondary, aliases, f"https://www.mlbstatic.com/team-logos/{mlb_id}.svg", MLB_API))
 
     def download(row):
         abbr, region, name, conference, primary, secondary, aliases, source, page = row
@@ -96,29 +92,16 @@ def main() -> None:
         if stage and not args.force and stage.with_suffix(".json").is_file() and stage.with_suffix(".asset").is_file():
             old = json.loads(stage.with_suffix(".json").read_text())
             return {**old, "region": region, "name": name, "conference": conference, "aliases": aliases}, stage.with_suffix(".asset").read_bytes()
-        if args.league == "FOOD" and abbr in FOOD_SOURCE_OVERRIDES:
-            source, format, page = FOOD_SOURCE_OVERRIDES[abbr]
-        elif args.league == "FOOD":
-            article = wikitext(source)
-            filename = logo_from_wikitext(article[1]) if article else None
-            if not filename:
-                raise ValueError(f"no infobox logo for {source}")
-            source = file_url(filename)
-            if not source:
-                raise ValueError(f"no image URL for {filename}")
-            format = "svg" if filename.lower().endswith(".svg") else "png"
-        else:
-            format = "svg"
+        format = "svg"
         data = fetch(source)
-        if format == "svg":
-            # Legacy Wikipedia SVGs sometimes declare only width/height.
-            root = ET.fromstring(data)
-            if not root.get("viewBox"):
-                width, height = root.get("width", ""), root.get("height", "")
-                if width.isdigit() and height.isdigit():
-                    root.set("viewBox", f"0 0 {width} {height}")
-                    data = ET.tostring(root, encoding="utf-8", xml_declaration=True)
-            data = ("\n".join(line.rstrip() for line in data.decode("utf-8").splitlines()) + "\n").encode()
+        # Some SVGs declare only width/height.
+        root = ET.fromstring(data)
+        if not root.get("viewBox"):
+            width, height = root.get("width", ""), root.get("height", "")
+            if width.isdigit() and height.isdigit():
+                root.set("viewBox", f"0 0 {width} {height}")
+                data = ET.tostring(root, encoding="utf-8", xml_declaration=True)
+        data = ("\n".join(line.rstrip() for line in data.decode("utf-8").splitlines()) + "\n").encode()
         colors = inspect_artwork(data, format)
         palette, unused = palette_for(colors, primary, secondary)
         path = f"/logos/svg/{slug}/{abbr.lower()}.{format}"

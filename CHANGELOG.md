@@ -1,3 +1,5 @@
+## [0.20.0](https://github.com/andysolomon/logo-remix-challenge/compare/v0.19.2...v0.20.0) (2026-10-08)
+
 ## [0.19.2](https://github.com/andysolomon/logo-remix-challenge/compare/v0.19.1...v0.19.2) (2026-10-07)
 
 ## [0.19.1](https://github.com/andysolomon/logo-remix-challenge/compare/v0.19.0...v0.19.1) (2026-10-07)

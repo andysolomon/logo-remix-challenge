@@ -10,6 +10,8 @@ MLB teams have American/National League filters and use official MLB SVGs. Team 
 
 Every NFL team has alternate artwork. Pick an NFL original, then use **Shuffle Logo** in the remix preview to cycle its primary, alternate and available throwback marks. **Shuffle Colors** changes the color assignment independently. The preview shows the artwork label and position; the chosen logo is retained when saving, editing, playing and revealing a round. Team names, accepted answers and donor colors stay the same. Teams outside the NFL continue to use their primary marks. Random Deck uses primary logos until you edit a round and choose an alternate.
 
+One-color logos, such as the Yankees' NY, the Golden Arches or Alabama's script A, would otherwise remix into a single solid color — often a lone black silhouette that says nothing about the color team. Their remixes sit on a rounded backdrop tile painted in a second color from the color team's palette, so every remix shows at least two of that team's colors. **Shuffle Colors** swaps which color fills the logo and which fills the backdrop; every assignment keeps the logo readable on its backdrop, and the backdrop is never white. Logos that already show two or more remixable colors are unchanged, and logos in their own colors (team browser, reveal) never get a backdrop. A logo counts as one-color when its `unusedSourceSlots` lists two of its three palette slots.
+
 Each round asks for either the **logo's team** or the **team whose colors it wears** — set per round on its deck card, with a deck-wide default for rounds left alone. An optional voice announcer plays Chatterbox clips (`public/voice/`) for the round prompt, the verdict, and the final score.
 
 Client-only SPA — no backend, no auth. Deck, timer, game mode, guess mode, voice, and high score persist in `localStorage`.
@@ -61,7 +63,7 @@ The fast-food PNG inspection path requires Pillow (`python3 -m pip install Pillo
 
 `download_cobb_svgs.py` fetches the HIGH SCHOOL league: the 17 Cobb County high schools. No feed covers Georgia high schools, so `scripts/cobb_roster.py` pins one hand-verified source URL per school — the school's own athletics site where one is scrapeable, the Cobb County School District site otherwise, and Wikipedia as the fallback (Cobb Horizon fields no teams, so its primary institutional mark stands in). Palettes come from the official colors snapped onto the artwork's own fills, and each asset lands in `public/logos/svg/high-school/` with its source recorded in `hs-manifest.json`.
 
-`build_teams.py` merges the NFL/college manifests into `src/lib/teams.json`, rewriting the whole `COL-*` block (high-school entries are carried through untouched); `build_hs_teams.py` does the same for the `HS-*` block from `hs-manifest.json`. Run each after its downloader. To fetch or refresh (stdlib Python 3, idempotent):
+`build_teams.py` merges the NFL/college manifests into `src/lib/teams.json`, rewriting the whole `COL-*` block (high-school entries are carried through untouched). It records each college logo's `unusedSourceSlots` from the artwork itself, as the other roster builders do; SVGs that wrap an embedded bitmap are left unrecorded. `build_hs_teams.py` does the same for the `HS-*` block from `hs-manifest.json`. Run each after its downloader. To fetch or refresh (stdlib Python 3, idempotent):
 
 ```sh
 bun run logos:svg                              # or: python3 scripts/download_svgs.py

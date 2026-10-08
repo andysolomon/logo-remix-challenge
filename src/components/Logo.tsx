@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { resolveRemixTargetColors, withLogoVariant, type Team } from '../lib/teams'
+import { backdropSlot, resolveRemixTargetColors, withLogoVariant, type Team } from '../lib/teams'
 
 interface Props {
   team: Team
@@ -251,13 +251,16 @@ function recolor(key: string, src: string, from: RGB[], to: RGB[]): Promise<stri
  * Team logo. Renders the raw asset when `palette` is omitted. With a palette,
  * the artwork's colors matching the team's source palette are swapped to the
  * target palette (SVG fills rewritten as text; PNGs recolored on a canvas) and
- * the image stays transparent until that cached recolor is ready.
+ * the image stays transparent until that cached recolor is ready. One-color
+ * artwork is remixed onto a backdrop in another target color (`backdropSlot`).
  */
 export function Logo({ team: baseTeam, palette, perm = 0, variantId }: Props) {
   const team = withLogoVariant(baseTeam, variantId)
   const hasTargetPalette = palette != null
   const target = hasTargetPalette ? resolveRemixTargetColors(team, palette, perm) : null
   const source = team.sourcePalette ?? team.palette
+  const slot = backdropSlot(team)
+  const backdrop = target && slot !== undefined ? target[slot] : undefined
   const key = target ? `${team.logo}|${source.join('|')}|${target.join('|')}` : null
   const [, setTick] = useState(0)
   const [remixStatus, setRemixStatus] = useState<RemixStatus>(() =>
@@ -301,6 +304,8 @@ export function Logo({ team: baseTeam, palette, perm = 0, variantId }: Props) {
   }, [key, team.logo])
 
   const imageSrc = !hasTargetPalette ? team.logo : key && remixStatus === 'ready' ? urlCache.get(key) ?? TRANSPARENT_PIXEL : TRANSPARENT_PIXEL
+  // The backdrop appears with the recolored artwork, never as an empty tile while it loads.
+  const showBackdrop = backdrop !== undefined && remixStatus === 'ready'
   const liveStatus =
     remixStatus === 'loading' ? 'Loading remix logo.' : remixStatus === 'error' ? 'Remix logo unavailable.' : ''
 
@@ -312,7 +317,8 @@ export function Logo({ team: baseTeam, palette, perm = 0, variantId }: Props) {
         </span>
       )}
       <img
-        className="logo"
+        className={showBackdrop ? 'logo backdrop' : 'logo'}
+        style={showBackdrop ? { backgroundColor: backdrop } : undefined}
         src={imageSrc}
         alt=""
         aria-hidden="true"

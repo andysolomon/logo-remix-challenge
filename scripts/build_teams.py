@@ -11,8 +11,9 @@ does not know about is dropped on the next run.
 
 Run after ``scripts/download_svgs.py``. Idempotent: every ``COL-*`` *team*
 entry is regenerated from the manifest; the hand-tuned conference logo
-entries (``COL-ACC`` etc.), all NFL entries, and the high-school entries
-owned by ``scripts/build_hs_teams.py`` are left untouched. New
+entries (``COL-ACC`` etc.) keep everything but ``unusedSourceSlots``, which
+follows their artwork; all NFL entries and the high-school entries owned by
+``scripts/build_hs_teams.py`` are left untouched. New
 conference logos in the manifest (e.g. Ivy) are added if missing, and the
 ``leagues.COL.conferences`` chip list is updated to the manifest's order.
 
@@ -24,6 +25,8 @@ Palette per team is ``[primary, secondary, light]``:
   * light     white
 Primary and secondary are snapped to the SVG's actual fills, so the runtime
 recolor in Logo.tsx matches exactly without a separate ``sourcePalette``.
+Slots the artwork never uses are listed in ``unusedSourceSlots``; one-color
+artwork (two unused slots) is remixed onto a backdrop in another team color.
 
 Usage:
     python3 scripts/build_teams.py [--dry-run]
@@ -116,6 +119,44 @@ def svg_fills(item: dict) -> list[str]:
     return fills
 
 
+STOP_COLOR_RE = re.compile(r"stop-color\s*[:=]\s*[\"']?\s*(#[0-9a-fA-F]{3,8}\b|rgba?\([^)]*\)|[a-zA-Z]+)")
+
+
+def unused_slots(palette: list[str], logo: str) -> list[int] | None:
+    """Palette slots no artwork color comes near, or None when the file hides its colors.
+
+    Reads what Logo.tsx recolors: an SVG's resolved fills (fill-less shapes
+    render black) and gradient stops, or a PNG's opaque pixels. An SVG that
+    wraps an embedded bitmap keeps its colors in the bitmap, so its coverage is
+    left unknown rather than guessed, as is a file not downloaded yet.
+    """
+    # Imported here: download_nba_svgs imports this module.
+    from download_hbcu_svgs import png_colors, to_hex
+    from download_nba_svgs import artwork_colors
+
+    path = ROOT / "public" / logo.lstrip("/")
+    if not path.is_file():
+        return None
+    data = path.read_bytes()
+    if logo.endswith(".svg"):
+        if b"<image" in data:
+            return None
+        stops = [to_hex(token) for token in STOP_COLOR_RE.findall(data.decode("utf-8", "replace"))]
+        colors = artwork_colors(data) + [c for c in stops if c]
+    else:
+        colors = [hex_ for hex_, _ in png_colors(data)[:100]]
+    return [slot for slot, color in enumerate(palette) if not any(near(color, c) for c in colors)]
+
+
+def with_unused_slots(entry: dict) -> dict:
+    """Record the slots ``entry``'s artwork leaves out, as the other roster builders do."""
+    entry = {k: v for k, v in entry.items() if k != "unusedSourceSlots"}
+    unused = unused_slots(entry.get("sourcePalette", entry["palette"]), entry["logo"])
+    if unused:
+        entry["unusedSourceSlots"] = unused
+    return entry
+
+
 def build_palette(item: dict) -> tuple[list[str], list[str] | None]:
     fills = svg_fills(item)
     primary = espn_hex(item.get("color"), BLACK)
@@ -143,7 +184,7 @@ def hbcu_entry(item: dict) -> dict:
     unlike the ESPN path there is nothing to snap here and no ``sourcePalette``:
     the hexes and the file already agree.
     """
-    return {
+    return with_unused_slots({
         "id": item["id"],
         "league": "COL",
         "conference": item["conference"],
@@ -152,7 +193,7 @@ def hbcu_entry(item: dict) -> dict:
         "abbr": item["abbr"],
         "palette": item["palette"],
         "logo": item["path"],
-    }
+    })
 
 
 def team_entry(item: dict) -> dict:
@@ -169,14 +210,14 @@ def team_entry(item: dict) -> dict:
     if source:
         entry["sourcePalette"] = source
     entry["logo"] = item["path"]
-    return entry
+    return with_unused_slots(entry)
 
 
 def conference_entry(item: dict) -> dict:
     fills = svg_fills(item)
     primary = fills[0] if fills and not near(fills[0], WHITE) else (fills[1] if len(fills) > 1 else BLACK)
     others = [f for f in fills if not near(f, primary) and not near(f, WHITE)]
-    return {
+    return with_unused_slots({
         "id": CONFERENCE_IDS.get(item["conference"], item["id"]),
         "league": "COL",
         "conference": item["conference"],
@@ -185,7 +226,7 @@ def conference_entry(item: dict) -> dict:
         "abbr": item["abbr"],
         "palette": [primary, others[0] if others else BLACK, WHITE],
         "logo": item["path"],
-    }
+    })
 
 
 def atomic_write_text(path: Path, text: str) -> None:
@@ -311,7 +352,8 @@ def main() -> int:
     except ValueError as exc:
         print(f"error: {exc}; run scripts/build_hs_teams.py", file=sys.stderr)
         return 1
-    kept_confs = {t["conference"]: t for t in existing if t["league"] == "COL" and t["name"] == ""}
+    # Conference palettes are hand-tuned, but slot coverage always follows the artwork.
+    kept_confs = {t["conference"]: with_unused_slots(t) for t in existing if t["league"] == "COL" and t["name"] == ""}
     for conf, item in conf_items.items():
         kept_confs.setdefault(conf, conference_entry(item))
 

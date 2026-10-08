@@ -22,7 +22,7 @@ export interface Team {
   palette: [string, string, string]
   /** Optional exact source colors when the artwork differs from the displayed palette. */
   sourcePalette?: [string, string, string]
-  /** Source palette slots intentionally absent from genuinely two-color artwork. */
+  /** Source palette slots absent from the artwork. Two unused slots mark one-color art, which remixes onto a backdrop. */
   unusedSourceSlots?: number[]
   /** Path under public/ to the team's logo, e.g. "/logos/svg/nfl/kc.svg" (SVG preferred; PNGs fall back to canvas recolor). */
   logo: string
@@ -554,29 +554,70 @@ const LIGHT_SURFACE = '#FFFFFF'
 const SURFACE_CONTRAST = 1.5
 const ARTWORK_ROLES = [0, 1] as const
 
+/** For one-color artwork: the only palette slot it uses and the unused slot painted behind it. */
+const oneColorSlots = (original: Team): { logo: number; backdrop: number } | undefined => {
+  const unused = original.unusedSourceSlots ?? []
+  if (unused.length !== 2) return undefined
+  return { logo: [0, 1, 2].find((slot) => !unused.includes(slot))!, backdrop: Math.min(...unused) }
+}
+
+/**
+ * Source slot painted behind one-color artwork. A remix of a logo that uses a single palette slot
+ * would show just one of the color team's colors (often a lone black or solid silhouette), so it
+ * sits on a backdrop in another of that team's colors. Undefined when the artwork shows two or more.
+ */
+export const backdropSlot = (original: Team): number | undefined => oneColorSlots(original)?.backdrop
+
+type RemixRoles = {
+  /** Slot pairs that must stay visibly distinct after recoloring. */
+  criticalPairs: readonly (readonly [number, number])[]
+  /** Slots drawn directly on the light canvas, most important first. */
+  canvasRoles: readonly number[]
+  /** Canvas roles an exact permutation must keep readable. */
+  surfaceRoles: readonly number[]
+}
+
+const remixRoles = (original: Team): RemixRoles => {
+  const oneColor = oneColorSlots(original)
+  if (oneColor) {
+    // The artwork sits wholly on its backdrop, so only the logo/backdrop and backdrop/canvas edges show.
+    const { logo, backdrop } = oneColor
+    return { criticalPairs: [[logo, backdrop]], canvasRoles: [backdrop], surfaceRoles: [backdrop] }
+  }
+  const source = original.sourcePalette ?? original.palette
+  return {
+    criticalPairs: palettePairs.filter(([a, b]) => contrastRatio(source[a], source[b]) >= DETAIL_CONTRAST),
+    canvasRoles: ARTWORK_ROLES,
+    surfaceRoles: ARTWORK_ROLES.filter((role) => contrastRatio(source[role], LIGHT_SURFACE) >= SURFACE_CONTRAST),
+  }
+}
+
 type PermutationScore = {
-  primary: number
-  secondary: number
   weakestDetail: number
+  surface: number[]
 }
 
 const permutationScore = (
   targetPalette: readonly string[],
   permutation: readonly number[],
-  criticalPairs: readonly (readonly [number, number])[],
+  { criticalPairs, canvasRoles }: RemixRoles,
 ): PermutationScore => ({
-  primary: contrastRatio(targetPalette[permutation[0]], LIGHT_SURFACE),
-  secondary: contrastRatio(targetPalette[permutation[1]], LIGHT_SURFACE),
   weakestDetail: criticalPairs.length
     ? Math.min(...criticalPairs.map(([a, b]) => contrastRatio(targetPalette[permutation[a]], targetPalette[permutation[b]])))
     : Infinity,
+  surface: canvasRoles.map((role) => contrastRatio(targetPalette[permutation[role]], LIGHT_SURFACE)),
 })
+
+/** Critical detail first, then each canvas role's light-surface contrast in order. */
+const betterScore = (a: PermutationScore, b: PermutationScore): boolean => {
+  if (a.weakestDetail !== b.weakestDetail) return a.weakestDetail > b.weakestDetail
+  const at = a.surface.findIndex((contrast, i) => contrast !== b.surface[i])
+  return at >= 0 && a.surface[at] > b.surface[at]
+}
 
 const exactContrastSafePermutations = (original: Team, targetPalette: readonly string[]): number[] => {
   if (targetPalette.length < 3) return [0]
-  const source = original.sourcePalette ?? original.palette
-  const criticalPairs = palettePairs.filter(([a, b]) => contrastRatio(source[a], source[b]) >= DETAIL_CONTRAST)
-  const surfaceRoles = ARTWORK_ROLES.filter((role) => contrastRatio(source[role], LIGHT_SURFACE) >= SURFACE_CONTRAST)
+  const { criticalPairs, surfaceRoles } = remixRoles(original)
   return PERMS.map((_, i) => i).filter((i) => {
     const p = PERMS[i]
     return criticalPairs.every(([a, b]) => contrastRatio(targetPalette[p[a]], targetPalette[p[b]]) >= DETAIL_CONTRAST) &&
@@ -609,25 +650,22 @@ const darkenForLightSurface = (hex: string): string => {
 
 /**
  * Permutations that keep visibly separate source colors distinct and keep source artwork roles that
- * were readable on the light canvas readable after recoloring. If no perfect mapping exists, retain
- * a deterministic fallback that preserves critical artwork detail first, then prioritizes primary
- * and secondary light-surface contrast. The fallback's artwork roles are restyled by
- * `resolveRemixTargetColors` below.
+ * were readable on the light canvas readable after recoloring. One-color artwork instead needs its
+ * logo distinct from its backdrop and the backdrop readable on the canvas. If no perfect mapping
+ * exists, retain a deterministic fallback that preserves critical artwork detail first, then
+ * prioritizes light-surface contrast of the canvas roles (primary then secondary, or the backdrop).
+ * The fallback's canvas roles are restyled by `resolveRemixTargetColors` below.
  */
 export function contrastSafePermutations(original: Team, targetPalette: readonly string[]): number[] {
   const safe = exactContrastSafePermutations(original, targetPalette)
   if (safe.length) return safe
 
-  const source = original.sourcePalette ?? original.palette
-  const criticalPairs = palettePairs.filter(([a, b]) => contrastRatio(source[a], source[b]) >= DETAIL_CONTRAST)
-
+  const roles = remixRoles(original)
   let fallback = 0
-  let best = permutationScore(targetPalette, PERMS[0], criticalPairs)
+  let best = permutationScore(targetPalette, PERMS[0], roles)
   for (let i = 1; i < PERMS.length; i++) {
-    const score = permutationScore(targetPalette, PERMS[i], criticalPairs)
-    if (score.weakestDetail > best.weakestDetail ||
-      (score.weakestDetail === best.weakestDetail && score.primary > best.primary) ||
-      (score.weakestDetail === best.weakestDetail && score.primary === best.primary && score.secondary > best.secondary)) {
+    const score = permutationScore(targetPalette, PERMS[i], roles)
+    if (betterScore(score, best)) {
       best = score
       fallback = i
     }
@@ -646,8 +684,9 @@ export function contrastSafePermutation(original: Team, targetPalette: readonly 
 
 /**
  * Resolve target colors by source slot. Exact safe mappings retain the team palette verbatim. When
- * no exact permutation exists, only source artwork roles 0/1 are darkened for the light canvas;
- * source slot 2 remains the target palette's exact light/negative-space color.
+ * no exact permutation exists, only the roles drawn on the light canvas are darkened: source artwork
+ * roles 0/1, with source slot 2 kept as the target palette's exact light/negative-space color, or a
+ * one-color logo's backdrop, with the logo's own color kept exact.
  */
 export function resolveRemixTargetColors(
   original: Team,
@@ -662,7 +701,7 @@ export function resolveRemixTargetColors(
     targetPalette[p[2]] ?? original.palette[2],
   ]
   if (exactContrastSafePermutations(original, targetPalette).length) return mapped
-  for (const role of ARTWORK_ROLES) mapped[role] = darkenForLightSurface(mapped[role])
+  for (const role of remixRoles(original).canvasRoles) mapped[role] = darkenForLightSurface(mapped[role])
   return mapped
 }
 

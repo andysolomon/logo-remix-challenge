@@ -82,7 +82,14 @@ export default function App() {
     prevModeRef.current = mode
   }, [mode])
 
-  const addRound = (round: Round, editIdx: number | null) => {
+  // Match the browser chrome (iOS status bar / toolbar tint) to the active screen.
+  useEffect(() => {
+    const dark = mode === 'play'
+    document.documentElement.classList.toggle('dark', dark)
+    document.querySelector('meta[name="theme-color"]')?.setAttribute('content', dark ? '#12100D' : '#F7F5F1')
+  }, [mode])
+
+  const addRound =(round: Round, editIdx: number | null) => {
     const d = [...deck]
     if (editIdx != null && d[editIdx]) d[editIdx] = normalizeRound({ ...d[editIdx], ...round })
     else {

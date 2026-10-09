@@ -112,8 +112,8 @@ export default function App() {
       logoVariant: r.l,
       editIdx: i,
       step: 3,
-      browserO: { league: o.league, conference: 'All', query: '' },
-      browserC: { league: c.league, conference: 'All', query: '' },
+      browserO: { league: o.league, conference: 'All' },
+      browserC: { league: c.league, conference: 'All' },
     }))
     setMode('create')
   }

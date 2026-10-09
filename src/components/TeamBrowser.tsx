@@ -5,7 +5,6 @@ import { Logo } from './Logo'
 export interface BrowserState {
   league: League
   conference: string
-  query: string
 }
 
 interface Props {
@@ -20,17 +19,19 @@ interface Props {
 
 export function TeamBrowser({ title, state, onState, selectedId, onSelect, showSwatches, portrait }: Props) {
   const leagueRef = useRef<HTMLDivElement>(null)
+  const chipsRef = useRef<HTMLDivElement>(null)
   useEffect(() => {
-    const group = leagueRef.current
-    const active = group?.querySelector<HTMLButtonElement>('[aria-pressed="true"]')
-    if (!group || !active || group.scrollWidth <= group.clientWidth) return
     // Keep a restored selection visible without scrolling the page or logo list.
-    const bounds = group.getBoundingClientRect()
-    const button = active.getBoundingClientRect()
-    if (button.left < bounds.left + 6) group.scrollLeft -= bounds.left + 6 - button.left
-    else if (button.right > bounds.right - 6) group.scrollLeft += button.right - bounds.right + 6
-  }, [state.league, portrait])
-  const teams = filterTeams(state.league, state.conference, state.query)
+    for (const group of [leagueRef.current, chipsRef.current]) {
+      const active = group?.querySelector<HTMLButtonElement>('[aria-pressed="true"]')
+      if (!group || !active || group.scrollWidth <= group.clientWidth) continue
+      const bounds = group.getBoundingClientRect()
+      const button = active.getBoundingClientRect()
+      if (button.left < bounds.left + 6) group.scrollLeft -= bounds.left + 6 - button.left
+      else if (button.right > bounds.right - 6) group.scrollLeft += button.right - bounds.right + 6
+    }
+  }, [state.league, state.conference, portrait])
+  const teams = filterTeams(state.league, state.conference, '')
   const chips = ['All', ...LEAGUES[state.league].conferences]
   const noun = entryNoun(state.league)
   const panelId = `browser-${title.replace(/\s+/g, '-').toLowerCase()}`
@@ -52,16 +53,7 @@ export function TeamBrowser({ title, state, onState, selectedId, onSelect, showS
           ))}
         </div>
       </div>
-      <input
-        className="search"
-        value={state.query}
-        onChange={(e) => onState({ ...state, query: e.target.value })}
-        placeholder={`Search ${noun}s`}
-        type="search"
-        autoComplete="off"
-        aria-label={`Search ${title.toLowerCase()} ${noun}s`}
-      />
-      <div className="chips" role="group" aria-label={state.league === 'BRAND' ? 'Brand type filter' : noun === 'team' ? 'Conference filter' : 'Category filter'}>
+      <div ref={chipsRef} className="chips" role="group" aria-label={state.league === 'BRAND' ? 'Brand type filter' : noun === 'team' ? 'Conference filter' : 'Category filter'}>
         {chips.map((c) => (
           <button
             key={c}

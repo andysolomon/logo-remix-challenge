@@ -70,7 +70,6 @@ input::placeholder { color: var(--faint); }
 .play-btn:focus-visible,
 .opt:focus-visible,
 .close-btn:focus-visible,
-.search:focus-visible,
 .step:focus-visible,
 .stepper-input:focus-visible {
   outline: 2px solid var(--accent);
@@ -134,9 +133,9 @@ input::placeholder { color: var(--faint); }
 @media (max-width: 900px), (max-height: 640px) {
   .panel-head .seg { display: flex; flex-wrap: nowrap; min-width: 0; overflow-x: auto; overscroll-behavior-x: contain; scroll-padding-inline: 6px; padding: 6px; }
   .panel-head .seg-btn { flex: 0 0 auto; white-space: nowrap; }
+  .panel > .chips { flex: 0 0 auto; flex-wrap: nowrap; min-width: 0; overflow-x: auto; overscroll-behavior-x: contain; scroll-padding-inline: 6px; padding: 4px; margin: -4px; }
+  .panel > .chips .chip { flex: 0 0 auto; white-space: nowrap; }
 }
-.search { height: 46px; border: 1.5px solid var(--line); border-radius: 12px; padding: 0 14px; font: 500 15px var(--ui); background: var(--input-bg); outline-color: var(--accent); width: 100%; color: var(--ink); }
-.portrait .search { height: 48px; font-size: 16px; }
 .chips { display: flex; gap: 6px; flex-wrap: wrap; }
 .chip { height: 38px; padding: 0 14px; border: none; border-radius: 19px; font: 600 13px var(--ui); cursor: pointer; background: var(--chip-bg); color: var(--chip-fg); }
 .chip.active { background: var(--ink); color: #FFFFFF; }

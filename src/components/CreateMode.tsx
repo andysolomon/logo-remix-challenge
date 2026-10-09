@@ -20,8 +20,8 @@ export const initialCreateState: CreateState = {
   perm: 0,
   editIdx: null,
   step: 1,
-  browserO: { league: 'PRO', conference: 'All', query: '' },
-  browserC: { league: 'PRO', conference: 'All', query: '' },
+  browserO: { league: 'PRO', conference: 'All' },
+  browserC: { league: 'PRO', conference: 'All' },
 }
 
 interface Props {

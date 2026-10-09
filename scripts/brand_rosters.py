@@ -1,4 +1,4 @@
-"""Brand collections: fast-food chains, brands grouped by brand type, and iOS apps.
+"""Brand collections: fast-food chains, brands grouped by brand type, iOS apps, TV channels and carmakers.
 
 Each row is (abbr, display name, category, primary color, secondary color, answer aliases).
 The colors are the donor palette and white completes the third slot. Fast-food colors keep
@@ -106,11 +106,17 @@ APP = [
     ("CASH", "Cash App", "Everyday", "00D632", "000000", ["CashApp", "Square Cash"]),
 ]
 
+TV = []
+
+CAR = []
+
 LEAGUES = {
     "FOOD": {"label": "FAST FOOD", "conferences": ["Burgers", "Chicken", "Sandwiches", "Pizza", "Mexican & Asian", "Coffee & Treats"]},
     "BRAND": {"label": "BRANDS", "conferences": ["Product", "Service", "Corporate", "Personal", "Store", "Place"]},
     "APP": {"label": "APPS", "conferences": ["Built-in", "Social", "Games", "Music & Video", "Everyday"]},
+    "TV": {"label": "TV", "conferences": ["Broadcast", "Cable", "Music & Pop", "Kids", "Discovery & Lifestyle"]},
+    "CAR": {"label": "CARS", "conferences": ["American", "Japanese & Korean", "German", "Italian", "British"]},
 }
 
-ROSTERS = {"FOOD": FOOD, "BRAND": BRAND, "APP": APP}
-SLUGS = {"FOOD": "fast-food", "BRAND": "brands", "APP": "apps"}
+ROSTERS = {"FOOD": FOOD, "BRAND": BRAND, "APP": APP, "TV": TV, "CAR": CAR}
+SLUGS = {"FOOD": "fast-food", "BRAND": "brands", "APP": "apps", "TV": "tv", "CAR": "cars"}

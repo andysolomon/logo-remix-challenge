@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="869.435" height="656.755" viewBox="82.155 -16.72 869.435 656.755" id="svg20">
+  <defs id="defs20">
+    <pattern id="EMFhbasepattern" patternUnits="userSpaceOnUse" width="6" height="6" x="0" y="0" />
+    <pattern id="EMFhbasepattern-6" patternUnits="userSpaceOnUse" width="6" height="6" x="0" y="0" />
+  </defs>
+  <g transform="matrix(0.97328845,0,0,0.97328845,-90.494562,-94.049415)" id="g20" style="display:inline;mix-blend-mode:normal">
+    <g data-paper-data="{&quot;isPaintingLayer&quot;:true}" fill-rule="nonzero" stroke="none" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="none" stroke-dashoffset="0" style="mix-blend-mode:normal" id="g19">
+      <path d="m 852.14122,508.94591 c 1.7e-4,60.49782 -24.03242,118.51779 -66.81081,161.29619 -42.77838,42.7784 -100.79842,66.811 -161.29618,66.81081 -125.97889,-9.7e-4 -228.10409,-102.12808 -228.10375,-228.107 9.6e-4,-125.97767 102.12609,-228.10234 228.10375,-228.10377 125.97893,-4e-4 228.10559,102.12486 228.10703,228.10377 z" fill="#28377d" stroke-width="3.67235" id="path1" style="display:inline;fill:#27468f;fill-opacity:1" />
+      <path d="m 194.56682,248.99081 c 0,-84.1462 68.214,-152.360243 152.36021,-152.360243 84.14622,0 152.36021,68.214043 152.36021,152.360243 0,84.14623 -68.21399,152.36023 -152.36021,152.36023 -84.14621,0 -152.36021,-68.214 -152.36021,-152.36023 z" fill="#ee2724" stroke-width="3.75026" id="path2" style="display:inline;fill:#e02122;fill-opacity:1" />
+      <path d="m 748.78476,248.99085 c 0,-84.14629 68.21387,-152.360283 152.36,-152.360283 84.14611,0 152.36054,68.213993 152.36054,152.360283 0,84.14627 -68.21443,152.36028 -152.36054,152.36028 -84.14613,0 -152.36,-68.21401 -152.36,-152.36028 z" fill="#ee2724" stroke-width="3.75023" id="path3" style="display:inline;fill:#e02122;fill-opacity:1" />
+      </g>
+  </g>
+</svg>

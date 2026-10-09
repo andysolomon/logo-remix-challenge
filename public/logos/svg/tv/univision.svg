@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.0" id="katman_1" x="0px" y="0px" viewBox="140.31 59.611 279.377 280.774" style="enable-background:new 0 0 560 400;" xml:space="preserve" width="279.377" height="280.774">
+<style type="text/css">
+	.st0{fill:#00B140;}
+	.st1{fill:#9063CD;}
+	.st2{fill:#EE2737;}
+	.st3{fill:#00A3E1;}
+</style>
+<g transform="matrix(1.99538 0 0 1.99538 -164.971 -137.121)">
+	<path class="st0" d="M226.9,101.4h63.4v64h-63.4V101.4z" />
+	<path class="st1" d="M219.1,165.4c0-35.2-28.8-64.1-63.4-64.1v64.1H219.1z" />
+	<path class="st2" d="M155.7,173.2c0,34.6,28.2,63.4,63.4,63.4v-63.4H155.7z" />
+	<path class="st3" d="M290.3,173.2c0,34.6-28.2,63.4-63.4,63.4v-63.4H290.3z" />
+</g>
+</svg>

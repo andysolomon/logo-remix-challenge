@@ -1,0 +1,2295 @@
+{
+  "assets": [
+    {
+      "id": "TV-ABC",
+      "league": "TV",
+      "conference": "Broadcast",
+      "region": "ABC",
+      "name": "",
+      "abbr": "ABC",
+      "aliases": [
+        "American Broadcasting Company",
+        "ABC Television Network"
+      ],
+      "palette": [
+        "#000000",
+        "#FFC20E",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Circle wordmark",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/American_Broadcasting_Company_Logo.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:American_Broadcasting_Company_Logo.svg",
+          "sourceSha256": "5157c848cb5f1f8a935e02d8775d87af0553445e9525ea20e5765ff7872996e1",
+          "ops": {
+            "viewBox": "-2.933 -2.72 208.01 208.26"
+          },
+          "showsName": true,
+          "path": "/logos/svg/tv/abc.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#FFC20E",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "8614623b6de2e99d014b0335f43413a9242e435d59c2d186c5bbb6e62916d627"
+        }
+      ]
+    },
+    {
+      "id": "TV-AP",
+      "league": "TV",
+      "conference": "Discovery & Lifestyle",
+      "region": "Animal Planet",
+      "name": "",
+      "abbr": "AP",
+      "aliases": [
+        "AnimalPlanet"
+      ],
+      "palette": [
+        "#0074FF",
+        "#346337",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Leaping elephant",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Special:FilePath/2018_Animal_Planet_logo.svg",
+          "sourcePage": "https://en.wikipedia.org/wiki/File:2018_Animal_Planet_logo.svg",
+          "sourceSha256": "c26e9f3ce4ff0fa641f9afe1084c5c1c1bddb0015b56fbfd347a58611c068b06",
+          "ops": {
+            "keepNodes": [
+              "1"
+            ],
+            "viewBox": "177.059 -14.577 757.99 421.169"
+          },
+          "path": "/logos/svg/tv/ap.svg",
+          "format": "svg",
+          "colors": [
+            "#0074FF"
+          ],
+          "sourcePalette": [
+            "#0074FF",
+            "#346337",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "4731285b8655327fe75472958037dab03683f5b12da6d6f8ad6bc50bbdb61f9d"
+        },
+        {
+          "id": "1996-elephant-globe",
+          "label": "1996 elephant and globe",
+          "sourceUrl": "https://iconape.com/wp-content/files/en/33065/svg/animal-planet-1.svg",
+          "sourcePage": "https://iconape.com/animal-planet-1-logo-icon-svg-png.html",
+          "sourceSha256": "d1b8abda6f4e15944bee449953cbf8c19bea09f5b658eff970b90d3e8f1f7484",
+          "ops": {
+            "removeNodes": [
+              "5",
+              "6",
+              "8",
+              "9"
+            ],
+            "viewBox": "-0.396 -0.441 22.972 16.43"
+          },
+          "path": "/logos/svg/tv/alternates/ap-1996-elephant-globe.svg",
+          "format": "svg",
+          "colors": [
+            "#6CB35E",
+            "#346337",
+            "#000000",
+            "#FFFFFF",
+            "#929496",
+            "#636466",
+            "#C6C7C9"
+          ],
+          "sourcePalette": [
+            "#7FA47A",
+            "#346337",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "a1eb3c698652d19fad3fb27731271521f80d2b8149c363fa06bd938107a9497f"
+        }
+      ]
+    },
+    {
+      "id": "TV-BET",
+      "league": "TV",
+      "conference": "Music & Pop",
+      "region": "BET",
+      "name": "",
+      "abbr": "BET",
+      "aliases": [
+        "Black Entertainment Television",
+        "BET Networks"
+      ],
+      "palette": [
+        "#000000",
+        "#E32F30",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Star and B monogram",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/7/7b/BET_1980_II.svg/revision/latest?cb=20210630020615",
+          "sourcePage": "https://logos.fandom.com/wiki/File:BET_1980_II.svg",
+          "sourceSha256": "7003f9f8e4e2a85226cba0fbf70479a2bb93b8408f8df7778acce11c15c79876",
+          "ops": {
+            "removeNodes": [
+              "3/0/0"
+            ],
+            "viewBox": "44.033 -1.387 72.133 52.506"
+          },
+          "path": "/logos/svg/tv/bet.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#E32F30",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "84af5b34f59f8d490348bf43bbc21c3dcbf884eb99945a1d26f1fd154513602b"
+        },
+        {
+          "id": "2001-solid-star",
+          "label": "2001 solid star with B",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/a/ae/BET_2001.svg/revision/latest?cb=20211022160835",
+          "sourcePage": "https://logos.fandom.com/wiki/File:BET_2001.svg",
+          "sourceSha256": "fb1488645abd54cf44ea48fd8d5fd0ab409718e93a965a8dd833856455e53185",
+          "ops": {
+            "keepNodes": [
+              "0/3",
+              "0/4"
+            ],
+            "viewBox": "-10.718 -10.718 557.358 429.742"
+          },
+          "path": "/logos/svg/tv/alternates/bet-2001-solid-star.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#E32F30",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "f67c629bc884049142843fb62172a8a4e450c00a8095f9d79761b8ce175cd780"
+        }
+      ]
+    },
+    {
+      "id": "TV-BOOM",
+      "league": "TV",
+      "conference": "Kids",
+      "region": "Boomerang",
+      "name": "",
+      "abbr": "BOOM",
+      "aliases": [
+        "Boomerang from Cartoon Network",
+        "Boomerang TV"
+      ],
+      "palette": [
+        "#000000",
+        "#61A9D6",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "B cube",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Boomerang_2014_logo.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Boomerang_2014_logo.svg",
+          "sourceSha256": "cdb15e84403194c2a999317614cf0d0ada09abef9471a23951b5bf61480e3268",
+          "ops": {
+            "removeNodes": [
+              "2/0/2"
+            ],
+            "viewBox": "-6 -6 312 239.906"
+          },
+          "path": "/logos/svg/tv/boom.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#61A9D6",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "fa424093c1aad7346b9b9fc24613acc5e209c98a1eb2d1c92186b0c4e4cab7bc"
+        },
+        {
+          "id": "2000-swoosh",
+          "label": "2000 flying B with stars",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Boomerang_tv_logo_%282000%29.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Boomerang_tv_logo_%282000%29.svg",
+          "sourceSha256": "0ca816ef7ab6310c318351f7cc520f91f929be065a44d588a7846098e1be11f0",
+          "ops": {
+            "removeNodes": [
+              "3/0/1",
+              "3/0/6"
+            ],
+            "viewBox": "-9.496 -9.496 493.775 258.929"
+          },
+          "path": "/logos/svg/tv/alternates/boom-2000-swoosh.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#00548E",
+            "#B5CB8B",
+            "#61A9D6",
+            "#F1E6B0"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#61A9D6",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "695318118a54a4ab65b7acf598cedc372a5dadefa444fea21f791ad9c15b65b5"
+        }
+      ]
+    },
+    {
+      "id": "TV-CBS",
+      "league": "TV",
+      "conference": "Broadcast",
+      "region": "CBS",
+      "name": "",
+      "abbr": "CBS",
+      "aliases": [
+        "Columbia Broadcasting System",
+        "CBS Television Network",
+        "the Eye",
+        "Eye network"
+      ],
+      "palette": [
+        "#033963",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Eye",
+          "sourceUrl": "https://api.iconify.design/simple-icons/cbs.svg?color=%23033963",
+          "sourcePage": "https://simpleicons.org/?q=cbs",
+          "sourceSha256": "feb5944482062e8d21a00e051b6550a81a74f49b93415312b7c65034b166db33",
+          "ops": {
+            "viewBox": "-0.412 -0.48 24.824 24.96"
+          },
+          "path": "/logos/svg/tv/cbs.svg",
+          "format": "svg",
+          "colors": [
+            "#033963"
+          ],
+          "sourcePalette": [
+            "#033963",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "466ba4a87a83e8a59ed58158024a58219683fcf58886bebd70322c7422e2624f"
+        }
+      ]
+    },
+    {
+      "id": "TV-CC",
+      "league": "TV",
+      "conference": "Cable",
+      "region": "Comedy Central",
+      "name": "",
+      "abbr": "CC",
+      "aliases": [
+        "ComedyCentral",
+        "Comedy Central Network",
+        "The Comedy Channel",
+        "Ha!"
+      ],
+      "palette": [
+        "#FDC600",
+        "#CF4037",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Double-C mark",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Special:FilePath/Comedy_Central_2018.svg",
+          "sourcePage": "https://en.wikipedia.org/wiki/File:Comedy_Central_2018.svg",
+          "sourceSha256": "73123f9c4198efd568810181fd9f2186dbd62f0eebc647924f7d639e871fc708",
+          "ops": {
+            "keepNodes": [
+              "13-14"
+            ],
+            "viewBox": "-6.898 -6.898 336.439 358.721"
+          },
+          "path": "/logos/svg/tv/cc.svg",
+          "format": "svg",
+          "colors": [
+            "#FDC600"
+          ],
+          "sourcePalette": [
+            "#FDC600",
+            "#CF4037",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "e1e726d0d59e8132c162e1215033392151f3d668e6c7f461a1a85ab655d49365"
+        },
+        {
+          "id": "globe-skyline",
+          "label": "Classic globe and skyline",
+          "sourceUrl": "https://iconape.com/wp-content/files/lm/50038/svg/comedy-central-2.svg",
+          "sourcePage": "https://iconape.com/comedy-central-logo-icon-svg-png.html",
+          "sourceSha256": "333ea42e42093d66a77aa0f1f4a6a798c9edfc71e84dc1f6e10d93a7245d27ec",
+          "ops": {
+            "removeNodes": [
+              "0/0",
+              "0/5"
+            ],
+            "viewBox": "22.222 -0.908 148.312 194.572"
+          },
+          "path": "/logos/svg/tv/alternates/cc-globe-skyline.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#CF4037",
+            "#FADF3C"
+          ],
+          "sourcePalette": [
+            "#FADF3C",
+            "#CF4037",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "5a553c0b906e2da0386add19c8eb0409d43069f5e08a0bf6b819d8ebd503fe12"
+        }
+      ]
+    },
+    {
+      "id": "TV-CMT",
+      "league": "TV",
+      "conference": "Music & Pop",
+      "region": "CMT",
+      "name": "",
+      "abbr": "CMT",
+      "aliases": [
+        "Country Music Television"
+      ],
+      "palette": [
+        "#E32F30",
+        "#F7DC02",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "1991 color tiles",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/0/07/CMT_%281991%29.svg/revision/latest?cb=20251116065547",
+          "sourcePage": "https://logos.fandom.com/wiki/File:CMT_%281991%29.svg",
+          "sourceSha256": "ed74753d727d328ceadd6e49aee7ab00cc2fe0c3f958a5a7266b0625b728f006",
+          "ops": {
+            "removeNodes": [
+              "2"
+            ],
+            "viewBox": "-33.276 -33.276 1730.352 578.182"
+          },
+          "showsName": true,
+          "path": "/logos/svg/tv/cmt.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#009AD8",
+            "#F7DC02",
+            "#E32F30"
+          ],
+          "sourcePalette": [
+            "#E32F30",
+            "#F7DC02",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "5126ddf308c44ac3212693ea536d12b4ac0ac719a516179ec69b727bf9fa82d3"
+        }
+      ]
+    },
+    {
+      "id": "TV-CN",
+      "league": "TV",
+      "conference": "Kids",
+      "region": "Cartoon Network",
+      "name": "",
+      "abbr": "CN",
+      "aliases": [
+        "CN"
+      ],
+      "palette": [
+        "#000000",
+        "#A7A9AC",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "2010 block letters",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Cartoon_Network_2010_logo.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Cartoon_Network_2010_logo.svg",
+          "sourceSha256": "7ebd60a2cf53e3b976b1452b4b60bf6f3b3fc3e726048fb38c33351d8733407d",
+          "ops": {
+            "keepNodes": [
+              "3-6"
+            ],
+            "viewBox": "-1.945 -1.945 101.136 52.334"
+          },
+          "path": "/logos/svg/tv/cn.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#A7A9AC",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "1828825b4eaf5fe63a1555f2787a784a85ab77dc34a26010c3fd777d92789e39"
+        },
+        {
+          "id": "2004-tilted",
+          "label": "2004 tilted tiles",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/1/1f/Cartoon_Network_2004.svg/revision/latest?cb=20250303174322",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Cartoon_Network_2004.svg",
+          "sourceSha256": "2e899d673b7bc228169f850b134ef2803275ca722b9075bcd08f979647364db2",
+          "ops": {
+            "removeNodes": [
+              "1/2"
+            ],
+            "viewBox": "-8.01 -8.01 416.521 267.498"
+          },
+          "path": "/logos/svg/tv/alternates/cn-2004-tilted.svg",
+          "format": "svg",
+          "colors": [
+            "#A7A9AC",
+            "#FFFFFF",
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#A7A9AC",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "8cfcd58d0255117921a00e134e210aded37bd70c71013e4a5aff63d93a145295"
+        }
+      ]
+    },
+    {
+      "id": "TV-CNN",
+      "league": "TV",
+      "conference": "Cable",
+      "region": "CNN",
+      "name": "",
+      "abbr": "CNN",
+      "aliases": [
+        "Cable News Network"
+      ],
+      "palette": [
+        "#EC1C2E",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Wordmark",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/CNN.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:CNN.svg",
+          "sourceSha256": "101cedf8a233efd3b6753f80877ec1d571f0ea392424bbdeed08857703e475c4",
+          "ops": {
+            "viewBox": "-19.999 -19.999 1040 515.706"
+          },
+          "showsName": true,
+          "path": "/logos/svg/tv/cnn.svg",
+          "format": "svg",
+          "colors": [
+            "#EC1C2E"
+          ],
+          "sourcePalette": [
+            "#EC1C2E",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "44dbd66871d1224faa15a1f02f0eab4302305c7b499f45147d38ed3b9c8e44a0"
+        }
+      ]
+    },
+    {
+      "id": "TV-DISC",
+      "league": "TV",
+      "conference": "Discovery & Lifestyle",
+      "region": "Discovery Channel",
+      "name": "",
+      "abbr": "DISC",
+      "aliases": [
+        "Discovery",
+        "The Discovery Channel"
+      ],
+      "palette": [
+        "#2D739F",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Globe D",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Special:FilePath/Discovery_Channel_-_Logo_2019.svg",
+          "sourcePage": "https://en.wikipedia.org/wiki/File:Discovery_Channel_-_Logo_2019.svg",
+          "sourceSha256": "ec4c81798d50d613c1f901cd55c802baf868dc657e11ef082455280d25724de8",
+          "ops": {
+            "keepNodes": [
+              "1/1"
+            ],
+            "viewBox": "-5.858 -5.89 269.96 305.76"
+          },
+          "path": "/logos/svg/tv/disc.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "1cf6132c2276c814159f7640579357f8bcf920482f4f5a18aa80838918feecdb"
+        },
+        {
+          "id": "2008-globe",
+          "label": "2008 photo-globe D",
+          "sourceUrl": "https://iconape.com/wp-content/files/ph/283335/svg/discovery-channel-seeklogo.com.svg",
+          "sourcePage": "https://iconape.com/discovery-channel-logo-logo-icon-svg-png.html",
+          "sourceSha256": "5ce4f966afa9616c554e9ca209f4c4e82e399433bfc7116c6613e16bac109540",
+          "ops": {
+            "removeNodes": [
+              "1",
+              "4"
+            ],
+            "viewBox": "16.702 30.302 265.096 181.096"
+          },
+          "path": "/logos/svg/tv/alternates/disc-2008-globe.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "e62afc843de624b78e06aaf68d0ff17e5fb7d3c15825ecf9fe1cfe261c60ffc5"
+        }
+      ]
+    },
+    {
+      "id": "TV-DISNEY",
+      "league": "TV",
+      "conference": "Kids",
+      "region": "Disney Channel",
+      "name": "",
+      "abbr": "DISNEY",
+      "aliases": [
+        "The Disney Channel",
+        "Disney"
+      ],
+      "palette": [
+        "#28377D",
+        "#EE2724",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "1997 red-and-blue ears",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/7/7c/Disney_Channel_1997_logo_%28alternate%29.svg/revision/latest?cb=20250330052836",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Disney_Channel_1997_logo_%28alternate%29.svg",
+          "sourceSha256": "f22ec416535bdca36083afec5fcb70a3e40b1e4612e540df604819eb5384dc2b",
+          "ops": {
+            "removeNodes": [
+              "2/0/3"
+            ],
+            "viewBox": "82.155 -16.72 869.435 656.755"
+          },
+          "path": "/logos/svg/tv/disney.svg",
+          "format": "svg",
+          "colors": [
+            "#27468F",
+            "#E02122"
+          ],
+          "sourcePalette": [
+            "#27468F",
+            "#E02122",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "58defd7a0b4b237b97875f90ff5592553ae993d83ce359c8369b26d9d8f205af"
+        },
+        {
+          "id": "1983-tv",
+          "label": "1983 striped TV ears",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/2/21/Disney_Channel_Logo_1983-1997.svg/revision/latest?cb=20250208030203",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Disney_Channel_Logo_1983-1997.svg",
+          "sourceSha256": "757e5c00bec659043a8cd4471ff7f9f8214e9615e6e759da4ce8f447da8f1070",
+          "ops": {
+            "viewBox": "-6.048 -6.048 314.496 226.496"
+          },
+          "path": "/logos/svg/tv/alternates/disney-1983-tv.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#EE2724",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "f85e5f4cc74587f02ab01157840933ec95efdf2c8685a2c67c547f88a12d5617"
+        },
+        {
+          "id": "2002-ears",
+          "label": "2002 ear outline",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/3/30/Disney_Channel_2002.svg/revision/latest?cb=20220531120931",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Disney_Channel_2002.svg",
+          "sourceSha256": "336699fac151d8f1423079bd5dc72be83525697fffb0a7f55c95b4dfb98f54db",
+          "ops": {
+            "removeNodes": [
+              "2"
+            ]
+          },
+          "path": "/logos/svg/tv/alternates/disney-2002-ears.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#2F8ED4"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#2F8ED4",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "6c2c50bf12e7b3477ba170ec2de3ed535c4a8943b4d758647afe4d0c983cc49b"
+        }
+      ]
+    },
+    {
+      "id": "TV-EENT",
+      "league": "TV",
+      "conference": "Music & Pop",
+      "region": "E!",
+      "name": "",
+      "abbr": "EENT",
+      "aliases": [
+        "E",
+        "E! Entertainment",
+        "E! Entertainment Television",
+        "E! Network"
+      ],
+      "palette": [
+        "#EB2D2E",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "1990 red exclamation",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/6/64/E%21_Entertainment_Television_1990.svg/revision/latest?cb=20240701201632",
+          "sourcePage": "https://logos.fandom.com/wiki/File:E%21_Entertainment_Television_1990.svg",
+          "sourceSha256": "28218fc409e39f33f0382930ae36f3532e94fb53e5b163ffba532a6cbe2632de",
+          "ops": {
+            "keepNodes": [
+              "1-3"
+            ],
+            "viewBox": "12.614 -5.641 101.01 293.311"
+          },
+          "showsName": true,
+          "path": "/logos/svg/tv/eent.svg",
+          "format": "svg",
+          "colors": [
+            "#EB2D2E",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#EB2D2E",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "e6772761c01b65894a08c15d4e16c1d10d25c088d4d0085d062ff329aa95224c"
+        }
+      ]
+    },
+    {
+      "id": "TV-ESPN",
+      "league": "TV",
+      "conference": "Cable",
+      "region": "ESPN",
+      "name": "",
+      "abbr": "ESPN",
+      "aliases": [
+        "Entertainment and Sports Programming Network",
+        "Entertainment Sports Programming Network"
+      ],
+      "palette": [
+        "#E52534",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Wordmark",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/ESPN_wordmark.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:ESPN_wordmark.svg",
+          "sourceSha256": "945971e0bd0074581fa971c487eba22b7031b0e4e9cf77328f6bd5dd16a5d5ca",
+          "ops": {
+            "viewBox": "-10.411 -10.717 575.364 158.732"
+          },
+          "showsName": true,
+          "path": "/logos/svg/tv/espn.svg",
+          "format": "svg",
+          "colors": [
+            "#E52534"
+          ],
+          "sourcePalette": [
+            "#E52534",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "220c2e9b653ebf1c4b360728b002a365e150075f6088bd9a890b55eb4a0fd354"
+        }
+      ]
+    },
+    {
+      "id": "TV-FOX",
+      "league": "TV",
+      "conference": "Broadcast",
+      "region": "FOX",
+      "name": "",
+      "abbr": "FOX",
+      "aliases": [
+        "Fox Broadcasting Company",
+        "Fox Network",
+        "Fox TV"
+      ],
+      "palette": [
+        "#003998",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Wordmark",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/FOX_wordmark.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:FOX_wordmark.svg",
+          "sourceSha256": "c9c95d50382825b776f175936996e7350823d7feabdc68b09ed758afe1626b27",
+          "ops": {
+            "viewBox": "-20 -20 1040 470.569"
+          },
+          "showsName": true,
+          "path": "/logos/svg/tv/fox.svg",
+          "format": "svg",
+          "colors": [
+            "#003998"
+          ],
+          "sourcePalette": [
+            "#003998",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "8a43ffda80967ad9eee8a48b5a2760016166f9a4776c09e33b449147f44fbd0c"
+        }
+      ]
+    },
+    {
+      "id": "TV-HALLMARK",
+      "league": "TV",
+      "conference": "Cable",
+      "region": "Hallmark Channel",
+      "name": "",
+      "abbr": "HALLMARK",
+      "aliases": [
+        "Hallmark",
+        "The Hallmark Channel",
+        "Crown Media"
+      ],
+      "palette": [
+        "#61398E",
+        "#C9A227",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Crown",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Special:FilePath/Hallmark_logo.svg",
+          "sourcePage": "https://en.wikipedia.org/wiki/File:Hallmark_logo.svg",
+          "sourceSha256": "efe71e848a3a1ab94ad08c2277e5745f751c2232c22b81d1cf1b7b7a74a1a372",
+          "ops": {
+            "removeNodes": [
+              "1"
+            ],
+            "viewBox": "237.56 -2.14 116.48 95.18"
+          },
+          "path": "/logos/svg/tv/hallmark.svg",
+          "format": "svg",
+          "colors": [
+            "#61398E"
+          ],
+          "sourcePalette": [
+            "#61398E",
+            "#C9A227",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "4af3656922efc834bfc4cc0ad64e9ea3b9b1a89ba4d3c8cc92649b687bd5181c"
+        }
+      ]
+    },
+    {
+      "id": "TV-HBO",
+      "league": "TV",
+      "conference": "Cable",
+      "region": "HBO",
+      "name": "",
+      "abbr": "HBO",
+      "aliases": [
+        "Home Box Office"
+      ],
+      "palette": [
+        "#000000",
+        "#A7A9AC",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Wordmark",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/HBO_logo.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:HBO_logo.svg",
+          "sourceSha256": "ff3b394544e418078da83e1dc1e733547d1e2efa5354dd5e5d2bde1d6a65a9b1",
+          "ops": {
+            "viewBox": "-10.232 -10.232 532.044 231.254"
+          },
+          "showsName": true,
+          "path": "/logos/svg/tv/hbo.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#A7A9AC",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "5e48bd9bd6461d6f1ede4703a7cece0f2e5bcc70830ed0c2b69931a64176df35"
+        }
+      ]
+    },
+    {
+      "id": "TV-HGTV",
+      "league": "TV",
+      "conference": "Discovery & Lifestyle",
+      "region": "HGTV",
+      "name": "",
+      "abbr": "HGTV",
+      "aliases": [
+        "Home & Garden Television",
+        "Home and Garden Television",
+        "Home and Garden TV"
+      ],
+      "palette": [
+        "#009DD7",
+        "#45B26B",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Roof wordmark",
+          "sourceUrl": "https://iconape.com/wp-content/files/sv/134919/svg/134919.svg",
+          "sourcePage": "https://iconape.com/hgtv-logo-logo-icon-svg-png.html",
+          "sourceSha256": "190dc5300d4e6164fbe028006f4da902e30d70932f7b501b484aa5a25e36bf77",
+          "ops": {
+            "keepNodes": [
+              "0/1",
+              "0/3-9"
+            ],
+            "viewBox": "8.196 36.313 176.881 87.229"
+          },
+          "showsName": true,
+          "path": "/logos/svg/tv/hgtv.svg",
+          "format": "svg",
+          "colors": [
+            "#009DD7",
+            "#45B16B",
+            "#007DBF"
+          ],
+          "sourcePalette": [
+            "#008DCB",
+            "#45B16B",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "d38a9154ff84a99bf0619e9dabec0fb4ce32838f5de2211f510d7511ad59634b"
+        }
+      ]
+    },
+    {
+      "id": "TV-HIST",
+      "league": "TV",
+      "conference": "Discovery & Lifestyle",
+      "region": "History",
+      "name": "",
+      "abbr": "HIST",
+      "aliases": [
+        "History Channel",
+        "The History Channel"
+      ],
+      "palette": [
+        "#D99929",
+        "#ED1E25",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Gold H",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Special:FilePath/History_Logo.svg",
+          "sourcePage": "https://en.wikipedia.org/wiki/File:History_Logo.svg",
+          "sourceSha256": "c47ba95ff0ab019d7d50ae682232197a8081321e8b587f3cda58ac1d33b2a818",
+          "ops": {
+            "removeNodes": [
+              "3/1"
+            ],
+            "viewBox": "-0.897 -19.28 1002.537 895.735"
+          },
+          "path": "/logos/svg/tv/hist.svg",
+          "format": "svg",
+          "colors": [
+            "#FEEB7F",
+            "#E17826",
+            "#FDE652",
+            "#FFFFFF",
+            "#F5E68A",
+            "#FFFFFC",
+            "#F4BB2A",
+            "#F0AE56",
+            "#DB9845",
+            "#C47E33",
+            "#B6702A",
+            "#B26B29",
+            "#8C4E21",
+            "#80461D",
+            "#7D441C",
+            "#DBA65B",
+            "#D49B53",
+            "#D28F3B",
+            "#DE9B36",
+            "#E8B33C",
+            "#FBF06A",
+            "#F9F077",
+            "#FDEF7D",
+            "#F7E17E",
+            "#F6E190",
+            "#F7E294",
+            "#F8F6C1",
+            "#FEF59C",
+            "#FDF298",
+            "#F5E988",
+            "#F8E245",
+            "#F4CF51",
+            "#F6ED5D",
+            "#FEDD4E",
+            "#E6B42D",
+            "#D7952A",
+            "#B65C26",
+            "#AB5625",
+            "#C06927",
+            "#D87F28",
+            "#D98028",
+            "#F7992B",
+            "#DB8829",
+            "#D27D27",
+            "#F08423",
+            "#F0D475",
+            "#F2CF68",
+            "#F5CA59",
+            "#F5C853",
+            "#F2CB53",
+            "#E9BA4F",
+            "#E5B24D",
+            "#AB5B24",
+            "#994D20",
+            "#A95924",
+            "#BB6527",
+            "#B36226",
+            "#B06125",
+            "#AA5A24",
+            "#9A4921",
+            "#D98C2B",
+            "#C47328",
+            "#B86326",
+            "#C07127",
+            "#FBED49",
+            "#FBEC49",
+            "#F9DA42",
+            "#F8CF3E",
+            "#F7C73B",
+            "#F7C53B",
+            "#FFDF47",
+            "#F6CD6F",
+            "#FDDB5B",
+            "#FED847",
+            "#F6C33E",
+            "#F5C653",
+            "#F2C96E",
+            "#D97E27",
+            "#E4AD29",
+            "#E1A829",
+            "#D99929",
+            "#CF8228",
+            "#C97527",
+            "#DD9928",
+            "#DE9D27",
+            "#F2BC1A",
+            "#F2BD1B",
+            "#F0C330",
+            "#FCF49D",
+            "#FAF17D",
+            "#F3D060",
+            "#EBC152",
+            "#E2B143",
+            "#DFAB3E",
+            "#E3B561",
+            "#CC7B28",
+            "#BF6D27",
+            "#AD5B25",
+            "#DA9532",
+            "#CE7E28",
+            "#CC7A28",
+            "#C96D29",
+            "#C26828",
+            "#B36725",
+            "#90451E",
+            "#8D441E",
+            "#D19147",
+            "#CF8E44",
+            "#D79D49",
+            "#EDC85A",
+            "#F3D35E",
+            "#FBE76F",
+            "#FCEA72",
+            "#FCEE73",
+            "#F3DB83",
+            "#D68A31",
+            "#C47527",
+            "#BA6927",
+            "#AC5C24",
+            "#9A5021",
+            "#924A20",
+            "#914920",
+            "#E6AC55",
+            "#E3A74F",
+            "#DE9C45",
+            "#E3B343",
+            "#ECC546",
+            "#F2D752",
+            "#F9E75D",
+            "#FBEE61",
+            "#F1DE6D",
+            "#EBCB8D",
+            "#FDCE4F",
+            "#FBC74A",
+            "#F2A033",
+            "#EE922B",
+            "#DC8426",
+            "#D88126",
+            "#CD7A27",
+            "#CE8528",
+            "#8F4A1E",
+            "#9B5422",
+            "#AC6126",
+            "#AA5E25",
+            "#9C5622",
+            "#914B1F",
+            "#88431C",
+            "#C87029",
+            "#F0D365",
+            "#E58024",
+            "#E2B33D",
+            "#DB8F39",
+            "#E0A852",
+            "#F6ED5A",
+            "#EF9B2A",
+            "#C46C28",
+            "#F6C342",
+            "#FAF179",
+            "#F9F181",
+            "#E4AE49",
+            "#F7F2A0",
+            "#CB7727",
+            "#EFBE49",
+            "#F1BD4B",
+            "#CF7927",
+            "#B76527",
+            "#F99D33",
+            "#FBEF67",
+            "#FFD44B",
+            "#FBAE38",
+            "#FDF498",
+            "#F4BB5F",
+            "#B56828",
+            "#B45E25",
+            "#FEDC3E",
+            "#F5EE63",
+            "#E19D2B",
+            "#9E5622",
+            "#F89B33",
+            "#85421B",
+            "#974F20",
+            "#DA8B26",
+            "#DF9B2A",
+            "#F9B033",
+            "#FFCA3B",
+            "#B56428",
+            "#FBC536",
+            "#FFF456",
+            "#FFF685",
+            "#F4EF93",
+            "#E18025",
+            "#EE8A25",
+            "#F8B033",
+            "#F8B433",
+            "#B45F26",
+            "#AE5B25",
+            "#AB5A24",
+            "#DE8331",
+            "#EB8E23",
+            "#F0B139",
+            "#EFBA25",
+            "#FDE465",
+            "#9E5C25",
+            "#FCF27D",
+            "#F7F2A2",
+            "#FAF395",
+            "#CE7E29",
+            "#DC8528",
+            "#F2AF32",
+            "#EC953A",
+            "#D7932C",
+            "#FDBE5A",
+            "#F89833",
+            "#E4A12A",
+            "#FCB74C",
+            "#FFF460",
+            "#F4C62A",
+            "#E7882A",
+            "#F8EF6E",
+            "#DF8626",
+            "#C87228",
+            "#B35D25",
+            "#C17828",
+            "#FEC467",
+            "#D9952E",
+            "#FFF68E",
+            "#D8862C",
+            "#A75D24",
+            "#A25723",
+            "#9A4F21",
+            "#D58230",
+            "#95471F",
+            "#F6862A",
+            "#F47A21",
+            "#C76526",
+            "#DC6F25",
+            "#BD6926",
+            "#AA5924",
+            "#E09A33",
+            "#F7EE5C",
+            "#ECB448",
+            "#F2E183",
+            "#F4E387",
+            "#E1B13D",
+            "#EEC86B",
+            "#F3AA53",
+            "#F8EF83",
+            "#C77929",
+            "#B66326",
+            "#AE5E25",
+            "#F39F48",
+            "#F9F073",
+            "#C77528",
+            "#FDBA48",
+            "#9B4D21",
+            "#BD7127",
+            "#FBEF7D",
+            "#FFE256",
+            "#F9EF5C",
+            "#EEC547",
+            "#FFCF49",
+            "#F7EF6B",
+            "#FEFDEE",
+            "#F9F06F",
+            "#E38F25",
+            "#E5972A",
+            "#EAAD3E",
+            "#F3D265",
+            "#FAF285",
+            "#F9F17F",
+            "#E5B524",
+            "#FED56D",
+            "#F9F18B",
+            "#FBF07B",
+            "#F4EE7A",
+            "#F5F08A",
+            "#F7F4B1",
+            "#FCFCEF",
+            "#FDFEFC",
+            "#DA9F28",
+            "#FDDE4A",
+            "#FAF066",
+            "#F9EF5D",
+            "#FFDC4A",
+            "#FCF38F",
+            "#FCF5A7",
+            "#EEA851",
+            "#F1B25B",
+            "#F6CC77",
+            "#FFF29E",
+            "#FBF9D6",
+            "#AE6227",
+            "#B26629",
+            "#BD712E",
+            "#D08539",
+            "#EEA34D",
+            "#FDF5A3",
+            "#FEF5B4",
+            "#FEF2CB",
+            "#FEF1D8",
+            "#FAF399",
+            "#F8F7CB",
+            "#F6F0B8",
+            "#F0E38F",
+            "#EEDF80",
+            "#F4DD63",
+            "#F5DD60",
+            "#F0E475",
+            "#F5DD61",
+            "#E2B558",
+            "#E4BB5D",
+            "#E9CD6B",
+            "#ECD371",
+            "#E5AC54",
+            "#E5AB53",
+            "#DF9B42",
+            "#E0A14C",
+            "#E2BE77",
+            "#E5C19A",
+            "#F0D8A1",
+            "#F2CF62",
+            "#FED25A",
+            "#F6EFC1",
+            "#F8EEA8",
+            "#FBEE81",
+            "#FCEE70",
+            "#EBD69C",
+            "#E8CCB9",
+            "#E7C8C2",
+            "#CF8839",
+            "#D18C40",
+            "#D49755",
+            "#D9A976",
+            "#EBD362",
+            "#F1E35C",
+            "#F5EE6C",
+            "#DCA027",
+            "#E3AE2D",
+            "#F6D74A",
+            "#FEE858",
+            "#FBEB65",
+            "#F9F06E",
+            "#F9E94F",
+            "#FFDC46",
+            "#FAED6E",
+            "#FAEF85",
+            "#FBF7C5",
+            "#FDFCEC",
+            "#FDFEFD",
+            "#FEFDF5",
+            "#FEFDF3",
+            "#F4E8D7",
+            "#EACFAB",
+            "#E6C69A",
+            "#DFB760",
+            "#FDF49B",
+            "#F6F3A8",
+            "#FBF7C3",
+            "#FCF8C3",
+            "#FDFBE0",
+            "#FBF4A2",
+            "#F6D580",
+            "#FAEEA1",
+            "#FAF4A8",
+            "#FBF5B7",
+            "#FBF6CE",
+            "#FBF7E0",
+            "#FBF8ED",
+            "#FBF9F5",
+            "#FBF9F8",
+            "#FCF6EC",
+            "#FCEFD1",
+            "#FCE5A6",
+            "#FCDD82",
+            "#FFF463",
+            "#FFF79C",
+            "#FAEF62",
+            "#EEB954",
+            "#F9E285",
+            "#FDF499",
+            "#FFFFFB",
+            "#FAF6BD",
+            "#FDD63A",
+            "#F8F189",
+            "#FEEF81",
+            "#FFE859",
+            "#FAF28C",
+            "#D78228",
+            "#F6AD55",
+            "#FAEE92",
+            "#FFFFFD",
+            "#FEF7EC",
+            "#F8E492",
+            "#CE8B2A",
+            "#ED1E25",
+            "#B51418"
+          ],
+          "sourcePalette": [
+            "#D99929",
+            "#ED1E25",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "0e7145e49d3928e5f8b40ceb4ce8a98274bf34d60ae993d69b906366f651ef23"
+        },
+        {
+          "id": "classic-boxed-h",
+          "label": "1995 boxed H",
+          "sourceUrl": "https://iconape.com/wp-content/files/nb/67189/svg/history-channel.svg",
+          "sourcePage": "https://iconape.com/history-channel-logo-icon-svg-png.html",
+          "sourceSha256": "1a13f90baaa23ac017f2257cb94a7bf236d8b8df34e8f0ad6a0d339a969d2ab0",
+          "ops": {
+            "viewBox": "16.3 -0.6 27.3 27.2"
+          },
+          "path": "/logos/svg/tv/alternates/hist-classic-boxed-h.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#ED1E25",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "088a141a96f174c9ea1124e53f3f7643ffde7ef97c28d336f9856f51d0664125"
+        }
+      ]
+    },
+    {
+      "id": "TV-MTV",
+      "league": "TV",
+      "conference": "Music & Pop",
+      "region": "MTV",
+      "name": "",
+      "abbr": "MTV",
+      "aliases": [
+        "Music Television",
+        "MTV Music Television"
+      ],
+      "palette": [
+        "#FFCA0C",
+        "#007CB1",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "1981 block M",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/MTV_1981_logo_%28no_outline%29.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:MTV_1981_logo_%28no_outline%29.svg",
+          "sourceSha256": "a25a4683f9532d73d4a3dce114efee25c198772202f5dfcab1b16d8d0b6d42cc",
+          "ops": {
+            "keepNodes": [
+              "0/0",
+              "0/1",
+              "0/18",
+              "0/19",
+              "0/20"
+            ],
+            "viewBox": "-12.913 -17.557 912.962 702.41"
+          },
+          "path": "/logos/svg/tv/mtv.svg",
+          "format": "svg",
+          "colors": [
+            "#007CB1",
+            "#FFCA0C"
+          ],
+          "sourcePalette": [
+            "#FFCA0C",
+            "#007CB1",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "b9ced0a715f627f9812f6cd93c27f2a380273dfe18ae25367d8425167c7b6347"
+        },
+        {
+          "id": "2021-retro",
+          "label": "2021 flat M with side bars",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/MTV_2021_%28brand_version%29.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:MTV_2021_%28brand_version%29.svg",
+          "sourceSha256": "9727b8ec1e6afe1e3ed7ebf697f2166f242a43e98908c0e93e0df60b26f2e9dc",
+          "ops": {
+            "removeNodes": [
+              "3/2"
+            ],
+            "viewBox": "-220.973 93.009 967.857 599.832"
+          },
+          "path": "/logos/svg/tv/alternates/mtv-2021-retro.svg",
+          "format": "svg",
+          "colors": [
+            "#F7F908",
+            "#00AACD"
+          ],
+          "sourcePalette": [
+            "#F7F908",
+            "#00AACD",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "f28d66683a44ee1da1eb256ea793f1a48f6650921c9f71f506fd0dc9d2144c02"
+        }
+      ]
+    },
+    {
+      "id": "TV-NAN",
+      "league": "TV",
+      "conference": "Kids",
+      "region": "Nick at Nite",
+      "name": "",
+      "abbr": "NAN",
+      "aliases": [
+        "Nick at Night",
+        "Nick@Nite",
+        "Nick at Nite TV"
+      ],
+      "palette": [
+        "#F0CA00",
+        "#922B84",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Crescent moon",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/c/c5/Nick_at_Nite_logo_1985.svg/revision/latest?cb=20200602050804",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Nick_at_Nite_logo_1985.svg",
+          "sourceSha256": "8ad048e671efab97f606a5d9e1f72aa643c0383267c09b46c114008fc285b59a",
+          "ops": {
+            "keepNodes": [
+              "3/0"
+            ],
+            "viewBox": "-20.016 -20.016 990.593 1040.824"
+          },
+          "path": "/logos/svg/tv/nan.svg",
+          "format": "svg",
+          "colors": [
+            "#F0CA00"
+          ],
+          "sourcePalette": [
+            "#F0CA00",
+            "#922B84",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "c829faa88cef59315bf03ab34655d47e90bb31a2d0db7f4dab5358a25e231111"
+        },
+        {
+          "id": "2007-splat-moon",
+          "label": "2007 splat crescent",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/b/bb/Nick_at_Nite_2007.svg/revision/latest?cb=20241021112110",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Nick_at_Nite_2007.svg",
+          "sourceSha256": "fdd355afb5a8188f50fe4d4a4f0c4ce449be4c37587d516458d2ffa996a46407",
+          "ops": {
+            "keepNodes": [
+              "3/0/2"
+            ],
+            "viewBox": "-8.447 -8.446 439.219 391.805"
+          },
+          "path": "/logos/svg/tv/alternates/nan-2007-splat-moon.svg",
+          "format": "svg",
+          "colors": [
+            "#FF7300"
+          ],
+          "sourcePalette": [
+            "#FF7300",
+            "#922B84",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "e548443beb6a22da6331e1cd0d5639f595e6f22eee6d4eb5f1527854a02a9668"
+        }
+      ]
+    },
+    {
+      "id": "TV-NATGEO",
+      "league": "TV",
+      "conference": "Discovery & Lifestyle",
+      "region": "National Geographic",
+      "name": "",
+      "abbr": "NATGEO",
+      "aliases": [
+        "Nat Geo",
+        "NatGeo",
+        "National Geographic Channel",
+        "Nat Geo TV"
+      ],
+      "palette": [
+        "#FFCC00",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Yellow frame",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Special:FilePath/Natgeologo.svg",
+          "sourcePage": "https://en.wikipedia.org/wiki/File:Natgeologo.svg",
+          "sourceSha256": "293d6f5383b4a437ea4076e8e1b7ced7ad8a18603a6367cdf28eef4eb8f8b884",
+          "ops": {
+            "keepNodes": [
+              "0/0"
+            ],
+            "viewBox": "-5.877 -5.877 216.799 305.598"
+          },
+          "path": "/logos/svg/tv/natgeo.svg",
+          "format": "svg",
+          "colors": [
+            "#FFCC00"
+          ],
+          "sourcePalette": [
+            "#FFCC00",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "bb08803786f7a9be3942a9177f85e1206bdcd5af5d0add636ba4ec23208c98fe"
+        }
+      ]
+    },
+    {
+      "id": "TV-NICK",
+      "league": "TV",
+      "conference": "Kids",
+      "region": "Nickelodeon",
+      "name": "",
+      "abbr": "NICK",
+      "aliases": [
+        "Nick",
+        "Nick Channel"
+      ],
+      "palette": [
+        "#FF6700",
+        "#8DC63F",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Orange splat",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Nickelodeon_Splat_Symbol_%282023%29.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Nickelodeon_Splat_Symbol_%282023%29.svg",
+          "sourceSha256": "020c4dc81b0a71877e5cd0bf9b69ee6f9a9d9001d03bc7abb00a0d598a9ffd36",
+          "ops": {
+            "viewBox": "-28.731 -28.73 1494.004 1432.459"
+          },
+          "path": "/logos/svg/tv/nick.svg",
+          "format": "svg",
+          "colors": [
+            "#FF6700"
+          ],
+          "sourcePalette": [
+            "#FF6700",
+            "#8DC63F",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "d229f12a59e0a43ef749324bd98060a60a5d066ad800215aeb197159fae271f0"
+        },
+        {
+          "id": "1985-splat",
+          "label": "1985 spiky splat",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Nickelodeon_1985_%28Splat%29.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Nickelodeon_1985_%28Splat%29.svg",
+          "sourceSha256": "d3f6abbe17c3ff555a733b18f1b07f1b35654fe7a731dcdaa366b26689a07310",
+          "ops": {
+            "removeNodes": [
+              "1",
+              "3/0/1"
+            ],
+            "viewBox": "-20 -20 1040 564.815"
+          },
+          "path": "/logos/svg/tv/alternates/nick-1985-splat.svg",
+          "format": "svg",
+          "colors": [
+            "#FF7300"
+          ],
+          "sourcePalette": [
+            "#FF7300",
+            "#8DC63F",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "a8e6abe7d00717d9cdf4bfd56042f8c5de06b25deea86601ec59a22595e0a2fe"
+        },
+        {
+          "id": "planet",
+          "label": "Ringed planet",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/6/69/Nickelodeon_%28Planet%29.svg/revision/latest?cb=20210725021805",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Nickelodeon_%28Planet%29.svg",
+          "sourceSha256": "6feb5467430e1ffd146ab2b3b07f03646af4e4e52b068659c813ff9673a49d4f",
+          "ops": {
+            "removeNodes": [
+              "4/0/1"
+            ],
+            "viewBox": "-20 -20 1040 641.963"
+          },
+          "path": "/logos/svg/tv/alternates/nick-planet.svg",
+          "format": "svg",
+          "colors": [
+            "#FF7300"
+          ],
+          "sourcePalette": [
+            "#FF7300",
+            "#8DC63F",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "786454c35f7fea9673a7b28ccaa1c7e328a6156a0129da5587bb225fc4931d4a"
+        }
+      ]
+    },
+    {
+      "id": "TV-NICKJR",
+      "league": "TV",
+      "conference": "Kids",
+      "region": "Nick Jr.",
+      "name": "",
+      "abbr": "NICKJR",
+      "aliases": [
+        "Nick Jr",
+        "Nick Junior",
+        "Nickelodeon Junior"
+      ],
+      "palette": [
+        "#FF7300",
+        "#00B5E2",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Parent and child figures",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/a/a6/Nick_Jr._1993.svg/revision/latest?cb=20260907131826",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Nick_Jr._1993.svg",
+          "sourceSha256": "5cc163d12e20152c045be8fe7af37aa484a729c0e0f8d25571dd8daeb5c5a795",
+          "ops": {
+            "removeNodes": [
+              "3/0/2",
+              "3/0/3",
+              "3/0/4"
+            ],
+            "viewBox": "-8.916 -8.916 463.629 399.846"
+          },
+          "path": "/logos/svg/tv/nickjr.svg",
+          "format": "svg",
+          "colors": [
+            "#00B5E2",
+            "#FF7300"
+          ],
+          "sourcePalette": [
+            "#FF7300",
+            "#00B5E2",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "6ee660c44b2f54b8c3299cdcf0322966f0f6d78a53e675b9cadbede71aa56e16"
+        }
+      ]
+    },
+    {
+      "id": "TV-PBS",
+      "league": "TV",
+      "conference": "Broadcast",
+      "region": "PBS",
+      "name": "",
+      "abbr": "PBS",
+      "aliases": [
+        "Public Broadcasting Service"
+      ],
+      "palette": [
+        "#2638C4",
+        "#E2150C",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Faces in a circle",
+          "sourceUrl": "https://www.vectorlogo.zone/logos/pbs/pbs-icon.svg",
+          "sourcePage": "https://www.vectorlogo.zone/logos/pbs/",
+          "sourceSha256": "bb5ca552cbd9f35af6a42b80b172762abcff3e8f7613c796e3b24cf900f14b4a",
+          "ops": {
+            "fill": "#2638C4",
+            "viewBox": "-1.28 -1.28 66.56 66.56"
+          },
+          "path": "/logos/svg/tv/pbs.svg",
+          "format": "svg",
+          "colors": [
+            "#2638C4",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#2638C4",
+            "#E2150C",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "81aa17f81a691a2b7b3d592a016ca655e3a9ff4098f19dd7ea57aaa164a60788"
+        },
+        {
+          "id": "1984-heads",
+          "label": "1984 stacked heads",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Special:FilePath/PBS_(Alt)_logo.svg",
+          "sourcePage": "https://en.wikipedia.org/wiki/File:PBS_(Alt)_logo.svg",
+          "sourceSha256": "d698bd332b40a091c7ade513359b760a3bc10cdbdde9bf65976bb2cf9e7afb1c",
+          "ops": {
+            "viewBox": "-5.292 -5.292 275.167 233.762"
+          },
+          "path": "/logos/svg/tv/alternates/pbs-1984-heads.svg",
+          "format": "svg",
+          "colors": [
+            "#E2150C",
+            "#072FE4"
+          ],
+          "sourcePalette": [
+            "#072FE4",
+            "#E2150C",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "a673933b694d999088ad033020fd19d165aef9dab481f7285ac98c6935a7f662"
+        }
+      ]
+    },
+    {
+      "id": "TV-PBSKIDS",
+      "league": "TV",
+      "conference": "Kids",
+      "region": "PBS Kids",
+      "name": "",
+      "abbr": "PBSKIDS",
+      "aliases": [
+        "PBSKids",
+        "PBS for Kids",
+        "PBS Kids Channel"
+      ],
+      "palette": [
+        "#99CC00",
+        "#2638C4",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Dash head",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/f/f7/PBS_Kids_Logo_2013.svg/revision/latest?cb=20250503050254",
+          "sourcePage": "https://logos.fandom.com/wiki/File:PBS_Kids_Logo_2013.svg",
+          "sourceSha256": "2499e1257f0165c174385aa6cce39a7488c158e38af911a4460fbe12422baa11",
+          "ops": {
+            "removeNodes": [
+              "0/3",
+              "0/4",
+              "0/5",
+              "0/17",
+              "0/18",
+              "0/19",
+              "0/20"
+            ],
+            "viewBox": "-2.909 -2.909 151.286 151.279"
+          },
+          "path": "/logos/svg/tv/pbskids.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#99CC00",
+            "#0A0B1D"
+          ],
+          "sourcePalette": [
+            "#99CC00",
+            "#0A0B1D",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "8ba44eb748b1efb18e3b095c7eb9b4188723c56004ff063298cb35e3cc6226d8"
+        },
+        {
+          "id": "dot",
+          "label": "Dot head",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/6/66/PBS_Kids_Alternative_Dot_Logo_without_the_wordmark.svg/revision/latest?cb=20251115162806",
+          "sourcePage": "https://logos.fandom.com/wiki/File:PBS_Kids_Alternative_Dot_Logo_without_the_wordmark.svg",
+          "sourceSha256": "811e42ff95dda0dd285a5d187fff65b5d28c6343a39fb5294c197a97e425d36e",
+          "ops": {
+            "removeNodes": [
+              "1/7",
+              "1/8",
+              "1/9"
+            ],
+            "viewBox": "-4.997 -4.997 259.858 259.837"
+          },
+          "path": "/logos/svg/tv/alternates/pbskids-dot.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#FFFFFF",
+            "#99CC00"
+          ],
+          "sourcePalette": [
+            "#99CC00",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "1ed8ac62045b626641746a506aeeb11115f1de1c1a80569c7f142edf1d59b6b3"
+        }
+      ]
+    },
+    {
+      "id": "TV-TELEMUNDO",
+      "league": "TV",
+      "conference": "Broadcast",
+      "region": "Telemundo",
+      "name": "",
+      "abbr": "TELEMUNDO",
+      "aliases": [
+        "Telemundo Network",
+        "Telemundo Television"
+      ],
+      "palette": [
+        "#EB1010",
+        "#911010",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Overlapping red T",
+          "sourceUrl": "https://logowik.com/telemundo-new-vector-logo-8359.html",
+          "sourcePage": "https://logowik.com/telemundo-new-vector-logo-8359.html",
+          "sourceSha256": "7e949e35798919214391636051c36aa2416bf4881ead1d4712c4b2f988dfddae",
+          "downloadForm": "logowik",
+          "ops": {
+            "removeNodes": [
+              "1/0"
+            ],
+            "viewBox": "163.136 43.836 233.728 242.536"
+          },
+          "path": "/logos/svg/tv/telemundo.svg",
+          "format": "svg",
+          "colors": [
+            "#EB1010",
+            "#911010",
+            "#C31010"
+          ],
+          "sourcePalette": [
+            "#D71010",
+            "#911010",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "f0d0d681bf867cfa735c41a0b53199a494e2c0b113cf4e3d96fabb9701697add"
+        },
+        {
+          "id": "1992-sphere-t",
+          "label": "1990s T with sphere",
+          "sourceUrl": "https://iconape.com/wp-content/files/ld/109273/svg/telemundo-1.svg",
+          "sourcePage": "https://iconape.com/telemundo-logo-icon-svg-png.html",
+          "sourceSha256": "fe1e1f6878f1aa58beb057d4424dc48d36b3824899692c96889af83789d41c27",
+          "ops": {
+            "removeNodes": [
+              "0/0"
+            ],
+            "viewBox": "1.5 -0.2 191.4 164.7"
+          },
+          "path": "/logos/svg/tv/alternates/telemundo-1992-sphere-t.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#FFFFFF",
+            "#8E8F8F",
+            "#CECECE"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#8E8F8F",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "f14616af599d91dbc44f8db1953e7bda23cfa37fb54ea05c2e2a67e3891c02d2"
+        }
+      ]
+    },
+    {
+      "id": "TV-TNT",
+      "league": "TV",
+      "conference": "Cable",
+      "region": "TNT",
+      "name": "",
+      "abbr": "TNT",
+      "aliases": [
+        "Turner Network Television"
+      ],
+      "palette": [
+        "#000000",
+        "#D6001C",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Wordmark roundel",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/TNT_Logo_2016.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:TNT_Logo_2016.svg",
+          "sourceSha256": "55d790b5f5a3011327b5f98ab5701d977151689a1aaca4b29a0720b58c161277",
+          "ops": {
+            "viewBox": "-2 -2 624 624"
+          },
+          "showsName": true,
+          "path": "/logos/svg/tv/tnt.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#D6001C",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "1441dee3e1b6ef2d656b662d496a8b2b2ece60d9d05013e26df70bf837fbe234"
+        }
+      ]
+    },
+    {
+      "id": "TV-TWC",
+      "league": "TV",
+      "conference": "Discovery & Lifestyle",
+      "region": "The Weather Channel",
+      "name": "",
+      "abbr": "TWC",
+      "aliases": [
+        "Weather Channel"
+      ],
+      "palette": [
+        "#014F9D",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Blue box wordmark",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Special:FilePath/The_Weather_Channel_logo_2005-present.svg",
+          "sourcePage": "https://en.wikipedia.org/wiki/File:The_Weather_Channel_logo_2005-present.svg",
+          "sourceSha256": "69491a55ecfd962cd8faba258d543a009b259bd1834b0f12f0bd478397a8eee9",
+          "ops": {},
+          "showsName": true,
+          "path": "/logos/svg/tv/twc.svg",
+          "format": "svg",
+          "colors": [
+            "#014F9D",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#014F9D",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "2707f830b198e4ce0a3b467b9355583c5d5fecc18e047d794c8915f7425181a1"
+        }
+      ]
+    },
+    {
+      "id": "TV-UNIVISION",
+      "league": "TV",
+      "conference": "Broadcast",
+      "region": "Univision",
+      "name": "",
+      "abbr": "UNIVISION",
+      "aliases": [
+        "Univisión",
+        "Univision Communications",
+        "SIN",
+        "Spanish International Network"
+      ],
+      "palette": [
+        "#EE2737",
+        "#00A3E1",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Four-color tulip",
+          "sourceUrl": "https://logowik.com/univision-networks-vector-logo-8678.html",
+          "sourcePage": "https://logowik.com/univision-networks-vector-logo-8678.html",
+          "sourceSha256": "3d6314cb8b1d6475c1eaa7ef0d2194fae400adda5fa68ce2ac30bfab9342d056",
+          "downloadForm": "logowik",
+          "ops": {
+            "viewBox": "140.31 59.611 279.377 280.774"
+          },
+          "path": "/logos/svg/tv/univision.svg",
+          "format": "svg",
+          "colors": [
+            "#00B140",
+            "#9063CD",
+            "#EE2737",
+            "#00A3E1"
+          ],
+          "sourcePalette": [
+            "#EE2737",
+            "#00A3E1",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "061c0bf04ea9aff72cbb5f0ef55636518120f81f0be7bd28366d2bedcae1bba9"
+        },
+        {
+          "id": "2019-tulip",
+          "label": "Shaded tulip",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Special:FilePath/Logo_Univision_2019.svg",
+          "sourcePage": "https://en.wikipedia.org/wiki/File:Logo_Univision_2019.svg",
+          "sourceSha256": "9b0938a699ef7718bdb160bbf24c934924cabf6d43e2c17f497e29f4b0859b3d",
+          "ops": {
+            "removeNodes": [
+              "4/0"
+            ],
+            "viewBox": "195.102 -12.078 610.999 628.046"
+          },
+          "path": "/logos/svg/tv/alternates/univision-2019-tulip.svg",
+          "format": "svg",
+          "colors": [
+            "#4EBF89",
+            "#13AB65",
+            "#151BDA",
+            "#091E90",
+            "#DE1B20",
+            "#A31E24",
+            "#A62B9A",
+            "#BB25AB"
+          ],
+          "sourcePalette": [
+            "#B82262",
+            "#4EBF89",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "9c459f0a11e7b363fcf2a10a7aaf6dfc3c2997017aea9e0e5677e1e087a11f2a"
+        }
+      ]
+    },
+    {
+      "id": "TV-VH1",
+      "league": "TV",
+      "conference": "Music & Pop",
+      "region": "VH1",
+      "name": "",
+      "abbr": "VH1",
+      "aliases": [
+        "VH-1",
+        "Video Hits One"
+      ],
+      "palette": [
+        "#D30069",
+        "#E8B130",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "2003 box wordmark",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/VH1_2003_logo.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:VH1_2003_logo.svg",
+          "sourceSha256": "cf063ed9f447a25f4e1461cecc4c415a2a6fe76160bd7c7aaa7f4949ef010575",
+          "ops": {
+            "viewBox": "-3.815 -3.815 198.382 114.917"
+          },
+          "showsName": true,
+          "path": "/logos/svg/tv/vh1.svg",
+          "format": "svg",
+          "colors": [
+            "#71B9E3",
+            "#D30069",
+            "#000000",
+            "#E8B130",
+            "#F5EA2E",
+            "#BBD710"
+          ],
+          "sourcePalette": [
+            "#D30069",
+            "#DDD125",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "ac99a0ecffa06d086830ff12bfaeac5c88db7da1e51b1452d278da9656a2146f"
+        }
+      ]
+    }
+  ]
+}

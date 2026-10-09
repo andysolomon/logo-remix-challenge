@@ -2605,5 +2605,1608 @@
       ],
       "viewBox": "295.312 266.512 950.976 632.576"
     }
+  },
+  {
+    "teamId": "TV-CBS",
+    "id": "primary",
+    "label": "Eye",
+    "sourceUrl": "https://api.iconify.design/simple-icons/cbs.svg?color=%23033963",
+    "sourcePage": "https://simpleicons.org/?q=cbs",
+    "sourceSha256": "feb5944482062e8d21a00e051b6550a81a74f49b93415312b7c65034b166db33",
+    "ops": {
+      "viewBox": "-0.412 -0.48 24.824 24.96"
+    }
+  },
+  {
+    "teamId": "TV-ABC",
+    "id": "primary",
+    "label": "Circle wordmark",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/American_Broadcasting_Company_Logo.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:American_Broadcasting_Company_Logo.svg",
+    "sourceSha256": "5157c848cb5f1f8a935e02d8775d87af0553445e9525ea20e5765ff7872996e1",
+    "ops": {
+      "viewBox": "-2.933 -2.72 208.01 208.26"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "TV-FOX",
+    "id": "primary",
+    "label": "Wordmark",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/FOX_wordmark.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:FOX_wordmark.svg",
+    "sourceSha256": "c9c95d50382825b776f175936996e7350823d7feabdc68b09ed758afe1626b27",
+    "ops": {
+      "viewBox": "-20 -20 1040 470.569"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "TV-PBS",
+    "id": "primary",
+    "label": "Faces in a circle",
+    "sourceUrl": "https://www.vectorlogo.zone/logos/pbs/pbs-icon.svg",
+    "sourcePage": "https://www.vectorlogo.zone/logos/pbs/",
+    "sourceSha256": "bb5ca552cbd9f35af6a42b80b172762abcff3e8f7613c796e3b24cf900f14b4a",
+    "ops": {
+      "fill": "#2638C4",
+      "viewBox": "-1.28 -1.28 66.56 66.56"
+    }
+  },
+  {
+    "teamId": "TV-PBS",
+    "id": "1984-heads",
+    "label": "1984 stacked heads",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Special:FilePath/PBS_(Alt)_logo.svg",
+    "sourcePage": "https://en.wikipedia.org/wiki/File:PBS_(Alt)_logo.svg",
+    "sourceSha256": "d698bd332b40a091c7ade513359b760a3bc10cdbdde9bf65976bb2cf9e7afb1c",
+    "ops": {
+      "viewBox": "-5.292 -5.292 275.167 233.762"
+    }
+  },
+  {
+    "teamId": "TV-UNIVISION",
+    "id": "primary",
+    "label": "Four-color tulip",
+    "sourceUrl": "https://logowik.com/univision-networks-vector-logo-8678.html",
+    "sourcePage": "https://logowik.com/univision-networks-vector-logo-8678.html",
+    "sourceSha256": "3d6314cb8b1d6475c1eaa7ef0d2194fae400adda5fa68ce2ac30bfab9342d056",
+    "downloadForm": "logowik",
+    "ops": {
+      "viewBox": "140.31 59.611 279.377 280.774"
+    }
+  },
+  {
+    "teamId": "TV-UNIVISION",
+    "id": "2019-tulip",
+    "label": "Shaded tulip",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Special:FilePath/Logo_Univision_2019.svg",
+    "sourcePage": "https://en.wikipedia.org/wiki/File:Logo_Univision_2019.svg",
+    "sourceSha256": "9b0938a699ef7718bdb160bbf24c934924cabf6d43e2c17f497e29f4b0859b3d",
+    "ops": {
+      "removeNodes": [
+        "4/0"
+      ],
+      "viewBox": "195.102 -12.078 610.999 628.046"
+    }
+  },
+  {
+    "teamId": "TV-TELEMUNDO",
+    "id": "primary",
+    "label": "Overlapping red T",
+    "sourceUrl": "https://logowik.com/telemundo-new-vector-logo-8359.html",
+    "sourcePage": "https://logowik.com/telemundo-new-vector-logo-8359.html",
+    "sourceSha256": "7e949e35798919214391636051c36aa2416bf4881ead1d4712c4b2f988dfddae",
+    "downloadForm": "logowik",
+    "ops": {
+      "removeNodes": [
+        "1/0"
+      ],
+      "viewBox": "163.136 43.836 233.728 242.536"
+    }
+  },
+  {
+    "teamId": "TV-TELEMUNDO",
+    "id": "1992-sphere-t",
+    "label": "1990s T with sphere",
+    "sourceUrl": "https://iconape.com/wp-content/files/ld/109273/svg/telemundo-1.svg",
+    "sourcePage": "https://iconape.com/telemundo-logo-icon-svg-png.html",
+    "sourceSha256": "fe1e1f6878f1aa58beb057d4424dc48d36b3824899692c96889af83789d41c27",
+    "ops": {
+      "removeNodes": [
+        "0/0"
+      ],
+      "viewBox": "1.5 -0.2 191.4 164.7"
+    }
+  },
+  {
+    "teamId": "TV-HBO",
+    "id": "primary",
+    "label": "Wordmark",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/HBO_logo.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:HBO_logo.svg",
+    "sourceSha256": "ff3b394544e418078da83e1dc1e733547d1e2efa5354dd5e5d2bde1d6a65a9b1",
+    "ops": {
+      "viewBox": "-10.232 -10.232 532.044 231.254"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "TV-ESPN",
+    "id": "primary",
+    "label": "Wordmark",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/ESPN_wordmark.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:ESPN_wordmark.svg",
+    "sourceSha256": "945971e0bd0074581fa971c487eba22b7031b0e4e9cf77328f6bd5dd16a5d5ca",
+    "ops": {
+      "viewBox": "-10.411 -10.717 575.364 158.732"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "TV-CNN",
+    "id": "primary",
+    "label": "Wordmark",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/CNN.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:CNN.svg",
+    "sourceSha256": "101cedf8a233efd3b6753f80877ec1d571f0ea392424bbdeed08857703e475c4",
+    "ops": {
+      "viewBox": "-19.999 -19.999 1040 515.706"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "TV-CC",
+    "id": "primary",
+    "label": "Double-C mark",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Special:FilePath/Comedy_Central_2018.svg",
+    "sourcePage": "https://en.wikipedia.org/wiki/File:Comedy_Central_2018.svg",
+    "sourceSha256": "73123f9c4198efd568810181fd9f2186dbd62f0eebc647924f7d639e871fc708",
+    "ops": {
+      "keepNodes": [
+        "13-14"
+      ],
+      "viewBox": "-6.898 -6.898 336.439 358.721"
+    }
+  },
+  {
+    "teamId": "TV-CC",
+    "id": "globe-skyline",
+    "label": "Classic globe and skyline",
+    "sourceUrl": "https://iconape.com/wp-content/files/lm/50038/svg/comedy-central-2.svg",
+    "sourcePage": "https://iconape.com/comedy-central-logo-icon-svg-png.html",
+    "sourceSha256": "333ea42e42093d66a77aa0f1f4a6a798c9edfc71e84dc1f6e10d93a7245d27ec",
+    "ops": {
+      "removeNodes": [
+        "0/0",
+        "0/5"
+      ],
+      "viewBox": "22.222 -0.908 148.312 194.572"
+    }
+  },
+  {
+    "teamId": "TV-TNT",
+    "id": "primary",
+    "label": "Wordmark roundel",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/TNT_Logo_2016.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:TNT_Logo_2016.svg",
+    "sourceSha256": "55d790b5f5a3011327b5f98ab5701d977151689a1aaca4b29a0720b58c161277",
+    "ops": {
+      "viewBox": "-2 -2 624 624"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "TV-HALLMARK",
+    "id": "primary",
+    "label": "Crown",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Special:FilePath/Hallmark_logo.svg",
+    "sourcePage": "https://en.wikipedia.org/wiki/File:Hallmark_logo.svg",
+    "sourceSha256": "efe71e848a3a1ab94ad08c2277e5745f751c2232c22b81d1cf1b7b7a74a1a372",
+    "ops": {
+      "removeNodes": [
+        "1"
+      ],
+      "viewBox": "237.56 -2.14 116.48 95.18"
+    }
+  },
+  {
+    "teamId": "TV-MTV",
+    "id": "primary",
+    "label": "1981 block M",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/MTV_1981_logo_%28no_outline%29.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:MTV_1981_logo_%28no_outline%29.svg",
+    "sourceSha256": "a25a4683f9532d73d4a3dce114efee25c198772202f5dfcab1b16d8d0b6d42cc",
+    "ops": {
+      "keepNodes": [
+        "0/0",
+        "0/1",
+        "0/18",
+        "0/19",
+        "0/20"
+      ],
+      "viewBox": "-12.913 -17.557 912.962 702.41"
+    }
+  },
+  {
+    "teamId": "TV-MTV",
+    "id": "2021-retro",
+    "label": "2021 flat M with side bars",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/MTV_2021_%28brand_version%29.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:MTV_2021_%28brand_version%29.svg",
+    "sourceSha256": "9727b8ec1e6afe1e3ed7ebf697f2166f242a43e98908c0e93e0df60b26f2e9dc",
+    "ops": {
+      "removeNodes": [
+        "3/2"
+      ],
+      "viewBox": "-220.973 93.009 967.857 599.832"
+    }
+  },
+  {
+    "teamId": "TV-VH1",
+    "id": "primary",
+    "label": "2003 box wordmark",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/VH1_2003_logo.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:VH1_2003_logo.svg",
+    "sourceSha256": "cf063ed9f447a25f4e1461cecc4c415a2a6fe76160bd7c7aaa7f4949ef010575",
+    "ops": {
+      "viewBox": "-3.815 -3.815 198.382 114.917"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "TV-BET",
+    "id": "primary",
+    "label": "Star and B monogram",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/7/7b/BET_1980_II.svg/revision/latest?cb=20210630020615",
+    "sourcePage": "https://logos.fandom.com/wiki/File:BET_1980_II.svg",
+    "sourceSha256": "7003f9f8e4e2a85226cba0fbf70479a2bb93b8408f8df7778acce11c15c79876",
+    "ops": {
+      "removeNodes": [
+        "3/0/0"
+      ],
+      "viewBox": "44.033 -1.387 72.133 52.506"
+    }
+  },
+  {
+    "teamId": "TV-BET",
+    "id": "2001-solid-star",
+    "label": "2001 solid star with B",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/a/ae/BET_2001.svg/revision/latest?cb=20211022160835",
+    "sourcePage": "https://logos.fandom.com/wiki/File:BET_2001.svg",
+    "sourceSha256": "fb1488645abd54cf44ea48fd8d5fd0ab409718e93a965a8dd833856455e53185",
+    "ops": {
+      "keepNodes": [
+        "0/3",
+        "0/4"
+      ],
+      "viewBox": "-10.718 -10.718 557.358 429.742"
+    }
+  },
+  {
+    "teamId": "TV-CMT",
+    "id": "primary",
+    "label": "1991 color tiles",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/0/07/CMT_%281991%29.svg/revision/latest?cb=20251116065547",
+    "sourcePage": "https://logos.fandom.com/wiki/File:CMT_%281991%29.svg",
+    "sourceSha256": "ed74753d727d328ceadd6e49aee7ab00cc2fe0c3f958a5a7266b0625b728f006",
+    "ops": {
+      "removeNodes": [
+        "2"
+      ],
+      "viewBox": "-33.276 -33.276 1730.352 578.182"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "TV-EENT",
+    "id": "primary",
+    "label": "1990 red exclamation",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/6/64/E%21_Entertainment_Television_1990.svg/revision/latest?cb=20240701201632",
+    "sourcePage": "https://logos.fandom.com/wiki/File:E%21_Entertainment_Television_1990.svg",
+    "sourceSha256": "28218fc409e39f33f0382930ae36f3532e94fb53e5b163ffba532a6cbe2632de",
+    "ops": {
+      "keepNodes": [
+        "1-3"
+      ],
+      "viewBox": "12.614 -5.641 101.01 293.311"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "TV-NICK",
+    "id": "primary",
+    "label": "Orange splat",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Nickelodeon_Splat_Symbol_%282023%29.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Nickelodeon_Splat_Symbol_%282023%29.svg",
+    "sourceSha256": "020c4dc81b0a71877e5cd0bf9b69ee6f9a9d9001d03bc7abb00a0d598a9ffd36",
+    "ops": {
+      "viewBox": "-28.731 -28.73 1494.004 1432.459"
+    }
+  },
+  {
+    "teamId": "TV-NICK",
+    "id": "1985-splat",
+    "label": "1985 spiky splat",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Nickelodeon_1985_%28Splat%29.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Nickelodeon_1985_%28Splat%29.svg",
+    "sourceSha256": "d3f6abbe17c3ff555a733b18f1b07f1b35654fe7a731dcdaa366b26689a07310",
+    "ops": {
+      "removeNodes": [
+        "1",
+        "3/0/1"
+      ],
+      "viewBox": "-20 -20 1040 564.815"
+    }
+  },
+  {
+    "teamId": "TV-NICK",
+    "id": "planet",
+    "label": "Ringed planet",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/6/69/Nickelodeon_%28Planet%29.svg/revision/latest?cb=20210725021805",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Nickelodeon_%28Planet%29.svg",
+    "sourceSha256": "6feb5467430e1ffd146ab2b3b07f03646af4e4e52b068659c813ff9673a49d4f",
+    "ops": {
+      "removeNodes": [
+        "4/0/1"
+      ],
+      "viewBox": "-20 -20 1040 641.963"
+    }
+  },
+  {
+    "teamId": "TV-CN",
+    "id": "primary",
+    "label": "2010 block letters",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Cartoon_Network_2010_logo.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Cartoon_Network_2010_logo.svg",
+    "sourceSha256": "7ebd60a2cf53e3b976b1452b4b60bf6f3b3fc3e726048fb38c33351d8733407d",
+    "ops": {
+      "keepNodes": [
+        "3-6"
+      ],
+      "viewBox": "-1.945 -1.945 101.136 52.334"
+    }
+  },
+  {
+    "teamId": "TV-CN",
+    "id": "2004-tilted",
+    "label": "2004 tilted tiles",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/1/1f/Cartoon_Network_2004.svg/revision/latest?cb=20250303174322",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Cartoon_Network_2004.svg",
+    "sourceSha256": "2e899d673b7bc228169f850b134ef2803275ca722b9075bcd08f979647364db2",
+    "ops": {
+      "removeNodes": [
+        "1/2"
+      ],
+      "viewBox": "-8.01 -8.01 416.521 267.498"
+    }
+  },
+  {
+    "teamId": "TV-DISNEY",
+    "id": "primary",
+    "label": "1997 red-and-blue ears",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/7/7c/Disney_Channel_1997_logo_%28alternate%29.svg/revision/latest?cb=20250330052836",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Disney_Channel_1997_logo_%28alternate%29.svg",
+    "sourceSha256": "f22ec416535bdca36083afec5fcb70a3e40b1e4612e540df604819eb5384dc2b",
+    "ops": {
+      "removeNodes": [
+        "2/0/3"
+      ],
+      "viewBox": "82.155 -16.72 869.435 656.755"
+    }
+  },
+  {
+    "teamId": "TV-DISNEY",
+    "id": "1983-tv",
+    "label": "1983 striped TV ears",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/2/21/Disney_Channel_Logo_1983-1997.svg/revision/latest?cb=20250208030203",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Disney_Channel_Logo_1983-1997.svg",
+    "sourceSha256": "757e5c00bec659043a8cd4471ff7f9f8214e9615e6e759da4ce8f447da8f1070",
+    "ops": {
+      "viewBox": "-6.048 -6.048 314.496 226.496"
+    }
+  },
+  {
+    "teamId": "TV-DISNEY",
+    "id": "2002-ears",
+    "label": "2002 ear outline",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/3/30/Disney_Channel_2002.svg/revision/latest?cb=20220531120931",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Disney_Channel_2002.svg",
+    "sourceSha256": "336699fac151d8f1423079bd5dc72be83525697fffb0a7f55c95b4dfb98f54db",
+    "ops": {
+      "removeNodes": [
+        "2"
+      ]
+    }
+  },
+  {
+    "teamId": "TV-NICKJR",
+    "id": "primary",
+    "label": "Parent and child figures",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/a/a6/Nick_Jr._1993.svg/revision/latest?cb=20260907131826",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Nick_Jr._1993.svg",
+    "sourceSha256": "5cc163d12e20152c045be8fe7af37aa484a729c0e0f8d25571dd8daeb5c5a795",
+    "ops": {
+      "removeNodes": [
+        "3/0/2",
+        "3/0/3",
+        "3/0/4"
+      ],
+      "viewBox": "-8.916 -8.916 463.629 399.846"
+    }
+  },
+  {
+    "teamId": "TV-BOOM",
+    "id": "primary",
+    "label": "B cube",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Boomerang_2014_logo.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Boomerang_2014_logo.svg",
+    "sourceSha256": "cdb15e84403194c2a999317614cf0d0ada09abef9471a23951b5bf61480e3268",
+    "ops": {
+      "removeNodes": [
+        "2/0/2"
+      ],
+      "viewBox": "-6 -6 312 239.906"
+    }
+  },
+  {
+    "teamId": "TV-BOOM",
+    "id": "2000-swoosh",
+    "label": "2000 flying B with stars",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Boomerang_tv_logo_%282000%29.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Boomerang_tv_logo_%282000%29.svg",
+    "sourceSha256": "0ca816ef7ab6310c318351f7cc520f91f929be065a44d588a7846098e1be11f0",
+    "ops": {
+      "removeNodes": [
+        "3/0/1",
+        "3/0/6"
+      ],
+      "viewBox": "-9.496 -9.496 493.775 258.929"
+    }
+  },
+  {
+    "teamId": "TV-PBSKIDS",
+    "id": "primary",
+    "label": "Dash head",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/f/f7/PBS_Kids_Logo_2013.svg/revision/latest?cb=20250503050254",
+    "sourcePage": "https://logos.fandom.com/wiki/File:PBS_Kids_Logo_2013.svg",
+    "sourceSha256": "2499e1257f0165c174385aa6cce39a7488c158e38af911a4460fbe12422baa11",
+    "ops": {
+      "removeNodes": [
+        "0/3",
+        "0/4",
+        "0/5",
+        "0/17",
+        "0/18",
+        "0/19",
+        "0/20"
+      ],
+      "viewBox": "-2.909 -2.909 151.286 151.279"
+    }
+  },
+  {
+    "teamId": "TV-PBSKIDS",
+    "id": "dot",
+    "label": "Dot head",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/6/66/PBS_Kids_Alternative_Dot_Logo_without_the_wordmark.svg/revision/latest?cb=20251115162806",
+    "sourcePage": "https://logos.fandom.com/wiki/File:PBS_Kids_Alternative_Dot_Logo_without_the_wordmark.svg",
+    "sourceSha256": "811e42ff95dda0dd285a5d187fff65b5d28c6343a39fb5294c197a97e425d36e",
+    "ops": {
+      "removeNodes": [
+        "1/7",
+        "1/8",
+        "1/9"
+      ],
+      "viewBox": "-4.997 -4.997 259.858 259.837"
+    }
+  },
+  {
+    "teamId": "TV-NAN",
+    "id": "primary",
+    "label": "Crescent moon",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/c/c5/Nick_at_Nite_logo_1985.svg/revision/latest?cb=20200602050804",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Nick_at_Nite_logo_1985.svg",
+    "sourceSha256": "8ad048e671efab97f606a5d9e1f72aa643c0383267c09b46c114008fc285b59a",
+    "ops": {
+      "keepNodes": [
+        "3/0"
+      ],
+      "viewBox": "-20.016 -20.016 990.593 1040.824"
+    }
+  },
+  {
+    "teamId": "TV-NAN",
+    "id": "2007-splat-moon",
+    "label": "2007 splat crescent",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/b/bb/Nick_at_Nite_2007.svg/revision/latest?cb=20241021112110",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Nick_at_Nite_2007.svg",
+    "sourceSha256": "fdd355afb5a8188f50fe4d4a4f0c4ce449be4c37587d516458d2ffa996a46407",
+    "ops": {
+      "keepNodes": [
+        "3/0/2"
+      ],
+      "viewBox": "-8.447 -8.446 439.219 391.805"
+    }
+  },
+  {
+    "teamId": "TV-DISC",
+    "id": "primary",
+    "label": "Globe D",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Special:FilePath/Discovery_Channel_-_Logo_2019.svg",
+    "sourcePage": "https://en.wikipedia.org/wiki/File:Discovery_Channel_-_Logo_2019.svg",
+    "sourceSha256": "ec4c81798d50d613c1f901cd55c802baf868dc657e11ef082455280d25724de8",
+    "ops": {
+      "keepNodes": [
+        "1/1"
+      ],
+      "viewBox": "-5.858 -5.89 269.96 305.76"
+    }
+  },
+  {
+    "teamId": "TV-DISC",
+    "id": "2008-globe",
+    "label": "2008 photo-globe D",
+    "sourceUrl": "https://iconape.com/wp-content/files/ph/283335/svg/discovery-channel-seeklogo.com.svg",
+    "sourcePage": "https://iconape.com/discovery-channel-logo-logo-icon-svg-png.html",
+    "sourceSha256": "5ce4f966afa9616c554e9ca209f4c4e82e399433bfc7116c6613e16bac109540",
+    "ops": {
+      "removeNodes": [
+        "1",
+        "4"
+      ],
+      "viewBox": "16.702 30.302 265.096 181.096"
+    }
+  },
+  {
+    "teamId": "TV-AP",
+    "id": "primary",
+    "label": "Leaping elephant",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Special:FilePath/2018_Animal_Planet_logo.svg",
+    "sourcePage": "https://en.wikipedia.org/wiki/File:2018_Animal_Planet_logo.svg",
+    "sourceSha256": "c26e9f3ce4ff0fa641f9afe1084c5c1c1bddb0015b56fbfd347a58611c068b06",
+    "ops": {
+      "keepNodes": [
+        "1"
+      ],
+      "viewBox": "177.059 -14.577 757.99 421.169"
+    }
+  },
+  {
+    "teamId": "TV-AP",
+    "id": "1996-elephant-globe",
+    "label": "1996 elephant and globe",
+    "sourceUrl": "https://iconape.com/wp-content/files/en/33065/svg/animal-planet-1.svg",
+    "sourcePage": "https://iconape.com/animal-planet-1-logo-icon-svg-png.html",
+    "sourceSha256": "d1b8abda6f4e15944bee449953cbf8c19bea09f5b658eff970b90d3e8f1f7484",
+    "ops": {
+      "removeNodes": [
+        "5",
+        "6",
+        "8",
+        "9"
+      ],
+      "viewBox": "-0.396 -0.441 22.972 16.43"
+    }
+  },
+  {
+    "teamId": "TV-HIST",
+    "id": "primary",
+    "label": "Gold H",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Special:FilePath/History_Logo.svg",
+    "sourcePage": "https://en.wikipedia.org/wiki/File:History_Logo.svg",
+    "sourceSha256": "c47ba95ff0ab019d7d50ae682232197a8081321e8b587f3cda58ac1d33b2a818",
+    "ops": {
+      "removeNodes": [
+        "3/1"
+      ],
+      "viewBox": "-0.897 -19.28 1002.537 895.735"
+    }
+  },
+  {
+    "teamId": "TV-HIST",
+    "id": "classic-boxed-h",
+    "label": "1995 boxed H",
+    "sourceUrl": "https://iconape.com/wp-content/files/nb/67189/svg/history-channel.svg",
+    "sourcePage": "https://iconape.com/history-channel-logo-icon-svg-png.html",
+    "sourceSha256": "1a13f90baaa23ac017f2257cb94a7bf236d8b8df34e8f0ad6a0d339a969d2ab0",
+    "ops": {
+      "viewBox": "16.3 -0.6 27.3 27.2"
+    }
+  },
+  {
+    "teamId": "TV-NATGEO",
+    "id": "primary",
+    "label": "Yellow frame",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Special:FilePath/Natgeologo.svg",
+    "sourcePage": "https://en.wikipedia.org/wiki/File:Natgeologo.svg",
+    "sourceSha256": "293d6f5383b4a437ea4076e8e1b7ced7ad8a18603a6367cdf28eef4eb8f8b884",
+    "ops": {
+      "keepNodes": [
+        "0/0"
+      ],
+      "viewBox": "-5.877 -5.877 216.799 305.598"
+    }
+  },
+  {
+    "teamId": "TV-HGTV",
+    "id": "primary",
+    "label": "Roof wordmark",
+    "sourceUrl": "https://iconape.com/wp-content/files/sv/134919/svg/134919.svg",
+    "sourcePage": "https://iconape.com/hgtv-logo-logo-icon-svg-png.html",
+    "sourceSha256": "190dc5300d4e6164fbe028006f4da902e30d70932f7b501b484aa5a25e36bf77",
+    "ops": {
+      "keepNodes": [
+        "0/1",
+        "0/3-9"
+      ],
+      "viewBox": "8.196 36.313 176.881 87.229"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "TV-TWC",
+    "id": "primary",
+    "label": "Blue box wordmark",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Special:FilePath/The_Weather_Channel_logo_2005-present.svg",
+    "sourcePage": "https://en.wikipedia.org/wiki/File:The_Weather_Channel_logo_2005-present.svg",
+    "sourceSha256": "69491a55ecfd962cd8faba258d543a009b259bd1834b0f12f0bd478397a8eee9",
+    "ops": {},
+    "showsName": true
+  },
+  {
+    "teamId": "CAR-CHEVY",
+    "id": "primary",
+    "label": "Gold bowtie",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Chevrolet-logo.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Chevrolet-logo.svg",
+    "sourceSha256": "99ff5246f93a4cb933e9130e3baf23089d3150fa9fed86579cebfb2bb91c95ad",
+    "ops": {
+      "removeNodes": [
+        "0/128",
+        "0/144",
+        "0/146",
+        "0/147",
+        "0/148",
+        "0/149",
+        "0/150",
+        "0/151",
+        "0/152",
+        "0/153",
+        "0/154"
+      ],
+      "viewBox": "-82.296 -82.287 4279.143 1664.802"
+    }
+  },
+  {
+    "teamId": "CAR-CHEVY",
+    "id": "sunburst-bowtie",
+    "label": "Sunburst bowtie",
+    "sourceUrl": "https://iconape.com/wp-content/files/eg/161700/svg/161700.svg",
+    "sourcePage": "https://iconape.com/chevy-truck-logo-logo-icon-svg-png.html",
+    "sourceSha256": "8d688f4a298e40df97f86ce0883b0827c6c7bd01f4e4accda82451b00f9bfcf9",
+    "ops": {
+      "keepNodes": [
+        "0/12-147"
+      ],
+      "viewBox": "8.873 80.58 174.614 70.763"
+    }
+  },
+  {
+    "teamId": "CAR-CHEVY",
+    "id": "2023-outline",
+    "label": "2023 outline bowtie",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Chevrolet_bowtie_2023.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Chevrolet_bowtie_2023.svg",
+    "sourceSha256": "3c44365f4ca7388345f3bc675373e6382508b46d2e510c6ad768acb792853e20",
+    "ops": {
+      "viewBox": "-1.88 -1.88 97.76 33.754"
+    }
+  },
+  {
+    "teamId": "CAR-DODGE",
+    "id": "primary",
+    "label": "Ram head shield",
+    "sourceUrl": "https://api.iconify.design/cbi/ram.svg?color=%23CD3029",
+    "sourcePage": "https://icon-sets.iconify.design/cbi/ram/",
+    "sourceSha256": "fd0c082b7f52c9f55a24ec0b595f9c71e7891c01c89dafbd4d6c02cd3d70e1f3",
+    "ops": {
+      "viewBox": "1.874 1.6 20.252 20.8"
+    }
+  },
+  {
+    "teamId": "CAR-DODGE",
+    "id": "racing-stripes",
+    "label": "Racing stripes",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Dodge_logo.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Dodge_logo.svg",
+    "sourceSha256": "7d91478690c6f0aaad31cf30474e5422345dca5c0c5022676bf685c4e2b21546",
+    "ops": {
+      "keepNodes": [
+        "2/0/0",
+        "2/0/1"
+      ],
+      "viewBox": "366.11 -2.013 134.526 75.174"
+    }
+  },
+  {
+    "teamId": "CAR-JEEP",
+    "id": "primary",
+    "label": "Seven-slot grille",
+    "sourceUrl": "https://iconape.com/wp-content/files/xb/132999/svg/132999.svg",
+    "sourcePage": "https://iconape.com/jeep-wrangle-jl-grill-logo-logo-icon-svg-png.html",
+    "sourceSha256": "d6a7478dc7117f9cbb7d73c4b3d88f0f4dfc3d776091da9504663b277562c90d",
+    "ops": {
+      "viewBox": "-12.354 -11.753 645.689 244.154"
+    }
+  },
+  {
+    "teamId": "CAR-CADILLAC",
+    "id": "primary",
+    "label": "Color crest",
+    "sourceUrl": "https://brandeps.com/logo-download/c/cadillac-logo-vector-01.svg",
+    "sourcePage": "https://brandeps.com/logo/c/cadillac-01",
+    "sourceSha256": "26d16ef206256442f5e414205aa91b131bea1fa131f8d320aa1d8008f9e9fd9c",
+    "ops": {
+      "removeNodes": [
+        "1/0",
+        "1/1",
+        "1/2"
+      ],
+      "viewBox": "25.023 70.638 495.68 204.735"
+    }
+  },
+  {
+    "teamId": "CAR-CADILLAC",
+    "id": "2021-outline",
+    "label": "2021 outline crest",
+    "sourceUrl": "https://api.iconify.design/simple-icons/cadillac.svg?color=%23000000",
+    "sourcePage": "https://simpleicons.org/?q=cadillac",
+    "sourceSha256": "a269334a8ea1c62913f3df3ead8821a77f5f08510d97a7f2e8cef54dafc3dea5",
+    "ops": {
+      "viewBox": "-0.48 6.826 24.96 10.348"
+    }
+  },
+  {
+    "teamId": "CAR-CADILLAC",
+    "id": "crowned-wreath",
+    "label": "Crowned wreath and crest",
+    "sourceUrl": "https://iconape.com/wp-content/files/lh/49092/svg/cadillac-1057.svg",
+    "sourcePage": "https://iconape.com/cadillac-1057-logo-icon-svg-png.html",
+    "sourceSha256": "8f148d81522673d7c7fd8dd67f40d68d44d75bc9804638a5a6bcd1f993621263",
+    "ops": {
+      "removeNodes": [
+        "0",
+        "11",
+        "12",
+        "13",
+        "14"
+      ],
+      "viewBox": "1.557 70.947 44.964 42.832"
+    }
+  },
+  {
+    "teamId": "CAR-TESLA",
+    "id": "primary",
+    "label": "T mark",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Tesla_T_symbol.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Tesla_T_symbol.svg",
+    "sourceSha256": "19df638b8c615f3f59909f81c7e962856710a0a774a4d57f117fbeea9e8c5d68",
+    "ops": {
+      "viewBox": "-4.572 -4.572 263.727 262.645"
+    }
+  },
+  {
+    "teamId": "CAR-TESLA",
+    "id": "red-tile",
+    "label": "White T on red tile",
+    "sourceUrl": "https://brandeps.com/logo-download/t/tesla-logo-vector-01.svg",
+    "sourcePage": "https://brandeps.com/logo/t/tesla-01",
+    "sourceSha256": "8569d2b5159006924f17182a28d079760fb97032f15652d0fbb6379a427e5b0f",
+    "ops": {
+      "removeNodes": [
+        "2/0"
+      ]
+    }
+  },
+  {
+    "teamId": "CAR-FORD",
+    "id": "primary",
+    "label": "Blue oval",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Ford_logo_flat.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Ford_logo_flat.svg",
+    "sourceSha256": "b7447830af9bf4ea2de945cb172f92f0e77aaf508304b4f1339c9572f352ae79",
+    "ops": {
+      "viewBox": "-5.292 -5.292 275.167 105.811"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "CAR-TOYOTA",
+    "id": "primary",
+    "label": "Three ellipses",
+    "sourceUrl": "https://api.iconify.design/thesvg-color/toyota.svg",
+    "sourcePage": "https://icon-sets.iconify.design/thesvg-color/toyota/",
+    "sourceSha256": "843abcd8c26a41892c8d9d722e3aa5efa6aff9240a4d61387cadaaa1b638b1cd",
+    "ops": {
+      "viewBox": "-0.48 3.368 24.96 17.264"
+    }
+  },
+  {
+    "teamId": "CAR-TOYOTA",
+    "id": "chrome",
+    "label": "Chrome emblem",
+    "sourceUrl": "https://brandeps.com/logo-download/t/toyota-logo-vector-01.svg",
+    "sourcePage": "https://brandeps.com/logo/t/toyota-01",
+    "sourceSha256": "4135d3ec09630abdebbeca1cc781db6d32b23a30bd727943c68517b5f0e0b254",
+    "ops": {
+      "keepNodes": [
+        "1/0"
+      ],
+      "viewBox": "23.383 37.283 465.234 307.534"
+    }
+  },
+  {
+    "teamId": "CAR-HONDA",
+    "id": "primary",
+    "label": "H badge",
+    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/3/38/Honda.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Honda.svg",
+    "sourceSha256": "688e24e95ac68717fabcceb2ab4a4b0d979d45eee79e035fa840eb3a202c12d0",
+    "ops": {
+      "keepNodes": [
+        "0/1"
+      ],
+      "viewBox": "-44.013 -44.012 2288.61 1877.215"
+    }
+  },
+  {
+    "teamId": "CAR-HONDA",
+    "id": "2024-h",
+    "label": "2024 open H mark",
+    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/8/86/Honda_auto_logo.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Honda_auto_logo.svg",
+    "sourceSha256": "302b953c7cd386c159e47cf7e4a9b73439336afd57485786b347dbb610f0c708",
+    "ops": {
+      "viewBox": "-10.671 -10.671 554.875 399.249"
+    }
+  },
+  {
+    "teamId": "CAR-HONDA",
+    "id": "wing",
+    "label": "Red wing",
+    "sourceUrl": "https://iconape.com/wp-content/files/qs/67355/svg/honda-motorcycles-1.svg",
+    "sourcePage": "https://iconape.com/honda-motorcycles-1-logo-icon-svg-png.html",
+    "sourceSha256": "fa64adac80a85d52b87ced035bedecdf9e0f2da66b38c1d065ea4d8255ee8ad0",
+    "ops": {
+      "viewBox": "-0.3 1.9 14.4 8.1"
+    }
+  },
+  {
+    "teamId": "CAR-NISSAN",
+    "id": "primary",
+    "label": "Chrome ring and bar",
+    "sourceUrl": "https://brandeps.com/logo-download/n/nissan-logo-vector-01.svg",
+    "sourcePage": "https://brandeps.com/logo/n/nissan-01",
+    "sourceSha256": "a38f05a5750a91f69f4e8a6a944d0018ae2bc2df0f317847530b6149a814ecef",
+    "ops": {
+      "removeNodes": [
+        "19"
+      ],
+      "viewBox": "-10.24 26.51 532.48 458.97"
+    }
+  },
+  {
+    "teamId": "CAR-NISSAN",
+    "id": "2020-split-ring",
+    "label": "2020 split ring",
+    "sourceUrl": "https://logowik.com/nissan-new-logo-vector-31776.html",
+    "sourcePage": "https://logowik.com/nissan-new-logo-vector-31776.html",
+    "sourceSha256": "0eba991c50a8a9e8ed9aa595d3bad35f912e6fa7888acab6de9501cba374992b",
+    "downloadForm": "logowik",
+    "ops": {
+      "keepNodes": [
+        "1/0/0",
+        "1/0/1"
+      ],
+      "viewBox": "171.167 75.087 498.857 444.557"
+    }
+  },
+  {
+    "teamId": "CAR-SUBARU",
+    "id": "primary",
+    "label": "Blue Pleiades oval",
+    "sourceUrl": "https://brandeps.com/logo-download/s/subaru-logo-vector-01.svg",
+    "sourcePage": "https://brandeps.com/logo/s/subaru-01",
+    "sourceSha256": "5bc5cd0e30b80d226cdf34d95f50fab647e0cddfc1764566de54578b041e3642",
+    "ops": {
+      "removeNodes": [
+        "1/0",
+        "1/1",
+        "1/2",
+        "1/3",
+        "1/4",
+        "1/5",
+        "1/6"
+      ],
+      "viewBox": "63.881 100.401 370.687 206.457"
+    }
+  },
+  {
+    "teamId": "CAR-SUBARU",
+    "id": "flat",
+    "label": "Flat navy oval",
+    "sourceUrl": "https://api.iconify.design/thesvg-color/subaru.svg",
+    "sourcePage": "https://icon-sets.iconify.design/thesvg-color/subaru/",
+    "sourceSha256": "3d1962d59084be24c5b4e9e135a16679e668eba17524975a2c3a7772b4448c42",
+    "ops": {
+      "viewBox": "-0.48 4.503 24.96 14.994"
+    }
+  },
+  {
+    "teamId": "CAR-MAZDA",
+    "id": "primary",
+    "label": "Winged M oval",
+    "sourceUrl": "https://api.iconify.design/thesvg-color/mazda.svg",
+    "sourcePage": "https://icon-sets.iconify.design/thesvg-color/mazda/",
+    "sourceSha256": "1045c25d6e41c6b0f528a657c17c2d4967a6392df9027910f8bc40b03fa08607",
+    "ops": {
+      "viewBox": "-0.48 1.918 24.96 20.164"
+    }
+  },
+  {
+    "teamId": "CAR-MAZDA",
+    "id": "chrome",
+    "label": "Chrome winged M",
+    "sourceUrl": "https://brandeps.com/logo-download/m/mazda-logo-vector-01.svg",
+    "sourcePage": "https://brandeps.com/logo/m/mazda-01",
+    "sourceSha256": "50bd387be51b07e2fcd947d3a70a254380df3cb6c2b3e43897617b7645a0c8fc",
+    "ops": {
+      "removeNodes": [
+        "1/0"
+      ],
+      "viewBox": "1.375 -16.585 509.327 414.269"
+    }
+  },
+  {
+    "teamId": "CAR-MAZDA",
+    "id": "1992",
+    "label": "1992 blue flame oval",
+    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/5/58/Mazda_logo_1992.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Mazda_logo_1992.svg",
+    "sourceSha256": "a71c9a0a1262cb789be3669471525879cd73d64c139c91fe7be86f314cfd4bbf",
+    "ops": {
+      "removeNodes": [
+        "3/1"
+      ],
+      "viewBox": "185.841 -12.334 641.346 492.49"
+    }
+  },
+  {
+    "teamId": "CAR-MITSU",
+    "id": "primary",
+    "label": "Three diamonds",
+    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Mitsubishi_motors_new_logo.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Mitsubishi_motors_new_logo.svg",
+    "sourceSha256": "c383e1caf2d56c2a45e1583d31ca4cd257e230d10f5745f447cb5db8002cd0aa",
+    "ops": {
+      "keepNodes": [
+        "1/1"
+      ],
+      "viewBox": "205.371 -30.441 1582.946 1378.659"
+    }
+  },
+  {
+    "teamId": "CAR-LEXUS",
+    "id": "primary",
+    "label": "L in oval",
+    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Lexus_Logo.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Lexus_Logo.svg",
+    "sourceSha256": "02e6b05e3feabb0493ab8db59215fc56a20dbc694496071f4da7cb1b0fb2e491",
+    "ops": {
+      "viewBox": "-2.618 -2.618 136.127 101.5"
+    }
+  },
+  {
+    "teamId": "CAR-HYUNDAI",
+    "id": "primary",
+    "label": "Slanted H oval",
+    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/4/44/Hyundai_Motor_Company_logo.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Hyundai_Motor_Company_logo.svg",
+    "sourceSha256": "03cda6235efc7bdac40c8c3eb34824d007fc69143e0b130dd45ec07d846cdfa0",
+    "ops": {
+      "keepNodes": [
+        "3/1"
+      ],
+      "viewBox": "-5.048 -5.048 262.498 138.716"
+    }
+  },
+  {
+    "teamId": "CAR-HYUNDAI",
+    "id": "chrome",
+    "label": "Chrome slanted H",
+    "sourceUrl": "https://brandeps.com/logo-download/h/hyundai-logo-vector-01.svg",
+    "sourcePage": "https://brandeps.com/logo/h/hyundai-01",
+    "sourceSha256": "92f3e67c2478be52e5d8661048400690a704da9c1b8f16e1d3dd0c3f78f7644b",
+    "ops": {
+      "keepNodes": [
+        "1/1"
+      ],
+      "viewBox": "48.543 88.643 419.474 223.494"
+    }
+  },
+  {
+    "teamId": "CAR-HYUNDAI",
+    "id": "1970-hd",
+    "label": "1970 HD oval",
+    "sourceUrl": "https://logowik.com/hyundai-motor-company-1970-logo-vector-74669.html",
+    "sourcePage": "https://logowik.com/hyundai-motor-company-1970-logo-vector-74669.html",
+    "sourceSha256": "32e865d233ad141ae8059b2f2819eaca09ed3517a4df937e8c8bdf4a811d8c3c",
+    "downloadForm": "logowik",
+    "ops": {
+      "viewBox": "0.013 0.364 472.955 198.666"
+    }
+  },
+  {
+    "teamId": "CAR-HYUNDAI",
+    "id": "1974-boxed-hd",
+    "label": "1974 boxed HD",
+    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Hyundai_Motor_logo%281974-1992%29.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Hyundai_Motor_logo%281974-1992%29.svg",
+    "sourceSha256": "9baddc529cccec9e17003ced0a4deff3cbb6ed93961cf5f5f27415dd47d40922",
+    "ops": {
+      "viewBox": "22.518 20.135 1659.754 945.47"
+    }
+  },
+  {
+    "teamId": "CAR-MB",
+    "id": "primary",
+    "label": "Chrome three-pointed star",
+    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/3/32/Mercedes-Benz_Star_2022.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_Star_2022.svg",
+    "sourceSha256": "1c35cb516ffff6dc694730726a19241b0af8ad5c5d4a5e8e449954601b9d46c9",
+    "ops": {
+      "viewBox": "-1.28 -1.28 66.56 66.56"
+    }
+  },
+  {
+    "teamId": "CAR-MB",
+    "id": "flat-star",
+    "label": "Flat star in ring",
+    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/9/98/Mercedes-Benz_Star_%281969-1986%2C_2025-%29.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_Star_%281969-1986%2C_2025-%29.svg",
+    "sourceSha256": "79ba1bd8700070d567c353cc4a9eb7dfae5316b1eb0d8ee5e0cf2002fc063dc7",
+    "ops": {
+      "viewBox": "-20.01 -20.01 1040.021 1040.541"
+    }
+  },
+  {
+    "teamId": "CAR-MB",
+    "id": "blue-sign",
+    "label": "Blue showroom sign",
+    "sourceUrl": "https://iconape.com/wp-content/files/ji/80717/svg/mercedes-benz-3.svg",
+    "sourcePage": "https://iconape.com/mercedes-benz-logo-icon-svg-png.html",
+    "sourceSha256": "2b9902fa286be1ea6e0f5eac26261b8d20e2bbdfc35b619d5f41ed64a20cdbd2",
+    "ops": {
+      "removeNodes": [
+        "0",
+        "1",
+        "5",
+        "6",
+        "7"
+      ],
+      "viewBox": "17.9 1.9 156.8 156.6"
+    }
+  },
+  {
+    "teamId": "CAR-BMW",
+    "id": "primary",
+    "label": "Chrome roundel quarters",
+    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/4/44/BMW.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:BMW.svg",
+    "sourceSha256": "b2226efc7bfb81d6b4f6d3002205ff2d2da2e5eb75455694dcd9645ba6e460a7",
+    "ops": {
+      "removeNodes": [
+        "25",
+        "26",
+        "27",
+        "28",
+        "29",
+        "30"
+      ],
+      "viewBox": "-20.274 -20.274 1054.266 1054.245"
+    }
+  },
+  {
+    "teamId": "CAR-BMW",
+    "id": "2020-flat",
+    "label": "2020 flat roundel",
+    "sourceUrl": "https://logowik.com/bmw-2020-new-logo-vector-svg-pdf-ai-eps-cdr-free-download-4256.html",
+    "sourcePage": "https://logowik.com/bmw-2020-new-logo-vector-svg-pdf-ai-eps-cdr-free-download-4256.html",
+    "sourceSha256": "2e468d848edc471b0547e8bac521164bb2b8acae79ca3717b6df9a93ce206366",
+    "downloadForm": "logowik",
+    "ops": {
+      "removeNodes": [
+        "3/0/0/0/0/2"
+      ],
+      "viewBox": "16.74 4.14 44.72 44.72"
+    }
+  },
+  {
+    "teamId": "CAR-BMW",
+    "id": "1917",
+    "label": "1917 gold-ringed roundel",
+    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c9/BMW_1916-1933_Logo.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:BMW_1916-1933_Logo.svg",
+    "sourceSha256": "2d2402539d23d119d7f81f9cf80be2905ff35b029fcbadd3859d2871b6df2b17",
+    "ops": {
+      "removeNodes": [
+        "3/5",
+        "3/6",
+        "3/7"
+      ],
+      "viewBox": "-5.292 -5.292 275.167 275.167"
+    }
+  },
+  {
+    "teamId": "CAR-AUDI",
+    "id": "primary",
+    "label": "Four rings",
+    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/9/92/Audi-Logo_2016.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Audi-Logo_2016.svg",
+    "sourceSha256": "0277502116b0ef3486e9b5002bbf45dfcabf7246614a84744ac3ff25c3e77d38",
+    "ops": {
+      "viewBox": "-5.292 -5.292 275.167 104.001"
+    }
+  },
+  {
+    "teamId": "CAR-AUDI",
+    "id": "engraved",
+    "label": "Engraved chrome rings",
+    "sourceUrl": "https://brandeps.com/logo-download/a/audi-logo-vector-01.svg",
+    "sourcePage": "https://brandeps.com/logo/a/audi-01",
+    "sourceSha256": "240bd07f6a668096923edc71d350fada9ccbb67a97a20b0f045aefaec058ad6e",
+    "ops": {
+      "removeNodes": [
+        "1/34",
+        "1/35",
+        "1/36",
+        "1/37"
+      ],
+      "viewBox": "-10.24 89.09 532.459 201.579"
+    }
+  },
+  {
+    "teamId": "CAR-VW",
+    "id": "primary",
+    "label": "Blue roundel",
+    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Volkswagen_Logo_till_1995.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Volkswagen_Logo_till_1995.svg",
+    "sourceSha256": "07445826127b32961b96e526c46ce1a8e8a60e856ec7fefb973ece8061434330",
+    "ops": {
+      "viewBox": "-4.273 -4.273 222.2 222.2"
+    }
+  },
+  {
+    "teamId": "CAR-VW",
+    "id": "2019-flat",
+    "label": "2019 flat line roundel",
+    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Volkswagen_logo_2019.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Volkswagen_logo_2019.svg",
+    "sourceSha256": "5e9fb889f1ccc7776dd9305b235be41a256265d3fef19f26945ea414eb65edf5",
+    "ops": {
+      "viewBox": "-17.187 -18.46 1059.592 1059.592"
+    }
+  },
+  {
+    "teamId": "CAR-VW",
+    "id": "chrome-3d",
+    "label": "2000s chrome roundel",
+    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/2/23/Volkswagen_-_Logo.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Volkswagen_-_Logo.svg",
+    "sourceSha256": "6af7d2e24cf4592d57fe872971620ac560f3d90f83b96fead2dcdaa5783bfee4",
+    "ops": {
+      "viewBox": "2.252 2.252 505.495 505.495"
+    }
+  },
+  {
+    "teamId": "CAR-PORSCHE",
+    "id": "primary",
+    "label": "Stuttgart crest",
+    "sourceUrl": "https://brandeps.com/logo-download/p/porsche-logo-vector-01.svg",
+    "sourcePage": "https://brandeps.com/logo/p/porsche-01",
+    "sourceSha256": "e85a00d63955d1ae1d13316f0f92532c0efa4b1bcf87cfaa3454440f41db2e71",
+    "ops": {
+      "removeNodes": [
+        "1/78",
+        "1/79",
+        "1/80",
+        "1/81",
+        "1/82",
+        "1/83",
+        "1/84",
+        "1/85",
+        "1/86",
+        "1/87",
+        "1/88",
+        "1/89",
+        "1/90",
+        "1/91",
+        "1/92",
+        "1/93",
+        "1/94",
+        "1/95",
+        "1/96",
+        "1/97",
+        "1/98",
+        "1/99",
+        "1/101",
+        "1/102",
+        "1/103",
+        "1/104",
+        "1/105",
+        "1/106",
+        "1/107",
+        "1/108",
+        "1/109",
+        "1/110",
+        "1/111",
+        "1/112",
+        "1/113",
+        "1/114",
+        "1/115",
+        "1/116",
+        "1/117",
+        "1/118",
+        "1/127",
+        "1/128",
+        "1/129",
+        "1/130",
+        "1/131",
+        "1/132",
+        "1/133",
+        "1/134",
+        "1/135",
+        "1/136",
+        "1/137",
+        "1/143",
+        "1/144",
+        "1/145",
+        "1/147"
+      ],
+      "viewBox": "175.956 118.714 159.529 204.591"
+    }
+  },
+  {
+    "teamId": "CAR-PORSCHE",
+    "id": "triangle",
+    "label": "Early triangle trademark",
+    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Porsche_Warenzeichen.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Porsche_Warenzeichen.svg",
+    "sourceSha256": "fe42b0334f2b165d86927e9071f3118c60aa962352829519c71bd0a6df96411b",
+    "ops": {
+      "viewBox": "30.165 30.164 273.921 239.67"
+    }
+  },
+  {
+    "teamId": "CAR-FERRARI",
+    "id": "primary",
+    "label": "Prancing horse shield",
+    "sourceUrl": "https://iconape.com/wp-content/files/qa/156083/svg/156083.svg",
+    "sourcePage": "https://iconape.com/ferrari-logo-logo-icon-svg-png.html",
+    "sourceSha256": "47d43b0b54ddd93434e28b309b7f4aa93c0a9909db19b372f2bf8a66920a5da4",
+    "ops": {
+      "removeNodes": [
+        "1/1"
+      ],
+      "viewBox": "29.234 -2.844 109.134 145.056"
+    }
+  },
+  {
+    "teamId": "CAR-FERRARI",
+    "id": "horse",
+    "label": "Rearing horse",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Special:FilePath/Prancing_horse.svg",
+    "sourcePage": "https://en.wikipedia.org/wiki/File:Prancing_horse.svg",
+    "sourceSha256": "06357501e6b867fae6751da61d7c3e367c04a6352f79126c9da7ad470f0a5df3",
+    "ops": {
+      "fill": "#000000",
+      "viewBox": "-3.897 -4.276 169.694 232.422"
+    }
+  },
+  {
+    "teamId": "CAR-FERRARI",
+    "id": "rectangular-badge",
+    "label": "Rectangular yellow badge",
+    "sourceUrl": "https://iconape.com/wp-content/files/ut/61710/svg/ferrari-4.svg",
+    "sourcePage": "https://iconape.com/ferrari-logo-icon-svg-png.html",
+    "sourceSha256": "6935b5327365b0f7031c7047f4321cb3f668233a38c4b12aa92f32e9f786fe1e",
+    "ops": {
+      "removeNodes": [
+        "0/11",
+        "0/12",
+        "0/13"
+      ],
+      "viewBox": "-7.909 -7.909 239.896 411.25"
+    }
+  },
+  {
+    "teamId": "CAR-LAMBO",
+    "id": "primary",
+    "label": "Bull shield outline",
+    "sourceUrl": "https://iconape.com/wp-content/files/oj/163907/svg/163907.svg",
+    "sourcePage": "https://iconape.com/lamborghini-automobili-logo-logo-icon-svg-png.html",
+    "sourceSha256": "f17026fcb4db249090f1153a485bcd8c4f35dae51ed2b5fe2e1cbb847159bfc1",
+    "ops": {
+      "removeNodes": [
+        "0/0"
+      ],
+      "viewBox": "-4.655 -4.656 214.955 242.093"
+    }
+  },
+  {
+    "teamId": "CAR-LAMBO",
+    "id": "bull",
+    "label": "Charging bull",
+    "sourceUrl": "https://api.iconify.design/thesvg-color/lamborghini.svg",
+    "sourcePage": "https://icon-sets.iconify.design/thesvg-color/lamborghini/",
+    "sourceSha256": "0f69c863fe92013436c5fbb9fcba3e92beca8c0c1f8400430f7a41b95085a016",
+    "ops": {
+      "viewBox": "1.235 -0.481 21.531 24.961"
+    }
+  },
+  {
+    "teamId": "CAR-MASERATI",
+    "id": "primary",
+    "label": "Trident oval badge",
+    "sourceUrl": "https://iconape.com/wp-content/files/bb/74314/svg/logo-della-maserati.svg",
+    "sourcePage": "https://iconape.com/logo-della-maserati-logo-icon-svg-png.html",
+    "sourceSha256": "3d6c4b043ce97338481581be96e39213cb55cec7fdeff28e6668dce229362b68",
+    "ops": {
+      "removeNodes": [
+        "4"
+      ],
+      "viewBox": "-6.617 -7.583 334.799 514.8"
+    }
+  },
+  {
+    "teamId": "CAR-MASERATI",
+    "id": "vintage-oval",
+    "label": "Vintage cream oval",
+    "sourceUrl": "https://cdn.freebiesupply.com/logos/large/2x/maserati-2-logo-svg-vector.svg",
+    "sourcePage": "https://freebiesupply.com/logos/maserati-logo-2/",
+    "sourceSha256": "d6e70a26623542abd4e06be0126525d54ed868de6f19c2c22ad1e3bccb257809",
+    "ops": {
+      "removeNodes": [
+        "0/0",
+        "0/4"
+      ],
+      "viewBox": "29.151 4.989 134.454 182.778"
+    }
+  },
+  {
+    "teamId": "CAR-MASERATI",
+    "id": "trident",
+    "label": "Trident",
+    "sourceUrl": "https://api.iconify.design/thesvg-color/maserati.svg",
+    "sourcePage": "https://icon-sets.iconify.design/thesvg-color/maserati/",
+    "sourceSha256": "45b65dc6f4474bec48bab3db4ac4c09dc032ba9cd14c70abfc27faebcead46c5",
+    "ops": {
+      "viewBox": "3.03 -0.48 17.941 24.96"
+    }
+  },
+  {
+    "teamId": "CAR-ALFA",
+    "id": "primary",
+    "label": "Cross and serpent badge",
+    "sourceUrl": "https://cdn.freebiesupply.com/logos/large/2x/alfa-romeo-4-logo-svg-vector.svg",
+    "sourcePage": "https://freebiesupply.com/logos/alfa-romeo-logo-4/",
+    "sourceSha256": "5d9dc7c85736bef3e15a24c2edf4429b8c1431cfcb41bcd7ca47a2e0d1784f2a",
+    "ops": {
+      "removeNodes": [
+        "10"
+      ],
+      "viewBox": "127.56 127.561 1870.88 1870.88"
+    }
+  },
+  {
+    "teamId": "CAR-ALFA",
+    "id": "monochrome",
+    "label": "Monochrome cross and serpent",
+    "sourceUrl": "https://iconape.com/wp-content/files/zi/33862/svg/alfa-romeo-30845.svg",
+    "sourcePage": "https://iconape.com/alfa-romeo-30845-logo-icon-svg-png.html",
+    "sourceSha256": "70a752f07b021728a9a3edc3ac897f0b8d0b7a5fdcba9726bec4a714bc51689d",
+    "ops": {
+      "removeNodes": [
+        "0"
+      ],
+      "viewBox": "6.794 6.834 179.167 179.087"
+    }
+  },
+  {
+    "teamId": "CAR-FIAT",
+    "id": "primary",
+    "label": "Red badge wordmark",
+    "sourceUrl": "https://logowik.com/fiat-automobiles-logo-vector-41375.html",
+    "sourcePage": "https://logowik.com/fiat-automobiles-logo-vector-41375.html",
+    "sourceSha256": "7167ba26235bbb1e8f6fdadcfda76b2b571285fa52f5172cb23272ba1dca8566",
+    "downloadForm": "logowik",
+    "ops": {
+      "viewBox": "-0.05 -0.078 28.177 28.177"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "CAR-JAGUAR",
+    "id": "primary",
+    "label": "Leaper",
+    "sourceUrl": "https://iconape.com/wp-content/files/pb/159897/svg/159897.svg",
+    "sourcePage": "https://iconape.com/jaguar-logo-logo-icon-svg-png.html",
+    "sourceSha256": "1c0c217026d5c9b0612556ea94f48594f4ea93a06b84cba49d94ed638ab12abc",
+    "ops": {
+      "viewBox": "-6.252 -1.057 379.302 152.513"
+    }
+  },
+  {
+    "teamId": "CAR-JAGUAR",
+    "id": "striped-leaper",
+    "label": "2024 striped leaper",
+    "sourceUrl": "https://logowik.com/jaguar-2025-logo-vector-74758.html",
+    "sourcePage": "https://logowik.com/jaguar-2025-logo-vector-74758.html",
+    "sourceSha256": "b55613f771ff6d19fe3df87ddbc1e4aa7c2017f787ec62f2381a67eb3410277c",
+    "downloadForm": "logowik",
+    "ops": {
+      "keepNodes": [
+        "0",
+        "2/0-15"
+      ],
+      "viewBox": "38.306 12.506 764.088 309.388"
+    }
+  },
+  {
+    "teamId": "CAR-ASTON",
+    "id": "primary",
+    "label": "Wings with green banner",
+    "sourceUrl": "https://iconape.com/wp-content/files/wm/32840/svg/aston-martin-2.svg",
+    "sourcePage": "https://iconape.com/aston-martin-logo-icon-svg-png.html",
+    "sourceSha256": "8949b7221b0999c9ba4b4ae65afb3444ceae717bc65fe8039d77c44ff9b4cebb",
+    "ops": {
+      "removeNodes": [
+        "5",
+        "6"
+      ],
+      "viewBox": "-25.552 -25.583 1330.304 337.696"
+    }
+  },
+  {
+    "teamId": "CAR-BENTLEY",
+    "id": "primary",
+    "label": "Winged B",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Special:FilePath/Bentley_logo_2.svg",
+    "sourcePage": "https://en.wikipedia.org/wiki/File:Bentley_logo_2.svg",
+    "sourceSha256": "170bbab80b34e5e99e43ff8803fb597b3f45fedfd1baad751f435a7e154b1a54",
+    "ops": {
+      "viewBox": "-25.32 -25.32 1316.64 460.64"
+    }
+  },
+  {
+    "teamId": "CAR-BENTLEY",
+    "id": "enamel-badge",
+    "label": "Green enamel badge",
+    "sourceUrl": "https://logowik.com/bentley-motors-in-shape-logo-vector-54047.html",
+    "sourcePage": "https://logowik.com/bentley-motors-in-shape-logo-vector-54047.html",
+    "sourceSha256": "bada1072fb288e31e374f867517790d8f778a679f5d8c888538163fc5105ced1",
+    "downloadForm": "logowik",
+    "ops": {
+      "removeNodes": [
+        "0"
+      ],
+      "viewBox": "-0.907 53.503 194.571 85.751"
+    }
+  },
+  {
+    "teamId": "CAR-RR",
+    "id": "primary",
+    "label": "RR monogram badge",
+    "sourceUrl": "https://logowik.com/rolls-royce-vector-logo-2-6532.html",
+    "sourcePage": "https://logowik.com/rolls-royce-vector-logo-2-6532.html",
+    "sourceSha256": "ee36237add1443368b4119f83c6af4913b7f44ef8ce63d336a58c18a2a010831",
+    "downloadForm": "logowik",
+    "ops": {
+      "removeNodes": [
+        "1/9",
+        "1/10",
+        "1/11",
+        "1/12",
+        "1/13",
+        "1/14",
+        "1/15",
+        "1/16",
+        "1/17",
+        "1/18",
+        "1/19",
+        "1/20",
+        "1/21",
+        "1/22",
+        "1/23",
+        "1/24",
+        "1/25",
+        "1/26",
+        "1/27",
+        "1/28"
+      ],
+      "viewBox": "387.76 91.96 391.38 620.88"
+    }
+  },
+  {
+    "teamId": "CAR-RR",
+    "id": "monogram",
+    "label": "Interlocked monogram",
+    "sourceUrl": "https://api.iconify.design/thesvg-color/rolls-royce.svg",
+    "sourcePage": "https://icon-sets.iconify.design/thesvg-color/rolls-royce/",
+    "sourceSha256": "5ceb95080d739518f94d321f470d5b1bd1d876a8bf1b6f9150c29ded8e9d9810",
+    "ops": {
+      "viewBox": "2.42 -0.48 19.161 24.96"
+    }
+  },
+  {
+    "teamId": "CAR-MCLAREN",
+    "id": "primary",
+    "label": "Speedmark swoosh",
+    "sourceUrl": "https://logowik.com/mclaren-formula-1-team-logo-vector-54606.html",
+    "sourcePage": "https://logowik.com/mclaren-formula-1-team-logo-vector-54606.html",
+    "sourceSha256": "0d4e4064aa72b333fbd03570c476811e48b8feac3b2bc629b434c925bf780b02",
+    "downloadForm": "logowik",
+    "ops": {
+      "removeNodes": [
+        "0",
+        "2"
+      ],
+      "viewBox": "243.9 5.56 57.185 32.369"
+    }
+  },
+  {
+    "teamId": "CAR-MCLAREN",
+    "id": "chevrons",
+    "label": "1980s chevron arrows",
+    "sourceUrl": "https://iconape.com/wp-content/files/it/80898/svg/mclaren-international.svg",
+    "sourcePage": "https://iconape.com/mclaren-international-logo-icon-svg-png.html",
+    "sourceSha256": "e48110917f0fa13bbed691ca4c3340005d0dedb48005b9e9f0b8cdbaf5d4533d",
+    "ops": {
+      "removeNodes": [
+        "0/0",
+        "0/1",
+        "0/2",
+        "0/5"
+      ],
+      "viewBox": "72 48 115 59"
+    }
+  },
+  {
+    "teamId": "CAR-MINI",
+    "id": "primary",
+    "label": "Wings and ring",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Special:FilePath/MINI_logo.svg",
+    "sourcePage": "https://en.wikipedia.org/wiki/File:MINI_logo.svg",
+    "sourceSha256": "84e781326fba9c98bdaada156869cfb193da1e1a4fdba7f4fd05c27bb87709a0",
+    "ops": {
+      "removeNodes": [
+        "2"
+      ],
+      "viewBox": "-10 -10 520 239.248"
+    }
+  },
+  {
+    "teamId": "CAR-MINI",
+    "id": "winged-roundel",
+    "label": "Winged black roundel",
+    "sourceUrl": "https://brandeps.com/logo-download/m/mini-logo-vector-01.svg",
+    "sourcePage": "https://brandeps.com/logo/M/Mini-01",
+    "sourceSha256": "9716474585bee439232ad33c9dacae9986259177aea79058b720b17b18b38cb4",
+    "ops": {
+      "removeNodes": [
+        "1/5"
+      ],
+      "viewBox": "-10.24 138.15 532.47 235.71"
+    }
   }
 ]

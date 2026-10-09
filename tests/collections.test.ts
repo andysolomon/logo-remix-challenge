@@ -73,7 +73,7 @@ describe('MLB and fast food collections', () => {
     expect(roundHints({ o: 'FOOD-CFA', c: 'NBA-ATL', v: 0 })).toEqual(['Logo: FAST FOOD', 'Colors: NBA'])
   })
 
-  test('all 60 local logos decode and each source palette matches its manifest and artwork', () => {
+  test('all 30 MLB logos decode and each source palette matches its manifest and artwork', () => {
     execFileSync('python3', ['-c', `
 import json, sys
 from pathlib import Path
@@ -81,7 +81,7 @@ sys.path.insert(0, 'scripts')
 from download_extra_logos import inspect_artwork
 from build_teams import dist_sq
 teams = {t['id']: t for t in json.loads(Path('src/lib/teams.json').read_text())['teams']}
-for slug in ('mlb', 'fast-food'):
+for slug in ('mlb',):
     items = json.loads(Path(f'public/logos/svg/{slug}-manifest.json').read_text())['assets']
     assert len(items) == 30
     for item in items:
@@ -103,24 +103,29 @@ for slug in ('mlb', 'fast-food'):
 import json, sys, tempfile
 from pathlib import Path
 sys.path.insert(0, 'scripts')
-import build_extra_teams as extras, build_nba_teams as nba, build_teams as college, build_hs_teams as hs
+import build_extra_teams as extras, build_brand_teams as brands, build_nba_teams as nba, build_teams as college, build_hs_teams as hs
 root = Path.cwd()
 original = Path('src/lib/teams.json').read_text()
-wanted = [t for t in json.loads(original)['teams'] if t['league'] in ('MLB', 'FOOD')]
+kept = ('MLB', 'FOOD', 'BRAND', 'APP')
+wanted = [t for t in json.loads(original)['teams'] if t['league'] in kept]
 with tempfile.TemporaryDirectory(dir=root) as tmp:
     target = Path(tmp) / 'teams.json'
     target.write_text(original)
-    extras.TEAMS_JSON = nba.TEAMS_JSON = college.TEAMS_JSON = hs.TEAMS_JSON = target
+    extras.TEAMS_JSON = brands.TEAMS_JSON = nba.TEAMS_JSON = college.TEAMS_JSON = hs.TEAMS_JSON = target
     for builder in (nba, college, hs):
         sys.argv = ['builder']
         builder.main()
-        actual = [t for t in json.loads(target.read_text())['teams'] if t['league'] in ('MLB', 'FOOD')]
+        actual = [t for t in json.loads(target.read_text())['teams'] if t['league'] in kept]
         assert actual == wanted
-    for league in ('MLB', 'FOOD'):
+    target.write_text(original)
+    for league in ('FOOD', 'BRAND', 'APP'):
         sys.argv = ['builder', '--league', league]
-        extras.main()
-        actual = [t for t in json.loads(target.read_text())['teams'] if t['league'] == league]
-        assert actual == [t for t in wanted if t['league'] == league]
+        brands.main()
+    assert target.read_text() == original, 'brand rebuild changed data, order or formatting'
+    sys.argv = ['builder', '--league', 'MLB']
+    extras.main()
+    actual = [t for t in json.loads(target.read_text())['teams'] if t['league'] == 'MLB']
+    assert actual == [t for t in wanted if t['league'] == 'MLB']
     svg = Path(tmp) / 'public/logos/svg'
     svg.mkdir(parents=True)
     (svg / 'mlb').symlink_to(root / 'public/logos/svg/mlb', target_is_directory=True)

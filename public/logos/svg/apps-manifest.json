@@ -1,0 +1,1641 @@
+{
+  "assets": [
+    {
+      "id": "APP-AB",
+      "league": "APP",
+      "conference": "Games",
+      "region": "Angry Birds",
+      "name": "",
+      "abbr": "AB",
+      "aliases": [
+        "Angry Bird"
+      ],
+      "palette": [
+        "#D7002D",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Red bird",
+          "sourceUrl": "https://iconape.com/wp-content/files/hm/154225/svg/angry-birdsredd-seeklogo.com.svg",
+          "sourcePage": "https://iconape.com/angry-birds-redd-logo-logo-icon-svg-png.html",
+          "sourceSha256": "23a8567d5c75f28deeb1e857198080b82cdfbc464cc815b67a2469e6a9b2334e",
+          "ops": {
+            "removeNodes": [
+              "0"
+            ],
+            "viewBox": "-2.182 -1.574 110.167 105.192"
+          },
+          "path": "/logos/svg/apps/ab.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#D7002D",
+            "#E2C4A8",
+            "#AC0825",
+            "#FFFFFF",
+            "#F79E1F",
+            "#FDBB1F"
+          ],
+          "sourcePalette": [
+            "#D7002D",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "8f75574864b5c57d1ffe004500d6580ef5694c587d323a0deb7ddbf5b4398fbe"
+        },
+        {
+          "id": "pig",
+          "label": "Green pig",
+          "sourceUrl": "https://logowik.com/angry-birds-characters-vector-logo-4929.html",
+          "sourcePage": "https://logowik.com/angry-birds-characters-vector-logo-4929.html",
+          "sourceSha256": "176085458a8cf0226666cc4a68a5a89af10af4f522c295b8d5ff081f2079d3ef",
+          "downloadForm": "logowik",
+          "ops": {
+            "removeNodes": [
+              "1",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9"
+            ],
+            "viewBox": "63.435 229.822 104.106 106.487"
+          },
+          "path": "/logos/svg/apps/alternates/ab-pig.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#462817",
+            "#80B93B",
+            "#2B1F1A",
+            "#21A138",
+            "#C21718",
+            "#223B21",
+            "#AAC712",
+            "#149539"
+          ],
+          "sourcePalette": [
+            "#C21718",
+            "#285827",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "35bb2d22e83abb581d0ed83261c253276d234a8f6c1b2b8def1eda043cb63206"
+        }
+      ]
+    },
+    {
+      "id": "APP-AMONG",
+      "league": "APP",
+      "conference": "Games",
+      "region": "Among Us",
+      "name": "",
+      "abbr": "AMONG",
+      "aliases": [
+        "Among Us!",
+        "Amogus"
+      ],
+      "palette": [
+        "#C51111",
+        "#FDD835",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Crewmate on yellow tile",
+          "sourceUrl": "https://raw.githubusercontent.com/chouhan-rahul/icons_plus/v5.0.0/assets/images/logos/video-games/among-us.svg",
+          "sourcePage": "https://github.com/chouhan-rahul/icons_plus/blob/v5.0.0/assets/images/logos/video-games/among-us.svg",
+          "sourceSha256": "e16077dd06c4b197d6b09e1ca433e0e0aae09e581dda38d4c6261700bc6f8eb6",
+          "ops": {
+            "viewBox": "5.28 5.28 37.44 37.44"
+          },
+          "path": "/logos/svg/apps/among.svg",
+          "format": "svg",
+          "colors": [
+            "#FDD835",
+            "#E53935",
+            "#B71C1C",
+            "#212121",
+            "#01579B",
+            "#81D4FA",
+            "#E1F5FE"
+          ],
+          "sourcePalette": [
+            "#B71C1C",
+            "#FDD835",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "56ba88aeca5851fad1b114ded4f068eee6a1191162aea65cfaadf97a57efd837"
+        },
+        {
+          "id": "crewmate",
+          "label": "Full-body crewmate",
+          "sourceUrl": "https://raw.githubusercontent.com/zaz/website/d4ba8e9324fdadf34855a78016b080a80ed48e90/research/talk/COF/BeRGeR/img/Among%20Us%20crewmate.svg",
+          "sourcePage": "https://github.com/zaz/website/blob/d4ba8e9324fdadf34855a78016b080a80ed48e90/research/talk/COF/BeRGeR/img/Among%20Us%20crewmate.svg",
+          "sourceSha256": "edeb89f2840682e9031afb1c11b5c16a83f2db9697b733660773e9a95afd903d",
+          "ops": {
+            "viewBox": "-5.439 -5.439 210.879 282.803"
+          },
+          "path": "/logos/svg/apps/alternates/among-crewmate.svg",
+          "format": "svg",
+          "colors": [
+            "#C9E7EC",
+            "#71969C",
+            "#D70318",
+            "#89051B",
+            "#030101"
+          ],
+          "sourcePalette": [
+            "#B0041A",
+            "#9DBEC4",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "b70ba2cfda889ac9b29c8b259896791902a5544bedd7447649734a5f8e7d9928"
+        }
+      ]
+    },
+    {
+      "id": "APP-CALENDAR",
+      "league": "APP",
+      "conference": "Built-in",
+      "region": "Calendar",
+      "name": "",
+      "abbr": "CALENDAR",
+      "aliases": [
+        "Apple Calendar",
+        "iCal",
+        "iPhone Calendar"
+      ],
+      "palette": [
+        "#FE3C3B",
+        "#262626",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Date tile",
+          "sourceUrl": "https://logowik.com/ios-17-app-icons-set-icon-59931.html",
+          "sourcePage": "https://logowik.com/ios-17-app-icons-set-icon-59931.html",
+          "sourceSha256": "409ebe6d39fa43d32cac5ddf5dca708e45c0ff329eb5865ab6616bd3bbf9fd8b",
+          "downloadForm": "logowik",
+          "ops": {
+            "keepNodes": [
+              "0",
+              "96"
+            ],
+            "viewBox": "109.245 230.899 54.286 54.286"
+          },
+          "path": "/logos/svg/apps/calendar.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#FFFFFF",
+            "#FE3C3B",
+            "#262626"
+          ],
+          "sourcePalette": [
+            "#FE3C3B",
+            "#131313",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "a71dd2e4b7e7148d4b0c09fa5025397dd2b8dc21ea3dcb98c600cdecf26723ee"
+        }
+      ]
+    },
+    {
+      "id": "APP-CASH",
+      "league": "APP",
+      "conference": "Everyday",
+      "region": "Cash App",
+      "name": "",
+      "abbr": "CASH",
+      "aliases": [
+        "CashApp",
+        "Square Cash"
+      ],
+      "palette": [
+        "#00D632",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Dollar sign tile",
+          "sourceUrl": "https://api.iconify.design/thesvg-color/cash-app.svg",
+          "sourcePage": "https://icon-sets.iconify.design/thesvg-color/cash-app/",
+          "sourceSha256": "4ad57e6773d7546a0dce6883fe11ecac22b96a0f6a17d844cc5ab4d9e3d9b540",
+          "ops": {
+            "viewBox": "-0.48 -0.48 24.96 24.96"
+          },
+          "path": "/logos/svg/apps/cash.svg",
+          "format": "svg",
+          "colors": [
+            "#00D632"
+          ],
+          "sourcePalette": [
+            "#00D632",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "40fad6ae8ea7466fe4b53361345e157ba7b02271886481078b92fd80af064a95"
+        }
+      ]
+    },
+    {
+      "id": "APP-CLOCK",
+      "league": "APP",
+      "conference": "Built-in",
+      "region": "Clock",
+      "name": "",
+      "abbr": "CLOCK",
+      "aliases": [
+        "Apple Clock",
+        "iPhone Clock"
+      ],
+      "palette": [
+        "#EF8732",
+        "#202020",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Clock face tile",
+          "sourceUrl": "https://logowik.com/ios-17-app-icons-set-icon-59931.html",
+          "sourcePage": "https://logowik.com/ios-17-app-icons-set-icon-59931.html",
+          "sourceSha256": "409ebe6d39fa43d32cac5ddf5dca708e45c0ff329eb5865ab6616bd3bbf9fd8b",
+          "downloadForm": "logowik",
+          "ops": {
+            "keepNodes": [
+              "0",
+              "67-86"
+            ],
+            "viewBox": "594.179 144.184 54.286 54.286"
+          },
+          "path": "/logos/svg/apps/clock.svg",
+          "format": "svg",
+          "colors": [
+            "#202020",
+            "#FFFFFF",
+            "#262626",
+            "#EF8732"
+          ],
+          "sourcePalette": [
+            "#EF8732",
+            "#232323",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "c7c2922ef0195e5e1cd09a57a624dd2975c85fb07e66c9e6c98280f6374fb81a"
+        }
+      ]
+    },
+    {
+      "id": "APP-DISCORD",
+      "league": "APP",
+      "conference": "Social",
+      "region": "Discord",
+      "name": "",
+      "abbr": "DISCORD",
+      "aliases": [
+        "Discord App"
+      ],
+      "palette": [
+        "#5865F2",
+        "#23272A",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Controller face tile",
+          "sourceUrl": "https://api.iconify.design/skill-icons/discord.svg",
+          "sourcePage": "https://icon-sets.iconify.design/skill-icons/discord/",
+          "sourceSha256": "fd08b6cb62fc17402ac21c273ec858d9f8ceaa317dba7d1cdace23d25dea12e1",
+          "ops": {
+            "viewBox": "-5.12 -5.12 266.24 266.24"
+          },
+          "path": "/logos/svg/apps/discord.svg",
+          "format": "svg",
+          "colors": [
+            "#5865F2",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#5865F2",
+            "#23272A",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "fd09a96b327c70914a42a6ae4b0fbd36d25b960e9005c6d1f8567ec2e9f52f0b"
+        },
+        {
+          "id": "old-clyde",
+          "label": "Speech-bubble Clyde (2015)",
+          "sourceUrl": "https://api.iconify.design/cib/discord.svg?color=%237289DA",
+          "sourcePage": "https://icon-sets.iconify.design/cib/discord/",
+          "sourceSha256": "07bd8ac77676f8f8dd2350b762b62024525853af6f8eb7c6b000b963539ade1a",
+          "ops": {
+            "viewBox": "0.912 -0.64 30.176 33.28"
+          },
+          "path": "/logos/svg/apps/alternates/discord-old-clyde.svg",
+          "format": "svg",
+          "colors": [
+            "#7289DA"
+          ],
+          "sourcePalette": [
+            "#7289DA",
+            "#23272A",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "3126ed695f24e0dbccf8ccf9f781fb63d264e77c8a20596dd58e42b8bbad3db5"
+        }
+      ]
+    },
+    {
+      "id": "APP-DUO",
+      "league": "APP",
+      "conference": "Everyday",
+      "region": "Duolingo",
+      "name": "",
+      "abbr": "DUO",
+      "aliases": [
+        "Duo",
+        "Duo Lingo"
+      ],
+      "palette": [
+        "#58CC02",
+        "#89E219",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Owl face tile",
+          "sourceUrl": "https://api.iconify.design/thesvg-color/duolingo-2024.svg",
+          "sourcePage": "https://icon-sets.iconify.design/thesvg-color/duolingo-2024/",
+          "sourceSha256": "e1932c2d6eaa579bca75d76f67d0bd4b8ed917aff10d121f89a177e32b1d95c9",
+          "ops": {
+            "viewBox": "-5 -5 260 260"
+          },
+          "path": "/logos/svg/apps/duo.svg",
+          "format": "svg",
+          "colors": [
+            "#50C800",
+            "#8EE000",
+            "#FFFFFF",
+            "#4B4B4B",
+            "#F48000",
+            "#FFC200",
+            "#FFE747"
+          ],
+          "sourcePalette": [
+            "#4E8A26",
+            "#8EE000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "d1ccfb37dc662de7e6d2aba65e16e1df93a86ad85fa9a06dd295eafd727a0c82"
+        }
+      ]
+    },
+    {
+      "id": "APP-FACETIME",
+      "league": "APP",
+      "conference": "Built-in",
+      "region": "FaceTime",
+      "name": "",
+      "abbr": "FACETIME",
+      "aliases": [
+        "Face Time"
+      ],
+      "palette": [
+        "#1C1C1E",
+        "#31D950",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Video camera tile",
+          "sourceUrl": "https://logowik.com/ios-17-app-icons-set-icon-59931.html",
+          "sourcePage": "https://logowik.com/ios-17-app-icons-set-icon-59931.html",
+          "sourceSha256": "409ebe6d39fa43d32cac5ddf5dca708e45c0ff329eb5865ab6616bd3bbf9fd8b",
+          "downloadForm": "logowik",
+          "ops": {
+            "keepNodes": [
+              "0",
+              "108-111"
+            ],
+            "viewBox": "386.222 230.891 54.723 54.303"
+          },
+          "path": "/logos/svg/apps/facetime.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#5CF677",
+            "#06BC29"
+          ],
+          "sourcePalette": [
+            "#5CF677",
+            "#06BC29",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "3ae662a0a3651f031d86668d8ca43db5aef3a343843f0b6f522bbe2e550fad2a"
+        }
+      ]
+    },
+    {
+      "id": "APP-GMAPS",
+      "league": "APP",
+      "conference": "Everyday",
+      "region": "Google Maps",
+      "name": "",
+      "abbr": "GMAPS",
+      "aliases": [
+        "GMaps",
+        "Google Map"
+      ],
+      "palette": [
+        "#EA4335",
+        "#34A853",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Multicolor pin",
+          "sourceUrl": "https://api.iconify.design/logos/google-maps.svg",
+          "sourcePage": "https://icon-sets.iconify.design/logos/google-maps/",
+          "sourceSha256": "3408e6f202b1dcd8baccbf84c5e4f71e349a83b3522d202972531bf084ad02ae",
+          "ops": {
+            "viewBox": "-7.34 -7.34 270.663 381.68"
+          },
+          "path": "/logos/svg/apps/gmaps.svg",
+          "format": "svg",
+          "colors": [
+            "#34A853",
+            "#FBBC04",
+            "#4285F4",
+            "#1A73E8",
+            "#EA4335"
+          ],
+          "sourcePalette": [
+            "#F2801C",
+            "#34A853",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "ea96bd0ea661033cd90b9a0c9f9cbf97ea5d9360950d3285338e60f731203f60"
+        },
+        {
+          "id": "map-fold",
+          "label": "Folded map tile (2015)",
+          "sourceUrl": "https://www.vectorlogo.zone/logos/google_maps/google_maps-tile.svg",
+          "sourcePage": "https://www.vectorlogo.zone/logos/google_maps/index.html",
+          "sourceSha256": "7ef9444ec71deb5301b42ce3f6ffa05cc6954e24ff372c40128438791bf9d57d",
+          "ops": {
+            "viewBox": "-10.24 -10.24 532.48 532.48"
+          },
+          "path": "/logos/svg/apps/alternates/gmaps-map-fold.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#35A85B",
+            "#FADB2A",
+            "#FFFFFF",
+            "#5881CA",
+            "#C1C0BE",
+            "#F2F2F2",
+            "#DE3738",
+            "#7D2426"
+          ],
+          "sourcePalette": [
+            "#DE3738",
+            "#469492",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "c91363358dc25fea67c9b6b435ed96713ad279fdcbabd254640f5bdb0baaf58f"
+        }
+      ]
+    },
+    {
+      "id": "APP-IG",
+      "league": "APP",
+      "conference": "Social",
+      "region": "Instagram",
+      "name": "",
+      "abbr": "IG",
+      "aliases": [
+        "Insta",
+        "IG"
+      ],
+      "palette": [
+        "#C837AB",
+        "#FF543E",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Gradient camera tile",
+          "sourceUrl": "https://api.iconify.design/skill-icons/instagram.svg",
+          "sourcePage": "https://icon-sets.iconify.design/skill-icons/instagram/",
+          "sourceSha256": "2343a751a2255f56145f8bdc2b702d481c482caee3e20e4694dfb9c059810180",
+          "ops": {
+            "viewBox": "-5.12 -5.12 266.24 266.24"
+          },
+          "path": "/logos/svg/apps/ig.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#FFDD55",
+            "#FF543E",
+            "#C837AB",
+            "#3771C8",
+            "#6600FF"
+          ],
+          "sourcePalette": [
+            "#7738D1",
+            "#FF984A",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "7df3397be395d21af20c9273e85b8f38414e83413e6246495d075fc3fe876ee9"
+        },
+        {
+          "id": "retro-camera",
+          "label": "Retro camera tile (2011)",
+          "sourceUrl": "https://raw.githubusercontent.com/chouhan-rahul/icons_plus/v5.0.0/assets/images/logos/social-media/instagram-old.svg",
+          "sourcePage": "https://github.com/chouhan-rahul/icons_plus/blob/v5.0.0/assets/images/logos/social-media/instagram-old.svg",
+          "sourceSha256": "da9c1d66447572ee2537f2e37effbf456452d94da6a4b4ebaa5efe4519ca2f03",
+          "ops": {
+            "viewBox": "5.28 5.28 37.44 37.44"
+          },
+          "path": "/logos/svg/apps/alternates/ig-retro-camera.svg",
+          "format": "svg",
+          "colors": [
+            "#FFCC80",
+            "#795548",
+            "#37474F",
+            "#FFF3E0",
+            "#546E7A",
+            "#BBDEFB",
+            "#F44336",
+            "#FFEB3B",
+            "#8BC34A",
+            "#2196F3",
+            "#3E2723"
+          ],
+          "sourcePalette": [
+            "#D8D357",
+            "#B64C3F",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "1f572a073ad3602dc6f928c5bbdf9deb4ea2adc16cb4fe49298cbf6bc816039d"
+        }
+      ]
+    },
+    {
+      "id": "APP-MAPS",
+      "league": "APP",
+      "conference": "Built-in",
+      "region": "Maps",
+      "name": "",
+      "abbr": "MAPS",
+      "aliases": [
+        "Apple Maps"
+      ],
+      "palette": [
+        "#76C63B",
+        "#3394E3",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "280 shield route tile",
+          "sourceUrl": "https://logowik.com/apple-maps-vector-logo-12965.html",
+          "sourcePage": "https://logowik.com/apple-maps-vector-logo-12965.html",
+          "sourceSha256": "130d104b2657a4a7f8bb9a1eb7ec9a5c084ce5eefeeb20fb9b6bf97db2a08b61",
+          "downloadForm": "logowik",
+          "ops": {
+            "viewBox": "71.732 42.621 195.037 195.206"
+          },
+          "path": "/logos/svg/apps/maps.svg",
+          "format": "svg",
+          "colors": [
+            "#E4E1DA",
+            "#FFCCD5",
+            "#9DDF7B",
+            "#FCAB1A",
+            "#FFD634",
+            "#000000",
+            "#FFFFFF",
+            "#90C36C",
+            "#F4EFEB",
+            "#3394E3",
+            "#0078D9",
+            "#DE1C25",
+            "#0179DA"
+          ],
+          "sourcePalette": [
+            "#CAC94D",
+            "#1182DD",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "27c87b8df0dcbb10c4038f2565390c8583fdc931eddd833da4ecf9293075ebc0"
+        },
+        {
+          "id": "watch-round",
+          "label": "Round watch icon",
+          "sourceUrl": "https://logowik.com/apple-maps-watchos-logo-vector-svg-pdf-ai-eps-cdr-free-download-12962.html",
+          "sourcePage": "https://logowik.com/apple-maps-watchos-logo-vector-svg-pdf-ai-eps-cdr-free-download-12962.html",
+          "sourceSha256": "95f93a0fc0c49005ec53a3d55b9c50cddad759ce66c1ef49c910b14484722461",
+          "downloadForm": "logowik",
+          "ops": {
+            "viewBox": "160.552 29.463 532.896 532.896"
+          },
+          "path": "/logos/svg/apps/alternates/maps-watch-round.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#BEB99E",
+            "#E4DDC9",
+            "#88AD58",
+            "#76C63B",
+            "#CAADA2",
+            "#FBC6D1",
+            "#007AFF"
+          ],
+          "sourcePalette": [
+            "#94B966",
+            "#007AFF",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "14316a7eff604620e1ffd1bc0ee10b88d33851d8d5354f9dde46b08e54763da0"
+        }
+      ]
+    },
+    {
+      "id": "APP-MC",
+      "league": "APP",
+      "conference": "Games",
+      "region": "Minecraft",
+      "name": "",
+      "abbr": "MC",
+      "aliases": [
+        "Minecraft PE",
+        "Minecraft Pocket Edition",
+        "Minecraft Bedrock"
+      ],
+      "palette": [
+        "#59AA43",
+        "#6D4E3B",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Grass block",
+          "sourceUrl": "https://api.iconify.design/selfhst/minecraft.svg",
+          "sourcePage": "https://icon-sets.iconify.design/selfhst/minecraft/",
+          "sourceSha256": "dce3fbecbaac2941114f6dbf9edd9c6903b7a843c22da96a1a566284607ccc34",
+          "ops": {
+            "viewBox": "28.16 -10.24 455.68 532.48"
+          },
+          "path": "/logos/svg/apps/mc.svg",
+          "format": "svg",
+          "colors": [
+            "#6D4E3B",
+            "#468A36",
+            "#855D48",
+            "#9D9697",
+            "#9C6F53",
+            "#624330",
+            "#3C271C",
+            "#563928",
+            "#492F23",
+            "#56504D",
+            "#AF805E",
+            "#B1805E",
+            "#B17F5E",
+            "#9C6F51",
+            "#6C4C3C",
+            "#71C854",
+            "#305C20",
+            "#3B6C2A",
+            "#55514D",
+            "#59AA43",
+            "#6D4E39",
+            "#3D6B2A",
+            "#3D6C2A",
+            "#24491B",
+            "#2F5D20",
+            "#80CB5B",
+            "#91D46E",
+            "#80CB59",
+            "#8FD368",
+            "#85DD64",
+            "#7FCB59",
+            "#7FCB58",
+            "#59AA42",
+            "#7FCA5A",
+            "#80CB5A",
+            "#71C253",
+            "#89D96A",
+            "#72C251",
+            "#8FD365",
+            "#8DD368",
+            "#81CA5B",
+            "#72C253",
+            "#7ECC59",
+            "#4B7635",
+            "#59A945",
+            "#487833",
+            "#9EDB79"
+          ],
+          "sourcePalette": [
+            "#59AA43",
+            "#6D4E3B",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "c6fc9de174e0877c2ced231ff33e0d0d66f4eb2a3a53b3032e99bd9b99d688b4"
+        },
+        {
+          "id": "creeper",
+          "label": "Creeper face tile",
+          "sourceUrl": "https://api.iconify.design/selfhst/minecraft-creeper.svg",
+          "sourcePage": "https://icon-sets.iconify.design/selfhst/minecraft-creeper/",
+          "sourceSha256": "568cb12954ce0ac296463389804b4a6c16e780f4ba4dda688fa9b4edb31a7200",
+          "ops": {
+            "viewBox": "-10.24 -10.24 532.48 532.48"
+          },
+          "path": "/logos/svg/apps/alternates/mc-creeper.svg",
+          "format": "svg",
+          "colors": [
+            "#1DB53C",
+            "#073E21",
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#1DB53C",
+            "#041F10",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "dea4bddab622a472b87e3dbdff3f65c1a652c5c8b164529c9c72f2fca092f5b3"
+        }
+      ]
+    },
+    {
+      "id": "APP-MESSAGES",
+      "league": "APP",
+      "conference": "Built-in",
+      "region": "Messages",
+      "name": "",
+      "abbr": "MESSAGES",
+      "aliases": [
+        "iMessage",
+        "iMessages",
+        "Apple Messages"
+      ],
+      "palette": [
+        "#34DA50",
+        "#1C1C1E",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Speech bubble tile",
+          "sourceUrl": "https://api.iconify.design/thesvg-color/imessage.svg",
+          "sourcePage": "https://icon-sets.iconify.design/thesvg-color/imessage/",
+          "sourceSha256": "8830dda0a69436f81bb28997429c0638a414691e38d3b9be5ebb4e416bef1e7b",
+          "ops": {
+            "viewBox": "-0.48 -0.48 24.96 24.96"
+          },
+          "path": "/logos/svg/apps/messages.svg",
+          "format": "svg",
+          "colors": [
+            "#34DA50"
+          ],
+          "sourcePalette": [
+            "#34DA50",
+            "#1C1C1E",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "eed8e35d92fd57e2586e80e799bde46664978cfb945ea080f9b1486688958527"
+        }
+      ]
+    },
+    {
+      "id": "APP-NETFLIX",
+      "league": "APP",
+      "conference": "Music & Video",
+      "region": "Netflix",
+      "name": "",
+      "abbr": "NETFLIX",
+      "aliases": [
+        "Netflix App"
+      ],
+      "palette": [
+        "#E50914",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Ribbon N tile",
+          "sourceUrl": "https://api.iconify.design/logos/netflix-icon.svg",
+          "sourcePage": "https://icon-sets.iconify.design/logos/netflix-icon/",
+          "sourceSha256": "42acbe90a682c278459d9e0186a3b35943a17fe46765b85ae4b5ff46d1e08e3a",
+          "ops": {
+            "viewBox": "-5.12 -5.12 266.24 266.24"
+          },
+          "path": "/logos/svg/apps/netflix.svg",
+          "format": "svg",
+          "colors": [
+            "#B1060F",
+            "#000000",
+            "#E50914"
+          ],
+          "sourcePalette": [
+            "#CB0812",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "53c7be602655340c38ea06c2fe28cdfdaea797a7f6d08dc7b2c323537d0cfc29"
+        }
+      ]
+    },
+    {
+      "id": "APP-PIN",
+      "league": "APP",
+      "conference": "Social",
+      "region": "Pinterest",
+      "name": "",
+      "abbr": "PIN",
+      "aliases": [
+        "Pin",
+        "Pins"
+      ],
+      "palette": [
+        "#E60023",
+        "#111111",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Script P badge",
+          "sourceUrl": "https://api.iconify.design/logos/pinterest.svg",
+          "sourcePage": "https://icon-sets.iconify.design/logos/pinterest/",
+          "sourceSha256": "d234fb80a47a65c66cb4c39b89fdc2e8312261b953cd8d6700fbf05a3b92f352",
+          "ops": {
+            "viewBox": "-5.12 -5.12 266.24 266.24"
+          },
+          "path": "/logos/svg/apps/pin.svg",
+          "format": "svg",
+          "colors": [
+            "#CB1F27"
+          ],
+          "sourcePalette": [
+            "#CB1F27",
+            "#111111",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "06600334b60c636d6619e3c068df8daadcc9b5d96080e886e2d1cb520ec0f4b3"
+        }
+      ]
+    },
+    {
+      "id": "APP-POGO",
+      "league": "APP",
+      "conference": "Games",
+      "region": "Pokémon GO",
+      "name": "",
+      "abbr": "POGO",
+      "aliases": [
+        "Pokemon GO",
+        "Pokemon Go",
+        "Pokémon Go",
+        "Pokemon",
+        "Pokémon"
+      ],
+      "palette": [
+        "#FF1C1C",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Red-and-white ball",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Pok%C3%A9_Ball_icon.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Pok%C3%A9_Ball_icon.svg",
+          "sourceSha256": "6f1121045b551300d6f9a4651d37b9232edb30aa8465e8a0d0951f43361022cf",
+          "ops": {
+            "viewBox": "31.432 30.837 532.436 532.139"
+          },
+          "path": "/logos/svg/apps/pogo.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#DFDFDF",
+            "#FF1C1C",
+            "#DF1818",
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#EF1A1A",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "95eb6c00468fa1f3803a0cf8fd9538bd806a7bace6fa2e3ec91175775b387173"
+        }
+      ]
+    },
+    {
+      "id": "APP-ROBLOX",
+      "league": "APP",
+      "conference": "Games",
+      "region": "Roblox",
+      "name": "",
+      "abbr": "ROBLOX",
+      "aliases": [],
+      "palette": [
+        "#335FFF",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Tilted square tile",
+          "sourceUrl": "https://api.iconify.design/selfhst/roblox.svg",
+          "sourcePage": "https://icon-sets.iconify.design/selfhst/roblox/",
+          "sourceSha256": "6855c432cee7b8119cc3781c4580f024755674c5887090c79adf6d3e54deed29",
+          "ops": {
+            "viewBox": "-10.24 -10.24 532.48 532.48"
+          },
+          "path": "/logos/svg/apps/roblox.svg",
+          "format": "svg",
+          "colors": [
+            "#335FFF",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#335FFF",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "f5294ea6a39204a5cc9de6f4e0d09da08811fa36fb60c120f5a784011cfeab13"
+        }
+      ]
+    },
+    {
+      "id": "APP-SAFARI",
+      "league": "APP",
+      "conference": "Built-in",
+      "region": "Safari",
+      "name": "",
+      "abbr": "SAFARI",
+      "aliases": [
+        "Apple Safari"
+      ],
+      "palette": [
+        "#FE3C30",
+        "#1D9CF5",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Compass on white tile",
+          "sourceUrl": "https://logowik.com/ios-17-app-icons-set-icon-59931.html",
+          "sourcePage": "https://logowik.com/ios-17-app-icons-set-icon-59931.html",
+          "sourceSha256": "409ebe6d39fa43d32cac5ddf5dca708e45c0ff329eb5865ab6616bd3bbf9fd8b",
+          "downloadForm": "logowik",
+          "ops": {
+            "keepNodes": [
+              "0",
+              "115-192"
+            ],
+            "viewBox": "524.714 230.891 54.723 54.303"
+          },
+          "path": "/logos/svg/apps/safari.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#FE3C30",
+            "#1BC9FA",
+            "#1F70F0"
+          ],
+          "sourcePalette": [
+            "#FE3C30",
+            "#1D9CF5",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "99d46654b4d1dd477c68821098d80097eec3570889bb6e4996a86e439bd5ee22"
+        }
+      ]
+    },
+    {
+      "id": "APP-SETTINGS",
+      "league": "APP",
+      "conference": "Built-in",
+      "region": "Settings",
+      "name": "",
+      "abbr": "SETTINGS",
+      "aliases": [
+        "iPhone Settings",
+        "Apple Settings"
+      ],
+      "palette": [
+        "#2E2E2F",
+        "#A6A6AA",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Gear tile",
+          "sourceUrl": "https://logowik.com/ios-17-app-icons-set-icon-59931.html",
+          "sourcePage": "https://logowik.com/ios-17-app-icons-set-icon-59931.html",
+          "sourceSha256": "409ebe6d39fa43d32cac5ddf5dca708e45c0ff329eb5865ab6616bd3bbf9fd8b",
+          "downloadForm": "logowik",
+          "ops": {
+            "keepNodes": [
+              "0",
+              "23-28"
+            ],
+            "viewBox": "594.171 57.46 54.303 54.723"
+          },
+          "path": "/logos/svg/apps/settings.svg",
+          "format": "svg",
+          "colors": [
+            "#2E2E2F",
+            "#EAEAEA",
+            "#8F8F93",
+            "#B4B4B8",
+            "#D4D4D8",
+            "#9D9DA1"
+          ],
+          "sourcePalette": [
+            "#2E2E2F",
+            "#A0A0A4",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "369323def956f4c262398818fb2c35a22bac823fa62bf91612c80f78c1b506fa"
+        }
+      ]
+    },
+    {
+      "id": "APP-SHAZAM",
+      "league": "APP",
+      "conference": "Music & Video",
+      "region": "Shazam",
+      "name": "",
+      "abbr": "SHAZAM",
+      "aliases": [],
+      "palette": [
+        "#0088FF",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Linked S circle",
+          "sourceUrl": "https://api.iconify.design/thesvg-color/shazam.svg",
+          "sourcePage": "https://icon-sets.iconify.design/thesvg-color/shazam/",
+          "sourceSha256": "f424cb05a23761de0dbda2420661504b4a307c4e2009e50b3f3b8ea53aad8961",
+          "ops": {
+            "viewBox": "-0.48 -0.48 24.96 24.96"
+          },
+          "path": "/logos/svg/apps/shazam.svg",
+          "format": "svg",
+          "colors": [
+            "#0088FF"
+          ],
+          "sourcePalette": [
+            "#0088FF",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "9271a9ac8a2c46d8f944a247a739bc890344d078c076806b8f9cbd9a711f5db4"
+        }
+      ]
+    },
+    {
+      "id": "APP-SNAP",
+      "league": "APP",
+      "conference": "Social",
+      "region": "Snapchat",
+      "name": "",
+      "abbr": "SNAP",
+      "aliases": [
+        "Snap",
+        "Snap Chat"
+      ],
+      "palette": [
+        "#FFFC00",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Ghost on yellow tile",
+          "sourceUrl": "https://api.iconify.design/selfhst/snapchat.svg",
+          "sourcePage": "https://icon-sets.iconify.design/selfhst/snapchat/",
+          "sourceSha256": "bcadc2991604b94ba6e4ac04c5534d870dff3ee27ff23df1d1362634ed4df98c",
+          "ops": {
+            "viewBox": "-10.24 -10.24 532.48 532.48"
+          },
+          "path": "/logos/svg/apps/snap.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFC00",
+            "#FFFFFF",
+            "#020202"
+          ],
+          "sourcePalette": [
+            "#FFFC00",
+            "#020202",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "1ea92652a3f13e68f80e4e389754af3fc934e44b60ae7cb2304ad7326813622f"
+        }
+      ]
+    },
+    {
+      "id": "APP-SPOTIFY",
+      "league": "APP",
+      "conference": "Music & Video",
+      "region": "Spotify",
+      "name": "",
+      "abbr": "SPOTIFY",
+      "aliases": [
+        "Spotify Music"
+      ],
+      "palette": [
+        "#1ED760",
+        "#191414",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Sound waves circle",
+          "sourceUrl": "https://api.iconify.design/logos/spotify-icon.svg",
+          "sourcePage": "https://icon-sets.iconify.design/logos/spotify-icon/",
+          "sourceSha256": "7cb9e13f47c3fdc5cd3e08f001b076df9a8eaf3d9042412810487e07161b3545",
+          "ops": {
+            "viewBox": "-5.12 -5.12 266.24 266.24"
+          },
+          "path": "/logos/svg/apps/spotify.svg",
+          "format": "svg",
+          "colors": [
+            "#1ED760"
+          ],
+          "sourcePalette": [
+            "#1ED760",
+            "#191414",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "5ad96b4913843fdbfeda892419c6a23bd93e401270e10a464f69788722e41a5d"
+        }
+      ]
+    },
+    {
+      "id": "APP-SURF",
+      "league": "APP",
+      "conference": "Games",
+      "region": "Subway Surfers",
+      "name": "",
+      "abbr": "SURF",
+      "aliases": [
+        "Subway Surfer",
+        "Subway Surf"
+      ],
+      "palette": [
+        "#D50000",
+        "#4FC3F7",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Graffiti runner tile",
+          "sourceUrl": "https://raw.githubusercontent.com/chouhan-rahul/icons_plus/v5.0.0/assets/images/logos/video-games/subway-surfers.svg",
+          "sourcePage": "https://github.com/chouhan-rahul/icons_plus/blob/v5.0.0/assets/images/logos/video-games/subway-surfers.svg",
+          "sourceSha256": "0944fc11c75bdd7992dde0f5fc967c27658c5cd43f6425dac30f3d92c9978e79",
+          "ops": {
+            "removeNodes": [
+              "29"
+            ],
+            "viewBox": "5.28 5.28 37.44 37.44"
+          },
+          "path": "/logos/svg/apps/surf.svg",
+          "format": "svg",
+          "colors": [
+            "#4FC3F7",
+            "#B3E5FC",
+            "#81D4FA",
+            "#FF7043",
+            "#E0E0E0",
+            "#212121",
+            "#D50000",
+            "#ED9C5C",
+            "#757575",
+            "#7B3201",
+            "#F4BB75",
+            "#FAFAFA",
+            "#EF6C00",
+            "#CFD8DC",
+            "#B0BEC5",
+            "#FADCC4"
+          ],
+          "sourcePalette": [
+            "#D04411",
+            "#80C7E7",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "7f5e7060f0e3cd4fb8613d2183a691551e865b71b7997b65589c649064877235"
+        }
+      ]
+    },
+    {
+      "id": "APP-TIKTOK",
+      "league": "APP",
+      "conference": "Social",
+      "region": "TikTok",
+      "name": "",
+      "abbr": "TIKTOK",
+      "aliases": [
+        "Tik Tok",
+        "Musically",
+        "Musical.ly"
+      ],
+      "palette": [
+        "#000000",
+        "#FE2C55",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Music note tile",
+          "sourceUrl": "https://raw.githubusercontent.com/chouhan-rahul/icons_plus/v5.0.0/assets/images/logos/social-media/tiktok.svg",
+          "sourcePage": "https://github.com/chouhan-rahul/icons_plus/blob/v5.0.0/assets/images/logos/social-media/tiktok.svg",
+          "sourceSha256": "3eab1171d25508f6efaa2c8c5258b2db7180c3f6e66113632c9acda40f32a208",
+          "ops": {
+            "viewBox": "5.28 5.28 37.44 37.44"
+          },
+          "path": "/logos/svg/apps/tiktok.svg",
+          "format": "svg",
+          "colors": [
+            "#212121",
+            "#EC407A",
+            "#FFFFFF",
+            "#81D4FA"
+          ],
+          "sourcePalette": [
+            "#212121",
+            "#EC407A",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "735a091cae66c515f4a10981823c96c366ba6e1680f21198c41b86588690c715"
+        }
+      ]
+    },
+    {
+      "id": "APP-TWITCH",
+      "league": "APP",
+      "conference": "Music & Video",
+      "region": "Twitch",
+      "name": "",
+      "abbr": "TWITCH",
+      "aliases": [
+        "Twitch TV",
+        "TwitchTV"
+      ],
+      "palette": [
+        "#9146FF",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Glitch speech bubble",
+          "sourceUrl": "https://api.iconify.design/thesvg-color/twitch.svg",
+          "sourcePage": "https://icon-sets.iconify.design/thesvg-color/twitch/",
+          "sourceSha256": "751c2ed29d0614262329a1d5d4baa8ed97b0b6d1f49eea1dea768f2333234860",
+          "ops": {
+            "viewBox": "-56 -56 2511.6 2912"
+          },
+          "path": "/logos/svg/apps/twitch.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#9146FF"
+          ],
+          "sourcePalette": [
+            "#9146FF",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "6577c871b20565b14645391f789272d2cfe19601ecd4a1956abfef4fdc984d99"
+        }
+      ]
+    },
+    {
+      "id": "APP-VENMO",
+      "league": "APP",
+      "conference": "Everyday",
+      "region": "Venmo",
+      "name": "",
+      "abbr": "VENMO",
+      "aliases": [],
+      "palette": [
+        "#008CFF",
+        "#1A1A1A",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "V tile",
+          "sourceUrl": "https://www.vectorlogo.zone/logos/venmo/venmo-icon.svg",
+          "sourcePage": "https://www.vectorlogo.zone/logos/venmo/index.html",
+          "sourceSha256": "cc9232da26a8c3336e506dfa71c0d370a4b793146c2c484bc01a1063b5018d51",
+          "ops": {
+            "viewBox": "-1.28 -1.28 66.56 66.56"
+          },
+          "path": "/logos/svg/apps/venmo.svg",
+          "format": "svg",
+          "colors": [
+            "#3396CD",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#3396CD",
+            "#1A1A1A",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "5e738b770b4f383b248e535b1c28c985dc685dae77d8dbb386d922ffcda1392d"
+        }
+      ]
+    },
+    {
+      "id": "APP-WA",
+      "league": "APP",
+      "conference": "Social",
+      "region": "WhatsApp",
+      "name": "",
+      "abbr": "WA",
+      "aliases": [
+        "Whats App",
+        "Whatsapp Messenger"
+      ],
+      "palette": [
+        "#25D366",
+        "#075E54",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Phone in speech bubble",
+          "sourceUrl": "https://api.iconify.design/logos/whatsapp-icon.svg",
+          "sourcePage": "https://icon-sets.iconify.design/logos/whatsapp-icon/",
+          "sourceSha256": "9579ec42ecebb6c6524f9d931b82cf4f0d0f38397048f33e64b4fa25113725a9",
+          "ops": {
+            "viewBox": "-5.145 -5.145 266.225 267.515"
+          },
+          "path": "/logos/svg/apps/wa.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#1FAF38",
+            "#60D669",
+            "#F9F9F9"
+          ],
+          "sourcePalette": [
+            "#1FAF38",
+            "#60D669",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "476aca83a9b056522b93f38c189087a2c415191d945fa9c17585f29bc97751de"
+        }
+      ]
+    },
+    {
+      "id": "APP-WAZE",
+      "league": "APP",
+      "conference": "Everyday",
+      "region": "Waze",
+      "name": "",
+      "abbr": "WAZE",
+      "aliases": [],
+      "palette": [
+        "#33CCFF",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Smiling bubble on wheels",
+          "sourceUrl": "https://api.iconify.design/selfhst/waze.svg",
+          "sourcePage": "https://icon-sets.iconify.design/selfhst/waze/",
+          "sourceSha256": "af13674cf75f69b132034197c2126ece6bfdba91da81a2fb67fe02d5f537a318",
+          "ops": {
+            "viewBox": "-9.984 -10.24 531.968 532.48"
+          },
+          "path": "/logos/svg/apps/waze.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "d7d45bf47e3fcbd942108a59b58f39755c1db3a6dfea04ea2cddffc4c846a675"
+        }
+      ]
+    },
+    {
+      "id": "APP-WEATHER",
+      "league": "APP",
+      "conference": "Built-in",
+      "region": "Weather",
+      "name": "",
+      "abbr": "WEATHER",
+      "aliases": [
+        "Apple Weather"
+      ],
+      "palette": [
+        "#387BD0",
+        "#FED500",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Sun and cloud tile",
+          "sourceUrl": "https://logowik.com/ios-17-app-icons-set-icon-59931.html",
+          "sourcePage": "https://logowik.com/ios-17-app-icons-set-icon-59931.html",
+          "sourceSha256": "409ebe6d39fa43d32cac5ddf5dca708e45c0ff329eb5865ab6616bd3bbf9fd8b",
+          "downloadForm": "logowik",
+          "ops": {
+            "keepNodes": [
+              "0",
+              "98-102"
+            ],
+            "viewBox": "178.272 230.891 54.723 54.303"
+          },
+          "path": "/logos/svg/apps/weather.svg",
+          "format": "svg",
+          "colors": [
+            "#2654AA",
+            "#49A2F7",
+            "#FFC600",
+            "#FEE400",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#387BD0",
+            "#FED500",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "58a818cfacfa66742297d622a059e91b82b513e309ad03e846dfe4c4f3577a16"
+        }
+      ]
+    },
+    {
+      "id": "APP-YT",
+      "league": "APP",
+      "conference": "Music & Video",
+      "region": "YouTube",
+      "name": "",
+      "abbr": "YT",
+      "aliases": [
+        "You Tube",
+        "YT"
+      ],
+      "palette": [
+        "#FF0000",
+        "#282828",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Play button",
+          "sourceUrl": "https://api.iconify.design/logos/youtube-icon.svg",
+          "sourcePage": "https://icon-sets.iconify.design/logos/youtube-icon/",
+          "sourceSha256": "368ac210e22400910660ef6f632cd652c439dc494e75891ffc809847aa7551ac",
+          "ops": {
+            "viewBox": "-5.12 -5.12 266.24 189.568"
+          },
+          "path": "/logos/svg/apps/yt.svg",
+          "format": "svg",
+          "colors": [
+            "#FF0000",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#FF0000",
+            "#282828",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "358e6deab492fce82e7be55b051f2b6c9c749b1d880b3beb89e132d52136148a"
+        }
+      ]
+    }
+  ]
+}

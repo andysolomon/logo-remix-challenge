@@ -32,6 +32,16 @@ describe('gameplay polish scaffolding', () => {
     expect(logo).toContain("!hasTargetPalette ? team.logo : key && remixStatus === 'ready'")
   })
 
+  test('both rounds award half credit, including a half locked in before time runs out', () => {
+    const play = read('src/components/PlayMode.tsx')
+    expect(play).toContain("roundCredit('both', logoOk, colorsOk)")
+    expect(play).toContain("half: 'Half right'")
+    expect(play).toContain('timeUpRef.current()')
+    expect(play).toContain("(gameMode === 'host' ? hostParts[0] : logoChecked) === true")
+    expect(play).toContain('{formatScore(score)} / {deck.length}')
+    expect(play).not.toContain('Both right scores the point')
+  })
+
   test('host-mode both verdict rows expose labeled groups for assistive technology', () => {
     const play = read('src/components/PlayMode.tsx')
     expect(play).toContain('host-both-logo-label')

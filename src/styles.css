@@ -449,9 +449,12 @@ input::placeholder { color: var(--faint); }
 .reveal-icon.k-correct { background: var(--success-dark); }
 .reveal-icon.k-wrong { background: var(--danger-dark); }
 .reveal-icon.k-timeout { background: var(--gold); }
+.reveal-icon.k-half { background: var(--gold); }
 .reveal-title.k-correct { color: var(--success-dark); }
 .reveal-title.k-wrong { color: var(--danger-dark); }
 .reveal-title.k-timeout { color: var(--gold); }
+.reveal-title.k-half { color: var(--gold); }
+.plus-one.half { color: var(--gold); }
 
 .results { flex: 1; min-height: 0; overflow-y: auto; display: flex; flex-direction: column; align-items: center; padding: 36px 24px; }
 .final-label { font: 600 14px var(--ui); letter-spacing: 4px; color: var(--dark-faint); }
@@ -462,6 +465,7 @@ input::placeholder { color: var(--faint); }
 .recap-mark { width: 24px; font: 700 18px var(--ui); }
 .recap-mark.ok { color: var(--success-dark); }
 .recap-mark.no { color: var(--danger-dark); }
+.recap-mark.half { color: var(--gold); }
 .recap-thumb { width: 40px; height: 40px; }
 .recap-name { font: 600 16px var(--ui); }
 .results-actions { display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; }

@@ -167,6 +167,7 @@ const LEGACY_INITIALS = '???'
 
 export interface HighScore {
   initials: string
+  /** Whole or half points: a "both" round with one half right scores ½. */
   score: number
   total: number
   date: number
@@ -195,7 +196,8 @@ const isHighScore = (h: unknown): h is HighScore => {
   const { initials, score, total, date } = h as HighScore
   return (
     isValidInitials(initials) &&
-    isSafeNonNegInt(score, MAX_DECK_ROUNDS) &&
+    typeof score === 'number' &&
+    isSafeNonNegInt(score * 2, MAX_DECK_ROUNDS * 2) &&
     isSafeNonNegInt(total, MAX_DECK_ROUNDS) &&
     total > 0 &&
     score <= total &&
@@ -224,6 +226,25 @@ export const qualifiesForHighScore = (score: number, list: HighScore[]) =>
   score > 0 && (list.length < HIGH_SCORE_LIMIT || score > list[list.length - 1].score)
 
 export const insertHighScore = (list: HighScore[], entry: HighScore) => rankHighScores([...list, entry])
+
+/**
+ * Points for one round. Single-answer rounds are all or nothing; a "both" round
+ * gives half a point per half named, so naming one source still counts.
+ */
+export const roundCredit = (target: GuessTarget, logoOk: boolean, colorsOk: boolean): number =>
+  target === 'both' ? (logoOk ? 0.5 : 0) + (colorsOk ? 0.5 : 0) : (target === 'colors' ? colorsOk : logoOk) ? 1 : 0
+
+/** Score for display: 7.5 → "7½", 0.5 → "½". */
+export const formatScore = (n: number) => {
+  const whole = Math.floor(n)
+  return n - whole >= 0.5 ? `${whole || ''}½` : String(whole)
+}
+
+/** Score for screen readers: 7.5 → "7 and a half". */
+export const spokenScore = (n: number) => {
+  const whole = Math.floor(n)
+  return n - whole >= 0.5 ? (whole ? `${whole} and a half` : 'a half') : String(whole)
+}
 
 export function loadGameMode(): GameMode {
   const m = safeGet(LS.gameMode)
@@ -320,6 +341,7 @@ const nextVoiceClip = (id: VoiceClipId) => {
 
 const VOICE_SCORE_MAX = 20
 const VOICE_GAME_OVER = '/voice/game-over.wav'
+const VOICE_AND_A_HALF = '/voice/and-a-half.wav'
 
 let voicePlayer: HTMLAudioElement | null = null
 let scoreBlobUrl: string | null = null
@@ -372,15 +394,21 @@ export function speak(id: VoiceClipId) {
   playSrc(nextVoiceClip(id))
 }
 
-/** Announce the final score as one joined wav: “You scored N” + “out of M”. */
+/**
+ * Announce the final score as one joined wav: “You scored N” + “out of M”, with
+ * “and a half” between them for a half-point score. If a half-point score can't
+ * be joined, the generic game-over line plays rather than a truncated number.
+ */
 export function speakScore(score: number, total: number) {
-  const s = Math.round(score)
+  const s = Math.floor(score)
+  const half = score - s >= 0.5
   const t = Math.round(total)
   if (s < 0 || t < 1 || s > VOICE_SCORE_MAX || t > VOICE_SCORE_MAX) {
     playSrc(VOICE_GAME_OVER)
     return
   }
-  void playJoined([`/voice/you-scored-${s}.wav`, `/voice/out-of-${t}.wav`])
+  if (half) void playJoined([`/voice/you-scored-${s}.wav`, VOICE_AND_A_HALF, `/voice/out-of-${t}.wav`], VOICE_GAME_OVER)
+  else void playJoined([`/voice/you-scored-${s}.wav`, `/voice/out-of-${t}.wav`])
 }
 
 const ascii = (buf: ArrayBuffer, off: number, n: number) =>
@@ -489,7 +517,7 @@ const loadWav = async (url: string) => {
   return buf
 }
 
-const playJoined = async (urls: string[]) => {
+const playJoined = async (urls: string[], fallback = urls[0]) => {
   if (!voiceSupported()) return
   const gen = ++speakGen
   try {
@@ -505,7 +533,7 @@ const playJoined = async (urls: string[]) => {
     void player.play().catch(() => {})
   } catch {
     if (gen !== speakGen) return
-    playSrc(urls[0])
+    playSrc(fallback)
   }
 }
 export const roundTarget = (r: Round, fallback: GuessTarget): GuessTarget => r.g ?? fallback

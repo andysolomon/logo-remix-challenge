@@ -11,6 +11,7 @@ import {
   deckFromStorage,
   deckUndoReducer,
   findTeam,
+  formatScore,
   insertHighScore,
   isCorrectGuess,
   loadDeck,
@@ -20,11 +21,14 @@ import {
   norm,
   normalizeDeck,
   normalizeRound,
+  qualifiesForHighScore,
   randomDeck,
   resolveRemixTargetColors,
+  roundCredit,
   saveDeck,
   saveHighScores,
   saveTheme,
+  spokenScore,
   suggestTeams,
   type DeckUndoSnapshot,
   type HighScore,
@@ -253,7 +257,7 @@ describe('high score persistence and validation', () => {
       validEntry({ initials: 'OKA' }),
       { initials: 'NAN', score: NaN, total: 10, date: 1 },
       { initials: 'INF', score: 10, total: Infinity, date: 1 },
-      { initials: 'FRQ', score: 9.5, total: 10, date: 1 },
+      { initials: 'FRQ', score: 9.25, total: 10, date: 1 },
       { initials: 'NEG', score: -1, total: 10, date: 1 },
       { initials: 'BIG', score: MAX_DECK_ROUNDS + 1, total: 20, date: 1 },
       { initials: 'OVR', score: 10, total: MAX_DECK_ROUNDS + 1, date: 1 },
@@ -297,6 +301,22 @@ describe('high score persistence and validation', () => {
     saveHighScores(mixed as HighScore[])
     expect(JSON.parse(stored.get(LS.highScores)!)).toEqual([validEntry({ initials: 'OKA' })])
     expect(loadHighScores()).toEqual([validEntry({ initials: 'OKA' })])
+  })
+
+  test('accepts half-point scores from partial credit and ranks them between whole scores', () => {
+    stored.set(
+      LS.highScores,
+      JSON.stringify([
+        validEntry({ initials: 'SVN', score: 7, date: 1 }),
+        validEntry({ initials: 'HLF', score: 7.5, date: 2 }),
+        validEntry({ initials: 'EGT', score: 8, date: 3 }),
+        validEntry({ initials: 'MIN', score: 0.5, date: 4 }),
+        validEntry({ initials: 'TOP', score: 20, total: 20, date: 5 }),
+      ]),
+    )
+    expect(loadHighScores().map((h) => h.initials)).toEqual(['TOP', 'EGT', 'HLF', 'SVN', 'MIN'])
+    expect(qualifiesForHighScore(0.5, [])).toBe(true)
+    expect(qualifiesForHighScore(0, [])).toBe(false)
   })
 
   test('keeps top-10 ordering and tie behavior when saving and inserting', () => {
@@ -356,5 +376,30 @@ describe('theme persistence', () => {
     expect(loadTheme()).toBe('dark')
     saveTheme('light')
     expect(loadTheme()).toBe('light')
+  })
+})
+
+describe('partial credit', () => {
+  test('both rounds give half a point per half; single rounds are all or nothing', () => {
+    expect(roundCredit('both', true, true)).toBe(1)
+    expect(roundCredit('both', true, false)).toBe(0.5)
+    expect(roundCredit('both', false, true)).toBe(0.5)
+    expect(roundCredit('both', false, false)).toBe(0)
+    expect(roundCredit('team', true, false)).toBe(1)
+    expect(roundCredit('team', false, true)).toBe(0)
+    expect(roundCredit('colors', false, true)).toBe(1)
+    expect(roundCredit('colors', true, false)).toBe(0)
+  })
+
+  test('half points sum exactly and format for display and screen readers', () => {
+    const total = [0.5, 1, 0.5, 0.5, 0, 1].reduce((a, b) => a + b, 0)
+    expect(total).toBe(3.5)
+    expect(formatScore(total)).toBe('3½')
+    expect(formatScore(0.5)).toBe('½')
+    expect(formatScore(0)).toBe('0')
+    expect(formatScore(12)).toBe('12')
+    expect(spokenScore(3.5)).toBe('3 and a half')
+    expect(spokenScore(0.5)).toBe('a half')
+    expect(spokenScore(4)).toBe('4')
   })
 })

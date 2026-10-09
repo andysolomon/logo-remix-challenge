@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Download the pinned, name-free fast-food or brand artwork and record its metadata.
 
-Usage: python3 scripts/download_brand_logos.py --league FOOD|BRAND [--force] [--cache-dir DIR]
+Usage: python3 scripts/download_brand_logos.py --league FOOD|BRAND|APP|TV|CAR [--force] [--cache-dir DIR]
 Then run build_brand_teams.py with the same --league argument.
 
 brand_artwork_sources.json pins every variant: its source URL, the SHA-256 of the

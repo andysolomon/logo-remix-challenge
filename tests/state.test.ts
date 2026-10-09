@@ -15,6 +15,7 @@ import {
   isCorrectGuess,
   loadDeck,
   loadHighScores,
+  loadTheme,
   loadTimer,
   norm,
   normalizeDeck,
@@ -23,6 +24,7 @@ import {
   resolveRemixTargetColors,
   saveDeck,
   saveHighScores,
+  saveTheme,
   suggestTeams,
   type DeckUndoSnapshot,
   type HighScore,
@@ -338,5 +340,21 @@ describe('guess autocomplete suggestions', () => {
 
   test('every suggestion grades as correct for its own team', () => {
     for (const t of suggestTeams('state', 6)) expect(isCorrectGuess(`${t.region} ${t.name}`.trim(), t)).toBe(true)
+  })
+})
+
+describe('theme persistence', () => {
+  test('defaults to system and ignores unknown values', () => {
+    expect(loadTheme()).toBe('system')
+    stored.set(LS.theme, 'sepia')
+    expect(loadTheme()).toBe('system')
+  })
+
+  test('round-trips light and dark', () => {
+    saveTheme('dark')
+    expect(stored.get(LS.theme)).toBe('dark')
+    expect(loadTheme()).toBe('dark')
+    saveTheme('light')
+    expect(loadTheme()).toBe('light')
   })
 })

@@ -11,6 +11,7 @@ import {
   loadGuessTarget,
   loadVoice,
   loadHighScores,
+  loadTheme,
   loadTimer,
   MAX_DECK_ROUNDS,
   normalizeDeck,
@@ -20,25 +21,30 @@ import {
   saveGuessTarget,
   saveVoice,
   saveHighScores,
+  saveTheme,
   saveTimer,
   type GameMode,
   type HighScore,
   type GuessTarget,
   type Round,
+  type Theme,
   type TimerSeconds,
 } from './lib/teams'
+import { usePrefersDark } from './lib/useColorScheme'
 import { useIsPortrait } from './lib/useOrientation'
 
 type Mode = 'create' | 'deck' | 'play'
 
 export default function App() {
   const portrait = useIsPortrait()
+  const prefersDark = usePrefersDark()
   const [mode, setMode] = useState<Mode>('create')
   const [deck, setDeckState] = useState<Round[]>(loadDeck)
   const [timer, setTimerState] = useState<TimerSeconds>(loadTimer)
   const [gameMode, setGameModeState] = useState<GameMode>(loadGameMode)
   const [guessTarget, setGuessTargetState] = useState<GuessTarget>(loadGuessTarget)
   const [voice, setVoiceState] = useState<boolean>(loadVoice)
+  const [theme, setThemeState] = useState<Theme>(loadTheme)
   const [highScores, setHighScoresState] = useState<HighScore[]>(loadHighScores)
   const [create, setCreate] = useState<CreateState>(initialCreateState)
   const [settingsOpen, setSettingsOpen] = useState(false)
@@ -68,6 +74,10 @@ export default function App() {
     saveVoice(on)
     setVoiceState(on)
   }
+  const setTheme = (t: Theme) => {
+    saveTheme(t)
+    setThemeState(t)
+  }
   const setHighScores = useCallback((list: HighScore[]) => {
     saveHighScores(list)
     setHighScoresState(list)
@@ -82,12 +92,15 @@ export default function App() {
     prevModeRef.current = mode
   }, [mode])
 
-  // Match the browser chrome (iOS status bar / toolbar tint) to the active screen.
+  // Apply the color theme and match the browser chrome (iOS status bar / toolbar tint) to the active screen.
+  const themeDark = theme === 'dark' || (theme === 'system' && prefersDark)
   useEffect(() => {
-    const dark = mode === 'play'
-    document.documentElement.classList.toggle('dark', dark)
+    const root = document.documentElement
+    root.dataset.theme = themeDark ? 'dark' : 'light'
+    const dark = themeDark || mode === 'play'
+    root.classList.toggle('dark', dark)
     document.querySelector('meta[name="theme-color"]')?.setAttribute('content', dark ? '#12100D' : '#F7F5F1')
-  }, [mode])
+  }, [mode, themeDark])
 
   const addRound =(round: Round, editIdx: number | null) => {
     const d = [...deck]
@@ -132,7 +145,7 @@ export default function App() {
     <div className="app">
       <Header mode={mode} deckCount={deck.length} onCreate={() => setMode('create')} onDeck={() => setMode('deck')} onPlay={startGame} onSettings={() => setSettingsOpen(true)} />
       {settingsOpen && (
-        <SettingsModal timer={timer} gameMode={gameMode} guessTarget={guessTarget} voice={voice} onTimer={setTimer} onGameMode={setGameMode} onGuessTarget={setGuessTarget} onVoice={setVoice} onClose={closeSettings} />
+        <SettingsModal timer={timer} gameMode={gameMode} guessTarget={guessTarget} voice={voice} theme={theme} onTimer={setTimer} onGameMode={setGameMode} onGuessTarget={setGuessTarget} onVoice={setVoice} onTheme={setTheme} onClose={closeSettings} />
       )}
       <CreateMode state={create} setState={setCreate} portrait={portrait} deckCount={deck.length} onAddRound={addRound} hidden={mode !== 'create'} />
       <DeckMode

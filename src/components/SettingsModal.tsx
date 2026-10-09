@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState, type RefObject } from 'react'
-import { clampTimer, GUESS_TARGETS, GUESS_LABEL, speak, voiceSupported, TIMER_MAX, TIMER_MIN, TIMER_OPTIONS, type GameMode, type GuessTarget, type TimerSeconds } from '../lib/teams'
+import { clampTimer, GUESS_TARGETS, GUESS_LABEL, speak, THEME_LABEL, THEMES, voiceSupported, TIMER_MAX, TIMER_MIN, TIMER_OPTIONS, type GameMode, type GuessTarget, type Theme, type TimerSeconds } from '../lib/teams'
 
 const DIALOG_FOCUSABLE = 'button:not(:disabled), [href], input:not(:disabled), select:not(:disabled), textarea:not(:disabled), [tabindex]:not([tabindex="-1"])'
 
@@ -51,14 +51,16 @@ interface Props {
   gameMode: GameMode
   guessTarget: GuessTarget
   voice: boolean
+  theme: Theme
   onTimer: (t: TimerSeconds) => void
   onGameMode: (m: GameMode) => void
   onGuessTarget: (t: GuessTarget) => void
   onVoice: (on: boolean) => void
+  onTheme: (t: Theme) => void
   onClose: () => void
 }
 
-export function SettingsModal({ timer, gameMode, guessTarget, voice, onTimer, onGameMode, onGuessTarget, onVoice, onClose }: Props) {
+export function SettingsModal({ timer, gameMode, guessTarget, voice, theme, onTimer, onGameMode, onGuessTarget, onVoice, onTheme, onClose }: Props) {
   const [custom, setCustom] = useState(String(timer))
   const dialogRef = useRef<HTMLDivElement>(null)
   const closeRef = useRef<HTMLButtonElement>(null)
@@ -162,6 +164,18 @@ export function SettingsModal({ timer, gameMode, guessTarget, voice, onTimer, on
             {voiceSupported()
               ? `Announces the prompt each round, then correct or not quite, and the final score.`
               : 'Voice is not supported in this browser.'}
+          </div>
+
+          <div className="rail-label" id="settings-theme-label">APPEARANCE</div>
+          <div className="grid3" role="group" aria-labelledby="settings-theme-label">
+            {THEMES.map((t) => (
+              <button key={t} type="button" className={`opt mode${theme === t ? ' active' : ''}`} aria-pressed={theme === t} onClick={() => onTheme(t)}>
+                {THEME_LABEL[t]}
+              </button>
+            ))}
+          </div>
+          <div className="mode-hint">
+            {theme === 'system' ? 'Follows your device’s light or dark setting.' : `Always ${theme}.`} The game screen stays dark either way.
           </div>
         </div>
 

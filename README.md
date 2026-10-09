@@ -23,7 +23,7 @@ Client-only SPA — no backend, no auth. Deck, timer, game mode, guess mode, voi
 ## Stack
 
 - Vite + React 18 + TypeScript
-- Plain CSS with design tokens from `design_handoff_logo_remix/DESIGN_SYSTEM.md` (`src/styles.css`)
+- Plain CSS with design tokens from `design_handoff_logo_remix/DESIGN_SYSTEM.md` (`src/styles.css`); a dark theme (Settings → Appearance: System / Light / Dark) swaps the same tokens
 - Google Fonts: Chakra Petch (600/700), Space Grotesk (400–700)
 - Local SVG logos recolored in-browser by fill substitution, with a canvas fallback for PNGs (`src/components/Logo.tsx`, `public/logos/svg/`)
 - Voice announcer: baked Chatterbox Turbo wavs in `public/voice/` — round prompts, correct / not quite / time's up, and score fragments (regenerate with `scripts/generate_voice.py`)
@@ -124,7 +124,7 @@ src/
     DeckMode.tsx           round cards, game setup rail, high score
     PlayMode.tsx           intro → question (type / host) → reveal → results
     DeckMode.tsx           deck cards (per-round guess mode) + settings rail
-    SettingsModal.tsx      timer, defaults, voice announcer
+    SettingsModal.tsx      timer, defaults, voice announcer, appearance
 public/voice/              Chatterbox clips for Guess the Logo / Colors / both
 scripts/
   download_logos.py        fetch the 37 logo PNGs from ESPN into public/logos/

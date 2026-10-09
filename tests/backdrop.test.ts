@@ -45,6 +45,7 @@ from PIL import Image
 sys.path.insert(0, 'scripts')
 from download_extra_logos import inspect_artwork
 from download_hbcu_svgs import to_hex
+from download_nba_svgs import artwork_colors
 from build_teams import dist_sq
 teams = json.loads(Path('src/lib/teams.json').read_text())['teams']
 out = {}
@@ -56,7 +57,7 @@ for team in teams:
         data = (Path('public') / logo.lstrip('/')).read_bytes()
         if logo.endswith('.svg'):
             text = data.decode('utf-8', 'replace')
-            colors = inspect_artwork(data, 'svg')
+            colors = artwork_colors(data)
             colors += [c for c in map(to_hex, re.findall(r'stop-color\\s*[:=]\\s*["\\']?\\s*(#[0-9a-fA-F]{3,8}|rgba?\\([^)]*\\)|[a-zA-Z]+)', text)) if c]
             for raster in re.findall(r'data:image/[a-z]+;base64,([A-Za-z0-9+/=\\s]+)', text):
                 image = Image.open(io.BytesIO(base64.b64decode(raster))).convert('RGBA')

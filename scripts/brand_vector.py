@@ -4,8 +4,11 @@
 Edits come from scripts/brand_artwork_sources.json and run in this order:
   removeNodes  element-child index paths ("0/3/1") resolved against the original
                source tree, e.g. a wordmark or page background next to the symbol
+  keepNodes    the opposite, for one icon cut from a sheet: everything outside these
+               paths is dropped; "115-192" names a run of siblings
   fill         root fill for one-color icons whose shapes rely on default black
   viewBox      reviewed crop around the remaining artwork
+Editor metadata is dropped and percentage rgb() colors become hex so the game can recolor them.
 
 Usage (review helpers):
   python3 scripts/brand_vector.py fetch URL OUT [logowik]
@@ -27,7 +30,7 @@ XML = 'http://www.w3.org/XML/1998/namespace'
 ET.register_namespace('', SVG)
 ET.register_namespace('xlink', XLINK)
 EDITOR_ONLY = {'metadata', 'title', 'desc', 'namedview'}
-OPS = {'removeNodes', 'fill', 'viewBox'}
+OPS = {'removeNodes', 'keepNodes', 'fill', 'viewBox'}
 
 
 def node_at(root, path):
@@ -38,6 +41,19 @@ def node_at(root, path):
             raise ValueError(f'reviewed element {path} is missing; inspect the source again')
         node = children[int(index)]
     return node
+
+
+def expand(paths):
+    for path in paths:
+        head, _, last = path.rpartition('/')
+        run = re.fullmatch(r'(\d+)-(\d+)', last)
+        if not run:
+            yield path
+            continue
+        first, final = map(int, run.groups())
+        if first >= final:
+            raise ValueError(f'invalid element run {path}')
+        yield from (f'{head}/{i}' if head else str(i) for i in range(first, final + 1))
 
 
 def strip_editor_data(root):
@@ -52,6 +68,22 @@ def strip_editor_data(root):
             namespace = key[1:].split('}')[0] if key.startswith('{') else ''
             if namespace not in ('', XLINK, XML):
                 del node.attrib[key]
+
+
+PERCENT_RGB = re.compile(r'rgb\(\s*([\d.]+)%\s*,\s*([\d.]+)%\s*,\s*([\d.]+)%\s*\)')
+
+
+def hex_colors(text):
+    """Rewrite percentage rgb() as #RRGGBB so artwork inspection and in-game recoloring can read it."""
+    return PERCENT_RGB.sub(lambda m: '#' + ''.join(f'{int(min(100.0, float(n)) * 255 / 100 + 0.5):02X}' for n in m.groups()), text)
+
+
+def normalize_colors(root):
+    for node in root.iter():
+        for key, value in node.attrib.items():
+            node.set(key, hex_colors(value))
+        if node.text and node.tag.rsplit('}', 1)[-1] == 'style':
+            node.text = hex_colors(node.text)
 
 
 def number(value):
@@ -70,11 +102,22 @@ def import_brand_vector(raw, ops):
     parents = {child: parent for parent in root.iter() for child in parent}
     # Resolve every reviewed path first so earlier removals cannot shift later indexes.
     targets = [node_at(root, path) for path in ops.get('removeNodes', [])]
-    if len(set(map(id, targets))) != len(targets):
-        raise ValueError('duplicate reviewed element removal')
+    kept = [node_at(root, path) for path in expand(ops.get('keepNodes', []))]
+    if len(set(map(id, targets))) != len(targets) or len(set(map(id, kept))) != len(kept):
+        raise ValueError('duplicate reviewed element')
     for node in targets:
         parents[node].remove(node)
+    chain = set()
+    for node in kept:
+        while node is not root:
+            chain.add(node)
+            node = parents[node]
+    for ancestor in {parents[node] for node in chain}:
+        for child in list(ancestor):
+            if child not in chain:
+                ancestor.remove(child)
     strip_editor_data(root)
+    normalize_colors(root)
     if 'fill' in ops:
         if not re.fullmatch(r'#[0-9A-F]{6}', ops['fill']):
             raise ValueError('fill must be an uppercase #RRGGBB color')

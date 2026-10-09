@@ -1,0 +1,2627 @@
+[
+  {
+    "teamId": "APP-AB",
+    "id": "primary",
+    "label": "Red bird",
+    "sourceUrl": "https://iconape.com/wp-content/files/hm/154225/svg/angry-birdsredd-seeklogo.com.svg",
+    "sourcePage": "https://iconape.com/angry-birds-redd-logo-logo-icon-svg-png.html",
+    "sourceSha256": "23a8567d5c75f28deeb1e857198080b82cdfbc464cc815b67a2469e6a9b2334e",
+    "ops": {
+      "removeNodes": [
+        "0"
+      ],
+      "viewBox": "-2.182 -1.574 110.167 105.192"
+    }
+  },
+  {
+    "teamId": "APP-AB",
+    "id": "pig",
+    "label": "Green pig",
+    "sourceUrl": "https://logowik.com/angry-birds-characters-vector-logo-4929.html",
+    "sourcePage": "https://logowik.com/angry-birds-characters-vector-logo-4929.html",
+    "sourceSha256": "176085458a8cf0226666cc4a68a5a89af10af4f522c295b8d5ff081f2079d3ef",
+    "downloadForm": "logowik",
+    "ops": {
+      "removeNodes": [
+        "1",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "viewBox": "63.435 229.822 104.106 106.487"
+    }
+  },
+  {
+    "teamId": "APP-AMONG",
+    "id": "primary",
+    "label": "Crewmate on yellow tile",
+    "sourceUrl": "https://raw.githubusercontent.com/chouhan-rahul/icons_plus/v5.0.0/assets/images/logos/video-games/among-us.svg",
+    "sourcePage": "https://github.com/chouhan-rahul/icons_plus/blob/v5.0.0/assets/images/logos/video-games/among-us.svg",
+    "sourceSha256": "e16077dd06c4b197d6b09e1ca433e0e0aae09e581dda38d4c6261700bc6f8eb6",
+    "ops": {
+      "viewBox": "5.28 5.28 37.44 37.44"
+    }
+  },
+  {
+    "teamId": "APP-AMONG",
+    "id": "crewmate",
+    "label": "Full-body crewmate",
+    "sourceUrl": "https://raw.githubusercontent.com/zaz/website/d4ba8e9324fdadf34855a78016b080a80ed48e90/research/talk/COF/BeRGeR/img/Among%20Us%20crewmate.svg",
+    "sourcePage": "https://github.com/zaz/website/blob/d4ba8e9324fdadf34855a78016b080a80ed48e90/research/talk/COF/BeRGeR/img/Among%20Us%20crewmate.svg",
+    "sourceSha256": "edeb89f2840682e9031afb1c11b5c16a83f2db9697b733660773e9a95afd903d",
+    "ops": {
+      "viewBox": "-5.439 -5.439 210.879 282.803"
+    }
+  },
+  {
+    "teamId": "APP-CALENDAR",
+    "id": "primary",
+    "label": "Date tile",
+    "sourceUrl": "https://logowik.com/ios-17-app-icons-set-icon-59931.html",
+    "sourcePage": "https://logowik.com/ios-17-app-icons-set-icon-59931.html",
+    "sourceSha256": "409ebe6d39fa43d32cac5ddf5dca708e45c0ff329eb5865ab6616bd3bbf9fd8b",
+    "downloadForm": "logowik",
+    "ops": {
+      "keepNodes": [
+        "0",
+        "96"
+      ],
+      "viewBox": "109.245 230.899 54.286 54.286"
+    }
+  },
+  {
+    "teamId": "APP-CASH",
+    "id": "primary",
+    "label": "Dollar sign tile",
+    "sourceUrl": "https://api.iconify.design/thesvg-color/cash-app.svg",
+    "sourcePage": "https://icon-sets.iconify.design/thesvg-color/cash-app/",
+    "sourceSha256": "4ad57e6773d7546a0dce6883fe11ecac22b96a0f6a17d844cc5ab4d9e3d9b540",
+    "ops": {
+      "viewBox": "-0.48 -0.48 24.96 24.96"
+    }
+  },
+  {
+    "teamId": "APP-CLOCK",
+    "id": "primary",
+    "label": "Clock face tile",
+    "sourceUrl": "https://logowik.com/ios-17-app-icons-set-icon-59931.html",
+    "sourcePage": "https://logowik.com/ios-17-app-icons-set-icon-59931.html",
+    "sourceSha256": "409ebe6d39fa43d32cac5ddf5dca708e45c0ff329eb5865ab6616bd3bbf9fd8b",
+    "downloadForm": "logowik",
+    "ops": {
+      "keepNodes": [
+        "0",
+        "67-86"
+      ],
+      "viewBox": "594.179 144.184 54.286 54.286"
+    }
+  },
+  {
+    "teamId": "APP-DISCORD",
+    "id": "primary",
+    "label": "Controller face tile",
+    "sourceUrl": "https://api.iconify.design/skill-icons/discord.svg",
+    "sourcePage": "https://icon-sets.iconify.design/skill-icons/discord/",
+    "sourceSha256": "fd08b6cb62fc17402ac21c273ec858d9f8ceaa317dba7d1cdace23d25dea12e1",
+    "ops": {
+      "viewBox": "-5.12 -5.12 266.24 266.24"
+    }
+  },
+  {
+    "teamId": "APP-DISCORD",
+    "id": "old-clyde",
+    "label": "Speech-bubble Clyde (2015)",
+    "sourceUrl": "https://api.iconify.design/cib/discord.svg?color=%237289DA",
+    "sourcePage": "https://icon-sets.iconify.design/cib/discord/",
+    "sourceSha256": "07bd8ac77676f8f8dd2350b762b62024525853af6f8eb7c6b000b963539ade1a",
+    "ops": {
+      "viewBox": "0.912 -0.64 30.176 33.28"
+    }
+  },
+  {
+    "teamId": "APP-DUO",
+    "id": "primary",
+    "label": "Owl face tile",
+    "sourceUrl": "https://api.iconify.design/thesvg-color/duolingo-2024.svg",
+    "sourcePage": "https://icon-sets.iconify.design/thesvg-color/duolingo-2024/",
+    "sourceSha256": "e1932c2d6eaa579bca75d76f67d0bd4b8ed917aff10d121f89a177e32b1d95c9",
+    "ops": {
+      "viewBox": "-5 -5 260 260"
+    }
+  },
+  {
+    "teamId": "APP-FACETIME",
+    "id": "primary",
+    "label": "Video camera tile",
+    "sourceUrl": "https://logowik.com/ios-17-app-icons-set-icon-59931.html",
+    "sourcePage": "https://logowik.com/ios-17-app-icons-set-icon-59931.html",
+    "sourceSha256": "409ebe6d39fa43d32cac5ddf5dca708e45c0ff329eb5865ab6616bd3bbf9fd8b",
+    "downloadForm": "logowik",
+    "ops": {
+      "keepNodes": [
+        "0",
+        "108-111"
+      ],
+      "viewBox": "386.222 230.891 54.723 54.303"
+    }
+  },
+  {
+    "teamId": "APP-GMAPS",
+    "id": "primary",
+    "label": "Multicolor pin",
+    "sourceUrl": "https://api.iconify.design/logos/google-maps.svg",
+    "sourcePage": "https://icon-sets.iconify.design/logos/google-maps/",
+    "sourceSha256": "3408e6f202b1dcd8baccbf84c5e4f71e349a83b3522d202972531bf084ad02ae",
+    "ops": {
+      "viewBox": "-7.34 -7.34 270.663 381.68"
+    }
+  },
+  {
+    "teamId": "APP-GMAPS",
+    "id": "map-fold",
+    "label": "Folded map tile (2015)",
+    "sourceUrl": "https://www.vectorlogo.zone/logos/google_maps/google_maps-tile.svg",
+    "sourcePage": "https://www.vectorlogo.zone/logos/google_maps/index.html",
+    "sourceSha256": "7ef9444ec71deb5301b42ce3f6ffa05cc6954e24ff372c40128438791bf9d57d",
+    "ops": {
+      "viewBox": "-10.24 -10.24 532.48 532.48"
+    }
+  },
+  {
+    "teamId": "APP-IG",
+    "id": "primary",
+    "label": "Gradient camera tile",
+    "sourceUrl": "https://api.iconify.design/skill-icons/instagram.svg",
+    "sourcePage": "https://icon-sets.iconify.design/skill-icons/instagram/",
+    "sourceSha256": "2343a751a2255f56145f8bdc2b702d481c482caee3e20e4694dfb9c059810180",
+    "ops": {
+      "viewBox": "-5.12 -5.12 266.24 266.24"
+    }
+  },
+  {
+    "teamId": "APP-IG",
+    "id": "retro-camera",
+    "label": "Retro camera tile (2011)",
+    "sourceUrl": "https://raw.githubusercontent.com/chouhan-rahul/icons_plus/v5.0.0/assets/images/logos/social-media/instagram-old.svg",
+    "sourcePage": "https://github.com/chouhan-rahul/icons_plus/blob/v5.0.0/assets/images/logos/social-media/instagram-old.svg",
+    "sourceSha256": "da9c1d66447572ee2537f2e37effbf456452d94da6a4b4ebaa5efe4519ca2f03",
+    "ops": {
+      "viewBox": "5.28 5.28 37.44 37.44"
+    }
+  },
+  {
+    "teamId": "APP-MAPS",
+    "id": "primary",
+    "label": "280 shield route tile",
+    "sourceUrl": "https://logowik.com/apple-maps-vector-logo-12965.html",
+    "sourcePage": "https://logowik.com/apple-maps-vector-logo-12965.html",
+    "sourceSha256": "130d104b2657a4a7f8bb9a1eb7ec9a5c084ce5eefeeb20fb9b6bf97db2a08b61",
+    "downloadForm": "logowik",
+    "ops": {
+      "viewBox": "71.732 42.621 195.037 195.206"
+    }
+  },
+  {
+    "teamId": "APP-MAPS",
+    "id": "watch-round",
+    "label": "Round watch icon",
+    "sourceUrl": "https://logowik.com/apple-maps-watchos-logo-vector-svg-pdf-ai-eps-cdr-free-download-12962.html",
+    "sourcePage": "https://logowik.com/apple-maps-watchos-logo-vector-svg-pdf-ai-eps-cdr-free-download-12962.html",
+    "sourceSha256": "95f93a0fc0c49005ec53a3d55b9c50cddad759ce66c1ef49c910b14484722461",
+    "downloadForm": "logowik",
+    "ops": {
+      "viewBox": "160.552 29.463 532.896 532.896"
+    }
+  },
+  {
+    "teamId": "APP-MC",
+    "id": "primary",
+    "label": "Grass block",
+    "sourceUrl": "https://api.iconify.design/selfhst/minecraft.svg",
+    "sourcePage": "https://icon-sets.iconify.design/selfhst/minecraft/",
+    "sourceSha256": "dce3fbecbaac2941114f6dbf9edd9c6903b7a843c22da96a1a566284607ccc34",
+    "ops": {
+      "viewBox": "28.16 -10.24 455.68 532.48"
+    }
+  },
+  {
+    "teamId": "APP-MC",
+    "id": "creeper",
+    "label": "Creeper face tile",
+    "sourceUrl": "https://api.iconify.design/selfhst/minecraft-creeper.svg",
+    "sourcePage": "https://icon-sets.iconify.design/selfhst/minecraft-creeper/",
+    "sourceSha256": "568cb12954ce0ac296463389804b4a6c16e780f4ba4dda688fa9b4edb31a7200",
+    "ops": {
+      "viewBox": "-10.24 -10.24 532.48 532.48"
+    }
+  },
+  {
+    "teamId": "APP-MESSAGES",
+    "id": "primary",
+    "label": "Speech bubble tile",
+    "sourceUrl": "https://api.iconify.design/thesvg-color/imessage.svg",
+    "sourcePage": "https://icon-sets.iconify.design/thesvg-color/imessage/",
+    "sourceSha256": "8830dda0a69436f81bb28997429c0638a414691e38d3b9be5ebb4e416bef1e7b",
+    "ops": {
+      "viewBox": "-0.48 -0.48 24.96 24.96"
+    }
+  },
+  {
+    "teamId": "APP-NETFLIX",
+    "id": "primary",
+    "label": "Ribbon N tile",
+    "sourceUrl": "https://api.iconify.design/logos/netflix-icon.svg",
+    "sourcePage": "https://icon-sets.iconify.design/logos/netflix-icon/",
+    "sourceSha256": "42acbe90a682c278459d9e0186a3b35943a17fe46765b85ae4b5ff46d1e08e3a",
+    "ops": {
+      "viewBox": "-5.12 -5.12 266.24 266.24"
+    }
+  },
+  {
+    "teamId": "APP-PIN",
+    "id": "primary",
+    "label": "Script P badge",
+    "sourceUrl": "https://api.iconify.design/logos/pinterest.svg",
+    "sourcePage": "https://icon-sets.iconify.design/logos/pinterest/",
+    "sourceSha256": "d234fb80a47a65c66cb4c39b89fdc2e8312261b953cd8d6700fbf05a3b92f352",
+    "ops": {
+      "viewBox": "-5.12 -5.12 266.24 266.24"
+    }
+  },
+  {
+    "teamId": "APP-POGO",
+    "id": "primary",
+    "label": "Red-and-white ball",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Pok%C3%A9_Ball_icon.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Pok%C3%A9_Ball_icon.svg",
+    "sourceSha256": "6f1121045b551300d6f9a4651d37b9232edb30aa8465e8a0d0951f43361022cf",
+    "ops": {
+      "viewBox": "31.432 30.837 532.436 532.139"
+    }
+  },
+  {
+    "teamId": "APP-ROBLOX",
+    "id": "primary",
+    "label": "Tilted square tile",
+    "sourceUrl": "https://api.iconify.design/selfhst/roblox.svg",
+    "sourcePage": "https://icon-sets.iconify.design/selfhst/roblox/",
+    "sourceSha256": "6855c432cee7b8119cc3781c4580f024755674c5887090c79adf6d3e54deed29",
+    "ops": {
+      "viewBox": "-10.24 -10.24 532.48 532.48"
+    }
+  },
+  {
+    "teamId": "APP-SAFARI",
+    "id": "primary",
+    "label": "Compass on white tile",
+    "sourceUrl": "https://logowik.com/ios-17-app-icons-set-icon-59931.html",
+    "sourcePage": "https://logowik.com/ios-17-app-icons-set-icon-59931.html",
+    "sourceSha256": "409ebe6d39fa43d32cac5ddf5dca708e45c0ff329eb5865ab6616bd3bbf9fd8b",
+    "downloadForm": "logowik",
+    "ops": {
+      "keepNodes": [
+        "0",
+        "115-192"
+      ],
+      "viewBox": "524.714 230.891 54.723 54.303"
+    }
+  },
+  {
+    "teamId": "APP-SETTINGS",
+    "id": "primary",
+    "label": "Gear tile",
+    "sourceUrl": "https://logowik.com/ios-17-app-icons-set-icon-59931.html",
+    "sourcePage": "https://logowik.com/ios-17-app-icons-set-icon-59931.html",
+    "sourceSha256": "409ebe6d39fa43d32cac5ddf5dca708e45c0ff329eb5865ab6616bd3bbf9fd8b",
+    "downloadForm": "logowik",
+    "ops": {
+      "keepNodes": [
+        "0",
+        "23-28"
+      ],
+      "viewBox": "594.171 57.46 54.303 54.723"
+    }
+  },
+  {
+    "teamId": "APP-SHAZAM",
+    "id": "primary",
+    "label": "Linked S circle",
+    "sourceUrl": "https://api.iconify.design/thesvg-color/shazam.svg",
+    "sourcePage": "https://icon-sets.iconify.design/thesvg-color/shazam/",
+    "sourceSha256": "f424cb05a23761de0dbda2420661504b4a307c4e2009e50b3f3b8ea53aad8961",
+    "ops": {
+      "viewBox": "-0.48 -0.48 24.96 24.96"
+    }
+  },
+  {
+    "teamId": "APP-SNAP",
+    "id": "primary",
+    "label": "Ghost on yellow tile",
+    "sourceUrl": "https://api.iconify.design/selfhst/snapchat.svg",
+    "sourcePage": "https://icon-sets.iconify.design/selfhst/snapchat/",
+    "sourceSha256": "bcadc2991604b94ba6e4ac04c5534d870dff3ee27ff23df1d1362634ed4df98c",
+    "ops": {
+      "viewBox": "-10.24 -10.24 532.48 532.48"
+    }
+  },
+  {
+    "teamId": "APP-SPOTIFY",
+    "id": "primary",
+    "label": "Sound waves circle",
+    "sourceUrl": "https://api.iconify.design/logos/spotify-icon.svg",
+    "sourcePage": "https://icon-sets.iconify.design/logos/spotify-icon/",
+    "sourceSha256": "7cb9e13f47c3fdc5cd3e08f001b076df9a8eaf3d9042412810487e07161b3545",
+    "ops": {
+      "viewBox": "-5.12 -5.12 266.24 266.24"
+    }
+  },
+  {
+    "teamId": "APP-SURF",
+    "id": "primary",
+    "label": "Graffiti runner tile",
+    "sourceUrl": "https://raw.githubusercontent.com/chouhan-rahul/icons_plus/v5.0.0/assets/images/logos/video-games/subway-surfers.svg",
+    "sourcePage": "https://github.com/chouhan-rahul/icons_plus/blob/v5.0.0/assets/images/logos/video-games/subway-surfers.svg",
+    "sourceSha256": "0944fc11c75bdd7992dde0f5fc967c27658c5cd43f6425dac30f3d92c9978e79",
+    "ops": {
+      "removeNodes": [
+        "29"
+      ],
+      "viewBox": "5.28 5.28 37.44 37.44"
+    }
+  },
+  {
+    "teamId": "APP-TIKTOK",
+    "id": "primary",
+    "label": "Music note tile",
+    "sourceUrl": "https://raw.githubusercontent.com/chouhan-rahul/icons_plus/v5.0.0/assets/images/logos/social-media/tiktok.svg",
+    "sourcePage": "https://github.com/chouhan-rahul/icons_plus/blob/v5.0.0/assets/images/logos/social-media/tiktok.svg",
+    "sourceSha256": "3eab1171d25508f6efaa2c8c5258b2db7180c3f6e66113632c9acda40f32a208",
+    "ops": {
+      "viewBox": "5.28 5.28 37.44 37.44"
+    }
+  },
+  {
+    "teamId": "APP-TWITCH",
+    "id": "primary",
+    "label": "Glitch speech bubble",
+    "sourceUrl": "https://api.iconify.design/thesvg-color/twitch.svg",
+    "sourcePage": "https://icon-sets.iconify.design/thesvg-color/twitch/",
+    "sourceSha256": "751c2ed29d0614262329a1d5d4baa8ed97b0b6d1f49eea1dea768f2333234860",
+    "ops": {
+      "viewBox": "-56 -56 2511.6 2912"
+    }
+  },
+  {
+    "teamId": "APP-VENMO",
+    "id": "primary",
+    "label": "V tile",
+    "sourceUrl": "https://www.vectorlogo.zone/logos/venmo/venmo-icon.svg",
+    "sourcePage": "https://www.vectorlogo.zone/logos/venmo/index.html",
+    "sourceSha256": "cc9232da26a8c3336e506dfa71c0d370a4b793146c2c484bc01a1063b5018d51",
+    "ops": {
+      "viewBox": "-1.28 -1.28 66.56 66.56"
+    }
+  },
+  {
+    "teamId": "APP-WA",
+    "id": "primary",
+    "label": "Phone in speech bubble",
+    "sourceUrl": "https://api.iconify.design/logos/whatsapp-icon.svg",
+    "sourcePage": "https://icon-sets.iconify.design/logos/whatsapp-icon/",
+    "sourceSha256": "9579ec42ecebb6c6524f9d931b82cf4f0d0f38397048f33e64b4fa25113725a9",
+    "ops": {
+      "viewBox": "-5.145 -5.145 266.225 267.515"
+    }
+  },
+  {
+    "teamId": "APP-WAZE",
+    "id": "primary",
+    "label": "Smiling bubble on wheels",
+    "sourceUrl": "https://api.iconify.design/selfhst/waze.svg",
+    "sourcePage": "https://icon-sets.iconify.design/selfhst/waze/",
+    "sourceSha256": "af13674cf75f69b132034197c2126ece6bfdba91da81a2fb67fe02d5f537a318",
+    "ops": {
+      "viewBox": "-9.984 -10.24 531.968 532.48"
+    }
+  },
+  {
+    "teamId": "APP-WEATHER",
+    "id": "primary",
+    "label": "Sun and cloud tile",
+    "sourceUrl": "https://logowik.com/ios-17-app-icons-set-icon-59931.html",
+    "sourcePage": "https://logowik.com/ios-17-app-icons-set-icon-59931.html",
+    "sourceSha256": "409ebe6d39fa43d32cac5ddf5dca708e45c0ff329eb5865ab6616bd3bbf9fd8b",
+    "downloadForm": "logowik",
+    "ops": {
+      "keepNodes": [
+        "0",
+        "98-102"
+      ],
+      "viewBox": "178.272 230.891 54.723 54.303"
+    }
+  },
+  {
+    "teamId": "APP-YT",
+    "id": "primary",
+    "label": "Play button",
+    "sourceUrl": "https://api.iconify.design/logos/youtube-icon.svg",
+    "sourcePage": "https://icon-sets.iconify.design/logos/youtube-icon/",
+    "sourceSha256": "368ac210e22400910660ef6f632cd652c439dc494e75891ffc809847aa7551ac",
+    "ops": {
+      "viewBox": "-5.12 -5.12 266.24 189.568"
+    }
+  },
+  {
+    "teamId": "BRAND-AE",
+    "id": "primary",
+    "label": "Raptor silhouette",
+    "sourceUrl": "https://brandeps.com/logo-download/a/american-eagle-outfitters-logo-vector-01.svg",
+    "sourcePage": "https://www.brandeps.com/logo/A/American-Eagle-Outfitters-01",
+    "sourceSha256": "cf837a947863baa65c93748cf6c58534f76a09c897a9222a5e4620d6f4a15abf",
+    "ops": {
+      "removeNodes": [
+        "3/0",
+        "3/1",
+        "3/2",
+        "3/3",
+        "3/4",
+        "3/5",
+        "3/6",
+        "3/7",
+        "3/8",
+        "3/9",
+        "3/10",
+        "3/11",
+        "3/12",
+        "3/13",
+        "3/14",
+        "3/15",
+        "3/16",
+        "3/17",
+        "3/18",
+        "3/19",
+        "3/20",
+        "3/21",
+        "3/22"
+      ],
+      "viewBox": "83.292 31.58 354.632 307.528"
+    }
+  },
+  {
+    "teamId": "BRAND-ALLSTATE",
+    "id": "primary",
+    "label": "Cupped hands",
+    "sourceUrl": "https://logotyp.us/file/allstate.svg",
+    "sourcePage": "https://logotyp.us/logo/allstate/",
+    "sourceSha256": "e6e519bbf96c620617bf5e39428735ed61f1750cb4e56521abe8f49284de93d3",
+    "ops": {
+      "removeNodes": [
+        "0/0/1",
+        "0/0/2",
+        "0/0/3",
+        "0/1",
+        "0/2",
+        "0/3",
+        "0/4",
+        "0/5",
+        "0/6",
+        "0/7"
+      ],
+      "viewBox": "64.512 152.432 125.216 95.256"
+    }
+  },
+  {
+    "teamId": "BRAND-AMAZON",
+    "id": "primary",
+    "label": "Smile arrow",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Amazon_icon.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Amazon_icon.svg",
+    "sourceSha256": "1d88dabb83080de94748c767e17b057546eca9cb33a552933cc0d191bc96ec81",
+    "ops": {
+      "removeNodes": [
+        "0/1",
+        "0/2",
+        "0/3"
+      ],
+      "viewBox": "-0.573 185.266 257.39 75.152"
+    }
+  },
+  {
+    "teamId": "BRAND-AMAZON",
+    "id": "a-smile",
+    "label": "Lowercase a with smile",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Amazon_icon.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Amazon_icon.svg",
+    "sourceSha256": "1d88dabb83080de94748c767e17b057546eca9cb33a552933cc0d191bc96ec81",
+    "ops": {
+      "removeNodes": [
+        "0/2",
+        "0/3"
+      ],
+      "viewBox": "-0.724 -4.663 257.692 265.231"
+    }
+  },
+  {
+    "teamId": "BRAND-ANDROID",
+    "id": "primary",
+    "label": "Robot head",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Android_Robot_Head_2023.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Android_Robot_Head_2023.svg",
+    "sourceSha256": "7c2619f711acae579675c139cad1b362f83cf9cdc7dcf2fcfab37c13f9c128a1",
+    "ops": {
+      "viewBox": "-6.604 -6.604 343.408 205.715"
+    }
+  },
+  {
+    "teamId": "BRAND-ANDROID",
+    "id": "full-robot",
+    "label": "Full robot",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Android_robot.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Android_robot.svg",
+    "sourceSha256": "8c80b881727efc8831c8ef53806e7c1d0427607e145aae09061c4870b6cd402f",
+    "ops": {
+      "viewBox": "-153.545 -76.717 307.029 358.262"
+    }
+  },
+  {
+    "teamId": "BRAND-APPLE",
+    "id": "primary",
+    "label": "Bitten fruit",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Apple_logo_black.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Apple_logo_black.svg",
+    "sourceSha256": "9d00ea77a3240f291356c36261c5f45d7fa456f29c97a2f060caf0ed4b9c3231",
+    "ops": {
+      "fill": "#000000",
+      "viewBox": "-20 -20 854 1040"
+    }
+  },
+  {
+    "teamId": "BRAND-APPLE",
+    "id": "rainbow-apple",
+    "label": "Rainbow stripes (1977)",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Apple_Computer_Logo_rainbow.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Apple_Computer_Logo_rainbow.svg",
+    "sourceSha256": "eae5d62f7a0cf46bf048c2e5a18d4fe4fdbcc64573215e4de9078e7771de0d13",
+    "ops": {
+      "viewBox": "-2.092 -2.092 94.088 108.784"
+    }
+  },
+  {
+    "teamId": "BRAND-CANADA",
+    "id": "primary",
+    "label": "National flag",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Canada_(Pantone).svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Canada_(Pantone).svg",
+    "sourceSha256": "afe6921891d516f037e8fb9920128f8bfd86ef2ffe1a6d1d4aa7e22a032434bc",
+    "ops": {
+      "viewBox": "-192 -192 9984 5184"
+    }
+  },
+  {
+    "teamId": "BRAND-CANADA",
+    "id": "maple-leaf",
+    "label": "Maple leaf",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Maple_Leaf.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Maple_Leaf.svg",
+    "sourceSha256": "3833c9814fa0df29b7b132241ed79f015c31d1dba6a123452911b421fbfde010",
+    "ops": {
+      "viewBox": "-1940.445 -2080.6 3880.89 4191.2"
+    }
+  },
+  {
+    "teamId": "BRAND-CHASE",
+    "id": "primary",
+    "label": "Octagon",
+    "sourceUrl": "https://api.iconify.design/selfhst/chase.svg",
+    "sourcePage": "https://icon-sets.iconify.design/selfhst/chase/",
+    "sourceSha256": "2af033875386428d9f08e5b26d60b28423d9a53ec9febc4d29f3bd7a41a19b59",
+    "ops": {
+      "viewBox": "-10.24 -10.24 532.48 532.48"
+    }
+  },
+  {
+    "teamId": "BRAND-CHICAGO",
+    "id": "primary",
+    "label": "City flag",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Chicago,_Illinois.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Chicago,_Illinois.svg",
+    "sourceSha256": "6c16a73098d327a4a0bc7b7f1d756ce6b3965cd68ca8ce364638307092e0b96a",
+    "ops": {
+      "viewBox": "-14.4 -14.4 748.8 508.68"
+    }
+  },
+  {
+    "teamId": "BRAND-CHICAGO",
+    "id": "star",
+    "label": "Six-pointed star",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Chicago,_Illinois.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Chicago,_Illinois.svg",
+    "sourceSha256": "6c16a73098d327a4a0bc7b7f1d756ce6b3965cd68ca8ce364638307092e0b96a",
+    "ops": {
+      "removeNodes": [
+        "0",
+        "2"
+      ],
+      "viewBox": "95.6 177.6 108.8 124.8"
+    }
+  },
+  {
+    "teamId": "BRAND-DELTA",
+    "id": "primary",
+    "label": "Widget",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Delta_Air_Lines_2007_symbol.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Delta_Air_Lines_2007_symbol.svg",
+    "sourceSha256": "a70bf28d7c0cc875551f52cd60b19de07ab4cbdacb8dd58852c08ea8a5e5571d",
+    "ops": {
+      "viewBox": "-8.863 -8.863 460.855 371.786"
+    }
+  },
+  {
+    "teamId": "BRAND-DELTA",
+    "id": "classic-widget",
+    "label": "Classic widget",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Delta_Air_Lines_Logo_1965.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Delta_Air_Lines_Logo_1965.svg",
+    "sourceSha256": "3dfe264f456f3eb6e07ba4521a20b9f7c9eefa10b64898d9018ef06c5fed0be5",
+    "ops": {
+      "removeNodes": [
+        "1"
+      ],
+      "viewBox": "-6.067 -6.067 230.565 315.51"
+    }
+  },
+  {
+    "teamId": "BRAND-ELVIS",
+    "id": "primary",
+    "label": "Mic-stand silhouette",
+    "sourceUrl": "https://logowik.com/elvis-presley-silhouette-vector-logo-11902.html",
+    "sourcePage": "https://logowik.com/elvis-presley-silhouette-vector-logo-11902.html",
+    "sourceSha256": "181d1f43e349571d4404222c6576ba4f4f12a56c8772bf1541f04df5a0d10ca0",
+    "downloadForm": "logowik",
+    "ops": {
+      "removeNodes": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "viewBox": "384.559 70.929 468.701 589.946"
+    }
+  },
+  {
+    "teamId": "BRAND-GATORADE",
+    "id": "primary",
+    "label": "Bolt monogram",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Gatorade_logo.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Gatorade_logo.svg",
+    "sourceSha256": "763e3bfa54d3698b84e556c834d3a7a20931cfccc2b278406ee8d934e3d0c63a",
+    "ops": {
+      "removeNodes": [
+        "3",
+        "4/0/4",
+        "4/0/5"
+      ],
+      "viewBox": "-6.455 35.075 298.885 335.68"
+    }
+  },
+  {
+    "teamId": "BRAND-GATORADE",
+    "id": "bolt",
+    "label": "Lightning bolt",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Gatorade_logo.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Gatorade_logo.svg",
+    "sourceSha256": "763e3bfa54d3698b84e556c834d3a7a20931cfccc2b278406ee8d934e3d0c63a",
+    "ops": {
+      "removeNodes": [
+        "3",
+        "4/0/2",
+        "4/0/4",
+        "4/0/5"
+      ],
+      "viewBox": "99.064 110.357 157.792 181.29"
+    }
+  },
+  {
+    "teamId": "BRAND-JAPAN",
+    "id": "primary",
+    "label": "National flag",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Japan.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Japan.svg",
+    "sourceSha256": "35e785339e19d1ec1987cb9c3d8e66fc97f29a287db0b0b590b8dfdd96d4766b",
+    "ops": {
+      "viewBox": "-18 -18 936 635.85"
+    }
+  },
+  {
+    "teamId": "BRAND-JAPAN",
+    "id": "chrysanthemum",
+    "label": "Imperial chrysanthemum",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Imperial_Seal_of_Japan.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Imperial_Seal_of_Japan.svg",
+    "sourceSha256": "ea846b3133efb6bd3a929fcf8522d959247d1105db028d3b5cd7b82e8cbb9ca3",
+    "ops": {
+      "viewBox": "-101.93 -101.93 203.861 203.861"
+    }
+  },
+  {
+    "teamId": "BRAND-LULU",
+    "id": "primary",
+    "label": "Omega-like symbol",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Special:FilePath/Lululemon_Athletica_logo.svg",
+    "sourcePage": "https://en.wikipedia.org/wiki/File:Lululemon_Athletica_logo.svg",
+    "sourceSha256": "264df054f770d142495bde7ef4038fdbc8d4fc2e0aa8d03b27df804ba7e548d0",
+    "ops": {
+      "removeNodes": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "20",
+        "21",
+        "22",
+        "23",
+        "24",
+        "25",
+        "26",
+        "27",
+        "28",
+        "29",
+        "30",
+        "31",
+        "32",
+        "33",
+        "34",
+        "35"
+      ],
+      "viewBox": "-0.034 -0.034 8.692 8.692"
+    }
+  },
+  {
+    "teamId": "BRAND-MC",
+    "id": "primary",
+    "label": "Interlocking circles",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Mastercard_2019_logo.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Mastercard_2019_logo.svg",
+    "sourceSha256": "4dfa227e514fd47fc63d7c25a5f9f1f6d6cae53aad951aa8aa8598b217838c17",
+    "ops": {
+      "viewBox": "-20 -20 1040 658"
+    }
+  },
+  {
+    "teamId": "BRAND-META",
+    "id": "primary",
+    "label": "Infinity loop",
+    "sourceUrl": "https://cdn.jsdelivr.net/npm/simple-icons@13.21.0/icons/meta.svg",
+    "sourcePage": "https://simpleicons.org/?q=meta",
+    "sourceSha256": "e3e9db62f59dc477e5917687349b8aa9685b841d40300c1afad60ad85075cd2e",
+    "ops": {
+      "fill": "#0081FB",
+      "viewBox": "-0.48 3.54 24.96 16.92"
+    }
+  },
+  {
+    "teamId": "BRAND-META",
+    "id": "f-icon",
+    "label": "Blue f badge",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/2023_Facebook_icon.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:2023_Facebook_icon.svg",
+    "sourceSha256": "ba34bb0a9e43fdad665ea2b84d0363046177147e763ec3765641501779356876",
+    "ops": {
+      "viewBox": "-13.333 -13.333 693.334 693.334"
+    }
+  },
+  {
+    "teamId": "BRAND-MEXICO",
+    "id": "primary",
+    "label": "National flag",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Mexico.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Mexico.svg",
+    "sourceSha256": "bcfebaa9d94827919e65c5414e4ee35a076f89520a1b57d75e0949e1ca81c3b9",
+    "ops": {
+      "viewBox": "-19.6 -19.6 1019.2 599.27"
+    }
+  },
+  {
+    "teamId": "BRAND-MEXICO",
+    "id": "coat-of-arms",
+    "label": "Eagle and serpent emblem",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Mexico.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Coat_of_arms_of_Mexico.svg",
+    "sourceSha256": "2b8d21103887910eb26f3dc4e59f5b0351b14b6ebf885e37c400bb49297da490",
+    "ops": {
+      "viewBox": "-11.575 -11.575 601.921 547.806"
+    }
+  },
+  {
+    "teamId": "BRAND-MICROSOFT",
+    "id": "primary",
+    "label": "Four squares",
+    "sourceUrl": "https://www.vectorlogo.zone/logos/microsoft/microsoft-icon.svg",
+    "sourcePage": "https://www.vectorlogo.zone/logos/microsoft/index.html",
+    "sourceSha256": "c0cef521be053d3b39d1666e71663af459c7c9c45d17c17e5a2d8e77fc2dab74",
+    "ops": {
+      "viewBox": "-0.64 -0.64 33.28 33.28"
+    }
+  },
+  {
+    "teamId": "BRAND-MICROSOFT",
+    "id": "windows-flag",
+    "label": "Waving flag (1992)",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Windows_Logo_(1992-2001).svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Windows_Logo_(1992-2001).svg",
+    "sourceSha256": "b23ca061db6e29b65a56d24b9b6eeebd03ee1992e0e3e2f36f018e36fec62dc5",
+    "ops": {
+      "viewBox": "-21.598 -21.598 1123.096 976.77"
+    }
+  },
+  {
+    "teamId": "BRAND-MJ",
+    "id": "primary",
+    "label": "Leaping dunker",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Special:FilePath/Jumpman_logo.svg",
+    "sourcePage": "https://en.wikipedia.org/wiki/File:Jumpman_logo.svg",
+    "sourceSha256": "0b66456c2f3a96c9a63ad2105c75192ee6b2984654da2fd25e23bd4c9f2a63e9",
+    "ops": {
+      "fill": "#000000",
+      "viewBox": "0.2 8.26 249.6 233.52"
+    }
+  },
+  {
+    "teamId": "BRAND-MRBEAST",
+    "id": "primary",
+    "label": "Panther head",
+    "sourceUrl": "https://logowik.com/mrbeast-vector-logo-15118.html",
+    "sourcePage": "https://logowik.com/mrbeast-vector-logo-15118.html",
+    "sourceSha256": "fb7da7b64dd407fe0e1fe68c22c119a407b8a0e9d440149b720652b2194e3875",
+    "downloadForm": "logowik",
+    "ops": {
+      "viewBox": "69.423 76.663 766.607 557.1"
+    }
+  },
+  {
+    "teamId": "BRAND-MUSTANG",
+    "id": "primary",
+    "label": "Running pony",
+    "sourceUrl": "https://api.iconify.design/cbi/mustang.svg?color=%23000000",
+    "sourcePage": "https://icon-sets.iconify.design/cbi/mustang/",
+    "sourceSha256": "1bda25ade0e64c09abdaf8c5407c01fe68de511fa5b87339cecd29ea95330389",
+    "ops": {
+      "viewBox": "1.592 7.796 20.817 8.409"
+    }
+  },
+  {
+    "teamId": "BRAND-MUSTANG",
+    "id": "tri-bar",
+    "label": "Pony and tri-bar",
+    "sourceUrl": "https://cdn.freebiesupply.com/logos/large/2x/mustang-logo-svg-vector.svg",
+    "sourcePage": "https://freebiesupply.com/logos/mustang-logo/",
+    "sourceSha256": "7a7025e781d93057fc174df92e8fa985d7fcf3d0c8cdb6d8083273fd1f857cfa",
+    "ops": {
+      "removeNodes": [
+        "0"
+      ],
+      "viewBox": "-1.55 0.667 195.856 191.422"
+    }
+  },
+  {
+    "teamId": "BRAND-NBC",
+    "id": "primary",
+    "label": "Six-feather peacock",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/NBC_Peacock_(2022).svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:NBC_Peacock_(2022).svg",
+    "sourceSha256": "552be9f23bf2409b289b42232a71543ff730e4447347335e71cba5ef17f223ce",
+    "ops": {
+      "viewBox": "-4.317 -4.317 224.474 133.605"
+    }
+  },
+  {
+    "teamId": "BRAND-NBC",
+    "id": "peacock-1956",
+    "label": "Eleven-feather peacock (1956)",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Special:FilePath/1956_NBC_logo.svg",
+    "sourcePage": "https://en.wikipedia.org/wiki/File:1956_NBC_logo.svg",
+    "sourceSha256": "6490ce3fd3a959b31599a8cbe8bad8907c46ea2b5d12acdff70794f35c0d7d8c",
+    "ops": {
+      "viewBox": "-20 -17.414 1040 651"
+    }
+  },
+  {
+    "teamId": "BRAND-NIKE",
+    "id": "primary",
+    "label": "Swoosh",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Logo_NIKE.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Logo_NIKE.svg",
+    "sourceSha256": "54bb728904e14583753fcde786a9901b53ca9c8401ac207fb516841f9863c55a",
+    "ops": {
+      "fill": "#111111",
+      "viewBox": "115.5 341.38 1040 396.5"
+    }
+  },
+  {
+    "teamId": "BRAND-PEPSI",
+    "id": "primary",
+    "label": "Smile globe",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Pepsi_logo_2014.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Pepsi_logo_2014.svg",
+    "sourceSha256": "4984903b4b4f532bc8eaf103659ad2201dfe6d0711aa4746464cfe72657d2670",
+    "ops": {
+      "removeNodes": [
+        "0/3",
+        "0/4",
+        "0/5",
+        "0/6",
+        "0/7",
+        "0/8"
+      ],
+      "viewBox": "-4.865 -4.865 252.627 252.957"
+    }
+  },
+  {
+    "teamId": "BRAND-PEPSI",
+    "id": "ringed-globe",
+    "label": "Ringed globe",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Pepsi_2023.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Pepsi_2023.svg",
+    "sourceSha256": "9431dae56a362881149c18f5d9a36eed8e6875a77342057362f0b2a70ea440ff",
+    "ops": {
+      "removeNodes": [
+        "2"
+      ],
+      "viewBox": "-4.231 -4.231 220.022 220.022"
+    }
+  },
+  {
+    "teamId": "BRAND-PRINCE",
+    "id": "primary",
+    "label": "Glyph",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Special:FilePath/Prince_logo.svg",
+    "sourcePage": "https://en.wikipedia.org/wiki/File:Prince_logo.svg",
+    "sourceSha256": "334223ce8bae0bea1e9111397270da1fa52f65eb5218b1a189c2d554b780b362",
+    "ops": {
+      "viewBox": "20.875 165.875 1914.5 2164.5"
+    }
+  },
+  {
+    "teamId": "BRAND-PS",
+    "id": "primary",
+    "label": "Symbol",
+    "sourceUrl": "https://www.svgrepo.com/show/452087/playstation.svg",
+    "sourcePage": "https://www.svgrepo.com/svg/452087/playstation",
+    "sourceSha256": "8fd2ad6d2dcaa08be7c484111b65e535ed43c91240aefa64ab831ad5034c780b",
+    "ops": {
+      "viewBox": "-0.64 2.352 33.28 27.296"
+    }
+  },
+  {
+    "teamId": "BRAND-PS",
+    "id": "retro-color",
+    "label": "Four-color symbol (1994)",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Playstation_logo_colour.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Playstation_logo_colour.svg",
+    "sourceSha256": "9fbbe2041f5a533108b57984023de355a36c3154a8a025332e3a72150ff5ffc5",
+    "ops": {
+      "viewBox": "-66.28 -5.78 742.56 570.56"
+    }
+  },
+  {
+    "teamId": "BRAND-STONES",
+    "id": "primary",
+    "label": "Tongue and lips",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Special:FilePath/The_Rolling_Stones%27_logo.svg",
+    "sourcePage": "https://en.wikipedia.org/wiki/File:The_Rolling_Stones%27_logo.svg",
+    "sourceSha256": "8a95d40015dc5b94a44198f6cfeb258e52eff3b2de8bf7f2137b52643411d069",
+    "ops": {
+      "viewBox": "-2.301 -2.301 104.616 119.627"
+    }
+  },
+  {
+    "teamId": "BRAND-TARGET",
+    "id": "primary",
+    "label": "Bullseye",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Target_logo.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Target_logo.svg",
+    "sourceSha256": "7479e3e2eed94a91cbb9f119c0ca72383b6578c14cc3c188504d41a626c40b2b",
+    "ops": {
+      "removeNodes": [
+        "0/0/2",
+        "0/0/3",
+        "0/0/4",
+        "0/0/5",
+        "0/0/6",
+        "0/0/7"
+      ],
+      "viewBox": "15.791 30.715 402.65 402.363"
+    }
+  },
+  {
+    "teamId": "BRAND-TX",
+    "id": "primary",
+    "label": "State flag",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Texas.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Texas.svg",
+    "sourceSha256": "33b9a4dce7b11a8052e3d0dad2f046dbeacc8e4dff624efb2cd6ee9ec21003f1",
+    "ops": {
+      "viewBox": "-18 -18 936 635.85"
+    }
+  },
+  {
+    "teamId": "BRAND-TX",
+    "id": "flag-map",
+    "label": "Flag-filled state outline",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Texas_flag_map.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Texas_flag_map.svg",
+    "sourceSha256": "c98d512b0c65f1a2a8161d18d260218c2107a878487e14159f643583f900ce6b",
+    "ops": {
+      "viewBox": "-23.219 -23.057 1202.438 1173.388"
+    }
+  },
+  {
+    "teamId": "BRAND-UNITED",
+    "id": "primary",
+    "label": "Globe",
+    "sourceUrl": "https://api.iconify.design/thesvg-color/united-airlines.svg",
+    "sourcePage": "https://icon-sets.iconify.design/thesvg-color/united-airlines/",
+    "sourceSha256": "46a2e33cc9fa4434a7fca4d26372839352eb07db716267a6c6ca8279a9abe178",
+    "ops": {
+      "viewBox": "-0.48 -0.48 24.96 24.96"
+    }
+  },
+  {
+    "teamId": "BRAND-UNITED",
+    "id": "tulip",
+    "label": "Tulip (1974)",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/United_Airlines_1974_%27Tulip_U%27_logo.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:United_Airlines_1974_%27Tulip_U%27_logo.svg",
+    "sourceSha256": "5cca65f07db720faca210ffc2da28bf265aa7f8edfe3f0241150b0a9ca52dcda",
+    "ops": {
+      "viewBox": "-4.498 -4.498 233.892 173.732"
+    }
+  },
+  {
+    "teamId": "BRAND-WALMART",
+    "id": "primary",
+    "label": "Spark",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Walmart_spark_(2025).svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Walmart_spark_(2025).svg",
+    "sourceSha256": "914b4da1d1ac4664677fdad0c2af0a34f4645f1c84b76024d07434595a96ee54",
+    "ops": {
+      "viewBox": "-12 -12 556.2 624"
+    }
+  },
+  {
+    "teamId": "BRAND-WALMART",
+    "id": "app-icon",
+    "label": "Spark app icon",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Walmart_App_icon_(2025).svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Walmart_App_icon_(2025).svg",
+    "sourceSha256": "a078c17df8597102b3c05163683d2a1a56ad9378ad38c9def1c1e522c2cdacd3",
+    "ops": {
+      "viewBox": "-1.097 -1.069 57.034 56.76"
+    }
+  },
+  {
+    "teamId": "FOOD-ARB",
+    "id": "primary",
+    "label": "Hat silhouette",
+    "sourceUrl": "https://iconape.com/wp-content/files/im/239922/svg/239922.svg",
+    "sourcePage": "https://iconape.com/arbys-restaurant-logo-logo-icon-svg-png.html",
+    "sourceSha256": "006ff9f76e517f590be5888274cc69ffcea4120b101880f7635166cad4e6bda2",
+    "ops": {
+      "removeNodes": [
+        "0/0",
+        "0/2",
+        "0/3",
+        "0/4",
+        "0/5"
+      ],
+      "viewBox": "46.143 26.865 282.087 422.269"
+    }
+  },
+  {
+    "teamId": "FOOD-ARB",
+    "id": "oven-mitt",
+    "label": "Oven Mitt mascot",
+    "sourceUrl": "https://iconape.com/wp-content/files/bu/29148/svg/arby-s-oven-mitt.svg",
+    "sourcePage": "https://iconape.com/arby-s-oven-mitt-logo-icon-svg-png.html",
+    "sourceSha256": "eb076605ef73ee0f2e5566c402c9d41a217d02d4d7b869aa63875babafd24b0e",
+    "ops": {
+      "removeNodes": [
+        "0",
+        "3",
+        "22",
+        "23",
+        "24",
+        "25",
+        "26",
+        "27",
+        "28",
+        "29",
+        "30",
+        "31",
+        "32",
+        "33"
+      ],
+      "viewBox": "40.101 9.356 109.952 169.995"
+    }
+  },
+  {
+    "teamId": "FOOD-BK",
+    "id": "primary",
+    "label": "Bun halves",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Burger_King_2020.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Burger_King_2020.svg",
+    "sourceSha256": "bebb99faebfa09fa803cc611979ef8a019ef730dec69ed46b9a07488874d9b89",
+    "ops": {
+      "removeNodes": [
+        "2"
+      ],
+      "viewBox": "-2.083 -2.083 573.326 624.166"
+    }
+  },
+  {
+    "teamId": "FOOD-BK",
+    "id": "swoosh-bun",
+    "label": "Bun with blue swoosh",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Burger_King_1999%E2%80%932020_logo.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Burger_King_1999%E2%80%932020_logo.svg",
+    "sourceSha256": "3a15a6c049060bdb4f1af5fa436bef65ffef80dcaa71d5b52fd480f3a6ddbec4",
+    "ops": {
+      "removeNodes": [
+        "0",
+        "2",
+        "5",
+        "6",
+        "7",
+        "8",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15"
+      ],
+      "viewBox": "-122.823 -122.298 1041.536 1083.739"
+    }
+  },
+  {
+    "teamId": "FOOD-BK",
+    "id": "king-mascot",
+    "label": "Classic royal mascot",
+    "sourceUrl": "https://iconape.com/wp-content/files/ov/244779/svg/244779.svg",
+    "sourcePage": "https://iconape.com/burger-king-guy-logo-logo-icon-svg-png.html",
+    "sourceSha256": "f51ea62030d119afa84ca9af07474e8ea179111556012de0e60c3e70056fcb86",
+    "ops": {
+      "removeNodes": [
+        "0/0",
+        "0/53"
+      ],
+      "viewBox": "10.598 13.879 171.515 165.532"
+    }
+  },
+  {
+    "teamId": "FOOD-BOJ",
+    "id": "primary",
+    "label": "Wordmark",
+    "sourceUrl": "https://upload.wikimedia.org/wikipedia/en/9/92/Bojangles_2020.svg",
+    "sourcePage": "https://en.wikipedia.org/wiki/File:Bojangles_2020.svg",
+    "sourceSha256": "8bca6738e8578980d5767ef3abf4d9cf090c37f75ebdb453d256b893cc045526",
+    "ops": {
+      "viewBox": "-0.531 -0.815 82.545 30.16"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "FOOD-CANE",
+    "id": "primary",
+    "label": "Wordmark",
+    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/9/98/Raising_Cane%27s_Chicken_Fingers_logo.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Raising_Cane%27s_Chicken_Fingers_logo.svg",
+    "sourceSha256": "f9580d1d5eb537c4fddc387e1dbf4c4e3ad0d6d4391484387d835e274fba7a44",
+    "ops": {
+      "viewBox": "-5.002 -5.002 260.104 130.177"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "FOOD-CARL",
+    "id": "primary",
+    "label": "Happy Star",
+    "sourceUrl": "https://www.carlsjr.com/getContentAsset/3e946b30-1bec-4ede-ad23-293b2c5f25b9/dfc3d011-8f63-43f6-9ed8-4b444333a1d0/carls_jr_logo.svg?language=en-US",
+    "sourcePage": "https://www.carlsjr.com/",
+    "sourceSha256": "f1b5d34116d13dc49b36d73e3c716863f357c7ca0584e08b0a2db8546667d420",
+    "ops": {
+      "removeNodes": [
+        "1/0/12",
+        "1/0/13",
+        "1/0/14",
+        "1/0/15",
+        "1/0/16"
+      ],
+      "viewBox": "-0.849 -0.849 44.13 42.49"
+    }
+  },
+  {
+    "teamId": "FOOD-CFA",
+    "id": "primary",
+    "label": "Chicken C disc",
+    "sourceUrl": "https://www.chick-fil-a.com/wp-content/uploads/sites/2/2025/04/Chick-fil-A-header-logo.svg",
+    "sourcePage": "https://www.chick-fil-a.com/",
+    "sourceSha256": "59876ecb0031dd80753e83346bd6295b4fdeefea82523602459680e0db74d493",
+    "ops": {
+      "removeNodes": [
+        "2",
+        "3"
+      ],
+      "viewBox": "-1.431 -0.546 76.436 76.051"
+    }
+  },
+  {
+    "teamId": "FOOD-CHECK",
+    "id": "primary",
+    "label": "Checkered racing mark",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Special:FilePath/Checkers_and_Rally%27s_logo_(2025).svg",
+    "sourcePage": "https://en.wikipedia.org/wiki/File:Checkers_and_Rally%27s_logo_(2025).svg",
+    "sourceSha256": "83c708aad513a201f9e9926bde4336d506ccc8426e87226633cf0d101673babd",
+    "ops": {
+      "removeNodes": [
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "20",
+        "21",
+        "22",
+        "23",
+        "24",
+        "25",
+        "26",
+        "27",
+        "28",
+        "29",
+        "30",
+        "31",
+        "32"
+      ],
+      "viewBox": "-5.273 -5.273 274.175 155.042"
+    }
+  },
+  {
+    "teamId": "FOOD-CHECK",
+    "id": "classic-oval",
+    "label": "Classic oval",
+    "sourceUrl": "https://logowik.com/checkers-logo-vector-36837.html",
+    "sourcePage": "https://logowik.com/checkers-logo-vector-36837.html",
+    "sourceSha256": "6fda21e73b614cb8e47e6953b956ab27264a4a09aa423d68adda1dbea052c5c3",
+    "downloadForm": "logowik",
+    "ops": {
+      "removeNodes": [
+        "3/0/2",
+        "3/0/3",
+        "3/0/4",
+        "3/0/5",
+        "3/0/6",
+        "3/0/7",
+        "3/0/8",
+        "3/0/9",
+        "3/0/10"
+      ],
+      "viewBox": "-0.714 -0.739 51.408 24.318"
+    }
+  },
+  {
+    "teamId": "FOOD-CHIP",
+    "id": "primary",
+    "label": "Chili pepper tile",
+    "sourceUrl": "https://iconape.com/wp-content/files/ng/241681/svg/chipotle-seeklogo.com.svg",
+    "sourcePage": "https://iconape.com/chipotle-logo-logo-icon-svg-png.html",
+    "sourceSha256": "b0995a81ff58e3e0fa80d817b5b9d95ebdcbb2e524eb23ff2e01d3f58c9e7aad",
+    "ops": {
+      "removeNodes": [
+        "1/0",
+        "1/3"
+      ],
+      "viewBox": "18.484 268.526 106.472 106.798"
+    }
+  },
+  {
+    "teamId": "FOOD-CUL",
+    "id": "primary",
+    "label": "Wordmark",
+    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Culver%27s_logo.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Culver%27s_logo.svg",
+    "sourceSha256": "965fbd7b3b3860d4537bf2261beb77b8900ce9380552c7786e46cbb81262229a",
+    "ops": {
+      "viewBox": "-7.44 -7.44 386.88 184.14"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "FOOD-DOM",
+    "id": "primary",
+    "label": "Domino tile",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Domino%27s_2025_(symbol).svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Domino%27s_2025_(symbol).svg",
+    "sourceSha256": "7faf29da731000c737fbfa49e317cf5fec24c76952f35124a087362890a5a31a",
+    "ops": {
+      "removeNodes": [],
+      "viewBox": "-20 -20 1040 1040"
+    }
+  },
+  {
+    "teamId": "FOOD-DOM",
+    "id": "noid",
+    "label": "The Noid",
+    "sourceUrl": "https://iconape.com/wp-content/files/qr/242144/svg/242144.svg",
+    "sourcePage": "https://iconape.com/noid-logo-logo-icon-svg-png.html",
+    "sourceSha256": "6f9b7e28077ffe48c08c2d7def7f0ebfae0167680d23ef9ae651c3bb79cf261f",
+    "ops": {
+      "removeNodes": [],
+      "viewBox": "-7.708 -7.708 305.429 400.816"
+    }
+  },
+  {
+    "teamId": "FOOD-DQ",
+    "id": "primary",
+    "label": "Red lips with swooshes",
+    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Dairy_Queen_logo.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Dairy_Queen_logo.svg",
+    "sourceSha256": "675db3777b19e8456b7121a4136b1b8c859776815e1eca95f7d3860a624d1c7e",
+    "ops": {
+      "removeNodes": [
+        "0/0",
+        "1",
+        "0/1/1/3",
+        "0/1/1/4",
+        "0/1/1/7"
+      ],
+      "viewBox": "1.763 3.283 198.282 132.042"
+    }
+  },
+  {
+    "teamId": "FOOD-DUNK",
+    "id": "primary",
+    "label": "Wordmark",
+    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/1/14/Dunkin%27_2022.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Dunkin%27_2022.svg",
+    "sourceSha256": "c4d73934bd0f5ffbaf9922795896ab48f323b6edc40e5263fc1f13e40b3420d2",
+    "ops": {
+      "viewBox": "-6.874 -7.05 366.597 82.376"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "FOOD-FIVE",
+    "id": "primary",
+    "label": "Wordmark",
+    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/8/80/Five_Guys_logo.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Five_Guys_logo.svg",
+    "sourceSha256": "c28adbc843a1bf08490f6742548e5659897abe22cce29e07ffcd2d0c8c09a510",
+    "ops": {
+      "viewBox": "4.774 0.771 332.893 84.528"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "FOOD-HARD",
+    "id": "primary",
+    "label": "Happy Star",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Special:FilePath/Hardee%27s_logo_since_2022.svg",
+    "sourcePage": "https://en.wikipedia.org/wiki/File:Hardee%27s_logo_since_2022.svg",
+    "sourceSha256": "afd22e880b4e6c7d5bfdb06c45e3664fd05f8fe3ed5f56103102d1d156ca2ddc",
+    "ops": {
+      "removeNodes": [
+        "1/0/18"
+      ],
+      "viewBox": "-0.715 -0.781 40.602 39.148"
+    }
+  },
+  {
+    "teamId": "FOOD-INO",
+    "id": "primary",
+    "label": "Yellow arrow",
+    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8c/InNOut_2021_logo.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:InNOut_2021_logo.svg",
+    "sourceSha256": "6d72e7d9a9127886b0c5a6395d6867e8b4a6499b4ca42b89c0f5735f01511f72",
+    "ops": {
+      "removeNodes": [
+        "0/0",
+        "0/1",
+        "0/2",
+        "0/3",
+        "0/4",
+        "0/5",
+        "0/6",
+        "0/8",
+        "0/9",
+        "0/10",
+        "0/11",
+        "0/12",
+        "0/13",
+        "0/14",
+        "0/15",
+        "0/16"
+      ],
+      "viewBox": "0.134 -2.666 138.611 44.671"
+    }
+  },
+  {
+    "teamId": "FOOD-JACK",
+    "id": "primary",
+    "label": "Retro clown emblem",
+    "sourceUrl": "https://logowik.com/jack-in-the-box-1970s-logo-vector-38447.html",
+    "sourcePage": "https://logowik.com/jack-in-the-box-1970s-logo-vector-38447.html",
+    "sourceSha256": "7b4216b5318e44ec5f3ee88b5cb401b75670815aca33c259d8972a0810c90f2b",
+    "downloadForm": "logowik",
+    "ops": {
+      "removeNodes": [
+        "3/6",
+        "3/7",
+        "3/8",
+        "3/9"
+      ],
+      "viewBox": "-3.258 -3.458 174.428 179.841"
+    }
+  },
+  {
+    "teamId": "FOOD-JACK",
+    "id": "box",
+    "label": "Two-tone box",
+    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/4/42/Jack_in_the_Box_2022_logo.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Jack_in_the_Box_2022_logo.svg",
+    "sourceSha256": "ab707b15ef1a1689ee11f75c5097d34c0113957d005af0ba777daa76b26cae07",
+    "ops": {
+      "removeNodes": [
+        "2/0/0/3",
+        "2/0/0/4",
+        "2/0/0/5",
+        "2/0/0/6",
+        "2/0/0/7",
+        "2/0/0/8",
+        "2/0/0/9",
+        "2/0/0/10",
+        "2/0/0/11",
+        "2/0/0/12",
+        "2/0/0/13"
+      ],
+      "viewBox": "-52.403 -52.403 2724.962 2348"
+    }
+  },
+  {
+    "teamId": "FOOD-KFC",
+    "id": "primary",
+    "label": "Colonel portrait",
+    "sourceUrl": "https://logowik.com/kfc-colonel-sanders-logo-vector-67983.html",
+    "sourcePage": "https://logowik.com/kfc-colonel-sanders-logo-vector-67983.html",
+    "sourceSha256": "b1392511c5e811da43bea6807c531cd34adc89515871929d4814befc716a3a6d",
+    "downloadForm": "logowik",
+    "ops": {
+      "viewBox": "-11.272 -11.272 339.851 586.144"
+    }
+  },
+  {
+    "teamId": "FOOD-KFC",
+    "id": "striped-bucket",
+    "label": "Striped bucket",
+    "sourceUrl": "https://logowik.com/kfc-kentucky-fried-chicken-vector-logo-8313.html",
+    "sourcePage": "https://logowik.com/kfc-kentucky-fried-chicken-vector-logo-8313.html",
+    "sourceSha256": "76fdf663777b491b9cfaf7c28699a7d9191a725905c7cc6721d8dc85f2f93ae2",
+    "downloadForm": "logowik",
+    "ops": {
+      "removeNodes": [
+        "5",
+        "6"
+      ],
+      "viewBox": "138.12 61.78 396.246 396.246"
+    }
+  },
+  {
+    "teamId": "FOOD-LC",
+    "id": "primary",
+    "label": "Toga-clad mascot",
+    "sourceUrl": "https://upload.wikimedia.org/wikipedia/en/7/7e/Little_Caesars_logo.svg",
+    "sourcePage": "https://en.wikipedia.org/wiki/File:Little_Caesars_logo.svg",
+    "sourceSha256": "c0064aea9714cefd251124ffbd78f2239d391ec91be299491c3bbef25b29ac07",
+    "ops": {
+      "removeNodes": [
+        "0/1"
+      ],
+      "viewBox": "-3.335 -3.335 156.42 173.42"
+    }
+  },
+  {
+    "teamId": "FOOD-MCD",
+    "id": "primary",
+    "label": "Golden Arches",
+    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/3/36/McDonald%27s_Golden_Arches.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:McDonald%27s_Golden_Arches.svg",
+    "sourceSha256": "f7f34c46de7ce20ec8427bdf3a14d8df2c8703aa807e877497ee96f5eac1fe1d",
+    "ops": {
+      "viewBox": "-4.189 -4.325 281.623 247.399"
+    }
+  },
+  {
+    "teamId": "FOOD-MCD",
+    "id": "red-square",
+    "label": "Arches on red square",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/McDonald%27s_square_2020.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:McDonald%27s_square_2020.svg",
+    "sourceSha256": "e022119c1ffcb128c7a26c2b63ba8dbacbdb8ac476c0fd9fd6ad91cdd80130b8",
+    "ops": {
+      "viewBox": "-28.691 -28.691 1491.235 1491.953"
+    }
+  },
+  {
+    "teamId": "FOOD-PANDA",
+    "id": "primary",
+    "label": "Panda in red disc",
+    "sourceUrl": "https://upload.wikimedia.org/wikipedia/en/8/85/Panda_Express_logo.svg",
+    "sourcePage": "https://en.wikipedia.org/wiki/File:Panda_Express_logo.svg",
+    "sourceSha256": "247bf46109f7596a4c80228feb415ff122ed9929e898532a47e373ea6817458c",
+    "ops": {
+      "removeNodes": [
+        "1",
+        "2",
+        "5"
+      ],
+      "viewBox": "-2.039 -2.039 106.036 106.036"
+    }
+  },
+  {
+    "teamId": "FOOD-PAPA",
+    "id": "primary",
+    "label": "Wordmark",
+    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/9/92/Papa_Johns_logo.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Papa_Johns_logo.svg",
+    "sourceSha256": "b7d3c861677d06c45016dfb5987a314af174d15320580b13a374a61fdae6a267",
+    "ops": {
+      "viewBox": "-7.132 -7.132 370.864 80.235"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "FOOD-PH",
+    "id": "primary",
+    "label": "Red roof",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Pizza_Hut_%282019%29.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Pizza_Hut_(2019).svg",
+    "sourceSha256": "e7eeb5316c2a79acc90dac4ee1fb44af50c171819f3758684f361d936dd85163",
+    "ops": {
+      "removeNodes": [
+        "0/0/0"
+      ],
+      "viewBox": "-9.838 -9.838 511.576 139.454"
+    }
+  },
+  {
+    "teamId": "FOOD-PH",
+    "id": "roof-1999",
+    "label": "Brushstroke roof (1999)",
+    "sourceUrl": "https://1000logos.net/wp-content/uploads/2017/05/Pizza-Hut-Logo-1.svg",
+    "sourcePage": "https://1000logos.net/pizza-hut-logo/",
+    "sourceSha256": "d68d36a87fb6d8383edb190999aeec846c3c33b09a8ea92a8731956453c4f120",
+    "ops": {
+      "removeNodes": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "6"
+      ],
+      "viewBox": "-2.125 -4.53 381.591 174.876"
+    }
+  },
+  {
+    "teamId": "FOOD-POP",
+    "id": "primary",
+    "label": "P medallion",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Popeyes_logo.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Popeyes_logo.svg",
+    "sourceSha256": "48fb78d93826b994220f89af05cfe38825efd793def23418e50ed52c348e320f",
+    "ops": {
+      "removeNodes": [
+        "3/0/0/0/3",
+        "3/0/0/0/4",
+        "3/0/0/0/5",
+        "3/0/0/0/6",
+        "3/0/0/0/7",
+        "3/0/0/0/8",
+        "3/0/0/0/9",
+        "3/0/0/0/10",
+        "3/0/0/0/11",
+        "3/0/0/0/12",
+        "3/0/0/0/13",
+        "3/0/0/0/14",
+        "3/0/0/0/15",
+        "3/0/0/0/16",
+        "3/0/0/0/17",
+        "3/0/0/0/18",
+        "3/0/0/0/25",
+        "3/0/1",
+        "3/0/2"
+      ],
+      "viewBox": "1.896 -0.402 33.935 33.622"
+    }
+  },
+  {
+    "teamId": "FOOD-SON",
+    "id": "primary",
+    "label": "Bow-tie outline",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/SONIC_New_Logo_2020.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:SONIC_New_Logo_2020.svg",
+    "sourceSha256": "68ca2b5851cfd6084b2664a8d730fe9683d9905bc7645a63a1e8dba2b87f03e5",
+    "ops": {
+      "removeNodes": [
+        "2/0/0",
+        "2/0/1",
+        "2/0/3"
+      ],
+      "viewBox": "-98.634 -98.634 5128.962 2796.271"
+    }
+  },
+  {
+    "teamId": "FOOD-SON",
+    "id": "pennants-2004",
+    "label": "Double pennant (2004)",
+    "sourceUrl": "https://brandeps.com/logo-download/s/sonic-logo-vector-01.svg",
+    "sourcePage": "https://brandeps.com/logo/s/sonic-01",
+    "sourceSha256": "d6533c1460683f013c49c17a17f6aba66bd2cbe508bf75f0638fe87ea38c9f14",
+    "ops": {
+      "removeNodes": [
+        "1/4",
+        "1/5"
+      ],
+      "viewBox": "-10.225 130.575 531.681 250.337"
+    }
+  },
+  {
+    "teamId": "FOOD-STAR",
+    "id": "primary",
+    "label": "Siren",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Special:FilePath/Starbucks_Corporation_Logo_2011.svg",
+    "sourcePage": "https://en.wikipedia.org/wiki/File:Starbucks_Corporation_Logo_2011.svg",
+    "sourceSha256": "63943b9d4030590bd15cdbbda16349daff87942d986782e98da8aef630b54802",
+    "ops": {
+      "removeNodes": [
+        "1/2",
+        "1/3"
+      ],
+      "viewBox": "-4.748 -4.748 246.913 246.913"
+    }
+  },
+  {
+    "teamId": "FOOD-SUB",
+    "id": "primary",
+    "label": "Arrow S",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Subway_icon.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Subway_icon.svg",
+    "sourceSha256": "8797363412224abb6a08adb5971d82c534fcb012deb0b7df28a23398e4cdfe41",
+    "ops": {
+      "viewBox": "-51.211 -51.211 2084.287 2662.971"
+    }
+  },
+  {
+    "teamId": "FOOD-TB",
+    "id": "primary",
+    "label": "Bell",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Special:FilePath/Taco_Bell_2023.svg",
+    "sourcePage": "https://en.wikipedia.org/wiki/File:Taco_Bell_2023.svg",
+    "sourceSha256": "7b756ddaf0740466772129c46fed9d8d8ae3abc13b4eb3a6e13c9f9f0fd334ca",
+    "ops": {
+      "removeNodes": [
+        "2"
+      ],
+      "viewBox": "-4.855 -4.855 252.456 230.536"
+    }
+  },
+  {
+    "teamId": "FOOD-TB",
+    "id": "bell-1994",
+    "label": "Multicolor bell (1994)",
+    "sourceUrl": "https://1000logos.net/wp-content/uploads/2017/06/Taco-Bell-Logo-5.svg",
+    "sourcePage": "https://1000logos.net/taco-bell-logo/",
+    "sourceSha256": "4f1b2d3a8732ee5955e4deb13436d0c99966777bcf38be936a10ac680047e79b",
+    "ops": {
+      "removeNodes": [
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19"
+      ],
+      "viewBox": "409.51 354.47 437.299 361.779"
+    }
+  },
+  {
+    "teamId": "FOOD-WEN",
+    "id": "primary",
+    "label": "Portrait",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Special:FilePath/Wendy%27s_full_logo_2012.svg",
+    "sourcePage": "https://en.wikipedia.org/wiki/File:Wendy%27s_full_logo_2012.svg",
+    "sourceSha256": "1101996d547cec2a54e531d760eb69e20f714de0bd4c5fa8c5d2fa4658413af6",
+    "ops": {
+      "removeNodes": [
+        "3",
+        "4"
+      ],
+      "viewBox": "23.07 -1.024 53.262 49.531"
+    }
+  },
+  {
+    "teamId": "FOOD-WEN",
+    "id": "portrait-1983",
+    "label": "Classic portrait (1983)",
+    "sourceUrl": "https://1000logos.net/wp-content/uploads/2017/08/wendys-logo-11.svg",
+    "sourcePage": "https://1000logos.net/wendys-logo/",
+    "sourceSha256": "272a9f63821669a86a163248007aea3802cc18f318aaf0c69e031b7a5969e87f",
+    "ops": {
+      "removeNodes": [
+        "2/0/0",
+        "2/0/1/0/0",
+        "2/0/1/0/1/0",
+        "2/0/1/1",
+        "2/0/1/0/1/1/15"
+      ],
+      "viewBox": "368.894 19.909 145.728 172.595"
+    }
+  },
+  {
+    "teamId": "FOOD-WHAT",
+    "id": "primary",
+    "label": "Flying W",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Whataburger_logo.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Whataburger_logo.svg",
+    "sourceSha256": "86ca33239daf07023cfe539e5713f483b22b7a72662bebc125a901b035310bed",
+    "ops": {
+      "removeNodes": [
+        "3/5",
+        "4"
+      ],
+      "viewBox": "-0.228 -4.578 300.456 247.956"
+    }
+  },
+  {
+    "teamId": "FOOD-ZAX",
+    "id": "primary",
+    "label": "Rooster disc",
+    "sourceUrl": "https://1000logos.net/wp-content/uploads/2025/02/Zaxbys-Logo-SVG_001.svg",
+    "sourcePage": "https://1000logos.net/zaxbys-logo/",
+    "sourceSha256": "5cb330cb59d5c684b0d330c3deca21e9c48cf722a7b306755819379b8b1490a2",
+    "ops": {
+      "removeNodes": [
+        "1",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "20",
+        "21",
+        "22",
+        "23",
+        "24",
+        "25",
+        "26",
+        "27",
+        "28",
+        "29",
+        "30",
+        "31",
+        "32",
+        "33",
+        "34",
+        "35",
+        "36",
+        "37",
+        "38",
+        "39",
+        "40",
+        "41",
+        "42",
+        "43",
+        "44",
+        "45",
+        "46",
+        "47",
+        "48",
+        "49",
+        "50",
+        "51"
+      ],
+      "viewBox": "460.2 21.2 1079.6 1081.6"
+    }
+  },
+  {
+    "teamId": "FOOD-ZAX",
+    "id": "oval-rooster",
+    "label": "Rooster in red oval",
+    "sourceUrl": "https://1000logos.net/wp-content/uploads/2025/02/Zaxbys-Logo-SVG_010.svg",
+    "sourcePage": "https://1000logos.net/zaxbys-logo/",
+    "sourceSha256": "82042570b0a60b77c35d968b01c4a88677930b192c8e4638bed1be307053b465",
+    "ops": {
+      "removeNodes": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "20",
+        "21",
+        "22",
+        "23",
+        "24",
+        "25",
+        "26",
+        "27",
+        "28",
+        "29",
+        "30",
+        "31",
+        "32",
+        "33",
+        "34",
+        "35",
+        "36",
+        "37",
+        "38",
+        "39",
+        "40",
+        "41",
+        "42",
+        "43",
+        "44",
+        "45",
+        "46",
+        "47",
+        "48",
+        "49",
+        "50",
+        "51",
+        "52",
+        "53",
+        "54",
+        "55",
+        "56",
+        "57",
+        "58",
+        "59",
+        "60",
+        "61",
+        "62",
+        "63",
+        "64",
+        "65",
+        "66",
+        "67",
+        "68",
+        "69",
+        "70",
+        "71",
+        "72",
+        "73",
+        "74",
+        "75",
+        "76",
+        "77",
+        "78",
+        "79",
+        "80",
+        "81",
+        "82",
+        "83",
+        "84",
+        "85",
+        "86",
+        "87",
+        "88",
+        "89",
+        "90",
+        "91",
+        "92",
+        "93",
+        "94",
+        "95",
+        "96",
+        "97",
+        "98",
+        "99",
+        "100",
+        "101",
+        "102",
+        "103",
+        "104",
+        "105",
+        "106",
+        "107",
+        "108",
+        "109",
+        "110",
+        "111",
+        "112",
+        "113",
+        "114",
+        "115",
+        "116",
+        "117",
+        "118",
+        "119",
+        "120",
+        "121",
+        "122",
+        "123",
+        "124",
+        "125",
+        "126",
+        "127",
+        "128",
+        "129",
+        "130",
+        "131",
+        "132",
+        "133",
+        "134",
+        "135",
+        "136",
+        "137",
+        "138",
+        "139",
+        "140",
+        "141",
+        "142",
+        "143",
+        "144",
+        "145",
+        "146",
+        "147",
+        "148",
+        "149",
+        "150",
+        "151",
+        "152",
+        "153",
+        "154",
+        "155",
+        "156",
+        "157",
+        "158",
+        "159",
+        "160",
+        "161",
+        "162",
+        "163",
+        "164",
+        "165",
+        "166",
+        "167",
+        "168",
+        "169",
+        "170",
+        "171",
+        "172",
+        "173",
+        "174",
+        "175",
+        "176",
+        "177",
+        "178",
+        "179",
+        "180",
+        "181",
+        "182",
+        "183",
+        "184",
+        "185",
+        "186",
+        "187",
+        "188",
+        "189",
+        "190",
+        "191",
+        "192",
+        "193",
+        "194",
+        "195",
+        "196",
+        "197",
+        "198",
+        "199",
+        "200",
+        "201",
+        "202",
+        "203",
+        "204",
+        "205",
+        "206",
+        "207",
+        "208",
+        "209",
+        "210",
+        "211",
+        "212",
+        "213",
+        "214",
+        "215",
+        "216",
+        "217",
+        "218",
+        "219",
+        "220",
+        "221",
+        "222",
+        "223",
+        "224",
+        "225",
+        "226",
+        "227",
+        "228",
+        "229",
+        "230",
+        "231",
+        "232",
+        "233",
+        "234",
+        "235",
+        "236",
+        "237",
+        "238",
+        "239",
+        "240",
+        "241",
+        "242",
+        "243",
+        "244",
+        "245",
+        "246",
+        "247",
+        "248",
+        "249",
+        "250",
+        "251",
+        "252",
+        "253",
+        "254",
+        "255",
+        "256",
+        "257",
+        "258",
+        "259",
+        "260",
+        "261",
+        "262",
+        "263",
+        "264",
+        "265",
+        "266",
+        "267",
+        "268",
+        "269",
+        "270",
+        "271",
+        "272",
+        "273",
+        "274",
+        "275",
+        "276",
+        "277",
+        "278",
+        "279",
+        "280",
+        "281",
+        "282",
+        "283",
+        "284",
+        "285",
+        "286",
+        "287",
+        "288",
+        "289",
+        "290",
+        "291",
+        "292",
+        "293",
+        "294",
+        "295",
+        "296",
+        "297",
+        "298",
+        "299",
+        "300",
+        "301",
+        "302",
+        "303",
+        "304",
+        "305",
+        "306",
+        "307",
+        "308",
+        "309",
+        "310",
+        "311",
+        "312",
+        "313",
+        "314",
+        "315",
+        "316",
+        "317",
+        "318",
+        "319",
+        "320",
+        "321",
+        "322",
+        "323",
+        "324",
+        "325",
+        "326",
+        "327",
+        "328",
+        "329",
+        "330",
+        "331",
+        "332",
+        "333",
+        "334",
+        "335",
+        "336",
+        "337",
+        "338",
+        "339",
+        "340",
+        "341",
+        "342",
+        "343",
+        "344",
+        "345",
+        "346",
+        "347",
+        "348",
+        "349",
+        "350",
+        "351",
+        "352",
+        "353",
+        "354",
+        "355",
+        "356",
+        "357",
+        "358",
+        "359",
+        "360",
+        "361",
+        "362",
+        "363",
+        "364",
+        "365",
+        "366",
+        "367",
+        "368",
+        "369",
+        "370",
+        "371",
+        "372",
+        "373",
+        "374",
+        "375",
+        "376",
+        "377",
+        "378",
+        "379",
+        "380",
+        "381",
+        "382",
+        "383",
+        "384",
+        "385",
+        "386",
+        "387",
+        "388",
+        "389",
+        "390",
+        "391",
+        "392",
+        "393",
+        "394",
+        "395",
+        "396",
+        "397",
+        "398",
+        "399",
+        "400",
+        "401",
+        "402",
+        "403",
+        "404",
+        "405",
+        "406",
+        "407",
+        "408",
+        "409",
+        "410",
+        "411",
+        "412",
+        "413",
+        "414",
+        "415",
+        "416",
+        "417",
+        "418",
+        "419",
+        "420",
+        "421",
+        "422",
+        "423",
+        "424",
+        "425",
+        "426",
+        "427",
+        "428",
+        "429",
+        "430",
+        "431",
+        "432",
+        "433",
+        "434",
+        "435",
+        "436",
+        "437",
+        "438",
+        "439",
+        "440",
+        "441",
+        "442",
+        "443",
+        "444",
+        "445",
+        "446",
+        "447",
+        "448",
+        "449",
+        "450",
+        "451",
+        "452",
+        "453",
+        "454",
+        "455",
+        "456",
+        "457",
+        "458",
+        "459",
+        "460",
+        "461",
+        "462",
+        "463",
+        "464",
+        "465",
+        "466",
+        "467",
+        "468",
+        "469",
+        "470",
+        "471",
+        "472",
+        "473",
+        "474",
+        "475",
+        "476",
+        "477",
+        "478",
+        "479",
+        "480",
+        "481",
+        "482",
+        "483",
+        "484",
+        "485",
+        "486",
+        "487",
+        "488",
+        "489",
+        "490",
+        "491",
+        "492",
+        "493",
+        "494",
+        "495",
+        "496",
+        "497",
+        "498",
+        "499",
+        "500",
+        "501",
+        "502",
+        "503",
+        "504",
+        "505",
+        "506",
+        "507",
+        "508",
+        "509",
+        "510",
+        "511",
+        "512",
+        "513",
+        "514",
+        "515",
+        "516",
+        "517",
+        "518",
+        "519",
+        "520",
+        "521",
+        "522",
+        "523",
+        "524",
+        "525",
+        "526",
+        "527",
+        "528",
+        "529",
+        "530",
+        "531",
+        "532",
+        "533",
+        "534",
+        "535",
+        "536",
+        "537",
+        "538",
+        "539",
+        "540",
+        "541",
+        "542",
+        "543",
+        "544",
+        "545",
+        "546",
+        "547",
+        "548",
+        "549",
+        "550",
+        "551",
+        "552",
+        "553",
+        "554",
+        "555",
+        "556",
+        "557",
+        "558",
+        "559",
+        "560",
+        "561",
+        "562",
+        "563",
+        "564",
+        "565",
+        "566",
+        "567",
+        "568",
+        "569",
+        "570",
+        "571",
+        "572",
+        "573",
+        "574",
+        "575",
+        "576",
+        "577",
+        "578",
+        "579",
+        "580",
+        "581",
+        "582",
+        "583",
+        "584",
+        "585",
+        "586",
+        "587",
+        "588",
+        "589",
+        "590",
+        "591",
+        "592",
+        "593",
+        "594",
+        "595",
+        "596",
+        "597",
+        "598",
+        "599",
+        "600",
+        "601",
+        "602",
+        "603",
+        "604",
+        "605",
+        "606",
+        "607",
+        "608",
+        "609",
+        "610",
+        "611",
+        "612",
+        "613",
+        "614",
+        "615",
+        "616",
+        "617",
+        "618",
+        "619",
+        "620",
+        "621",
+        "622",
+        "623",
+        "624",
+        "625",
+        "626",
+        "627",
+        "628",
+        "629",
+        "630",
+        "631",
+        "632",
+        "633",
+        "634",
+        "635",
+        "636",
+        "637",
+        "638",
+        "639",
+        "640",
+        "641",
+        "642",
+        "643",
+        "644",
+        "645",
+        "646",
+        "647",
+        "648",
+        "649",
+        "650",
+        "651",
+        "652",
+        "653",
+        "654",
+        "655",
+        "656",
+        "657",
+        "658",
+        "659",
+        "660",
+        "661",
+        "662",
+        "663",
+        "664",
+        "665",
+        "666",
+        "667",
+        "668",
+        "669",
+        "670",
+        "671",
+        "672",
+        "673",
+        "674",
+        "675",
+        "676",
+        "677",
+        "678",
+        "679",
+        "680",
+        "681",
+        "682",
+        "683",
+        "684",
+        "685",
+        "686",
+        "687",
+        "688",
+        "689",
+        "690",
+        "691",
+        "692",
+        "693",
+        "694",
+        "695",
+        "696",
+        "697",
+        "698",
+        "699",
+        "700",
+        "701",
+        "702",
+        "703",
+        "704",
+        "705",
+        "707",
+        "708",
+        "709",
+        "710",
+        "711",
+        "712",
+        "714",
+        "715",
+        "716",
+        "717",
+        "718",
+        "719",
+        "720",
+        "721",
+        "722",
+        "723",
+        "724",
+        "725",
+        "726",
+        "727",
+        "728",
+        "729",
+        "730",
+        "731",
+        "732",
+        "733",
+        "734",
+        "735",
+        "736",
+        "737",
+        "738",
+        "739",
+        "740",
+        "741",
+        "742",
+        "743",
+        "745"
+      ],
+      "viewBox": "295.312 266.512 950.976 632.576"
+    }
+  }
+]

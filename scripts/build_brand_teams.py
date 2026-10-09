@@ -11,8 +11,7 @@ from pathlib import Path
 
 from brand_rosters import LEAGUES, ROSTERS
 from build_teams import atomic_write_text, fmt_entry
-from download_brand_logos import artwork_path, manifest_path
-from download_extra_logos import inspect_artwork
+from download_brand_logos import artwork_path, brand_colors, manifest_path
 from nfl_vector_artwork import validate_vector
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -32,11 +31,13 @@ def build_entry(league: str, item: dict, row: tuple) -> dict:
     if not ids or ids[0] != "primary" or len(set(ids)) != len(ids):
         raise ValueError(f"{abbr}: primary artwork first, then unique alternates")
     for art in artwork:
+        if art.get("showsName") and art["id"] != "primary":
+            raise ValueError(f"{abbr}: alternates must not spell the brand's name")
         if art["path"] != artwork_path(league, abbr, art["id"]) or art["format"] != "svg":
             raise ValueError(f"{abbr}: invalid artwork path for {art['id']}")
         raw = (ROOT / "public" / art["path"].lstrip("/")).read_bytes()
         validate_vector(raw)
-        if hashlib.sha256(raw).hexdigest() != art["sha256"] or inspect_artwork(raw, "svg") != art["colors"]:
+        if hashlib.sha256(raw).hexdigest() != art["sha256"] or brand_colors(raw) != art["colors"]:
             raise ValueError(f"stale artwork metadata for {abbr}/{art['id']}")
         source = art["sourcePalette"]
         if len(source) != 3 or any(not HEX.fullmatch(c) for c in source):
@@ -50,6 +51,10 @@ def build_entry(league: str, item: dict, row: tuple) -> dict:
         entry["aliases"] = aliases
     if main["unusedSourceSlots"]:
         entry["unusedSourceSlots"] = main["unusedSourceSlots"]
+    if main.get("showsName"):
+        if len(artwork) > 1:
+            raise ValueError(f"{abbr}: a name-free alternate should be the primary")
+        entry["showsName"] = True
     if len(artwork) > 1:
         entry["alternateLogos"] = [
             {"id": art["id"], "label": art["label"], "logo": art["path"],

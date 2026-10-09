@@ -10,21 +10,94 @@
       "aliases": [
         "Arbys"
       ],
-      "path": "/logos/svg/fast-food/arb.svg",
-      "format": "svg",
-      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Arby%27s_logo.svg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-      "sourcePage": "https://en.wikipedia.org/wiki/Arby%27s",
-      "colors": [
-        "#D71921"
-      ],
       "palette": [
         "#D71921",
         "#000000",
         "#FFFFFF"
       ],
-      "unusedSourceSlots": [
-        1,
-        2
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Hat silhouette",
+          "sourceUrl": "https://iconape.com/wp-content/files/im/239922/svg/239922.svg",
+          "sourcePage": "https://iconape.com/arbys-restaurant-logo-logo-icon-svg-png.html",
+          "sourceSha256": "006ff9f76e517f590be5888274cc69ffcea4120b101880f7635166cad4e6bda2",
+          "ops": {
+            "removeNodes": [
+              "0/0",
+              "0/2",
+              "0/3",
+              "0/4",
+              "0/5"
+            ],
+            "viewBox": "46.143 26.865 282.087 422.269"
+          },
+          "path": "/logos/svg/fast-food/arb.svg",
+          "format": "svg",
+          "colors": [
+            "#644631"
+          ],
+          "sourcePalette": [
+            "#644631",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "97b5001487792c94cfba6bf0855acbf31a8ed9c42f603c265471428a74d5b3ac"
+        },
+        {
+          "id": "oven-mitt",
+          "label": "Oven Mitt mascot",
+          "sourceUrl": "https://iconape.com/wp-content/files/bu/29148/svg/arby-s-oven-mitt.svg",
+          "sourcePage": "https://iconape.com/arby-s-oven-mitt-logo-icon-svg-png.html",
+          "sourceSha256": "eb076605ef73ee0f2e5566c402c9d41a217d02d4d7b869aa63875babafd24b0e",
+          "ops": {
+            "removeNodes": [
+              "0",
+              "3",
+              "22",
+              "23",
+              "24",
+              "25",
+              "26",
+              "27",
+              "28",
+              "29",
+              "30",
+              "31",
+              "32",
+              "33"
+            ],
+            "viewBox": "40.101 9.356 109.952 169.995"
+          },
+          "path": "/logos/svg/fast-food/alternates/arb-oven-mitt.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#FFFFFF",
+            "#FBFDFF",
+            "#2986C9",
+            "#101616",
+            "#F9F6F4",
+            "#E8E5E3",
+            "#C9222D",
+            "#C3C8BD",
+            "#D0D7CC",
+            "#FEFBF9",
+            "#F6F5F4",
+            "#FAF9F9"
+          ],
+          "sourcePalette": [
+            "#C9222D",
+            "#080B0B",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "01355741885704b6a198cc58caec79be807515db46e09cc05d82d78f2e887ee0"
+        }
       ]
     },
     {
@@ -37,21 +110,111 @@
       "aliases": [
         "BK"
       ],
-      "path": "/logos/svg/fast-food/bk.svg",
-      "format": "svg",
-      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Burger_King_2020.svg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-      "sourcePage": "https://en.wikipedia.org/wiki/Burger_King",
-      "colors": [
-        "#F5EBDC",
-        "#FF8732",
-        "#D62300"
-      ],
       "palette": [
         "#D62300",
         "#FF8732",
         "#FFFFFF"
       ],
-      "unusedSourceSlots": []
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Bun halves",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Burger_King_2020.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Burger_King_2020.svg",
+          "sourceSha256": "bebb99faebfa09fa803cc611979ef8a019ef730dec69ed46b9a07488874d9b89",
+          "ops": {
+            "removeNodes": [
+              "2"
+            ],
+            "viewBox": "-2.083 -2.083 573.326 624.166"
+          },
+          "path": "/logos/svg/fast-food/bk.svg",
+          "format": "svg",
+          "colors": [
+            "#F5EBDC",
+            "#FF8732"
+          ],
+          "sourcePalette": [
+            "#F5EBDC",
+            "#FF8732",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "43f6ad2027226cd400250e31894db2a47a23b4ceea14e20ff5ebb4b561fffebc"
+        },
+        {
+          "id": "swoosh-bun",
+          "label": "Bun with blue swoosh",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Burger_King_1999%E2%80%932020_logo.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Burger_King_1999%E2%80%932020_logo.svg",
+          "sourceSha256": "3a15a6c049060bdb4f1af5fa436bef65ffef80dcaa71d5b52fd480f3a6ddbec4",
+          "ops": {
+            "removeNodes": [
+              "0",
+              "2",
+              "5",
+              "6",
+              "7",
+              "8",
+              "10",
+              "11",
+              "12",
+              "13",
+              "14",
+              "15"
+            ],
+            "viewBox": "-122.823 -122.298 1041.536 1083.739"
+          },
+          "path": "/logos/svg/fast-food/alternates/bk-swoosh-bun.svg",
+          "format": "svg",
+          "colors": [
+            "#FFBB36",
+            "#0066B3",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#FFBB36",
+            "#0066B3",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "08282b5acc6f4fbcf3ab5bb1af8e3025a03a9355223762fb94a061283b211c34"
+        },
+        {
+          "id": "king-mascot",
+          "label": "Classic royal mascot",
+          "sourceUrl": "https://iconape.com/wp-content/files/ov/244779/svg/244779.svg",
+          "sourcePage": "https://iconape.com/burger-king-guy-logo-logo-icon-svg-png.html",
+          "sourceSha256": "f51ea62030d119afa84ca9af07474e8ea179111556012de0e60c3e70056fcb86",
+          "ops": {
+            "removeNodes": [
+              "0/0",
+              "0/53"
+            ],
+            "viewBox": "10.598 13.879 171.515 165.532"
+          },
+          "path": "/logos/svg/fast-food/alternates/bk-king-mascot.svg",
+          "format": "svg",
+          "colors": [
+            "#000303",
+            "#FAE729",
+            "#000302",
+            "#FFFFFF",
+            "#ED2029",
+            "#FCFEFF",
+            "#231F20",
+            "#030908",
+            "#F8F7F7"
+          ],
+          "sourcePalette": [
+            "#ED2029",
+            "#0A0C0B",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "34e0944dee08c1f7cbaaf7177876ee4fe2e0a69a66e2bc6105be7198b347cfb0"
+        }
+      ]
     },
     {
       "id": "FOOD-BOJ",
@@ -61,21 +224,38 @@
       "name": "",
       "abbr": "BOJ",
       "aliases": [],
-      "path": "/logos/svg/fast-food/boj.svg",
-      "format": "svg",
-      "sourceUrl": "https://upload.wikimedia.org/wikipedia/en/9/92/Bojangles_2020.svg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-      "sourcePage": "https://en.wikipedia.org/wiki/Bojangles_%28restaurant%29",
-      "colors": [
-        "#D0191A"
-      ],
       "palette": [
         "#D0191A",
         "#F8C437",
         "#FFFFFF"
       ],
-      "unusedSourceSlots": [
-        1,
-        2
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Wordmark",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/en/9/92/Bojangles_2020.svg",
+          "sourcePage": "https://en.wikipedia.org/wiki/File:Bojangles_2020.svg",
+          "sourceSha256": "8bca6738e8578980d5767ef3abf4d9cf090c37f75ebdb453d256b893cc045526",
+          "ops": {
+            "viewBox": "-0.531 -0.815 82.545 30.16"
+          },
+          "showsName": true,
+          "path": "/logos/svg/fast-food/boj.svg",
+          "format": "svg",
+          "colors": [
+            "#D0191A"
+          ],
+          "sourcePalette": [
+            "#D0191A",
+            "#F8C437",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "4823795e14e07cce50483e6d70fe6744a85402cdb9eff3d32c47637789bc88dd"
+        }
       ]
     },
     {
@@ -89,25 +269,54 @@
         "Raising Canes",
         "Canes"
       ],
-      "path": "/logos/svg/fast-food/cane.svg",
-      "format": "svg",
-      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/9/98/Raising_Cane%27s_Chicken_Fingers_logo.svg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-      "sourcePage": "https://en.wikipedia.org/wiki/Raising_Cane%27s_Chicken_Fingers",
-      "colors": [
-        "#020000",
-        "#E71A2A",
-        "#FEBD11",
-        "#9C5614",
-        "#FFFFFF",
-        "#B4271B",
-        "#FFF101"
-      ],
       "palette": [
         "#E71A2A",
         "#FEBD11",
         "#FFFFFF"
       ],
-      "unusedSourceSlots": []
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Wordmark",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/9/98/Raising_Cane%27s_Chicken_Fingers_logo.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Raising_Cane%27s_Chicken_Fingers_logo.svg",
+          "sourceSha256": "f9580d1d5eb537c4fddc387e1dbf4c4e3ad0d6d4391484387d835e274fba7a44",
+          "ops": {
+            "viewBox": "-5.002 -5.002 260.104 130.177"
+          },
+          "showsName": true,
+          "path": "/logos/svg/fast-food/cane.svg",
+          "format": "svg",
+          "colors": [
+            "#020000",
+            "#E71A2A",
+            "#FEBD11",
+            "#9C5614",
+            "#FFFFFF",
+            "#B4271B",
+            "#FFF101",
+            "#FCED0D",
+            "#FCBD13",
+            "#FFE247",
+            "#FDF9D1",
+            "#FFCB5C",
+            "#9D5825",
+            "#FFF9CD",
+            "#FFFBDD",
+            "#FFFDF0",
+            "#FFFFFB",
+            "#FFC43F",
+            "#9C5725"
+          ],
+          "sourcePalette": [
+            "#B04121",
+            "#FED427",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "9be580f2e7dceae18f48d421ba7ee507ce0f8e215cd7df2171792ce5298945fc"
+        }
+      ]
     },
     {
       "id": "FOOD-CARL",
@@ -118,25 +327,49 @@
       "abbr": "CARL",
       "aliases": [
         "Carls Jr",
-        "Carl's Junior"
-      ],
-      "path": "/logos/svg/fast-food/carl.svg",
-      "format": "svg",
-      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/c/cd/Carl%27s_Jr._logo_%282022%29.svg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-      "sourcePage": "https://en.wikipedia.org/wiki/Carl%27s_Jr.",
-      "colors": [
-        "#000000",
-        "#FFCF21",
-        "#2C2523",
-        "#E40425"
+        "Carl's Junior",
+        "Hardee's",
+        "Hardees"
       ],
       "palette": [
         "#FFCF21",
         "#E40425",
         "#FFFFFF"
       ],
-      "unusedSourceSlots": [
-        2
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Happy Star",
+          "sourceUrl": "https://www.carlsjr.com/getContentAsset/3e946b30-1bec-4ede-ad23-293b2c5f25b9/dfc3d011-8f63-43f6-9ed8-4b444333a1d0/carls_jr_logo.svg?language=en-US",
+          "sourcePage": "https://www.carlsjr.com/",
+          "sourceSha256": "f1b5d34116d13dc49b36d73e3c716863f357c7ca0584e08b0a2db8546667d420",
+          "ops": {
+            "removeNodes": [
+              "1/0/12",
+              "1/0/13",
+              "1/0/14",
+              "1/0/15",
+              "1/0/16"
+            ],
+            "viewBox": "-0.849 -0.849 44.13 42.49"
+          },
+          "path": "/logos/svg/fast-food/carl.svg",
+          "format": "svg",
+          "colors": [
+            "#FFC72C",
+            "#000000",
+            "#CE1329"
+          ],
+          "sourcePalette": [
+            "#FFC72C",
+            "#CE1329",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "3ab0be641d334cbf65733cc2a3f08766efee975069736293404da94b6b8e865f"
+        }
       ]
     },
     {
@@ -150,21 +383,41 @@
         "Chick fil a",
         "CFA"
       ],
-      "path": "/logos/svg/fast-food/cfa.svg",
-      "format": "svg",
-      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/0/02/Chick-fil-A_Logo.svg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-      "sourcePage": "https://en.wikipedia.org/wiki/Chick-fil-A",
-      "colors": [
-        "#E51636"
-      ],
       "palette": [
         "#E51636",
         "#000000",
         "#FFFFFF"
       ],
-      "unusedSourceSlots": [
-        1,
-        2
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Chicken C disc",
+          "sourceUrl": "https://www.chick-fil-a.com/wp-content/uploads/sites/2/2025/04/Chick-fil-A-header-logo.svg",
+          "sourcePage": "https://www.chick-fil-a.com/",
+          "sourceSha256": "59876ecb0031dd80753e83346bd6295b4fdeefea82523602459680e0db74d493",
+          "ops": {
+            "removeNodes": [
+              "2",
+              "3"
+            ],
+            "viewBox": "-1.431 -0.546 76.436 76.051"
+          },
+          "path": "/logos/svg/fast-food/cfa.svg",
+          "format": "svg",
+          "colors": [
+            "#DD0031"
+          ],
+          "sourcePalette": [
+            "#DD0031",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "4f53597221912865a0bf941a699a14b6f6fcdfb72ca2a2abb02b83c4e2cfdfc3"
+        }
       ]
     },
     {
@@ -179,21 +432,96 @@
         "Rallys",
         "Checkers and Rally's"
       ],
-      "path": "/logos/svg/fast-food/check.svg",
-      "format": "svg",
-      "sourceUrl": "https://upload.wikimedia.org/wikipedia/en/a/aa/Checkers_and_Rally%27s_logo_%282025%29.svg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-      "sourcePage": "https://en.wikipedia.org/wiki/Checkers_and_Rally%27s",
-      "colors": [
-        "#E81D2D",
-        "#231F20"
-      ],
       "palette": [
         "#E81D2D",
         "#231F20",
         "#FFFFFF"
       ],
-      "unusedSourceSlots": [
-        2
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Checkered racing mark",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Special:FilePath/Checkers_and_Rally%27s_logo_(2025).svg",
+          "sourcePage": "https://en.wikipedia.org/wiki/File:Checkers_and_Rally%27s_logo_(2025).svg",
+          "sourceSha256": "83c708aad513a201f9e9926bde4336d506ccc8426e87226633cf0d101673babd",
+          "ops": {
+            "removeNodes": [
+              "15",
+              "16",
+              "17",
+              "18",
+              "19",
+              "20",
+              "21",
+              "22",
+              "23",
+              "24",
+              "25",
+              "26",
+              "27",
+              "28",
+              "29",
+              "30",
+              "31",
+              "32"
+            ],
+            "viewBox": "-5.273 -5.273 274.175 155.042"
+          },
+          "path": "/logos/svg/fast-food/check.svg",
+          "format": "svg",
+          "colors": [
+            "#E81D2D",
+            "#231F20"
+          ],
+          "sourcePalette": [
+            "#E81D2D",
+            "#231F20",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "ec4f9591c4e8b096927b612fc2896bdfe1aa2dbbd1f11b5ff330676136b5f590"
+        },
+        {
+          "id": "classic-oval",
+          "label": "Classic oval",
+          "sourceUrl": "https://logowik.com/checkers-logo-vector-36837.html",
+          "sourcePage": "https://logowik.com/checkers-logo-vector-36837.html",
+          "sourceSha256": "6fda21e73b614cb8e47e6953b956ab27264a4a09aa423d68adda1dbea052c5c3",
+          "downloadForm": "logowik",
+          "ops": {
+            "removeNodes": [
+              "3/0/2",
+              "3/0/3",
+              "3/0/4",
+              "3/0/5",
+              "3/0/6",
+              "3/0/7",
+              "3/0/8",
+              "3/0/9",
+              "3/0/10"
+            ],
+            "viewBox": "-0.714 -0.739 51.408 24.318"
+          },
+          "path": "/logos/svg/fast-food/alternates/check-classic-oval.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#BB1D1A",
+            "#E82621",
+            "#870E12"
+          ],
+          "sourcePalette": [
+            "#B91B1A",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "cbba54dd7b7793a88cc7d3adb7690c70388b4501f6fbf9d710dfdbf1571e10f2"
+        }
       ]
     },
     {
@@ -206,21 +534,42 @@
       "aliases": [
         "Chipotle Mexican Grill"
       ],
-      "path": "/logos/svg/fast-food/chip.svg",
-      "format": "svg",
-      "sourceUrl": "https://upload.wikimedia.org/wikipedia/en/3/3b/Chipotle_Mexican_Grill_logo.svg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-      "sourcePage": "https://en.wikipedia.org/wiki/Chipotle_Mexican_Grill",
-      "colors": [
-        "#AC2318",
-        "#441500",
-        "#FEFEFE"
-      ],
       "palette": [
         "#AC2318",
         "#441500",
         "#FFFFFF"
       ],
-      "unusedSourceSlots": []
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Chili pepper tile",
+          "sourceUrl": "https://iconape.com/wp-content/files/ng/241681/svg/chipotle-seeklogo.com.svg",
+          "sourcePage": "https://iconape.com/chipotle-logo-logo-icon-svg-png.html",
+          "sourceSha256": "b0995a81ff58e3e0fa80d817b5b9d95ebdcbb2e524eb23ff2e01d3f58c9e7aad",
+          "ops": {
+            "removeNodes": [
+              "1/0",
+              "1/3"
+            ],
+            "viewBox": "18.484 268.526 106.472 106.798"
+          },
+          "path": "/logos/svg/fast-food/chip.svg",
+          "format": "svg",
+          "colors": [
+            "#451500",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#451500",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "f67f18651fa1ba1d4d5dbf4d458117057b3d9b707eda5eb43c506c0ed711a5ac"
+        }
+      ]
     },
     {
       "id": "FOOD-CUL",
@@ -232,21 +581,38 @@
       "aliases": [
         "Culvers"
       ],
-      "path": "/logos/svg/fast-food/cul.svg",
-      "format": "svg",
-      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Culver%27s_logo.svg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-      "sourcePage": "https://en.wikipedia.org/wiki/Culver%27s",
-      "colors": [
-        "#000000",
-        "#155195"
-      ],
       "palette": [
         "#155195",
         "#000000",
         "#FFFFFF"
       ],
-      "unusedSourceSlots": [
-        2
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Wordmark",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Culver%27s_logo.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Culver%27s_logo.svg",
+          "sourceSha256": "965fbd7b3b3860d4537bf2261beb77b8900ce9380552c7786e46cbb81262229a",
+          "ops": {
+            "viewBox": "-7.44 -7.44 386.88 184.14"
+          },
+          "showsName": true,
+          "path": "/logos/svg/fast-food/cul.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#155195"
+          ],
+          "sourcePalette": [
+            "#155195",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "e24cc11385722f84bd6abb7b995e4cd99a574b7b4e0f230095a82221e3de1cce"
+        }
       ]
     },
     {
@@ -260,21 +626,65 @@
         "Dominos",
         "Domino's Pizza"
       ],
-      "path": "/logos/svg/fast-food/dom.svg",
-      "format": "svg",
-      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/6/64/Domino%27s_2025.svg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-      "sourcePage": "https://en.wikipedia.org/wiki/Domino%27s",
-      "colors": [
-        "#0090E2",
-        "#FFFFFF",
-        "#FF0000"
-      ],
       "palette": [
         "#0090E2",
         "#FF0000",
         "#FFFFFF"
       ],
-      "unusedSourceSlots": []
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Domino tile",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Domino%27s_2025_(symbol).svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Domino%27s_2025_(symbol).svg",
+          "sourceSha256": "7faf29da731000c737fbfa49e317cf5fec24c76952f35124a087362890a5a31a",
+          "ops": {
+            "removeNodes": [],
+            "viewBox": "-20 -20 1040 1040"
+          },
+          "path": "/logos/svg/fast-food/dom.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#FF0000",
+            "#0090E2"
+          ],
+          "sourcePalette": [
+            "#0090E2",
+            "#FF0000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "4f8cf56d464d636fad3c61d75bd890223fd3a0c886a475b7d4d984b37fbe4099"
+        },
+        {
+          "id": "noid",
+          "label": "The Noid",
+          "sourceUrl": "https://iconape.com/wp-content/files/qr/242144/svg/242144.svg",
+          "sourcePage": "https://iconape.com/noid-logo-logo-icon-svg-png.html",
+          "sourceSha256": "6f9b7e28077ffe48c08c2d7def7f0ebfae0167680d23ef9ae651c3bb79cf261f",
+          "ops": {
+            "removeNodes": [],
+            "viewBox": "-7.708 -7.708 305.429 400.816"
+          },
+          "path": "/logos/svg/fast-food/alternates/dom-noid.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#FFD69F",
+            "#DE2726",
+            "#DD2826",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#DE2826",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "1d951918a79de8527a0aa3d2f15c140302d26f06b7d6c3e60dc6eddd09dde812"
+        }
+      ]
     },
     {
       "id": "FOOD-DQ",
@@ -286,22 +696,45 @@
       "aliases": [
         "DQ"
       ],
-      "path": "/logos/svg/fast-food/dq.svg",
-      "format": "svg",
-      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Dairy_Queen_logo.svg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-      "sourcePage": "https://en.wikipedia.org/wiki/Dairy_Queen",
-      "colors": [
-        "#FFFFFF",
-        "#EE3E42",
-        "#F9AA53",
-        "#007AC1"
-      ],
       "palette": [
         "#EE3E42",
         "#007AC1",
         "#FFFFFF"
       ],
-      "unusedSourceSlots": []
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Red lips with swooshes",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Dairy_Queen_logo.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Dairy_Queen_logo.svg",
+          "sourceSha256": "675db3777b19e8456b7121a4136b1b8c859776815e1eca95f7d3860a624d1c7e",
+          "ops": {
+            "removeNodes": [
+              "0/0",
+              "1",
+              "0/1/1/3",
+              "0/1/1/4",
+              "0/1/1/7"
+            ],
+            "viewBox": "1.763 3.283 198.282 132.042"
+          },
+          "path": "/logos/svg/fast-food/dq.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#EE3E42",
+            "#F9AA53",
+            "#007AC1"
+          ],
+          "sourcePalette": [
+            "#F4744A",
+            "#007AC1",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "d94c852ec4ca95b8941843c7bf713c3a45c64706213b279ee18d86545b65163b"
+        }
+      ]
     },
     {
       "id": "FOOD-DUNK",
@@ -314,21 +747,38 @@
         "Dunkin",
         "Dunkin Donuts"
       ],
-      "path": "/logos/svg/fast-food/dunk.svg",
-      "format": "svg",
-      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/1/14/Dunkin%27_2022.svg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-      "sourcePage": "https://en.wikipedia.org/wiki/Dunkin%27",
-      "colors": [
-        "#EF6A00",
-        "#C63663"
-      ],
       "palette": [
         "#EF6A00",
         "#C63663",
         "#FFFFFF"
       ],
-      "unusedSourceSlots": [
-        2
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Wordmark",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/1/14/Dunkin%27_2022.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Dunkin%27_2022.svg",
+          "sourceSha256": "c4d73934bd0f5ffbaf9922795896ab48f323b6edc40e5263fc1f13e40b3420d2",
+          "ops": {
+            "viewBox": "-6.874 -7.05 366.597 82.376"
+          },
+          "showsName": true,
+          "path": "/logos/svg/fast-food/dunk.svg",
+          "format": "svg",
+          "colors": [
+            "#EF6A00",
+            "#C63663"
+          ],
+          "sourcePalette": [
+            "#EF6A00",
+            "#C63663",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "d7cc20c03b6cb371c9de31ce7eec9c90d8bb79da8756a99e484b52f578e1c63d"
+        }
       ]
     },
     {
@@ -339,21 +789,38 @@
       "name": "",
       "abbr": "FIVE",
       "aliases": [],
-      "path": "/logos/svg/fast-food/five.svg",
-      "format": "svg",
-      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/8/80/Five_Guys_logo.svg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-      "sourcePage": "https://en.wikipedia.org/wiki/Five_Guys",
-      "colors": [
-        "#C92027"
-      ],
       "palette": [
         "#C92027",
         "#000000",
         "#FFFFFF"
       ],
-      "unusedSourceSlots": [
-        1,
-        2
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Wordmark",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/8/80/Five_Guys_logo.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Five_Guys_logo.svg",
+          "sourceSha256": "c28adbc843a1bf08490f6742548e5659897abe22cce29e07ffcd2d0c8c09a510",
+          "ops": {
+            "viewBox": "4.774 0.771 332.893 84.528"
+          },
+          "showsName": true,
+          "path": "/logos/svg/fast-food/five.svg",
+          "format": "svg",
+          "colors": [
+            "#C92027"
+          ],
+          "sourcePalette": [
+            "#C92027",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "b890c57a941b16db8d6fcf1cb7aad3bc6306d1fa75258c3e721165d5831f2604"
+        }
       ]
     },
     {
@@ -364,25 +831,45 @@
       "name": "",
       "abbr": "HARD",
       "aliases": [
-        "Hardees"
-      ],
-      "path": "/logos/svg/fast-food/hard.svg",
-      "format": "svg",
-      "sourceUrl": "https://upload.wikimedia.org/wikipedia/en/e/e2/Hardee%27s_logo_since_2022.svg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-      "sourcePage": "https://en.wikipedia.org/wiki/Hardee%27s",
-      "colors": [
-        "#FFC72C",
-        "#000000",
-        "#CE1329",
-        "#2C2523"
+        "Hardees",
+        "Carl's Jr.",
+        "Carls Jr"
       ],
       "palette": [
         "#FFC72C",
         "#CE1329",
         "#FFFFFF"
       ],
-      "unusedSourceSlots": [
-        2
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Happy Star",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Special:FilePath/Hardee%27s_logo_since_2022.svg",
+          "sourcePage": "https://en.wikipedia.org/wiki/File:Hardee%27s_logo_since_2022.svg",
+          "sourceSha256": "afd22e880b4e6c7d5bfdb06c45e3664fd05f8fe3ed5f56103102d1d156ca2ddc",
+          "ops": {
+            "removeNodes": [
+              "1/0/18"
+            ],
+            "viewBox": "-0.715 -0.781 40.602 39.148"
+          },
+          "path": "/logos/svg/fast-food/hard.svg",
+          "format": "svg",
+          "colors": [
+            "#FFC72C",
+            "#000000",
+            "#CE1329"
+          ],
+          "sourcePalette": [
+            "#FFC72C",
+            "#CE1329",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "ce12af36c70d791988288549cd25cbb74a1707d7c490fbc0e08eb311b2aac51d"
+        }
       ]
     },
     {
@@ -396,21 +883,55 @@
         "In N Out",
         "In-N-Out"
       ],
-      "path": "/logos/svg/fast-food/ino.svg",
-      "format": "svg",
-      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8c/InNOut_2021_logo.svg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-      "sourcePage": "https://en.wikipedia.org/wiki/In-N-Out_Burger",
-      "colors": [
-        "#E02A27",
-        "#FFCB05"
-      ],
       "palette": [
         "#E02A27",
         "#FFCB05",
         "#FFFFFF"
       ],
-      "unusedSourceSlots": [
-        2
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Yellow arrow",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8c/InNOut_2021_logo.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:InNOut_2021_logo.svg",
+          "sourceSha256": "6d72e7d9a9127886b0c5a6395d6867e8b4a6499b4ca42b89c0f5735f01511f72",
+          "ops": {
+            "removeNodes": [
+              "0/0",
+              "0/1",
+              "0/2",
+              "0/3",
+              "0/4",
+              "0/5",
+              "0/6",
+              "0/8",
+              "0/9",
+              "0/10",
+              "0/11",
+              "0/12",
+              "0/13",
+              "0/14",
+              "0/15",
+              "0/16"
+            ],
+            "viewBox": "0.134 -2.666 138.611 44.671"
+          },
+          "path": "/logos/svg/fast-food/ino.svg",
+          "format": "svg",
+          "colors": [
+            "#FFCB05"
+          ],
+          "sourcePalette": [
+            "#FFCB05",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "061d23ba56cb6fe3821180208e6b2e2532b7bf9edf05e4c362832871c6178a80"
+        }
       ]
     },
     {
@@ -421,23 +942,83 @@
       "name": "",
       "abbr": "JACK",
       "aliases": [],
-      "path": "/logos/svg/fast-food/jack.svg",
-      "format": "svg",
-      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/4/42/Jack_in_the_Box_2022_logo.svg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-      "sourcePage": "https://en.wikipedia.org/wiki/Jack_in_the_Box",
-      "colors": [
-        "#000000",
-        "#FFFFFF",
-        "#E31635",
-        "#B71A2E",
-        "#F0EFE7"
-      ],
       "palette": [
         "#E31635",
         "#000000",
         "#FFFFFF"
       ],
-      "unusedSourceSlots": []
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Retro clown emblem",
+          "sourceUrl": "https://logowik.com/jack-in-the-box-1970s-logo-vector-38447.html",
+          "sourcePage": "https://logowik.com/jack-in-the-box-1970s-logo-vector-38447.html",
+          "sourceSha256": "7b4216b5318e44ec5f3ee88b5cb401b75670815aca33c259d8972a0810c90f2b",
+          "downloadForm": "logowik",
+          "ops": {
+            "removeNodes": [
+              "3/6",
+              "3/7",
+              "3/8",
+              "3/9"
+            ],
+            "viewBox": "-3.258 -3.458 174.428 179.841"
+          },
+          "path": "/logos/svg/fast-food/jack.svg",
+          "format": "svg",
+          "colors": [
+            "#ED1A3B",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#ED1A3B",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "32e3a6d590544335bf4c15a72fe52095e61536d016683830617cf7be57def31f"
+        },
+        {
+          "id": "box",
+          "label": "Two-tone box",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/4/42/Jack_in_the_Box_2022_logo.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Jack_in_the_Box_2022_logo.svg",
+          "sourceSha256": "ab707b15ef1a1689ee11f75c5097d34c0113957d005af0ba777daa76b26cae07",
+          "ops": {
+            "removeNodes": [
+              "2/0/0/3",
+              "2/0/0/4",
+              "2/0/0/5",
+              "2/0/0/6",
+              "2/0/0/7",
+              "2/0/0/8",
+              "2/0/0/9",
+              "2/0/0/10",
+              "2/0/0/11",
+              "2/0/0/12",
+              "2/0/0/13"
+            ],
+            "viewBox": "-52.403 -52.403 2724.962 2348"
+          },
+          "path": "/logos/svg/fast-food/alternates/jack-box.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#FFFFFF",
+            "#E31635",
+            "#B71A2E"
+          ],
+          "sourcePalette": [
+            "#CD1832",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "c37a496f149ac5ac17848a1ca0ac952725401be8d5b134266a0d8439c8c30f11"
+        }
+      ]
     },
     {
       "id": "FOOD-KFC",
@@ -449,118 +1030,68 @@
       "aliases": [
         "Kentucky Fried Chicken"
       ],
-      "path": "/logos/svg/fast-food/kfc.png",
-      "format": "png",
-      "sourceUrl": "https://cdn.sanity.io/images/kbqq3e0r/production/afcc23c7797d1ad1d55bd0e200e2128cfe163eba-4096x3802.png?w=512&q=100&fm=png",
-      "sourcePage": "https://global.kfc.com/media-assets",
-      "colors": [
-        "#FFFFFF",
-        "#F4002C",
-        "#000000",
-        "#FEFEFE",
-        "#010101",
-        "#020202",
-        "#FDFDFD",
-        "#FFFEFF",
-        "#F4012A",
-        "#FFFFFD",
-        "#F2012C",
-        "#030303",
-        "#F4002E",
-        "#F5012D",
-        "#F6002C",
-        "#FCFBFC",
-        "#FDFFFF",
-        "#FFFDFE",
-        "#F5022B",
-        "#FFFDFF",
-        "#050505",
-        "#F2012A",
-        "#FAFAFA",
-        "#F4022D",
-        "#060606",
-        "#F50229",
-        "#F8F8F8",
-        "#F3002B",
-        "#F9F9F9",
-        "#070707",
-        "#080808",
-        "#FFFBFD",
-        "#FFFCFE",
-        "#FFFDFC",
-        "#F7F7F7",
-        "#0D0D0D",
-        "#090909",
-        "#F6F6F6",
-        "#F4022B",
-        "#F5F5F5",
-        "#FFF9FC",
-        "#1A1A1A",
-        "#0A0A0A",
-        "#F6002E",
-        "#F1F1F1",
-        "#F3F3F3",
-        "#F2032D",
-        "#F2012E",
-        "#F6002A",
-        "#0C0C0C",
-        "#F40128",
-        "#0F0F0F",
-        "#101010",
-        "#F0F0F0",
-        "#F2F2F2",
-        "#FEFCFD",
-        "#161616",
-        "#A3A3A3",
-        "#FFFBFE",
-        "#0E0E0E",
-        "#ECECEC",
-        "#131313",
-        "#EBEBEB",
-        "#151515",
-        "#111111",
-        "#EFEFEF",
-        "#FDFFFD",
-        "#F1022C",
-        "#242424",
-        "#F0042D",
-        "#E9E9E9",
-        "#FFFAFC",
-        "#E3E3E3",
-        "#171717",
-        "#FFF8FB",
-        "#141414",
-        "#1D1D1D",
-        "#1B1B1B",
-        "#DADADA",
-        "#FEFEFC",
-        "#E7E7E7",
-        "#D7D7D7",
-        "#181818",
-        "#EF032C",
-        "#FFF7FB",
-        "#1E1E1E",
-        "#E4E4E4",
-        "#212121",
-        "#FFFBFC",
-        "#F6032C",
-        "#D2D2D2",
-        "#E8E8E8",
-        "#FFF6FA",
-        "#DEDEDE",
-        "#EEEEEE",
-        "#1F1F1F",
-        "#FFFCFD",
-        "#222222",
-        "#E1E1E1",
-        "#282828"
-      ],
       "palette": [
-        "#EF032C",
+        "#E4002B",
         "#000000",
         "#FFFFFF"
       ],
-      "unusedSourceSlots": []
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Colonel portrait",
+          "sourceUrl": "https://logowik.com/kfc-colonel-sanders-logo-vector-67983.html",
+          "sourcePage": "https://logowik.com/kfc-colonel-sanders-logo-vector-67983.html",
+          "sourceSha256": "b1392511c5e811da43bea6807c531cd34adc89515871929d4814befc716a3a6d",
+          "downloadForm": "logowik",
+          "ops": {
+            "viewBox": "-11.272 -11.272 339.851 586.144"
+          },
+          "path": "/logos/svg/fast-food/kfc.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "a4823228972d229598047d5ff54d4ba75b6d8d2255d6e26c65d26ba951e8a5e5"
+        },
+        {
+          "id": "striped-bucket",
+          "label": "Striped bucket",
+          "sourceUrl": "https://logowik.com/kfc-kentucky-fried-chicken-vector-logo-8313.html",
+          "sourcePage": "https://logowik.com/kfc-kentucky-fried-chicken-vector-logo-8313.html",
+          "sourceSha256": "76fdf663777b491b9cfaf7c28699a7d9191a725905c7cc6721d8dc85f2f93ae2",
+          "downloadForm": "logowik",
+          "ops": {
+            "removeNodes": [
+              "5",
+              "6"
+            ],
+            "viewBox": "138.12 61.78 396.246 396.246"
+          },
+          "path": "/logos/svg/fast-food/alternates/kfc-striped-bucket.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#1D191A",
+            "#EE2F2A"
+          ],
+          "sourcePalette": [
+            "#EE2F2A",
+            "#1D191A",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "1821c6f59fb432ce5af116ef4fe4492723dcc50d9a3ff91032cb549d8368bf60"
+        }
+      ]
     },
     {
       "id": "FOOD-LC",
@@ -570,21 +1101,40 @@
       "name": "",
       "abbr": "LC",
       "aliases": [],
-      "path": "/logos/svg/fast-food/lc.svg",
-      "format": "svg",
-      "sourceUrl": "https://upload.wikimedia.org/wikipedia/en/7/7e/Little_Caesars_logo.svg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-      "sourcePage": "https://en.wikipedia.org/wiki/Little_Caesars",
-      "colors": [
-        "#000000",
-        "#FF6000",
-        "#FFFFFF"
-      ],
       "palette": [
         "#FF6000",
         "#000000",
         "#FFFFFF"
       ],
-      "unusedSourceSlots": []
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Toga-clad mascot",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/en/7/7e/Little_Caesars_logo.svg",
+          "sourcePage": "https://en.wikipedia.org/wiki/File:Little_Caesars_logo.svg",
+          "sourceSha256": "c0064aea9714cefd251124ffbd78f2239d391ec91be299491c3bbef25b29ac07",
+          "ops": {
+            "removeNodes": [
+              "0/1"
+            ],
+            "viewBox": "-3.335 -3.335 156.42 173.42"
+          },
+          "path": "/logos/svg/fast-food/lc.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#FF6000",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#FF6000",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "4a8599f138b54b2d1bd6878ccb81f24047fdbb945abd782f9d874c279f3b8300"
+        }
+      ]
     },
     {
       "id": "FOOD-MCD",
@@ -597,21 +1147,62 @@
         "McDonalds",
         "Mickey D's"
       ],
-      "path": "/logos/svg/fast-food/mcd.svg",
-      "format": "svg",
-      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/3/36/McDonald%27s_Golden_Arches.svg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-      "sourcePage": "https://en.wikipedia.org/wiki/McDonald%27s",
-      "colors": [
-        "#FFCC00"
-      ],
       "palette": [
         "#FFCC00",
         "#DA291C",
         "#FFFFFF"
       ],
-      "unusedSourceSlots": [
-        1,
-        2
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Golden Arches",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/3/36/McDonald%27s_Golden_Arches.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:McDonald%27s_Golden_Arches.svg",
+          "sourceSha256": "f7f34c46de7ce20ec8427bdf3a14d8df2c8703aa807e877497ee96f5eac1fe1d",
+          "ops": {
+            "viewBox": "-4.189 -4.325 281.623 247.399"
+          },
+          "path": "/logos/svg/fast-food/mcd.svg",
+          "format": "svg",
+          "colors": [
+            "#FFCC00"
+          ],
+          "sourcePalette": [
+            "#FFCC00",
+            "#DA291C",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "4f3c3f57f344ce20ba57da690d81a9c50b5d98a823e2b0b46e83acc16d5b3d42"
+        },
+        {
+          "id": "red-square",
+          "label": "Arches on red square",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/McDonald%27s_square_2020.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:McDonald%27s_square_2020.svg",
+          "sourceSha256": "e022119c1ffcb128c7a26c2b63ba8dbacbdb8ac476c0fd9fd6ad91cdd80130b8",
+          "ops": {
+            "viewBox": "-28.691 -28.691 1491.235 1491.953"
+          },
+          "path": "/logos/svg/fast-food/alternates/mcd-red-square.svg",
+          "format": "svg",
+          "colors": [
+            "#DB0007",
+            "#FFBC0D"
+          ],
+          "sourcePalette": [
+            "#FFBC0D",
+            "#DB0007",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "13a3682e3744674497584a68bb6f208bc6ce3eb3c4e024893d0476df7bc69a12"
+        }
       ]
     },
     {
@@ -622,22 +1213,42 @@
       "name": "",
       "abbr": "PANDA",
       "aliases": [],
-      "path": "/logos/svg/fast-food/panda.svg",
-      "format": "svg",
-      "sourceUrl": "https://upload.wikimedia.org/wikipedia/en/8/85/Panda_Express_logo.svg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-      "sourcePage": "https://en.wikipedia.org/wiki/Panda_Express",
-      "colors": [
-        "#C02827",
-        "#1A1B21",
-        "#FFFFFF",
-        "#231F20"
-      ],
       "palette": [
         "#C02827",
         "#1A1B21",
         "#FFFFFF"
       ],
-      "unusedSourceSlots": []
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Panda in red disc",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/en/8/85/Panda_Express_logo.svg",
+          "sourcePage": "https://en.wikipedia.org/wiki/File:Panda_Express_logo.svg",
+          "sourceSha256": "247bf46109f7596a4c80228feb415ff122ed9929e898532a47e373ea6817458c",
+          "ops": {
+            "removeNodes": [
+              "1",
+              "2",
+              "5"
+            ],
+            "viewBox": "-2.039 -2.039 106.036 106.036"
+          },
+          "path": "/logos/svg/fast-food/panda.svg",
+          "format": "svg",
+          "colors": [
+            "#C02827",
+            "#FFFFFF",
+            "#1A1B21"
+          ],
+          "sourcePalette": [
+            "#C02827",
+            "#1A1B21",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "d01027c36e9a411c7d9e980bd9ab185730762f14d8a2373beb4bc9745c715a46"
+        }
+      ]
     },
     {
       "id": "FOOD-PAPA",
@@ -650,21 +1261,38 @@
         "Papa John's",
         "Papa John's Pizza"
       ],
-      "path": "/logos/svg/fast-food/papa.svg",
-      "format": "svg",
-      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/9/92/Papa_Johns_logo.svg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-      "sourcePage": "https://en.wikipedia.org/wiki/Papa_John%27s",
-      "colors": [
-        "#FF0000"
-      ],
       "palette": [
         "#FF0000",
         "#000000",
         "#FFFFFF"
       ],
-      "unusedSourceSlots": [
-        1,
-        2
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Wordmark",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/9/92/Papa_Johns_logo.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Papa_Johns_logo.svg",
+          "sourceSha256": "b7d3c861677d06c45016dfb5987a314af174d15320580b13a374a61fdae6a267",
+          "ops": {
+            "viewBox": "-7.132 -7.132 370.864 80.235"
+          },
+          "showsName": true,
+          "path": "/logos/svg/fast-food/papa.svg",
+          "format": "svg",
+          "colors": [
+            "#FF0000"
+          ],
+          "sourcePalette": [
+            "#FF0000",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "40594f9e21657e6d65d777aaca6a96df0862b9f5b0ff817ab0bf0ca09d49f145"
+        }
       ]
     },
     {
@@ -675,21 +1303,72 @@
       "name": "",
       "abbr": "PH",
       "aliases": [],
-      "path": "/logos/svg/fast-food/ph.svg",
-      "format": "svg",
-      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Pizza_Hut_2025.svg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-      "sourcePage": "https://en.wikipedia.org/wiki/Pizza_Hut",
-      "colors": [
-        "#EA1C24",
-        "#C70307"
-      ],
       "palette": [
         "#EA1C24",
         "#C70307",
         "#FFFFFF"
       ],
-      "unusedSourceSlots": [
-        2
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Red roof",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Pizza_Hut_%282019%29.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Pizza_Hut_(2019).svg",
+          "sourceSha256": "e7eeb5316c2a79acc90dac4ee1fb44af50c171819f3758684f361d936dd85163",
+          "ops": {
+            "removeNodes": [
+              "0/0/0"
+            ],
+            "viewBox": "-9.838 -9.838 511.576 139.454"
+          },
+          "path": "/logos/svg/fast-food/ph.svg",
+          "format": "svg",
+          "colors": [
+            "#ED1C24"
+          ],
+          "sourcePalette": [
+            "#ED1C24",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "bef57ec88e8a9ce41b1e8bc46e59aa84b255c70460c26b2ff5f0e6a7a40a816d"
+        },
+        {
+          "id": "roof-1999",
+          "label": "Brushstroke roof (1999)",
+          "sourceUrl": "https://1000logos.net/wp-content/uploads/2017/05/Pizza-Hut-Logo-1.svg",
+          "sourcePage": "https://1000logos.net/pizza-hut-logo/",
+          "sourceSha256": "d68d36a87fb6d8383edb190999aeec846c3c33b09a8ea92a8731956453c4f120",
+          "ops": {
+            "removeNodes": [
+              "0",
+              "1",
+              "2",
+              "3",
+              "6"
+            ],
+            "viewBox": "-2.125 -4.53 381.591 174.876"
+          },
+          "path": "/logos/svg/fast-food/alternates/ph-roof-1999.svg",
+          "format": "svg",
+          "colors": [
+            "#009867",
+            "#EE1C23"
+          ],
+          "sourcePalette": [
+            "#EE1C23",
+            "#009867",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "f7fd8c2bf5bde40a11c66c2e86a2d209b13cb2db1a0eb98b3b8f7c785f7a0d9e"
+        }
       ]
     },
     {
@@ -702,21 +1381,58 @@
       "aliases": [
         "Popeyes Louisiana Kitchen"
       ],
-      "path": "/logos/svg/fast-food/pop.png",
-      "format": "png",
-      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/2/26/Logo_Popeyes_en_letras.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-      "sourcePage": "https://en.wikipedia.org/wiki/Popeyes",
-      "colors": [
-        "#FF7D00"
-      ],
       "palette": [
         "#FF7D00",
         "#D22630",
         "#FFFFFF"
       ],
-      "unusedSourceSlots": [
-        1,
-        2
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "P medallion",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Popeyes_logo.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Popeyes_logo.svg",
+          "sourceSha256": "48fb78d93826b994220f89af05cfe38825efd793def23418e50ed52c348e320f",
+          "ops": {
+            "removeNodes": [
+              "3/0/0/0/3",
+              "3/0/0/0/4",
+              "3/0/0/0/5",
+              "3/0/0/0/6",
+              "3/0/0/0/7",
+              "3/0/0/0/8",
+              "3/0/0/0/9",
+              "3/0/0/0/10",
+              "3/0/0/0/11",
+              "3/0/0/0/12",
+              "3/0/0/0/13",
+              "3/0/0/0/14",
+              "3/0/0/0/15",
+              "3/0/0/0/16",
+              "3/0/0/0/17",
+              "3/0/0/0/18",
+              "3/0/0/0/25",
+              "3/0/1",
+              "3/0/2"
+            ],
+            "viewBox": "1.896 -0.402 33.935 33.622"
+          },
+          "path": "/logos/svg/fast-food/pop.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#FFFFFF",
+            "#C41230",
+            "#F58427"
+          ],
+          "sourcePalette": [
+            "#F58427",
+            "#C41230",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "e524ab59723059fb7b9bc8b323b24f56da102dcd70920c4a38a557a7933df75f"
+        }
       ]
     },
     {
@@ -729,21 +1445,73 @@
       "aliases": [
         "Sonic Drive-In"
       ],
-      "path": "/logos/svg/fast-food/son.svg",
-      "format": "svg",
-      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/f/ff/SONIC_New_Logo_2020.svg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-      "sourcePage": "https://en.wikipedia.org/wiki/Sonic_Drive-In",
-      "colors": [
-        "#0088D7",
-        "#FFFFFF",
-        "#EA0045"
-      ],
       "palette": [
         "#EA0045",
         "#0088D7",
         "#FFFFFF"
       ],
-      "unusedSourceSlots": []
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Bow-tie outline",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/SONIC_New_Logo_2020.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:SONIC_New_Logo_2020.svg",
+          "sourceSha256": "68ca2b5851cfd6084b2664a8d730fe9683d9905bc7645a63a1e8dba2b87f03e5",
+          "ops": {
+            "removeNodes": [
+              "2/0/0",
+              "2/0/1",
+              "2/0/3"
+            ],
+            "viewBox": "-98.634 -98.634 5128.962 2796.271"
+          },
+          "path": "/logos/svg/fast-food/son.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#0088D7"
+          ],
+          "sourcePalette": [
+            "#0088D7",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "3126acf7569117dac15062a1ce8efc3ec207b21a98c94332589958a7f92aff55"
+        },
+        {
+          "id": "pennants-2004",
+          "label": "Double pennant (2004)",
+          "sourceUrl": "https://brandeps.com/logo-download/s/sonic-logo-vector-01.svg",
+          "sourcePage": "https://brandeps.com/logo/s/sonic-01",
+          "sourceSha256": "d6533c1460683f013c49c17a17f6aba66bd2cbe508bf75f0638fe87ea38c9f14",
+          "ops": {
+            "removeNodes": [
+              "1/4",
+              "1/5"
+            ],
+            "viewBox": "-10.225 130.575 531.681 250.337"
+          },
+          "path": "/logos/svg/fast-food/alternates/son-pennants-2004.svg",
+          "format": "svg",
+          "colors": [
+            "#97A8D3",
+            "#FCDD2A",
+            "#0A68B0"
+          ],
+          "sourcePalette": [
+            "#97A8D3",
+            "#0A68B0",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "9c9a13fb6959c7e95f3fa0ca48bea4b6481f21a12f40536955bde1e3a9f7b8ec"
+        }
+      ]
     },
     {
       "id": "FOOD-STAR",
@@ -753,21 +1521,41 @@
       "name": "",
       "abbr": "STAR",
       "aliases": [],
-      "path": "/logos/svg/fast-food/star.svg",
-      "format": "svg",
-      "sourceUrl": "https://upload.wikimedia.org/wikipedia/en/d/d3/Starbucks_Corporation_Logo_2011.svg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-      "sourcePage": "https://en.wikipedia.org/wiki/Starbucks",
-      "colors": [
-        "#FFFFFF",
-        "#00643C"
-      ],
       "palette": [
         "#00643C",
         "#000000",
         "#FFFFFF"
       ],
-      "unusedSourceSlots": [
-        1
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Siren",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Special:FilePath/Starbucks_Corporation_Logo_2011.svg",
+          "sourcePage": "https://en.wikipedia.org/wiki/File:Starbucks_Corporation_Logo_2011.svg",
+          "sourceSha256": "63943b9d4030590bd15cdbbda16349daff87942d986782e98da8aef630b54802",
+          "ops": {
+            "removeNodes": [
+              "1/2",
+              "1/3"
+            ],
+            "viewBox": "-4.748 -4.748 246.913 246.913"
+          },
+          "path": "/logos/svg/fast-food/star.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#00643C"
+          ],
+          "sourcePalette": [
+            "#00643C",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "1f08104c9b16119d4ed22ec75ddf5be61d76e4c88adfab761954c73333a17623"
+        }
       ]
     },
     {
@@ -778,21 +1566,37 @@
       "name": "",
       "abbr": "SUB",
       "aliases": [],
-      "path": "/logos/svg/fast-food/sub.svg",
-      "format": "svg",
-      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Subway_2016_logo.svg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-      "sourcePage": "https://en.wikipedia.org/wiki/Subway_%28restaurant%29",
-      "colors": [
-        "#F2B700",
-        "#008938"
-      ],
       "palette": [
         "#008938",
         "#F2B700",
         "#FFFFFF"
       ],
-      "unusedSourceSlots": [
-        2
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Arrow S",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Subway_icon.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Subway_icon.svg",
+          "sourceSha256": "8797363412224abb6a08adb5971d82c534fcb012deb0b7df28a23398e4cdfe41",
+          "ops": {
+            "viewBox": "-51.211 -51.211 2084.287 2662.971"
+          },
+          "path": "/logos/svg/fast-food/sub.svg",
+          "format": "svg",
+          "colors": [
+            "#009132",
+            "#FFC20D"
+          ],
+          "sourcePalette": [
+            "#009132",
+            "#FFC20D",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "2afaf77b30babdfccbcb4e5eb1270d38de5785113be195fc81ee328fe7e68090"
+        }
       ]
     },
     {
@@ -803,21 +1607,83 @@
       "name": "",
       "abbr": "TB",
       "aliases": [],
-      "path": "/logos/svg/fast-food/tb.svg",
-      "format": "svg",
-      "sourceUrl": "https://upload.wikimedia.org/wikipedia/en/b/b7/Taco_Bell_2023.svg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-      "sourcePage": "https://en.wikipedia.org/wiki/Taco_Bell",
-      "colors": [
-        "#5B2994",
-        "#000000"
-      ],
       "palette": [
         "#5B2994",
         "#000000",
         "#FFFFFF"
       ],
-      "unusedSourceSlots": [
-        2
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Bell",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Special:FilePath/Taco_Bell_2023.svg",
+          "sourcePage": "https://en.wikipedia.org/wiki/File:Taco_Bell_2023.svg",
+          "sourceSha256": "7b756ddaf0740466772129c46fed9d8d8ae3abc13b4eb3a6e13c9f9f0fd334ca",
+          "ops": {
+            "removeNodes": [
+              "2"
+            ],
+            "viewBox": "-4.855 -4.855 252.456 230.536"
+          },
+          "path": "/logos/svg/fast-food/tb.svg",
+          "format": "svg",
+          "colors": [
+            "#5B2994"
+          ],
+          "sourcePalette": [
+            "#5B2994",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "5288875619779125ec1c3914eb6961e3a80a66d9ddf95266f68be8384b188a40"
+        },
+        {
+          "id": "bell-1994",
+          "label": "Multicolor bell (1994)",
+          "sourceUrl": "https://1000logos.net/wp-content/uploads/2017/06/Taco-Bell-Logo-5.svg",
+          "sourcePage": "https://1000logos.net/taco-bell-logo/",
+          "sourceSha256": "4f1b2d3a8732ee5955e4deb13436d0c99966777bcf38be936a10ac680047e79b",
+          "ops": {
+            "removeNodes": [
+              "9",
+              "10",
+              "11",
+              "12",
+              "13",
+              "14",
+              "15",
+              "16",
+              "17",
+              "18",
+              "19"
+            ],
+            "viewBox": "409.51 354.47 437.299 361.779"
+          },
+          "path": "/logos/svg/fast-food/alternates/tb-bell-1994.svg",
+          "format": "svg",
+          "colors": [
+            "#33348E",
+            "#C80088",
+            "#33338E",
+            "#35338D",
+            "#35348D",
+            "#FAEE30",
+            "#B5AB54"
+          ],
+          "sourcePalette": [
+            "#34348E",
+            "#C80088",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "c68b3168b1abf466ed43ec82bbaa84f2ef57c11c78f55c20e35a2098b4297f7a"
+        }
       ]
     },
     {
@@ -830,24 +1696,77 @@
       "aliases": [
         "Wendys"
       ],
-      "path": "/logos/svg/fast-food/wen.svg",
-      "format": "svg",
-      "sourceUrl": "https://upload.wikimedia.org/wikipedia/en/3/32/Wendy%27s_full_logo_2012.svg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-      "sourcePage": "https://en.wikipedia.org/wiki/Wendy%27s",
-      "colors": [
-        "#FFFFFF",
-        "#453635",
-        "#CF202E",
-        "#00A0DD",
-        "#A51D36",
-        "#F4D3D6"
-      ],
       "palette": [
         "#CF202E",
         "#453635",
         "#FFFFFF"
       ],
-      "unusedSourceSlots": []
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Portrait",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Special:FilePath/Wendy%27s_full_logo_2012.svg",
+          "sourcePage": "https://en.wikipedia.org/wiki/File:Wendy%27s_full_logo_2012.svg",
+          "sourceSha256": "1101996d547cec2a54e531d760eb69e20f714de0bd4c5fa8c5d2fa4658413af6",
+          "ops": {
+            "removeNodes": [
+              "3",
+              "4"
+            ],
+            "viewBox": "23.07 -1.024 53.262 49.531"
+          },
+          "path": "/logos/svg/fast-food/wen.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#453635",
+            "#CF202E",
+            "#00A0DD",
+            "#A51D36",
+            "#F4D3D6"
+          ],
+          "sourcePalette": [
+            "#BA1E32",
+            "#453635",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "077b13456cb02c32c2afd7570ef33e181e2e509f10927965fdb4f493ec27d353"
+        },
+        {
+          "id": "portrait-1983",
+          "label": "Classic portrait (1983)",
+          "sourceUrl": "https://1000logos.net/wp-content/uploads/2017/08/wendys-logo-11.svg",
+          "sourcePage": "https://1000logos.net/wendys-logo/",
+          "sourceSha256": "272a9f63821669a86a163248007aea3802cc18f318aaf0c69e031b7a5969e87f",
+          "ops": {
+            "removeNodes": [
+              "2/0/0",
+              "2/0/1/0/0",
+              "2/0/1/0/1/0",
+              "2/0/1/1",
+              "2/0/1/0/1/1/15"
+            ],
+            "viewBox": "368.894 19.909 145.728 172.595"
+          },
+          "path": "/logos/svg/fast-food/alternates/wen-portrait-1983.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#ED1B24",
+            "#FFFFFF",
+            "#95C8E5",
+            "#FCDDD1"
+          ],
+          "sourcePalette": [
+            "#ED1B24",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "56b01ffd719b30d6a1d070eff3f7d29298422ffe2620d5eef6e0d22f6ee2fb6f"
+        }
+      ]
     },
     {
       "id": "FOOD-WHAT",
@@ -857,21 +1776,41 @@
       "name": "",
       "abbr": "WHAT",
       "aliases": [],
-      "path": "/logos/svg/fast-food/what.svg",
-      "format": "svg",
-      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/9/94/Whataburger_logo.svg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-      "sourcePage": "https://en.wikipedia.org/wiki/Whataburger",
-      "colors": [
-        "#FF770F"
-      ],
       "palette": [
         "#FF770F",
         "#000000",
         "#FFFFFF"
       ],
-      "unusedSourceSlots": [
-        1,
-        2
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Flying W",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Whataburger_logo.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Whataburger_logo.svg",
+          "sourceSha256": "86ca33239daf07023cfe539e5713f483b22b7a72662bebc125a901b035310bed",
+          "ops": {
+            "removeNodes": [
+              "3/5",
+              "4"
+            ],
+            "viewBox": "-0.228 -4.578 300.456 247.956"
+          },
+          "path": "/logos/svg/fast-food/what.svg",
+          "format": "svg",
+          "colors": [
+            "#FF770F"
+          ],
+          "sourcePalette": [
+            "#FF770F",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "387ba3b18c6e4ca82e09cf60160aafaa45e5baa09d79a0162113aff7f681bbb4"
+        }
       ]
     },
     {
@@ -884,118 +1823,971 @@
       "aliases": [
         "Zaxbys"
       ],
-      "path": "/logos/svg/fast-food/zax.png",
-      "format": "png",
-      "sourceUrl": "https://upload.wikimedia.org/wikipedia/en/d/dd/Zaxby%27s_logo.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-      "sourcePage": "https://en.wikipedia.org/wiki/Zaxby%27s",
-      "colors": [
-        "#EA0A2A",
-        "#0D1D41",
-        "#F7F3ED",
-        "#0C1D41",
-        "#0D1D40",
-        "#EA092A",
-        "#0D1C41",
-        "#F7F2EC",
-        "#EA0B2B",
-        "#EA0A29",
-        "#0C1D42",
-        "#EA0C2C",
-        "#0C1D40",
-        "#0C1C41",
-        "#F7F1EB",
-        "#F6E1DE",
-        "#EB223E",
-        "#F6E4E0",
-        "#EA102F",
-        "#0D1D42",
-        "#EB1E3B",
-        "#F6DEDB",
-        "#EB1432",
-        "#EC3B53",
-        "#F6E5E1",
-        "#F07584",
-        "#ED3E56",
-        "#EB1D3A",
-        "#EB1937",
-        "#F4BABD",
-        "#F6ECE7",
-        "#EA0D2C",
-        "#F6E6E2",
-        "#EB1A37",
-        "#F6ECE6",
-        "#F7F1EC",
-        "#F6E9E5",
-        "#F3B0B5",
-        "#F7EEE9",
-        "#0D1C40",
-        "#EB213D",
-        "#F6E8E4",
-        "#F4C1C3",
-        "#F5D0CF",
-        "#EB1634",
-        "#ED3A53",
-        "#F06A7A",
-        "#ED4259",
-        "#F6EBE6",
-        "#F18691",
-        "#F5CBCB",
-        "#F6DFDC",
-        "#ED3850",
-        "#F5D7D6",
-        "#EB1C39",
-        "#F6EAE6",
-        "#EB1130",
-        "#EB1735",
-        "#EE596C",
-        "#F29CA4",
-        "#F7ECE7",
-        "#F2939D",
-        "#F6DAD8",
-        "#EB1936",
-        "#EE5468",
-        "#F2959E",
-        "#EA0B2A",
-        "#EC223E",
-        "#EF6375",
-        "#EE4B61",
-        "#EB1B38",
-        "#F18B96",
-        "#EA1231",
-        "#F0838F",
-        "#F17E8B",
-        "#F07987",
-        "#EF6C7C",
-        "#F7EDE8",
-        "#EE4F64",
-        "#EF6576",
-        "#F6E2DF",
-        "#F7EFE9",
-        "#F6E3E0",
-        "#F7F0EB",
-        "#EA0F2E",
-        "#EB1534",
-        "#EB1332",
-        "#F298A1",
-        "#EC314A",
-        "#EB2A45",
-        "#EB1331",
-        "#F6DBD9",
-        "#0E1D41",
-        "#0D1E40",
-        "#0D1E41",
-        "#0C1C40",
-        "#EC364F",
-        "#EB2641",
-        "#F297A0",
-        "#ED3C54"
-      ],
       "palette": [
         "#0C1D42",
         "#EA092A",
         "#FFFFFF"
       ],
-      "unusedSourceSlots": []
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Rooster disc",
+          "sourceUrl": "https://1000logos.net/wp-content/uploads/2025/02/Zaxbys-Logo-SVG_001.svg",
+          "sourcePage": "https://1000logos.net/zaxbys-logo/",
+          "sourceSha256": "5cb330cb59d5c684b0d330c3deca21e9c48cf722a7b306755819379b8b1490a2",
+          "ops": {
+            "removeNodes": [
+              "1",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "10",
+              "11",
+              "12",
+              "13",
+              "14",
+              "15",
+              "16",
+              "17",
+              "18",
+              "19",
+              "20",
+              "21",
+              "22",
+              "23",
+              "24",
+              "25",
+              "26",
+              "27",
+              "28",
+              "29",
+              "30",
+              "31",
+              "32",
+              "33",
+              "34",
+              "35",
+              "36",
+              "37",
+              "38",
+              "39",
+              "40",
+              "41",
+              "42",
+              "43",
+              "44",
+              "45",
+              "46",
+              "47",
+              "48",
+              "49",
+              "50",
+              "51"
+            ],
+            "viewBox": "460.2 21.2 1079.6 1081.6"
+          },
+          "path": "/logos/svg/fast-food/zax.svg",
+          "format": "svg",
+          "colors": [
+            "#EA0B2A",
+            "#F7F3ED"
+          ],
+          "sourcePalette": [
+            "#EA0B2A",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "fd3fded958e29ee96a5d6fdc28766d08c23f42b9bfdda889a805f61963ed6560"
+        },
+        {
+          "id": "oval-rooster",
+          "label": "Rooster in red oval",
+          "sourceUrl": "https://1000logos.net/wp-content/uploads/2025/02/Zaxbys-Logo-SVG_010.svg",
+          "sourcePage": "https://1000logos.net/zaxbys-logo/",
+          "sourceSha256": "82042570b0a60b77c35d968b01c4a88677930b192c8e4638bed1be307053b465",
+          "ops": {
+            "removeNodes": [
+              "0",
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "10",
+              "11",
+              "12",
+              "13",
+              "14",
+              "15",
+              "16",
+              "17",
+              "18",
+              "19",
+              "20",
+              "21",
+              "22",
+              "23",
+              "24",
+              "25",
+              "26",
+              "27",
+              "28",
+              "29",
+              "30",
+              "31",
+              "32",
+              "33",
+              "34",
+              "35",
+              "36",
+              "37",
+              "38",
+              "39",
+              "40",
+              "41",
+              "42",
+              "43",
+              "44",
+              "45",
+              "46",
+              "47",
+              "48",
+              "49",
+              "50",
+              "51",
+              "52",
+              "53",
+              "54",
+              "55",
+              "56",
+              "57",
+              "58",
+              "59",
+              "60",
+              "61",
+              "62",
+              "63",
+              "64",
+              "65",
+              "66",
+              "67",
+              "68",
+              "69",
+              "70",
+              "71",
+              "72",
+              "73",
+              "74",
+              "75",
+              "76",
+              "77",
+              "78",
+              "79",
+              "80",
+              "81",
+              "82",
+              "83",
+              "84",
+              "85",
+              "86",
+              "87",
+              "88",
+              "89",
+              "90",
+              "91",
+              "92",
+              "93",
+              "94",
+              "95",
+              "96",
+              "97",
+              "98",
+              "99",
+              "100",
+              "101",
+              "102",
+              "103",
+              "104",
+              "105",
+              "106",
+              "107",
+              "108",
+              "109",
+              "110",
+              "111",
+              "112",
+              "113",
+              "114",
+              "115",
+              "116",
+              "117",
+              "118",
+              "119",
+              "120",
+              "121",
+              "122",
+              "123",
+              "124",
+              "125",
+              "126",
+              "127",
+              "128",
+              "129",
+              "130",
+              "131",
+              "132",
+              "133",
+              "134",
+              "135",
+              "136",
+              "137",
+              "138",
+              "139",
+              "140",
+              "141",
+              "142",
+              "143",
+              "144",
+              "145",
+              "146",
+              "147",
+              "148",
+              "149",
+              "150",
+              "151",
+              "152",
+              "153",
+              "154",
+              "155",
+              "156",
+              "157",
+              "158",
+              "159",
+              "160",
+              "161",
+              "162",
+              "163",
+              "164",
+              "165",
+              "166",
+              "167",
+              "168",
+              "169",
+              "170",
+              "171",
+              "172",
+              "173",
+              "174",
+              "175",
+              "176",
+              "177",
+              "178",
+              "179",
+              "180",
+              "181",
+              "182",
+              "183",
+              "184",
+              "185",
+              "186",
+              "187",
+              "188",
+              "189",
+              "190",
+              "191",
+              "192",
+              "193",
+              "194",
+              "195",
+              "196",
+              "197",
+              "198",
+              "199",
+              "200",
+              "201",
+              "202",
+              "203",
+              "204",
+              "205",
+              "206",
+              "207",
+              "208",
+              "209",
+              "210",
+              "211",
+              "212",
+              "213",
+              "214",
+              "215",
+              "216",
+              "217",
+              "218",
+              "219",
+              "220",
+              "221",
+              "222",
+              "223",
+              "224",
+              "225",
+              "226",
+              "227",
+              "228",
+              "229",
+              "230",
+              "231",
+              "232",
+              "233",
+              "234",
+              "235",
+              "236",
+              "237",
+              "238",
+              "239",
+              "240",
+              "241",
+              "242",
+              "243",
+              "244",
+              "245",
+              "246",
+              "247",
+              "248",
+              "249",
+              "250",
+              "251",
+              "252",
+              "253",
+              "254",
+              "255",
+              "256",
+              "257",
+              "258",
+              "259",
+              "260",
+              "261",
+              "262",
+              "263",
+              "264",
+              "265",
+              "266",
+              "267",
+              "268",
+              "269",
+              "270",
+              "271",
+              "272",
+              "273",
+              "274",
+              "275",
+              "276",
+              "277",
+              "278",
+              "279",
+              "280",
+              "281",
+              "282",
+              "283",
+              "284",
+              "285",
+              "286",
+              "287",
+              "288",
+              "289",
+              "290",
+              "291",
+              "292",
+              "293",
+              "294",
+              "295",
+              "296",
+              "297",
+              "298",
+              "299",
+              "300",
+              "301",
+              "302",
+              "303",
+              "304",
+              "305",
+              "306",
+              "307",
+              "308",
+              "309",
+              "310",
+              "311",
+              "312",
+              "313",
+              "314",
+              "315",
+              "316",
+              "317",
+              "318",
+              "319",
+              "320",
+              "321",
+              "322",
+              "323",
+              "324",
+              "325",
+              "326",
+              "327",
+              "328",
+              "329",
+              "330",
+              "331",
+              "332",
+              "333",
+              "334",
+              "335",
+              "336",
+              "337",
+              "338",
+              "339",
+              "340",
+              "341",
+              "342",
+              "343",
+              "344",
+              "345",
+              "346",
+              "347",
+              "348",
+              "349",
+              "350",
+              "351",
+              "352",
+              "353",
+              "354",
+              "355",
+              "356",
+              "357",
+              "358",
+              "359",
+              "360",
+              "361",
+              "362",
+              "363",
+              "364",
+              "365",
+              "366",
+              "367",
+              "368",
+              "369",
+              "370",
+              "371",
+              "372",
+              "373",
+              "374",
+              "375",
+              "376",
+              "377",
+              "378",
+              "379",
+              "380",
+              "381",
+              "382",
+              "383",
+              "384",
+              "385",
+              "386",
+              "387",
+              "388",
+              "389",
+              "390",
+              "391",
+              "392",
+              "393",
+              "394",
+              "395",
+              "396",
+              "397",
+              "398",
+              "399",
+              "400",
+              "401",
+              "402",
+              "403",
+              "404",
+              "405",
+              "406",
+              "407",
+              "408",
+              "409",
+              "410",
+              "411",
+              "412",
+              "413",
+              "414",
+              "415",
+              "416",
+              "417",
+              "418",
+              "419",
+              "420",
+              "421",
+              "422",
+              "423",
+              "424",
+              "425",
+              "426",
+              "427",
+              "428",
+              "429",
+              "430",
+              "431",
+              "432",
+              "433",
+              "434",
+              "435",
+              "436",
+              "437",
+              "438",
+              "439",
+              "440",
+              "441",
+              "442",
+              "443",
+              "444",
+              "445",
+              "446",
+              "447",
+              "448",
+              "449",
+              "450",
+              "451",
+              "452",
+              "453",
+              "454",
+              "455",
+              "456",
+              "457",
+              "458",
+              "459",
+              "460",
+              "461",
+              "462",
+              "463",
+              "464",
+              "465",
+              "466",
+              "467",
+              "468",
+              "469",
+              "470",
+              "471",
+              "472",
+              "473",
+              "474",
+              "475",
+              "476",
+              "477",
+              "478",
+              "479",
+              "480",
+              "481",
+              "482",
+              "483",
+              "484",
+              "485",
+              "486",
+              "487",
+              "488",
+              "489",
+              "490",
+              "491",
+              "492",
+              "493",
+              "494",
+              "495",
+              "496",
+              "497",
+              "498",
+              "499",
+              "500",
+              "501",
+              "502",
+              "503",
+              "504",
+              "505",
+              "506",
+              "507",
+              "508",
+              "509",
+              "510",
+              "511",
+              "512",
+              "513",
+              "514",
+              "515",
+              "516",
+              "517",
+              "518",
+              "519",
+              "520",
+              "521",
+              "522",
+              "523",
+              "524",
+              "525",
+              "526",
+              "527",
+              "528",
+              "529",
+              "530",
+              "531",
+              "532",
+              "533",
+              "534",
+              "535",
+              "536",
+              "537",
+              "538",
+              "539",
+              "540",
+              "541",
+              "542",
+              "543",
+              "544",
+              "545",
+              "546",
+              "547",
+              "548",
+              "549",
+              "550",
+              "551",
+              "552",
+              "553",
+              "554",
+              "555",
+              "556",
+              "557",
+              "558",
+              "559",
+              "560",
+              "561",
+              "562",
+              "563",
+              "564",
+              "565",
+              "566",
+              "567",
+              "568",
+              "569",
+              "570",
+              "571",
+              "572",
+              "573",
+              "574",
+              "575",
+              "576",
+              "577",
+              "578",
+              "579",
+              "580",
+              "581",
+              "582",
+              "583",
+              "584",
+              "585",
+              "586",
+              "587",
+              "588",
+              "589",
+              "590",
+              "591",
+              "592",
+              "593",
+              "594",
+              "595",
+              "596",
+              "597",
+              "598",
+              "599",
+              "600",
+              "601",
+              "602",
+              "603",
+              "604",
+              "605",
+              "606",
+              "607",
+              "608",
+              "609",
+              "610",
+              "611",
+              "612",
+              "613",
+              "614",
+              "615",
+              "616",
+              "617",
+              "618",
+              "619",
+              "620",
+              "621",
+              "622",
+              "623",
+              "624",
+              "625",
+              "626",
+              "627",
+              "628",
+              "629",
+              "630",
+              "631",
+              "632",
+              "633",
+              "634",
+              "635",
+              "636",
+              "637",
+              "638",
+              "639",
+              "640",
+              "641",
+              "642",
+              "643",
+              "644",
+              "645",
+              "646",
+              "647",
+              "648",
+              "649",
+              "650",
+              "651",
+              "652",
+              "653",
+              "654",
+              "655",
+              "656",
+              "657",
+              "658",
+              "659",
+              "660",
+              "661",
+              "662",
+              "663",
+              "664",
+              "665",
+              "666",
+              "667",
+              "668",
+              "669",
+              "670",
+              "671",
+              "672",
+              "673",
+              "674",
+              "675",
+              "676",
+              "677",
+              "678",
+              "679",
+              "680",
+              "681",
+              "682",
+              "683",
+              "684",
+              "685",
+              "686",
+              "687",
+              "688",
+              "689",
+              "690",
+              "691",
+              "692",
+              "693",
+              "694",
+              "695",
+              "696",
+              "697",
+              "698",
+              "699",
+              "700",
+              "701",
+              "702",
+              "703",
+              "704",
+              "705",
+              "707",
+              "708",
+              "709",
+              "710",
+              "711",
+              "712",
+              "714",
+              "715",
+              "716",
+              "717",
+              "718",
+              "719",
+              "720",
+              "721",
+              "722",
+              "723",
+              "724",
+              "725",
+              "726",
+              "727",
+              "728",
+              "729",
+              "730",
+              "731",
+              "732",
+              "733",
+              "734",
+              "735",
+              "736",
+              "737",
+              "738",
+              "739",
+              "740",
+              "741",
+              "742",
+              "743",
+              "745"
+            ],
+            "viewBox": "295.312 266.512 950.976 632.576"
+          },
+          "path": "/logos/svg/fast-food/alternates/zax-oval-rooster.svg",
+          "format": "svg",
+          "colors": [
+            "#130A0A",
+            "#E3002C",
+            "#5E1F28",
+            "#5F111D",
+            "#5F101C",
+            "#E0012C",
+            "#5F1923",
+            "#E1012C",
+            "#5F1924",
+            "#1B0404",
+            "#5F121E",
+            "#5F1620",
+            "#31070B",
+            "#3E080E",
+            "#625F5D",
+            "#F2D115",
+            "#FDFDFD",
+            "#5F1822",
+            "#C90127",
+            "#ACAEB1",
+            "#5F131E",
+            "#5F1722",
+            "#5F1823",
+            "#88898B",
+            "#F6F3ED",
+            "#393533",
+            "#999B9E",
+            "#514C4A",
+            "#5F1A24",
+            "#5F0E1A",
+            "#1B0707",
+            "#969798",
+            "#A3AAB1",
+            "#888787",
+            "#B0B9C2",
+            "#9CA1A5",
+            "#C2CAD2",
+            "#5F1721",
+            "#A8B2BB",
+            "#959697",
+            "#A9B2BC",
+            "#919293",
+            "#908F8F",
+            "#6E6C6B",
+            "#C0C8D0",
+            "#C1C9D1",
+            "#949596",
+            "#44413E",
+            "#A1A7AE",
+            "#989A9C",
+            "#888889",
+            "#8E8F90",
+            "#666361",
+            "#A5ACB3",
+            "#362220",
+            "#62605D",
+            "#969A9F",
+            "#191716",
+            "#84011A",
+            "#89011B",
+            "#E2002C",
+            "#E4002C",
+            "#4F4B49",
+            "#86011A",
+            "#85011A",
+            "#5F0D1A",
+            "#4A010F",
+            "#E5002D",
+            "#E5002C",
+            "#5F1B25",
+            "#5F1C26",
+            "#C10227",
+            "#C00227",
+            "#DE002B",
+            "#E1002C",
+            "#87011B",
+            "#1C0106",
+            "#BF0227",
+            "#AC0223",
+            "#650115",
+            "#CD0128",
+            "#99011F",
+            "#5F1D27",
+            "#5F121D",
+            "#8B011C",
+            "#5F1A25",
+            "#5F0E1B",
+            "#836769",
+            "#211A1A",
+            "#EAC917",
+            "#E8C618",
+            "#FEC421",
+            "#FDC520",
+            "#B89D19",
+            "#E3C218",
+            "#C7CACC",
+            "#B29819",
+            "#828181",
+            "#AF9519",
+            "#D0D4D7",
+            "#B69B19",
+            "#DFBF19",
+            "#A68D19",
+            "#423231",
+            "#E5C517",
+            "#C9CDD0",
+            "#DFBF18",
+            "#AC9219",
+            "#403433",
+            "#D3D7DB",
+            "#73716F",
+            "#5C252A",
+            "#CBCFD3",
+            "#D5D8DB",
+            "#8E7D80"
+          ],
+          "sourcePalette": [
+            "#211A1A",
+            "#E5002C",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "17faab473281b78a8d8ea55bec640ad89cc1ba0453b4aac84770b99483b1773b"
+        }
+      ]
     }
   ]
 }

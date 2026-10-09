@@ -1,5 +1,5 @@
 import { useRef, useState } from 'react'
-import { ALL_POOL_IDS, MAX_DECK_ROUNDS, RANDOM_ROUND_OPTIONS, TEAM_POOLS, poolTeams, randomDeck, type GuessTarget, type RandomDeckOptions, type RandomGuess, type Round } from '../lib/teams'
+import { ALL_POOL_IDS, MAX_DECK_ROUNDS, RANDOM_ROUND_OPTIONS, TEAM_POOLS, logoPoolTeams, poolTeams, randomDeck, type GuessTarget, type RandomDeckOptions, type RandomGuess, type Round } from '../lib/teams'
 import { useDialogA11y } from './SettingsModal'
 
 interface Props {
@@ -22,7 +22,7 @@ export function RandomDeckModal({ deck, guessTarget, onRoll, onClose }: Props) {
 
   useDialogA11y(dialogRef, closeRef, onClose)
 
-  const logoCount = poolTeams(opts.logoPools).length
+  const logoCount = logoPoolTeams(opts.logoPools).length
   const colorCount = poolTeams(opts.colorPools).length
   const capacity = replace ? MAX_DECK_ROUNDS : Math.max(0, MAX_DECK_ROUNDS - deck.length)
   const rollCount = Math.min(opts.rounds, capacity)

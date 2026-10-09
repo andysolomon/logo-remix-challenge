@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.0" id="katman_1" x="0px" y="0px" viewBox="160.552 29.463 532.896 532.896" style="enable-background:new 0 0 854 592;" xml:space="preserve" width="532.896" height="532.896">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+	.st1{filter:url(#Adobe_OpacityMaskFilter);}
+	.st2{mask:url(#clip_1_);}
+	.st3{fill:#BEB99E;}
+	.st4{fill:#E4DDC9;}
+	.st5{fill:#88AD58;}
+	.st6{fill:#76C63B;}
+	.st7{fill:#CAADA2;}
+	.st8{fill:#FBC6D1;}
+	.st9{fill:#007AFF;}
+</style>
+<g>
+	<circle id="circle_1_" class="st0" cx="427" cy="296" r="256" />
+</g>
+<defs>
+	<filter id="Adobe_OpacityMaskFilter" filterUnits="userSpaceOnUse" x="171" y="40" width="512" height="512">
+		<feColorMatrix type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0" />
+	</filter>
+</defs>
+<mask maskUnits="userSpaceOnUse" x="171" y="40" width="512" height="512" id="clip_1_">
+	<g class="st1">
+		<circle id="circle_2_" class="st0" cx="427" cy="296" r="256" />
+	</g>
+</mask>
+<g class="st2">
+	<rect x="171" y="40" class="st3" width="173" height="512" />
+	<rect x="171" y="40" class="st4" width="170" height="512" />
+	<rect x="508" y="40" class="st5" width="175" height="173" />
+	<rect x="511" y="40" class="st6" width="172" height="170" />
+	<rect x="508" y="379" class="st7" width="175" height="173" />
+	<rect x="511" y="382" class="st8" width="172" height="170" />
+	<path class="st9" d="M427,424c71.7,0,128-56.3,128-128s-56.3-128-128-128s-128,56.3-128,128S355.3,424,427,424z" />
+	<polygon class="st0" points="427,211.5 374.5,381 427,322 479.5,381  " />
+</g>
+</svg>

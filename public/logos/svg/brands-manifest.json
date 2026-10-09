@@ -1,0 +1,2073 @@
+{
+  "assets": [
+    {
+      "id": "BRAND-AE",
+      "league": "BRAND",
+      "conference": "Store",
+      "region": "American Eagle",
+      "name": "",
+      "abbr": "AE",
+      "aliases": [
+        "American Eagle Outfitters",
+        "AEO",
+        "Am Eagle"
+      ],
+      "palette": [
+        "#182C52",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Raptor silhouette",
+          "sourceUrl": "https://brandeps.com/logo-download/a/american-eagle-outfitters-logo-vector-01.svg",
+          "sourcePage": "https://www.brandeps.com/logo/A/American-Eagle-Outfitters-01",
+          "sourceSha256": "cf837a947863baa65c93748cf6c58534f76a09c897a9222a5e4620d6f4a15abf",
+          "ops": {
+            "removeNodes": [
+              "3/0",
+              "3/1",
+              "3/2",
+              "3/3",
+              "3/4",
+              "3/5",
+              "3/6",
+              "3/7",
+              "3/8",
+              "3/9",
+              "3/10",
+              "3/11",
+              "3/12",
+              "3/13",
+              "3/14",
+              "3/15",
+              "3/16",
+              "3/17",
+              "3/18",
+              "3/19",
+              "3/20",
+              "3/21",
+              "3/22"
+            ],
+            "viewBox": "83.292 31.58 354.632 307.528"
+          },
+          "path": "/logos/svg/brands/ae.svg",
+          "format": "svg",
+          "colors": [
+            "#231F20"
+          ],
+          "sourcePalette": [
+            "#231F20",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "d5e57ab02754cb438806140aa03d9dd446cfe6985cb4b2b5d4eaa7a96e7b5918"
+        }
+      ]
+    },
+    {
+      "id": "BRAND-ALLSTATE",
+      "league": "BRAND",
+      "conference": "Service",
+      "region": "Allstate",
+      "name": "",
+      "abbr": "ALLSTATE",
+      "aliases": [
+        "Allstate Insurance"
+      ],
+      "palette": [
+        "#0033A0",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Cupped hands",
+          "sourceUrl": "https://logotyp.us/file/allstate.svg",
+          "sourcePage": "https://logotyp.us/logo/allstate/",
+          "sourceSha256": "e6e519bbf96c620617bf5e39428735ed61f1750cb4e56521abe8f49284de93d3",
+          "ops": {
+            "removeNodes": [
+              "0/0/1",
+              "0/0/2",
+              "0/0/3",
+              "0/1",
+              "0/2",
+              "0/3",
+              "0/4",
+              "0/5",
+              "0/6",
+              "0/7"
+            ],
+            "viewBox": "64.512 152.432 125.216 95.256"
+          },
+          "path": "/logos/svg/brands/allstate.svg",
+          "format": "svg",
+          "colors": [
+            "#0033A0"
+          ],
+          "sourcePalette": [
+            "#0033A0",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "3eebfb5ad7a6f3398a01ce62ddcfade6605cecdfebe8d8127cd57cb998f389e8"
+        }
+      ]
+    },
+    {
+      "id": "BRAND-AMAZON",
+      "league": "BRAND",
+      "conference": "Store",
+      "region": "Amazon",
+      "name": "",
+      "abbr": "AMAZON",
+      "aliases": [
+        "Amazon.com",
+        "Amazon Prime"
+      ],
+      "palette": [
+        "#FF9900",
+        "#232F3E",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Smile arrow",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Amazon_icon.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Amazon_icon.svg",
+          "sourceSha256": "1d88dabb83080de94748c767e17b057546eca9cb33a552933cc0d191bc96ec81",
+          "ops": {
+            "removeNodes": [
+              "0/1",
+              "0/2",
+              "0/3"
+            ],
+            "viewBox": "-0.573 185.266 257.39 75.152"
+          },
+          "path": "/logos/svg/brands/amazon.svg",
+          "format": "svg",
+          "colors": [
+            "#FF9900"
+          ],
+          "sourcePalette": [
+            "#FF9900",
+            "#232F3E",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "358765957b944e476e7a87775dc7684594673e1b5076db0555d69b3859d86cd4"
+        },
+        {
+          "id": "a-smile",
+          "label": "Lowercase a with smile",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Amazon_icon.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Amazon_icon.svg",
+          "sourceSha256": "1d88dabb83080de94748c767e17b057546eca9cb33a552933cc0d191bc96ec81",
+          "ops": {
+            "removeNodes": [
+              "0/2",
+              "0/3"
+            ],
+            "viewBox": "-0.724 -4.663 257.692 265.231"
+          },
+          "path": "/logos/svg/brands/alternates/amazon-a-smile.svg",
+          "format": "svg",
+          "colors": [
+            "#FF9900",
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#FF9900",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "ecb389ecab0429b299bb0ac5084655845f211e5d13ce4b5a45e2613e33c0bbbb"
+        }
+      ]
+    },
+    {
+      "id": "BRAND-ANDROID",
+      "league": "BRAND",
+      "conference": "Product",
+      "region": "Android",
+      "name": "",
+      "abbr": "ANDROID",
+      "aliases": [
+        "Android OS",
+        "Google Android"
+      ],
+      "palette": [
+        "#34A853",
+        "#202124",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Robot head",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Android_Robot_Head_2023.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Android_Robot_Head_2023.svg",
+          "sourceSha256": "7c2619f711acae579675c139cad1b362f83cf9cdc7dcf2fcfab37c13f9c128a1",
+          "ops": {
+            "viewBox": "-6.604 -6.604 343.408 205.715"
+          },
+          "path": "/logos/svg/brands/android.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#34A853",
+            "#202124"
+          ],
+          "sourcePalette": [
+            "#34A853",
+            "#101012",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "471c6489d83e15e3cd9810766b9b80826b7592ed2db19334d31d608ebf11873a"
+        },
+        {
+          "id": "full-robot",
+          "label": "Full robot",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Android_robot.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Android_robot.svg",
+          "sourceSha256": "8c80b881727efc8831c8ef53806e7c1d0427607e145aae09061c4870b6cd402f",
+          "ops": {
+            "viewBox": "-153.545 -76.717 307.029 358.262"
+          },
+          "path": "/logos/svg/brands/alternates/android-full-robot.svg",
+          "format": "svg",
+          "colors": [
+            "#A4C639",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#A4C639",
+            "#202124",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "3f5fefa92f27b9e0bc03a6ad8910567b253f27110b3c6fdfb95abe266bcab536"
+        }
+      ]
+    },
+    {
+      "id": "BRAND-APPLE",
+      "league": "BRAND",
+      "conference": "Corporate",
+      "region": "Apple",
+      "name": "",
+      "abbr": "APPLE",
+      "aliases": [
+        "Apple Inc.",
+        "Apple Computer",
+        "Apple Computer Inc."
+      ],
+      "palette": [
+        "#000000",
+        "#A2AAAD",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Bitten fruit",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Apple_logo_black.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Apple_logo_black.svg",
+          "sourceSha256": "9d00ea77a3240f291356c36261c5f45d7fa456f29c97a2f060caf0ed4b9c3231",
+          "ops": {
+            "fill": "#000000",
+            "viewBox": "-20 -20 854 1040"
+          },
+          "path": "/logos/svg/brands/apple.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#A2AAAD",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "b32b7645dce47801149aec7f4a8c9951feee03a2eb96e31a52ef696f6f0f052c"
+        },
+        {
+          "id": "rainbow-apple",
+          "label": "Rainbow stripes (1977)",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Apple_Computer_Logo_rainbow.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Apple_Computer_Logo_rainbow.svg",
+          "sourceSha256": "eae5d62f7a0cf46bf048c2e5a18d4fe4fdbcc64573215e4de9078e7771de0d13",
+          "ops": {
+            "viewBox": "-2.092 -2.092 94.088 108.784"
+          },
+          "path": "/logos/svg/brands/alternates/apple-rainbow-apple.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#75BD21",
+            "#FFC728",
+            "#FF661C",
+            "#CF0F2B",
+            "#B01CAB",
+            "#00A1DE"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#75BD21",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "e76ab7cd07d9b624da3f56f3dd23d8299eb2936e6b3affad8e3cd095bbc2f10a"
+        }
+      ]
+    },
+    {
+      "id": "BRAND-CANADA",
+      "league": "BRAND",
+      "conference": "Place",
+      "region": "Canada",
+      "name": "",
+      "abbr": "CANADA",
+      "aliases": [
+        "Canadian",
+        "Great White North",
+        "CAN"
+      ],
+      "palette": [
+        "#D52B1E",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "National flag",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Canada_(Pantone).svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Canada_(Pantone).svg",
+          "sourceSha256": "afe6921891d516f037e8fb9920128f8bfd86ef2ffe1a6d1d4aa7e22a032434bc",
+          "ops": {
+            "viewBox": "-192 -192 9984 5184"
+          },
+          "path": "/logos/svg/brands/canada.svg",
+          "format": "svg",
+          "colors": [
+            "#D52B1E",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#D52B1E",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "9bd6211b49f5ebfcdb448a4d93381a9ef05b17156f0574b18ace772468070fc2"
+        },
+        {
+          "id": "maple-leaf",
+          "label": "Maple leaf",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Maple_Leaf.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Maple_Leaf.svg",
+          "sourceSha256": "3833c9814fa0df29b7b132241ed79f015c31d1dba6a123452911b421fbfde010",
+          "ops": {
+            "viewBox": "-1940.445 -2080.6 3880.89 4191.2"
+          },
+          "path": "/logos/svg/brands/alternates/canada-maple-leaf.svg",
+          "format": "svg",
+          "colors": [
+            "#FF0000"
+          ],
+          "sourcePalette": [
+            "#FF0000",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "4384b8c94e1973288030e6dfff4ca95f0bd5793e9867bb6eeaebccd72bf4648e"
+        }
+      ]
+    },
+    {
+      "id": "BRAND-CHASE",
+      "league": "BRAND",
+      "conference": "Service",
+      "region": "Chase",
+      "name": "",
+      "abbr": "CHASE",
+      "aliases": [
+        "Chase Bank",
+        "JPMorgan Chase",
+        "JP Morgan Chase"
+      ],
+      "palette": [
+        "#117ACA",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Octagon",
+          "sourceUrl": "https://api.iconify.design/selfhst/chase.svg",
+          "sourcePage": "https://icon-sets.iconify.design/selfhst/chase/",
+          "sourceSha256": "2af033875386428d9f08e5b26d60b28423d9a53ec9febc4d29f3bd7a41a19b59",
+          "ops": {
+            "viewBox": "-10.24 -10.24 532.48 532.48"
+          },
+          "path": "/logos/svg/brands/chase.svg",
+          "format": "svg",
+          "colors": [
+            "#117ACA"
+          ],
+          "sourcePalette": [
+            "#117ACA",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "b1747ab1ce9f9be170fb3fc97234a825768e578fe1091a2bea92ff5dcad02dbd"
+        }
+      ]
+    },
+    {
+      "id": "BRAND-CHICAGO",
+      "league": "BRAND",
+      "conference": "Place",
+      "region": "Chicago",
+      "name": "",
+      "abbr": "CHICAGO",
+      "aliases": [
+        "Chi-Town",
+        "Windy City",
+        "Second City",
+        "Chicago, Illinois",
+        "CHI"
+      ],
+      "palette": [
+        "#41B6E6",
+        "#E4002B",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "City flag",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Chicago,_Illinois.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Chicago,_Illinois.svg",
+          "sourceSha256": "6c16a73098d327a4a0bc7b7f1d756ce6b3965cd68ca8ce364638307092e0b96a",
+          "ops": {
+            "viewBox": "-14.4 -14.4 748.8 508.68"
+          },
+          "path": "/logos/svg/brands/chicago.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#E4002B",
+            "#41B6E6"
+          ],
+          "sourcePalette": [
+            "#41B6E6",
+            "#E4002B",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "ab96115b406518b336fc031e16e262c852f36a416c63033b811690f71870281d"
+        },
+        {
+          "id": "star",
+          "label": "Six-pointed star",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Chicago,_Illinois.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Chicago,_Illinois.svg",
+          "sourceSha256": "6c16a73098d327a4a0bc7b7f1d756ce6b3965cd68ca8ce364638307092e0b96a",
+          "ops": {
+            "removeNodes": [
+              "0",
+              "2"
+            ],
+            "viewBox": "95.6 177.6 108.8 124.8"
+          },
+          "path": "/logos/svg/brands/alternates/chicago-star.svg",
+          "format": "svg",
+          "colors": [
+            "#E4002B"
+          ],
+          "sourcePalette": [
+            "#E4002B",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "d2191e7be487d78d341b7f7d408f6865363c1a165d24dea628401c6bca8abd2e"
+        }
+      ]
+    },
+    {
+      "id": "BRAND-DELTA",
+      "league": "BRAND",
+      "conference": "Service",
+      "region": "Delta Air Lines",
+      "name": "",
+      "abbr": "DELTA",
+      "aliases": [
+        "Delta",
+        "Delta Airlines"
+      ],
+      "palette": [
+        "#E31937",
+        "#003366",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Widget",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Delta_Air_Lines_2007_symbol.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Delta_Air_Lines_2007_symbol.svg",
+          "sourceSha256": "a70bf28d7c0cc875551f52cd60b19de07ab4cbdacb8dd58852c08ea8a5e5571d",
+          "ops": {
+            "viewBox": "-8.863 -8.863 460.855 371.786"
+          },
+          "path": "/logos/svg/brands/delta.svg",
+          "format": "svg",
+          "colors": [
+            "#E31937",
+            "#98002E"
+          ],
+          "sourcePalette": [
+            "#E31937",
+            "#98002E",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "b0fe9b65ba88dbd0ef71be166d89c62d2e2348f7186033c94bd5e0d168e16769"
+        },
+        {
+          "id": "classic-widget",
+          "label": "Classic widget",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Delta_Air_Lines_Logo_1965.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Delta_Air_Lines_Logo_1965.svg",
+          "sourceSha256": "3dfe264f456f3eb6e07ba4521a20b9f7c9eefa10b64898d9018ef06c5fed0be5",
+          "ops": {
+            "removeNodes": [
+              "1"
+            ],
+            "viewBox": "-6.067 -6.067 230.565 315.51"
+          },
+          "path": "/logos/svg/brands/alternates/delta-classic-widget.svg",
+          "format": "svg",
+          "colors": [
+            "#031B6A",
+            "#FFFFFF",
+            "#FF0D32"
+          ],
+          "sourcePalette": [
+            "#FF0D32",
+            "#031B6A",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "657510dc04fa20f1b86b8403aba5d1cd86f1fa20dbc803e236d830ad20cf7caf"
+        }
+      ]
+    },
+    {
+      "id": "BRAND-ELVIS",
+      "league": "BRAND",
+      "conference": "Personal",
+      "region": "Elvis Presley",
+      "name": "",
+      "abbr": "ELVIS",
+      "aliases": [
+        "Elvis",
+        "The King",
+        "The King of Rock and Roll",
+        "Elvis Aaron Presley"
+      ],
+      "palette": [
+        "#000000",
+        "#D4AF37",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Mic-stand silhouette",
+          "sourceUrl": "https://logowik.com/elvis-presley-silhouette-vector-logo-11902.html",
+          "sourcePage": "https://logowik.com/elvis-presley-silhouette-vector-logo-11902.html",
+          "sourceSha256": "181d1f43e349571d4404222c6576ba4f4f12a56c8772bf1541f04df5a0d10ca0",
+          "downloadForm": "logowik",
+          "ops": {
+            "removeNodes": [
+              "2",
+              "3",
+              "4",
+              "5"
+            ],
+            "viewBox": "384.559 70.929 468.701 589.946"
+          },
+          "path": "/logos/svg/brands/elvis.svg",
+          "format": "svg",
+          "colors": [
+            "#1B1918"
+          ],
+          "sourcePalette": [
+            "#1B1918",
+            "#D4AF37",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "eefc48e97550dd3cd8159824f54a2ad49a645348f03da7d53e72ee15ee11062b"
+        }
+      ]
+    },
+    {
+      "id": "BRAND-GATORADE",
+      "league": "BRAND",
+      "conference": "Product",
+      "region": "Gatorade",
+      "name": "",
+      "abbr": "GATORADE",
+      "aliases": [
+        "Gatorade Thirst Quencher"
+      ],
+      "palette": [
+        "#FF5000",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Bolt monogram",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Gatorade_logo.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Gatorade_logo.svg",
+          "sourceSha256": "763e3bfa54d3698b84e556c834d3a7a20931cfccc2b278406ee8d934e3d0c63a",
+          "ops": {
+            "removeNodes": [
+              "3",
+              "4/0/4",
+              "4/0/5"
+            ],
+            "viewBox": "-6.455 35.075 298.885 335.68"
+          },
+          "path": "/logos/svg/brands/gatorade.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#EF3C42",
+            "#FBB031"
+          ],
+          "sourcePalette": [
+            "#F5763A",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "3e63d2b0bc054ad19ca494bb23ec3cabd6ede46b45e2b5caee7503202bb08315"
+        },
+        {
+          "id": "bolt",
+          "label": "Lightning bolt",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Gatorade_logo.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Gatorade_logo.svg",
+          "sourceSha256": "763e3bfa54d3698b84e556c834d3a7a20931cfccc2b278406ee8d934e3d0c63a",
+          "ops": {
+            "removeNodes": [
+              "3",
+              "4/0/2",
+              "4/0/4",
+              "4/0/5"
+            ],
+            "viewBox": "99.064 110.357 157.792 181.29"
+          },
+          "path": "/logos/svg/brands/alternates/gatorade-bolt.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#EF3C42",
+            "#FBB031"
+          ],
+          "sourcePalette": [
+            "#F5763A",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "6ca1c605c4af437466af09ae54533d46655d7992745b6c3a4ad50b43ffba201a"
+        }
+      ]
+    },
+    {
+      "id": "BRAND-JAPAN",
+      "league": "BRAND",
+      "conference": "Place",
+      "region": "Japan",
+      "name": "",
+      "abbr": "JAPAN",
+      "aliases": [
+        "Nippon",
+        "Nihon",
+        "Land of the Rising Sun",
+        "JPN"
+      ],
+      "palette": [
+        "#BC002D",
+        "#FFD700",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "National flag",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Japan.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Japan.svg",
+          "sourceSha256": "35e785339e19d1ec1987cb9c3d8e66fc97f29a287db0b0b590b8dfdd96d4766b",
+          "ops": {
+            "viewBox": "-18 -18 936 635.85"
+          },
+          "path": "/logos/svg/brands/japan.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#BC002D"
+          ],
+          "sourcePalette": [
+            "#BC002D",
+            "#FFD700",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "c8d498bb96c019c8f90e3ac5ed36b7fbd00d230fc936a5453ccab8d16c364f93"
+        },
+        {
+          "id": "chrysanthemum",
+          "label": "Imperial chrysanthemum",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Imperial_Seal_of_Japan.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Imperial_Seal_of_Japan.svg",
+          "sourceSha256": "ea846b3133efb6bd3a929fcf8522d959247d1105db028d3b5cd7b82e8cbb9ca3",
+          "ops": {
+            "viewBox": "-101.93 -101.93 203.861 203.861"
+          },
+          "path": "/logos/svg/brands/alternates/japan-chrysanthemum.svg",
+          "format": "svg",
+          "colors": [
+            "#FFD700",
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#FFD700",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "f295b581292afb6f87c4a115967523b065833993fedecebf2b6eff91c49276ad"
+        }
+      ]
+    },
+    {
+      "id": "BRAND-LULU",
+      "league": "BRAND",
+      "conference": "Store",
+      "region": "Lululemon",
+      "name": "",
+      "abbr": "LULU",
+      "aliases": [
+        "Lululemon Athletica",
+        "Lulu",
+        "lulu lemon"
+      ],
+      "palette": [
+        "#D41935",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Omega-like symbol",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Special:FilePath/Lululemon_Athletica_logo.svg",
+          "sourcePage": "https://en.wikipedia.org/wiki/File:Lululemon_Athletica_logo.svg",
+          "sourceSha256": "264df054f770d142495bde7ef4038fdbc8d4fc2e0aa8d03b27df804ba7e548d0",
+          "ops": {
+            "removeNodes": [
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "10",
+              "11",
+              "12",
+              "13",
+              "14",
+              "15",
+              "16",
+              "17",
+              "18",
+              "19",
+              "20",
+              "21",
+              "22",
+              "23",
+              "24",
+              "25",
+              "26",
+              "27",
+              "28",
+              "29",
+              "30",
+              "31",
+              "32",
+              "33",
+              "34",
+              "35"
+            ],
+            "viewBox": "-0.034 -0.034 8.692 8.692"
+          },
+          "path": "/logos/svg/brands/lulu.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#FFFFFF",
+            "#D41935"
+          ],
+          "sourcePalette": [
+            "#D41935",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "a1a64519b40480d75663f35f170d276929bc67e5a1a261da8cde50c8e8494413"
+        }
+      ]
+    },
+    {
+      "id": "BRAND-MC",
+      "league": "BRAND",
+      "conference": "Service",
+      "region": "Mastercard",
+      "name": "",
+      "abbr": "MC",
+      "aliases": [
+        "MasterCard",
+        "Master Card"
+      ],
+      "palette": [
+        "#EB001B",
+        "#F79E1B",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Interlocking circles",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Mastercard_2019_logo.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Mastercard_2019_logo.svg",
+          "sourceSha256": "4dfa227e514fd47fc63d7c25a5f9f1f6d6cae53aad951aa8aa8598b217838c17",
+          "ops": {
+            "viewBox": "-20 -20 1040 658"
+          },
+          "path": "/logos/svg/brands/mc.svg",
+          "format": "svg",
+          "colors": [
+            "#EB001B",
+            "#F79E1B",
+            "#FF5F00"
+          ],
+          "sourcePalette": [
+            "#EB001B",
+            "#FB7E0E",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "4d05cd618e2da732f5e283d6a81536809c5c907a0b888c2e5ccd3e9d80d0cfbb"
+        }
+      ]
+    },
+    {
+      "id": "BRAND-META",
+      "league": "BRAND",
+      "conference": "Corporate",
+      "region": "Meta",
+      "name": "",
+      "abbr": "META",
+      "aliases": [
+        "Meta Platforms",
+        "Facebook",
+        "Facebook Inc.",
+        "FB"
+      ],
+      "palette": [
+        "#0081FB",
+        "#192830",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Infinity loop",
+          "sourceUrl": "https://cdn.jsdelivr.net/npm/simple-icons@13.21.0/icons/meta.svg",
+          "sourcePage": "https://simpleicons.org/?q=meta",
+          "sourceSha256": "e3e9db62f59dc477e5917687349b8aa9685b841d40300c1afad60ad85075cd2e",
+          "ops": {
+            "fill": "#0081FB",
+            "viewBox": "-0.48 3.54 24.96 16.92"
+          },
+          "path": "/logos/svg/brands/meta.svg",
+          "format": "svg",
+          "colors": [
+            "#0081FB"
+          ],
+          "sourcePalette": [
+            "#0081FB",
+            "#192830",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "2e6a989676459a477b51d268e3b29e711a0521c34f28c769b6ff5c67864f7860"
+        },
+        {
+          "id": "f-icon",
+          "label": "Blue f badge",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/2023_Facebook_icon.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:2023_Facebook_icon.svg",
+          "sourceSha256": "ba34bb0a9e43fdad665ea2b84d0363046177147e763ec3765641501779356876",
+          "ops": {
+            "viewBox": "-13.333 -13.333 693.334 693.334"
+          },
+          "path": "/logos/svg/brands/alternates/meta-f-icon.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#0866FF",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#0866FF",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "47171bd9eccc28beb0f8aad7392b59e52b822750bc8322a35a6c242c052b3660"
+        }
+      ]
+    },
+    {
+      "id": "BRAND-MEXICO",
+      "league": "BRAND",
+      "conference": "Place",
+      "region": "Mexico",
+      "name": "",
+      "abbr": "MEXICO",
+      "aliases": [
+        "México",
+        "United Mexican States",
+        "Estados Unidos Mexicanos",
+        "MEX"
+      ],
+      "palette": [
+        "#006847",
+        "#CE1126",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "National flag",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Mexico.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Mexico.svg",
+          "sourceSha256": "bcfebaa9d94827919e65c5414e4ee35a076f89520a1b57d75e0949e1ca81c3b9",
+          "ops": {
+            "viewBox": "-19.6 -19.6 1019.2 599.27"
+          },
+          "path": "/logos/svg/brands/mexico.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#CE1126",
+            "#FFFFFF",
+            "#006847",
+            "#FCCA3E",
+            "#AA8C30",
+            "#9CA168",
+            "#717732",
+            "#016848",
+            "#CD202A",
+            "#30C2DC",
+            "#0872A7",
+            "#F8C83C",
+            "#F9AA51",
+            "#953220",
+            "#231F20",
+            "#8CBEBF",
+            "#04534E",
+            "#0C8489",
+            "#E92736",
+            "#F7E204",
+            "#A8AC71",
+            "#F1A720",
+            "#78732E",
+            "#C6C7A6",
+            "#1C242F",
+            "#977C2E",
+            "#AF7029",
+            "#816C2A",
+            "#FCCA3D",
+            "#6F5B24",
+            "#404118",
+            "#AB6D29",
+            "#4D2A15",
+            "#D2A567",
+            "#8F4620",
+            "#202020",
+            "#202220",
+            "#4B4139",
+            "#904720",
+            "#803F1D",
+            "#B07229",
+            "#5C3A1D",
+            "#8B441F",
+            "#312317",
+            "#1E2121",
+            "#5C3818",
+            "#171717",
+            "#45392D",
+            "#DBAD6C",
+            "#874F20",
+            "#B27129",
+            "#6C3F18",
+            "#F16E16",
+            "#D5D3CA",
+            "#6C4119",
+            "#BF802D",
+            "#F9C83A",
+            "#FCF3D8",
+            "#FDEAAF",
+            "#513625",
+            "#F15770"
+          ],
+          "sourcePalette": [
+            "#006847",
+            "#CE1126",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "9a38a00100808dab62d0e262e4f836430830ec259652452b2749724c3236c054"
+        },
+        {
+          "id": "coat-of-arms",
+          "label": "Eagle and serpent emblem",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Mexico.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Coat_of_arms_of_Mexico.svg",
+          "sourceSha256": "2b8d21103887910eb26f3dc4e59f5b0351b14b6ebf885e37c400bb49297da490",
+          "ops": {
+            "viewBox": "-11.575 -11.575 601.921 547.806"
+          },
+          "path": "/logos/svg/brands/alternates/mexico-coat-of-arms.svg",
+          "format": "svg",
+          "colors": [
+            "#A8AC71",
+            "#F1A720",
+            "#78732E",
+            "#C6C7A6",
+            "#1C242F",
+            "#FFFFFF",
+            "#F8C83C",
+            "#977C2E",
+            "#AF7029",
+            "#816C2A",
+            "#FCCA3D",
+            "#6F5B24",
+            "#404118",
+            "#FCCA3E",
+            "#AA8C30",
+            "#9CA168",
+            "#717732",
+            "#016848",
+            "#CD202A",
+            "#30C2DC",
+            "#0872A7",
+            "#F9AA51",
+            "#953220",
+            "#231F20",
+            "#8CBEBF",
+            "#04534E",
+            "#0C8489",
+            "#F15770",
+            "#E92736",
+            "#F7E204",
+            "#904720",
+            "#AB6D29",
+            "#4D2A15",
+            "#D2A567",
+            "#8F4620",
+            "#202020",
+            "#202220",
+            "#4B4139",
+            "#803F1D",
+            "#B07229",
+            "#5C3A1D",
+            "#8B441F",
+            "#312317",
+            "#1E2121",
+            "#5C3818",
+            "#171717",
+            "#45392D",
+            "#DBAD6C",
+            "#874F20",
+            "#B27129",
+            "#6C3F18",
+            "#F16E16",
+            "#000000",
+            "#D5D3CA",
+            "#6C4119",
+            "#BF802D",
+            "#F9C83A",
+            "#FCF3D8",
+            "#FDEAAF",
+            "#513625",
+            "#8B5122"
+          ],
+          "sourcePalette": [
+            "#016848",
+            "#CD202A",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "4baa62852f93981876ccf0e506e77eff2612922617b8f1503c13640fa2b210b3"
+        }
+      ]
+    },
+    {
+      "id": "BRAND-MICROSOFT",
+      "league": "BRAND",
+      "conference": "Corporate",
+      "region": "Microsoft",
+      "name": "",
+      "abbr": "MICROSOFT",
+      "aliases": [
+        "Microsoft Corporation",
+        "Microsoft Corp",
+        "Windows"
+      ],
+      "palette": [
+        "#F25022",
+        "#00A4EF",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Four squares",
+          "sourceUrl": "https://www.vectorlogo.zone/logos/microsoft/microsoft-icon.svg",
+          "sourcePage": "https://www.vectorlogo.zone/logos/microsoft/index.html",
+          "sourceSha256": "c0cef521be053d3b39d1666e71663af459c7c9c45d17c17e5a2d8e77fc2dab74",
+          "ops": {
+            "viewBox": "-0.64 -0.64 33.28 33.28"
+          },
+          "path": "/logos/svg/brands/microsoft.svg",
+          "format": "svg",
+          "colors": [
+            "#F25022",
+            "#7FBA00",
+            "#00A4EF",
+            "#FFB900"
+          ],
+          "sourcePalette": [
+            "#D0960B",
+            "#00A4EF",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "12061cbdfbe9dfd5eaa74c997bcdfbb55ec0a6425b16282a11bcdfa662fe2db4"
+        },
+        {
+          "id": "windows-flag",
+          "label": "Waving flag (1992)",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Windows_Logo_(1992-2001).svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Windows_Logo_(1992-2001).svg",
+          "sourceSha256": "b23ca061db6e29b65a56d24b9b6eeebd03ee1992e0e3e2f36f018e36fec62dc5",
+          "ops": {
+            "viewBox": "-21.598 -21.598 1123.096 976.77"
+          },
+          "path": "/logos/svg/brands/alternates/microsoft-windows-flag.svg",
+          "format": "svg",
+          "colors": [
+            "#3D87CF",
+            "#FAC705",
+            "#66C557",
+            "#F3632E",
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#F6951A",
+            "#52A693",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "bde556190df1c1bd823ab98d53bacd0eb6b45764decc6c83812f5504cff59d26"
+        }
+      ]
+    },
+    {
+      "id": "BRAND-MJ",
+      "league": "BRAND",
+      "conference": "Personal",
+      "region": "Michael Jordan",
+      "name": "",
+      "abbr": "MJ",
+      "aliases": [
+        "Jordan",
+        "MJ",
+        "Air Jordan",
+        "Jumpman",
+        "Jordan Brand",
+        "Michael Jeffrey Jordan"
+      ],
+      "palette": [
+        "#000000",
+        "#CE1141",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Leaping dunker",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Special:FilePath/Jumpman_logo.svg",
+          "sourcePage": "https://en.wikipedia.org/wiki/File:Jumpman_logo.svg",
+          "sourceSha256": "0b66456c2f3a96c9a63ad2105c75192ee6b2984654da2fd25e23bd4c9f2a63e9",
+          "ops": {
+            "fill": "#000000",
+            "viewBox": "0.2 8.26 249.6 233.52"
+          },
+          "path": "/logos/svg/brands/mj.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#CE1141",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "34c21b15e14c8c5df7760e00909b7a8527e0955187dc858e82661f28f1954ae8"
+        }
+      ]
+    },
+    {
+      "id": "BRAND-MRBEAST",
+      "league": "BRAND",
+      "conference": "Personal",
+      "region": "MrBeast",
+      "name": "",
+      "abbr": "MRBEAST",
+      "aliases": [
+        "Mr Beast",
+        "Mr. Beast",
+        "Jimmy Donaldson",
+        "Jimmy",
+        "BEAST"
+      ],
+      "palette": [
+        "#00ACD2",
+        "#E3457C",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Panther head",
+          "sourceUrl": "https://logowik.com/mrbeast-vector-logo-15118.html",
+          "sourcePage": "https://logowik.com/mrbeast-vector-logo-15118.html",
+          "sourceSha256": "fb7da7b64dd407fe0e1fe68c22c119a407b8a0e9d440149b720652b2194e3875",
+          "downloadForm": "logowik",
+          "ops": {
+            "viewBox": "69.423 76.663 766.607 557.1"
+          },
+          "path": "/logos/svg/brands/mrbeast.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#000000",
+            "#00ACD2",
+            "#0B819B",
+            "#E3457C"
+          ],
+          "sourcePalette": [
+            "#0696B6",
+            "#E3457C",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "33a7b0f3492974eb83f1a1f51d0948c58c9a16654cd8ef5263250a945fdd7938"
+        }
+      ]
+    },
+    {
+      "id": "BRAND-MUSTANG",
+      "league": "BRAND",
+      "conference": "Product",
+      "region": "Ford Mustang",
+      "name": "",
+      "abbr": "MUSTANG",
+      "aliases": [
+        "Mustang"
+      ],
+      "palette": [
+        "#000000",
+        "#C8102E",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Running pony",
+          "sourceUrl": "https://api.iconify.design/cbi/mustang.svg?color=%23000000",
+          "sourcePage": "https://icon-sets.iconify.design/cbi/mustang/",
+          "sourceSha256": "1bda25ade0e64c09abdaf8c5407c01fe68de511fa5b87339cecd29ea95330389",
+          "ops": {
+            "viewBox": "1.592 7.796 20.817 8.409"
+          },
+          "path": "/logos/svg/brands/mustang.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#C8102E",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "26bb83ef579a316b12569b5a999de838f23de0c350efb711d5c79690feafa73e"
+        },
+        {
+          "id": "tri-bar",
+          "label": "Pony and tri-bar",
+          "sourceUrl": "https://cdn.freebiesupply.com/logos/large/2x/mustang-logo-svg-vector.svg",
+          "sourcePage": "https://freebiesupply.com/logos/mustang-logo/",
+          "sourceSha256": "7a7025e781d93057fc174df92e8fa985d7fcf3d0c8cdb6d8083273fd1f857cfa",
+          "ops": {
+            "removeNodes": [
+              "0"
+            ],
+            "viewBox": "-1.55 0.667 195.856 191.422"
+          },
+          "path": "/logos/svg/brands/alternates/mustang-tri-bar.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#C8102E",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "abc85a67ac45bf339775d3bda08863ca5a6c4141e04c8aa970adf754916cb1db"
+        }
+      ]
+    },
+    {
+      "id": "BRAND-NBC",
+      "league": "BRAND",
+      "conference": "Corporate",
+      "region": "NBC",
+      "name": "",
+      "abbr": "NBC",
+      "aliases": [
+        "National Broadcasting Company",
+        "NBCUniversal",
+        "NBC Universal"
+      ],
+      "palette": [
+        "#6E55DC",
+        "#FCCC12",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Six-feather peacock",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/NBC_Peacock_(2022).svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:NBC_Peacock_(2022).svg",
+          "sourceSha256": "552be9f23bf2409b289b42232a71543ff730e4447347335e71cba5ef17f223ce",
+          "ops": {
+            "viewBox": "-4.317 -4.317 224.474 133.605"
+          },
+          "path": "/logos/svg/brands/nbc.svg",
+          "format": "svg",
+          "colors": [
+            "#6E55DC",
+            "#EF1541",
+            "#FF7112",
+            "#FCCC12",
+            "#069DE0",
+            "#05AC3F"
+          ],
+          "sourcePalette": [
+            "#3A79DE",
+            "#FE9E12",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "19680674b114ac83ed6c31108496c2adf84907df41e0d983c51cdc395c834165"
+        },
+        {
+          "id": "peacock-1956",
+          "label": "Eleven-feather peacock (1956)",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Special:FilePath/1956_NBC_logo.svg",
+          "sourcePage": "https://en.wikipedia.org/wiki/File:1956_NBC_logo.svg",
+          "sourceSha256": "6490ce3fd3a959b31599a8cbe8bad8907c46ea2b5d12acdff70794f35c0d7d8c",
+          "ops": {
+            "viewBox": "-20 -17.414 1040 651"
+          },
+          "path": "/logos/svg/brands/alternates/nbc-peacock-1956.svg",
+          "format": "svg",
+          "colors": [
+            "#FFC601",
+            "#D40046",
+            "#674A8E",
+            "#2691E4",
+            "#FF730D",
+            "#00C048",
+            "#FFFFFF",
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#674A8E",
+            "#FF9C07",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "59b3a454c4624488cb915cab01238db6e89fac092a1bc53331da184c893161ef"
+        }
+      ]
+    },
+    {
+      "id": "BRAND-NIKE",
+      "league": "BRAND",
+      "conference": "Corporate",
+      "region": "Nike",
+      "name": "",
+      "abbr": "NIKE",
+      "aliases": [
+        "Nike Inc.",
+        "Nike Swoosh"
+      ],
+      "palette": [
+        "#111111",
+        "#FA5400",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Swoosh",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Logo_NIKE.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Logo_NIKE.svg",
+          "sourceSha256": "54bb728904e14583753fcde786a9901b53ca9c8401ac207fb516841f9863c55a",
+          "ops": {
+            "fill": "#111111",
+            "viewBox": "115.5 341.38 1040 396.5"
+          },
+          "path": "/logos/svg/brands/nike.svg",
+          "format": "svg",
+          "colors": [
+            "#111111"
+          ],
+          "sourcePalette": [
+            "#111111",
+            "#FA5400",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "9663bf432114e86b4be29d682aaabd03a062c4e5841dd6d2237b073d3dcb8943"
+        }
+      ]
+    },
+    {
+      "id": "BRAND-PEPSI",
+      "league": "BRAND",
+      "conference": "Product",
+      "region": "Pepsi",
+      "name": "",
+      "abbr": "PEPSI",
+      "aliases": [
+        "Pepsi-Cola",
+        "Pepsi Cola"
+      ],
+      "palette": [
+        "#005891",
+        "#EB1D39",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Smile globe",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Pepsi_logo_2014.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Pepsi_logo_2014.svg",
+          "sourceSha256": "4984903b4b4f532bc8eaf103659ad2201dfe6d0711aa4746464cfe72657d2670",
+          "ops": {
+            "removeNodes": [
+              "0/3",
+              "0/4",
+              "0/5",
+              "0/6",
+              "0/7",
+              "0/8"
+            ],
+            "viewBox": "-4.865 -4.865 252.627 252.957"
+          },
+          "path": "/logos/svg/brands/pepsi.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#EB1D39",
+            "#005891"
+          ],
+          "sourcePalette": [
+            "#005891",
+            "#EB1D39",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "89cf0d4ec531ad0807772cfbb1af92c5533f7ec204a7184cad29e8afb1829749"
+        },
+        {
+          "id": "ringed-globe",
+          "label": "Ringed globe",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Pepsi_2023.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Pepsi_2023.svg",
+          "sourceSha256": "9431dae56a362881149c18f5d9a36eed8e6875a77342057362f0b2a70ea440ff",
+          "ops": {
+            "removeNodes": [
+              "2"
+            ],
+            "viewBox": "-4.231 -4.231 220.022 220.022"
+          },
+          "path": "/logos/svg/brands/alternates/pepsi-ringed-globe.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#000000",
+            "#FF1400",
+            "#0E0E96"
+          ],
+          "sourcePalette": [
+            "#07074B",
+            "#FF1400",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "cfa01fa98a8ce7e7def48c20e3aa85d7807355d5370de611a2ac90ec45337d20"
+        }
+      ]
+    },
+    {
+      "id": "BRAND-PRINCE",
+      "league": "BRAND",
+      "conference": "Personal",
+      "region": "Prince",
+      "name": "",
+      "abbr": "PRINCE",
+      "aliases": [
+        "Prince Rogers Nelson",
+        "The Artist Formerly Known as Prince",
+        "The Artist",
+        "TAFKAP"
+      ],
+      "palette": [
+        "#4B384C",
+        "#D4AF37",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Glyph",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Special:FilePath/Prince_logo.svg",
+          "sourcePage": "https://en.wikipedia.org/wiki/File:Prince_logo.svg",
+          "sourceSha256": "334223ce8bae0bea1e9111397270da1fa52f65eb5218b1a189c2d554b780b362",
+          "ops": {
+            "viewBox": "20.875 165.875 1914.5 2164.5"
+          },
+          "path": "/logos/svg/brands/prince.svg",
+          "format": "svg",
+          "colors": [
+            "#050703"
+          ],
+          "sourcePalette": [
+            "#050703",
+            "#D4AF37",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "c5188608d4bd27aafbb1f298910ef4aca9255f15de9a284beaf444d24f22ea10"
+        }
+      ]
+    },
+    {
+      "id": "BRAND-PS",
+      "league": "BRAND",
+      "conference": "Product",
+      "region": "PlayStation",
+      "name": "",
+      "abbr": "PS",
+      "aliases": [
+        "Sony PlayStation",
+        "PS5",
+        "PS4",
+        "Play Station"
+      ],
+      "palette": [
+        "#0070D1",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Symbol",
+          "sourceUrl": "https://www.svgrepo.com/show/452087/playstation.svg",
+          "sourcePage": "https://www.svgrepo.com/svg/452087/playstation",
+          "sourceSha256": "8fd2ad6d2dcaa08be7c484111b65e535ed43c91240aefa64ab831ad5034c780b",
+          "ops": {
+            "viewBox": "-0.64 2.352 33.28 27.296"
+          },
+          "path": "/logos/svg/brands/ps.svg",
+          "format": "svg",
+          "colors": [
+            "#0070D1"
+          ],
+          "sourcePalette": [
+            "#0070D1",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "4b5b71034d3d569e3ec8495086072fed50d877474fced8f5763c56759775b954"
+        },
+        {
+          "id": "retro-color",
+          "label": "Four-color symbol (1994)",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Playstation_logo_colour.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Playstation_logo_colour.svg",
+          "sourceSha256": "9fbbe2041f5a533108b57984023de355a36c3154a8a025332e3a72150ff5ffc5",
+          "ops": {
+            "viewBox": "-66.28 -5.78 742.56 570.56"
+          },
+          "path": "/logos/svg/brands/alternates/ps-retro-color.svg",
+          "format": "svg",
+          "colors": [
+            "#DE0029",
+            "#F3C202",
+            "#326DB3",
+            "#00AA9E"
+          ],
+          "sourcePalette": [
+            "#198CA8",
+            "#DE0029",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "a1eb818d0ed98c5985b6f043e8ce13643346afa57d0c61b6f4dd1ba3ff31a554"
+        }
+      ]
+    },
+    {
+      "id": "BRAND-STONES",
+      "league": "BRAND",
+      "conference": "Personal",
+      "region": "The Rolling Stones",
+      "name": "",
+      "abbr": "STONES",
+      "aliases": [
+        "Rolling Stones",
+        "Stones",
+        "The Stones"
+      ],
+      "palette": [
+        "#EB2E2E",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Tongue and lips",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Special:FilePath/The_Rolling_Stones%27_logo.svg",
+          "sourcePage": "https://en.wikipedia.org/wiki/File:The_Rolling_Stones%27_logo.svg",
+          "sourceSha256": "8a95d40015dc5b94a44198f6cfeb258e52eff3b2de8bf7f2137b52643411d069",
+          "ops": {
+            "viewBox": "-2.301 -2.301 104.616 119.627"
+          },
+          "path": "/logos/svg/brands/stones.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#EB2E2E",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#EB2E2E",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "05c48ce3e476515bb683d807ec2a920dc3e466e06fbc835c731d919a2a82691a"
+        }
+      ]
+    },
+    {
+      "id": "BRAND-TARGET",
+      "league": "BRAND",
+      "conference": "Store",
+      "region": "Target",
+      "name": "",
+      "abbr": "TARGET",
+      "aliases": [
+        "Target Corporation",
+        "Tarzhay",
+        "Tar-zhay",
+        "SuperTarget"
+      ],
+      "palette": [
+        "#CC0000",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Bullseye",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Target_logo.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Target_logo.svg",
+          "sourceSha256": "7479e3e2eed94a91cbb9f119c0ca72383b6578c14cc3c188504d41a626c40b2b",
+          "ops": {
+            "removeNodes": [
+              "0/0/2",
+              "0/0/3",
+              "0/0/4",
+              "0/0/5",
+              "0/0/6",
+              "0/0/7"
+            ],
+            "viewBox": "15.791 30.715 402.65 402.363"
+          },
+          "path": "/logos/svg/brands/target.svg",
+          "format": "svg",
+          "colors": [
+            "#CC0000"
+          ],
+          "sourcePalette": [
+            "#CC0000",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "04db6ad88b5c5cd7b12e8cd59293027f2aa86d2d3b82e7b129805f17da7b4a6b"
+        }
+      ]
+    },
+    {
+      "id": "BRAND-TX",
+      "league": "BRAND",
+      "conference": "Place",
+      "region": "Texas",
+      "name": "",
+      "abbr": "TX",
+      "aliases": [
+        "Lone Star State",
+        "Tejas",
+        "State of Texas"
+      ],
+      "palette": [
+        "#00205B",
+        "#BF0A30",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "State flag",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Texas.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Texas.svg",
+          "sourceSha256": "33b9a4dce7b11a8052e3d0dad2f046dbeacc8e4dff624efb2cd6ee9ec21003f1",
+          "ops": {
+            "viewBox": "-18 -18 936 635.85"
+          },
+          "path": "/logos/svg/brands/tx.svg",
+          "format": "svg",
+          "colors": [
+            "#BF0A30",
+            "#FFFFFF",
+            "#00205B"
+          ],
+          "sourcePalette": [
+            "#00205B",
+            "#BF0A30",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "0038e637da43aee1028cfb46e95243f225425983d7f08678dd75e7547d10cb6c"
+        },
+        {
+          "id": "flag-map",
+          "label": "Flag-filled state outline",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Texas_flag_map.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Texas_flag_map.svg",
+          "sourceSha256": "c98d512b0c65f1a2a8161d18d260218c2107a878487e14159f643583f900ce6b",
+          "ops": {
+            "viewBox": "-23.219 -23.057 1202.438 1173.388"
+          },
+          "path": "/logos/svg/brands/alternates/tx-flag-map.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#BF0A30",
+            "#002868"
+          ],
+          "sourcePalette": [
+            "#002868",
+            "#BF0A30",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "a5367e6df09005e6d96950127b28e715aa32072dcfa67db99049df9c5fbc0b07"
+        }
+      ]
+    },
+    {
+      "id": "BRAND-UNITED",
+      "league": "BRAND",
+      "conference": "Service",
+      "region": "United Airlines",
+      "name": "",
+      "abbr": "UNITED",
+      "aliases": [
+        "United",
+        "UA"
+      ],
+      "palette": [
+        "#002244",
+        "#1414D2",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Globe",
+          "sourceUrl": "https://api.iconify.design/thesvg-color/united-airlines.svg",
+          "sourcePage": "https://icon-sets.iconify.design/thesvg-color/united-airlines/",
+          "sourceSha256": "46a2e33cc9fa4434a7fca4d26372839352eb07db716267a6c6ca8279a9abe178",
+          "ops": {
+            "viewBox": "-0.48 -0.48 24.96 24.96"
+          },
+          "path": "/logos/svg/brands/united.svg",
+          "format": "svg",
+          "colors": [
+            "#002244"
+          ],
+          "sourcePalette": [
+            "#002244",
+            "#1414D2",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "4743803e1a8f6a2040ea08d1710fda262f9e604dd1007febfa4d08f835b41f81"
+        },
+        {
+          "id": "tulip",
+          "label": "Tulip (1974)",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/United_Airlines_1974_%27Tulip_U%27_logo.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:United_Airlines_1974_%27Tulip_U%27_logo.svg",
+          "sourceSha256": "5cca65f07db720faca210ffc2da28bf265aa7f8edfe3f0241150b0a9ca52dcda",
+          "ops": {
+            "viewBox": "-4.498 -4.498 233.892 173.732"
+          },
+          "path": "/logos/svg/brands/alternates/united-tulip.svg",
+          "format": "svg",
+          "colors": [
+            "#E6252A",
+            "#1175C0"
+          ],
+          "sourcePalette": [
+            "#E6252A",
+            "#1175C0",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "cbcb68215c8c7fc91017df0dca24d522c796d425655ac396a04ad8b76a63e832"
+        }
+      ]
+    },
+    {
+      "id": "BRAND-WALMART",
+      "league": "BRAND",
+      "conference": "Store",
+      "region": "Walmart",
+      "name": "",
+      "abbr": "WALMART",
+      "aliases": [
+        "Wal-Mart",
+        "Wally World",
+        "Walmart Supercenter"
+      ],
+      "palette": [
+        "#0053E2",
+        "#FFC220",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Spark",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Walmart_spark_(2025).svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Walmart_spark_(2025).svg",
+          "sourceSha256": "914b4da1d1ac4664677fdad0c2af0a34f4645f1c84b76024d07434595a96ee54",
+          "ops": {
+            "viewBox": "-12 -12 556.2 624"
+          },
+          "path": "/logos/svg/brands/walmart.svg",
+          "format": "svg",
+          "colors": [
+            "#FFC220"
+          ],
+          "sourcePalette": [
+            "#FFC220",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "d840428edd0818f153b4fd5b1b66ed4edeb342961959503e54528fa5f58bb367"
+        },
+        {
+          "id": "app-icon",
+          "label": "Spark app icon",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Walmart_App_icon_(2025).svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Walmart_App_icon_(2025).svg",
+          "sourceSha256": "a078c17df8597102b3c05163683d2a1a56ad9378ad38c9def1c1e522c2cdacd3",
+          "ops": {
+            "viewBox": "-1.097 -1.069 57.034 56.76"
+          },
+          "path": "/logos/svg/brands/alternates/walmart-app-icon.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#0053E2",
+            "#FFC220"
+          ],
+          "sourcePalette": [
+            "#0053E2",
+            "#FFC220",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "2cb6ba558a313b110aaea9dfb7631a36397ea1e086e0bb7f870042ca8f9d4ce4"
+        }
+      ]
+    }
+  ]
+}

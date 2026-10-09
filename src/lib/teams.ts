@@ -1,6 +1,6 @@
 import data from './teams.json'
 
-export type League = 'PRO' | 'NBA' | 'MLB' | 'COL' | 'HS' | 'FOOD' | 'BRAND'
+export type League = 'PRO' | 'NBA' | 'MLB' | 'COL' | 'HS' | 'FOOD' | 'BRAND' | 'APP'
 
 export interface LogoVariant {
   id: string
@@ -27,6 +27,8 @@ export interface Team {
   /** Path under public/ to the team's logo, e.g. "/logos/svg/nfl/kc.svg" (SVG preferred; PNGs fall back to canvas recolor). */
   logo: string
   alternateLogos?: LogoVariant[]
+  /** The only available artwork spells the brand's name, so random decks use it as a color donor only. */
+  showsName?: boolean
 }
 
 export interface Round {
@@ -493,11 +495,17 @@ const playJoined = async (urls: string[]) => {
 }
 export const roundTarget = (r: Round, fallback: GuessTarget): GuessTarget => r.g ?? fallback
 export const guessPrompt = (t: GuessTarget) => (t === 'both' ? 'Guess the Logo and the Colors!' : t === 'colors' ? 'Guess the Colors!' : 'Guess the Logo!')
-/** Brand collections: the fast-food chains and the brands grouped by brand type. */
-export const isBrandLeague = (league: League) => league === 'FOOD' || league === 'BRAND'
-/** Where a team plays: the league label for pro teams and fast food, the conference for college and high school, the brand type for brands. */
+/** What one entry of a collection is called in search and result labels. */
+export const entryNoun = (league: League) => (league === 'APP' ? 'app' : league === 'FOOD' || league === 'BRAND' ? 'brand' : 'team')
+/** Where a team plays: the league label for pro teams and fast food, the conference for college and high school, the type for brands and apps. */
 export const teamHint = (t: Team) =>
-  t.league === 'COL' || t.league === 'HS' ? t.conference : t.league === 'BRAND' ? `${t.conference} brand` : LEAGUES[t.league].label
+  t.league === 'COL' || t.league === 'HS'
+    ? t.conference
+    : t.league === 'BRAND'
+      ? `${t.conference} brand`
+      : t.league === 'APP'
+        ? `${t.conference} app`
+        : LEAGUES[t.league].label
 /** Hint lines for a round, one for the logo team and one for the colors team. */
 export const roundHints = (r: Round): [string, string] => [
   `Logo: ${teamHint(findTeam(r.o)!)}`,
@@ -517,6 +525,7 @@ export const TEAM_POOLS: TeamPool[] = [
   { id: 'MLB', label: LEAGUES.MLB.label, match: (t) => t.league === 'MLB' },
   { id: 'Fast Food', label: LEAGUES.FOOD.label, match: (t) => t.league === 'FOOD' },
   { id: 'Brands', label: LEAGUES.BRAND.label, match: (t) => t.league === 'BRAND' },
+  { id: 'Apps', label: LEAGUES.APP.label, match: (t) => t.league === 'APP' },
   ...LEAGUES.COL.conferences.map((c) => ({ id: c, label: c, match: (t: Team) => t.league === 'COL' && t.conference === c })),
   ...LEAGUES.HS.conferences.map((c) => ({ id: c, label: c, match: (t: Team) => t.league === 'HS' && t.conference === c })),
 ]
@@ -536,6 +545,9 @@ export const poolTeams = (ids: string[]) => {
   const pools = TEAM_POOLS.filter((p) => ids.includes(p.id))
   return TEAMS.filter((t) => pools.some((p) => p.match(t)))
 }
+
+/** Pool members whose artwork can be a round's logo; name-spelling marks only donate colors. */
+export const logoPoolTeams = (ids: string[]) => poolTeams(ids).filter((t) => !t.showsName)
 
 const pick = <T,>(list: T[]) => list[Math.floor(Math.random() * list.length)]
 const samePalette = (a: Team, b: Team) => a.palette.join() === b.palette.join()
@@ -751,13 +763,14 @@ export function deckUndoReducer(state: DeckUndoSnapshot | null, action: DeckUndo
 }
 
 /**
- * Build random remix rounds from the chosen pools. Never pairs a team with itself or with a
+ * Build random remix rounds from the chosen pools. Logos that spell the brand's name only donate
+ * colors. Never pairs a team with itself or with a
  * look-alike palette, never repeats a pairing already in `existing`, and spreads originals out
  * so the same logo does not show up twice until every candidate has been used.
  * May return fewer rounds than asked for when the pools are too small.
  */
 export function randomDeck(opts: RandomDeckOptions, existing: Round[] = []): Round[] {
-  const logos = poolTeams(opts.logoPools)
+  const logos = logoPoolTeams(opts.logoPools)
   const colors = poolTeams(opts.colorPools)
   if (!logos.length || !colors.length) return []
   const seen = new Set(existing.map((r) => `${r.o}|${r.c}`))

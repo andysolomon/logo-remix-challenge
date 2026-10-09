@@ -1,6 +1,6 @@
 import data from './teams.json'
 
-export type League = 'PRO' | 'NBA' | 'MLB' | 'COL' | 'HS' | 'FOOD' | 'BRAND' | 'APP'
+export type League = 'PRO' | 'NBA' | 'MLB' | 'COL' | 'HS' | 'FOOD' | 'BRAND' | 'APP' | 'TV' | 'CAR'
 
 export interface LogoVariant {
   id: string
@@ -511,8 +511,9 @@ const playJoined = async (urls: string[]) => {
 export const roundTarget = (r: Round, fallback: GuessTarget): GuessTarget => r.g ?? fallback
 export const guessPrompt = (t: GuessTarget) => (t === 'both' ? 'Guess the Logo and the Colors!' : t === 'colors' ? 'Guess the Colors!' : 'Guess the Logo!')
 /** What one entry of a collection is called in search and result labels. */
-export const entryNoun = (league: League) => (league === 'APP' ? 'app' : league === 'FOOD' || league === 'BRAND' ? 'brand' : 'team')
-/** Where a team plays: the league label for pro teams and fast food, the conference for college and high school, the type for brands and apps. */
+export const entryNoun = (league: League) =>
+  league === 'APP' ? 'app' : league === 'TV' ? 'channel' : league === 'FOOD' || league === 'BRAND' || league === 'CAR' ? 'brand' : 'team'
+/** Where a team plays: the league label for pro teams and fast food, the conference for college and high school, the type for brands, apps, channels and cars. */
 export const teamHint = (t: Team) =>
   t.league === 'COL' || t.league === 'HS'
     ? t.conference
@@ -520,7 +521,11 @@ export const teamHint = (t: Team) =>
       ? `${t.conference} brand`
       : t.league === 'APP'
         ? `${t.conference} app`
-        : LEAGUES[t.league].label
+        : t.league === 'TV'
+          ? `${t.conference} channel`
+          : t.league === 'CAR'
+            ? `${t.conference} car`
+            : LEAGUES[t.league].label
 /** Hint lines for a round, one for the logo team and one for the colors team. */
 export const roundHints = (r: Round): [string, string] => [
   `Logo: ${teamHint(findTeam(r.o)!)}`,
@@ -541,6 +546,8 @@ export const TEAM_POOLS: TeamPool[] = [
   { id: 'Fast Food', label: LEAGUES.FOOD.label, match: (t) => t.league === 'FOOD' },
   { id: 'Brands', label: LEAGUES.BRAND.label, match: (t) => t.league === 'BRAND' },
   { id: 'Apps', label: LEAGUES.APP.label, match: (t) => t.league === 'APP' },
+  { id: 'TV', label: LEAGUES.TV.label, match: (t) => t.league === 'TV' },
+  { id: 'Cars', label: LEAGUES.CAR.label, match: (t) => t.league === 'CAR' },
   ...LEAGUES.COL.conferences.map((c) => ({ id: c, label: c, match: (t: Team) => t.league === 'COL' && t.conference === c })),
   ...LEAGUES.HS.conferences.map((c) => ({ id: c, label: c, match: (t: Team) => t.league === 'HS' && t.conference === c })),
 ]

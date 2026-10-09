@@ -1,12 +1,14 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
 import { CreateMode, initialCreateState, type CreateState } from './components/CreateMode'
 import { DeckMode } from './components/DeckMode'
+import { DesignerMode, initialDesignerState, type DesignerState } from './components/DesignerMode'
 import { Header } from './components/Header'
 import { PlayMode } from './components/PlayMode'
 import { SettingsModal } from './components/SettingsModal'
 import {
   findTeam,
   loadDeck,
+  loadDesigner,
   loadGameMode,
   loadGuessTarget,
   loadVoice,
@@ -17,6 +19,7 @@ import {
   normalizeDeck,
   normalizeRound,
   saveDeck,
+  saveDesigner,
   saveGameMode,
   saveGuessTarget,
   saveVoice,
@@ -33,7 +36,7 @@ import {
 import { usePrefersDark } from './lib/useColorScheme'
 import { useIsPortrait } from './lib/useOrientation'
 
-type Mode = 'create' | 'deck' | 'play'
+type Mode = 'create' | 'deck' | 'designer' | 'play'
 
 export default function App() {
   const portrait = useIsPortrait()
@@ -47,6 +50,8 @@ export default function App() {
   const [theme, setThemeState] = useState<Theme>(loadTheme)
   const [highScores, setHighScoresState] = useState<HighScore[]>(loadHighScores)
   const [create, setCreate] = useState<CreateState>(initialCreateState)
+  const [designer, setDesignerState] = useState<boolean>(loadDesigner)
+  const [design, setDesign] = useState<DesignerState>(initialDesignerState)
   const [settingsOpen, setSettingsOpen] = useState(false)
   const [deckWideMutationVersion, setDeckWideMutationVersion] = useState(0)
 
@@ -78,6 +83,12 @@ export default function App() {
     saveTheme(t)
     setThemeState(t)
   }
+  const setDesigner = (on: boolean) => {
+    saveDesigner(on)
+    setDesignerState(on)
+    // Turning Designer off removes its tab; leave the screen with it. The design itself is kept for next time.
+    if (!on && mode === 'designer') setMode('create')
+  }
   const setHighScores = useCallback((list: HighScore[]) => {
     saveHighScores(list)
     setHighScoresState(list)
@@ -86,7 +97,7 @@ export default function App() {
   const prevModeRef = useRef<Mode>('create')
 
   useEffect(() => {
-    if (prevModeRef.current === 'deck' && mode === 'create') {
+    if ((prevModeRef.current === 'deck' || prevModeRef.current === 'designer') && mode === 'create') {
       document.getElementById('tab-create')?.focus()
     }
     prevModeRef.current = mode
@@ -143,9 +154,32 @@ export default function App() {
 
   return (
     <div className="app">
-      <Header mode={mode} deckCount={deck.length} onCreate={() => setMode('create')} onDeck={() => setMode('deck')} onPlay={startGame} onSettings={() => setSettingsOpen(true)} />
+      <Header
+        mode={mode}
+        deckCount={deck.length}
+        designer={designer}
+        onCreate={() => setMode('create')}
+        onDeck={() => setMode('deck')}
+        onDesigner={() => setMode('designer')}
+        onPlay={startGame}
+        onSettings={() => setSettingsOpen(true)}
+      />
       {settingsOpen && (
-        <SettingsModal timer={timer} gameMode={gameMode} guessTarget={guessTarget} voice={voice} theme={theme} onTimer={setTimer} onGameMode={setGameMode} onGuessTarget={setGuessTarget} onVoice={setVoice} onTheme={setTheme} onClose={closeSettings} />
+        <SettingsModal
+          timer={timer}
+          gameMode={gameMode}
+          guessTarget={guessTarget}
+          voice={voice}
+          theme={theme}
+          designer={designer}
+          onTimer={setTimer}
+          onGameMode={setGameMode}
+          onGuessTarget={setGuessTarget}
+          onVoice={setVoice}
+          onTheme={setTheme}
+          onDesigner={setDesigner}
+          onClose={closeSettings}
+        />
       )}
       <CreateMode state={create} setState={setCreate} portrait={portrait} deckCount={deck.length} onAddRound={addRound} hidden={mode !== 'create'} />
       <DeckMode
@@ -167,6 +201,7 @@ export default function App() {
         onCreate={() => setMode('create')}
         hidden={mode !== 'deck'}
       />
+      {designer && <DesignerMode state={design} setState={setDesign} portrait={portrait} hidden={mode !== 'designer'} />}
     </div>
   )
 }

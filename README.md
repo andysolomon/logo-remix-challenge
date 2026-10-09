@@ -18,7 +18,9 @@ One-color logos, such as the Yankees' NY, the Golden Arches or Alabama's script 
 
 Each round asks for either the **logo's team** or the **team whose colors it wears** — set per round on its deck card, with a deck-wide default for rounds left alone. An optional voice announcer plays Chatterbox clips (`public/voice/`) for the round prompt, the verdict, and the final score.
 
-Client-only SPA — no backend, no auth. Deck, timer, game mode, guess mode, voice, and high score persist in `localStorage`.
+**Designer mode** is tucked away under Settings → Advanced. Switch it on and a **Designer** tab joins Create and Deck: pick any logo (and any of its alternates), start from another team's palette or type exact hex codes for each of the artwork's color slots, and download the result as an **SVG** (vector, any size) or a square **PNG** at 512, 1024 or 2048 px with a transparent, white, black or custom background. One-color logos keep their backdrop tile in the export, bitmap artwork exports as PNG only, and the tab disappears again when the mode is switched off.
+
+Client-only SPA — no backend, no auth. Deck, timer, game mode, guess mode, voice, high score, and the Designer mode switch persist in `localStorage`.
 
 ## Stack
 
@@ -110,21 +112,24 @@ vercel
 
 ```
 src/
-  App.tsx                  mode router (create / deck / play) + persisted state
+  App.tsx                  mode router (create / deck / designer / play) + persisted state
   styles.css               tokens, keyframes, all component styles
   lib/teams.ts             dataset, answer matching, filtering, localStorage
+  lib/designer.ts          Designer mode: slot roles, palette seeding, SVG sizing/composition (pure)
+  lib/exportLogo.ts        Designer exports: recolored SVG files, canvas-rendered PNGs, downloads
   lib/teams.json           32 NFL + 30 NBA + 30 MLB + 30 food + 30 brand + 30 app + 126 college + 17 high-school entries
   lib/useOrientation.ts    portrait = innerHeight > innerWidth
   components/
     Logo.tsx               local PNG rendering + canvas palette-swap recoloring
-    Header.tsx             wordmark, Create / Deck tabs, PLAY
+    Header.tsx             wordmark, Create / Deck (/ Designer) tabs, PLAY
     TeamBrowser.tsx        league toggle, search, conference chips, tile grid
     RemixCanvas.tsx        hero remix logo, Shuffle Logo, Shuffle Colors, + ADD ROUND
     CreateMode.tsx         landscape 3-column / portrait stepped composition
+    DesignerMode.tsx       opt-in logo designer: per-slot colors, SVG / PNG export
     DeckMode.tsx           round cards, game setup rail, high score
     PlayMode.tsx           intro → question (type / host) → reveal → results
     DeckMode.tsx           deck cards (per-round guess mode) + settings rail
-    SettingsModal.tsx      timer, defaults, voice announcer, appearance
+    SettingsModal.tsx      timer, defaults, voice announcer, appearance, Advanced → Designer mode
 public/voice/              Chatterbox clips for Guess the Logo / Colors / both
 scripts/
   download_logos.py        fetch the 37 logo PNGs from ESPN into public/logos/

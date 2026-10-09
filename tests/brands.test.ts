@@ -64,6 +64,8 @@ from download_brand_logos import artwork_palette, brand_colors, pinned_sources, 
 from nfl_vector_artwork import validate_vector
 teams = {t['id']: t for t in json.loads(Path('src/lib/teams.json').read_text())['teams']}
 for league, roster in ROSTERS.items():
+    if not roster:
+        continue  # collection registered, artwork pending
     rows = {row[0]: row for row in roster}
     pinned = {(s['teamId'], s['id']): s for s in pinned_sources(league)}
     items = json.loads(manifest_path(league).read_text())['assets']

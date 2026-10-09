@@ -106,7 +106,7 @@ sys.path.insert(0, 'scripts')
 import build_extra_teams as extras, build_brand_teams as brands, build_nba_teams as nba, build_teams as college, build_hs_teams as hs
 root = Path.cwd()
 original = Path('src/lib/teams.json').read_text()
-kept = ('MLB', 'FOOD', 'BRAND', 'APP', 'TV', 'CAR')
+kept = ('MLB', 'FOOD', 'BRAND', 'APP')
 wanted = [t for t in json.loads(original)['teams'] if t['league'] in kept]
 with tempfile.TemporaryDirectory(dir=root) as tmp:
     target = Path(tmp) / 'teams.json'
@@ -118,7 +118,7 @@ with tempfile.TemporaryDirectory(dir=root) as tmp:
         actual = [t for t in json.loads(target.read_text())['teams'] if t['league'] in kept]
         assert actual == wanted
     target.write_text(original)
-    for league in ('FOOD', 'BRAND', 'APP', 'TV', 'CAR'):
+    for league in ('FOOD', 'BRAND', 'APP'):
         sys.argv = ['builder', '--league', league]
         brands.main()
     assert target.read_text() == original, 'brand rebuild changed data, order or formatting'

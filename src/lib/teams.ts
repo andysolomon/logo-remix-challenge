@@ -567,15 +567,18 @@ export interface TeamPool {
   label: string
   match: (t: Team) => boolean
 }
+/** One pool per whole-league collection; leagues not yet built into teams.json (e.g. artwork pending) are left out. */
+const leaguePool = (id: string, league: League): TeamPool[] =>
+  LEAGUES[league] ? [{ id, label: LEAGUES[league].label, match: (t) => t.league === league }] : []
 export const TEAM_POOLS: TeamPool[] = [
-  { id: 'NFL', label: LEAGUES.PRO.label, match: (t) => t.league === 'PRO' },
-  { id: 'NBA', label: LEAGUES.NBA.label, match: (t) => t.league === 'NBA' },
-  { id: 'MLB', label: LEAGUES.MLB.label, match: (t) => t.league === 'MLB' },
-  { id: 'Fast Food', label: LEAGUES.FOOD.label, match: (t) => t.league === 'FOOD' },
-  { id: 'Brands', label: LEAGUES.BRAND.label, match: (t) => t.league === 'BRAND' },
-  { id: 'Apps', label: LEAGUES.APP.label, match: (t) => t.league === 'APP' },
-  { id: 'TV', label: LEAGUES.TV.label, match: (t) => t.league === 'TV' },
-  { id: 'Cars', label: LEAGUES.CAR.label, match: (t) => t.league === 'CAR' },
+  ...leaguePool('NFL', 'PRO'),
+  ...leaguePool('NBA', 'NBA'),
+  ...leaguePool('MLB', 'MLB'),
+  ...leaguePool('Fast Food', 'FOOD'),
+  ...leaguePool('Brands', 'BRAND'),
+  ...leaguePool('Apps', 'APP'),
+  ...leaguePool('TV', 'TV'),
+  ...leaguePool('Cars', 'CAR'),
   ...LEAGUES.COL.conferences.map((c) => ({ id: c, label: c, match: (t: Team) => t.league === 'COL' && t.conference === c })),
   ...LEAGUES.HS.conferences.map((c) => ({ id: c, label: c, match: (t: Team) => t.league === 'HS' && t.conference === c })),
 ]

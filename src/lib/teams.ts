@@ -238,6 +238,17 @@ export const saveGuessTarget = (t: GuessTarget) => safeSet(LS.guessTarget, t)
 export const loadVoice = (): boolean => safeGet(LS.voice) === '1'
 export const saveVoice = (on: boolean) => safeSet(LS.voice, on ? '1' : '0')
 
+/** Color scheme for the Create and Deck screens; Play is always dark. `system` follows the OS setting. */
+export type Theme = 'system' | 'light' | 'dark'
+export const THEMES: readonly Theme[] = ['system', 'light', 'dark']
+export const THEME_LABEL: Record<Theme, string> = { system: 'System', light: 'Light', dark: 'Dark' }
+export const isTheme = (v: unknown): v is Theme => THEMES.includes(v as Theme)
+export function loadTheme(): Theme {
+  const t = safeGet(LS.theme)
+  return isTheme(t) ? t : 'system'
+}
+export const saveTheme = (t: Theme) => safeSet(LS.theme, t)
+
 /** Round prompt or reveal verdict. Score lines go through `speakScore`. */
 export type VoiceClipId = GuessTarget | 'correct' | 'wrong' | 'timeout'
 

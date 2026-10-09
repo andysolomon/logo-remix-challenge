@@ -249,6 +249,10 @@ export function loadTheme(): Theme {
 }
 export const saveTheme = (t: Theme) => safeSet(LS.theme, t)
 
+/** Designer mode: an opt-in tab (Settings → Advanced) for recoloring any logo with custom colors and exporting it. */
+export const loadDesigner = (): boolean => safeGet(LS.designer) === '1'
+export const saveDesigner = (on: boolean) => safeSet(LS.designer, on ? '1' : '0')
+
 /** Round prompt or reveal verdict. Score lines go through `speakScore`. */
 export type VoiceClipId = GuessTarget | 'correct' | 'wrong' | 'timeout'
 

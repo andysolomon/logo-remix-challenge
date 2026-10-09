@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState, type RefObject } from 'react'
 import { clampTimer, GUESS_TARGETS, GUESS_LABEL, speak, THEME_LABEL, THEMES, voiceSupported, TIMER_MAX, TIMER_MIN, TIMER_OPTIONS, type GameMode, type GuessTarget, type Theme, type TimerSeconds } from '../lib/teams'
 
-const DIALOG_FOCUSABLE = 'button:not(:disabled), [href], input:not(:disabled), select:not(:disabled), textarea:not(:disabled), [tabindex]:not([tabindex="-1"])'
+const DIALOG_FOCUSABLE = 'button:not(:disabled), [href], input:not(:disabled), select:not(:disabled), textarea:not(:disabled), summary, [tabindex]:not([tabindex="-1"])'
 
 /** Escape, initial/return focus, and Tab cycling inside a modal dialog. */
 export function useDialogA11y(dialogRef: RefObject<HTMLElement | null>, closeRef: RefObject<HTMLButtonElement | null>, onClose: () => void) {
@@ -52,16 +52,21 @@ interface Props {
   guessTarget: GuessTarget
   voice: boolean
   theme: Theme
+  /** Designer mode (Settings → Advanced): adds a tab for recoloring any logo with exact colors and exporting it. */
+  designer: boolean
   onTimer: (t: TimerSeconds) => void
   onGameMode: (m: GameMode) => void
   onGuessTarget: (t: GuessTarget) => void
   onVoice: (on: boolean) => void
   onTheme: (t: Theme) => void
+  onDesigner: (on: boolean) => void
   onClose: () => void
 }
 
-export function SettingsModal({ timer, gameMode, guessTarget, voice, theme, onTimer, onGameMode, onGuessTarget, onVoice, onTheme, onClose }: Props) {
+export function SettingsModal({ timer, gameMode, guessTarget, voice, theme, designer, onTimer, onGameMode, onGuessTarget, onVoice, onTheme, onDesigner, onClose }: Props) {
   const [custom, setCustom] = useState(String(timer))
+  // Advanced stays folded unless Designer mode is already on, so the toggle is there when you go looking for it.
+  const [advancedOpen, setAdvancedOpen] = useState(designer)
   const dialogRef = useRef<HTMLDivElement>(null)
   const closeRef = useRef<HTMLButtonElement>(null)
 
@@ -177,6 +182,35 @@ export function SettingsModal({ timer, gameMode, guessTarget, voice, theme, onTi
           <div className="mode-hint">
             {theme === 'system' ? 'Follows your device’s light or dark setting.' : `Always ${theme}.`} The game screen stays dark either way.
           </div>
+
+          <details
+            className="settings-advanced"
+            open={advancedOpen}
+            onToggle={(e) => {
+              const el = e.currentTarget
+              setAdvancedOpen(el.open)
+              // The fold sits at the end of a scrolling body: bring what just unfolded into view.
+              if (el.open) requestAnimationFrame(() => el.scrollIntoView({ block: 'end', behavior: 'smooth' }))
+            }}
+          >
+            <summary className="rail-label">ADVANCED</summary>
+            <div className="settings-advanced-body">
+              <div className="rail-label" id="settings-designer-label">DESIGNER MODE</div>
+              <div className="grid2" role="group" aria-labelledby="settings-designer-label">
+                <button type="button" className={`opt mode${designer ? ' active' : ''}`} aria-pressed={designer} onClick={() => onDesigner(true)}>
+                  On
+                </button>
+                <button type="button" className={`opt mode${designer ? '' : ' active'}`} aria-pressed={!designer} onClick={() => onDesigner(false)}>
+                  Off
+                </button>
+              </div>
+              <div className="mode-hint">
+                {designer
+                  ? 'A Designer tab is in the header: recolor any logo slot by slot with your own colors, then download it as SVG or PNG.'
+                  : 'Adds a Designer tab for recoloring any logo with your own colors and exporting it as SVG or PNG.'}
+              </div>
+            </div>
+          </details>
         </div>
 
         <div className="modal-footer">

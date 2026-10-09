@@ -6,9 +6,11 @@ interface Props {
   palette?: readonly string[]
   perm?: number
   variantId?: string
+  /** Exact color per source slot (Designer mode); skips the contrast-safe remix mapping `palette` goes through. */
+  targetColors?: readonly [string, string, string]
 }
 
-type RGB = readonly [number, number, number]
+export type RGB = readonly [number, number, number]
 type RemixStatus = 'idle' | 'loading' | 'ready' | 'error'
 
 /**
@@ -51,7 +53,7 @@ function normalizeColor(raw: string): string | null {
   return NAMED_COLORS[v] ?? null
 }
 
-const hexToRgb = (hex: string): RGB => [
+export const hexToRgb = (hex: string): RGB => [
   parseInt(hex.slice(1, 3), 16),
   parseInt(hex.slice(3, 5), 16),
   parseInt(hex.slice(5, 7), 16),
@@ -88,7 +90,7 @@ const pendingCache = new Map<string, Promise<string | null>>()
 /** Keys whose recolor already failed; prevents loading→error loops on re-render. */
 const failedCache = new Set<string>()
 
-function loadSvg(src: string): Promise<string | null> {
+export function loadSvg(src: string): Promise<string | null> {
   let p = svgCache.get(src)
   if (!p) {
     p = fetch(src)
@@ -124,7 +126,7 @@ function loadImage(src: string): Promise<HTMLImageElement | null> {
 const COLOR_RE = /((?:fill|stroke|stop-color|flood-color|lighting-color)\s*[:=]\s*["']?\s*)(#[0-9a-fA-F]{3,8}\b|rgba?\([^)]*\)|[a-zA-Z]+)/g
 
 /** Replace fills near each `from` slot with the matching `to` slot; everything else is untouched. */
-function recolorSvg(markup: string, from: RGB[], to: RGB[]): string {
+export function recolorSvg(markup: string, from: RGB[], to: RGB[]): string {
   let out = markup.replace(COLOR_RE, (whole, prefix: string, token: string) => {
     const hex = normalizeColor(token)
     if (!hex) return whole
@@ -142,11 +144,11 @@ function recolorSvg(markup: string, from: RGB[], to: RGB[]): string {
   return out
 }
 
-const svgToDataUrl = (markup: string) => 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(markup)
+export const svgToDataUrl = (markup: string) => 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(markup)
 
 // ---------------------------------------------------------------- PNG fallback
 /** Remap pixels near each `from` slot to the matching `to` slot; alpha and all other pixels untouched. */
-async function recolorRaster(src: string, from: RGB[], to: RGB[]): Promise<string | null> {
+export async function recolorRaster(src: string, from: RGB[], to: RGB[]): Promise<string | null> {
   const img = await loadImage(src)
   if (!img || !img.naturalWidth) return null
   const scale = Math.min(1, MAX_CANVAS_DIMENSION / Math.max(img.naturalWidth, img.naturalHeight))
@@ -215,10 +217,10 @@ async function recolorRaster(src: string, from: RGB[], to: RGB[]): Promise<strin
 }
 
 // ---------------------------------------------------------------- dispatcher
-const isSvg = (src: string) => /\.svg(\?|#|$)/i.test(src)
+export const isSvg = (src: string) => /\.svg(\?|#|$)/i.test(src)
 
 /** Some downloaded "SVGs" are just a wrapper around an embedded bitmap; fill rewriting can't touch those. */
-const hasEmbeddedRaster = (markup: string) => /<image\b/i.test(markup)
+export const hasEmbeddedRaster = (markup: string) => /<image\b/i.test(markup)
 
 async function renderRecolor(src: string, from: RGB[], to: RGB[]): Promise<string | null> {
   if (isSvg(src)) {
@@ -254,10 +256,10 @@ function recolor(key: string, src: string, from: RGB[], to: RGB[]): Promise<stri
  * the image stays transparent until that cached recolor is ready. One-color
  * artwork is remixed onto a backdrop in another target color (`backdropSlot`).
  */
-export function Logo({ team: baseTeam, palette, perm = 0, variantId }: Props) {
+export function Logo({ team: baseTeam, palette, perm = 0, variantId, targetColors }: Props) {
   const team = withLogoVariant(baseTeam, variantId)
-  const hasTargetPalette = palette != null
-  const target = hasTargetPalette ? resolveRemixTargetColors(team, palette, perm) : null
+  const hasTargetPalette = palette != null || targetColors != null
+  const target = targetColors ? targetColors : palette != null ? resolveRemixTargetColors(team, palette, perm) : null
   const source = team.sourcePalette ?? team.palette
   const slot = backdropSlot(team)
   const backdrop = target && slot !== undefined ? target[slot] : undefined

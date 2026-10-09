@@ -20,11 +20,11 @@ describe('brand collections', () => {
   test('fast food, brands and apps have full rosters split across their categories', () => {
     expect(LEAGUES.BRAND).toEqual({ label: 'BRANDS', conferences: ['Product', 'Service', 'Corporate', 'Personal', 'Store', 'Place'] })
     expect(LEAGUES.APP).toEqual({ label: 'APPS', conferences: ['Built-in', 'Social', 'Games', 'Music & Video', 'Everyday'] })
-    for (const type of LEAGUES.BRAND.conferences) expect(filterTeams('BRAND', type, '')).toHaveLength(5)
+    expect(LEAGUES.BRAND.conferences.map((c) => filterTeams('BRAND', c, '').length)).toEqual([5, 5, 5, 4, 5, 5])
     expect(LEAGUES.APP.conferences.map((c) => filterTeams('APP', c, '').length)).toEqual([8, 6, 6, 5, 5])
-    for (const league of COLLECTIONS) {
-      expect(filterTeams(league, 'All', '')).toHaveLength(30)
-      expect(new Set(filterTeams(league, 'All', '').map(fullName)).size).toBe(30)
+    for (const [league, size] of [['FOOD', 30], ['BRAND', 29], ['APP', 30]] as const) {
+      expect(filterTeams(league, 'All', '')).toHaveLength(size)
+      expect(new Set(filterTeams(league, 'All', '').map(fullName)).size).toBe(size)
     }
     expect(new Set(TEAMS.map((t) => t.id)).size).toBe(TEAMS.length)
     expect(new Set(entries.map((t) => norm(fullName(t)))).size).toBe(entries.length)
@@ -67,7 +67,7 @@ for league, roster in ROSTERS.items():
     rows = {row[0]: row for row in roster}
     pinned = {(s['teamId'], s['id']): s for s in pinned_sources(league)}
     items = json.loads(manifest_path(league).read_text())['assets']
-    assert len(items) == len(rows) == 30, league
+    assert len(items) == len(rows) == (29 if league == 'BRAND' else 30), league
     for item in items:
         assert teams[item['id']] == build_entry(league, item, rows[item['abbr']]), item['id']
         for art in item['artwork']:
@@ -120,7 +120,7 @@ for league, roster in ROSTERS.items():
 
   test('random decks draw brand and app logos, keep wordmarks as color donors and show the type as a hint', () => {
     expect(ALL_POOL_IDS).toEqual(expect.arrayContaining(['Fast Food', 'Brands', 'Apps']))
-    expect(poolTeams(['Brands', 'Apps'])).toHaveLength(60)
+    expect(poolTeams(['Brands', 'Apps'])).toHaveLength(59)
     expect(logoPoolTeams(['Fast Food'])).toHaveLength(30 - WORDMARK_ONLY.length)
     for (const [logos, colors] of [[['Fast Food'], ['Fast Food']], [['Brands'], ['Apps']], [['Apps'], ['NFL']]]) {
       for (let n = 0; n < 5; n++) {

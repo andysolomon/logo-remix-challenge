@@ -611,59 +611,6 @@
       ]
     },
     {
-      "id": "BRAND-ELVIS",
-      "league": "BRAND",
-      "conference": "Personal",
-      "region": "Elvis Presley",
-      "name": "",
-      "abbr": "ELVIS",
-      "aliases": [
-        "Elvis",
-        "The King",
-        "The King of Rock and Roll",
-        "Elvis Aaron Presley"
-      ],
-      "palette": [
-        "#000000",
-        "#D4AF37",
-        "#FFFFFF"
-      ],
-      "artwork": [
-        {
-          "id": "primary",
-          "label": "Mic-stand silhouette",
-          "sourceUrl": "https://logowik.com/elvis-presley-silhouette-vector-logo-11902.html",
-          "sourcePage": "https://logowik.com/elvis-presley-silhouette-vector-logo-11902.html",
-          "sourceSha256": "181d1f43e349571d4404222c6576ba4f4f12a56c8772bf1541f04df5a0d10ca0",
-          "downloadForm": "logowik",
-          "ops": {
-            "removeNodes": [
-              "2",
-              "3",
-              "4",
-              "5"
-            ],
-            "viewBox": "384.559 70.929 468.701 589.946"
-          },
-          "path": "/logos/svg/brands/elvis.svg",
-          "format": "svg",
-          "colors": [
-            "#1B1918"
-          ],
-          "sourcePalette": [
-            "#1B1918",
-            "#D4AF37",
-            "#FFFFFF"
-          ],
-          "unusedSourceSlots": [
-            1,
-            2
-          ],
-          "sha256": "eefc48e97550dd3cd8159824f54a2ad49a645348f03da7d53e72ee15ee11062b"
-        }
-      ]
-    },
-    {
       "id": "BRAND-GATORADE",
       "league": "BRAND",
       "conference": "Product",

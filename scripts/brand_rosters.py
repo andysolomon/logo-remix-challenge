@@ -61,7 +61,6 @@ BRAND = [
     ("PRINCE", "Prince", "Personal", "4B384C", "D4AF37", ["Prince Rogers Nelson", "The Artist Formerly Known as Prince", "The Artist", "TAFKAP"]),
     ("STONES", "The Rolling Stones", "Personal", "EB2E2E", "000000", ["Rolling Stones", "Stones", "The Stones"]),
     ("MRBEAST", "MrBeast", "Personal", "00ACD2", "E3457C", ["Mr Beast", "Mr. Beast", "Jimmy Donaldson", "Jimmy", "BEAST"]),
-    ("ELVIS", "Elvis Presley", "Personal", "000000", "D4AF37", ["Elvis", "The King", "The King of Rock and Roll", "Elvis Aaron Presley"]),
     ("TARGET", "Target", "Store", "CC0000", "000000", ["Target Corporation", "Tarzhay", "Tar-zhay", "SuperTarget"]),
     ("WALMART", "Walmart", "Store", "0053E2", "FFC220", ["Wal-Mart", "Wally World", "Walmart Supercenter"]),
     ("AMAZON", "Amazon", "Store", "FF9900", "232F3E", ["Amazon.com", "Amazon Prime"]),

@@ -675,24 +675,6 @@
     }
   },
   {
-    "teamId": "BRAND-ELVIS",
-    "id": "primary",
-    "label": "Mic-stand silhouette",
-    "sourceUrl": "https://logowik.com/elvis-presley-silhouette-vector-logo-11902.html",
-    "sourcePage": "https://logowik.com/elvis-presley-silhouette-vector-logo-11902.html",
-    "sourceSha256": "181d1f43e349571d4404222c6576ba4f4f12a56c8772bf1541f04df5a0d10ca0",
-    "downloadForm": "logowik",
-    "ops": {
-      "removeNodes": [
-        "2",
-        "3",
-        "4",
-        "5"
-      ],
-      "viewBox": "384.559 70.929 468.701 589.946"
-    }
-  },
-  {
     "teamId": "BRAND-GATORADE",
     "id": "primary",
     "label": "Bolt monogram",

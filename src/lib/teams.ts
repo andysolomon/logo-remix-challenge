@@ -1,6 +1,6 @@
 import data from './teams.json'
 
-export type League = 'PRO' | 'NBA' | 'MLB' | 'COL' | 'HS' | 'FOOD' | 'BRAND' | 'APP' | 'TV' | 'CAR'
+export type League = 'PRO' | 'NBA' | 'MLB' | 'SOCCER' | 'COL' | 'HS' | 'FOOD' | 'BRAND' | 'APP' | 'TV' | 'CAR'
 
 export interface LogoVariant {
   id: string
@@ -87,7 +87,8 @@ export function nextLogoVariant(team: Team, current?: string): string | undefine
   return next === 'primary' ? undefined : next
 }
 
-export const norm = (s: string) => String(s).toLowerCase().replace(/[^a-z0-9]/g, '')
+// Accents fold away first, so "Atletico" and "Barça" match "Atlético" and "Barca".
+export const norm = (s: string) => String(s).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9]/g, '')
 
 export function isCorrectGuess(guess: string, team: Team): boolean {
   const g = norm(guess)
@@ -540,10 +541,13 @@ export const roundTarget = (r: Round, fallback: GuessTarget): GuessTarget => r.g
 export const guessPrompt = (t: GuessTarget) => (t === 'both' ? 'Guess the Logo and the Colors!' : t === 'colors' ? 'Guess the Colors!' : 'Guess the Logo!')
 /** What one entry of a collection is called in search and result labels. */
 export const entryNoun = (league: League) =>
-  league === 'APP' ? 'app' : league === 'TV' ? 'channel' : league === 'FOOD' || league === 'BRAND' || league === 'CAR' ? 'brand' : 'team'
-/** Where a team plays: the league label for pro teams and fast food, the conference for college and high school, the type for brands, apps, channels and cars. */
+  league === 'APP' ? 'app' : league === 'TV' ? 'channel' : league === 'FOOD' || league === 'BRAND' || league === 'CAR' ? 'brand' : league === 'SOCCER' ? 'club' : 'team'
+/**
+ * Where a team plays: the league label for pro teams and fast food, the conference for college and high school,
+ * the domestic league for soccer clubs outside "Rest of World", the type for brands, apps, channels and cars.
+ */
 export const teamHint = (t: Team) =>
-  t.league === 'COL' || t.league === 'HS'
+  t.league === 'COL' || t.league === 'HS' || (t.league === 'SOCCER' && t.conference !== 'Rest of World')
     ? t.conference
     : t.league === 'BRAND'
       ? `${t.conference} brand`
@@ -571,6 +575,7 @@ export const TEAM_POOLS: TeamPool[] = [
   { id: 'NFL', label: LEAGUES.PRO.label, match: (t) => t.league === 'PRO' },
   { id: 'NBA', label: LEAGUES.NBA.label, match: (t) => t.league === 'NBA' },
   { id: 'MLB', label: LEAGUES.MLB.label, match: (t) => t.league === 'MLB' },
+  { id: 'Soccer', label: LEAGUES.SOCCER.label, match: (t) => t.league === 'SOCCER' },
   { id: 'Fast Food', label: LEAGUES.FOOD.label, match: (t) => t.league === 'FOOD' },
   { id: 'Brands', label: LEAGUES.BRAND.label, match: (t) => t.league === 'BRAND' },
   { id: 'Apps', label: LEAGUES.APP.label, match: (t) => t.league === 'APP' },

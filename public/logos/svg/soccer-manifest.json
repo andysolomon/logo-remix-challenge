@@ -1,0 +1,1058 @@
+{
+  "assets": [
+    {
+      "id": "SOCCER-MIL",
+      "league": "SOCCER",
+      "conference": "Serie A",
+      "region": "AC Milan",
+      "name": "",
+      "abbr": "MIL",
+      "aliases": [
+        "Milan",
+        "ACM",
+        "Rossoneri"
+      ],
+      "path": "/logos/svg/soccer/mil.svg",
+      "format": "svg",
+      "sourceUrl": "https://crests.football-data.org/98.svg",
+      "sourcePage": "https://www.football-data.org/",
+      "colors": [
+        "#030000",
+        "#ED1C24",
+        "#FFFFFF"
+      ],
+      "palette": [
+        "#ED1C24",
+        "#030000",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": []
+    },
+    {
+      "id": "SOCCER-AJA",
+      "league": "SOCCER",
+      "conference": "Rest of World",
+      "region": "Ajax",
+      "name": "",
+      "abbr": "AJA",
+      "aliases": [
+        "AFC Ajax",
+        "Ajax Amsterdam"
+      ],
+      "path": "/logos/svg/soccer/aja.svg",
+      "format": "svg",
+      "sourceUrl": "https://crests.football-data.org/678.svg",
+      "sourcePage": "https://www.football-data.org/",
+      "colors": [
+        "#D49F0F",
+        "#010101",
+        "#CA5672",
+        "#FFFFFF"
+      ],
+      "palette": [
+        "#D49F0F",
+        "#010101",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": []
+    },
+    {
+      "id": "SOCCER-ARS",
+      "league": "SOCCER",
+      "conference": "Premier League",
+      "region": "Arsenal",
+      "name": "",
+      "abbr": "ARS",
+      "aliases": [
+        "Arsenal FC",
+        "Gunners",
+        "The Gunners"
+      ],
+      "path": "/logos/svg/soccer/ars.svg",
+      "format": "svg",
+      "sourceUrl": "https://crests.football-data.org/57.svg",
+      "sourcePage": "https://www.football-data.org/",
+      "colors": [
+        "#9B844B",
+        "#DB2024",
+        "#CF1843",
+        "#FFFFFF",
+        "#263778"
+      ],
+      "palette": [
+        "#DB2024",
+        "#263778",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": []
+    },
+    {
+      "id": "SOCCER-ROM",
+      "league": "SOCCER",
+      "conference": "Serie A",
+      "region": "AS Roma",
+      "name": "",
+      "abbr": "ROM",
+      "aliases": [
+        "Roma",
+        "Giallorossi"
+      ],
+      "path": "/logos/svg/soccer/rom.svg",
+      "format": "svg",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/en/f/f7/AS_Roma_logo_%282017%29.svg",
+      "sourcePage": "https://en.wikipedia.org/wiki/File:AS_Roma_logo_(2017).svg",
+      "colors": [
+        "#17191D",
+        "#FBBA00",
+        "#970A2C",
+        "#100F0D",
+        "#BCB9B7",
+        "#110F0D",
+        "#000000"
+      ],
+      "palette": [
+        "#970A2C",
+        "#FBBA00",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [
+        2
+      ]
+    },
+    {
+      "id": "SOCCER-AVL",
+      "league": "SOCCER",
+      "conference": "Premier League",
+      "region": "Aston Villa",
+      "name": "",
+      "abbr": "AVL",
+      "aliases": [
+        "Villa",
+        "AVFC",
+        "Aston Villa FC"
+      ],
+      "path": "/logos/svg/soccer/avl.svg",
+      "format": "svg",
+      "sourceUrl": "https://crests.football-data.org/58.svg",
+      "sourcePage": "https://www.football-data.org/",
+      "colors": [
+        "#7B0039",
+        "#A3C3E9",
+        "#FFE300",
+        "#FFFFFF"
+      ],
+      "palette": [
+        "#7B0039",
+        "#A3C3E9",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": []
+    },
+    {
+      "id": "SOCCER-ATM",
+      "league": "SOCCER",
+      "conference": "La Liga",
+      "region": "Atl\u00e9tico Madrid",
+      "name": "",
+      "abbr": "ATM",
+      "aliases": [
+        "Atletico",
+        "Atleti",
+        "Atletico de Madrid"
+      ],
+      "path": "/logos/svg/soccer/atm.svg",
+      "format": "svg",
+      "sourceUrl": "https://crests.football-data.org/78.svg",
+      "sourcePage": "https://www.football-data.org/",
+      "colors": [
+        "#222E60",
+        "#FFFFFF",
+        "#CE3426"
+      ],
+      "palette": [
+        "#CE3426",
+        "#222E60",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": []
+    },
+    {
+      "id": "SOCCER-BAR",
+      "league": "SOCCER",
+      "conference": "La Liga",
+      "region": "Barcelona",
+      "name": "",
+      "abbr": "BAR",
+      "aliases": [
+        "Barca",
+        "FC Barcelona",
+        "FCB",
+        "Blaugrana"
+      ],
+      "path": "/logos/svg/soccer/bar.svg",
+      "format": "svg",
+      "sourceUrl": "https://crests.football-data.org/81.svg",
+      "sourcePage": "https://www.football-data.org/",
+      "colors": [
+        "#010000",
+        "#E6BF01",
+        "#CC0732",
+        "#FFFFFF",
+        "#002496",
+        "#8B2448"
+      ],
+      "palette": [
+        "#CC0732",
+        "#002496",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": []
+    },
+    {
+      "id": "SOCCER-B04",
+      "league": "SOCCER",
+      "conference": "Bundesliga",
+      "region": "Bayer Leverkusen",
+      "name": "",
+      "abbr": "B04",
+      "aliases": [
+        "Leverkusen",
+        "Bayer 04",
+        "Bayer 04 Leverkusen"
+      ],
+      "path": "/logos/svg/soccer/b04.svg",
+      "format": "svg",
+      "sourceUrl": "https://crests.football-data.org/3.svg",
+      "sourcePage": "https://www.football-data.org/",
+      "colors": [
+        "#020101",
+        "#FCE800",
+        "#E32124",
+        "#FFFFFF"
+      ],
+      "palette": [
+        "#E32124",
+        "#020101",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": []
+    },
+    {
+      "id": "SOCCER-BAY",
+      "league": "SOCCER",
+      "conference": "Bundesliga",
+      "region": "Bayern Munich",
+      "name": "",
+      "abbr": "BAY",
+      "aliases": [
+        "Bayern",
+        "FC Bayern",
+        "Bayern M\u00fcnchen",
+        "Bayern Muenchen",
+        "FC Bayern Munich"
+      ],
+      "path": "/logos/svg/soccer/bay.svg",
+      "format": "svg",
+      "sourceUrl": "https://crests.football-data.org/5.svg",
+      "sourcePage": "https://www.football-data.org/",
+      "colors": [
+        "#0066B2",
+        "#FFFFFF",
+        "#DC052D"
+      ],
+      "palette": [
+        "#DC052D",
+        "#0066B2",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": []
+    },
+    {
+      "id": "SOCCER-BEN",
+      "league": "SOCCER",
+      "conference": "Rest of World",
+      "region": "Benfica",
+      "name": "",
+      "abbr": "BEN",
+      "aliases": [
+        "SL Benfica",
+        "Sport Lisboa e Benfica"
+      ],
+      "path": "/logos/svg/soccer/ben.svg",
+      "format": "svg",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/en/a/a2/SL_Benfica_logo.svg",
+      "sourcePage": "https://en.wikipedia.org/wiki/File:SL_Benfica_logo.svg",
+      "colors": [
+        "#FFFFFF",
+        "#B5B5B5",
+        "#0F0F10",
+        "#12814B",
+        "#E83030",
+        "#1074BC",
+        "#FFD432",
+        "#101111"
+      ],
+      "palette": [
+        "#E83030",
+        "#0F0F10",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": []
+    },
+    {
+      "id": "SOCCER-BVB",
+      "league": "SOCCER",
+      "conference": "Bundesliga",
+      "region": "Borussia Dortmund",
+      "name": "",
+      "abbr": "BVB",
+      "aliases": [
+        "Dortmund",
+        "BVB 09"
+      ],
+      "path": "/logos/svg/soccer/bvb.svg",
+      "format": "svg",
+      "sourceUrl": "https://crests.football-data.org/4.svg",
+      "sourcePage": "https://www.football-data.org/",
+      "colors": [
+        "#FDEA00",
+        "#020000"
+      ],
+      "palette": [
+        "#FDEA00",
+        "#020000",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [
+        2
+      ]
+    },
+    {
+      "id": "SOCCER-CEL",
+      "league": "SOCCER",
+      "conference": "Rest of World",
+      "region": "Celtic",
+      "name": "",
+      "abbr": "CEL",
+      "aliases": [
+        "Celtic FC",
+        "Glasgow Celtic",
+        "The Bhoys"
+      ],
+      "path": "/logos/svg/soccer/cel.svg",
+      "format": "svg",
+      "sourceUrl": "https://crests.football-data.org/732.svg",
+      "sourcePage": "https://www.football-data.org/",
+      "colors": [
+        "#009A65",
+        "#FFFFFF"
+      ],
+      "palette": [
+        "#009A65",
+        "#808080",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [
+        1
+      ]
+    },
+    {
+      "id": "SOCCER-CHE",
+      "league": "SOCCER",
+      "conference": "Premier League",
+      "region": "Chelsea",
+      "name": "",
+      "abbr": "CHE",
+      "aliases": [
+        "Chelsea FC",
+        "CFC"
+      ],
+      "path": "/logos/svg/soccer/che.svg",
+      "format": "svg",
+      "sourceUrl": "https://crests.football-data.org/61.svg",
+      "sourcePage": "https://www.football-data.org/",
+      "colors": [
+        "#E46316",
+        "#083282",
+        "#FFFFFF",
+        "#9D98B5"
+      ],
+      "palette": [
+        "#083282",
+        "#E46316",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": []
+    },
+    {
+      "id": "SOCCER-POR",
+      "league": "SOCCER",
+      "conference": "Rest of World",
+      "region": "FC Porto",
+      "name": "",
+      "abbr": "POR",
+      "aliases": [
+        "Porto",
+        "FCP"
+      ],
+      "path": "/logos/svg/soccer/por.svg",
+      "format": "svg",
+      "sourceUrl": "https://crests.football-data.org/503.svg",
+      "sourcePage": "https://www.football-data.org/",
+      "colors": [
+        "#2E362B",
+        "#00AB4E",
+        "#035727",
+        "#D18A26",
+        "#203C24",
+        "#EE1B23",
+        "#F9A6A2",
+        "#FBBFBB",
+        "#FFFFFF",
+        "#1C2717",
+        "#C19A9E",
+        "#191C13",
+        "#B57331",
+        "#143F1D",
+        "#B77432",
+        "#B67431",
+        "#B57330",
+        "#B57131",
+        "#34451E",
+        "#1AA149",
+        "#E2AB3A",
+        "#F2C74D",
+        "#5B4C41",
+        "#D69A3D",
+        "#D39533",
+        "#E7B441",
+        "#F3C94F",
+        "#E9B13E",
+        "#BA7D3D",
+        "#D79834",
+        "#70511E",
+        "#00518B",
+        "#42AD88",
+        "#004893",
+        "#004D8F",
+        "#5A8DB5",
+        "#ED1720",
+        "#92CAEE",
+        "#108ED0",
+        "#FDD606",
+        "#FCD306",
+        "#FCD206",
+        "#97CFF0",
+        "#B9DCF3",
+        "#A4CEEA",
+        "#084CA1",
+        "#58A3D3",
+        "#F56967",
+        "#6ABAE8",
+        "#BCC1D5",
+        "#5858A5",
+        "#EE1921",
+        "#7E8175",
+        "#A38E63",
+        "#A9CAE5",
+        "#DA9C32",
+        "#FCD108",
+        "#6D6EB4",
+        "#7171B5",
+        "#6767B0",
+        "#FABB0A",
+        "#AE7538",
+        "#D89A33",
+        "#A2935F",
+        "#C2A251",
+        "#FCC731",
+        "#5A5BA6",
+        "#F7BD30",
+        "#FEE706",
+        "#FCD30C",
+        "#EE1823",
+        "#F25051",
+        "#00667F",
+        "#11A1DD",
+        "#EE1922",
+        "#005888",
+        "#CFE6F6",
+        "#FCCD06",
+        "#FFF501",
+        "#A5D2EE",
+        "#69BAE8",
+        "#EA2026",
+        "#C0E0F7",
+        "#5BA8D8",
+        "#55AFE2",
+        "#7474B7",
+        "#8E876D",
+        "#AACBE8",
+        "#A08E64",
+        "#BF732E",
+        "#E8AA31",
+        "#FCCE06",
+        "#6D6DB3",
+        "#FEE805",
+        "#EDAD30",
+        "#7577B9",
+        "#A49464",
+        "#C2A450",
+        "#913E65",
+        "#7878B9",
+        "#FAB70B",
+        "#00508B",
+        "#00687D",
+        "#849B9C",
+        "#819BB0",
+        "#00AA4F",
+        "#E1A333",
+        "#BA7330",
+        "#EBBB07",
+        "#A7733B",
+        "#D09133",
+        "#2B617A",
+        "#F5BC31",
+        "#F6BB30",
+        "#F9CB41",
+        "#459E46",
+        "#1CA44D",
+        "#039B5A",
+        "#265F7A",
+        "#236476",
+        "#1F607A",
+        "#02A254",
+        "#276774",
+        "#00A057",
+        "#00508A"
+      ],
+      "palette": [
+        "#004893",
+        "#D18A26",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": []
+    },
+    {
+      "id": "SOCCER-FLA",
+      "league": "SOCCER",
+      "conference": "Rest of World",
+      "region": "Flamengo",
+      "name": "",
+      "abbr": "FLA",
+      "aliases": [
+        "CR Flamengo",
+        "Mengao",
+        "Clube de Regatas do Flamengo"
+      ],
+      "path": "/logos/svg/soccer/fla.svg",
+      "format": "svg",
+      "sourceUrl": "https://crests.football-data.org/1783.svg",
+      "sourcePage": "https://www.football-data.org/",
+      "colors": [
+        "#000000",
+        "#FF0000",
+        "#FFFFFF"
+      ],
+      "palette": [
+        "#FF0000",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": []
+    },
+    {
+      "id": "SOCCER-GAL",
+      "league": "SOCCER",
+      "conference": "Rest of World",
+      "region": "Galatasaray",
+      "name": "",
+      "abbr": "GAL",
+      "aliases": [
+        "Galatasaray SK",
+        "Gala",
+        "Cimbom"
+      ],
+      "path": "/logos/svg/soccer/gal.svg",
+      "format": "svg",
+      "sourceUrl": "https://crests.football-data.org/610.svg",
+      "sourcePage": "https://www.football-data.org/",
+      "colors": [
+        "#F99C1C",
+        "#A51E22",
+        "#FFFFFF",
+        "#000000"
+      ],
+      "palette": [
+        "#A51E22",
+        "#F99C1C",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": []
+    },
+    {
+      "id": "SOCCER-MIA",
+      "league": "SOCCER",
+      "conference": "Rest of World",
+      "region": "Inter Miami",
+      "name": "",
+      "abbr": "MIA",
+      "aliases": [
+        "Inter Miami CF",
+        "Club Internacional de Futbol Miami"
+      ],
+      "path": "/logos/svg/soccer/mia.svg",
+      "format": "svg",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/en/5/5c/Inter_Miami_CF_logo.svg",
+      "sourcePage": "https://en.wikipedia.org/wiki/File:Inter_Miami_CF_logo.svg",
+      "colors": [
+        "#F6B4CD",
+        "#000100",
+        "#FFFFFF"
+      ],
+      "palette": [
+        "#F6B4CD",
+        "#000100",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": []
+    },
+    {
+      "id": "SOCCER-INT",
+      "league": "SOCCER",
+      "conference": "Serie A",
+      "region": "Inter Milan",
+      "name": "",
+      "abbr": "INT",
+      "aliases": [
+        "Inter",
+        "Internazionale",
+        "Inter Milano",
+        "FC Internazionale Milano",
+        "Nerazzurri"
+      ],
+      "path": "/logos/svg/soccer/int.svg",
+      "format": "svg",
+      "sourceUrl": "https://crests.football-data.org/108.svg",
+      "sourcePage": "https://www.football-data.org/",
+      "colors": [
+        "#85764E",
+        "#0063A7",
+        "#21201D",
+        "#85764F",
+        "#FFFFFF"
+      ],
+      "palette": [
+        "#0063A7",
+        "#21201D",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": []
+    },
+    {
+      "id": "SOCCER-JUV",
+      "league": "SOCCER",
+      "conference": "Serie A",
+      "region": "Juventus",
+      "name": "",
+      "abbr": "JUV",
+      "aliases": [
+        "Juve",
+        "Juventus FC",
+        "Bianconeri"
+      ],
+      "path": "/logos/svg/soccer/juv.svg",
+      "format": "svg",
+      "sourceUrl": "https://crests.football-data.org/109.svg",
+      "sourcePage": "https://www.football-data.org/",
+      "colors": [
+        "#131516"
+      ],
+      "palette": [
+        "#131516",
+        "#808080",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "SOCCER-LIV",
+      "league": "SOCCER",
+      "conference": "Premier League",
+      "region": "Liverpool",
+      "name": "",
+      "abbr": "LIV",
+      "aliases": [
+        "Liverpool FC",
+        "LFC"
+      ],
+      "path": "/logos/svg/soccer/liv.svg",
+      "format": "svg",
+      "sourceUrl": "https://crests.football-data.org/64.svg",
+      "sourcePage": "https://www.football-data.org/",
+      "colors": [
+        "#FFFFFF",
+        "#00A398",
+        "#D00027",
+        "#FEF667"
+      ],
+      "palette": [
+        "#D00027",
+        "#00A398",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": []
+    },
+    {
+      "id": "SOCCER-MCI",
+      "league": "SOCCER",
+      "conference": "Premier League",
+      "region": "Manchester City",
+      "name": "",
+      "abbr": "MCI",
+      "aliases": [
+        "Man City",
+        "City",
+        "MCFC",
+        "Manchester City FC"
+      ],
+      "path": "/logos/svg/soccer/mci.svg",
+      "format": "svg",
+      "sourceUrl": "https://crests.football-data.org/65.svg",
+      "sourcePage": "https://www.football-data.org/",
+      "colors": [
+        "#012F60",
+        "#7AB3DB",
+        "#FFFFFF",
+        "#012F5F",
+        "#D9E1E8",
+        "#7AB4DC",
+        "#B3C1CE",
+        "#FBC24E",
+        "#E9AD01",
+        "#EAAF0D",
+        "#FEFEFD",
+        "#FBC24D",
+        "#E9AC01",
+        "#E9AE08",
+        "#80B6DB",
+        "#8ABCDE",
+        "#8DBEE0",
+        "#D0E4F0",
+        "#E5F1F6",
+        "#FAFCFC",
+        "#D1E5F0",
+        "#A8C9E8",
+        "#AC1F29",
+        "#D61A1C",
+        "#E51917",
+        "#E51918",
+        "#E51818",
+        "#C31C22",
+        "#E4B651"
+      ],
+      "palette": [
+        "#7AB3DB",
+        "#012F5F",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": []
+    },
+    {
+      "id": "SOCCER-MUN",
+      "league": "SOCCER",
+      "conference": "Premier League",
+      "region": "Manchester United",
+      "name": "",
+      "abbr": "MUN",
+      "aliases": [
+        "Man United",
+        "Man Utd",
+        "Man U",
+        "MUFC",
+        "Manchester United FC",
+        "Red Devils"
+      ],
+      "path": "/logos/svg/soccer/mun.svg",
+      "format": "svg",
+      "sourceUrl": "https://crests.football-data.org/66.svg",
+      "sourcePage": "https://www.football-data.org/",
+      "colors": [
+        "#B80100",
+        "#FFF200",
+        "#F10000",
+        "#FFFFFF"
+      ],
+      "palette": [
+        "#F10000",
+        "#FFF200",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": []
+    },
+    {
+      "id": "SOCCER-OM",
+      "league": "SOCCER",
+      "conference": "Ligue 1",
+      "region": "Marseille",
+      "name": "",
+      "abbr": "OM",
+      "aliases": [
+        "Olympique de Marseille",
+        "Olympique Marseille"
+      ],
+      "path": "/logos/svg/soccer/om.svg",
+      "format": "svg",
+      "sourceUrl": "https://crests.football-data.org/516.svg",
+      "sourcePage": "https://www.football-data.org/",
+      "colors": [
+        "#000000",
+        "#BA8C58",
+        "#009DDC"
+      ],
+      "palette": [
+        "#009DDC",
+        "#BA8C58",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [
+        2
+      ]
+    },
+    {
+      "id": "SOCCER-NAP",
+      "league": "SOCCER",
+      "conference": "Serie A",
+      "region": "Napoli",
+      "name": "",
+      "abbr": "NAP",
+      "aliases": [
+        "SSC Napoli",
+        "Naples"
+      ],
+      "path": "/logos/svg/soccer/nap.png",
+      "format": "png",
+      "sourceUrl": "https://a.espncdn.com/i/teamlogos/soccer/500/114.png",
+      "sourcePage": "https://www.espn.com/soccer/club/_/id/114/napoli",
+      "colors": [
+        "#135E89",
+        "#0099DA",
+        "#FFFFFF",
+        "#80CCED",
+        "#BFE6F6",
+        "#40B3E3",
+        "#109FDC",
+        "#EFF9FD",
+        "#CFECF8",
+        "#30ACE1",
+        "#60BFE8",
+        "#A7C3D3",
+        "#9FD9F1",
+        "#C4D7E2",
+        "#F0F5F8",
+        "#226890",
+        "#89AFC4",
+        "#DFF2FA",
+        "#20A6DF",
+        "#4E86A7",
+        "#317298",
+        "#6C9AB5",
+        "#8FD2EF",
+        "#3F7C9F",
+        "#70C6EA",
+        "#50B9E6",
+        "#D3E1E9",
+        "#E2EBF0",
+        "#AFDFF3",
+        "#B5CDDA",
+        "#98B9CB",
+        "#7AA4BD",
+        "#5D90AE"
+      ],
+      "palette": [
+        "#109FDC",
+        "#135E89",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": []
+    },
+    {
+      "id": "SOCCER-NEW",
+      "league": "SOCCER",
+      "conference": "Premier League",
+      "region": "Newcastle United",
+      "name": "",
+      "abbr": "NEW",
+      "aliases": [
+        "Newcastle",
+        "NUFC",
+        "Magpies",
+        "Toon"
+      ],
+      "path": "/logos/svg/soccer/new.svg",
+      "format": "svg",
+      "sourceUrl": "https://crests.football-data.org/67.svg",
+      "sourcePage": "https://www.football-data.org/",
+      "colors": [
+        "#000000",
+        "#C5C6C8",
+        "#E12D27",
+        "#00ABE5",
+        "#F2BE30",
+        "#FFFFFF"
+      ],
+      "palette": [
+        "#000000",
+        "#00ABE5",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": []
+    },
+    {
+      "id": "SOCCER-PSG",
+      "league": "SOCCER",
+      "conference": "Ligue 1",
+      "region": "Paris Saint-Germain",
+      "name": "",
+      "abbr": "PSG",
+      "aliases": [
+        "Paris",
+        "Paris SG"
+      ],
+      "path": "/logos/svg/soccer/psg.svg",
+      "format": "svg",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/en/a/a7/Paris_Saint-Germain_F.C..svg",
+      "sourcePage": "https://en.wikipedia.org/wiki/File:Paris_Saint-Germain_F.C..svg",
+      "colors": [
+        "#004170",
+        "#FFFFFF",
+        "#E30613",
+        "#CEAB5D"
+      ],
+      "palette": [
+        "#004170",
+        "#E30613",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": []
+    },
+    {
+      "id": "SOCCER-RBL",
+      "league": "SOCCER",
+      "conference": "Bundesliga",
+      "region": "RB Leipzig",
+      "name": "",
+      "abbr": "RBL",
+      "aliases": [
+        "Leipzig",
+        "RasenBallsport Leipzig"
+      ],
+      "path": "/logos/svg/soccer/rbl.svg",
+      "format": "svg",
+      "sourceUrl": "https://crests.football-data.org/721.svg",
+      "sourcePage": "https://www.football-data.org/",
+      "colors": [
+        "#FFFFFF",
+        "#D9D9D9",
+        "#001B46",
+        "#DA0034"
+      ],
+      "palette": [
+        "#DA0034",
+        "#001B46",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": []
+    },
+    {
+      "id": "SOCCER-RMA",
+      "league": "SOCCER",
+      "conference": "La Liga",
+      "region": "Real Madrid",
+      "name": "",
+      "abbr": "RMA",
+      "aliases": [
+        "Real",
+        "Real Madrid CF",
+        "Los Blancos",
+        "RMCF"
+      ],
+      "path": "/logos/svg/soccer/rma.svg",
+      "format": "svg",
+      "sourceUrl": "https://crests.football-data.org/86.svg",
+      "sourcePage": "https://www.football-data.org/",
+      "colors": [
+        "#1E4382",
+        "#FCAF17",
+        "#FFFFFF",
+        "#E23143"
+      ],
+      "palette": [
+        "#FCAF17",
+        "#1E4382",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": []
+    },
+    {
+      "id": "SOCCER-SEV",
+      "league": "SOCCER",
+      "conference": "La Liga",
+      "region": "Sevilla",
+      "name": "",
+      "abbr": "SEV",
+      "aliases": [
+        "Sevilla FC",
+        "Seville"
+      ],
+      "path": "/logos/svg/soccer/sev.svg",
+      "format": "svg",
+      "sourceUrl": "https://crests.football-data.org/559.svg",
+      "sourcePage": "https://www.football-data.org/",
+      "colors": [
+        "#35200D",
+        "#B1722B",
+        "#EA2626",
+        "#FFFFFF"
+      ],
+      "palette": [
+        "#EA2626",
+        "#B1722B",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": []
+    },
+    {
+      "id": "SOCCER-TOT",
+      "league": "SOCCER",
+      "conference": "Premier League",
+      "region": "Tottenham Hotspur",
+      "name": "",
+      "abbr": "TOT",
+      "aliases": [
+        "Tottenham",
+        "Spurs",
+        "THFC"
+      ],
+      "path": "/logos/svg/soccer/tot.svg",
+      "format": "svg",
+      "sourceUrl": "https://crests.football-data.org/73.svg",
+      "sourcePage": "https://www.football-data.org/",
+      "colors": [
+        "#060D3C",
+        "#FFFFFF"
+      ],
+      "palette": [
+        "#060D3C",
+        "#808080",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [
+        1
+      ]
+    }
+  ]
+}

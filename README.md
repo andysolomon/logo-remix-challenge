@@ -2,11 +2,13 @@
 
 iPad-first logo guessing game. A creator picks the **logo of one team, brand or app** and the **colors of another**; players name the logo and/or color sources while the remix misdirects them.
 
-Real logos for all 32 NFL teams, all 30 NBA teams, all 30 MLB teams, 30 fast-food chains, 29 brands, 30 iOS apps, 30 TV channels, 30 car brands, 120 college teams, 6 college conference marks, and the 17 Cobb County high schools (the HIGH SCHOOL league) live as local SVG or PNG assets under `public/logos/svg/`. SVG fills are rewritten in-browser; PNGs use a canvas-based pixel recolor.
+Real logos for all 32 NFL teams, all 30 NBA teams, all 30 MLB teams, 30 popular soccer clubs, 30 fast-food chains, 29 brands, 30 iOS apps, 30 TV channels, 30 car brands, 120 college teams, 6 college conference marks, and the 17 Cobb County high schools (the HIGH SCHOOL league) live as local SVG or PNG assets under `public/logos/svg/`. SVG fills are rewritten in-browser; PNGs use a canvas-based pixel recolor.
 
 NBA teams are available as both logo and color donors. Filter them by Eastern or Western conference, or select NBA in Random Deck to create NBA-only or mixed-league rounds. Common answers such as Sixers, Cavs, GSW, NYK and SAS work in search, autocomplete and grading.
 
 MLB teams have American/National League filters and use official MLB SVGs. Team colors remain available even when a cap mark uses only one of them. Fast-food chains are grouped into Burgers, Chicken, Sandwiches, Pizza, Mexican & Asian, and Coffee & Treats. Both collections work in the logo picker, color picker, Random Deck, hints, autocomplete and saved rounds. Try a Braves logo in McDonald's colors, or the Golden Arches in Yankees colors. Collection buttons form a single horizontally scrollable row on phones and smaller tablets; larger layouts show rows of four.
+
+**SOCCER** holds 30 of the most popular football clubs, filtered by domestic league: Premier League (Arsenal, Man City, Man United, Liverpool, Chelsea, Spurs, Newcastle, Aston Villa), La Liga (Real Madrid, Barcelona, Atlético Madrid, Sevilla), Bundesliga (Bayern, Dortmund, Leverkusen, Leipzig), Serie A (Juventus, AC Milan, Inter, Napoli, Roma), Ligue 1 (PSG, Marseille) and Rest of World (Ajax, Benfica, Porto, Celtic, Galatasaray, Flamengo, Inter Miami). Hints name the club's league ("Logo: Serie A"), or SOCCER for Rest of World. Nicknames and short forms such as Man Utd, Spurs, Barca, Juve and PSG are accepted, and guesses ignore accents, so "Atletico" matches Atlético.
 
 **BRANDS** groups 29 brands by brand type — Product, Service, Corporate, Personal, Store (retailers selling their own label) and Place (flags and civic symbols) — five of each, with four in Personal. **APPS** holds 30 iOS app icons: Apple's built-in apps (Maps, Weather, Messages…) plus Social, Games, Music & Video and Everyday apps such as Duolingo. **TV** holds 30 channels grouped into Broadcast, Cable, Music & Pop (MTV, VH1, BET…), Kids and Discovery & Lifestyle. **CARS** holds 30 carmakers grouped into American, Japanese & Korean, German, Italian and British. Hints name the type ("Logo: Place brand", "Colors: Games app", "Logo: German car", "Colors: Kids channel").
 
@@ -59,7 +61,7 @@ Logo assets are acquired from official NBA/MLB CDNs, ESPN-linked Wikipedia files
 
 `download_nba_svgs.py` downloads the 30 primary SVG marks from the official NBA CDN, snapshots names and brand colors from ESPN, and records actual artwork colors in `nba-manifest.json`. `nba_roster.py` pins NBA IDs and conference alignment from NBA.com. `build_nba_teams.py` validates the complete roster and replaces only NBA entries; the college and high-school builders preserve NBA entries. All logos stay local at runtime.
 
-`download_extra_logos.py --league MLB` validates the current roster against MLB's official Stats API and downloads MLB's team SVGs into `mlb-manifest.json`; `build_extra_teams.py --league MLB` validates and replaces only MLB entries. An optional `--cache-dir /tmp/logo-remix-assets` resumes interrupted downloads.
+`download_extra_logos.py --league MLB` validates the current roster against MLB's official Stats API and downloads MLB's team SVGs into `mlb-manifest.json`; `build_extra_teams.py --league MLB` validates and replaces only MLB entries. `--league SOCCER` does the same for the clubs pinned in `extra_rosters.py`: crests come from football-data.org's crest CDN, with Wikipedia files for Roma, PSG, Benfica and Inter Miami and ESPN's PNG for Napoli, and white or invisible traced page backgrounds are stripped so a remix never paints a solid square. An optional `--cache-dir /tmp/logo-remix-assets` resumes interrupted downloads.
 
 Fast food, brands, apps, TV channels and cars share one pipeline. `brand_rosters.py` holds their names, categories, donor colors and aliases (fast-food colors keep the values snapped from the chains' original logos). `brand_artwork_sources.json` pins every primary and alternate: the source URL (Wikimedia, official sites, Logowik, Logopedia, 1000 Logos, Iconify, vectorlogo.zone and similar), the source file's SHA-256, and the reviewed `brand_vector.py` edits — element removals that strip a wordmark, ™ or page background, kept elements that cut one icon out of a sheet, a fill for one-color icons, and a crop. `download_brand_logos.py --league FOOD|BRAND|APP|TV|CAR` replays those edits, rejects bitmaps, live text, scripts and external references, converts percentage `rgb()` colors so they can be recolored, and maps the artwork's fills and gradient stops onto the palette roles (a role sits between the two ends of a gradient when both stay within matching range, so gradient app tiles recolor as a whole). It writes `fast-food-manifest.json`, `brands-manifest.json`, `apps-manifest.json`, `tv-manifest.json` or `cars-manifest.json`. Verified checked-in assets are reused offline; a changed source fails its checksum, and nothing is replaced until the whole collection validates. `--cache-dir` keeps verified source files for rate-limited refreshes. `build_brand_teams.py --league FOOD|BRAND|APP|TV|CAR` validates the manifest against the roster and rewrites only that collection in place. Every roster builder preserves the other collections. The application itself has no new runtime dependencies.
 
@@ -79,6 +81,7 @@ bun run logos:hbcu                             # or: python3 scripts/download_hb
 bun run logos:hs                               # or: python3 scripts/download_cobb_svgs.py
 bun run logos:nba                              # fetch official NBA SVGs and refresh the manifest
 bun run logos:mlb                              # fetch official MLB SVGs and refresh the manifest
+bun run logos:soccer                           # fetch soccer club crests and refresh the manifest
 bun run logos:food                             # refresh the pinned fast-food artwork and manifest
 bun run logos:brands                           # refresh the pinned brand artwork and manifest
 bun run logos:apps                             # refresh the pinned iOS app artwork and manifest
@@ -88,6 +91,7 @@ bun run teams                                  # regenerate college entries in s
 bun run teams:hs                               # regenerate high-school entries from hs-manifest.json
 bun run teams:nba                              # regenerate NBA entries from nba-manifest.json
 bun run teams:mlb                              # regenerate MLB entries from mlb-manifest.json
+bun run teams:soccer                           # regenerate soccer entries from soccer-manifest.json
 bun run teams:food                             # regenerate fast-food entries from fast-food-manifest.json
 bun run teams:brands                           # regenerate brand entries from brands-manifest.json
 bun run teams:apps                             # regenerate app entries from apps-manifest.json
@@ -102,7 +106,7 @@ bun run logos                                  # or: python3 scripts/download_lo
 python3 scripts/download_logos.py --force      # re-download everything
 ```
 
-Trademarks belong to the NFL, NBA, MLB, their teams, the restaurant and other brands, the app makers, the TV networks, the carmakers, the conferences and the schools; assets are used here for a private party game.
+Trademarks belong to the NFL, NBA, MLB, the soccer clubs, their teams, the restaurant and other brands, the app makers, the TV networks, the carmakers, the conferences and the schools; assets are used here for a private party game.
 
 ## Deploy
 
@@ -121,7 +125,7 @@ src/
   lib/teams.ts             dataset, answer matching, filtering, localStorage
   lib/designer.ts          Designer mode: slot roles, palette seeding, SVG sizing/composition (pure)
   lib/exportLogo.ts        Designer exports: recolored SVG files, canvas-rendered PNGs, downloads
-  lib/teams.json           32 NFL + 30 NBA + 30 MLB + 30 food + 29 brand + 30 app + 30 TV + 30 car + 126 college + 17 high-school entries
+  lib/teams.json           32 NFL + 30 NBA + 30 MLB + 30 soccer + 30 food + 29 brand + 30 app + 30 TV + 30 car + 126 college + 17 high-school entries
   lib/useOrientation.ts    portrait = innerHeight > innerWidth
   components/
     Logo.tsx               local PNG rendering + canvas palette-swap recoloring
@@ -144,9 +148,9 @@ scripts/
   download_nba_svgs.py     fetch the 30 official NBA SVGs and snapshot ESPN metadata
   nba_roster.py            pinned NBA IDs, conferences and answer aliases
   build_nba_teams.py       validate and rebuild only NBA entries
-  download_extra_logos.py  fetch official MLB SVG marks
-  extra_rosters.py         pinned MLB IDs, conferences and aliases
-  build_extra_teams.py     validate and rebuild only MLB entries
+  download_extra_logos.py  fetch official MLB SVG marks and soccer club crests
+  extra_rosters.py         pinned MLB IDs and soccer clubs, groupings, colors and aliases
+  build_extra_teams.py     validate and rebuild only MLB or soccer entries
   brand_rosters.py         fast-food, brand, app, TV and car rosters, categories, colors and aliases
   brand_artwork_sources.json  pinned name-free artwork: sources, checksums, reviewed edits
   brand_vector.py          replay reviewed SVG edits (strip wordmark, fill, crop); review helpers
@@ -162,6 +166,7 @@ public/logos/
   svg/high-school/         17 checked-in Cobb high-school SVG/PNG marks
   svg/nba/                 30 checked-in official NBA SVG marks
   svg/mlb/                 30 checked-in official MLB SVG marks
+  svg/soccer/              30 checked-in club crests (29 SVG, Napoli PNG)
   svg/fast-food/           30 checked-in chain SVGs (+ alternates/)
   svg/brands/              30 checked-in brand SVGs (+ alternates/)
   svg/apps/                30 checked-in iOS app SVGs (+ alternates/)

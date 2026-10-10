@@ -14,6 +14,7 @@ public/voice/timeout.wav
 public/voice/game-over.wav
 public/voice/you-scored-0.wav … you-scored-20.wav
 public/voice/out-of-1.wav … out-of-20.wav
+public/voice/and-a-half.wav
 ```
 
 ## Core API (`src/lib/teams.ts`)
@@ -29,7 +30,7 @@ export const guessPrompt = (t: GuessTarget) => /* display strings; keep in sync 
 export const roundTarget = (r: Round, fallback: GuessTarget): GuessTarget
 ```
 
-`speakScore` fetches `/voice/you-scored-{n}.wav` and `/voice/out-of-{m}.wav` when both are in 0–20 (total ≥ 1), joins them into one blob, and plays that. Otherwise `/voice/game-over.wav`.
+`speakScore` fetches `/voice/you-scored-{n}.wav` and `/voice/out-of-{m}.wav` when both are in 0–20 (total ≥ 1), joins them into one blob, and plays that. A half-point score (partial credit on Both rounds) joins `/voice/and-a-half.wav` between them, and plays `/voice/game-over.wav` if that join fails. Otherwise `/voice/game-over.wav`.
 
 Persistence: `loadVoice` / `saveVoice` via `LS.voice` (`lrx-voice`).
 

@@ -50,7 +50,7 @@ Verdicts (match on-screen reveal titles):
 | `wrong` | Not quite! | `/voice/wrong.wav` |
 | `timeout` | Time's up! | `/voice/timeout.wav` |
 
-Score is one joined clip when both numbers are 0–20: `/voice/you-scored-{n}.wav` (“You scored eight”) plus `/voice/out-of-{m}.wav` (“out of ten.”), concatenated in `speakScore`. Outside that range: `/voice/game-over.wav`. Do not queue two `play()` calls — iPad and timer-fired `ended` handlers drop the second clip.
+Score is one joined clip when both numbers are 0–20: `/voice/you-scored-{n}.wav` (“You scored eight”) plus `/voice/out-of-{m}.wav` (“out of ten.”), concatenated in `speakScore`. Half-point scores insert `/voice/and-a-half.wav` (“and a half”) between the two. Outside that range: `/voice/game-over.wav`. Do not queue two `play()` calls — iPad and timer-fired `ended` handlers drop the second clip.
 
 On-screen round copy is different (`WHOSE LOGO IS THIS?` etc.). Do not bake those strings unless product asks to change the VO.
 

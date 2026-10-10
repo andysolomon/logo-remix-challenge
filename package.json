@@ -1,7 +1,7 @@
 {
   "name": "logo-remix-challenge",
   "private": true,
-  "version": "0.24.0",
+  "version": "0.27.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -19,6 +19,8 @@
     "logos:food": "python3 scripts/download_brand_logos.py --league FOOD",
     "logos:brands": "python3 scripts/download_brand_logos.py --league BRAND",
     "logos:apps": "python3 scripts/download_brand_logos.py --league APP",
+    "logos:tv": "python3 scripts/download_brand_logos.py --league TV",
+    "logos:cars": "python3 scripts/download_brand_logos.py --league CAR",
     "teams": "python3 scripts/build_teams.py",
     "teams:hs": "python3 scripts/build_hs_teams.py",
     "teams:nba": "python3 scripts/build_nba_teams.py",
@@ -27,6 +29,8 @@
     "teams:food": "python3 scripts/build_brand_teams.py --league FOOD",
     "teams:brands": "python3 scripts/build_brand_teams.py --league BRAND",
     "teams:apps": "python3 scripts/build_brand_teams.py --league APP",
+    "teams:tv": "python3 scripts/build_brand_teams.py --league TV",
+    "teams:cars": "python3 scripts/build_brand_teams.py --league CAR",
     "voice": "python3 scripts/generate_voice.py",
     "release": "semantic-release"
   },

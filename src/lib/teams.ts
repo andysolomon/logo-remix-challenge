@@ -1,6 +1,6 @@
 import data from './teams.json'
 
-export type League = 'PRO' | 'NBA' | 'MLB' | 'SOCCER' | 'COL' | 'HS' | 'FOOD' | 'BRAND' | 'APP'
+export type League = 'PRO' | 'NBA' | 'MLB' | 'SOCCER' | 'COL' | 'HS' | 'FOOD' | 'BRAND' | 'APP' | 'TV' | 'CAR'
 
 export interface LogoVariant {
   id: string
@@ -168,6 +168,7 @@ const LEGACY_INITIALS = '???'
 
 export interface HighScore {
   initials: string
+  /** Whole or half points: a "both" round with one half right scores ½. */
   score: number
   total: number
   date: number
@@ -196,7 +197,8 @@ const isHighScore = (h: unknown): h is HighScore => {
   const { initials, score, total, date } = h as HighScore
   return (
     isValidInitials(initials) &&
-    isSafeNonNegInt(score, MAX_DECK_ROUNDS) &&
+    typeof score === 'number' &&
+    isSafeNonNegInt(score * 2, MAX_DECK_ROUNDS * 2) &&
     isSafeNonNegInt(total, MAX_DECK_ROUNDS) &&
     total > 0 &&
     score <= total &&
@@ -225,6 +227,25 @@ export const qualifiesForHighScore = (score: number, list: HighScore[]) =>
   score > 0 && (list.length < HIGH_SCORE_LIMIT || score > list[list.length - 1].score)
 
 export const insertHighScore = (list: HighScore[], entry: HighScore) => rankHighScores([...list, entry])
+
+/**
+ * Points for one round. Single-answer rounds are all or nothing; a "both" round
+ * gives half a point per half named, so naming one source still counts.
+ */
+export const roundCredit = (target: GuessTarget, logoOk: boolean, colorsOk: boolean): number =>
+  target === 'both' ? (logoOk ? 0.5 : 0) + (colorsOk ? 0.5 : 0) : (target === 'colors' ? colorsOk : logoOk) ? 1 : 0
+
+/** Score for display: 7.5 → "7½", 0.5 → "½". */
+export const formatScore = (n: number) => {
+  const whole = Math.floor(n)
+  return n - whole >= 0.5 ? `${whole || ''}½` : String(whole)
+}
+
+/** Score for screen readers: 7.5 → "7 and a half". */
+export const spokenScore = (n: number) => {
+  const whole = Math.floor(n)
+  return n - whole >= 0.5 ? (whole ? `${whole} and a half` : 'a half') : String(whole)
+}
 
 export function loadGameMode(): GameMode {
   const m = safeGet(LS.gameMode)
@@ -321,6 +342,7 @@ const nextVoiceClip = (id: VoiceClipId) => {
 
 const VOICE_SCORE_MAX = 20
 const VOICE_GAME_OVER = '/voice/game-over.wav'
+const VOICE_AND_A_HALF = '/voice/and-a-half.wav'
 
 let voicePlayer: HTMLAudioElement | null = null
 let scoreBlobUrl: string | null = null
@@ -373,15 +395,21 @@ export function speak(id: VoiceClipId) {
   playSrc(nextVoiceClip(id))
 }
 
-/** Announce the final score as one joined wav: “You scored N” + “out of M”. */
+/**
+ * Announce the final score as one joined wav: “You scored N” + “out of M”, with
+ * “and a half” between them for a half-point score. If a half-point score can't
+ * be joined, the generic game-over line plays rather than a truncated number.
+ */
 export function speakScore(score: number, total: number) {
-  const s = Math.round(score)
+  const s = Math.floor(score)
+  const half = score - s >= 0.5
   const t = Math.round(total)
   if (s < 0 || t < 1 || s > VOICE_SCORE_MAX || t > VOICE_SCORE_MAX) {
     playSrc(VOICE_GAME_OVER)
     return
   }
-  void playJoined([`/voice/you-scored-${s}.wav`, `/voice/out-of-${t}.wav`])
+  if (half) void playJoined([`/voice/you-scored-${s}.wav`, VOICE_AND_A_HALF, `/voice/out-of-${t}.wav`], VOICE_GAME_OVER)
+  else void playJoined([`/voice/you-scored-${s}.wav`, `/voice/out-of-${t}.wav`])
 }
 
 const ascii = (buf: ArrayBuffer, off: number, n: number) =>
@@ -490,7 +518,7 @@ const loadWav = async (url: string) => {
   return buf
 }
 
-const playJoined = async (urls: string[]) => {
+const playJoined = async (urls: string[], fallback = urls[0]) => {
   if (!voiceSupported()) return
   const gen = ++speakGen
   try {
@@ -506,17 +534,17 @@ const playJoined = async (urls: string[]) => {
     void player.play().catch(() => {})
   } catch {
     if (gen !== speakGen) return
-    playSrc(urls[0])
+    playSrc(fallback)
   }
 }
 export const roundTarget = (r: Round, fallback: GuessTarget): GuessTarget => r.g ?? fallback
 export const guessPrompt = (t: GuessTarget) => (t === 'both' ? 'Guess the Logo and the Colors!' : t === 'colors' ? 'Guess the Colors!' : 'Guess the Logo!')
 /** What one entry of a collection is called in search and result labels. */
 export const entryNoun = (league: League) =>
-  league === 'APP' ? 'app' : league === 'FOOD' || league === 'BRAND' ? 'brand' : league === 'SOCCER' ? 'club' : 'team'
+  league === 'APP' ? 'app' : league === 'TV' ? 'channel' : league === 'FOOD' || league === 'BRAND' || league === 'CAR' ? 'brand' : league === 'SOCCER' ? 'club' : 'team'
 /**
  * Where a team plays: the league label for pro teams and fast food, the conference for college and high school,
- * the domestic league for soccer clubs outside "Rest of World", the type for brands and apps.
+ * the domestic league for soccer clubs outside "Rest of World", the type for brands, apps, channels and cars.
  */
 export const teamHint = (t: Team) =>
   t.league === 'COL' || t.league === 'HS' || (t.league === 'SOCCER' && t.conference !== 'Rest of World')
@@ -525,7 +553,11 @@ export const teamHint = (t: Team) =>
       ? `${t.conference} brand`
       : t.league === 'APP'
         ? `${t.conference} app`
-        : LEAGUES[t.league].label
+        : t.league === 'TV'
+          ? `${t.conference} channel`
+          : t.league === 'CAR'
+            ? `${t.conference} car`
+            : LEAGUES[t.league].label
 /** Hint lines for a round, one for the logo team and one for the colors team. */
 export const roundHints = (r: Round): [string, string] => [
   `Logo: ${teamHint(findTeam(r.o)!)}`,
@@ -547,6 +579,8 @@ export const TEAM_POOLS: TeamPool[] = [
   { id: 'Fast Food', label: LEAGUES.FOOD.label, match: (t) => t.league === 'FOOD' },
   { id: 'Brands', label: LEAGUES.BRAND.label, match: (t) => t.league === 'BRAND' },
   { id: 'Apps', label: LEAGUES.APP.label, match: (t) => t.league === 'APP' },
+  { id: 'TV', label: LEAGUES.TV.label, match: (t) => t.league === 'TV' },
+  { id: 'Cars', label: LEAGUES.CAR.label, match: (t) => t.league === 'CAR' },
   ...LEAGUES.COL.conferences.map((c) => ({ id: c, label: c, match: (t: Team) => t.league === 'COL' && t.conference === c })),
   ...LEAGUES.HS.conferences.map((c) => ({ id: c, label: c, match: (t: Team) => t.league === 'HS' && t.conference === c })),
 ]

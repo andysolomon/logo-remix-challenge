@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Validate and rebuild only the fast-food or brand entries; preserve all other data.
 
-Usage: python3 scripts/build_brand_teams.py --league FOOD|BRAND [--dry-run]
+Usage: python3 scripts/build_brand_teams.py --league FOOD|BRAND|APP|TV|CAR [--dry-run]
 """
 import argparse
 import hashlib

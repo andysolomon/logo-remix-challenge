@@ -1,11 +1,14 @@
 import { useCallback, useEffect, useRef, useState, type FormEvent, type KeyboardEvent } from 'react'
-import { findTeam, fullName, roundHints, roundTarget, speak, speakScore, stopSpeak, isCorrectGuess, insertHighScore, qualifiesForHighScore, INITIALS_LENGTH, INITIALS_ALPHABET, type GameMode, type GuessTarget, type HighScore, type Round, type TimerSeconds } from '../lib/teams'
+import { findTeam, formatScore, fullName, roundCredit, roundHints, spokenScore, roundTarget, speak, speakScore, stopSpeak, isCorrectGuess, insertHighScore, qualifiesForHighScore, INITIALS_LENGTH, INITIALS_ALPHABET, type GameMode, type GuessTarget, type HighScore, type Round, type TimerSeconds } from '../lib/teams'
 import { Logo } from './Logo'
 import { GuessInput } from './GuessInput'
 
 type Phase = 'intro' | 'question' | 'reveal' | 'initials' | 'results'
-type Kind = 'correct' | 'wrong' | 'timeout'
+// 'half': a "both" round with exactly one source named, worth half a point.
+type Kind = 'correct' | 'half' | 'wrong' | 'timeout'
 const REVEAL_MS = 1700
+const REVEAL_TITLE: Record<Kind, string> = { correct: 'Correct', half: 'Half right', wrong: 'Not quite', timeout: "Time's up" }
+const REVEAL_ICON: Record<Kind, string> = { correct: '✓', half: '½', wrong: '✕', timeout: '!' }
 const TICK_MS = 100
 /** Mouse/trackpad devices get the caret handed to them; touch devices don't. */
 const prefersAutoFocus = () =>
@@ -32,7 +35,7 @@ export function PlayMode({ deck, timer, gameMode, guessTarget, voice, highScores
   const [guess, setGuess] = useState('')
   // Second answer for "both" rounds: the team whose colors the logo wears.
   const [guess2, setGuess2] = useState('')
-  // Per-part verdict for "both" rounds in type mode, shown on the reveal (host mode judges as a whole).
+  // Per-half verdict for "both" rounds, shown on the reveal.
   const [parts, setParts] = useState<[boolean, boolean] | null>(null)
   // "Both" rounds: verdict on the logo answer once the player presses Enter on it, before moving on.
   const [logoChecked, setLogoChecked] = useState<boolean | null>(null)
@@ -40,7 +43,9 @@ export function PlayMode({ deck, timer, gameMode, guessTarget, voice, highScores
   const [hostParts, setHostParts] = useState<[boolean | null, boolean | null]>([null, null])
   const input2Ref = useRef<HTMLInputElement>(null)
   const [kind, setKind] = useState<Kind>('correct')
-  const [results, setResults] = useState<boolean[]>([])
+  const [credit, setCredit] = useState(0)
+  // Points earned per round played: 1, ½ or 0.
+  const [results, setResults] = useState<number[]>([])
   // Slot-machine initials: one alphabet index per reel, plus which reel has focus.
   const [reels, setReels] = useState<number[]>(() => Array(INITIALS_LENGTH).fill(0))
   const [reelIdx, setReelIdx] = useState(0)
@@ -84,7 +89,7 @@ export function PlayMode({ deck, timer, gameMode, guessTarget, voice, highScores
         if (t <= 0) {
           window.clearInterval(iv.current)
           setTimeLeft(0)
-          revealRef.current('timeout')
+          timeUpRef.current()
         } else setTimeLeft(Math.round(t * 10) / 10)
       }, TICK_MS)
     },
@@ -92,16 +97,16 @@ export function PlayMode({ deck, timer, gameMode, guessTarget, voice, highScores
   )
 
   const reveal = useCallback(
-    (k: Kind) => {
+    (k: Kind, credit: number) => {
       if (phaseRef.current !== 'question') return
       phaseRef.current = 'reveal'
       window.clearInterval(iv.current)
-      const ok = k === 'correct'
       setKind(k)
+      setCredit(credit)
       setPhase('reveal')
-      setScore((s) => s + (ok ? 1 : 0))
-      setResults((r) => [...r, ok])
-      if (voice) speak(k)
+      setScore((s) => s + credit)
+      setResults((r) => [...r, credit])
+      if (voice) speak(k === 'half' ? 'wrong' : k)
       const next = rIdxRef.current + 1
       tm.current = window.setTimeout(() => {
         if (next >= deck.length) finishRef.current()
@@ -110,8 +115,6 @@ export function PlayMode({ deck, timer, gameMode, guessTarget, voice, highScores
     },
     [deck.length, beginRound, voice],
   )
-  const revealRef = useRef(reveal)
-  revealRef.current = reveal
 
   const finish = useCallback(() => {
     if (phaseRef.current !== 'reveal') return
@@ -190,24 +193,46 @@ export function PlayMode({ deck, timer, gameMode, guessTarget, voice, highScores
     const c = findTeam(deck[rIdx].c)!
     if (target === 'both') {
       if (!guess.trim() && !guess2.trim()) return
-      const p: [boolean, boolean] = [logoChecked ?? isCorrectGuess(guess, o), isCorrectGuess(guess2, c)]
-      setParts(p)
-      reveal(p[0] && p[1] ? 'correct' : 'wrong')
+      revealBoth(logoChecked ?? isCorrectGuess(guess, o), isCorrectGuess(guess2, c))
       return
     }
     if (!guess.trim()) return
-    reveal(isCorrectGuess(guess, target === 'colors' ? c : o) ? 'correct' : 'wrong')
+    revealSingle(isCorrectGuess(guess, target === 'colors' ? c : o))
   }
 
-  // Host mode, "both" rounds: each half gets its own verdict; the point needs both.
+  const revealSingle = (ok: boolean) => reveal(ok ? 'correct' : 'wrong', ok ? 1 : 0)
+  // "Both" rounds score half a point per half; one right is a "half" verdict.
+  const revealBoth = (logoOk: boolean, colorsOk: boolean) => {
+    const pts = roundCredit('both', logoOk, colorsOk)
+    setParts([logoOk, colorsOk])
+    reveal(pts === 1 ? 'correct' : pts > 0 ? 'half' : 'wrong', pts)
+  }
+
+  // Time ran out. On a "both" round, a half that was already locked in still
+  // counts: the logo answer once Enter graded it, or a half the host marked correct.
+  const timeUp = () => {
+    if (phaseRef.current !== 'question') return
+    if (target !== 'both') {
+      reveal('timeout', 0)
+      return
+    }
+    const logoOk = (gameMode === 'host' ? hostParts[0] : logoChecked) === true
+    const colorsOk = gameMode === 'host' && hostParts[1] === true
+    const graded = gameMode === 'host' ? hostParts.some((v) => v !== null) : logoChecked !== null
+    if (graded) setParts([logoOk, colorsOk])
+    reveal('timeout', roundCredit('both', logoOk, colorsOk))
+  }
+  const timeUpRef = useRef(timeUp)
+  timeUpRef.current = timeUp
+
+  // Host mode, "both" rounds: each half gets its own verdict, worth half a point.
   const setHostPart = (i: 0 | 1, ok: boolean) =>
     setHostParts((hp) => (i === 0 ? [ok, hp[1]] : [hp[0], ok]))
   const lockHostVerdict = () => {
     if (phaseRef.current !== 'question') return
     const [a, b] = hostParts
     if (a === null || b === null) return
-    setParts([a, b])
-    reveal(a && b ? 'correct' : 'wrong')
+    revealBoth(a, b)
   }
 
   // Enter on the logo field grades that answer, locks it in, and hands focus to the colors field.
@@ -230,7 +255,7 @@ export function PlayMode({ deck, timer, gameMode, guessTarget, voice, highScores
   const introSub = targets.size > 1
     ? 'Rounds vary: some want the name behind the logo, some want whose colors it wears, some want both. Read each prompt.'
     : targets.has('both')
-      ? 'Name the team or brand behind the logo and whose colors it wears. Both right scores the point.'
+      ? 'Name the team or brand behind the logo and whose colors it wears. Each one you get is worth half a point.'
       : targets.has('colors')
         ? 'Ignore the logo. Name the team or brand whose colors it wears.'
         : 'Ignore the colors. Name the team or brand behind the logo.'
@@ -244,13 +269,13 @@ export function PlayMode({ deck, timer, gameMode, guessTarget, voice, highScores
     target === 'both' ? 'Name the logo and color sources.' : target === 'colors' ? 'Name the color source.' : 'Name the logo source.'
   const revealStatus =
     phase === 'reveal' && ot && ct
-      ? `${kind === 'correct' ? 'Correct' : kind === 'wrong' ? 'Not quite' : "Time's up"}. ${
+      ? `${REVEAL_TITLE[kind]}. ${
           target === 'both'
             ? `Logo: ${fullName(ot)}. Colors: ${fullName(ct)}.`
             : `${fullName(target === 'colors' ? ct : ot)}.`
-        }${kind === 'correct' ? ' Plus one.' : ''}`
+        }${credit >= 1 ? ' Plus one.' : credit > 0 ? ' Plus a half.' : ''}`
       : ''
-  const liveStatus = phase === 'question' && ot ? `Round ${rIdx + 1} of ${deck.length}. Score ${score}. ${promptStatus}` : revealStatus
+  const liveStatus = phase === 'question' && ot ? `Round ${rIdx + 1} of ${deck.length}. Score ${spokenScore(score)}. ${promptStatus}` : revealStatus
 
   return (
     <div className="play">
@@ -284,7 +309,7 @@ export function PlayMode({ deck, timer, gameMode, guessTarget, voice, highScores
               ROUND {rIdx + 1} / {deck.length}
             </div>
             <div className="q-right">
-              <div>SCORE {score}</div>
+              <div>SCORE {formatScore(score)}</div>
               <button className="quit-btn" aria-label="End game" onClick={quit}>
                 ✕
               </button>
@@ -389,10 +414,10 @@ export function PlayMode({ deck, timer, gameMode, guessTarget, voice, highScores
                 <>
                   <div className="host-hint">Shout the name — the host taps the verdict</div>
                   <div className="host-row">
-                    <button className="btn-correct" disabled={questionLocked} onClick={() => reveal('correct')}>
+                    <button className="btn-correct" disabled={questionLocked} onClick={() => revealSingle(true)}>
                       ✓ CORRECT
                     </button>
-                    <button className="btn-wrong" disabled={questionLocked} onClick={() => reveal('wrong')}>
+                    <button className="btn-wrong" disabled={questionLocked} onClick={() => revealSingle(false)}>
                       ✕ INCORRECT
                     </button>
                   </div>
@@ -405,8 +430,8 @@ export function PlayMode({ deck, timer, gameMode, guessTarget, voice, highScores
 
       {phase === 'reveal' && ot && ct && (
         <div className="reveal pop">
-          <div className={`reveal-icon k-${kind}`}>{kind === 'correct' ? '✓' : kind === 'wrong' ? '✕' : '!'}</div>
-          <div className={`reveal-title k-${kind}`}>{kind === 'correct' ? 'CORRECT' : kind === 'wrong' ? 'NOT QUITE' : "TIME'S UP"}</div>
+          <div className={`reveal-icon k-${kind}`}>{REVEAL_ICON[kind]}</div>
+          <div className={`reveal-title k-${kind}`}>{REVEAL_TITLE[kind].toUpperCase()}</div>
           {target === 'both' ? (
             <div className="reveal-pair">
               {([[ot, 'LOGO'], [ct, 'COLORS']] as const).map(([t, lb], i) => (
@@ -431,7 +456,7 @@ export function PlayMode({ deck, timer, gameMode, guessTarget, voice, highScores
               </div>
             </>
           )}
-          {kind === 'correct' && <div className="plus-one">+1</div>}
+          {credit > 0 && <div className={`plus-one${credit < 1 ? ' half' : ''}`}>+{formatScore(credit)}</div>}
         </div>
       )}
 
@@ -439,7 +464,7 @@ export function PlayMode({ deck, timer, gameMode, guessTarget, voice, highScores
         <form className="initials rise" onSubmit={submitInitials}>
           <div className="new-high">NEW HIGH SCORE</div>
           <div className="final-score">
-            {score} / {deck.length}
+            {formatScore(score)} / {deck.length}
           </div>
           <div id="initials-label" className="final-label">ENTER YOUR INITIALS</div>
           <div
@@ -483,7 +508,7 @@ export function PlayMode({ deck, timer, gameMode, guessTarget, voice, highScores
         <div className="results rise">
           <div className="final-label">FINAL SCORE</div>
           <div className="final-score">
-            {score} / {deck.length}
+            {formatScore(score)} / {deck.length}
           </div>
           {entryDate != null && <div className="new-high">NEW HIGH SCORE</div>}
           {highScores.length > 0 && (
@@ -492,20 +517,20 @@ export function PlayMode({ deck, timer, gameMode, guessTarget, voice, highScores
                 <li key={`${h.date}-${i}`} className={`hs-row${h.date === entryDate ? ' mine' : ''}`}>
                   <span className="hs-rank">{String(i + 1).padStart(2, '0')}</span>
                   <span className="hs-initials">{h.initials}</span>
-                  <span className="hs-score">{h.score}</span>
+                  <span className="hs-score">{formatScore(h.score)}</span>
                 </li>
               ))}
             </ol>
           )}
           <div className="recap">
-            {results.map((ok, i) => {
+            {results.map((pts, i) => {
               const r = deck[i]
               if (!r) return null
               const o = findTeam(r.o)!
               const c = findTeam(r.c)!
               return (
                 <div key={i} className="recap-row">
-                  <div className={`recap-mark ${ok ? 'ok' : 'no'}`}>{ok ? '✓' : '✕'}</div>
+                  <div className={`recap-mark ${pts >= 1 ? 'ok' : pts > 0 ? 'half' : 'no'}`}>{pts >= 1 ? '✓' : pts > 0 ? '½' : '✕'}</div>
                   <div className="recap-thumb">
                     <Logo team={o} palette={c.palette} perm={r.v} variantId={r.l} />
                   </div>

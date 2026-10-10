@@ -94,6 +94,8 @@ WORDS = (
 
 def all_clips() -> list[tuple[str, str]]:
     clips = list(GUESS) + list(VERDICT)
+    # Joined between you-scored-N and out-of-M for half-point (partial credit) scores.
+    clips.append(("and-a-half.wav", "and a half"))
     for n, word in enumerate(WORDS):
         clips.append((f"you-scored-{n}.wav", f"You scored {word}"))
         if n >= 1:

@@ -1,0 +1,3445 @@
+{
+  "assets": [
+    {
+      "id": "CAR-ALFA",
+      "league": "CAR",
+      "conference": "Italian",
+      "region": "Alfa Romeo",
+      "name": "",
+      "abbr": "ALFA",
+      "aliases": [
+        "Alfa",
+        "Alfa Romeo Automobiles",
+        "ALFA"
+      ],
+      "palette": [
+        "#D50D16",
+        "#157031",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Cross and serpent badge",
+          "sourceUrl": "https://cdn.freebiesupply.com/logos/large/2x/alfa-romeo-4-logo-svg-vector.svg",
+          "sourcePage": "https://freebiesupply.com/logos/alfa-romeo-logo-4/",
+          "sourceSha256": "5d9dc7c85736bef3e15a24c2edf4429b8c1431cfcb41bcd7ca47a2e0d1784f2a",
+          "ops": {
+            "removeNodes": [
+              "10"
+            ],
+            "viewBox": "127.56 127.561 1870.88 1870.88"
+          },
+          "path": "/logos/svg/cars/alfa.svg",
+          "format": "svg",
+          "colors": [
+            "#1E1D51",
+            "#FFF38D",
+            "#9D0D16",
+            "#FFFFFF",
+            "#53EEEF",
+            "#2F7FBE",
+            "#225D8B",
+            "#D50D16",
+            "#880D16",
+            "#520D16",
+            "#F8FFBF",
+            "#F8E45E",
+            "#F8D35E",
+            "#EE8E0A",
+            "#157031",
+            "#0F5324"
+          ],
+          "sourcePalette": [
+            "#D50D16",
+            "#157031",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "75d176b8f6d7ddedf6fe819a61fb8b6ff86ff113503a8c92b5843243d6339d23"
+        },
+        {
+          "id": "monochrome",
+          "label": "Monochrome cross and serpent",
+          "sourceUrl": "https://iconape.com/wp-content/files/zi/33862/svg/alfa-romeo-30845.svg",
+          "sourcePage": "https://iconape.com/alfa-romeo-30845-logo-icon-svg-png.html",
+          "sourceSha256": "70a752f07b021728a9a3edc3ac897f0b8d0b7a5fdcba9726bec4a714bc51689d",
+          "ops": {
+            "removeNodes": [
+              "0"
+            ],
+            "viewBox": "6.794 6.834 179.167 179.087"
+          },
+          "path": "/logos/svg/cars/alternates/alfa-monochrome.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#157031",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "b01150be74c818f2e1ed7f793d60acf90acd1ed0a138b4723cc884481117b928"
+        }
+      ]
+    },
+    {
+      "id": "CAR-ASTON",
+      "league": "CAR",
+      "conference": "British",
+      "region": "Aston Martin",
+      "name": "",
+      "abbr": "ASTON",
+      "aliases": [
+        "Aston",
+        "Aston Martin Lagonda",
+        "AM"
+      ],
+      "palette": [
+        "#004F32",
+        "#1A1A1A",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Wings with green banner",
+          "sourceUrl": "https://iconape.com/wp-content/files/wm/32840/svg/aston-martin-2.svg",
+          "sourcePage": "https://iconape.com/aston-martin-logo-icon-svg-png.html",
+          "sourceSha256": "8949b7221b0999c9ba4b4ae65afb3444ceae717bc65fe8039d77c44ff9b4cebb",
+          "ops": {
+            "removeNodes": [
+              "5",
+              "6"
+            ],
+            "viewBox": "-25.552 -25.583 1330.304 337.696"
+          },
+          "path": "/logos/svg/cars/aston.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#FFFFFF",
+            "#339966",
+            "#004F32"
+          ],
+          "sourcePalette": [
+            "#1A744C",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "fcad0a6caa8f8c30a87697ce0858dcadab48cf71ee57830e48645a883facdecd"
+        }
+      ]
+    },
+    {
+      "id": "CAR-AUDI",
+      "league": "CAR",
+      "conference": "German",
+      "region": "Audi",
+      "name": "",
+      "abbr": "AUDI",
+      "aliases": [
+        "Audi AG",
+        "Auto Union"
+      ],
+      "palette": [
+        "#BB0A30",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Four rings",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/9/92/Audi-Logo_2016.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Audi-Logo_2016.svg",
+          "sourceSha256": "0277502116b0ef3486e9b5002bbf45dfcabf7246614a84744ac3ff25c3e77d38",
+          "ops": {
+            "viewBox": "-5.292 -5.292 275.167 104.001"
+          },
+          "path": "/logos/svg/cars/audi.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "f663f346b4a2716c8488b09668debcc97117ba6802981fdb979514f759bb48cf"
+        },
+        {
+          "id": "engraved",
+          "label": "Engraved chrome rings",
+          "sourceUrl": "https://brandeps.com/logo-download/a/audi-logo-vector-01.svg",
+          "sourcePage": "https://brandeps.com/logo/a/audi-01",
+          "sourceSha256": "240bd07f6a668096923edc71d350fada9ccbb67a97a20b0f045aefaec058ad6e",
+          "ops": {
+            "removeNodes": [
+              "1/34",
+              "1/35",
+              "1/36",
+              "1/37"
+            ],
+            "viewBox": "-10.24 89.09 532.459 201.579"
+          },
+          "path": "/logos/svg/cars/alternates/audi-engraved.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "477e896ec4335099f20d96ee6b927323d7b4f8e39e0ce3818560e544360d6357"
+        }
+      ]
+    },
+    {
+      "id": "CAR-BENTLEY",
+      "league": "CAR",
+      "conference": "British",
+      "region": "Bentley",
+      "name": "",
+      "abbr": "BENTLEY",
+      "aliases": [
+        "Bentley Motors"
+      ],
+      "palette": [
+        "#576D5B",
+        "#333333",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Winged B",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Special:FilePath/Bentley_logo_2.svg",
+          "sourcePage": "https://en.wikipedia.org/wiki/File:Bentley_logo_2.svg",
+          "sourceSha256": "170bbab80b34e5e99e43ff8803fb597b3f45fedfd1baad751f435a7e154b1a54",
+          "ops": {
+            "viewBox": "-25.32 -25.32 1316.64 460.64"
+          },
+          "path": "/logos/svg/cars/bentley.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "5adf483b3b6b515e222b43def3f5f0d8e8ba316e8754d3ddc7808ff4dacd59c5"
+        },
+        {
+          "id": "enamel-badge",
+          "label": "Green enamel badge",
+          "sourceUrl": "https://logowik.com/bentley-motors-in-shape-logo-vector-54047.html",
+          "sourcePage": "https://logowik.com/bentley-motors-in-shape-logo-vector-54047.html",
+          "sourceSha256": "bada1072fb288e31e374f867517790d8f778a679f5d8c888538163fc5105ced1",
+          "downloadForm": "logowik",
+          "ops": {
+            "removeNodes": [
+              "0"
+            ],
+            "viewBox": "-0.907 53.503 194.571 85.751"
+          },
+          "path": "/logos/svg/cars/alternates/bentley-enamel-badge.svg",
+          "format": "svg",
+          "colors": [
+            "#F2DDA7",
+            "#576D5B",
+            "#D0D1D3",
+            "#808183",
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#6C776F",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "afbc33ebfdf1925ce4f40a97401f4826ffe563e5ff4e67dbf83388317f31b601"
+        }
+      ]
+    },
+    {
+      "id": "CAR-BMW",
+      "league": "CAR",
+      "conference": "German",
+      "region": "BMW",
+      "name": "",
+      "abbr": "BMW",
+      "aliases": [
+        "Bayerische Motoren Werke",
+        "Beemer",
+        "Bimmer"
+      ],
+      "palette": [
+        "#0066B1",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Chrome roundel quarters",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/4/44/BMW.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:BMW.svg",
+          "sourceSha256": "b2226efc7bfb81d6b4f6d3002205ff2d2da2e5eb75455694dcd9645ba6e460a7",
+          "ops": {
+            "removeNodes": [
+              "25",
+              "26",
+              "27",
+              "28",
+              "29",
+              "30"
+            ],
+            "viewBox": "-20.274 -20.274 1054.266 1054.245"
+          },
+          "path": "/logos/svg/cars/bmw.svg",
+          "format": "svg",
+          "colors": [
+            "#333333",
+            "#C2D7E8",
+            "#12404F",
+            "#DFF4FF",
+            "#D6EAF5",
+            "#BFD0D9",
+            "#98A5AC",
+            "#646B6E",
+            "#2B2B2B",
+            "#FFFFFF",
+            "#A8A8A8",
+            "#4F4F4F",
+            "#161616",
+            "#000000",
+            "#BED0D9",
+            "#96A4AC",
+            "#5F686D",
+            "#1A1D1E",
+            "#FDFDFD",
+            "#F6F6F6",
+            "#E9E9E9",
+            "#D7D7D7",
+            "#BFBFBF",
+            "#A2A2A2",
+            "#808080",
+            "#575757",
+            "#141414",
+            "#E6E6E6",
+            "#D6D6D6",
+            "#ADADAD",
+            "#6C6C6C",
+            "#121212",
+            "#EAEAEA",
+            "#D8D8D8",
+            "#C2C2C2",
+            "#A6A6A6",
+            "#848484",
+            "#5F5F5F",
+            "#404040",
+            "#E0EFF7",
+            "#B2D9EC",
+            "#8BC5E2",
+            "#6BB5DA",
+            "#52A9D4",
+            "#41A0CF",
+            "#369BCD",
+            "#3399CC",
+            "#3396C8",
+            "#328EBC",
+            "#3180A8",
+            "#2F6D8C",
+            "#2D5468",
+            "#2A373D",
+            "#292929",
+            "#F0F4FF",
+            "#EBEFF9",
+            "#DCE0EA",
+            "#C4C7CF",
+            "#A2A4AB",
+            "#76777C",
+            "#414243",
+            "#BACFE1",
+            "#A4BACD",
+            "#8098AC",
+            "#4E697F",
+            "#3A566D",
+            "#E8EBF6",
+            "#D1D4DD",
+            "#ABAEB5",
+            "#78797D",
+            "#363637",
+            "#D9DEF0",
+            "#D4DAEC",
+            "#C7CFE2",
+            "#B0BCD1",
+            "#90A1B8",
+            "#677F99",
+            "#355674",
+            "#173D5D"
+          ],
+          "sourcePalette": [
+            "#3180A8",
+            "#24292A",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "cefa229b0d104beda4d049d11119b17e15c97d17b09bb0835cce14b52fb69c5e"
+        },
+        {
+          "id": "2020-flat",
+          "label": "2020 flat roundel",
+          "sourceUrl": "https://logowik.com/bmw-2020-new-logo-vector-svg-pdf-ai-eps-cdr-free-download-4256.html",
+          "sourcePage": "https://logowik.com/bmw-2020-new-logo-vector-svg-pdf-ai-eps-cdr-free-download-4256.html",
+          "sourceSha256": "2e468d848edc471b0547e8bac521164bb2b8acae79ca3717b6df9a93ce206366",
+          "downloadForm": "logowik",
+          "ops": {
+            "removeNodes": [
+              "3/0/0/0/0/2"
+            ],
+            "viewBox": "16.74 4.14 44.72 44.72"
+          },
+          "path": "/logos/svg/cars/alternates/bmw-2020-flat.svg",
+          "format": "svg",
+          "colors": [
+            "#6F6F6F",
+            "#0066B1"
+          ],
+          "sourcePalette": [
+            "#0066B1",
+            "#6F6F6F",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "1d48f95ab67e11ad78c00cbb9fb52b4cd65e237bd0c347e742f34e4b09873c4a"
+        },
+        {
+          "id": "1917",
+          "label": "1917 gold-ringed roundel",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c9/BMW_1916-1933_Logo.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:BMW_1916-1933_Logo.svg",
+          "sourceSha256": "2d2402539d23d119d7f81f9cf80be2905ff35b029fcbadd3859d2871b6df2b17",
+          "ops": {
+            "removeNodes": [
+              "3/5",
+              "3/6",
+              "3/7"
+            ],
+            "viewBox": "-5.292 -5.292 275.167 275.167"
+          },
+          "path": "/logos/svg/cars/alternates/bmw-1917.svg",
+          "format": "svg",
+          "colors": [
+            "#DDAD65",
+            "#000000",
+            "#FFFFFF",
+            "#2557F1"
+          ],
+          "sourcePalette": [
+            "#2557F1",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "d5769a120f27edd69a18593b219819e5a0f8f6f6d643af28d09e1d4e572c1591"
+        }
+      ]
+    },
+    {
+      "id": "CAR-CADILLAC",
+      "league": "CAR",
+      "conference": "American",
+      "region": "Cadillac",
+      "name": "",
+      "abbr": "CADILLAC",
+      "aliases": [
+        "Caddy",
+        "Caddie"
+      ],
+      "palette": [
+        "#000000",
+        "#A6192E",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Color crest",
+          "sourceUrl": "https://brandeps.com/logo-download/c/cadillac-logo-vector-01.svg",
+          "sourcePage": "https://brandeps.com/logo/c/cadillac-01",
+          "sourceSha256": "26d16ef206256442f5e414205aa91b131bea1fa131f8d320aa1d8008f9e9fd9c",
+          "ops": {
+            "removeNodes": [
+              "1/0",
+              "1/1",
+              "1/2"
+            ],
+            "viewBox": "25.023 70.638 495.68 204.735"
+          },
+          "path": "/logos/svg/cars/cadillac.svg",
+          "format": "svg",
+          "colors": [
+            "#231F20",
+            "#656363",
+            "#FFFFFF",
+            "#1C1B1A",
+            "#D2B887",
+            "#A22A2E",
+            "#B0272D",
+            "#AC262C",
+            "#A12328",
+            "#8E1F22",
+            "#731919",
+            "#6B1716",
+            "#F7F8FA",
+            "#F5F6F9",
+            "#EEF0F3",
+            "#E3E5E9",
+            "#D2D6DB",
+            "#BCC2C8",
+            "#A1AAB2",
+            "#A0A9B1",
+            "#ACB7CD",
+            "#A0ABBE",
+            "#848F9A",
+            "#E1E5ED",
+            "#D8DCE5",
+            "#BFC6CF",
+            "#98A1AB",
+            "#DADFE7",
+            "#C0C6CF",
+            "#AAB2BB",
+            "#99A2AC",
+            "#8D97A1",
+            "#86919B",
+            "#CAD1E0",
+            "#C6CEDC",
+            "#687686",
+            "#435363",
+            "#242123",
+            "#28282B",
+            "#2F3339",
+            "#38424D",
+            "#B5BCC5",
+            "#D5DAE2",
+            "#F3F4F7",
+            "#EBEEF1",
+            "#DFE2E6",
+            "#CCD1D7",
+            "#B5BCC3",
+            "#75828E",
+            "#4E5E6D",
+            "#0043A6",
+            "#0141A3",
+            "#063C9A",
+            "#0D348A",
+            "#172775",
+            "#1C226B",
+            "#7E6528",
+            "#957C2E",
+            "#A88E33",
+            "#B39936",
+            "#B79D37",
+            "#FCFCFC",
+            "#F2F1F1",
+            "#E0E0E0",
+            "#C8C7C8",
+            "#A9A8A8",
+            "#838181",
+            "#575455",
+            "#242021",
+            "#F2F2F2",
+            "#E2E1E1",
+            "#CAC9C9",
+            "#ACABAB",
+            "#878585",
+            "#5B5859",
+            "#2A2627",
+            "#FBFBFB",
+            "#F0F0F0",
+            "#DDDDDD",
+            "#C3C2C2",
+            "#A1A0A0",
+            "#787576",
+            "#474445",
+            "#E7E6E7",
+            "#DCDBDC",
+            "#BFBEBE",
+            "#B4B3B3",
+            "#BFC7D5",
+            "#A2ACBA",
+            "#727F8F",
+            "#40505E",
+            "#3A4550",
+            "#2F3239",
+            "#3F4E5C",
+            "#EFEFEF",
+            "#DBDADA",
+            "#9A9999",
+            "#6E6B6C",
+            "#3A3738",
+            "#F3F3F3",
+            "#E4E3E4",
+            "#CECECE",
+            "#B2B1B1",
+            "#908E8F",
+            "#686565",
+            "#3A3637",
+            "#D1D7DF",
+            "#B6BDC6",
+            "#A0A9B2",
+            "#909AA4",
+            "#87929C",
+            "#A8B3C9",
+            "#8996A9",
+            "#728091",
+            "#616F7F",
+            "#576675",
+            "#546371",
+            "#E4E4E4",
+            "#DCDCDC",
+            "#CFCECE",
+            "#BBBABB"
+          ],
+          "sourcePalette": [
+            "#1C1B1A",
+            "#A12328",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "53c4b97d75d28a154ef27df11f9ae3cbdefb2fc658aa11897d2f09418a431d19"
+        },
+        {
+          "id": "2021-outline",
+          "label": "2021 outline crest",
+          "sourceUrl": "https://api.iconify.design/simple-icons/cadillac.svg?color=%23000000",
+          "sourcePage": "https://simpleicons.org/?q=cadillac",
+          "sourceSha256": "a269334a8ea1c62913f3df3ead8821a77f5f08510d97a7f2e8cef54dafc3dea5",
+          "ops": {
+            "viewBox": "-0.48 6.826 24.96 10.348"
+          },
+          "path": "/logos/svg/cars/alternates/cadillac-2021-outline.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#A6192E",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "5977fb6e72d94d64cecbeabb5c209ec9b0be1c43445d3a69ecfd0cbc01df7ceb"
+        },
+        {
+          "id": "crowned-wreath",
+          "label": "Crowned wreath and crest",
+          "sourceUrl": "https://iconape.com/wp-content/files/lh/49092/svg/cadillac-1057.svg",
+          "sourcePage": "https://iconape.com/cadillac-1057-logo-icon-svg-png.html",
+          "sourceSha256": "8f148d81522673d7c7fd8dd67f40d68d44d75bc9804638a5a6bcd1f993621263",
+          "ops": {
+            "removeNodes": [
+              "0",
+              "11",
+              "12",
+              "13",
+              "14"
+            ],
+            "viewBox": "1.557 70.947 44.964 42.832"
+          },
+          "path": "/logos/svg/cars/alternates/cadillac-crowned-wreath.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#A6192E",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "4e6a689fab5eb7370d96cebb95e4ff696f415f03b09bc089f9ca022c77f4c250"
+        }
+      ]
+    },
+    {
+      "id": "CAR-CHEVY",
+      "league": "CAR",
+      "conference": "American",
+      "region": "Chevrolet",
+      "name": "",
+      "abbr": "CHEVY",
+      "aliases": [
+        "Chevy"
+      ],
+      "palette": [
+        "#D1A23A",
+        "#A7A9AC",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Gold bowtie",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Chevrolet-logo.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Chevrolet-logo.svg",
+          "sourceSha256": "99ff5246f93a4cb933e9130e3baf23089d3150fa9fed86579cebfb2bb91c95ad",
+          "ops": {
+            "removeNodes": [
+              "0/128",
+              "0/144",
+              "0/146",
+              "0/147",
+              "0/148",
+              "0/149",
+              "0/150",
+              "0/151",
+              "0/152",
+              "0/153",
+              "0/154"
+            ],
+            "viewBox": "-82.296 -82.287 4279.143 1664.802"
+          },
+          "path": "/logos/svg/cars/chevy.svg",
+          "format": "svg",
+          "colors": [
+            "#AAABAC",
+            "#ADAEB0",
+            "#B0B1B3",
+            "#B3B4B6",
+            "#B5B6B9",
+            "#B8B9BD",
+            "#BABCC0",
+            "#BDBFC3",
+            "#C0C2C6",
+            "#C3C5CA",
+            "#C6C8CD",
+            "#C9CCD1",
+            "#CBCFD4",
+            "#A7A8A9",
+            "#A5A5A6",
+            "#BBBCBF",
+            "#B8BABD",
+            "#CDA535",
+            "#D3B36B",
+            "#ADAEAF",
+            "#A4A5A5",
+            "#9F9F9F",
+            "#9C9D9B",
+            "#9F9F9E",
+            "#A2A3A2",
+            "#B4B6B8",
+            "#B6B7BA",
+            "#CCCED4",
+            "#D2B166",
+            "#CEA73C",
+            "#CFA93D",
+            "#D0AA43",
+            "#D2AD47",
+            "#D2B060",
+            "#D3AF4C",
+            "#D4B04F",
+            "#D1AF5B",
+            "#D6B254",
+            "#D7B459",
+            "#D1AE58",
+            "#D8B65C",
+            "#D1AD54",
+            "#D9B75F",
+            "#DAB962",
+            "#DBBA65",
+            "#D0AB4E",
+            "#DCBC69",
+            "#DDBD6D",
+            "#DFC073",
+            "#C6C8CE",
+            "#CFA946",
+            "#E1C379",
+            "#E3C57F",
+            "#A4A4A5",
+            "#E4C785",
+            "#B5B7B9",
+            "#B2B4B6"
+          ],
+          "sourcePalette": [
+            "#D5B359",
+            "#B4B5B8",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "d7b322944afb7452c19cdfa83161957692975ad33c0c9e7ffa7b733c384a9dc0"
+        },
+        {
+          "id": "sunburst-bowtie",
+          "label": "Sunburst bowtie",
+          "sourceUrl": "https://iconape.com/wp-content/files/eg/161700/svg/161700.svg",
+          "sourcePage": "https://iconape.com/chevy-truck-logo-logo-icon-svg-png.html",
+          "sourceSha256": "8d688f4a298e40df97f86ce0883b0827c6c7bd01f4e4accda82451b00f9bfcf9",
+          "ops": {
+            "keepNodes": [
+              "0/12-147"
+            ],
+            "viewBox": "8.873 80.58 174.614 70.763"
+          },
+          "path": "/logos/svg/cars/alternates/chevy-sunburst-bowtie.svg",
+          "format": "svg",
+          "colors": [
+            "#231F20",
+            "#FFFFFF",
+            "#E8AF10",
+            "#F2C64C"
+          ],
+          "sourcePalette": [
+            "#EDBA2E",
+            "#231F20",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "44ce8179abe3f803fb6dae14458c9408d0087d9f1b3ae6a86f9a071fcb6152d4"
+        },
+        {
+          "id": "2023-outline",
+          "label": "2023 outline bowtie",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Chevrolet_bowtie_2023.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Chevrolet_bowtie_2023.svg",
+          "sourceSha256": "3c44365f4ca7388345f3bc675373e6382508b46d2e510c6ad768acb792853e20",
+          "ops": {
+            "viewBox": "-1.88 -1.88 97.76 33.754"
+          },
+          "path": "/logos/svg/cars/alternates/chevy-2023-outline.svg",
+          "format": "svg",
+          "colors": [
+            "#262626"
+          ],
+          "sourcePalette": [
+            "#262626",
+            "#A7A9AC",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "9a357ca7c702e72214d14239419b305ba32e126ef58dfebd2adee0e26c9908b2"
+        }
+      ]
+    },
+    {
+      "id": "CAR-DODGE",
+      "league": "CAR",
+      "conference": "American",
+      "region": "Dodge",
+      "name": "",
+      "abbr": "DODGE",
+      "aliases": [
+        "Dodge Brothers"
+      ],
+      "palette": [
+        "#CD3029",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Ram head shield",
+          "sourceUrl": "https://api.iconify.design/cbi/ram.svg?color=%23CD3029",
+          "sourcePage": "https://icon-sets.iconify.design/cbi/ram/",
+          "sourceSha256": "fd0c082b7f52c9f55a24ec0b595f9c71e7891c01c89dafbd4d6c02cd3d70e1f3",
+          "ops": {
+            "viewBox": "1.874 1.6 20.252 20.8"
+          },
+          "path": "/logos/svg/cars/dodge.svg",
+          "format": "svg",
+          "colors": [
+            "#CD3029"
+          ],
+          "sourcePalette": [
+            "#CD3029",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "babd9fbe8d4acafab81d4bf0bb463dd6ca3ec5af9812698003ab12465ae5987c"
+        },
+        {
+          "id": "racing-stripes",
+          "label": "Racing stripes",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Dodge_logo.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Dodge_logo.svg",
+          "sourceSha256": "7d91478690c6f0aaad31cf30474e5422345dca5c0c5022676bf685c4e2b21546",
+          "ops": {
+            "keepNodes": [
+              "2/0/0",
+              "2/0/1"
+            ],
+            "viewBox": "366.11 -2.013 134.526 75.174"
+          },
+          "path": "/logos/svg/cars/alternates/dodge-racing-stripes.svg",
+          "format": "svg",
+          "colors": [
+            "#CD3029"
+          ],
+          "sourcePalette": [
+            "#CD3029",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "70e816c052555159751d537b3b4929014d255a6e495805d4010cf26bb83abd29"
+        }
+      ]
+    },
+    {
+      "id": "CAR-FERRARI",
+      "league": "CAR",
+      "conference": "Italian",
+      "region": "Ferrari",
+      "name": "",
+      "abbr": "FERRARI",
+      "aliases": [
+        "Scuderia Ferrari",
+        "Ferrari S.p.A.",
+        "Prancing Horse"
+      ],
+      "palette": [
+        "#E30016",
+        "#FFEC00",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Prancing horse shield",
+          "sourceUrl": "https://iconape.com/wp-content/files/qa/156083/svg/156083.svg",
+          "sourcePage": "https://iconape.com/ferrari-logo-logo-icon-svg-png.html",
+          "sourceSha256": "47d43b0b54ddd93434e28b309b7f4aa93c0a9909db19b372f2bf8a66920a5da4",
+          "ops": {
+            "removeNodes": [
+              "1/1"
+            ],
+            "viewBox": "29.234 -2.844 109.134 145.056"
+          },
+          "path": "/logos/svg/cars/ferrari.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#1B1918",
+            "#FFEC00",
+            "#E30016",
+            "#FFFFFF",
+            "#009035"
+          ],
+          "sourcePalette": [
+            "#E30016",
+            "#FFEC00",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "275556e8e29ba5a25646dd7f0de0141598e5aeb076fd6fe7af04f8b551593811"
+        },
+        {
+          "id": "horse",
+          "label": "Rearing horse",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Special:FilePath/Prancing_horse.svg",
+          "sourcePage": "https://en.wikipedia.org/wiki/File:Prancing_horse.svg",
+          "sourceSha256": "06357501e6b867fae6751da61d7c3e367c04a6352f79126c9da7ad470f0a5df3",
+          "ops": {
+            "fill": "#000000",
+            "viewBox": "-3.897 -4.276 169.694 232.422"
+          },
+          "path": "/logos/svg/cars/alternates/ferrari-horse.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#FFEC00",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "adc00a29a74f4350009a12b8826a0e4fa17669b6311db6e288e05643585b215d"
+        },
+        {
+          "id": "rectangular-badge",
+          "label": "Rectangular yellow badge",
+          "sourceUrl": "https://iconape.com/wp-content/files/ut/61710/svg/ferrari-4.svg",
+          "sourcePage": "https://iconape.com/ferrari-logo-icon-svg-png.html",
+          "sourceSha256": "6935b5327365b0f7031c7047f4321cb3f668233a38c4b12aa92f32e9f786fe1e",
+          "ops": {
+            "removeNodes": [
+              "0/11",
+              "0/12",
+              "0/13"
+            ],
+            "viewBox": "-7.909 -7.909 239.896 411.25"
+          },
+          "path": "/logos/svg/cars/alternates/ferrari-rectangular-badge.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#EC1B23",
+            "#FFFFFF",
+            "#00994D",
+            "#FFF100"
+          ],
+          "sourcePalette": [
+            "#EC1B23",
+            "#FFF100",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "2df4d22e5e5ffde5b3085de408956bcc3835491d36bba328507e6329a5816b32"
+        }
+      ]
+    },
+    {
+      "id": "CAR-FIAT",
+      "league": "CAR",
+      "conference": "Italian",
+      "region": "Fiat",
+      "name": "",
+      "abbr": "FIAT",
+      "aliases": [
+        "FIAT",
+        "Fiat Automobiles",
+        "Fabbrica Italiana Automobili Torino"
+      ],
+      "palette": [
+        "#A70230",
+        "#8A8D8F",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Red badge wordmark",
+          "sourceUrl": "https://logowik.com/fiat-automobiles-logo-vector-41375.html",
+          "sourcePage": "https://logowik.com/fiat-automobiles-logo-vector-41375.html",
+          "sourceSha256": "7167ba26235bbb1e8f6fdadcfda76b2b571285fa52f5172cb23272ba1dca8566",
+          "downloadForm": "logowik",
+          "ops": {
+            "viewBox": "-0.05 -0.078 28.177 28.177"
+          },
+          "showsName": true,
+          "path": "/logos/svg/cars/fiat.svg",
+          "format": "svg",
+          "colors": [
+            "#A70230"
+          ],
+          "sourcePalette": [
+            "#A70230",
+            "#8A8D8F",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "ab4e1a328e9c91bd5279fe86e802876b712511452dbb77fe9d841f72f2022f65"
+        }
+      ]
+    },
+    {
+      "id": "CAR-FORD",
+      "league": "CAR",
+      "conference": "American",
+      "region": "Ford",
+      "name": "",
+      "abbr": "FORD",
+      "aliases": [
+        "Ford Motor Company",
+        "Ford Motor"
+      ],
+      "palette": [
+        "#00095B",
+        "#7F8C99",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Blue oval",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Ford_logo_flat.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Ford_logo_flat.svg",
+          "sourceSha256": "b7447830af9bf4ea2de945cb172f92f0e77aaf508304b4f1339c9572f352ae79",
+          "ops": {
+            "viewBox": "-5.292 -5.292 275.167 105.811"
+          },
+          "showsName": true,
+          "path": "/logos/svg/cars/ford.svg",
+          "format": "svg",
+          "colors": [
+            "#00095B",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#00095B",
+            "#7F8C99",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "18f5baacce1c4f9ee46b231c54765b9b8b23d59b5c2dd3263f054bf3d4984f78"
+        }
+      ]
+    },
+    {
+      "id": "CAR-HONDA",
+      "league": "CAR",
+      "conference": "Japanese & Korean",
+      "region": "Honda",
+      "name": "",
+      "abbr": "HONDA",
+      "aliases": [
+        "Honda Motor",
+        "Honda Motor Company"
+      ],
+      "palette": [
+        "#DA251D",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "H badge",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/3/38/Honda.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Honda.svg",
+          "sourceSha256": "688e24e95ac68717fabcceb2ab4a4b0d979d45eee79e035fa840eb3a202c12d0",
+          "ops": {
+            "keepNodes": [
+              "0/1"
+            ],
+            "viewBox": "-44.013 -44.012 2288.61 1877.215"
+          },
+          "path": "/logos/svg/cars/honda.svg",
+          "format": "svg",
+          "colors": [
+            "#DA251D"
+          ],
+          "sourcePalette": [
+            "#DA251D",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "9e23a8d22057b9d053fd01ab334d7f4da8470bdf3423b9d0c0df4804ea2d47a5"
+        },
+        {
+          "id": "2024-h",
+          "label": "2024 open H mark",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/8/86/Honda_auto_logo.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Honda_auto_logo.svg",
+          "sourceSha256": "302b953c7cd386c159e47cf7e4a9b73439336afd57485786b347dbb610f0c708",
+          "ops": {
+            "viewBox": "-10.671 -10.671 554.875 399.249"
+          },
+          "path": "/logos/svg/cars/alternates/honda-2024-h.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "e7eb83a8b980ad2ee4a8261d7e3670ae4094b686a0489f090b17c25d2eca91bf"
+        },
+        {
+          "id": "wing",
+          "label": "Red wing",
+          "sourceUrl": "https://iconape.com/wp-content/files/qs/67355/svg/honda-motorcycles-1.svg",
+          "sourcePage": "https://iconape.com/honda-motorcycles-1-logo-icon-svg-png.html",
+          "sourceSha256": "fa64adac80a85d52b87ced035bedecdf9e0f2da66b38c1d065ea4d8255ee8ad0",
+          "ops": {
+            "viewBox": "-0.3 1.9 14.4 8.1"
+          },
+          "path": "/logos/svg/cars/alternates/honda-wing.svg",
+          "format": "svg",
+          "colors": [
+            "#B01842"
+          ],
+          "sourcePalette": [
+            "#B01842",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "b071447037f3d83b20c201080b6955546e50c5303f037adf61b6c704790ff8eb"
+        }
+      ]
+    },
+    {
+      "id": "CAR-HYUNDAI",
+      "league": "CAR",
+      "conference": "Japanese & Korean",
+      "region": "Hyundai",
+      "name": "",
+      "abbr": "HYUNDAI",
+      "aliases": [
+        "Hyundai Motor",
+        "Hyundai Motor Company"
+      ],
+      "palette": [
+        "#002C5F",
+        "#00AAD2",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Slanted H oval",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/4/44/Hyundai_Motor_Company_logo.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Hyundai_Motor_Company_logo.svg",
+          "sourceSha256": "03cda6235efc7bdac40c8c3eb34824d007fc69143e0b130dd45ec07d846cdfa0",
+          "ops": {
+            "keepNodes": [
+              "3/1"
+            ],
+            "viewBox": "-5.048 -5.048 262.498 138.716"
+          },
+          "path": "/logos/svg/cars/hyundai.svg",
+          "format": "svg",
+          "colors": [
+            "#003984"
+          ],
+          "sourcePalette": [
+            "#003984",
+            "#00AAD2",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "d65101a0ae740ab8f63fac3ef6577c3f2b0c9e2b0b15b30f87f374f862188e40"
+        },
+        {
+          "id": "chrome",
+          "label": "Chrome slanted H",
+          "sourceUrl": "https://brandeps.com/logo-download/h/hyundai-logo-vector-01.svg",
+          "sourcePage": "https://brandeps.com/logo/h/hyundai-01",
+          "sourceSha256": "92f3e67c2478be52e5d8661048400690a704da9c1b8f16e1d3dd0c3f78f7644b",
+          "ops": {
+            "keepNodes": [
+              "1/1"
+            ],
+            "viewBox": "48.543 88.643 419.474 223.494"
+          },
+          "path": "/logos/svg/cars/alternates/hyundai-chrome.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#8B9394",
+            "#727A79",
+            "#969D9D",
+            "#7A8182",
+            "#4B5050",
+            "#828B8A",
+            "#C2C9C8",
+            "#FFFFFF",
+            "#A4AAAA",
+            "#8F9697",
+            "#878F90",
+            "#AEAEAE",
+            "#515151",
+            "#171717",
+            "#F1F2F2",
+            "#B7BDBE",
+            "#A0A8AA",
+            "#E5EEED",
+            "#CFD7D7",
+            "#B6BCBD",
+            "#F6F7F7",
+            "#DFE1E1",
+            "#B9BCBC",
+            "#858A8A",
+            "#5F6666",
+            "#404444",
+            "#646A6B",
+            "#333737",
+            "#ABB3B3",
+            "#575D5C",
+            "#464A4A",
+            "#434747",
+            "#323534",
+            "#282A2A",
+            "#252726",
+            "#2B2E2D",
+            "#4A4F4F",
+            "#666D6D",
+            "#798181",
+            "#E8EBEB",
+            "#CCD4D3",
+            "#AFB7B8",
+            "#3B3B3B",
+            "#6F6F6F",
+            "#9B9B9B",
+            "#BFBFBF",
+            "#DBDBDB",
+            "#EFEFEF",
+            "#FBFBFB",
+            "#F7F7F7",
+            "#E0E0E0",
+            "#BCBCBC",
+            "#888888",
+            "#484848",
+            "#6D7373",
+            "#888F8F",
+            "#9CA3A3",
+            "#A7AFAF",
+            "#A3ABAC",
+            "#565656",
+            "#9F9F9F",
+            "#D3D3D3",
+            "#F3F3F3",
+            "#EEEEEE",
+            "#C3C3C3",
+            "#7D7D7D",
+            "#1E1E1E",
+            "#494E4E",
+            "#676E6D",
+            "#808888",
+            "#9BA3A4",
+            "#C2C8C8",
+            "#FDFEFE",
+            "#FAFAFA",
+            "#EBEBEB",
+            "#D2D2D2",
+            "#B0B0B0",
+            "#848484",
+            "#4E4E4E",
+            "#0F0F0F",
+            "#9BA3A5",
+            "#8D9496",
+            "#777D7D",
+            "#575B5B",
+            "#2E3030",
+            "#616161",
+            "#999999",
+            "#C5C5C5",
+            "#E5E5E5",
+            "#F8F8F8",
+            "#F1F1F1",
+            "#CCCCCC",
+            "#909090",
+            "#3F3F3F",
+            "#2D302F",
+            "#565B5B",
+            "#73797A",
+            "#858C8D",
+            "#98A0A2",
+            "#DADADA",
+            "#BEBEBE",
+            "#6B6B6B",
+            "#373737",
+            "#F4FAFC",
+            "#F8FCFD",
+            "#697070",
+            "#B2BCBC",
+            "#4A4A4A",
+            "#8A8A8A",
+            "#BDBDBD",
+            "#E1E1E1",
+            "#F0F0F0",
+            "#DEDEDE",
+            "#C4C4C4",
+            "#A2A2A2",
+            "#797979",
+            "#494949",
+            "#121212",
+            "#8B9191",
+            "#BDC0C0",
+            "#E1E2E2",
+            "#545454",
+            "#585858",
+            "#656565",
+            "#969696",
+            "#BBBBBB",
+            "#E8E8E8",
+            "#7E7E7E",
+            "#3A3A3A",
+            "#101010",
+            "#444848",
+            "#4F5454",
+            "#737B7A",
+            "#A3ACAC",
+            "#F8FAFA",
+            "#E6ECED",
+            "#D3DEE0",
+            "#C9D4D6",
+            "#AFB9BA",
+            "#858D8E",
+            "#3E4344",
+            "#2F3435",
+            "#0D1112",
+            "#252525",
+            "#AAAAAA",
+            "#C9C9C9",
+            "#F2F2F2",
+            "#FCFCFC",
+            "#C9CECE",
+            "#E1E3E4",
+            "#F2F3F3",
+            "#E1E4E4",
+            "#6B7272",
+            "#545959",
+            "#454949",
+            "#1D1D1D",
+            "#242424",
+            "#262626",
+            "#1C1C1C",
+            "#0E0E0E",
+            "#555A5A",
+            "#7D8081",
+            "#A0A3A3",
+            "#BEBFC0",
+            "#D6D7D7",
+            "#E8E9E9",
+            "#F5F6F6",
+            "#FDFDFD",
+            "#F4F5F5",
+            "#E7E8E8",
+            "#D3D5D5",
+            "#B9BDBD",
+            "#9A9F9F",
+            "#757C7C",
+            "#6A7171",
+            "#333333",
+            "#CACACA",
+            "#E7E7E7",
+            "#F9F9F9",
+            "#6E6E6E",
+            "#5A5F5E",
+            "#B2BAB9",
+            "#CED6D5",
+            "#DFE8E7",
+            "#E9F1F0",
+            "#F5F8F8",
+            "#F2F6F6",
+            "#E8F0EF",
+            "#F3F4F4",
+            "#E3E5E5",
+            "#CDD0D0",
+            "#B0B5B5",
+            "#D7E0E0",
+            "#C5CDCE",
+            "#B4BCBE",
+            "#A9B1B2",
+            "#A2AAAC",
+            "#737A7B",
+            "#E6EBEB",
+            "#D1DAD9"
+          ],
+          "sourcePalette": [
+            "#2F3435",
+            "#0E0F0F",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "e469eabab78608b6dc1c1018b5ebdc233ae2cd1733a8b8e69987b8a117f54af0"
+        },
+        {
+          "id": "1970-hd",
+          "label": "1970 HD oval",
+          "sourceUrl": "https://logowik.com/hyundai-motor-company-1970-logo-vector-74669.html",
+          "sourcePage": "https://logowik.com/hyundai-motor-company-1970-logo-vector-74669.html",
+          "sourceSha256": "32e865d233ad141ae8059b2f2819eaca09ed3517a4df937e8c8bdf4a811d8c3c",
+          "downloadForm": "logowik",
+          "ops": {
+            "viewBox": "0.013 0.364 472.955 198.666"
+          },
+          "path": "/logos/svg/cars/alternates/hyundai-1970-hd.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#00AAD2",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "1bb927c77bff28364492c52c10221023e643c24513b09e4e8b0a8d80916a135a"
+        },
+        {
+          "id": "1974-boxed-hd",
+          "label": "1974 boxed HD",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Hyundai_Motor_logo%281974-1992%29.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Hyundai_Motor_logo%281974-1992%29.svg",
+          "sourceSha256": "9baddc529cccec9e17003ced0a4deff3cbb6ed93961cf5f5f27415dd47d40922",
+          "ops": {
+            "viewBox": "22.518 20.135 1659.754 945.47"
+          },
+          "path": "/logos/svg/cars/alternates/hyundai-1974-boxed-hd.svg",
+          "format": "svg",
+          "colors": [
+            "#040000",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#040000",
+            "#00AAD2",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "6c2dcaa4ae6647076972ac5fbec10a76114ae054e1063c543227f12232396759"
+        }
+      ]
+    },
+    {
+      "id": "CAR-JAGUAR",
+      "league": "CAR",
+      "conference": "British",
+      "region": "Jaguar",
+      "name": "",
+      "abbr": "JAGUAR",
+      "aliases": [
+        "Jaguar Cars",
+        "Jag",
+        "Jaguar Land Rover"
+      ],
+      "palette": [
+        "#01422D",
+        "#9A9A9A",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Leaper",
+          "sourceUrl": "https://iconape.com/wp-content/files/pb/159897/svg/159897.svg",
+          "sourcePage": "https://iconape.com/jaguar-logo-logo-icon-svg-png.html",
+          "sourceSha256": "1c0c217026d5c9b0612556ea94f48594f4ea93a06b84cba49d94ed638ab12abc",
+          "ops": {
+            "viewBox": "-6.252 -1.057 379.302 152.513"
+          },
+          "path": "/logos/svg/cars/jaguar.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#9A9A9A",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "450d7b28e7fed1bb0f2e120a5cbccbad91972fd3091d4b159f264ee3e5f47696"
+        },
+        {
+          "id": "striped-leaper",
+          "label": "2024 striped leaper",
+          "sourceUrl": "https://logowik.com/jaguar-2025-logo-vector-74758.html",
+          "sourcePage": "https://logowik.com/jaguar-2025-logo-vector-74758.html",
+          "sourceSha256": "b55613f771ff6d19fe3df87ddbc1e4aa7c2017f787ec62f2381a67eb3410277c",
+          "downloadForm": "logowik",
+          "ops": {
+            "keepNodes": [
+              "0",
+              "2/0-15"
+            ],
+            "viewBox": "38.306 12.506 764.088 309.388"
+          },
+          "path": "/logos/svg/cars/alternates/jaguar-striped-leaper.svg",
+          "format": "svg",
+          "colors": [
+            "#1D1D1B"
+          ],
+          "sourcePalette": [
+            "#1D1D1B",
+            "#9A9A9A",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "0b3c33a5a98cd79ff216bb6700ee5562c2e18a48ad768ae568e9785d7712e9a0"
+        }
+      ]
+    },
+    {
+      "id": "CAR-JEEP",
+      "league": "CAR",
+      "conference": "American",
+      "region": "Jeep",
+      "name": "",
+      "abbr": "JEEP",
+      "aliases": [
+        "Willys Jeep"
+      ],
+      "palette": [
+        "#000000",
+        "#4E5B31",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Seven-slot grille",
+          "sourceUrl": "https://iconape.com/wp-content/files/xb/132999/svg/132999.svg",
+          "sourcePage": "https://iconape.com/jeep-wrangle-jl-grill-logo-logo-icon-svg-png.html",
+          "sourceSha256": "d6a7478dc7117f9cbb7d73c4b3d88f0f4dfc3d776091da9504663b277562c90d",
+          "ops": {
+            "viewBox": "-12.354 -11.753 645.689 244.154"
+          },
+          "path": "/logos/svg/cars/jeep.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#4E5B31",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "3a1e6e05ff560ee87e33f7cedd4a1af9e683683d4a89c5ecfff77c25fd12fac0"
+        }
+      ]
+    },
+    {
+      "id": "CAR-LAMBO",
+      "league": "CAR",
+      "conference": "Italian",
+      "region": "Lamborghini",
+      "name": "",
+      "abbr": "LAMBO",
+      "aliases": [
+        "Lambo",
+        "Automobili Lamborghini",
+        "Lamborghini S.p.A."
+      ],
+      "palette": [
+        "#B6A272",
+        "#111111",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Bull shield outline",
+          "sourceUrl": "https://iconape.com/wp-content/files/oj/163907/svg/163907.svg",
+          "sourcePage": "https://iconape.com/lamborghini-automobili-logo-logo-icon-svg-png.html",
+          "sourceSha256": "f17026fcb4db249090f1153a485bcd8c4f35dae51ed2b5fe2e1cbb847159bfc1",
+          "ops": {
+            "removeNodes": [
+              "0/0"
+            ],
+            "viewBox": "-4.655 -4.656 214.955 242.093"
+          },
+          "path": "/logos/svg/cars/lambo.svg",
+          "format": "svg",
+          "colors": [
+            "#E31E26",
+            "#E11F26"
+          ],
+          "sourcePalette": [
+            "#E21E26",
+            "#111111",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "4e7eee847d5656e4027a5ab66158218559bf32a57b819e9e3976e14ec1779905"
+        },
+        {
+          "id": "bull",
+          "label": "Charging bull",
+          "sourceUrl": "https://api.iconify.design/thesvg-color/lamborghini.svg",
+          "sourcePage": "https://icon-sets.iconify.design/thesvg-color/lamborghini/",
+          "sourceSha256": "0f69c863fe92013436c5fbb9fcba3e92beca8c0c1f8400430f7a41b95085a016",
+          "ops": {
+            "viewBox": "1.235 -0.481 21.531 24.961"
+          },
+          "path": "/logos/svg/cars/alternates/lambo-bull.svg",
+          "format": "svg",
+          "colors": [
+            "#B6A272"
+          ],
+          "sourcePalette": [
+            "#B6A272",
+            "#111111",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "49295e1fefd51fa878625b847c198fff3b119042cafb71fbe7fe160e9f5b8814"
+        }
+      ]
+    },
+    {
+      "id": "CAR-LEXUS",
+      "league": "CAR",
+      "conference": "Japanese & Korean",
+      "region": "Lexus",
+      "name": "",
+      "abbr": "LEXUS",
+      "aliases": [],
+      "palette": [
+        "#000000",
+        "#8C8C8C",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "L in oval",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Lexus_Logo.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Lexus_Logo.svg",
+          "sourceSha256": "02e6b05e3feabb0493ab8db59215fc56a20dbc694496071f4da7cb1b0fb2e491",
+          "ops": {
+            "viewBox": "-2.618 -2.618 136.127 101.5"
+          },
+          "path": "/logos/svg/cars/lexus.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#8C8C8C",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "5508c1548d51ba020c9da9475667139194cc855b86ebb5857ae50db3b2ff4b93"
+        }
+      ]
+    },
+    {
+      "id": "CAR-MASERATI",
+      "league": "CAR",
+      "conference": "Italian",
+      "region": "Maserati",
+      "name": "",
+      "abbr": "MASERATI",
+      "aliases": [
+        "Maserati S.p.A.",
+        "Officine Alfieri Maserati"
+      ],
+      "palette": [
+        "#0C2340",
+        "#E21A22",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Trident oval badge",
+          "sourceUrl": "https://iconape.com/wp-content/files/bb/74314/svg/logo-della-maserati.svg",
+          "sourcePage": "https://iconape.com/logo-della-maserati-logo-icon-svg-png.html",
+          "sourceSha256": "3d6c4b043ce97338481581be96e39213cb55cec7fdeff28e6668dce229362b68",
+          "ops": {
+            "removeNodes": [
+              "4"
+            ],
+            "viewBox": "-6.617 -7.583 334.799 514.8"
+          },
+          "path": "/logos/svg/cars/maserati.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#E21A22",
+            "#09264A",
+            "#0C2E59"
+          ],
+          "sourcePalette": [
+            "#0A2A52",
+            "#E21A22",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "0afc8c1c5eeea9a04606f402b3dcbba33e59128fdaae82200204706c60604800"
+        },
+        {
+          "id": "vintage-oval",
+          "label": "Vintage cream oval",
+          "sourceUrl": "https://cdn.freebiesupply.com/logos/large/2x/maserati-2-logo-svg-vector.svg",
+          "sourcePage": "https://freebiesupply.com/logos/maserati-logo-2/",
+          "sourceSha256": "d6e70a26623542abd4e06be0126525d54ed868de6f19c2c22ad1e3bccb257809",
+          "ops": {
+            "removeNodes": [
+              "0/0",
+              "0/4"
+            ],
+            "viewBox": "29.151 4.989 134.454 182.778"
+          },
+          "path": "/logos/svg/cars/alternates/maserati-vintage-oval.svg",
+          "format": "svg",
+          "colors": [
+            "#C6C7C9",
+            "#F2E4A2",
+            "#373763",
+            "#852026"
+          ],
+          "sourcePalette": [
+            "#5E2C44",
+            "#DCD6B6",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "98b657e660cd9ac78bad8b50d4634278fa9ba4da0df7d9c715db3cca22706f50"
+        },
+        {
+          "id": "trident",
+          "label": "Trident",
+          "sourceUrl": "https://api.iconify.design/thesvg-color/maserati.svg",
+          "sourcePage": "https://icon-sets.iconify.design/thesvg-color/maserati/",
+          "sourceSha256": "45b65dc6f4474bec48bab3db4ac4c09dc032ba9cd14c70abfc27faebcead46c5",
+          "ops": {
+            "viewBox": "3.03 -0.48 17.941 24.96"
+          },
+          "path": "/logos/svg/cars/alternates/maserati-trident.svg",
+          "format": "svg",
+          "colors": [
+            "#0C2340"
+          ],
+          "sourcePalette": [
+            "#0C2340",
+            "#E21A22",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "c58c9110fae132d8fd8857b3015bfe129c148680a2a8b296027e7326e3f0174e"
+        }
+      ]
+    },
+    {
+      "id": "CAR-MAZDA",
+      "league": "CAR",
+      "conference": "Japanese & Korean",
+      "region": "Mazda",
+      "name": "",
+      "abbr": "MAZDA",
+      "aliases": [
+        "Mazda Motor",
+        "Mazda Motor Corporation",
+        "Toyo Kogyo"
+      ],
+      "palette": [
+        "#101010",
+        "#9E1B32",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Winged M oval",
+          "sourceUrl": "https://api.iconify.design/thesvg-color/mazda.svg",
+          "sourcePage": "https://icon-sets.iconify.design/thesvg-color/mazda/",
+          "sourceSha256": "1045c25d6e41c6b0f528a657c17c2d4967a6392df9027910f8bc40b03fa08607",
+          "ops": {
+            "viewBox": "-0.48 1.918 24.96 20.164"
+          },
+          "path": "/logos/svg/cars/mazda.svg",
+          "format": "svg",
+          "colors": [
+            "#101010"
+          ],
+          "sourcePalette": [
+            "#101010",
+            "#9E1B32",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "49366b009453a5492342405d3ae60c4b0896e985ec703a8227197ecae1c46a2f"
+        },
+        {
+          "id": "chrome",
+          "label": "Chrome winged M",
+          "sourceUrl": "https://brandeps.com/logo-download/m/mazda-logo-vector-01.svg",
+          "sourcePage": "https://brandeps.com/logo/m/mazda-01",
+          "sourceSha256": "50bd387be51b07e2fcd947d3a70a254380df3cb6c2b3e43897617b7645a0c8fc",
+          "ops": {
+            "removeNodes": [
+              "1/0"
+            ],
+            "viewBox": "1.375 -16.585 509.327 414.269"
+          },
+          "path": "/logos/svg/cars/alternates/mazda-chrome.svg",
+          "format": "svg",
+          "colors": [
+            "#455E66",
+            "#697C86",
+            "#000000",
+            "#00010B",
+            "#C5CBD0",
+            "#2B373E",
+            "#3F4E56",
+            "#FFFFFF",
+            "#E6E6E6",
+            "#E1E2E2",
+            "#D3D5D7",
+            "#BBC1C4",
+            "#ABB3B8",
+            "#B9BFC3",
+            "#DDDFDF",
+            "#7B858A",
+            "#46555D",
+            "#E1E1E2",
+            "#D3D4D5",
+            "#BBBFC1",
+            "#99A0A4",
+            "#6F7A80",
+            "#4E5F67",
+            "#768790",
+            "#CED2D3",
+            "#CBCDCE",
+            "#80898E",
+            "#515E66",
+            "#CCD1DB",
+            "#D3D7E0",
+            "#E5E8ED",
+            "#5B6A73",
+            "#C2D2DE",
+            "#CDDAE4",
+            "#F1F5F7",
+            "#EDF2F5",
+            "#D5E0E8",
+            "#C7D6E1",
+            "#F2F2F2",
+            "#B3B3B3",
+            "#C9CCCE",
+            "#8E969B",
+            "#636F75",
+            "#49575E",
+            "#999999",
+            "#CCCCCC",
+            "#B0B3B4",
+            "#8D9497",
+            "#717A80",
+            "#5B676D",
+            "#4B5960",
+            "#425158",
+            "#3C4A52",
+            "#333F46",
+            "#242D32",
+            "#101416",
+            "#F1F1F1",
+            "#F8F8F8",
+            "#DFE1E2",
+            "#BBC0C2",
+            "#9FA5A8",
+            "#8B9296",
+            "#7F878B",
+            "#7B8387",
+            "#5D6F78",
+            "#596A72",
+            "#3F4B51",
+            "#2C3539",
+            "#20282B",
+            "#1C2326",
+            "#DDDEDF",
+            "#C5CACC",
+            "#9DA8AE",
+            "#657781",
+            "#586A73",
+            "#43535B",
+            "#9AA4AA",
+            "#7A8991",
+            "#6B7E88",
+            "#74858E",
+            "#819199",
+            "#95A2A9",
+            "#AFB8BD",
+            "#CED3D5",
+            "#D8DADB",
+            "#B0B5B8",
+            "#8D959A",
+            "#707B81",
+            "#5B676E"
+          ],
+          "sourcePalette": [
+            "#191F23",
+            "#455E66",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "fc05df465e9280cfc3c09caeb7770511402d83eebd23e59d4870fd7c62ce8486"
+        },
+        {
+          "id": "1992",
+          "label": "1992 blue flame oval",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/5/58/Mazda_logo_1992.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Mazda_logo_1992.svg",
+          "sourceSha256": "a71c9a0a1262cb789be3669471525879cd73d64c139c91fe7be86f314cfd4bbf",
+          "ops": {
+            "removeNodes": [
+              "3/1"
+            ],
+            "viewBox": "185.841 -12.334 641.346 492.49"
+          },
+          "path": "/logos/svg/cars/alternates/mazda-1992.svg",
+          "format": "svg",
+          "colors": [
+            "#007CBF"
+          ],
+          "sourcePalette": [
+            "#007CBF",
+            "#9E1B32",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "a852de44860c1cbcf8681d2180aee36c79271d327340c38ef5bb8be785447705"
+        }
+      ]
+    },
+    {
+      "id": "CAR-MB",
+      "league": "CAR",
+      "conference": "German",
+      "region": "Mercedes-Benz",
+      "name": "",
+      "abbr": "MB",
+      "aliases": [
+        "Mercedes",
+        "Benz",
+        "Merc"
+      ],
+      "palette": [
+        "#333F48",
+        "#A4AAAE",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Chrome three-pointed star",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/3/32/Mercedes-Benz_Star_2022.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_Star_2022.svg",
+          "sourceSha256": "1c35cb516ffff6dc694730726a19241b0af8ad5c5d4a5e8e449954601b9d46c9",
+          "ops": {
+            "viewBox": "-1.28 -1.28 66.56 66.56"
+          },
+          "path": "/logos/svg/cars/mb.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#565F64",
+            "#A4AAAE",
+            "#333E46",
+            "#FBFBFB",
+            "#333F47",
+            "#E7E8E6",
+            "#CDD0D0",
+            "#B5BBBD",
+            "#A5ACAF",
+            "#9BA3A7",
+            "#98A0A4",
+            "#828A8F",
+            "#667075",
+            "#535C63",
+            "#475158",
+            "#434D54",
+            "#475157",
+            "#0B1F2A",
+            "#777F84",
+            "#81898D",
+            "#B3B8B8",
+            "#D2D5D3",
+            "#DEE0DD",
+            "#E1E3E1",
+            "#C1C5C4",
+            "#9BA1A2",
+            "#7D8487",
+            "#687074",
+            "#5B6469",
+            "#576065",
+            "#27343C",
+            "#00111E",
+            "#02131F",
+            "#3B474E",
+            "#24303A",
+            "#25323B",
+            "#A5ABAF",
+            "#C5C9C7",
+            "#9EA4A5",
+            "#82898C",
+            "#71797D",
+            "#6B7378",
+            "#2B373F",
+            "#36424A",
+            "#49545B",
+            "#646D73",
+            "#868D92",
+            "#B0B5B8",
+            "#E1E3E4"
+          ],
+          "sourcePalette": [
+            "#333F47",
+            "#9FA5A7",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "af1ea1f01828152c817f6f8b260451ca35de39ac3eb52c71f0943fcb2226e14d"
+        },
+        {
+          "id": "flat-star",
+          "label": "Flat star in ring",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/9/98/Mercedes-Benz_Star_%281969-1986%2C_2025-%29.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_Star_%281969-1986%2C_2025-%29.svg",
+          "sourceSha256": "79ba1bd8700070d567c353cc4a9eb7dfae5316b1eb0d8ee5e0cf2002fc063dc7",
+          "ops": {
+            "viewBox": "-20.01 -20.01 1040.021 1040.541"
+          },
+          "path": "/logos/svg/cars/alternates/mb-flat-star.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#A4AAAE",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "b1fba19129baee53cbd90fb7f18c814f61d000ce010e2873d0a7d28e5439ec0b"
+        },
+        {
+          "id": "blue-sign",
+          "label": "Blue showroom sign",
+          "sourceUrl": "https://iconape.com/wp-content/files/ji/80717/svg/mercedes-benz-3.svg",
+          "sourcePage": "https://iconape.com/mercedes-benz-logo-icon-svg-png.html",
+          "sourceSha256": "2b9902fa286be1ea6e0f5eac26261b8d20e2bbdfc35b619d5f41ed64a20cdbd2",
+          "ops": {
+            "removeNodes": [
+              "0",
+              "1",
+              "5",
+              "6",
+              "7"
+            ],
+            "viewBox": "17.9 1.9 156.8 156.6"
+          },
+          "path": "/logos/svg/cars/alternates/mb-blue-sign.svg",
+          "format": "svg",
+          "colors": [
+            "#2D4F9E",
+            "#1E71B8",
+            "#4E4B78",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#4E4B78",
+            "#2660AB",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "cc7c4bafb5814d07672eeda17114e8d725eefe239a7c785a9457e6ac175d6717"
+        }
+      ]
+    },
+    {
+      "id": "CAR-MCLAREN",
+      "league": "CAR",
+      "conference": "British",
+      "region": "McLaren",
+      "name": "",
+      "abbr": "MCLAREN",
+      "aliases": [
+        "McLaren Automotive",
+        "McLaren Racing",
+        "Mclaren F1"
+      ],
+      "palette": [
+        "#FF8000",
+        "#54565A",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Speedmark swoosh",
+          "sourceUrl": "https://logowik.com/mclaren-formula-1-team-logo-vector-54606.html",
+          "sourcePage": "https://logowik.com/mclaren-formula-1-team-logo-vector-54606.html",
+          "sourceSha256": "0d4e4064aa72b333fbd03570c476811e48b8feac3b2bc629b434c925bf780b02",
+          "downloadForm": "logowik",
+          "ops": {
+            "removeNodes": [
+              "0",
+              "2"
+            ],
+            "viewBox": "243.9 5.56 57.185 32.369"
+          },
+          "path": "/logos/svg/cars/mclaren.svg",
+          "format": "svg",
+          "colors": [
+            "#FF9800"
+          ],
+          "sourcePalette": [
+            "#FF9800",
+            "#54565A",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "f8599bca76f935ef2d6a398125963da22b14e5ac3d96bfaa8a0d0f4d88220078"
+        },
+        {
+          "id": "chevrons",
+          "label": "1980s chevron arrows",
+          "sourceUrl": "https://iconape.com/wp-content/files/it/80898/svg/mclaren-international.svg",
+          "sourcePage": "https://iconape.com/mclaren-international-logo-icon-svg-png.html",
+          "sourceSha256": "e48110917f0fa13bbed691ca4c3340005d0dedb48005b9e9f0b8cdbaf5d4533d",
+          "ops": {
+            "removeNodes": [
+              "0/0",
+              "0/1",
+              "0/2",
+              "0/5"
+            ],
+            "viewBox": "72 48 115 59"
+          },
+          "path": "/logos/svg/cars/alternates/mclaren-chevrons.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#CC2229"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#CC2229",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "e49962a1b797ae0e2bde027173efb078943aa7b89bc01098f9fb26d18af744cd"
+        }
+      ]
+    },
+    {
+      "id": "CAR-MINI",
+      "league": "CAR",
+      "conference": "British",
+      "region": "Mini",
+      "name": "",
+      "abbr": "MINI",
+      "aliases": [
+        "MINI",
+        "Mini Cooper",
+        "Cooper"
+      ],
+      "palette": [
+        "#120A08",
+        "#8A8D8F",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Wings and ring",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Special:FilePath/MINI_logo.svg",
+          "sourcePage": "https://en.wikipedia.org/wiki/File:MINI_logo.svg",
+          "sourceSha256": "84e781326fba9c98bdaada156869cfb193da1e1a4fdba7f4fd05c27bb87709a0",
+          "ops": {
+            "removeNodes": [
+              "2"
+            ],
+            "viewBox": "-10 -10 520 239.248"
+          },
+          "path": "/logos/svg/cars/mini.svg",
+          "format": "svg",
+          "colors": [
+            "#120A08"
+          ],
+          "sourcePalette": [
+            "#120A08",
+            "#8A8D8F",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "ce3f012b4726ec3de1b6b639b5eef68cd9df1066f89f4a1be157fc22ef529943"
+        },
+        {
+          "id": "winged-roundel",
+          "label": "Winged black roundel",
+          "sourceUrl": "https://brandeps.com/logo-download/m/mini-logo-vector-01.svg",
+          "sourcePage": "https://brandeps.com/logo/M/Mini-01",
+          "sourceSha256": "9716474585bee439232ad33c9dacae9986259177aea79058b720b17b18b38cb4",
+          "ops": {
+            "removeNodes": [
+              "1/5"
+            ],
+            "viewBox": "-10.24 138.15 532.47 235.71"
+          },
+          "path": "/logos/svg/cars/alternates/mini-winged-roundel.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#8A8D8F",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "eb762db8ab3fa03e0243faf04646f6ab24e91c46a637d9ff07242dbabdccb4db"
+        }
+      ]
+    },
+    {
+      "id": "CAR-MITSU",
+      "league": "CAR",
+      "conference": "Japanese & Korean",
+      "region": "Mitsubishi",
+      "name": "",
+      "abbr": "MITSU",
+      "aliases": [
+        "Mitsubishi Motors",
+        "Mitsubishi Motors Corporation"
+      ],
+      "palette": [
+        "#E60012",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Three diamonds",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Mitsubishi_motors_new_logo.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Mitsubishi_motors_new_logo.svg",
+          "sourceSha256": "c383e1caf2d56c2a45e1583d31ca4cd257e230d10f5745f447cb5db8002cd0aa",
+          "ops": {
+            "keepNodes": [
+              "1/1"
+            ],
+            "viewBox": "205.371 -30.441 1582.946 1378.659"
+          },
+          "path": "/logos/svg/cars/mitsu.svg",
+          "format": "svg",
+          "colors": [
+            "#E60013"
+          ],
+          "sourcePalette": [
+            "#E60013",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "a8df3ba1d5096309dc01fb6d1552aa187699431d5dff097f5589db140263ab1c"
+        }
+      ]
+    },
+    {
+      "id": "CAR-NISSAN",
+      "league": "CAR",
+      "conference": "Japanese & Korean",
+      "region": "Nissan",
+      "name": "",
+      "abbr": "NISSAN",
+      "aliases": [
+        "Nissan Motor",
+        "Nissan Motor Company"
+      ],
+      "palette": [
+        "#C3002F",
+        "#8C8C8C",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Chrome ring and bar",
+          "sourceUrl": "https://brandeps.com/logo-download/n/nissan-logo-vector-01.svg",
+          "sourcePage": "https://brandeps.com/logo/n/nissan-01",
+          "sourceSha256": "a38f05a5750a91f69f4e8a6a944d0018ae2bc2df0f317847530b6149a814ecef",
+          "ops": {
+            "removeNodes": [
+              "19"
+            ],
+            "viewBox": "-10.24 26.51 532.48 458.97"
+          },
+          "path": "/logos/svg/cars/nissan.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#8C8C8C",
+            "#4D4D4D",
+            "#252525",
+            "#F8F8F8",
+            "#AEAEAE",
+            "#707070",
+            "#404040",
+            "#1D1D1D",
+            "#080808",
+            "#000000",
+            "#FDFDFD",
+            "#F4F4F4",
+            "#E6E6E6",
+            "#D2D2D2",
+            "#C4C4C4",
+            "#333333",
+            "#E4E4E4",
+            "#494949",
+            "#2F2F2F",
+            "#181818"
+          ],
+          "sourcePalette": [
+            "#AAAAAA",
+            "#707070",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "b545e33acfb3ca8442cc5311fd4cd12b553ba1b54d19dc2a1bcc128cf47105fd"
+        },
+        {
+          "id": "2020-split-ring",
+          "label": "2020 split ring",
+          "sourceUrl": "https://logowik.com/nissan-new-logo-vector-31776.html",
+          "sourcePage": "https://logowik.com/nissan-new-logo-vector-31776.html",
+          "sourceSha256": "0eba991c50a8a9e8ed9aa595d3bad35f912e6fa7888acab6de9501cba374992b",
+          "downloadForm": "logowik",
+          "ops": {
+            "keepNodes": [
+              "1/0/0",
+              "1/0/1"
+            ],
+            "viewBox": "171.167 75.087 498.857 444.557"
+          },
+          "path": "/logos/svg/cars/alternates/nissan-2020-split-ring.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#8C8C8C",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "62dabe39b41c4ba09bf05bbb8603fd98b55edfd21cf5a0b7019c39709b2ccbca"
+        }
+      ]
+    },
+    {
+      "id": "CAR-PORSCHE",
+      "league": "CAR",
+      "conference": "German",
+      "region": "Porsche",
+      "name": "",
+      "abbr": "PORSCHE",
+      "aliases": [
+        "Porsche AG",
+        "Dr. Ing. h.c. F. Porsche"
+      ],
+      "palette": [
+        "#A7002C",
+        "#F5CE65",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Stuttgart crest",
+          "sourceUrl": "https://brandeps.com/logo-download/p/porsche-logo-vector-01.svg",
+          "sourcePage": "https://brandeps.com/logo/p/porsche-01",
+          "sourceSha256": "e85a00d63955d1ae1d13316f0f92532c0efa4b1bcf87cfaa3454440f41db2e71",
+          "ops": {
+            "removeNodes": [
+              "1/78",
+              "1/79",
+              "1/80",
+              "1/81",
+              "1/82",
+              "1/83",
+              "1/84",
+              "1/85",
+              "1/86",
+              "1/87",
+              "1/88",
+              "1/89",
+              "1/90",
+              "1/91",
+              "1/92",
+              "1/93",
+              "1/94",
+              "1/95",
+              "1/96",
+              "1/97",
+              "1/98",
+              "1/99",
+              "1/101",
+              "1/102",
+              "1/103",
+              "1/104",
+              "1/105",
+              "1/106",
+              "1/107",
+              "1/108",
+              "1/109",
+              "1/110",
+              "1/111",
+              "1/112",
+              "1/113",
+              "1/114",
+              "1/115",
+              "1/116",
+              "1/117",
+              "1/118",
+              "1/127",
+              "1/128",
+              "1/129",
+              "1/130",
+              "1/131",
+              "1/132",
+              "1/133",
+              "1/134",
+              "1/135",
+              "1/136",
+              "1/137",
+              "1/143",
+              "1/144",
+              "1/145",
+              "1/147"
+            ],
+            "viewBox": "175.956 118.714 159.529 204.591"
+          },
+          "path": "/logos/svg/cars/porsche.svg",
+          "format": "svg",
+          "colors": [
+            "#FFE542",
+            "#FFE9BC",
+            "#000000",
+            "#F6D6A0",
+            "#FFE9BE",
+            "#F1C87F",
+            "#FFD466",
+            "#FFD365",
+            "#292627",
+            "#231F20",
+            "#A7002C",
+            "#FFE4A8",
+            "#FFD766",
+            "#565452",
+            "#F5CE65",
+            "#FCD98E",
+            "#FAD78C",
+            "#FCD990",
+            "#FAD993",
+            "#FCDB9A",
+            "#FCD686",
+            "#FAD482",
+            "#FAD78D"
+          ],
+          "sourcePalette": [
+            "#A7002C",
+            "#FBD781",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "27579fc4a5302d44e669574483590533d60cb178f106d2b655d3d0d962f60d73"
+        },
+        {
+          "id": "triangle",
+          "label": "Early triangle trademark",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Porsche_Warenzeichen.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Porsche_Warenzeichen.svg",
+          "sourceSha256": "fe42b0334f2b165d86927e9071f3118c60aa962352829519c71bd0a6df96411b",
+          "ops": {
+            "viewBox": "30.165 30.164 273.921 239.67"
+          },
+          "path": "/logos/svg/cars/alternates/porsche-triangle.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#F5CE65",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "4d76a5c7bb77b1a279d25e5c7757c7bc49aa1aeabea671ad18d1fcbb414ac608"
+        }
+      ]
+    },
+    {
+      "id": "CAR-RR",
+      "league": "CAR",
+      "conference": "British",
+      "region": "Rolls-Royce",
+      "name": "",
+      "abbr": "RR",
+      "aliases": [
+        "Rolls Royce",
+        "Rolls-Royce Motor Cars",
+        "Rolls"
+      ],
+      "palette": [
+        "#281432",
+        "#0F059E",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "RR monogram badge",
+          "sourceUrl": "https://logowik.com/rolls-royce-vector-logo-2-6532.html",
+          "sourcePage": "https://logowik.com/rolls-royce-vector-logo-2-6532.html",
+          "sourceSha256": "ee36237add1443368b4119f83c6af4913b7f44ef8ce63d336a58c18a2a010831",
+          "downloadForm": "logowik",
+          "ops": {
+            "removeNodes": [
+              "1/9",
+              "1/10",
+              "1/11",
+              "1/12",
+              "1/13",
+              "1/14",
+              "1/15",
+              "1/16",
+              "1/17",
+              "1/18",
+              "1/19",
+              "1/20",
+              "1/21",
+              "1/22",
+              "1/23",
+              "1/24",
+              "1/25",
+              "1/26",
+              "1/27",
+              "1/28"
+            ],
+            "viewBox": "387.76 91.96 391.38 620.88"
+          },
+          "path": "/logos/svg/cars/rr.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#0F059E"
+          ],
+          "sourcePalette": [
+            "#0F059E",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "d5c86f8bc97b42bd1369f3c7322894c120c3d00158ccaf463a2bc15d6c88904b"
+        },
+        {
+          "id": "monogram",
+          "label": "Interlocked monogram",
+          "sourceUrl": "https://api.iconify.design/thesvg-color/rolls-royce.svg",
+          "sourcePage": "https://icon-sets.iconify.design/thesvg-color/rolls-royce/",
+          "sourceSha256": "5ceb95080d739518f94d321f470d5b1bd1d876a8bf1b6f9150c29ded8e9d9810",
+          "ops": {
+            "viewBox": "2.42 -0.48 19.161 24.96"
+          },
+          "path": "/logos/svg/cars/alternates/rr-monogram.svg",
+          "format": "svg",
+          "colors": [
+            "#281432"
+          ],
+          "sourcePalette": [
+            "#281432",
+            "#0F059E",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "85fedc9f8f662968bfeb7de0b282544c828eec0df42325068a67d22f0b6fa066"
+        }
+      ]
+    },
+    {
+      "id": "CAR-SUBARU",
+      "league": "CAR",
+      "conference": "Japanese & Korean",
+      "region": "Subaru",
+      "name": "",
+      "abbr": "SUBARU",
+      "aliases": [
+        "Subaru Corporation",
+        "Fuji Heavy Industries"
+      ],
+      "palette": [
+        "#013C74",
+        "#A7A9AC",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Blue Pleiades oval",
+          "sourceUrl": "https://brandeps.com/logo-download/s/subaru-logo-vector-01.svg",
+          "sourcePage": "https://brandeps.com/logo/s/subaru-01",
+          "sourceSha256": "5bc5cd0e30b80d226cdf34d95f50fab647e0cddfc1764566de54578b041e3642",
+          "ops": {
+            "removeNodes": [
+              "1/0",
+              "1/1",
+              "1/2",
+              "1/3",
+              "1/4",
+              "1/5",
+              "1/6"
+            ],
+            "viewBox": "63.881 100.401 370.687 206.457"
+          },
+          "path": "/logos/svg/cars/subaru.svg",
+          "format": "svg",
+          "colors": [
+            "#004489",
+            "#004589",
+            "#00468A",
+            "#00478B",
+            "#00488C",
+            "#00498C",
+            "#00498D",
+            "#004A8D",
+            "#004B8E",
+            "#004C8E",
+            "#004D8F",
+            "#004D90",
+            "#004E90",
+            "#014F90",
+            "#044F91",
+            "#085091",
+            "#0B5092",
+            "#0E5192",
+            "#145292",
+            "#165293",
+            "#185394",
+            "#1B5394",
+            "#1C5494",
+            "#1E5495",
+            "#1F5595",
+            "#225595",
+            "#235696",
+            "#255796",
+            "#285897",
+            "#295897",
+            "#2A5998",
+            "#2C5998",
+            "#2D5A99",
+            "#2E5B99",
+            "#2F5B99",
+            "#315C9A",
+            "#325C9A",
+            "#335D9B",
+            "#355D9B",
+            "#375F9C",
+            "#38609D",
+            "#3A609D",
+            "#3B609D",
+            "#3C619D",
+            "#3D619D",
+            "#3E629E",
+            "#3F639F",
+            "#40649F",
+            "#41649F",
+            "#4365A0",
+            "#4566A1",
+            "#4666A1",
+            "#4767A2",
+            "#4868A2",
+            "#4968A2",
+            "#4A69A3",
+            "#4B6AA4",
+            "#4C6BA4",
+            "#4D6BA4",
+            "#4F6CA5",
+            "#506DA6",
+            "#516EA6",
+            "#526EA7",
+            "#536FA7",
+            "#546FA7",
+            "#5570A8",
+            "#5671A9",
+            "#5771A9",
+            "#5872A9",
+            "#5A74AA",
+            "#5B74AB",
+            "#5C75AB",
+            "#5D76AC",
+            "#5E76AC",
+            "#5F77AC",
+            "#6078AD",
+            "#6179AE",
+            "#6279AE",
+            "#637AAE",
+            "#647BAF",
+            "#667CB0",
+            "#677DB0",
+            "#687EB1",
+            "#697EB1",
+            "#6A7FB1",
+            "#6B80B2",
+            "#6C81B3",
+            "#6D81B3",
+            "#6E82B4",
+            "#6F83B4",
+            "#7184B5",
+            "#7285B6",
+            "#7386B6",
+            "#7486B6",
+            "#7587B7",
+            "#7688B7",
+            "#7788B8",
+            "#7889B8",
+            "#798AB9",
+            "#7A8BB9",
+            "#7C8CBA",
+            "#7D8DBB",
+            "#7E8EBB",
+            "#7F8EBC",
+            "#808FBC",
+            "#8090BD",
+            "#8291BD",
+            "#8392BE",
+            "#8492BE",
+            "#8493BF",
+            "#8795C0",
+            "#8896C0",
+            "#8896C1",
+            "#8997C1",
+            "#8A98C2",
+            "#8B99C2",
+            "#8C99C3",
+            "#8D9AC3",
+            "#8E9BC4",
+            "#8F9BC4",
+            "#919DC5",
+            "#929EC6",
+            "#939FC6",
+            "#94A0C7",
+            "#95A0C7",
+            "#96A1C8",
+            "#97A2C8",
+            "#98A3C9",
+            "#99A4C9",
+            "#9AA4C9",
+            "#9AA5CA",
+            "#9DA7CC",
+            "#9EA8CC",
+            "#9FA9CD",
+            "#A0AACD",
+            "#A2ABCE",
+            "#A2ACCE",
+            "#A3ADCF",
+            "#A4ADCF",
+            "#A5AECF",
+            "#A7B0D1",
+            "#A8B1D1",
+            "#A9B1D2",
+            "#000000",
+            "#040404",
+            "#444550",
+            "#4C536A",
+            "#455378",
+            "#344F80",
+            "#1D4B84",
+            "#004787",
+            "#004588",
+            "#808080",
+            "#FFFFFF",
+            "#F4F4F4",
+            "#DDDDDD",
+            "#CECECE",
+            "#C9C9C9",
+            "#C0C0C0",
+            "#979797",
+            "#757575",
+            "#5A5A5A",
+            "#474747",
+            "#3C3C3C",
+            "#383838",
+            "#7A7A7A",
+            "#D1D1D1",
+            "#4D4D4D",
+            "#A6A6A6",
+            "#E6E6E6",
+            "#595959",
+            "#D9D9D9",
+            "#F2F2F2",
+            "#1A1A1A",
+            "#3D3D3D",
+            "#484848",
+            "#525252",
+            "#BDBDBD",
+            "#999999",
+            "#7C7C7C",
+            "#4A4A4A",
+            "#B0B0B0",
+            "#9E9E9E",
+            "#CCCCCC",
+            "#E0E0E0",
+            "#A4A4A4",
+            "#CFCFCF",
+            "#EDEDED",
+            "#BCBCBC",
+            "#919191",
+            "#8C8C8C",
+            "#949494",
+            "#6B6B6B",
+            "#6C6C6C",
+            "#969696",
+            "#A8A8A8",
+            "#ADADAD",
+            "#A3A3A3",
+            "#5E5E5E",
+            "#626262",
+            "#7D7D7D",
+            "#C7C7C7",
+            "#7E7E7E",
+            "#2E2E2E",
+            "#323232",
+            "#3E3E3E",
+            "#535353",
+            "#707070",
+            "#959595",
+            "#C1C1C1",
+            "#BFBFBF",
+            "#C2C2C2",
+            "#B8B8B8",
+            "#FEFEFE",
+            "#CBCBCB",
+            "#A1A1A1",
+            "#818181",
+            "#6A6A6A",
+            "#5C5C5C",
+            "#575757",
+            "#686868",
+            "#DEDEDE",
+            "#737373",
+            "#A0A0A0",
+            "#E3E3E3",
+            "#BABABA",
+            "#DADADA",
+            "#D0D0D0",
+            "#E8E8E8",
+            "#FCFCFC",
+            "#878787",
+            "#8A8A8A",
+            "#767676",
+            "#787878",
+            "#868686",
+            "#C8C8C8",
+            "#9C9C9C",
+            "#B7B7B7",
+            "#9D9D9D",
+            "#DBDBDB",
+            "#C5C5C5",
+            "#858585",
+            "#404040",
+            "#3B3B3B",
+            "#4C4C4C",
+            "#585858",
+            "#505050",
+            "#848484",
+            "#F0F0F0",
+            "#FBFBFB",
+            "#D7D7D7",
+            "#5F5F5F",
+            "#7F7F7F",
+            "#8B8B8B",
+            "#9F9F9F",
+            "#D4D4D4",
+            "#D6D6D6",
+            "#ABABAB",
+            "#777777",
+            "#494949",
+            "#EBEBEB",
+            "#E4E4E4",
+            "#828282",
+            "#B5B5B5",
+            "#B2B2B2",
+            "#DCDCDC",
+            "#F5F5F5",
+            "#545454",
+            "#696969",
+            "#C6C6C6",
+            "#CACACA",
+            "#4F4F4F",
+            "#666666",
+            "#929292",
+            "#AEAEAE",
+            "#515151",
+            "#7B7B7B",
+            "#A5A5A5",
+            "#FDFDFD",
+            "#D5D5D5",
+            "#A7A7A7",
+            "#8F8F8F",
+            "#717171",
+            "#6E6E6E",
+            "#B1B1B1"
+          ],
+          "sourcePalette": [
+            "#004588",
+            "#A8A8A8",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "c777d88d591e85f5d112fc734488036fe4404b00ab1833666ade28d9b992e45d"
+        },
+        {
+          "id": "flat",
+          "label": "Flat navy oval",
+          "sourceUrl": "https://api.iconify.design/thesvg-color/subaru.svg",
+          "sourcePage": "https://icon-sets.iconify.design/thesvg-color/subaru/",
+          "sourceSha256": "3d1962d59084be24c5b4e9e135a16679e668eba17524975a2c3a7772b4448c42",
+          "ops": {
+            "viewBox": "-0.48 4.503 24.96 14.994"
+          },
+          "path": "/logos/svg/cars/alternates/subaru-flat.svg",
+          "format": "svg",
+          "colors": [
+            "#013C74"
+          ],
+          "sourcePalette": [
+            "#013C74",
+            "#A7A9AC",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "78d99aa885d277ae54a9f40325141855482ce42adb4da88d863f05eee715ba8b"
+        }
+      ]
+    },
+    {
+      "id": "CAR-TESLA",
+      "league": "CAR",
+      "conference": "American",
+      "region": "Tesla",
+      "name": "",
+      "abbr": "TESLA",
+      "aliases": [
+        "Tesla Motors",
+        "Tesla Inc"
+      ],
+      "palette": [
+        "#E31937",
+        "#171A20",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "T mark",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Tesla_T_symbol.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Tesla_T_symbol.svg",
+          "sourceSha256": "19df638b8c615f3f59909f81c7e962856710a0a774a4d57f117fbeea9e8c5d68",
+          "ops": {
+            "viewBox": "-4.572 -4.572 263.727 262.645"
+          },
+          "path": "/logos/svg/cars/tesla.svg",
+          "format": "svg",
+          "colors": [
+            "#E82127"
+          ],
+          "sourcePalette": [
+            "#E82127",
+            "#171A20",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "59d966a670203e186c0f37d260ba66a87f6a700da46e2f0349e218a7a26be43a"
+        },
+        {
+          "id": "red-tile",
+          "label": "White T on red tile",
+          "sourceUrl": "https://brandeps.com/logo-download/t/tesla-logo-vector-01.svg",
+          "sourcePage": "https://brandeps.com/logo/t/tesla-01",
+          "sourceSha256": "8569d2b5159006924f17182a28d079760fb97032f15652d0fbb6379a427e5b0f",
+          "ops": {
+            "removeNodes": [
+              "2/0"
+            ]
+          },
+          "path": "/logos/svg/cars/alternates/tesla-red-tile.svg",
+          "format": "svg",
+          "colors": [
+            "#E31937",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#E31937",
+            "#171A20",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "90760277b7107065eb93d16ef06d3332e00a5d1f81f0d5fb6615553b32380f10"
+        }
+      ]
+    },
+    {
+      "id": "CAR-TOYOTA",
+      "league": "CAR",
+      "conference": "Japanese & Korean",
+      "region": "Toyota",
+      "name": "",
+      "abbr": "TOYOTA",
+      "aliases": [
+        "Toyota Motor",
+        "Toyota Motor Corporation"
+      ],
+      "palette": [
+        "#EB0A1E",
+        "#58595B",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Three ellipses",
+          "sourceUrl": "https://api.iconify.design/thesvg-color/toyota.svg",
+          "sourcePage": "https://icon-sets.iconify.design/thesvg-color/toyota/",
+          "sourceSha256": "843abcd8c26a41892c8d9d722e3aa5efa6aff9240a4d61387cadaaa1b638b1cd",
+          "ops": {
+            "viewBox": "-0.48 3.368 24.96 17.264"
+          },
+          "path": "/logos/svg/cars/toyota.svg",
+          "format": "svg",
+          "colors": [
+            "#EB0A1E"
+          ],
+          "sourcePalette": [
+            "#EB0A1E",
+            "#58595B",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "59dcecb81605d0f4488896c95e044cc3616ce13268b14742e829cb0e5e83838f"
+        },
+        {
+          "id": "chrome",
+          "label": "Chrome emblem",
+          "sourceUrl": "https://brandeps.com/logo-download/t/toyota-logo-vector-01.svg",
+          "sourcePage": "https://brandeps.com/logo/t/toyota-01",
+          "sourceSha256": "4135d3ec09630abdebbeca1cc781db6d32b23a30bd727943c68517b5f0e0b254",
+          "ops": {
+            "keepNodes": [
+              "1/0"
+            ],
+            "viewBox": "23.383 37.283 465.234 307.534"
+          },
+          "path": "/logos/svg/cars/alternates/toyota-chrome.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#D0D2D3",
+            "#F1F1F2",
+            "#F0F0F1",
+            "#E8E9EA",
+            "#E6E7E8",
+            "#CFD0D1",
+            "#949597",
+            "#626366",
+            "#C5C7C9",
+            "#D4D5D7",
+            "#EFEFF0",
+            "#CCCCCE",
+            "#A6A7A9",
+            "#88898B",
+            "#737477",
+            "#66676A",
+            "#6D6E70"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#7D7E80",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "ea3840e7b08276f66757b154b104aa65313fbbe91702fa1ffc507d66708f914d"
+        }
+      ]
+    },
+    {
+      "id": "CAR-VW",
+      "league": "CAR",
+      "conference": "German",
+      "region": "Volkswagen",
+      "name": "",
+      "abbr": "VW",
+      "aliases": [
+        "VW",
+        "Volkswagen AG"
+      ],
+      "palette": [
+        "#001E50",
+        "#2058AF",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Blue roundel",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Volkswagen_Logo_till_1995.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Volkswagen_Logo_till_1995.svg",
+          "sourceSha256": "07445826127b32961b96e526c46ce1a8e8a60e856ec7fefb973ece8061434330",
+          "ops": {
+            "viewBox": "-4.273 -4.273 222.2 222.2"
+          },
+          "path": "/logos/svg/cars/vw.svg",
+          "format": "svg",
+          "colors": [
+            "#2058AF",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#2058AF",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "d95b6c7dd4f05e8acc5deba84a55b893fed0087cb8964ae75856cf41e2a9c54f"
+        },
+        {
+          "id": "2019-flat",
+          "label": "2019 flat line roundel",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Volkswagen_logo_2019.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Volkswagen_logo_2019.svg",
+          "sourceSha256": "5e9fb889f1ccc7776dd9305b235be41a256265d3fef19f26945ea414eb65edf5",
+          "ops": {
+            "viewBox": "-17.187 -18.46 1059.592 1059.592"
+          },
+          "path": "/logos/svg/cars/alternates/vw-2019-flat.svg",
+          "format": "svg",
+          "colors": [
+            "#001E50"
+          ],
+          "sourcePalette": [
+            "#001E50",
+            "#2058AF",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "bb21e62ca587d9e43341c3506b7edb78c4d406311dfea96f0f72fe6531716057"
+        },
+        {
+          "id": "chrome-3d",
+          "label": "2000s chrome roundel",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/2/23/Volkswagen_-_Logo.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Volkswagen_-_Logo.svg",
+          "sourceSha256": "6af7d2e24cf4592d57fe872971620ac560f3d90f83b96fead2dcdaa5783bfee4",
+          "ops": {
+            "viewBox": "2.252 2.252 505.495 505.495"
+          },
+          "path": "/logos/svg/cars/alternates/vw-chrome-3d.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#BFBBB9",
+            "#544E4E",
+            "#352D2B",
+            "#FFFFFF",
+            "#979190",
+            "#5F585A",
+            "#282423",
+            "#544D4F",
+            "#ADA6A5",
+            "#386EAC",
+            "#366CAA",
+            "#3166A3",
+            "#295B98",
+            "#1D4D88",
+            "#0F3C75",
+            "#002A60",
+            "#002256",
+            "#6895C7",
+            "#6490C3",
+            "#5882B6",
+            "#446CA2",
+            "#2C5087",
+            "#0F3469",
+            "#F8F8F7",
+            "#F5F5F4",
+            "#ECECEB",
+            "#DDDBDB",
+            "#C8C6C5",
+            "#AEABAB",
+            "#A09D9E",
+            "#B4B1B1",
+            "#CAC7C8",
+            "#D8D5D6",
+            "#DDDADB",
+            "#FDFDFD",
+            "#F8F8F8",
+            "#EFEFF0",
+            "#E1E2E3",
+            "#CFD0D1",
+            "#B8B9BB",
+            "#9C9D9F",
+            "#848687",
+            "#7C7571",
+            "#8F8885",
+            "#AFAAA7",
+            "#CBC7C5",
+            "#E2E0DE",
+            "#F3F1F1",
+            "#FCFCFC",
+            "#F3F2F1",
+            "#E4E1E0",
+            "#CECAC8",
+            "#B3ADAA",
+            "#948D8A",
+            "#191515",
+            "#342D2D",
+            "#5B5352",
+            "#7F7676",
+            "#9B9393",
+            "#AEA6A6",
+            "#B4ADAC",
+            "#AAA2A2",
+            "#8F8686",
+            "#675E5F",
+            "#393233",
+            "#2C2628",
+            "#8A817F",
+            "#B5AFAE",
+            "#EAE7E7",
+            "#332726",
+            "#3C302E",
+            "#564A47",
+            "#6A605D",
+            "#786F6C",
+            "#EEEFEE",
+            "#D7D7D6",
+            "#BFBFBF",
+            "#AFAEAE",
+            "#A6A5A5",
+            "#A3A2A3"
+          ],
+          "sourcePalette": [
+            "#202738",
+            "#295B98",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "86cc637f933317bd45e1f79bd759b681d7a9e8471487430a81a62c16debfadd4"
+        }
+      ]
+    }
+  ]
+}

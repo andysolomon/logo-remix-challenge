@@ -52,7 +52,7 @@ describe('NBA teams', () => {
       }
       expect(deckFromStorage(JSON.stringify(deck))).toEqual(deck)
     }
-    expect(roundHints({ o: 'NBA-ATL', c: 'PRO-ATL', v: 0 })).toEqual(['Logo: NBA', 'Colors: NFL'])
+    expect(roundHints({ o: 'NBA-ATL', c: 'PRO-ATL', v: 0 })).toEqual(['Logo: NBA', 'Colors: NFL - NFC'])
   })
 
   test('all local SVGs are valid, manifest colors match artwork and used palette slots occur', () => {

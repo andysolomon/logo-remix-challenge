@@ -448,7 +448,7 @@ describe('high-school league gameplay integration', () => {
   test('round hints identify high-school teams as Cobb County', () => {
     const walton = hsTeams.find((t) => t.region === 'Walton')!
     expect(teamHint(walton)).toBe('Cobb County')
-    expect(roundHints({ o: walton.id, c: 'PRO-KC', v: 0 })).toEqual(['Logo: Cobb County', 'Colors: NFL'])
+    expect(roundHints({ o: walton.id, c: 'PRO-KC', v: 0 })).toEqual(['Logo: Cobb County', 'Colors: NFL - AFC'])
   })
 
   test('existing NFL and college data is untouched', () => {

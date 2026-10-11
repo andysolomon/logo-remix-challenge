@@ -3,7 +3,7 @@ import { existsSync, readFileSync } from 'node:fs'
 import { join } from 'node:path'
 import { createHash } from 'node:crypto'
 import { execFileSync } from 'node:child_process'
-import { TEAMS, contrastSafePermutation, deckFromStorage, fullName, isCorrectGuess, logoVariants, nextLogoVariant, normalizeRound, withLogoVariant } from '../src/lib/teams'
+import { TEAMS, contrastSafePermutation, deckFromStorage, fullName, isCorrectGuess, logoVariants, nextLogoVariant, normalizeRound, roundHints, teamHint, withLogoVariant } from '../src/lib/teams'
 
 const root = join(import.meta.dir, '..')
 const nfl = TEAMS.filter((team) => team.league === 'PRO')
@@ -198,5 +198,15 @@ with tempfile.TemporaryDirectory() as folder:
     expect(withLogoVariant(team, stale.l)).toBe(team)
     const primary = { ...old, l: 'primary' }
     expect(normalizeRound(primary)).toEqual(normalizeRound(old))
+  })
+})
+
+describe('NFL hints', () => {
+  test('every NFL team hint names its conference', () => {
+    for (const team of nfl) {
+      expect(['AFC', 'NFC']).toContain(team.conference)
+      expect(teamHint(team)).toBe(`NFL - ${team.conference}`)
+    }
+    expect(roundHints({ o: 'PRO-KC', c: 'PRO-PHI', v: 0 })).toEqual(['Logo: NFL - AFC', 'Colors: NFL - NFC'])
   })
 })

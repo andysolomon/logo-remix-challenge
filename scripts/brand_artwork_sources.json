@@ -4322,5 +4322,174 @@
     "ops": {
       "viewBox": "-0.133 -1 38.206 33.914"
     }
+  },
+  {
+    "teamId": "CLOTH-AF",
+    "id": "primary",
+    "label": "Moose",
+    "sourceUrl": "https://iconape.com/wp-content/files/xr/186326/svg/186326.svg",
+    "sourcePage": "https://iconape.com/abercrombie-and-fitch-logo-logo-icon-svg-png.html",
+    "sourceSha256": "174392deafea0d2d7f3ab632634be8ceffeb9ed997dd6e77536be9ae0637dfd8",
+    "ops": {
+      "keepNodes": [
+        "1/0"
+      ],
+      "viewBox": "36.704 -7.561 254.203 266.95"
+    }
+  },
+  {
+    "teamId": "CLOTH-ARCTERYX",
+    "id": "primary",
+    "label": "Fossil bird",
+    "sourceUrl": "https://iconape.com/wp-content/files/rn/202227/svg/202227.svg",
+    "sourcePage": "https://iconape.com/arcteryx-logo-2-logo-icon-svg-png.html",
+    "sourceSha256": "e4cbc6c1b447f676d048f7fa68117a85857e9b56692e5429e11c6822726f3428",
+    "ops": {
+      "keepNodes": [
+        "1/0-17"
+      ],
+      "viewBox": "124.723 -10.016 355.957 243.035"
+    }
+  },
+  {
+    "teamId": "CLOTH-CARHARTT",
+    "id": "primary",
+    "label": "C mark",
+    "sourceUrl": "https://cdn.freebiesupply.com/logos/large/2x/carhartt-2-logo-svg-vector.svg",
+    "sourcePage": "https://freebiesupply.com/logos/carhartt-logo-2/",
+    "sourceSha256": "db9ad90890feb25c32116679b66a66aa73a0da8f4e439d839b7f6204d44d2f0a",
+    "ops": {
+      "keepNodes": [
+        "1"
+      ],
+      "viewBox": "124.533 46.927 57.254 64.026"
+    }
+  },
+  {
+    "teamId": "CLOTH-COLUMBIA",
+    "id": "primary",
+    "label": "Diamond grid",
+    "sourceUrl": "https://iconape.com/wp-content/files/yp/202176/svg/202176.svg",
+    "sourcePage": "https://iconape.com/columbia-sportswear-company-logo-logo-icon-svg-png.html",
+    "sourceSha256": "421e4913ee9b010e731fc86a8203be95eb208bc5482d1c5f6109f11ffe40e9c3",
+    "ops": {
+      "keepNodes": [
+        "0/1-9"
+      ],
+      "viewBox": "414.266 317.796 306.158 268.848"
+    }
+  },
+  {
+    "teamId": "CLOTH-HOLLISTER",
+    "id": "primary",
+    "label": "Seagull",
+    "sourceUrl": "https://iconape.com/wp-content/files/qb/67254/svg/hollister-seagul-icon.svg",
+    "sourcePage": "https://iconape.com/hollister-seagul-icon-logo-icon-svg-png.html",
+    "sourceSha256": "4cc9787ed3720e716be5cd2a5c7b6f2cba8482f65b8618e9d12bcf0728bd8a9e",
+    "ops": {
+      "viewBox": "-20.247 -20.405 718.039 295.276"
+    }
+  },
+  {
+    "teamId": "CLOTH-LACOSTE",
+    "id": "primary",
+    "label": "Crocodile",
+    "sourceUrl": "https://brandeps.com/logo-download/l/lacoste-logo-vector-01.svg",
+    "sourcePage": "https://brandeps.com/logo/l/lacoste-01",
+    "sourceSha256": "a04662d38b7486a5d82486d2ccaf2f8bd69505ed82364bd4c220a699c965b8f1",
+    "ops": {
+      "removeNodes": [
+        "1/2"
+      ],
+      "viewBox": "119.924 124.925 275.493 165.285"
+    }
+  },
+  {
+    "teamId": "CLOTH-PATAGONIA",
+    "id": "primary",
+    "label": "Mountain skyline label",
+    "sourceUrl": "https://iconape.com/wp-content/files/go/203377/svg/203377.svg",
+    "sourcePage": "https://iconape.com/patagonia-logo-logo-icon-svg-png.html",
+    "sourceSha256": "a62b4f3829d8fbe6215da426f00a09bda4eaba73c157914469629f76e383b0a1",
+    "ops": {
+      "removeNodes": [
+        "1/1",
+        "1/2"
+      ],
+      "viewBox": "0 0 252 92"
+    }
+  },
+  {
+    "teamId": "CLOTH-POLO",
+    "id": "primary",
+    "label": "Polo player on horseback",
+    "sourceUrl": "https://brandeps.com/logo-download/p/polo-ralph-lauren-logo-vector-01.svg",
+    "sourcePage": "https://brandeps.com/logo/p/polo-ralph-lauren-01",
+    "sourceSha256": "7e25f4a2e133be1dae5406d8c2561ef3d5e2e51e8896f3b662c288bc7a24c362",
+    "ops": {
+      "keepNodes": [
+        "0",
+        "1/11-42"
+      ],
+      "viewBox": "162.622 -10.867 186.565 383.537"
+    }
+  },
+  {
+    "teamId": "CLOTH-TIMBERLAND",
+    "id": "primary",
+    "label": "Tree",
+    "sourceUrl": "https://brandeps.com/logo-download/t/timberland-logo-vector-01.svg",
+    "sourcePage": "https://brandeps.com/logo/t/timberland-01",
+    "sourceSha256": "9d60175ff9bfa6ce6679035654883b0c6d87fc245633570980a7e2cb5dc46c80",
+    "ops": {
+      "keepNodes": [
+        "0",
+        "1/0-11",
+        "1/18-22"
+      ],
+      "viewBox": "417.898 208.368 96.824 97.234"
+    }
+  },
+  {
+    "teamId": "CLOTH-TNF",
+    "id": "primary",
+    "label": "Half dome",
+    "sourceUrl": "https://logotyp.us/file/northface.svg",
+    "sourcePage": "https://logotyp.us/logo/northface/",
+    "sourceSha256": "ceaa5b1fca79f3029bf84532718c7733531c3fbaf715467dd879bea0a58e8c9d",
+    "ops": {
+      "keepNodes": [
+        "0/0-2"
+      ],
+      "viewBox": "334.575 112.143 130.39 175.432"
+    }
+  },
+  {
+    "teamId": "CLOTH-TOMMY",
+    "id": "primary",
+    "label": "Flag",
+    "sourceUrl": "https://iconape.com/wp-content/files/xp/186597/svg/186597.svg",
+    "sourcePage": "https://iconape.com/tommy-hilfiger-logo-logo-icon-svg-png.html",
+    "sourceSha256": "98364156ae33b293acbb0e6587f7f894b86538488bce68f2947d586b73e11d16",
+    "ops": {
+      "keepNodes": [
+        "1/13-16"
+      ],
+      "viewBox": "133.995 -0.556 27.519 18.413"
+    }
+  },
+  {
+    "teamId": "CLOTH-VV",
+    "id": "primary",
+    "label": "Whale",
+    "sourceUrl": "https://brandeps.com/logo-download/v/vineyard-vines-logo-vector-01.svg",
+    "sourcePage": "https://brandeps.com/logo/v/vineyard-vines-01",
+    "sourceSha256": "f22219a058a50dc807e3ffae4a1440ddedcae42a020b0d8b17aac2da1ff17c5e",
+    "ops": {
+      "removeNodes": [
+        "1/4"
+      ],
+      "viewBox": "-15.261 82.863 542.735 240.96"
+    }
   }
 ]

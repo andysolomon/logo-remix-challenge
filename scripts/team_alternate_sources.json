@@ -1,0 +1,535 @@
+[
+  {
+    "teamId": "NBA-ATL",
+    "id": "1995-spread-wings",
+    "label": "1995 spread wings",
+    "sourceUrl": "https://cdn.worldvectorlogo.com/logos/atlanta-hawks.svg",
+    "sourcePage": "https://worldvectorlogo.com/logo/atlanta-hawks",
+    "sourceSha256": "1ea6423a8a02cd29c9b108d3fee4b3d0c82e1fa823fa166a09669e8d6c54a580",
+    "ops": {
+      "removeNodes": [
+        "0"
+      ],
+      "viewBox": "-2.78 42.99 198.32 106.78"
+    }
+  },
+  {
+    "teamId": "NBA-BKN",
+    "id": "1997-shield",
+    "label": "1997 shield",
+    "sourceUrl": "https://cdn.worldvectorlogo.com/logos/new-jersey-nets.svg",
+    "sourcePage": "https://worldvectorlogo.com/logo/new-jersey-nets",
+    "sourceSha256": "8c5477b46d053f8c8cd1d0393d10b10e8367511e1dfe9d1e8eb1870eaf9f3e0f",
+    "ops": {
+      "removeNodes": [
+        "0"
+      ],
+      "viewBox": "16.18 9.24 160.4 174.27"
+    }
+  },
+  {
+    "teamId": "NBA-CHA",
+    "id": "1988-mascot",
+    "label": "1988 dribbling mascot",
+    "sourceUrl": "https://cdn.worldvectorlogo.com/logos/charlotte-hornets.svg",
+    "sourcePage": "https://worldvectorlogo.com/logo/charlotte-hornets",
+    "sourceSha256": "4b5108146704147485b3fd443e0a5e1ea9456aaf8694705560c13db0b77f0319",
+    "ops": {
+      "removeNodes": [
+        "0"
+      ],
+      "viewBox": "-2.78 30.55 198.31 131.67"
+    }
+  },
+  {
+    "teamId": "NBA-CLE",
+    "id": "sword-c",
+    "label": "Sword C",
+    "sourceUrl": "https://brandeps.com/logo-download/c/cleveland-cavaliers-logo-vector-02.svg",
+    "sourcePage": "https://brandeps.com/logo/c/cleveland-cavaliers-02",
+    "sourceSha256": "fff3c28fe5626c18ad0b99337fee0957d39cc3b3b6dc08c0063cce6a1a212c12",
+    "ops": {
+      "viewBox": "115.59 -15.31 280.73 542.72"
+    }
+  },
+  {
+    "teamId": "NBA-DAL",
+    "id": "1980-cowboy-hat",
+    "label": "1980 cowboy hat",
+    "sourceUrl": "https://cdn.worldvectorlogo.com/logos/dallas-mavericks-1.svg",
+    "sourcePage": "https://worldvectorlogo.com/logo/dallas-mavericks-1",
+    "sourceSha256": "5c2e27041fe6928038c0aa18e3a11e6c0bba462a515aad61cf33071978f5a829",
+    "ops": {
+      "removeNodes": [
+        "0"
+      ],
+      "viewBox": "14.22 6.87 174.98 168.74"
+    }
+  },
+  {
+    "teamId": "NBA-DEN",
+    "id": "1993-mountain-arch",
+    "label": "1993 mountain arch",
+    "sourceUrl": "https://cdn.worldvectorlogo.com/logos/denver-nuggets-2.svg",
+    "sourcePage": "https://worldvectorlogo.com/logo/denver-nuggets-2",
+    "sourceSha256": "e824407a9cd1f2dc37f78fe8a1915fb3542ed94da4881d761a4e8906cf5be915",
+    "ops": {
+      "removeNodes": [
+        "0/0"
+      ],
+      "viewBox": "3.23 46.94 186.29 98.88"
+    }
+  },
+  {
+    "teamId": "NBA-DET",
+    "id": "1996-teal-horse",
+    "label": "1996 teal horse",
+    "sourceUrl": "https://cdn.worldvectorlogo.com/logos/detroit-pistons-2.svg",
+    "sourcePage": "https://worldvectorlogo.com/logo/detroit-pistons-2",
+    "sourceSha256": "60e3ddbb288864e718d8215e6fbe13470a36416eab0c859acf502208d8a0f11f",
+    "ops": {
+      "removeNodes": [
+        "0"
+      ],
+      "viewBox": "-2.78 19.07 198.31 154.62"
+    }
+  },
+  {
+    "teamId": "NBA-HOU",
+    "id": "1995-orbit",
+    "label": "1995 orbiting ball",
+    "sourceUrl": "https://cdn.worldvectorlogo.com/logos/houston-rockets.svg",
+    "sourcePage": "https://worldvectorlogo.com/logo/houston-rockets",
+    "sourceSha256": "0cb96298ad7be9a1f30f8e43a87fb6302dfd0a151a15c1c1423d1b47bf9a1458",
+    "ops": {
+      "removeNodes": [
+        "0",
+        "10"
+      ],
+      "viewBox": "9.24 30.53 174.27 131.7"
+    }
+  },
+  {
+    "teamId": "NBA-LAC",
+    "id": "2010-monogram",
+    "label": "2010 monogram",
+    "sourceUrl": "https://cdn.worldvectorlogo.com/logos/los-angeles-clippers-1.svg",
+    "sourcePage": "https://worldvectorlogo.com/logo/los-angeles-clippers-1",
+    "sourceSha256": "9d8c6fb3f4d4f9020e3d4d786f59e3d1aac88c2ed6234a4a0a90a88c9dee5aee",
+    "ops": {
+      "removeNodes": [
+        "0/0"
+      ],
+      "viewBox": "15.14 3.23 162.48 186.29"
+    }
+  },
+  {
+    "teamId": "NBA-MEM",
+    "id": "1995-bear",
+    "label": "1995 bear",
+    "sourceUrl": "https://cdn.worldvectorlogo.com/logos/vancouver-grizzlies.svg",
+    "sourcePage": "https://worldvectorlogo.com/logo/vancouver-grizzlies",
+    "sourceSha256": "6c82d35ca75479c334d9f14deebbec1d67fe5daa274cb89f13dc6e0a6f303b67",
+    "ops": {
+      "removeNodes": [
+        "0"
+      ],
+      "viewBox": "-2.78 20.28 198.31 152.2"
+    }
+  },
+  {
+    "teamId": "NBA-MIL",
+    "id": "1993-purple-deer",
+    "label": "1993 purple deer",
+    "sourceUrl": "https://cdn.worldvectorlogo.com/logos/milwaukee-bucks.svg",
+    "sourcePage": "https://worldvectorlogo.com/logo/milwaukee-bucks",
+    "sourceSha256": "9d745404237c23e67eb9b80c54bb498643db5acb8ff1f6cb1a9bc133880e9622",
+    "ops": {
+      "removeNodes": [
+        "0"
+      ],
+      "viewBox": "21.68 -2.78 149.4 198.31"
+    }
+  },
+  {
+    "teamId": "NBA-MIN",
+    "id": "1996-forest",
+    "label": "1996 pine forest",
+    "sourceUrl": "https://cdn.worldvectorlogo.com/logos/minnesota-timberwolves.svg",
+    "sourcePage": "https://worldvectorlogo.com/logo/minnesota-timberwolves",
+    "sourceSha256": "578a1e572d89cdc0a68c77070822424ba63612cd17b58faaa17dce52afe414dd",
+    "ops": {
+      "removeNodes": [
+        "0/0"
+      ],
+      "viewBox": "-2.78 19.83 198.31 153.1"
+    }
+  },
+  {
+    "teamId": "NBA-PHX",
+    "id": "flaming-ball",
+    "label": "Flaming ball",
+    "sourceUrl": "https://cdn.worldvectorlogo.com/logos/phoenix-suns.svg",
+    "sourcePage": "https://worldvectorlogo.com/logo/phoenix-suns",
+    "sourceSha256": "ffab9e876815c02e889a579a987293345c3ab761cdd5c6889ef0b2c5852b20b5",
+    "ops": {
+      "viewBox": "-12.46 -12.46 440.24 289.62"
+    }
+  },
+  {
+    "teamId": "NBA-SA",
+    "id": "fiesta-banner",
+    "label": "Fiesta banner",
+    "sourceUrl": "https://cdn.worldvectorlogo.com/logos/san-antonio-spurs.svg",
+    "sourcePage": "https://worldvectorlogo.com/logo/san-antonio-spurs",
+    "sourceSha256": "1e531851639d6e68af3525899f613eb8fb10974aaa8ae143441bf51c13cdc6ad",
+    "ops": {
+      "removeNodes": [
+        "0/0"
+      ],
+      "viewBox": "1.68 44.46 189.4 103.82"
+    }
+  },
+  {
+    "teamId": "NBA-SAC",
+    "id": "1994-crown",
+    "label": "1994 crown",
+    "sourceUrl": "https://cdn.worldvectorlogo.com/logos/sacramento-kings-1.svg",
+    "sourcePage": "https://worldvectorlogo.com/logo/sacramento-kings-1",
+    "sourceSha256": "0f6d854e2e1a4ac08aadfb8cde26801c11d6dc629beb37ab032a8dd44089da52",
+    "ops": {
+      "removeNodes": [
+        "0/0"
+      ],
+      "viewBox": "14.47 -2.78 163.82 198.31"
+    }
+  },
+  {
+    "teamId": "NBA-TOR",
+    "id": "1995-dinosaur",
+    "label": "1995 dinosaur",
+    "sourceUrl": "https://cdn.worldvectorlogo.com/logos/toronto-raptors-1.svg",
+    "sourcePage": "https://worldvectorlogo.com/logo/toronto-raptors-1",
+    "sourceSha256": "6e457500e207acd9b2389ebe052000a4138db9ddef00c76fb659b54bba9a44c7",
+    "ops": {
+      "removeNodes": [
+        "0"
+      ],
+      "viewBox": "-2.78 9.37 198.32 174.01"
+    }
+  },
+  {
+    "teamId": "NBA-UTAH",
+    "id": "1996-mountain",
+    "label": "1996 mountain",
+    "sourceUrl": "https://cdn.worldvectorlogo.com/logos/utah-jazz.svg",
+    "sourcePage": "https://worldvectorlogo.com/logo/utah-jazz",
+    "sourceSha256": "7a39889a6ed1e7f5741402305502845f0b09012941b76c6922bad361a4ddbfb1",
+    "ops": {
+      "removeNodes": [
+        "0",
+        "27",
+        "28",
+        "29",
+        "33",
+        "34",
+        "35",
+        "39",
+        "40",
+        "41",
+        "45",
+        "46",
+        "47",
+        "48"
+      ],
+      "viewBox": "4.72 34.52 183.32 123.72"
+    }
+  },
+  {
+    "teamId": "NBA-WSH",
+    "id": "1997-crescent",
+    "label": "1997 crescent moon",
+    "sourceUrl": "https://cdn.worldvectorlogo.com/logos/washington-wizards-1.svg",
+    "sourcePage": "https://worldvectorlogo.com/logo/washington-wizards-1",
+    "sourceSha256": "85c5483857fe00a78376dfe1c849780751f7ec7d784151a059e0ac9d1739e19a",
+    "ops": {
+      "removeNodes": [
+        "0/0"
+      ],
+      "viewBox": "-2.78 35.14 198.31 122.5"
+    }
+  },
+  {
+    "teamId": "COL-ALA",
+    "id": "elephant-head",
+    "label": "Elephant head",
+    "sourceUrl": "https://cdn.worldvectorlogo.com/logos/alabama-crimson-tide-4.svg",
+    "sourcePage": "https://worldvectorlogo.com/logo/alabama-crimson-tide-4",
+    "sourceSha256": "274a27306a3ad17b0ea1bf75645da7ca745abb8001aeac25855eaa018b209149",
+    "ops": {
+      "removeNodes": [
+        "0/0"
+      ],
+      "viewBox": "3.2 31.9 186.3 129"
+    }
+  },
+  {
+    "teamId": "COL-ASU",
+    "id": "devil-mascot",
+    "label": "Pitchfork devil mascot",
+    "sourceUrl": "https://cdn.worldvectorlogo.com/logos/arizona-state-sun-devils.svg",
+    "sourcePage": "https://worldvectorlogo.com/logo/arizona-state-sun-devils",
+    "sourceSha256": "264699ba7348aea639b7331266edc2683c545d249e4a1c2dd443fb649ae80cf6",
+    "ops": {
+      "removeNodes": [
+        "0",
+        "35"
+      ],
+      "viewBox": "26.9 3.2 138.9 186.3"
+    }
+  },
+  {
+    "teamId": "COL-AUB",
+    "id": "tiger-eyes",
+    "label": "Tiger eyes",
+    "sourceUrl": "https://cdn.worldvectorlogo.com/logos/auburn-tigers-6.svg",
+    "sourcePage": "https://worldvectorlogo.com/logo/auburn-tigers-6",
+    "sourceSha256": "c5f6e99ca709ad67d7c4819a31c812cd1f9c340e1f413728bb9abaead2b52d0f",
+    "ops": {
+      "removeNodes": [
+        "0/0",
+        "0/8"
+      ],
+      "viewBox": "3.2 45.4 186.3 101.9"
+    }
+  },
+  {
+    "teamId": "COL-DUKE",
+    "id": "devil-head",
+    "label": "Devil head in block D",
+    "sourceUrl": "https://cdn.worldvectorlogo.com/logos/duke-blue-devils-1.svg",
+    "sourcePage": "https://worldvectorlogo.com/logo/duke-blue-devils-1",
+    "sourceSha256": "c7b5b7dd25558d2f83ca7548962af1289a1630278216f020ad11fe01a9fbcd59",
+    "ops": {
+      "removeNodes": [
+        "0/0",
+        "0/8"
+      ],
+      "viewBox": "11.4 23.9 169.9 144.9"
+    }
+  },
+  {
+    "teamId": "COL-FLA",
+    "id": "gator-mascot",
+    "label": "Gator mascot in sweater",
+    "sourceUrl": "https://cdn.worldvectorlogo.com/logos/florida-gators-2.svg",
+    "sourcePage": "https://worldvectorlogo.com/logo/florida-gators-2",
+    "sourceSha256": "a254a1043635de70d8550d27b45c77a22de1bc068767c29ac870c60badea6e14",
+    "ops": {
+      "removeNodes": [
+        "0/0"
+      ],
+      "viewBox": "7.8 3.2 177.1 186.3"
+    }
+  },
+  {
+    "teamId": "COL-FSU",
+    "id": "spear",
+    "label": "Feathered spear",
+    "sourceUrl": "https://cdn.worldvectorlogo.com/logos/florida-state-seminoles-2.svg",
+    "sourcePage": "https://worldvectorlogo.com/logo/florida-state-seminoles-2",
+    "sourceSha256": "d1b870b7da157b5831e6cc34a732ffef2206773b83ceee73163acbb16b936842",
+    "ops": {
+      "removeNodes": [
+        "0/0"
+      ],
+      "viewBox": "3.2 62.6 186.3 67.5"
+    }
+  },
+  {
+    "teamId": "COL-GT",
+    "id": "wasp-mascot",
+    "label": "Wasp mascot",
+    "sourceUrl": "https://cdn.worldvectorlogo.com/logos/georgia-tech-yellow-jackets-1.svg",
+    "sourcePage": "https://worldvectorlogo.com/logo/georgia-tech-yellow-jackets-1",
+    "sourceSha256": "6001f712c7b13fdd6cc01fba5544543b7eaafeca90a7c909e9d28516f45d3c21",
+    "ops": {
+      "removeNodes": [
+        "0/0"
+      ],
+      "viewBox": "3.6 -2.8 185.5 198.3"
+    }
+  },
+  {
+    "teamId": "COL-LSU",
+    "id": "tiger-head",
+    "label": "Tiger head",
+    "sourceUrl": "https://cdn.worldvectorlogo.com/logos/lsu-tigers-1.svg",
+    "sourcePage": "https://worldvectorlogo.com/logo/lsu-tigers-1",
+    "sourceSha256": "cbd019e903956f652fb2fe81f7519c5edfdf8f60ba46344e05de98211805e072",
+    "ops": {
+      "removeNodes": [
+        "0/0"
+      ],
+      "viewBox": "14 9 164.7 174.7"
+    }
+  },
+  {
+    "teamId": "COL-MIA",
+    "id": "ibis-mascot",
+    "label": "Ibis mascot",
+    "sourceUrl": "https://cdn.worldvectorlogo.com/logos/miami-hurricanes-4.svg",
+    "sourcePage": "https://worldvectorlogo.com/logo/miami-hurricanes-4",
+    "sourceSha256": "454939a02fec230bd85ca40b0ffcdc81d8398c2757656f6b5992a5326500aa84",
+    "ops": {
+      "removeNodes": [
+        "0"
+      ],
+      "viewBox": "12.1 3.2 168.5 186.3"
+    }
+  },
+  {
+    "teamId": "COL-ORE",
+    "id": "duck-mascot",
+    "label": "Duck mascot",
+    "sourceUrl": "https://cdn.worldvectorlogo.com/logos/oregon-ducks-2.svg",
+    "sourcePage": "https://worldvectorlogo.com/logo/oregon-ducks-2",
+    "sourceSha256": "2d984a0b26806798d118e29d4f60a4e9fee942ea957dc7ebf797abe33830760f",
+    "ops": {
+      "removeNodes": [
+        "0"
+      ],
+      "viewBox": "15.9 21.3 169.9 146.9"
+    }
+  },
+  {
+    "teamId": "COL-PUR",
+    "id": "locomotive",
+    "label": "Steam locomotive",
+    "sourceUrl": "https://iconape.com/wp-content/files/rf/88489/svg/purdue-university-boilermakers-7.svg",
+    "sourcePage": "https://iconape.com/purdue-university-boilermakers-logo-icon-svg-png.html",
+    "sourceSha256": "8b260fb8603c79e1fa59fc8f1e663b6d4233960f278afa0b77ae69201943abd6",
+    "ops": {
+      "removeNodes": [
+        "0",
+        "30"
+      ],
+      "viewBox": "3.2 19.9 186.3 153"
+    }
+  },
+  {
+    "teamId": "COL-SOU",
+    "id": "jaguar-head",
+    "label": "Jaguar head",
+    "sourceUrl": "https://cdn.worldvectorlogo.com/logos/southern-jaguars-3.svg",
+    "sourcePage": "https://worldvectorlogo.com/logo/southern-jaguars-3",
+    "sourceSha256": "7ce5937db3fed9018d506a77a52b5845aa54b9fa5bb3653c3d358fa25412a392",
+    "ops": {
+      "removeNodes": [
+        "0/0"
+      ],
+      "viewBox": "3.2 12.8 186.3 167.1"
+    }
+  },
+  {
+    "teamId": "COL-TTU",
+    "id": "masked-rider",
+    "label": "Masked rider on horse",
+    "sourceUrl": "https://cdn.worldvectorlogo.com/logos/texas-tech-red-raiders-3.svg",
+    "sourcePage": "https://worldvectorlogo.com/logo/texas-tech-red-raiders-3",
+    "sourceSha256": "494827ab39972f6cfe42840af8f134942eac7f5ec48f6508fe9d925f1191dc32",
+    "ops": {
+      "removeNodes": [
+        "0/0",
+        "0/11"
+      ],
+      "viewBox": "3.2 13.7 186.3 165.4"
+    }
+  },
+  {
+    "teamId": "COL-UGA",
+    "id": "bulldog-head",
+    "label": "Bulldog head",
+    "sourceUrl": "https://cdn.worldvectorlogo.com/logos/georgia-bulldogs-5.svg",
+    "sourcePage": "https://worldvectorlogo.com/logo/georgia-bulldogs-5",
+    "sourceSha256": "4bce7381bf98019c08c412fee7ff55dcc941685e2194fca7b5e688a9b567b6f9",
+    "ops": {
+      "removeNodes": [
+        "0/0"
+      ],
+      "viewBox": "16 3.2 160.8 186.3"
+    }
+  },
+  {
+    "teamId": "COL-UK",
+    "id": "wildcat-mascot",
+    "label": "Wildcat climbing letters",
+    "sourceUrl": "https://cdn.worldvectorlogo.com/logos/kentucky-wildcats-1.svg",
+    "sourcePage": "https://worldvectorlogo.com/logo/kentucky-wildcats-1",
+    "sourceSha256": "ea729fed172d6442b3b53aaa3f6007e0ab755e82f234e713d063330bdf8368e4",
+    "ops": {
+      "removeNodes": [
+        "0/0",
+        "0/11"
+      ],
+      "viewBox": "-2.8 -1.4 198.3 195.6"
+    }
+  },
+  {
+    "teamId": "COL-UNC",
+    "id": "ram-head",
+    "label": "Ram head",
+    "sourceUrl": "https://cdn.worldvectorlogo.com/logos/unc-tar-heels-8.svg",
+    "sourcePage": "https://worldvectorlogo.com/logo/unc-tar-heels-8",
+    "sourceSha256": "cc5fbcdbe5258bf9cafbf4ee2e9e50218259d4a9e43633d040030232453d4f01",
+    "ops": {
+      "removeNodes": [
+        "0/0"
+      ],
+      "viewBox": "3.2 17.1 186.3 158.6"
+    }
+  },
+  {
+    "teamId": "COL-WAKE",
+    "id": "top-hat-head",
+    "label": "Top-hat mascot head",
+    "sourceUrl": "https://cdn.worldvectorlogo.com/logos/wake-forest-demon-deacons.svg",
+    "sourcePage": "https://worldvectorlogo.com/logo/wake-forest-demon-deacons",
+    "sourceSha256": "02412b4962aad657292b1729b9850fa9df0a0f4195d3c966d15198715f7c3c08",
+    "ops": {
+      "removeNodes": [
+        "0/0"
+      ],
+      "viewBox": "16.2 -2.8 160.4 198.3"
+    }
+  },
+  {
+    "teamId": "COL-WASH",
+    "id": "husky-head",
+    "label": "Husky head",
+    "sourceUrl": "https://cdn.worldvectorlogo.com/logos/washington-huskies-3.svg",
+    "sourcePage": "https://worldvectorlogo.com/logo/washington-huskies-3",
+    "sourceSha256": "357051530bf3c8efa974659caaddef93cec57ec2882043df3abaf0a760661d39",
+    "ops": {
+      "removeNodes": [
+        "0",
+        "52"
+      ],
+      "viewBox": "29.3 3.2 134.1 186.3"
+    }
+  },
+  {
+    "teamId": "COL-WIS",
+    "id": "badger-mascot",
+    "label": "Badger mascot",
+    "sourceUrl": "https://cdn.worldvectorlogo.com/logos/wisconsin-badgers-2.svg",
+    "sourcePage": "https://worldvectorlogo.com/logo/wisconsin-badgers-2",
+    "sourceSha256": "48a87d141fcb008c7c3420234bc3b7e2f40d902309a231422b73ba93baca4862",
+    "ops": {
+      "removeNodes": [
+        "0/0"
+      ],
+      "viewBox": "23 3.2 146.7 186.3"
+    }
+  }
+]

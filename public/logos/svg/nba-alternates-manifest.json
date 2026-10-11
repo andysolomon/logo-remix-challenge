@@ -1,0 +1,557 @@
+{
+  "assets": [
+    {
+      "teamId": "NBA-ATL",
+      "id": "1995-spread-wings",
+      "label": "1995 spread wings",
+      "sourceUrl": "https://cdn.worldvectorlogo.com/logos/atlanta-hawks.svg",
+      "sourcePage": "https://worldvectorlogo.com/logo/atlanta-hawks",
+      "sourceSha256": "1ea6423a8a02cd29c9b108d3fee4b3d0c82e1fa823fa166a09669e8d6c54a580",
+      "ops": {
+        "removeNodes": [
+          "0"
+        ],
+        "viewBox": "-2.78 42.99 198.32 106.78"
+      },
+      "path": "/logos/svg/nba/alternates/atl-1995-spread-wings.svg",
+      "format": "svg",
+      "colors": [
+        "#000000",
+        "#9E7353",
+        "#6D5B40",
+        "#B2394F",
+        "#FFFFFF",
+        "#F2CA3C"
+      ],
+      "sourcePalette": [
+        "#94584B",
+        "#F2CA3C",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [],
+      "sha256": "ad29ffe99dcf50c6dc7d388079dfd0f6b40caa91c5a6fcf08b5d2cf156feee06"
+    },
+    {
+      "teamId": "NBA-BKN",
+      "id": "1997-shield",
+      "label": "1997 shield",
+      "sourceUrl": "https://cdn.worldvectorlogo.com/logos/new-jersey-nets.svg",
+      "sourcePage": "https://worldvectorlogo.com/logo/new-jersey-nets",
+      "sourceSha256": "8c5477b46d053f8c8cd1d0393d10b10e8367511e1dfe9d1e8eb1870eaf9f3e0f",
+      "ops": {
+        "removeNodes": [
+          "0"
+        ],
+        "viewBox": "16.18 9.24 160.4 174.27"
+      },
+      "path": "/logos/svg/nba/alternates/bkn-1997-shield.svg",
+      "format": "svg",
+      "colors": [
+        "#FFFFFF",
+        "#727A82",
+        "#24385D",
+        "#BDC8D0",
+        "#B73048"
+      ],
+      "sourcePalette": [
+        "#945565",
+        "#24385D",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [],
+      "sha256": "c8bfd2491b47956374d4a5a9296d850781f2f636a15e7714dbd94cdcd23999e2"
+    },
+    {
+      "teamId": "NBA-CHA",
+      "id": "1988-mascot",
+      "label": "1988 dribbling mascot",
+      "sourceUrl": "https://cdn.worldvectorlogo.com/logos/charlotte-hornets.svg",
+      "sourcePage": "https://worldvectorlogo.com/logo/charlotte-hornets",
+      "sourceSha256": "4b5108146704147485b3fd443e0a5e1ea9456aaf8694705560c13db0b77f0319",
+      "ops": {
+        "removeNodes": [
+          "0"
+        ],
+        "viewBox": "-2.78 30.55 198.31 131.67"
+      },
+      "path": "/logos/svg/nba/alternates/cha-1988-mascot.svg",
+      "format": "svg",
+      "colors": [
+        "#C5703D",
+        "#000000",
+        "#3AA6B7",
+        "#FFFFFF",
+        "#5F3073"
+      ],
+      "sourcePalette": [
+        "#3AA6B7",
+        "#5F3073",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [],
+      "sha256": "36988c4f6920b24d1258d90016034541587daab95d90279b2ff8adc8a87cecee"
+    },
+    {
+      "teamId": "NBA-CLE",
+      "id": "sword-c",
+      "label": "Sword C",
+      "sourceUrl": "https://brandeps.com/logo-download/c/cleveland-cavaliers-logo-vector-02.svg",
+      "sourcePage": "https://brandeps.com/logo/c/cleveland-cavaliers-02",
+      "sourceSha256": "fff3c28fe5626c18ad0b99337fee0957d39cc3b3b6dc08c0063cce6a1a212c12",
+      "ops": {
+        "viewBox": "115.59 -15.31 280.73 542.72"
+      },
+      "path": "/logos/svg/nba/alternates/cle-sword-c.svg",
+      "format": "svg",
+      "colors": [
+        "#FFB81C",
+        "#6F2633",
+        "#041E42"
+      ],
+      "sourcePalette": [
+        "#3A223A",
+        "#FFB81C",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [
+        2
+      ],
+      "sha256": "31fda3a7cd0efea8107ed30f223e43b8c74e0b414c75d8bc7de77fbad8b449df"
+    },
+    {
+      "teamId": "NBA-DAL",
+      "id": "1980-cowboy-hat",
+      "label": "1980 cowboy hat",
+      "sourceUrl": "https://cdn.worldvectorlogo.com/logos/dallas-mavericks-1.svg",
+      "sourcePage": "https://worldvectorlogo.com/logo/dallas-mavericks-1",
+      "sourceSha256": "5c2e27041fe6928038c0aa18e3a11e6c0bba462a515aad61cf33071978f5a829",
+      "ops": {
+        "removeNodes": [
+          "0"
+        ],
+        "viewBox": "14.22 6.87 174.98 168.74"
+      },
+      "path": "/logos/svg/nba/alternates/dal-1980-cowboy-hat.svg",
+      "format": "svg",
+      "colors": [
+        "#FFFFFF",
+        "#000000",
+        "#459D58",
+        "#303066"
+      ],
+      "sourcePalette": [
+        "#000000",
+        "#3A665F",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [],
+      "sha256": "972f6a6f62b9501eed37a7c499b51ac05808a8593fcfe9bb3b573f8c2d95de32"
+    },
+    {
+      "teamId": "NBA-DEN",
+      "id": "1993-mountain-arch",
+      "label": "1993 mountain arch",
+      "sourceUrl": "https://cdn.worldvectorlogo.com/logos/denver-nuggets-2.svg",
+      "sourcePage": "https://worldvectorlogo.com/logo/denver-nuggets-2",
+      "sourceSha256": "e824407a9cd1f2dc37f78fe8a1915fb3542ed94da4881d761a4e8906cf5be915",
+      "ops": {
+        "removeNodes": [
+          "0/0"
+        ],
+        "viewBox": "3.23 46.94 186.29 98.88"
+      },
+      "path": "/logos/svg/nba/alternates/den-1993-mountain-arch.svg",
+      "format": "svg",
+      "colors": [
+        "#39397D",
+        "#FFFFFF",
+        "#8B352D"
+      ],
+      "sourcePalette": [
+        "#39397D",
+        "#8B352D",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [],
+      "sha256": "b8f44e6bd97d4f8b8685a6f19304028be28b704d89947df63fccc8d9e7eb3ace"
+    },
+    {
+      "teamId": "NBA-DET",
+      "id": "1996-teal-horse",
+      "label": "1996 teal horse",
+      "sourceUrl": "https://cdn.worldvectorlogo.com/logos/detroit-pistons-2.svg",
+      "sourcePage": "https://worldvectorlogo.com/logo/detroit-pistons-2",
+      "sourceSha256": "60e3ddbb288864e718d8215e6fbe13470a36416eab0c859acf502208d8a0f11f",
+      "ops": {
+        "removeNodes": [
+          "0"
+        ],
+        "viewBox": "-2.78 19.07 198.31 154.62"
+      },
+      "path": "/logos/svg/nba/alternates/det-1996-teal-horse.svg",
+      "format": "svg",
+      "colors": [
+        "#358489",
+        "#BECBD2",
+        "#9C2B3E",
+        "#DF9F3C",
+        "#000000",
+        "#FBFDFF",
+        "#FFFFFF"
+      ],
+      "sourcePalette": [
+        "#358489",
+        "#9C2B3E",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [],
+      "sha256": "eee00e589a16ed0add5ee9c67d076c4e099f0ab93e3c57b6cc91993e60c87cc2"
+    },
+    {
+      "teamId": "NBA-HOU",
+      "id": "1995-orbit",
+      "label": "1995 orbiting ball",
+      "sourceUrl": "https://cdn.worldvectorlogo.com/logos/houston-rockets.svg",
+      "sourcePage": "https://worldvectorlogo.com/logo/houston-rockets",
+      "sourceSha256": "0cb96298ad7be9a1f30f8e43a87fb6302dfd0a151a15c1c1423d1b47bf9a1458",
+      "ops": {
+        "removeNodes": [
+          "0",
+          "10"
+        ],
+        "viewBox": "9.24 30.53 174.27 131.7"
+      },
+      "path": "/logos/svg/nba/alternates/hou-1995-orbit.svg",
+      "format": "svg",
+      "colors": [
+        "#FFFFFF",
+        "#CB4545",
+        "#24385D",
+        "#9CA2A8",
+        "#5297B5"
+      ],
+      "sourcePalette": [
+        "#B47476",
+        "#24385D",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [],
+      "sha256": "66c58403514af116f335ba369c9fa0d9c0c4b9d7cff938c5abd4df575662ace8"
+    },
+    {
+      "teamId": "NBA-LAC",
+      "id": "2010-monogram",
+      "label": "2010 monogram",
+      "sourceUrl": "https://cdn.worldvectorlogo.com/logos/los-angeles-clippers-1.svg",
+      "sourcePage": "https://worldvectorlogo.com/logo/los-angeles-clippers-1",
+      "sourceSha256": "9d8c6fb3f4d4f9020e3d4d786f59e3d1aac88c2ed6234a4a0a90a88c9dee5aee",
+      "ops": {
+        "removeNodes": [
+          "0/0"
+        ],
+        "viewBox": "15.14 3.23 162.48 186.29"
+      },
+      "path": "/logos/svg/nba/alternates/lac-2010-monogram.svg",
+      "format": "svg",
+      "colors": [
+        "#383E88",
+        "#B43A30",
+        "#FFFFFF"
+      ],
+      "sourcePalette": [
+        "#383E88",
+        "#B43A30",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [],
+      "sha256": "aae0a9cd2dd8528620d134d2a3778aa4eacdf920872b530917dd0837e8be22a2"
+    },
+    {
+      "teamId": "NBA-MEM",
+      "id": "1995-bear",
+      "label": "1995 bear",
+      "sourceUrl": "https://cdn.worldvectorlogo.com/logos/vancouver-grizzlies.svg",
+      "sourcePage": "https://worldvectorlogo.com/logo/vancouver-grizzlies",
+      "sourceSha256": "6c82d35ca75479c334d9f14deebbec1d67fe5daa274cb89f13dc6e0a6f303b67",
+      "ops": {
+        "removeNodes": [
+          "0"
+        ],
+        "viewBox": "-2.78 20.28 198.31 152.2"
+      },
+      "path": "/logos/svg/nba/alternates/mem-1995-bear.svg",
+      "format": "svg",
+      "colors": [
+        "#000000",
+        "#845C47",
+        "#43AEA8",
+        "#BF3A44",
+        "#FFFFFF",
+        "#3E8C8D",
+        "#C0E1EB",
+        "#C73449"
+      ],
+      "sourcePalette": [
+        "#3E8C8D",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [],
+      "sha256": "d7768bb9cc7a9a8909a94b4082fcb17fa162495d40f7858e483b0bb21806fea5"
+    },
+    {
+      "teamId": "NBA-MIL",
+      "id": "1993-purple-deer",
+      "label": "1993 purple deer",
+      "sourceUrl": "https://cdn.worldvectorlogo.com/logos/milwaukee-bucks.svg",
+      "sourcePage": "https://worldvectorlogo.com/logo/milwaukee-bucks",
+      "sourceSha256": "9d745404237c23e67eb9b80c54bb498643db5acb8ff1f6cb1a9bc133880e9622",
+      "ops": {
+        "removeNodes": [
+          "0"
+        ],
+        "viewBox": "21.68 -2.78 149.4 198.31"
+      },
+      "path": "/logos/svg/nba/alternates/mil-1993-purple-deer.svg",
+      "format": "svg",
+      "colors": [
+        "#61398B",
+        "#A0A4AB",
+        "#285230",
+        "#FFFFFF",
+        "#C5C7CD"
+      ],
+      "sourcePalette": [
+        "#44465E",
+        "#B2B6BC",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [],
+      "sha256": "80dd86c48da9262e5ec715aca279dd8d2861a0258f5fcfd0d6f2b9441d8d8c52"
+    },
+    {
+      "teamId": "NBA-MIN",
+      "id": "1996-forest",
+      "label": "1996 pine forest",
+      "sourceUrl": "https://cdn.worldvectorlogo.com/logos/minnesota-timberwolves.svg",
+      "sourcePage": "https://worldvectorlogo.com/logo/minnesota-timberwolves",
+      "sourceSha256": "578a1e572d89cdc0a68c77070822424ba63612cd17b58faaa17dce52afe414dd",
+      "ops": {
+        "removeNodes": [
+          "0/0"
+        ],
+        "viewBox": "-2.78 19.83 198.31 153.1"
+      },
+      "path": "/logos/svg/nba/alternates/min-1996-forest.svg",
+      "format": "svg",
+      "colors": [
+        "#000000",
+        "#B6BFCC",
+        "#E2CC5B",
+        "#35598A",
+        "#FFFFFF",
+        "#C63531",
+        "#387A4A"
+      ],
+      "sourcePalette": [
+        "#35598A",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [],
+      "sha256": "e6c2558a3f62dfdc08fb74ef959acf09539de0da173b0bc95a397eb6171b93ee"
+    },
+    {
+      "teamId": "NBA-PHX",
+      "id": "flaming-ball",
+      "label": "Flaming ball",
+      "sourceUrl": "https://cdn.worldvectorlogo.com/logos/phoenix-suns.svg",
+      "sourcePage": "https://worldvectorlogo.com/logo/phoenix-suns",
+      "sourceSha256": "ffab9e876815c02e889a579a987293345c3ab761cdd5c6889ef0b2c5852b20b5",
+      "ops": {
+        "viewBox": "-12.46 -12.46 440.24 289.62"
+      },
+      "path": "/logos/svg/nba/alternates/phx-flaming-ball.svg",
+      "format": "svg",
+      "colors": [
+        "#430D6E",
+        "#63696E",
+        "#F0A708",
+        "#D4612C",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "sourcePalette": [
+        "#430D6E",
+        "#E2841A",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [],
+      "sha256": "2090db40018bfccf7a80696de7419c7b1cd4a120eb2627aa3bac1fccaa233ffe"
+    },
+    {
+      "teamId": "NBA-SA",
+      "id": "fiesta-banner",
+      "label": "Fiesta banner",
+      "sourceUrl": "https://cdn.worldvectorlogo.com/logos/san-antonio-spurs.svg",
+      "sourcePage": "https://worldvectorlogo.com/logo/san-antonio-spurs",
+      "sourceSha256": "1e531851639d6e68af3525899f613eb8fb10974aaa8ae143441bf51c13cdc6ad",
+      "ops": {
+        "removeNodes": [
+          "0/0"
+        ],
+        "viewBox": "1.68 44.46 189.4 103.82"
+      },
+      "path": "/logos/svg/nba/alternates/sa-fiesta-banner.svg",
+      "format": "svg",
+      "colors": [
+        "#FFFFFF",
+        "#5DAFA6",
+        "#D66D7B",
+        "#E29A4A",
+        "#BDC8D0",
+        "#1F2528"
+      ],
+      "sourcePalette": [
+        "#1F2528",
+        "#BDC8D0",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [],
+      "sha256": "c715fdd26bc2133c16007fe7e878dd4a89fec62028edd89bba3e531202adfd43"
+    },
+    {
+      "teamId": "NBA-SAC",
+      "id": "1994-crown",
+      "label": "1994 crown",
+      "sourceUrl": "https://cdn.worldvectorlogo.com/logos/sacramento-kings-1.svg",
+      "sourcePage": "https://worldvectorlogo.com/logo/sacramento-kings-1",
+      "sourceSha256": "0f6d854e2e1a4ac08aadfb8cde26801c11d6dc629beb37ab032a8dd44089da52",
+      "ops": {
+        "removeNodes": [
+          "0/0"
+        ],
+        "viewBox": "14.47 -2.78 163.82 198.31"
+      },
+      "path": "/logos/svg/nba/alternates/sac-1994-crown.svg",
+      "format": "svg",
+      "colors": [
+        "#000000",
+        "#714C9A",
+        "#BCC1C6",
+        "#FFFFFF"
+      ],
+      "sourcePalette": [
+        "#714C9A",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [],
+      "sha256": "da03ae856c07523cbed1d5fb31e58588f7226086f7e54e9c34f6e62f792b00c4"
+    },
+    {
+      "teamId": "NBA-TOR",
+      "id": "1995-dinosaur",
+      "label": "1995 dinosaur",
+      "sourceUrl": "https://cdn.worldvectorlogo.com/logos/toronto-raptors-1.svg",
+      "sourcePage": "https://worldvectorlogo.com/logo/toronto-raptors-1",
+      "sourceSha256": "6e457500e207acd9b2389ebe052000a4138db9ddef00c76fb659b54bba9a44c7",
+      "ops": {
+        "removeNodes": [
+          "0"
+        ],
+        "viewBox": "-2.78 9.37 198.32 174.01"
+      },
+      "path": "/logos/svg/nba/alternates/tor-1995-dinosaur.svg",
+      "format": "svg",
+      "colors": [
+        "#000000",
+        "#A6ACB8",
+        "#6C368F",
+        "#AC3A32",
+        "#FFFFFF"
+      ],
+      "sourcePalette": [
+        "#8C3860",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [],
+      "sha256": "9464acf1c4727a3d6b93772a5d8543f8fcaa007de5c36ef035159e93731a717b"
+    },
+    {
+      "teamId": "NBA-UTAH",
+      "id": "1996-mountain",
+      "label": "1996 mountain",
+      "sourceUrl": "https://cdn.worldvectorlogo.com/logos/utah-jazz.svg",
+      "sourcePage": "https://worldvectorlogo.com/logo/utah-jazz",
+      "sourceSha256": "7a39889a6ed1e7f5741402305502845f0b09012941b76c6922bad361a4ddbfb1",
+      "ops": {
+        "removeNodes": [
+          "0",
+          "27",
+          "28",
+          "29",
+          "33",
+          "34",
+          "35",
+          "39",
+          "40",
+          "41",
+          "45",
+          "46",
+          "47",
+          "48"
+        ],
+        "viewBox": "4.72 34.52 183.32 123.72"
+      },
+      "path": "/logos/svg/nba/alternates/utah-1996-mountain.svg",
+      "format": "svg",
+      "colors": [
+        "#FFFFFF",
+        "#1F2528",
+        "#AC695C",
+        "#4BA0DB",
+        "#3552A0",
+        "#42838D",
+        "#9096C8"
+      ],
+      "sourcePalette": [
+        "#325372",
+        "#9096C8",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [],
+      "sha256": "2e778f5996cc38627a2756485000fe3efe15facd6dd534f0e844aa886649069e"
+    },
+    {
+      "teamId": "NBA-WSH",
+      "id": "1997-crescent",
+      "label": "1997 crescent moon",
+      "sourceUrl": "https://cdn.worldvectorlogo.com/logos/washington-wizards-1.svg",
+      "sourcePage": "https://worldvectorlogo.com/logo/washington-wizards-1",
+      "sourceSha256": "85c5483857fe00a78376dfe1c849780751f7ec7d784151a059e0ac9d1739e19a",
+      "ops": {
+        "removeNodes": [
+          "0/0"
+        ],
+        "viewBox": "-2.78 35.14 198.31 122.5"
+      },
+      "path": "/logos/svg/nba/alternates/wsh-1997-crescent.svg",
+      "format": "svg",
+      "colors": [
+        "#A7865D",
+        "#000000",
+        "#356B8D",
+        "#FFFFFF"
+      ],
+      "sourcePalette": [
+        "#6E7875",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [],
+      "sha256": "4d904c7f8086ec01455fe4000c5d5fb2a971bc37b62153cfcedaa525e306cfe1"
+    }
+  ]
+}

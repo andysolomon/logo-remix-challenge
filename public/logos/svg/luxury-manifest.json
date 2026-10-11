@@ -1,0 +1,1378 @@
+{
+  "assets": [
+    {
+      "id": "LUX-AP",
+      "league": "LUX",
+      "conference": "Watchmaker",
+      "region": "Audemars Piguet",
+      "name": "",
+      "abbr": "AP",
+      "aliases": [
+        "AP",
+        "Audemars"
+      ],
+      "palette": [
+        "#224032",
+        "#C2A051",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Interlocking monogram",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/8/80/Audemars_Pigue_logo.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Audemars_Pigue_logo.svg",
+          "sourceSha256": "7a5e3e497c8990392589ec94b6f1fd28c7b44fe49100292af26884fb08fb1266",
+          "ops": {
+            "keepNodes": [
+              "3"
+            ],
+            "viewBox": "58.689 -1 24.7 22.746"
+          },
+          "path": "/logos/svg/luxury/ap.svg",
+          "format": "svg",
+          "colors": [
+            "#224032"
+          ],
+          "sourcePalette": [
+            "#224032",
+            "#C2A051",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "0ead9d25bec9621be4347375a1defdadd3a2883d9f4b8d89913395528c43ea90"
+        }
+      ]
+    },
+    {
+      "id": "LUX-BREITLING",
+      "league": "LUX",
+      "conference": "Watchmaker",
+      "region": "Breitling",
+      "name": "",
+      "abbr": "BREITLING",
+      "aliases": [],
+      "palette": [
+        "#07213F",
+        "#FFC72C",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Winged anchor",
+          "sourceUrl": "https://iconape.com/wp-content/files/zi/43572/svg/breitling-watches.svg",
+          "sourcePage": "https://iconape.com/breitling-watches-logo-icon-svg-png.html",
+          "sourceSha256": "05f023f37e21e76d47bd6256276d3bbbebd218115313767f8414f5f2fd1d8d2d",
+          "ops": {
+            "removeNodes": [
+              "0"
+            ],
+            "fill": "#000000",
+            "viewBox": "18.381 -0.8 35.89 15.567"
+          },
+          "path": "/logos/svg/luxury/breitling.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#FFC72C",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "284b3fd85ed27cf763c6716e6729cf5f8b9917305241b5bb2b2de57948ce518c"
+        }
+      ]
+    },
+    {
+      "id": "LUX-BURBERRY",
+      "league": "LUX",
+      "conference": "Fashion House",
+      "region": "Burberry",
+      "name": "",
+      "abbr": "BURBERRY",
+      "aliases": [],
+      "palette": [
+        "#C19A6B",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Equestrian knight",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Logo_Burberry_05.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Logo_Burberry_05.svg",
+          "sourceSha256": "f54b9b217ff0e398b3a9fa23eec4cdece26ca1a7bb752f31bf438e22dee7d1ef",
+          "ops": {
+            "removeNodes": [
+              "3/1"
+            ],
+            "viewBox": "-8.615 -8.615 448.005 309.56"
+          },
+          "path": "/logos/svg/luxury/burberry.svg",
+          "format": "svg",
+          "colors": [
+            "#060F99"
+          ],
+          "sourcePalette": [
+            "#060F99",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "895b356cbb0f6f38705b3c0aac0614e1912a6c0c4453d714e5b83796b51535c5"
+        }
+      ]
+    },
+    {
+      "id": "LUX-BVLGARI",
+      "league": "LUX",
+      "conference": "Jeweler",
+      "region": "Bulgari",
+      "name": "",
+      "abbr": "BVLGARI",
+      "aliases": [
+        "Bvlgari"
+      ],
+      "palette": [
+        "#000000",
+        "#8C1D40",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Roman-capitals wordmark",
+          "sourceUrl": "https://brandeps.com/logo-download/b/bulgari-logo-vector-01.svg",
+          "sourcePage": "https://brandeps.com/logo/b/bulgari-01",
+          "sourceSha256": "f6ae40a6b929067087f5a7af3b4027f270831c70098f5dac6b85663048f71cfe",
+          "showsName": true,
+          "ops": {
+            "fill": "#000000",
+            "viewBox": "-7.9 223.4 528 65.1"
+          },
+          "path": "/logos/svg/luxury/bvlgari.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#8C1D40",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "65a51f7947ac30514ec91b8afa91574b5ed8dbeab2460b3792c9f0dfd1ff7899"
+        }
+      ]
+    },
+    {
+      "id": "LUX-CARTIER",
+      "league": "LUX",
+      "conference": "Jeweler",
+      "region": "Cartier",
+      "name": "",
+      "abbr": "CARTIER",
+      "aliases": [
+        "Cartier SA"
+      ],
+      "palette": [
+        "#D50032",
+        "#D4AF37",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Interlocking C's in oval",
+          "sourceUrl": "https://cdn.freebiesupply.com/logos/large/2x/cartier-1-logo-svg-vector.svg",
+          "sourcePage": "https://freebiesupply.com/logos/cartier-logo-3/",
+          "sourceSha256": "b7ee48c96fe503ea68cee644d7e239a3f31fb106f220f205cdc2dffb2ee64836",
+          "ops": {
+            "removeNodes": [
+              "0/0"
+            ],
+            "viewBox": "30.2 3.5 132.4 185.8"
+          },
+          "path": "/logos/svg/luxury/cartier.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#D4AF37",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "0f6fcbd10ba13b09eaa6e5558ca6823cfac3bbfe5b5bece5e2b7ca79bc5ea6b7"
+        }
+      ]
+    },
+    {
+      "id": "LUX-CHANEL",
+      "league": "LUX",
+      "conference": "Fashion House",
+      "region": "Chanel",
+      "name": "",
+      "abbr": "CHANEL",
+      "aliases": [
+        "Coco Chanel",
+        "House of Chanel"
+      ],
+      "palette": [
+        "#000000",
+        "#C9A96E",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Interlocking C's",
+          "sourceUrl": "https://logotyp.us/file/chanel.svg",
+          "sourcePage": "https://logotyp.us/logo/chanel/",
+          "sourceSha256": "19fe5e274ae652d79982b045043e913c03f3a86c47b40b79290c2f09ce022a1f",
+          "ops": {
+            "keepNodes": [
+              "0/1"
+            ],
+            "viewBox": "177.289 94.186 205.424 153.831"
+          },
+          "path": "/logos/svg/luxury/chanel.svg",
+          "format": "svg",
+          "colors": [
+            "#161413"
+          ],
+          "sourcePalette": [
+            "#161413",
+            "#C9A96E",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "8c2aeebe1e70e4c9d9fc68a2a329d1df9f6a716d8cc286b211ab437f8542fa77"
+        }
+      ]
+    },
+    {
+      "id": "LUX-COACH",
+      "league": "LUX",
+      "conference": "Leather Goods",
+      "region": "Coach",
+      "name": "",
+      "abbr": "COACH",
+      "aliases": [
+        "Coach New York"
+      ],
+      "palette": [
+        "#63421C",
+        "#C9A66B",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Horse-drawn carriage with driver",
+          "sourceUrl": "https://brandeps.com/logo-download/c/coach-logo-vector-01.svg",
+          "sourcePage": "https://brandeps.com/logo/c/coach-01",
+          "sourceSha256": "3ae18c6668ff9f89467837acd1d1dccd378c2d026dffcf419dcc8ee6a6f3bd32",
+          "ops": {
+            "keepNodes": [
+              "0/5-39"
+            ],
+            "fill": "#000000",
+            "viewBox": "172.6 178.6 172.5 77.3"
+          },
+          "path": "/logos/svg/luxury/coach.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#C9A66B",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "785437af0f608fe792b2d277ae82d54d4fd77619a6446c51460e75fc048cf56e"
+        }
+      ]
+    },
+    {
+      "id": "LUX-DG",
+      "league": "LUX",
+      "conference": "Fashion House",
+      "region": "Dolce & Gabbana",
+      "name": "",
+      "abbr": "DG",
+      "aliases": [
+        "Dolce and Gabbana",
+        "D&G",
+        "Dolce Gabbana"
+      ],
+      "palette": [
+        "#000000",
+        "#B5985A",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Initials with ampersand",
+          "sourceUrl": "https://iconape.com/wp-content/files/pi/203116/svg/203116.svg",
+          "sourcePage": "https://iconape.com/dolce-gabanna-logo-logo-icon-svg-png.html",
+          "sourceSha256": "6bbbd9c1ab1b2bb1223f858ff8a333ce85dfd242a07c14ed4a0bd3cdfdcb93d9",
+          "ops": {
+            "keepNodes": [
+              "0/2",
+              "1/4",
+              "1/7",
+              "1/10"
+            ],
+            "fill": "#1C1C1B",
+            "viewBox": "-24.036 -24.032 849.279 372.373"
+          },
+          "path": "/logos/svg/luxury/dg.svg",
+          "format": "svg",
+          "colors": [
+            "#1C1C1B"
+          ],
+          "sourcePalette": [
+            "#1C1C1B",
+            "#B5985A",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "e8544206d3681dfb5d84a08e580535477514810ff0a61e6bb4ee6246371239e2"
+        }
+      ]
+    },
+    {
+      "id": "LUX-DIOR",
+      "league": "LUX",
+      "conference": "Fashion House",
+      "region": "Dior",
+      "name": "",
+      "abbr": "DIOR",
+      "aliases": [
+        "Christian Dior",
+        "House of Dior"
+      ],
+      "palette": [
+        "#000000",
+        "#6E6E6E",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Serif wordmark",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Dior_Logo_2022.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Dior_Logo_2022.svg",
+          "sourceSha256": "9e907f5d264235bc12f7ac84b39b28221c39f94d688d1a5812d5eef1085524b4",
+          "showsName": true,
+          "ops": {
+            "viewBox": "-9.891 -9.891 514.315 158.082"
+          },
+          "path": "/logos/svg/luxury/dior.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#6E6E6E",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "416bf3f95cfac50efce40558652dfa809cf7fbfcafea0661e2c0ad187951abfe"
+        }
+      ]
+    },
+    {
+      "id": "LUX-FENDI",
+      "league": "LUX",
+      "conference": "Fashion House",
+      "region": "Fendi",
+      "name": "",
+      "abbr": "FENDI",
+      "aliases": [],
+      "palette": [
+        "#6B4A2B",
+        "#F9B949",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Mirrored F monogram",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Fendi_logo.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Fendi_logo.svg",
+          "sourceSha256": "268347be925d55817371d1563c155d47566c343fbfd6058dd57087cfc6e44fd5",
+          "ops": {
+            "keepNodes": [
+              "4/0",
+              "4/1"
+            ],
+            "viewBox": "160.855 -0.566 78.332 98.319"
+          },
+          "path": "/logos/svg/luxury/fendi.svg",
+          "format": "svg",
+          "colors": [
+            "#231F20"
+          ],
+          "sourcePalette": [
+            "#231F20",
+            "#F9B949",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "0bfb81ccebb7e682c65b5535f2044572f36c8c07e6098bffa971297f5f2c0df7"
+        }
+      ]
+    },
+    {
+      "id": "LUX-GIVENCHY",
+      "league": "LUX",
+      "conference": "Fashion House",
+      "region": "Givenchy",
+      "name": "",
+      "abbr": "GIVENCHY",
+      "aliases": [],
+      "palette": [
+        "#000000",
+        "#3A3A3A",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Square of four G's",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Givenchy_-_logo_%28France%2C_2003%29.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Givenchy_-_logo_%28France%2C_2003%29.svg",
+          "sourceSha256": "32de0047de5f0dd7547ef99bb649a1fbeba1024dcfe2146baca4839964b470ce",
+          "ops": {
+            "keepNodes": [
+              "0/0"
+            ],
+            "viewBox": "70.621 -3.673 118.899 129.791"
+          },
+          "path": "/logos/svg/luxury/givenchy.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#3A3A3A",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "43c393048a9b1061b45b2a49c79e344cdf7262abd966cbfede968e9e0786c96e"
+        }
+      ]
+    },
+    {
+      "id": "LUX-GUCCI",
+      "league": "LUX",
+      "conference": "Fashion House",
+      "region": "Gucci",
+      "name": "",
+      "abbr": "GUCCI",
+      "aliases": [
+        "House of Gucci"
+      ],
+      "palette": [
+        "#046A38",
+        "#C8102E",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Interlocking G's",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/1960s_Gucci_Logo.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:1960s_Gucci_Logo.svg",
+          "sourceSha256": "c6b56e47b29d37676ddaf1fe04eccc5ec3ae57aa21d703155c84ebd924928037",
+          "ops": {
+            "viewBox": "-11.332 -11.332 435.726 308.257"
+          },
+          "path": "/logos/svg/luxury/gucci.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#C8102E",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "e4d924816ad833d71caf7e40340fe10c50d49e14fe0f69940b96faca69b2c6bf"
+        }
+      ]
+    },
+    {
+      "id": "LUX-HERMES",
+      "league": "LUX",
+      "conference": "Leather Goods",
+      "region": "Hermès",
+      "name": "",
+      "abbr": "HERMES",
+      "aliases": [
+        "Hermes",
+        "Hermes Paris"
+      ],
+      "palette": [
+        "#F37021",
+        "#4B2E1E",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Horse-drawn carriage with groom",
+          "sourceUrl": "https://brandeps.com/logo-download/h/hermes-logo-vector-01.svg",
+          "sourcePage": "https://brandeps.com/logo/h/hermes-01",
+          "sourceSha256": "0445b58028b75cba0a60a21251410e023ab1e63c4b7402ae84d854115b4873d4",
+          "ops": {
+            "keepNodes": [
+              "0",
+              "1/6-22"
+            ],
+            "viewBox": "97.9 100.6 302.4 139.3"
+          },
+          "path": "/logos/svg/luxury/hermes.svg",
+          "format": "svg",
+          "colors": [
+            "#F37021"
+          ],
+          "sourcePalette": [
+            "#F37021",
+            "#4B2E1E",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "d68748a100a8025d3f8d291ad47b55c182760cb769951c093a7f394562757919"
+        }
+      ]
+    },
+    {
+      "id": "LUX-HUBLOT",
+      "league": "LUX",
+      "conference": "Watchmaker",
+      "region": "Hublot",
+      "name": "",
+      "abbr": "HUBLOT",
+      "aliases": [],
+      "palette": [
+        "#000000",
+        "#B8975A",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Slanted H emblem",
+          "sourceUrl": "https://logotyp.us/file/hublot.svg",
+          "sourcePage": "https://logotyp.us/logo/hublot/",
+          "sourceSha256": "fe05dd1d18514e340f47fa777aa40cbdc310923e586f38fe4b128d45d1b4df81",
+          "ops": {
+            "keepNodes": [
+              "0"
+            ],
+            "viewBox": "-1.5 -0.2 62.3 48.44"
+          },
+          "path": "/logos/svg/luxury/hublot.svg",
+          "format": "svg",
+          "colors": [
+            "#171717"
+          ],
+          "sourcePalette": [
+            "#171717",
+            "#B8975A",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "b2adaf28f4bda00701a8973bbb1202ff52da08f172f827ca706fe76eb058441f"
+        }
+      ]
+    },
+    {
+      "id": "LUX-KATE",
+      "league": "LUX",
+      "conference": "Leather Goods",
+      "region": "Kate Spade",
+      "name": "",
+      "abbr": "KATE",
+      "aliases": [
+        "Kate Spade New York"
+      ],
+      "palette": [
+        "#000000",
+        "#F2A0B5",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Playing-card suit symbol",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/3/39/Kate_Spade_New_York_logo.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Kate_Spade_New_York_logo.svg",
+          "sourceSha256": "9fe9566e29d979ce84a681a59aa2e248da974d5445850515654d45a7cc176c4b",
+          "ops": {
+            "removeNodes": [
+              "1"
+            ],
+            "fill": "#000000",
+            "viewBox": "46.9 -0.5 17.67 17.64"
+          },
+          "path": "/logos/svg/luxury/kate.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#F2A0B5",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "b1dc2f62e316cc50a18bb93f097af7dd8ba27e78294bfec0d2d61051e5011f05"
+        }
+      ]
+    },
+    {
+      "id": "LUX-LV",
+      "league": "LUX",
+      "conference": "Leather Goods",
+      "region": "Louis Vuitton",
+      "name": "",
+      "abbr": "LV",
+      "aliases": [
+        "LV",
+        "Vuitton"
+      ],
+      "palette": [
+        "#5C4033",
+        "#97733F",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Interlocking initials monogram",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/4/43/Louis_Vuitton_SVG_Monogram_Logo.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Louis_Vuitton_SVG_Monogram_Logo.svg",
+          "sourceSha256": "ccd8b3ea3f616e0fc4aaf06864a196bbd8cc21c9ba8942e744bf1fd1cb5e9394",
+          "ops": {
+            "fill": "#000000",
+            "viewBox": "2.5 8.6 515 503"
+          },
+          "path": "/logos/svg/luxury/lv.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#97733F",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "cba7666576c85c9512d1b1686c8a0c50a66da2df3f8e73ddff65271dd461f338"
+        }
+      ]
+    },
+    {
+      "id": "LUX-MK",
+      "league": "LUX",
+      "conference": "Leather Goods",
+      "region": "Michael Kors",
+      "name": "",
+      "abbr": "MK",
+      "aliases": [
+        "MK",
+        "Kors"
+      ],
+      "palette": [
+        "#000000",
+        "#8B5E3C",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Wordmark",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/1/17/Michael_Kors_Logo.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Michael_Kors_Logo.svg",
+          "sourceSha256": "cfe170baea0bfd3b43841dbcd0c27067d4c5c5fd7086867f32b8aa2a2702bee7",
+          "showsName": true,
+          "ops": {
+            "fill": "#000000"
+          },
+          "path": "/logos/svg/luxury/mk.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#8B5E3C",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "fa1a29affaca908512d935e3d0f4d8e05917635f5118cfc4acffe3b747b17b54"
+        }
+      ]
+    },
+    {
+      "id": "LUX-OMEGA",
+      "league": "LUX",
+      "conference": "Watchmaker",
+      "region": "Omega",
+      "name": "",
+      "abbr": "OMEGA",
+      "aliases": [
+        "Omega SA",
+        "Omega Watches"
+      ],
+      "palette": [
+        "#C40D2E",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Greek letter symbol",
+          "sourceUrl": "https://logotyp.us/file/omega.svg",
+          "sourcePage": "https://logotyp.us/logo/omega/",
+          "sourceSha256": "f3f86772e9f878fb75bfb96c6fc71048579d501c85651d6bca93b2a680d98068",
+          "ops": {
+            "removeNodes": [
+              "2/0",
+              "2/1",
+              "2/2",
+              "2/3",
+              "2/5"
+            ],
+            "viewBox": "50.3 -1.5 44.9 39.5"
+          },
+          "path": "/logos/svg/luxury/omega.svg",
+          "format": "svg",
+          "colors": [
+            "#C40D2E"
+          ],
+          "sourcePalette": [
+            "#C40D2E",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "16241695010555a681e2247019d16a7676637d3c2d9cbe31a5b630c32209ce63"
+        }
+      ]
+    },
+    {
+      "id": "LUX-PANDORA",
+      "league": "LUX",
+      "conference": "Jeweler",
+      "region": "Pandora",
+      "name": "",
+      "abbr": "PANDORA",
+      "aliases": [
+        "Pandora Jewelry"
+      ],
+      "palette": [
+        "#151414",
+        "#F2B8C6",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Crowned O",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/6/60/Pandora_%28jewelry_company_logo%29.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Pandora_(jewelry_company_logo).svg",
+          "sourceSha256": "ce729a9ef76a35026576c604bf5f602991e3d12c444505dca2ec36ee7350f61c",
+          "ops": {
+            "keepNodes": [
+              "6-13"
+            ],
+            "fill": "#000000",
+            "viewBox": "528.4 -6 148.8 202.3"
+          },
+          "path": "/logos/svg/luxury/pandora.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#F2B8C6",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "a29a5676a5f75f24faccb68f4753f1703f57a1f2740cb4ee7a4e09ddd09b2f9b"
+        }
+      ]
+    },
+    {
+      "id": "LUX-PATEK",
+      "league": "LUX",
+      "conference": "Watchmaker",
+      "region": "Patek Philippe",
+      "name": "",
+      "abbr": "PATEK",
+      "aliases": [
+        "Patek"
+      ],
+      "palette": [
+        "#1F2A44",
+        "#B09145",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Calatrava cross",
+          "sourceUrl": "https://iconape.com/wp-content/files/ah/87750/svg/patek-philippe-sa-logo.svg",
+          "sourcePage": "https://iconape.com/patek-philippe-sa-logo-logo-icon-svg-png.html",
+          "sourceSha256": "f53f05862a893724a8520af5102308c5eb1aadda210484ee14fb4c061e270bfe",
+          "ops": {
+            "removeNodes": [
+              "0"
+            ],
+            "viewBox": "15.53 -0.368 11.008 11.008"
+          },
+          "path": "/logos/svg/luxury/patek.svg",
+          "format": "svg",
+          "colors": [
+            "#B09145"
+          ],
+          "sourcePalette": [
+            "#B09145",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "61818aea1dceb335d8c68e05528c6877656d7656dca0bc15917d243a10aeaf8f"
+        }
+      ]
+    },
+    {
+      "id": "LUX-PRADA",
+      "league": "LUX",
+      "conference": "Fashion House",
+      "region": "Prada",
+      "name": "",
+      "abbr": "PRADA",
+      "aliases": [],
+      "palette": [
+        "#000000",
+        "#A8D5BA",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Wordmark",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Prada-Logo.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Prada-Logo.svg",
+          "sourceSha256": "8700a055b7e75deb906e802acd251fcf84344c0ab42eddc1367dfab42b747850",
+          "showsName": true,
+          "ops": {},
+          "path": "/logos/svg/luxury/prada.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#A8D5BA",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "21ce655179829886626e90bd78654d44136b73a0b6191d83046372b035e31671"
+        }
+      ]
+    },
+    {
+      "id": "LUX-RM",
+      "league": "LUX",
+      "conference": "Watchmaker",
+      "region": "Richard Mille",
+      "name": "",
+      "abbr": "RM",
+      "aliases": [
+        "RM"
+      ],
+      "palette": [
+        "#000000",
+        "#B12626",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Wordmark",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/5/55/Richard_Mille_Logo.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Richard_Mille_Logo.svg",
+          "sourceSha256": "aaeebfb0b289562449c3d91d49b2476f8fd28f543ba27d38a73a3f767236e806",
+          "showsName": true,
+          "ops": {
+            "fill": "#000000",
+            "viewBox": "-2.959 -3 365.918 34.001"
+          },
+          "path": "/logos/svg/luxury/rm.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#B12626",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "6c5c9e88b96f0275d67e1e27ea27b91ce7656ad6f09d5c97f53dcdc7d5bd57cb"
+        }
+      ]
+    },
+    {
+      "id": "LUX-ROLEX",
+      "league": "LUX",
+      "conference": "Watchmaker",
+      "region": "Rolex",
+      "name": "",
+      "abbr": "ROLEX",
+      "aliases": [],
+      "palette": [
+        "#006039",
+        "#A37E2C",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Five-point crown",
+          "sourceUrl": "https://logotyp.us/file/rolex.svg",
+          "sourcePage": "https://logotyp.us/logo/rolex/",
+          "sourceSha256": "73725fce989726fa4e88c2f4322419d81a507aac38ea4f82417ffa6b569456a7",
+          "ops": {
+            "removeNodes": [
+              "0/1"
+            ],
+            "viewBox": "227 97.1 106.1 114.7"
+          },
+          "path": "/logos/svg/luxury/rolex.svg",
+          "format": "svg",
+          "colors": [
+            "#A2803E"
+          ],
+          "sourcePalette": [
+            "#A2803E",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "5dcb2eb13f6050fcf6216a8a57cc7be417f4374a6b3723caeab2da1a072db6c5"
+        }
+      ]
+    },
+    {
+      "id": "LUX-SWAROVSKI",
+      "league": "LUX",
+      "conference": "Jeweler",
+      "region": "Swarovski",
+      "name": "",
+      "abbr": "SWAROVSKI",
+      "aliases": [],
+      "palette": [
+        "#000000",
+        "#B2B2B2",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Stippled swan",
+          "sourceUrl": "https://brandeps.com/logo-download/s/swarovski-logo-vector-01.svg",
+          "sourcePage": "https://brandeps.com/logo/s/swarovski-01",
+          "sourceSha256": "3051f1cec370e8aaf61d211fda4f592d8b564eb3a331e261e0e0ebfb4680896a",
+          "ops": {
+            "keepNodes": [
+              "0",
+              "1/9-654"
+            ],
+            "viewBox": "178.5 136.7 155 143.5"
+          },
+          "path": "/logos/svg/luxury/swarovski.svg",
+          "format": "svg",
+          "colors": [
+            "#B2B2B2"
+          ],
+          "sourcePalette": [
+            "#B2B2B2",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "ce929592c3c03bb852046768cad19660ee01be700fe5f8bc8d2b599dffe1e5d4"
+        }
+      ]
+    },
+    {
+      "id": "LUX-TAG",
+      "league": "LUX",
+      "conference": "Watchmaker",
+      "region": "TAG Heuer",
+      "name": "",
+      "abbr": "TAG",
+      "aliases": [
+        "Tag Heuer",
+        "Heuer"
+      ],
+      "palette": [
+        "#008D5C",
+        "#ED1B2F",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Shield",
+          "sourceUrl": "https://logotyp.us/file/tag-heuer.svg",
+          "sourcePage": "https://logotyp.us/logo/tag-heuer/",
+          "sourceSha256": "a9f2b01ab0c6feb27ec9e71015292ebdc086739a315eba45b13a6901bfa17e48",
+          "showsName": true,
+          "ops": {
+            "viewBox": "-0.133 -1 38.206 33.914"
+          },
+          "path": "/logos/svg/luxury/tag.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#FFFFFF",
+            "#008D5C",
+            "#ED1B2F"
+          ],
+          "sourcePalette": [
+            "#00462E",
+            "#ED1B2F",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "c0d59a9f74addc26bc0e606a5fdfc0a029e1c333c0025a8ecbb8f0844bee29b6"
+        }
+      ]
+    },
+    {
+      "id": "LUX-TIFFANY",
+      "league": "LUX",
+      "conference": "Jeweler",
+      "region": "Tiffany & Co.",
+      "name": "",
+      "abbr": "TIFFANY",
+      "aliases": [
+        "Tiffany",
+        "Tiffany and Co",
+        "Tiffanys"
+      ],
+      "palette": [
+        "#81D8D0",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Serif wordmark",
+          "sourceUrl": "https://logotyp.us/file/tiffany.svg",
+          "sourcePage": "https://logotyp.us/logo/tiffany/",
+          "sourceSha256": "4fe17d8b89c9352356b4511303bec4e77c49e9f7ec4eddc49d7683d612ebe056",
+          "showsName": true,
+          "ops": {
+            "fill": "#000000",
+            "viewBox": "22 161.5 516 77"
+          },
+          "path": "/logos/svg/luxury/tiffany.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "74e7f7ca7f7de0a330dd72299f3cf9283dfdb65b9e7f15bf6299a4b3fd516424"
+        }
+      ]
+    },
+    {
+      "id": "LUX-TORY",
+      "league": "LUX",
+      "conference": "Leather Goods",
+      "region": "Tory Burch",
+      "name": "",
+      "abbr": "TORY",
+      "aliases": [],
+      "palette": [
+        "#F26522",
+        "#B99357",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Double-T medallion",
+          "sourceUrl": "https://iconape.com/wp-content/files/nd/202157/svg/202157.svg",
+          "sourcePage": "https://iconape.com/tory-burch-logo-logo-icon-svg-png.html",
+          "sourceSha256": "99c7199c3509c285b11ce28d9c88727d596ef6d0d6341f09cef40d3fc85178be",
+          "ops": {
+            "keepNodes": [
+              "0/0",
+              "1/0-2"
+            ],
+            "viewBox": "-3 -3 104.8 104.8"
+          },
+          "path": "/logos/svg/luxury/tory.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#020202"
+          ],
+          "sourcePalette": [
+            "#010101",
+            "#B99357",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "1e27bbdbfb57383cac06043f2ac08570e2894080815ba9a3020bc8b0ce10f703"
+        }
+      ]
+    },
+    {
+      "id": "LUX-VCA",
+      "league": "LUX",
+      "conference": "Jeweler",
+      "region": "Van Cleef & Arpels",
+      "name": "",
+      "abbr": "VCA",
+      "aliases": [
+        "Van Cleef",
+        "Van Cleef and Arpels",
+        "VCA"
+      ],
+      "palette": [
+        "#231815",
+        "#B8945A",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Serif wordmark",
+          "sourceUrl": "https://iconape.com/wp-content/files/mk/186102/svg/186102.svg",
+          "sourcePage": "https://iconape.com/van-cleef-arpels-logo-logo-icon-svg-png.html",
+          "sourceSha256": "a76ea8bf74ed4198de544bf47bbc848811bc03b808d6c112ae52330ad11feea2",
+          "showsName": true,
+          "ops": {
+            "viewBox": "-4 -4 240.8 34.3"
+          },
+          "path": "/logos/svg/luxury/vca.svg",
+          "format": "svg",
+          "colors": [
+            "#231815"
+          ],
+          "sourcePalette": [
+            "#231815",
+            "#B8945A",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "03ef65fd6cd29aa1cfa0c6dfb6af1ef45f5771b3dd876505f6c99a262b01a1bc"
+        }
+      ]
+    },
+    {
+      "id": "LUX-VERSACE",
+      "league": "LUX",
+      "conference": "Fashion House",
+      "region": "Versace",
+      "name": "",
+      "abbr": "VERSACE",
+      "aliases": [
+        "Gianni Versace"
+      ],
+      "palette": [
+        "#D4AF37",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Medusa head",
+          "sourceUrl": "https://iconape.com/wp-content/files/dr/203006/svg/203006.svg",
+          "sourcePage": "https://iconape.com/versace-logo-logo-icon-svg-png.html",
+          "sourceSha256": "b6b71bbe7dc1df6f209badc1e9451fb17e9431f3ccffa27b3de5229f583ba8ac",
+          "ops": {
+            "keepNodes": [
+              "0/0",
+              "1/0"
+            ],
+            "fill": "#231F20",
+            "viewBox": "-10.204 -10.199 360.541 360.257"
+          },
+          "path": "/logos/svg/luxury/versace.svg",
+          "format": "svg",
+          "colors": [
+            "#231F20"
+          ],
+          "sourcePalette": [
+            "#231F20",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "55424747d4caa2bc6a98df5698df6532f41dd1bc8c6f10d00c50d43e7e1481c9"
+        }
+      ]
+    },
+    {
+      "id": "LUX-YSL",
+      "league": "LUX",
+      "conference": "Fashion House",
+      "region": "Yves Saint Laurent",
+      "name": "",
+      "abbr": "YSL",
+      "aliases": [
+        "Saint Laurent",
+        "YSL",
+        "Saint Laurent Paris"
+      ],
+      "palette": [
+        "#000000",
+        "#C5A253",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Cassandre monogram",
+          "sourceUrl": "https://cdn.worldvectorlogo.com/logos/yves-saint-laurent-1.svg",
+          "sourcePage": "https://worldvectorlogo.com/logo/yves-saint-laurent-1",
+          "sourceSha256": "42cac46f789d25a11f5a16a5517a98fb5d7258d6f5b40c022dc08464e07d20d6",
+          "ops": {
+            "viewBox": "651.287 8.037 533.405 1047.375"
+          },
+          "path": "/logos/svg/luxury/ysl.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#C5A253",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "8c7b14f76acdffc5b0d61163ef883c45a0dd90bd2c134c408cce0f643f00832e"
+        }
+      ]
+    }
+  ]
+}

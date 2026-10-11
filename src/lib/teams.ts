@@ -1,6 +1,6 @@
 import data from './teams.json'
 
-export type League = 'PRO' | 'NBA' | 'MLB' | 'SOCCER' | 'COL' | 'HS' | 'FOOD' | 'BRAND' | 'APP' | 'TV' | 'CAR'
+export type League = 'PRO' | 'NBA' | 'MLB' | 'SOCCER' | 'COL' | 'HS' | 'FOOD' | 'BRAND' | 'APP' | 'TV' | 'CAR' | 'LUX' | 'CLOTH'
 
 export interface LogoVariant {
   id: string
@@ -551,10 +551,11 @@ export const roundTarget = (r: Round, fallback: GuessTarget): GuessTarget => r.g
 export const guessPrompt = (t: GuessTarget) => (t === 'both' ? 'Guess the Logo and the Colors!' : t === 'colors' ? 'Guess the Colors!' : 'Guess the Logo!')
 /** What one entry of a collection is called in search and result labels. */
 export const entryNoun = (league: League) =>
-  league === 'APP' ? 'app' : league === 'TV' ? 'channel' : league === 'FOOD' || league === 'BRAND' || league === 'CAR' ? 'brand' : league === 'SOCCER' ? 'club' : 'team'
+  league === 'APP' ? 'app' : league === 'TV' ? 'channel' : ['FOOD', 'BRAND', 'CAR', 'LUX', 'CLOTH'].includes(league) ? 'brand' : league === 'SOCCER' ? 'club' : 'team'
 /**
  * Where a team plays: the league label for pro teams and fast food, the conference for college and high school,
- * the domestic league for soccer clubs outside "Rest of World", the type for brands, apps, channels and cars.
+ * the domestic league for soccer clubs outside "Rest of World", the type for brands, apps, channels, cars, luxury
+ * houses ("Luxury watchmaker") and clothing brands ("Outdoor brand").
  */
 export const teamHint = (t: Team) =>
   t.league === 'COL' || t.league === 'HS' || (t.league === 'SOCCER' && t.conference !== 'Rest of World')
@@ -567,7 +568,11 @@ export const teamHint = (t: Team) =>
           ? `${t.conference} channel`
           : t.league === 'CAR'
             ? `${t.conference} car`
-            : LEAGUES[t.league].label
+            : t.league === 'LUX'
+              ? `Luxury ${t.conference.toLowerCase()}`
+              : t.league === 'CLOTH'
+                ? `${t.conference} brand`
+                : LEAGUES[t.league].label
 /** Hint lines for a round, one for the logo team and one for the colors team. */
 export const roundHints = (r: Round): [string, string] => [
   `Logo: ${teamHint(findTeam(r.o)!)}`,
@@ -592,6 +597,8 @@ export const TEAM_POOLS: TeamPool[] = [
   { id: 'Apps', label: LEAGUES.APP.label, league: 'APP', match: (t) => t.league === 'APP' },
   { id: 'TV', label: LEAGUES.TV.label, league: 'TV', match: (t) => t.league === 'TV' },
   { id: 'Cars', label: LEAGUES.CAR.label, league: 'CAR', match: (t) => t.league === 'CAR' },
+  { id: 'Luxury', label: LEAGUES.LUX.label, league: 'LUX', match: (t) => t.league === 'LUX' },
+  { id: 'Clothing', label: LEAGUES.CLOTH.label, league: 'CLOTH', match: (t) => t.league === 'CLOTH' },
   ...LEAGUES.COL.conferences.map((c) => ({ id: c, label: c, league: 'COL' as League, match: (t: Team) => t.league === 'COL' && t.conference === c })),
   ...LEAGUES.HS.conferences.map((c) => ({ id: c, label: c, league: 'HS' as League, match: (t: Team) => t.league === 'HS' && t.conference === c })),
 ]

@@ -4239,6 +4239,161 @@
     }
   },
   {
+    "teamId": "LUX-BURBERRY",
+    "id": "primary",
+    "label": "Equestrian knight",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Logo_Burberry_05.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Logo_Burberry_05.svg",
+    "sourceSha256": "f54b9b217ff0e398b3a9fa23eec4cdece26ca1a7bb752f31bf438e22dee7d1ef",
+    "ops": {
+      "removeNodes": [
+        "3/1"
+      ],
+      "viewBox": "-8.615 -8.615 448.005 309.56"
+    }
+  },
+  {
+    "teamId": "LUX-BVLGARI",
+    "id": "primary",
+    "label": "Roman-capitals wordmark",
+    "sourceUrl": "https://brandeps.com/logo-download/b/bulgari-logo-vector-01.svg",
+    "sourcePage": "https://brandeps.com/logo/b/bulgari-01",
+    "sourceSha256": "f6ae40a6b929067087f5a7af3b4027f270831c70098f5dac6b85663048f71cfe",
+    "showsName": true,
+    "ops": {
+      "fill": "#000000",
+      "viewBox": "-7.9 223.4 528 65.1"
+    }
+  },
+  {
+    "teamId": "LUX-CARTIER",
+    "id": "primary",
+    "label": "Interlocking C's in oval",
+    "sourceUrl": "https://cdn.freebiesupply.com/logos/large/2x/cartier-1-logo-svg-vector.svg",
+    "sourcePage": "https://freebiesupply.com/logos/cartier-logo-3/",
+    "sourceSha256": "b7ee48c96fe503ea68cee644d7e239a3f31fb106f220f205cdc2dffb2ee64836",
+    "ops": {
+      "removeNodes": [
+        "0/0"
+      ],
+      "viewBox": "30.2 3.5 132.4 185.8"
+    }
+  },
+  {
+    "teamId": "LUX-CHANEL",
+    "id": "primary",
+    "label": "Interlocking C's",
+    "sourceUrl": "https://logotyp.us/file/chanel.svg",
+    "sourcePage": "https://logotyp.us/logo/chanel/",
+    "sourceSha256": "19fe5e274ae652d79982b045043e913c03f3a86c47b40b79290c2f09ce022a1f",
+    "ops": {
+      "keepNodes": [
+        "0/1"
+      ],
+      "viewBox": "177.289 94.186 205.424 153.831"
+    }
+  },
+  {
+    "teamId": "LUX-COACH",
+    "id": "primary",
+    "label": "Horse-drawn carriage with driver",
+    "sourceUrl": "https://brandeps.com/logo-download/c/coach-logo-vector-01.svg",
+    "sourcePage": "https://brandeps.com/logo/c/coach-01",
+    "sourceSha256": "3ae18c6668ff9f89467837acd1d1dccd378c2d026dffcf419dcc8ee6a6f3bd32",
+    "ops": {
+      "keepNodes": [
+        "0/5-39"
+      ],
+      "fill": "#000000",
+      "viewBox": "172.6 178.6 172.5 77.3"
+    }
+  },
+  {
+    "teamId": "LUX-DG",
+    "id": "primary",
+    "label": "Initials with ampersand",
+    "sourceUrl": "https://iconape.com/wp-content/files/pi/203116/svg/203116.svg",
+    "sourcePage": "https://iconape.com/dolce-gabanna-logo-logo-icon-svg-png.html",
+    "sourceSha256": "6bbbd9c1ab1b2bb1223f858ff8a333ce85dfd242a07c14ed4a0bd3cdfdcb93d9",
+    "ops": {
+      "keepNodes": [
+        "0/2",
+        "1/4",
+        "1/7",
+        "1/10"
+      ],
+      "fill": "#1C1C1B",
+      "viewBox": "-24.036 -24.032 849.279 372.373"
+    }
+  },
+  {
+    "teamId": "LUX-DIOR",
+    "id": "primary",
+    "label": "Serif wordmark",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Dior_Logo_2022.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Dior_Logo_2022.svg",
+    "sourceSha256": "9e907f5d264235bc12f7ac84b39b28221c39f94d688d1a5812d5eef1085524b4",
+    "showsName": true,
+    "ops": {
+      "viewBox": "-9.891 -9.891 514.315 158.082"
+    }
+  },
+  {
+    "teamId": "LUX-FENDI",
+    "id": "primary",
+    "label": "Mirrored F monogram",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Fendi_logo.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Fendi_logo.svg",
+    "sourceSha256": "268347be925d55817371d1563c155d47566c343fbfd6058dd57087cfc6e44fd5",
+    "ops": {
+      "keepNodes": [
+        "4/0",
+        "4/1"
+      ],
+      "viewBox": "160.855 -0.566 78.332 98.319"
+    }
+  },
+  {
+    "teamId": "LUX-GIVENCHY",
+    "id": "primary",
+    "label": "Square of four G's",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Givenchy_-_logo_%28France%2C_2003%29.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Givenchy_-_logo_%28France%2C_2003%29.svg",
+    "sourceSha256": "32de0047de5f0dd7547ef99bb649a1fbeba1024dcfe2146baca4839964b470ce",
+    "ops": {
+      "keepNodes": [
+        "0/0"
+      ],
+      "viewBox": "70.621 -3.673 118.899 129.791"
+    }
+  },
+  {
+    "teamId": "LUX-GUCCI",
+    "id": "primary",
+    "label": "Interlocking G's",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/1960s_Gucci_Logo.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:1960s_Gucci_Logo.svg",
+    "sourceSha256": "c6b56e47b29d37676ddaf1fe04eccc5ec3ae57aa21d703155c84ebd924928037",
+    "ops": {
+      "viewBox": "-11.332 -11.332 435.726 308.257"
+    }
+  },
+  {
+    "teamId": "LUX-HERMES",
+    "id": "primary",
+    "label": "Horse-drawn carriage with groom",
+    "sourceUrl": "https://brandeps.com/logo-download/h/hermes-logo-vector-01.svg",
+    "sourcePage": "https://brandeps.com/logo/h/hermes-01",
+    "sourceSha256": "0445b58028b75cba0a60a21251410e023ab1e63c4b7402ae84d854115b4873d4",
+    "ops": {
+      "keepNodes": [
+        "0",
+        "1/6-22"
+      ],
+      "viewBox": "97.9 100.6 302.4 139.3"
+    }
+  },
+  {
     "teamId": "LUX-HUBLOT",
     "id": "primary",
     "label": "Slanted H emblem",
@@ -4250,6 +4405,45 @@
         "0"
       ],
       "viewBox": "-1.5 -0.2 62.3 48.44"
+    }
+  },
+  {
+    "teamId": "LUX-KATE",
+    "id": "primary",
+    "label": "Playing-card suit symbol",
+    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/3/39/Kate_Spade_New_York_logo.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Kate_Spade_New_York_logo.svg",
+    "sourceSha256": "9fe9566e29d979ce84a681a59aa2e248da974d5445850515654d45a7cc176c4b",
+    "ops": {
+      "removeNodes": [
+        "1"
+      ],
+      "fill": "#000000",
+      "viewBox": "46.9 -0.5 17.67 17.64"
+    }
+  },
+  {
+    "teamId": "LUX-LV",
+    "id": "primary",
+    "label": "Interlocking initials monogram",
+    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/4/43/Louis_Vuitton_SVG_Monogram_Logo.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Louis_Vuitton_SVG_Monogram_Logo.svg",
+    "sourceSha256": "ccd8b3ea3f616e0fc4aaf06864a196bbd8cc21c9ba8942e744bf1fd1cb5e9394",
+    "ops": {
+      "fill": "#000000",
+      "viewBox": "2.5 8.6 515 503"
+    }
+  },
+  {
+    "teamId": "LUX-MK",
+    "id": "primary",
+    "label": "Wordmark",
+    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/1/17/Michael_Kors_Logo.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Michael_Kors_Logo.svg",
+    "sourceSha256": "cfe170baea0bfd3b43841dbcd0c27067d4c5c5fd7086867f32b8aa2a2702bee7",
+    "showsName": true,
+    "ops": {
+      "fill": "#000000"
     }
   },
   {
@@ -4271,6 +4465,21 @@
     }
   },
   {
+    "teamId": "LUX-PANDORA",
+    "id": "primary",
+    "label": "Crowned O",
+    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/6/60/Pandora_%28jewelry_company_logo%29.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Pandora_(jewelry_company_logo).svg",
+    "sourceSha256": "ce729a9ef76a35026576c604bf5f602991e3d12c444505dca2ec36ee7350f61c",
+    "ops": {
+      "keepNodes": [
+        "6-13"
+      ],
+      "fill": "#000000",
+      "viewBox": "528.4 -6 148.8 202.3"
+    }
+  },
+  {
     "teamId": "LUX-PATEK",
     "id": "primary",
     "label": "Calatrava cross",
@@ -4283,6 +4492,16 @@
       ],
       "viewBox": "15.53 -0.368 11.008 11.008"
     }
+  },
+  {
+    "teamId": "LUX-PRADA",
+    "id": "primary",
+    "label": "Wordmark",
+    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Prada-Logo.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Prada-Logo.svg",
+    "sourceSha256": "8700a055b7e75deb906e802acd251fcf84344c0ab42eddc1367dfab42b747850",
+    "showsName": true,
+    "ops": {}
   },
   {
     "teamId": "LUX-RM",
@@ -4312,6 +4531,21 @@
     }
   },
   {
+    "teamId": "LUX-SWAROVSKI",
+    "id": "primary",
+    "label": "Stippled swan",
+    "sourceUrl": "https://brandeps.com/logo-download/s/swarovski-logo-vector-01.svg",
+    "sourcePage": "https://brandeps.com/logo/s/swarovski-01",
+    "sourceSha256": "3051f1cec370e8aaf61d211fda4f592d8b564eb3a331e261e0e0ebfb4680896a",
+    "ops": {
+      "keepNodes": [
+        "0",
+        "1/9-654"
+      ],
+      "viewBox": "178.5 136.7 155 143.5"
+    }
+  },
+  {
     "teamId": "LUX-TAG",
     "id": "primary",
     "label": "Shield",
@@ -4321,6 +4555,73 @@
     "showsName": true,
     "ops": {
       "viewBox": "-0.133 -1 38.206 33.914"
+    }
+  },
+  {
+    "teamId": "LUX-TIFFANY",
+    "id": "primary",
+    "label": "Serif wordmark",
+    "sourceUrl": "https://logotyp.us/file/tiffany.svg",
+    "sourcePage": "https://logotyp.us/logo/tiffany/",
+    "sourceSha256": "4fe17d8b89c9352356b4511303bec4e77c49e9f7ec4eddc49d7683d612ebe056",
+    "showsName": true,
+    "ops": {
+      "fill": "#000000",
+      "viewBox": "22 161.5 516 77"
+    }
+  },
+  {
+    "teamId": "LUX-TORY",
+    "id": "primary",
+    "label": "Double-T medallion",
+    "sourceUrl": "https://iconape.com/wp-content/files/nd/202157/svg/202157.svg",
+    "sourcePage": "https://iconape.com/tory-burch-logo-logo-icon-svg-png.html",
+    "sourceSha256": "99c7199c3509c285b11ce28d9c88727d596ef6d0d6341f09cef40d3fc85178be",
+    "ops": {
+      "keepNodes": [
+        "0/0",
+        "1/0-2"
+      ],
+      "viewBox": "-3 -3 104.8 104.8"
+    }
+  },
+  {
+    "teamId": "LUX-VCA",
+    "id": "primary",
+    "label": "Serif wordmark",
+    "sourceUrl": "https://iconape.com/wp-content/files/mk/186102/svg/186102.svg",
+    "sourcePage": "https://iconape.com/van-cleef-arpels-logo-logo-icon-svg-png.html",
+    "sourceSha256": "a76ea8bf74ed4198de544bf47bbc848811bc03b808d6c112ae52330ad11feea2",
+    "showsName": true,
+    "ops": {
+      "viewBox": "-4 -4 240.8 34.3"
+    }
+  },
+  {
+    "teamId": "LUX-VERSACE",
+    "id": "primary",
+    "label": "Medusa head",
+    "sourceUrl": "https://iconape.com/wp-content/files/dr/203006/svg/203006.svg",
+    "sourcePage": "https://iconape.com/versace-logo-logo-icon-svg-png.html",
+    "sourceSha256": "b6b71bbe7dc1df6f209badc1e9451fb17e9431f3ccffa27b3de5229f583ba8ac",
+    "ops": {
+      "keepNodes": [
+        "0/0",
+        "1/0"
+      ],
+      "fill": "#231F20",
+      "viewBox": "-10.204 -10.199 360.541 360.257"
+    }
+  },
+  {
+    "teamId": "LUX-YSL",
+    "id": "primary",
+    "label": "Cassandre monogram",
+    "sourceUrl": "https://cdn.worldvectorlogo.com/logos/yves-saint-laurent-1.svg",
+    "sourcePage": "https://worldvectorlogo.com/logo/yves-saint-laurent-1",
+    "sourceSha256": "42cac46f789d25a11f5a16a5517a98fb5d7258d6f5b40c022dc08464e07d20d6",
+    "ops": {
+      "viewBox": "651.287 8.037 533.405 1047.375"
     }
   },
   {
@@ -4352,6 +4653,17 @@
     }
   },
   {
+    "teamId": "CLOTH-BAPE",
+    "id": "primary",
+    "label": "Ape head",
+    "sourceUrl": "https://raw.githubusercontent.com/magnifiques/grabthat-store/61886c48ac6a4e11d09661132b799371d0ae32df/public/brands/Bape.svg",
+    "sourcePage": "https://github.com/magnifiques/grabthat-store/blob/61886c48ac6a4e11d09661132b799371d0ae32df/public/brands/Bape.svg",
+    "sourceSha256": "68316cef248a7999d1fab3f46968a5df07f0851c179a5a4d5e8c7522343df57e",
+    "ops": {
+      "viewBox": "-7.899 -7.935 195.649 280.153"
+    }
+  },
+  {
     "teamId": "CLOTH-CARHARTT",
     "id": "primary",
     "label": "C mark",
@@ -4366,6 +4678,21 @@
     }
   },
   {
+    "teamId": "CLOTH-CK",
+    "id": "primary",
+    "label": "Two-letter monogram",
+    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e2/CK_Calvin_Klein_logo.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:CK_Calvin_Klein_logo.svg",
+    "sourceSha256": "7aea8cd92a9356049de08067be5dea7755426d1d5f72e5f16a1f3c735b4b2fa2",
+    "ops": {
+      "keepNodes": [
+        "1",
+        "15"
+      ],
+      "viewBox": "-59.4 -59.4 2022.55 2098.8"
+    }
+  },
+  {
     "teamId": "CLOTH-COLUMBIA",
     "id": "primary",
     "label": "Diamond grid",
@@ -4377,6 +4704,62 @@
         "0/1-9"
       ],
       "viewBox": "414.266 317.796 306.158 268.848"
+    }
+  },
+  {
+    "teamId": "CLOTH-CONVERSE",
+    "id": "primary",
+    "label": "Star chevron",
+    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/3/30/Converse_logo.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Converse_logo.svg",
+    "sourceSha256": "5ee107b2bb4b7062c7877f29194e32e0445f810f1d7014bd375f660b2e3f56f8",
+    "ops": {
+      "removeNodes": [
+        "3/1"
+      ],
+      "viewBox": "198.773 -16.906 597.353 516.244"
+    }
+  },
+  {
+    "teamId": "CLOTH-FOTL",
+    "id": "primary",
+    "label": "Fruit cluster",
+    "sourceUrl": "https://www.fruit.com/_next/static/media/image.4d946ce8.svg",
+    "sourcePage": "https://www.fruit.com/",
+    "sourceSha256": "70b5aca0643acd13b5c184f9bf6689882762055daec92c455f5e4382d9a64ce1",
+    "ops": {
+      "removeNodes": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "110"
+      ],
+      "viewBox": "15.159 -15.632 552.316 319.623"
+    }
+  },
+  {
+    "teamId": "CLOTH-GAP",
+    "id": "primary",
+    "label": "Navy box wordmark",
+    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/6/69/Gap_logo.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Gap_logo.svg",
+    "sourceSha256": "13a0f3b7189cf2bfb7fb916e398a79ca6883cb2d41c5bd727858c0658321a8eb",
+    "showsName": true,
+    "ops": {
+      "viewBox": "-9 -9 318 318"
     }
   },
   {
@@ -4402,6 +4785,31 @@
         "1/2"
       ],
       "viewBox": "119.924 124.925 275.493 165.285"
+    }
+  },
+  {
+    "teamId": "CLOTH-LEVIS",
+    "id": "primary",
+    "label": "Batwing",
+    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/0/02/Levi%27s_logo_%282011%29.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Levi%27s_logo_(2011).svg",
+    "sourceSha256": "1fe8d673f86019049efe61333fd34cec7eb12ba3488f3103a94d6e4ba709aa72",
+    "ops": {
+      "keepNodes": [
+        "101"
+      ],
+      "viewBox": "-9.153 -9.161 418.7 218.7"
+    }
+  },
+  {
+    "teamId": "CLOTH-OFFWHITE",
+    "id": "primary",
+    "label": "Crossed arrows",
+    "sourceUrl": "https://raw.githubusercontent.com/detain/svg-logos/b02ee1ac30c7ff4757278337c95588b01ed0954b/svg/o/off-white-logo.svg",
+    "sourcePage": "https://github.com/detain/svg-logos/blob/b02ee1ac30c7ff4757278337c95588b01ed0954b/svg/o/off-white-logo.svg",
+    "sourceSha256": "ab8fd207edbc82de0c1fb66b3967a2719e010343ad123ae8d8198dba15c46074",
+    "ops": {
+      "viewBox": "146.08 16.13 608.79 832.38"
     }
   },
   {
@@ -4432,6 +4840,32 @@
         "1/11-42"
       ],
       "viewBox": "162.622 -10.867 186.565 383.537"
+    }
+  },
+  {
+    "teamId": "CLOTH-STUSSY",
+    "id": "primary",
+    "label": "Crown",
+    "sourceUrl": "https://www.stussy.com/cdn/shop/files/Stussy_Crown_Favicon_13246623-57c8-4b1a-b376-bbe235e617fd_32x32.svg?v=1751492884",
+    "sourcePage": "https://www.stussy.com/",
+    "sourceSha256": "b4e60a213e472344e3f5fabf5ac43270820e97bfb433ce8469b8c301690d18b1",
+    "ops": {
+      "removeNodes": [
+        "0"
+      ],
+      "viewBox": "-1.28 -0.28 34.568 32.564"
+    }
+  },
+  {
+    "teamId": "CLOTH-SUPREME",
+    "id": "primary",
+    "label": "Red box wordmark",
+    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/2/28/Supreme_Logo.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Supreme_Logo.svg",
+    "sourceSha256": "061f0ecc9782b86b27829ff79139e41cef34b72ab9d87e2b0220af609193ddbe",
+    "showsName": true,
+    "ops": {
+      "viewBox": "-12 -12 599.84 222.67"
     }
   },
   {
@@ -4479,6 +4913,21 @@
     }
   },
   {
+    "teamId": "CLOTH-VANS",
+    "id": "primary",
+    "label": "Red box wordmark",
+    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/8/88/Vans_%28brand%29_logo.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Vans_(brand)_logo.svg",
+    "sourceSha256": "ff489e8fa2170ebd1432687f5602f16a0a018dbb475e1d7a94c7724552445f30",
+    "showsName": true,
+    "ops": {
+      "removeNodes": [
+        "1/1"
+      ],
+      "viewBox": "6.8 -5.8 207.9 101.8"
+    }
+  },
+  {
     "teamId": "CLOTH-VV",
     "id": "primary",
     "label": "Whale",
@@ -4490,6 +4939,20 @@
         "1/4"
       ],
       "viewBox": "-15.261 82.863 542.735 240.96"
+    }
+  },
+  {
+    "teamId": "CLOTH-WRANGLER",
+    "id": "primary",
+    "label": "Initial letter",
+    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/4/41/Wrangler_Logo.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Wrangler_Logo.svg",
+    "sourceSha256": "f3fd948ebd40ce22416bdc742964d481e3fe954183f1e7839609cbef7ef28c08",
+    "ops": {
+      "keepNodes": [
+        "2/0/0"
+      ],
+      "viewBox": "-1.544 -1.544 41.688 33.288"
     }
   }
 ]

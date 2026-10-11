@@ -16,7 +16,7 @@ import {
   type ExportSize,
 } from '../lib/designer'
 import { canExportSvg, designPngBlob, designSvgBlob, downloadBlob } from '../lib/exportLogo'
-import { findTeam, fullName, nextLogoVariant, withLogoVariant, type Team } from '../lib/teams'
+import { COLOR_DONOR_LEAGUES, COLOR_SOURCE_NOTE, findTeam, fullName, nextLogoVariant, withLogoVariant, type Team } from '../lib/teams'
 import { Logo } from './Logo'
 import { TeamBrowser, type BrowserState } from './TeamBrowser'
 
@@ -352,6 +352,8 @@ export function DesignerMode({ state, setState, portrait, hidden }: Props) {
             selectedId={state.cId}
             onSelect={selectColors}
             showSwatches
+            leagues={COLOR_DONOR_LEAGUES}
+            note={COLOR_SOURCE_NOTE}
             portrait
           />
         )}
@@ -377,6 +379,8 @@ export function DesignerMode({ state, setState, portrait, hidden }: Props) {
         selectedId={state.cId}
         onSelect={selectColors}
         showSwatches
+        leagues={COLOR_DONOR_LEAGUES}
+        note={COLOR_SOURCE_NOTE}
       />
     </div>
   )

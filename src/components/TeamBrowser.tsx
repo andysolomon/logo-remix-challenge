@@ -15,9 +15,15 @@ interface Props {
   onSelect: (t: Team) => void
   showSwatches?: boolean
   portrait?: boolean
+  /** Collections offered, in LEAGUES order; all of them when omitted. A restored state outside the list shows the first. */
+  leagues?: readonly League[]
+  /** One line under the title explaining the collections on offer. */
+  note?: string
 }
 
-export function TeamBrowser({ title, state, onState, selectedId, onSelect, showSwatches, portrait }: Props) {
+export function TeamBrowser({ title, state: rawState, onState, selectedId, onSelect, showSwatches, portrait, leagues, note }: Props) {
+  const offered = (Object.keys(LEAGUES) as League[]).filter((lg) => !leagues || leagues.includes(lg))
+  const state = offered.includes(rawState.league) ? rawState : { league: offered[0], conference: 'All' }
   const leagueRef = useRef<HTMLDivElement>(null)
   const chipsRef = useRef<HTMLDivElement>(null)
   useEffect(() => {
@@ -40,7 +46,7 @@ export function TeamBrowser({ title, state, onState, selectedId, onSelect, showS
       <div className={`panel-head${portrait ? ' wrap' : ''}`}>
         <div id={panelId} className="panel-title">{title}</div>
         <div ref={leagueRef} className="seg" role="group" aria-label="League or category">
-          {(Object.keys(LEAGUES) as League[]).map((lg) => (
+          {offered.map((lg) => (
             <button
               key={lg}
               type="button"
@@ -53,6 +59,7 @@ export function TeamBrowser({ title, state, onState, selectedId, onSelect, showS
           ))}
         </div>
       </div>
+      {note && <div className="panel-note">{note}</div>}
       <div ref={chipsRef} className="chips" role="group" aria-label={state.league === 'BRAND' ? 'Brand type filter' : state.league === 'SOCCER' ? 'League filter' : noun === 'team' ? 'Conference filter' : 'Category filter'}>
         {chips.map((c) => (
           <button

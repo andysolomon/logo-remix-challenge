@@ -3,7 +3,7 @@ import { execFileSync } from 'node:child_process'
 import { join } from 'node:path'
 import {
   ALL_POOL_IDS, TEAMS, LEAGUES, deckFromStorage, filterTeams, findTeam, fullName,
-  isCorrectGuess, poolTeams, randomDeck, roundHints, suggestTeams,
+  colorPoolTeams, isCorrectGuess, poolTeams, randomDeck, roundHints, suggestTeams,
 } from '../src/lib/teams'
 
 const root = join(import.meta.dir, '..')
@@ -57,7 +57,10 @@ describe('MLB and fast food collections', () => {
     expect(ALL_POOL_IDS).toContain('MLB')
     expect(ALL_POOL_IDS).toContain('Fast Food')
     expect(poolTeams(['MLB', 'Fast Food'])).toHaveLength(60)
-    for (const [logos, colors] of [[['MLB'], ['MLB']], [['Fast Food'], ['Fast Food']], [['MLB'], ['Fast Food']], [['Fast Food'], ['NBA']]]) {
+    // MLB teams and chains are logo-only: only NFL, NBA and college palettes color a round.
+    expect(colorPoolTeams(['MLB', 'Fast Food'])).toEqual([])
+    expect(randomDeck({ rounds: 20, logoPools: ['MLB'], colorPools: ['MLB', 'Fast Food'], guess: 'both', hints: true })).toEqual([])
+    for (const [logos, colors] of [[['MLB'], ['NFL']], [['Fast Food'], ['NBA']], [['MLB'], ['SEC']], [['Fast Food'], ['NFL', 'NBA']]]) {
       const deck = randomDeck({ rounds: 20, logoPools: logos, colorPools: colors, guess: 'both', hints: true })
       expect(deck).toHaveLength(20)
       expect(new Set(deck.map((r) => r.o)).size).toBe(20)

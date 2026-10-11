@@ -1,6 +1,6 @@
 import { hasEmbeddedRaster, hexToRgb, isSvg, loadSvg, recolorRaster, recolorSvg, svgToDataUrl } from '../components/Logo'
 import { composeSvg, designLayout, ensureSvgSize, sourceColors, type DesignColors, type ExportSize } from './designer'
-import { backdropSlot, type Team } from './teams'
+import { remixLayout, type Team } from './teams'
 
 /** A Designer-mode design: the artwork (variant already applied), its slot colors (null = as drawn) and an export background. */
 export interface Design {
@@ -9,9 +9,11 @@ export interface Design {
   background: string | null
 }
 
-const backdropOf = (d: Design) => {
-  const slot = backdropSlot(d.team)
-  return d.colors && slot !== undefined ? d.colors[slot] : undefined
+/** Tile colors behind the artwork: the backdrop for one- and two-color logos, plus the frame for one-color logos. */
+const tileOf = (d: Design): { backdrop?: string; frame?: string } => {
+  const { backdrop, frame } = remixLayout(d.team)
+  if (!d.colors || backdrop === undefined) return {}
+  return { backdrop: d.colors[backdrop], frame: frame !== undefined ? d.colors[frame] : undefined }
 }
 
 /** Recolored vector markup (no canvas composition), or null for bitmap artwork. */
@@ -33,8 +35,8 @@ export async function canExportSvg(logo: string): Promise<boolean> {
 export async function designSvg(d: Design): Promise<string | null> {
   const colored = await coloredSvg(d)
   if (!colored) return null
-  const backdrop = backdropOf(d)
-  return backdrop || d.background ? composeSvg(colored, { backdrop, background: d.background }) : ensureSvgSize(colored)
+  const { backdrop, frame } = tileOf(d)
+  return backdrop || d.background ? composeSvg(colored, { backdrop, frame, background: d.background }) : ensureSvgSize(colored)
 }
 
 export async function designSvgBlob(d: Design): Promise<Blob | null> {
@@ -79,16 +81,26 @@ export async function designPngBlob(d: Design, size: ExportSize): Promise<Blob |
   canvas.height = size
   const ctx = canvas.getContext('2d')
   if (!ctx) return null
-  const backdrop = backdropOf(d)
-  const layout = designLayout(size, !!backdrop, !!d.background)
+  const { backdrop, frame } = tileOf(d)
+  const layout = designLayout(size, !!backdrop, !!d.background, !!frame)
   if (d.background) {
     ctx.fillStyle = d.background
     ctx.fillRect(0, 0, size, size)
   }
   if (layout.tile && backdrop) {
-    ctx.fillStyle = backdrop
-    roundedRect(ctx, layout.tile.x, layout.tile.y, layout.tile.size, layout.tile.radius)
-    ctx.fill()
+    const t = layout.tile
+    if (t.frame && frame) {
+      ctx.fillStyle = frame
+      roundedRect(ctx, t.x, t.y, t.size, t.radius)
+      ctx.fill()
+      ctx.fillStyle = backdrop
+      roundedRect(ctx, t.x + t.frame, t.y + t.frame, t.size - t.frame * 2, t.radius - t.frame)
+      ctx.fill()
+    } else {
+      ctx.fillStyle = backdrop
+      roundedRect(ctx, t.x, t.y, t.size, t.radius)
+      ctx.fill()
+    }
   }
   const iw = img.naturalWidth || layout.logo.size
   const ih = img.naturalHeight || layout.logo.size

@@ -4,7 +4,7 @@ import { existsSync } from 'node:fs'
 import { join } from 'node:path'
 import {
   ALL_POOL_IDS, LEAGUES, TEAMS, contrastSafePermutation, deckFromStorage, filterTeams, findTeam, fullName,
-  isCorrectGuess, logoPoolTeams, logoVariants, nextLogoVariant, normalizeRound, poolTeams, randomDeck,
+  colorPoolTeams, isCorrectGuess, logoPoolTeams, logoVariants, nextLogoVariant, normalizeRound, poolTeams, randomDeck,
   roundHints, suggestTeams, withLogoVariant, type League,
 } from '../src/lib/teams'
 
@@ -127,14 +127,17 @@ for league, roster in ROSTERS.items():
     expect(isCorrectGuess("Hardee's", findTeam('FOOD-CARL')!)).toBe(true)
   })
 
-  test('random decks draw brand, app, channel and car logos, keep wordmarks as color donors and show the type as a hint', () => {
+  test('random decks draw brand, app, channel and car logos, skip wordmarks, take colors from teams and show the type as a hint', () => {
     expect(ALL_POOL_IDS).toEqual(expect.arrayContaining(['Fast Food', 'Brands', 'Apps', 'TV', 'Cars']))
     expect(poolTeams(['Brands', 'Apps'])).toHaveLength(59)
     expect(poolTeams(['TV', 'Cars'])).toHaveLength(60)
     expect(logoPoolTeams(['Fast Food'])).toHaveLength(30 - wordmarks('FOOD'))
     expect(logoPoolTeams(['TV'])).toHaveLength(30 - wordmarks('TV'))
     expect(logoPoolTeams(['Cars'])).toHaveLength(30 - wordmarks('CAR'))
-    for (const [logos, colors] of [[['Fast Food'], ['Fast Food']], [['Brands'], ['Apps']], [['Apps'], ['NFL']], [['Cars'], ['TV']], [['TV', 'Cars'], ['Cars']]]) {
+    // Brand palettes never color a round, so a wordmark-only brand sits random decks out entirely.
+    expect(colorPoolTeams(['Fast Food', 'Brands', 'Apps', 'TV', 'Cars'])).toEqual([])
+    expect(randomDeck({ rounds: 20, logoPools: ['Brands'], colorPools: ['Apps'], guess: 'both', hints: true })).toEqual([])
+    for (const [logos, colors] of [[['Fast Food'], ['NFL']], [['Brands'], ['NBA']], [['Apps'], ['NFL']], [['Cars'], ['SEC']], [['TV', 'Cars'], ['NFL', 'NBA']]]) {
       for (let n = 0; n < 5; n++) {
         const deck = randomDeck({ rounds: 20, logoPools: logos, colorPools: colors, guess: 'both', hints: true })
         expect(deck).toHaveLength(20)

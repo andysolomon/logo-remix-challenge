@@ -4,7 +4,7 @@ import { existsSync } from 'node:fs'
 import { join } from 'node:path'
 import {
   ALL_POOL_IDS, LEAGUES, TEAMS, contrastSafePermutation, deckFromStorage, filterTeams, findTeam, fullName,
-  isCorrectGuess, logoPoolTeams, logoVariants, nextLogoVariant, normalizeRound, poolTeams, randomDeck,
+  colorPoolTeams, isCorrectGuess, logoPoolTeams, logoVariants, nextLogoVariant, normalizeRound, poolTeams, randomDeck,
   roundHints, suggestTeams, withLogoVariant, type League,
 } from '../src/lib/teams'
 
@@ -13,7 +13,7 @@ const python = (code: string) => execFileSync('python3', ['-c', code], { cwd: ro
 const COLLECTIONS: League[] = ['FOOD', 'BRAND', 'APP', 'TV', 'CAR', 'LUX', 'CLOTH']
 const entries = TEAMS.filter((t) => COLLECTIONS.includes(t.league))
 const norm = (s: string) => s.toLowerCase().replace(/[^a-z0-9]/g, '')
-/** Chains, channels, carmakers and fashion brands whose every published logo is a wordmark; they stay playable as color donors. */
+/** Chains, channels, carmakers and fashion brands whose every published logo is a wordmark; random decks skip them, but they can still be picked by hand. */
 const WORDMARK_ONLY = [
   'CAR-FIAT', 'CAR-FORD', 'CLOTH-GAP', 'CLOTH-SUPREME', 'CLOTH-VANS',
   'FOOD-BOJ', 'FOOD-CANE', 'FOOD-CUL', 'FOOD-DUNK', 'FOOD-FIVE', 'FOOD-PAPA',
@@ -133,7 +133,7 @@ for league, roster in ROSTERS.items():
     expect(isCorrectGuess("Hardee's", findTeam('FOOD-CARL')!)).toBe(true)
   })
 
-  test('random decks draw brand, app, channel, car, luxury and clothing logos, keep wordmarks as color donors and show the type as a hint', () => {
+  test('random decks draw brand, app, channel, car, luxury and clothing logos, skip wordmarks, take colors from teams and show the type as a hint', () => {
     expect(ALL_POOL_IDS).toEqual(expect.arrayContaining(['Fast Food', 'Brands', 'Apps', 'TV', 'Cars', 'Luxury', 'Clothing']))
     expect(poolTeams(['Brands', 'Apps'])).toHaveLength(59)
     expect(poolTeams(['TV', 'Cars'])).toHaveLength(60)
@@ -143,7 +143,10 @@ for league, roster in ROSTERS.items():
     expect(logoPoolTeams(['Cars'])).toHaveLength(30 - wordmarks('CAR'))
     expect(logoPoolTeams(['Luxury'])).toHaveLength(30 - wordmarks('LUX'))
     expect(logoPoolTeams(['Clothing'])).toHaveLength(30 - wordmarks('CLOTH'))
-    for (const [logos, colors] of [[['Fast Food'], ['Fast Food']], [['Brands'], ['Apps']], [['Apps'], ['NFL']], [['Cars'], ['TV']], [['TV', 'Cars'], ['Cars']], [['Luxury'], ['Clothing']], [['Clothing', 'Luxury'], ['NBA']]]) {
+    // Brand palettes never color a round, so a wordmark-only brand sits random decks out entirely.
+    expect(colorPoolTeams(['Fast Food', 'Brands', 'Apps', 'TV', 'Cars', 'Luxury', 'Clothing'])).toEqual([])
+    expect(randomDeck({ rounds: 20, logoPools: ['Brands'], colorPools: ['Apps'], guess: 'both', hints: true })).toEqual([])
+    for (const [logos, colors] of [[['Fast Food'], ['NFL']], [['Brands'], ['NBA']], [['Apps'], ['NFL']], [['Cars'], ['SEC']], [['TV', 'Cars'], ['NFL', 'NBA']], [['Luxury'], ['NBA']], [['Clothing', 'Luxury'], ['NFL', 'SEC']]]) {
       for (let n = 0; n < 5; n++) {
         const deck = randomDeck({ rounds: 20, logoPools: logos, colorPools: colors, guess: 'both', hints: true })
         expect(deck).toHaveLength(20)
@@ -159,8 +162,9 @@ for league, roster in ROSTERS.items():
     const game = filterTeams('APP', 'Games', '')[0]
     expect(roundHints({ o: place.id, c: game.id, v: 0 })).toEqual(['Logo: Place brand', 'Colors: Games app'])
     expect(roundHints({ o: 'CAR-BMW', c: 'TV-NICK', v: 0 })).toEqual(['Logo: German car', 'Colors: Kids channel'])
-    expect(roundHints({ o: 'LUX-ROLEX', c: 'CLOTH-TNF', v: 0 })).toEqual(['Logo: Luxury watchmaker', 'Colors: Outdoor brand'])
-    expect(roundHints({ o: 'CLOTH-POLO', c: 'LUX-HERMES', v: 0 })).toEqual(['Logo: Preppy brand', 'Colors: Luxury leather goods'])
+    expect(roundHints({ o: 'LUX-ROLEX', c: 'NBA-ATL', v: 0 })).toEqual(['Logo: Luxury watchmaker', 'Colors: NBA'])
+    expect(roundHints({ o: 'LUX-HERMES', c: 'COL-ALA', v: 0 })).toEqual(['Logo: Luxury leather goods', 'Colors: SEC'])
+    expect(roundHints({ o: 'CLOTH-TNF', c: 'PRO-KC', v: 0 })).toEqual(['Logo: Outdoor brand', 'Colors: NFL'])
   })
 })
 

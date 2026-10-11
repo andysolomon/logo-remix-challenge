@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
-import { backdropSlot, resolveRemixTargetColors, withLogoVariant, type Team } from '../lib/teams'
+import { framedTileImage } from '../lib/designer'
+import { remixLayout, resolveRemixTargetColors, withLogoVariant, type Team } from '../lib/teams'
 
 interface Props {
   team: Team
@@ -253,16 +254,19 @@ function recolor(key: string, src: string, from: RGB[], to: RGB[]): Promise<stri
  * Team logo. Renders the raw asset when `palette` is omitted. With a palette,
  * the artwork's colors matching the team's source palette are swapped to the
  * target palette (SVG fills rewritten as text; PNGs recolored on a canvas) and
- * the image stays transparent until that cached recolor is ready. One-color
- * artwork is remixed onto a backdrop in another target color (`backdropSlot`).
+ * the image stays transparent until that cached recolor is ready. Artwork that
+ * leaves target colors out is remixed onto a backdrop tile in one of them, with
+ * a frame in the other for one-color artwork (`remixLayout`), so every remix
+ * shows all three target colors.
  */
 export function Logo({ team: baseTeam, palette, perm = 0, variantId, targetColors }: Props) {
   const team = withLogoVariant(baseTeam, variantId)
   const hasTargetPalette = palette != null || targetColors != null
   const target = targetColors ? targetColors : palette != null ? resolveRemixTargetColors(team, palette, perm) : null
   const source = team.sourcePalette ?? team.palette
-  const slot = backdropSlot(team)
-  const backdrop = target && slot !== undefined ? target[slot] : undefined
+  const layout = remixLayout(team)
+  const backdrop = target && layout.backdrop !== undefined ? target[layout.backdrop] : undefined
+  const frame = target && layout.frame !== undefined ? target[layout.frame] : undefined
   const key = target ? `${team.logo}|${source.join('|')}|${target.join('|')}` : null
   const [, setTick] = useState(0)
   const [remixStatus, setRemixStatus] = useState<RemixStatus>(() =>
@@ -308,6 +312,11 @@ export function Logo({ team: baseTeam, palette, perm = 0, variantId, targetColor
   const imageSrc = !hasTargetPalette ? team.logo : key && remixStatus === 'ready' ? urlCache.get(key) ?? TRANSPARENT_PIXEL : TRANSPARENT_PIXEL
   // The backdrop appears with the recolored artwork, never as an empty tile while it loads.
   const showBackdrop = backdrop !== undefined && remixStatus === 'ready'
+  const tileStyle = showBackdrop
+    ? frame !== undefined
+      ? { backgroundColor: backdrop, backgroundImage: framedTileImage(backdrop, frame) }
+      : { backgroundColor: backdrop }
+    : undefined
   const liveStatus =
     remixStatus === 'loading' ? 'Loading remix logo.' : remixStatus === 'error' ? 'Remix logo unavailable.' : ''
 
@@ -319,8 +328,8 @@ export function Logo({ team: baseTeam, palette, perm = 0, variantId, targetColor
         </span>
       )}
       <img
-        className={showBackdrop ? 'logo backdrop' : 'logo'}
-        style={showBackdrop ? { backgroundColor: backdrop } : undefined}
+        className={showBackdrop ? (frame !== undefined ? 'logo backdrop framed' : 'logo backdrop') : 'logo'}
+        style={tileStyle}
         src={imageSrc}
         alt=""
         aria-hidden="true"

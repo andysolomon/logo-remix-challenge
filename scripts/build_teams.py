@@ -14,9 +14,9 @@ attached to their teams from ``ncaa-alternates-manifest.json``.
 
 Run after ``scripts/download_svgs.py``. Idempotent: every ``COL-*`` *team*
 entry is regenerated from the manifest; the hand-tuned conference logo
-entries (``COL-ACC`` etc.) keep everything but ``unusedSourceSlots``, which
-follows their artwork; all NFL entries and the high-school entries owned by
-``scripts/build_hs_teams.py`` are left untouched. New
+entries (``COL-ACC`` etc.) and the NFL entries keep everything but
+``unusedSourceSlots``, which follows their artwork; the high-school entries
+owned by ``scripts/build_hs_teams.py`` are left untouched. New
 conference logos in the manifest (e.g. Ivy) are added if missing, and the
 ``leagues.COL.conferences`` chip list is updated to the manifest's order.
 
@@ -28,8 +28,10 @@ Palette per team is ``[primary, secondary, light]``:
   * light     white
 Primary and secondary are snapped to the SVG's actual fills, so the runtime
 recolor in Logo.tsx matches exactly without a separate ``sourcePalette``.
-Slots the artwork never uses are listed in ``unusedSourceSlots``; one-color
-artwork (two unused slots) is remixed onto a backdrop in another team color.
+Slots the artwork never uses are listed in ``unusedSourceSlots``; two-color
+artwork (one unused slot) is remixed onto a backdrop tile in the missing team
+color, and one-color artwork (two unused slots) onto a tile with a frame, so
+every remix shows all three team colors.
 
 Usage:
     python3 scripts/build_teams.py [--dry-run]
@@ -125,13 +127,43 @@ def svg_fills(item: dict) -> list[str]:
 STOP_COLOR_RE = re.compile(r"stop-color\s*[:=]\s*[\"']?\s*(#[0-9a-fA-F]{3,8}\b|rgba?\([^)]*\)|[a-zA-Z]+)")
 
 
+EMBEDDED_RASTER_RE = re.compile(r"data:image/[a-z]+;base64,([A-Za-z0-9+/=\s]+)")
+
+
+def embedded_raster_colors(text: str) -> list[str] | None:
+    """Most common opaque colors of every bitmap embedded in an SVG, or None when they cannot be read.
+
+    The remix recolors these pixels on a canvas exactly as it does a PNG, so their
+    colors count toward slot coverage. Decoding needs Pillow; without it the
+    coverage stays unknown rather than guessed.
+    """
+    try:
+        from PIL import Image
+    except ImportError:
+        return None
+    import base64
+    import io
+
+    colors: list[str] = []
+    for raster in EMBEDDED_RASTER_RE.findall(text):
+        image = Image.open(io.BytesIO(base64.b64decode(raster))).convert("RGBA")
+        counts: dict[str, int] = {}
+        pixels = image.get_flattened_data() if hasattr(image, "get_flattened_data") else image.getdata()
+        for r, g, b, a in pixels:
+            if a >= 240:
+                key = "#%02X%02X%02X" % (r, g, b)
+                counts[key] = counts.get(key, 0) + 1
+        colors += sorted(counts, key=counts.get, reverse=True)[:100]
+    return colors
+
+
 def unused_slots(palette: list[str], logo: str) -> list[int] | None:
     """Palette slots no artwork color comes near, or None when the file hides its colors.
 
     Reads what Logo.tsx recolors: an SVG's resolved fills (fill-less shapes
-    render black) and gradient stops, or a PNG's opaque pixels. An SVG that
-    wraps an embedded bitmap keeps its colors in the bitmap, so its coverage is
-    left unknown rather than guessed, as is a file not downloaded yet.
+    render black), gradient stops and embedded bitmaps, or a PNG's opaque
+    pixels. Coverage is left unknown rather than guessed for a file not
+    downloaded yet, or an embedded bitmap that cannot be decoded.
     """
     # Imported here: download_nba_svgs imports this module.
     from download_hbcu_svgs import png_colors, to_hex
@@ -142,10 +174,14 @@ def unused_slots(palette: list[str], logo: str) -> list[int] | None:
         return None
     data = path.read_bytes()
     if logo.endswith(".svg"):
-        if b"<image" in data:
-            return None
-        stops = [to_hex(token) for token in STOP_COLOR_RE.findall(data.decode("utf-8", "replace"))]
+        text = data.decode("utf-8", "replace")
+        stops = [to_hex(token) for token in STOP_COLOR_RE.findall(text)]
         colors = artwork_colors(data) + [c for c in stops if c]
+        if b"<image" in data:
+            raster = embedded_raster_colors(text)
+            if raster is None:
+                return None
+            colors += raster
     else:
         colors = [hex_ for hex_, _ in png_colors(data)[:100]]
     return [slot for slot, color in enumerate(palette) if not any(near(color, c) for c in colors)]
@@ -343,7 +379,9 @@ def main() -> int:
     conferences = [c for c in CONFERENCE_ORDER if any(i["conference"] == c for i in college_items)]
     conf_order = {c: n for n, c in enumerate(conferences)}
 
-    nfl = [t for t in existing if t["league"] == "PRO"]
+    # NFL entries are carried through, but their primary artwork's slot coverage follows the file
+    # (alternates record theirs in nfl-alternates-manifest.json).
+    nfl = [with_unused_slots(t) for t in existing if t["league"] == "PRO"]
     nba = [t for t in existing if t["league"] == "NBA"]
     other_leagues = [t for t in existing if t["league"] not in ("PRO", "NBA", "COL", "HS")]
     # High-school entries are owned by scripts/build_hs_teams.py; carry them

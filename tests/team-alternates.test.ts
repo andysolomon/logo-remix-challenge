@@ -63,7 +63,7 @@ for league in ('NBA', 'COL'):
   }, 30000)
 
   test('shuffle cycles every mark once and saved rounds keep the exact alternate', () => {
-    const donor = findTeam('FOOD-MCD')!
+    const donor = findTeam('PRO-BUF')!
     for (const team of withAlternates) {
       let current: string | undefined
       const seen = new Set<string>()

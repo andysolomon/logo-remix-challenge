@@ -10,10 +10,10 @@ import {
 
 const root = join(import.meta.dir, '..')
 const python = (code: string) => execFileSync('python3', ['-c', code], { cwd: root })
-const COLLECTIONS: League[] = ['FOOD', 'BRAND', 'APP', 'TV', 'CAR']
+const COLLECTIONS: League[] = ['FOOD', 'BRAND', 'APP', 'TV', 'CAR', 'LUX', 'CLOTH']
 const entries = TEAMS.filter((t) => COLLECTIONS.includes(t.league))
 const norm = (s: string) => s.toLowerCase().replace(/[^a-z0-9]/g, '')
-/** Chains, channels and carmakers whose every published logo is a wordmark; they stay playable as color donors. */
+/** Chains, channels, carmakers and fashion brands whose every published logo is a wordmark; they stay playable as color donors. */
 const WORDMARK_ONLY = [
   'CAR-FIAT', 'CAR-FORD', 'FOOD-BOJ', 'FOOD-CANE', 'FOOD-CUL', 'FOOD-DUNK', 'FOOD-FIVE', 'FOOD-PAPA',
   'TV-ABC', 'TV-CMT', 'TV-CNN', 'TV-EENT', 'TV-ESPN', 'TV-FOX', 'TV-HBO', 'TV-HGTV', 'TV-TNT', 'TV-TWC', 'TV-VH1',
@@ -21,7 +21,7 @@ const WORDMARK_ONLY = [
 const wordmarks = (league: League) => WORDMARK_ONLY.filter((id) => id.startsWith(`${league}-`)).length
 
 describe('brand collections', () => {
-  test('fast food, brands, apps, TV and cars have full rosters split across their categories', () => {
+  test('fast food, brands, apps, TV, cars, luxury and clothing have full rosters split across their categories', () => {
     expect(LEAGUES.BRAND).toEqual({ label: 'BRANDS', conferences: ['Product', 'Service', 'Corporate', 'Personal', 'Store', 'Place'] })
     expect(LEAGUES.APP).toEqual({ label: 'APPS', conferences: ['Built-in', 'Social', 'Games', 'Music & Video', 'Everyday'] })
     expect(LEAGUES.BRAND.conferences.map((c) => filterTeams('BRAND', c, '').length)).toEqual([5, 5, 5, 4, 5, 5])
@@ -30,7 +30,11 @@ describe('brand collections', () => {
     expect(LEAGUES.TV.conferences.map((c) => filterTeams('TV', c, '').length)).toEqual([6, 6, 5, 7, 6])
     expect(LEAGUES.CAR).toEqual({ label: 'CARS', conferences: ['American', 'Japanese & Korean', 'German', 'Italian', 'British'] })
     expect(LEAGUES.CAR.conferences.map((c) => filterTeams('CAR', c, '').length)).toEqual([6, 8, 5, 5, 6])
-    for (const [league, size] of [['FOOD', 30], ['BRAND', 29], ['APP', 30], ['TV', 30], ['CAR', 30]] as const) {
+    expect(LEAGUES.LUX).toEqual({ label: 'LUXURY', conferences: ['Fashion House', 'Leather Goods', 'Watchmaker', 'Jeweler'] })
+    expect(LEAGUES.LUX.conferences.map((c) => filterTeams('LUX', c, '').length)).toEqual([10, 6, 8, 6])
+    expect(LEAGUES.CLOTH).toEqual({ label: 'CLOTHING', conferences: ['Sportswear', 'Streetwear', 'Outdoor', 'Preppy', 'Everyday'] })
+    expect(LEAGUES.CLOTH.conferences.map((c) => filterTeams('CLOTH', c, '').length)).toEqual([7, 6, 6, 6, 5])
+    for (const [league, size] of [['FOOD', 30], ['BRAND', 29], ['APP', 30], ['TV', 30], ['CAR', 30], ['LUX', 30], ['CLOTH', 30]] as const) {
       expect(filterTeams(league, 'All', '')).toHaveLength(size)
       expect(new Set(filterTeams(league, 'All', '').map(fullName)).size).toBe(size)
     }
@@ -41,7 +45,7 @@ describe('brand collections', () => {
   test('every logo and alternate is local vector artwork; extra marks exist only where they are distinct', () => {
     for (const team of entries) {
       for (const variant of logoVariants(team)) {
-        expect(variant.logo).toMatch(/^\/logos\/svg\/(fast-food|brands|apps|tv|cars)\/.+\.svg$/)
+        expect(variant.logo).toMatch(/^\/logos\/svg\/(fast-food|brands|apps|tv|cars|luxury|clothing)\/.+\.svg$/)
         expect(existsSync(join(root, 'public', variant.logo))).toBe(true)
       }
       expect(new Set(logoVariants(team).map((v) => v.logo)).size).toBe(logoVariants(team).length)
@@ -127,14 +131,17 @@ for league, roster in ROSTERS.items():
     expect(isCorrectGuess("Hardee's", findTeam('FOOD-CARL')!)).toBe(true)
   })
 
-  test('random decks draw brand, app, channel and car logos, keep wordmarks as color donors and show the type as a hint', () => {
-    expect(ALL_POOL_IDS).toEqual(expect.arrayContaining(['Fast Food', 'Brands', 'Apps', 'TV', 'Cars']))
+  test('random decks draw brand, app, channel, car, luxury and clothing logos, keep wordmarks as color donors and show the type as a hint', () => {
+    expect(ALL_POOL_IDS).toEqual(expect.arrayContaining(['Fast Food', 'Brands', 'Apps', 'TV', 'Cars', 'Luxury', 'Clothing']))
     expect(poolTeams(['Brands', 'Apps'])).toHaveLength(59)
     expect(poolTeams(['TV', 'Cars'])).toHaveLength(60)
+    expect(poolTeams(['Luxury', 'Clothing'])).toHaveLength(60)
     expect(logoPoolTeams(['Fast Food'])).toHaveLength(30 - wordmarks('FOOD'))
     expect(logoPoolTeams(['TV'])).toHaveLength(30 - wordmarks('TV'))
     expect(logoPoolTeams(['Cars'])).toHaveLength(30 - wordmarks('CAR'))
-    for (const [logos, colors] of [[['Fast Food'], ['Fast Food']], [['Brands'], ['Apps']], [['Apps'], ['NFL']], [['Cars'], ['TV']], [['TV', 'Cars'], ['Cars']]]) {
+    expect(logoPoolTeams(['Luxury'])).toHaveLength(30 - wordmarks('LUX'))
+    expect(logoPoolTeams(['Clothing'])).toHaveLength(30 - wordmarks('CLOTH'))
+    for (const [logos, colors] of [[['Fast Food'], ['Fast Food']], [['Brands'], ['Apps']], [['Apps'], ['NFL']], [['Cars'], ['TV']], [['TV', 'Cars'], ['Cars']], [['Luxury'], ['Clothing']], [['Clothing', 'Luxury'], ['NBA']]]) {
       for (let n = 0; n < 5; n++) {
         const deck = randomDeck({ rounds: 20, logoPools: logos, colorPools: colors, guess: 'both', hints: true })
         expect(deck).toHaveLength(20)
@@ -150,6 +157,8 @@ for league, roster in ROSTERS.items():
     const game = filterTeams('APP', 'Games', '')[0]
     expect(roundHints({ o: place.id, c: game.id, v: 0 })).toEqual(['Logo: Place brand', 'Colors: Games app'])
     expect(roundHints({ o: 'CAR-BMW', c: 'TV-NICK', v: 0 })).toEqual(['Logo: German car', 'Colors: Kids channel'])
+    expect(roundHints({ o: 'LUX-ROLEX', c: 'CLOTH-TNF', v: 0 })).toEqual(['Logo: Luxury watchmaker', 'Colors: Outdoor brand'])
+    expect(roundHints({ o: 'CLOTH-POLO', c: 'LUX-HERMES', v: 0 })).toEqual(['Logo: Preppy brand', 'Colors: Luxury leather goods'])
   })
 })
 

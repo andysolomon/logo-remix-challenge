@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
-"""Rebuild only the NBA roster from nba-manifest.json; preserve other leagues."""
+"""Rebuild only the NBA roster from nba-manifest.json; preserve other leagues.
+
+Alternate marks pinned by download_team_alternates.py are attached from nba-alternates-manifest.json.
+"""
 
 import argparse
 import json
@@ -8,6 +11,7 @@ from pathlib import Path
 
 from build_teams import atomic_write_text, build_palette, dist_sq, fmt_entry
 from download_nba_svgs import artwork_colors, validate_svg
+from download_team_alternates import team_alternates
 from nba_roster import ROSTER
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -61,6 +65,10 @@ def main() -> None:
         if unused:
             entry["unusedSourceSlots"] = unused
         entries.append(entry)
+    alternates = team_alternates("NBA", {entry["id"] for entry in entries})
+    for entry in entries:
+        if entry["id"] in alternates:
+            entry["alternateLogos"] = alternates[entry["id"]]
     text = TEAMS_JSON.read_text()
     data = json.loads(text)
     existing = data["teams"]

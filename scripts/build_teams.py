@@ -9,6 +9,9 @@ The second is optional but, when present, must be merged here rather than in a
 script of its own: this one rewrites the whole ``COL-*`` block, so anything it
 does not know about is dropped on the next run.
 
+Alternate marks pinned by ``scripts/download_team_alternates.py --league COL`` are
+attached to their teams from ``ncaa-alternates-manifest.json``.
+
 Run after ``scripts/download_svgs.py``. Idempotent: every ``COL-*`` *team*
 entry is regenerated from the manifest; the hand-tuned conference logo
 entries (``COL-ACC`` etc.) keep everything but ``unusedSourceSlots``, which
@@ -364,6 +367,16 @@ def main() -> int:
     if dupes:
         print(f"error: duplicate team ids {dupes}", file=sys.stderr)
         return 1
+    # Imported here: download_team_alternates imports this module.
+    from download_team_alternates import team_alternates
+    try:
+        alternates = team_alternates("COL", set(ids))
+    except ValueError as exc:
+        print(f"error: {exc}; run scripts/download_team_alternates.py --league COL", file=sys.stderr)
+        return 1
+    for team in teams:
+        if team["id"] in alternates:
+            team["alternateLogos"] = alternates[team["id"]]
 
     college = [kept_confs[c] for c in conferences if c in kept_confs] + teams
     data["leagues"]["COL"]["conferences"] = conferences

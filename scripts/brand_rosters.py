@@ -1,4 +1,5 @@
-"""Brand collections: fast-food chains, brands grouped by brand type, iOS apps, TV channels and carmakers.
+"""Brand collections: fast-food chains, brands grouped by brand type, iOS apps, TV channels, carmakers,
+luxury houses and clothing brands.
 
 Each row is (abbr, display name, category, primary color, secondary color, answer aliases).
 The colors are the donor palette and white completes the third slot. Fast-food colors keep
@@ -172,13 +173,81 @@ CAR = [
     ("MINI", "Mini", "British", "120A08", "8A8D8F", ["MINI", "Mini Cooper", "Cooper"]),
 ]
 
+LUX = [
+    ("GUCCI", "Gucci", "Fashion House", "006341", "C8102E", ["House of Gucci"]),
+    ("CHANEL", "Chanel", "Fashion House", "000000", "C5A572", ["Coco Chanel", "House of Chanel"]),
+    ("DIOR", "Dior", "Fashion House", "000000", "B4A28A", ["Christian Dior", "House of Dior"]),
+    ("VERSACE", "Versace", "Fashion House", "000000", "C9A227", ["Gianni Versace"]),
+    ("PRADA", "Prada", "Fashion House", "000000", "7A7A7A", []),
+    ("FENDI", "Fendi", "Fashion House", "5B3A29", "F4C430", []),
+    ("YSL", "Yves Saint Laurent", "Fashion House", "000000", "C5A572", ["Saint Laurent", "YSL", "Saint Laurent Paris"]),
+    ("GIVENCHY", "Givenchy", "Fashion House", "000000", "8C8C8C", []),
+    ("BURBERRY", "Burberry", "Fashion House", "C19A6B", "000000", []),
+    ("DG", "Dolce & Gabbana", "Fashion House", "000000", "C9A227", ["Dolce and Gabbana", "D&G", "Dolce Gabbana"]),
+    ("LV", "Louis Vuitton", "Leather Goods", "5A3A22", "C8A165", ["LV", "Vuitton"]),
+    ("HERMES", "Hermès", "Leather Goods", "F37021", "4B2E1E", ["Hermes", "Hermes Paris"]),
+    ("COACH", "Coach", "Leather Goods", "4E3629", "C8A165", ["Coach New York"]),
+    ("MK", "Michael Kors", "Leather Goods", "000000", "C8A165", ["MK", "Kors"]),
+    ("TORY", "Tory Burch", "Leather Goods", "C8A165", "1F2A44", []),
+    ("KATE", "Kate Spade", "Leather Goods", "000000", "E4007C", ["Kate Spade New York"]),
+    ("ROLEX", "Rolex", "Watchmaker", "006039", "A37E2C", []),
+    ("RM", "Richard Mille", "Watchmaker", "000000", "C8102E", ["RM"]),
+    ("PATEK", "Patek Philippe", "Watchmaker", "1F2A44", "B08D57", ["Patek"]),
+    ("AP", "Audemars Piguet", "Watchmaker", "000000", "B08D57", ["AP", "Audemars"]),
+    ("OMEGA", "Omega", "Watchmaker", "C8102E", "000000", ["Omega SA", "Omega Watches"]),
+    ("BREITLING", "Breitling", "Watchmaker", "F2B705", "1F2A44", []),
+    ("TAG", "TAG Heuer", "Watchmaker", "E4002B", "006A4E", ["Tag Heuer", "Heuer"]),
+    ("HUBLOT", "Hublot", "Watchmaker", "000000", "8C8C8C", []),
+    ("CARTIER", "Cartier", "Jeweler", "A6192E", "C8A165", ["Cartier SA"]),
+    ("TIFFANY", "Tiffany & Co.", "Jeweler", "81D8D0", "000000", ["Tiffany", "Tiffany and Co", "Tiffanys"]),
+    ("BVLGARI", "Bulgari", "Jeweler", "000000", "C8A165", ["Bvlgari"]),
+    ("VCA", "Van Cleef & Arpels", "Jeweler", "000000", "C8A165", ["Van Cleef", "Van Cleef and Arpels", "VCA"]),
+    ("SWAROVSKI", "Swarovski", "Jeweler", "000000", "8C8C8C", []),
+    ("PANDORA", "Pandora", "Jeweler", "000000", "E8B4B8", ["Pandora Jewelry"]),
+]
+
+CLOTH = [
+    ("ADIDAS", "Adidas", "Sportswear", "000000", "767677", ["adidas Originals"]),
+    ("PUMA", "Puma", "Sportswear", "000000", "BA2026", []),
+    ("UA", "Under Armour", "Sportswear", "000000", "C8102E", ["UA", "Under Armor"]),
+    ("REEBOK", "Reebok", "Sportswear", "E41D1B", "000000", []),
+    ("NB", "New Balance", "Sportswear", "CF0A2C", "6D6E71", ["NB"]),
+    ("CHAMPION", "Champion", "Sportswear", "1F2A44", "C8102E", []),
+    ("FILA", "Fila", "Sportswear", "002D62", "E21836", ["FILA"]),
+    ("SUPREME", "Supreme", "Streetwear", "ED1C24", "000000", []),
+    ("BAPE", "BAPE", "Streetwear", "000000", "6B8E23", ["A Bathing Ape", "Bathing Ape"]),
+    ("OFFWHITE", "Off-White", "Streetwear", "000000", "8C8C8C", ["Off White", "OffWhite"]),
+    ("STUSSY", "Stüssy", "Streetwear", "000000", "8C8C8C", ["Stussy"]),
+    ("CONVERSE", "Converse", "Streetwear", "000000", "C8102E", ["Chuck Taylor", "Chucks", "Converse All Star"]),
+    ("VANS", "Vans", "Streetwear", "000000", "C8102E", ["Vans Off the Wall"]),
+    ("TNF", "The North Face", "Outdoor", "E4002B", "000000", ["North Face", "TNF"]),
+    ("PATAGONIA", "Patagonia", "Outdoor", "000000", "F7941D", ["Patagucci"]),
+    ("COLUMBIA", "Columbia Sportswear", "Outdoor", "1F4E79", "000000", ["Columbia"]),
+    ("TIMBERLAND", "Timberland", "Outdoor", "000000", "E8A33D", ["Timbs", "Timberlands"]),
+    ("CARHARTT", "Carhartt", "Outdoor", "E8A33D", "000000", ["Carhartt WIP"]),
+    ("ARCTERYX", "Arc'teryx", "Outdoor", "000000", "8C8C8C", ["Arcteryx", "Arc teryx"]),
+    ("POLO", "Polo Ralph Lauren", "Preppy", "041E42", "C8102E", ["Ralph Lauren", "Polo", "RL"]),
+    ("LACOSTE", "Lacoste", "Preppy", "1E6B3C", "C8102E", []),
+    ("TOMMY", "Tommy Hilfiger", "Preppy", "041E42", "C8102E", ["Tommy", "Hilfiger"]),
+    ("AF", "Abercrombie & Fitch", "Preppy", "1F2A44", "8C8C8C", ["Abercrombie", "Abercrombie and Fitch", "A&F"]),
+    ("HOLLISTER", "Hollister", "Preppy", "8B1E3F", "1F2A44", ["Hollister Co", "Hollister California"]),
+    ("VV", "Vineyard Vines", "Preppy", "E8789A", "1F2A44", ["Vineyard Vine"]),
+    ("LEVIS", "Levi's", "Everyday", "C41230", "1F2A44", ["Levis", "Levi Strauss", "Levi Strauss & Co"]),
+    ("CK", "Calvin Klein", "Everyday", "000000", "8C8C8C", ["CK"]),
+    ("WRANGLER", "Wrangler", "Everyday", "1F2A44", "C8102E", []),
+    ("FOTL", "Fruit of the Loom", "Everyday", "C8102E", "6A3D9A", ["Fruit of Loom"]),
+    ("GAP", "Gap", "Everyday", "0F1F44", "8C8C8C", ["The Gap", "GAP"]),
+]
+
 LEAGUES = {
     "FOOD": {"label": "FAST FOOD", "conferences": ["Burgers", "Chicken", "Sandwiches", "Pizza", "Mexican & Asian", "Coffee & Treats"]},
     "BRAND": {"label": "BRANDS", "conferences": ["Product", "Service", "Corporate", "Personal", "Store", "Place"]},
     "APP": {"label": "APPS", "conferences": ["Built-in", "Social", "Games", "Music & Video", "Everyday"]},
     "TV": {"label": "TV", "conferences": ["Broadcast", "Cable", "Music & Pop", "Kids", "Discovery & Lifestyle"]},
     "CAR": {"label": "CARS", "conferences": ["American", "Japanese & Korean", "German", "Italian", "British"]},
+    "LUX": {"label": "LUXURY", "conferences": ["Fashion House", "Leather Goods", "Watchmaker", "Jeweler"]},
+    "CLOTH": {"label": "CLOTHING", "conferences": ["Sportswear", "Streetwear", "Outdoor", "Preppy", "Everyday"]},
 }
 
-ROSTERS = {"FOOD": FOOD, "BRAND": BRAND, "APP": APP, "TV": TV, "CAR": CAR}
-SLUGS = {"FOOD": "fast-food", "BRAND": "brands", "APP": "apps", "TV": "tv", "CAR": "cars"}
+ROSTERS = {"FOOD": FOOD, "BRAND": BRAND, "APP": APP, "TV": TV, "CAR": CAR, "LUX": LUX, "CLOTH": CLOTH}
+SLUGS = {"FOOD": "fast-food", "BRAND": "brands", "APP": "apps", "TV": "tv", "CAR": "cars", "LUX": "luxury", "CLOTH": "clothing"}

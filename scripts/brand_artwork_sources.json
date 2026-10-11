@@ -4208,5 +4208,119 @@
       ],
       "viewBox": "-10.24 138.15 532.47 235.71"
     }
+  },
+  {
+    "teamId": "LUX-AP",
+    "id": "primary",
+    "label": "Interlocking monogram",
+    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/8/80/Audemars_Pigue_logo.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Audemars_Pigue_logo.svg",
+    "sourceSha256": "7a5e3e497c8990392589ec94b6f1fd28c7b44fe49100292af26884fb08fb1266",
+    "ops": {
+      "keepNodes": [
+        "3"
+      ],
+      "viewBox": "58.689 -1 24.7 22.746"
+    }
+  },
+  {
+    "teamId": "LUX-BREITLING",
+    "id": "primary",
+    "label": "Winged anchor",
+    "sourceUrl": "https://iconape.com/wp-content/files/zi/43572/svg/breitling-watches.svg",
+    "sourcePage": "https://iconape.com/breitling-watches-logo-icon-svg-png.html",
+    "sourceSha256": "05f023f37e21e76d47bd6256276d3bbbebd218115313767f8414f5f2fd1d8d2d",
+    "ops": {
+      "removeNodes": [
+        "0"
+      ],
+      "fill": "#000000",
+      "viewBox": "18.381 -0.8 35.89 15.567"
+    }
+  },
+  {
+    "teamId": "LUX-HUBLOT",
+    "id": "primary",
+    "label": "Slanted H emblem",
+    "sourceUrl": "https://logotyp.us/file/hublot.svg",
+    "sourcePage": "https://logotyp.us/logo/hublot/",
+    "sourceSha256": "fe05dd1d18514e340f47fa777aa40cbdc310923e586f38fe4b128d45d1b4df81",
+    "ops": {
+      "keepNodes": [
+        "0"
+      ],
+      "viewBox": "-1.5 -0.2 62.3 48.44"
+    }
+  },
+  {
+    "teamId": "LUX-OMEGA",
+    "id": "primary",
+    "label": "Greek letter symbol",
+    "sourceUrl": "https://logotyp.us/file/omega.svg",
+    "sourcePage": "https://logotyp.us/logo/omega/",
+    "sourceSha256": "f3f86772e9f878fb75bfb96c6fc71048579d501c85651d6bca93b2a680d98068",
+    "ops": {
+      "removeNodes": [
+        "2/0",
+        "2/1",
+        "2/2",
+        "2/3",
+        "2/5"
+      ],
+      "viewBox": "50.3 -1.5 44.9 39.5"
+    }
+  },
+  {
+    "teamId": "LUX-PATEK",
+    "id": "primary",
+    "label": "Calatrava cross",
+    "sourceUrl": "https://iconape.com/wp-content/files/ah/87750/svg/patek-philippe-sa-logo.svg",
+    "sourcePage": "https://iconape.com/patek-philippe-sa-logo-logo-icon-svg-png.html",
+    "sourceSha256": "f53f05862a893724a8520af5102308c5eb1aadda210484ee14fb4c061e270bfe",
+    "ops": {
+      "removeNodes": [
+        "0"
+      ],
+      "viewBox": "15.53 -0.368 11.008 11.008"
+    }
+  },
+  {
+    "teamId": "LUX-RM",
+    "id": "primary",
+    "label": "Wordmark",
+    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/5/55/Richard_Mille_Logo.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Richard_Mille_Logo.svg",
+    "sourceSha256": "aaeebfb0b289562449c3d91d49b2476f8fd28f543ba27d38a73a3f767236e806",
+    "showsName": true,
+    "ops": {
+      "fill": "#000000",
+      "viewBox": "-2.959 -3 365.918 34.001"
+    }
+  },
+  {
+    "teamId": "LUX-ROLEX",
+    "id": "primary",
+    "label": "Five-point crown",
+    "sourceUrl": "https://logotyp.us/file/rolex.svg",
+    "sourcePage": "https://logotyp.us/logo/rolex/",
+    "sourceSha256": "73725fce989726fa4e88c2f4322419d81a507aac38ea4f82417ffa6b569456a7",
+    "ops": {
+      "removeNodes": [
+        "0/1"
+      ],
+      "viewBox": "227 97.1 106.1 114.7"
+    }
+  },
+  {
+    "teamId": "LUX-TAG",
+    "id": "primary",
+    "label": "Shield",
+    "sourceUrl": "https://logotyp.us/file/tag-heuer.svg",
+    "sourcePage": "https://logotyp.us/logo/tag-heuer/",
+    "sourceSha256": "a9f2b01ab0c6feb27ec9e71015292ebdc086739a315eba45b13a6901bfa17e48",
+    "showsName": true,
+    "ops": {
+      "viewBox": "-0.133 -1 38.206 33.914"
+    }
   }
 ]

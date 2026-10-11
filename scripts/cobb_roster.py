@@ -1,34 +1,40 @@
 #!/usr/bin/env python3
 """The Cobb County roster behind the game's HIGH SCHOOL league.
 
-Scope: the 17 Cobb County School District high schools. Unlike the NFL and
-college rosters there is no feed to pull from, so every school lists an
-explicit source URL, resolved by hand and verified against the artwork:
+Scope: the 16 Cobb County School District high schools that field athletics
+teams. Unlike the NFL and college rosters there is no feed to pull from, so
+every school lists an explicit source URL, resolved by hand and verified
+against the artwork:
 
   * ``official``  the school's own athletics website (WordPress or the VNN
                   "sportshub" platform the Cobb athletic sites run on)
   * ``district``  the school's page on cobbk12.org, whose marks live on the
                   district's Azure blob storage (used when the school has no
-                  scrapeable athletics site, and for Cobb Horizon, which has
-                  no athletics program at all -- its entry is the school's
-                  primary institutional mark)
+                  scrapeable athletics site)
   * ``wikipedia`` the infobox logo of the school's Wikipedia article
   * ``community`` a third-party community or aggregator mirror (VNN sportshub
-                  uploads reached outside the school's own site, vhv.rs,
-                  scorestream and the like), used when none of the three
-                  sources above carries the mark the school actually uses
+                  uploads reached outside the school's own site, scorestream,
+                  or the opponent logos a rival school's athletics site hosts),
+                  used when none of the three sources above carries the mark
+                  the school actually uses -- or carries it only as a bitmap
+                  while a mirror has the vector original
 
 Each entry is ``(abbr, region, nickname, url, source_kind, source_page)``:
   abbr         id/file stem used in src/lib/teams.json ("HS-<abbr>")
   region       school name as shown in the game (e.g. "Walton")
-  nickname     athletics nickname; empty for Cobb Horizon, which fields no
-               teams and has no mascot
+  nickname     athletics nickname
   url          direct URL of the logo asset to download
   source_kind  one of official / district / wikipedia / community, per the
                table above; the set is pinned in ``download_cobb_svgs``
   source_page  the page the asset was found on, for re-verification. When a
                community mirror exposes no richer page than the asset itself,
                this repeats the asset URL rather than inventing a citation.
+
+Allatoona's athletics site (allatoonabucs.com) keeps vector logos of the Cobb
+opponents on its schedules in its WordPress media library. Campbell, Harrison
+and North Cobb use those SVGs: the only other copies of their marks are
+low-resolution bitmaps. The same library supplies most of the league's
+alternate marks (scripts/team_alternate_sources.json).
 """
 
 from __future__ import annotations
@@ -37,20 +43,12 @@ SCHOOLS: list[tuple[str, str, str, str, str, str]] = [
     ("ALLA", "Allatoona", "Buccaneers",
      "https://allatoonabucs.com/wp-content/uploads/2021/03/FULL-COLOR-BUCS-1-02.svg",
      "official", "https://allatoonabucs.com"),
-    # The Spartan head the school actually fields, mirrored on a search-result
-    # CDN. It is served as JPEG; the downloader re-encodes it to PNG so every
-    # high-school asset stays a format Logo.tsx can recolor.
     ("CAMP", "Campbell", "Spartans",
-     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2Dc7xR9vXzUm1UcCanCk9WMqsmQCmgIb-jeevyNINl2lUN7_z2oc0CW0&s=10",
-     "community", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2Dc7xR9vXzUm1UcCanCk9WMqsmQCmgIb-jeevyNINl2lUN7_z2oc0CW0&s=10"),
-    # Cobb Horizon is the district's non-traditional high school: no athletics
-    # program, no mascot. Its primary institutional mark stands in.
-    ("HORZ", "Cobb Horizon", "",
-     "https://sbcobbstor.blob.core.windows.net/media/WWWCobb/fgg/695/cobbhorizon-primary.png",
-     "district", "https://www.cobbk12.org/cobbhorizon"),
+     "https://allatoonabucs.com/wp-content/uploads/2021/03/campbell.svg",
+     "community", "https://allatoonabucs.com/campbell-2/"),
     ("HARR", "Harrison", "Hoyas",
-     "https://sbcobbstor.blob.core.windows.net/media/WWWCobb/fgg/753/Harrison-header.png",
-     "district", "https://www.cobbk12.org/harrison"),
+     "https://allatoonabucs.com/wp-content/uploads/2021/03/harrisonlogo-01.svg",
+     "community", "https://allatoonabucs.com/harrisonlogo-01/"),
     ("HILL", "Hillgrove", "Hawks",
      "https://sportshub2-uploads.vnn-prod.zone/files/sites/376/2018/01/30200846/logo_outline.png",
      "official", "https://www.hillgroveathletics.com"),
@@ -67,8 +65,8 @@ SCHOOLS: list[tuple[str, str, str, str, str, str]] = [
      "https://s3-us-west-2.amazonaws.com/scorestream-team-profile-pictures/4530/20190119073353_718_mascot300.png",
      "community", "https://s3-us-west-2.amazonaws.com/scorestream-team-profile-pictures/4530/20190119073353_718_mascot300.png"),
     ("NCOB", "North Cobb", "Warriors",
-     "https://www.vhv.rs/dpng/d/607-6077206_north-cobb-high-school-home-page-north-cobb.png",
-     "community", "https://www.vhv.rs/dpng/d/607-6077206_north-cobb-high-school-home-page-north-cobb.png"),
+     "https://allatoonabucs.com/wp-content/uploads/2021/02/ncobb-logo-01-2.svg",
+     "community", "https://allatoonabucs.com/ncobb-logo-01-2/"),
     ("OSBO", "Osborne", "Cardinals",
      "https://sbcobbstor.blob.core.windows.net/media/WWWCobb/fgg/1293/Osborne_Footer-4.png",
      "district", "https://www.cobbk12.org/osborne"),
@@ -99,12 +97,8 @@ SCHOOLS: list[tuple[str, str, str, str, str, str]] = [
 # here fall back to frequency order.
 BRAND_COLORS: dict[str, tuple[str, str]] = {
     "ALLA": ("#EF3D33", "#000000"),   # red and black
-    # The Spartan head is blue on blue: the field is the school's royal blue and
-    # the helmet its silver. JPEG ringing scatters that silver across thousands
-    # of shades, none big enough to read as a fill, so it is named exactly.
     "CAMP": ("#1B518D", "#A099AB"),   # spartan blue and silver
-    "HORZ": ("#1B3D6D", "#C5A46D"),   # navy and vegas gold (institutional mark)
-    "HARR": ("#1E7B34", "#12294B"),   # green and navy
+    "HARR": ("#1E7B34", "#12294B"),   # green and navy (the bulldog mark)
     "HILL": ("#6D1A2E", "#6D6E71"),   # maroon and gray
     "KELL": ("#000000", "#F1E6B2"),   # black and vegas gold (the longhorn mark)
     "KMHS": ("#02A653", "#BBBCBF"),   # green and silver

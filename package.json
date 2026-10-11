@@ -25,6 +25,7 @@
     "logos:clothing": "python3 scripts/download_brand_logos.py --league CLOTH",
     "logos:nba-alternates": "python3 scripts/download_team_alternates.py --league NBA",
     "logos:college-alternates": "python3 scripts/download_team_alternates.py --league COL",
+    "logos:hs-alternates": "python3 scripts/download_team_alternates.py --league HS",
     "teams": "python3 scripts/build_teams.py",
     "teams:hs": "python3 scripts/build_hs_teams.py",
     "teams:nba": "python3 scripts/build_nba_teams.py",

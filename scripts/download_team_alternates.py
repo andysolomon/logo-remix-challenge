@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
-"""Download the pinned NBA or college alternate marks and record their metadata.
+"""Download the pinned NBA, college or high-school alternate marks and record their metadata.
 
-Usage: python3 scripts/download_team_alternates.py --league NBA|COL [--force] [--cache-dir DIR]
-Then run build_nba_teams.py (NBA) or build_teams.py (COL); both attach the alternates.
+Usage: python3 scripts/download_team_alternates.py --league NBA|COL|HS [--force] [--cache-dir DIR]
+Then run build_nba_teams.py (NBA), build_teams.py (COL) or build_hs_teams.py (HS); each
+attaches the alternates.
 
 team_alternate_sources.json pins every alternate the way brand_artwork_sources.json pins
 brand artwork: the source URL, the SHA-256 of the source file and the reviewed
@@ -28,7 +29,7 @@ from nfl_vector_artwork import validate_vector
 ROOT = Path(__file__).resolve().parent.parent
 SOURCES = ROOT / "scripts/team_alternate_sources.json"
 TEAMS_JSON = ROOT / "src/lib/teams.json"
-FOLDERS = {"NBA": "nba", "COL": "ncaa"}
+FOLDERS = {"NBA": "nba", "COL": "ncaa", "HS": "high-school"}
 SOURCE_KEYS = ("sourceUrl", "sourceSha256", "downloadForm", "ops")
 
 

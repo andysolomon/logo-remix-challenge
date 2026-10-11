@@ -50,7 +50,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from cobb_roster import SCHOOLS  # noqa: E402
-from build_hs_teams import hs_entry as hs_entry_from_manifest  # noqa: E402
+from build_hs_teams import hs_entries as hs_entries_from_manifest  # noqa: E402
 from build_hs_teams import validate_manifest as validate_hs_manifest  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -334,15 +334,15 @@ def validate_hs_slice(data: dict, entries: list[dict]) -> None:
             raise ValueError(f"HS entry {n} has an invalid logo path")
 
     if seen_ids != HS_IDS or seen_abbrs != HS_ABBRS:
-        raise ValueError("HS slice does not contain exactly the canonical 17 ids and abbreviations")
+        raise ValueError(f"HS slice does not contain exactly the canonical {len(HS_IDS)} ids and abbreviations")
 
     try:
         manifest_items = validate_hs_manifest()
     except (OSError, ValueError, json.JSONDecodeError) as exc:
         raise ValueError(f"HS manifest/assets are incomplete or invalid: {exc}") from exc
-    expected = {item["id"]: hs_entry_from_manifest(item) for item in manifest_items}
+    expected = {entry["id"]: entry for entry in hs_entries_from_manifest(manifest_items)}
     if set(expected) != HS_IDS:
-        raise ValueError("HS manifest does not contain exactly the canonical 17 schools")
+        raise ValueError(f"HS manifest does not contain exactly the canonical {len(HS_IDS)} schools")
     for entry in entries:
         if entry != expected.get(entry["id"]):
             raise ValueError(f"HS entry {entry['id']} does not match the validated HS manifest")

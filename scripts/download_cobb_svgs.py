@@ -1,13 +1,12 @@
 #!/usr/bin/env python3
-"""Download logos for the 17 Cobb County high schools in the HIGH SCHOOL league.
+"""Download logos for the 16 Cobb County high schools in the HIGH SCHOOL league.
 
 No feed covers Georgia high schools the way ESPN covers the NFL and NCAA, so
 ``scripts/cobb_roster.py`` pins one hand-verified source URL per school --
 the school's own athletics site where one is scrapeable, the Cobb County
 School District site otherwise, Wikipedia's infobox logo as the fallback, and a
-third-party mirror for the five schools whose real mark none of those three
-carries. Cobb Horizon has no athletics program, so its entry is the school's
-primary institutional mark from the district site.
+third-party mirror for the schools whose real mark none of those three
+carries, or carries only as a bitmap while a mirror has the vector original.
 
 Assets fetched (one per school in ``cobb_roster.SCHOOLS``):
     public/logos/svg/high-school/<abbr>.svg   (or .png when no SVG exists)
@@ -63,8 +62,9 @@ CONFERENCE = "Cobb County"
 
 # Every provenance class a roster entry may claim, documented in
 # ``cobb_roster``. ``community`` covers third-party mirrors (VNN sportshub
-# uploads reached outside the school's own site, vhv.rs, scorestream) for the
-# schools whose real mark no official, district, or Wikipedia page carries.
+# uploads reached outside the school's own site, scorestream, a rival school's
+# opponent logos) for the schools whose real mark no official, district, or
+# Wikipedia page carries as a usable file.
 # ``build_hs_teams`` validates the manifest against this same set, so the
 # downloader and the builder can never disagree about what is allowed.
 SOURCE_KINDS = frozenset({"official", "district", "wikipedia", "community"})
@@ -83,8 +83,6 @@ PNG_CRITICAL = {b"IHDR", b"PLTE", b"IDAT", b"IEND"}
 # palettes stay intact, but the absent artwork slot is explicit instead of
 # pretending the fallback color is present in the file.
 UNUSED_SOURCE_SLOTS = {
-    "CAMP": [2],
-    "HORZ": [2],
     "LASS": [1],
     "OSBO": [1],
     "PEBB": [2],
@@ -92,7 +90,9 @@ UNUSED_SOURCE_SLOTS = {
 }
 # Kennesaw Mountain has green, silver, and black artwork; white remains its
 # useful light game color while black is the actual third recolor source.
-SOURCE_PALETTE_OVERRIDES = {"KMHS": {2: "#000000"}}
+# North Cobb's vector traces its white outline in near-white shades with no
+# pure #FFFFFF; the recolor matches by nearness, so the lightest stands in.
+SOURCE_PALETTE_OVERRIDES = {"KMHS": {2: "#000000"}, "NCOB": {2: "#FEFEFE"}}
 
 
 def atomic_write_bytes(path: Path, data: bytes) -> None:
@@ -324,9 +324,9 @@ def validate_png(data: bytes) -> tuple[int, int, int, int, int, bytes, bytes, by
 
 
 # ----------------------------------------------------------------- JPEG -> PNG
-# Campbell's mark is only mirrored as JPEG. Logo.tsx recolors PNG and SVG, and
-# the manifest's palette work reads PNG, so a JPEG download is decoded here and
-# re-encoded as PNG rather than stored in a third format. Baseline sequential
+# Some community mirrors serve a mark only as JPEG. Logo.tsx recolors PNG and
+# SVG, and the manifest's palette work reads PNG, so a JPEG download is decoded
+# here and re-encoded as PNG rather than stored in a third format. Baseline sequential
 # only -- the shape every mirror of a logo actually uses; anything else fails
 # loudly instead of being half-decoded.
 JPEG_MAGIC = b"\xff\xd8\xff"

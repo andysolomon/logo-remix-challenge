@@ -47,73 +47,32 @@
       "name": "Spartans",
       "abbr": "CAMP",
       "displayName": "Campbell Spartans",
-      "sourceUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2Dc7xR9vXzUm1UcCanCk9WMqsmQCmgIb-jeevyNINl2lUN7_z2oc0CW0&s=10",
+      "sourceUrl": "https://allatoonabucs.com/wp-content/uploads/2021/03/campbell.svg",
       "sourceKind": "community",
-      "sourcePage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2Dc7xR9vXzUm1UcCanCk9WMqsmQCmgIb-jeevyNINl2lUN7_z2oc0CW0&s=10",
-      "path": "/logos/svg/high-school/camp.png",
-      "format": "png",
+      "sourcePage": "https://allatoonabucs.com/campbell-2/",
+      "path": "/logos/svg/high-school/camp.svg",
+      "format": "svg",
       "colors": [
-        "#1B518D",
-        "#1D518D"
+        "#376999",
+        "#9C98B2",
+        "#114C85",
+        "#FFFFFF"
       ],
       "brand": [
         "#1B518D",
         "#A099AB"
       ],
       "palette": [
-        "#1B518D",
-        "#A099AB",
+        "#114C85",
+        "#9C98B2",
         "#FFFFFF"
       ],
       "sourcePalette": [
-        "#1B518D",
-        "#A099AB",
+        "#114C85",
+        "#9C98B2",
         "#FFFFFF"
       ],
-      "unusedSourceSlots": [
-        2
-      ]
-    },
-    {
-      "id": "HS-HORZ",
-      "league": "HS",
-      "conference": "Cobb County",
-      "region": "Cobb Horizon",
-      "name": "",
-      "abbr": "HORZ",
-      "displayName": "Cobb Horizon",
-      "sourceUrl": "https://sbcobbstor.blob.core.windows.net/media/WWWCobb/fgg/695/cobbhorizon-primary.png",
-      "sourceKind": "district",
-      "sourcePage": "https://www.cobbk12.org/cobbhorizon",
-      "path": "/logos/svg/high-school/horz.png",
-      "format": "png",
-      "colors": [
-        "#11284B",
-        "#C7B783",
-        "#C5B582",
-        "#11274A",
-        "#C6B683",
-        "#132A4C",
-        "#12294B",
-        "#11284A"
-      ],
-      "brand": [
-        "#1B3D6D",
-        "#C5A46D"
-      ],
-      "palette": [
-        "#122B51",
-        "#C5B582",
-        "#FFFFFF"
-      ],
-      "sourcePalette": [
-        "#122B51",
-        "#C5B582",
-        "#FFFFFF"
-      ],
-      "unusedSourceSlots": [
-        2
-      ]
+      "unusedSourceSlots": []
     },
     {
       "id": "HS-HARR",
@@ -123,31 +82,30 @@
       "name": "Hoyas",
       "abbr": "HARR",
       "displayName": "Harrison Hoyas",
-      "sourceUrl": "https://sbcobbstor.blob.core.windows.net/media/WWWCobb/fgg/753/Harrison-header.png",
-      "sourceKind": "district",
-      "sourcePage": "https://www.cobbk12.org/harrison",
-      "path": "/logos/svg/high-school/harr.png",
-      "format": "png",
+      "sourceUrl": "https://allatoonabucs.com/wp-content/uploads/2021/03/harrisonlogo-01.svg",
+      "sourceKind": "community",
+      "sourcePage": "https://allatoonabucs.com/harrisonlogo-01/",
+      "path": "/logos/svg/high-school/harr.svg",
+      "format": "svg",
       "colors": [
         "#FFFFFF",
-        "#00943A",
-        "#0B2240",
-        "#243953",
-        "#00560D",
-        "#F1F1F2"
+        "#000065",
+        "#757575",
+        "#0F720F",
+        "#FEFEFE"
       ],
       "brand": [
         "#1E7B34",
         "#12294B"
       ],
       "palette": [
-        "#00943A",
-        "#0B2240",
+        "#0F720F",
+        "#000065",
         "#FFFFFF"
       ],
       "sourcePalette": [
-        "#00943A",
-        "#0B2240",
+        "#0F720F",
+        "#000065",
         "#FFFFFF"
       ],
       "unusedSourceSlots": []
@@ -350,30 +308,34 @@
       "name": "Warriors",
       "abbr": "NCOB",
       "displayName": "North Cobb Warriors",
-      "sourceUrl": "https://www.vhv.rs/dpng/d/607-6077206_north-cobb-high-school-home-page-north-cobb.png",
+      "sourceUrl": "https://allatoonabucs.com/wp-content/uploads/2021/02/ncobb-logo-01-2.svg",
       "sourceKind": "community",
-      "sourcePage": "https://www.vhv.rs/dpng/d/607-6077206_north-cobb-high-school-home-page-north-cobb.png",
-      "path": "/logos/svg/high-school/ncob.png",
-      "format": "png",
+      "sourcePage": "https://allatoonabucs.com/ncobb-logo-01-2/",
+      "path": "/logos/svg/high-school/ncob.svg",
+      "format": "svg",
       "colors": [
-        "#FFFFFF",
-        "#EEEEEE",
         "#15284C",
-        "#E77204"
+        "#E67204",
+        "#A5ACBA",
+        "#FCFCFC",
+        "#FEFEFE",
+        "#FBFBFB",
+        "#F8F9F9",
+        "#F8F8F9"
       ],
       "brand": [
         "#E1622E",
         "#232F6B"
       ],
       "palette": [
-        "#E77204",
+        "#E67204",
         "#15284C",
         "#FFFFFF"
       ],
       "sourcePalette": [
-        "#E77204",
+        "#E67204",
         "#15284C",
-        "#FFFFFF"
+        "#FEFEFE"
       ],
       "unusedSourceSlots": []
     },

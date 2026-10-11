@@ -531,5 +531,95 @@
       ],
       "viewBox": "23 3.2 146.7 186.3"
     }
+  },
+  {
+    "teamId": "HS-ALLA",
+    "id": "sword-a",
+    "label": "Sword A",
+    "sourceUrl": "https://allatoonabucs.com/wp-content/uploads/2020/11/toona1.svg",
+    "sourcePage": "https://allatoonabucs.com/?attachment_id=30034",
+    "sourceSha256": "2f035603b9f63722468ae8425ca7bd9fc8608c7502a0447c526bf1a34023aab5",
+    "ops": {}
+  },
+  {
+    "teamId": "HS-KELL",
+    "id": "longhorn-head",
+    "label": "Long-horned steer head",
+    "sourceUrl": "https://allatoonabucs.com/wp-content/uploads/2021/02/kelllogo-02.svg",
+    "sourcePage": "https://allatoonabucs.com/kelllogo-02/",
+    "sourceSha256": "1da1a7c68debd018114ca0250cd085bdc00e27bffebed51d87220a062291dc4a",
+    "ops": {}
+  },
+  {
+    "teamId": "HS-KMHS",
+    "id": "mustang-head",
+    "label": "Mustang head",
+    "sourceUrl": "https://allatoonabucs.com/wp-content/uploads/2021/10/kenn-mtn.svg",
+    "sourcePage": "https://allatoonabucs.com/kenn-mtn/",
+    "sourceSha256": "88d4bc9c94be87d368b8de5f4406d0df25a281eeda3b0481983004802466ceaf",
+    "ops": {}
+  },
+  {
+    "teamId": "HS-LASS",
+    "id": "gold-helmet",
+    "label": "Gold crested helmet",
+    "sourceUrl": "https://allatoonabucs.com/wp-content/uploads/2021/03/newlassiter.svg",
+    "sourcePage": "https://allatoonabucs.com/newlassiter/",
+    "sourceSha256": "98b37d52c2bd5a86c7fbc6ed5a668e2766a8f65645949d9ab39a1d548fe7af5f",
+    "ops": {}
+  },
+  {
+    "teamId": "HS-OSBO",
+    "id": "cardinal-head",
+    "label": "Cardinal head",
+    "sourceUrl": "https://allatoonabucs.com/wp-content/uploads/2021/03/osborne.svg",
+    "sourcePage": "https://allatoonabucs.com/osborne-2/",
+    "sourceSha256": "cf2e7c79fcd4d559caa11b79fd7714c619c515634072f6e9cd931b232574b0a9",
+    "ops": {}
+  },
+  {
+    "teamId": "HS-PEBB",
+    "id": "winged-p",
+    "label": "Winged P",
+    "sourceUrl": "https://allatoonabucs.com/wp-content/uploads/2021/10/pebblebrook2.svg",
+    "sourcePage": "https://allatoonabucs.com/pebblebrook2/",
+    "sourceSha256": "713ebac9ebc55bdc999830421bee0625f82a1312e86fb8e4d55a0d9da091c5a4",
+    "ops": {}
+  },
+  {
+    "teamId": "HS-POPE",
+    "id": "block-p",
+    "label": "Block P",
+    "sourceUrl": "https://allatoonabucs.com/wp-content/uploads/2021/03/pope.svg",
+    "sourcePage": "https://allatoonabucs.com/pope-2/",
+    "sourceSha256": "5ff16c1e442f7b95f2e670a9c93c62a705c79e8b79de78c83ee54a706fda7669",
+    "ops": {}
+  },
+  {
+    "teamId": "HS-SCOB",
+    "id": "sc-monogram",
+    "label": "Stacked SC monogram",
+    "sourceUrl": "https://allatoonabucs.com/wp-content/uploads/2021/03/southcobb.svg",
+    "sourcePage": "https://allatoonabucs.com/southcobb/",
+    "sourceSha256": "a05c1afa4523122c385123f44c27b380132a9b223c09bb54005836ec23d5e2e8",
+    "ops": {}
+  },
+  {
+    "teamId": "HS-SPRA",
+    "id": "block-s",
+    "label": "Block S",
+    "sourceUrl": "https://allatoonabucs.com/wp-content/uploads/2021/02/sprayberrylogo-01.svg",
+    "sourcePage": "https://allatoonabucs.com/sprayberrylogo-01/",
+    "sourceSha256": "f90fe929c93c6778ba5aec2765d7905f52b5f574fabd7a9145aee217ffcf13ea",
+    "ops": {}
+  },
+  {
+    "teamId": "HS-WALT",
+    "id": "diamond-w",
+    "label": "Diamond W",
+    "sourceUrl": "https://allatoonabucs.com/wp-content/uploads/2021/03/walton.svg",
+    "sourcePage": "https://allatoonabucs.com/walton-2/",
+    "sourceSha256": "445c089bb70c9ac3a1a603ef07e5eba6ebac5e7e22a2ce9506d15bdf7aaf688c",
+    "ops": {}
   }
 ]

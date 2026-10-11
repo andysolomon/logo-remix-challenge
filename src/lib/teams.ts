@@ -58,6 +58,16 @@ export const clampTimer = (n: number) => Math.min(TIMER_MAX, Math.max(TIMER_MIN,
 
 export const TEAMS = data.teams as Team[]
 export const LEAGUES = data.leagues as Record<League, { label: string; conferences: string[] }>
+/**
+ * Collections whose palettes a remix may wear. For now only NFL, NBA and college teams donate colors;
+ * every other collection (MLB, soccer, high school, fast food, brands, apps, TV, cars) is logo-only.
+ */
+export const COLOR_DONOR_LEAGUES: readonly League[] = ['PRO', 'NBA', 'COL']
+export const isColorDonorLeague = (league: League) => COLOR_DONOR_LEAGUES.includes(league)
+/** Whether this team's palette can be picked as a remix's colors. */
+export const isColorDonor = (t: Team) => isColorDonorLeague(t.league)
+/** One-line explanation shown wherever colors are picked. */
+export const COLOR_SOURCE_NOTE = 'Colors come from NFL, NBA and college teams only.'
 export const PERMS = data.permutations as number[][]
 export const SEED_DECK: Round[] = data.seed_deck.map((r) => ({ ...r, h: true }))
 export const LS = data.localStorage_keys
@@ -569,22 +579,26 @@ export const roundHints = (r: Round): [string, string] => [
 export interface TeamPool {
   id: string
   label: string
+  league: League
   match: (t: Team) => boolean
 }
 export const TEAM_POOLS: TeamPool[] = [
-  { id: 'NFL', label: LEAGUES.PRO.label, match: (t) => t.league === 'PRO' },
-  { id: 'NBA', label: LEAGUES.NBA.label, match: (t) => t.league === 'NBA' },
-  { id: 'MLB', label: LEAGUES.MLB.label, match: (t) => t.league === 'MLB' },
-  { id: 'Soccer', label: LEAGUES.SOCCER.label, match: (t) => t.league === 'SOCCER' },
-  { id: 'Fast Food', label: LEAGUES.FOOD.label, match: (t) => t.league === 'FOOD' },
-  { id: 'Brands', label: LEAGUES.BRAND.label, match: (t) => t.league === 'BRAND' },
-  { id: 'Apps', label: LEAGUES.APP.label, match: (t) => t.league === 'APP' },
-  { id: 'TV', label: LEAGUES.TV.label, match: (t) => t.league === 'TV' },
-  { id: 'Cars', label: LEAGUES.CAR.label, match: (t) => t.league === 'CAR' },
-  ...LEAGUES.COL.conferences.map((c) => ({ id: c, label: c, match: (t: Team) => t.league === 'COL' && t.conference === c })),
-  ...LEAGUES.HS.conferences.map((c) => ({ id: c, label: c, match: (t: Team) => t.league === 'HS' && t.conference === c })),
+  { id: 'NFL', label: LEAGUES.PRO.label, league: 'PRO', match: (t) => t.league === 'PRO' },
+  { id: 'NBA', label: LEAGUES.NBA.label, league: 'NBA', match: (t) => t.league === 'NBA' },
+  { id: 'MLB', label: LEAGUES.MLB.label, league: 'MLB', match: (t) => t.league === 'MLB' },
+  { id: 'Soccer', label: LEAGUES.SOCCER.label, league: 'SOCCER', match: (t) => t.league === 'SOCCER' },
+  { id: 'Fast Food', label: LEAGUES.FOOD.label, league: 'FOOD', match: (t) => t.league === 'FOOD' },
+  { id: 'Brands', label: LEAGUES.BRAND.label, league: 'BRAND', match: (t) => t.league === 'BRAND' },
+  { id: 'Apps', label: LEAGUES.APP.label, league: 'APP', match: (t) => t.league === 'APP' },
+  { id: 'TV', label: LEAGUES.TV.label, league: 'TV', match: (t) => t.league === 'TV' },
+  { id: 'Cars', label: LEAGUES.CAR.label, league: 'CAR', match: (t) => t.league === 'CAR' },
+  ...LEAGUES.COL.conferences.map((c) => ({ id: c, label: c, league: 'COL' as League, match: (t: Team) => t.league === 'COL' && t.conference === c })),
+  ...LEAGUES.HS.conferences.map((c) => ({ id: c, label: c, league: 'HS' as League, match: (t: Team) => t.league === 'HS' && t.conference === c })),
 ]
 export const ALL_POOL_IDS = TEAM_POOLS.map((p) => p.id)
+/** Pools a random deck may draw colors from: the color-donor collections only. */
+export const COLOR_POOLS: TeamPool[] = TEAM_POOLS.filter((p) => isColorDonorLeague(p.league))
+export const COLOR_POOL_IDS = COLOR_POOLS.map((p) => p.id)
 export const RANDOM_ROUND_OPTIONS = [5, 10, 15, 20] as const
 
 export type RandomGuess = GuessTarget | 'mix'
@@ -601,8 +615,11 @@ export const poolTeams = (ids: string[]) => {
   return TEAMS.filter((t) => pools.some((p) => p.match(t)))
 }
 
-/** Pool members whose artwork can be a round's logo; name-spelling marks only donate colors. */
+/** Pool members whose artwork can be a round's logo; name-spelling marks never are. */
 export const logoPoolTeams = (ids: string[]) => poolTeams(ids).filter((t) => !t.showsName)
+
+/** Pool members whose palette can be a round's colors; pools outside the color-donor collections contribute nothing. */
+export const colorPoolTeams = (ids: string[]) => poolTeams(ids).filter(isColorDonor)
 
 const pick = <T,>(list: T[]) => list[Math.floor(Math.random() * list.length)]
 const samePalette = (a: Team, b: Team) => a.palette.join() === b.palette.join()
@@ -624,20 +641,36 @@ const DETAIL_CONTRAST = 1.5
 const LIGHT_SURFACE = '#FFFFFF'
 const SURFACE_CONTRAST = 1.5
 const ARTWORK_ROLES = [0, 1] as const
+const ALL_SLOTS = [0, 1, 2] as const
 
-/** For one-color artwork: the only palette slot it uses and the unused slot painted behind it. */
-const oneColorSlots = (original: Team): { logo: number; backdrop: number } | undefined => {
-  const unused = original.unusedSourceSlots ?? []
-  if (unused.length !== 2) return undefined
-  return { logo: [0, 1, 2].find((slot) => !unused.includes(slot))!, backdrop: Math.min(...unused) }
+/** Where a remix paints each of the color team's three palette slots. */
+export interface RemixLayout {
+  /** Slots the artwork itself paints, in slot order. */
+  artwork: number[]
+  /** Slot painted on the rounded tile behind the artwork; undefined when the artwork shows all three. */
+  backdrop?: number
+  /** Slot painted on the frame around the tile; set for one-color artwork so the third color shows too. */
+  frame?: number
 }
 
 /**
- * Source slot painted behind one-color artwork. A remix of a logo that uses a single palette slot
- * would show just one of the color team's colors (often a lone black or solid silhouette), so it
- * sits on a backdrop in another of that team's colors. Undefined when the artwork shows two or more.
+ * Every remix shows all three of the color team's colors. Artwork that paints all three slots needs
+ * nothing more. Two-color artwork sits on a backdrop tile in the slot it leaves out. One-color
+ * artwork (such as a lone silhouette, where a single solid color says nothing about the color team)
+ * sits on a backdrop tile in one unused slot with a frame around the tile in the other.
  */
-export const backdropSlot = (original: Team): number | undefined => oneColorSlots(original)?.backdrop
+export function remixLayout(original: Team): RemixLayout {
+  const unused = ALL_SLOTS.filter((slot) => original.unusedSourceSlots?.includes(slot))
+  const artwork = ALL_SLOTS.filter((slot) => !unused.includes(slot))
+  if (unused.length === 1) return { artwork, backdrop: unused[0] }
+  if (unused.length === 2) return { artwork, backdrop: unused[0], frame: unused[1] }
+  return { artwork: [...ALL_SLOTS] }
+}
+
+/** Source slot painted on the tile behind artwork that leaves a palette slot out; see `remixLayout`. */
+export const backdropSlot = (original: Team): number | undefined => remixLayout(original).backdrop
+/** Source slot painted on the frame around a one-color logo's tile; see `remixLayout`. */
+export const frameSlot = (original: Team): number | undefined => remixLayout(original).frame
 
 type RemixRoles = {
   /** Slot pairs that must stay visibly distinct after recoloring. */
@@ -649,13 +682,24 @@ type RemixRoles = {
 }
 
 const remixRoles = (original: Team): RemixRoles => {
-  const oneColor = oneColorSlots(original)
-  if (oneColor) {
-    // The artwork sits wholly on its backdrop, so only the logo/backdrop and backdrop/canvas edges show.
-    const { logo, backdrop } = oneColor
-    return { criticalPairs: [[logo, backdrop]], canvasRoles: [backdrop], surfaceRoles: [backdrop] }
-  }
+  const { artwork, backdrop, frame } = remixLayout(original)
   const source = original.sourcePalette ?? original.palette
+  if (backdrop !== undefined && frame !== undefined) {
+    // One-color artwork sits wholly on its tile and the tile wholly inside its frame, so the
+    // logo/backdrop, backdrop/frame and frame/canvas edges are the ones that show.
+    return { criticalPairs: [[artwork[0], backdrop], [backdrop, frame]], canvasRoles: [frame], surfaceRoles: [frame] }
+  }
+  if (backdrop !== undefined) {
+    // Two-color artwork sits on its tile: both artwork colors meet the backdrop, the backdrop meets the canvas.
+    const detail = palettePairs.filter(
+      ([a, b]) => artwork.includes(a) && artwork.includes(b) && contrastRatio(source[a], source[b]) >= DETAIL_CONTRAST,
+    )
+    return {
+      criticalPairs: [...detail, ...artwork.map((slot) => [slot, backdrop] as const)],
+      canvasRoles: [backdrop],
+      surfaceRoles: [backdrop],
+    }
+  }
   return {
     criticalPairs: palettePairs.filter(([a, b]) => contrastRatio(source[a], source[b]) >= DETAIL_CONTRAST),
     canvasRoles: ARTWORK_ROLES,
@@ -666,34 +710,6 @@ const remixRoles = (original: Team): RemixRoles => {
 type PermutationScore = {
   weakestDetail: number
   surface: number[]
-}
-
-const permutationScore = (
-  targetPalette: readonly string[],
-  permutation: readonly number[],
-  { criticalPairs, canvasRoles }: RemixRoles,
-): PermutationScore => ({
-  weakestDetail: criticalPairs.length
-    ? Math.min(...criticalPairs.map(([a, b]) => contrastRatio(targetPalette[permutation[a]], targetPalette[permutation[b]])))
-    : Infinity,
-  surface: canvasRoles.map((role) => contrastRatio(targetPalette[permutation[role]], LIGHT_SURFACE)),
-})
-
-/** Critical detail first, then each canvas role's light-surface contrast in order. */
-const betterScore = (a: PermutationScore, b: PermutationScore): boolean => {
-  if (a.weakestDetail !== b.weakestDetail) return a.weakestDetail > b.weakestDetail
-  const at = a.surface.findIndex((contrast, i) => contrast !== b.surface[i])
-  return at >= 0 && a.surface[at] > b.surface[at]
-}
-
-const exactContrastSafePermutations = (original: Team, targetPalette: readonly string[]): number[] => {
-  if (targetPalette.length < 3) return [0]
-  const { criticalPairs, surfaceRoles } = remixRoles(original)
-  return PERMS.map((_, i) => i).filter((i) => {
-    const p = PERMS[i]
-    return criticalPairs.every(([a, b]) => contrastRatio(targetPalette[p[a]], targetPalette[p[b]]) >= DETAIL_CONTRAST) &&
-      surfaceRoles.every((role) => contrastRatio(targetPalette[p[role]], LIGHT_SURFACE) >= SURFACE_CONTRAST)
-  })
 }
 
 const hexFromChannels = (channels: readonly number[]) =>
@@ -719,13 +735,51 @@ const darkenForLightSurface = (hex: string): string => {
   return best
 }
 
+/** The target palette laid onto the source slots by one permutation, with the original's own colors filling any gap. */
+const permutedColors = (original: Team, targetPalette: readonly string[], permutation: readonly number[]): [string, string, string] => [
+  targetPalette[permutation[0]] ?? original.palette[0],
+  targetPalette[permutation[1]] ?? original.palette[1],
+  targetPalette[permutation[2]] ?? original.palette[2],
+]
+
+/** A fallback mapping as the player sees it: the roles drawn on the light canvas darkened until they read there. */
+const restyledColors = (original: Team, targetPalette: readonly string[], permutation: readonly number[], roles: RemixRoles): [string, string, string] => {
+  const colors = permutedColors(original, targetPalette, permutation)
+  for (const role of roles.canvasRoles) colors[role] = darkenForLightSurface(colors[role])
+  return colors
+}
+
+const permutationScore = (colors: readonly string[], { criticalPairs, canvasRoles }: RemixRoles): PermutationScore => ({
+  weakestDetail: criticalPairs.length ? Math.min(...criticalPairs.map(([a, b]) => contrastRatio(colors[a], colors[b]))) : Infinity,
+  surface: canvasRoles.map((role) => contrastRatio(colors[role], LIGHT_SURFACE)),
+})
+
+/** Critical detail first, then each canvas role's light-surface contrast in order. */
+const betterScore = (a: PermutationScore, b: PermutationScore): boolean => {
+  if (a.weakestDetail !== b.weakestDetail) return a.weakestDetail > b.weakestDetail
+  const at = a.surface.findIndex((contrast, i) => contrast !== b.surface[i])
+  return at >= 0 && a.surface[at] > b.surface[at]
+}
+
+/** Permutations that meet every contrast rule with the target palette's exact colors; empty when none does. */
+export const exactContrastSafePermutations = (original: Team, targetPalette: readonly string[]): number[] => {
+  if (targetPalette.length < 3) return [0]
+  const { criticalPairs, surfaceRoles } = remixRoles(original)
+  return PERMS.map((_, i) => i).filter((i) => {
+    const p = PERMS[i]
+    return criticalPairs.every(([a, b]) => contrastRatio(targetPalette[p[a]], targetPalette[p[b]]) >= DETAIL_CONTRAST) &&
+      surfaceRoles.every((role) => contrastRatio(targetPalette[p[role]], LIGHT_SURFACE) >= SURFACE_CONTRAST)
+  })
+}
+
 /**
  * Permutations that keep visibly separate source colors distinct and keep source artwork roles that
- * were readable on the light canvas readable after recoloring. One-color artwork instead needs its
- * logo distinct from its backdrop and the backdrop readable on the canvas. If no perfect mapping
- * exists, retain a deterministic fallback that preserves critical artwork detail first, then
- * prioritizes light-surface contrast of the canvas roles (primary then secondary, or the backdrop).
- * The fallback's canvas roles are restyled by `resolveRemixTargetColors` below.
+ * were readable on the light canvas readable after recoloring. Artwork on a backdrop tile instead
+ * needs its colors distinct from the backdrop, a one-color logo's backdrop distinct from its frame,
+ * and whichever of the two meets the canvas readable on it. If no perfect mapping exists, retain a
+ * deterministic fallback: the canvas roles (primary then secondary, the backdrop, or the frame) are
+ * darkened until they read on the canvas, and the permutation whose darkened result preserves the
+ * most critical artwork detail wins. `resolveRemixTargetColors` below applies the same restyling.
  */
 export function contrastSafePermutations(original: Team, targetPalette: readonly string[]): number[] {
   const safe = exactContrastSafePermutations(original, targetPalette)
@@ -733,9 +787,9 @@ export function contrastSafePermutations(original: Team, targetPalette: readonly
 
   const roles = remixRoles(original)
   let fallback = 0
-  let best = permutationScore(targetPalette, PERMS[0], roles)
+  let best = permutationScore(restyledColors(original, targetPalette, PERMS[0], roles), roles)
   for (let i = 1; i < PERMS.length; i++) {
-    const score = permutationScore(targetPalette, PERMS[i], roles)
+    const score = permutationScore(restyledColors(original, targetPalette, PERMS[i], roles), roles)
     if (betterScore(score, best)) {
       best = score
       fallback = i
@@ -756,8 +810,8 @@ export function contrastSafePermutation(original: Team, targetPalette: readonly 
 /**
  * Resolve target colors by source slot. Exact safe mappings retain the team palette verbatim. When
  * no exact permutation exists, only the roles drawn on the light canvas are darkened: source artwork
- * roles 0/1, with source slot 2 kept as the target palette's exact light/negative-space color, or a
- * one-color logo's backdrop, with the logo's own color kept exact.
+ * roles 0/1, with source slot 2 kept as the target palette's exact light/negative-space color; a
+ * two-color logo's backdrop; or a one-color logo's frame, with the logo and backdrop kept exact.
  */
 export function resolveRemixTargetColors(
   original: Team,
@@ -765,15 +819,8 @@ export function resolveRemixTargetColors(
   requested: number,
 ): [string, string, string] {
   const permutation = contrastSafePermutation(original, targetPalette, requested)
-  const p = PERMS[permutation]
-  const mapped: [string, string, string] = [
-    targetPalette[p[0]] ?? original.palette[0],
-    targetPalette[p[1]] ?? original.palette[1],
-    targetPalette[p[2]] ?? original.palette[2],
-  ]
-  if (exactContrastSafePermutations(original, targetPalette).length) return mapped
-  for (const role of remixRoles(original).canvasRoles) mapped[role] = darkenForLightSurface(mapped[role])
-  return mapped
+  if (exactContrastSafePermutations(original, targetPalette).length) return permutedColors(original, targetPalette, PERMS[permutation])
+  return restyledColors(original, targetPalette, PERMS[permutation], remixRoles(original))
 }
 
 export function nextContrastSafePermutation(original: Team, targetPalette: readonly string[], current: number): number {
@@ -800,7 +847,13 @@ export function normalizeRound(round: Round): Round {
   return { ...base, ...(validLogo ? { l } : {}), v: contrastSafePermutation(withLogoVariant(original, l), colors.palette, round.v) }
 }
 
-export const normalizeDeck = (deck: Round[]) => deck.slice(0, MAX_DECK_ROUNDS).map(normalizeRound)
+/** A round's color team must come from a color-donor collection; older rounds that break the rule are dropped. */
+export const isAllowedRound = (round: Round): boolean => {
+  const colors = findTeam(round.c)
+  return !!colors && isColorDonor(colors)
+}
+
+export const normalizeDeck = (deck: Round[]) => deck.filter(isAllowedRound).slice(0, MAX_DECK_ROUNDS).map(normalizeRound)
 
 export interface DeckUndoSnapshot {
   deck: Round[]
@@ -818,15 +871,15 @@ export function deckUndoReducer(state: DeckUndoSnapshot | null, action: DeckUndo
 }
 
 /**
- * Build random remix rounds from the chosen pools. Logos that spell the brand's name only donate
- * colors. Never pairs a team with itself or with a
- * look-alike palette, never repeats a pairing already in `existing`, and spreads originals out
- * so the same logo does not show up twice until every candidate has been used.
+ * Build random remix rounds from the chosen pools. Logos that spell the brand's name are skipped,
+ * and only color-donor collections (NFL, NBA, college) supply colors. Never pairs a team with itself
+ * or with a look-alike palette, never repeats a pairing already in `existing`, and spreads originals
+ * out so the same logo does not show up twice until every candidate has been used.
  * May return fewer rounds than asked for when the pools are too small.
  */
 export function randomDeck(opts: RandomDeckOptions, existing: Round[] = []): Round[] {
   const logos = logoPoolTeams(opts.logoPools)
-  const colors = poolTeams(opts.colorPools)
+  const colors = colorPoolTeams(opts.colorPools)
   if (!logos.length || !colors.length) return []
   const seen = new Set(existing.map((r) => `${r.o}|${r.c}`))
   const out: Round[] = []

@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
-import { findTeam, MAX_DECK_ROUNDS, nextContrastSafePermutation, nextLogoVariant, withLogoVariant, type Round, type Team } from '../lib/teams'
+import { COLOR_DONOR_LEAGUES, COLOR_SOURCE_NOTE, findTeam, MAX_DECK_ROUNDS, nextContrastSafePermutation, nextLogoVariant, withLogoVariant, type Round, type Team } from '../lib/teams'
 import { RemixCanvas, type AddState } from './RemixCanvas'
 import { TeamBrowser, type BrowserState } from './TeamBrowser'
 
@@ -140,6 +140,8 @@ export function CreateMode({ state, setState, portrait, deckCount, onAddRound, h
             selectedId={state.cId}
             onSelect={selectColors}
             showSwatches
+            leagues={COLOR_DONOR_LEAGUES}
+            note={COLOR_SOURCE_NOTE}
             portrait
           />
         )}
@@ -165,6 +167,8 @@ export function CreateMode({ state, setState, portrait, deckCount, onAddRound, h
         selectedId={state.cId}
         onSelect={selectColors}
         showSwatches
+        leagues={COLOR_DONOR_LEAGUES}
+        note={COLOR_SOURCE_NOTE}
       />
     </div>
   )

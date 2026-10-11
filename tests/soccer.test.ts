@@ -4,7 +4,7 @@ import { existsSync } from 'node:fs'
 import { join } from 'node:path'
 import {
   ALL_POOL_IDS, LEAGUES, TEAMS, deckFromStorage, entryNoun, filterTeams, findTeam, fullName,
-  isCorrectGuess, poolTeams, randomDeck, roundHints, suggestTeams,
+  colorPoolTeams, isCorrectGuess, poolTeams, randomDeck, roundHints, suggestTeams,
 } from '../src/lib/teams'
 
 const root = join(import.meta.dir, '..')
@@ -57,7 +57,10 @@ describe('soccer clubs collection', () => {
     expect(roundHints({ o: 'SOCCER-GAL', c: 'PRO-KC', v: 0 })).toEqual(['Logo: SOCCER', 'Colors: NFL'])
     expect(ALL_POOL_IDS).toContain('Soccer')
     expect(poolTeams(['Soccer'])).toEqual(clubs)
-    for (const [logos, colors] of [[['Soccer'], ['Soccer']], [['Soccer'], ['NFL']], [['Fast Food'], ['Soccer']]]) {
+    // Clubs are logo-only: their palettes never color a round.
+    expect(colorPoolTeams(['Soccer'])).toEqual([])
+    expect(randomDeck({ rounds: 20, logoPools: ['NFL'], colorPools: ['Soccer'], guess: 'both', hints: true })).toEqual([])
+    for (const [logos, colors] of [[['Soccer'], ['NFL']], [['Soccer'], ['NBA']], [['Soccer'], ['SEC', 'Big Ten']]]) {
       const deck = randomDeck({ rounds: 20, logoPools: logos, colorPools: colors, guess: 'both', hints: true })
       expect(deck).toHaveLength(20)
       expect(new Set(deck.map((r) => r.o)).size).toBe(20)

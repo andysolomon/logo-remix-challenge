@@ -1,5 +1,5 @@
 import { useRef, useState } from 'react'
-import { ALL_POOL_IDS, MAX_DECK_ROUNDS, RANDOM_ROUND_OPTIONS, TEAM_POOLS, logoPoolTeams, poolTeams, randomDeck, type GuessTarget, type RandomDeckOptions, type RandomGuess, type Round } from '../lib/teams'
+import { ALL_POOL_IDS, COLOR_POOLS, COLOR_POOL_IDS, COLOR_SOURCE_NOTE, MAX_DECK_ROUNDS, RANDOM_ROUND_OPTIONS, TEAM_POOLS, colorPoolTeams, logoPoolTeams, randomDeck, type GuessTarget, type RandomDeckOptions, type RandomGuess, type Round, type TeamPool } from '../lib/teams'
 import { useDialogA11y } from './SettingsModal'
 
 interface Props {
@@ -23,7 +23,7 @@ export function RandomDeckModal({ deck, guessTarget, onRoll, onClose }: Props) {
   useDialogA11y(dialogRef, closeRef, onClose)
 
   const logoCount = logoPoolTeams(opts.logoPools).length
-  const colorCount = poolTeams(opts.colorPools).length
+  const colorCount = colorPoolTeams(opts.colorPools).length
   const capacity = replace ? MAX_DECK_ROUNDS : Math.max(0, MAX_DECK_ROUNDS - deck.length)
   const rollCount = Math.min(opts.rounds, capacity)
   const ready = logoCount > 0 && colorCount > 0 && rollCount > 0
@@ -57,8 +57,9 @@ export function RandomDeckModal({ deck, guessTarget, onRoll, onClose }: Props) {
             ))}
           </div>
 
-          <PoolPicker label="LOGOS FROM" value={opts.logoPools} count={logoCount} onChange={(v) => setOpts((o) => ({ ...o, logoPools: v }))} />
-          <PoolPicker label="COLORS FROM" value={opts.colorPools} count={colorCount} onChange={(v) => setOpts((o) => ({ ...o, colorPools: v }))} />
+          <PoolPicker label="LOGOS FROM" pools={TEAM_POOLS} allIds={ALL_POOL_IDS} value={opts.logoPools} count={logoCount} onChange={(v) => setOpts((o) => ({ ...o, logoPools: v }))} />
+          <PoolPicker label="COLORS FROM" pools={COLOR_POOLS} allIds={COLOR_POOL_IDS} value={opts.colorPools} count={colorCount} unit="palettes" onChange={(v) => setOpts((o) => ({ ...o, colorPools: v }))} />
+          <div className="mode-hint">{COLOR_SOURCE_NOTE}</div>
 
           <div className="rail-label" id="rnd-guess-label">GUESS</div>
           <div className="grid4" role="group" aria-labelledby="rnd-guess-label">
@@ -116,21 +117,39 @@ export function RandomDeckModal({ deck, guessTarget, onRoll, onClose }: Props) {
   )
 }
 
-function PoolPicker({ label, value, count, onChange }: { label: string; value: string[]; count: number; onChange: (v: string[]) => void }) {
-  const all = value.length === ALL_POOL_IDS.length
-  const toggle = (id: string) => onChange(value.includes(id) ? value.filter((v) => v !== id) : [...value, id])
+function PoolPicker({
+  label,
+  pools,
+  allIds,
+  value,
+  count,
+  unit = 'logos',
+  onChange,
+}: {
+  label: string
+  pools: TeamPool[]
+  allIds: string[]
+  value: string[]
+  count: number
+  unit?: string
+  onChange: (v: string[]) => void
+}) {
+  // Pools outside this picker's list (an older saved recipe, say) count as nothing selected.
+  const chosen = value.filter((id) => allIds.includes(id))
+  const all = chosen.length === allIds.length
+  const toggle = (id: string) => onChange(chosen.includes(id) ? chosen.filter((v) => v !== id) : [...chosen, id])
   return (
     <>
       <div className="pool-head">
         <span className="rail-label">{label}</span>
-        <span className="pool-count">{count} logos</span>
+        <span className="pool-count">{count} {unit}</span>
       </div>
       <div className="chips" role="group" aria-label={label}>
-        <button type="button" className={`chip${all ? ' active' : ''}`} aria-pressed={all} onClick={() => onChange(all ? [] : ALL_POOL_IDS)}>
+        <button type="button" className={`chip${all ? ' active' : ''}`} aria-pressed={all} onClick={() => onChange(all ? [] : allIds)}>
           All
         </button>
-        {TEAM_POOLS.map((p) => {
-          const on = value.includes(p.id)
+        {pools.map((p) => {
+          const on = chosen.includes(p.id)
           return (
             <button key={p.id} type="button" className={`chip${on ? ' active' : ''}`} aria-pressed={on} onClick={() => toggle(p.id)}>
               {p.label}

@@ -7,6 +7,8 @@ import {
   designFileName,
   designLayout,
   ensureSvgSize,
+  framedTileImage,
+  framedTileSvg,
   normalizeHex,
   parseViewBox,
   rotateColors,
@@ -16,7 +18,7 @@ import {
   sourceColors,
   svgIntrinsicSize,
 } from '../src/lib/designer'
-import { LS, TEAMS, backdropSlot, contrastSafePermutations, findTeam, loadDesigner, saveDesigner, withLogoVariant } from '../src/lib/teams'
+import { LS, TEAMS, backdropSlot, contrastSafePermutations, findTeam, frameSlot, loadDesigner, saveDesigner, withLogoVariant } from '../src/lib/teams'
 
 const root = join(import.meta.dir, '..')
 const read = (rel: string) => readFileSync(join(root, rel), 'utf8')
@@ -91,33 +93,44 @@ describe('colors', () => {
   })
 
   test('labels every slot by what it paints', () => {
-    expect(slotRoles(findTeam('PRO-KC')!)).toEqual([
+    expect(slotRoles(findTeam('PRO-BAL')!)).toEqual([
       { label: 'Color 1', editable: true },
       { label: 'Color 2', editable: true },
       { label: 'Color 3', editable: true },
     ])
-    // Wordmark: one color, so one Logo slot, a Backdrop slot and an Unused slot.
+    // The Chiefs arrowhead paints red and white, so gold goes on the tile behind it.
+    expect(slotRoles(findTeam('PRO-KC')!)).toEqual([
+      { label: 'Color 1', editable: true },
+      { label: 'Backdrop', editable: true },
+      { label: 'Color 2', editable: true },
+    ])
+    // Wordmark: one color, so a Logo slot, a Backdrop slot for the tile and a Frame slot around it.
     const wordmark = withLogoVariant(findTeam('PRO-KC')!, 'alternate')
     expect(backdropSlot(wordmark)).toBe(1)
+    expect(frameSlot(wordmark)).toBe(2)
     expect(slotRoles(wordmark)).toEqual([
       { label: 'Logo', editable: true },
       { label: 'Backdrop', editable: true },
-      { label: 'Unused', editable: false },
+      { label: 'Frame', editable: true },
     ])
+    // Two colors: the slot the artwork leaves out paints the tile behind it.
     const twoColor = withLogoVariant(findTeam('PRO-CLE')!, 'alternate')
     expect(slotRoles(twoColor)).toEqual([
       { label: 'Color 1', editable: true },
       { label: 'Color 2', editable: true },
-      { label: 'Unused', editable: false },
+      { label: 'Backdrop', editable: true },
     ])
-    for (const team of TEAMS) expect(slotRoles(team).filter((r) => r.editable).length).toBeGreaterThan(0)
+    // Every slot shows somewhere in every design, so every slot can be edited.
+    for (const team of TEAMS) expect(slotRoles(team).every((r) => r.editable)).toBe(true)
   })
 
   test('rotates only the editable slots', () => {
     const all = slotRoles(findTeam('PRO-KC')!)
     expect(rotateColors(['#111111', '#222222', '#333333'], all)).toEqual(['#222222', '#333333', '#111111'])
     const twoColor = slotRoles(withLogoVariant(findTeam('PRO-CLE')!, 'alternate'))
-    expect(rotateColors(['#111111', '#222222', '#333333'], twoColor)).toEqual(['#222222', '#111111', '#333333'])
+    expect(rotateColors(['#111111', '#222222', '#333333'], twoColor)).toEqual(['#222222', '#333333', '#111111'])
+    const twoEditable = [{ label: 'Color 1', editable: true }, { label: 'Color 2', editable: true }, { label: 'Unused', editable: false }]
+    expect(rotateColors(['#111111', '#222222', '#333333'], twoEditable)).toEqual(['#222222', '#111111', '#333333'])
     const oneSlot = [{ label: 'Logo', editable: true }, { label: 'Unused', editable: false }, { label: 'Unused', editable: false }]
     expect(rotateColors(['#111111', '#222222', '#333333'], oneSlot)).toEqual(['#111111', '#222222', '#333333'])
   })
@@ -133,8 +146,9 @@ describe('colors', () => {
     expect(safe.length).toBeGreaterThan(0)
     const seededWordmark = seedColors(wordmark, bills.palette)
     expect(seededWordmark[0]).not.toBe(seededWordmark[1])
-    expect(bills.palette).toContain(seededWordmark[0])
-    expect(bills.palette).toContain(seededWordmark[1])
+    expect(seededWordmark[1]).not.toBe(seededWordmark[2])
+    // All three Bills colors land on the logo, its backdrop and its frame.
+    expect([...seededWordmark].sort()).toEqual([...bills.palette].sort())
   })
 
   test('compares colors case-insensitively', () => {
@@ -202,6 +216,32 @@ describe('export composition', () => {
     expect(both.tile).toEqual({ x: 80, y: 80, size: 840, radius: 184.8 })
     expect(both.logo.x).toBeCloseTo(180.8)
     expect(both.logo.size).toBeCloseTo(638.4)
+    // A framed tile (one-color artwork) records its frame width and keeps the artwork clear of the frame.
+    expect(designLayout(1000, true, false, true)).toEqual({ size: 1000, tile: { x: 0, y: 0, size: 1000, radius: 220, frame: 50 }, logo: { x: 160, y: 160, size: 680 } })
+    const framedBg = designLayout(1000, true, true, true)
+    expect(framedBg.tile).toEqual({ x: 80, y: 80, size: 840, radius: 184.8, frame: 42 })
+    expect(framedBg.logo.x).toBeCloseTo(214.4)
+    expect(framedBg.logo.size).toBeCloseTo(571.2)
+    // No frame without a tile.
+    expect(designLayout(1000, false, false, true).tile).toBeUndefined()
+  })
+
+  test('a framed tile is a frame-colored square with a concentric backdrop inset, on screen and in exports', () => {
+    const svg = framedTileSvg('#ABCDEF', '#123456')
+    expect(svg).toContain('<rect width="100" height="100" rx="22" fill="#123456"/>')
+    expect(svg).toContain('<rect x="5" y="5" width="90" height="90" rx="17" fill="#ABCDEF"/>')
+    expect(svg).toContain('preserveAspectRatio="none"')
+    expect(framedTileImage('#ABCDEF', '#123456')).toBe(`url("data:image/svg+xml,${encodeURIComponent(svg)}")`)
+
+    const out = composeSvg('<svg viewBox="0 0 10 10"/>', { backdrop: '#ABCDEF', frame: '#123456', size: 1000 })
+    const frame = out.indexOf('<rect x="0" y="0" width="1000" height="1000" rx="220" fill="#123456"/>')
+    const tile = out.indexOf('<rect x="50" y="50" width="900" height="900" rx="170" fill="#ABCDEF"/>')
+    const nested = out.indexOf('<svg x="160" y="160" width="680" height="680" viewBox="0 0 10 10"')
+    expect(frame).toBeGreaterThan(0)
+    expect(tile).toBeGreaterThan(frame)
+    expect(nested).toBeGreaterThan(tile)
+    // A frame color without a backdrop draws nothing extra.
+    expect(composeSvg('<svg viewBox="0 0 10 10"/>', { frame: '#123456', size: 100 })).not.toContain('<rect')
   })
 
   test('wraps artwork in a sized canvas with background and backdrop layers in order', () => {

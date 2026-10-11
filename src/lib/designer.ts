@@ -1,4 +1,4 @@
-import { backdropSlot, contrastSafePermutation, fullName, PERMS, type Team } from './teams'
+import { contrastSafePermutation, fullName, PERMS, remixLayout, type Team } from './teams'
 
 /**
  * Designer mode: recolor any logo slot by slot with exact colors and export the result.
@@ -17,8 +17,30 @@ export const SVG_EXPORT_SIZE = 1024
 /** Fraction of the canvas left around the logo when it sits on a solid background. */
 const BACKGROUND_PADDING = 0.08
 /** Match the on-screen backdrop tile: 12% padding inside a 22% rounded square (see `.logo.backdrop`). */
-const TILE_PADDING = 0.12
-const TILE_RADIUS = 0.22
+export const TILE_PADDING = 0.12
+export const TILE_RADIUS = 0.22
+/** A one-color logo's tile carries a frame in the third color; the artwork sits further in to clear it. */
+export const FRAME_WIDTH = 0.05
+export const FRAMED_TILE_PADDING = 0.16
+
+/**
+ * Standalone SVG of a framed tile: a rounded square in the frame color with a concentric inset in the
+ * backdrop color. Stretches with its box, so Logo.tsx paints it as the tile's background at any size.
+ */
+export function framedTileSvg(backdrop: string, frame: string): string {
+  const inset = FRAME_WIDTH * 100
+  const outer = TILE_RADIUS * 100
+  return (
+    `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">` +
+    `<rect width="100" height="100" rx="${fmt(outer)}" fill="${frame}"/>` +
+    `<rect x="${fmt(inset)}" y="${fmt(inset)}" width="${fmt(100 - inset * 2)}" height="${fmt(100 - inset * 2)}" rx="${fmt(outer - inset)}" fill="${backdrop}"/>` +
+    `</svg>`
+  )
+}
+
+/** CSS `background-image` value for a framed tile. */
+export const framedTileImage = (backdrop: string, frame: string) =>
+  `url("data:image/svg+xml,${encodeURIComponent(framedTileSvg(backdrop, frame))}")`
 
 /** Background presets for export; `null` keeps the PNG transparent. */
 export const BACKGROUND_PRESETS = [
@@ -53,23 +75,21 @@ export const sourceColors = (team: Team): DesignColors =>
 export interface SlotRole {
   /** Short label shown next to the slot's color input. */
   label: string
-  /** False for slots the artwork never paints; their color has no visible effect. */
+  /** False for a slot whose color has no visible effect; every slot shows somewhere, so always true today. */
   editable: boolean
 }
 
 /**
- * What each of the three source slots does for this artwork. One-color logos (two unused
- * slots) paint one slot and sit on a backdrop tile in another, so that slot is editable too.
+ * What each of the three source slots does for this artwork. Slots the artwork leaves out are painted
+ * on the backdrop tile behind it and, for a one-color logo, on the frame around that tile
+ * (see `remixLayout`), so every slot is editable and shows in the design.
  */
 export function slotRoles(team: Team): [SlotRole, SlotRole, SlotRole] {
-  const unused = team.unusedSourceSlots ?? []
-  const backdrop = backdropSlot(team)
-  let n = 0
+  const { artwork, backdrop, frame } = remixLayout(team)
   return [0, 1, 2].map((slot) => {
     if (slot === backdrop) return { label: 'Backdrop', editable: true }
-    if (unused.includes(slot)) return { label: 'Unused', editable: false }
-    n += 1
-    return { label: backdrop !== undefined ? 'Logo' : `Color ${n}`, editable: true }
+    if (slot === frame) return { label: 'Frame', editable: true }
+    return { label: artwork.length === 1 ? 'Logo' : `Color ${artwork.indexOf(slot) + 1}`, editable: true }
   }) as [SlotRole, SlotRole, SlotRole]
 }
 
@@ -155,21 +175,21 @@ export function ensureSvgSize(markup: string): string {
 
 export interface DesignLayout {
   size: number
-  /** Rounded backdrop tile behind one-color artwork, when the design has one. */
-  tile?: { x: number; y: number; size: number; radius: number }
+  /** Rounded backdrop tile behind artwork that leaves a slot out; `frame` is the frame width of a one-color logo's tile. */
+  tile?: { x: number; y: number; size: number; radius: number; frame?: number }
   /** Square the artwork is fitted into (centered, aspect preserved). */
   logo: { x: number; y: number; size: number }
 }
 
 /** Square canvas geometry shared by the SVG and PNG exporters so both formats match. */
-export function designLayout(size: number, hasBackdrop: boolean, hasBackground: boolean): DesignLayout {
+export function designLayout(size: number, hasBackdrop: boolean, hasBackground: boolean, framed = false): DesignLayout {
   if (hasBackdrop) {
     const inset = hasBackground ? size * BACKGROUND_PADDING : 0
     const tileSize = size - inset * 2
-    const pad = tileSize * TILE_PADDING
+    const pad = tileSize * (framed ? FRAMED_TILE_PADDING : TILE_PADDING)
     return {
       size,
-      tile: { x: inset, y: inset, size: tileSize, radius: tileSize * TILE_RADIUS },
+      tile: { x: inset, y: inset, size: tileSize, radius: tileSize * TILE_RADIUS, ...(framed ? { frame: tileSize * FRAME_WIDTH } : {}) },
       logo: { x: inset + pad, y: inset + pad, size: tileSize - pad * 2 },
     }
   }
@@ -178,10 +198,10 @@ export function designLayout(size: number, hasBackdrop: boolean, hasBackground: 
 }
 
 /**
- * Wrap recolored artwork in a square canvas with an optional solid background and the
- * backdrop tile one-color logos sit on. Returns a standalone SVG document.
+ * Wrap recolored artwork in a square canvas with an optional solid background, the backdrop tile
+ * one- and two-color logos sit on, and a one-color logo's frame. Returns a standalone SVG document.
  */
-export function composeSvg(inner: string, opts: { backdrop?: string; background?: string | null; size?: number }): string {
+export function composeSvg(inner: string, opts: { backdrop?: string; frame?: string; background?: string | null; size?: number }): string {
   const size = opts.size ?? SVG_EXPORT_SIZE
   const body = inner.replace(/<\?xml[\s\S]*?\?>/gi, '').replace(/<!DOCTYPE[\s\S]*?>/gi, '').trim()
   const m = ROOT_TAG.exec(body)
@@ -190,7 +210,7 @@ export function composeSvg(inner: string, opts: { backdrop?: string; background?
   const intrinsic = svgIntrinsicSize(body) ?? { width: size, height: size }
   const vb = parseViewBox(body)
   const viewBox = vb ? `${fmt(vb.x)} ${fmt(vb.y)} ${fmt(vb.width)} ${fmt(vb.height)}` : `0 0 ${fmt(intrinsic.width)} ${fmt(intrinsic.height)}`
-  const layout = designLayout(size, !!opts.backdrop, !!opts.background)
+  const layout = designLayout(size, !!opts.backdrop, !!opts.background, !!opts.frame)
   const { x, y, size: box } = layout.logo
   const nested =
     stripAttrs(tag, ['width', 'height', 'x', 'y', 'viewBox', 'preserveAspectRatio', 'xmlns']).replace(
@@ -201,7 +221,15 @@ export function composeSvg(inner: string, opts: { backdrop?: string; background?
   if (opts.background) layers.push(`<rect width="${size}" height="${size}" fill="${opts.background}"/>`)
   if (layout.tile && opts.backdrop) {
     const t = layout.tile
-    layers.push(`<rect x="${fmt(t.x)}" y="${fmt(t.y)}" width="${fmt(t.size)}" height="${fmt(t.size)}" rx="${fmt(t.radius)}" fill="${opts.backdrop}"/>`)
+    if (t.frame && opts.frame) {
+      layers.push(`<rect x="${fmt(t.x)}" y="${fmt(t.y)}" width="${fmt(t.size)}" height="${fmt(t.size)}" rx="${fmt(t.radius)}" fill="${opts.frame}"/>`)
+      const w = t.frame
+      layers.push(
+        `<rect x="${fmt(t.x + w)}" y="${fmt(t.y + w)}" width="${fmt(t.size - w * 2)}" height="${fmt(t.size - w * 2)}" rx="${fmt(t.radius - w)}" fill="${opts.backdrop}"/>`,
+      )
+    } else {
+      layers.push(`<rect x="${fmt(t.x)}" y="${fmt(t.y)}" width="${fmt(t.size)}" height="${fmt(t.size)}" rx="${fmt(t.radius)}" fill="${opts.backdrop}"/>`)
+    }
   }
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${size}" height="${size}" viewBox="0 0 ${size} ${size}">${layers.join('')}${nested}</svg>`
 }

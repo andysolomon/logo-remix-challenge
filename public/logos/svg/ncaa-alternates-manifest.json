@@ -1,0 +1,563 @@
+{
+  "assets": [
+    {
+      "teamId": "COL-ALA",
+      "id": "elephant-head",
+      "label": "Elephant head",
+      "sourceUrl": "https://cdn.worldvectorlogo.com/logos/alabama-crimson-tide-4.svg",
+      "sourcePage": "https://worldvectorlogo.com/logo/alabama-crimson-tide-4",
+      "sourceSha256": "274a27306a3ad17b0ea1bf75645da7ca745abb8001aeac25855eaa018b209149",
+      "ops": {
+        "removeNodes": [
+          "0/0"
+        ],
+        "viewBox": "3.2 31.9 186.3 129"
+      },
+      "path": "/logos/svg/ncaa/alternates/ala-elephant-head.svg",
+      "format": "svg",
+      "colors": [
+        "#84323D",
+        "#000000",
+        "#CACBCD",
+        "#8C9198",
+        "#FFFFFF",
+        "#965D54"
+      ],
+      "sourcePalette": [
+        "#8D6063",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [],
+      "sha256": "9efabcac4ec0e4fe2f579377ced77a341d46ae5a26974f6040412d50f86ce1e2"
+    },
+    {
+      "teamId": "COL-ASU",
+      "id": "devil-mascot",
+      "label": "Pitchfork devil mascot",
+      "sourceUrl": "https://cdn.worldvectorlogo.com/logos/arizona-state-sun-devils.svg",
+      "sourcePage": "https://worldvectorlogo.com/logo/arizona-state-sun-devils",
+      "sourceSha256": "264699ba7348aea639b7331266edc2683c545d249e4a1c2dd443fb649ae80cf6",
+      "ops": {
+        "removeNodes": [
+          "0",
+          "35"
+        ],
+        "viewBox": "26.9 3.2 138.9 186.3"
+      },
+      "path": "/logos/svg/ncaa/alternates/asu-devil-mascot.svg",
+      "format": "svg",
+      "colors": [
+        "#8B274C",
+        "#ECB73A",
+        "#FFFFFF"
+      ],
+      "sourcePalette": [
+        "#ECB73A",
+        "#8B274C",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [],
+      "sha256": "8bf3eb1e81efb6e9d27af394ed643112eaa7b1ef9265c0ede049dd60624720ec"
+    },
+    {
+      "teamId": "COL-AUB",
+      "id": "tiger-eyes",
+      "label": "Tiger eyes",
+      "sourceUrl": "https://cdn.worldvectorlogo.com/logos/auburn-tigers-6.svg",
+      "sourcePage": "https://worldvectorlogo.com/logo/auburn-tigers-6",
+      "sourceSha256": "c5f6e99ca709ad67d7c4819a31c812cd1f9c340e1f413728bb9abaead2b52d0f",
+      "ops": {
+        "removeNodes": [
+          "0/0",
+          "0/8"
+        ],
+        "viewBox": "3.2 45.4 186.3 101.9"
+      },
+      "path": "/logos/svg/ncaa/alternates/aub-tiger-eyes.svg",
+      "format": "svg",
+      "colors": [
+        "#FFFFFF",
+        "#D97944",
+        "#003562",
+        "#FFF22D"
+      ],
+      "sourcePalette": [
+        "#003562",
+        "#ECB638",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [],
+      "sha256": "9dfab5e639d62a5487f4ef08d36b7624134abfaf3df73bd70bb913ff1c8b6208"
+    },
+    {
+      "teamId": "COL-DUKE",
+      "id": "devil-head",
+      "label": "Devil head in block D",
+      "sourceUrl": "https://cdn.worldvectorlogo.com/logos/duke-blue-devils-1.svg",
+      "sourcePage": "https://worldvectorlogo.com/logo/duke-blue-devils-1",
+      "sourceSha256": "c7b5b7dd25558d2f83ca7548962af1289a1630278216f020ad11fe01a9fbcd59",
+      "ops": {
+        "removeNodes": [
+          "0/0",
+          "0/8"
+        ],
+        "viewBox": "11.4 23.9 169.9 144.9"
+      },
+      "path": "/logos/svg/ncaa/alternates/duke-devil-head.svg",
+      "format": "svg",
+      "colors": [
+        "#255398",
+        "#FFFFFF"
+      ],
+      "sourcePalette": [
+        "#255398",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [
+        1
+      ],
+      "sha256": "29542f4d433f50f0499c5d9f0caf32ca4dfc78c2c4354b389be9ce5a74f89ecc"
+    },
+    {
+      "teamId": "COL-FLA",
+      "id": "gator-mascot",
+      "label": "Gator mascot in sweater",
+      "sourceUrl": "https://cdn.worldvectorlogo.com/logos/florida-gators-2.svg",
+      "sourcePage": "https://worldvectorlogo.com/logo/florida-gators-2",
+      "sourceSha256": "a254a1043635de70d8550d27b45c77a22de1bc068767c29ac870c60badea6e14",
+      "ops": {
+        "removeNodes": [
+          "0/0"
+        ],
+        "viewBox": "7.8 3.2 177.1 186.3"
+      },
+      "path": "/logos/svg/ncaa/alternates/fla-gator-mascot.svg",
+      "format": "svg",
+      "colors": [
+        "#000000",
+        "#D6803B",
+        "#459D58",
+        "#FFFFFF",
+        "#2B93CC"
+      ],
+      "sourcePalette": [
+        "#000000",
+        "#8E8E4A",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [],
+      "sha256": "3a324d2d96994af7378491fa7d4d878e5f94530ae0516a217f481f8578ad2fa3"
+    },
+    {
+      "teamId": "COL-FSU",
+      "id": "spear",
+      "label": "Feathered spear",
+      "sourceUrl": "https://cdn.worldvectorlogo.com/logos/florida-state-seminoles-2.svg",
+      "sourcePage": "https://worldvectorlogo.com/logo/florida-state-seminoles-2",
+      "sourceSha256": "d1b870b7da157b5831e6cc34a732ffef2206773b83ceee73163acbb16b936842",
+      "ops": {
+        "removeNodes": [
+          "0/0"
+        ],
+        "viewBox": "3.2 62.6 186.3 67.5"
+      },
+      "path": "/logos/svg/ncaa/alternates/fsu-spear.svg",
+      "format": "svg",
+      "colors": [
+        "#97343C",
+        "#FFFFFF"
+      ],
+      "sourcePalette": [
+        "#97343C",
+        "#CEB888",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [
+        1
+      ],
+      "sha256": "2573f62f98b851a0a0914e49ce8e5085ed104967207879eaf154efc4cf346235"
+    },
+    {
+      "teamId": "COL-GT",
+      "id": "wasp-mascot",
+      "label": "Wasp mascot",
+      "sourceUrl": "https://cdn.worldvectorlogo.com/logos/georgia-tech-yellow-jackets-1.svg",
+      "sourcePage": "https://worldvectorlogo.com/logo/georgia-tech-yellow-jackets-1",
+      "sourceSha256": "6001f712c7b13fdd6cc01fba5544543b7eaafeca90a7c909e9d28516f45d3c21",
+      "ops": {
+        "removeNodes": [
+          "0/0"
+        ],
+        "viewBox": "3.6 -2.8 185.5 198.3"
+      },
+      "path": "/logos/svg/ncaa/alternates/gt-wasp-mascot.svg",
+      "format": "svg",
+      "colors": [
+        "#FFFFFF",
+        "#2B2A2B",
+        "#EECC3F"
+      ],
+      "sourcePalette": [
+        "#EECC3F",
+        "#2B2A2B",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [],
+      "sha256": "5b138edb3a19ea87c473d40b6a809345c536190f0dacfcdfe5824a4ee56ab10e"
+    },
+    {
+      "teamId": "COL-LSU",
+      "id": "tiger-head",
+      "label": "Tiger head",
+      "sourceUrl": "https://cdn.worldvectorlogo.com/logos/lsu-tigers-1.svg",
+      "sourcePage": "https://worldvectorlogo.com/logo/lsu-tigers-1",
+      "sourceSha256": "cbd019e903956f652fb2fe81f7519c5edfdf8f60ba46344e05de98211805e072",
+      "ops": {
+        "removeNodes": [
+          "0/0"
+        ],
+        "viewBox": "14 9 164.7 174.7"
+      },
+      "path": "/logos/svg/ncaa/alternates/lsu-tiger-head.svg",
+      "format": "svg",
+      "colors": [
+        "#60336E",
+        "#FFFFFF",
+        "#DEC13F"
+      ],
+      "sourcePalette": [
+        "#60336E",
+        "#DEC13F",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [],
+      "sha256": "84b0c1f8d88444f08c975561c33c8311dd5c3f1759d870673335cd79a0a822d6"
+    },
+    {
+      "teamId": "COL-MIA",
+      "id": "ibis-mascot",
+      "label": "Ibis mascot",
+      "sourceUrl": "https://cdn.worldvectorlogo.com/logos/miami-hurricanes-4.svg",
+      "sourcePage": "https://worldvectorlogo.com/logo/miami-hurricanes-4",
+      "sourceSha256": "454939a02fec230bd85ca40b0ffcdc81d8398c2757656f6b5992a5326500aa84",
+      "ops": {
+        "removeNodes": [
+          "0"
+        ],
+        "viewBox": "12.1 3.2 168.5 186.3"
+      },
+      "path": "/logos/svg/ncaa/alternates/mia-ibis-mascot.svg",
+      "format": "svg",
+      "colors": [
+        "#FFFFFF",
+        "#000000",
+        "#CF703C",
+        "#CE855F",
+        "#2E573F"
+      ],
+      "sourcePalette": [
+        "#CE7A4E",
+        "#172C20",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [],
+      "sha256": "b4ac98ce9e56e1ce17ffc302c36f49d3e2fb0274602dc69f997224cf1ffb7306"
+    },
+    {
+      "teamId": "COL-ORE",
+      "id": "duck-mascot",
+      "label": "Duck mascot",
+      "sourceUrl": "https://cdn.worldvectorlogo.com/logos/oregon-ducks-2.svg",
+      "sourcePage": "https://worldvectorlogo.com/logo/oregon-ducks-2",
+      "sourceSha256": "2d984a0b26806798d118e29d4f60a4e9fee942ea957dc7ebf797abe33830760f",
+      "ops": {
+        "removeNodes": [
+          "0"
+        ],
+        "viewBox": "15.9 21.3 169.9 146.9"
+      },
+      "path": "/logos/svg/ncaa/alternates/ore-duck-mascot.svg",
+      "format": "svg",
+      "colors": [
+        "#000000",
+        "#EEBD31",
+        "#FFFFFF",
+        "#166E55",
+        "#FFF22D"
+      ],
+      "sourcePalette": [
+        "#0B372A",
+        "#F6D82F",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [],
+      "sha256": "12b047ef0b9a84fe4099e451b868c92958aad03a213c61d54bb18002939342be"
+    },
+    {
+      "teamId": "COL-PUR",
+      "id": "locomotive",
+      "label": "Steam locomotive",
+      "sourceUrl": "https://iconape.com/wp-content/files/rf/88489/svg/purdue-university-boilermakers-7.svg",
+      "sourcePage": "https://iconape.com/purdue-university-boilermakers-logo-icon-svg-png.html",
+      "sourceSha256": "8b260fb8603c79e1fa59fc8f1e663b6d4233960f278afa0b77ae69201943abd6",
+      "ops": {
+        "removeNodes": [
+          "0",
+          "30"
+        ],
+        "viewBox": "3.2 19.9 186.3 153"
+      },
+      "path": "/logos/svg/ncaa/alternates/pur-locomotive.svg",
+      "format": "svg",
+      "colors": [
+        "#E0C23E",
+        "#C2C4C9",
+        "#000000",
+        "#FFFFFF",
+        "#BBBCBF"
+      ],
+      "sourcePalette": [
+        "#BBBCBF",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [],
+      "sha256": "781d5919438157503f815b2da473f0f5157e77ba85ee83fe4273a85bfc0b4759"
+    },
+    {
+      "teamId": "COL-SOU",
+      "id": "jaguar-head",
+      "label": "Jaguar head",
+      "sourceUrl": "https://cdn.worldvectorlogo.com/logos/southern-jaguars-3.svg",
+      "sourcePage": "https://worldvectorlogo.com/logo/southern-jaguars-3",
+      "sourceSha256": "7ce5937db3fed9018d506a77a52b5845aa54b9fa5bb3653c3d358fa25412a392",
+      "ops": {
+        "removeNodes": [
+          "0/0"
+        ],
+        "viewBox": "3.2 12.8 186.3 167.1"
+      },
+      "path": "/logos/svg/ncaa/alternates/sou-jaguar-head.svg",
+      "format": "svg",
+      "colors": [
+        "#4D5786",
+        "#ECB73B",
+        "#FFFFFF",
+        "#3B5598"
+      ],
+      "sourcePalette": [
+        "#44568F",
+        "#ECB73B",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [],
+      "sha256": "f70dd41162840f2b88b4195f40d450824370c3452d577025fc33a84d3a62b140"
+    },
+    {
+      "teamId": "COL-TTU",
+      "id": "masked-rider",
+      "label": "Masked rider on horse",
+      "sourceUrl": "https://cdn.worldvectorlogo.com/logos/texas-tech-red-raiders-3.svg",
+      "sourcePage": "https://worldvectorlogo.com/logo/texas-tech-red-raiders-3",
+      "sourceSha256": "494827ab39972f6cfe42840af8f134942eac7f5ec48f6508fe9d925f1191dc32",
+      "ops": {
+        "removeNodes": [
+          "0/0",
+          "0/11"
+        ],
+        "viewBox": "3.2 13.7 186.3 165.4"
+      },
+      "path": "/logos/svg/ncaa/alternates/ttu-masked-rider.svg",
+      "format": "svg",
+      "colors": [
+        "#B3B4B6",
+        "#000000",
+        "#FFFFFF",
+        "#CF4044"
+      ],
+      "sourcePalette": [
+        "#CF4044",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [],
+      "sha256": "4f3a5142772bdbd00e9d830b95155690557442a19245043e38383b528e54a8da"
+    },
+    {
+      "teamId": "COL-UGA",
+      "id": "bulldog-head",
+      "label": "Bulldog head",
+      "sourceUrl": "https://cdn.worldvectorlogo.com/logos/georgia-bulldogs-5.svg",
+      "sourcePage": "https://worldvectorlogo.com/logo/georgia-bulldogs-5",
+      "sourceSha256": "4bce7381bf98019c08c412fee7ff55dcc941685e2194fca7b5e688a9b567b6f9",
+      "ops": {
+        "removeNodes": [
+          "0/0"
+        ],
+        "viewBox": "16 3.2 160.8 186.3"
+      },
+      "path": "/logos/svg/ncaa/alternates/uga-bulldog-head.svg",
+      "format": "svg",
+      "colors": [
+        "#000000",
+        "#CA3132",
+        "#FFFFFF"
+      ],
+      "sourcePalette": [
+        "#CA3132",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [],
+      "sha256": "539c8a9f6b0a1ff43b906225af517f51d67e03d023ec3e0687440c1c72551c4e"
+    },
+    {
+      "teamId": "COL-UK",
+      "id": "wildcat-mascot",
+      "label": "Wildcat climbing letters",
+      "sourceUrl": "https://cdn.worldvectorlogo.com/logos/kentucky-wildcats-1.svg",
+      "sourcePage": "https://worldvectorlogo.com/logo/kentucky-wildcats-1",
+      "sourceSha256": "ea729fed172d6442b3b53aaa3f6007e0ab755e82f234e713d063330bdf8368e4",
+      "ops": {
+        "removeNodes": [
+          "0/0",
+          "0/11"
+        ],
+        "viewBox": "-2.8 -1.4 198.3 195.6"
+      },
+      "path": "/logos/svg/ncaa/alternates/uk-wildcat-mascot.svg",
+      "format": "svg",
+      "colors": [
+        "#FFFFFF",
+        "#000000",
+        "#E0A83F",
+        "#3564A4"
+      ],
+      "sourcePalette": [
+        "#3564A4",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [],
+      "sha256": "030415da2f6ced8b36df77c0ff0c032e08e52e5872c75a5cef9324f491789bae"
+    },
+    {
+      "teamId": "COL-UNC",
+      "id": "ram-head",
+      "label": "Ram head",
+      "sourceUrl": "https://cdn.worldvectorlogo.com/logos/unc-tar-heels-8.svg",
+      "sourcePage": "https://worldvectorlogo.com/logo/unc-tar-heels-8",
+      "sourceSha256": "cc5fbcdbe5258bf9cafbf4ee2e9e50218259d4a9e43633d040030232453d4f01",
+      "ops": {
+        "removeNodes": [
+          "0/0"
+        ],
+        "viewBox": "3.2 17.1 186.3 158.6"
+      },
+      "path": "/logos/svg/ncaa/alternates/unc-ram-head.svg",
+      "format": "svg",
+      "colors": [
+        "#253554",
+        "#7DA9D5",
+        "#FFFFFF",
+        "#B2B8B6"
+      ],
+      "sourcePalette": [
+        "#98B0C6",
+        "#253554",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [],
+      "sha256": "e6d42f2b942948a7f94930612a61de7ec6500f0c0158b89e6ef421d37cfed0da"
+    },
+    {
+      "teamId": "COL-WAKE",
+      "id": "top-hat-head",
+      "label": "Top-hat mascot head",
+      "sourceUrl": "https://cdn.worldvectorlogo.com/logos/wake-forest-demon-deacons.svg",
+      "sourcePage": "https://worldvectorlogo.com/logo/wake-forest-demon-deacons",
+      "sourceSha256": "02412b4962aad657292b1729b9850fa9df0a0f4195d3c966d15198715f7c3c08",
+      "ops": {
+        "removeNodes": [
+          "0/0"
+        ],
+        "viewBox": "16.2 -2.8 160.4 198.3"
+      },
+      "path": "/logos/svg/ncaa/alternates/wake-top-hat-head.svg",
+      "format": "svg",
+      "colors": [
+        "#000000",
+        "#E7CFAB",
+        "#C4A445",
+        "#FFFFFF"
+      ],
+      "sourcePalette": [
+        "#D6BA78",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [],
+      "sha256": "034ba9845b1b1e156979cf9444bc5671abfac8fb3493e62b5e3c7c6754f785a1"
+    },
+    {
+      "teamId": "COL-WASH",
+      "id": "husky-head",
+      "label": "Husky head",
+      "sourceUrl": "https://cdn.worldvectorlogo.com/logos/washington-huskies-3.svg",
+      "sourcePage": "https://worldvectorlogo.com/logo/washington-huskies-3",
+      "sourceSha256": "357051530bf3c8efa974659caaddef93cec57ec2882043df3abaf0a760661d39",
+      "ops": {
+        "removeNodes": [
+          "0",
+          "52"
+        ],
+        "viewBox": "29.3 3.2 134.1 186.3"
+      },
+      "path": "/logos/svg/ncaa/alternates/wash-husky-head.svg",
+      "format": "svg",
+      "colors": [
+        "#FFFFFF",
+        "#000000"
+      ],
+      "sourcePalette": [
+        "#000000",
+        "#E8D3A2",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [
+        1
+      ],
+      "sha256": "eb7ad674e0309961bac5eb7a73d52b11fa3eba50d27d56e8f5756adc095a2bc1"
+    },
+    {
+      "teamId": "COL-WIS",
+      "id": "badger-mascot",
+      "label": "Badger mascot",
+      "sourceUrl": "https://cdn.worldvectorlogo.com/logos/wisconsin-badgers-2.svg",
+      "sourcePage": "https://worldvectorlogo.com/logo/wisconsin-badgers-2",
+      "sourceSha256": "48a87d141fcb008c7c3420234bc3b7e2f40d902309a231422b73ba93baca4862",
+      "ops": {
+        "removeNodes": [
+          "0/0"
+        ],
+        "viewBox": "23 3.2 146.7 186.3"
+      },
+      "path": "/logos/svg/ncaa/alternates/wis-badger-mascot.svg",
+      "format": "svg",
+      "colors": [
+        "#000000",
+        "#B01842",
+        "#FFFFFF"
+      ],
+      "sourcePalette": [
+        "#B01842",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [],
+      "sha256": "316a2e91c0c536b08934fe685cdc0b9a93ab99c582fb8c0fa9495527c1a4ac59"
+    }
+  ]
+}

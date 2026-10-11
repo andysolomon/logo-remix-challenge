@@ -15,7 +15,9 @@ const entries = TEAMS.filter((t) => COLLECTIONS.includes(t.league))
 const norm = (s: string) => s.toLowerCase().replace(/[^a-z0-9]/g, '')
 /** Chains, channels, carmakers and fashion brands whose every published logo is a wordmark; they stay playable as color donors. */
 const WORDMARK_ONLY = [
-  'CAR-FIAT', 'CAR-FORD', 'FOOD-BOJ', 'FOOD-CANE', 'FOOD-CUL', 'FOOD-DUNK', 'FOOD-FIVE', 'FOOD-PAPA',
+  'CAR-FIAT', 'CAR-FORD', 'CLOTH-GAP', 'CLOTH-SUPREME', 'CLOTH-VANS',
+  'FOOD-BOJ', 'FOOD-CANE', 'FOOD-CUL', 'FOOD-DUNK', 'FOOD-FIVE', 'FOOD-PAPA',
+  'LUX-BVLGARI', 'LUX-DIOR', 'LUX-MK', 'LUX-PRADA', 'LUX-RM', 'LUX-TAG', 'LUX-TIFFANY', 'LUX-VCA',
   'TV-ABC', 'TV-CMT', 'TV-CNN', 'TV-EENT', 'TV-ESPN', 'TV-FOX', 'TV-HBO', 'TV-HGTV', 'TV-TNT', 'TV-TWC', 'TV-VH1',
 ]
 const wordmarks = (league: League) => WORDMARK_ONLY.filter((id) => id.startsWith(`${league}-`)).length

@@ -11,8 +11,8 @@ const root = join(import.meta.dir, '..')
 const python = (code: string) => execFileSync('python3', ['-c', code], { cwd: root })
 const norm = (s: string) => s.toLowerCase().replace(/[^a-z0-9]/g, '')
 const withAlternates = TEAMS.filter((t) => (t.league === 'NBA' || t.league === 'COL') && t.alternateLogos?.length)
-const MIN_NBA = 10
-const MIN_COL = 10
+const MIN_NBA = 18
+const MIN_COL = 19
 
 describe('NBA and college alternate logos', () => {
   test('alternates are local vector artwork, distinct from the primary, and labeled without naming the team', () => {

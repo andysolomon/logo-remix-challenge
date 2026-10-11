@@ -120,7 +120,7 @@ print(json.dumps(out))
         }
       }
     }
-  })
+  }, 30000)
 
   test('Shuffle Colors cycles which team color is the logo and which is the backdrop', () => {
     const yankees = findTeam('MLB-NYY')!

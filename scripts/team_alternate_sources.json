@@ -605,6 +605,15 @@
     "ops": {}
   },
   {
+    "teamId": "HS-SCOB",
+    "id": "eagle-head",
+    "label": "Eagle head",
+    "sourceUrl": "https://gowoodland.org/wp-content/uploads/2025/08/south-cobb.svg",
+    "sourcePage": "https://gowoodland.org/south-cobb/",
+    "sourceSha256": "e935e4d53b59f8ccc78952bb4daed5b7401560aeb1fde0200b3203b216323153",
+    "ops": {}
+  },
+  {
     "teamId": "HS-SPRA",
     "id": "block-s",
     "label": "Block S",

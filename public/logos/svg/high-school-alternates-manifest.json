@@ -192,6 +192,31 @@
       "sha256": "988d6c85d2085abf14e47c634bdf95c67a28abdd3486b18e43554647e7cd2649"
     },
     {
+      "teamId": "HS-SCOB",
+      "id": "eagle-head",
+      "label": "Eagle head",
+      "sourceUrl": "https://gowoodland.org/wp-content/uploads/2025/08/south-cobb.svg",
+      "sourcePage": "https://gowoodland.org/south-cobb/",
+      "sourceSha256": "e935e4d53b59f8ccc78952bb4daed5b7401560aeb1fde0200b3203b216323153",
+      "ops": {},
+      "path": "/logos/svg/high-school/alternates/scob-eagle-head.svg",
+      "format": "svg",
+      "colors": [
+        "#F68D28",
+        "#091F40",
+        "#FEFEFE",
+        "#CBCBCB",
+        "#303030"
+      ],
+      "sourcePalette": [
+        "#1C2838",
+        "#F68D28",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [],
+      "sha256": "6e5fe1ffed521215a52d59672ecb4b6b245e6d5e3d6c870646934ac0bb69bc80"
+    },
+    {
       "teamId": "HS-SPRA",
       "id": "block-s",
       "label": "Block S",

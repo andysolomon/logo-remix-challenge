@@ -147,7 +147,7 @@ input::placeholder { color: var(--faint); }
 .play-btn:hover { filter: brightness(0.92); }
 
 /* ---------- Create (landscape) ---------- */
-.create-land { flex: 1; min-height: 0; display: grid; grid-template-columns: 28fr 44fr 28fr; gap: 14px; padding: 14px 16px 16px; }
+.create-land { flex: 1; min-height: 0; display: grid; grid-template-columns: minmax(0, 28fr) minmax(0, 44fr) minmax(0, 28fr); gap: 14px; padding: 14px 16px 16px; }
 .panel { min-height: 0; display: flex; flex-direction: column; background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 12px; gap: 10px; }
 .panel-head { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px; }
 .panel-head.wrap { flex-wrap: wrap; }
@@ -157,12 +157,27 @@ input::placeholder { color: var(--faint); }
 .seg-btn { min-width: 54px; flex: 1 0 auto; height: 38px; padding: 0 8px; border: none; border-radius: 8px; font: 600 12px var(--ui); cursor: pointer; background: transparent; color: var(--muted); }
 .seg-btn.active { background: var(--ink); color: var(--on-ink); }
 .portrait .seg-btn { min-width: 64px; }
-/* Compact collection picker: swipe through one row on phones and small tablets. */
-@media (max-width: 900px), (max-height: 640px) {
+/* Compact collection picker: swipe through one row on phones and tablets, including landscape tablets, so the logo list keeps the panel's height. */
+@media (max-width: 900px), (max-height: 640px), (orientation: landscape) and (max-height: 1000px) {
   .panel-head .seg { display: flex; flex-wrap: nowrap; min-width: 0; overflow-x: auto; overscroll-behavior-x: contain; scroll-padding-inline: 6px; padding: 6px; }
   .panel-head .seg-btn { flex: 0 0 auto; white-space: nowrap; }
   .panel > .chips { flex: 0 0 auto; flex-wrap: nowrap; min-width: 0; overflow-x: auto; overscroll-behavior-x: contain; scroll-padding-inline: 6px; padding: 4px; margin: -4px; }
   .panel > .chips .chip { flex: 0 0 auto; white-space: nowrap; }
+  .panel-head .seg::-webkit-scrollbar, .panel > .chips::-webkit-scrollbar { height: 6px; }
+}
+/* Touch screens swipe the rows, so the scrollbar is only noise there. */
+@media (pointer: coarse) {
+  .panel-head .seg, .panel > .chips { scrollbar-width: none; }
+  .panel-head .seg::-webkit-scrollbar, .panel > .chips::-webkit-scrollbar { display: none; }
+}
+/* Short landscape screens: smaller tiles so several rows of logos show at once. */
+@media (orientation: landscape) and (max-height: 820px) {
+  .create-land { gap: 12px; padding: 12px 14px 14px; }
+  .create-land .panel { padding: 10px; gap: 8px; }
+  .create-land .tile-grid { gap: 8px; }
+  .create-land .tile { gap: 6px; padding: 10px 6px 8px; }
+  .create-land .tile-logo { width: 56px; height: 56px; }
+  .create-land .tile.colors .tile-logo { width: 52px; height: 52px; }
 }
 .chips { display: flex; gap: 6px; flex-wrap: wrap; }
 .chip { height: 38px; padding: 0 14px; border: none; border-radius: 19px; font: 600 13px var(--ui); cursor: pointer; background: var(--chip-bg); color: var(--chip-fg); }
@@ -229,7 +244,8 @@ input::placeholder { color: var(--faint); }
 @media (max-height: 640px) {
   .canvas { overflow-y: auto; }
   .canvas > * { flex-shrink: 0; }
-  .canvas-hero { flex: 1 0 84px; min-height: 84px; }
+  .canvas-hero { flex: 1 0 140px; min-height: 140px; }
+  .empty-circle { padding: 18px; font-size: 13px; line-height: 1.35; }
   .canvas-hero .hero-logo { max-width: 100%; max-height: 100%; }
   .canvas-footer { position: static; }
 }

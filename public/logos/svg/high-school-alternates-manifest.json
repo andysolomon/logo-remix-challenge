@@ -72,6 +72,37 @@
       "sha256": "92c460c2d673766834921415ed43cf3ce73767e589446cd24db4f4dc5c1ac94f"
     },
     {
+      "teamId": "HS-KMHS",
+      "id": "km-monogram",
+      "label": "Interlocking KM",
+      "sourceUrl": "https://dunsondesign.com/wp-content/uploads/2022/01/KMHS_Icon@300x-100-scaled.jpg",
+      "sourcePage": "https://dunsondesign.com/case-studies/kennesaw-mountain/",
+      "sourceSha256": "f0525f85e72c3626c779016e6b86b901fd2cc019aff2e73fd600a06b3953b467",
+      "trace": {
+        "fill": "#004621",
+        "threshold": 0.5,
+        "turdsize": 8
+      },
+      "ops": {
+        "viewBox": "355.06 398.74 1849.88 1762.21"
+      },
+      "path": "/logos/svg/high-school/alternates/kmhs-km-monogram.svg",
+      "format": "svg",
+      "colors": [
+        "#004621"
+      ],
+      "sourcePalette": [
+        "#004621",
+        "#BBBCBF",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [
+        1,
+        2
+      ],
+      "sha256": "bf45d20a62ed05f06f904396e46dc1a071629ff7a9ba51aef6392c464f22da4a"
+    },
+    {
       "teamId": "HS-LASS",
       "id": "gold-helmet",
       "label": "Gold crested helmet",

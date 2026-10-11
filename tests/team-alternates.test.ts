@@ -1,5 +1,5 @@
 import { describe, expect, test } from 'bun:test'
-import { execFileSync } from 'node:child_process'
+import { execFileSync, spawnSync } from 'node:child_process'
 import { existsSync } from 'node:fs'
 import { join } from 'node:path'
 import {
@@ -65,6 +65,56 @@ for league in ('NBA', 'COL', 'HS'):
         assert teams[team_id].get('alternateLogos') == built.get(team_id), team_id
 `)
   }, 30000)
+
+  test('only the requested KM monogram is traced, and its manifest entry keeps the trace edit', () => {
+    python(`
+import json, sys
+from pathlib import Path
+sys.path.insert(0, 'scripts')
+import download_team_alternates as d
+traced = [(s['teamId'], s['id']) for s in json.loads(d.SOURCES.read_text()) if 'trace' in s]
+assert traced == [('HS-KMHS', 'km-monogram')], traced
+item = next(i for i in json.loads(d.manifest_path('HS').read_text())['assets'] if i['id'] == 'km-monogram')
+assert item['trace'] == {'fill': '#004621', 'threshold': 0.5, 'turdsize': 8}
+assert item['colors'] == ['#004621'] and item['unusedSourceSlots'] == [1, 2]
+`)
+  })
+
+  test('tracing refuses unreviewed settings before touching the image', () => {
+    python(`
+import sys
+sys.path.insert(0, 'scripts')
+from trace_vector import trace_raster
+for spec in ({'fill': '#004621'}, {'fill': '#00462', 'threshold': 0.5}, {'fill': '#004621', 'threshold': 1.5},
+             {'fill': '#004621', 'threshold': 0.5, 'turdsize': -1}, {'fill': '#004621', 'threshold': 0.5, 'blur': 2}):
+    try: trace_raster(b'not an image', spec)
+    except ValueError: pass
+    else: raise AssertionError(f'accepted {spec}')
+`)
+  })
+
+  const hasPotrace = spawnSync('python3', ['-c', 'import potrace, PIL'], { cwd: root }).status === 0
+  test.skipIf(!hasPotrace)('tracing turns a flat mark into one even-odd outline that keeps its holes', () => {
+    python(`
+import io, re, sys
+sys.path.insert(0, 'scripts')
+from PIL import Image, ImageDraw
+from nfl_vector_artwork import validate_vector
+from trace_vector import trace_raster
+image = Image.new('RGB', (120, 100), 'white')
+draw = ImageDraw.Draw(image)
+draw.rectangle((20, 10, 99, 89), fill='#004621')
+draw.rectangle((45, 35, 74, 64), fill='white')
+buffer = io.BytesIO(); image.save(buffer, 'PNG')
+svg = trace_raster(buffer.getvalue(), {'fill': '#004621', 'threshold': 0.5})
+root = validate_vector(svg)
+paths = [n for n in root.iter() if n.tag.endswith('path')]
+assert len(paths) == 1 and paths[0].get('fill') == '#004621' and paths[0].get('fill-rule') == 'evenodd'
+assert root.get('viewBox') == '0 0 120 100'
+assert paths[0].get('d').count('M') == 2, 'outer edge and the hole'
+assert trace_raster(buffer.getvalue(), {'fill': '#004621', 'threshold': 0.5}) == svg, 'trace is not deterministic'
+`)
+  })
 
   test('shuffle cycles every mark once and saved rounds keep the exact alternate', () => {
     const donor = findTeam('PRO-BUF')!

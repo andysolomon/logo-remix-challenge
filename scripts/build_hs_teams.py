@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Merge the Cobb County high schools into src/lib/teams.json.
+"""Merge the HIGH SCHOOL league's schools into src/lib/teams.json.
 
 Reads ``public/logos/svg/hs-manifest.json`` (written by
 ``scripts/download_cobb_svgs.py``) and rewrites only the ``HS-*`` slice of the
@@ -29,9 +29,8 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-from cobb_roster import SCHOOLS  # noqa: E402
+from cobb_roster import COUNTY, SCHOOLS  # noqa: E402
 from download_cobb_svgs import (  # noqa: E402
-    CONFERENCE,
     SOURCE_KINDS,
     SOURCE_PALETTE_OVERRIDES,
     UNUSED_SOURCE_SLOTS,
@@ -110,7 +109,7 @@ def validate_manifest() -> list[dict]:
         expected_values = {
             "id": f"HS-{abbr}",
             "league": "HS",
-            "conference": CONFERENCE,
+            "conference": COUNTY[abbr],
             "region": school[1],
             "name": school[2],
             "displayName": f"{school[1]} {school[2]}".strip(),

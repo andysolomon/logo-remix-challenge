@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-"""Download logos for the 16 Cobb County high schools in the HIGH SCHOOL league.
+"""Download logos for the metro Atlanta high schools in the HIGH SCHOOL league.
 
 No feed covers Georgia high schools the way ESPN covers the NFL and NCAA, so
 ``scripts/cobb_roster.py`` pins one hand-verified source URL per school --
-the school's own athletics site where one is scrapeable, the Cobb County
-School District site otherwise, Wikipedia's infobox logo as the fallback, and a
+the school's own athletics site where one is scrapeable, its school district's
+site otherwise, Wikipedia's infobox logo as the fallback, and a
 third-party mirror for the schools whose real mark none of those three
 carries, or carries only as a bitmap while a mirror has the vector original.
 
@@ -53,12 +53,11 @@ from download_svgs import (  # noqa: E402  (path shim above)
 )
 import download_hbcu_svgs  # noqa: E402
 from download_hbcu_svgs import MIN_PIXEL_SHARE, pick_palette, snap  # noqa: E402
-from cobb_roster import BRAND_COLORS, SCHOOLS  # noqa: E402
+from cobb_roster import BRAND_COLORS, COUNTY, SCHOOLS  # noqa: E402
 
 OUT = ROOT / "public" / "logos" / "svg"
 DEST_DIR = OUT / "high-school"
 MANIFEST = OUT / "hs-manifest.json"
-CONFERENCE = "Cobb County"
 
 # Every provenance class a roster entry may claim, documented in
 # ``cobb_roster``. ``community`` covers third-party mirrors (VNN sportshub
@@ -773,7 +772,7 @@ def manifest_item(school: tuple[str, str, str, str, str, str], asset: Path) -> d
     item = {
         "id": f"HS-{abbr}",
         "league": "HS",
-        "conference": CONFERENCE,
+        "conference": COUNTY[abbr],
         "region": region,
         "name": nickname,
         "abbr": abbr,

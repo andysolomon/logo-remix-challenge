@@ -1,16 +1,18 @@
 #!/usr/bin/env python3
-"""The Cobb County roster behind the game's HIGH SCHOOL league.
+"""The roster behind the game's HIGH SCHOOL league: metro Atlanta high schools by county.
 
 Scope: the 16 Cobb County School District high schools that field athletics
-teams. Unlike the NFL and college rosters there is no feed to pull from, so
-every school lists an explicit source URL, resolved by hand and verified
-against the artwork:
+teams (the league began as Cobb-only, hence the module name) plus a first set
+of prominent programs from Paulding, Fulton, DeKalb and Gwinnett counties.
+Each county is a filter chip and a random-deck pool. Unlike the NFL and
+college rosters there is no feed to pull from, so every school lists an
+explicit source URL, resolved by hand and verified against the artwork:
 
   * ``official``  the school's own athletics website (WordPress or the VNN
                   "sportshub" platform the Cobb athletic sites run on)
-  * ``district``  the school's page on cobbk12.org, whose marks live on the
-                  district's Azure blob storage (used when the school has no
-                  scrapeable athletics site)
+  * ``district``  the school's page on its district site (cobbk12.org keeps
+                  its marks on the district's Azure blob storage), used when
+                  the school has no scrapeable athletics site
   * ``wikipedia`` the infobox logo of the school's Wikipedia article
   * ``community`` a third-party community or aggregator mirror (VNN sportshub
                   uploads reached outside the school's own site, scorestream,
@@ -30,65 +32,74 @@ Each entry is ``(abbr, region, nickname, url, source_kind, source_page)``:
                community mirror exposes no richer page than the asset itself,
                this repeats the asset URL rather than inventing a citation.
 
-Allatoona's athletics site (allatoonabucs.com) keeps vector logos of the Cobb
-opponents on its schedules in its WordPress media library. Campbell, Harrison
-and North Cobb use those SVGs: the only other copies of their marks are
-low-resolution bitmaps. The same library supplies most of the league's
-alternate marks (scripts/team_alternate_sources.json).
+Allatoona's athletics site (allatoonabucs.com) keeps vector logos of the
+opponents on its schedules in its WordPress media library. Campbell, Harrison,
+North Cobb and several schools outside Cobb use those SVGs: the only other
+copies of their marks are low-resolution bitmaps. The same library supplies
+most of the league's alternate marks (scripts/team_alternate_sources.json).
 """
 
 from __future__ import annotations
 
-SCHOOLS: list[tuple[str, str, str, str, str, str]] = [
-    ("ALLA", "Allatoona", "Buccaneers",
-     "https://allatoonabucs.com/wp-content/uploads/2021/03/FULL-COLOR-BUCS-1-02.svg",
-     "official", "https://allatoonabucs.com"),
-    ("CAMP", "Campbell", "Spartans",
-     "https://allatoonabucs.com/wp-content/uploads/2021/03/campbell.svg",
-     "community", "https://allatoonabucs.com/campbell-2/"),
-    ("HARR", "Harrison", "Hoyas",
-     "https://allatoonabucs.com/wp-content/uploads/2021/03/harrisonlogo-01.svg",
-     "community", "https://allatoonabucs.com/harrisonlogo-01/"),
-    ("HILL", "Hillgrove", "Hawks",
-     "https://sportshub2-uploads.vnn-prod.zone/files/sites/376/2018/01/30200846/logo_outline.png",
-     "official", "https://www.hillgroveathletics.com"),
-    ("KELL", "Kell", "Longhorns",
-     "https://sportshub2-uploads.vnn-prod.zone/files/sites/1059/2022/03/01181411/New-Kell-logo.png",
-     "community", "https://sportshub2-uploads.vnn-prod.zone/files/sites/1059/2022/03/01181411/New-Kell-logo.png"),
-    ("KMHS", "Kennesaw Mountain", "Mustangs",
-     "https://upload.wikimedia.org/wikipedia/en/f/fa/Kennesaw_Mountain_High_School_%28logo%29.svg",
-     "wikipedia", "https://en.wikipedia.org/wiki/Kennesaw_Mountain_High_School"),
-    ("LASS", "Lassiter", "Trojans",
-     "https://sportshub2-uploads.vnn-prod.zone/files/sites/1992/2018/05/14151445/logo.png",
-     "official", "https://www.lassiterathletics.com"),
-    ("MCEA", "McEachern", "Indians",
-     "https://s3-us-west-2.amazonaws.com/scorestream-team-profile-pictures/4530/20190119073353_718_mascot300.png",
-     "community", "https://s3-us-west-2.amazonaws.com/scorestream-team-profile-pictures/4530/20190119073353_718_mascot300.png"),
-    ("NCOB", "North Cobb", "Warriors",
-     "https://allatoonabucs.com/wp-content/uploads/2021/02/ncobb-logo-01-2.svg",
-     "community", "https://allatoonabucs.com/ncobb-logo-01-2/"),
-    ("OSBO", "Osborne", "Cardinals",
-     "https://sbcobbstor.blob.core.windows.net/media/WWWCobb/fgg/1293/Osborne_Footer-4.png",
-     "district", "https://www.cobbk12.org/osborne"),
-    ("PEBB", "Pebblebrook", "Falcons",
-     "https://sportshub2-uploads.vnn-prod.zone/files/sites/1201/2025/03/28150340/Pebblebrook-Falcons-1.png",
-     "community", "https://sportshub2-uploads.vnn-prod.zone/files/sites/1201/2025/03/28150340/Pebblebrook-Falcons-1.png"),
-    ("POPE", "Pope", "Greyhounds",
-     "https://sportshub2-uploads.vnn-prod.zone/files/sites/195/2023/06/22174707/Pope-HS.png",
-     "official", "https://www.popeathletics.com"),
-    ("SCOB", "South Cobb", "Eagles",
-     "https://sbcobbstor.blob.core.windows.net/media/WWWCobb/fgg/1476/southcobb.png",
-     "district", "https://www.cobbk12.org/southcobb"),
-    ("SPRA", "Sprayberry", "Yellow Jackets",
-     "https://sportshub2-uploads.vnn-prod.zone/files/sites/317/2023/08/07151535/Full-Color-White-Outline-Yellow-Jacket-Mark.png",
-     "official", "https://www.sprayberryathletics.com"),
-    ("WALT", "Walton", "Raiders",
-     "https://sportshub2-uploads.vnn-prod.zone/files/sites/632/2018/02/16205342/logo_outline_9336.png",
-     "official", "https://www.waltonathletics.com"),
-    ("WHEE", "Wheeler", "Wildcats",
-     "https://upload.wikimedia.org/wikipedia/en/7/7f/Wheeler_High_School_%28Georgia%29_logo.png",
-     "wikipedia", "https://en.wikipedia.org/wiki/Wheeler_High_School_(Georgia)"),
-]
+School = tuple[str, str, str, str, str, str]
+
+# County -> its schools, in the order the game lists them. A school's county is
+# its filter chip in the team browser and its random-deck pool.
+ROSTER: dict[str, list[School]] = {
+    "Cobb County": [
+        ("ALLA", "Allatoona", "Buccaneers",
+         "https://allatoonabucs.com/wp-content/uploads/2021/03/FULL-COLOR-BUCS-1-02.svg",
+         "official", "https://allatoonabucs.com"),
+        ("CAMP", "Campbell", "Spartans",
+         "https://allatoonabucs.com/wp-content/uploads/2021/03/campbell.svg",
+         "community", "https://allatoonabucs.com/campbell-2/"),
+        ("HARR", "Harrison", "Hoyas",
+         "https://allatoonabucs.com/wp-content/uploads/2021/03/harrisonlogo-01.svg",
+         "community", "https://allatoonabucs.com/harrisonlogo-01/"),
+        ("HILL", "Hillgrove", "Hawks",
+         "https://sportshub2-uploads.vnn-prod.zone/files/sites/376/2018/01/30200846/logo_outline.png",
+         "official", "https://www.hillgroveathletics.com"),
+        ("KELL", "Kell", "Longhorns",
+         "https://sportshub2-uploads.vnn-prod.zone/files/sites/1059/2022/03/01181411/New-Kell-logo.png",
+         "community", "https://sportshub2-uploads.vnn-prod.zone/files/sites/1059/2022/03/01181411/New-Kell-logo.png"),
+        ("KMHS", "Kennesaw Mountain", "Mustangs",
+         "https://upload.wikimedia.org/wikipedia/en/f/fa/Kennesaw_Mountain_High_School_%28logo%29.svg",
+         "wikipedia", "https://en.wikipedia.org/wiki/Kennesaw_Mountain_High_School"),
+        ("LASS", "Lassiter", "Trojans",
+         "https://sportshub2-uploads.vnn-prod.zone/files/sites/1992/2018/05/14151445/logo.png",
+         "official", "https://www.lassiterathletics.com"),
+        ("MCEA", "McEachern", "Indians",
+         "https://s3-us-west-2.amazonaws.com/scorestream-team-profile-pictures/4530/20190119073353_718_mascot300.png",
+         "community", "https://s3-us-west-2.amazonaws.com/scorestream-team-profile-pictures/4530/20190119073353_718_mascot300.png"),
+        ("NCOB", "North Cobb", "Warriors",
+         "https://allatoonabucs.com/wp-content/uploads/2021/02/ncobb-logo-01-2.svg",
+         "community", "https://allatoonabucs.com/ncobb-logo-01-2/"),
+        ("OSBO", "Osborne", "Cardinals",
+         "https://sbcobbstor.blob.core.windows.net/media/WWWCobb/fgg/1293/Osborne_Footer-4.png",
+         "district", "https://www.cobbk12.org/osborne"),
+        ("PEBB", "Pebblebrook", "Falcons",
+         "https://sportshub2-uploads.vnn-prod.zone/files/sites/1201/2025/03/28150340/Pebblebrook-Falcons-1.png",
+         "community", "https://sportshub2-uploads.vnn-prod.zone/files/sites/1201/2025/03/28150340/Pebblebrook-Falcons-1.png"),
+        ("POPE", "Pope", "Greyhounds",
+         "https://sportshub2-uploads.vnn-prod.zone/files/sites/195/2023/06/22174707/Pope-HS.png",
+         "official", "https://www.popeathletics.com"),
+        ("SCOB", "South Cobb", "Eagles",
+         "https://sbcobbstor.blob.core.windows.net/media/WWWCobb/fgg/1476/southcobb.png",
+         "district", "https://www.cobbk12.org/southcobb"),
+        ("SPRA", "Sprayberry", "Yellow Jackets",
+         "https://sportshub2-uploads.vnn-prod.zone/files/sites/317/2023/08/07151535/Full-Color-White-Outline-Yellow-Jacket-Mark.png",
+         "official", "https://www.sprayberryathletics.com"),
+        ("WALT", "Walton", "Raiders",
+         "https://sportshub2-uploads.vnn-prod.zone/files/sites/632/2018/02/16205342/logo_outline_9336.png",
+         "official", "https://www.waltonathletics.com"),
+        ("WHEE", "Wheeler", "Wildcats",
+         "https://upload.wikimedia.org/wikipedia/en/7/7f/Wheeler_High_School_%28Georgia%29_logo.png",
+         "wikipedia", "https://en.wikipedia.org/wiki/Wheeler_High_School_(Georgia)"),
+    ],
+}
+
+SCHOOLS: list[School] = [school for schools in ROSTER.values() for school in schools]
+COUNTY: dict[str, str] = {school[0]: county for county, schools in ROSTER.items() for school in schools}
 
 # abbr -> (primary, secondary) school colors, snapped to the nearest color
 # actually present in the artwork before they reach teams.json -- the same

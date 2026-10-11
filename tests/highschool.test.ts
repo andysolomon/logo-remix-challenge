@@ -15,33 +15,40 @@ import {
 
 const root = join(import.meta.dir, '..')
 
-const COBB_SCHOOLS = [
-  'Allatoona',
-  'Campbell',
-  'Harrison',
-  'Hillgrove',
-  'Kell',
-  'Kennesaw Mountain',
-  'Lassiter',
-  'McEachern',
-  'North Cobb',
-  'Osborne',
-  'Pebblebrook',
-  'Pope',
-  'South Cobb',
-  'Sprayberry',
-  'Walton',
-  'Wheeler',
-]
+// Every school by county; each county is a filter chip and a random-deck pool.
+const HS_SCHOOLS: Record<string, string[]> = {
+  'Cobb County': [
+    'Allatoona',
+    'Campbell',
+    'Harrison',
+    'Hillgrove',
+    'Kell',
+    'Kennesaw Mountain',
+    'Lassiter',
+    'McEachern',
+    'North Cobb',
+    'Osborne',
+    'Pebblebrook',
+    'Pope',
+    'South Cobb',
+    'Sprayberry',
+    'Walton',
+    'Wheeler',
+  ],
+}
+const COUNTIES = Object.keys(HS_SCHOOLS)
+const ALL_SCHOOLS = Object.values(HS_SCHOOLS).flat().sort()
+const HS_COUNT = ALL_SCHOOLS.length
+const countyOf = (region: string) => COUNTIES.find((c) => HS_SCHOOLS[c].includes(region))
 
 // Provenance classes a roster entry may claim. `community` covers third-party
-// mirrors (VNN sportshub uploads outside a school's own site, vhv.rs,
-// scorestream) for schools whose real mark no official/district/Wikipedia page
-// carries. scripts/download_cobb_svgs.py owns the canonical set.
+// mirrors (VNN sportshub uploads outside a school's own site, scorestream, a
+// rival school's opponent logos) for schools whose real mark no
+// official/district/Wikipedia page carries as a usable file. scripts/download_cobb_svgs.py owns the canonical set.
 const SOURCE_KINDS = ['official', 'district', 'wikipedia', 'community']
 
 // Tests that drive a builder or downloader end to end re-read every pixel of
-// all 16 marks, twice, in pure Python. The community mirrors are far larger
+// every mark, twice, in pure Python. The community mirrors are far larger
 // files than the Wikipedia thumbnails they replaced, which puts those two
 // tests over bun's 5s default, so they state their own budget.
 const FULL_PIPELINE_TIMEOUT = 30_000
@@ -56,20 +63,21 @@ function python(code: string) {
 }
 
 describe('high-school league data', () => {
-  test('HIGH SCHOOL league is configured with the Cobb County conference', () => {
-    expect(LEAGUES.HS).toEqual({ label: 'HIGH SCHOOL', conferences: ['Cobb County'] })
+  test('HIGH SCHOOL league is configured with one chip per county', () => {
+    expect(COUNTIES).toEqual([...COUNTIES].sort())
+    expect(LEAGUES.HS).toEqual({ label: 'HIGH SCHOOL', conferences: COUNTIES })
   })
 
-  test('all 16 Cobb County schools are present exactly once', () => {
-    expect(hsTeams.map((t) => t.region).sort()).toEqual(COBB_SCHOOLS)
+  test('every school is present exactly once', () => {
+    expect(hsTeams.map((t) => t.region).sort()).toEqual(ALL_SCHOOLS)
     const ids = hsTeams.map((t) => t.id)
-    expect(new Set(ids).size).toBe(16)
+    expect(new Set(ids).size).toBe(HS_COUNT)
     for (const t of hsTeams) expect(t.id).toMatch(/^HS-[A-Z]+$/)
   })
 
-  test('every team carries Cobb County, a nickname, and a valid three-color palette', () => {
+  test('every team carries its county, a nickname, and a valid three-color palette', () => {
     for (const t of hsTeams) {
-      expect(t.conference).toBe('Cobb County')
+      expect(t.conference).toBe(countyOf(t.region)!)
       expect(t.name.length).toBeGreaterThan(0)
       expect(t.palette).toHaveLength(3)
       for (const hex of t.palette) expect(hex).toMatch(HEX)
@@ -99,7 +107,7 @@ assert all(is_valid_cobb_image((p := pathlib.Path('public') / a['path'].lstrip('
 
   test('the manifest matches the teams and records a source for each asset', () => {
     const manifest = JSON.parse(readFileSync(join(root, 'public/logos/svg/hs-manifest.json'), 'utf8'))
-    expect(manifest.assets).toHaveLength(16)
+    expect(manifest.assets).toHaveLength(HS_COUNT)
     const byId = new Map(hsTeams.map((t) => [t.id, t]))
     for (const a of manifest.assets) {
       const team = byId.get(a.id)!
@@ -153,7 +161,7 @@ assert {s[4] for s in b.SCHOOLS} <= SOURCE_KINDS
 MIRRORED = {'CAMP', 'HARR', 'KELL', 'MCEA', 'NCOB', 'PEBB'}
 assert {s[0] for s in b.SCHOOLS if s[4] == 'community'} == MIRRORED
 rows = b.validate_manifest()
-assert len(rows) == 16
+assert len(rows) == len(b.SCHOOLS)
 assert {r['abbr'] for r in rows if r['sourceKind'] == 'community'} == MIRRORED
 # Campbell, Harrison and North Cobb are the vector opponent logos in Allatoona's
 # media library and cite their attachment pages. The other mirrors expose no
@@ -240,9 +248,11 @@ d.OUT, d.DEST_DIR = scratch, scratch / 'high-school'
 d.DEST_DIR.mkdir()
 dest = d.DEST_DIR / 'test.png'
 school = ('TEST', 'Test', 'Testers', 'https://example.test/x.jpg', 'community', 'https://example.test/x.jpg')
+d.COUNTY = {**d.COUNTY, 'TEST': 'Test County'}
 item = d.install_download(school, dest, JPEG)
 assert dest.read_bytes() == png
 assert item['format'] == 'png' and item['path'] == '/logos/svg/high-school/test.png'
+assert item['conference'] == 'Test County'
 assert list(d.DEST_DIR.iterdir()) == [dest], 'staged file left behind'
 `)
     expect(run.status).toBe(0)
@@ -258,7 +268,7 @@ before = d.MANIFEST.read_bytes()
 d.fetch = lambda _: (_ for _ in ()).throw(AssertionError('network should not be used'))
 sys.argv = ['download_cobb_svgs.py', '--only', 'CAMP']
 assert d.main() == 0
-assert len(__import__('json').loads(d.MANIFEST.read_text())['assets']) == 16
+assert len(__import__('json').loads(d.MANIFEST.read_text())['assets']) == len(d.SCHOOLS)
 after_only = d.MANIFEST.read_bytes()
 assert after_only == before
 d.fetch = lambda _: (_ for _ in ()).throw(RuntimeError('simulated offline'))
@@ -366,7 +376,7 @@ with tempfile.TemporaryDirectory() as tmp:
         assert swapped == [str(b.TEAMS_JSON)], swapped
         assert b.TEAMS_JSON.read_bytes() == real, 'rebuild is not idempotent'
         teams = json.loads(b.TEAMS_JSON.read_text())['teams']
-        assert sum(t['league'] == 'HS' for t in teams) == 16
+        assert sum(t['league'] == 'HS' for t in teams) == len(b.SCHOOLS)
         assert sum(t['league'] == 'PRO' for t in teams) == 32
         assert list(tmp.iterdir()) == [b.TEAMS_JSON], 'staged file left behind'
 
@@ -404,7 +414,7 @@ with tempfile.TemporaryDirectory() as td:
     assert b.TEAMS_JSON.read_bytes() == original
 `)
     expect(run.status).toBe(0)
-    expect(run.stderr).toContain('expected 16')
+    expect(run.stderr).toContain(`expected ${HS_COUNT}`)
   })
 
   test('the college builder rejects incomplete or invalid HS entries without altering teams JSON', () => {
@@ -436,21 +446,27 @@ for candidate in cases:
 })
 
 describe('high-school league gameplay integration', () => {
-  test('the browser filter reaches all 16 schools and search narrows them', () => {
-    expect(filterTeams('HS', 'All', '')).toHaveLength(16)
-    expect(filterTeams('HS', 'Cobb County', '')).toHaveLength(16)
+  test('the browser filter reaches every school, each county chip its own, and search narrows them', () => {
+    expect(filterTeams('HS', 'All', '')).toHaveLength(HS_COUNT)
+    for (const county of COUNTIES) {
+      expect(filterTeams('HS', county, '').map((t) => t.region).sort()).toEqual([...HS_SCHOOLS[county]].sort())
+    }
     expect(filterTeams('HS', 'All', 'walton').map((t) => t.name)).toEqual(['Raiders'])
     expect(filterTeams('HS', 'All', 'KMHS')).toHaveLength(1)
   })
 
-  test('Cobb County is a selectable random-deck pool with all 16 teams', () => {
-    const pool = TEAM_POOLS.find((p) => p.id === 'Cobb County')
-    expect(pool?.label).toBe('Cobb County')
-    expect(ALL_POOL_IDS).toContain('Cobb County')
-    expect(poolTeams(['Cobb County'])).toHaveLength(16)
+  test('every county is a selectable random-deck pool with exactly its schools', () => {
+    for (const county of COUNTIES) {
+      const pool = TEAM_POOLS.find((p) => p.id === county)
+      expect(pool?.label).toBe(county)
+      expect(pool?.league).toBe('HS')
+      expect(ALL_POOL_IDS).toContain(county)
+      expect(poolTeams([county]).map((t) => t.region).sort()).toEqual([...HS_SCHOOLS[county]].sort())
+    }
+    expect(poolTeams(COUNTIES)).toHaveLength(HS_COUNT)
   })
 
-  test('round hints identify high-school teams as Cobb County', () => {
+  test('round hints identify high-school teams by county', () => {
     const walton = hsTeams.find((t) => t.region === 'Walton')!
     expect(teamHint(walton)).toBe('Cobb County')
     expect(roundHints({ o: walton.id, c: 'PRO-KC', v: 0 })).toEqual(['Logo: Cobb County', 'Colors: NFL'])
@@ -461,7 +477,7 @@ describe('high-school league gameplay integration', () => {
     expect(TEAMS.filter((t) => t.league === 'COL')).toHaveLength(126)
     expect(LEAGUES.PRO.label).toBe('NFL')
     expect(LEAGUES.COL.conferences).toEqual(['ACC', 'Big 12', 'Big Ten', 'Pac-12', 'SEC', 'Ivy', 'HBCU'])
-    expect(TEAM_POOLS.map((p) => p.id)).toEqual(['NFL', 'NBA', 'MLB', 'Soccer', 'Fast Food', 'Brands', 'Apps', 'TV', 'Cars', 'Luxury', 'Clothing', ...LEAGUES.COL.conferences, 'Cobb County'])
+    expect(TEAM_POOLS.map((p) => p.id)).toEqual(['NFL', 'NBA', 'MLB', 'Soccer', 'Fast Food', 'Brands', 'Apps', 'TV', 'Cars', 'Luxury', 'Clothing', ...LEAGUES.COL.conferences, ...COUNTIES])
   })
 
   test('the team browser uses original league controls with compact HS copy', () => {
@@ -497,8 +513,8 @@ describe('high-school league gameplay integration', () => {
     expect(css.match(/\[hidden\]\s*\{\s*display:\s*none\s*!important;\s*\}/g)).toHaveLength(1)
   })
 
-  test('all 16 HS teams remain accessible through the browser filter', () => {
-    expect(filterTeams('HS', 'All', '').map((t) => t.region).sort()).toEqual(COBB_SCHOOLS)
-    expect(filterTeams('HS', 'Cobb County', '').map((t) => t.region).sort()).toEqual(COBB_SCHOOLS)
+  test('all HS teams remain accessible through the browser filter', () => {
+    expect(filterTeams('HS', 'All', '').map((t) => t.region).sort()).toEqual(ALL_SCHOOLS)
+    expect(COUNTIES.flatMap((c) => filterTeams('HS', c, '')).map((t) => t.region).sort()).toEqual(ALL_SCHOOLS)
   })
 })

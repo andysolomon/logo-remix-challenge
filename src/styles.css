@@ -302,6 +302,11 @@ input::placeholder { color: var(--faint); }
 .hint-toggle { flex: 1; min-width: 0; height: 30px; padding: 0 10px; border: none; border-radius: 10px; background: var(--chip-bg); color: var(--chip-fg); font: 600 12px var(--ui); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; cursor: pointer; transition: background 0.15s, color 0.15s; }
 .hint-toggle:hover:not(.active) { background: var(--surface); }
 .hint-toggle.active { background: var(--ink); color: var(--on-ink); }
+.round-shuffle { width: 100%; display: flex; align-items: center; gap: 8px; margin-top: 8px; }
+.shuffle-btns { flex: 1; min-width: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
+.shuffle-btn { min-width: 0; height: 30px; padding: 0 8px; border: none; border-radius: 10px; background: var(--chip-bg); color: var(--chip-fg); font: 600 12px var(--ui); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; cursor: pointer; transition: background 0.15s, color 0.15s; }
+.shuffle-btn:hover:not(:disabled) { background: var(--surface); }
+.shuffle-btn:disabled { opacity: 0.35; cursor: not-allowed; }
 .round-ctl { width: 100%; display: grid; grid-template-columns: 1fr 1fr 1.6fr 1fr 1fr; gap: 6px; margin-top: 10px; }
 .icon-btn { min-width: 0; height: 44px; border: 1.5px solid var(--line); background: var(--surface); border-radius: 11px; font-size: 15px; cursor: pointer; color: var(--ink); padding: 0; display: flex; align-items: center; justify-content: center; }
 .icon-btn:hover { background: var(--bg); }
@@ -336,13 +341,14 @@ input::placeholder { color: var(--faint); }
 .deck.portrait .deck-cards { flex: none; min-height: 0; overflow: visible; }
 .deck.portrait .deck-empty { min-height: 40vh; }
 .deck.portrait .card-grid { grid-template-columns: 1fr; gap: 10px; }
-.deck.portrait .round-card { display: grid; grid-template-columns: 72px 1fr; grid-template-areas: "logo label" "logo name" "logo sub" "target target" "hint hint" "ctl ctl"; column-gap: 14px; row-gap: 2px; align-items: center; text-align: left; padding: 12px; }
+.deck.portrait .round-card { display: grid; grid-template-columns: 72px 1fr; grid-template-areas: "logo label" "logo name" "logo sub" "target target" "hint hint" "shuffle shuffle" "ctl ctl"; column-gap: 14px; row-gap: 2px; align-items: center; text-align: left; padding: 12px; }
 .deck.portrait .round-label { grid-area: label; }
 .deck.portrait .round-logo { grid-area: logo; width: 72px; height: 72px; margin: 0; align-self: center; }
 .deck.portrait .round-name { grid-area: name; text-align: left; }
 .deck.portrait .round-sub { grid-area: sub; text-align: left; }
 .deck.portrait .round-target { grid-area: target; margin-top: 8px; }
 .deck.portrait .round-hint { grid-area: hint; margin-top: 6px; }
+.deck.portrait .round-shuffle { grid-area: shuffle; margin-top: 6px; }
 .deck.portrait .round-ctl { grid-area: ctl; margin-top: 10px; }
 .deck.portrait .rail { width: 100%; flex: none; overflow: visible; flex-direction: column; gap: 12px; }
 .deck.portrait .rail-card { flex: none; }
@@ -544,6 +550,7 @@ input::placeholder { color: var(--faint); }
   .tool-btn { min-height: 44px; height: 44px; padding: 0 16px; }
   .seg-group .seg { min-height: 44px; height: 44px; }
   .hint-toggle { min-height: 44px; height: 44px; padding: 0 12px; }
+  .shuffle-btn { min-height: 44px; height: 44px; }
   .play-btn { min-width: 44px; min-height: 44px; height: 44px; }
   .undo-bar button { min-height: 44px; height: 44px; padding: 0 14px; }
 }

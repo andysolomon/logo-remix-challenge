@@ -871,6 +871,27 @@ export function normalizeRound(round: Round): Round {
   return { ...base, c, ...(g === undefined ? {} : { g }), ...logo, v: contrastSafePermutation(withLogoVariant(original, l), colors.palette, round.v) }
 }
 
+/** Deck-card Shuffle Logo: the round's next alternate artwork, its color mapping re-checked against the new art. */
+export function shuffleRoundLogo(round: Round): Round {
+  const original = findTeam(round.o)
+  return original ? normalizeRound({ ...round, l: nextLogoVariant(original, round.l) }) : round
+}
+
+/** Deck-card Shuffle Colors: the next contrast-safe way to lay the color team's palette onto the logo. */
+export function shuffleRoundColors(round: Round): Round {
+  const original = findTeam(round.o)
+  const colors = round.c === undefined ? undefined : findTeam(round.c)
+  if (!original || !colors) return round
+  return { ...round, v: nextContrastSafePermutation(withLogoVariant(original, round.l), colors.palette, round.v) }
+}
+
+/** Whether Shuffle Colors would change anything: a remix with more than one contrast-safe mapping. */
+export function canShuffleRoundColors(round: Round): boolean {
+  const original = findTeam(round.o)
+  const colors = round.c === undefined ? undefined : findTeam(round.c)
+  return !!original && !!colors && contrastSafePermutations(withLogoVariant(original, round.l), colors.palette).length > 1
+}
+
 /** An edited round takes the new logo and colors but keeps its own guess and hint settings. */
 export const replaceRound = (old: Round, next: Round): Round => normalizeRound({ ...next, g: old.g, h: old.h })
 

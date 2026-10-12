@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { framedTileImage } from '../lib/designer'
-import { findTeam, remixLayout, resolveRemixTargetColors, withLogoVariant, type Round, type Team } from '../lib/teams'
+import { findTeam, remixLayout, resolveRemixTargetColors, sinksIntoDark, withLogoVariant, type Round, type Team } from '../lib/teams'
 
 interface Props {
   team: Team
@@ -313,6 +313,9 @@ export function Logo({ team: baseTeam, palette, perm = 0, variantId, targetColor
   const imageSrc = !hasTargetPalette ? team.logo : key && remixStatus === 'ready' ? urlCache.get(key) ?? TRANSPARENT_PIXEL : TRANSPARENT_PIXEL
   // The backdrop appears with the recolored artwork, never as an empty tile while it loads.
   const showBackdrop = backdrop !== undefined && remixStatus === 'ready'
+  // Dark artwork (a black wordmark, a navy crest) sits on a light plate wherever the screen is dark;
+  // styles.css applies it only there. Like the backdrop, a remix's plate waits for the recolor.
+  const showPlate = sinksIntoDark(team, target ?? undefined) && (!hasTargetPalette || remixStatus === 'ready')
   const tileStyle = showBackdrop
     ? frame !== undefined
       ? { backgroundColor: backdrop, backgroundImage: framedTileImage(backdrop, frame) }
@@ -329,7 +332,7 @@ export function Logo({ team: baseTeam, palette, perm = 0, variantId, targetColor
         </span>
       )}
       <img
-        className={showBackdrop ? (frame !== undefined ? 'logo backdrop framed' : 'logo backdrop') : 'logo'}
+        className={(showBackdrop ? (frame !== undefined ? 'logo backdrop framed' : 'logo backdrop') : 'logo') + (showPlate ? ' dark-ink' : '')}
         style={tileStyle}
         src={imageSrc}
         alt=""

@@ -15,11 +15,13 @@ const entries = TEAMS.filter((t) => COLLECTIONS.includes(t.league))
 const norm = (s: string) => s.toLowerCase().replace(/[^a-z0-9]/g, '')
 /** Chains, channels, carmakers and fashion brands whose every published logo is a wordmark; random decks skip them, but they can still be picked by hand. */
 const WORDMARK_ONLY = [
-  'CAR-FIAT', 'CAR-FORD', 'CLOTH-GAP', 'CLOTH-SUPREME', 'CLOTH-VANS',
-  'FOOD-BOJ', 'FOOD-CANE', 'FOOD-CUL', 'FOOD-DUNK', 'FOOD-FIVE', 'FOOD-PAPA',
-  'LUX-BVLGARI', 'LUX-DIOR', 'LUX-MK', 'LUX-PRADA', 'LUX-RM', 'LUX-TAG', 'LUX-TIFFANY', 'LUX-VCA',
+  'CAR-FIAT', 'CAR-FORD', 'CLOTH-GAP', 'CLOTH-SUPREME',
+  'FOOD-BOJ', 'FOOD-CANE', 'FOOD-CUL', 'FOOD-FIVE', 'FOOD-PAPA',
+  'LUX-BVLGARI', 'LUX-DIOR', 'LUX-PRADA', 'LUX-RM', 'LUX-TAG', 'LUX-TIFFANY', 'LUX-VCA',
   'TV-ABC', 'TV-CMT', 'TV-CNN', 'TV-EENT', 'TV-ESPN', 'TV-FOX', 'TV-HBO', 'TV-HGTV', 'TV-TNT', 'TV-TWC', 'TV-VH1',
 ]
+/** Brands that lead with their symbol and keep the wordmark as a hand-pickable alternate: the MK circle, the Dunkin' cup, the Vans flying V. */
+const WORDMARK_ALTERNATES = ['CLOTH-VANS', 'FOOD-DUNK', 'LUX-MK']
 const wordmarks = (league: League) => WORDMARK_ONLY.filter((id) => id.startsWith(`${league}-`)).length
 
 describe('brand collections', () => {
@@ -65,6 +67,17 @@ describe('brand collections', () => {
       }
       if (team.showsName) expect(team.alternateLogos).toBeUndefined()
     }
+    // A wordmark survives only behind a symbol primary, flagged so it never reads as the brand's logo.
+    const flagged = entries.filter((t) => t.alternateLogos?.some((v) => v.showsName))
+    expect(flagged.map((t) => t.id).sort()).toEqual(WORDMARK_ALTERNATES)
+    for (const team of flagged) {
+      expect(team.showsName).toBeUndefined()
+      expect(team.alternateLogos!.filter((v) => v.showsName).map((v) => v.id)).toEqual(['wordmark'])
+      expect(withLogoVariant(team, 'wordmark').showsName).toBe(true)
+      expect(withLogoVariant(team).showsName).toBeUndefined()
+    }
+    expect(findTeam('LUX-MK')!.logo).toBe('/logos/svg/luxury/mk.svg')
+    expect(findTeam('FOOD-DUNK')!.alternateLogos![0]).toMatchObject({ id: 'wordmark', label: 'Wordmark', logo: '/logos/svg/fast-food/alternates/dunk-wordmark.svg', showsName: true })
   })
 
   test('manifests pin each source, checksum, reviewed edit and the palette roles found in the artwork', () => {

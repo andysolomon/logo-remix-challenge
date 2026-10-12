@@ -129,6 +129,10 @@ input::placeholder { color: var(--faint); }
 .logo.backdrop { padding: 12%; border-radius: 22%; box-shadow: 0 0 0 1px rgba(128,128,128,0.35); background-size: 100% 100%; background-repeat: no-repeat; }
 /* One-color remixes add a frame in the third color (a stretched SVG background from designer.ts); the artwork sits further in to clear it. */
 .logo.backdrop.framed { padding: 16%; }
+/* Logos whose outer colors sink into a dark surface (Logo.tsx: a black wordmark, a navy crest) sit on a light plate on the dark theme and in Play, so they are as easy to pick out as on the light theme. */
+:root[data-theme="dark"] .logo.dark-ink:not(.backdrop), .play .logo.dark-ink:not(.backdrop) { padding: 10%; border-radius: 22%; background-color: #F7F5F1; }
+/* A remix tile or frame in such a color keeps its own paint and gets a light ring in place of the hairline. */
+:root[data-theme="dark"] .logo.backdrop.dark-ink, .play .logo.backdrop.dark-ink { box-shadow: 0 0 0 2px #F7F5F1; }
 .pop { animation: pop 0.3s ease; }
 .pop-fast { animation: pop 0.28s ease; }
 .rise { animation: rise 0.4s ease; }

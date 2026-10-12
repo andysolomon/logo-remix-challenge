@@ -755,6 +755,37 @@
       "artwork": [
         {
           "id": "primary",
+          "label": "Steaming coffee cup",
+          "sourceUrl": "https://cdn.worldvectorlogo.com/logos/dunkin-donuts-2.svg",
+          "sourcePage": "https://worldvectorlogo.com/logo/dunkin-donuts-2",
+          "sourceSha256": "49e2b5b837f8852d3bb32bf8cf5145b35d2287d0033b1b6606d3a00339be9a10",
+          "ops": {
+            "keepNodes": [
+              "0",
+              "6",
+              "7",
+              "8"
+            ],
+            "viewBox": "-0.45 -0.45 10.3 16.54"
+          },
+          "path": "/logos/svg/fast-food/dunk.svg",
+          "format": "svg",
+          "colors": [
+            "#AE3D91",
+            "#CF4037"
+          ],
+          "sourcePalette": [
+            "#CF4037",
+            "#AE3D91",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "b142109bd3b990ca03bcce2916243f2b36739c2237e4e155675160ee639e1c35"
+        },
+        {
+          "id": "wordmark",
           "label": "Wordmark",
           "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/1/14/Dunkin%27_2022.svg",
           "sourcePage": "https://commons.wikimedia.org/wiki/File:Dunkin%27_2022.svg",
@@ -763,7 +794,7 @@
             "viewBox": "-6.874 -7.05 366.597 82.376"
           },
           "showsName": true,
-          "path": "/logos/svg/fast-food/dunk.svg",
+          "path": "/logos/svg/fast-food/alternates/dunk-wordmark.svg",
           "format": "svg",
           "colors": [
             "#EF6A00",

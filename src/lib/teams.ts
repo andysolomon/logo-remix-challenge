@@ -1,6 +1,6 @@
 import data from './teams.json'
 
-export type League = 'PRO' | 'NBA' | 'MLB' | 'SOCCER' | 'COL' | 'HS' | 'FOOD' | 'BRAND' | 'APP' | 'TV' | 'CAR' | 'LUX' | 'CLOTH'
+export type League = 'PRO' | 'NBA' | 'MLB' | 'SOCCER' | 'MLS' | 'COL' | 'HS' | 'FOOD' | 'BRAND' | 'APP' | 'TV' | 'CAR' | 'LUX' | 'CLOTH'
 
 export interface LogoVariant {
   id: string
@@ -61,7 +61,7 @@ export const TEAMS = data.teams as Team[]
 export const LEAGUES = data.leagues as Record<League, { label: string; conferences: string[] }>
 /**
  * Collections whose palettes a remix may wear. For now only NFL, NBA and college teams donate colors;
- * every other collection (MLB, soccer, high school, fast food, brands, apps, TV, cars) is logo-only.
+ * every other collection (MLB, soccer, MLS, high school, fast food, brands, apps, TV, cars) is logo-only.
  */
 export const COLOR_DONOR_LEAGUES: readonly League[] = ['PRO', 'NBA', 'COL']
 export const isColorDonorLeague = (league: League) => COLOR_DONOR_LEAGUES.includes(league)
@@ -77,6 +77,14 @@ export const MAX_DECK_ROUNDS = 20
 
 const byId = new Map(TEAMS.map((t) => [t.id, t]))
 export const findTeam = (id: string): Team | undefined => byId.get(id)
+/** Teams that changed collections, by old id; saved rounds follow them so a deck never resets over a move. */
+const MOVED_TEAMS = new Map([['SOCCER-MIA', 'MLS-MIA']])
+const followMove = (round: unknown) => {
+  if (typeof round !== 'object' || round === null) return round
+  const { o, c } = round as Round
+  // Original-colors rounds have no color team to move.
+  return { ...round, o: MOVED_TEAMS.get(o) ?? o, ...(c === undefined ? {} : { c: MOVED_TEAMS.get(c) ?? c }) }
+}
 // Conference entries carry an empty name; trim keeps their display clean.
 export const fullName = (t: Team) => `${t.region} ${t.name}`.trim()
 
@@ -155,8 +163,9 @@ const storedInteger = (value: string | null) =>
 
 export function deckFromStorage(value: string | null): Round[] {
   try {
-    const d = JSON.parse(value ?? 'null')
-    if (Array.isArray(d) && d.every(isRound)) return normalizeDeck(d)
+    const parsed = JSON.parse(value ?? 'null')
+    const d = Array.isArray(parsed) ? parsed.map(followMove) : null
+    if (d && d.every(isRound)) return normalizeDeck(d)
   } catch {
     /* ignore */
   }
@@ -555,11 +564,11 @@ export const roundColors = (r: Round): Team => findTeam(r.c ?? r.o)!
 export const guessPrompt = (t: GuessTarget) => (t === 'both' ? 'Guess the Logo and the Colors!' : t === 'colors' ? 'Guess the Colors!' : 'Guess the Logo!')
 /** What one entry of a collection is called in search and result labels. */
 export const entryNoun = (league: League) =>
-  league === 'APP' ? 'app' : league === 'TV' ? 'channel' : ['FOOD', 'BRAND', 'CAR', 'LUX', 'CLOTH'].includes(league) ? 'brand' : league === 'SOCCER' ? 'club' : 'team'
+  league === 'APP' ? 'app' : league === 'TV' ? 'channel' : ['FOOD', 'BRAND', 'CAR', 'LUX', 'CLOTH'].includes(league) ? 'brand' : league === 'SOCCER' || league === 'MLS' ? 'club' : 'team'
 /**
- * Where a team plays: the league label for pro teams and fast food, the conference for college and high school,
- * the domestic league for soccer clubs outside "Rest of World", the type for brands, apps, channels, cars, luxury
- * houses ("Luxury watchmaker") and clothing brands ("Outdoor brand").
+ * Where a team plays: the league label for pro teams, MLS clubs and fast food, the conference for college and high
+ * school, the domestic league for soccer clubs outside "Rest of World", the type for brands, apps, channels, cars,
+ * luxury houses ("Luxury watchmaker") and clothing brands ("Outdoor brand").
  */
 export const teamHint = (t: Team) =>
   t.league === 'COL' || t.league === 'HS' || (t.league === 'SOCCER' && t.conference !== 'Rest of World')
@@ -596,6 +605,7 @@ export const TEAM_POOLS: TeamPool[] = [
   { id: 'NBA', label: LEAGUES.NBA.label, league: 'NBA', match: (t) => t.league === 'NBA' },
   { id: 'MLB', label: LEAGUES.MLB.label, league: 'MLB', match: (t) => t.league === 'MLB' },
   { id: 'Soccer', label: LEAGUES.SOCCER.label, league: 'SOCCER', match: (t) => t.league === 'SOCCER' },
+  { id: 'MLS', label: LEAGUES.MLS.label, league: 'MLS', match: (t) => t.league === 'MLS' },
   { id: 'Fast Food', label: LEAGUES.FOOD.label, league: 'FOOD', match: (t) => t.league === 'FOOD' },
   { id: 'Brands', label: LEAGUES.BRAND.label, league: 'BRAND', match: (t) => t.league === 'BRAND' },
   { id: 'Apps', label: LEAGUES.APP.label, league: 'APP', match: (t) => t.league === 'APP' },

@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
-"""Download MLB logos or soccer club crests locally and record source/palette metadata.
+"""Download MLB logos, soccer club crests or MLS club crests locally and record source/palette metadata.
 
-Usage: python3 scripts/download_extra_logos.py --league MLB|SOCCER [--force]
+Usage: python3 scripts/download_extra_logos.py --league MLB|SOCCER|MLS [--force]
 Then run build_extra_teams.py with the same --league argument. Fast-food and brand
-artwork is pinned separately; see download_brand_logos.py.
+artwork is pinned separately; see download_brand_logos.py. NBA, MLB and MLS alternate
+marks are pinned in download_team_alternates.py.
 """
 import argparse
 import io
@@ -17,14 +18,17 @@ from build_teams import atomic_write_text, dist_sq, nearest
 from download_hbcu_svgs import to_hex
 from download_nba_svgs import artwork_colors
 from download_svgs import fetch, fetch_json
-from extra_rosters import MLB, SOCCER
+from extra_rosters import MLB, MLS, SOCCER
 
 ET.register_namespace("", "http://www.w3.org/2000/svg")
 ET.register_namespace("xlink", "http://www.w3.org/1999/xlink")
 
 ROOT = Path(__file__).resolve().parent.parent
 MLB_API = "https://statsapi.mlb.com/api/v1/teams?sportId=1&activeStatus=Yes&season=2026"
-SLUGS = {"MLB": "mlb", "SOCCER": "soccer"}
+ESPN_MLS = "https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/teams"
+SLUGS = {"MLB": "mlb", "SOCCER": "soccer", "MLS": "mls"}
+CLUBS = {"SOCCER": SOCCER, "MLS": MLS}
+NOT_RENDERED = {"defs", "clipPath", "mask", "pattern", "symbol", "marker"}
 
 
 def _paint(node, key: str) -> str:
@@ -43,9 +47,14 @@ def strip_background(root: ET.Element) -> int:
         return 0
     x0, y0, width, height = box
     parents = {child: parent for parent in root.iter() for child in parent}
+    # A full-canvas white rect inside a clip path or mask is geometry, not paint; removing it hides the crest.
+    hidden = {node for holder in root.iter() if holder.tag.rsplit("}", 1)[-1] in NOT_RENDERED
+              for node in holder.iter()}
     removed = 0
     for node in list(root.iter()):
         tag = node.tag.rsplit("}", 1)[-1]
+        if node in hidden:
+            continue
         if tag == "rect":
             edges = [float(node.get(k, "0").rstrip("%")) for k in ("x", "y")]
             covers = edges == [x0, y0] and node.get("width") in ("100%", f"{width:g}") and node.get("height") in ("100%", f"{height:g}")
@@ -109,9 +118,13 @@ def main() -> None:
     manifest = ROOT / f"public/logos/svg/{slug}-manifest.json"
     cached = {item["abbr"]: item for item in json.loads(manifest.read_text())["assets"]} if manifest.is_file() else {}
     rows = []
-    if args.league == "SOCCER":
+    if args.league in CLUBS:
+        if args.league == "MLS":
+            espn = fetch_json(ESPN_MLS)["sports"][0]["leagues"][0]["teams"]
+            if len(espn) != 30 or {int(t["team"]["id"]) for t in espn} != {row[7] for row in MLS.values()}:
+                raise ValueError("MLS roster differs from the pinned 30 clubs; review extra_rosters.py")
         # Clubs keep their full name in region, like brands, so "Manchester" alone answers neither club.
-        for abbr, (conference, club, primary, secondary, aliases, source, page) in SOCCER.items():
+        for abbr, (conference, club, primary, secondary, aliases, source, page, *_) in CLUBS[args.league].items():
             rows.append((abbr, club, "", conference, primary, secondary, aliases, source, page))
     else:
         teams = fetch_json(MLB_API)["teams"]
@@ -148,7 +161,7 @@ def main() -> None:
                 if width.isdigit() and height.isdigit():
                     root.set("viewBox", f"0 0 {width} {height}")
                     changed = True
-            if args.league == "SOCCER" and strip_background(root):
+            if args.league in CLUBS and strip_background(root):
                 changed = True
             if changed:
                 data = ET.tostring(root, encoding="utf-8", xml_declaration=True)
@@ -177,7 +190,7 @@ def main() -> None:
             return None
     with ThreadPoolExecutor(max_workers=6) as pool:
         # MLB lists by abbreviation; clubs list alphabetically by name.
-        order = (lambda row: row[1].casefold()) if args.league == "SOCCER" else (lambda row: row[0])
+        order = (lambda row: row[1].casefold()) if args.league in CLUBS else (lambda row: row[0])
         results = list(pool.map(attempt, sorted(rows, key=order)))
     if failures:
         raise ValueError("incomplete roster: " + "; ".join(failures))

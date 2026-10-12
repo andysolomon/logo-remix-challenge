@@ -12,14 +12,14 @@ const python = (code: string) => execFileSync('python3', ['-c', code], { cwd: ro
 const clubs = filterTeams('SOCCER', 'All', '')
 
 describe('soccer clubs collection', () => {
-  test('30 popular clubs are grouped by domestic league', () => {
+  test('29 popular clubs are grouped by domestic league', () => {
     expect(LEAGUES.SOCCER).toEqual({
       label: 'SOCCER',
       conferences: ['Premier League', 'La Liga', 'Bundesliga', 'Serie A', 'Ligue 1', 'Rest of World'],
     })
-    expect(clubs).toHaveLength(30)
-    expect(LEAGUES.SOCCER.conferences.map((c) => filterTeams('SOCCER', c, '').length)).toEqual([8, 4, 4, 5, 2, 7])
-    expect(new Set(clubs.map((t) => fullName(t))).size).toBe(30)
+    expect(clubs).toHaveLength(29)
+    expect(LEAGUES.SOCCER.conferences.map((c) => filterTeams('SOCCER', c, '').length)).toEqual([8, 4, 4, 5, 2, 6])
+    expect(new Set(clubs.map((t) => fullName(t))).size).toBe(29)
     expect(new Set(TEAMS.map((t) => t.id)).size).toBe(TEAMS.length)
     for (const name of ['Juventus', 'Manchester City', 'Manchester United', 'Paris Saint-Germain', 'Real Madrid', 'Arsenal', 'Barcelona', 'Bayern Munich']) {
       expect(clubs.map(fullName)).toContain(name)
@@ -44,11 +44,12 @@ describe('soccer clubs collection', () => {
     expect(isCorrectGuess('Atletico Madrid', findTeam('SOCCER-ATM')!)).toBe(true)
     expect(isCorrectGuess('Barça', findTeam('SOCCER-BAR')!)).toBe(true)
     expect(isCorrectGuess('Bayern München', findTeam('SOCCER-BAY')!)).toBe(true)
-    // The city alone names neither Manchester club, and Inter means the Milan club.
+    // The city alone names neither Manchester club, and Inter means the Milan club, not Inter Miami (now in MLS).
     expect(isCorrectGuess('Manchester', findTeam('SOCCER-MUN')!)).toBe(false)
     expect(isCorrectGuess('Manchester', findTeam('SOCCER-MCI')!)).toBe(false)
     expect(isCorrectGuess('Inter', findTeam('SOCCER-INT')!)).toBe(true)
-    expect(isCorrectGuess('Inter', findTeam('SOCCER-MIA')!)).toBe(false)
+    expect(isCorrectGuess('Inter', findTeam('MLS-MIA')!)).toBe(false)
+    expect(findTeam('SOCCER-MIA')).toBeUndefined()
     expect(suggestTeams('real ma')[0].id).toBe('SOCCER-RMA')
   })
 
@@ -108,7 +109,7 @@ for item in items:
 `)
   }, 20000)
 
-  test('backdrop stripping removes only white or invisible absolute shapes on the canvas edge', () => {
+  test('backdrop stripping removes only white or invisible absolute shapes on the canvas edge, never clip geometry', () => {
     python(`
 import sys
 from xml.etree import ElementTree as ET
@@ -121,9 +122,12 @@ svg = ET.fromstring('''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 
 <path id="inner-white" fill="#ffffff" d="M 50 50 L 150 50 L 100 150 Z"/>
 <path id="relative-white" fill="#fff" d="m 0 0 l 10 10 l -10 0 z"/>
 <rect id="bg" width="100%" height="100%" fill="white"/>
+<defs id="defs"><clipPath id="clip"><rect id="clip-rect" width="200" height="200" fill="white"/></clipPath></defs>
 </svg>''')
 assert strip_background(svg) == 3
-assert [n.get('id') for n in svg] == ['edge-color', 'inner-white', 'relative-white']
+assert [n.get('id') for n in svg] == ['edge-color', 'inner-white', 'relative-white', 'defs']
+# Clip geometry is not paint: emptying the clip path would hide the whole crest (MLS crests clip this way).
+assert svg.find('.//{http://www.w3.org/2000/svg}rect').get('id') == 'clip-rect'
 `)
   })
 })

@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useRef, useState, type FormEvent, type KeyboardEvent } from 'react'
-import { findTeam, formatScore, fullName, roundCredit, roundHints, spokenScore, roundTarget, speak, speakScore, stopSpeak, isCorrectGuess, insertHighScore, qualifiesForHighScore, INITIALS_LENGTH, INITIALS_ALPHABET, type GameMode, type GuessTarget, type HighScore, type Round, type TimerSeconds } from '../lib/teams'
-import { Logo } from './Logo'
+import { findTeam, formatScore, fullName, roundColors, roundCredit, roundHints, spokenScore, roundTarget, speak, speakScore, stopSpeak, isCorrectGuess, insertHighScore, qualifiesForHighScore, INITIALS_LENGTH, INITIALS_ALPHABET, type GameMode, type GuessTarget, type HighScore, type Round, type TimerSeconds } from '../lib/teams'
+import { Logo, RoundLogo } from './Logo'
 import { GuessInput } from './GuessInput'
 
 type Phase = 'intro' | 'question' | 'reveal' | 'initials' | 'results'
@@ -190,7 +190,7 @@ export function PlayMode({ deck, timer, gameMode, guessTarget, voice, highScores
     e.preventDefault()
     if (phaseRef.current !== 'question') return
     const o = findTeam(deck[rIdx].o)!
-    const c = findTeam(deck[rIdx].c)!
+    const c = roundColors(deck[rIdx])
     if (target === 'both') {
       if (!guess.trim() && !guess2.trim()) return
       revealBoth(logoChecked ?? isCorrectGuess(guess, o), isCorrectGuess(guess2, c))
@@ -263,7 +263,7 @@ export function PlayMode({ deck, timer, gameMode, guessTarget, voice, highScores
   const round = deck[rIdx]
   const target: GuessTarget = round ? roundTarget(round, guessTarget) : guessTarget
   const ot = round ? findTeam(round.o)! : null
-  const ct = round ? findTeam(round.c)! : null
+  const ct = round ? roundColors(round) : null
   const questionLocked = phase !== 'question'
   const promptStatus =
     target === 'both' ? 'Name the logo and color sources.' : target === 'colors' ? 'Name the color source.' : 'Name the logo source.'
@@ -323,7 +323,7 @@ export function PlayMode({ deck, timer, gameMode, guessTarget, voice, highScores
           </div>
           <div className="q-hero">
             <div key={rIdx} className="q-logo pop-fast">
-              <Logo team={ot} palette={ct.palette} perm={round.v} variantId={round.l} />
+              <RoundLogo round={round} />
             </div>
           </div>
           <div className="prompt">{target === 'both' ? 'WHOSE LOGO · WHOSE COLORS?' : target === 'colors' ? 'WHOSE COLORS ARE THESE?' : 'WHOSE LOGO IS THIS?'}</div>
@@ -452,7 +452,7 @@ export function PlayMode({ deck, timer, gameMode, guessTarget, voice, highScores
               </div>
               <div className="reveal-name">{fullName(target === 'colors' ? ct : ot)}</div>
               <div className="reveal-note">
-                {target === 'colors' ? `colors worn by the ${fullName(ot)} logo` : `wearing ${fullName(ct)} colors`}
+                {target === 'colors' ? `colors worn by the ${fullName(ot)} logo` : round?.c === undefined ? 'in its original colors' : `wearing ${fullName(ct)} colors`}
               </div>
             </>
           )}
@@ -527,12 +527,12 @@ export function PlayMode({ deck, timer, gameMode, guessTarget, voice, highScores
               const r = deck[i]
               if (!r) return null
               const o = findTeam(r.o)!
-              const c = findTeam(r.c)!
+              const c = roundColors(r)
               return (
                 <div key={i} className="recap-row">
                   <div className={`recap-mark ${pts >= 1 ? 'ok' : pts > 0 ? 'half' : 'no'}`}>{pts >= 1 ? '✓' : pts > 0 ? '½' : '✕'}</div>
                   <div className="recap-thumb">
-                    <Logo team={o} palette={c.palette} perm={r.v} variantId={r.l} />
+                    <RoundLogo round={r} />
                   </div>
                   <div className="recap-name">
                     {roundTarget(r, guessTarget) === 'both' ? `${fullName(o)} · ${fullName(c)}` : fullName(roundTarget(r, guessTarget) === 'colors' ? c : o)}

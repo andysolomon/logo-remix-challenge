@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, type WheelEvent } from 'react'
 import { entryNoun, filterTeams, fullName, LEAGUES, type League, type Team } from '../lib/teams'
 import { Logo } from './Logo'
 
@@ -19,6 +19,13 @@ interface Props {
   leagues?: readonly League[]
   /** One line under the title explaining the collections on offer. */
   note?: string
+}
+
+/** A mouse wheel scrolls a swipeable row sideways; trackpads and touch already scroll it natively. */
+function wheelSideways(e: WheelEvent<HTMLDivElement>) {
+  const row = e.currentTarget
+  if (row.scrollWidth <= row.clientWidth || Math.abs(e.deltaX) >= Math.abs(e.deltaY)) return
+  row.scrollLeft += e.deltaY
 }
 
 export function TeamBrowser({ title, state: rawState, onState, selectedId, onSelect, showSwatches, portrait, leagues, note }: Props) {
@@ -45,7 +52,7 @@ export function TeamBrowser({ title, state: rawState, onState, selectedId, onSel
     <section className="panel" aria-labelledby={panelId}>
       <div className={`panel-head${portrait ? ' wrap' : ''}`}>
         <div id={panelId} className="panel-title">{title}</div>
-        <div ref={leagueRef} className="seg" role="group" aria-label="League or category">
+        <div ref={leagueRef} className="seg" role="group" aria-label="League or category" onWheel={wheelSideways}>
           {offered.map((lg) => (
             <button
               key={lg}
@@ -60,7 +67,7 @@ export function TeamBrowser({ title, state: rawState, onState, selectedId, onSel
         </div>
       </div>
       {note && <div className="panel-note">{note}</div>}
-      <div ref={chipsRef} className="chips" role="group" aria-label={state.league === 'BRAND' ? 'Brand type filter' : state.league === 'SOCCER' ? 'League filter' : noun === 'team' ? 'Conference filter' : 'Category filter'}>
+      <div ref={chipsRef} className="chips" role="group" aria-label={state.league === 'BRAND' ? 'Brand type filter' : state.league === 'SOCCER' ? 'League filter' : state.league === 'HS' ? 'County filter' : noun === 'team' || state.league === 'MLS' ? 'Conference filter' : 'Category filter'} onWheel={wheelSideways}>
         {chips.map((c) => (
           <button
             key={c}

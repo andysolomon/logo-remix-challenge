@@ -49,8 +49,8 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-from cobb_roster import SCHOOLS  # noqa: E402
-from build_hs_teams import hs_entry as hs_entry_from_manifest  # noqa: E402
+from cobb_roster import COUNTY, SCHOOLS  # noqa: E402
+from build_hs_teams import hs_entries as hs_entries_from_manifest  # noqa: E402
 from build_hs_teams import validate_manifest as validate_hs_manifest  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -80,8 +80,8 @@ HS_REQUIRED_FIELDS = {
 HS_HEX_RE = re.compile(r"^#[0-9A-F]{6}$")
 HS_IDS = {f"HS-{school[0]}" for school in SCHOOLS}
 HS_ABBRS = {school[0] for school in SCHOOLS}
-HS_CONFERENCE = "Cobb County"
-HS_LEAGUE_CONFIG = {"label": "HIGH SCHOOL", "conferences": [HS_CONFERENCE]}
+# The league's county chips, in the order build_hs_teams.py writes them.
+HS_LEAGUE_CONFIG = {"label": "HIGH SCHOOL", "conferences": sorted(set(COUNTY.values()))}
 
 
 def rgb(h: str) -> tuple[int, int, int]:
@@ -308,7 +308,7 @@ def validate_hs_slice(data: dict, entries: list[dict]) -> None:
 
     config = leagues["HS"]
     if not isinstance(config, dict) or any(config.get(k) != v for k, v in HS_LEAGUE_CONFIG.items()):
-        raise ValueError("HS league configuration must be HIGH SCHOOL / Cobb County")
+        raise ValueError(f"HS league configuration must be HIGH SCHOOL / {', '.join(HS_LEAGUE_CONFIG['conferences'])}")
     if len(entries) != len(HS_IDS):
         raise ValueError(f"HS slice has {len(entries)} entries; expected {len(HS_IDS)}")
 
@@ -324,8 +324,8 @@ def validate_hs_slice(data: dict, entries: list[dict]) -> None:
             raise ValueError(f"HS entry {n} has a duplicate id or abbreviation")
         seen_ids.add(entry["id"])
         seen_abbrs.add(entry["abbr"])
-        if entry["league"] != "HS" or entry["conference"] != HS_CONFERENCE:
-            raise ValueError(f"HS entry {n} must use the HS league and Cobb County conference")
+        if entry["league"] != "HS" or entry["conference"] != COUNTY.get(entry["abbr"]):
+            raise ValueError(f"HS entry {n} must use the HS league and its school's county")
         palette = entry["palette"]
         if (len(palette) != 3 or any(not isinstance(color, str) or not HS_HEX_RE.fullmatch(color) for color in palette)
                 or len(set(palette)) != 3):
@@ -334,15 +334,15 @@ def validate_hs_slice(data: dict, entries: list[dict]) -> None:
             raise ValueError(f"HS entry {n} has an invalid logo path")
 
     if seen_ids != HS_IDS or seen_abbrs != HS_ABBRS:
-        raise ValueError("HS slice does not contain exactly the canonical 17 ids and abbreviations")
+        raise ValueError(f"HS slice does not contain exactly the canonical {len(HS_IDS)} ids and abbreviations")
 
     try:
         manifest_items = validate_hs_manifest()
     except (OSError, ValueError, json.JSONDecodeError) as exc:
         raise ValueError(f"HS manifest/assets are incomplete or invalid: {exc}") from exc
-    expected = {item["id"]: hs_entry_from_manifest(item) for item in manifest_items}
+    expected = {entry["id"]: entry for entry in hs_entries_from_manifest(manifest_items)}
     if set(expected) != HS_IDS:
-        raise ValueError("HS manifest does not contain exactly the canonical 17 schools")
+        raise ValueError(f"HS manifest does not contain exactly the canonical {len(HS_IDS)} schools")
     for entry in entries:
         if entry != expected.get(entry["id"]):
             raise ValueError(f"HS entry {entry['id']} does not match the validated HS manifest")

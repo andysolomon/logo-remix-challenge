@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import {
   BACKGROUND_PRESETS,
   CUSTOM_BACKGROUND_DEFAULT,
@@ -16,6 +16,8 @@ import {
   type ExportSize,
 } from '../lib/designer'
 import { canExportSvg, designPngBlob, designSvgBlob, downloadBlob } from '../lib/exportLogo'
+import { TRACE_COLOR_OPTIONS, TraceError, DEFAULT_TRACE_OPTIONS, type TraceColors, type TraceOptions } from '../lib/trace'
+import { UPLOAD_ACCEPT, fileStem, readRaster, traceUpload, uploadTeam, type UploadedLogo } from '../lib/traceUpload'
 import { COLOR_DONOR_LEAGUES, COLOR_SOURCE_NOTE, findTeam, fullName, nextLogoVariant, withLogoVariant, type Team } from '../lib/teams'
 import { Logo } from './Logo'
 import { TeamBrowser, type BrowserState } from './TeamBrowser'
@@ -23,6 +25,8 @@ import { TeamBrowser, type BrowserState } from './TeamBrowser'
 export interface DesignerState {
   /** Logo being designed. */
   oId: string | null
+  /** A logo the user uploaded and traced; replaces `oId` while set. */
+  upload: UploadedLogo | null
   /** Team whose palette seeded the colors; cleared once a slot is edited by hand. */
   cId: string | null
   logoVariant?: string
@@ -39,6 +43,7 @@ export interface DesignerState {
 
 export const initialDesignerState: DesignerState = {
   oId: null,
+  upload: null,
   cId: null,
   colors: null,
   background: null,
@@ -61,6 +66,11 @@ const panelProps = {
   role: 'tabpanel' as const,
   'aria-labelledby': 'tab-designer',
 }
+
+/** The logo a design starts from: the traced upload, else the picked team. */
+const logoTeam = (s: DesignerState): Team | null => (s.upload ? uploadTeam(s.upload) : s.oId ? findTeam(s.oId) ?? null : null)
+
+const colorCountLabel = (c: TraceColors) => (c === 'auto' ? 'Auto' : c === 1 ? '1 color' : `${c} colors`)
 
 const reseed = (s: DesignerState, team: Team): DesignColors | null => {
   const seed = s.cId ? findTeam(s.cId) : undefined
@@ -98,7 +108,7 @@ function HexField({ value, label, disabled, onChange }: { value: string; label: 
 }
 
 export function DesignerMode({ state, setState, portrait, hidden }: Props) {
-  const baseTeam = state.oId ? findTeam(state.oId) ?? null : null
+  const baseTeam = useMemo(() => logoTeam(state), [state.upload, state.oId])
   const team = baseTeam ? withLogoVariant(baseTeam, state.logoVariant) : null
   const seed = state.cId ? findTeam(state.cId) ?? null : null
   const source = team ? sourceColors(team) : null
@@ -126,21 +136,61 @@ export function DesignerMode({ state, setState, portrait, hidden }: Props) {
 
   const [exporting, setExporting] = useState(false)
   const [exportStatus, setExportStatus] = useState('')
-  useEffect(() => setExportStatus(''), [state.oId, state.logoVariant])
+  useEffect(() => setExportStatus(''), [state.oId, state.upload, state.logoVariant])
+
+  // Upload: decode the file, trace it, and design the result like any other logo.
+  const fileRef = useRef<HTMLInputElement>(null)
+  const [tracing, setTracing] = useState(false)
+  const [traceStatus, setTraceStatus] = useState('')
+  const applyUpload = (upload: UploadedLogo) =>
+    setState((s) => ({ ...s, upload, oId: null, logoVariant: undefined, colors: reseed({ ...s, colors: null }, uploadTeam(upload)), step: 3 }))
+  const traceFailed = (err: unknown) =>
+    setTraceStatus(err instanceof TraceError ? err.message : 'That image could not be traced. Try another file.')
+  const uploadFile = async (file: File | undefined) => {
+    if (!file || tracing) return
+    setTracing(true)
+    setTraceStatus('Tracing your logo…')
+    try {
+      const raster = await readRaster(file)
+      // Let the status paint before the synchronous trace runs.
+      await new Promise((r) => setTimeout(r, 0))
+      const upload = traceUpload(fileStem(file.name), raster, state.upload?.options ?? DEFAULT_TRACE_OPTIONS)
+      applyUpload(upload)
+      setTraceStatus(`Traced ${upload.result.colorCount} color${upload.result.colorCount === 1 ? '' : 's'} into vector outlines.`)
+    } catch (err) {
+      traceFailed(err)
+    } finally {
+      setTracing(false)
+    }
+  }
+  const retrace = (options: TraceOptions) => {
+    const upload = state.upload
+    if (!upload) return
+    try {
+      const next = traceUpload(upload.name, upload.raster, options)
+      applyUpload(next)
+      setTraceStatus(`Traced ${next.result.colorCount} color${next.result.colorCount === 1 ? '' : 's'}.`)
+    } catch (err) {
+      traceFailed(err)
+    }
+  }
 
   const selectLogo = (t: Team) =>
     setState((s) =>
-      s.oId === t.id
+      s.oId === t.id && !s.upload
         ? { ...s, oId: null, logoVariant: undefined, colors: null, step: 1 }
-        : { ...s, oId: t.id, logoVariant: undefined, colors: reseed({ ...s, colors: null }, t), step: 2 },
+        : { ...s, oId: t.id, upload: null, logoVariant: undefined, colors: reseed({ ...s, colors: null }, t), step: 2 },
     )
   const selectColors = (t: Team) =>
     setState((s) => {
       if (s.cId === t.id) return { ...s, cId: null, colors: null, step: 2 }
-      const logo = s.oId ? findTeam(s.oId) : undefined
+      const logo = logoTeam(s)
       return { ...s, cId: t.id, colors: logo ? seedColors(withLogoVariant(logo, s.logoVariant), t.palette) : null, step: 3 }
     })
-  const clearLogo = () => setState((s) => ({ ...s, oId: null, logoVariant: undefined, colors: null, step: 1 }))
+  const clearLogo = () => {
+    setTraceStatus('')
+    setState((s) => ({ ...s, oId: null, upload: null, logoVariant: undefined, colors: null, step: 1 }))
+  }
   const resetColors = () => setState((s) => ({ ...s, cId: null, colors: null }))
   const shuffleLogo = () => {
     if (!baseTeam) return
@@ -186,10 +236,38 @@ export function DesignerMode({ state, setState, portrait, hidden }: Props) {
 
   const customBackground = state.background !== null && !BACKGROUND_PRESETS.some((p) => p.color === state.background)
   const colorText = seed ? `${fullName(seed)} colors` : isOriginal ? 'Original colors' : 'Custom colors'
-  const heroKey = `${team?.logo}-${(isOriginal ? source : state.colors)?.join('|')}`
+  const heroKey = `${state.upload ? `upload-${state.upload.serial}` : team?.logo}-${(isOriginal ? source : state.colors)?.join('|')}`
+  const upload = state.upload
+
+  const uploadButton = (
+    <button type="button" className="btn-shuffle" onClick={() => fileRef.current?.click()} disabled={tracing} aria-label="Upload a logo to trace">
+      {tracing ? 'Tracing…' : 'Upload Logo'}
+    </button>
+  )
 
   const canvas = (
-    <section className="canvas designer" aria-label="Logo designer">
+    <section
+      className="canvas designer"
+      aria-label="Logo designer"
+      onDragOver={(e) => {
+        if (e.dataTransfer.types.includes('Files')) e.preventDefault()
+      }}
+      onDrop={(e) => {
+        if (!e.dataTransfer.files.length) return
+        e.preventDefault()
+        uploadFile(e.dataTransfer.files[0])
+      }}
+    >
+      <input
+        ref={fileRef}
+        type="file"
+        accept={UPLOAD_ACCEPT}
+        hidden
+        onChange={(e) => {
+          uploadFile(e.target.files?.[0])
+          e.target.value = ''
+        }}
+      />
       <div className="micro-row">
         <div className="micro">LOGO</div>
         {team && (
@@ -204,6 +282,7 @@ export function DesignerMode({ state, setState, portrait, hidden }: Props) {
           {variantLabel} · {variantIndex + 2} of {alternates.length + 1}
         </div>
       )}
+      {upload && <div className="logo-variant-label">Traced from your upload</div>}
       <div className="canvas-hero">
         {team ? (
           <div className={`design-stage${state.background ? ' bg' : ''}`} style={state.background ? { background: state.background } : undefined}>
@@ -212,9 +291,45 @@ export function DesignerMode({ state, setState, portrait, hidden }: Props) {
             </div>
           </div>
         ) : (
-          <div className="empty-circle">{portrait ? 'Pick a logo in step 1' : 'Pick a logo on the left, then recolor it slot by slot'}</div>
+          <div className="empty-circle">
+            {portrait ? 'Pick a logo in step 1, or upload your own' : 'Pick a logo on the left or upload your own, then recolor it slot by slot'}
+          </div>
         )}
       </div>
+
+      {upload && (
+        <div className="design-trace">
+          <div className="micro">TRACE</div>
+          <div className="design-opts" role="group" aria-label="Colors to trace">
+            {TRACE_COLOR_OPTIONS.map((c) => (
+              <button
+                key={c}
+                type="button"
+                className={`design-opt${upload.options.colors === c ? ' active' : ''}`}
+                aria-pressed={upload.options.colors === c}
+                onClick={() => retrace({ ...upload.options, colors: c })}
+              >
+                {colorCountLabel(c)}
+              </button>
+            ))}
+          </div>
+          <div className="design-opts" role="group" aria-label="Background">
+            <button
+              type="button"
+              className={`design-opt${upload.options.removeBackground ? ' active' : ''}`}
+              aria-pressed={upload.options.removeBackground}
+              onClick={() => retrace({ ...upload.options, removeBackground: !upload.options.removeBackground })}
+            >
+              Remove background
+            </button>
+          </div>
+        </div>
+      )}
+      {traceStatus && (
+        <div className="mode-hint design-status" role="status" aria-live="polite" aria-atomic="true">
+          {traceStatus}
+        </div>
+      )}
 
       <div className="micro-row">
         <div className="micro">COLORS</div>
@@ -249,6 +364,7 @@ export function DesignerMode({ state, setState, portrait, hidden }: Props) {
       )}
 
       <div className="action-row design-actions">
+        {uploadButton}
         <button type="button" className="btn-shuffle" onClick={shuffleLogo} disabled={!alternates.length} aria-label="Shuffle logo alternate">
           Shuffle Logo
         </button>
@@ -295,7 +411,9 @@ export function DesignerMode({ state, setState, portrait, hidden }: Props) {
           )}
         </div>
         <div className="mode-hint">
-          {svgOk === false
+          {upload && format === 'svg'
+            ? 'Traced vector outlines, one shape per color; sharp at any size.'
+            : svgOk === false
             ? 'This artwork is a bitmap, so it exports as PNG only.'
             : format === 'svg'
               ? 'Vector file that stays sharp at any size; opens in Illustrator, Figma or a browser.'

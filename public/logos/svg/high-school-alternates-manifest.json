@@ -1,0 +1,297 @@
+{
+  "assets": [
+    {
+      "teamId": "HS-ALLA",
+      "id": "sword-a",
+      "label": "Sword A",
+      "sourceUrl": "https://allatoonabucs.com/wp-content/uploads/2020/11/toona1.svg",
+      "sourcePage": "https://allatoonabucs.com/?attachment_id=30034",
+      "sourceSha256": "2f035603b9f63722468ae8425ca7bd9fc8608c7502a0447c526bf1a34023aab5",
+      "ops": {},
+      "path": "/logos/svg/high-school/alternates/alla-sword-a.svg",
+      "format": "svg",
+      "colors": [
+        "#EE1C23",
+        "#FFFFFF",
+        "#000000",
+        "#B5BBC2"
+      ],
+      "sourcePalette": [
+        "#EE1C23",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [],
+      "sha256": "f24eca2f37984eed4dcf529bbe9b9fe6c6ff4fda83b292ad68d6c93ce11026d3"
+    },
+    {
+      "teamId": "HS-KELL",
+      "id": "longhorn-head",
+      "label": "Long-horned steer head",
+      "sourceUrl": "https://allatoonabucs.com/wp-content/uploads/2021/02/kelllogo-02.svg",
+      "sourcePage": "https://allatoonabucs.com/kelllogo-02/",
+      "sourceSha256": "1da1a7c68debd018114ca0250cd085bdc00e27bffebed51d87220a062291dc4a",
+      "ops": {},
+      "path": "/logos/svg/high-school/alternates/kell-longhorn-head.svg",
+      "format": "svg",
+      "colors": [
+        "#000000",
+        "#FFFFFF",
+        "#BB4A26"
+      ],
+      "sourcePalette": [
+        "#000000",
+        "#BB4A26",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [],
+      "sha256": "c20a1ed4ebc8faecebc907a12231ff11a5cc1438f460dc3a09ac625bf10ad575"
+    },
+    {
+      "teamId": "HS-KMHS",
+      "id": "mustang-head",
+      "label": "Mustang head",
+      "sourceUrl": "https://allatoonabucs.com/wp-content/uploads/2021/10/kenn-mtn.svg",
+      "sourcePage": "https://allatoonabucs.com/kenn-mtn/",
+      "sourceSha256": "88d4bc9c94be87d368b8de5f4406d0df25a281eeda3b0481983004802466ceaf",
+      "ops": {},
+      "path": "/logos/svg/high-school/alternates/kmhs-mustang-head.svg",
+      "format": "svg",
+      "colors": [
+        "#9C9FA1",
+        "#0B4925",
+        "#FFFFFF",
+        "#A9A9A9"
+      ],
+      "sourcePalette": [
+        "#A2A4A5",
+        "#0B4925",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [],
+      "sha256": "92c460c2d673766834921415ed43cf3ce73767e589446cd24db4f4dc5c1ac94f"
+    },
+    {
+      "teamId": "HS-KMHS",
+      "id": "km-monogram",
+      "label": "Interlocking KM",
+      "sourceUrl": "https://dunsondesign.com/wp-content/uploads/2022/01/KMHS_Icon@300x-100-scaled.jpg",
+      "sourcePage": "https://dunsondesign.com/case-studies/kennesaw-mountain/",
+      "sourceSha256": "f0525f85e72c3626c779016e6b86b901fd2cc019aff2e73fd600a06b3953b467",
+      "trace": {
+        "fill": "#004621",
+        "threshold": 0.5,
+        "turdsize": 8
+      },
+      "ops": {
+        "viewBox": "355.06 398.74 1849.88 1762.21"
+      },
+      "path": "/logos/svg/high-school/alternates/kmhs-km-monogram.svg",
+      "format": "svg",
+      "colors": [
+        "#004621"
+      ],
+      "sourcePalette": [
+        "#004621",
+        "#BBBCBF",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [
+        1,
+        2
+      ],
+      "sha256": "bf45d20a62ed05f06f904396e46dc1a071629ff7a9ba51aef6392c464f22da4a"
+    },
+    {
+      "teamId": "HS-LASS",
+      "id": "gold-helmet",
+      "label": "Gold crested helmet",
+      "sourceUrl": "https://allatoonabucs.com/wp-content/uploads/2021/03/newlassiter.svg",
+      "sourcePage": "https://allatoonabucs.com/newlassiter/",
+      "sourceSha256": "98b37d52c2bd5a86c7fbc6ed5a668e2766a8f65645949d9ab39a1d548fe7af5f",
+      "ops": {},
+      "path": "/logos/svg/high-school/alternates/lass-gold-helmet.svg",
+      "format": "svg",
+      "colors": [
+        "#6D1418",
+        "#F4BC21",
+        "#FFFFFF"
+      ],
+      "sourcePalette": [
+        "#6D1418",
+        "#F4BC21",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [],
+      "sha256": "75dc0e4b007faace7c3833f46e3f84c43109084b135a04bdf1feb37ae6620a4e"
+    },
+    {
+      "teamId": "HS-OSBO",
+      "id": "cardinal-head",
+      "label": "Cardinal head",
+      "sourceUrl": "https://allatoonabucs.com/wp-content/uploads/2021/03/osborne.svg",
+      "sourcePage": "https://allatoonabucs.com/osborne-2/",
+      "sourceSha256": "cf2e7c79fcd4d559caa11b79fd7714c619c515634072f6e9cd931b232574b0a9",
+      "ops": {},
+      "path": "/logos/svg/high-school/alternates/osbo-cardinal-head.svg",
+      "format": "svg",
+      "colors": [
+        "#000000",
+        "#B51A21",
+        "#FFD90A",
+        "#FDFDFD",
+        "#FCFCFC"
+      ],
+      "sourcePalette": [
+        "#B51A21",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [],
+      "sha256": "fd344f24fe4f25a3618676ea6b9345ed2353a34e8d9c0ced5cecb046934d251a"
+    },
+    {
+      "teamId": "HS-PEBB",
+      "id": "winged-p",
+      "label": "Winged P",
+      "sourceUrl": "https://allatoonabucs.com/wp-content/uploads/2021/10/pebblebrook2.svg",
+      "sourcePage": "https://allatoonabucs.com/pebblebrook2/",
+      "sourceSha256": "713ebac9ebc55bdc999830421bee0625f82a1312e86fb8e4d55a0d9da091c5a4",
+      "ops": {},
+      "path": "/logos/svg/high-school/alternates/pebb-winged-p.svg",
+      "format": "svg",
+      "colors": [
+        "#111231"
+      ],
+      "sourcePalette": [
+        "#111231",
+        "#AF272F",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [
+        1,
+        2
+      ],
+      "sha256": "96c2cbe446927cbc5b8bba994b48fc1ffa37787681ade4b984081c2eb6d6f98f"
+    },
+    {
+      "teamId": "HS-POPE",
+      "id": "block-p",
+      "label": "Block P",
+      "sourceUrl": "https://allatoonabucs.com/wp-content/uploads/2021/03/pope.svg",
+      "sourcePage": "https://allatoonabucs.com/pope-2/",
+      "sourceSha256": "5ff16c1e442f7b95f2e670a9c93c62a705c79e8b79de78c83ee54a706fda7669",
+      "ops": {},
+      "path": "/logos/svg/high-school/alternates/pope-block-p.svg",
+      "format": "svg",
+      "colors": [
+        "#C6C7CB",
+        "#14284B",
+        "#6BB1E2",
+        "#FFFFFF"
+      ],
+      "sourcePalette": [
+        "#6BB1E2",
+        "#14284B",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [],
+      "sha256": "20bca98692c3c194370064928c3c56c540a304c1c282a9258fa5393dcbff672c"
+    },
+    {
+      "teamId": "HS-SCOB",
+      "id": "sc-monogram",
+      "label": "Stacked SC monogram",
+      "sourceUrl": "https://allatoonabucs.com/wp-content/uploads/2021/03/southcobb.svg",
+      "sourcePage": "https://allatoonabucs.com/southcobb/",
+      "sourceSha256": "a05c1afa4523122c385123f44c27b380132a9b223c09bb54005836ec23d5e2e8",
+      "ops": {},
+      "path": "/logos/svg/high-school/alternates/scob-sc-monogram.svg",
+      "format": "svg",
+      "colors": [
+        "#FFFFFF",
+        "#081F3F"
+      ],
+      "sourcePalette": [
+        "#081F3F",
+        "#F68D28",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [
+        1
+      ],
+      "sha256": "988d6c85d2085abf14e47c634bdf95c67a28abdd3486b18e43554647e7cd2649"
+    },
+    {
+      "teamId": "HS-SCOB",
+      "id": "eagle-head",
+      "label": "Eagle head",
+      "sourceUrl": "https://gowoodland.org/wp-content/uploads/2025/08/south-cobb.svg",
+      "sourcePage": "https://gowoodland.org/south-cobb/",
+      "sourceSha256": "e935e4d53b59f8ccc78952bb4daed5b7401560aeb1fde0200b3203b216323153",
+      "ops": {},
+      "path": "/logos/svg/high-school/alternates/scob-eagle-head.svg",
+      "format": "svg",
+      "colors": [
+        "#F68D28",
+        "#091F40",
+        "#FEFEFE",
+        "#CBCBCB",
+        "#303030"
+      ],
+      "sourcePalette": [
+        "#1C2838",
+        "#F68D28",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [],
+      "sha256": "6e5fe1ffed521215a52d59672ecb4b6b245e6d5e3d6c870646934ac0bb69bc80"
+    },
+    {
+      "teamId": "HS-SPRA",
+      "id": "block-s",
+      "label": "Block S",
+      "sourceUrl": "https://allatoonabucs.com/wp-content/uploads/2021/02/sprayberrylogo-01.svg",
+      "sourcePage": "https://allatoonabucs.com/sprayberrylogo-01/",
+      "sourceSha256": "f90fe929c93c6778ba5aec2765d7905f52b5f574fabd7a9145aee217ffcf13ea",
+      "ops": {},
+      "path": "/logos/svg/high-school/alternates/spra-block-s.svg",
+      "format": "svg",
+      "colors": [
+        "#000000",
+        "#FFFFFF",
+        "#D0C291"
+      ],
+      "sourcePalette": [
+        "#D0C291",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [],
+      "sha256": "06446dc938599f0e5425c79a912bd04363dff7c76c3724bd5c5cda156e71cb2a"
+    },
+    {
+      "teamId": "HS-WALT",
+      "id": "diamond-w",
+      "label": "Diamond W",
+      "sourceUrl": "https://allatoonabucs.com/wp-content/uploads/2021/03/walton.svg",
+      "sourcePage": "https://allatoonabucs.com/walton-2/",
+      "sourceSha256": "445c089bb70c9ac3a1a603ef07e5eba6ebac5e7e22a2ce9506d15bdf7aaf688c",
+      "ops": {},
+      "path": "/logos/svg/high-school/alternates/walt-diamond-w.svg",
+      "format": "svg",
+      "colors": [
+        "#D8022E",
+        "#FFFFFF",
+        "#0235A2"
+      ],
+      "sourcePalette": [
+        "#0235A2",
+        "#D8022E",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [],
+      "sha256": "d7fa83104a145c7766f6aeea9e0523091a3fd19294d2a10f0f03451d1a31bcda"
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 import { describe, expect, test } from 'bun:test'
-import { execFileSync } from 'node:child_process'
+import { execFileSync, spawnSync } from 'node:child_process'
 import { existsSync } from 'node:fs'
 import { join } from 'node:path'
 import {
@@ -10,17 +10,19 @@ import {
 const root = join(import.meta.dir, '..')
 const python = (code: string) => execFileSync('python3', ['-c', code], { cwd: root })
 const norm = (s: string) => s.toLowerCase().replace(/[^a-z0-9]/g, '')
-const withAlternates = TEAMS.filter((t) => (t.league === 'NBA' || t.league === 'COL') && t.alternateLogos?.length)
-const MIN_NBA = 18
-const MIN_COL = 19
+// Minimum number of teams carrying at least one alternate, and the folder that holds them.
+const LEAGUES_WITH_ALTERNATES = { NBA: [18, 'nba'], COL: [19, 'ncaa'], MLB: [26, 'mlb'], MLS: [17, 'mls'], HS: [10, 'high-school'] } as const
+const withAlternates = TEAMS.filter((t) => t.league in LEAGUES_WITH_ALTERNATES && t.alternateLogos?.length)
 
-describe('NBA and college alternate logos', () => {
+describe('NBA, MLB, MLS, college and high-school alternate logos', () => {
   test('alternates are local vector artwork, distinct from the primary, and labeled without naming the team', () => {
-    expect(withAlternates.filter((t) => t.league === 'NBA').length).toBeGreaterThanOrEqual(MIN_NBA)
-    expect(withAlternates.filter((t) => t.league === 'COL').length).toBeGreaterThanOrEqual(MIN_COL)
+    for (const [league, [min]] of Object.entries(LEAGUES_WITH_ALTERNATES)) {
+      expect(withAlternates.filter((t) => t.league === league).length).toBeGreaterThanOrEqual(min)
+    }
     for (const team of withAlternates) {
+      const folder = LEAGUES_WITH_ALTERNATES[team.league as keyof typeof LEAGUES_WITH_ALTERNATES][1]
       for (const variant of team.alternateLogos!) {
-        expect(variant.logo).toMatch(team.league === 'NBA' ? /^\/logos\/svg\/nba\/alternates\/.+\.svg$/ : /^\/logos\/svg\/ncaa\/alternates\/.+\.svg$/)
+        expect(variant.logo).toMatch(new RegExp(`^/logos/svg/${folder}/alternates/.+\\.svg$`))
         expect(existsSync(join(root, 'public', variant.logo))).toBe(true)
         const answers = [fullName(team), team.region, team.name, team.abbr, ...(team.aliases ?? [])].map(norm).filter((a) => a.length > 2)
         expect(variant.label.length).toBeGreaterThan(0)
@@ -41,7 +43,7 @@ import download_team_alternates as d
 from download_brand_logos import artwork_palette, brand_colors
 from nfl_vector_artwork import validate_vector
 teams = {t['id']: t for t in json.loads(Path('src/lib/teams.json').read_text())['teams']}
-for league in ('NBA', 'COL'):
+for league in ('NBA', 'COL', 'MLB', 'MLS', 'HS'):
     roster = d.roster(league)
     pinned = {(s['teamId'], s['id']): s for s in d.pinned_sources(league, roster)}
     items = json.loads(d.manifest_path(league).read_text())['assets']
@@ -61,6 +63,56 @@ for league in ('NBA', 'COL'):
         assert teams[team_id].get('alternateLogos') == built.get(team_id), team_id
 `)
   }, 30000)
+
+  test('only the requested KM monogram is traced, and its manifest entry keeps the trace edit', () => {
+    python(`
+import json, sys
+from pathlib import Path
+sys.path.insert(0, 'scripts')
+import download_team_alternates as d
+traced = [(s['teamId'], s['id']) for s in json.loads(d.SOURCES.read_text()) if 'trace' in s]
+assert traced == [('HS-KMHS', 'km-monogram')], traced
+item = next(i for i in json.loads(d.manifest_path('HS').read_text())['assets'] if i['id'] == 'km-monogram')
+assert item['trace'] == {'fill': '#004621', 'threshold': 0.5, 'turdsize': 8}
+assert item['colors'] == ['#004621'] and item['unusedSourceSlots'] == [1, 2]
+`)
+  })
+
+  test('tracing refuses unreviewed settings before touching the image', () => {
+    python(`
+import sys
+sys.path.insert(0, 'scripts')
+from trace_vector import trace_raster
+for spec in ({'fill': '#004621'}, {'fill': '#00462', 'threshold': 0.5}, {'fill': '#004621', 'threshold': 1.5},
+             {'fill': '#004621', 'threshold': 0.5, 'turdsize': -1}, {'fill': '#004621', 'threshold': 0.5, 'blur': 2}):
+    try: trace_raster(b'not an image', spec)
+    except ValueError: pass
+    else: raise AssertionError(f'accepted {spec}')
+`)
+  })
+
+  const hasPotrace = spawnSync('python3', ['-c', 'import potrace, PIL'], { cwd: root }).status === 0
+  test.skipIf(!hasPotrace)('tracing turns a flat mark into one even-odd outline that keeps its holes', () => {
+    python(`
+import io, re, sys
+sys.path.insert(0, 'scripts')
+from PIL import Image, ImageDraw
+from nfl_vector_artwork import validate_vector
+from trace_vector import trace_raster
+image = Image.new('RGB', (120, 100), 'white')
+draw = ImageDraw.Draw(image)
+draw.rectangle((20, 10, 99, 89), fill='#004621')
+draw.rectangle((45, 35, 74, 64), fill='white')
+buffer = io.BytesIO(); image.save(buffer, 'PNG')
+svg = trace_raster(buffer.getvalue(), {'fill': '#004621', 'threshold': 0.5})
+root = validate_vector(svg)
+paths = [n for n in root.iter() if n.tag.endswith('path')]
+assert len(paths) == 1 and paths[0].get('fill') == '#004621' and paths[0].get('fill-rule') == 'evenodd'
+assert root.get('viewBox') == '0 0 120 100'
+assert paths[0].get('d').count('M') == 2, 'outer edge and the hole'
+assert trace_raster(buffer.getvalue(), {'fill': '#004621', 'threshold': 0.5}) == svg, 'trace is not deterministic'
+`)
+  })
 
   test('shuffle cycles every mark once and saved rounds keep the exact alternate', () => {
     const donor = findTeam('PRO-BUF')!
@@ -90,19 +142,21 @@ for league in ('NBA', 'COL'):
 import contextlib, io, json, sys, tempfile
 from pathlib import Path
 sys.path.insert(0, 'scripts')
-import build_nba_teams as nba, build_teams as college, download_team_alternates as d
+import build_extra_teams as extra, build_hs_teams as hs, build_nba_teams as nba, build_teams as college, download_team_alternates as d
 original = Path('src/lib/teams.json').read_text()
+builders = (('NBA', nba, []), ('COL', college, []), ('MLB', extra, ['--league', 'MLB']), ('MLS', extra, ['--league', 'MLS']), ('HS', hs, []))
 with tempfile.TemporaryDirectory(dir=Path.cwd()) as tmp:
     target = Path(tmp) / 'teams.json'
     target.write_text(original)
-    nba.TEAMS_JSON = college.TEAMS_JSON = target
-    sys.argv = ['builder']
+    nba.TEAMS_JSON = college.TEAMS_JSON = extra.TEAMS_JSON = hs.TEAMS_JSON = target
     with contextlib.redirect_stdout(io.StringIO()):
-        nba.main()
-        assert college.main() == 0
+        for _, builder, args in builders:
+            sys.argv = ['builder', *args]
+            assert builder.main() in (None, 0)
     assert target.read_text() == original, 'rebuild changed alternates, order or formatting'
     real = d.manifest_path
-    for league, builder in (('NBA', nba), ('COL', college)):
+    for league, builder, args in builders:
+        sys.argv = ['builder', *args]
         items = json.loads(real(league).read_text())
         for bad in ('unknown team', 'stale checksum'):
             edited = json.loads(json.dumps(items))

@@ -1,0 +1,514 @@
+{
+  "assets": [
+    {
+      "teamId": "MLS-CHI",
+      "id": "1998-badge",
+      "label": "1998 badge",
+      "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/7/7a/Chicago_Fire_logo.svg",
+      "sourcePage": "https://logos.fandom.com/wiki/File:Chicago_Fire_logo.svg",
+      "sourceSha256": "0cce68a5ea2a787cdd3b0027e346922b55c45ad190d2889080a83b3853157707",
+      "path": "/logos/svg/mls/alternates/chi-1998-badge.svg",
+      "format": "svg",
+      "colors": [
+        "#FFFFFF",
+        "#00215B",
+        "#CE1432",
+        "#A7A9AC"
+      ],
+      "sourcePalette": [
+        "#CE1432",
+        "#A7A9AC",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [],
+      "sha256": "4527e110f2d1e5e5a54cd748a1e7f54c5b0336d4a5f3d2a155eb2d28e8bd9308"
+    },
+    {
+      "teamId": "MLS-CHI",
+      "id": "2019-crest",
+      "label": "2019 crest",
+      "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/9/96/Chicago_Fire_FC_2019.svg",
+      "sourcePage": "https://logos.fandom.com/wiki/File:Chicago_Fire_FC_2019.svg",
+      "sourceSha256": "4381d8df877d3df56490bf9e054546ce880e6d596ec9d9c0034294501dc46032",
+      "path": "/logos/svg/mls/alternates/chi-2019-crest.svg",
+      "format": "svg",
+      "colors": [
+        "#06134E",
+        "#C2002F",
+        "#FFB600"
+      ],
+      "sourcePalette": [
+        "#C2002F",
+        "#06134E",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [
+        2
+      ],
+      "sha256": "67bc5285aa19f76328f39897c1fab8fd4208d1dd6e86830a0e3491ed19fe581e"
+    },
+    {
+      "teamId": "MLS-CIN",
+      "id": "usl-crest",
+      "label": "USL crest",
+      "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/a/a2/FC_Cincinnati_Pre-MLS.svg",
+      "sourcePage": "https://logos.fandom.com/wiki/File:FC_Cincinnati_Pre-MLS.svg",
+      "sourceSha256": "732de12eff582bb40e4e97c89bae9783f6d82238b0ccdf12f7bfeae6df718003",
+      "ops": {
+        "viewBox": "65.66 0 733.82 1152"
+      },
+      "path": "/logos/svg/mls/alternates/cin-usl-crest.svg",
+      "format": "svg",
+      "colors": [
+        "#E3541D",
+        "#00379D",
+        "#FFFFFF"
+      ],
+      "sourcePalette": [
+        "#00379D",
+        "#E3541D",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [],
+      "sha256": "56f33174eb1d3c216ef01478a6e88848dd9eef3186058ab997fd7ede5b0b79c1"
+    },
+    {
+      "teamId": "MLS-CLB",
+      "id": "1996-hard-hats",
+      "label": "1996 hard hats",
+      "sourceUrl": "https://cdn.worldvectorlogo.com/logos/columbus-crew.svg",
+      "sourcePage": "https://worldvectorlogo.com/logo/columbus-crew",
+      "sourceSha256": "26981a143f12fba0dacf3148b6c2091797d962ef62afb2c92b8be17a82d97122",
+      "path": "/logos/svg/mls/alternates/clb-1996-hard-hats.svg",
+      "format": "svg",
+      "colors": [
+        "#000000",
+        "#645B67",
+        "#FFFFFF",
+        "#E2AB47"
+      ],
+      "sourcePalette": [
+        "#000000",
+        "#A38357",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [],
+      "sha256": "ca0f1349ebc41629be2469cfcb9be9460c9e4e02c1bf7ffcbc38c77879eb3421"
+    },
+    {
+      "teamId": "MLS-DAL",
+      "id": "1996-burn",
+      "label": "1996 Burn",
+      "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/9/9a/Dallas_Burn_logo.svg",
+      "sourcePage": "https://logos.fandom.com/wiki/File:Dallas_Burn_logo.svg",
+      "sourceSha256": "7e3e39234a0684837d75d9f5d11d08991c4fc2f982712aaca273dd9ab01336da",
+      "path": "/logos/svg/mls/alternates/dal-1996-burn.svg",
+      "format": "svg",
+      "colors": [
+        "#FFFFFF",
+        "#000000",
+        "#7C8326",
+        "#BD2A33"
+      ],
+      "sourcePalette": [
+        "#9C562C",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [],
+      "sha256": "8ade972b5176fe6890ab5f3dcecb37886062b758363f3949019a4a0ea62a0641"
+    },
+    {
+      "teamId": "MLS-DC",
+      "id": "1996-eagle",
+      "label": "1996 eagle",
+      "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/e/e4/DC_United_logo.svg",
+      "sourcePage": "https://logos.fandom.com/wiki/File:DC_United_logo.svg",
+      "sourceSha256": "b07ea9beb4c904f2da973f1c472a6646bb106372045a1b6b2cded2713baf5709",
+      "path": "/logos/svg/mls/alternates/dc-1996-eagle.svg",
+      "format": "svg",
+      "colors": [
+        "#FFFFFF",
+        "#000000",
+        "#E42431",
+        "#F8B034"
+      ],
+      "sourcePalette": [
+        "#000000",
+        "#EE6A32",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [],
+      "sha256": "9e591614c8b4bec3058d341af71cf68d04aa02e6e5e553c46cf685b1f6e9d42e"
+    },
+    {
+      "teamId": "MLS-HOU",
+      "id": "2006-crest",
+      "label": "2006 crest",
+      "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/0/0c/Houston_Dynamo_logo.svg",
+      "sourcePage": "https://logos.fandom.com/wiki/File:Houston_Dynamo_logo.svg",
+      "sourceSha256": "ad50fadcbe869ec07a86787c8ad960693d469c8ac90ab12b42bbb3237ef32b8e",
+      "path": "/logos/svg/mls/alternates/hou-2006-crest.svg",
+      "format": "svg",
+      "colors": [
+        "#000000",
+        "#96C0E6",
+        "#F3901D",
+        "#FFFFFF",
+        "#010101"
+      ],
+      "sourcePalette": [
+        "#F3901D",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [],
+      "sha256": "065608aa59b42ad9069b1e80d1ea24537ae559a19a328760f2439761674160da"
+    },
+    {
+      "teamId": "MLS-LA",
+      "id": "1996-crest",
+      "label": "1996 crest",
+      "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/0/07/Los_Angeles_Galaxy_logo_%281996-2007%29.svg",
+      "sourcePage": "https://logos.fandom.com/wiki/File:Los_Angeles_Galaxy_logo_%281996-2007%29.svg",
+      "sourceSha256": "36990a190a692c9efea85d187a08ba6220098dc40a35c576f8519a91ce5600a5",
+      "path": "/logos/svg/mls/alternates/la-1996-crest.svg",
+      "format": "svg",
+      "colors": [
+        "#F8D07A",
+        "#E9B430",
+        "#000000",
+        "#FFFFFF",
+        "#006650"
+      ],
+      "sourcePalette": [
+        "#003328",
+        "#F0C255",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [],
+      "sha256": "6237670a5e6dc6b3b48b353709f85e5da0ed7594485eb2820d4101016f180860"
+    },
+    {
+      "teamId": "MLS-MTL",
+      "id": "2012-impact",
+      "label": "2012 Impact",
+      "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/9/94/Montreal_Impact_%28MLS%29_logo.svg",
+      "sourcePage": "https://logos.fandom.com/wiki/File:Montreal_Impact_%28MLS%29_logo.svg",
+      "sourceSha256": "2b1f10649c766533d0e72068fd835f69de9e66f7b61af95a8f079268be6f7118",
+      "path": "/logos/svg/mls/alternates/mtl-2012-impact.svg",
+      "format": "svg",
+      "colors": [
+        "#000000",
+        "#BAC1C6",
+        "#6D6E71",
+        "#A7AEB3",
+        "#FFFFFF",
+        "#636466",
+        "#8D9092",
+        "#E5E6E7",
+        "#BCBEC0",
+        "#F7F7F8",
+        "#065CAB",
+        "#003A74"
+      ],
+      "sourcePalette": [
+        "#476582",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [],
+      "sha256": "1ca2039cf10b7c6636f40c7fdf2039e47f1a7d2db8e5777750879eb9d878147f"
+    },
+    {
+      "teamId": "MLS-MTL",
+      "id": "2021-snowflake",
+      "label": "2021 snowflake",
+      "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/6/60/CF_Montr%C3%A9al.svg",
+      "sourcePage": "https://logos.fandom.com/wiki/File:CF_Montr%C3%A9al.svg",
+      "sourceSha256": "60c15dd1842fc39cddd65c8ddfe7d86c0d30a670a5e5d94359c15423444b09c3",
+      "path": "/logos/svg/mls/alternates/mtl-2021-snowflake.svg",
+      "format": "svg",
+      "colors": [
+        "#FFFFFF",
+        "#000000",
+        "#9EA1A2",
+        "#0033A1"
+      ],
+      "sourcePalette": [
+        "#0033A1",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [],
+      "sha256": "06854b938ec610c45b3bbb17e0947636698df61c897d454d739a28b0d2085979"
+    },
+    {
+      "teamId": "MLS-NE",
+      "id": "1995-flag",
+      "label": "1995 flag",
+      "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/d/d6/New_England_Revolution_logo.svg",
+      "sourcePage": "https://logos.fandom.com/wiki/File:New_England_Revolution_logo.svg",
+      "sourceSha256": "376f52e90ec5a8b388daf826433c89d4873e68f9244dcb32d0e302e00114c85f",
+      "path": "/logos/svg/mls/alternates/ne-1995-flag.svg",
+      "format": "svg",
+      "colors": [
+        "#04244D",
+        "#D10429",
+        "#272927"
+      ],
+      "sourcePalette": [
+        "#16263A",
+        "#D10429",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [
+        2
+      ],
+      "sha256": "5466449bcb813ad54cd715966e245ecb7f189db7efa795f76cf24f03fb694a56"
+    },
+    {
+      "teamId": "MLS-PHI",
+      "id": "motto-banner",
+      "label": "Motto banner",
+      "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/b/b2/Philadelphia_Union_logo_%28alternate%29.svg",
+      "sourcePage": "https://logos.fandom.com/wiki/File:Philadelphia_Union_logo_%28alternate%29.svg",
+      "sourceSha256": "5cc675b6481c372976ce30885df2f6216ad9287049bd31a4a5cb6fcd323b9c14",
+      "path": "/logos/svg/mls/alternates/phi-motto-banner.svg",
+      "format": "svg",
+      "colors": [
+        "#000000",
+        "#AF8006",
+        "#5A8FD2",
+        "#062849",
+        "#FFFFFF",
+        "#529A34"
+      ],
+      "sourcePalette": [
+        "#2C613E",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [],
+      "sha256": "24e872766005b91e01b576d2022255091df9cab70d473b2e8940de0e954d61fb"
+    },
+    {
+      "teamId": "MLS-POR",
+      "id": "usl-roundel",
+      "label": "USL roundel",
+      "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/8/8c/Portland_Timbers_%28USL%29_logo.svg",
+      "sourcePage": "https://logos.fandom.com/wiki/File:Portland_Timbers_%28USL%29_logo.svg",
+      "sourceSha256": "29f19547798f91e3e316918110ec1f1df01db9b9dd2935c0ba2a16258b12f866",
+      "ops": {
+        "viewBox": "24 21.6 744 744.8"
+      },
+      "path": "/logos/svg/mls/alternates/por-usl-roundel.svg",
+      "format": "svg",
+      "colors": [
+        "#026224",
+        "#E1E65D"
+      ],
+      "sourcePalette": [
+        "#026224",
+        "#E1E65D",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [
+        2
+      ],
+      "sha256": "4751059c38268f568efc85c0ef0dc4cf71a57a1400e3861264962d0209042ae1"
+    },
+    {
+      "teamId": "MLS-RBNY",
+      "id": "1995-metrostars",
+      "label": "1995 MetroStars",
+      "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/3/3b/MetroStars_logo_%281995-2002%29.svg",
+      "sourcePage": "https://logos.fandom.com/wiki/File:MetroStars_logo_%281995-2002%29.svg",
+      "sourceSha256": "7a66ad9a9c19823949c6758875a7549931349758c68e6744618e00ca8e04cde4",
+      "path": "/logos/svg/mls/alternates/rbny-1995-metrostars.svg",
+      "format": "svg",
+      "colors": [
+        "#000000",
+        "#AAAEB1",
+        "#FCCC07",
+        "#CB2C2E",
+        "#FFFFFF"
+      ],
+      "sourcePalette": [
+        "#CB2C2E",
+        "#FCCC07",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [],
+      "sha256": "cea56644a2a5375bdd97039ff2c5de7e00e52f05e19a4aa9fda762bc784f4a7e"
+    },
+    {
+      "teamId": "MLS-RBNY",
+      "id": "2003-metrostars",
+      "label": "2003 MetroStars",
+      "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/3/35/MetroStars_logo_%282003-2005%29.svg",
+      "sourcePage": "https://logos.fandom.com/wiki/File:MetroStars_logo_%282003-2005%29.svg",
+      "sourceSha256": "aa07816eff24b8560f67f4b74989a32a4f53197cfe79585344d6eb738ecf0c3a",
+      "path": "/logos/svg/mls/alternates/rbny-2003-metrostars.svg",
+      "format": "svg",
+      "colors": [
+        "#000000",
+        "#FCCC07",
+        "#CB2C2E",
+        "#FFFFFF"
+      ],
+      "sourcePalette": [
+        "#CB2C2E",
+        "#FCCC07",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [],
+      "sha256": "8283bc8d679b22d27afb87d0fef992237a0f3777b62255c36250f6c9237eb32c"
+    },
+    {
+      "teamId": "MLS-RSL",
+      "id": "original-crest",
+      "label": "Original crest",
+      "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/b/b9/Real_Salt_Lake_logo.svg",
+      "sourcePage": "https://logos.fandom.com/wiki/File:Real_Salt_Lake_logo.svg",
+      "sourceSha256": "03a72c83ffb82203962b511eb7d070db5e0461e08239c158a1762356791f8d85",
+      "path": "/logos/svg/mls/alternates/rsl-original-crest.svg",
+      "format": "svg",
+      "colors": [
+        "#F6D200",
+        "#A90230",
+        "#062E7E",
+        "#FFFFFF"
+      ],
+      "sourcePalette": [
+        "#A90230",
+        "#062E7E",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [],
+      "sha256": "8a8dbe675a94bb6415163ba4b8e56e200a983db17e96328e4d840658f90d2d26"
+    },
+    {
+      "teamId": "MLS-SEA",
+      "id": "2009-crest",
+      "label": "2009 crest",
+      "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/7/7f/Seattle_Sounders_FC_logo.svg",
+      "sourcePage": "https://logos.fandom.com/wiki/File:Seattle_Sounders_FC_logo.svg",
+      "sourceSha256": "be9d79676ab00e1b2609241c504443cca3e46ccb66a574cca9111d3f96ed2268",
+      "path": "/logos/svg/mls/alternates/sea-2009-crest.svg",
+      "format": "svg",
+      "colors": [
+        "#142530",
+        "#FFFFFF",
+        "#005595",
+        "#5D9741"
+      ],
+      "sourcePalette": [
+        "#5D9741",
+        "#0A3D62",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [],
+      "sha256": "b2334d0ea7bfbea704e5ac89360fd46629037498c31cc139583a260d6059d5b0"
+    },
+    {
+      "teamId": "MLS-SJ",
+      "id": "2000-shield",
+      "label": "2000 shield",
+      "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/9/98/San_Jose_Earthquakes_%282000-2007%29_logo.svg",
+      "sourcePage": "https://logos.fandom.com/wiki/File:San_Jose_Earthquakes_%282000-2007%29_logo.svg",
+      "sourceSha256": "f39fa2b1905ff46156a59547dcf0f43ad0c4dcf57f936de38d5be6950e5155e7",
+      "path": "/logos/svg/mls/alternates/sj-2000-shield.svg",
+      "format": "svg",
+      "colors": [
+        "#000000",
+        "#BBBDD6",
+        "#FFFFFF",
+        "#004385",
+        "#CECECE"
+      ],
+      "sourcePalette": [
+        "#004385",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [],
+      "sha256": "630e3d16711507983b0cd6dab795719a36ad68bbf8af2579d297c64d851cdc46"
+    },
+    {
+      "teamId": "MLS-SKC",
+      "id": "1996-wiz",
+      "label": "1996 Wiz",
+      "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/b/b4/Kansas_City_Wiz_logo.svg",
+      "sourcePage": "https://logos.fandom.com/wiki/File:Kansas_City_Wiz_logo.svg",
+      "sourceSha256": "b21dab4d41f85eeb86cd859524fc9bdb1534fba23efec5c41f28f3ba1c58e18b",
+      "path": "/logos/svg/mls/alternates/skc-1996-wiz.svg",
+      "format": "svg",
+      "colors": [
+        "#000000",
+        "#007AB5",
+        "#FFDD00",
+        "#E32219",
+        "#93117E",
+        "#009036",
+        "#FFFFFF"
+      ],
+      "sourcePalette": [
+        "#000000",
+        "#008576",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [],
+      "sha256": "63149d51e80aaf91d56e7762fe1fc8a3fcd35388c8cd7b57e2e50ab2bf6886be"
+    },
+    {
+      "teamId": "MLS-SKC",
+      "id": "1997-wizards",
+      "label": "1997 Wizards",
+      "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/b/ba/Kansas_City_Wizards_logo_%281997-2006%29.svg",
+      "sourcePage": "https://logos.fandom.com/wiki/File:Kansas_City_Wizards_logo_%281997-2006%29.svg",
+      "sourceSha256": "b6f263a08172cd4c2d61c1ea93add464b917c03c35e5ea3505917bdc3c2af694",
+      "path": "/logos/svg/mls/alternates/skc-1997-wizards.svg",
+      "format": "svg",
+      "colors": [
+        "#FFFFFF",
+        "#000000",
+        "#0098D4",
+        "#E42431",
+        "#FFD522",
+        "#039C7D",
+        "#116AAF"
+      ],
+      "sourcePalette": [
+        "#000000",
+        "#078AAB",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [],
+      "sha256": "64f8a13f4de99d6935b5b71afb9c97192b496020484c5ef8e172ef4fef221a73"
+    },
+    {
+      "teamId": "MLS-VAN",
+      "id": "pre-mls-wave",
+      "label": "Pre-MLS wave crest",
+      "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/7/7c/Vancouver_Whitecaps_logo.svg",
+      "sourcePage": "https://logos.fandom.com/wiki/File:Vancouver_Whitecaps_logo.svg",
+      "sourceSha256": "74b7daf99de15fa1d430181229d6fd3a491c30b03a689f2db819089ad5f0a60a",
+      "path": "/logos/svg/mls/alternates/van-pre-mls-wave.svg",
+      "format": "svg",
+      "colors": [
+        "#FFFFFF",
+        "#000000",
+        "#3A8D95",
+        "#004B95"
+      ],
+      "sourcePalette": [
+        "#1D6C95",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [],
+      "sha256": "60261171435bd33b7ec70323e09beee34110d4d2c72fc0ffffbc7adca10e4f22"
+    }
+  ]
+}

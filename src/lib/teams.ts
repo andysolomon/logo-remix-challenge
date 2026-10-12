@@ -1,6 +1,6 @@
 import data from './teams.json'
 
-export type League = 'PRO' | 'NBA' | 'MLB' | 'SOCCER' | 'COL' | 'HS' | 'FOOD' | 'BRAND' | 'APP' | 'TV' | 'CAR' | 'LUX' | 'CLOTH'
+export type League = 'PRO' | 'NBA' | 'MLB' | 'SOCCER' | 'MLS' | 'COL' | 'HS' | 'FOOD' | 'BRAND' | 'APP' | 'TV' | 'CAR' | 'LUX' | 'CLOTH'
 
 export interface LogoVariant {
   id: string
@@ -33,7 +33,8 @@ export interface Team {
 
 export interface Round {
   o: string
-  c: string
+  /** Team whose colors the logo wears; unset plays the logo unremixed, in its own original colors. */
+  c?: string
   v: number
   /** Per-round guess target; falls back to the deck default when unset. */
   g?: GuessTarget
@@ -60,7 +61,7 @@ export const TEAMS = data.teams as Team[]
 export const LEAGUES = data.leagues as Record<League, { label: string; conferences: string[] }>
 /**
  * Collections whose palettes a remix may wear. For now only NFL, NBA and college teams donate colors;
- * every other collection (MLB, soccer, high school, fast food, brands, apps, TV, cars) is logo-only.
+ * every other collection (MLB, soccer, MLS, high school, fast food, brands, apps, TV, cars) is logo-only.
  */
 export const COLOR_DONOR_LEAGUES: readonly League[] = ['PRO', 'NBA', 'COL']
 export const isColorDonorLeague = (league: League) => COLOR_DONOR_LEAGUES.includes(league)
@@ -76,6 +77,14 @@ export const MAX_DECK_ROUNDS = 20
 
 const byId = new Map(TEAMS.map((t) => [t.id, t]))
 export const findTeam = (id: string): Team | undefined => byId.get(id)
+/** Teams that changed collections, by old id; saved rounds follow them so a deck never resets over a move. */
+const MOVED_TEAMS = new Map([['SOCCER-MIA', 'MLS-MIA']])
+const followMove = (round: unknown) => {
+  if (typeof round !== 'object' || round === null) return round
+  const { o, c } = round as Round
+  // Original-colors rounds have no color team to move.
+  return { ...round, o: MOVED_TEAMS.get(o) ?? o, ...(c === undefined ? {} : { c: MOVED_TEAMS.get(c) ?? c }) }
+}
 // Conference entries carry an empty name; trim keeps their display clean.
 export const fullName = (t: Team) => `${t.region} ${t.name}`.trim()
 
@@ -154,8 +163,9 @@ const storedInteger = (value: string | null) =>
 
 export function deckFromStorage(value: string | null): Round[] {
   try {
-    const d = JSON.parse(value ?? 'null')
-    if (Array.isArray(d) && d.every(isRound)) return normalizeDeck(d)
+    const parsed = JSON.parse(value ?? 'null')
+    const d = Array.isArray(parsed) ? parsed.map(followMove) : null
+    if (d && d.every(isRound)) return normalizeDeck(d)
   } catch {
     /* ignore */
   }
@@ -547,14 +557,17 @@ const playJoined = async (urls: string[], fallback = urls[0]) => {
     playSrc(fallback)
   }
 }
-export const roundTarget = (r: Round, fallback: GuessTarget): GuessTarget => r.g ?? fallback
+/** An original-colors round wears its own colors, so it only ever asks for the logo. */
+export const roundTarget = (r: Round, fallback: GuessTarget): GuessTarget => (r.c === undefined ? 'team' : r.g ?? fallback)
+/** The team whose colors a round wears: its color team, or the logo's own team in an original-colors round. */
+export const roundColors = (r: Round): Team => findTeam(r.c ?? r.o)!
 export const guessPrompt = (t: GuessTarget) => (t === 'both' ? 'Guess the Logo and the Colors!' : t === 'colors' ? 'Guess the Colors!' : 'Guess the Logo!')
 /** What one entry of a collection is called in search and result labels. */
 export const entryNoun = (league: League) =>
-  league === 'APP' ? 'app' : league === 'TV' ? 'channel' : ['FOOD', 'BRAND', 'CAR', 'LUX', 'CLOTH'].includes(league) ? 'brand' : league === 'SOCCER' ? 'club' : 'team'
+  league === 'APP' ? 'app' : league === 'TV' ? 'channel' : ['FOOD', 'BRAND', 'CAR', 'LUX', 'CLOTH'].includes(league) ? 'brand' : league === 'SOCCER' || league === 'MLS' ? 'club' : 'team'
 /**
- * Where a team plays: the league and conference for NFL teams ("NFL - AFC"), the league label for other pro teams
- * and fast food, the conference for college and high school, the domestic league for soccer clubs outside
+ * Where a team plays: the league and conference for NFL teams ("NFL - AFC"), the league label for other pro teams,
+ * MLS clubs and fast food, the conference for college and high school, the domestic league for soccer clubs outside
  * "Rest of World", the type for brands, apps, channels, cars, luxury houses ("Luxury watchmaker") and clothing
  * brands ("Outdoor brand").
  */
@@ -576,10 +589,10 @@ export const teamHint = (t: Team) =>
                 : t.league === 'CLOTH'
                   ? `${t.conference} brand`
                   : LEAGUES[t.league].label
-/** Hint lines for a round, one for the logo team and one for the colors team. */
-export const roundHints = (r: Round): [string, string] => [
+/** Hint lines for a round: one for the logo team, plus one for the colors team when the round is a remix. */
+export const roundHints = (r: Round): string[] => [
   `Logo: ${teamHint(findTeam(r.o)!)}`,
-  `Colors: ${teamHint(findTeam(r.c)!)}`,
+  ...(r.c === undefined ? [] : [`Colors: ${teamHint(findTeam(r.c)!)}`]),
 ]
 
 // ---------- Random deck generator ----------
@@ -595,6 +608,7 @@ export const TEAM_POOLS: TeamPool[] = [
   { id: 'NBA', label: LEAGUES.NBA.label, league: 'NBA', match: (t) => t.league === 'NBA' },
   { id: 'MLB', label: LEAGUES.MLB.label, league: 'MLB', match: (t) => t.league === 'MLB' },
   { id: 'Soccer', label: LEAGUES.SOCCER.label, league: 'SOCCER', match: (t) => t.league === 'SOCCER' },
+  { id: 'MLS', label: LEAGUES.MLS.label, league: 'MLS', match: (t) => t.league === 'MLS' },
   { id: 'Fast Food', label: LEAGUES.FOOD.label, league: 'FOOD', match: (t) => t.league === 'FOOD' },
   { id: 'Brands', label: LEAGUES.BRAND.label, league: 'BRAND', match: (t) => t.league === 'BRAND' },
   { id: 'Apps', label: LEAGUES.APP.label, league: 'APP', match: (t) => t.league === 'APP' },
@@ -842,7 +856,7 @@ export function nextContrastSafePermutation(original: Team, targetPalette: reado
 function isRound(r: unknown): r is Round {
   if (typeof r !== 'object' || r === null) return false
   const round = r as Round
-  return !!findTeam(round.o) && !!findTeam(round.c) && Number.isFinite(round.v) &&
+  return !!findTeam(round.o) && (round.c === undefined || !!findTeam(round.c)) && Number.isFinite(round.v) &&
     (round.g === undefined || isGuessTarget(round.g)) &&
     (round.h === undefined || typeof round.h === 'boolean') &&
     (round.l === undefined || typeof round.l === 'string')
@@ -850,15 +864,25 @@ function isRound(r: unknown): r is Round {
 
 export function normalizeRound(round: Round): Round {
   const original = findTeam(round.o)
-  const colors = findTeam(round.c)
-  if (!original || !colors) return round
-  const { l, ...base } = round
-  const validLogo = original.alternateLogos?.some((variant) => variant.id === l)
-  return { ...base, ...(validLogo ? { l } : {}), v: contrastSafePermutation(withLogoVariant(original, l), colors.palette, round.v) }
+  if (!original) return round
+  const { l, c, g, ...base } = round
+  const logo = original.alternateLogos?.some((variant) => variant.id === l) ? { l } : {}
+  // An original-colors round has no color assignment and always asks for the logo.
+  if (c === undefined) return { ...base, ...logo, v: 0 }
+  const colors = findTeam(c)
+  if (!colors) return round
+  return { ...base, c, ...(g === undefined ? {} : { g }), ...logo, v: contrastSafePermutation(withLogoVariant(original, l), colors.palette, round.v) }
 }
 
-/** A round's color team must come from a color-donor collection; older rounds that break the rule are dropped. */
+/** An edited round takes the new logo and colors but keeps its own guess and hint settings. */
+export const replaceRound = (old: Round, next: Round): Round => normalizeRound({ ...next, g: old.g, h: old.h })
+
+/**
+ * A remix's color team must come from a color-donor collection; older rounds that break the rule are dropped.
+ * An original-colors round wears no other team's colors, so any logo is allowed.
+ */
 export const isAllowedRound = (round: Round): boolean => {
+  if (round.c === undefined) return true
   const colors = findTeam(round.c)
   return !!colors && isColorDonor(colors)
 }

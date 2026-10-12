@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { framedTileImage } from '../lib/designer'
-import { remixLayout, resolveRemixTargetColors, withLogoVariant, type Team } from '../lib/teams'
+import { findTeam, remixLayout, resolveRemixTargetColors, withLogoVariant, type Round, type Team } from '../lib/teams'
 
 interface Props {
   team: Team
@@ -218,7 +218,8 @@ export async function recolorRaster(src: string, from: RGB[], to: RGB[]): Promis
 }
 
 // ---------------------------------------------------------------- dispatcher
-export const isSvg = (src: string) => /\.svg(\?|#|$)/i.test(src)
+/** An SVG asset path, or an inline SVG data URL (a logo traced in Designer mode). */
+export const isSvg = (src: string) => /\.svg(\?|#|$)/i.test(src) || /^data:image\/svg\+xml[,;]/i.test(src)
 
 /** Some downloaded "SVGs" are just a wrapper around an embedded bitmap; fill rewriting can't touch those. */
 export const hasEmbeddedRaster = (markup: string) => /<image\b/i.test(markup)
@@ -337,5 +338,15 @@ export function Logo({ team: baseTeam, palette, perm = 0, variantId, targetColor
         data-remix-status={hasTargetPalette ? remixStatus : 'raw'}
       />
     </>
+  )
+}
+
+/** A deck round's logo: remixed into its color team's palette, or in its own colors for an original-colors round. */
+export function RoundLogo({ round }: { round: Round }) {
+  const team = findTeam(round.o)!
+  return round.c === undefined ? (
+    <Logo team={team} variantId={round.l} />
+  ) : (
+    <Logo team={team} palette={findTeam(round.c)!.palette} perm={round.v} variantId={round.l} />
   )
 }

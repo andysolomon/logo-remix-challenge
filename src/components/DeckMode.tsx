@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useReducer, useRef, useState } from 'react'
 import { deckUndoReducer, findTeam, formatScore, fullName, GUESS_TARGETS, GUESS_LABEL, roundHints, roundTarget, speak, voiceSupported, TIMER_OPTIONS, HIGH_SCORE_LIMIT, MAX_DECK_ROUNDS, type GameMode, type HighScore, type GuessTarget, type Round, type TimerSeconds } from '../lib/teams'
-import { Logo } from './Logo'
+import { RoundLogo } from './Logo'
 import { RandomDeckModal } from './RandomDeckModal'
 import { useDialogA11y } from './SettingsModal'
 
@@ -111,15 +111,15 @@ export function DeckMode({ deck, portrait, timer, gameMode, guessTarget, voice, 
           <div className="card-grid">
             {deck.map((r, i) => {
               const ot = findTeam(r.o)!
-              const ct = findTeam(r.c)!
+              const ct = r.c === undefined ? null : findTeam(r.c)!
               return (
-                <div key={`${i}-${r.o}-${r.c}`} className="round-card">
+                <div key={`${i}-${r.o}-${r.c ?? 'original'}`} className="round-card">
                   <div className="round-label">ROUND {i + 1}</div>
                   <div className="round-logo">
-                    <Logo team={ot} palette={ct.palette} perm={r.v} variantId={r.l} />
+                    <RoundLogo round={r} />
                   </div>
                   <div className="round-name">{fullName(ot)}</div>
-                  <div className="round-sub">in {fullName(ct)} colors</div>
+                  <div className="round-sub">{ct ? `in ${fullName(ct)} colors` : 'in its original colors'}</div>
                   <div className="round-target">
                     <span className="round-target-lb">GUESS</span>
                     <div className="seg-group" role="group" aria-label={`Round ${i + 1}: what to guess`}>
@@ -128,7 +128,8 @@ export function DeckMode({ deck, portrait, timer, gameMode, guessTarget, voice, 
                           key={t}
                           className={`seg${roundTarget(r, guessTarget) === t ? ' active' : ''}`}
                           aria-pressed={roundTarget(r, guessTarget) === t}
-                          title={`Guess the ${lb}`}
+                          title={ct || t === 'team' ? `Guess the ${lb}` : 'Original-colors rounds ask for the logo'}
+                          disabled={!ct && t !== 'team'}
                           onClick={() => mut((d) => { d[i] = { ...d[i], g: t }; return d })}
                         >
                           {lb}

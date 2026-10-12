@@ -1,0 +1,858 @@
+{
+  "assets": [
+    {
+      "id": "MLS-ATL",
+      "league": "MLS",
+      "conference": "Eastern",
+      "region": "Atlanta United",
+      "name": "",
+      "abbr": "ATL",
+      "aliases": [
+        "Atlanta United FC",
+        "ATLUTD",
+        "Atlanta Utd",
+        "Five Stripes"
+      ],
+      "path": "/logos/svg/mls/atl.svg",
+      "format": "svg",
+      "sourceUrl": "https://images.mlssoccer.com/image/upload/assets/logos/ATL.svg",
+      "sourcePage": "https://www.mlssoccer.com/clubs/",
+      "colors": [
+        "#2D2A26",
+        "#AA9767",
+        "#A32035",
+        "#716134"
+      ],
+      "palette": [
+        "#A32035",
+        "#AA9767",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [
+        2
+      ]
+    },
+    {
+      "id": "MLS-ATX",
+      "league": "MLS",
+      "conference": "Western",
+      "region": "Austin FC",
+      "name": "",
+      "abbr": "ATX",
+      "aliases": [
+        "Austin",
+        "Los Verdes"
+      ],
+      "path": "/logos/svg/mls/atx.svg",
+      "format": "svg",
+      "sourceUrl": "https://images.mlssoccer.com/image/upload/assets/logos/ATX.svg",
+      "sourcePage": "https://www.mlssoccer.com/clubs/",
+      "colors": [
+        "#000000",
+        "#FFFFFF",
+        "#00B140"
+      ],
+      "palette": [
+        "#00B140",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": []
+    },
+    {
+      "id": "MLS-MTL",
+      "league": "MLS",
+      "conference": "Eastern",
+      "region": "CF Montr\u00e9al",
+      "name": "",
+      "abbr": "MTL",
+      "aliases": [
+        "Montr\u00e9al",
+        "Club de Foot Montr\u00e9al"
+      ],
+      "path": "/logos/svg/mls/mtl.svg",
+      "format": "svg",
+      "sourceUrl": "https://images.mlssoccer.com/image/upload/assets/logos/MTL.svg",
+      "sourcePage": "https://www.mlssoccer.com/clubs/",
+      "colors": [
+        "#003DA6",
+        "#000000",
+        "#C1C5C8",
+        "#FFFFFF"
+      ],
+      "palette": [
+        "#003DA6",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": []
+    },
+    {
+      "id": "MLS-CLT",
+      "league": "MLS",
+      "conference": "Eastern",
+      "region": "Charlotte FC",
+      "name": "",
+      "abbr": "CLT",
+      "aliases": [
+        "Charlotte",
+        "CLTFC"
+      ],
+      "path": "/logos/svg/mls/clt.svg",
+      "format": "svg",
+      "sourceUrl": "https://images.mlssoccer.com/image/upload/assets/logos/CLT.svg",
+      "sourcePage": "https://www.mlssoccer.com/clubs/",
+      "colors": [
+        "#000000",
+        "#0085CA",
+        "#FFFFFF"
+      ],
+      "palette": [
+        "#0085CA",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": []
+    },
+    {
+      "id": "MLS-CHI",
+      "league": "MLS",
+      "conference": "Eastern",
+      "region": "Chicago Fire",
+      "name": "",
+      "abbr": "CHI",
+      "aliases": [
+        "Chicago Fire FC",
+        "Fire",
+        "The Fire"
+      ],
+      "path": "/logos/svg/mls/chi.svg",
+      "format": "svg",
+      "sourceUrl": "https://images.mlssoccer.com/image/upload/assets/logos/CHI.svg",
+      "sourcePage": "https://www.mlssoccer.com/clubs/",
+      "colors": [
+        "#141946",
+        "#FFFFFF",
+        "#7CCDEF",
+        "#FF0000"
+      ],
+      "palette": [
+        "#FF0000",
+        "#7CCDEF",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": []
+    },
+    {
+      "id": "MLS-COL",
+      "league": "MLS",
+      "conference": "Western",
+      "region": "Colorado Rapids",
+      "name": "",
+      "abbr": "COL",
+      "aliases": [
+        "Rapids"
+      ],
+      "path": "/logos/svg/mls/col.svg",
+      "format": "svg",
+      "sourceUrl": "https://images.mlssoccer.com/image/upload/assets/logos/COL.svg",
+      "sourcePage": "https://www.mlssoccer.com/clubs/",
+      "colors": [
+        "#FFFFFF",
+        "#C1C5C8",
+        "#8AB7E9",
+        "#323E48",
+        "#8A2432"
+      ],
+      "palette": [
+        "#8A2432",
+        "#8AB7E9",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": []
+    },
+    {
+      "id": "MLS-CLB",
+      "league": "MLS",
+      "conference": "Eastern",
+      "region": "Columbus Crew",
+      "name": "",
+      "abbr": "CLB",
+      "aliases": [
+        "Columbus",
+        "Crew",
+        "The Crew",
+        "Columbus Crew SC"
+      ],
+      "path": "/logos/svg/mls/clb.svg",
+      "format": "svg",
+      "sourceUrl": "https://images.mlssoccer.com/image/upload/assets/logos/CLB.svg",
+      "sourcePage": "https://www.mlssoccer.com/clubs/",
+      "colors": [
+        "#FEDD00",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "palette": [
+        "#FEDD00",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": []
+    },
+    {
+      "id": "MLS-DC",
+      "league": "MLS",
+      "conference": "Eastern",
+      "region": "D.C. United",
+      "name": "",
+      "abbr": "DC",
+      "aliases": [
+        "DCU"
+      ],
+      "path": "/logos/svg/mls/dc.svg",
+      "format": "svg",
+      "sourceUrl": "https://images.mlssoccer.com/image/upload/assets/logos/DC.svg",
+      "sourcePage": "https://www.mlssoccer.com/clubs/",
+      "colors": [
+        "#FFFFFF",
+        "#EB0029",
+        "#2E2A25"
+      ],
+      "palette": [
+        "#2E2A25",
+        "#EB0029",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": []
+    },
+    {
+      "id": "MLS-CIN",
+      "league": "MLS",
+      "conference": "Eastern",
+      "region": "FC Cincinnati",
+      "name": "",
+      "abbr": "CIN",
+      "aliases": [
+        "Cincinnati",
+        "FC Cincy",
+        "Cincy",
+        "FCC"
+      ],
+      "path": "/logos/svg/mls/cin.svg",
+      "format": "svg",
+      "sourceUrl": "https://images.mlssoccer.com/image/upload/assets/logos/CIN.svg",
+      "sourcePage": "https://www.mlssoccer.com/clubs/",
+      "colors": [
+        "#FFFFFF",
+        "#041E42",
+        "#003087",
+        "#FE5000"
+      ],
+      "palette": [
+        "#003087",
+        "#FE5000",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": []
+    },
+    {
+      "id": "MLS-DAL",
+      "league": "MLS",
+      "conference": "Western",
+      "region": "FC Dallas",
+      "name": "",
+      "abbr": "DAL",
+      "aliases": [
+        "Dallas",
+        "FCD"
+      ],
+      "path": "/logos/svg/mls/dal.svg",
+      "format": "svg",
+      "sourceUrl": "https://images.mlssoccer.com/image/upload/assets/logos/DAL.svg",
+      "sourcePage": "https://www.mlssoccer.com/clubs/",
+      "colors": [
+        "#FFFFFF",
+        "#C3C6C8",
+        "#C6093B",
+        "#001F5B"
+      ],
+      "palette": [
+        "#C6093B",
+        "#001F5B",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": []
+    },
+    {
+      "id": "MLS-HOU",
+      "league": "MLS",
+      "conference": "Western",
+      "region": "Houston Dynamo",
+      "name": "",
+      "abbr": "HOU",
+      "aliases": [
+        "Houston Dynamo FC",
+        "Dynamo"
+      ],
+      "path": "/logos/svg/mls/hou.svg",
+      "format": "svg",
+      "sourceUrl": "https://images.mlssoccer.com/image/upload/assets/logos/HOU.svg",
+      "sourcePage": "https://www.mlssoccer.com/clubs/",
+      "colors": [
+        "#101820",
+        "#FF6B00",
+        "#FFFFFF"
+      ],
+      "palette": [
+        "#FF6B00",
+        "#101820",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": []
+    },
+    {
+      "id": "MLS-MIA",
+      "league": "MLS",
+      "conference": "Eastern",
+      "region": "Inter Miami",
+      "name": "",
+      "abbr": "MIA",
+      "aliases": [
+        "Inter Miami CF",
+        "Club Internacional de Futbol Miami"
+      ],
+      "path": "/logos/svg/mls/mia.svg",
+      "format": "svg",
+      "sourceUrl": "https://images.mlssoccer.com/image/upload/assets/logos/MIA.svg",
+      "sourcePage": "https://www.mlssoccer.com/clubs/",
+      "colors": [
+        "#231F20",
+        "#F7B5CD",
+        "#FFFFFF"
+      ],
+      "palette": [
+        "#F7B5CD",
+        "#231F20",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": []
+    },
+    {
+      "id": "MLS-LA",
+      "league": "MLS",
+      "conference": "Western",
+      "region": "LA Galaxy",
+      "name": "",
+      "abbr": "LA",
+      "aliases": [
+        "Galaxy",
+        "Los Angeles Galaxy",
+        "LAG"
+      ],
+      "path": "/logos/svg/mls/la.svg",
+      "format": "svg",
+      "sourceUrl": "https://images.mlssoccer.com/image/upload/assets/logos/LA.svg",
+      "sourcePage": "https://www.mlssoccer.com/clubs/",
+      "colors": [
+        "#FFCE00",
+        "#004987",
+        "#15284B",
+        "#EDAA00",
+        "#DADBE1",
+        "#FFFFFF"
+      ],
+      "palette": [
+        "#15284B",
+        "#FFCE00",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": []
+    },
+    {
+      "id": "MLS-LAFC",
+      "league": "MLS",
+      "conference": "Western",
+      "region": "LAFC",
+      "name": "",
+      "abbr": "LAFC",
+      "aliases": [
+        "Los Angeles FC",
+        "Los Angeles Football Club"
+      ],
+      "path": "/logos/svg/mls/lafc.svg",
+      "format": "svg",
+      "sourceUrl": "https://images.mlssoccer.com/image/upload/assets/logos/LAFC.svg",
+      "sourcePage": "https://www.mlssoccer.com/clubs/",
+      "colors": [
+        "#C39F6C",
+        "#010101"
+      ],
+      "palette": [
+        "#010101",
+        "#C39F6C",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [
+        2
+      ]
+    },
+    {
+      "id": "MLS-MIN",
+      "league": "MLS",
+      "conference": "Western",
+      "region": "Minnesota United",
+      "name": "",
+      "abbr": "MIN",
+      "aliases": [
+        "Minnesota United FC",
+        "MNUFC",
+        "Loons"
+      ],
+      "path": "/logos/svg/mls/min.svg",
+      "format": "svg",
+      "sourceUrl": "https://images.mlssoccer.com/image/upload/assets/logos/MIN.svg",
+      "sourcePage": "https://www.mlssoccer.com/clubs/",
+      "colors": [
+        "#C4C7C9",
+        "#8AC8EC",
+        "#000000",
+        "#D14F53"
+      ],
+      "palette": [
+        "#000000",
+        "#8AC8EC",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [
+        2
+      ]
+    },
+    {
+      "id": "MLS-NSH",
+      "league": "MLS",
+      "conference": "Eastern",
+      "region": "Nashville SC",
+      "name": "",
+      "abbr": "NSH",
+      "aliases": [
+        "Nashville"
+      ],
+      "path": "/logos/svg/mls/nsh.svg",
+      "format": "svg",
+      "sourceUrl": "https://images.mlssoccer.com/image/upload/assets/logos/NSH.svg",
+      "sourcePage": "https://www.mlssoccer.com/clubs/",
+      "colors": [
+        "#ECE83A",
+        "#1F1646"
+      ],
+      "palette": [
+        "#ECE83A",
+        "#1F1646",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [
+        2
+      ]
+    },
+    {
+      "id": "MLS-NE",
+      "league": "MLS",
+      "conference": "Eastern",
+      "region": "New England Revolution",
+      "name": "",
+      "abbr": "NE",
+      "aliases": [
+        "Revolution",
+        "Revs",
+        "New England Revs"
+      ],
+      "path": "/logos/svg/mls/ne.svg",
+      "format": "svg",
+      "sourceUrl": "https://images.mlssoccer.com/image/upload/assets/logos/NE.svg",
+      "sourcePage": "https://www.mlssoccer.com/clubs/",
+      "colors": [
+        "#0A2240",
+        "#FFFFFF",
+        "#CE0E2D"
+      ],
+      "palette": [
+        "#0A2240",
+        "#CE0E2D",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": []
+    },
+    {
+      "id": "MLS-NYC",
+      "league": "MLS",
+      "conference": "Eastern",
+      "region": "New York City FC",
+      "name": "",
+      "abbr": "NYC",
+      "aliases": [
+        "NYCFC",
+        "New York City"
+      ],
+      "path": "/logos/svg/mls/nyc.svg",
+      "format": "svg",
+      "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/c/c8/New_York_City_FC_%282024%29.svg",
+      "sourcePage": "https://logos.fandom.com/wiki/New_York_City_FC",
+      "colors": [
+        "#0D0F27",
+        "#A4D0EF",
+        "#F15F3D",
+        "#FFFFFF"
+      ],
+      "palette": [
+        "#A4D0EF",
+        "#0D0F27",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": []
+    },
+    {
+      "id": "MLS-ORL",
+      "league": "MLS",
+      "conference": "Eastern",
+      "region": "Orlando City",
+      "name": "",
+      "abbr": "ORL",
+      "aliases": [
+        "Orlando City SC",
+        "OCSC"
+      ],
+      "path": "/logos/svg/mls/orl.svg",
+      "format": "svg",
+      "sourceUrl": "https://images.mlssoccer.com/image/upload/assets/logos/ORL.svg",
+      "sourcePage": "https://www.mlssoccer.com/clubs/",
+      "colors": [
+        "#60269E",
+        "#FFFFFF",
+        "#F0D283"
+      ],
+      "palette": [
+        "#60269E",
+        "#F0D283",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": []
+    },
+    {
+      "id": "MLS-PHI",
+      "league": "MLS",
+      "conference": "Eastern",
+      "region": "Philadelphia Union",
+      "name": "",
+      "abbr": "PHI",
+      "aliases": [
+        "Union",
+        "The Union"
+      ],
+      "path": "/logos/svg/mls/phi.svg",
+      "format": "svg",
+      "sourceUrl": "https://images.mlssoccer.com/image/upload/assets/logos/PHI.svg",
+      "sourcePage": "https://www.mlssoccer.com/clubs/",
+      "colors": [
+        "#E0D0A6",
+        "#051C2C",
+        "#3A8DDE"
+      ],
+      "palette": [
+        "#051C2C",
+        "#E0D0A6",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [
+        2
+      ]
+    },
+    {
+      "id": "MLS-POR",
+      "league": "MLS",
+      "conference": "Western",
+      "region": "Portland Timbers",
+      "name": "",
+      "abbr": "POR",
+      "aliases": [
+        "Timbers"
+      ],
+      "path": "/logos/svg/mls/por.svg",
+      "format": "svg",
+      "sourceUrl": "https://images.mlssoccer.com/image/upload/assets/logos/POR.svg",
+      "sourcePage": "https://www.mlssoccer.com/clubs/",
+      "colors": [
+        "#2C5234",
+        "#C99700",
+        "#FFFFFF"
+      ],
+      "palette": [
+        "#2C5234",
+        "#C99700",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": []
+    },
+    {
+      "id": "MLS-RSL",
+      "league": "MLS",
+      "conference": "Western",
+      "region": "Real Salt Lake",
+      "name": "",
+      "abbr": "RSL",
+      "aliases": [
+        "Salt Lake"
+      ],
+      "path": "/logos/svg/mls/rsl.svg",
+      "format": "svg",
+      "sourceUrl": "https://images.mlssoccer.com/image/upload/assets/logos/RSL.svg",
+      "sourcePage": "https://www.mlssoccer.com/clubs/",
+      "colors": [
+        "#FFFFFF",
+        "#DAA900",
+        "#A32035",
+        "#001E61"
+      ],
+      "palette": [
+        "#A32035",
+        "#001E61",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": []
+    },
+    {
+      "id": "MLS-RBNY",
+      "league": "MLS",
+      "conference": "Eastern",
+      "region": "Red Bull New York",
+      "name": "",
+      "abbr": "RBNY",
+      "aliases": [
+        "New York Red Bulls",
+        "NY Red Bulls",
+        "Red Bulls",
+        "Red Bull NY",
+        "NYRB"
+      ],
+      "path": "/logos/svg/mls/rbny.svg",
+      "format": "svg",
+      "sourceUrl": "https://images.mlssoccer.com/image/upload/assets/logos/RBNY.svg",
+      "sourcePage": "https://www.mlssoccer.com/clubs/",
+      "colors": [
+        "#FFFFFF",
+        "#C1C5C7",
+        "#FFC72C",
+        "#B91F31",
+        "#182852"
+      ],
+      "palette": [
+        "#B91F31",
+        "#FFC72C",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": []
+    },
+    {
+      "id": "MLS-SD",
+      "league": "MLS",
+      "conference": "Western",
+      "region": "San Diego FC",
+      "name": "",
+      "abbr": "SD",
+      "aliases": [
+        "San Diego",
+        "SDFC"
+      ],
+      "path": "/logos/svg/mls/sd.svg",
+      "format": "svg",
+      "sourceUrl": "https://images.mlssoccer.com/image/upload/assets/logos/SD.svg",
+      "sourcePage": "https://www.mlssoccer.com/clubs/",
+      "colors": [
+        "#02152B",
+        "#697A7C",
+        "#FFFFFF"
+      ],
+      "palette": [
+        "#02152B",
+        "#697A7C",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": []
+    },
+    {
+      "id": "MLS-SJ",
+      "league": "MLS",
+      "conference": "Western",
+      "region": "San Jose Earthquakes",
+      "name": "",
+      "abbr": "SJ",
+      "aliases": [
+        "Earthquakes",
+        "Quakes"
+      ],
+      "path": "/logos/svg/mls/sj.svg",
+      "format": "svg",
+      "sourceUrl": "https://images.mlssoccer.com/image/upload/assets/logos/SJ.svg",
+      "sourcePage": "https://www.mlssoccer.com/clubs/",
+      "colors": [
+        "#000000",
+        "#003DA6",
+        "#FFFFFF",
+        "#CE0E2D",
+        "#A6A8AB",
+        "#333333",
+        "#C8C8C8",
+        "#98989A",
+        "#54565A",
+        "#76777A"
+      ],
+      "palette": [
+        "#003DA6",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": []
+    },
+    {
+      "id": "MLS-SEA",
+      "league": "MLS",
+      "conference": "Western",
+      "region": "Seattle Sounders",
+      "name": "",
+      "abbr": "SEA",
+      "aliases": [
+        "Seattle Sounders FC",
+        "Sounders",
+        "Sounders FC"
+      ],
+      "path": "/logos/svg/mls/sea.svg",
+      "format": "svg",
+      "sourceUrl": "https://images.mlssoccer.com/image/upload/assets/logos/SEA.svg",
+      "sourcePage": "https://www.mlssoccer.com/clubs/",
+      "colors": [
+        "#78DED4",
+        "#4FB84F",
+        "#0033A1",
+        "#FFFFFF"
+      ],
+      "palette": [
+        "#4FB84F",
+        "#0033A1",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": []
+    },
+    {
+      "id": "MLS-SKC",
+      "league": "MLS",
+      "conference": "Western",
+      "region": "Sporting Kansas City",
+      "name": "",
+      "abbr": "SKC",
+      "aliases": [
+        "Sporting KC",
+        "Sporting"
+      ],
+      "path": "/logos/svg/mls/skc.svg",
+      "format": "svg",
+      "sourceUrl": "https://images.mlssoccer.com/image/upload/assets/logos/SKC.svg",
+      "sourcePage": "https://www.mlssoccer.com/clubs/",
+      "colors": [
+        "#888B8D",
+        "#FFFFFF",
+        "#0A2240",
+        "#A6BBD6"
+      ],
+      "palette": [
+        "#A6BBD6",
+        "#0A2240",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": []
+    },
+    {
+      "id": "MLS-STL",
+      "league": "MLS",
+      "conference": "Western",
+      "region": "St. Louis City SC",
+      "name": "",
+      "abbr": "STL",
+      "aliases": [
+        "St. Louis City",
+        "St. Louis",
+        "STL City"
+      ],
+      "path": "/logos/svg/mls/stl.svg",
+      "format": "svg",
+      "sourceUrl": "https://images.mlssoccer.com/image/upload/assets/logos/STL.svg",
+      "sourcePage": "https://www.mlssoccer.com/clubs/",
+      "colors": [
+        "#FFFFFF",
+        "#EC1458",
+        "#001544"
+      ],
+      "palette": [
+        "#EC1458",
+        "#001544",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": []
+    },
+    {
+      "id": "MLS-TOR",
+      "league": "MLS",
+      "conference": "Eastern",
+      "region": "Toronto FC",
+      "name": "",
+      "abbr": "TOR",
+      "aliases": [
+        "Toronto",
+        "TFC"
+      ],
+      "path": "/logos/svg/mls/tor.svg",
+      "format": "svg",
+      "sourceUrl": "https://images.mlssoccer.com/image/upload/assets/logos/TOR.svg",
+      "sourcePage": "https://www.mlssoccer.com/clubs/",
+      "colors": [
+        "#FFFFFF",
+        "#A2A9AD",
+        "#AA182C",
+        "#323E48"
+      ],
+      "palette": [
+        "#AA182C",
+        "#A2A9AD",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": []
+    },
+    {
+      "id": "MLS-VAN",
+      "league": "MLS",
+      "conference": "Western",
+      "region": "Vancouver Whitecaps",
+      "name": "",
+      "abbr": "VAN",
+      "aliases": [
+        "Vancouver Whitecaps FC",
+        "Whitecaps"
+      ],
+      "path": "/logos/svg/mls/van.svg",
+      "format": "svg",
+      "sourceUrl": "https://images.mlssoccer.com/image/upload/assets/logos/VAN.svg",
+      "sourcePage": "https://www.mlssoccer.com/clubs/",
+      "colors": [
+        "#98989A",
+        "#12284C",
+        "#8AB7E9",
+        "#FFFFFF"
+      ],
+      "palette": [
+        "#12284C",
+        "#8AB7E9",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": []
+    }
+  ]
+}

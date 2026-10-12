@@ -68,11 +68,15 @@ describe('MLS collection', () => {
     expect(findTeam('SOCCER-MIA')).toBeUndefined()
     expect(filterTeams('SOCCER', 'All', 'Miami')).toEqual([])
     const kept = { o: 'PRO-BUF', c: 'NBA-LAL', v: 0, g: 'both' as const }
-    const saved = JSON.stringify([{ o: 'SOCCER-MIA', c: 'PRO-KC', v: 2, g: 'team' }, kept])
-    expect(deckFromStorage(saved)).toEqual([
+    const saved = JSON.stringify([{ o: 'SOCCER-MIA', c: 'PRO-KC', v: 2, g: 'team' }, { o: 'SOCCER-MIA', v: 0 }, kept])
+    const deck = deckFromStorage(saved)
+    expect(deck).toEqual([
       normalizeRound({ o: 'MLS-MIA', c: 'PRO-KC', v: 2, g: 'team' }),
+      normalizeRound({ o: 'MLS-MIA', v: 0 }),
       normalizeRound(kept),
     ])
+    // An original-colors round stays one: following the move adds no color team.
+    expect('c' in deck[1]).toBe(false)
   })
 
   test('every crest is local vector artwork that matches its manifest and the pinned ESPN roster', () => {

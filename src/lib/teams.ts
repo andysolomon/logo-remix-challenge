@@ -33,7 +33,8 @@ export interface Team {
 
 export interface Round {
   o: string
-  c: string
+  /** Team whose colors the logo wears; unset plays the logo unremixed, in its own original colors. */
+  c?: string
   v: number
   /** Per-round guess target; falls back to the deck default when unset. */
   g?: GuessTarget
@@ -81,7 +82,8 @@ const MOVED_TEAMS = new Map([['SOCCER-MIA', 'MLS-MIA']])
 const followMove = (round: unknown) => {
   if (typeof round !== 'object' || round === null) return round
   const { o, c } = round as Round
-  return { ...round, o: MOVED_TEAMS.get(o) ?? o, c: MOVED_TEAMS.get(c) ?? c }
+  // Original-colors rounds have no color team to move.
+  return { ...round, o: MOVED_TEAMS.get(o) ?? o, ...(c === undefined ? {} : { c: MOVED_TEAMS.get(c) ?? c }) }
 }
 // Conference entries carry an empty name; trim keeps their display clean.
 export const fullName = (t: Team) => `${t.region} ${t.name}`.trim()
@@ -555,7 +557,10 @@ const playJoined = async (urls: string[], fallback = urls[0]) => {
     playSrc(fallback)
   }
 }
-export const roundTarget = (r: Round, fallback: GuessTarget): GuessTarget => r.g ?? fallback
+/** An original-colors round wears its own colors, so it only ever asks for the logo. */
+export const roundTarget = (r: Round, fallback: GuessTarget): GuessTarget => (r.c === undefined ? 'team' : r.g ?? fallback)
+/** The team whose colors a round wears: its color team, or the logo's own team in an original-colors round. */
+export const roundColors = (r: Round): Team => findTeam(r.c ?? r.o)!
 export const guessPrompt = (t: GuessTarget) => (t === 'both' ? 'Guess the Logo and the Colors!' : t === 'colors' ? 'Guess the Colors!' : 'Guess the Logo!')
 /** What one entry of a collection is called in search and result labels. */
 export const entryNoun = (league: League) =>
@@ -581,10 +586,10 @@ export const teamHint = (t: Team) =>
               : t.league === 'CLOTH'
                 ? `${t.conference} brand`
                 : LEAGUES[t.league].label
-/** Hint lines for a round, one for the logo team and one for the colors team. */
-export const roundHints = (r: Round): [string, string] => [
+/** Hint lines for a round: one for the logo team, plus one for the colors team when the round is a remix. */
+export const roundHints = (r: Round): string[] => [
   `Logo: ${teamHint(findTeam(r.o)!)}`,
-  `Colors: ${teamHint(findTeam(r.c)!)}`,
+  ...(r.c === undefined ? [] : [`Colors: ${teamHint(findTeam(r.c)!)}`]),
 ]
 
 // ---------- Random deck generator ----------
@@ -848,7 +853,7 @@ export function nextContrastSafePermutation(original: Team, targetPalette: reado
 function isRound(r: unknown): r is Round {
   if (typeof r !== 'object' || r === null) return false
   const round = r as Round
-  return !!findTeam(round.o) && !!findTeam(round.c) && Number.isFinite(round.v) &&
+  return !!findTeam(round.o) && (round.c === undefined || !!findTeam(round.c)) && Number.isFinite(round.v) &&
     (round.g === undefined || isGuessTarget(round.g)) &&
     (round.h === undefined || typeof round.h === 'boolean') &&
     (round.l === undefined || typeof round.l === 'string')
@@ -856,15 +861,25 @@ function isRound(r: unknown): r is Round {
 
 export function normalizeRound(round: Round): Round {
   const original = findTeam(round.o)
-  const colors = findTeam(round.c)
-  if (!original || !colors) return round
-  const { l, ...base } = round
-  const validLogo = original.alternateLogos?.some((variant) => variant.id === l)
-  return { ...base, ...(validLogo ? { l } : {}), v: contrastSafePermutation(withLogoVariant(original, l), colors.palette, round.v) }
+  if (!original) return round
+  const { l, c, g, ...base } = round
+  const logo = original.alternateLogos?.some((variant) => variant.id === l) ? { l } : {}
+  // An original-colors round has no color assignment and always asks for the logo.
+  if (c === undefined) return { ...base, ...logo, v: 0 }
+  const colors = findTeam(c)
+  if (!colors) return round
+  return { ...base, c, ...(g === undefined ? {} : { g }), ...logo, v: contrastSafePermutation(withLogoVariant(original, l), colors.palette, round.v) }
 }
 
-/** A round's color team must come from a color-donor collection; older rounds that break the rule are dropped. */
+/** An edited round takes the new logo and colors but keeps its own guess and hint settings. */
+export const replaceRound = (old: Round, next: Round): Round => normalizeRound({ ...next, g: old.g, h: old.h })
+
+/**
+ * A remix's color team must come from a color-donor collection; older rounds that break the rule are dropped.
+ * An original-colors round wears no other team's colors, so any logo is allowed.
+ */
 export const isAllowedRound = (round: Round): boolean => {
+  if (round.c === undefined) return true
   const colors = findTeam(round.c)
   return !!colors && isColorDonor(colors)
 }

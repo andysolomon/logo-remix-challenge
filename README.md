@@ -2,6 +2,8 @@
 
 iPad-first logo guessing game. A creator picks the **logo of one team, brand or app** and the **colors of an NFL, NBA or college team**; players name the logo and/or color sources while the remix misdirects them. For now only those three collections donate colors; every other collection is logo-only, and a saved round whose colors came from anywhere else is dropped when the deck loads.
 
+A remix is optional: pick only a logo and **+ ADD ORIGINAL** puts it in the deck in its own colors (in portrait, step 2 offers **Skip · keep the original colors**). Any collection works this way, soccer clubs and brands included. An original-colors round always asks for the logo, shows only the logo hint, and reveals as "in its original colors". Editing it and picking a color source turns it into a remix; clearing the colors turns a remix back into an original.
+
 Real logos for all 32 NFL teams, all 30 NBA teams, all 30 MLB teams, 29 popular soccer clubs, all 30 MLS clubs, 30 fast-food chains, 29 brands, 30 iOS apps, 30 TV channels, 30 car brands, 30 luxury houses, 30 clothing brands, 120 college teams, 6 college conference marks, and the 17 Cobb County high schools (the HIGH SCHOOL league) live as local SVG or PNG assets under `public/logos/svg/`. SVG fills are rewritten in-browser; PNGs use a canvas-based pixel recolor.
 
 NBA teams are available as both logo and color donors. Filter them by Eastern or Western conference, or select NBA in Random Deck to create NBA-only or mixed-league rounds. Common answers such as Sixers, Cavs, GSW, NYK and SAS work in search, autocomplete and grading.
@@ -145,7 +147,7 @@ src/
     Logo.tsx               local PNG rendering + canvas palette-swap recoloring
     Header.tsx             wordmark, Create / Deck (/ Designer) tabs, PLAY
     TeamBrowser.tsx        league toggle, search, conference chips, tile grid
-    RemixCanvas.tsx        hero remix logo, Shuffle Logo, Shuffle Colors, + ADD ROUND
+    RemixCanvas.tsx        hero remix logo, Shuffle Logo, Shuffle Colors, + ADD ROUND / + ADD ORIGINAL
     CreateMode.tsx         landscape 3-column / portrait stepped composition
     DesignerMode.tsx       opt-in logo designer: per-slot colors, SVG / PNG export
     DeckMode.tsx           round cards, game setup rail, high score

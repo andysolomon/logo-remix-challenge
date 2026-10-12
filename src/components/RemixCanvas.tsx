@@ -22,9 +22,11 @@ export function RemixCanvas({ original, colors, perm, addState, onShuffle, onShu
   const alternates = original?.alternateLogos ?? []
   const variantIndex = alternates.findIndex((v) => v.id === logoVariant)
   const variantLabel = variantIndex < 0 ? 'Primary' : alternates[variantIndex].label
-  const label = addState === 'added' ? 'ADDED ✓' : addState === 'full' ? 'DECK FULL · 20' : addState === 'save' ? 'SAVE ROUND' : '+ ADD ROUND'
+  // With a logo but no color source, the round keeps the logo's own colors.
+  const asIs = !!original && !colors
+  const label = addState === 'added' ? 'ADDED ✓' : addState === 'full' ? 'DECK FULL · 20' : addState === 'save' ? 'SAVE ROUND' : asIs ? '+ ADD ORIGINAL' : '+ ADD ROUND'
   const addDisabled = addState === 'disabled' || addState === 'full' || addState === 'added'
-  const colorText = colors ? fullName(colors) : original ? 'Now pick a color source →' : 'Pick a color source'
+  const colorText = colors ? fullName(colors) : original ? 'Original colors · or pick a source →' : 'Pick a color source'
   const liveStatus =
     addState === 'added'
       ? 'Round added to deck.'
@@ -40,7 +42,9 @@ export function RemixCanvas({ original, colors, perm, addState, onShuffle, onShu
         ? 'Deck full, cannot add round'
         : addState === 'save'
           ? 'Save round changes'
-          : 'Add round to deck'
+          : asIs
+            ? 'Add logo to deck in its original colors'
+            : 'Add round to deck'
   // Key forces the pop animation to replay whenever the remix changes.
   const remixKey = `${original?.id}-${logoVariant ?? 'primary'}-${colors?.id}-${colors ? perm : 0}`
   return (

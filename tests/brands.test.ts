@@ -26,8 +26,8 @@ describe('brand collections', () => {
   test('fast food, brands, apps, TV, cars, luxury and clothing have full rosters split across their categories', () => {
     expect(LEAGUES.BRAND).toEqual({ label: 'BRANDS', conferences: ['Product', 'Service', 'Corporate', 'Personal', 'Store', 'Place'] })
     expect(LEAGUES.APP).toEqual({ label: 'APPS', conferences: ['Built-in', 'Social', 'Games', 'Music & Video', 'Everyday'] })
-    expect(LEAGUES.BRAND.conferences.map((c) => filterTeams('BRAND', c, '').length)).toEqual([5, 5, 5, 4, 5, 5])
-    expect(LEAGUES.APP.conferences.map((c) => filterTeams('APP', c, '').length)).toEqual([8, 6, 6, 5, 5])
+    expect(LEAGUES.BRAND.conferences.map((c) => filterTeams('BRAND', c, '').length)).toEqual([8, 9, 8, 4, 6, 17])
+    expect(LEAGUES.APP.conferences.map((c) => filterTeams('APP', c, '').length)).toEqual([10, 10, 10, 10, 10])
     expect(LEAGUES.TV).toEqual({ label: 'TV', conferences: ['Broadcast', 'Cable', 'Music & Pop', 'Kids', 'Discovery & Lifestyle'] })
     expect(LEAGUES.TV.conferences.map((c) => filterTeams('TV', c, '').length)).toEqual([6, 6, 5, 7, 6])
     expect(LEAGUES.CAR).toEqual({ label: 'CARS', conferences: ['American', 'Japanese & Korean', 'German', 'Italian', 'British'] })
@@ -36,7 +36,7 @@ describe('brand collections', () => {
     expect(LEAGUES.LUX.conferences.map((c) => filterTeams('LUX', c, '').length)).toEqual([10, 6, 8, 6])
     expect(LEAGUES.CLOTH).toEqual({ label: 'CLOTHING', conferences: ['Sportswear', 'Streetwear', 'Outdoor', 'Preppy', 'Everyday'] })
     expect(LEAGUES.CLOTH.conferences.map((c) => filterTeams('CLOTH', c, '').length)).toEqual([7, 6, 6, 6, 5])
-    for (const [league, size] of [['FOOD', 30], ['BRAND', 29], ['APP', 30], ['TV', 30], ['CAR', 30], ['LUX', 30], ['CLOTH', 30]] as const) {
+    for (const [league, size] of [['FOOD', 30], ['BRAND', 52], ['APP', 50], ['TV', 30], ['CAR', 30], ['LUX', 30], ['CLOTH', 30]] as const) {
       expect(filterTeams(league, 'All', '')).toHaveLength(size)
       expect(new Set(filterTeams(league, 'All', '').map(fullName)).size).toBe(size)
     }
@@ -81,7 +81,7 @@ for league, roster in ROSTERS.items():
     rows = {row[0]: row for row in roster}
     pinned = {(s['teamId'], s['id']): s for s in pinned_sources(league)}
     items = json.loads(manifest_path(league).read_text())['assets']
-    assert len(items) == len(rows) == (29 if league == 'BRAND' else 30), league
+    assert len(items) == len(rows) == {'BRAND': 52, 'APP': 50}.get(league, 30), league
     for item in items:
         assert teams[item['id']] == build_entry(league, item, rows[item['abbr']]), item['id']
         for art in item['artwork']:
@@ -135,7 +135,7 @@ for league, roster in ROSTERS.items():
 
   test('random decks draw brand, app, channel, car, luxury and clothing logos, skip wordmarks, take colors from teams and show the type as a hint', () => {
     expect(ALL_POOL_IDS).toEqual(expect.arrayContaining(['Fast Food', 'Brands', 'Apps', 'TV', 'Cars', 'Luxury', 'Clothing']))
-    expect(poolTeams(['Brands', 'Apps'])).toHaveLength(59)
+    expect(poolTeams(['Brands', 'Apps'])).toHaveLength(102)
     expect(poolTeams(['TV', 'Cars'])).toHaveLength(60)
     expect(poolTeams(['Luxury', 'Clothing'])).toHaveLength(60)
     expect(logoPoolTeams(['Fast Food'])).toHaveLength(30 - wordmarks('FOOD'))

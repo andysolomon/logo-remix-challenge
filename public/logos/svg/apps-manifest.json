@@ -91,6 +91,50 @@
       ]
     },
     {
+      "id": "APP-AIRBNB",
+      "league": "APP",
+      "conference": "Everyday",
+      "region": "Airbnb",
+      "name": "",
+      "abbr": "AIRBNB",
+      "aliases": [
+        "Air BnB",
+        "Air bed and breakfast"
+      ],
+      "palette": [
+        "#FF5A5F",
+        "#484848",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Looped belo",
+          "sourceUrl": "https://api.iconify.design/logos/airbnb-icon.svg",
+          "sourcePage": "https://icon-sets.iconify.design/logos/airbnb-icon/",
+          "sourceSha256": "5e6708fe337ab1c32707702d84467e18bdff90f866ff72c6be61c0cfc0f68a34",
+          "ops": {
+            "viewBox": "-5.492 -5.491 266.984 285.564"
+          },
+          "path": "/logos/svg/apps/airbnb.svg",
+          "format": "svg",
+          "colors": [
+            "#FF385C"
+          ],
+          "sourcePalette": [
+            "#FF385C",
+            "#484848",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "00a0277b984f1f51fa5f37d5282b9d10275941e642b61aca4045f87da02e6b31"
+        }
+      ]
+    },
+    {
       "id": "APP-AMONG",
       "league": "APP",
       "conference": "Games",
@@ -160,6 +204,135 @@
           ],
           "unusedSourceSlots": [],
           "sha256": "b70ba2cfda889ac9b29c8b259896791902a5544bedd7447649734a5f8e7d9928"
+        }
+      ]
+    },
+    {
+      "id": "APP-AMUSIC",
+      "league": "APP",
+      "conference": "Music & Video",
+      "region": "Apple Music",
+      "name": "",
+      "abbr": "AMUSIC",
+      "aliases": [
+        "Music",
+        "iTunes"
+      ],
+      "palette": [
+        "#FA243C",
+        "#FB5C74",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Music note tile",
+          "sourceUrl": "https://api.iconify.design/thesvg-color/apple-music.svg",
+          "sourcePage": "https://icon-sets.iconify.design/thesvg-color/apple-music/",
+          "sourceSha256": "dba41e2e2b3cf523fff2186667ad8a6a6e56ae934c55204b8aa82fdb7b13d047",
+          "ops": {
+            "viewBox": "-7.2 -7.2 374.4 374.392"
+          },
+          "path": "/logos/svg/apps/amusic.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#FA233B",
+            "#FB5C74"
+          ],
+          "sourcePalette": [
+            "#FA233B",
+            "#FB5C74",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "ca4dcf6dcc8190dd69c6b5f981fd5f809438d8d57216910e924eacb878f822eb"
+        }
+      ]
+    },
+    {
+      "id": "APP-APPSTORE",
+      "league": "APP",
+      "conference": "Built-in",
+      "region": "App Store",
+      "name": "",
+      "abbr": "APPSTORE",
+      "aliases": [
+        "Apple App Store",
+        "AppStore"
+      ],
+      "palette": [
+        "#0D96F6",
+        "#18BFFB",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Stick-built A tile",
+          "sourceUrl": "https://api.iconify.design/logos/apple-app-store.svg",
+          "sourcePage": "https://icon-sets.iconify.design/logos/apple-app-store/",
+          "sourceSha256": "6b9c9c29de1f8d5b404e440d3b92d96cc3e789835791f9630575d472575791ab",
+          "ops": {
+            "viewBox": "-5.12 -5.12 266.24 266.24"
+          },
+          "path": "/logos/svg/apps/appstore.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#17C9FB",
+            "#1A74E8"
+          ],
+          "sourcePalette": [
+            "#1A74E8",
+            "#17C9FB",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "133c3b0c2b832dcaf3add97ed985a767a8935d0ac6f3256cf24f31962fdd2106"
+        }
+      ]
+    },
+    {
+      "id": "APP-AUDIBLE",
+      "league": "APP",
+      "conference": "Music & Video",
+      "region": "Audible",
+      "name": "",
+      "abbr": "AUDIBLE",
+      "aliases": [
+        "Audible Audiobooks"
+      ],
+      "palette": [
+        "#F8991C",
+        "#232F3E",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Sound waves over a page",
+          "sourceUrl": "https://api.iconify.design/thesvg-color/audible.svg",
+          "sourcePage": "https://icon-sets.iconify.design/thesvg-color/audible/",
+          "sourceSha256": "e0ca19609c82bfdff1681c10be3b15d7664ffe7e42b87c617db130f8efa0dd53",
+          "ops": {
+            "viewBox": "-0.48 4.098 24.96 15.804"
+          },
+          "path": "/logos/svg/apps/audible.svg",
+          "format": "svg",
+          "colors": [
+            "#F8991C"
+          ],
+          "sourcePalette": [
+            "#F8991C",
+            "#232F3E",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "688640fa80825495081921a9fb311ad8c06213bec7dd34bd92b6d43b42846a0c"
         }
       ]
     },
@@ -258,6 +431,142 @@
       ]
     },
     {
+      "id": "APP-CHATGPT",
+      "league": "APP",
+      "conference": "Everyday",
+      "region": "ChatGPT",
+      "name": "",
+      "abbr": "CHATGPT",
+      "aliases": [
+        "Chat GPT",
+        "OpenAI",
+        "Open AI"
+      ],
+      "palette": [
+        "#000000",
+        "#10A37F",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Hexagonal knot",
+          "sourceUrl": "https://api.iconify.design/logos/openai-icon.svg",
+          "sourcePage": "https://icon-sets.iconify.design/logos/openai-icon/",
+          "sourceSha256": "8e55feee1a12e93250d0f5886dffc99cce840410614ce4196006599a12425977",
+          "ops": {
+            "fill": "#000000",
+            "viewBox": "-5.191 -5.189 266.381 269.906"
+          },
+          "path": "/logos/svg/apps/chatgpt.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#10A37F",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "968ac7685ad30cd4a7d1c739268ef67473a517006480256a6ed80486e3264f36"
+        }
+      ]
+    },
+    {
+      "id": "APP-CHESS",
+      "league": "APP",
+      "conference": "Games",
+      "region": "Chess.com",
+      "name": "",
+      "abbr": "CHESS",
+      "aliases": [
+        "Chess",
+        "Chess com",
+        "Chesscom"
+      ],
+      "palette": [
+        "#81B64C",
+        "#312E2B",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Green pawn",
+          "sourceUrl": "https://raw.githubusercontent.com/chouhan-rahul/icons_plus/v5.0.0/assets/images/logos/video-games/chess-com.svg",
+          "sourcePage": "https://github.com/chouhan-rahul/icons_plus/blob/v5.0.0/assets/images/logos/video-games/chess-com.svg",
+          "sourceSha256": "24ad97bac1625825805d3cbd81af76b051b508b3c757e223e95b4ebf586f7ec0",
+          "ops": {
+            "viewBox": "9.179 2.18 29.642 42.64"
+          },
+          "path": "/logos/svg/apps/chess.svg",
+          "format": "svg",
+          "colors": [
+            "#689F38",
+            "#33691E",
+            "#9CCC65"
+          ],
+          "sourcePalette": [
+            "#82B64E",
+            "#33691E",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "f44c8baa340de506bf1cb1078fb74052d6977d0a86cf512be7ffba334ab107a5"
+        }
+      ]
+    },
+    {
+      "id": "APP-CHROME",
+      "league": "APP",
+      "conference": "Everyday",
+      "region": "Google Chrome",
+      "name": "",
+      "abbr": "CHROME",
+      "aliases": [
+        "Chrome"
+      ],
+      "palette": [
+        "#DB4437",
+        "#4285F4",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Tri-color ring",
+          "sourceUrl": "https://api.iconify.design/logos/chrome.svg",
+          "sourcePage": "https://icon-sets.iconify.design/logos/chrome/",
+          "sourceSha256": "3f3ddd6cad44213e08e1c4e444f48c78cf683f2519147b52ef3f1de26570ba3c",
+          "ops": {
+            "viewBox": "-5.118 -5.12 266.239 266.241"
+          },
+          "path": "/logos/svg/apps/chrome.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#229342",
+            "#FBC116",
+            "#1A73E8",
+            "#E33B2E"
+          ],
+          "sourcePalette": [
+            "#EF7E22",
+            "#1E8395",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "13a6c8126d12676e5d9c8ef993c0366ac206921f2127c43cf66b2e9a1199b1fc"
+        }
+      ]
+    },
+    {
       "id": "APP-CLOCK",
       "league": "APP",
       "conference": "Built-in",
@@ -303,6 +612,96 @@
           ],
           "unusedSourceSlots": [],
           "sha256": "c7c2922ef0195e5e1cd09a57a624dd2975c85fb07e66c9e6c98280f6374fb81a"
+        }
+      ]
+    },
+    {
+      "id": "APP-CR",
+      "league": "APP",
+      "conference": "Games",
+      "region": "Clash Royale",
+      "name": "",
+      "abbr": "CR",
+      "aliases": [
+        "Clash"
+      ],
+      "palette": [
+        "#2E6FD6",
+        "#F9B529",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Crown shield",
+          "sourceUrl": "https://raw.githubusercontent.com/chouhan-rahul/icons_plus/v5.0.0/assets/images/logos/video-games/clash-royale.svg",
+          "sourcePage": "https://github.com/chouhan-rahul/icons_plus/blob/v5.0.0/assets/images/logos/video-games/clash-royale.svg",
+          "sourceSha256": "6b9a553c54d2e0db2c9043bbb75c9871195536f49fd00631929af338543eb33c",
+          "ops": {
+            "viewBox": "5.052 1.12 36.828 45.76"
+          },
+          "path": "/logos/svg/apps/cr.svg",
+          "format": "svg",
+          "colors": [
+            "#603813",
+            "#448AFF",
+            "#0D47A1",
+            "#FFB300",
+            "#F57F17",
+            "#FFFDE7",
+            "#E65100",
+            "#FDD835"
+          ],
+          "sourcePalette": [
+            "#2868D0",
+            "#F69713",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "065d0973be6093df8b0a4c88366221a59aebb08ead51d17e4ae91ca47631a280"
+        }
+      ]
+    },
+    {
+      "id": "APP-CRUNCHY",
+      "league": "APP",
+      "conference": "Music & Video",
+      "region": "Crunchyroll",
+      "name": "",
+      "abbr": "CRUNCHY",
+      "aliases": [
+        "Crunchy Roll"
+      ],
+      "palette": [
+        "#F47521",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Orange crescent",
+          "sourceUrl": "https://api.iconify.design/thesvg-color/crunchyroll.svg",
+          "sourcePage": "https://icon-sets.iconify.design/thesvg-color/crunchyroll/",
+          "sourceSha256": "1c65e102218d60513f211b0e7ff134b00371313a85a13c836aadf8adac8c194b",
+          "ops": {
+            "viewBox": "-0.48 -0.48 24.96 24.96"
+          },
+          "path": "/logos/svg/apps/crunchy.svg",
+          "format": "svg",
+          "colors": [
+            "#FF5E00"
+          ],
+          "sourcePalette": [
+            "#FF5E00",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "0406d27ddf3689a7c97032d2f8588fef04a933bbb57c19a4203ec027d4e80e7e"
         }
       ]
     },
@@ -371,6 +770,49 @@
             2
           ],
           "sha256": "3126ed695f24e0dbccf8ccf9f781fb63d264e77c8a20596dd58e42b8bbad3db5"
+        }
+      ]
+    },
+    {
+      "id": "APP-DOORDASH",
+      "league": "APP",
+      "conference": "Everyday",
+      "region": "DoorDash",
+      "name": "",
+      "abbr": "DOORDASH",
+      "aliases": [
+        "Door Dash"
+      ],
+      "palette": [
+        "#FF3008",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Dash arrow",
+          "sourceUrl": "https://api.iconify.design/thesvg-color/doordash.svg",
+          "sourcePage": "https://icon-sets.iconify.design/thesvg-color/doordash/",
+          "sourceSha256": "46cbf6c5ea7a2531732fe8c7b180d124cfd1953c8912e8f44b48a8214aa6718e",
+          "ops": {
+            "viewBox": "-0.48 4.701 24.96 14.599"
+          },
+          "path": "/logos/svg/apps/doordash.svg",
+          "format": "svg",
+          "colors": [
+            "#FF3008"
+          ],
+          "sourcePalette": [
+            "#FF3008",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "6c804728987f37ceec39b15a4592e055faf2b23242fbd3ac98161d7b0b1969cd"
         }
       ]
     },
@@ -465,6 +907,186 @@
           ],
           "unusedSourceSlots": [],
           "sha256": "3ae662a0a3651f031d86668d8ca43db5aef3a343843f0b6f522bbe2e550fad2a"
+        }
+      ]
+    },
+    {
+      "id": "APP-FORTNITE",
+      "league": "APP",
+      "conference": "Games",
+      "region": "Fortnite",
+      "name": "",
+      "abbr": "FORTNITE",
+      "aliases": [
+        "Fortnite Battle Royale"
+      ],
+      "palette": [
+        "#7B1FA2",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Block letter tile",
+          "sourceUrl": "https://raw.githubusercontent.com/chouhan-rahul/icons_plus/v5.0.0/assets/images/logos/video-games/fortnite.svg",
+          "sourcePage": "https://github.com/chouhan-rahul/icons_plus/blob/v5.0.0/assets/images/logos/video-games/fortnite.svg",
+          "sourceSha256": "38693f5a58b87f7f77f3a0ee21c4940135109a1f25df2388c028aae042e4e441",
+          "ops": {
+            "viewBox": "5.28 5.28 37.44 37.44"
+          },
+          "path": "/logos/svg/apps/fortnite.svg",
+          "format": "svg",
+          "colors": [
+            "#7B1FA2",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#7B1FA2",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "b9382c7cee4755c1db63599c8900f32b16884683a1fba2ce85bebb4c887f47df"
+        }
+      ]
+    },
+    {
+      "id": "APP-GD",
+      "league": "APP",
+      "conference": "Games",
+      "region": "Geometry Dash",
+      "name": "",
+      "abbr": "GD",
+      "aliases": [
+        "GD",
+        "Geo Dash"
+      ],
+      "palette": [
+        "#FFE100",
+        "#00C8F0",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Cube face tile",
+          "sourceUrl": "https://raw.githubusercontent.com/chouhan-rahul/icons_plus/v5.0.0/assets/images/logos/video-games/geometry-dash.svg",
+          "sourcePage": "https://github.com/chouhan-rahul/icons_plus/blob/v5.0.0/assets/images/logos/video-games/geometry-dash.svg",
+          "sourceSha256": "f615b92440dd5f9e256907bb65bf8d885a55c32d0e2c78fda2bd5ef3023cd0d7",
+          "ops": {
+            "viewBox": "5.28 5.28 37.44 37.44"
+          },
+          "path": "/logos/svg/apps/gd.svg",
+          "format": "svg",
+          "colors": [
+            "#FFD600",
+            "#E65100",
+            "#006064",
+            "#00838F",
+            "#0097A7",
+            "#00ACC1",
+            "#80CBC4",
+            "#B2DFDB",
+            "#E0F2F1",
+            "#000000",
+            "#FFB300",
+            "#FFEB3B",
+            "#80DEEA",
+            "#263238",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#FFD600",
+            "#00ACC1",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "d13607eb378ab207942fb9f85b86ab80a662f92d9acd3c01da44a8c71554dfd8"
+        }
+      ]
+    },
+    {
+      "id": "APP-GMAIL",
+      "league": "APP",
+      "conference": "Everyday",
+      "region": "Gmail",
+      "name": "",
+      "abbr": "GMAIL",
+      "aliases": [
+        "Google Mail",
+        "G Mail"
+      ],
+      "palette": [
+        "#EA4335",
+        "#4285F4",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Gradient M",
+          "sourceUrl": "https://api.iconify.design/logos/google-gmail.svg",
+          "sourcePage": "https://icon-sets.iconify.design/logos/google-gmail/",
+          "sourceSha256": "c29f33868c821881974166dfe21fc72a7ca8b8c5bc2361a91949fd5be187fce0",
+          "ops": {
+            "viewBox": "-5.12 -5.12 266.24 213.876"
+          },
+          "path": "/logos/svg/apps/gmail.svg",
+          "format": "svg",
+          "colors": [
+            "#FC413D",
+            "#60D673",
+            "#42C868",
+            "#0EBC5F",
+            "#00A9BB",
+            "#3C90FF",
+            "#3186FF",
+            "#FF63A0",
+            "#FC5C30",
+            "#FEB10C",
+            "#FEC700",
+            "#FFDB0F"
+          ],
+          "sourcePalette": [
+            "#FC413D",
+            "#3C90FF",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "3fde8ec4deab3472899ea3e39249f51d7fe34003d72925cf65dc4c31bcac90f1"
+        },
+        {
+          "id": "four-color-m",
+          "label": "Four-color M (2020)",
+          "sourceUrl": "https://api.iconify.design/logos/google-gmail-2020.svg",
+          "sourcePage": "https://icon-sets.iconify.design/logos/google-gmail-2020/",
+          "sourceSha256": "0123402a5efd0077feed696b7270b1f8305adfb6752fe7aa955b779e0dac7711",
+          "ops": {
+            "viewBox": "-5.12 -5.12 266.24 202.29"
+          },
+          "path": "/logos/svg/apps/alternates/gmail-four-color-m.svg",
+          "format": "svg",
+          "colors": [
+            "#4285F4",
+            "#34A853",
+            "#EA4335",
+            "#FBBC04",
+            "#C5221F"
+          ],
+          "sourcePalette": [
+            "#EA4335",
+            "#3B96A4",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "27660baa83b5b304e1573a76e039ca4acf83fd1f6ef20a4b1857c24004ae2157"
         }
       ]
     },
@@ -912,6 +1534,72 @@
       ]
     },
     {
+      "id": "APP-PHOTOS",
+      "league": "APP",
+      "conference": "Built-in",
+      "region": "Photos",
+      "name": "",
+      "abbr": "PHOTOS",
+      "aliases": [
+        "Apple Photos",
+        "iPhone Photos"
+      ],
+      "palette": [
+        "#FFB53C",
+        "#E5466F",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Petal pinwheel tile",
+          "sourceUrl": "https://raw.githubusercontent.com/chouhan-rahul/icons_plus/v5.0.0/assets/images/logos/apple/ios-photos.svg",
+          "sourcePage": "https://github.com/chouhan-rahul/icons_plus/blob/v5.0.0/assets/images/logos/apple/ios-photos.svg",
+          "sourceSha256": "e75d3a59ebe8750307ffaea7c9c7db441ef86047f2ee97658b898126d3dfd2d1",
+          "ops": {
+            "viewBox": "3.2 3.2 41.6 41.6"
+          },
+          "path": "/logos/svg/apps/photos.svg",
+          "format": "svg",
+          "colors": [
+            "#FFB74D",
+            "#64B5F6",
+            "#F48FB1",
+            "#8BC34A",
+            "#C0CA33",
+            "#F9A825",
+            "#689F38",
+            "#827717",
+            "#BA68C8",
+            "#5C6BC0",
+            "#D81B60",
+            "#880E4F",
+            "#FF5252",
+            "#EF6C00",
+            "#F44336",
+            "#DD2C00",
+            "#E65100",
+            "#B71C1C",
+            "#00ACC1",
+            "#0277BD",
+            "#00796B",
+            "#006064",
+            "#1B5E20",
+            "#0D47A1"
+          ],
+          "sourcePalette": [
+            "#FFB74D",
+            "#FF5252",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "c07d97a4b5d711cc1d20b1c307ae85518237baab510b6e325a9506189dc84a7d"
+        }
+      ]
+    },
+    {
       "id": "APP-PIN",
       "league": "APP",
       "conference": "Social",
@@ -952,6 +1640,50 @@
             2
           ],
           "sha256": "06600334b60c636d6619e3c068df8daadcc9b5d96080e886e2d1cb520ec0f4b3"
+        }
+      ]
+    },
+    {
+      "id": "APP-PODCASTS",
+      "league": "APP",
+      "conference": "Music & Video",
+      "region": "Apple Podcasts",
+      "name": "",
+      "abbr": "PODCASTS",
+      "aliases": [
+        "Podcasts",
+        "iTunes Podcasts"
+      ],
+      "palette": [
+        "#872EC4",
+        "#D56DFB",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Broadcast mic tile",
+          "sourceUrl": "https://api.iconify.design/thesvg-color/apple-podcasts.svg",
+          "sourcePage": "https://icon-sets.iconify.design/thesvg-color/apple-podcasts/",
+          "sourceSha256": "08ed4116d2daedfe846723173234d0535d396ac3f7ab5aa0393f17bade73856f",
+          "ops": {
+            "viewBox": "-0.48 -0.48 24.96 24.96"
+          },
+          "path": "/logos/svg/apps/podcasts.svg",
+          "format": "svg",
+          "colors": [
+            "#9933CC"
+          ],
+          "sourcePalette": [
+            "#9933CC",
+            "#D56DFB",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "c6cd7a3a4fc0bdab64065f3db022556f79b89339ee164948835e6dd1a73b8deb"
         }
       ]
     },
@@ -1000,6 +1732,94 @@
           ],
           "unusedSourceSlots": [],
           "sha256": "95eb6c00468fa1f3803a0cf8fd9538bd806a7bace6fa2e3ec91175775b387173"
+        }
+      ]
+    },
+    {
+      "id": "APP-REDDIT",
+      "league": "APP",
+      "conference": "Social",
+      "region": "Reddit",
+      "name": "",
+      "abbr": "REDDIT",
+      "aliases": [
+        "Snoo"
+      ],
+      "palette": [
+        "#FF4500",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Alien head",
+          "sourceUrl": "https://api.iconify.design/logos/reddit-icon.svg",
+          "sourcePage": "https://icon-sets.iconify.design/logos/reddit-icon/",
+          "sourceSha256": "398b1134be2117f8880ace4111a9d4b164735c4fba646154e4c0bfb20641cb05",
+          "ops": {
+            "viewBox": "-5.12 -5.12 266.24 266.24"
+          },
+          "path": "/logos/svg/apps/reddit.svg",
+          "format": "svg",
+          "colors": [
+            "#FF4500",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#FF4500",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "2da600c1974eb924f99accfb6a3732efa5bcc6776c34b7040582b96378f8e68f"
+        },
+        {
+          "id": "speech-bubble",
+          "label": "Alien in speech bubble (2023)",
+          "sourceUrl": "https://api.iconify.design/thesvg-color/reddit.svg",
+          "sourcePage": "https://icon-sets.iconify.design/thesvg-color/reddit/",
+          "sourceSha256": "7525ea2fbf1d1d6130ed28870f1c0cf842c45ec03444f3b4beed37e60eb9a263",
+          "ops": {
+            "viewBox": "-4.32 -4.32 224.64 224.64"
+          },
+          "path": "/logos/svg/apps/alternates/reddit-speech-bubble.svg",
+          "format": "svg",
+          "colors": [
+            "#FF4500",
+            "#FFC49C",
+            "#842123",
+            "#FEFFFF",
+            "#F9FCFC",
+            "#EDF3F5",
+            "#DEE9EC",
+            "#D8E4E8",
+            "#CCD8DF",
+            "#C8D5DD",
+            "#CCD6DE",
+            "#D8DBE2",
+            "#EDE3E9",
+            "#FFEBEF",
+            "#FF6600",
+            "#FC4301",
+            "#F43F07",
+            "#E53812",
+            "#D4301F",
+            "#172E35",
+            "#0E1C21",
+            "#030708",
+            "#000000",
+            "#7A9299"
+          ],
+          "sourcePalette": [
+            "#FF4500",
+            "#0A1418",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "206118e0f01032c1c745d7817b303e7b4ee350488ff9ffbdbef4692ba43b6e2e"
         }
       ]
     },
@@ -1228,6 +2048,50 @@
       ]
     },
     {
+      "id": "APP-SOUNDCLOUD",
+      "league": "APP",
+      "conference": "Music & Video",
+      "region": "SoundCloud",
+      "name": "",
+      "abbr": "SOUNDCLOUD",
+      "aliases": [
+        "Sound Cloud"
+      ],
+      "palette": [
+        "#FF5500",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Cloud and bars",
+          "sourceUrl": "https://api.iconify.design/selfhst/soundcloud.svg",
+          "sourcePage": "https://icon-sets.iconify.design/selfhst/soundcloud/",
+          "sourceSha256": "50f050a2d6da1e2cef4a610f5599156f6a26a38891b9657bc7729040c6d92478",
+          "ops": {
+            "viewBox": "-10.24 134.66 532.48 242.68"
+          },
+          "path": "/logos/svg/apps/soundcloud.svg",
+          "format": "svg",
+          "colors": [
+            "#F8A01D",
+            "#F26E23",
+            "#EF5826"
+          ],
+          "sourcePalette": [
+            "#F06324",
+            "#F8A01D",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "e531287f8dc4c7b933194dcaa7cd62555b1a0d5e2a0d8bea4b790fb5c4c78301"
+        }
+      ]
+    },
+    {
       "id": "APP-SPOTIFY",
       "league": "APP",
       "conference": "Music & Video",
@@ -1326,6 +2190,95 @@
           ],
           "unusedSourceSlots": [],
           "sha256": "7f5e7060f0e3cd4fb8613d2183a691551e865b71b7997b65589c649064877235"
+        }
+      ]
+    },
+    {
+      "id": "APP-TELEGRAM",
+      "league": "APP",
+      "conference": "Social",
+      "region": "Telegram",
+      "name": "",
+      "abbr": "TELEGRAM",
+      "aliases": [
+        "Telegram Messenger"
+      ],
+      "palette": [
+        "#2AABEE",
+        "#229ED9",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Paper plane circle",
+          "sourceUrl": "https://api.iconify.design/logos/telegram.svg",
+          "sourcePage": "https://icon-sets.iconify.design/logos/telegram/",
+          "sourceSha256": "a7af2f7f747ab2e562a7c4966a4e24064f273161a0c778bfa411dda6dd53946e",
+          "ops": {
+            "viewBox": "-5.12 -5.12 266.24 266.24"
+          },
+          "path": "/logos/svg/apps/telegram.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#2AABEE",
+            "#229ED9"
+          ],
+          "sourcePalette": [
+            "#26A4E4",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "606e349c6d89f3e8a1aa84dca9025b8d8ee652c7cdd7708b061bc667bf9fc985"
+        }
+      ]
+    },
+    {
+      "id": "APP-THREADS",
+      "league": "APP",
+      "conference": "Social",
+      "region": "Threads",
+      "name": "",
+      "abbr": "THREADS",
+      "aliases": [
+        "Instagram Threads",
+        "Threads App"
+      ],
+      "palette": [
+        "#000000",
+        "#999999",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Looping at sign",
+          "sourceUrl": "https://api.iconify.design/logos/threads-icon.svg",
+          "sourcePage": "https://icon-sets.iconify.design/logos/threads-icon/",
+          "sourceSha256": "ceca7d9d880719b52c7aadf1a57bac1024ee09b65822aa31062589d16b3fd9c0",
+          "ops": {
+            "fill": "#000000",
+            "viewBox": "-5.836 -5.836 267.672 303.476"
+          },
+          "path": "/logos/svg/apps/threads.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#999999",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "2168c1659823f02abf99bd1abcff0ab31d2ee63977132f547896ce52a1c5d47d"
         }
       ]
     },
@@ -1590,6 +2543,76 @@
           ],
           "unusedSourceSlots": [],
           "sha256": "58a818cfacfa66742297d622a059e91b82b513e309ad03e846dfe4c4f3577a16"
+        }
+      ]
+    },
+    {
+      "id": "APP-X",
+      "league": "APP",
+      "conference": "Social",
+      "region": "X",
+      "name": "",
+      "abbr": "X",
+      "aliases": [
+        "Twitter",
+        "X Twitter"
+      ],
+      "palette": [
+        "#000000",
+        "#1D9BF0",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Crossed strokes",
+          "sourceUrl": "https://api.iconify.design/logos/x.svg",
+          "sourcePage": "https://icon-sets.iconify.design/logos/x/",
+          "sourceSha256": "e13a4256e3da3f737d929f991b48d39fc72a93c16b069139740d3171c8b525d7",
+          "ops": {
+            "fill": "#000000",
+            "viewBox": "-5.12 -5.12 260.735 266.24"
+          },
+          "path": "/logos/svg/apps/x.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#1D9BF0",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "56ef624f2188e7f275a5c79177c4c8ad75c21a1c4c169626e4837463fcf80107"
+        },
+        {
+          "id": "bird",
+          "label": "Blue bird (2012)",
+          "sourceUrl": "https://api.iconify.design/logos/twitter.svg",
+          "sourcePage": "https://icon-sets.iconify.design/logos/twitter/",
+          "sourceSha256": "b41584fa536a7969a6b9f482523ef0f9e4b58d22e8833513e9ffd46b84a7a82e",
+          "ops": {
+            "viewBox": "-5.12 -4.298 266.24 218.286"
+          },
+          "path": "/logos/svg/apps/alternates/x-bird.svg",
+          "format": "svg",
+          "colors": [
+            "#55ACEE"
+          ],
+          "sourcePalette": [
+            "#55ACEE",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "685e1297dcddcd9bd958382ff9ea6e4ccdf75a1aa5875d4075f6583ee7739b24"
         }
       ]
     },

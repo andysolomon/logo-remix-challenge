@@ -36,6 +36,17 @@
     }
   },
   {
+    "teamId": "APP-AIRBNB",
+    "id": "primary",
+    "label": "Looped belo",
+    "sourceUrl": "https://api.iconify.design/logos/airbnb-icon.svg",
+    "sourcePage": "https://icon-sets.iconify.design/logos/airbnb-icon/",
+    "sourceSha256": "5e6708fe337ab1c32707702d84467e18bdff90f866ff72c6be61c0cfc0f68a34",
+    "ops": {
+      "viewBox": "-5.492 -5.491 266.984 285.564"
+    }
+  },
+  {
     "teamId": "APP-AMONG",
     "id": "primary",
     "label": "Crewmate on yellow tile",
@@ -55,6 +66,39 @@
     "sourceSha256": "edeb89f2840682e9031afb1c11b5c16a83f2db9697b733660773e9a95afd903d",
     "ops": {
       "viewBox": "-5.439 -5.439 210.879 282.803"
+    }
+  },
+  {
+    "teamId": "APP-AMUSIC",
+    "id": "primary",
+    "label": "Music note tile",
+    "sourceUrl": "https://api.iconify.design/thesvg-color/apple-music.svg",
+    "sourcePage": "https://icon-sets.iconify.design/thesvg-color/apple-music/",
+    "sourceSha256": "dba41e2e2b3cf523fff2186667ad8a6a6e56ae934c55204b8aa82fdb7b13d047",
+    "ops": {
+      "viewBox": "-7.2 -7.2 374.4 374.392"
+    }
+  },
+  {
+    "teamId": "APP-APPSTORE",
+    "id": "primary",
+    "label": "Stick-built A tile",
+    "sourceUrl": "https://api.iconify.design/logos/apple-app-store.svg",
+    "sourcePage": "https://icon-sets.iconify.design/logos/apple-app-store/",
+    "sourceSha256": "6b9c9c29de1f8d5b404e440d3b92d96cc3e789835791f9630575d472575791ab",
+    "ops": {
+      "viewBox": "-5.12 -5.12 266.24 266.24"
+    }
+  },
+  {
+    "teamId": "APP-AUDIBLE",
+    "id": "primary",
+    "label": "Sound waves over a page",
+    "sourceUrl": "https://api.iconify.design/thesvg-color/audible.svg",
+    "sourcePage": "https://icon-sets.iconify.design/thesvg-color/audible/",
+    "sourceSha256": "e0ca19609c82bfdff1681c10be3b15d7664ffe7e42b87c617db130f8efa0dd53",
+    "ops": {
+      "viewBox": "-0.48 4.098 24.96 15.804"
     }
   },
   {
@@ -85,6 +129,40 @@
     }
   },
   {
+    "teamId": "APP-CHATGPT",
+    "id": "primary",
+    "label": "Hexagonal knot",
+    "sourceUrl": "https://api.iconify.design/logos/openai-icon.svg",
+    "sourcePage": "https://icon-sets.iconify.design/logos/openai-icon/",
+    "sourceSha256": "8e55feee1a12e93250d0f5886dffc99cce840410614ce4196006599a12425977",
+    "ops": {
+      "fill": "#000000",
+      "viewBox": "-5.191 -5.189 266.381 269.906"
+    }
+  },
+  {
+    "teamId": "APP-CHESS",
+    "id": "primary",
+    "label": "Green pawn",
+    "sourceUrl": "https://raw.githubusercontent.com/chouhan-rahul/icons_plus/v5.0.0/assets/images/logos/video-games/chess-com.svg",
+    "sourcePage": "https://github.com/chouhan-rahul/icons_plus/blob/v5.0.0/assets/images/logos/video-games/chess-com.svg",
+    "sourceSha256": "24ad97bac1625825805d3cbd81af76b051b508b3c757e223e95b4ebf586f7ec0",
+    "ops": {
+      "viewBox": "9.179 2.18 29.642 42.64"
+    }
+  },
+  {
+    "teamId": "APP-CHROME",
+    "id": "primary",
+    "label": "Tri-color ring",
+    "sourceUrl": "https://api.iconify.design/logos/chrome.svg",
+    "sourcePage": "https://icon-sets.iconify.design/logos/chrome/",
+    "sourceSha256": "3f3ddd6cad44213e08e1c4e444f48c78cf683f2519147b52ef3f1de26570ba3c",
+    "ops": {
+      "viewBox": "-5.118 -5.12 266.239 266.241"
+    }
+  },
+  {
     "teamId": "APP-CLOCK",
     "id": "primary",
     "label": "Clock face tile",
@@ -98,6 +176,28 @@
         "67-86"
       ],
       "viewBox": "594.179 144.184 54.286 54.286"
+    }
+  },
+  {
+    "teamId": "APP-CR",
+    "id": "primary",
+    "label": "Crown shield",
+    "sourceUrl": "https://raw.githubusercontent.com/chouhan-rahul/icons_plus/v5.0.0/assets/images/logos/video-games/clash-royale.svg",
+    "sourcePage": "https://github.com/chouhan-rahul/icons_plus/blob/v5.0.0/assets/images/logos/video-games/clash-royale.svg",
+    "sourceSha256": "6b9a553c54d2e0db2c9043bbb75c9871195536f49fd00631929af338543eb33c",
+    "ops": {
+      "viewBox": "5.052 1.12 36.828 45.76"
+    }
+  },
+  {
+    "teamId": "APP-CRUNCHY",
+    "id": "primary",
+    "label": "Orange crescent",
+    "sourceUrl": "https://api.iconify.design/thesvg-color/crunchyroll.svg",
+    "sourcePage": "https://icon-sets.iconify.design/thesvg-color/crunchyroll/",
+    "sourceSha256": "1c65e102218d60513f211b0e7ff134b00371313a85a13c836aadf8adac8c194b",
+    "ops": {
+      "viewBox": "-0.48 -0.48 24.96 24.96"
     }
   },
   {
@@ -120,6 +220,17 @@
     "sourceSha256": "07bd8ac77676f8f8dd2350b762b62024525853af6f8eb7c6b000b963539ade1a",
     "ops": {
       "viewBox": "0.912 -0.64 30.176 33.28"
+    }
+  },
+  {
+    "teamId": "APP-DOORDASH",
+    "id": "primary",
+    "label": "Dash arrow",
+    "sourceUrl": "https://api.iconify.design/thesvg-color/doordash.svg",
+    "sourcePage": "https://icon-sets.iconify.design/thesvg-color/doordash/",
+    "sourceSha256": "46cbf6c5ea7a2531732fe8c7b180d124cfd1953c8912e8f44b48a8214aa6718e",
+    "ops": {
+      "viewBox": "-0.48 4.701 24.96 14.599"
     }
   },
   {
@@ -147,6 +258,50 @@
         "108-111"
       ],
       "viewBox": "386.222 230.891 54.723 54.303"
+    }
+  },
+  {
+    "teamId": "APP-FORTNITE",
+    "id": "primary",
+    "label": "Block letter tile",
+    "sourceUrl": "https://raw.githubusercontent.com/chouhan-rahul/icons_plus/v5.0.0/assets/images/logos/video-games/fortnite.svg",
+    "sourcePage": "https://github.com/chouhan-rahul/icons_plus/blob/v5.0.0/assets/images/logos/video-games/fortnite.svg",
+    "sourceSha256": "38693f5a58b87f7f77f3a0ee21c4940135109a1f25df2388c028aae042e4e441",
+    "ops": {
+      "viewBox": "5.28 5.28 37.44 37.44"
+    }
+  },
+  {
+    "teamId": "APP-GD",
+    "id": "primary",
+    "label": "Cube face tile",
+    "sourceUrl": "https://raw.githubusercontent.com/chouhan-rahul/icons_plus/v5.0.0/assets/images/logos/video-games/geometry-dash.svg",
+    "sourcePage": "https://github.com/chouhan-rahul/icons_plus/blob/v5.0.0/assets/images/logos/video-games/geometry-dash.svg",
+    "sourceSha256": "f615b92440dd5f9e256907bb65bf8d885a55c32d0e2c78fda2bd5ef3023cd0d7",
+    "ops": {
+      "viewBox": "5.28 5.28 37.44 37.44"
+    }
+  },
+  {
+    "teamId": "APP-GMAIL",
+    "id": "primary",
+    "label": "Gradient M",
+    "sourceUrl": "https://api.iconify.design/logos/google-gmail.svg",
+    "sourcePage": "https://icon-sets.iconify.design/logos/google-gmail/",
+    "sourceSha256": "c29f33868c821881974166dfe21fc72a7ca8b8c5bc2361a91949fd5be187fce0",
+    "ops": {
+      "viewBox": "-5.12 -5.12 266.24 213.876"
+    }
+  },
+  {
+    "teamId": "APP-GMAIL",
+    "id": "four-color-m",
+    "label": "Four-color M (2020)",
+    "sourceUrl": "https://api.iconify.design/logos/google-gmail-2020.svg",
+    "sourcePage": "https://icon-sets.iconify.design/logos/google-gmail-2020/",
+    "sourceSha256": "0123402a5efd0077feed696b7270b1f8305adfb6752fe7aa955b779e0dac7711",
+    "ops": {
+      "viewBox": "-5.12 -5.12 266.24 202.29"
     }
   },
   {
@@ -262,6 +417,17 @@
     }
   },
   {
+    "teamId": "APP-PHOTOS",
+    "id": "primary",
+    "label": "Petal pinwheel tile",
+    "sourceUrl": "https://raw.githubusercontent.com/chouhan-rahul/icons_plus/v5.0.0/assets/images/logos/apple/ios-photos.svg",
+    "sourcePage": "https://github.com/chouhan-rahul/icons_plus/blob/v5.0.0/assets/images/logos/apple/ios-photos.svg",
+    "sourceSha256": "e75d3a59ebe8750307ffaea7c9c7db441ef86047f2ee97658b898126d3dfd2d1",
+    "ops": {
+      "viewBox": "3.2 3.2 41.6 41.6"
+    }
+  },
+  {
     "teamId": "APP-PIN",
     "id": "primary",
     "label": "Script P badge",
@@ -273,6 +439,17 @@
     }
   },
   {
+    "teamId": "APP-PODCASTS",
+    "id": "primary",
+    "label": "Broadcast mic tile",
+    "sourceUrl": "https://api.iconify.design/thesvg-color/apple-podcasts.svg",
+    "sourcePage": "https://icon-sets.iconify.design/thesvg-color/apple-podcasts/",
+    "sourceSha256": "08ed4116d2daedfe846723173234d0535d396ac3f7ab5aa0393f17bade73856f",
+    "ops": {
+      "viewBox": "-0.48 -0.48 24.96 24.96"
+    }
+  },
+  {
     "teamId": "APP-POGO",
     "id": "primary",
     "label": "Red-and-white ball",
@@ -281,6 +458,28 @@
     "sourceSha256": "6f1121045b551300d6f9a4651d37b9232edb30aa8465e8a0d0951f43361022cf",
     "ops": {
       "viewBox": "31.432 30.837 532.436 532.139"
+    }
+  },
+  {
+    "teamId": "APP-REDDIT",
+    "id": "primary",
+    "label": "Alien head",
+    "sourceUrl": "https://api.iconify.design/logos/reddit-icon.svg",
+    "sourcePage": "https://icon-sets.iconify.design/logos/reddit-icon/",
+    "sourceSha256": "398b1134be2117f8880ace4111a9d4b164735c4fba646154e4c0bfb20641cb05",
+    "ops": {
+      "viewBox": "-5.12 -5.12 266.24 266.24"
+    }
+  },
+  {
+    "teamId": "APP-REDDIT",
+    "id": "speech-bubble",
+    "label": "Alien in speech bubble (2023)",
+    "sourceUrl": "https://api.iconify.design/thesvg-color/reddit.svg",
+    "sourcePage": "https://icon-sets.iconify.design/thesvg-color/reddit/",
+    "sourceSha256": "7525ea2fbf1d1d6130ed28870f1c0cf842c45ec03444f3b4beed37e60eb9a263",
+    "ops": {
+      "viewBox": "-4.32 -4.32 224.64 224.64"
     }
   },
   {
@@ -349,6 +548,17 @@
     }
   },
   {
+    "teamId": "APP-SOUNDCLOUD",
+    "id": "primary",
+    "label": "Cloud and bars",
+    "sourceUrl": "https://api.iconify.design/selfhst/soundcloud.svg",
+    "sourcePage": "https://icon-sets.iconify.design/selfhst/soundcloud/",
+    "sourceSha256": "50f050a2d6da1e2cef4a610f5599156f6a26a38891b9657bc7729040c6d92478",
+    "ops": {
+      "viewBox": "-10.24 134.66 532.48 242.68"
+    }
+  },
+  {
     "teamId": "APP-SPOTIFY",
     "id": "primary",
     "label": "Sound waves circle",
@@ -371,6 +581,29 @@
         "29"
       ],
       "viewBox": "5.28 5.28 37.44 37.44"
+    }
+  },
+  {
+    "teamId": "APP-TELEGRAM",
+    "id": "primary",
+    "label": "Paper plane circle",
+    "sourceUrl": "https://api.iconify.design/logos/telegram.svg",
+    "sourcePage": "https://icon-sets.iconify.design/logos/telegram/",
+    "sourceSha256": "a7af2f7f747ab2e562a7c4966a4e24064f273161a0c778bfa411dda6dd53946e",
+    "ops": {
+      "viewBox": "-5.12 -5.12 266.24 266.24"
+    }
+  },
+  {
+    "teamId": "APP-THREADS",
+    "id": "primary",
+    "label": "Looping at sign",
+    "sourceUrl": "https://api.iconify.design/logos/threads-icon.svg",
+    "sourcePage": "https://icon-sets.iconify.design/logos/threads-icon/",
+    "sourceSha256": "ceca7d9d880719b52c7aadf1a57bac1024ee09b65822aa31062589d16b3fd9c0",
+    "ops": {
+      "fill": "#000000",
+      "viewBox": "-5.836 -5.836 267.672 303.476"
     }
   },
   {
@@ -445,6 +678,29 @@
     }
   },
   {
+    "teamId": "APP-X",
+    "id": "primary",
+    "label": "Crossed strokes",
+    "sourceUrl": "https://api.iconify.design/logos/x.svg",
+    "sourcePage": "https://icon-sets.iconify.design/logos/x/",
+    "sourceSha256": "e13a4256e3da3f737d929f991b48d39fc72a93c16b069139740d3171c8b525d7",
+    "ops": {
+      "fill": "#000000",
+      "viewBox": "-5.12 -5.12 260.735 266.24"
+    }
+  },
+  {
+    "teamId": "APP-X",
+    "id": "bird",
+    "label": "Blue bird (2012)",
+    "sourceUrl": "https://api.iconify.design/logos/twitter.svg",
+    "sourcePage": "https://icon-sets.iconify.design/logos/twitter/",
+    "sourceSha256": "b41584fa536a7969a6b9f482523ef0f9e4b58d22e8833513e9ffd46b84a7a82e",
+    "ops": {
+      "viewBox": "-5.12 -4.298 266.24 218.286"
+    }
+  },
+  {
     "teamId": "APP-YT",
     "id": "primary",
     "label": "Play button",
@@ -453,6 +709,28 @@
     "sourceSha256": "368ac210e22400910660ef6f632cd652c439dc494e75891ffc809847aa7551ac",
     "ops": {
       "viewBox": "-5.12 -5.12 266.24 189.568"
+    }
+  },
+  {
+    "teamId": "BRAND-AA",
+    "id": "primary",
+    "label": "Flight symbol",
+    "sourceUrl": "https://api.iconify.design/selfhst/american-airlines.svg",
+    "sourcePage": "https://icon-sets.iconify.design/selfhst/american-airlines/",
+    "sourceSha256": "5ea93ef72daa3de40abfa359b97f9c25fe444cbb3e15f9417f5f650fb41a6faa",
+    "ops": {
+      "viewBox": "-10.24 -5.24 532.48 522.582"
+    }
+  },
+  {
+    "teamId": "BRAND-ADOBE",
+    "id": "primary",
+    "label": "Split A",
+    "sourceUrl": "https://api.iconify.design/logos/adobe-icon.svg",
+    "sourcePage": "https://icon-sets.iconify.design/logos/adobe-icon/",
+    "sourceSha256": "7a5c12b5fe4cf49cf394137ebbcb96f268938eb9d166801ec6b9911b3d986815",
+    "ops": {
+      "viewBox": "-5.12 -5.12 266.24 236.809"
     }
   },
   {
@@ -591,6 +869,81 @@
     }
   },
   {
+    "teamId": "BRAND-ARG",
+    "id": "primary",
+    "label": "National flag",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Argentina.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Argentina.svg",
+    "sourceSha256": "dafb5bc6543c59249be9c7dec2298eaeaa1fe7805a62754990315cc6db93b2f3",
+    "ops": {
+      "viewBox": "-16 -16 832 532"
+    }
+  },
+  {
+    "teamId": "BRAND-AUS",
+    "id": "primary",
+    "label": "National flag",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Australia.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Australia.svg",
+    "sourceSha256": "8ccf95cf3507e88d10aa57a1e3b3853d72933c6784e6f67fe3cd3bf12ea68a4d",
+    "ops": {
+      "viewBox": "-201.6 -201.6 10483.2 5443.2"
+    }
+  },
+  {
+    "teamId": "BRAND-BOA",
+    "id": "primary",
+    "label": "Flag stripes",
+    "sourceUrl": "https://api.iconify.design/selfhst/bank-of-america.svg",
+    "sourcePage": "https://icon-sets.iconify.design/selfhst/bank-of-america/",
+    "sourceSha256": "193105786861cf2a8ccd2083bddef0d38651b591f749f99534a0ec82ab4df4a2",
+    "ops": {
+      "viewBox": "-10.24 107.06 532.48 297.98"
+    }
+  },
+  {
+    "teamId": "BRAND-BRAZIL",
+    "id": "primary",
+    "label": "National flag",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Brazil.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Brazil.svg",
+    "sourceSha256": "041479c6a955990d32c8e45b7283afcd62eacc3592eba9bbf0162299ad77ff01",
+    "ops": {
+      "viewBox": "-2184 -1554 4368 3108"
+    }
+  },
+  {
+    "teamId": "BRAND-CALI",
+    "id": "primary",
+    "label": "State flag",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_California.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_California.svg",
+    "sourceSha256": "f821e8533fe9fd1564b4972938c62dbce9ddeefe1a67a430b651eafb2571fe00",
+    "ops": {
+      "removeNodes": [
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "20",
+        "21"
+      ],
+      "viewBox": "-18 -18 936 636"
+    }
+  },
+  {
     "teamId": "BRAND-CANADA",
     "id": "primary",
     "label": "National flag",
@@ -708,6 +1061,50 @@
     }
   },
   {
+    "teamId": "BRAND-GOOGLE",
+    "id": "primary",
+    "label": "Four-color G",
+    "sourceUrl": "https://api.iconify.design/logos/google-icon.svg",
+    "sourcePage": "https://icon-sets.iconify.design/logos/google-icon/",
+    "sourceSha256": "030f5843489563e9ced6961db24a87872c08b35167591b81785befbcd4803f66",
+    "ops": {
+      "viewBox": "-5.222 -5.222 266.322 271.544"
+    }
+  },
+  {
+    "teamId": "BRAND-GREECE",
+    "id": "primary",
+    "label": "National flag",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Greece.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Greece.svg",
+    "sourceSha256": "d65b82614f0cd167a767abfda1abc1ef99e87ef48e5755f3d33e4526e3cad365",
+    "ops": {
+      "viewBox": "-0.54 -0.54 28.08 19.08"
+    }
+  },
+  {
+    "teamId": "BRAND-INDIA",
+    "id": "primary",
+    "label": "National flag",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_India.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_India.svg",
+    "sourceSha256": "95d7239707482165fbc0f685d5f493633639f16771c1fef9701f7ee66dcdf343",
+    "ops": {
+      "viewBox": "-46.8 -31.8 93.6 63.6"
+    }
+  },
+  {
+    "teamId": "BRAND-JAMAICA",
+    "id": "primary",
+    "label": "National flag",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Jamaica.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Jamaica.svg",
+    "sourceSha256": "ebad0857b427c3b40fbba25b83c30d1019b2bfb185fe434a45394abdaba86636",
+    "ops": {
+      "viewBox": "-0.24 -0.24 12.48 6.48"
+    }
+  },
+  {
     "teamId": "BRAND-JAPAN",
     "id": "primary",
     "label": "National flag",
@@ -727,6 +1124,17 @@
     "sourceSha256": "ea846b3133efb6bd3a929fcf8522d959247d1105db028d3b5cd7b82e8cbb9ca3",
     "ops": {
       "viewBox": "-101.93 -101.93 203.861 203.861"
+    }
+  },
+  {
+    "teamId": "BRAND-KOREA",
+    "id": "primary",
+    "label": "National flag",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_South_Korea.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_South_Korea.svg",
+    "sourceSha256": "d8ec2a77a317c28617cbd5e7114c3ec9697120670e343ede5ee5bd0b1b4cd110",
+    "ops": {
+      "viewBox": "-74.88 -50.88 149.76 101.76"
     }
   },
   {
@@ -775,6 +1183,17 @@
         "35"
       ],
       "viewBox": "-0.034 -0.034 8.692 8.692"
+    }
+  },
+  {
+    "teamId": "BRAND-MACYS",
+    "id": "primary",
+    "label": "Red star",
+    "sourceUrl": "https://api.iconify.design/simple-icons/macys.svg?color=%23E21A2C",
+    "sourcePage": "https://icon-sets.iconify.design/simple-icons/macys/",
+    "sourceSha256": "c1240be1e3bf4757088475b35fb93df477df7527aa80761ac27447271c6bbbd9",
+    "ops": {
+      "viewBox": "-0.48 0.142 24.96 23.717"
     }
   },
   {
@@ -972,6 +1391,17 @@
     }
   },
   {
+    "teamId": "BRAND-PR",
+    "id": "primary",
+    "label": "Territorial flag",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Puerto_Rico.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Puerto_Rico.svg",
+    "sourceSha256": "d83503767e27b93e45d3f7be7308f95cac3db37f9c8c5a40d95c58e208faaac0",
+    "ops": {
+      "viewBox": "-18 -18 936 636"
+    }
+  },
+  {
     "teamId": "BRAND-PRINCE",
     "id": "primary",
     "label": "Glyph",
@@ -1005,6 +1435,28 @@
     }
   },
   {
+    "teamId": "BRAND-REDBULL",
+    "id": "primary",
+    "label": "Charging bull",
+    "sourceUrl": "https://api.iconify.design/thesvg-color/red-bull.svg",
+    "sourcePage": "https://icon-sets.iconify.design/thesvg-color/red-bull/",
+    "sourceSha256": "eee54d18fb82e7d48eed307b432a357ab8cbae26fc00e65ef93c8d1bb4fb6506",
+    "ops": {
+      "viewBox": "-0.48 4.719 24.96 14.562"
+    }
+  },
+  {
+    "teamId": "BRAND-SHELL",
+    "id": "primary",
+    "label": "Scallop emblem",
+    "sourceUrl": "https://api.iconify.design/thesvg-color/shell.svg",
+    "sourcePage": "https://icon-sets.iconify.design/thesvg-color/shell/",
+    "sourceSha256": "58f88270541bb52cca55ba1201e0db9844fa3d111a3ff0631a5e6afb44380bbc",
+    "ops": {
+      "viewBox": "-0.48 0.383 24.96 23.234"
+    }
+  },
+  {
     "teamId": "BRAND-STONES",
     "id": "primary",
     "label": "Tongue and lips",
@@ -1013,6 +1465,28 @@
     "sourceSha256": "8a95d40015dc5b94a44198f6cfeb258e52eff3b2de8bf7f2137b52643411d069",
     "ops": {
       "viewBox": "-2.301 -2.301 104.616 119.627"
+    }
+  },
+  {
+    "teamId": "BRAND-SWA",
+    "id": "primary",
+    "label": "Heart",
+    "sourceUrl": "https://api.iconify.design/selfhst/southwest-airlines.svg",
+    "sourcePage": "https://icon-sets.iconify.design/selfhst/southwest-airlines/",
+    "sourceSha256": "bcf02600eac781b46827ac0c3ea9f52301740aa50e09e115c5a2690942cecfd0",
+    "ops": {
+      "viewBox": "-10.24 -0.44 532.48 512.88"
+    }
+  },
+  {
+    "teamId": "BRAND-SWITCH",
+    "id": "primary",
+    "label": "Joy-Con tile",
+    "sourceUrl": "https://api.iconify.design/selfhst/nintendo-switch.svg",
+    "sourcePage": "https://icon-sets.iconify.design/selfhst/nintendo-switch/",
+    "sourceSha256": "3b177df792b668548f88ca58ce60b5d3723771b4ca1515bea620385539587397",
+    "ops": {
+      "viewBox": "-10.24 -10.24 532.48 532.48"
     }
   },
   {
@@ -1032,6 +1506,17 @@
         "0/0/7"
       ],
       "viewBox": "15.791 30.715 402.65 402.363"
+    }
+  },
+  {
+    "teamId": "BRAND-TURKEY",
+    "id": "primary",
+    "label": "National flag",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Turkey.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Turkey.svg",
+    "sourceSha256": "5a47e932cdb371d9708d8c9a209d3acfd006cdd3ee7dd38ae44df6180e170e90",
+    "ops": {
+      "viewBox": "-1800 -31800 93600 63600"
     }
   },
   {
@@ -1057,6 +1542,17 @@
     }
   },
   {
+    "teamId": "BRAND-UK",
+    "id": "primary",
+    "label": "National flag",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_the_United_Kingdom.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_the_United_Kingdom.svg",
+    "sourceSha256": "b93bb15033d6c2219f290121d40c0a741765bd4b077ebcf5a5b0d917ff725a28",
+    "ops": {
+      "viewBox": "-1 -1 52 32"
+    }
+  },
+  {
     "teamId": "BRAND-UNITED",
     "id": "primary",
     "label": "Globe",
@@ -1079,6 +1575,17 @@
     }
   },
   {
+    "teamId": "BRAND-USA",
+    "id": "primary",
+    "label": "National flag",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_the_United_States.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_the_United_States.svg",
+    "sourceSha256": "48f0d3e4a7bf2d5c0c8d09cd975696acb2f3af601aaca80c537933ad9ec166ec",
+    "ops": {
+      "viewBox": "-148.2 -148.2 7706.4 4196.4"
+    }
+  },
+  {
     "teamId": "BRAND-WALMART",
     "id": "primary",
     "label": "Spark",
@@ -1098,6 +1605,31 @@
     "sourceSha256": "a078c17df8597102b3c05163683d2a1a56ad9378ad38c9def1c1e522c2cdacd3",
     "ops": {
       "viewBox": "-1.097 -1.069 57.034 56.76"
+    }
+  },
+  {
+    "teamId": "BRAND-WB",
+    "id": "primary",
+    "label": "Monogram shield",
+    "sourceUrl": "https://api.iconify.design/thesvg-color/warner-bros.svg",
+    "sourcePage": "https://icon-sets.iconify.design/thesvg-color/warner-bros/",
+    "sourceSha256": "e353fa3ad310eb1a5fb4e2bb976518163c7a78179134aeeced5f0b298b338646",
+    "ops": {
+      "removeNodes": [
+        "0"
+      ],
+      "viewBox": "-197.534 -240.018 673.893 836.939"
+    }
+  },
+  {
+    "teamId": "BRAND-XBOX",
+    "id": "primary",
+    "label": "Sphere and X",
+    "sourceUrl": "https://api.iconify.design/thesvg-color/xbox.svg",
+    "sourcePage": "https://icon-sets.iconify.design/thesvg-color/xbox/",
+    "sourceSha256": "ca4eb3155e0bf87edb3b0c58d66b9fc22cf8616527c3a38758ebae9c7a4a8e9f",
+    "ops": {
+      "viewBox": "-0.721 -0.722 89.483 89.531"
     }
   },
   {

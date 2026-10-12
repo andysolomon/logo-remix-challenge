@@ -49,7 +49,7 @@ describe('MLS collection', () => {
   })
 
   test('hints name MLS, clubs are logo-only, and random decks mix them with other collections', () => {
-    expect(roundHints({ o: 'MLS-ATL', c: 'PRO-KC', v: 0 })).toEqual(['Logo: MLS', 'Colors: NFL'])
+    expect(roundHints({ o: 'MLS-ATL', c: 'PRO-KC', v: 0 })).toEqual(['Logo: MLS', 'Colors: NFL - AFC'])
     expect(ALL_POOL_IDS).toContain('MLS')
     expect(poolTeams(['MLS'])).toEqual(clubs)
     expect(colorPoolTeams(['MLS'])).toEqual([])

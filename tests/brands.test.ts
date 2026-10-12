@@ -164,7 +164,7 @@ for league, roster in ROSTERS.items():
     expect(roundHints({ o: 'CAR-BMW', c: 'TV-NICK', v: 0 })).toEqual(['Logo: German car', 'Colors: Kids channel'])
     expect(roundHints({ o: 'LUX-ROLEX', c: 'NBA-ATL', v: 0 })).toEqual(['Logo: Luxury watchmaker', 'Colors: NBA'])
     expect(roundHints({ o: 'LUX-HERMES', c: 'COL-ALA', v: 0 })).toEqual(['Logo: Luxury leather goods', 'Colors: SEC'])
-    expect(roundHints({ o: 'CLOTH-TNF', c: 'PRO-KC', v: 0 })).toEqual(['Logo: Outdoor brand', 'Colors: NFL'])
+    expect(roundHints({ o: 'CLOTH-TNF', c: 'PRO-KC', v: 0 })).toEqual(['Logo: Outdoor brand', 'Colors: NFL - AFC'])
   })
 })
 

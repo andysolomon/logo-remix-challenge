@@ -564,7 +564,7 @@ describe('high-school league gameplay integration', () => {
   test('round hints identify high-school teams by county', () => {
     const walton = hsTeams.find((t) => t.region === 'Walton')!
     expect(teamHint(walton)).toBe('Cobb County')
-    expect(roundHints({ o: walton.id, c: 'PRO-KC', v: 0 })).toEqual(['Logo: Cobb County', 'Colors: NFL'])
+    expect(roundHints({ o: walton.id, c: 'PRO-KC', v: 0 })).toEqual(['Logo: Cobb County', 'Colors: NFL - AFC'])
     const buford = hsTeams.find((t) => t.region === 'Buford')!
     expect(roundHints({ o: buford.id, c: 'NBA-ATL', v: 0 })).toEqual(['Logo: Gwinnett County', 'Colors: NBA'])
   })

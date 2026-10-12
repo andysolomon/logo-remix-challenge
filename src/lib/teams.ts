@@ -38,7 +38,7 @@ export interface Round {
   v: number
   /** Per-round guess target; falls back to the deck default when unset. */
   g?: GuessTarget
-  /** Show league/conference hints for this round (e.g. "Logo: NFL · Colors: ACC"). */
+  /** Show league/conference hints for this round (e.g. "Logo: NFL - AFC · Colors: ACC"). */
   h?: boolean
   /** Stable alternate artwork id for the original team; unset uses its primary logo. */
   l?: string
@@ -566,26 +566,29 @@ export const guessPrompt = (t: GuessTarget) => (t === 'both' ? 'Guess the Logo a
 export const entryNoun = (league: League) =>
   league === 'APP' ? 'app' : league === 'TV' ? 'channel' : ['FOOD', 'BRAND', 'CAR', 'LUX', 'CLOTH'].includes(league) ? 'brand' : league === 'SOCCER' || league === 'MLS' ? 'club' : 'team'
 /**
- * Where a team plays: the league label for pro teams, MLS clubs and fast food, the conference for college and high
- * school, the domestic league for soccer clubs outside "Rest of World", the type for brands, apps, channels, cars,
- * luxury houses ("Luxury watchmaker") and clothing brands ("Outdoor brand").
+ * Where a team plays: the league and conference for NFL teams ("NFL - AFC"), the league label for other pro teams,
+ * MLS clubs and fast food, the conference for college and high school, the domestic league for soccer clubs outside
+ * "Rest of World", the type for brands, apps, channels, cars, luxury houses ("Luxury watchmaker") and clothing
+ * brands ("Outdoor brand").
  */
 export const teamHint = (t: Team) =>
   t.league === 'COL' || t.league === 'HS' || (t.league === 'SOCCER' && t.conference !== 'Rest of World')
     ? t.conference
-    : t.league === 'BRAND'
-      ? `${t.conference} brand`
-      : t.league === 'APP'
-        ? `${t.conference} app`
-        : t.league === 'TV'
-          ? `${t.conference} channel`
-          : t.league === 'CAR'
-            ? `${t.conference} car`
-            : t.league === 'LUX'
-              ? `Luxury ${t.conference.toLowerCase()}`
-              : t.league === 'CLOTH'
-                ? `${t.conference} brand`
-                : LEAGUES[t.league].label
+    : t.league === 'PRO'
+      ? `${LEAGUES.PRO.label} - ${t.conference}`
+      : t.league === 'BRAND'
+        ? `${t.conference} brand`
+        : t.league === 'APP'
+          ? `${t.conference} app`
+          : t.league === 'TV'
+            ? `${t.conference} channel`
+            : t.league === 'CAR'
+              ? `${t.conference} car`
+              : t.league === 'LUX'
+                ? `Luxury ${t.conference.toLowerCase()}`
+                : t.league === 'CLOTH'
+                  ? `${t.conference} brand`
+                  : LEAGUES[t.league].label
 /** Hint lines for a round: one for the logo team, plus one for the colors team when the round is a remix. */
 export const roundHints = (r: Round): string[] => [
   `Logo: ${teamHint(findTeam(r.o)!)}`,

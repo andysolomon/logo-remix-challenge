@@ -34,7 +34,7 @@ describe('a logo can go in the deck without a remix', () => {
     expect(roundHints(round)).toEqual(['Logo: Serie A'])
     // Remixes are untouched.
     expect(roundTarget({ o: 'SOCCER-ROM', c: 'PRO-KC', v: 0 }, 'colors')).toBe('colors')
-    expect(roundHints({ o: 'SOCCER-ROM', c: 'PRO-KC', v: 0 })).toEqual(['Logo: Serie A', 'Colors: NFL'])
+    expect(roundHints({ o: 'SOCCER-ROM', c: 'PRO-KC', v: 0 })).toEqual(['Logo: Serie A', 'Colors: NFL - AFC'])
   })
 
   test('an original-colors round keeps a valid alternate logo', () => {

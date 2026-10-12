@@ -55,7 +55,7 @@ describe('soccer clubs collection', () => {
 
   test('hints name the domestic league, and random decks mix clubs with other collections', () => {
     expect(roundHints({ o: 'SOCCER-ARS', c: 'SOCCER-JUV', v: 0 })).toEqual(['Logo: Premier League', 'Colors: Serie A'])
-    expect(roundHints({ o: 'SOCCER-GAL', c: 'PRO-KC', v: 0 })).toEqual(['Logo: SOCCER', 'Colors: NFL'])
+    expect(roundHints({ o: 'SOCCER-GAL', c: 'PRO-KC', v: 0 })).toEqual(['Logo: SOCCER', 'Colors: NFL - AFC'])
     expect(ALL_POOL_IDS).toContain('Soccer')
     expect(poolTeams(['Soccer'])).toEqual(clubs)
     // Clubs are logo-only: their palettes never color a round.

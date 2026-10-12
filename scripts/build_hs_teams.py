@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Merge the Cobb County high schools into src/lib/teams.json.
+"""Merge the HIGH SCHOOL league's schools into src/lib/teams.json.
 
 Reads ``public/logos/svg/hs-manifest.json`` (written by
 ``scripts/download_cobb_svgs.py``) and rewrites only the ``HS-*`` slice of the
@@ -9,7 +9,9 @@ so the two builders can run in either order.
 
 Before writing, the complete manifest is checked against the pinned roster,
 each palette's used source slots are checked against fully decoded artwork,
-and every logo file is structurally validated.
+and every logo file is structurally validated. Alternate marks pinned by
+``scripts/download_team_alternates.py --league HS`` are attached from
+``high-school-alternates-manifest.json``.
 
 Usage:
     python3 scripts/build_hs_teams.py [--dry-run]
@@ -27,10 +29,11 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-from cobb_roster import SCHOOLS  # noqa: E402
+from cobb_roster import COUNTY, SCHOOLS  # noqa: E402
 from download_cobb_svgs import (  # noqa: E402
-    CONFERENCE,
     SOURCE_KINDS,
+    TRACED,
+    asset_suffix,
     SOURCE_PALETTE_OVERRIDES,
     UNUSED_SOURCE_SLOTS,
     artwork_colors,
@@ -108,7 +111,7 @@ def validate_manifest() -> list[dict]:
         expected_values = {
             "id": f"HS-{abbr}",
             "league": "HS",
-            "conference": CONFERENCE,
+            "conference": COUNTY[abbr],
             "region": school[1],
             "name": school[2],
             "displayName": f"{school[1]} {school[2]}".strip(),
@@ -119,10 +122,12 @@ def validate_manifest() -> list[dict]:
         for field, expected in expected_values.items():
             if item[field] != expected:
                 raise ValueError(f"{abbr}: {field} does not match the roster")
-        suffix = ".svg" if school[3].lower().split("?")[0].endswith(".svg") else ".png"
+        suffix = asset_suffix(school)
         expected_path = f"/logos/svg/high-school/{safe_slug(abbr)}{suffix}"
         if item["path"] != expected_path or item["format"] != suffix[1:]:
             raise ValueError(f"{abbr}: unexpected asset path or format")
+        if item.get("trace") != TRACED.get(abbr):
+            raise ValueError(f"{abbr}: recorded trace does not match the roster's reviewed trace")
         if item["sourceKind"] not in SOURCE_KINDS:
             raise ValueError(f"{abbr}: invalid sourceKind")
         if not item["sourceUrl"].startswith("https://") or not item["sourcePage"].startswith("https://"):
@@ -198,6 +203,25 @@ def hs_entry(item: dict) -> dict:
     return entry
 
 
+def hs_entries(items: list[dict]) -> list[dict]:
+    """The teams.json entries for validated manifest rows, with their alternate marks.
+
+    ``build_teams.py`` checks the HS slice against this same function, so the
+    two builders always agree on what a high-school entry looks like.
+    """
+    # Imported here: download_team_alternates imports build_teams, which imports this module.
+    from download_team_alternates import team_alternates
+
+    alternates = team_alternates("HS", {item["id"] for item in items})
+    entries = []
+    for item in items:
+        entry = hs_entry(item)
+        if item["id"] in alternates:
+            entry["alternateLogos"] = alternates[item["id"]]
+        entries.append(entry)
+    return entries
+
+
 def fmt_entry(e: dict) -> str:
     """One team per line, matching the existing hand-written style."""
     return "    " + json.dumps(e, ensure_ascii=False, separators=(", ", ": "))
@@ -213,8 +237,13 @@ def main() -> int:
     except ValueError as exc:
         print(f"error: {exc}; run scripts/download_cobb_svgs.py", file=sys.stderr)
         return 1
+    try:
+        entries = hs_entries(items)
+    except (OSError, ValueError) as exc:
+        print(f"error: {exc}; run scripts/download_team_alternates.py --league HS", file=sys.stderr)
+        return 1
 
-    teams = sorted((hs_entry(i) for i in items), key=lambda t: (t["conference"], t["region"], t["name"]))
+    teams = sorted(entries, key=lambda t: (t["conference"], t["region"], t["name"]))
     ids = [t["id"] for t in teams]
     dupes = sorted({x for x in ids if ids.count(x) > 1})
     if dupes:
@@ -244,13 +273,16 @@ def main() -> int:
             text,
         )
     # Rewrite the "teams" array by hand to keep one-entry-per-line formatting;
-    # existing non-HS lines pass through verbatim.
+    # existing non-HS lines pass through verbatim and the HS block keeps its
+    # place in the array (a first build appends it).
     start = text.index('"teams": [')
     end = text.index("\n  ]", start)
-    kept = [ln for ln in text[start + len('"teams": ['):end].split("\n") if ln.strip() and '"league": "HS"' not in ln]
-    kept[-1] = kept[-1].rstrip().rstrip(",")
-    body = "\n".join(kept) + ",\n" + ",\n".join(fmt_entry(t) for t in teams)
-    text = text[:start] + '"teams": [\n' + body + text[end:]
+    lines = [ln.rstrip().rstrip(",") for ln in text[start + len('"teams": ['):end].split("\n") if ln.strip()]
+    hs_at = [n for n, ln in enumerate(lines) if '"league": "HS"' in ln]
+    kept = [ln for ln in lines if '"league": "HS"' not in ln]
+    at = hs_at[0] if hs_at else len(kept)
+    kept[at:at] = [fmt_entry(t) for t in teams]
+    text = text[:start] + '"teams": [\n' + ",\n".join(kept) + text[end:]
     json.loads(text)  # sanity before replacing the last known-good file
     atomic_write_text(TEAMS_JSON, text)
     print(f"wrote {TEAMS_JSON.relative_to(ROOT)}")

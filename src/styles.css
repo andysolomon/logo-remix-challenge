@@ -580,6 +580,8 @@ input::placeholder { color: var(--faint); }
 .hex-input { height: 34px; min-width: 0; padding: 0 10px; border: 1.5px solid var(--line); border-radius: 10px; background: var(--input-bg); color: var(--ink); font: 600 14px var(--ui); text-transform: uppercase; font-variant-numeric: tabular-nums; }
 .hex-input:disabled { opacity: 0.4; }
 .design-actions { margin-top: 10px; }
+.design-trace { width: min(420px, 100%); display: flex; flex-direction: column; gap: 6px; margin-top: 8px; }
+.design-trace .micro { text-align: center; }
 .design-export { width: 100%; display: flex; flex-direction: column; gap: 6px; align-items: stretch; margin-top: 10px; padding-top: 10px; border-top: 1px solid var(--line); text-align: left; }
 .design-export .micro { text-align: center; }
 .design-opts { display: flex; flex-wrap: wrap; gap: 6px; }

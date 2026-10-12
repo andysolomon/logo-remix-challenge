@@ -1,15 +1,18 @@
 #!/usr/bin/env python3
-"""Download the pinned NBA, MLB, MLS or college alternate marks and record their metadata.
+"""Download the pinned NBA, MLB, MLS, college or high-school alternate marks and record their metadata.
 
-Usage: python3 scripts/download_team_alternates.py --league NBA|MLB|MLS|COL [--force] [--cache-dir DIR]
-Then run build_nba_teams.py (NBA), build_extra_teams.py --league MLB|MLS or build_teams.py (COL);
-each attaches the alternates.
+Usage: python3 scripts/download_team_alternates.py --league NBA|MLB|MLS|COL|HS [--force] [--cache-dir DIR]
+Then run build_nba_teams.py (NBA), build_extra_teams.py --league MLB|MLS, build_teams.py (COL)
+or build_hs_teams.py (HS); each attaches the alternates.
 
 team_alternate_sources.json pins every alternate the way brand_artwork_sources.json pins
 brand artwork: the source URL, the SHA-256 of the source file and the reviewed
 brand_vector.py edits that remove a page background or crop the mark. Only real vector
-outlines are accepted, so every alternate recolors like the primary. An alternate is
-artwork only: the team's name, answers and donor palette never change. Checked-in assets
+outlines are accepted, so every alternate recolors like the primary. The one exception is
+a reviewed ``trace`` edit (see trace_vector.py) for a requested mark that is only
+published as a bitmap; the manifest keeps that edit, so a traced mark stays labeled.
+An alternate is artwork only: the team's name, answers and donor palette never change.
+Checked-in assets
 whose checksum matches the manifest are reused unless --force is given; --cache-dir keeps
 verified source files for rate-limited refreshes. The whole league validates before any
 asset or the manifest is replaced; alternates no longer pinned are removed.
@@ -25,12 +28,13 @@ from build_teams import atomic_write_text
 from download_brand_logos import MAX_BYTES, artwork_palette, brand_colors, source_bytes
 from brand_vector import import_brand_vector
 from nfl_vector_artwork import validate_vector
+from trace_vector import trace_raster
 
 ROOT = Path(__file__).resolve().parent.parent
 SOURCES = ROOT / "scripts/team_alternate_sources.json"
 TEAMS_JSON = ROOT / "src/lib/teams.json"
-FOLDERS = {"NBA": "nba", "MLB": "mlb", "MLS": "mls", "COL": "ncaa"}
-SOURCE_KEYS = ("sourceUrl", "sourceSha256", "downloadForm", "ops")
+FOLDERS = {"NBA": "nba", "MLB": "mlb", "MLS": "mls", "COL": "ncaa", "HS": "high-school"}
+SOURCE_KEYS = ("sourceUrl", "sourceSha256", "downloadForm", "trace", "ops")
 
 
 def manifest_path(league: str) -> Path:
@@ -86,7 +90,10 @@ def refresh(league: str, force: bool = False, cache_dir: Path | None = None) -> 
             if hashlib.sha256(raw).hexdigest() != previous["sha256"]:
                 raise ValueError(f"{path}: checked-in artwork differs from the manifest; review or refresh with --force")
         else:
-            raw = import_brand_vector(source_bytes(source, cache_dir), source.get("ops", {}))
+            raw = source_bytes(source, cache_dir)
+            if "trace" in source:
+                raw = trace_raster(raw, source["trace"])
+            raw = import_brand_vector(raw, source.get("ops", {}))
         validate_vector(raw)
         if len(raw) > MAX_BYTES:
             raise ValueError(f"{path}: {len(raw)} bytes; pick a lighter vector source")

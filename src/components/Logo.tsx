@@ -218,7 +218,8 @@ export async function recolorRaster(src: string, from: RGB[], to: RGB[]): Promis
 }
 
 // ---------------------------------------------------------------- dispatcher
-export const isSvg = (src: string) => /\.svg(\?|#|$)/i.test(src)
+/** An SVG asset path, or an inline SVG data URL (a logo traced in Designer mode). */
+export const isSvg = (src: string) => /\.svg(\?|#|$)/i.test(src) || /^data:image\/svg\+xml[,;]/i.test(src)
 
 /** Some downloaded "SVGs" are just a wrapper around an embedded bitmap; fill rewriting can't touch those. */
 export const hasEmbeddedRaster = (markup: string) => /<image\b/i.test(markup)

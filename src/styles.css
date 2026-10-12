@@ -97,6 +97,7 @@ input::placeholder { color: var(--faint); }
 .opt:focus-visible,
 .close-btn:focus-visible,
 .step:focus-visible,
+.btn-keep-original:focus-visible,
 .stepper-input:focus-visible {
   outline: 2px solid var(--accent);
   outline-offset: 2px;
@@ -147,7 +148,7 @@ input::placeholder { color: var(--faint); }
 .play-btn:hover { filter: brightness(0.92); }
 
 /* ---------- Create (landscape) ---------- */
-.create-land { flex: 1; min-height: 0; display: grid; grid-template-columns: 28fr 44fr 28fr; gap: 14px; padding: 14px 16px 16px; }
+.create-land { flex: 1; min-height: 0; display: grid; grid-template-columns: minmax(0, 28fr) minmax(0, 44fr) minmax(0, 28fr); gap: 14px; padding: 14px 16px 16px; }
 .panel { min-height: 0; display: flex; flex-direction: column; background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 12px; gap: 10px; }
 .panel-head { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px; }
 .panel-head.wrap { flex-wrap: wrap; }
@@ -157,12 +158,27 @@ input::placeholder { color: var(--faint); }
 .seg-btn { min-width: 54px; flex: 1 0 auto; height: 38px; padding: 0 8px; border: none; border-radius: 8px; font: 600 12px var(--ui); cursor: pointer; background: transparent; color: var(--muted); }
 .seg-btn.active { background: var(--ink); color: var(--on-ink); }
 .portrait .seg-btn { min-width: 64px; }
-/* Compact collection picker: swipe through one row on phones and small tablets. */
-@media (max-width: 900px), (max-height: 640px) {
+/* Compact collection picker: swipe through one row on phones and tablets, including landscape tablets, so the logo list keeps the panel's height. */
+@media (max-width: 900px), (max-height: 640px), (orientation: landscape) and (max-height: 1000px) {
   .panel-head .seg { display: flex; flex-wrap: nowrap; min-width: 0; overflow-x: auto; overscroll-behavior-x: contain; scroll-padding-inline: 6px; padding: 6px; }
   .panel-head .seg-btn { flex: 0 0 auto; white-space: nowrap; }
   .panel > .chips { flex: 0 0 auto; flex-wrap: nowrap; min-width: 0; overflow-x: auto; overscroll-behavior-x: contain; scroll-padding-inline: 6px; padding: 4px; margin: -4px; }
   .panel > .chips .chip { flex: 0 0 auto; white-space: nowrap; }
+  .panel-head .seg::-webkit-scrollbar, .panel > .chips::-webkit-scrollbar { height: 6px; }
+}
+/* Touch screens swipe the rows, so the scrollbar is only noise there. */
+@media (pointer: coarse) {
+  .panel-head .seg, .panel > .chips { scrollbar-width: none; }
+  .panel-head .seg::-webkit-scrollbar, .panel > .chips::-webkit-scrollbar { display: none; }
+}
+/* Short landscape screens: smaller tiles so several rows of logos show at once. */
+@media (orientation: landscape) and (max-height: 820px) {
+  .create-land { gap: 12px; padding: 12px 14px 14px; }
+  .create-land .panel { padding: 10px; gap: 8px; }
+  .create-land .tile-grid { gap: 8px; }
+  .create-land .tile { gap: 6px; padding: 10px 6px 8px; }
+  .create-land .tile-logo { width: 56px; height: 56px; }
+  .create-land .tile.colors .tile-logo { width: 52px; height: 52px; }
 }
 .chips { display: flex; gap: 6px; flex-wrap: wrap; }
 .chip { height: 38px; padding: 0 14px; border: none; border-radius: 19px; font: 600 13px var(--ui); cursor: pointer; background: var(--chip-bg); color: var(--chip-fg); }
@@ -229,7 +245,8 @@ input::placeholder { color: var(--faint); }
 @media (max-height: 640px) {
   .canvas { overflow-y: auto; }
   .canvas > * { flex-shrink: 0; }
-  .canvas-hero { flex: 1 0 84px; min-height: 84px; }
+  .canvas-hero { flex: 1 0 140px; min-height: 140px; }
+  .empty-circle { padding: 18px; font-size: 13px; line-height: 1.35; }
   .canvas-hero .hero-logo { max-width: 100%; max-height: 100%; }
   .canvas-footer { position: static; }
 }
@@ -239,6 +256,8 @@ input::placeholder { color: var(--faint); }
 .steps { display: flex; background: var(--chip-bg); border-radius: 12px; padding: 4px; gap: 4px; }
 .step { flex: 1; height: 48px; border: none; border-radius: 9px; font: 600 15px var(--ui); cursor: pointer; background: transparent; color: var(--chip-fg); }
 .step.active { background: var(--ink); color: var(--on-ink); }
+.btn-keep-original { flex-shrink: 0; height: 48px; border: 2px solid var(--ink); background: var(--surface); border-radius: 12px; font: 700 15px var(--ui); color: var(--ink); cursor: pointer; }
+.btn-keep-original:hover { background: var(--bg); }
 .create-port .panel, .create-port .canvas { flex: 1; }
 
 /* Header (narrow screens): tighter spacing, tabs shrink, Play becomes icon-only */
@@ -276,8 +295,9 @@ input::placeholder { color: var(--faint); }
 .round-target-lb { flex: none; font: 600 10px var(--ui); letter-spacing: 1.5px; color: var(--faint); }
 .seg-group { flex: 1; min-width: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 3px; padding: 3px; background: var(--chip-bg); border-radius: 10px; }
 .seg-group .seg { min-width: 0; height: 30px; display: flex; align-items: center; justify-content: center; border: none; border-radius: 7px; background: none; color: var(--chip-fg); font: 600 12px var(--ui); line-height: 1; white-space: nowrap; cursor: pointer; transition: background 0.15s, color 0.15s; }
-.seg-group .seg:hover:not(.active) { background: var(--surface); }
+.seg-group .seg:hover:not(.active):not(:disabled) { background: var(--surface); }
 .seg-group .seg.active { background: var(--ink); color: var(--on-ink); }
+.seg-group .seg:disabled { opacity: 0.35; cursor: not-allowed; }
 .round-hint { width: 100%; display: flex; align-items: center; gap: 8px; margin-top: 8px; }
 .hint-toggle { flex: 1; min-width: 0; height: 30px; padding: 0 10px; border: none; border-radius: 10px; background: var(--chip-bg); color: var(--chip-fg); font: 600 12px var(--ui); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; cursor: pointer; transition: background 0.15s, color 0.15s; }
 .hint-toggle:hover:not(.active) { background: var(--surface); }

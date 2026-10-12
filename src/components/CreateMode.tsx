@@ -49,7 +49,8 @@ export function CreateMode({ state, setState, portrait, deckCount, onAddRound, h
   useEffect(() => () => window.clearTimeout(addedTimer.current), [])
 
   const deckFull = state.editIdx == null && deckCount >= MAX_DECK_ROUNDS
-  const addState: AddState = justAdded ? 'added' : deckFull ? 'full' : !original || !colors ? 'disabled' : state.editIdx != null ? 'save' : 'add'
+  // A logo with no color source goes in as-is, in its original colors.
+  const addState: AddState = justAdded ? 'added' : deckFull ? 'full' : !original ? 'disabled' : state.editIdx != null ? 'save' : 'add'
 
   // Clicking the already-selected tile deselects it.
   const selectOriginal = (t: Team) =>
@@ -58,6 +59,7 @@ export function CreateMode({ state, setState, portrait, deckCount, onAddRound, h
     setState((s) => (s.cId === t.id ? { ...s, cId: null, perm: 0, step: 2 } : { ...s, cId: t.id, step: 3 }))
   const clearOriginal = () => setState((s) => ({ ...s, oId: null, logoVariant: undefined, step: 1 }))
   const clearColors = () => setState((s) => ({ ...s, cId: null, perm: 0, step: 2 }))
+  const keepOriginalColors = () => setState((s) => ({ ...s, cId: null, perm: 0, step: 3 }))
   const clearAll = () => setState((s) => ({ ...s, oId: null, cId: null, perm: 0, logoVariant: undefined, editIdx: null, step: 1 }))
   const shuffle = () => {
     if (original && colors) setState((s) => ({ ...s, perm: nextContrastSafePermutation(original, colors.palette, s.perm) }))
@@ -66,9 +68,10 @@ export function CreateMode({ state, setState, portrait, deckCount, onAddRound, h
     if (originalTeam) setState((s) => ({ ...s, logoVariant: nextLogoVariant(originalTeam, s.logoVariant) }))
   }
   const add = () => {
-    if (!original || !colors || deckFull || addLock.current) return
+    if (!original || deckFull || addLock.current) return
     addLock.current = true
-    const added = onAddRound({ o: original.id, c: colors.id, v: state.perm, l: state.logoVariant }, state.editIdx)
+    const round: Round = colors ? { o: original.id, c: colors.id, v: state.perm, l: state.logoVariant } : { o: original.id, v: 0, l: state.logoVariant }
+    const added = onAddRound(round, state.editIdx)
     if (!added) {
       addLock.current = false
       return
@@ -131,6 +134,11 @@ export function CreateMode({ state, setState, portrait, deckCount, onAddRound, h
             onSelect={selectOriginal}
             portrait
           />
+        )}
+        {state.step === 2 && original && (
+          <button type="button" className="btn-keep-original" onClick={keepOriginalColors}>
+            Skip · keep the original colors →
+          </button>
         )}
         {state.step === 2 && (
           <TeamBrowser

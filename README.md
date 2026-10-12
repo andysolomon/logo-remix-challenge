@@ -22,6 +22,8 @@ Each round asks for the **logo's team**, the **team whose colors it wears**, or 
 
 **Designer mode** is tucked away under Settings → Advanced. Switch it on and a **Designer** tab joins Create and Deck: pick any logo (and any of its alternates), start from an NFL, NBA or college team's palette or type exact hex codes for each of the artwork's color slots, and download the result as an **SVG** (vector, any size) or a square **PNG** at 512, 1024 or 2048 px with a transparent, white, black or custom background. Tiled logos keep their backdrop tile (and one-color logos their frame) in the export, bitmap artwork exports as PNG only, and the tab disappears again when the mode is switched off.
 
+**Upload Logo** in Designer mode traces any image you bring (JPG, PNG, WebP, GIF or SVG; drop it on the canvas or pick a file) into flat-color vector outlines, right in the browser; nothing is sent anywhere. The tracer (`src/lib/trace.ts`) finds the artwork's flat fills as peaks in a color histogram, so JPEG noise and anti-aliased edges don't become extra colors, removes the background around the logo while keeping white details enclosed by it, and smooths each color's outline with potrace's corner rule. **Auto** keeps up to three colors (the Designer's three slots) and drops thin anti-aliasing halos; 1, 2 or 3 forces a count, and **Remove background** can be switched off. The traced logo then recolors slot by slot, picks up a backdrop tile and frame when it has fewer than three colors, and downloads as SVG or PNG like any other logo.
+
 Client-only SPA — no backend, no auth. Deck, timer, game mode, guess mode, voice, high score, and the Designer mode switch persist in `localStorage`.
 
 ## Stack
@@ -134,6 +136,8 @@ src/
   lib/teams.ts             dataset, answer matching, filtering, localStorage
   lib/designer.ts          Designer mode: slot roles, palette seeding, SVG sizing/composition (pure)
   lib/exportLogo.ts        Designer exports: recolored SVG files, canvas-rendered PNGs, downloads
+  lib/trace.ts             Designer uploads: trace a bitmap logo into flat-color SVG outlines (pure)
+  lib/traceUpload.ts       Designer uploads: decode the file in the browser, trace it, wrap it as a logo
   lib/teams.json           32 NFL + 30 NBA + 30 MLB + 30 soccer + 30 food + 29 brand + 30 app + 30 TV + 30 car + 30 luxury + 30 clothing + 126 college + 16 high-school entries
   lib/useOrientation.ts    portrait = innerHeight > innerWidth
   components/

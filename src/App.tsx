@@ -18,6 +18,7 @@ import {
   MAX_DECK_ROUNDS,
   normalizeDeck,
   normalizeRound,
+  replaceRound,
   saveDeck,
   saveDesigner,
   saveGameMode,
@@ -115,7 +116,7 @@ export default function App() {
 
   const addRound =(round: Round, editIdx: number | null) => {
     const d = [...deck]
-    if (editIdx != null && d[editIdx]) d[editIdx] = normalizeRound({ ...d[editIdx], ...round })
+    if (editIdx != null && d[editIdx]) d[editIdx] = replaceRound(d[editIdx], round)
     else {
       if (d.length >= MAX_DECK_ROUNDS) return false
       d.push(normalizeRound({ ...round, h: round.h ?? true }))
@@ -127,17 +128,17 @@ export default function App() {
   const editRound = (i: number) => {
     const r = deck[i]
     const o = findTeam(r.o)!
-    const c = findTeam(r.c)!
+    const c = r.c === undefined ? null : findTeam(r.c)!
     setCreate((s) => ({
       ...s,
       oId: r.o,
-      cId: r.c,
+      cId: r.c ?? null,
       perm: r.v,
       logoVariant: r.l,
       editIdx: i,
       step: 3,
       browserO: { league: o.league, conference: 'All' },
-      browserC: { league: c.league, conference: 'All' },
+      browserC: c ? { league: c.league, conference: 'All' } : s.browserC,
     }))
     setMode('create')
   }

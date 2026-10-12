@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
-"""Validate and rebuild only MLB or soccer entries; preserve all other data.
+"""Validate and rebuild only MLB, soccer or MLS entries; preserve all other data.
 
+MLB and MLS alternate marks pinned by download_team_alternates.py are attached from
+mlb-alternates-manifest.json and mls-alternates-manifest.json.
 Fast-food and brand entries are rebuilt by build_brand_teams.py.
 """
 import argparse
@@ -10,7 +12,8 @@ from pathlib import Path
 
 from build_teams import atomic_write_text, fmt_entry
 from download_extra_logos import inspect_artwork
-from extra_rosters import MLB, SOCCER, LEAGUES
+from download_team_alternates import FOLDERS, team_alternates
+from extra_rosters import MLB, MLS, SOCCER, LEAGUES
 
 ROOT = Path(__file__).resolve().parent.parent
 TEAMS_JSON = ROOT / "src/lib/teams.json"
@@ -23,7 +26,7 @@ def main() -> None:
     args = parser.parse_args()
     slug = args.league.lower()
     items = json.loads((ROOT / f"public/logos/svg/{slug}-manifest.json").read_text())["assets"]
-    rows = SOCCER if args.league == "SOCCER" else MLB
+    rows = {"MLB": MLB, "SOCCER": SOCCER, "MLS": MLS}[args.league]
     roster = set(rows)
     if len(items) != len(roster) or {i["abbr"] for i in items} != roster:
         raise ValueError(f"{args.league} manifest must contain exactly {len(roster)} entries")
@@ -36,9 +39,9 @@ def main() -> None:
             raise ValueError(f"invalid identity/path for {abbr}")
         if item["conference"] not in LEAGUES[args.league]["conferences"]:
             raise ValueError(f"invalid grouping for {abbr}")
-        if args.league == "SOCCER":
+        if args.league != "MLB":
             if item["conference"] != rows[abbr][0] or item["region"] != rows[abbr][1] or item["name"] != "":
-                raise ValueError(f"invalid soccer league or club name for {abbr}")
+                raise ValueError(f"invalid {args.league} grouping or club name for {abbr}")
         elif item["conference"] != MLB[abbr][1]:
             raise ValueError(f"invalid MLB conference for {abbr}")
         colors = inspect_artwork((ROOT / "public" / expected_path.lstrip("/")).read_bytes(), format)
@@ -60,6 +63,10 @@ def main() -> None:
         if item["unusedSourceSlots"]:
             entry["unusedSourceSlots"] = item["unusedSourceSlots"]
         entries.append(entry)
+    alternates = team_alternates(args.league, {entry["id"] for entry in entries}) if args.league in FOLDERS else {}
+    for entry in entries:
+        if entry["id"] in alternates:
+            entry["alternateLogos"] = alternates[entry["id"]]
     text = TEAMS_JSON.read_text()
     data = json.loads(text)
     teams = data["teams"]

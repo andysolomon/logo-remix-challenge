@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
-"""Download the pinned NBA or college alternate marks and record their metadata.
+"""Download the pinned NBA, MLB, MLS or college alternate marks and record their metadata.
 
-Usage: python3 scripts/download_team_alternates.py --league NBA|COL [--force] [--cache-dir DIR]
-Then run build_nba_teams.py (NBA) or build_teams.py (COL); both attach the alternates.
+Usage: python3 scripts/download_team_alternates.py --league NBA|MLB|MLS|COL [--force] [--cache-dir DIR]
+Then run build_nba_teams.py (NBA), build_extra_teams.py --league MLB|MLS or build_teams.py (COL);
+each attaches the alternates.
 
 team_alternate_sources.json pins every alternate the way brand_artwork_sources.json pins
 brand artwork: the source URL, the SHA-256 of the source file and the reviewed
@@ -28,7 +29,7 @@ from nfl_vector_artwork import validate_vector
 ROOT = Path(__file__).resolve().parent.parent
 SOURCES = ROOT / "scripts/team_alternate_sources.json"
 TEAMS_JSON = ROOT / "src/lib/teams.json"
-FOLDERS = {"NBA": "nba", "COL": "ncaa"}
+FOLDERS = {"NBA": "nba", "MLB": "mlb", "MLS": "mls", "COL": "ncaa"}
 SOURCE_KEYS = ("sourceUrl", "sourceSha256", "downloadForm", "ops")
 
 
@@ -41,9 +42,12 @@ def artwork_path(league: str, team_id: str, variant: str) -> str:
 
 
 def roster(league: str) -> dict:
-    """The league's teams from teams.json; college conference marks take no alternates."""
+    """The league's teams from teams.json; college conference marks (no team name) take no alternates.
+
+    MLS clubs also leave the name empty, keeping their full name in region like the soccer clubs.
+    """
     teams = json.loads(TEAMS_JSON.read_text())["teams"]
-    return {t["id"]: t for t in teams if t["league"] == league and t["name"]}
+    return {t["id"]: t for t in teams if t["league"] == league and (t["name"] or league != "COL")}
 
 
 def pinned_sources(league: str, teams: dict) -> list[dict]:

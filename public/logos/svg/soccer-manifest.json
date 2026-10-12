@@ -591,33 +591,6 @@
       "unusedSourceSlots": []
     },
     {
-      "id": "SOCCER-MIA",
-      "league": "SOCCER",
-      "conference": "Rest of World",
-      "region": "Inter Miami",
-      "name": "",
-      "abbr": "MIA",
-      "aliases": [
-        "Inter Miami CF",
-        "Club Internacional de Futbol Miami"
-      ],
-      "path": "/logos/svg/soccer/mia.svg",
-      "format": "svg",
-      "sourceUrl": "https://upload.wikimedia.org/wikipedia/en/5/5c/Inter_Miami_CF_logo.svg",
-      "sourcePage": "https://en.wikipedia.org/wiki/File:Inter_Miami_CF_logo.svg",
-      "colors": [
-        "#F6B4CD",
-        "#000100",
-        "#FFFFFF"
-      ],
-      "palette": [
-        "#F6B4CD",
-        "#000100",
-        "#FFFFFF"
-      ],
-      "unusedSourceSlots": []
-    },
-    {
       "id": "SOCCER-INT",
       "league": "SOCCER",
       "conference": "Serie A",

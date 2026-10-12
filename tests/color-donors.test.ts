@@ -31,7 +31,7 @@ describe('only NFL, NBA and college palettes color a remix', () => {
   test('the donor collections are NFL, NBA and college; every other collection is logo-only', () => {
     expect(COLOR_DONOR_LEAGUES).toEqual(['PRO', 'NBA', 'COL'])
     expect(LEAGUES.PRO.label).toBe('NFL')
-    const logoOnly: League[] = ['MLB', 'SOCCER', 'HS', 'FOOD', 'BRAND', 'APP', 'TV', 'CAR', 'LUX', 'CLOTH']
+    const logoOnly: League[] = ['MLB', 'SOCCER', 'MLS', 'HS', 'FOOD', 'BRAND', 'APP', 'TV', 'CAR', 'LUX', 'CLOTH']
     expect([...COLOR_DONOR_LEAGUES, ...logoOnly].sort()).toEqual(Object.keys(LEAGUES).sort())
     for (const team of TEAMS) expect(isColorDonor(team)).toBe(COLOR_DONOR_LEAGUES.includes(team.league))
     for (const league of logoOnly) expect(filterTeams(league, 'All', '').length).toBeGreaterThan(0)
@@ -48,7 +48,7 @@ describe('only NFL, NBA and college palettes color a remix', () => {
       expect(colorPoolTeams([pool.id])).toEqual(COLOR_POOL_IDS.includes(pool.id) ? members : [])
     }
     expect(colorPoolTeams(ALL_POOL_IDS)).toEqual(TEAMS.filter(isColorDonor))
-    for (const colors of [['MLB'], ['Soccer'], ['Fast Food', 'Brands', 'Apps', 'TV', 'Cars'], ['Cobb County']]) {
+    for (const colors of [['MLB'], ['Soccer'], ['MLS'], ['Fast Food', 'Brands', 'Apps', 'TV', 'Cars'], ['Cobb County']]) {
       expect(randomDeck({ rounds: 20, logoPools: ALL_POOL_IDS, colorPools: colors, guess: 'mix', hints: true })).toEqual([])
     }
     for (let n = 0; n < 5; n++) {

@@ -1318,6 +1318,36 @@
       "artwork": [
         {
           "id": "primary",
+          "label": "Flying V",
+          "sourceUrl": "https://cdn.worldvectorlogo.com/logos/vans.svg",
+          "sourcePage": "https://worldvectorlogo.com/logo/vans",
+          "sourceSha256": "972f1da623f5eebbbd1f82353c696117b1fda2a91f5a9e35cb89383b83b3affb",
+          "ops": {
+            "keepNodes": [
+              "0/3",
+              "0/5"
+            ],
+            "fill": "#000000",
+            "viewBox": "56 77.2 84.2 57.8"
+          },
+          "path": "/logos/svg/clothing/vans.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "e908a4eba1aca2573fa70f8c8fc18c458e0b8d3b9ea463716057f30dedc0555f"
+        },
+        {
+          "id": "wordmark",
           "label": "Red box wordmark",
           "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/8/88/Vans_%28brand%29_logo.svg",
           "sourcePage": "https://commons.wikimedia.org/wiki/File:Vans_(brand)_logo.svg",
@@ -1329,7 +1359,7 @@
             ],
             "viewBox": "6.8 -5.8 207.9 101.8"
           },
-          "path": "/logos/svg/clothing/vans.svg",
+          "path": "/logos/svg/clothing/alternates/vans-wordmark.svg",
           "format": "svg",
           "colors": [
             "#D51920",

@@ -1914,6 +1914,23 @@
   {
     "teamId": "FOOD-DUNK",
     "id": "primary",
+    "label": "Steaming coffee cup",
+    "sourceUrl": "https://cdn.worldvectorlogo.com/logos/dunkin-donuts-2.svg",
+    "sourcePage": "https://worldvectorlogo.com/logo/dunkin-donuts-2",
+    "sourceSha256": "49e2b5b837f8852d3bb32bf8cf5145b35d2287d0033b1b6606d3a00339be9a10",
+    "ops": {
+      "keepNodes": [
+        "0",
+        "6",
+        "7",
+        "8"
+      ],
+      "viewBox": "-0.45 -0.45 10.3 16.54"
+    }
+  },
+  {
+    "teamId": "FOOD-DUNK",
+    "id": "wordmark",
     "label": "Wordmark",
     "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/1/14/Dunkin%27_2022.svg",
     "sourcePage": "https://commons.wikimedia.org/wiki/File:Dunkin%27_2022.svg",
@@ -4969,6 +4986,20 @@
   {
     "teamId": "LUX-MK",
     "id": "primary",
+    "label": "Circle monogram",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/8/8f/Michael_Kors_icon.svg/revision/latest?cb=20181212120033",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Michael_Kors_icon.svg",
+    "sourceSha256": "66591c7561c05460edfdec92ac0aab2282ec5495e473ef70dc8b78269e2a26c9",
+    "ops": {
+      "removeNodes": [
+        "0"
+      ],
+      "viewBox": "-9 -11 420 422"
+    }
+  },
+  {
+    "teamId": "LUX-MK",
+    "id": "wordmark",
     "label": "Wordmark",
     "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/1/17/Michael_Kors_Logo.svg",
     "sourcePage": "https://commons.wikimedia.org/wiki/File:Michael_Kors_Logo.svg",
@@ -5570,6 +5601,22 @@
   {
     "teamId": "CLOTH-VANS",
     "id": "primary",
+    "label": "Flying V",
+    "sourceUrl": "https://cdn.worldvectorlogo.com/logos/vans.svg",
+    "sourcePage": "https://worldvectorlogo.com/logo/vans",
+    "sourceSha256": "972f1da623f5eebbbd1f82353c696117b1fda2a91f5a9e35cb89383b83b3affb",
+    "ops": {
+      "keepNodes": [
+        "0/3",
+        "0/5"
+      ],
+      "fill": "#000000",
+      "viewBox": "56 77.2 84.2 57.8"
+    }
+  },
+  {
+    "teamId": "CLOTH-VANS",
+    "id": "wordmark",
     "label": "Red box wordmark",
     "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/8/88/Vans_%28brand%29_logo.svg",
     "sourcePage": "https://commons.wikimedia.org/wiki/File:Vans_(brand)_logo.svg",

@@ -31,8 +31,9 @@ def build_entry(league: str, item: dict, row: tuple) -> dict:
     if not ids or ids[0] != "primary" or len(set(ids)) != len(ids):
         raise ValueError(f"{abbr}: primary artwork first, then unique alternates")
     for art in artwork:
-        if art.get("showsName") and art["id"] != "primary":
-            raise ValueError(f"{abbr}: alternates must not spell the brand's name")
+        # A wordmark may stay as an alternate behind a symbol primary; it is flagged so random decks never draw it.
+        if art.get("showsName") and art["id"] != "primary" and artwork[0].get("showsName"):
+            raise ValueError(f"{abbr}: a wordmark alternate needs a name-free primary")
         if art["path"] != artwork_path(league, abbr, art["id"]) or art["format"] != "svg":
             raise ValueError(f"{abbr}: invalid artwork path for {art['id']}")
         raw = (ROOT / "public" / art["path"].lstrip("/")).read_bytes()
@@ -58,7 +59,8 @@ def build_entry(league: str, item: dict, row: tuple) -> dict:
     if len(artwork) > 1:
         entry["alternateLogos"] = [
             {"id": art["id"], "label": art["label"], "logo": art["path"],
-             "sourcePalette": art["sourcePalette"], "unusedSourceSlots": art["unusedSourceSlots"]}
+             "sourcePalette": art["sourcePalette"], "unusedSourceSlots": art["unusedSourceSlots"],
+             **({"showsName": True} if art.get("showsName") else {})}
             for art in artwork[1:]
         ]
     return entry

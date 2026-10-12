@@ -753,6 +753,34 @@
       "artwork": [
         {
           "id": "primary",
+          "label": "Circle monogram",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/8/8f/Michael_Kors_icon.svg/revision/latest?cb=20181212120033",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Michael_Kors_icon.svg",
+          "sourceSha256": "66591c7561c05460edfdec92ac0aab2282ec5495e473ef70dc8b78269e2a26c9",
+          "ops": {
+            "removeNodes": [
+              "0"
+            ],
+            "viewBox": "-9 -11 420 422"
+          },
+          "path": "/logos/svg/luxury/mk.svg",
+          "format": "svg",
+          "colors": [
+            "#231F20"
+          ],
+          "sourcePalette": [
+            "#231F20",
+            "#8B5E3C",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "8b5de232db5323a2b5fe128ae41ac0f17ca4905137aacd445dbc8a45dbbf6116"
+        },
+        {
+          "id": "wordmark",
           "label": "Wordmark",
           "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/1/17/Michael_Kors_Logo.svg",
           "sourcePage": "https://commons.wikimedia.org/wiki/File:Michael_Kors_Logo.svg",
@@ -761,7 +789,7 @@
           "ops": {
             "fill": "#000000"
           },
-          "path": "/logos/svg/luxury/mk.svg",
+          "path": "/logos/svg/luxury/alternates/mk-wordmark.svg",
           "format": "svg",
           "colors": [
             "#000000"

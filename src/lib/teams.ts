@@ -8,6 +8,8 @@ export interface LogoVariant {
   logo: string
   sourcePalette?: [string, string, string]
   unusedSourceSlots?: number[]
+  /** This artwork spells the brand's name (a wordmark kept behind a symbol primary); random decks never draw alternates. */
+  showsName?: boolean
 }
 
 export interface Team {
@@ -96,7 +98,7 @@ export const logoVariants = (team: Team): LogoVariant[] => [
 /** Resolve artwork only: team identity, donor palette and guessing answers stay the same. */
 export function withLogoVariant(team: Team, id?: string): Team {
   const variant = team.alternateLogos?.find((v) => v.id === id)
-  return variant ? { ...team, logo: variant.logo, sourcePalette: variant.sourcePalette ?? team.palette, unusedSourceSlots: variant.unusedSourceSlots } : team
+  return variant ? { ...team, logo: variant.logo, sourcePalette: variant.sourcePalette ?? team.palette, unusedSourceSlots: variant.unusedSourceSlots, showsName: variant.showsName } : team
 }
 
 export function nextLogoVariant(team: Team, current?: string): string | undefined {
@@ -846,6 +848,32 @@ export function resolveRemixTargetColors(
   if (exactContrastSafePermutations(original, targetPalette).length) return permutedColors(original, targetPalette, PERMS[permutation])
   return restyledColors(original, targetPalette, PERMS[permutation], remixRoles(original))
 }
+
+/** The dark tile and canvas of the dark theme and the Play screen; see `canvasFacingColors`. */
+const DARK_SURFACE = '#1C1915'
+
+/**
+ * The colors that meet the canvas around a logo: a raw logo's painted source slots; a remix's
+ * frame, else its backdrop, else the target colors on its artwork slots.
+ */
+export const canvasFacingColors = (original: Team, target?: readonly string[]): string[] => {
+  const { artwork, backdrop, frame } = remixLayout(original)
+  if (target) {
+    if (frame !== undefined) return [target[frame]]
+    if (backdrop !== undefined) return [target[backdrop]]
+    return artwork.map((slot) => target[slot])
+  }
+  const source = original.sourcePalette ?? original.palette
+  return artwork.map((slot) => source[slot])
+}
+
+/**
+ * Whether a logo would sink into a dark surface: none of its canvas-facing colors reads there, the
+ * way a black wordmark or a navy crest vanishes on a dark tile. Logo.tsx then sits it on a light
+ * plate wherever the screen is dark, so it is as easy to pick out as on the light theme.
+ */
+export const sinksIntoDark = (original: Team, target?: readonly string[]): boolean =>
+  canvasFacingColors(original, target).every((color) => contrastRatio(color, DARK_SURFACE) < SURFACE_CONTRAST)
 
 export function nextContrastSafePermutation(original: Team, targetPalette: readonly string[], current: number): number {
   const safe = contrastSafePermutations(original, targetPalette)

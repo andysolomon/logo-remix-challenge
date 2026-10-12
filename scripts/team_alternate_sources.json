@@ -531,5 +531,538 @@
       ],
       "viewBox": "23 3.2 146.7 186.3"
     }
+  },
+  {
+    "teamId": "MLB-ATH",
+    "id": "oakland-roundel",
+    "label": "Oakland roundel",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/f/f9/Oakland_Athletics_logo.svg",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Oakland_Athletics_logo.svg",
+    "sourceSha256": "fd8baddea0202112e67282814de619a7d837ffc04c19ecec2a4c5ed67e661ce3"
+  },
+  {
+    "teamId": "MLB-ATL",
+    "id": "script-tomahawk",
+    "label": "Script with tomahawk",
+    "sourceUrl": "https://www.mlbstatic.com/team-logos/team-primary-on-light/144.svg",
+    "sourcePage": "https://www.mlb.com/braves",
+    "sourceSha256": "e264f2d4885a0f61dba14285c0d5c89b529cd03d3fb99cfc1c98d84e5d6255f7"
+  },
+  {
+    "teamId": "MLB-BAL",
+    "id": "bird-on-script",
+    "label": "Bird on script",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/e/ef/Baltimore_Orioles_logo.svg",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Baltimore_Orioles_logo.svg",
+    "sourceSha256": "6ac317efc59a16097170ac1dc3d9917208a577762f84f56e41ba24ec23912d21"
+  },
+  {
+    "teamId": "MLB-BOS",
+    "id": "hanging-socks",
+    "label": "Hanging socks",
+    "sourceUrl": "https://www.mlbstatic.com/team-logos/team-primary-on-light/111.svg",
+    "sourcePage": "https://www.mlb.com/redsox",
+    "sourceSha256": "bc50ab3ea381f88e210920ea0753e15d6085ab70fa3325c5dd2762f2e48f165a"
+  },
+  {
+    "teamId": "MLB-BOS",
+    "id": "1976-roundel",
+    "label": "1976 roundel",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/b/b0/Boston_Red_Sox_1976.svg",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Boston_Red_Sox_1976.svg",
+    "sourceSha256": "ab2222f0de2a707e7c3023536b0566387731a3ca721324ef06f7afd09c8727b8"
+  },
+  {
+    "teamId": "MLB-BOS",
+    "id": "1908-stocking",
+    "label": "1908 stocking",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/e/e8/Boston_Red_Sox_%E2%80%93_1908.svg",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Boston_Red_Sox_%E2%80%93_1908.svg",
+    "sourceSha256": "517a27c250b5bb58620612a05950bca87d7ad46e6111c14411342e50b62e5973"
+  },
+  {
+    "teamId": "MLB-CHC",
+    "id": "1997-walking-bear",
+    "label": "1997 walking bear",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/6/60/Chicago_Cubs_%E2%80%93_1997.svg",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Chicago_Cubs_%E2%80%93_1997.svg",
+    "sourceSha256": "eb146a5e5bb027b9ee8e4499011b66ed769813fcc9b06396dcd9472a99317fee"
+  },
+  {
+    "teamId": "MLB-CIN",
+    "id": "wishbone-c",
+    "label": "Wishbone C",
+    "sourceUrl": "https://www.mlbstatic.com/team-logos/team-primary-on-light/113.svg",
+    "sourcePage": "https://www.mlb.com/reds",
+    "sourceSha256": "3fd83cfaeef9eadcc62c9f4271ec104cdb3349951c659bf5397bd0768765ebe8"
+  },
+  {
+    "teamId": "MLB-CIN",
+    "id": "1999-running-mascot",
+    "label": "1999 running mascot",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/3/3f/Cincinnati_Reds_1999_II.svg",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Cincinnati_Reds_1999_II.svg",
+    "sourceSha256": "d0916f6d403d12260e04f29b2b4d23eaf8b62da86d6f2d388ed04d36895b3800"
+  },
+  {
+    "teamId": "MLB-CLE",
+    "id": "winged-g",
+    "label": "Winged G",
+    "sourceUrl": "https://www.mlbstatic.com/team-logos/team-primary-on-light/114.svg",
+    "sourcePage": "https://www.mlb.com/guardians",
+    "sourceSha256": "94c0c46ec0fd579387416493190550d81d6ce89f1eae324ac2893b5e13253157"
+  },
+  {
+    "teamId": "MLB-CWS",
+    "id": "batterman",
+    "label": "Batterman",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/c/cf/Chicago_White_Sox_1987.svg",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Chicago_White_Sox_1987.svg",
+    "sourceSha256": "72230911374b5a28c611cfde4f2f297031cbaf42a2f2eeb08b8dae000352b36c"
+  },
+  {
+    "teamId": "MLB-CWS",
+    "id": "sock-diamond",
+    "label": "Sock diamond",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/1/13/Chicago_White_Sox_logo_%28alternate%29.svg",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Chicago_White_Sox_logo_%28alternate%29.svg",
+    "sourceSha256": "41a42d618df6feecf38b052456a4624923cb2307ea6de2716c8e0295f24af1c3"
+  },
+  {
+    "teamId": "MLB-HOU",
+    "id": "1965-dome",
+    "label": "1965 dome",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/1/1b/Houston_Astros_%E2%80%93_1965.svg",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Houston_Astros_%E2%80%93_1965.svg",
+    "sourceSha256": "4b2faf9059b2f1158d9fcd77fc5f15664460b6eba5222e518a96d97e3ca5672b"
+  },
+  {
+    "teamId": "MLB-HOU",
+    "id": "2000-star-script",
+    "label": "2000 star script",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/f/f9/Houston_Astros_2000.svg",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Houston_Astros_2000.svg",
+    "sourceSha256": "2edd099e9131853fefc33bbda84c366d6cd193c024f2e6e150a5e15b08b803d3"
+  },
+  {
+    "teamId": "MLB-KC",
+    "id": "crown-shield",
+    "label": "Crown shield",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/6/66/Kansas_City_Royals_%E2%80%93_2019.svg",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Kansas_City_Royals_%E2%80%93_2019.svg",
+    "sourceSha256": "b3497cbd0e57d74341118ca978365065f6916aa6e8ddf44cc6ac1f1afae610a8"
+  },
+  {
+    "teamId": "MLB-LAA",
+    "id": "1997-wings",
+    "label": "1997 wings",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/7/77/Anaheim_Angels_1997.svg",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Anaheim_Angels_1997.svg",
+    "sourceSha256": "7de913fac758bba49df3aa1c90fe23ffa3742dbbb80bc25a54e678b049afb9de"
+  },
+  {
+    "teamId": "MLB-LAD",
+    "id": "script-ball",
+    "label": "Script with ball",
+    "sourceUrl": "https://www.mlbstatic.com/team-logos/team-primary-on-light/119.svg",
+    "sourcePage": "https://www.mlb.com/dodgers",
+    "sourceSha256": "4cbde8aaad1f480fb953cdd92597c5d24bb12f0ed65c4398ea40c8f523591e57"
+  },
+  {
+    "teamId": "MLB-MIA",
+    "id": "leaping-marlin",
+    "label": "Leaping marlin",
+    "sourceUrl": "https://www.mlbstatic.com/team-logos/team-primary-on-light/146.svg",
+    "sourcePage": "https://www.mlb.com/marlins",
+    "sourceSha256": "a58e65d0779f245d761cd001a72637c2f9f032a3275c937bb19ff65102bab5c0"
+  },
+  {
+    "teamId": "MLB-MIA",
+    "id": "2012-rainbow-m",
+    "label": "2012 rainbow M",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/0/08/Miami_Marlins_log.svg",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Miami_Marlins_log.svg",
+    "sourceSha256": "0e50a28d6983c24ebc4ed3691bd1f1b08d428f065dc2cf5d5eb9e614ba3a0e3a"
+  },
+  {
+    "teamId": "MLB-MIL",
+    "id": "glove-roundel",
+    "label": "Glove roundel",
+    "sourceUrl": "https://www.mlbstatic.com/team-logos/team-primary-on-light/158.svg",
+    "sourcePage": "https://www.mlb.com/brewers",
+    "sourceSha256": "a1994cb32cf4dc9fd3b999e474bc96111849ae53c9287ecb94009adca2d30e21"
+  },
+  {
+    "teamId": "MLB-MIL",
+    "id": "1994-barley-diamond",
+    "label": "1994 barley diamond",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/5/59/Milwaukee_Brewers_1994.svg",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Milwaukee_Brewers_1994.svg",
+    "sourceSha256": "1155c56c2cdd8ebba4789de87fec8ec0cb4488b003b47681f3db192417769639"
+  },
+  {
+    "teamId": "MLB-MIL",
+    "id": "2000-script",
+    "label": "2000 script",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/b/b8/Milwaukee_Brewers_logo.svg",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Milwaukee_Brewers_logo.svg",
+    "sourceSha256": "91b4e538798d31111ae7df4d85f4d7514b5df688581c8b5a47bf1e89201eb060"
+  },
+  {
+    "teamId": "MLB-MIN",
+    "id": "1961-handshake",
+    "label": "1961 handshake",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/9/9f/Minnesota_Twins_1961.svg",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Minnesota_Twins_1961.svg",
+    "sourceSha256": "03bb26fbe16ad883d174c629ab6d9c773dd08a0d27a8b6f9a1edc0a34b4552f2"
+  },
+  {
+    "teamId": "MLB-MIN",
+    "id": "1987-script",
+    "label": "1987 script",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/0/00/Minnesota_Twins_1987.svg",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Minnesota_Twins_1987.svg",
+    "sourceSha256": "e4ddcdfb5eecbce39744723244e3fd8d4b992632def3344dc5c54eb3dc079824"
+  },
+  {
+    "teamId": "MLB-NYM",
+    "id": "script",
+    "label": "Script",
+    "sourceUrl": "https://www.mlbstatic.com/team-logos/team-primary-on-light/121.svg",
+    "sourcePage": "https://www.mlb.com/mets",
+    "sourceSha256": "cc77e479053c91446449a7b69a20b1355f0c8d41880ebabdf6565db5f49bb886"
+  },
+  {
+    "teamId": "MLB-NYM",
+    "id": "skyline-roundel",
+    "label": "Skyline roundel",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/7/7b/New_York_Mets.svg",
+    "sourcePage": "https://logos.fandom.com/wiki/File:New_York_Mets.svg",
+    "sourceSha256": "afd84fb32e8003a7552b0b78db784fb77c51880ad973bfa5dcd7460b811b9b52"
+  },
+  {
+    "teamId": "MLB-NYY",
+    "id": "top-hat",
+    "label": "Top hat",
+    "sourceUrl": "https://www.mlbstatic.com/team-logos/team-primary-on-light/147.svg",
+    "sourcePage": "https://www.mlb.com/yankees",
+    "sourceSha256": "dbd6799be43a9ebde32c79491e9c079f75ebdec55f4298ae164fc3cb7dfa19d6"
+  },
+  {
+    "teamId": "MLB-PHI",
+    "id": "liberty-bell",
+    "label": "Liberty Bell",
+    "sourceUrl": "https://www.mlbstatic.com/team-logos/team-primary-on-light/143.svg",
+    "sourcePage": "https://www.mlb.com/phillies",
+    "sourceSha256": "533f9f9c69a8577e1086bce1a919ae8929fdecea387ace985e6112169452e803"
+  },
+  {
+    "teamId": "MLB-PHI",
+    "id": "1970-p",
+    "label": "1970 P",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/1/1e/Philadelphia_Phillies_1970.svg",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Philadelphia_Phillies_1970.svg",
+    "sourceSha256": "8bdc14a593c8bc1d8008544e227bfbabab5fe0d3c20484b4c39d912faa84f649"
+  },
+  {
+    "teamId": "MLB-PHI",
+    "id": "1976-colonials",
+    "label": "1976 colonials",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/4/4a/Philadelphia_Phillies_1976.svg",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Philadelphia_Phillies_1976.svg",
+    "sourceSha256": "1ac258c423be7b0a7591249474094f44d26db8e468af27f5d6ec01b55f6f6da4"
+  },
+  {
+    "teamId": "MLB-PIT",
+    "id": "1968-buccaneer",
+    "label": "1968 buccaneer",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/c/c1/Pittsburgh_Pirates_1968-1986.svg",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Pittsburgh_Pirates_1968-1986.svg",
+    "sourceSha256": "d81e5f521d9bc34fe19de81ca4be331b2d086944334d328499b7f72a92d3e005"
+  },
+  {
+    "teamId": "MLB-PIT",
+    "id": "1997-eye-patch",
+    "label": "1997 eye patch",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/9/98/Pittsburgh_Pirates1997-2013.svg",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Pittsburgh_Pirates1997-2013.svg",
+    "sourceSha256": "a3c07608b9c301db20e97a65e598a5910218ad8b688ac913adb4424eb95c6310"
+  },
+  {
+    "teamId": "MLB-SD",
+    "id": "1992-roundel",
+    "label": "1992 roundel",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/9/99/San_Diego_Padres_1992.svg",
+    "sourcePage": "https://logos.fandom.com/wiki/File:San_Diego_Padres_1992.svg",
+    "sourceSha256": "f593cc7fc0ed957db6fd5febfc8c0d13bb5222936402f7ba76ef30c4de496d47"
+  },
+  {
+    "teamId": "MLB-SD",
+    "id": "2004-wave",
+    "label": "2004 wave",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/2/2a/San_Diego_Padres_logo_%282004-2010%29.svg",
+    "sourcePage": "https://logos.fandom.com/wiki/File:San_Diego_Padres_logo_%282004-2010%29.svg",
+    "sourceSha256": "b0ea7bbca87d8f085a5f1ca06bc143db424d737ee754845e4e6e6fb25fc5134c",
+    "ops": {
+      "removeNodes": [
+        "3"
+      ]
+    }
+  },
+  {
+    "teamId": "MLB-SEA",
+    "id": "compass-roundel",
+    "label": "Compass roundel",
+    "sourceUrl": "https://www.mlbstatic.com/team-logos/team-primary-on-light/136.svg",
+    "sourcePage": "https://www.mlb.com/mariners",
+    "sourceSha256": "ddd195f767fe0cb6fe2a3a8813f39ae7b571a3082fd55e3a23f788b4615ce002"
+  },
+  {
+    "teamId": "MLB-STL",
+    "id": "birds-on-bat",
+    "label": "Birds on bat",
+    "sourceUrl": "https://www.mlbstatic.com/team-logos/team-primary-on-light/138.svg",
+    "sourcePage": "https://www.mlb.com/cardinals",
+    "sourceSha256": "82425abbc039064bc083f31f60b1f1337bccacc7a5cb1c61bcfb634140a95d8c"
+  },
+  {
+    "teamId": "MLB-TB",
+    "id": "sunburst-script",
+    "label": "Sunburst script",
+    "sourceUrl": "https://www.mlbstatic.com/team-logos/team-primary-on-light/139.svg",
+    "sourcePage": "https://www.mlb.com/rays",
+    "sourceSha256": "5b7aae5ab43a79b71988bf92f3b187d9288c64dc5b818f57983ca1fb49453337"
+  },
+  {
+    "teamId": "MLB-TB",
+    "id": "2001-manta-ray",
+    "label": "2001 manta ray",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/5/52/Tampa_Bay_Devil_Rays_%E2%80%93_2001.svg",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Tampa_Bay_Devil_Rays_%E2%80%93_2001.svg",
+    "sourceSha256": "afacf4d9341cd14978ba22e9e4a75659ccffbb7d214cc1dd8415190675c557b5"
+  },
+  {
+    "teamId": "MLB-TEX",
+    "id": "1981-cowboy-hat",
+    "label": "1981 cowboy hat",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/8/88/Texas_Rangers_%E2%80%93_1981.svg",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Texas_Rangers_%E2%80%93_1981.svg",
+    "sourceSha256": "1f6d4b3412b7b55e9929c3594bbef376c26cfef213dec31c73f5899d1a4c0a78"
+  },
+  {
+    "teamId": "MLB-TEX",
+    "id": "1984-state-map",
+    "label": "1984 state map",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/0/0a/Texas_Rangers_%E2%80%93_1984.svg",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Texas_Rangers_%E2%80%93_1984.svg",
+    "sourceSha256": "eae6a5587749c09ef2c301d099257ff710d236387d12a059f3c847da21e07c8c"
+  },
+  {
+    "teamId": "MLB-TOR",
+    "id": "1977-original",
+    "label": "1977 original",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/8/86/Toronto_Blue_Jays_1977-1.svg",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Toronto_Blue_Jays_1977-1.svg",
+    "sourceSha256": "e0f2bad8d69ea3d141aaacaf59932306da49a247770082125c98b23b1eea4a68"
+  },
+  {
+    "teamId": "MLB-TOR",
+    "id": "1997-maple-leaf",
+    "label": "1997 maple leaf",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/9/95/Toronto_Blue_Jays_logo_%281997-2002%29.svg",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Toronto_Blue_Jays_logo_%281997-2002%29.svg",
+    "sourceSha256": "a0528ce36e4a67671645c23532811b9ef3b75e06b25c540385bfe87c4b2475dc",
+    "ops": {
+      "removeNodes": [
+        "0"
+      ]
+    }
+  },
+  {
+    "teamId": "MLB-WSH",
+    "id": "1992-expos",
+    "label": "1992 Expos",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/4/43/Montreal_Expos_logo_%281992-2004%29.svg",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Montreal_Expos_logo_%281992-2004%29.svg",
+    "sourceSha256": "ac50cd641a4f20d5e35a8b42ec067b15d9b4ff1d1e7a8a043e3d503060c8ca44",
+    "ops": {
+      "removeNodes": [
+        "0"
+      ]
+    }
+  },
+  {
+    "teamId": "MLS-CHI",
+    "id": "1998-badge",
+    "label": "1998 badge",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/7/7a/Chicago_Fire_logo.svg",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Chicago_Fire_logo.svg",
+    "sourceSha256": "0cce68a5ea2a787cdd3b0027e346922b55c45ad190d2889080a83b3853157707"
+  },
+  {
+    "teamId": "MLS-CHI",
+    "id": "2019-crest",
+    "label": "2019 crest",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/9/96/Chicago_Fire_FC_2019.svg",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Chicago_Fire_FC_2019.svg",
+    "sourceSha256": "4381d8df877d3df56490bf9e054546ce880e6d596ec9d9c0034294501dc46032"
+  },
+  {
+    "teamId": "MLS-CIN",
+    "id": "usl-crest",
+    "label": "USL crest",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/a/a2/FC_Cincinnati_Pre-MLS.svg",
+    "sourcePage": "https://logos.fandom.com/wiki/File:FC_Cincinnati_Pre-MLS.svg",
+    "sourceSha256": "732de12eff582bb40e4e97c89bae9783f6d82238b0ccdf12f7bfeae6df718003",
+    "ops": {
+      "viewBox": "65.66 0 733.82 1152"
+    }
+  },
+  {
+    "teamId": "MLS-CLB",
+    "id": "1996-hard-hats",
+    "label": "1996 hard hats",
+    "sourceUrl": "https://cdn.worldvectorlogo.com/logos/columbus-crew.svg",
+    "sourcePage": "https://worldvectorlogo.com/logo/columbus-crew",
+    "sourceSha256": "26981a143f12fba0dacf3148b6c2091797d962ef62afb2c92b8be17a82d97122"
+  },
+  {
+    "teamId": "MLS-DAL",
+    "id": "1996-burn",
+    "label": "1996 Burn",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/9/9a/Dallas_Burn_logo.svg",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Dallas_Burn_logo.svg",
+    "sourceSha256": "7e3e39234a0684837d75d9f5d11d08991c4fc2f982712aaca273dd9ab01336da"
+  },
+  {
+    "teamId": "MLS-DC",
+    "id": "1996-eagle",
+    "label": "1996 eagle",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/e/e4/DC_United_logo.svg",
+    "sourcePage": "https://logos.fandom.com/wiki/File:DC_United_logo.svg",
+    "sourceSha256": "b07ea9beb4c904f2da973f1c472a6646bb106372045a1b6b2cded2713baf5709"
+  },
+  {
+    "teamId": "MLS-HOU",
+    "id": "2006-crest",
+    "label": "2006 crest",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/0/0c/Houston_Dynamo_logo.svg",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Houston_Dynamo_logo.svg",
+    "sourceSha256": "ad50fadcbe869ec07a86787c8ad960693d469c8ac90ab12b42bbb3237ef32b8e"
+  },
+  {
+    "teamId": "MLS-LA",
+    "id": "1996-crest",
+    "label": "1996 crest",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/0/07/Los_Angeles_Galaxy_logo_%281996-2007%29.svg",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Los_Angeles_Galaxy_logo_%281996-2007%29.svg",
+    "sourceSha256": "36990a190a692c9efea85d187a08ba6220098dc40a35c576f8519a91ce5600a5"
+  },
+  {
+    "teamId": "MLS-MTL",
+    "id": "2012-impact",
+    "label": "2012 Impact",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/9/94/Montreal_Impact_%28MLS%29_logo.svg",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Montreal_Impact_%28MLS%29_logo.svg",
+    "sourceSha256": "2b1f10649c766533d0e72068fd835f69de9e66f7b61af95a8f079268be6f7118"
+  },
+  {
+    "teamId": "MLS-MTL",
+    "id": "2021-snowflake",
+    "label": "2021 snowflake",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/6/60/CF_Montr%C3%A9al.svg",
+    "sourcePage": "https://logos.fandom.com/wiki/File:CF_Montr%C3%A9al.svg",
+    "sourceSha256": "60c15dd1842fc39cddd65c8ddfe7d86c0d30a670a5e5d94359c15423444b09c3"
+  },
+  {
+    "teamId": "MLS-NE",
+    "id": "1995-flag",
+    "label": "1995 flag",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/d/d6/New_England_Revolution_logo.svg",
+    "sourcePage": "https://logos.fandom.com/wiki/File:New_England_Revolution_logo.svg",
+    "sourceSha256": "376f52e90ec5a8b388daf826433c89d4873e68f9244dcb32d0e302e00114c85f"
+  },
+  {
+    "teamId": "MLS-PHI",
+    "id": "motto-banner",
+    "label": "Motto banner",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/b/b2/Philadelphia_Union_logo_%28alternate%29.svg",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Philadelphia_Union_logo_%28alternate%29.svg",
+    "sourceSha256": "5cc675b6481c372976ce30885df2f6216ad9287049bd31a4a5cb6fcd323b9c14"
+  },
+  {
+    "teamId": "MLS-POR",
+    "id": "usl-roundel",
+    "label": "USL roundel",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/8/8c/Portland_Timbers_%28USL%29_logo.svg",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Portland_Timbers_%28USL%29_logo.svg",
+    "sourceSha256": "29f19547798f91e3e316918110ec1f1df01db9b9dd2935c0ba2a16258b12f866",
+    "ops": {
+      "viewBox": "24 21.6 744 744.8"
+    }
+  },
+  {
+    "teamId": "MLS-RBNY",
+    "id": "1995-metrostars",
+    "label": "1995 MetroStars",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/3/3b/MetroStars_logo_%281995-2002%29.svg",
+    "sourcePage": "https://logos.fandom.com/wiki/File:MetroStars_logo_%281995-2002%29.svg",
+    "sourceSha256": "7a66ad9a9c19823949c6758875a7549931349758c68e6744618e00ca8e04cde4"
+  },
+  {
+    "teamId": "MLS-RBNY",
+    "id": "2003-metrostars",
+    "label": "2003 MetroStars",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/3/35/MetroStars_logo_%282003-2005%29.svg",
+    "sourcePage": "https://logos.fandom.com/wiki/File:MetroStars_logo_%282003-2005%29.svg",
+    "sourceSha256": "aa07816eff24b8560f67f4b74989a32a4f53197cfe79585344d6eb738ecf0c3a"
+  },
+  {
+    "teamId": "MLS-RSL",
+    "id": "original-crest",
+    "label": "Original crest",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/b/b9/Real_Salt_Lake_logo.svg",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Real_Salt_Lake_logo.svg",
+    "sourceSha256": "03a72c83ffb82203962b511eb7d070db5e0461e08239c158a1762356791f8d85"
+  },
+  {
+    "teamId": "MLS-SEA",
+    "id": "2009-crest",
+    "label": "2009 crest",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/7/7f/Seattle_Sounders_FC_logo.svg",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Seattle_Sounders_FC_logo.svg",
+    "sourceSha256": "be9d79676ab00e1b2609241c504443cca3e46ccb66a574cca9111d3f96ed2268"
+  },
+  {
+    "teamId": "MLS-SJ",
+    "id": "2000-shield",
+    "label": "2000 shield",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/9/98/San_Jose_Earthquakes_%282000-2007%29_logo.svg",
+    "sourcePage": "https://logos.fandom.com/wiki/File:San_Jose_Earthquakes_%282000-2007%29_logo.svg",
+    "sourceSha256": "f39fa2b1905ff46156a59547dcf0f43ad0c4dcf57f936de38d5be6950e5155e7"
+  },
+  {
+    "teamId": "MLS-SKC",
+    "id": "1996-wiz",
+    "label": "1996 Wiz",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/b/b4/Kansas_City_Wiz_logo.svg",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Kansas_City_Wiz_logo.svg",
+    "sourceSha256": "b21dab4d41f85eeb86cd859524fc9bdb1534fba23efec5c41f28f3ba1c58e18b"
+  },
+  {
+    "teamId": "MLS-SKC",
+    "id": "1997-wizards",
+    "label": "1997 Wizards",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/b/ba/Kansas_City_Wizards_logo_%281997-2006%29.svg",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Kansas_City_Wizards_logo_%281997-2006%29.svg",
+    "sourceSha256": "b6f263a08172cd4c2d61c1ea93add464b917c03c35e5ea3505917bdc3c2af694"
+  },
+  {
+    "teamId": "MLS-VAN",
+    "id": "pre-mls-wave",
+    "label": "Pre-MLS wave crest",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/7/7c/Vancouver_Whitecaps_logo.svg",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Vancouver_Whitecaps_logo.svg",
+    "sourceSha256": "74b7daf99de15fa1d430181229d6fd3a491c30b03a689f2db819089ad5f0a60a"
   }
 ]

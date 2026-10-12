@@ -1,7 +1,8 @@
-"""Pinned MLB and soccer rosters: conferences, brand colors, answer aliases and sources.
+"""Pinned MLB, soccer and MLS rosters: conferences, brand colors, answer aliases and sources.
 
 MLB IDs/conferences: https://www.mlb.com/team and the official Stats API.
 Soccer clubs are the most popular clubs worldwide, grouped by domestic league.
+MLS clubs and conferences: https://www.mlssoccer.com/clubs/, checked against ESPN's MLS feed.
 Palettes are snapped to the downloaded artwork by download_extra_logos.py.
 The fast-food and brand rosters live in brand_rosters.py.
 """
@@ -107,12 +108,60 @@ SOCCER = {
             FOOTBALL_DATA.format(610), "https://www.football-data.org/"),
     "FLA": ("Rest of World", "Flamengo", "E2231A", "000000", ["CR Flamengo", "Mengao", "Clube de Regatas do Flamengo"],
             FOOTBALL_DATA.format(1783), "https://www.football-data.org/"),
-    "MIA": ("Rest of World", "Inter Miami", "F7B5CD", "231F20", ["Inter Miami CF", "Club Internacional de Futbol Miami"],
-            WIKIPEDIA.format("5/5c/Inter_Miami_CF_logo.svg"), "https://en.wikipedia.org/wiki/File:Inter_Miami_CF_logo.svg"),
+}
+
+MLS_CREST = "https://images.mlssoccer.com/image/upload/assets/logos/{}.svg"
+MLS_CLUBS = "https://www.mlssoccer.com/clubs/"
+
+# abbreviation: (conference, club name, primary, secondary, aliases, crest URL, source page, ESPN team ID)
+# Clubs keep their full name like the soccer clubs, so "New York" or "Los Angeles" alone answers neither
+# club; the bare city is accepted only for clubs named for the city alone (Austin FC, Toronto FC...).
+# Inter Miami moved here from SOCCER; its old SOCCER-MIA rounds follow it (see teams.ts).
+MLS = {
+    "ATL": ("Eastern", "Atlanta United", "9D2235", "AA9767", ["Atlanta United FC", "ATLUTD", "Atlanta Utd", "Five Stripes"],
+            MLS_CREST.format("ATL"), MLS_CLUBS, 18418),
+    "CLT": ("Eastern", "Charlotte FC", "0085CA", "000000", ["Charlotte", "CLTFC"], MLS_CREST.format("CLT"), MLS_CLUBS, 21300),
+    "CHI": ("Eastern", "Chicago Fire", "FF0000", "7CCDEF", ["Chicago Fire FC", "Fire", "The Fire"], MLS_CREST.format("CHI"), MLS_CLUBS, 182),
+    "CIN": ("Eastern", "FC Cincinnati", "003087", "FE5000", ["Cincinnati", "FC Cincy", "Cincy", "FCC"], MLS_CREST.format("CIN"), MLS_CLUBS, 18267),
+    "CLB": ("Eastern", "Columbus Crew", "FEDD00", "000000", ["Columbus", "Crew", "The Crew", "Columbus Crew SC"],
+            MLS_CREST.format("CLB"), MLS_CLUBS, 183),
+    "DC": ("Eastern", "D.C. United", "000000", "D61018", ["DCU"], MLS_CREST.format("DC"), MLS_CLUBS, 193),
+    "MIA": ("Eastern", "Inter Miami", "F7B5CD", "231F20", ["Inter Miami CF", "Club Internacional de Futbol Miami"],
+            MLS_CREST.format("MIA"), MLS_CLUBS, 20232),
+    "MTL": ("Eastern", "CF Montréal", "003DA6", "000000", ["Montréal", "Club de Foot Montréal"], MLS_CREST.format("MTL"), MLS_CLUBS, 9720),
+    "NSH": ("Eastern", "Nashville SC", "ECE83A", "1F1646", ["Nashville"], MLS_CREST.format("NSH"), MLS_CLUBS, 18986),
+    "NE": ("Eastern", "New England Revolution", "0A2240", "CE0E2D", ["Revolution", "Revs", "New England Revs"],
+           MLS_CREST.format("NE"), MLS_CLUBS, 189),
+    # The MLS CDN serves NYCFC's crest only as a bitmap; Logopedia carries the 2024 crest as vector outlines.
+    "NYC": ("Eastern", "New York City FC", "6CACE4", "041E42", ["NYCFC", "New York City"],
+            "https://static.wikia.nocookie.net/logopedia/images/c/c8/New_York_City_FC_%282024%29.svg",
+            "https://logos.fandom.com/wiki/New_York_City_FC", 17606),
+    "RBNY": ("Eastern", "Red Bull New York", "BA0C2F", "FFC72C", ["New York Red Bulls", "NY Red Bulls", "Red Bulls", "Red Bull NY", "NYRB"],
+             MLS_CREST.format("RBNY"), MLS_CLUBS, 190),
+    "ORL": ("Eastern", "Orlando City", "60269E", "F0D283", ["Orlando City SC", "OCSC"], MLS_CREST.format("ORL"), MLS_CLUBS, 12011),
+    "PHI": ("Eastern", "Philadelphia Union", "051C2C", "E0D0A6", ["Union", "The Union"], MLS_CREST.format("PHI"), MLS_CLUBS, 10739),
+    "TOR": ("Eastern", "Toronto FC", "AA182C", "A2A9AD", ["Toronto", "TFC"], MLS_CREST.format("TOR"), MLS_CLUBS, 7318),
+    "ATX": ("Western", "Austin FC", "00B140", "000000", ["Austin", "Los Verdes"], MLS_CREST.format("ATX"), MLS_CLUBS, 20906),
+    "COL": ("Western", "Colorado Rapids", "8A2432", "8AB7E9", ["Rapids"], MLS_CREST.format("COL"), MLS_CLUBS, 184),
+    "DAL": ("Western", "FC Dallas", "C6093B", "001F5B", ["Dallas", "FCD"], MLS_CREST.format("DAL"), MLS_CLUBS, 185),
+    "HOU": ("Western", "Houston Dynamo", "FF6B00", "101820", ["Houston Dynamo FC", "Dynamo"], MLS_CREST.format("HOU"), MLS_CLUBS, 6077),
+    "SKC": ("Western", "Sporting Kansas City", "A7C6ED", "0A2240", ["Sporting KC", "Sporting"], MLS_CREST.format("SKC"), MLS_CLUBS, 186),
+    "LA": ("Western", "LA Galaxy", "00245D", "FFD200", ["Galaxy", "Los Angeles Galaxy", "LAG"], MLS_CREST.format("LA"), MLS_CLUBS, 187),
+    "LAFC": ("Western", "LAFC", "000000", "C39E6D", ["Los Angeles FC", "Los Angeles Football Club"], MLS_CREST.format("LAFC"), MLS_CLUBS, 18966),
+    "MIN": ("Western", "Minnesota United", "000000", "9BCDE4", ["Minnesota United FC", "MNUFC", "Loons"], MLS_CREST.format("MIN"), MLS_CLUBS, 17362),
+    "POR": ("Western", "Portland Timbers", "2C5234", "C99700", ["Timbers"], MLS_CREST.format("POR"), MLS_CLUBS, 9723),
+    "RSL": ("Western", "Real Salt Lake", "A32035", "001E61", ["Salt Lake"], MLS_CREST.format("RSL"), MLS_CLUBS, 4771),
+    "SD": ("Western", "San Diego FC", "02152B", "697A7C", ["San Diego", "SDFC"], MLS_CREST.format("SD"), MLS_CLUBS, 22529),
+    "SJ": ("Western", "San Jose Earthquakes", "003DA6", "000000", ["Earthquakes", "Quakes"], MLS_CREST.format("SJ"), MLS_CLUBS, 191),
+    "SEA": ("Western", "Seattle Sounders", "2DC84D", "0033A0", ["Seattle Sounders FC", "Sounders", "Sounders FC"],
+            MLS_CREST.format("SEA"), MLS_CLUBS, 9726),
+    "STL": ("Western", "St. Louis City SC", "EC1458", "001544", ["St. Louis City", "St. Louis", "STL City"], MLS_CREST.format("STL"), MLS_CLUBS, 21812),
+    "VAN": ("Western", "Vancouver Whitecaps", "12284C", "8AB7E9", ["Vancouver Whitecaps FC", "Whitecaps"], MLS_CREST.format("VAN"), MLS_CLUBS, 9727),
 }
 
 LEAGUES = {
     "MLB": {"label": "MLB", "conferences": ["American League", "National League"]},
     "SOCCER": {"label": "SOCCER", "conferences": ["Premier League", "La Liga", "Bundesliga", "Serie A", "Ligue 1", "Rest of World"]},
+    "MLS": {"label": "MLS", "conferences": ["Eastern", "Western"]},
 }
 

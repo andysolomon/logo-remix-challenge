@@ -67,7 +67,7 @@ export function TeamBrowser({ title, state: rawState, onState, selectedId, onSel
         </div>
       </div>
       {note && <div className="panel-note">{note}</div>}
-      <div ref={chipsRef} className="chips" role="group" aria-label={state.league === 'BRAND' ? 'Brand type filter' : state.league === 'SOCCER' ? 'League filter' : noun === 'team' ? 'Conference filter' : 'Category filter'} onWheel={wheelSideways}>
+      <div ref={chipsRef} className="chips" role="group" aria-label={state.league === 'BRAND' ? 'Brand type filter' : state.league === 'SOCCER' ? 'League filter' : noun === 'team' || state.league === 'MLS' ? 'Conference filter' : 'Category filter'} onWheel={wheelSideways}>
         {chips.map((c) => (
           <button
             key={c}

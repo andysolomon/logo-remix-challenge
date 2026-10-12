@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useReducer, useRef, useState } from 'react'
-import { deckUndoReducer, findTeam, formatScore, fullName, GUESS_TARGETS, GUESS_LABEL, roundHints, roundTarget, speak, voiceSupported, TIMER_OPTIONS, HIGH_SCORE_LIMIT, MAX_DECK_ROUNDS, type GameMode, type HighScore, type GuessTarget, type Round, type TimerSeconds } from '../lib/teams'
+import { canShuffleRoundColors, deckUndoReducer, findTeam, formatScore, fullName, GUESS_TARGETS, GUESS_LABEL, roundHints, roundTarget, shuffleRoundColors, shuffleRoundLogo, speak, voiceSupported, TIMER_OPTIONS, HIGH_SCORE_LIMIT, MAX_DECK_ROUNDS, type GameMode, type HighScore, type GuessTarget, type Round, type TimerSeconds } from '../lib/teams'
 import { RoundLogo } from './Logo'
 import { RandomDeckModal } from './RandomDeckModal'
 import { useDialogA11y } from './SettingsModal'
@@ -147,6 +147,31 @@ export function DeckMode({ deck, portrait, timer, gameMode, guessTarget, voice, 
                     >
                       {r.h ? roundHints(r).join(' · ') : 'Off'}
                     </button>
+                  </div>
+                  <div className="round-shuffle">
+                    <span className="round-target-lb">SHUFFLE</span>
+                    <div className="shuffle-btns" role="group" aria-label={`Round ${i + 1}: shuffle`}>
+                      <button
+                        type="button"
+                        className="shuffle-btn"
+                        aria-label={`Shuffle round ${i + 1} logo`}
+                        title={ot.alternateLogos?.length ? 'Switch to the next alternate logo' : 'This logo has no alternates'}
+                        disabled={!ot.alternateLogos?.length}
+                        onClick={() => mut((d) => { d[i] = shuffleRoundLogo(d[i]); return d })}
+                      >
+                        <span aria-hidden="true">🔀</span> Logo
+                      </button>
+                      <button
+                        type="button"
+                        className="shuffle-btn"
+                        aria-label={`Shuffle round ${i + 1} colors`}
+                        title={!ct ? 'Original-colors rounds keep their own colors' : canShuffleRoundColors(r) ? 'Rearrange where each color goes' : 'Only one readable color arrangement'}
+                        disabled={!canShuffleRoundColors(r)}
+                        onClick={() => mut((d) => { d[i] = shuffleRoundColors(d[i]); return d })}
+                      >
+                        <span aria-hidden="true">🔀</span> Colors
+                      </button>
+                    </div>
                   </div>
                   <div className="round-ctl">
                     <button className={`icon-btn${i === 0 ? ' dim' : ''}`} aria-label="Move earlier" onClick={() => i > 0 && mut((d) => swap(d, i - 1, i))}>

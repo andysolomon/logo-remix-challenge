@@ -589,6 +589,377 @@
         "#FFFFFF"
       ],
       "unusedSourceSlots": []
+    },
+    {
+      "id": "HS-NPAU",
+      "league": "HS",
+      "conference": "Paulding County",
+      "region": "North Paulding",
+      "name": "Wolfpack",
+      "abbr": "NPAU",
+      "displayName": "North Paulding Wolfpack",
+      "sourceUrl": "https://sportshub2-uploads.vnn-prod.zone/files/sites/2249/2019/05/08185932/northpauldinglogo.png",
+      "sourceKind": "community",
+      "sourcePage": "https://sportshub2-uploads.vnn-prod.zone/files/sites/2249/2019/05/08185932/northpauldinglogo.png",
+      "path": "/logos/svg/high-school/npau.png",
+      "format": "png",
+      "colors": [
+        "#01244E",
+        "#FFFFFF",
+        "#002152",
+        "#00214A",
+        "#011744",
+        "#082142",
+        "#08214A",
+        "#011537"
+      ],
+      "brand": [
+        "#001547",
+        "#D0D4D7"
+      ],
+      "palette": [
+        "#011744",
+        "#ADADAD",
+        "#FFFFFF"
+      ],
+      "sourcePalette": [
+        "#011744",
+        "#ADADAD",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": []
+    },
+    {
+      "id": "HS-LHUG",
+      "league": "HS",
+      "conference": "Fulton County",
+      "region": "Langston Hughes",
+      "name": "Panthers",
+      "abbr": "LHUG",
+      "displayName": "Langston Hughes Panthers",
+      "sourceUrl": "https://production-gofan-assets.s3.amazonaws.com/uploads/school/logo/GA25435/GA25435.png",
+      "sourceKind": "community",
+      "sourcePage": "https://production-gofan-assets.s3.amazonaws.com/uploads/school/logo/GA25435/GA25435.png",
+      "path": "/logos/svg/high-school/lhug.png",
+      "format": "png",
+      "colors": [
+        "#38332F",
+        "#0E0C0D",
+        "#FFFFFF"
+      ],
+      "brand": [
+        "#0B422D",
+        "#DBB76C"
+      ],
+      "palette": [
+        "#38332F",
+        "#D7B969",
+        "#FFFFFF"
+      ],
+      "sourcePalette": [
+        "#38332F",
+        "#D7B969",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": []
+    },
+    {
+      "id": "HS-NATL",
+      "league": "HS",
+      "conference": "Fulton County",
+      "region": "North Atlanta",
+      "name": "Warriors",
+      "abbr": "NATL",
+      "displayName": "North Atlanta Warriors",
+      "sourceUrl": "https://allatoonabucs.com/wp-content/uploads/2021/05/n.-Atlanta.svg",
+      "sourceKind": "community",
+      "sourcePage": "https://allatoonabucs.com/n-atlanta/",
+      "path": "/logos/svg/high-school/natl.svg",
+      "format": "svg",
+      "colors": [
+        "#A7A7A7",
+        "#FDFDFD",
+        "#010101",
+        "#FFFFFF",
+        "#BFC3C7",
+        "#FBFBFB",
+        "#F5F5F5"
+      ],
+      "brand": [
+        "#000000",
+        "#A2A9AD"
+      ],
+      "palette": [
+        "#010101",
+        "#A7A7A7",
+        "#FFFFFF"
+      ],
+      "sourcePalette": [
+        "#010101",
+        "#A7A7A7",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": []
+    },
+    {
+      "id": "HS-WEST",
+      "league": "HS",
+      "conference": "Fulton County",
+      "region": "Westlake",
+      "name": "Lions",
+      "abbr": "WEST",
+      "displayName": "Westlake Lions",
+      "sourceUrl": "https://allatoonabucs.com/wp-content/uploads/2026/01/westlake.svg",
+      "sourceKind": "community",
+      "sourcePage": "https://allatoonabucs.com/westlake/",
+      "path": "/logos/svg/high-school/west.svg",
+      "format": "svg",
+      "colors": [
+        "#342B2B",
+        "#EAEAEA",
+        "#F6F6F6",
+        "#F4F4F4",
+        "#C1C1C1",
+        "#E5E5E5",
+        "#495392",
+        "#FFFFFF"
+      ],
+      "brand": [
+        "#3253A4",
+        "#C0C0C0"
+      ],
+      "palette": [
+        "#495392",
+        "#C1C1C1",
+        "#FFFFFF"
+      ],
+      "sourcePalette": [
+        "#495392",
+        "#C1C1C1",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": []
+    },
+    {
+      "id": "HS-DHIL",
+      "league": "HS",
+      "conference": "DeKalb County",
+      "region": "Druid Hills",
+      "name": "Red Devils",
+      "abbr": "DHIL",
+      "displayName": "Druid Hills Red Devils",
+      "sourceUrl": "https://allatoonabucs.com/wp-content/uploads/2022/12/DRUID-HILLS.svg",
+      "sourceKind": "community",
+      "sourcePage": "https://allatoonabucs.com/druid-hills/",
+      "path": "/logos/svg/high-school/dhil.svg",
+      "format": "svg",
+      "colors": [
+        "#F6F6F6",
+        "#F2F2F2",
+        "#F8F8F8",
+        "#EAEAEA",
+        "#FCFCFC",
+        "#E7E7E7",
+        "#E8E8E8",
+        "#EF1D28"
+      ],
+      "brand": [
+        "#EF1D28",
+        "#363636"
+      ],
+      "palette": [
+        "#EF1D28",
+        "#363636",
+        "#FFFFFF"
+      ],
+      "sourcePalette": [
+        "#EF1D28",
+        "#363636",
+        "#FDFDFD"
+      ],
+      "unusedSourceSlots": []
+    },
+    {
+      "id": "HS-SWDK",
+      "league": "HS",
+      "conference": "DeKalb County",
+      "region": "Southwest DeKalb",
+      "name": "Panthers",
+      "abbr": "SWDK",
+      "displayName": "Southwest DeKalb Panthers",
+      "sourceUrl": "https://sportshub2-uploads.vnn-prod.zone/files/sites/1313/2017/07/12172819/9313.png",
+      "sourceKind": "community",
+      "sourcePage": "https://sportshub2-uploads.vnn-prod.zone/files/sites/1313/2017/07/12172819/9313.png",
+      "path": "/logos/svg/high-school/swdk.png",
+      "format": "png",
+      "colors": [
+        "#FCCA33",
+        "#1E2E62",
+        "#FAC833",
+        "#FCCA35",
+        "#202D62",
+        "#202D64",
+        "#F9C832",
+        "#1E2D64"
+      ],
+      "brand": [
+        "#000053",
+        "#FFE800"
+      ],
+      "palette": [
+        "#1E2D64",
+        "#FBC932",
+        "#FFFFFF"
+      ],
+      "sourcePalette": [
+        "#1E2D64",
+        "#FBC932",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [
+        2
+      ]
+    },
+    {
+      "id": "HS-STEP",
+      "league": "HS",
+      "conference": "DeKalb County",
+      "region": "Stephenson",
+      "name": "Jaguars",
+      "abbr": "STEP",
+      "displayName": "Stephenson Jaguars",
+      "sourceUrl": "https://production-gofan-assets.s3.amazonaws.com/uploads/school/logo/GA5321/GA5321.png",
+      "sourceKind": "community",
+      "sourcePage": "https://production-gofan-assets.s3.amazonaws.com/uploads/school/logo/GA5321/GA5321.png",
+      "path": "/logos/svg/high-school/step.png",
+      "format": "png",
+      "colors": [
+        "#FFFFFF",
+        "#000000"
+      ],
+      "brand": [
+        "#000000",
+        "#000080"
+      ],
+      "palette": [
+        "#000000",
+        "#000072",
+        "#FFFFFF"
+      ],
+      "sourcePalette": [
+        "#000000",
+        "#000072",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": [
+        1
+      ]
+    },
+    {
+      "id": "HS-BUFO",
+      "league": "HS",
+      "conference": "Gwinnett County",
+      "region": "Buford",
+      "name": "Wolves",
+      "abbr": "BUFO",
+      "displayName": "Buford Wolves",
+      "sourceUrl": "https://allatoonabucs.com/wp-content/uploads/2021/02/buford-01-2.svg",
+      "sourceKind": "community",
+      "sourcePage": "https://allatoonabucs.com/buford-01-2/",
+      "path": "/logos/svg/high-school/bufo.svg",
+      "format": "svg",
+      "colors": [
+        "#B6A268",
+        "#D5D6BB",
+        "#009639",
+        "#529C51",
+        "#259843",
+        "#FFFFFF",
+        "#F8FCF9",
+        "#779E57"
+      ],
+      "brand": [
+        "#009639",
+        "#B6A268"
+      ],
+      "palette": [
+        "#009639",
+        "#B6A268",
+        "#FFFFFF"
+      ],
+      "sourcePalette": [
+        "#009639",
+        "#B6A268",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": []
+    },
+    {
+      "id": "HS-GRAY",
+      "league": "HS",
+      "conference": "Gwinnett County",
+      "region": "Grayson",
+      "name": "Rams",
+      "abbr": "GRAY",
+      "displayName": "Grayson Rams",
+      "sourceUrl": "https://allatoonabucs.com/wp-content/uploads/2021/04/grayson.svg",
+      "sourceKind": "community",
+      "sourcePage": "https://allatoonabucs.com/grayson/",
+      "path": "/logos/svg/high-school/gray.svg",
+      "format": "svg",
+      "colors": [
+        "#FFFFFF",
+        "#C4A006",
+        "#014812"
+      ],
+      "brand": [
+        "#004812",
+        "#C4A006"
+      ],
+      "palette": [
+        "#014812",
+        "#C4A006",
+        "#FFFFFF"
+      ],
+      "sourcePalette": [
+        "#014812",
+        "#C4A006",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": []
+    },
+    {
+      "id": "HS-PARK",
+      "league": "HS",
+      "conference": "Gwinnett County",
+      "region": "Parkview",
+      "name": "Panthers",
+      "abbr": "PARK",
+      "displayName": "Parkview Panthers",
+      "sourceUrl": "https://production-gofan-assets.s3.amazonaws.com/uploads/school/logo/GA5226/Logo_-_P.png",
+      "sourceKind": "community",
+      "sourcePage": "https://production-gofan-assets.s3.amazonaws.com/uploads/school/logo/GA5226/Logo_-_P.png",
+      "path": "/logos/svg/high-school/park.png",
+      "format": "png",
+      "colors": [
+        "#F1891A",
+        "#193888"
+      ],
+      "brand": [
+        "#EC5E1A",
+        "#0924A0"
+      ],
+      "palette": [
+        "#F1891A",
+        "#193888",
+        "#FFFFFF"
+      ],
+      "sourcePalette": [
+        "#F1891A",
+        "#193888",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": []
     }
   ]
 }

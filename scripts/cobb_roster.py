@@ -96,6 +96,44 @@ ROSTER: dict[str, list[School]] = {
          "https://upload.wikimedia.org/wikipedia/en/7/7f/Wheeler_High_School_%28Georgia%29_logo.png",
          "wikipedia", "https://en.wikipedia.org/wiki/Wheeler_High_School_(Georgia)"),
     ],
+    "Paulding County": [
+        ("NPAU", "North Paulding", "Wolfpack",
+         "https://sportshub2-uploads.vnn-prod.zone/files/sites/2249/2019/05/08185932/northpauldinglogo.png",
+         "community", "https://sportshub2-uploads.vnn-prod.zone/files/sites/2249/2019/05/08185932/northpauldinglogo.png"),
+    ],
+    "Fulton County": [
+        ("LHUG", "Langston Hughes", "Panthers",
+         "https://production-gofan-assets.s3.amazonaws.com/uploads/school/logo/GA25435/GA25435.png",
+         "community", "https://production-gofan-assets.s3.amazonaws.com/uploads/school/logo/GA25435/GA25435.png"),
+        ("NATL", "North Atlanta", "Warriors",
+         "https://allatoonabucs.com/wp-content/uploads/2021/05/n.-Atlanta.svg",
+         "community", "https://allatoonabucs.com/n-atlanta/"),
+        ("WEST", "Westlake", "Lions",
+         "https://allatoonabucs.com/wp-content/uploads/2026/01/westlake.svg",
+         "community", "https://allatoonabucs.com/westlake/"),
+    ],
+    "DeKalb County": [
+        ("DHIL", "Druid Hills", "Red Devils",
+         "https://allatoonabucs.com/wp-content/uploads/2022/12/DRUID-HILLS.svg",
+         "community", "https://allatoonabucs.com/druid-hills/"),
+        ("SWDK", "Southwest DeKalb", "Panthers",
+         "https://sportshub2-uploads.vnn-prod.zone/files/sites/1313/2017/07/12172819/9313.png",
+         "community", "https://sportshub2-uploads.vnn-prod.zone/files/sites/1313/2017/07/12172819/9313.png"),
+        ("STEP", "Stephenson", "Jaguars",
+         "https://production-gofan-assets.s3.amazonaws.com/uploads/school/logo/GA5321/GA5321.png",
+         "community", "https://production-gofan-assets.s3.amazonaws.com/uploads/school/logo/GA5321/GA5321.png"),
+    ],
+    "Gwinnett County": [
+        ("BUFO", "Buford", "Wolves",
+         "https://allatoonabucs.com/wp-content/uploads/2021/02/buford-01-2.svg",
+         "community", "https://allatoonabucs.com/buford-01-2/"),
+        ("GRAY", "Grayson", "Rams",
+         "https://allatoonabucs.com/wp-content/uploads/2021/04/grayson.svg",
+         "community", "https://allatoonabucs.com/grayson/"),
+        ("PARK", "Parkview", "Panthers",
+         "https://production-gofan-assets.s3.amazonaws.com/uploads/school/logo/GA5226/Logo_-_P.png",
+         "community", "https://production-gofan-assets.s3.amazonaws.com/uploads/school/logo/GA5226/Logo_-_P.png"),
+    ],
 }
 
 SCHOOLS: list[School] = [school for schools in ROSTER.values() for school in schools]
@@ -125,4 +163,15 @@ BRAND_COLORS: dict[str, tuple[str, str]] = {
     "SPRA": ("#AF9A5B", "#241F20"),   # old gold and black
     "WALT": ("#1B2A5B", "#000000"),   # raider navy
     "WHEE": ("#F2BE39", "#1B2A4A"),   # gold and navy
+    # Outside Cobb, colors are the ones each school lists on its GoFan ticketing page.
+    "NPAU": ("#001547", "#D0D4D7"),   # navy and silver
+    "LHUG": ("#0B422D", "#DBB76C"),   # green and gold
+    "NATL": ("#000000", "#A2A9AD"),   # black and silver
+    "WEST": ("#3253A4", "#C0C0C0"),   # blue and silver
+    "DHIL": ("#EF1D28", "#363636"),   # red and black, drawn as bright red and charcoal
+    "SWDK": ("#000053", "#FFE800"),   # navy and vegas gold
+    "STEP": ("#000000", "#000080"),   # black and royal blue
+    "BUFO": ("#009639", "#B6A268"),   # green and gold
+    "GRAY": ("#004812", "#C4A006"),   # hunter green and vegas gold
+    "PARK": ("#EC5E1A", "#0924A0"),   # orange and blue
 }

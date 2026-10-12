@@ -83,15 +83,17 @@ PNG_CRITICAL = {b"IHDR", b"PLTE", b"IDAT", b"IEND"}
 # pretending the fallback color is present in the file.
 UNUSED_SOURCE_SLOTS = {
     "LASS": [1],
+    "STEP": [1],
+    "SWDK": [2],
     "OSBO": [1],
     "PEBB": [2],
     "WALT": [1],
 }
 # Kennesaw Mountain has green, silver, and black artwork; white remains its
 # useful light game color while black is the actual third recolor source.
-# North Cobb's vector traces its white outline in near-white shades with no
-# pure #FFFFFF; the recolor matches by nearness, so the lightest stands in.
-SOURCE_PALETTE_OVERRIDES = {"KMHS": {2: "#000000"}, "NCOB": {2: "#FEFEFE"}}
+# North Cobb's and Druid Hills' vectors draw their white in near-white shades
+# with no pure #FFFFFF; the recolor matches by nearness, so the lightest stands in.
+SOURCE_PALETTE_OVERRIDES = {"KMHS": {2: "#000000"}, "NCOB": {2: "#FEFEFE"}, "DHIL": {2: "#FDFDFD"}}
 
 
 def atomic_write_bytes(path: Path, data: bytes) -> None:

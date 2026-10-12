@@ -35,6 +35,10 @@ const HS_SCHOOLS: Record<string, string[]> = {
     'Walton',
     'Wheeler',
   ],
+  'DeKalb County': ['Druid Hills', 'Southwest DeKalb', 'Stephenson'],
+  'Fulton County': ['Langston Hughes', 'North Atlanta', 'Westlake'],
+  'Gwinnett County': ['Buford', 'Grayson', 'Parkview'],
+  'Paulding County': ['North Paulding'],
 }
 const COUNTIES = Object.keys(HS_SCHOOLS)
 const ALL_SCHOOLS = Object.values(HS_SCHOOLS).flat().sort()
@@ -128,7 +132,7 @@ import json, pathlib, sys
 sys.path.insert(0, 'scripts')
 from download_cobb_svgs import UNUSED_SOURCE_SLOTS, artwork_colors
 items = json.load(open('public/logos/svg/hs-manifest.json'))['assets']
-assert UNUSED_SOURCE_SLOTS == {'LASS': [1], 'OSBO': [1], 'PEBB': [2], 'WALT': [1]}
+assert UNUSED_SOURCE_SLOTS == {'LASS': [1], 'OSBO': [1], 'PEBB': [2], 'STEP': [1], 'SWDK': [2], 'WALT': [1]}
 for a in items:
     colors, _ = artwork_colors(pathlib.Path('public') / a['path'].lstrip('/'))
     for slot, source in enumerate(a['sourcePalette']):
@@ -136,7 +140,7 @@ for a in items:
             assert source in colors, (a['abbr'], slot)
 `)
     expect(checked).toEqual({ status: 0, stdout: '', stderr: '' })
-    for (const abbr of ['LASS', 'OSBO', 'PEBB', 'WALT']) {
+    for (const abbr of ['LASS', 'OSBO', 'PEBB', 'STEP', 'SWDK', 'WALT']) {
       expect(hsTeams.find((t) => t.abbr === abbr)?.unusedSourceSlots).toBeDefined()
     }
   })
@@ -158,20 +162,21 @@ assert {s[4] for s in b.SCHOOLS} <= SOURCE_KINDS
 
 # The schools whose real mark -- or its vector original -- only a third-party
 # mirror carries, in the roster and in the manifest the builder validates.
-MIRRORED = {'CAMP', 'HARR', 'KELL', 'MCEA', 'NCOB', 'PEBB'}
+MIRRORED = {'CAMP', 'HARR', 'KELL', 'MCEA', 'NCOB', 'PEBB',
+            'NPAU', 'LHUG', 'NATL', 'WEST', 'DHIL', 'SWDK', 'STEP', 'BUFO', 'GRAY', 'PARK'}
 assert {s[0] for s in b.SCHOOLS if s[4] == 'community'} == MIRRORED
 rows = b.validate_manifest()
 assert len(rows) == len(b.SCHOOLS)
 assert {r['abbr'] for r in rows if r['sourceKind'] == 'community'} == MIRRORED
-# Campbell, Harrison and North Cobb are the vector opponent logos in Allatoona's
-# media library and cite their attachment pages. The other mirrors expose no
-# richer page than the asset, so they cite the asset itself.
-OPPONENT_LIBRARY = {'CAMP', 'HARR', 'NCOB'}
+# Marks from Allatoona's media library (its own, and the vector opponent logos
+# it keeps) cite a page rather than the file. The other mirrors expose no richer page than the asset, so
+# they cite the asset itself.
+LIBRARY = 'https://allatoonabucs.com/wp-content/uploads/'
+assert {r['abbr'] for r in rows if r['sourceUrl'].startswith(LIBRARY)} == {'ALLA', 'CAMP', 'HARR', 'NCOB', 'NATL', 'WEST', 'DHIL', 'BUFO', 'GRAY'}
 for row in rows:
-    if row['abbr'] in OPPONENT_LIBRARY:
-        assert row['sourceUrl'].startswith('https://allatoonabucs.com/wp-content/uploads/'), row['abbr']
+    if row['sourceUrl'].startswith(LIBRARY):
         assert row['format'] == 'svg', row['abbr']
-        assert row['sourcePage'].startswith('https://allatoonabucs.com/') and row['sourcePage'] != row['sourceUrl'], row['abbr']
+        assert row['sourcePage'].startswith('https://allatoonabucs.com') and row['sourcePage'] != row['sourceUrl'], row['abbr']
     elif row['abbr'] in MIRRORED:
         assert row['sourcePage'] == row['sourceUrl'], row['abbr']
 
@@ -470,6 +475,8 @@ describe('high-school league gameplay integration', () => {
     const walton = hsTeams.find((t) => t.region === 'Walton')!
     expect(teamHint(walton)).toBe('Cobb County')
     expect(roundHints({ o: walton.id, c: 'PRO-KC', v: 0 })).toEqual(['Logo: Cobb County', 'Colors: NFL'])
+    const buford = hsTeams.find((t) => t.region === 'Buford')!
+    expect(roundHints({ o: buford.id, c: 'NBA-ATL', v: 0 })).toEqual(['Logo: Gwinnett County', 'Colors: NBA'])
   })
 
   test('existing NFL and college data is untouched', () => {

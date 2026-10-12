@@ -17,6 +17,7 @@ const root = join(import.meta.dir, '..')
 
 // Every school by county; each county is a filter chip and a random-deck pool.
 const HS_SCHOOLS: Record<string, string[]> = {
+  'Carroll County': ['Carrollton'],
   'Cobb County': [
     'Allatoona',
     'Campbell',
@@ -25,6 +26,7 @@ const HS_SCHOOLS: Record<string, string[]> = {
     'Kell',
     'Kennesaw Mountain',
     'Lassiter',
+    'Marietta',
     'McEachern',
     'North Cobb',
     'Osborne',
@@ -36,9 +38,14 @@ const HS_SCHOOLS: Record<string, string[]> = {
     'Wheeler',
   ],
   'DeKalb County': ['Druid Hills', 'Southwest DeKalb', 'Stephenson'],
-  'Fulton County': ['Langston Hughes', 'North Atlanta', 'Westlake'],
+  'Fulton County': ['Blessed Trinity', 'Creekside', 'Langston Hughes', 'Milton', 'North Atlanta', 'Westlake'],
   'Gwinnett County': ['Buford', 'Grayson', 'Parkview'],
+  'Hall County': ['Gainesville'],
+  'Lee County': ['Lee County'],
+  'Lowndes County': ['Valdosta'],
+  'Newton County': ['Newton'],
   'Paulding County': ['North Paulding'],
+  'Thomas County': ['Thomas County Central'],
 }
 const COUNTIES = Object.keys(HS_SCHOOLS)
 const ALL_SCHOOLS = Object.values(HS_SCHOOLS).flat().sort()
@@ -132,7 +139,7 @@ import json, pathlib, sys
 sys.path.insert(0, 'scripts')
 from download_cobb_svgs import UNUSED_SOURCE_SLOTS, artwork_colors
 items = json.load(open('public/logos/svg/hs-manifest.json'))['assets']
-assert UNUSED_SOURCE_SLOTS == {'LASS': [1], 'OSBO': [1], 'PEBB': [2], 'STEP': [1], 'SWDK': [2], 'WALT': [1]}
+assert UNUSED_SOURCE_SLOTS == {'BTRI': [2], 'CARR': [2], 'LASS': [1], 'MILT': [2], 'OSBO': [1], 'PEBB': [2], 'STEP': [1], 'TCC': [1, 2], 'WALT': [1]}
 for a in items:
     colors, _ = artwork_colors(pathlib.Path('public') / a['path'].lstrip('/'))
     for slot, source in enumerate(a['sourcePalette']):
@@ -140,7 +147,7 @@ for a in items:
             assert source in colors, (a['abbr'], slot)
 `)
     expect(checked).toEqual({ status: 0, stdout: '', stderr: '' })
-    for (const abbr of ['LASS', 'OSBO', 'PEBB', 'STEP', 'SWDK', 'WALT']) {
+    for (const abbr of ['BTRI', 'CARR', 'LASS', 'MILT', 'OSBO', 'PEBB', 'STEP', 'TCC', 'WALT']) {
       expect(hsTeams.find((t) => t.abbr === abbr)?.unusedSourceSlots).toBeDefined()
     }
   })
@@ -163,20 +170,24 @@ assert {s[4] for s in b.SCHOOLS} <= SOURCE_KINDS
 # The schools whose real mark -- or its vector original -- only a third-party
 # mirror carries, in the roster and in the manifest the builder validates.
 MIRRORED = {'CAMP', 'HARR', 'KELL', 'MCEA', 'NCOB', 'PEBB',
-            'NPAU', 'LHUG', 'NATL', 'WEST', 'DHIL', 'SWDK', 'STEP', 'BUFO', 'GRAY', 'PARK'}
+            'NPAU', 'LHUG', 'NATL', 'WEST', 'DHIL', 'SWDK', 'STEP', 'BUFO', 'GRAY', 'PARK',
+            'BTRI', 'CREE', 'MILT', 'CARR', 'GAIN', 'VALD', 'NEWT', 'TCC'}
 assert {s[0] for s in b.SCHOOLS if s[4] == 'community'} == MIRRORED
 rows = b.validate_manifest()
 assert len(rows) == len(b.SCHOOLS)
 assert {r['abbr'] for r in rows if r['sourceKind'] == 'community'} == MIRRORED
-# Marks from Allatoona's media library (its own, and the vector opponent logos
-# it keeps) cite a page rather than the file. The other mirrors expose no richer page than the asset, so
-# they cite the asset itself.
-LIBRARY = 'https://allatoonabucs.com/wp-content/uploads/'
-assert {r['abbr'] for r in rows if r['sourceUrl'].startswith(LIBRARY)} == {'ALLA', 'CAMP', 'HARR', 'NCOB', 'NATL', 'WEST', 'DHIL', 'BUFO', 'GRAY'}
+# Marks from the WordPress media libraries of Allatoona's and Woodland's
+# athletics sites (Allatoona's own, and the vector opponent logos both keep)
+# cite a page rather than the file. The other mirrors expose no richer page
+# than the asset, so they cite the asset itself.
+LIBRARIES = ('https://allatoonabucs.com', 'https://gowoodland.org')
+library = {r['abbr'] for r in rows if r['sourceUrl'].startswith(tuple(f'{l}/wp-content/uploads/' for l in LIBRARIES))}
+assert library == {'ALLA', 'CAMP', 'HARR', 'NCOB', 'NATL', 'WEST', 'DHIL', 'BUFO', 'GRAY',
+                   'BTRI', 'CREE', 'MILT', 'CARR', 'TCC', 'VALD'}, library
 for row in rows:
-    if row['sourceUrl'].startswith(LIBRARY):
+    if row['abbr'] in library:
         assert row['format'] == 'svg', row['abbr']
-        assert row['sourcePage'].startswith('https://allatoonabucs.com') and row['sourcePage'] != row['sourceUrl'], row['abbr']
+        assert row['sourcePage'].startswith(LIBRARIES) and row['sourcePage'] != row['sourceUrl'], row['abbr']
     elif row['abbr'] in MIRRORED:
         assert row['sourcePage'] == row['sourceUrl'], row['abbr']
 
@@ -197,6 +208,85 @@ sys.argv = ['download_cobb_svgs.py']
 assert d.main() == 2
 `)
     expect(run.status).toBe(0)
+  })
+
+  test('bitmap-only marks are traced into vector outlines, pinned to their source and recorded in the manifest', () => {
+    const run = python(`
+import json, pathlib, sys, tempfile
+sys.path.insert(0, 'scripts')
+import build_hs_teams as b
+import download_cobb_svgs as d
+from nfl_vector_artwork import validate_vector
+assert set(d.TRACED) == {'NPAU', 'LHUG', 'SWDK', 'STEP', 'PARK', 'GAIN', 'NEWT', 'LEEC', 'MARI'}, set(d.TRACED)
+rows = {r['abbr']: r for r in b.validate_manifest()}
+for abbr, spec in d.TRACED.items():
+    row = rows[abbr]
+    assert row['format'] == 'svg' and row['trace'] == spec, abbr
+    assert not row['sourceUrl'].lower().split('?')[0].endswith('.svg'), abbr
+    svg = (pathlib.Path('public') / row['path'].lstrip('/')).read_bytes()
+    validate_vector(svg)
+    assert b'<path fill="#' in svg and b'fill-rule="evenodd"' in svg, abbr
+assert not any('trace' in r for a, r in rows.items() if a not in d.TRACED)
+
+# A changed source is refused before anything is traced.
+try: d.trace_bitmap(b'not the pinned file', d.TRACED['NPAU'])
+except ValueError: pass
+else: raise AssertionError('accepted a source that does not match its pinned checksum')
+
+# A manifest whose recorded trace drifts from the roster is rejected.
+payload = json.loads(b.MANIFEST.read_text())
+for a in payload['assets']:
+    if a['abbr'] == 'NPAU':
+        a['trace'] = {**a['trace'], 'colors': 2}
+b.MANIFEST = pathlib.Path(tempfile.mkdtemp()) / 'hs-manifest.json'
+b.MANIFEST.write_text(json.dumps(payload))
+try: b.validate_manifest()
+except ValueError as exc: assert 'trace' in str(exc), exc
+else: raise AssertionError('accepted a manifest whose trace does not match the roster')
+`)
+    expect(run.stderr).toBe('')
+    expect(run.status).toBe(0)
+  }, FULL_PIPELINE_TIMEOUT)
+
+  test('tracing runs the Designer tracer through bun and is reproducible', () => {
+    const run = python(`
+import hashlib, io, sys
+sys.path.insert(0, 'scripts')
+try:
+    from PIL import Image, ImageDraw
+except ImportError:
+    sys.exit(0)  # Pillow is only needed to re-trace; checked-in traces need nothing.
+import download_cobb_svgs as d
+from nfl_vector_artwork import validate_vector
+image = Image.new('RGBA', (300, 200), (255, 255, 255, 255))
+draw = ImageDraw.Draw(image)
+draw.ellipse((40, 30, 180, 170), fill=(200, 30, 40, 255))
+draw.rectangle((150, 60, 270, 140), fill=(20, 50, 160, 255))
+buffer = io.BytesIO(); image.save(buffer, 'PNG')
+raw = buffer.getvalue()
+spec = {'sha256': hashlib.sha256(raw).hexdigest(), 'colors': 'auto', 'removeBackground': True}
+svg = d.trace_bitmap(raw, spec)
+validate_vector(svg)
+assert svg.count(b'<path ') == 2, svg[:300]
+assert d.trace_bitmap(raw, spec) == svg
+`)
+    expect(run.stderr).toBe('')
+    expect(run.status).toBe(0)
+  }, FULL_PIPELINE_TIMEOUT)
+
+  test('shapes left without a fill count as black artwork', () => {
+    const run = python(`
+import sys
+sys.path.insert(0, 'scripts')
+from download_cobb_svgs import paints_default_black
+ns = 'xmlns="http://www.w3.org/2000/svg"'
+assert paints_default_black(f'<svg {ns}><path d="M0 0h1v1z"/></svg>'.encode())
+assert not paints_default_black(f'<svg {ns} fill="#123456"><path d="M0 0h1v1z"/></svg>'.encode())
+assert not paints_default_black(f'<svg {ns}><style>.a{{fill:#fff}}</style><path class="a" d="M0 0h1v1z"/></svg>'.encode())
+assert not paints_default_black(f'<svg {ns}><path style="fill:red" d="M0 0h1v1z"/></svg>'.encode())
+assert not paints_default_black(f'<svg {ns}><defs><path id="p" d="M0 0h1v1z"/></defs><g fill="#000"><path d="M0 0h1v1z"/></g></svg>'.encode())
+`)
+    expect(run).toEqual({ status: 0, stdout: '', stderr: '' })
   })
 
   test('a JPEG mirror is re-encoded as PNG and a post-IEND tail is dropped', () => {

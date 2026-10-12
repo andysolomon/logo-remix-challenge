@@ -32,6 +32,8 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from cobb_roster import COUNTY, SCHOOLS  # noqa: E402
 from download_cobb_svgs import (  # noqa: E402
     SOURCE_KINDS,
+    TRACED,
+    asset_suffix,
     SOURCE_PALETTE_OVERRIDES,
     UNUSED_SOURCE_SLOTS,
     artwork_colors,
@@ -120,10 +122,12 @@ def validate_manifest() -> list[dict]:
         for field, expected in expected_values.items():
             if item[field] != expected:
                 raise ValueError(f"{abbr}: {field} does not match the roster")
-        suffix = ".svg" if school[3].lower().split("?")[0].endswith(".svg") else ".png"
+        suffix = asset_suffix(school)
         expected_path = f"/logos/svg/high-school/{safe_slug(abbr)}{suffix}"
         if item["path"] != expected_path or item["format"] != suffix[1:]:
             raise ValueError(f"{abbr}: unexpected asset path or format")
+        if item.get("trace") != TRACED.get(abbr):
+            raise ValueError(f"{abbr}: recorded trace does not match the roster's reviewed trace")
         if item["sourceKind"] not in SOURCE_KINDS:
             raise ValueError(f"{abbr}: invalid sourceKind")
         if not item["sourceUrl"].startswith("https://") or not item["sourcePage"].startswith("https://"):

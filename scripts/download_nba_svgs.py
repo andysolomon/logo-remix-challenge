@@ -40,8 +40,9 @@ def artwork_colors(data: bytes) -> list[str]:
     for node in root.iter():
         if node.tag.endswith("}style"):
             for selector, body in re.findall(r"([^{}]+)\{([^{}]+)\}", node.text or ""):
+                # Rules accumulate, so ".a { fill: red } .a, .b { stroke-width: 0 }" keeps the fill.
                 for cls in selector.split(","):
-                    styles[cls.strip().lstrip(".")] = dict(re.findall(r"([\w-]+)\s*:\s*([^;]+)", body))
+                    styles.setdefault(cls.strip().lstrip("."), {}).update(re.findall(r"([\w-]+)\s*:\s*([^;]+)", body))
     colors = []
 
     def walk(node, inherited):

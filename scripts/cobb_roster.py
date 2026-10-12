@@ -68,6 +68,10 @@ ROSTER: dict[str, list[School]] = {
         ("LASS", "Lassiter", "Trojans",
          "https://sportshub2-uploads.vnn-prod.zone/files/sites/1992/2018/05/14151445/logo.png",
          "official", "https://www.lassiterathletics.com"),
+        # Marietta High is Marietta City Schools, not the Cobb district, but it is in Cobb County.
+        ("MARI", "Marietta", "Blue Devils",
+         "https://cdn2.sportngin.com/attachments/logo_graphic/88c1-180228065/MariettaHS_Mascot_large.png",
+         "official", "https://www.marietta-athletics.com"),
         ("MCEA", "McEachern", "Indians",
          "https://s3-us-west-2.amazonaws.com/scorestream-team-profile-pictures/4530/20190119073353_718_mascot300.png",
          "community", "https://s3-us-west-2.amazonaws.com/scorestream-team-profile-pictures/4530/20190119073353_718_mascot300.png"),
@@ -102,9 +106,19 @@ ROSTER: dict[str, list[School]] = {
          "community", "https://sportshub2-uploads.vnn-prod.zone/files/sites/2249/2019/05/08185932/northpauldinglogo.png"),
     ],
     "Fulton County": [
+        # Blessed Trinity is a private Catholic school in Roswell.
+        ("BTRI", "Blessed Trinity", "Titans",
+         "https://allatoonabucs.com/wp-content/uploads/2021/02/b-trinity-01-1-01.svg",
+         "community", "https://allatoonabucs.com/b-trinity-01-1-01/"),
+        ("CREE", "Creekside", "Seminoles",
+         "https://allatoonabucs.com/wp-content/uploads/2025/01/creekside.svg",
+         "community", "https://allatoonabucs.com/creekside/"),
         ("LHUG", "Langston Hughes", "Panthers",
          "https://production-gofan-assets.s3.amazonaws.com/uploads/school/logo/GA25435/GA25435.png",
          "community", "https://production-gofan-assets.s3.amazonaws.com/uploads/school/logo/GA25435/GA25435.png"),
+        ("MILT", "Milton", "Eagles",
+         "https://allatoonabucs.com/wp-content/uploads/2023/10/milton.svg",
+         "community", "https://allatoonabucs.com/milton/"),
         ("NATL", "North Atlanta", "Warriors",
          "https://allatoonabucs.com/wp-content/uploads/2021/05/n.-Atlanta.svg",
          "community", "https://allatoonabucs.com/n-atlanta/"),
@@ -117,8 +131,8 @@ ROSTER: dict[str, list[School]] = {
          "https://allatoonabucs.com/wp-content/uploads/2022/12/DRUID-HILLS.svg",
          "community", "https://allatoonabucs.com/druid-hills/"),
         ("SWDK", "Southwest DeKalb", "Panthers",
-         "https://sportshub2-uploads.vnn-prod.zone/files/sites/1313/2017/07/12172819/9313.png",
-         "community", "https://sportshub2-uploads.vnn-prod.zone/files/sites/1313/2017/07/12172819/9313.png"),
+         "https://image.maxpreps.io/school-mascot/b/0/7/b070d4a6-0cef-4a4f-a5b5-91e231d6544a.gif",
+         "community", "https://image.maxpreps.io/school-mascot/b/0/7/b070d4a6-0cef-4a4f-a5b5-91e231d6544a.gif"),
         ("STEP", "Stephenson", "Jaguars",
          "https://production-gofan-assets.s3.amazonaws.com/uploads/school/logo/GA5321/GA5321.png",
          "community", "https://production-gofan-assets.s3.amazonaws.com/uploads/school/logo/GA5321/GA5321.png"),
@@ -134,10 +148,57 @@ ROSTER: dict[str, list[School]] = {
          "https://production-gofan-assets.s3.amazonaws.com/uploads/school/logo/GA5226/Logo_-_P.png",
          "community", "https://production-gofan-assets.s3.amazonaws.com/uploads/school/logo/GA5226/Logo_-_P.png"),
     ],
+    "Carroll County": [
+        ("CARR", "Carrollton", "Trojans",
+         "https://allatoonabucs.com/wp-content/uploads/2021/02/carrolton-02.svg",
+         "community", "https://allatoonabucs.com/carrolton-02/"),
+    ],
+    "Hall County": [
+        ("GAIN", "Gainesville", "Red Elephants",
+         "https://production-gofan-assets.s3.amazonaws.com/uploads/school/logo/GA5015/gcss-ghs-logo-elephant-full-color-cmyk-FINAL-2021-07-21.png",
+         "community", "https://production-gofan-assets.s3.amazonaws.com/uploads/school/logo/GA5015/gcss-ghs-logo-elephant-full-color-cmyk-FINAL-2021-07-21.png"),
+    ],
+    "Lee County": [
+        ("LEEC", "Lee County", "Trojans",
+         "https://resources.finalsite.net/images/v1770034738/leek12gaus/hwicdaicsn7af6oz26hd/Mascot.png",
+         "district", "https://www.lee.k12.ga.us"),
+    ],
+    "Lowndes County": [
+        ("VALD", "Valdosta", "Wildcats",
+         "https://gowoodland.org/wp-content/uploads/2021/01/VALDOSTAcatsLOGO-01.svg",
+         "community", "https://gowoodland.org/valdostacatslogo-01/"),
+    ],
+    "Newton County": [
+        ("NEWT", "Newton", "Rams",
+         "https://image.maxpreps.io/school-mascot/d/0/7/d07bd2a4-115f-40fc-852f-612c908497eb.gif",
+         "community", "https://image.maxpreps.io/school-mascot/d/0/7/d07bd2a4-115f-40fc-852f-612c908497eb.gif"),
+    ],
+    "Thomas County": [
+        ("TCC", "Thomas County Central", "Yellow Jackets",
+         "https://allatoonabucs.com/wp-content/uploads/2023/07/tcc.svg",
+         "community", "https://allatoonabucs.com/tcc/"),
+    ],
 }
 
 SCHOOLS: list[School] = [school for schools in ROSTER.values() for school in schools]
 COUNTY: dict[str, str] = {school[0]: county for county, schools in ROSTER.items() for school in schools}
+
+# Schools whose mark is published only as a bitmap. The downloader checks the
+# file against its pinned SHA-256 and traces it into flat-color SVG outlines with
+# Designer mode's tracer (src/lib/trace.ts): "colors" is its color setting and
+# "removeBackground" drops a solid field around the mark (Lee County's helmet sits
+# on black). Tracing turns glossy, shaded artwork into clean recolorable fills.
+TRACED: dict[str, dict] = {
+    "NPAU": {"sha256": "69c4e2880004638a9dfa20657fdb3af34fff9acba76d182245c4d37df78e8067", "colors": "auto", "removeBackground": True},
+    "LHUG": {"sha256": "ee331402202afc31f04adec80f4d60be24315ce721e11248ab14743532378a82", "colors": "auto", "removeBackground": True},
+    "SWDK": {"sha256": "e43816cf2966dee45edd90a17f7b442c99c12cabf6e1990c836df137e6a90b40", "colors": "auto", "removeBackground": True},
+    "STEP": {"sha256": "b6515f8f5e067d48fa1018e226ef18ab8d8d4454cd5ef16aae4a1ce40c84a099", "colors": "auto", "removeBackground": True},
+    "PARK": {"sha256": "591ac960672b2bc602175ce4285a04c1b132bd06243de97279062613b404e3a5", "colors": "auto", "removeBackground": True},
+    "GAIN": {"sha256": "11b85cfb5905e04f4b8aff335557cc42b275a0258b5b99fe64d15c4e64051e9b", "colors": "auto", "removeBackground": True},
+    "NEWT": {"sha256": "8ff5c743a0cdc1037705bb7e5d14f6e628fb6ba139a56577facfa1437f749d19", "colors": "auto", "removeBackground": True},
+    "LEEC": {"sha256": "f22fb277108a80a239a16f59dc380af86ef9d0b0645b36075f06c8101970f1cb", "colors": "auto", "removeBackground": True},
+    "MARI": {"sha256": "4acfd0a34ae24170f381720e4658622e91d8b451f1d14f502b22d56247e35363", "colors": "auto", "removeBackground": True},
+}
 
 # abbr -> (primary, secondary) school colors, snapped to the nearest color
 # actually present in the artwork before they reach teams.json -- the same
@@ -169,9 +230,19 @@ BRAND_COLORS: dict[str, tuple[str, str]] = {
     "NATL": ("#000000", "#A2A9AD"),   # black and silver
     "WEST": ("#3253A4", "#C0C0C0"),   # blue and silver
     "DHIL": ("#EF1D28", "#363636"),   # red and black, drawn as bright red and charcoal
-    "SWDK": ("#000053", "#FFE800"),   # navy and vegas gold
+    "SWDK": ("#000053", "#C99A00"),   # navy and old gold (GoFan lists a brighter #FFE800)
     "STEP": ("#000000", "#000080"),   # black and royal blue
     "BUFO": ("#009639", "#B6A268"),   # green and gold
     "GRAY": ("#004812", "#C4A006"),   # hunter green and vegas gold
     "PARK": ("#EC5E1A", "#0924A0"),   # orange and blue
+    "MARI": ("#041E42", "#9F9F9F"),   # navy (PMS 282) and silver
+    "BTRI": ("#084512", "#A19162"),   # hunter green and gold
+    "CREE": ("#A10022", "#C9B45B"),   # cardinal and vegas gold
+    "MILT": ("#DB2742", "#002B56"),   # red and navy (the white band is open)
+    "CARR": ("#000000", "#FEC727"),   # black and gold
+    "GAIN": ("#C62030", "#010000"),   # red, with the mark's black outline
+    "LEEC": ("#EB1E26", "#000000"),   # red and black
+    "VALD": ("#FAB61E", "#000000"),   # gold and black
+    "NEWT": ("#134897", "#04050D"),   # royal blue, with the ram's black
+    "TCC": ("#012D56", "#B0A876"),    # navy and vegas gold (the TC is navy only)
 }

@@ -2,7 +2,7 @@
 
 iPad-first logo guessing game. A creator picks the **logo of one team, brand or app** and the **colors of an NFL, NBA or college team**; players name the logo and/or color sources while the remix misdirects them. For now only those three collections donate colors; every other collection is logo-only, and a saved round whose colors came from anywhere else is dropped when the deck loads.
 
-Real logos for all 32 NFL teams, all 30 NBA teams, all 30 MLB teams, 30 popular soccer clubs, 30 fast-food chains, 29 brands, 30 iOS apps, 30 TV channels, 30 car brands, 30 luxury houses, 30 clothing brands, 120 college teams, 6 college conference marks, and 26 metro Atlanta high schools (the HIGH SCHOOL league, filtered by county) live as local SVG or PNG assets under `public/logos/svg/`. SVG fills are rewritten in-browser; PNGs use a canvas-based pixel recolor.
+Real logos for all 32 NFL teams, all 30 NBA teams, all 30 MLB teams, 30 popular soccer clubs, 30 fast-food chains, 29 brands, 30 iOS apps, 30 TV channels, 30 car brands, 30 luxury houses, 30 clothing brands, 120 college teams, 6 college conference marks, and 36 Georgia high schools (the HIGH SCHOOL league, filtered by county) live as local SVG or PNG assets under `public/logos/svg/`. SVG fills are rewritten in-browser; PNGs use a canvas-based pixel recolor.
 
 NBA teams are available as both logo and color donors. Filter them by Eastern or Western conference, or select NBA in Random Deck to create NBA-only or mixed-league rounds. Common answers such as Sixers, Cavs, GSW, NYK and SAS work in search, autocomplete and grading.
 
@@ -73,7 +73,7 @@ Fast food, brands, apps, TV channels, cars, luxury houses and clothing brands sh
 
 `download_hbcu_svgs.py` covers the HBCUs that ESPN's football feed cannot reach: Coppin State and Maryland Eastern Shore, the two MEAC members with no football team, and all 14 HBCUs of the Division II SIAC. ESPN carries no brand colors for Division II, so palettes come from the official colors in `scripts/hbcu_roster.py` snapped onto the artwork's own fills. It writes `hbcu-manifest.json`. Between them the HBCU chip is the complete SWAC, MEAC and SIAC membership — 37 schools. (Spring Hill College is a SIAC member but not an HBCU, so it is deliberately absent.)
 
-`download_cobb_svgs.py` fetches the HIGH SCHOOL league: the 16 Cobb County high schools that field athletics teams, plus North Paulding (Paulding County); Langston Hughes, North Atlanta and Westlake (Fulton County); Druid Hills, Southwest DeKalb and Stephenson (DeKalb County); and Buford, Grayson and Parkview (Gwinnett County). Each county is a filter chip, a random-deck pool and the round hint ("Logo: Gwinnett County"). No feed covers Georgia high schools, so `scripts/cobb_roster.py` pins one hand-verified source URL per school — the school's own athletics site where one is scrapeable, the Cobb County School District site otherwise, Wikipedia as the fallback, and a community mirror when none of those carries the mark (or carries only a bitmap of it). Campbell, Harrison and North Cobb use the vector originals from Allatoona's media library. Palettes come from the official colors snapped onto the artwork's own fills, and each asset lands in `public/logos/svg/high-school/` with its source recorded in `hs-manifest.json`.
+`download_cobb_svgs.py` fetches the HIGH SCHOOL league: the 16 Cobb County high schools that field athletics teams, plus Marietta (Marietta City Schools, also in Cobb), prominent metro programs (North Paulding in Paulding County; Blessed Trinity, Creekside, Langston Hughes, Milton, North Atlanta and Westlake in Fulton; Druid Hills, Southwest DeKalb and Stephenson in DeKalb; Buford, Grayson and Parkview in Gwinnett) and the state's top contenders elsewhere (Carrollton, Gainesville, Lee County, Valdosta, Newton and Thomas County Central, each under its county). Each county is a filter chip, a random-deck pool and the round hint ("Logo: Gwinnett County"); for Lee County High that hint names the school. Nine of these marks are published only as bitmaps, so `cobb_roster.TRACED` pins each file's SHA-256 and the downloader traces it into flat-color SVG outlines with Designer mode's tracer (`scripts/trace_logo.ts`, run by bun after Pillow decodes and scales the image); re-tracing needs Pillow and bun, while the checked-in SVGs need neither. No feed covers Georgia high schools, so `scripts/cobb_roster.py` pins one hand-verified source URL per school — the school's own athletics site where one is scrapeable, the Cobb County School District site otherwise, Wikipedia as the fallback, and a community mirror when none of those carries the mark (or carries only a bitmap of it). Campbell, Harrison and North Cobb use the vector originals from Allatoona's media library. Palettes come from the official colors snapped onto the artwork's own fills, and each asset lands in `public/logos/svg/high-school/` with its source recorded in `hs-manifest.json`.
 
 `build_teams.py` merges the NFL/college manifests into `src/lib/teams.json`, rewriting the whole `COL-*` block (high-school entries are carried through untouched). It records each college and NFL primary logo's `unusedSourceSlots` from the artwork itself, as the other roster builders do, reading the pixels of an SVG that wraps an embedded bitmap (Pillow required) so those logos get their tile too. `build_hs_teams.py` does the same for the `HS-*` block from `hs-manifest.json`. Run each after its downloader. To fetch or refresh (stdlib Python 3, idempotent):
 
@@ -138,7 +138,7 @@ src/
   lib/exportLogo.ts        Designer exports: recolored SVG files, canvas-rendered PNGs, downloads
   lib/trace.ts             Designer uploads: trace a bitmap logo into flat-color SVG outlines (pure)
   lib/traceUpload.ts       Designer uploads: decode the file in the browser, trace it, wrap it as a logo
-  lib/teams.json           32 NFL + 30 NBA + 30 MLB + 30 soccer + 30 food + 29 brand + 30 app + 30 TV + 30 car + 30 luxury + 30 clothing + 126 college + 26 high-school entries
+  lib/teams.json           32 NFL + 30 NBA + 30 MLB + 30 soccer + 30 food + 29 brand + 30 app + 30 TV + 30 car + 30 luxury + 30 clothing + 126 college + 36 high-school entries
   lib/useOrientation.ts    portrait = innerHeight > innerWidth
   components/
     Logo.tsx               local PNG rendering + canvas palette-swap recoloring
@@ -157,7 +157,8 @@ scripts/
   download_svgs.py         fetch NFL, conference and ESPN-rostered college SVGs
   download_hbcu_svgs.py    fetch the SIAC + non-football MEAC logos from Wikipedia
   hbcu_roster.py           HBCU roster, official colors, and logo-file overrides
-  download_cobb_svgs.py    fetch the HIGH SCHOOL league's logos (Cobb and four other metro counties)
+  download_cobb_svgs.py    fetch (or trace) the HIGH SCHOOL league's logos, county by county
+  trace_logo.ts            trace bitmap-only high-school marks with Designer mode's tracer
   download_nba_svgs.py     fetch the 30 official NBA SVGs and snapshot ESPN metadata
   nba_roster.py            pinned NBA IDs, conferences and answer aliases
   build_nba_teams.py       validate and rebuild only NBA entries
@@ -179,7 +180,7 @@ scripts/
 public/logos/
   nfl/                     32 team PNGs (ESPN CDN naming, e.g. wsh.png)
   conferences/             acc, big-12, big-ten, pac-12, sec PNGs
-  svg/high-school/         26 checked-in high-school SVG/PNG marks
+  svg/high-school/         36 checked-in high-school SVG/PNG marks
   svg/nba/                 30 checked-in official NBA SVG marks
   svg/mlb/                 30 checked-in official MLB SVG marks
   svg/soccer/              30 checked-in club crests (29 SVG, Napoli PNG)

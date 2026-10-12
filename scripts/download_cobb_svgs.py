@@ -12,7 +12,10 @@ Assets fetched (one per school in ``cobb_roster.SCHOOLS``):
     public/logos/svg/high-school/<abbr>.svg   (or .png when no SVG exists)
 
 A source that serves JPEG is decoded and re-encoded as PNG on the way in, so
-the league only ever stores the two formats ``Logo.tsx`` can recolor.
+the league only ever stores the two formats ``Logo.tsx`` can recolor. A mark
+published only as a bitmap is traced instead (``cobb_roster.TRACED``): the
+pinned file is scaled like a Designer upload and traced into flat-color SVG
+outlines by Designer mode's own tracer (``scripts/trace_logo.ts``, run by bun).
 
 Palettes come from the official colors in ``cobb_roster.BRAND_COLORS``, each
 snapped to the color the artwork actually uses. The manifest records both the
@@ -22,7 +25,8 @@ explicitly identify their unused slot instead of inventing artwork colors.
 Results are written to ``public/logos/svg/hs-manifest.json`` for
 ``scripts/build_hs_teams.py`` to merge into ``src/lib/teams.json``.
 
-Stdlib only. Safe to re-run: existing valid assets are skipped unless
+Stdlib only, except that re-tracing a bitmap needs Pillow and bun (checked-in
+traced SVGs are reused without them). Safe to re-run: existing valid assets are skipped unless
 ``--force`` is given, selected runs merge into the complete local roster, and
 failed downloads cannot replace a valid asset or truncate the manifest.
 
@@ -33,14 +37,19 @@ Usage:
 from __future__ import annotations
 
 import argparse
+import hashlib
+import io
 import json
 import math
 import os
+import re
 import struct
+import subprocess
 import sys
 import tempfile
 import zlib
 from pathlib import Path
+from xml.etree import ElementTree as ET
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
@@ -53,7 +62,7 @@ from download_svgs import (  # noqa: E402  (path shim above)
 )
 import download_hbcu_svgs  # noqa: E402
 from download_hbcu_svgs import MIN_PIXEL_SHARE, pick_palette, snap  # noqa: E402
-from cobb_roster import BRAND_COLORS, COUNTY, SCHOOLS  # noqa: E402
+from cobb_roster import BRAND_COLORS, COUNTY, SCHOOLS, TRACED  # noqa: E402
 
 OUT = ROOT / "public" / "logos" / "svg"
 DEST_DIR = OUT / "high-school"
@@ -84,16 +93,62 @@ PNG_CRITICAL = {b"IHDR", b"PLTE", b"IDAT", b"IEND"}
 UNUSED_SOURCE_SLOTS = {
     "LASS": [1],
     "STEP": [1],
-    "SWDK": [2],
+    "MILT": [2],
+    "BTRI": [2],
+    "CARR": [2],
+    "TCC": [1, 2],
     "OSBO": [1],
     "PEBB": [2],
     "WALT": [1],
 }
 # Kennesaw Mountain has green, silver, and black artwork; white remains its
 # useful light game color while black is the actual third recolor source.
-# North Cobb's and Druid Hills' vectors draw their white in near-white shades
-# with no pure #FFFFFF; the recolor matches by nearness, so the lightest stands in.
-SOURCE_PALETTE_OVERRIDES = {"KMHS": {2: "#000000"}, "NCOB": {2: "#FEFEFE"}, "DHIL": {2: "#FDFDFD"}}
+# Some vectors draw their white in near-white shades with no pure #FFFFFF (North
+# Cobb's, Druid Hills', and traced marks, whose fills are the source's own
+# colors); the recolor matches by nearness, so that shade stands in.
+SOURCE_PALETTE_OVERRIDES = {
+    "KMHS": {2: "#000000"},
+    "NCOB": {2: "#FEFEFE"},
+    "DHIL": {2: "#FDFDFD"},
+    "NPAU": {2: "#FBFCFD"},
+    "LHUG": {2: "#E9EAEB"},
+    "PARK": {2: "#F8FAF5"},
+    "MARI": {2: "#FDFEFE"},
+    "LEEC": {2: "#FEFEFE"},
+    "NEWT": {2: "#FEFEFD"},
+    # Thomas County Central's TC is navy only; its unused slot holds the school's
+    # vegas gold rather than a fallback black that would read as the navy.
+    "TCC": {1: "#B0A876"},
+}
+
+
+# Longest side a traced bitmap is scaled to, as src/lib/trace.ts's TRACE_SIZE does for uploads.
+TRACE_SIZE = 768
+
+
+def asset_suffix(school: tuple[str, str, str, str, str, str]) -> str:
+    """'.svg' for vector sources and traced bitmaps, '.png' for every other bitmap."""
+    return ".svg" if school[0] in TRACED or school[3].lower().split("?")[0].endswith(".svg") else ".png"
+
+
+def trace_bitmap(raw: bytes, spec: dict) -> bytes:
+    """Trace a pinned bitmap into flat-color SVG outlines with Designer mode's tracer."""
+    if hashlib.sha256(raw).hexdigest() != spec["sha256"]:
+        raise ValueError("source changed since its trace was reviewed; inspect it and pin the new sha256")
+    # Imported here: only a re-trace needs Pillow.
+    from PIL import Image
+
+    image = Image.open(io.BytesIO(raw)).convert("RGBA")
+    scale = TRACE_SIZE / max(image.size)
+    image = image.resize((max(1, round(image.width * scale)), max(1, round(image.height * scale))), Image.LANCZOS)
+    options = {"colors": spec["colors"], "removeBackground": spec["removeBackground"]}
+    run = subprocess.run(
+        ["bun", str(ROOT / "scripts" / "trace_logo.ts"), json.dumps(options)],
+        input=struct.pack("<II", *image.size) + image.tobytes(),
+        capture_output=True,
+        check=True,
+    )
+    return run.stdout
 
 
 def atomic_write_bytes(path: Path, data: bytes) -> None:
@@ -751,10 +806,44 @@ def png_colors_any(data: bytes) -> list[tuple[str, int]]:
     return [("#%02X%02X%02X" % px, n) for px, n in ordered]
 
 
+SVG_SHAPES = {"path", "polygon", "rect", "circle", "ellipse", "polyline", "line"}
+# Subtrees that never paint on their own.
+SVG_UNRENDERED = {"defs", "clipPath", "mask", "symbol", "pattern", "marker"}
+FILL_DECLARED = re.compile(r"(?:^|[;{\s])fill\s*:")
+
+
+def paints_default_black(data: bytes) -> bool:
+    """Whether some shape takes no fill from attributes, styles, classes or ancestors, so it renders black."""
+    root = ET.fromstring(data)
+    filled_classes: set[str] = set()
+    for node in root.iter():
+        if node.tag.rsplit("}", 1)[-1] == "style":
+            for selector, body in re.findall(r"([^{}]+)\{([^{}]+)\}", node.text or ""):
+                if FILL_DECLARED.search(body):
+                    filled_classes.update(c.strip().lstrip(".") for c in selector.split(","))
+
+    def walk(node, filled: bool) -> bool:
+        tag = node.tag.rsplit("}", 1)[-1]
+        if tag in SVG_UNRENDERED:
+            return False
+        filled = (filled or "fill" in node.attrib or bool(FILL_DECLARED.search(node.get("style", "")))
+                  or any(c in filled_classes for c in node.get("class", "").split()))
+        if tag in SVG_SHAPES and not filled:
+            return True
+        return any(walk(child, filled) for child in node)
+
+    return walk(root, False)
+
+
 def artwork_colors(path: Path) -> tuple[list[str], list[str]]:
     """(every color in the artwork, the subset big enough to read as a fill)."""
     if path.suffix == ".svg":
-        return download_hbcu_svgs.artwork_colors(path)
+        every, usable = download_hbcu_svgs.artwork_colors(path)
+        # Unfilled shapes render black (Logo.tsx recolors them through the root fill), so black is in the
+        # artwork. It joins only the full list: official colors snap to a declared fill first.
+        if "#000000" not in every and paints_default_black(path.read_bytes()):
+            every = [*every, "#000000"]
+        return every, usable
     pairs = png_colors_any(path.read_bytes())
     total = sum(n for _, n in pairs) or 1
     every = [h for h, _ in pairs]
@@ -790,6 +879,8 @@ def manifest_item(school: tuple[str, str, str, str, str, str], asset: Path) -> d
         "sourcePalette": source_palette,
         "unusedSourceSlots": UNUSED_SOURCE_SLOTS.get(abbr, []),
     }
+    if abbr in TRACED:
+        item["trace"] = dict(TRACED[abbr])
     unused = set(item["unusedSourceSlots"])
     for slot, want in enumerate(brand or ()):
         if slot not in unused and want and snap(want, colors, usable) is None:
@@ -857,7 +948,7 @@ def main() -> int:
     failures: list[str] = []
     for school in SCHOOLS:
         abbr, _, _, url, _, _ = school
-        suffix = ".svg" if url.lower().split("?")[0].endswith(".svg") else ".png"
+        suffix = asset_suffix(school)
         dest = DEST_DIR / f"{safe_slug(abbr)}{suffix}"
         destinations[abbr] = dest
         prior = valid_local_item(school, dest)
@@ -876,6 +967,8 @@ def main() -> int:
         else:
             try:
                 data = fetch(url)
+                if abbr in TRACED:
+                    data = trace_bitmap(data, TRACED[abbr])
                 item = install_download(school, dest, data)
             except Exception as exc:
                 failures.append(f"{abbr}: {exc}")

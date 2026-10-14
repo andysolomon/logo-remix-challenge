@@ -869,28 +869,6 @@
     }
   },
   {
-    "teamId": "BRAND-ARG",
-    "id": "primary",
-    "label": "National flag",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Argentina.svg",
-    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Argentina.svg",
-    "sourceSha256": "dafb5bc6543c59249be9c7dec2298eaeaa1fe7805a62754990315cc6db93b2f3",
-    "ops": {
-      "viewBox": "-16 -16 832 532"
-    }
-  },
-  {
-    "teamId": "BRAND-AUS",
-    "id": "primary",
-    "label": "National flag",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Australia.svg",
-    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Australia.svg",
-    "sourceSha256": "8ccf95cf3507e88d10aa57a1e3b3853d72933c6784e6f67fe3cd3bf12ea68a4d",
-    "ops": {
-      "viewBox": "-201.6 -201.6 10483.2 5443.2"
-    }
-  },
-  {
     "teamId": "BRAND-BOA",
     "id": "primary",
     "label": "Flag stripes",
@@ -902,70 +880,6 @@
     }
   },
   {
-    "teamId": "BRAND-BRAZIL",
-    "id": "primary",
-    "label": "National flag",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Brazil.svg",
-    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Brazil.svg",
-    "sourceSha256": "041479c6a955990d32c8e45b7283afcd62eacc3592eba9bbf0162299ad77ff01",
-    "ops": {
-      "viewBox": "-2184 -1554 4368 3108"
-    }
-  },
-  {
-    "teamId": "BRAND-CALI",
-    "id": "primary",
-    "label": "State flag",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_California.svg",
-    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_California.svg",
-    "sourceSha256": "f821e8533fe9fd1564b4972938c62dbce9ddeefe1a67a430b651eafb2571fe00",
-    "ops": {
-      "removeNodes": [
-        "4",
-        "5",
-        "6",
-        "7",
-        "8",
-        "9",
-        "10",
-        "11",
-        "12",
-        "13",
-        "14",
-        "15",
-        "16",
-        "17",
-        "18",
-        "19",
-        "20",
-        "21"
-      ],
-      "viewBox": "-18 -18 936 636"
-    }
-  },
-  {
-    "teamId": "BRAND-CANADA",
-    "id": "primary",
-    "label": "National flag",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Canada_(Pantone).svg",
-    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Canada_(Pantone).svg",
-    "sourceSha256": "afe6921891d516f037e8fb9920128f8bfd86ef2ffe1a6d1d4aa7e22a032434bc",
-    "ops": {
-      "viewBox": "-192 -192 9984 5184"
-    }
-  },
-  {
-    "teamId": "BRAND-CANADA",
-    "id": "maple-leaf",
-    "label": "Maple leaf",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Maple_Leaf.svg",
-    "sourcePage": "https://commons.wikimedia.org/wiki/File:Maple_Leaf.svg",
-    "sourceSha256": "3833c9814fa0df29b7b132241ed79f015c31d1dba6a123452911b421fbfde010",
-    "ops": {
-      "viewBox": "-1940.445 -2080.6 3880.89 4191.2"
-    }
-  },
-  {
     "teamId": "BRAND-CHASE",
     "id": "primary",
     "label": "Octagon",
@@ -974,32 +888,6 @@
     "sourceSha256": "2af033875386428d9f08e5b26d60b28423d9a53ec9febc4d29f3bd7a41a19b59",
     "ops": {
       "viewBox": "-10.24 -10.24 532.48 532.48"
-    }
-  },
-  {
-    "teamId": "BRAND-CHICAGO",
-    "id": "primary",
-    "label": "City flag",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Chicago,_Illinois.svg",
-    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Chicago,_Illinois.svg",
-    "sourceSha256": "6c16a73098d327a4a0bc7b7f1d756ce6b3965cd68ca8ce364638307092e0b96a",
-    "ops": {
-      "viewBox": "-14.4 -14.4 748.8 508.68"
-    }
-  },
-  {
-    "teamId": "BRAND-CHICAGO",
-    "id": "star",
-    "label": "Six-pointed star",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Chicago,_Illinois.svg",
-    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Chicago,_Illinois.svg",
-    "sourceSha256": "6c16a73098d327a4a0bc7b7f1d756ce6b3965cd68ca8ce364638307092e0b96a",
-    "ops": {
-      "removeNodes": [
-        "0",
-        "2"
-      ],
-      "viewBox": "95.6 177.6 108.8 124.8"
     }
   },
   {
@@ -1069,72 +957,6 @@
     "sourceSha256": "030f5843489563e9ced6961db24a87872c08b35167591b81785befbcd4803f66",
     "ops": {
       "viewBox": "-5.222 -5.222 266.322 271.544"
-    }
-  },
-  {
-    "teamId": "BRAND-GREECE",
-    "id": "primary",
-    "label": "National flag",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Greece.svg",
-    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Greece.svg",
-    "sourceSha256": "d65b82614f0cd167a767abfda1abc1ef99e87ef48e5755f3d33e4526e3cad365",
-    "ops": {
-      "viewBox": "-0.54 -0.54 28.08 19.08"
-    }
-  },
-  {
-    "teamId": "BRAND-INDIA",
-    "id": "primary",
-    "label": "National flag",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_India.svg",
-    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_India.svg",
-    "sourceSha256": "95d7239707482165fbc0f685d5f493633639f16771c1fef9701f7ee66dcdf343",
-    "ops": {
-      "viewBox": "-46.8 -31.8 93.6 63.6"
-    }
-  },
-  {
-    "teamId": "BRAND-JAMAICA",
-    "id": "primary",
-    "label": "National flag",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Jamaica.svg",
-    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Jamaica.svg",
-    "sourceSha256": "ebad0857b427c3b40fbba25b83c30d1019b2bfb185fe434a45394abdaba86636",
-    "ops": {
-      "viewBox": "-0.24 -0.24 12.48 6.48"
-    }
-  },
-  {
-    "teamId": "BRAND-JAPAN",
-    "id": "primary",
-    "label": "National flag",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Japan.svg",
-    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Japan.svg",
-    "sourceSha256": "35e785339e19d1ec1987cb9c3d8e66fc97f29a287db0b0b590b8dfdd96d4766b",
-    "ops": {
-      "viewBox": "-18 -18 936 635.85"
-    }
-  },
-  {
-    "teamId": "BRAND-JAPAN",
-    "id": "chrysanthemum",
-    "label": "Imperial chrysanthemum",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Imperial_Seal_of_Japan.svg",
-    "sourcePage": "https://commons.wikimedia.org/wiki/File:Imperial_Seal_of_Japan.svg",
-    "sourceSha256": "ea846b3133efb6bd3a929fcf8522d959247d1105db028d3b5cd7b82e8cbb9ca3",
-    "ops": {
-      "viewBox": "-101.93 -101.93 203.861 203.861"
-    }
-  },
-  {
-    "teamId": "BRAND-KOREA",
-    "id": "primary",
-    "label": "National flag",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_South_Korea.svg",
-    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_South_Korea.svg",
-    "sourceSha256": "d8ec2a77a317c28617cbd5e7114c3ec9697120670e343ede5ee5bd0b1b4cd110",
-    "ops": {
-      "viewBox": "-74.88 -50.88 149.76 101.76"
     }
   },
   {
@@ -1228,28 +1050,6 @@
     "sourceSha256": "ba34bb0a9e43fdad665ea2b84d0363046177147e763ec3765641501779356876",
     "ops": {
       "viewBox": "-13.333 -13.333 693.334 693.334"
-    }
-  },
-  {
-    "teamId": "BRAND-MEXICO",
-    "id": "primary",
-    "label": "National flag",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Mexico.svg",
-    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Mexico.svg",
-    "sourceSha256": "bcfebaa9d94827919e65c5414e4ee35a076f89520a1b57d75e0949e1ca81c3b9",
-    "ops": {
-      "viewBox": "-19.6 -19.6 1019.2 599.27"
-    }
-  },
-  {
-    "teamId": "BRAND-MEXICO",
-    "id": "coat-of-arms",
-    "label": "Eagle and serpent emblem",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Mexico.svg",
-    "sourcePage": "https://commons.wikimedia.org/wiki/File:Coat_of_arms_of_Mexico.svg",
-    "sourceSha256": "2b8d21103887910eb26f3dc4e59f5b0351b14b6ebf885e37c400bb49297da490",
-    "ops": {
-      "viewBox": "-11.575 -11.575 601.921 547.806"
     }
   },
   {
@@ -1391,17 +1191,6 @@
     }
   },
   {
-    "teamId": "BRAND-PR",
-    "id": "primary",
-    "label": "Territorial flag",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Puerto_Rico.svg",
-    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Puerto_Rico.svg",
-    "sourceSha256": "d83503767e27b93e45d3f7be7308f95cac3db37f9c8c5a40d95c58e208faaac0",
-    "ops": {
-      "viewBox": "-18 -18 936 636"
-    }
-  },
-  {
     "teamId": "BRAND-PRINCE",
     "id": "primary",
     "label": "Glyph",
@@ -1509,50 +1298,6 @@
     }
   },
   {
-    "teamId": "BRAND-TURKEY",
-    "id": "primary",
-    "label": "National flag",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Turkey.svg",
-    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Turkey.svg",
-    "sourceSha256": "5a47e932cdb371d9708d8c9a209d3acfd006cdd3ee7dd38ae44df6180e170e90",
-    "ops": {
-      "viewBox": "-1800 -31800 93600 63600"
-    }
-  },
-  {
-    "teamId": "BRAND-TX",
-    "id": "primary",
-    "label": "State flag",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Texas.svg",
-    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Texas.svg",
-    "sourceSha256": "33b9a4dce7b11a8052e3d0dad2f046dbeacc8e4dff624efb2cd6ee9ec21003f1",
-    "ops": {
-      "viewBox": "-18 -18 936 635.85"
-    }
-  },
-  {
-    "teamId": "BRAND-TX",
-    "id": "flag-map",
-    "label": "Flag-filled state outline",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Texas_flag_map.svg",
-    "sourcePage": "https://commons.wikimedia.org/wiki/File:Texas_flag_map.svg",
-    "sourceSha256": "c98d512b0c65f1a2a8161d18d260218c2107a878487e14159f643583f900ce6b",
-    "ops": {
-      "viewBox": "-23.219 -23.057 1202.438 1173.388"
-    }
-  },
-  {
-    "teamId": "BRAND-UK",
-    "id": "primary",
-    "label": "National flag",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_the_United_Kingdom.svg",
-    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_the_United_Kingdom.svg",
-    "sourceSha256": "b93bb15033d6c2219f290121d40c0a741765bd4b077ebcf5a5b0d917ff725a28",
-    "ops": {
-      "viewBox": "-1 -1 52 32"
-    }
-  },
-  {
     "teamId": "BRAND-UNITED",
     "id": "primary",
     "label": "Globe",
@@ -1572,17 +1317,6 @@
     "sourceSha256": "5cca65f07db720faca210ffc2da28bf265aa7f8edfe3f0241150b0a9ca52dcda",
     "ops": {
       "viewBox": "-4.498 -4.498 233.892 173.732"
-    }
-  },
-  {
-    "teamId": "BRAND-USA",
-    "id": "primary",
-    "label": "National flag",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_the_United_States.svg",
-    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_the_United_States.svg",
-    "sourceSha256": "48f0d3e4a7bf2d5c0c8d09cd975696acb2f3af601aaca80c537933ad9ec166ec",
-    "ops": {
-      "viewBox": "-148.2 -148.2 7706.4 4196.4"
     }
   },
   {
@@ -5655,6 +5389,2294 @@
         "2/0/0"
       ],
       "viewBox": "-1.544 -1.544 41.688 33.288"
+    }
+  },
+  {
+    "teamId": "FLAG-USA",
+    "id": "primary",
+    "label": "National flag",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_the_United_States.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_the_United_States.svg",
+    "sourceSha256": "48f0d3e4a7bf2d5c0c8d09cd975696acb2f3af601aaca80c537933ad9ec166ec",
+    "ops": {
+      "viewBox": "-148.2 -148.2 7706.4 4196.4"
+    }
+  },
+  {
+    "teamId": "FLAG-USA",
+    "id": "silhouette",
+    "label": "Silhouette",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/BlankMap-World.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:BlankMap-World.svg",
+    "sourceSha256": "88ae6cbcbe054c00455d16899724b348a102f49ff059bf7027c94e63b040e3e7",
+    "ops": {
+      "keepNodes": [
+        "146/2"
+      ],
+      "fill": "#B22234",
+      "viewBox": "413.247 255.327 454.831 242.781"
+    }
+  },
+  {
+    "teamId": "FLAG-CANADA",
+    "id": "primary",
+    "label": "National flag",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Canada_(Pantone).svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Canada_(Pantone).svg",
+    "sourceSha256": "afe6921891d516f037e8fb9920128f8bfd86ef2ffe1a6d1d4aa7e22a032434bc",
+    "ops": {
+      "viewBox": "-192 -192 9984 5184"
+    }
+  },
+  {
+    "teamId": "FLAG-CANADA",
+    "id": "maple-leaf",
+    "label": "Maple leaf",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Maple_Leaf.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Maple_Leaf.svg",
+    "sourceSha256": "3833c9814fa0df29b7b132241ed79f015c31d1dba6a123452911b421fbfde010",
+    "ops": {
+      "viewBox": "-1940.445 -2080.6 3880.89 4191.2"
+    }
+  },
+  {
+    "teamId": "FLAG-CANADA",
+    "id": "silhouette",
+    "label": "Silhouette",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/BlankMap-World.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:BlankMap-World.svg",
+    "sourceSha256": "88ae6cbcbe054c00455d16899724b348a102f49ff059bf7027c94e63b040e3e7",
+    "ops": {
+      "keepNodes": [
+        "94"
+      ],
+      "fill": "#D52B1E",
+      "viewBox": "428.691 2.177 647.473 357.624"
+    }
+  },
+  {
+    "teamId": "FLAG-MEXICO",
+    "id": "primary",
+    "label": "National flag",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Mexico.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Mexico.svg",
+    "sourceSha256": "bcfebaa9d94827919e65c5414e4ee35a076f89520a1b57d75e0949e1ca81c3b9",
+    "ops": {
+      "viewBox": "-19.6 -19.6 1019.2 599.27"
+    }
+  },
+  {
+    "teamId": "FLAG-MEXICO",
+    "id": "coat-of-arms",
+    "label": "Eagle and serpent emblem",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Mexico.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Coat_of_arms_of_Mexico.svg",
+    "sourceSha256": "2b8d21103887910eb26f3dc4e59f5b0351b14b6ebf885e37c400bb49297da490",
+    "ops": {
+      "viewBox": "-11.575 -11.575 601.921 547.806"
+    }
+  },
+  {
+    "teamId": "FLAG-MEXICO",
+    "id": "silhouette",
+    "label": "Silhouette",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/BlankMap-World.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:BlankMap-World.svg",
+    "sourceSha256": "88ae6cbcbe054c00455d16899724b348a102f49ff059bf7027c94e63b040e3e7",
+    "ops": {
+      "keepNodes": [
+        "24"
+      ],
+      "fill": "#006847",
+      "viewBox": "423.527 406.713 237.685 174.788"
+    }
+  },
+  {
+    "teamId": "FLAG-BRAZIL",
+    "id": "primary",
+    "label": "National flag",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Brazil.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Brazil.svg",
+    "sourceSha256": "041479c6a955990d32c8e45b7283afcd62eacc3592eba9bbf0162299ad77ff01",
+    "ops": {
+      "viewBox": "-2184 -1554 4368 3108"
+    }
+  },
+  {
+    "teamId": "FLAG-BRAZIL",
+    "id": "silhouette",
+    "label": "Silhouette",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/BlankMap-World.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:BlankMap-World.svg",
+    "sourceSha256": "88ae6cbcbe054c00455d16899724b348a102f49ff059bf7027c94e63b040e3e7",
+    "ops": {
+      "keepNodes": [
+        "27"
+      ],
+      "fill": "#009C3B",
+      "viewBox": "723.295 639.276 326.446 364.647"
+    }
+  },
+  {
+    "teamId": "FLAG-ARG",
+    "id": "primary",
+    "label": "National flag",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Argentina.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Argentina.svg",
+    "sourceSha256": "dafb5bc6543c59249be9c7dec2298eaeaa1fe7805a62754990315cc6db93b2f3",
+    "ops": {
+      "viewBox": "-16 -16 832 532"
+    }
+  },
+  {
+    "teamId": "FLAG-ARG",
+    "id": "silhouette",
+    "label": "Silhouette",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/BlankMap-World.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:BlankMap-World.svg",
+    "sourceSha256": "88ae6cbcbe054c00455d16899724b348a102f49ff059bf7027c94e63b040e3e7",
+    "ops": {
+      "keepNodes": [
+        "75"
+      ],
+      "fill": "#74ACDF",
+      "viewBox": "776.504 875.652 140.030 307.008"
+    }
+  },
+  {
+    "teamId": "FLAG-JAMAICA",
+    "id": "primary",
+    "label": "National flag",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Jamaica.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Jamaica.svg",
+    "sourceSha256": "ebad0857b427c3b40fbba25b83c30d1019b2bfb185fe434a45394abdaba86636",
+    "ops": {
+      "viewBox": "-0.24 -0.24 12.48 6.48"
+    }
+  },
+  {
+    "teamId": "FLAG-JAMAICA",
+    "id": "silhouette",
+    "label": "Silhouette",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/BlankMap-World.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:BlankMap-World.svg",
+    "sourceSha256": "88ae6cbcbe054c00455d16899724b348a102f49ff059bf7027c94e63b040e3e7",
+    "ops": {
+      "keepNodes": [
+        "170/1"
+      ],
+      "fill": "#009B3A",
+      "viewBox": "710.817 537.276 17.340 8.678"
+    }
+  },
+  {
+    "teamId": "FLAG-PR",
+    "id": "primary",
+    "label": "Territorial flag",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Puerto_Rico.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Puerto_Rico.svg",
+    "sourceSha256": "d83503767e27b93e45d3f7be7308f95cac3db37f9c8c5a40d95c58e208faaac0",
+    "ops": {
+      "viewBox": "-18 -18 936 636"
+    }
+  },
+  {
+    "teamId": "FLAG-COLOMBIA",
+    "id": "primary",
+    "label": "National flag",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Colombia.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Colombia.svg",
+    "sourceSha256": "85fd47e9d0c91d088b196609e0cb49424950d30084f31c80a44fbac18b7a377b",
+    "ops": {
+      "viewBox": "-18 -18 936 636"
+    }
+  },
+  {
+    "teamId": "FLAG-COLOMBIA",
+    "id": "silhouette",
+    "label": "Silhouette",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/BlankMap-World.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:BlankMap-World.svg",
+    "sourceSha256": "88ae6cbcbe054c00455d16899724b348a102f49ff059bf7027c94e63b040e3e7",
+    "ops": {
+      "keepNodes": [
+        "48"
+      ],
+      "fill": "#FFCD00",
+      "viewBox": "690.709 585.137 104.822 155.894"
+    }
+  },
+  {
+    "teamId": "FLAG-CHILE",
+    "id": "primary",
+    "label": "National flag",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Chile.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Chile.svg",
+    "sourceSha256": "ca4d50dcf36926c82f02b895975f351a639b0aa1b91bb6ef776f4f07f225cc34",
+    "ops": {
+      "viewBox": "-18 -18 936 636"
+    }
+  },
+  {
+    "teamId": "FLAG-CHILE",
+    "id": "silhouette",
+    "label": "Silhouette",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/BlankMap-World.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:BlankMap-World.svg",
+    "sourceSha256": "88ae6cbcbe054c00455d16899724b348a102f49ff059bf7027c94e63b040e3e7",
+    "ops": {
+      "keepNodes": [
+        "124/1-155"
+      ],
+      "fill": "#DA291C",
+      "viewBox": "758.447 836.876 144.629 354.597"
+    }
+  },
+  {
+    "teamId": "FLAG-PERU",
+    "id": "primary",
+    "label": "National flag",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Peru.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Peru.svg",
+    "sourceSha256": "4358cec747829a0009dac86055e74e60b05e6eb57eba5f7bc30da2c88168a7f2",
+    "ops": {
+      "viewBox": "-18 -18 936 636"
+    }
+  },
+  {
+    "teamId": "FLAG-PERU",
+    "id": "silhouette",
+    "label": "Silhouette",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/BlankMap-World.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:BlankMap-World.svg",
+    "sourceSha256": "88ae6cbcbe054c00455d16899724b348a102f49ff059bf7027c94e63b040e3e7",
+    "ops": {
+      "keepNodes": [
+        "6"
+      ],
+      "fill": "#D91023",
+      "viewBox": "673.169 692.546 113.838 171.189"
+    }
+  },
+  {
+    "teamId": "FLAG-CUBA",
+    "id": "primary",
+    "label": "National flag",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Cuba.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Cuba.svg",
+    "sourceSha256": "40bf19be4756ad71ee67f889b6c3880ac2114a105c608c9453d89a6064558886",
+    "ops": {
+      "viewBox": "-0.6 -0.6 31.2 16.2"
+    }
+  },
+  {
+    "teamId": "FLAG-CUBA",
+    "id": "silhouette",
+    "label": "Silhouette",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/BlankMap-World.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:BlankMap-World.svg",
+    "sourceSha256": "88ae6cbcbe054c00455d16899724b348a102f49ff059bf7027c94e63b040e3e7",
+    "ops": {
+      "keepNodes": [
+        "45"
+      ],
+      "fill": "#002A8F",
+      "viewBox": "663.466 494.639 86.657 35.659"
+    }
+  },
+  {
+    "teamId": "FLAG-HAITI",
+    "id": "primary",
+    "label": "National flag",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Haiti.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Haiti.svg",
+    "sourceSha256": "3512c10d45823289a610da6477788847578e6ea9b70328bcc25e0d4cbef42dcb",
+    "ops": {
+      "viewBox": "-20 -20 1040 640"
+    }
+  },
+  {
+    "teamId": "FLAG-HAITI",
+    "id": "silhouette",
+    "label": "Silhouette",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/BlankMap-World.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:BlankMap-World.svg",
+    "sourceSha256": "88ae6cbcbe054c00455d16899724b348a102f49ff059bf7027c94e63b040e3e7",
+    "ops": {
+      "keepNodes": [
+        "91"
+      ],
+      "fill": "#D21034",
+      "viewBox": "738.669 523.851 25.818 20.634"
+    }
+  },
+  {
+    "teamId": "FLAG-PANAMA",
+    "id": "primary",
+    "label": "National flag",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Panama.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Panama.svg",
+    "sourceSha256": "464fc8f974b506c5a8353899dba96d68154f2f991a5a9319f68184be86c31556",
+    "ops": {
+      "viewBox": "-0.24 -0.24 12.48 8.48"
+    }
+  },
+  {
+    "teamId": "FLAG-PANAMA",
+    "id": "silhouette",
+    "label": "Silhouette",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/BlankMap-World.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:BlankMap-World.svg",
+    "sourceSha256": "88ae6cbcbe054c00455d16899724b348a102f49ff059bf7027c94e63b040e3e7",
+    "ops": {
+      "keepNodes": [
+        "74"
+      ],
+      "fill": "#072357",
+      "viewBox": "666.199 613.173 48.611 25.360"
+    }
+  },
+  {
+    "teamId": "FLAG-HONDURAS",
+    "id": "primary",
+    "label": "National flag",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Honduras.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Honduras.svg",
+    "sourceSha256": "9b16a4626ae4f9a4f352b8ab1083643ada57eb3b92b5bc265ca4db4c47f3f772",
+    "ops": {
+      "viewBox": "-1.44 -1.44 74.88 38.88"
+    }
+  },
+  {
+    "teamId": "FLAG-HONDURAS",
+    "id": "silhouette",
+    "label": "Silhouette",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/BlankMap-World.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:BlankMap-World.svg",
+    "sourceSha256": "88ae6cbcbe054c00455d16899724b348a102f49ff059bf7027c94e63b040e3e7",
+    "ops": {
+      "keepNodes": [
+        "121"
+      ],
+      "fill": "#0D3B99",
+      "viewBox": "622.726 554.498 51.404 33.895"
+    }
+  },
+  {
+    "teamId": "FLAG-TT",
+    "id": "primary",
+    "label": "National flag",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Trinidad_and_Tobago.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Trinidad_and_Tobago.svg",
+    "sourceSha256": "71f6d39d7ea27b3201321eec6a22b3529f9ba96d2acd59e440c6484873121baa",
+    "ops": {
+      "viewBox": "-0.6 -0.6 31.2 19.2"
+    }
+  },
+  {
+    "teamId": "FLAG-BAHAMAS",
+    "id": "primary",
+    "label": "National flag",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_the_Bahamas.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_the_Bahamas.svg",
+    "sourceSha256": "6d4af8fbc02510698da025adad4b03f73085e1b9a50ad48928cb4b6807cfcba3",
+    "ops": {
+      "viewBox": "-0.12 -0.12 6.24 3.24"
+    }
+  },
+  {
+    "teamId": "FLAG-BARBADOS",
+    "id": "primary",
+    "label": "National flag",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Barbados.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Barbados.svg",
+    "sourceSha256": "85ba0b3ff5f7b7a296aa4c41914f82ff70b6be9822e19c75d5ed0b2746496ff6",
+    "ops": {
+      "viewBox": "-480 -480 24960 16960"
+    }
+  },
+  {
+    "teamId": "FLAG-UK",
+    "id": "primary",
+    "label": "National flag",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_the_United_Kingdom.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_the_United_Kingdom.svg",
+    "sourceSha256": "b93bb15033d6c2219f290121d40c0a741765bd4b077ebcf5a5b0d917ff725a28",
+    "ops": {
+      "viewBox": "-1 -1 52 32"
+    }
+  },
+  {
+    "teamId": "FLAG-UK",
+    "id": "silhouette",
+    "label": "Silhouette",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/BlankMap-World.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:BlankMap-World.svg",
+    "sourceSha256": "88ae6cbcbe054c00455d16899724b348a102f49ff059bf7027c94e63b040e3e7",
+    "ops": {
+      "keepNodes": [
+        "76"
+      ],
+      "fill": "#012169",
+      "viewBox": "1257.055 175.392 70.049 95.972"
+    }
+  },
+  {
+    "teamId": "FLAG-TURKEY",
+    "id": "primary",
+    "label": "National flag",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Turkey.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Turkey.svg",
+    "sourceSha256": "5a47e932cdb371d9708d8c9a209d3acfd006cdd3ee7dd38ae44df6180e170e90",
+    "ops": {
+      "viewBox": "-1800 -31800 93600 63600"
+    }
+  },
+  {
+    "teamId": "FLAG-TURKEY",
+    "id": "silhouette",
+    "label": "Silhouette",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/BlankMap-World.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:BlankMap-World.svg",
+    "sourceSha256": "88ae6cbcbe054c00455d16899724b348a102f49ff059bf7027c94e63b040e3e7",
+    "ops": {
+      "keepNodes": [
+        "40"
+      ],
+      "fill": "#E30A17",
+      "viewBox": "1481.338 328.485 149.364 65.431"
+    }
+  },
+  {
+    "teamId": "FLAG-GREECE",
+    "id": "primary",
+    "label": "National flag",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Greece.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Greece.svg",
+    "sourceSha256": "d65b82614f0cd167a767abfda1abc1ef99e87ef48e5755f3d33e4526e3cad365",
+    "ops": {
+      "viewBox": "-0.54 -0.54 28.08 19.08"
+    }
+  },
+  {
+    "teamId": "FLAG-GREECE",
+    "id": "silhouette",
+    "label": "Silhouette",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/BlankMap-World.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:BlankMap-World.svg",
+    "sourceSha256": "88ae6cbcbe054c00455d16899724b348a102f49ff059bf7027c94e63b040e3e7",
+    "ops": {
+      "keepNodes": [
+        "136"
+      ],
+      "fill": "#0D5EAF",
+      "viewBox": "1442.570 334.610 67.489 64.507"
+    }
+  },
+  {
+    "teamId": "FLAG-ITALY",
+    "id": "primary",
+    "label": "National flag",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Italy.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Italy.svg",
+    "sourceSha256": "c939e50605c5a08df1aaf19818f74d2919a9d3c3b7aa7cd90520b8bfc9c5dddc",
+    "ops": {
+      "viewBox": "-0.06 -0.06 3.12 2.12"
+    }
+  },
+  {
+    "teamId": "FLAG-ITALY",
+    "id": "silhouette",
+    "label": "Silhouette",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/BlankMap-World.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:BlankMap-World.svg",
+    "sourceSha256": "88ae6cbcbe054c00455d16899724b348a102f49ff059bf7027c94e63b040e3e7",
+    "ops": {
+      "keepNodes": [
+        "31"
+      ],
+      "fill": "#009246",
+      "viewBox": "1350.067 288.380 90.267 96.480"
+    }
+  },
+  {
+    "teamId": "FLAG-FRANCE",
+    "id": "primary",
+    "label": "National flag",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_France.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_France.svg",
+    "sourceSha256": "e949902c7677422d88137d385b9edbe91323470c7933824cc968aca3965fc37c",
+    "ops": {
+      "viewBox": "-18 -18 936 636"
+    }
+  },
+  {
+    "teamId": "FLAG-FRANCE",
+    "id": "silhouette",
+    "label": "Silhouette",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/BlankMap-World.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:BlankMap-World.svg",
+    "sourceSha256": "88ae6cbcbe054c00455d16899724b348a102f49ff059bf7027c94e63b040e3e7",
+    "ops": {
+      "keepNodes": [
+        "155/1"
+      ],
+      "fill": "#002654",
+      "viewBox": "1273.564 254.043 104.652 90.733"
+    }
+  },
+  {
+    "teamId": "FLAG-GERMANY",
+    "id": "primary",
+    "label": "National flag",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Germany.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Germany.svg",
+    "sourceSha256": "44a4580e94ae11037b8983e43e37a220e72f884217dba5b33a94309db2dcd88b",
+    "ops": {
+      "viewBox": "-0.1 -0.1 5.2 3.2"
+    }
+  },
+  {
+    "teamId": "FLAG-GERMANY",
+    "id": "silhouette",
+    "label": "Silhouette",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/BlankMap-World.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:BlankMap-World.svg",
+    "sourceSha256": "88ae6cbcbe054c00455d16899724b348a102f49ff059bf7027c94e63b040e3e7",
+    "ops": {
+      "keepNodes": [
+        "51"
+      ],
+      "fill": "#DD0000",
+      "viewBox": "1347.008 223.688 66.214 69.449"
+    }
+  },
+  {
+    "teamId": "FLAG-SPAIN",
+    "id": "primary",
+    "label": "National flag",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Spain.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Spain.svg",
+    "sourceSha256": "af0b860424a9bd6af63dce070d7f7cb4c7b490c6269fc1cd4f35c45679a20500",
+    "ops": {
+      "viewBox": "-15 -15 780 530"
+    }
+  },
+  {
+    "teamId": "FLAG-SPAIN",
+    "id": "silhouette",
+    "label": "Silhouette",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/BlankMap-World.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:BlankMap-World.svg",
+    "sourceSha256": "88ae6cbcbe054c00455d16899724b348a102f49ff059bf7027c94e63b040e3e7",
+    "ops": {
+      "keepNodes": [
+        "114/1",
+        "114/9-12"
+      ],
+      "fill": "#AD1519",
+      "viewBox": "1239.641 315.873 100.958 75.027"
+    }
+  },
+  {
+    "teamId": "FLAG-PORTUGAL",
+    "id": "primary",
+    "label": "National flag",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Portugal.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Portugal.svg",
+    "sourceSha256": "20ddeda8a3c2960f6d8d7cf88cec827aad537143431a0828e789f55d0cd923ce",
+    "ops": {
+      "viewBox": "-12 -12 624 424"
+    }
+  },
+  {
+    "teamId": "FLAG-PORTUGAL",
+    "id": "silhouette",
+    "label": "Silhouette",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/BlankMap-World.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:BlankMap-World.svg",
+    "sourceSha256": "88ae6cbcbe054c00455d16899724b348a102f49ff059bf7027c94e63b040e3e7",
+    "ops": {
+      "keepNodes": [
+        "47/1"
+      ],
+      "fill": "#006600",
+      "viewBox": "1236.116 332.363 30.028 47.897"
+    }
+  },
+  {
+    "teamId": "FLAG-NL",
+    "id": "primary",
+    "label": "National flag",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_the_Netherlands.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_the_Netherlands.svg",
+    "sourceSha256": "9c2a624a9ca5a82940d8902a7b818230d7bc2efde991837d6f78bc78c1b27110",
+    "ops": {
+      "viewBox": "-0.18 -0.18 9.36 6.36"
+    }
+  },
+  {
+    "teamId": "FLAG-NL",
+    "id": "silhouette",
+    "label": "Silhouette",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/BlankMap-World.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:BlankMap-World.svg",
+    "sourceSha256": "88ae6cbcbe054c00455d16899724b348a102f49ff059bf7027c94e63b040e3e7",
+    "ops": {
+      "keepNodes": [
+        "156/1"
+      ],
+      "fill": "#AE1C28",
+      "viewBox": "1332.294 237.620 27.961 24.872"
+    }
+  },
+  {
+    "teamId": "FLAG-IRELAND",
+    "id": "primary",
+    "label": "National flag",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Ireland.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Ireland.svg",
+    "sourceSha256": "96c46e68d8588fd10d30bcb3ff7b9ab4ffb08c41902aa5455c99722bce676e69",
+    "ops": {
+      "viewBox": "-24 -24 1248 648"
+    }
+  },
+  {
+    "teamId": "FLAG-IRELAND",
+    "id": "silhouette",
+    "label": "Silhouette",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/BlankMap-World.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:BlankMap-World.svg",
+    "sourceSha256": "88ae6cbcbe054c00455d16899724b348a102f49ff059bf7027c94e63b040e3e7",
+    "ops": {
+      "keepNodes": [
+        "80"
+      ],
+      "fill": "#169B62",
+      "viewBox": "1241.305 222.028 33.900 34.691"
+    }
+  },
+  {
+    "teamId": "FLAG-SWEDEN",
+    "id": "primary",
+    "label": "National flag",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Sweden.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Sweden.svg",
+    "sourceSha256": "350fa9d5023de2ed2fd7fd0f9d0de04e25551d6154aab859949bb7c81543f10b",
+    "ops": {
+      "viewBox": "-0.16 -0.16 8.32 5.32"
+    }
+  },
+  {
+    "teamId": "FLAG-SWEDEN",
+    "id": "silhouette",
+    "label": "Silhouette",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/BlankMap-World.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:BlankMap-World.svg",
+    "sourceSha256": "88ae6cbcbe054c00455d16899724b348a102f49ff059bf7027c94e63b040e3e7",
+    "ops": {
+      "keepNodes": [
+        "39"
+      ],
+      "fill": "#005293",
+      "viewBox": "1379.125 111.481 83.890 116.772"
+    }
+  },
+  {
+    "teamId": "FLAG-NORWAY",
+    "id": "primary",
+    "label": "National flag",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Norway.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Norway.svg",
+    "sourceSha256": "be906b906b9063a909154d9bae757ef6aa5927c67f678200d4e846101b1adc09",
+    "ops": {
+      "viewBox": "-0.44 -0.44 22.88 16.88"
+    }
+  },
+  {
+    "teamId": "FLAG-NORWAY",
+    "id": "silhouette",
+    "label": "Silhouette",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/BlankMap-World.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:BlankMap-World.svg",
+    "sourceSha256": "88ae6cbcbe054c00455d16899724b348a102f49ff059bf7027c94e63b040e3e7",
+    "ops": {
+      "keepNodes": [
+        "141/3-80"
+      ],
+      "fill": "#BA0C2F",
+      "viewBox": "1340.153 95.026 158.674 112.733"
+    }
+  },
+  {
+    "teamId": "FLAG-DENMARK",
+    "id": "primary",
+    "label": "National flag",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Denmark.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Denmark.svg",
+    "sourceSha256": "f27c3fa734ea66c662061219e8cc21f886cf36f798f822fca27e55c84afe8648",
+    "ops": {
+      "viewBox": "-0.74 -0.74 38.48 29.48"
+    }
+  },
+  {
+    "teamId": "FLAG-DENMARK",
+    "id": "silhouette",
+    "label": "Silhouette",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/BlankMap-World.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:BlankMap-World.svg",
+    "sourceSha256": "88ae6cbcbe054c00455d16899724b348a102f49ff059bf7027c94e63b040e3e7",
+    "ops": {
+      "keepNodes": [
+        "58"
+      ],
+      "fill": "#C8102E",
+      "viewBox": "1362.685 202.196 49.550 29.715"
+    }
+  },
+  {
+    "teamId": "FLAG-FINLAND",
+    "id": "primary",
+    "label": "National flag",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Finland.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Finland.svg",
+    "sourceSha256": "644a2d69b1a97f4e71b4a8341916a321ef9b2666774d3e12a7c0d95f56e7f2b3",
+    "ops": {
+      "viewBox": "-0.36 -0.36 18.72 11.72"
+    }
+  },
+  {
+    "teamId": "FLAG-FINLAND",
+    "id": "silhouette",
+    "label": "Silhouette",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/BlankMap-World.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:BlankMap-World.svg",
+    "sourceSha256": "88ae6cbcbe054c00455d16899724b348a102f49ff059bf7027c94e63b040e3e7",
+    "ops": {
+      "keepNodes": [
+        "69"
+      ],
+      "fill": "#002F6C",
+      "viewBox": "1431.780 105.840 76.529 84.771"
+    }
+  },
+  {
+    "teamId": "FLAG-SWISS",
+    "id": "primary",
+    "label": "National flag",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Switzerland.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Switzerland.svg",
+    "sourceSha256": "900a0befb655721c1b52b5ec2754f2f553f52b230443aaf016cc224e6a0707ce",
+    "ops": {
+      "viewBox": "-0.64 -0.64 33.28 33.28"
+    }
+  },
+  {
+    "teamId": "FLAG-SWISS",
+    "id": "silhouette",
+    "label": "Silhouette",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/BlankMap-World.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:BlankMap-World.svg",
+    "sourceSha256": "88ae6cbcbe054c00455d16899724b348a102f49ff059bf7027c94e63b040e3e7",
+    "ops": {
+      "keepNodes": [
+        "18"
+      ],
+      "fill": "#FF0000",
+      "viewBox": "1348.251 285.040 33.718 20.507"
+    }
+  },
+  {
+    "teamId": "FLAG-POLAND",
+    "id": "primary",
+    "label": "National flag",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Poland.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Poland.svg",
+    "sourceSha256": "c6a5131abfd6eede2c632b5b042e658266676fd072295acd4eaa6debd53755af",
+    "ops": {
+      "viewBox": "-0.16 -0.16 8.32 5.32"
+    }
+  },
+  {
+    "teamId": "FLAG-POLAND",
+    "id": "silhouette",
+    "label": "Silhouette",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/BlankMap-World.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:BlankMap-World.svg",
+    "sourceSha256": "88ae6cbcbe054c00455d16899724b348a102f49ff059bf7027c94e63b040e3e7",
+    "ops": {
+      "keepNodes": [
+        "83"
+      ],
+      "fill": "#DC143C",
+      "viewBox": "1401.224 224.380 71.971 54.239"
+    }
+  },
+  {
+    "teamId": "FLAG-UKRAINE",
+    "id": "primary",
+    "label": "National flag",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Ukraine.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Ukraine.svg",
+    "sourceSha256": "77e3eb29bbc7d4bae51f2e959d4ef4656eb1e34484cf772b4081a22f4af5256b",
+    "ops": {
+      "viewBox": "-24 -24 1248 848"
+    }
+  },
+  {
+    "teamId": "FLAG-UKRAINE",
+    "id": "silhouette",
+    "label": "Silhouette",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/BlankMap-World.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:BlankMap-World.svg",
+    "sourceSha256": "88ae6cbcbe054c00455d16899724b348a102f49ff059bf7027c94e63b040e3e7",
+    "ops": {
+      "keepNodes": [
+        "143"
+      ],
+      "fill": "#0057B7",
+      "viewBox": "1453.345 242.879 130.170 70.490"
+    }
+  },
+  {
+    "teamId": "FLAG-BELGIUM",
+    "id": "primary",
+    "label": "National flag",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Belgium.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Belgium.svg",
+    "sourceSha256": "95933c385c9e72479ec7e63f6cbca50d07695fd2e41fab334ea549c20b234fd1",
+    "ops": {
+      "viewBox": "-18 -18 936 816"
+    }
+  },
+  {
+    "teamId": "FLAG-BELGIUM",
+    "id": "silhouette",
+    "label": "Silhouette",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/BlankMap-World.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:BlankMap-World.svg",
+    "sourceSha256": "88ae6cbcbe054c00455d16899724b348a102f49ff059bf7027c94e63b040e3e7",
+    "ops": {
+      "keepNodes": [
+        "97"
+      ],
+      "fill": "#EF3340",
+      "viewBox": "1326.623 254.278 27.454 18.477"
+    }
+  },
+  {
+    "teamId": "FLAG-CROATIA",
+    "id": "primary",
+    "label": "National flag",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Croatia.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Croatia.svg",
+    "sourceSha256": "220af373c5701c4f4c09a6e1765305f571442940a3c921bd2daac483761b2a8f",
+    "ops": {
+      "viewBox": "-24 -24 1248 648"
+    }
+  },
+  {
+    "teamId": "FLAG-CROATIA",
+    "id": "silhouette",
+    "label": "Silhouette",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/BlankMap-World.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:BlankMap-World.svg",
+    "sourceSha256": "88ae6cbcbe054c00455d16899724b348a102f49ff059bf7027c94e63b040e3e7",
+    "ops": {
+      "keepNodes": [
+        "55"
+      ],
+      "fill": "#FF0000",
+      "viewBox": "1399.154 294.336 44.183 38.843"
+    }
+  },
+  {
+    "teamId": "FLAG-JAPAN",
+    "id": "primary",
+    "label": "National flag",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Japan.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Japan.svg",
+    "sourceSha256": "35e785339e19d1ec1987cb9c3d8e66fc97f29a287db0b0b590b8dfdd96d4766b",
+    "ops": {
+      "viewBox": "-18 -18 936 635.85"
+    }
+  },
+  {
+    "teamId": "FLAG-JAPAN",
+    "id": "chrysanthemum",
+    "label": "Imperial chrysanthemum",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Imperial_Seal_of_Japan.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Imperial_Seal_of_Japan.svg",
+    "sourceSha256": "ea846b3133efb6bd3a929fcf8522d959247d1105db028d3b5cd7b82e8cbb9ca3",
+    "ops": {
+      "viewBox": "-101.93 -101.93 203.861 203.861"
+    }
+  },
+  {
+    "teamId": "FLAG-JAPAN",
+    "id": "silhouette",
+    "label": "Silhouette",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/BlankMap-World.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:BlankMap-World.svg",
+    "sourceSha256": "88ae6cbcbe054c00455d16899724b348a102f49ff059bf7027c94e63b040e3e7",
+    "ops": {
+      "keepNodes": [
+        "43"
+      ],
+      "fill": "#BC002D",
+      "viewBox": "2216.427 298.209 107.886 197.727"
+    }
+  },
+  {
+    "teamId": "FLAG-KOREA",
+    "id": "primary",
+    "label": "National flag",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_South_Korea.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_South_Korea.svg",
+    "sourceSha256": "d8ec2a77a317c28617cbd5e7114c3ec9697120670e343ede5ee5bd0b1b4cd110",
+    "ops": {
+      "viewBox": "-74.88 -50.88 149.76 101.76"
+    }
+  },
+  {
+    "teamId": "FLAG-KOREA",
+    "id": "silhouette",
+    "label": "Silhouette",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/BlankMap-World.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:BlankMap-World.svg",
+    "sourceSha256": "88ae6cbcbe054c00455d16899724b348a102f49ff059bf7027c94e63b040e3e7",
+    "ops": {
+      "keepNodes": [
+        "120"
+      ],
+      "fill": "#CD2E3A",
+      "viewBox": "2203.111 362.597 34.879 51.822"
+    }
+  },
+  {
+    "teamId": "FLAG-AUS",
+    "id": "primary",
+    "label": "National flag",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Australia.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Australia.svg",
+    "sourceSha256": "8ccf95cf3507e88d10aa57a1e3b3853d72933c6784e6f67fe3cd3bf12ea68a4d",
+    "ops": {
+      "viewBox": "-201.6 -201.6 10483.2 5443.2"
+    }
+  },
+  {
+    "teamId": "FLAG-AUS",
+    "id": "silhouette",
+    "label": "Silhouette",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/BlankMap-World.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:BlankMap-World.svg",
+    "sourceSha256": "88ae6cbcbe054c00455d16899724b348a102f49ff059bf7027c94e63b040e3e7",
+    "ops": {
+      "keepNodes": [
+        "153/1-21"
+      ],
+      "fill": "#012169",
+      "viewBox": "2119.871 770.621 335.268 409.298"
+    }
+  },
+  {
+    "teamId": "FLAG-INDIA",
+    "id": "primary",
+    "label": "National flag",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_India.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_India.svg",
+    "sourceSha256": "95d7239707482165fbc0f685d5f493633639f16771c1fef9701f7ee66dcdf343",
+    "ops": {
+      "viewBox": "-46.8 -31.8 93.6 63.6"
+    }
+  },
+  {
+    "teamId": "FLAG-INDIA",
+    "id": "silhouette",
+    "label": "Silhouette",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/BlankMap-World.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:BlankMap-World.svg",
+    "sourceSha256": "88ae6cbcbe054c00455d16899724b348a102f49ff059bf7027c94e63b040e3e7",
+    "ops": {
+      "keepNodes": [
+        "93"
+      ],
+      "fill": "#FF9933",
+      "viewBox": "1800.639 381.598 231.092 268.405"
+    }
+  },
+  {
+    "teamId": "FLAG-CHINA",
+    "id": "primary",
+    "label": "National flag",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_the_People's_Republic_of_China.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_the_People's_Republic_of_China.svg",
+    "sourceSha256": "5fce7409cd290e6b3c5ecd09c0d2c400ae459e3d59c6c0539793ac0e803d0179",
+    "ops": {
+      "viewBox": "-18 -18 936 636"
+    }
+  },
+  {
+    "teamId": "FLAG-CHINA",
+    "id": "silhouette",
+    "label": "Silhouette",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/BlankMap-World.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:BlankMap-World.svg",
+    "sourceSha256": "88ae6cbcbe054c00455d16899724b348a102f49ff059bf7027c94e63b040e3e7",
+    "ops": {
+      "keepNodes": [
+        "154/1"
+      ],
+      "fill": "#EE1C25",
+      "viewBox": "1810.777 221.681 425.326 334.952"
+    }
+  },
+  {
+    "teamId": "FLAG-VIETNAM",
+    "id": "primary",
+    "label": "National flag",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Vietnam.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Vietnam.svg",
+    "sourceSha256": "175120e06bb95dda22133758395f352acb46433ff81eee449326db54e78af2c4",
+    "ops": {
+      "viewBox": "-0.6 -0.6 31.2 21.2"
+    }
+  },
+  {
+    "teamId": "FLAG-VIETNAM",
+    "id": "silhouette",
+    "label": "Silhouette",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/BlankMap-World.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:BlankMap-World.svg",
+    "sourceSha256": "88ae6cbcbe054c00455d16899724b348a102f49ff059bf7027c94e63b040e3e7",
+    "ops": {
+      "keepNodes": [
+        "89"
+      ],
+      "fill": "#DA251D",
+      "viewBox": "2060.482 491.117 76.216 139.260"
+    }
+  },
+  {
+    "teamId": "FLAG-PHIL",
+    "id": "primary",
+    "label": "National flag",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_the_Philippines.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_the_Philippines.svg",
+    "sourceSha256": "b0010e0b5f5945506e98b76f3469faf964c1ce30de75673186d303f9112b5454",
+    "ops": {
+      "viewBox": "-31.6 -48.6 187.2 97.2"
+    }
+  },
+  {
+    "teamId": "FLAG-PHIL",
+    "id": "silhouette",
+    "label": "Silhouette",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/BlankMap-World.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:BlankMap-World.svg",
+    "sourceSha256": "88ae6cbcbe054c00455d16899724b348a102f49ff059bf7027c94e63b040e3e7",
+    "ops": {
+      "keepNodes": [
+        "106"
+      ],
+      "fill": "#0038A8",
+      "viewBox": "2186.481 516.069 84.969 144.161"
+    }
+  },
+  {
+    "teamId": "FLAG-THAILAND",
+    "id": "primary",
+    "label": "National flag",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Thailand.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Thailand.svg",
+    "sourceSha256": "f137bb494e00c3c29e9d03fbf4d15c2650d82f2a8f02cf51341f6a4557117db9",
+    "ops": {
+      "viewBox": "-18 -18 936 636"
+    }
+  },
+  {
+    "teamId": "FLAG-THAILAND",
+    "id": "silhouette",
+    "label": "Silhouette",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/BlankMap-World.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:BlankMap-World.svg",
+    "sourceSha256": "88ae6cbcbe054c00455d16899724b348a102f49ff059bf7027c94e63b040e3e7",
+    "ops": {
+      "keepNodes": [
+        "52"
+      ],
+      "fill": "#A51931",
+      "viewBox": "2029.229 515.363 77.312 139.342"
+    }
+  },
+  {
+    "teamId": "FLAG-PAKISTAN",
+    "id": "primary",
+    "label": "National flag",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Pakistan.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Pakistan.svg",
+    "sourceSha256": "d6ace20003ef4172b2cb2f090614f06602fb139a900cd1c65c4f8cc17367bc37",
+    "ops": {
+      "viewBox": "-77.4 -42.4 124.8 84.8"
+    }
+  },
+  {
+    "teamId": "FLAG-PAKISTAN",
+    "id": "silhouette",
+    "label": "Silhouette",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/BlankMap-World.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:BlankMap-World.svg",
+    "sourceSha256": "88ae6cbcbe054c00455d16899724b348a102f49ff059bf7027c94e63b040e3e7",
+    "ops": {
+      "keepNodes": [
+        "10/1"
+      ],
+      "fill": "#01411C",
+      "viewBox": "1745.603 372.427 123.584 125.205"
+    }
+  },
+  {
+    "teamId": "FLAG-BANGLA",
+    "id": "primary",
+    "label": "National flag",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Bangladesh.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Bangladesh.svg",
+    "sourceSha256": "453b90fee62df5770d9610e8ba99e047f63f986a027cc071f2a90d79c8012150",
+    "ops": {
+      "viewBox": "-0.2 -0.2 10.4 6.4"
+    }
+  },
+  {
+    "teamId": "FLAG-BANGLA",
+    "id": "silhouette",
+    "label": "Silhouette",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/BlankMap-World.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:BlankMap-World.svg",
+    "sourceSha256": "88ae6cbcbe054c00455d16899724b348a102f49ff059bf7027c94e63b040e3e7",
+    "ops": {
+      "keepNodes": [
+        "34"
+      ],
+      "fill": "#006747",
+      "viewBox": "1953.250 466.404 44.930 54.275"
+    }
+  },
+  {
+    "teamId": "FLAG-INDO",
+    "id": "primary",
+    "label": "National flag",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Indonesia.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Indonesia.svg",
+    "sourceSha256": "2ab57d2d418baba7b0ff55729435d0c780ca52a98b754f92d44e96cd1399dae5",
+    "ops": {
+      "viewBox": "-18 -18 936 636"
+    }
+  },
+  {
+    "teamId": "FLAG-INDO",
+    "id": "silhouette",
+    "label": "Silhouette",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/BlankMap-World.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:BlankMap-World.svg",
+    "sourceSha256": "88ae6cbcbe054c00455d16899724b348a102f49ff059bf7027c94e63b040e3e7",
+    "ops": {
+      "keepNodes": [
+        "11"
+      ],
+      "fill": "#FF0000",
+      "viewBox": "2009.140 633.192 382.871 174.129"
+    }
+  },
+  {
+    "teamId": "FLAG-NZ",
+    "id": "primary",
+    "label": "National flag",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_New_Zealand.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_New_Zealand.svg",
+    "sourceSha256": "e4b1bc62d8283cbefc000b9538d6cb58019b18651bb9e0818ccaffa9ed8716f1",
+    "ops": {
+      "viewBox": "-24 -24 1248 648"
+    }
+  },
+  {
+    "teamId": "FLAG-NZ",
+    "id": "silhouette",
+    "label": "Silhouette",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/BlankMap-World.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:BlankMap-World.svg",
+    "sourceSha256": "88ae6cbcbe054c00455d16899724b348a102f49ff059bf7027c94e63b040e3e7",
+    "ops": {
+      "keepNodes": [
+        "44/2-9"
+      ],
+      "fill": "#012169",
+      "viewBox": "2435.822 990.772 146.815 121.025"
+    }
+  },
+  {
+    "teamId": "FLAG-SG",
+    "id": "primary",
+    "label": "National flag",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Singapore.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Singapore.svg",
+    "sourceSha256": "261a4507c08c834e8e335ae147bde951010d92ef05330ff39f0d0eb713d2f617",
+    "ops": {
+      "viewBox": "-1.08 -1.08 56.16 38.16"
+    }
+  },
+  {
+    "teamId": "FLAG-MALAYSIA",
+    "id": "primary",
+    "label": "National flag",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Malaysia.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Malaysia.svg",
+    "sourceSha256": "53b0aa224ba67a2d32be58aab6eb2e4395ac3df66e62692ac83a30bc296ee3a2",
+    "ops": {
+      "viewBox": "-268.8 -268.8 13977.6 7257.6"
+    }
+  },
+  {
+    "teamId": "FLAG-MALAYSIA",
+    "id": "silhouette",
+    "label": "Silhouette",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/BlankMap-World.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:BlankMap-World.svg",
+    "sourceSha256": "88ae6cbcbe054c00455d16899724b348a102f49ff059bf7027c94e63b040e3e7",
+    "ops": {
+      "keepNodes": [
+        "105"
+      ],
+      "fill": "#000066",
+      "viewBox": "2054.882 628.343 164.095 69.232"
+    }
+  },
+  {
+    "teamId": "FLAG-NEPAL",
+    "id": "primary",
+    "label": "National flag",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Nepal.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Nepal.svg",
+    "sourceSha256": "98b33ea847a3f6e6f21c777423acc9d80512a85f858d967ceaf56d206c10be1e",
+    "ops": {
+      "viewBox": "-19.013 -6.095 74.433 90.108"
+    }
+  },
+  {
+    "teamId": "FLAG-NEPAL",
+    "id": "silhouette",
+    "label": "Silhouette",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/BlankMap-World.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:BlankMap-World.svg",
+    "sourceSha256": "88ae6cbcbe054c00455d16899724b348a102f49ff059bf7027c94e63b040e3e7",
+    "ops": {
+      "keepNodes": [
+        "144"
+      ],
+      "fill": "#DC143C",
+      "viewBox": "1889.732 432.519 69.055 40.860"
+    }
+  },
+  {
+    "teamId": "FLAG-NIGERIA",
+    "id": "primary",
+    "label": "National flag",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Nigeria.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Nigeria.svg",
+    "sourceSha256": "29a8a7fff1ca574873f953e086753bb2f90be55c3efac5c91f829b1a1c6c01be",
+    "ops": {
+      "viewBox": "-0.12 -0.12 6.24 3.24"
+    }
+  },
+  {
+    "teamId": "FLAG-NIGERIA",
+    "id": "silhouette",
+    "label": "Silhouette",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/BlankMap-World.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:BlankMap-World.svg",
+    "sourceSha256": "88ae6cbcbe054c00455d16899724b348a102f49ff059bf7027c94e63b040e3e7",
+    "ops": {
+      "keepNodes": [
+        "81"
+      ],
+      "fill": "#008751",
+      "viewBox": "1317.028 574.443 100.753 91.872"
+    }
+  },
+  {
+    "teamId": "FLAG-GHANA",
+    "id": "primary",
+    "label": "National flag",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Ghana.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Ghana.svg",
+    "sourceSha256": "777bffbb84309fece123a7f27fdf2c566556b829440a7919d5a9d813d5dc1122",
+    "ops": {
+      "viewBox": "-18 -18 936 636"
+    }
+  },
+  {
+    "teamId": "FLAG-GHANA",
+    "id": "silhouette",
+    "label": "Silhouette",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/BlankMap-World.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:BlankMap-World.svg",
+    "sourceSha256": "88ae6cbcbe054c00455d16899724b348a102f49ff059bf7027c94e63b040e3e7",
+    "ops": {
+      "keepNodes": [
+        "37"
+      ],
+      "fill": "#CE1126",
+      "viewBox": "1273.660 599.721 38.561 60.220"
+    }
+  },
+  {
+    "teamId": "FLAG-KENYA",
+    "id": "primary",
+    "label": "National flag",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Kenya.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Kenya.svg",
+    "sourceSha256": "4e750d2b4aba128580e40052630883aee27419dcbd87ea44a4ede609e7c42a1b",
+    "ops": {
+      "viewBox": "-124.8 -84.8 249.6 169.6"
+    }
+  },
+  {
+    "teamId": "FLAG-KENYA",
+    "id": "silhouette",
+    "label": "Silhouette",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/BlankMap-World.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:BlankMap-World.svg",
+    "sourceSha256": "88ae6cbcbe054c00455d16899724b348a102f49ff059bf7027c94e63b040e3e7",
+    "ops": {
+      "keepNodes": [
+        "22"
+      ],
+      "fill": "#BB0000",
+      "viewBox": "1555.236 654.832 68.557 87.577"
+    }
+  },
+  {
+    "teamId": "FLAG-ETHIOPIA",
+    "id": "primary",
+    "label": "National flag",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Ethiopia.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Ethiopia.svg",
+    "sourceSha256": "f1feaa7f773dfaf2e95787788922d4e4c768170fb3764860a26ec548a2acbd05",
+    "ops": {
+      "viewBox": "-24 -24 1248 648"
+    }
+  },
+  {
+    "teamId": "FLAG-ETHIOPIA",
+    "id": "silhouette",
+    "label": "Silhouette",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/BlankMap-World.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:BlankMap-World.svg",
+    "sourceSha256": "88ae6cbcbe054c00455d16899724b348a102f49ff059bf7027c94e63b040e3e7",
+    "ops": {
+      "keepNodes": [
+        "63"
+      ],
+      "fill": "#078930",
+      "viewBox": "1547.491 565.221 123.368 108.425"
+    }
+  },
+  {
+    "teamId": "FLAG-RSA",
+    "id": "primary",
+    "label": "National flag",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_South_Africa.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_South_Africa.svg",
+    "sourceSha256": "90a3147fd9e2f81d659d247d7aa518b138901f73505bd72c1e6668178f749815",
+    "ops": {
+      "viewBox": "-1.8 -1.8 93.6 63.6"
+    }
+  },
+  {
+    "teamId": "FLAG-RSA",
+    "id": "silhouette",
+    "label": "Silhouette",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/BlankMap-World.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:BlankMap-World.svg",
+    "sourceSha256": "88ae6cbcbe054c00455d16899724b348a102f49ff059bf7027c94e63b040e3e7",
+    "ops": {
+      "keepNodes": [
+        "85"
+      ],
+      "fill": "#007749",
+      "viewBox": "1419.918 884.749 130.993 119.882"
+    }
+  },
+  {
+    "teamId": "FLAG-EGYPT",
+    "id": "primary",
+    "label": "National flag",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Egypt.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Egypt.svg",
+    "sourceSha256": "a285f98d7a785979ed8c74652506dc180055f1035d4812e2eaf442c8eb3096e0",
+    "ops": {
+      "viewBox": "-18 -18 936 636"
+    }
+  },
+  {
+    "teamId": "FLAG-EGYPT",
+    "id": "silhouette",
+    "label": "Silhouette",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/BlankMap-World.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:BlankMap-World.svg",
+    "sourceSha256": "88ae6cbcbe054c00455d16899724b348a102f49ff059bf7027c94e63b040e3e7",
+    "ops": {
+      "keepNodes": [
+        "86"
+      ],
+      "fill": "#C8102E",
+      "viewBox": "1480.415 421.259 92.350 93.018"
+    }
+  },
+  {
+    "teamId": "FLAG-MOROCCO",
+    "id": "primary",
+    "label": "National flag",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Morocco.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Morocco.svg",
+    "sourceSha256": "576f97976dfd505c002d39b34eeef0f95f29e6396e26870b0a3887d7bb8e42b4",
+    "ops": {
+      "viewBox": "-1800 -1800 93600 63600"
+    }
+  },
+  {
+    "teamId": "FLAG-MOROCCO",
+    "id": "silhouette",
+    "label": "Silhouette",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/BlankMap-World.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:BlankMap-World.svg",
+    "sourceSha256": "88ae6cbcbe054c00455d16899724b348a102f49ff059bf7027c94e63b040e3e7",
+    "ops": {
+      "keepNodes": [
+        "125/0"
+      ],
+      "fill": "#C1272D",
+      "viewBox": "1202.091 384.001 99.193 78.870"
+    }
+  },
+  {
+    "teamId": "FLAG-SAUDI",
+    "id": "primary",
+    "label": "National flag",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Saudi_Arabia.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Saudi_Arabia.svg",
+    "sourceSha256": "b0b36326e3e5b74624ee8b5de8273ea00f7bbe9b5ba0da6250cbe7b3c637505e",
+    "ops": {
+      "viewBox": "-18 -18 936 636"
+    }
+  },
+  {
+    "teamId": "FLAG-SAUDI",
+    "id": "silhouette",
+    "label": "Silhouette",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/BlankMap-World.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:BlankMap-World.svg",
+    "sourceSha256": "88ae6cbcbe054c00455d16899724b348a102f49ff059bf7027c94e63b040e3e7",
+    "ops": {
+      "keepNodes": [
+        "88"
+      ],
+      "fill": "#005430",
+      "viewBox": "1551.630 414.110 173.610 149.300"
+    }
+  },
+  {
+    "teamId": "FLAG-ISRAEL",
+    "id": "primary",
+    "label": "National flag",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Israel.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Israel.svg",
+    "sourceSha256": "a5732410968d238f8a506a455bd7be7fea2908d0abcf638020fbe7b58bd4ad2f",
+    "ops": {
+      "viewBox": "-22 -22 1144 844"
+    }
+  },
+  {
+    "teamId": "FLAG-ISRAEL",
+    "id": "silhouette",
+    "label": "Silhouette",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/BlankMap-World.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:BlankMap-World.svg",
+    "sourceSha256": "88ae6cbcbe054c00455d16899724b348a102f49ff059bf7027c94e63b040e3e7",
+    "ops": {
+      "keepNodes": [
+        "132/1"
+      ],
+      "fill": "#0038B8",
+      "viewBox": "1552.554 409.213 12.993 35.540"
+    }
+  },
+  {
+    "teamId": "FLAG-UAE",
+    "id": "primary",
+    "label": "National flag",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_the_United_Arab_Emirates.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_the_United_Arab_Emirates.svg",
+    "sourceSha256": "2eb3d53df8f3f845dfafff448fb165647c8e3ed2b2f08296af1080fece92ad35",
+    "ops": {
+      "viewBox": "-0.24 -0.24 12.48 6.48"
+    }
+  },
+  {
+    "teamId": "FLAG-UAE",
+    "id": "silhouette",
+    "label": "Silhouette",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/BlankMap-World.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:BlankMap-World.svg",
+    "sourceSha256": "88ae6cbcbe054c00455d16899724b348a102f49ff059bf7027c94e63b040e3e7",
+    "ops": {
+      "keepNodes": [
+        "25"
+      ],
+      "fill": "#00843D",
+      "viewBox": "1685.012 471.601 39.107 32.819"
+    }
+  },
+  {
+    "teamId": "FLAG-SENEGAL",
+    "id": "primary",
+    "label": "National flag",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Senegal.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Senegal.svg",
+    "sourceSha256": "c9fb30d11cf7e230ee44d5cf663b7dce52a11c58798155b37fabec4158441497",
+    "ops": {
+      "viewBox": "-18 -18 936 636"
+    }
+  },
+  {
+    "teamId": "FLAG-SENEGAL",
+    "id": "silhouette",
+    "label": "Silhouette",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/BlankMap-World.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:BlankMap-World.svg",
+    "sourceSha256": "88ae6cbcbe054c00455d16899724b348a102f49ff059bf7027c94e63b040e3e7",
+    "ops": {
+      "keepNodes": [
+        "112"
+      ],
+      "fill": "#00853F",
+      "viewBox": "1166.898 551.382 50.004 42.634"
+    }
+  },
+  {
+    "teamId": "FLAG-CAMEROON",
+    "id": "primary",
+    "label": "National flag",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Cameroon.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Cameroon.svg",
+    "sourceSha256": "858909de3843d2a3755820310e57ebac2a442fba116f2dcda35e14659eff153e",
+    "ops": {
+      "viewBox": "-0.18 -0.18 9.36 6.36"
+    }
+  },
+  {
+    "teamId": "FLAG-CAMEROON",
+    "id": "silhouette",
+    "label": "Silhouette",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/BlankMap-World.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:BlankMap-World.svg",
+    "sourceSha256": "88ae6cbcbe054c00455d16899724b348a102f49ff059bf7027c94e63b040e3e7",
+    "ops": {
+      "keepNodes": [
+        "19"
+      ],
+      "fill": "#007A5E",
+      "viewBox": "1360.930 581.302 67.581 106.930"
+    }
+  },
+  {
+    "teamId": "FLAG-TANZANIA",
+    "id": "primary",
+    "label": "National flag",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Tanzania.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Tanzania.svg",
+    "sourceSha256": "88760e4ce561a916b6cb71688301e6bb07844843833ce63b18974916d2a6d0c1",
+    "ops": {
+      "viewBox": "-1.44 -1.44 74.88 50.88"
+    }
+  },
+  {
+    "teamId": "FLAG-TANZANIA",
+    "id": "silhouette",
+    "label": "Silhouette",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/BlankMap-World.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:BlankMap-World.svg",
+    "sourceSha256": "88ae6cbcbe054c00455d16899724b348a102f49ff059bf7027c94e63b040e3e7",
+    "ops": {
+      "keepNodes": [
+        "87"
+      ],
+      "fill": "#1EB53A",
+      "viewBox": "1522.477 702.895 90.615 101.590"
+    }
+  },
+  {
+    "teamId": "FLAG-ALGERIA",
+    "id": "primary",
+    "label": "National flag",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Algeria.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Algeria.svg",
+    "sourceSha256": "35fe9924da28ee1efefce8c62f18d88fb890c1fbb247040d92291eb89bcd83d7",
+    "ops": {
+      "viewBox": "-18 -18 936 636"
+    }
+  },
+  {
+    "teamId": "FLAG-ALGERIA",
+    "id": "silhouette",
+    "label": "Silhouette",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/BlankMap-World.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:BlankMap-World.svg",
+    "sourceSha256": "88ae6cbcbe054c00455d16899724b348a102f49ff059bf7027c94e63b040e3e7",
+    "ops": {
+      "keepNodes": [
+        "17"
+      ],
+      "fill": "#006633",
+      "viewBox": "1232.513 370.734 165.885 171.378"
+    }
+  },
+  {
+    "teamId": "FLAG-TX",
+    "id": "primary",
+    "label": "State flag",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Texas.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Texas.svg",
+    "sourceSha256": "33b9a4dce7b11a8052e3d0dad2f046dbeacc8e4dff624efb2cd6ee9ec21003f1",
+    "ops": {
+      "viewBox": "-18 -18 936 635.85"
+    }
+  },
+  {
+    "teamId": "FLAG-TX",
+    "id": "flag-map",
+    "label": "Flag-filled state outline",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Texas_flag_map.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Texas_flag_map.svg",
+    "sourceSha256": "c98d512b0c65f1a2a8161d18d260218c2107a878487e14159f643583f900ce6b",
+    "ops": {
+      "viewBox": "-23.219 -23.057 1202.438 1173.388"
+    }
+  },
+  {
+    "teamId": "FLAG-TX",
+    "id": "silhouette",
+    "label": "Silhouette",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Blank_US_Map_(states_only).svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Blank_US_Map_(states_only).svg",
+    "sourceSha256": "2279580797b53481b29fc168145129db926c21f91d4bc6d82c04e9801bdf932f",
+    "ops": {
+      "keepNodes": [
+        "2/42"
+      ],
+      "fill": "#00205B",
+      "viewBox": "272.520 323.120 264.060 258.760"
+    }
+  },
+  {
+    "teamId": "FLAG-CALI",
+    "id": "primary",
+    "label": "State flag",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_California.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_California.svg",
+    "sourceSha256": "f821e8533fe9fd1564b4972938c62dbce9ddeefe1a67a430b651eafb2571fe00",
+    "ops": {
+      "removeNodes": [
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "20",
+        "21"
+      ],
+      "viewBox": "-18 -18 936 636"
+    }
+  },
+  {
+    "teamId": "FLAG-CALI",
+    "id": "silhouette",
+    "label": "Silhouette",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Blank_US_Map_(states_only).svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Blank_US_Map_(states_only).svg",
+    "sourceSha256": "2279580797b53481b29fc168145129db926c21f91d4bc6d82c04e9801bdf932f",
+    "ops": {
+      "keepNodes": [
+        "2/4"
+      ],
+      "fill": "#BF0A30",
+      "viewBox": "4.412 138.312 159.876 258.876"
+    }
+  },
+  {
+    "teamId": "FLAG-GA",
+    "id": "primary",
+    "label": "State flag",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Georgia_(U.S._state).svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Georgia_(U.S._state).svg",
+    "sourceSha256": "91b6e797d19ed88ebf883e224359f917ca1c9f04ce2e2c766be28c150d228cec",
+    "ops": {
+      "viewBox": "-138.24 -138.24 7188.48 4596.48"
+    }
+  },
+  {
+    "teamId": "FLAG-GA",
+    "id": "silhouette",
+    "label": "Silhouette",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Blank_US_Map_(states_only).svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Blank_US_Map_(states_only).svg",
+    "sourceSha256": "2279580797b53481b29fc168145129db926c21f91d4bc6d82c04e9801bdf932f",
+    "ops": {
+      "keepNodes": [
+        "2/9"
+      ],
+      "fill": "#BF0A30",
+      "viewBox": "662.632 351.232 103.136 107.136"
+    }
+  },
+  {
+    "teamId": "FLAG-AZ",
+    "id": "primary",
+    "label": "State flag",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Arizona.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Arizona.svg",
+    "sourceSha256": "8c9e75cabd5bcc04557e60feee64f2b03e6e36658df2ae7258faeb2b6208ddf6",
+    "ops": {
+      "viewBox": "-299.52 -203.52 599.04 407.04"
+    }
+  },
+  {
+    "teamId": "FLAG-AZ",
+    "id": "silhouette",
+    "label": "Silhouette",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Blank_US_Map_(states_only).svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Blank_US_Map_(states_only).svg",
+    "sourceSha256": "2279580797b53481b29fc168145129db926c21f91d4bc6d82c04e9801bdf932f",
+    "ops": {
+      "keepNodes": [
+        "2/2"
+      ],
+      "fill": "#BF0A30",
+      "viewBox": "129.368 291.268 129.964 149.364"
+    }
+  },
+  {
+    "teamId": "FLAG-NM",
+    "id": "primary",
+    "label": "State flag",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_New_Mexico.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_New_Mexico.svg",
+    "sourceSha256": "7ebc561ab772fcf092b86f412361af51a0f3ab5adfbea8cab1dba8d9fef922f4",
+    "ops": {
+      "viewBox": "-36 -36 1872 1272"
+    }
+  },
+  {
+    "teamId": "FLAG-NM",
+    "id": "silhouette",
+    "label": "Silhouette",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Blank_US_Map_(states_only).svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Blank_US_Map_(states_only).svg",
+    "sourceSha256": "2279580797b53481b29fc168145129db926c21f91d4bc6d82c04e9801bdf932f",
+    "ops": {
+      "keepNodes": [
+        "2/30"
+      ],
+      "fill": "#FFD700",
+      "viewBox": "231.348 305.948 131.804 136.404"
+    }
+  },
+  {
+    "teamId": "FLAG-CO",
+    "id": "primary",
+    "label": "State flag",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Colorado.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Colorado.svg",
+    "sourceSha256": "a9599630c49bac85d9a3df622d956e1f6f49683df35e6db218c4b22de82bc2ff",
+    "ops": {
+      "viewBox": "-36 -36 1872 1272"
+    }
+  },
+  {
+    "teamId": "FLAG-CO",
+    "id": "silhouette",
+    "label": "Silhouette",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Blank_US_Map_(states_only).svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Blank_US_Map_(states_only).svg",
+    "sourceSha256": "2279580797b53481b29fc168145129db926c21f91d4bc6d82c04e9801bdf932f",
+    "ops": {
+      "keepNodes": [
+        "2/5"
+      ],
+      "fill": "#00205B",
+      "viewBox": "248.720 217.620 137.160 110.760"
+    }
+  },
+  {
+    "teamId": "FLAG-MD",
+    "id": "primary",
+    "label": "State flag",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Maryland.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Maryland.svg",
+    "sourceSha256": "873396c04c1c42e4a438226fdb3974d4835aa411cc1b7685b6dc8052d8d25cae",
+    "ops": {
+      "viewBox": "-0.72 -0.72 37.44 25.44"
+    }
+  },
+  {
+    "teamId": "FLAG-MD",
+    "id": "silhouette",
+    "label": "Silhouette",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Blank_US_Map_(states_only).svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Blank_US_Map_(states_only).svg",
+    "sourceSha256": "2279580797b53481b29fc168145129db926c21f91d4bc6d82c04e9801bdf932f",
+    "ops": {
+      "keepNodes": [
+        "2/19"
+      ],
+      "fill": "#EAAA00",
+      "viewBox": "754.240 226.940 85.320 45.920"
+    }
+  },
+  {
+    "teamId": "FLAG-OH",
+    "id": "primary",
+    "label": "State flag",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Ohio.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Ohio.svg",
+    "sourceSha256": "ce12c81c2bdfeb9896f8200cf662ce8d2605bf605a227efeb78aed1b8d8e8129",
+    "ops": {
+      "viewBox": "-0.52 -0.52 27.04 17.04"
+    }
+  },
+  {
+    "teamId": "FLAG-OH",
+    "id": "silhouette",
+    "label": "Silhouette",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Blank_US_Map_(states_only).svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Blank_US_Map_(states_only).svg",
+    "sourceSha256": "2279580797b53481b29fc168145129db926c21f91d4bc6d82c04e9801bdf932f",
+    "ops": {
+      "keepNodes": [
+        "2/34"
+      ],
+      "fill": "#BF0A30",
+      "viewBox": "660.032 191.832 80.136 90.936"
+    }
+  },
+  {
+    "teamId": "FLAG-AK",
+    "id": "primary",
+    "label": "State flag",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Alaska.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Alaska.svg",
+    "sourceSha256": "6acace46543ad78958a2d35832d5a4d507b810e9e3cf4d906d21cdee966158ca",
+    "ops": {
+      "viewBox": "-28.32 -28.32 1472.64 1056.64"
+    }
+  },
+  {
+    "teamId": "FLAG-AK",
+    "id": "silhouette",
+    "label": "Silhouette",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Blank_US_Map_(states_only).svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Blank_US_Map_(states_only).svg",
+    "sourceSha256": "2279580797b53481b29fc168145129db926c21f91d4bc6d82c04e9801bdf932f",
+    "ops": {
+      "keepNodes": [
+        "2/1"
+      ],
+      "fill": "#0F204B",
+      "viewBox": "1.464 424.064 225.072 172.372"
+    }
+  },
+  {
+    "teamId": "FLAG-HI",
+    "id": "primary",
+    "label": "State flag",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Hawaii.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Hawaii.svg",
+    "sourceSha256": "d13c98a92833e8b72d46d171b76c46a94844890daec822771c8177ad6424f31a",
+    "ops": {
+      "viewBox": "-0.96 -0.96 49.92 25.92"
+    }
+  },
+  {
+    "teamId": "FLAG-HI",
+    "id": "silhouette",
+    "label": "Silhouette",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Blank_US_Map_(states_only).svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Blank_US_Map_(states_only).svg",
+    "sourceSha256": "2279580797b53481b29fc168145129db926c21f91d4bc6d82c04e9801bdf932f",
+    "ops": {
+      "keepNodes": [
+        "2/10"
+      ],
+      "fill": "#012169",
+      "viewBox": "223.184 505.284 121.932 82.732"
+    }
+  },
+  {
+    "teamId": "FLAG-TN",
+    "id": "primary",
+    "label": "State flag",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Tennessee.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Tennessee.svg",
+    "sourceSha256": "104bc2bfe3575462b2902f88690055064dd829bfbfbe100c70bb729a1dc98c48",
+    "ops": {
+      "viewBox": "-4.8 -4.8 249.6 153.6"
+    }
+  },
+  {
+    "teamId": "FLAG-TN",
+    "id": "silhouette",
+    "label": "Silhouette",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Blank_US_Map_(states_only).svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Blank_US_Map_(states_only).svg",
+    "sourceSha256": "2279580797b53481b29fc168145129db926c21f91d4bc6d82c04e9801bdf932f",
+    "ops": {
+      "keepNodes": [
+        "2/41"
+      ],
+      "fill": "#CC0000",
+      "viewBox": "576.648 310.348 160.704 63.304"
+    }
+  },
+  {
+    "teamId": "FLAG-SC",
+    "id": "primary",
+    "label": "State flag",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_South_Carolina.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_South_Carolina.svg",
+    "sourceSha256": "3ef68bc3b7065ac9fade67c51b40cf61555c484f3cc1ee67e162c6d317ca6825",
+    "ops": {
+      "viewBox": "-15 -15 780 530"
+    }
+  },
+  {
+    "teamId": "FLAG-SC",
+    "id": "silhouette",
+    "label": "Silhouette",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Blank_US_Map_(states_only).svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Blank_US_Map_(states_only).svg",
+    "sourceSha256": "2279580797b53481b29fc168145129db926c21f91d4bc6d82c04e9801bdf932f",
+    "ops": {
+      "keepNodes": [
+        "2/39"
+      ],
+      "fill": "#041E42",
+      "viewBox": "703.928 343.128 96.444 74.144"
+    }
+  },
+  {
+    "teamId": "FLAG-AL",
+    "id": "primary",
+    "label": "State flag",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Alabama.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Alabama.svg",
+    "sourceSha256": "55bd2b313407cf609ddb36c33d51c8f9b6f5f3978ecf2a42560e65ff7422cfe0",
+    "ops": {
+      "viewBox": "-12 -12 624 424"
+    }
+  },
+  {
+    "teamId": "FLAG-AL",
+    "id": "silhouette",
+    "label": "Silhouette",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Blank_US_Map_(states_only).svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Blank_US_Map_(states_only).svg",
+    "sourceSha256": "2279580797b53481b29fc168145129db926c21f91d4bc6d82c04e9801bdf932f",
+    "ops": {
+      "keepNodes": [
+        "2/0"
+      ],
+      "fill": "#B10021",
+      "viewBox": "616.544 356.744 75.412 117.612"
+    }
+  },
+  {
+    "teamId": "FLAG-MS",
+    "id": "primary",
+    "label": "State flag",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Mississippi.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Mississippi.svg",
+    "sourceSha256": "33335082191d551bd4bdddd965c7f060f602683d3278ef1425b1132d6e9d5fc1",
+    "ops": {
+      "viewBox": "-720 -720 37440 23040"
+    }
+  },
+  {
+    "teamId": "FLAG-MS",
+    "id": "silhouette",
+    "label": "Silhouette",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Blank_US_Map_(states_only).svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Blank_US_Map_(states_only).svg",
+    "sourceSha256": "2279580797b53481b29fc168145129db926c21f91d4bc6d82c04e9801bdf932f",
+    "ops": {
+      "keepNodes": [
+        "2/23"
+      ],
+      "fill": "#BA0C2F",
+      "viewBox": "558.460 360.760 71.180 117.180"
+    }
+  },
+  {
+    "teamId": "FLAG-RI",
+    "id": "primary",
+    "label": "State flag",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Rhode_Island.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Rhode_Island.svg",
+    "sourceSha256": "0f5117e94e3d6c28ca592ac204cfe5dbe8522cf0e39ce95730ded231075598c4",
+    "ops": {
+      "viewBox": "-13.2 -13.2 686.4 606.4"
+    }
+  },
+  {
+    "teamId": "FLAG-UT",
+    "id": "primary",
+    "label": "State flag",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Utah.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Utah.svg",
+    "sourceSha256": "686e53f4a0aa36cddc1eb127f1aa4f1757e973d583280b23987ab015a66d3814",
+    "ops": {
+      "viewBox": "-3.81 -3.81 198.12 121.92"
+    }
+  },
+  {
+    "teamId": "FLAG-UT",
+    "id": "silhouette",
+    "label": "Silhouette",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Blank_US_Map_(states_only).svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Blank_US_Map_(states_only).svg",
+    "sourceSha256": "2279580797b53481b29fc168145129db926c21f91d4bc6d82c04e9801bdf932f",
+    "ops": {
+      "keepNodes": [
+        "2/43"
+      ],
+      "fill": "#071D49",
+      "viewBox": "162.672 182.872 107.556 133.056"
+    }
+  },
+  {
+    "teamId": "FLAG-MN",
+    "id": "primary",
+    "label": "State flag",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Minnesota.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Minnesota.svg",
+    "sourceSha256": "18456d126e2548d772039e4e5d8718ee68966ebe1d646e6b083ea301dd2d7f49",
+    "ops": {
+      "viewBox": "-20 -20 1040 640"
+    }
+  },
+  {
+    "teamId": "FLAG-MN",
+    "id": "silhouette",
+    "label": "Silhouette",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Blank_US_Map_(states_only).svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Blank_US_Map_(states_only).svg",
+    "sourceSha256": "2279580797b53481b29fc168145129db926c21f91d4bc6d82c04e9801bdf932f",
+    "ops": {
+      "keepNodes": [
+        "2/22"
+      ],
+      "fill": "#002D5D",
+      "viewBox": "457.168 48.568 126.064 138.564"
+    }
+  },
+  {
+    "teamId": "FLAG-CT",
+    "id": "primary",
+    "label": "State flag",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Connecticut.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Connecticut.svg",
+    "sourceSha256": "40069f3fbbfc7a426a29515a553d4c7ac0a8aa8514b4d90b32c20037709b1f61",
+    "ops": {
+      "viewBox": "-1.746 -1.746 90.805 72.284"
+    }
+  },
+  {
+    "teamId": "FLAG-CT",
+    "id": "silhouette",
+    "label": "Silhouette",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Blank_US_Map_(states_only).svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Blank_US_Map_(states_only).svg",
+    "sourceSha256": "2279580797b53481b29fc168145129db926c21f91d4bc6d82c04e9801bdf932f",
+    "ops": {
+      "keepNodes": [
+        "2/6"
+      ],
+      "fill": "#0C2D83",
+      "viewBox": "842.596 163.996 32.508 31.908"
+    }
+  },
+  {
+    "teamId": "FLAG-MA",
+    "id": "primary",
+    "label": "State flag",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Massachusetts.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Massachusetts.svg",
+    "sourceSha256": "ef3cd029e716d36f2888e43b2607096dc57e580efc83c3c7567461b022740d09",
+    "ops": {
+      "viewBox": "-30 -30 1560 960"
+    }
+  },
+  {
+    "teamId": "FLAG-MA",
+    "id": "silhouette",
+    "label": "Silhouette",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Blank_US_Map_(states_only).svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Blank_US_Map_(states_only).svg",
+    "sourceSha256": "2279580797b53481b29fc168145129db926c21f91d4bc6d82c04e9801bdf932f",
+    "ops": {
+      "keepNodes": [
+        "2/20"
+      ],
+      "fill": "#1F2C5C",
+      "viewBox": "840.652 140.352 66.096 38.096"
+    }
+  },
+  {
+    "teamId": "FLAG-MI",
+    "id": "primary",
+    "label": "State flag",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Michigan.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Michigan.svg",
+    "sourceSha256": "080189ccf6b0d3c7830a9ca52468374ba5d034f9e96f2c8bd7c2dcb45d729275",
+    "ops": {
+      "viewBox": "-13.7 -13.7 712.4 484.4"
+    }
+  },
+  {
+    "teamId": "FLAG-MI",
+    "id": "silhouette",
+    "label": "Silhouette",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Blank_US_Map_(states_only).svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Blank_US_Map_(states_only).svg",
+    "sourceSha256": "2279580797b53481b29fc168145129db926c21f91d4bc6d82c04e9801bdf932f",
+    "ops": {
+      "keepNodes": [
+        "2/21"
+      ],
+      "fill": "#00287E",
+      "viewBox": "560.068 69.368 143.764 149.364"
+    }
+  },
+  {
+    "teamId": "FLAG-CHICAGO",
+    "id": "primary",
+    "label": "City flag",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Chicago,_Illinois.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Chicago,_Illinois.svg",
+    "sourceSha256": "6c16a73098d327a4a0bc7b7f1d756ce6b3965cd68ca8ce364638307092e0b96a",
+    "ops": {
+      "viewBox": "-14.4 -14.4 748.8 508.68"
+    }
+  },
+  {
+    "teamId": "FLAG-CHICAGO",
+    "id": "star",
+    "label": "Six-pointed star",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Chicago,_Illinois.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Chicago,_Illinois.svg",
+    "sourceSha256": "6c16a73098d327a4a0bc7b7f1d756ce6b3965cd68ca8ce364638307092e0b96a",
+    "ops": {
+      "removeNodes": [
+        "0",
+        "2"
+      ],
+      "viewBox": "95.6 177.6 108.8 124.8"
+    }
+  },
+  {
+    "teamId": "FLAG-DC",
+    "id": "primary",
+    "label": "District flag",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Washington,_D.C..svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Washington,_D.C..svg",
+    "sourceSha256": "76e1dc87facc58eefbff01f48d4f2fcc4936458030ccdacaeea9f084c0729832",
+    "ops": {
+      "viewBox": "-40 -40 2080 1080"
+    }
+  },
+  {
+    "teamId": "FLAG-DENVER",
+    "id": "primary",
+    "label": "City flag",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Denver,_Colorado.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Denver,_Colorado.svg",
+    "sourceSha256": "f05eb27f76e0cc56a09e4c8c43fd86d9d9dfde8ec229b3fb8523471fadd219ee",
+    "ops": {
+      "viewBox": "-12 -12 624 384"
+    }
+  },
+  {
+    "teamId": "FLAG-STL",
+    "id": "primary",
+    "label": "City flag",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_St._Louis,_Missouri.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_St._Louis,_Missouri.svg",
+    "sourceSha256": "699fd891efde79a130b5b7b4013a7ec92a17ca229f764bf166f020f6476a8964",
+    "ops": {
+      "viewBox": "-16 -16 832 532"
+    }
+  },
+  {
+    "teamId": "FLAG-PHX",
+    "id": "primary",
+    "label": "City flag",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Phoenix,_Arizona.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Phoenix,_Arizona.svg",
+    "sourceSha256": "6e207ed4ad1babc6af499bfdb783ed8a25f82e0c7e22df5eb5a6c3666e951e12",
+    "ops": {
+      "viewBox": "-0.012 -0.012 0.625 0.528"
+    }
+  },
+  {
+    "teamId": "FLAG-AMS",
+    "id": "primary",
+    "label": "City flag",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Amsterdam.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Amsterdam.svg",
+    "sourceSha256": "2bb30a3d327cd425d8f6b1df4a80273b243da6d57223b25362c9be2a5406c671",
+    "ops": {
+      "viewBox": "-9 -9 468 318"
+    }
+  },
+  {
+    "teamId": "FLAG-TOKYO",
+    "id": "primary",
+    "label": "City flag",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Tokyo_Metropolis.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Tokyo_Metropolis.svg",
+    "sourceSha256": "36dadc055dcb348b313eb0b2c616c602a0a673f3654f2758e50a5bd75a5668d1",
+    "ops": {
+      "viewBox": "-14.04 -9.54 28.08 19.08"
+    }
+  },
+  {
+    "teamId": "FLAG-PDX",
+    "id": "primary",
+    "label": "City flag",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Portland,_Oregon.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Portland,_Oregon.svg",
+    "sourceSha256": "1af626a89755bd1e032f99ee6da4f8cc44bdb45bfa6725b9832ebb28a353b9cc",
+    "ops": {
+      "viewBox": "-12 -12 624 384"
     }
   }
 ]

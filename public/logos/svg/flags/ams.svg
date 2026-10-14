@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="468" height="318" id="svg4" viewBox="-9 -9 468 318">
+  <defs id="defs4" />
+  <rect width="450" height="300" fill="#da121a" id="rect1" style="fill:#ec0000;fill-opacity:1" />
+  <rect y="100" width="450" height="100" id="rect2" />
+  <g stroke="#fff" stroke-width="30" id="g4">
+    <path d="M 98,105 v 90 m -45,-45 h 90" transform="rotate(45 98,150)" id="path2" />
+    <path d="M 225,105 v 90 m -45,-45 h 90" transform="rotate(45 225,150)" id="path3" />
+    <path d="M 352,105 v 90 m -45,-45 h 90" transform="rotate(45 352,150)" id="path4" />
+  </g>
+</svg>

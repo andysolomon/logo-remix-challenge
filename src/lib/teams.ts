@@ -1,6 +1,6 @@
 import data from './teams.json'
 
-export type League = 'PRO' | 'NBA' | 'MLB' | 'SOCCER' | 'MLS' | 'COL' | 'HS' | 'FOOD' | 'BRAND' | 'APP' | 'TV' | 'CAR' | 'LUX' | 'CLOTH'
+export type League = 'PRO' | 'NBA' | 'MLB' | 'SOCCER' | 'MLS' | 'COL' | 'HS' | 'FOOD' | 'BRAND' | 'FLAG' | 'APP' | 'TV' | 'CAR' | 'LUX' | 'CLOTH'
 
 export interface LogoVariant {
   id: string
@@ -63,7 +63,7 @@ export const TEAMS = data.teams as Team[]
 export const LEAGUES = data.leagues as Record<League, { label: string; conferences: string[] }>
 /**
  * Collections whose palettes a remix may wear. For now only NFL, NBA and college teams donate colors;
- * every other collection (MLB, soccer, MLS, high school, fast food, brands, apps, TV, cars) is logo-only.
+ * every other collection (MLB, soccer, MLS, high school, fast food, brands, flags, apps, TV, cars) is logo-only.
  */
 export const COLOR_DONOR_LEAGUES: readonly League[] = ['PRO', 'NBA', 'COL']
 export const isColorDonorLeague = (league: League) => COLOR_DONOR_LEAGUES.includes(league)
@@ -80,7 +80,12 @@ export const MAX_DECK_ROUNDS = 20
 const byId = new Map(TEAMS.map((t) => [t.id, t]))
 export const findTeam = (id: string): Team | undefined => byId.get(id)
 /** Teams that changed collections, by old id; saved rounds follow them so a deck never resets over a move. */
-const MOVED_TEAMS = new Map([['SOCCER-MIA', 'MLS-MIA']])
+const MOVED_TEAMS = new Map([
+  ['SOCCER-MIA', 'MLS-MIA'],
+  // The 17 flags that opened as BRANDS' Place type now live in FLAGS.
+  ...['TX', 'CANADA', 'JAPAN', 'CHICAGO', 'MEXICO', 'USA', 'UK', 'BRAZIL', 'KOREA', 'JAMAICA', 'PR', 'CALI', 'AUS', 'INDIA', 'TURKEY', 'GREECE', 'ARG']
+    .map((abbr): [string, string] => [`BRAND-${abbr}`, `FLAG-${abbr}`]),
+])
 const followMove = (round: unknown) => {
   if (typeof round !== 'object' || round === null) return round
   const { o, c } = round as Round
@@ -566,18 +571,18 @@ export const roundColors = (r: Round): Team => findTeam(r.c ?? r.o)!
 export const guessPrompt = (t: GuessTarget) => (t === 'both' ? 'Guess the Logo and the Colors!' : t === 'colors' ? 'Guess the Colors!' : 'Guess the Logo!')
 /** What one entry of a collection is called in search and result labels. */
 export const entryNoun = (league: League) =>
-  league === 'APP' ? 'app' : league === 'TV' ? 'channel' : ['FOOD', 'BRAND', 'CAR', 'LUX', 'CLOTH'].includes(league) ? 'brand' : league === 'SOCCER' || league === 'MLS' ? 'club' : 'team'
+  league === 'APP' ? 'app' : league === 'TV' ? 'channel' : league === 'FLAG' ? 'flag' : ['FOOD', 'BRAND', 'CAR', 'LUX', 'CLOTH'].includes(league) ? 'brand' : league === 'SOCCER' || league === 'MLS' ? 'club' : 'team'
 /**
  * Where a team plays: the league and conference for NFL teams ("NFL - AFC"), the league label for other pro teams,
  * MLS clubs and fast food, the conference for college and high school, the domestic league for soccer clubs outside
- * "Rest of World", the type for brands, apps, channels, cars, luxury houses ("Luxury watchmaker") and clothing
- * brands ("Outdoor brand").
+ * "Rest of World", the region for flags ("FLAGS - Europe", "FLAGS - US States"), the type for brands, apps, channels,
+ * cars, luxury houses ("Luxury watchmaker") and clothing brands ("Outdoor brand").
  */
 export const teamHint = (t: Team) =>
   t.league === 'COL' || t.league === 'HS' || (t.league === 'SOCCER' && t.conference !== 'Rest of World')
     ? t.conference
-    : t.league === 'PRO'
-      ? `${LEAGUES.PRO.label} - ${t.conference}`
+    : t.league === 'PRO' || t.league === 'FLAG'
+      ? `${LEAGUES[t.league].label} - ${t.conference}`
       : t.league === 'BRAND'
         ? `${t.conference} brand`
         : t.league === 'APP'
@@ -613,6 +618,7 @@ export const TEAM_POOLS: TeamPool[] = [
   { id: 'MLS', label: LEAGUES.MLS.label, league: 'MLS', match: (t) => t.league === 'MLS' },
   { id: 'Fast Food', label: LEAGUES.FOOD.label, league: 'FOOD', match: (t) => t.league === 'FOOD' },
   { id: 'Brands', label: LEAGUES.BRAND.label, league: 'BRAND', match: (t) => t.league === 'BRAND' },
+  { id: 'Flags', label: LEAGUES.FLAG.label, league: 'FLAG', match: (t) => t.league === 'FLAG' },
   { id: 'Apps', label: LEAGUES.APP.label, league: 'APP', match: (t) => t.league === 'APP' },
   { id: 'TV', label: LEAGUES.TV.label, league: 'TV', match: (t) => t.league === 'TV' },
   { id: 'Cars', label: LEAGUES.CAR.label, league: 'CAR', match: (t) => t.league === 'CAR' },

@@ -36,12 +36,14 @@ import {
 } from './lib/teams'
 import { usePrefersDark } from './lib/useColorScheme'
 import { useIsPortrait } from './lib/useOrientation'
+import { useVisualViewport } from './lib/useVisualViewport'
 
 type Mode = 'create' | 'deck' | 'designer' | 'play'
 
 export default function App() {
   const portrait = useIsPortrait()
   const prefersDark = usePrefersDark()
+  useVisualViewport()
   const [mode, setMode] = useState<Mode>('create')
   const [deck, setDeckState] = useState<Round[]>(loadDeck)
   const [timer, setTimerState] = useState<TimerSeconds>(loadTimer)

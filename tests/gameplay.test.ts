@@ -9,6 +9,22 @@ function read(rel: string) {
 }
 
 describe('gameplay polish scaffolding', () => {
+  test('the app shell tracks the visual viewport so the logo stays in view above a phone keyboard', () => {
+    const hook = read('src/lib/useVisualViewport.ts')
+    expect(hook).toContain('window.visualViewport')
+    expect(hook).toContain("addEventListener('resize', apply)")
+    expect(hook).toContain("addEventListener('scroll', apply)")
+    expect(hook).toContain("setProperty('--vvh'")
+    expect(hook).toContain("classList.toggle('kb-open'")
+    expect(hook).toContain('window.scrollTo(0, 0)')
+    expect(hook).toContain('vv.scale > 1.01')
+    expect(read('src/App.tsx')).toContain('useVisualViewport()')
+    const css = read('src/styles.css')
+    expect(css).toContain('height: var(--vvh, 100dvh)')
+    expect(css).toContain('html.kb-open .q-hero { flex: 1 0 auto; min-height: 96px')
+    expect(css).toContain('html.kb-open .question { overflow-y: auto')
+  })
+
   test('PlayMode exposes live round and reveal status plus phaseRef submit guards', () => {
     const play = read('src/components/PlayMode.tsx')
     expect(play).toContain('aria-live="polite"')

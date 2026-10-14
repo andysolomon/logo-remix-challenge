@@ -265,8 +265,10 @@ CLOTH = [
     ("GAP", "Gap", "Everyday", "002A5F", "000000", ["The Gap", "GAP"]),
 ]
 
-# Flags and civic symbols: national, state and city flags, each with a silhouette alternate where the
-# map sheets carry a usable outline. Colors are the flag's own fills; two-color flags pair with black.
+# Flags and places: national, state and city flags (every country and state with a silhouette, a flag-filled
+# outline and, where Wikipedia keeps a relief map, terrain) and the planets. Colors are the flag's own fills;
+# two-color flags pair with black. A state flag that spells the state's name stays a hand-pickable alternate
+# behind the state's outline, like a wordmark behind a brand's symbol.
 FLAG = [
     ("USA", "United States", "Americas", "B22234", "3C3B6E", ["USA", "US", "America", "United States of America", "Stars and Stripes", "Old Glory"]),
     ("CANADA", "Canada", "Americas", "D52B1E", "000000", ["Canadian", "Great White North", "CAN"]),
@@ -353,6 +355,36 @@ FLAG = [
     ("CT", "Connecticut", "US States", "0C2D83", "B68C5B", ["Constitution State", "State of Connecticut"]),
     ("MA", "Massachusetts", "US States", "1F2C5C", "E6A300", ["Bay State", "Mass", "Commonwealth of Massachusetts"]),
     ("MI", "Michigan", "US States", "00287E", "EF1439", ["Great Lakes State", "State of Michigan"]),
+    ("AR", "Arkansas", "US States", "BF0A30", "00205B", ["Natural State", "State of Arkansas"]),
+    ("DE", "Delaware", "US States", "669CA4", "C7A97F", ["First State", "State of Delaware"]),
+    ("FL", "Florida", "US States", "C60013", "3D663D", ["Sunshine State", "State of Florida"]),
+    ("ID", "Idaho", "US States", "003776", "FCD100", ["Gem State", "State of Idaho"]),
+    ("IL", "Illinois", "US States", "00205B", "BE0A2F", ["Prairie State", "State of Illinois"]),
+    ("IN", "Indiana", "US States", "000F5D", "FFB900", ["Hoosier State", "State of Indiana"]),
+    ("IA", "Iowa", "US States", "0A1F62", "D80025", ["Hawkeye State", "State of Iowa"]),
+    ("KS", "Kansas", "US States", "00205B", "FCD100", ["Sunflower State", "State of Kansas"]),
+    ("KY", "Kentucky", "US States", "000066", "F6C604", ["Bluegrass State", "Commonwealth of Kentucky", "State of Kentucky"]),
+    ("LA", "Louisiana", "US States", "01447B", "FFDD00", ["Pelican State", "State of Louisiana"]),
+    ("ME", "Maine", "US States", "002664", "FFE84F", ["Pine Tree State", "State of Maine"]),
+    ("MO", "Missouri", "US States", "BF0A30", "00205B", ["Show-Me State", "Show Me State", "State of Missouri"]),
+    ("MT", "Montana", "US States", "002A86", "FEC70B", ["Treasure State", "Big Sky Country", "State of Montana"]),
+    ("NE", "Nebraska", "US States", "002A86", "FFCC00", ["Cornhusker State", "State of Nebraska"]),
+    ("NV", "Nevada", "US States", "0033AB", "FFA300", ["Silver State", "State of Nevada"]),
+    ("NH", "New Hampshire", "US States", "002A86", "EFAE0E", ["Granite State", "State of New Hampshire"]),
+    ("NJ", "New Jersey", "US States", "E1B584", "2484C6", ["Garden State", "State of New Jersey"]),
+    ("NY", "New York", "US States", "002D72", "BE1F1F", ["Empire State", "New York State", "State of New York"]),
+    ("NC", "North Carolina", "US States", "BF0A30", "00205B", ["Tar Heel State", "State of North Carolina"]),
+    ("ND", "North Dakota", "US States", "003A70", "CC8900", ["Peace Garden State", "State of North Dakota"]),
+    ("OK", "Oklahoma", "US States", "0073CF", "9A3B26", ["Sooner State", "State of Oklahoma"]),
+    ("OR", "Oregon", "US States", "000080", "FFD700", ["Beaver State", "State of Oregon"]),
+    ("PA", "Pennsylvania", "US States", "00205B", "DCA90D", ["Keystone State", "Commonwealth of Pennsylvania", "State of Pennsylvania"]),
+    ("SD", "South Dakota", "US States", "0074A8", "FFC400", ["Mount Rushmore State", "State of South Dakota"]),
+    ("VT", "Vermont", "US States", "003366", "5A8562", ["Green Mountain State", "State of Vermont"]),
+    ("VA", "Virginia", "US States", "012168", "926844", ["Old Dominion", "Commonwealth of Virginia", "State of Virginia"]),
+    ("WA", "Washington", "US States", "00843D", "FFCD00", ["Evergreen State", "Washington State", "State of Washington"]),
+    ("WV", "West Virginia", "US States", "076F4F", "BF0D3E", ["Mountain State", "State of West Virginia"]),
+    ("WI", "Wisconsin", "US States", "002986", "BE0A2F", ["Badger State", "State of Wisconsin"]),
+    ("WY", "Wyoming", "US States", "00205B", "BF0A30", ["Equality State", "Cowboy State", "State of Wyoming"]),
     ("CHICAGO", "Chicago", "Cities", "41B6E6", "E4002B", ["Chi-Town", "Windy City", "Second City", "Chicago, Illinois", "CHI"]),
     ("DC", "Washington, D.C.", "Cities", "E81B39", "000000", ["Washington DC", "Washington D.C.", "District of Columbia", "The District", "Washington"]),
     ("DENVER", "Denver", "Cities", "002868", "BF0A30", ["Denver, Colorado", "Mile High City", "DEN"]),
@@ -361,12 +393,21 @@ FLAG = [
     ("AMS", "Amsterdam", "Cities", "EC0000", "000000", ["AMS"]),
     ("TOKYO", "Tokyo", "Cities", "4B0082", "000000", ["Tōkyō", "Tokyo Metropolis"]),
     ("PDX", "Portland", "Cities", "046A38", "FFB81C", ["Portland, Oregon", "Rose City", "PDX"]),
+    # The eight planets: a NASA photo leads (it keeps its own colors) and the astronomical symbol is the alternate.
+    ("MERCURY", "Mercury", "Solar System", "8C8C8C", "4A4A4A", ["Planet Mercury"]),
+    ("VENUS", "Venus", "Solar System", "E6C16B", "B8860B", ["Planet Venus", "Morning Star", "Evening Star"]),
+    ("EARTH", "Earth", "Solar System", "2B65EC", "2E8B57", ["Planet Earth", "Terra", "The Blue Marble", "Blue Planet"]),
+    ("MARS", "Mars", "Solar System", "C1440E", "8B2500", ["Planet Mars", "Red Planet", "The Red Planet"]),
+    ("JUPITER", "Jupiter", "Solar System", "D8A26B", "A0522D", ["Planet Jupiter"]),
+    ("SATURN", "Saturn", "Solar System", "E3C98E", "B8860B", ["Planet Saturn", "Ringed Planet"]),
+    ("URANUS", "Uranus", "Solar System", "7FD4E6", "4FA3C0", ["Planet Uranus"]),
+    ("NEPTUNE", "Neptune", "Solar System", "3F5EFB", "1E3FBF", ["Planet Neptune"]),
 ]
 
 LEAGUES = {
     "FOOD": {"label": "FAST FOOD", "conferences": ["Burgers", "Chicken", "Sandwiches", "Pizza", "Mexican & Asian", "Coffee & Treats"]},
     "BRAND": {"label": "BRANDS", "conferences": ["Product", "Service", "Corporate", "Personal", "Store"]},
-    "FLAG": {"label": "FLAGS", "conferences": ["Americas", "Europe", "Asia & Pacific", "Africa & Middle East", "US States", "Cities"]},
+    "FLAG": {"label": "FLAGS", "conferences": ["Americas", "Europe", "Asia & Pacific", "Africa & Middle East", "US States", "Cities", "Solar System"]},
     "APP": {"label": "APPS", "conferences": ["Built-in", "Social", "Games", "Music & Video", "Everyday"]},
     "TV": {"label": "TV", "conferences": ["Broadcast", "Cable", "Music & Pop", "Kids", "Discovery & Lifestyle"]},
     "CAR": {"label": "CARS", "conferences": ["American", "Japanese & Korean", "German", "Italian", "British"]},

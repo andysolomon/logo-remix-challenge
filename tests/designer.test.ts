@@ -120,8 +120,14 @@ describe('colors', () => {
       { label: 'Color 2', editable: true },
       { label: 'Backdrop', editable: true },
     ])
-    // Every slot shows somewhere in every design, so every slot can be edited.
-    for (const team of TEAMS) expect(slotRoles(team).every((r) => r.editable)).toBe(true)
+    // Every slot shows somewhere in every design, so every slot can be edited, except the artwork slot of a
+    // photo that keeps its own colors (the planets): it shows the photo, on an editable tile and frame.
+    for (const team of TEAMS.filter((t) => !t.keepsColors)) expect(slotRoles(team).every((r) => r.editable)).toBe(true)
+    expect(slotRoles(findTeam('FLAG-MARS')!)).toEqual([
+      { label: 'Artwork', editable: false },
+      { label: 'Backdrop', editable: true },
+      { label: 'Frame', editable: true },
+    ])
   })
 
   test('rotates only the editable slots', () => {

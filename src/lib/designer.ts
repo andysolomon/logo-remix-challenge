@@ -89,6 +89,8 @@ export function slotRoles(team: Team): [SlotRole, SlotRole, SlotRole] {
   return [0, 1, 2].map((slot) => {
     if (slot === backdrop) return { label: 'Backdrop', editable: true }
     if (slot === frame) return { label: 'Frame', editable: true }
+    // Terrain keeps its own colors, so its artwork slot is shown but cannot be edited.
+    if (team.keepsColors) return { label: 'Artwork', editable: false }
     return { label: artwork.length === 1 ? 'Logo' : `Color ${artwork.indexOf(slot) + 1}`, editable: true }
   }) as [SlotRole, SlotRole, SlotRole]
 }

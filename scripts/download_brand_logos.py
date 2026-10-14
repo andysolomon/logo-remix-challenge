@@ -6,7 +6,14 @@ Then run build_brand_teams.py with the same --league argument.
 
 brand_artwork_sources.json pins every variant: its source URL, the SHA-256 of the
 source file and the reviewed brand_vector.py edits that strip a wordmark or page
-background and crop the symbol. Checked-in assets whose checksum matches the
+background and crop the symbol. A variant with a "mask" is a flag-map: the mask pins a
+silhouette (a map sheet, its keepNodes cut, reprojection and crop) and the variant's own
+source and edits are the flag drawn through it. A variant with "bounds" is terrain: its source
+is a georeferenced relief raster (Wikipedia's location-map bounds), clipped to the mask's
+outline into a PNG that keeps its own colors, so a remix paints only the tile and frame.
+A variant with "background": "black" is a space photo: the black sky becomes transparent and the
+planet is cropped out, again as a PNG that keeps its colors. A source whose edits name a "feature" is a Natural Earth GeoJSON file: the outline of that
+feature (outline_geojson.py) stands in for the SVG, then fill and viewBox apply as usual. Checked-in assets whose checksum matches the
 manifest are reused unless --force is given; --cache-dir keeps verified source files
 (named by checksum) so an interrupted or rate-limited refresh can resume. The whole
 collection validates before any asset or the manifest is replaced; assets no longer
@@ -21,16 +28,20 @@ from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
 from brand_rosters import ROSTERS, SLUGS
-from brand_vector import fetch_source, import_brand_vector
+from brand_vector import compose_flag_map, fetch_source, import_brand_vector
+from download_extra_logos import inspect_artwork
 from build_teams import MATCH_TOLERANCE_SQ, atomic_write_text, dist_sq, nearest
 from download_hbcu_svgs import to_hex
 from download_nba_svgs import artwork_colors
 from nfl_vector_artwork import validate_vector
+from outline_geojson import OPS as OUTLINE_OPS, outline_svg
+from terrain_raster import clip_relief, clip_space
 
 ROOT = Path(__file__).resolve().parent.parent
 SOURCES = ROOT / "scripts/brand_artwork_sources.json"
-SOURCE_KEYS = ("sourceUrl", "sourceSha256", "downloadForm", "ops")
-MAX_BYTES = 400_000
+SOURCE_KEYS = ("sourceUrl", "sourceSha256", "downloadForm", "ops", "mask", "bounds", "background")
+# State flags carry whole seals, so the vector limit is generous; rasters are scaled and quantized to stay far under it.
+MAX_BYTES = 700_000
 WHITE = "#FFFFFF"
 DISTINCT = 40 * 40
 
@@ -47,6 +58,16 @@ def brand_colors(raw: bytes) -> list[str]:
     if not colors:
         raise ValueError("logo has no readable artwork colors")
     return colors
+
+
+def artwork_fills(raw: bytes, fmt: str) -> list[str]:
+    """Vector fills and gradient stops, or a raster's dominant opaque colors."""
+    return brand_colors(raw) if fmt == "svg" else inspect_artwork(raw, fmt)[:12]
+
+
+def terrain_palette(primary: str, secondary: str) -> tuple[list[str], list[int]]:
+    """Terrain keeps its own colors, so a remix paints the tile and frame only; slot 0 is nominal."""
+    return [f"#{primary}", f"#{secondary}", WHITE], [1, 2]
 
 
 def artwork_palette(colors: list[str], primary: str, secondary: str) -> tuple[list[str], list[int]]:
@@ -74,9 +95,17 @@ def artwork_palette(colors: list[str], primary: str, secondary: str) -> tuple[li
     return palette, unused
 
 
-def artwork_path(league: str, abbr: str, variant: str) -> str:
+def artwork_from(raw: bytes, ops: dict) -> bytes:
+    """Vector artwork from a pinned source: a GeoJSON outline when the edits select a feature, else the SVG itself."""
+    if "feature" in ops:
+        return import_brand_vector(outline_svg(raw, {k: v for k, v in ops.items() if k in OUTLINE_OPS}),
+                                   {k: v for k, v in ops.items() if k in ("fill", "viewBox")})
+    return import_brand_vector(raw, ops)
+
+
+def artwork_path(league: str, abbr: str, variant: str, fmt: str = "svg") -> str:
     name = abbr.lower() if variant == "primary" else f"alternates/{abbr.lower()}-{variant}"
-    return f"/logos/svg/{SLUGS[league]}/{name}.svg"
+    return f"/logos/svg/{SLUGS[league]}/{name}.{fmt}"
 
 
 def manifest_path(league: str) -> Path:
@@ -96,8 +125,16 @@ def pinned_sources(league: str) -> list[dict]:
     for source in sources:
         if not re.fullmatch(r"[a-z0-9]+(?:-[a-z0-9]+)*", source["id"]) or not source.get("label"):
             raise ValueError(f"{source['teamId']}: invalid variant id or missing label")
-        if not source["sourceUrl"].startswith("https://") or not re.fullmatch(r"[0-9a-f]{64}", source.get("sourceSha256", "")):
-            raise ValueError(f"{source['teamId']}/{source['id']}: pin an https source and its SHA-256")
+        for pinned in (source, *([source["mask"]] if "mask" in source else [])):
+            if not pinned["sourceUrl"].startswith("https://") or not re.fullmatch(r"[0-9a-f]{64}", pinned.get("sourceSha256", "")):
+                raise ValueError(f"{source['teamId']}/{source['id']}: pin an https source and its SHA-256")
+        if source.get("background", "black") != "black":
+            raise ValueError(f"{source['teamId']}/{source['id']}: only a black sky can be keyed out")
+        if "bounds" in source:
+            bounds = source["bounds"]
+            if "mask" not in source or source["id"] == "primary" or set(bounds) != {"top", "bottom", "left", "right"} \
+                    or not all(isinstance(bounds[k], (int, float)) for k in bounds) or bounds["top"] <= bounds["bottom"] or bounds["right"] <= bounds["left"]:
+                raise ValueError(f"{source['teamId']}/{source['id']}: terrain needs a masked alternate with top/bottom/left/right bounds")
     return sources
 
 
@@ -125,7 +162,8 @@ def refresh(league: str, force: bool = False, cache_dir: Path | None = None) -> 
     def download(source):
         abbr = source["teamId"].split("-", 1)[1]
         _, _, _, primary, secondary, _ = roster[abbr]
-        path = artwork_path(league, abbr, source["id"])
+        fmt = "png" if "bounds" in source or "background" in source else "svg"
+        path = artwork_path(league, abbr, source["id"], fmt)
         target = ROOT / "public" / path.lstrip("/")
         previous = cached.get((source["teamId"], source["id"]))
         reuse = (not force and previous and previous["path"] == path and target.is_file()
@@ -134,19 +172,34 @@ def refresh(league: str, force: bool = False, cache_dir: Path | None = None) -> 
             raw = target.read_bytes()
             if hashlib.sha256(raw).hexdigest() != previous["sha256"]:
                 raise ValueError(f"{path}: checked-in artwork differs from the manifest; review or refresh with --force")
+        elif "bounds" in source:
+            outline = artwork_from(source_bytes(source["mask"], cache_dir), source["mask"].get("ops", {}))
+            raw = clip_relief(source_bytes(source, cache_dir), source["bounds"], outline)
+        elif "background" in source:
+            raw = clip_space(source_bytes(source, cache_dir))
+        elif "mask" in source:
+            outline = artwork_from(source_bytes(source["mask"], cache_dir), source["mask"].get("ops", {}))
+            raw = compose_flag_map(source_bytes(source, cache_dir), source.get("ops", {}), outline)
         else:
-            raw = import_brand_vector(source_bytes(source, cache_dir), source.get("ops", {}))
-        validate_vector(raw)
+            raw = artwork_from(source_bytes(source, cache_dir), source.get("ops", {}))
+        if fmt == "svg":
+            validate_vector(raw)
         if len(raw) > MAX_BYTES:
-            raise ValueError(f"{path}: {len(raw)} bytes; pick a lighter vector source")
-        colors = brand_colors(raw)
-        palette, unused = artwork_palette(colors, primary, secondary)
+            raise ValueError(f"{path}: {len(raw)} bytes; pick a lighter {'relief' if fmt == 'png' else 'vector'} source")
+        colors = artwork_fills(raw, fmt)
+        palette, unused = terrain_palette(primary, secondary) if fmt == "png" else artwork_palette(colors, primary, secondary)
         print(f"{source['teamId']}: {source['id']} ({len(raw)} bytes)", flush=True)
-        return {**source, "path": path, "format": "svg", "colors": colors, "sourcePalette": palette,
-                "unusedSourceSlots": unused, "sha256": hashlib.sha256(raw).hexdigest()}, raw
+        return {**source, "path": path, "format": fmt, "colors": colors, "sourcePalette": palette, "unusedSourceSlots": unused,
+                **({"keepsColors": True} if fmt == "png" else {}), "sha256": hashlib.sha256(raw).hexdigest()}, raw
+
+    def download_named(source):
+        try:
+            return download(source)
+        except ValueError as exc:
+            raise ValueError(f"{source['teamId']}/{source['id']}: {exc}") from exc
 
     with ThreadPoolExecutor(max_workers=4) as pool:
-        results = list(pool.map(download, sources))
+        results = list(pool.map(download_named, sources))
     assets = []
     for abbr, name, category, primary, secondary, aliases in sorted(roster.values()):
         team_id = f"{league}-{abbr}"

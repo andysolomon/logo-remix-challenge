@@ -11,7 +11,7 @@ from pathlib import Path
 
 from brand_rosters import LEAGUES, ROSTERS
 from build_teams import atomic_write_text, fmt_entry
-from download_brand_logos import artwork_path, brand_colors, manifest_path
+from download_brand_logos import artwork_fills, artwork_path, manifest_path
 from nfl_vector_artwork import validate_vector
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -34,11 +34,15 @@ def build_entry(league: str, item: dict, row: tuple) -> dict:
         # A wordmark may stay as an alternate behind a symbol primary; it is flagged so random decks never draw it.
         if art.get("showsName") and art["id"] != "primary" and artwork[0].get("showsName"):
             raise ValueError(f"{abbr}: a wordmark alternate needs a name-free primary")
-        if art["path"] != artwork_path(league, abbr, art["id"]) or art["format"] != "svg":
+        if art["format"] not in ("svg", "png") or art["path"] != artwork_path(league, abbr, art["id"], art["format"]):
             raise ValueError(f"{abbr}: invalid artwork path for {art['id']}")
+        # Only rasters (terrain, space photos) keep their colors; vector artwork always recolors.
+        if bool(art.get("keepsColors")) != (art["format"] == "png"):
+            raise ValueError(f"{abbr}: {art['id']} must be a recolorable vector unless it is a raster that keeps its colors")
         raw = (ROOT / "public" / art["path"].lstrip("/")).read_bytes()
-        validate_vector(raw)
-        if hashlib.sha256(raw).hexdigest() != art["sha256"] or brand_colors(raw) != art["colors"]:
+        if art["format"] == "svg":
+            validate_vector(raw)
+        if hashlib.sha256(raw).hexdigest() != art["sha256"] or artwork_fills(raw, art["format"]) != art["colors"]:
             raise ValueError(f"stale artwork metadata for {abbr}/{art['id']}")
         source = art["sourcePalette"]
         if len(source) != 3 or any(not HEX.fullmatch(c) for c in source):
@@ -56,11 +60,13 @@ def build_entry(league: str, item: dict, row: tuple) -> dict:
         if len(artwork) > 1:
             raise ValueError(f"{abbr}: a name-free alternate should be the primary")
         entry["showsName"] = True
+    if main.get("keepsColors"):
+        entry["keepsColors"] = True
     if len(artwork) > 1:
         entry["alternateLogos"] = [
             {"id": art["id"], "label": art["label"], "logo": art["path"],
              "sourcePalette": art["sourcePalette"], "unusedSourceSlots": art["unusedSourceSlots"],
-             **({"showsName": True} if art.get("showsName") else {})}
+             **({"showsName": True} if art.get("showsName") else {}), **({"keepsColors": True} if art.get("keepsColors") else {})}
             for art in artwork[1:]
         ]
     return entry

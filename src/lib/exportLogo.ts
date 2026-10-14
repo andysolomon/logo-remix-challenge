@@ -48,7 +48,8 @@ export async function designSvgBlob(d: Design): Promise<Blob | null> {
 async function designImageUrl(d: Design): Promise<string | null> {
   const colored = await coloredSvg(d)
   if (colored) return svgToDataUrl(ensureSvgSize(colored))
-  if (!d.colors) return d.team.logo
+  // Terrain keeps its own colors: the bitmap leaves as is, on its tile and frame.
+  if (!d.colors || d.team.keepsColors) return d.team.logo
   return recolorRaster(d.team.logo, sourceColors(d.team).map(hexToRgb), d.colors.map(hexToRgb))
 }
 

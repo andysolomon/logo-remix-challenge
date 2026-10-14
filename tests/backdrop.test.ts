@@ -42,9 +42,10 @@ const sameHueDarker = (hex: string, base: string) => {
   return false
 }
 
+// Artwork that keeps its own colors (terrain, planet photos) paints no palette slot; its tile and frame carry the remix.
 const artwork = TEAMS.flatMap((team) =>
   logoVariants(team).map((variant) => withLogoVariant(team, variant.id === 'primary' ? undefined : variant.id)),
-)
+).filter((art) => !art.keepsColors)
 const tiled = artwork.filter((art) => backdropSlot(art) !== undefined)
 const oneColor = tiled.filter((art) => frameSlot(art) !== undefined)
 const twoColor = tiled.filter((art) => frameSlot(art) === undefined)
@@ -95,6 +96,7 @@ print(json.dumps(out))
     const plainTile: string[] = []
     for (const team of TEAMS) {
       for (const variant of logoVariants(team)) {
+        if (variant.keepsColors || (variant.id === 'primary' && team.keepsColors)) continue
         const key = `${team.id}/${variant.id}`
         const { used, unused } = coverage[key]
         const art = withLogoVariant(team, variant.id === 'primary' ? undefined : variant.id)

@@ -258,7 +258,8 @@ function recolor(key: string, src: string, from: RGB[], to: RGB[]): Promise<stri
  * the image stays transparent until that cached recolor is ready. Artwork that
  * leaves target colors out is remixed onto a backdrop tile in one of them, with
  * a frame in the other for one-color artwork (`remixLayout`), so every remix
- * shows all three target colors.
+ * shows all three target colors. Artwork that keeps its own colors (terrain)
+ * is never recolored: it shows as is on its tile and frame.
  */
 export function Logo({ team: baseTeam, palette, perm = 0, variantId, targetColors }: Props) {
   const team = withLogoVariant(baseTeam, variantId)
@@ -268,21 +269,21 @@ export function Logo({ team: baseTeam, palette, perm = 0, variantId, targetColor
   const layout = remixLayout(team)
   const backdrop = target && layout.backdrop !== undefined ? target[layout.backdrop] : undefined
   const frame = target && layout.frame !== undefined ? target[layout.frame] : undefined
-  const key = target ? `${team.logo}|${source.join('|')}|${target.join('|')}` : null
+  const key = target && !team.keepsColors ? `${team.logo}|${source.join('|')}|${target.join('|')}` : null
   const [, setTick] = useState(0)
   const [remixStatus, setRemixStatus] = useState<RemixStatus>(() =>
     !hasTargetPalette
       ? 'idle'
-      : key && urlCache.has(key)
+      : !key || urlCache.has(key)
         ? 'ready'
-        : key && failedCache.has(key)
+        : failedCache.has(key)
           ? 'error'
           : 'loading',
   )
 
   useEffect(() => {
     if (!key || !target) {
-      setRemixStatus('idle')
+      setRemixStatus(target ? 'ready' : 'idle')
       return
     }
     if (urlCache.has(key)) {
@@ -310,7 +311,8 @@ export function Logo({ team: baseTeam, palette, perm = 0, variantId, targetColor
     }
   }, [key, team.logo])
 
-  const imageSrc = !hasTargetPalette ? team.logo : key && remixStatus === 'ready' ? urlCache.get(key) ?? TRANSPARENT_PIXEL : TRANSPARENT_PIXEL
+  // Artwork that keeps its colors has no recolor key and shows as is, tile and frame included.
+  const imageSrc = !hasTargetPalette ? team.logo : key && remixStatus === 'ready' ? urlCache.get(key) ?? TRANSPARENT_PIXEL : !key ? team.logo : TRANSPARENT_PIXEL
   // The backdrop appears with the recolored artwork, never as an empty tile while it loads.
   const showBackdrop = backdrop !== undefined && remixStatus === 'ready'
   // Dark artwork (a black wordmark, a navy crest) sits on a light plate wherever the screen is dark;

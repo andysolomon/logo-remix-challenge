@@ -38,7 +38,7 @@ describe('brand collections', () => {
     expect(LEAGUES.LUX.conferences.map((c) => filterTeams('LUX', c, '').length)).toEqual([10, 6, 8, 6])
     expect(LEAGUES.CLOTH).toEqual({ label: 'CLOTHING', conferences: ['Sportswear', 'Streetwear', 'Outdoor', 'Preppy', 'Everyday'] })
     expect(LEAGUES.CLOTH.conferences.map((c) => filterTeams('CLOTH', c, '').length)).toEqual([7, 6, 6, 6, 5])
-    for (const [league, size] of [['FOOD', 30], ['BRAND', 35], ['FLAG', 93], ['APP', 50], ['TV', 30], ['CAR', 30], ['LUX', 30], ['CLOTH', 30]] as const) {
+    for (const [league, size] of [['FOOD', 30], ['BRAND', 35], ['FLAG', 131], ['APP', 50], ['TV', 30], ['CAR', 30], ['LUX', 30], ['CLOTH', 30]] as const) {
       expect(filterTeams(league, 'All', '')).toHaveLength(size)
       expect(new Set(filterTeams(league, 'All', '').map(fullName)).size).toBe(size)
     }
@@ -49,7 +49,9 @@ describe('brand collections', () => {
   test('every logo and alternate is local vector artwork; extra marks exist only where they are distinct', () => {
     for (const team of entries) {
       for (const variant of logoVariants(team)) {
-        expect(variant.logo).toMatch(/^\/logos\/svg\/(fast-food|brands|flags|apps|tv|cars|luxury|clothing)\/.+\.svg$/)
+        // Terrain alternates are clipped relief rasters; everything else is vector.
+        const raster = variant.keepsColors || (variant.id === 'primary' && team.keepsColors)
+        expect(variant.logo).toMatch(raster ? /^\/logos\/svg\/flags\/(alternates\/.+-terrain|[a-z]+)\.png$/ : /^\/logos\/svg\/(fast-food|brands|flags|apps|tv|cars|luxury|clothing)\/.+\.svg$/)
         expect(existsSync(join(root, 'public', variant.logo))).toBe(true)
       }
       expect(new Set(logoVariants(team).map((v) => v.logo)).size).toBe(logoVariants(team).length)
@@ -69,11 +71,12 @@ describe('brand collections', () => {
     }
     // A wordmark survives only behind a symbol primary, flagged so it never reads as the brand's logo.
     const flagged = entries.filter((t) => t.alternateLogos?.some((v) => v.showsName))
-    expect(flagged.map((t) => t.id).sort()).toEqual(WORDMARK_ALTERNATES)
+    // State flags that spell the state's name sit behind the state's outline the same way (see flags.test.ts).
+    expect(flagged.filter((t) => t.league !== 'FLAG').map((t) => t.id).sort()).toEqual(WORDMARK_ALTERNATES)
     for (const team of flagged) {
       expect(team.showsName).toBeUndefined()
-      expect(team.alternateLogos!.filter((v) => v.showsName).map((v) => v.id)).toEqual(['wordmark'])
-      expect(withLogoVariant(team, 'wordmark').showsName).toBe(true)
+      expect(team.alternateLogos!.filter((v) => v.showsName).map((v) => v.id)).toEqual(team.league === 'FLAG' ? ['flag', 'flag-map'] : ['wordmark'])
+      expect(withLogoVariant(team, team.league === 'FLAG' ? 'flag' : 'wordmark').showsName).toBe(true)
       expect(withLogoVariant(team).showsName).toBeUndefined()
     }
     expect(findTeam('LUX-MK')!.logo).toBe('/logos/svg/luxury/mk.svg')
@@ -87,25 +90,27 @@ from pathlib import Path
 sys.path.insert(0, 'scripts')
 from brand_rosters import ROSTERS
 from build_brand_teams import build_entry
-from download_brand_logos import artwork_palette, brand_colors, pinned_sources, manifest_path
+from download_brand_logos import artwork_fills, artwork_palette, pinned_sources, manifest_path, terrain_palette
 from nfl_vector_artwork import validate_vector
 teams = {t['id']: t for t in json.loads(Path('src/lib/teams.json').read_text())['teams']}
 for league, roster in ROSTERS.items():
     rows = {row[0]: row for row in roster}
     pinned = {(s['teamId'], s['id']): s for s in pinned_sources(league)}
     items = json.loads(manifest_path(league).read_text())['assets']
-    assert len(items) == len(rows) == {'BRAND': 35, 'FLAG': 93, 'APP': 50}.get(league, 30), league
+    assert len(items) == len(rows) == {'BRAND': 35, 'FLAG': 131, 'APP': 50}.get(league, 30), league
     for item in items:
         assert teams[item['id']] == build_entry(league, item, rows[item['abbr']]), item['id']
         for art in item['artwork']:
             source = pinned.pop((item['id'], art['id']))
             assert all(art.get(k) == source.get(k) for k in source if k != 'teamId'), (item['id'], art['id'])
             raw = (Path('public') / art['path'].lstrip('/')).read_bytes()
-            validate_vector(raw)
-            assert hashlib.sha256(raw).hexdigest() == art['sha256'] and len(raw) <= 400_000
-            colors = brand_colors(raw)
+            if art['format'] == 'svg':
+                validate_vector(raw)
+            assert hashlib.sha256(raw).hexdigest() == art['sha256'] and len(raw) <= 700_000
+            colors = artwork_fills(raw, art['format'])
             assert colors == art['colors'], (item['id'], art['id'])
-            assert artwork_palette(colors, *rows[item['abbr']][3:5]) == (art['sourcePalette'], art['unusedSourceSlots'])
+            expected = terrain_palette(*rows[item['abbr']][3:5]) if art['format'] == 'png' else artwork_palette(colors, *rows[item['abbr']][3:5])
+            assert expected == (art['sourcePalette'], art['unusedSourceSlots'])
     assert not pinned, f'sources missing from the manifest: {sorted(pinned)}'
 `)
   }, 30000)

@@ -10,6 +10,8 @@ export interface LogoVariant {
   unusedSourceSlots?: number[]
   /** This artwork spells the brand's name (a wordmark kept behind a symbol primary); random decks never draw alternates. */
   showsName?: boolean
+  /** This artwork keeps its own colors (a terrain photo): a remix never recolors it and paints only the tile and frame around it. */
+  keepsColors?: boolean
 }
 
 export interface Team {
@@ -31,6 +33,8 @@ export interface Team {
   alternateLogos?: LogoVariant[]
   /** The only available artwork spells the brand's name, so random decks use it as a color donor only. */
   showsName?: boolean
+  /** The resolved artwork keeps its own colors; see `LogoVariant.keepsColors`. */
+  keepsColors?: boolean
 }
 
 export interface Round {
@@ -103,7 +107,7 @@ export const logoVariants = (team: Team): LogoVariant[] => [
 /** Resolve artwork only: team identity, donor palette and guessing answers stay the same. */
 export function withLogoVariant(team: Team, id?: string): Team {
   const variant = team.alternateLogos?.find((v) => v.id === id)
-  return variant ? { ...team, logo: variant.logo, sourcePalette: variant.sourcePalette ?? team.palette, unusedSourceSlots: variant.unusedSourceSlots, showsName: variant.showsName } : team
+  return variant ? { ...team, logo: variant.logo, sourcePalette: variant.sourcePalette ?? team.palette, unusedSourceSlots: variant.unusedSourceSlots, showsName: variant.showsName, keepsColors: variant.keepsColors } : team
 }
 
 export function nextLogoVariant(team: Team, current?: string): string | undefined {

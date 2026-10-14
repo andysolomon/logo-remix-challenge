@@ -10,6 +10,10 @@ Edits come from scripts/brand_artwork_sources.json and run in this order:
   viewBox      reviewed crop around the remaining artwork
 Editor metadata is dropped and percentage rgb() colors become hex so the game can recolor them.
 
+compose_flag_map clips a flag to a place's outline (outline_geojson.py), for the "flag-map"
+alternates: the outline becomes a clipPath and the flag, as a nested <svg> that covers the
+crop box, is drawn through it.
+
 Usage (review helpers):
   python3 scripts/brand_vector.py fetch URL OUT [logowik]
   python3 scripts/brand_vector.py tree SOURCE.svg [DEPTH]
@@ -23,7 +27,7 @@ from xml.etree import ElementTree as ET
 
 from download_svgs import fetch
 from nfl_source_download import fetch_logowik_svg
-from nfl_vector_artwork import SVG, validate_vector
+from nfl_vector_artwork import SHAPES, SVG, validate_vector
 
 XLINK = 'http://www.w3.org/1999/xlink'
 XML = 'http://www.w3.org/XML/1998/namespace'
@@ -132,6 +136,38 @@ def import_brand_vector(raw, ops):
         # Pixel dimensions only describe the aspect ratio; CSS sizes the logo.
         root.set('width', number(box[2]))
         root.set('height', number(box[3]))
+    raw = ET.tostring(root, encoding='utf-8', xml_declaration=True) + b'\n'
+    validate_vector(raw)
+    return raw
+
+
+def compose_flag_map(flag_raw, flag_ops, outline_svg):
+    """Draw a flag through a silhouette: the outline clips a nested copy of the flag that covers its crop box."""
+    if 'viewBox' in flag_ops:
+        raise ValueError('a flag-map takes its crop from the outline; edit only the flag with ops')
+    flag = ET.fromstring(import_brand_vector(flag_raw, flag_ops))
+    outline = ET.fromstring(outline_svg)
+    box = outline.get('viewBox').split()
+    if any(node.get('transform') for node in outline.iter()):
+        raise ValueError('outline shapes must be untransformed to serve as a clip path')
+    root = ET.Element(f'{{{SVG}}}svg', {'viewBox': ' '.join(box)})
+    clip = ET.SubElement(ET.SubElement(root, f'{{{SVG}}}defs'), f'{{{SVG}}}clipPath', {'id': 'flag-map-outline'})
+    for node in outline.iter():
+        if node.tag.rsplit('}', 1)[-1] in SHAPES:
+            shape = ET.SubElement(clip, node.tag, {k: v for k, v in node.attrib.items() if k not in ('fill', 'stroke', 'class', 'id', 'style')})
+            shape.set('fill', 'none')
+    if not len(clip):
+        raise ValueError('outline has no shapes to clip with')
+    layer = ET.SubElement(root, f'{{{SVG}}}g', {'clip-path': 'url(#flag-map-outline)'})
+    inner = ET.SubElement(layer, f'{{{SVG}}}svg', {k: v for k, v in flag.attrib.items() if k not in ('width', 'height', 'viewBox')})
+    inner.set('viewBox', flag.get('viewBox'))
+    for key, value in zip(('x', 'y', 'width', 'height'), box):
+        inner.set(key, value)
+    inner.set('preserveAspectRatio', 'xMidYMid slice')
+    for child in list(flag):
+        inner.append(child)
+    root.set('width', number(box[2]))
+    root.set('height', number(box[3]))
     raw = ET.tostring(root, encoding='utf-8', xml_declaration=True) + b'\n'
     validate_vector(raw)
     return raw

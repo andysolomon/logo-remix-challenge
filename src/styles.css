@@ -138,7 +138,8 @@ input::placeholder { color: var(--faint); }
 .rise { animation: rise 0.4s ease; }
 
 /* ---------- App shell ---------- */
-.app { height: 100vh; height: 100dvh; display: flex; flex-direction: column; overflow: hidden; background: var(--bg); }
+/* --vvh is the visual viewport height (useVisualViewport.ts): with a phone keyboard up the shell shrinks to what is visible instead of being scrolled off the top. */
+.app { height: 100vh; height: 100dvh; height: var(--vvh, 100dvh); display: flex; flex-direction: column; overflow: hidden; background: var(--bg); }
 .app.dark { background: var(--dark-bg); color: var(--dark-ink); }
 
 /* ---------- Header ---------- */
@@ -458,6 +459,22 @@ input::placeholder { color: var(--faint); }
 .reveal-part-mark.no { color: var(--danger-dark); }
 .btn-submit { width: 150px; height: 60px; background: var(--accent); color: #FFFFFF; border: none; border-radius: 14px; font: 700 17px var(--display); letter-spacing: 2px; cursor: pointer; }
 .btn-submit:hover { filter: brightness(0.94); }
+/* Keyboard up (html.kb-open from useVisualViewport.ts): the question compacts around the logo so logo and field share the strip above the keys. */
+html.kb-open .question { overflow-y: auto; -webkit-overflow-scrolling: touch; }
+html.kb-open .q-top { padding: 8px 20px 0; font-size: 14px; }
+html.kb-open .timer { gap: 2px; }
+html.kb-open .timer-num { font-size: 30px; }
+html.kb-open .timer-bar { height: 4px; }
+html.kb-open .q-hero { flex: 1 0 auto; min-height: 96px; padding: 6px 16px; }
+html.kb-open .q-logo { width: min(430px, 100cqw, 100cqh); height: min(430px, 100cqw, 100cqh); }
+html.kb-open .prompt { font-size: 18px; letter-spacing: 2px; }
+html.kb-open .hints { margin-top: 4px; }
+html.kb-open .guess-form { margin: 8px auto 10px; gap: 8px; }
+html.kb-open .guess-input, html.kb-open .btn-submit { height: 48px; }
+html.kb-open .guess-input { font-size: 18px; }
+html.kb-open .btn-submit { width: 110px; }
+html.kb-open .guess-form.both { gap: 6px; }
+html.kb-open .guess-form.both .guess-input { height: 44px; font-size: 16px; }
 .host { display: flex; flex-direction: column; align-items: center; gap: 10px; width: min(640px, 86%); margin: 14px auto 24px; }
 .host-hint { font: 500 14px var(--ui); color: var(--dark-faint); }
 .host-row { display: flex; gap: 14px; width: 100%; }

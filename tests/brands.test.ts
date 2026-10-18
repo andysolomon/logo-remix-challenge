@@ -13,10 +13,10 @@ const python = (code: string) => execFileSync('python3', ['-c', code], { cwd: ro
 const COLLECTIONS: League[] = ['FOOD', 'BRAND', 'FLAG', 'APP', 'TV', 'CAR', 'LUX', 'CLOTH']
 const entries = TEAMS.filter((t) => COLLECTIONS.includes(t.league))
 const norm = (s: string) => s.toLowerCase().replace(/[^a-z0-9]/g, '')
-/** Chains, channels, carmakers and fashion brands whose every published logo is a wordmark; random decks skip them, but they can still be picked by hand. */
+/** Entries with name-visible imported artwork; random decks skip them, but they can still be picked by hand. */
 const WORDMARK_ONLY = [
   'CAR-FIAT', 'CAR-FORD', 'CLOTH-GAP', 'CLOTH-SUPREME',
-  'FOOD-BOJ', 'FOOD-CANE', 'FOOD-CUL', 'FOOD-FIVE', 'FOOD-PAPA',
+  'FOOD-BOJ', 'FOOD-CANE', 'FOOD-CINNABON', 'FOOD-CUL', 'FOOD-DENNYS', 'FOOD-FIVE', 'FOOD-IHOP', 'FOOD-KRISPY', 'FOOD-OUTBACK', 'FOOD-PAPA', 'FOOD-WAFFLE', 'FOOD-WINGSTOP',
   'LUX-BVLGARI', 'LUX-DIOR', 'LUX-PRADA', 'LUX-RM', 'LUX-TAG', 'LUX-TIFFANY', 'LUX-VCA',
   'TV-ABC', 'TV-CMT', 'TV-CNN', 'TV-EENT', 'TV-ESPN', 'TV-FOX', 'TV-HBO', 'TV-HGTV', 'TV-TNT', 'TV-TWC', 'TV-VH1',
 ]
@@ -28,7 +28,7 @@ describe('brand collections', () => {
   test('fast food, brands, apps, TV, cars, luxury and clothing have full rosters split across their categories', () => {
     expect(LEAGUES.BRAND).toEqual({ label: 'BRANDS', conferences: ['Product', 'Service', 'Corporate', 'Personal', 'Store'] })
     expect(LEAGUES.APP).toEqual({ label: 'APPS', conferences: ['Built-in', 'Social', 'Games', 'Music & Video', 'Everyday'] })
-    expect(LEAGUES.BRAND.conferences.map((c) => filterTeams('BRAND', c, '').length)).toEqual([8, 9, 8, 4, 6])
+    expect(LEAGUES.BRAND.conferences.map((c) => filterTeams('BRAND', c, '').length)).toEqual([14, 16, 20, 4, 6])
     expect(LEAGUES.APP.conferences.map((c) => filterTeams('APP', c, '').length)).toEqual([10, 10, 10, 10, 10])
     expect(LEAGUES.TV).toEqual({ label: 'TV', conferences: ['Broadcast', 'Cable', 'Music & Pop', 'Kids', 'Discovery & Lifestyle'] })
     expect(LEAGUES.TV.conferences.map((c) => filterTeams('TV', c, '').length)).toEqual([6, 6, 5, 7, 6])
@@ -38,7 +38,7 @@ describe('brand collections', () => {
     expect(LEAGUES.LUX.conferences.map((c) => filterTeams('LUX', c, '').length)).toEqual([10, 6, 8, 6])
     expect(LEAGUES.CLOTH).toEqual({ label: 'CLOTHING', conferences: ['Sportswear', 'Streetwear', 'Outdoor', 'Preppy', 'Everyday'] })
     expect(LEAGUES.CLOTH.conferences.map((c) => filterTeams('CLOTH', c, '').length)).toEqual([7, 6, 6, 6, 5])
-    for (const [league, size] of [['FOOD', 30], ['BRAND', 35], ['FLAG', 123], ['APP', 50], ['TV', 30], ['CAR', 30], ['LUX', 30], ['CLOTH', 30]] as const) {
+    for (const [league, size] of [['FOOD', 50], ['BRAND', 60], ['FLAG', 123], ['APP', 50], ['TV', 30], ['CAR', 30], ['LUX', 30], ['CLOTH', 30]] as const) {
       expect(filterTeams(league, 'All', '')).toHaveLength(size)
       expect(new Set(filterTeams(league, 'All', '').map(fullName)).size).toBe(size)
     }
@@ -57,7 +57,7 @@ describe('brand collections', () => {
     expect(entries.filter((t) => t.alternateLogos?.length).length).toBeGreaterThanOrEqual(70)
   })
 
-  test('artwork never spells the answer, apart from the wordmark-only entries kept as color donors', () => {
+  test('artwork never spells the answer, apart from the wordmark-only entries kept for manual selection', () => {
     expect(entries.filter((t) => t.showsName).map((t) => t.id).sort()).toEqual(WORDMARK_ONLY)
     for (const team of entries) {
       const answers = [fullName(team), team.abbr, ...(team.aliases ?? [])].map(norm).filter((a) => a.length > 2)
@@ -94,7 +94,7 @@ for league, roster in ROSTERS.items():
     rows = {row[0]: row for row in roster}
     pinned = {(s['teamId'], s['id']): s for s in pinned_sources(league)}
     items = json.loads(manifest_path(league).read_text())['assets']
-    assert len(items) == len(rows) == {'BRAND': 35, 'FLAG': 123, 'APP': 50, 'NHL': 32}.get(league, 30), league
+    assert len(items) == len(rows) == {'FOOD': 50, 'BRAND': 60, 'FLAG': 123, 'APP': 50, 'NHL': 32}.get(league, 30), league
     for item in items:
         assert teams[item['id']] == build_entry(league, item, rows[item['abbr']]), item['id']
         for art in item['artwork']:
@@ -148,10 +148,10 @@ for league, roster in ROSTERS.items():
 
   test('random decks draw brand, app, channel, car, luxury and clothing logos, skip wordmarks, take colors from teams and show the type as a hint', () => {
     expect(ALL_POOL_IDS).toEqual(expect.arrayContaining(['Fast Food', 'Brands', 'Apps', 'TV', 'Cars', 'Luxury', 'Clothing']))
-    expect(poolTeams(['Brands', 'Apps'])).toHaveLength(85)
+    expect(poolTeams(['Brands', 'Apps'])).toHaveLength(110)
     expect(poolTeams(['TV', 'Cars'])).toHaveLength(60)
     expect(poolTeams(['Luxury', 'Clothing'])).toHaveLength(60)
-    expect(logoPoolTeams(['Fast Food'])).toHaveLength(30 - wordmarks('FOOD'))
+    expect(logoPoolTeams(['Fast Food'])).toHaveLength(50 - wordmarks('FOOD'))
     expect(logoPoolTeams(['TV'])).toHaveLength(30 - wordmarks('TV'))
     expect(logoPoolTeams(['Cars'])).toHaveLength(30 - wordmarks('CAR'))
     expect(logoPoolTeams(['Luxury'])).toHaveLength(30 - wordmarks('LUX'))
@@ -200,7 +200,18 @@ assert ET.fromstring(import_brand_vector(svg('<path d="M0 0h9v9z"/>'), {'fill': 
 sheet = svg('<style>.a{fill:#f00}</style><path class="a" d="M0 0h9v9z"/><path d="M20 0h9v9z"/><path d="M40 0h9v9z"/>')
 icon = ET.fromstring(import_brand_vector(sheet, {'keepNodes': ['0', '2-3']}))
 assert [n.get('d', n.tag[-5:]) for n in icon] == ['style', 'M20 0h9v9z', 'M40 0h9v9z'], 'icon cut from a sheet kept other icons'
+cropped = ET.fromstring(import_brand_vector(source, {'viewBox': '0 0 40 40', 'clipToViewBox': True}))
+ns = {'s': 'http://www.w3.org/2000/svg'}
+clip = cropped.find('s:defs/s:clipPath', ns)
+assert clip.get('clipPathUnits') == 'userSpaceOnUse'
+assert clip[0].attrib == {'x': '0', 'y': '0', 'width': '40', 'height': '40'}
+assert cropped[-1].get('clip-path') == f"url(#{clip.get('id')})"
+assert len(cropped[-1]) == 2, 'crop preserves source paths inside an explicit clip'
+collision = svg('<defs><clipPath id="reviewed-artwork-crop"><rect width="10" height="10"/></clipPath></defs><path d="M0 0h9v9z"/>')
+clipped = ET.fromstring(import_brand_vector(collision, {'viewBox': '0 0 10 10', 'clipToViewBox': True}))
+assert clipped[-1].get('clip-path') == 'url(#reviewed-artwork-crop-1)'
 for raw, ops in [(source, {'removeNodes': ['9']}), (source, {'removeNodes': ['1', '1']}),
+                 (source, {'clipToViewBox': True}), (source, {'viewBox': '0 0 40 40', 'clipToViewBox': False}),
                  (source, {'fill': 'red'}), (source, {'viewBox': '0 0 0 10'}), (source, {'recolor': {}}),
                  (sheet, {'keepNodes': ['3-2']}), (sheet, {'keepNodes': ['1-9']}),
                  (svg('<text>Brand</text>'), {}), (svg('<image href="logo.png"/>'), {}),

@@ -1,11 +1,11 @@
-"""Brand collections: fast-food chains, brands grouped by brand type, iOS apps, TV channels, carmakers,
+"""Brand collections: restaurants, brands grouped by brand type, iOS apps, TV channels, carmakers,
 luxury houses and clothing brands.
 
 Each row is (abbr, display name, category, primary color, secondary color, answer aliases).
 The colors are the donor palette and white completes the third slot. Fast-food colors keep
 the values snapped from the chains' original logos, so saved rounds look the same. Every
 artwork variant (primary and alternates) is pinned in brand_artwork_sources.json and must
-not show the brand's name, so players guess from the symbol alone. Hardee's and Carl's Jr.
+use a name-free symbol when available; wordmarks are flagged for manual selection. Hardee's and Carl's Jr.
 share one Happy Star, so each accepts the other's name.
 """
 
@@ -40,6 +40,26 @@ FOOD = [
     ("CANE", "Raising Cane's", "Chicken", "E71A2A", "FEBD11", ["Raising Canes", "Canes"]),
     ("BOJ", "Bojangles", "Chicken", "D0191A", "F8C437", []),
     ("CHECK", "Checkers", "Burgers", "E81D2D", "231F20", ["Rally's", "Rallys", "Checkers and Rally's"]),
+    ("PANERA", "Panera Bread", "Sandwiches", "4E702E", "E9C98A", ["Panera"]),
+    ("CHILIS", "Chili's", "Casual Dining", "ED1C24", "579A21", ["Chilis", "Chili's Grill & Bar"]),
+    ("APPLEBEES", "Applebee's", "Casual Dining", "C8102E", "5F7D4F", ["Applebees"]),
+    ("BR", "Baskin-Robbins", "Coffee & Treats", "EC008C", "003DA5", ["Baskin Robbins", "31 Flavors"]),
+    ("BWW", "Buffalo Wild Wings", "Casual Dining", "FFC600", "000000", ["BWW", "B-Dubs", "Bdubs"]),
+    ("OLIVE", "Olive Garden", "Casual Dining", "506B38", "70539B", ["Olive Garden Italian Kitchen"]),
+    ("LOBSTER", "Red Lobster", "Casual Dining", "C8102E", "000000", []),
+    ("OUTBACK", "Outback Steakhouse", "Casual Dining", "9B1B2E", "000000", ["Outback"]),
+    ("TEXAS", "Texas Roadhouse", "Casual Dining", "F7CE00", "C8102E", []),
+    ("IHOP", "IHOP", "Casual Dining", "0072CE", "ED1C24", ["International House of Pancakes"]),
+    ("WAFFLE", "Waffle House", "Casual Dining", "FFDD00", "000000", []),
+    ("KRISPY", "Krispy Kreme", "Coffee & Treats", "00754A", "CE0E2D", ["Krispy Kreme Doughnuts", "Krispy Kreme Donuts"]),
+    ("CINNABON", "Cinnabon", "Coffee & Treats", "005F83", "8B5B29", []),
+    ("AUNTIE", "Auntie Anne's", "Coffee & Treats", "005695", "FFC72C", ["Auntie Annes"]),
+    ("DELTACO", "Del Taco", "Mexican & Asian", "FFC72C", "E31837", []),
+    ("QUIZNOS", "Quiznos", "Sandwiches", "4D7135", "E41E2B", ["Quizno's", "Quiznos Subs"]),
+    ("SHAKE", "Shake Shack", "Burgers", "60AE2B", "000000", []),
+    ("WINGSTOP", "Wingstop", "Chicken", "006938", "000000", ["Wing Stop"]),
+    ("JAMBA", "Jamba", "Coffee & Treats", "F58220", "4B7934", ["Jamba Juice"]),
+    ("DENNYS", "Denny's", "Casual Dining", "E2231A", "FFC72C", ["Dennys"]),
 ]
 
 BRAND = [
@@ -78,6 +98,31 @@ BRAND = [
     ("AE", "American Eagle", "Store", "182C52", "000000", ["American Eagle Outfitters", "AEO", "Am Eagle"]),
     ("LULU", "Lululemon", "Store", "D41935", "000000", ["Lululemon Athletica", "Lulu", "lulu lemon"]),
     ("MACYS", "Macy's", "Store", "E21A2C", "000000", ["Macys", "Macy's Inc."]),
+    ("SLACK", "Slack", "Corporate", "36C5F0", "E01E5A", []),
+    ("GITHUB", "GitHub", "Corporate", "181717", "6E5494", ["Git Hub"]),
+    ("DROPBOX", "Dropbox", "Service", "0061FF", "000000", ["Drop Box"]),
+    ("ATLASSIAN", "Atlassian", "Corporate", "0052CC", "2684FF", []),
+    ("NVIDIA", "NVIDIA", "Corporate", "76B900", "000000", ["Nvidia Corporation"]),
+    ("PAYPAL", "PayPal", "Service", "003087", "009CDE", ["Pay Pal"]),
+    ("FIGMA", "Figma", "Corporate", "F24E1E", "A259FF", []),
+    ("DOCKER", "Docker", "Product", "2496ED", "1D63ED", []),
+    ("GITLAB", "GitLab", "Corporate", "FC6D26", "E24329", ["Git Lab"]),
+    ("UBUNTU", "Ubuntu", "Product", "E95420", "77216F", ["Ubuntu Linux"]),
+    ("FIREFOX", "Firefox", "Product", "FF7139", "20123A", ["Mozilla Firefox"]),
+    ("NOTION", "Notion", "Product", "000000", "808080", []),
+    ("REDHAT", "Red Hat", "Corporate", "EE0000", "000000", ["RedHat"]),
+    ("CLOUDFLARE", "Cloudflare", "Service", "F38020", "FAAE40", ["Cloud Flare"]),
+    ("ASANA", "Asana", "Corporate", "F06A6A", "FC636B", []),
+    ("ZOOM", "Zoom", "Service", "2D8CFF", "0B5CFF", ["Zoom Video Communications"]),
+    ("STEAM", "Steam", "Product", "171A21", "66C0F4", ["Valve Steam"]),
+    ("SHOPIFY", "Shopify", "Service", "95BF47", "5E8E3E", []),
+    ("BP", "BP", "Corporate", "33A457", "B1CD49", ["British Petroleum"]),
+    ("ATT", "AT&T", "Service", "00A8E0", "000000", ["ATT", "AT and T"]),
+    ("UNILEVER", "Unilever", "Corporate", "1F36C7", "000000", []),
+    ("DEERE", "John Deere", "Corporate", "367C2B", "FFDE00", ["Deere", "Deere and Company"]),
+    ("CHEVRON", "Chevron", "Service", "0054A6", "E31837", []),
+    ("NESTLE", "Nestlé", "Corporate", "000000", "63513D", ["Nestle"]),
+    ("OPERA", "Opera", "Product", "FF1B2D", "CC0F16", ["Opera Browser"]),
 ]
 
 APP = [
@@ -435,7 +480,7 @@ NHL = [
 
 LEAGUES = {
     "NHL": {"label": "NHL", "conferences": ["Eastern", "Western"]},
-    "FOOD": {"label": "FAST FOOD", "conferences": ["Burgers", "Chicken", "Sandwiches", "Pizza", "Mexican & Asian", "Coffee & Treats"]},
+    "FOOD": {"label": "RESTAURANTS", "conferences": ["Burgers", "Chicken", "Sandwiches", "Pizza", "Mexican & Asian", "Coffee & Treats", "Casual Dining"]},
     "BRAND": {"label": "BRANDS", "conferences": ["Product", "Service", "Corporate", "Personal", "Store"]},
     "FLAG": {"label": "FLAGS", "conferences": ["Americas", "Europe", "Asia & Pacific", "Africa & Middle East", "US States", "Cities"]},
     "APP": {"label": "APPS", "conferences": ["Built-in", "Social", "Games", "Music & Video", "Everyday"]},

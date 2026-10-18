@@ -458,6 +458,134 @@
       ]
     },
     {
+      "id": "BRAND-ASANA",
+      "league": "BRAND",
+      "conference": "Corporate",
+      "region": "Asana",
+      "name": "",
+      "abbr": "ASANA",
+      "aliases": [],
+      "palette": [
+        "#F06A6A",
+        "#FC636B",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Symbol",
+          "sourceUrl": "https://api.iconify.design/logos/asana-icon.svg",
+          "sourcePage": "https://icon-sets.iconify.design/logos/asana-icon/",
+          "sourceSha256": "49545b476863be786f8aebfe19d1c92b96bb17a9321af562ef09e8db2459350e",
+          "ops": {
+            "viewBox": "-6.400 -6.400 268.800 249.420"
+          },
+          "path": "/logos/svg/brands/asana.svg",
+          "format": "svg",
+          "colors": [
+            "#F06A6A"
+          ],
+          "sourcePalette": [
+            "#F06A6A",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "a30c4244a379d578bb4e5608e3046d962a54af268d78fa5269a54f092773b460"
+        }
+      ]
+    },
+    {
+      "id": "BRAND-ATLASSIAN",
+      "league": "BRAND",
+      "conference": "Corporate",
+      "region": "Atlassian",
+      "name": "",
+      "abbr": "ATLASSIAN",
+      "aliases": [],
+      "palette": [
+        "#0052CC",
+        "#2684FF",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Symbol",
+          "sourceUrl": "https://api.iconify.design/logos/atlassian.svg",
+          "sourcePage": "https://icon-sets.iconify.design/logos/atlassian/",
+          "sourceSha256": "5078a0e14212cd03bdc5721921e6fdc0f54052b0545f514e5f164afe46a22c81",
+          "ops": {
+            "viewBox": "-6.390 -6.390 268.359 268.189"
+          },
+          "path": "/logos/svg/brands/atlassian.svg",
+          "format": "svg",
+          "colors": [
+            "#2681FF",
+            "#0052CC",
+            "#2684FF"
+          ],
+          "sourcePalette": [
+            "#0052CC",
+            "#2682FF",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "ec57423e78873bd0b504a932f312ab79216bc50d45694921d0f5f21446047f29"
+        }
+      ]
+    },
+    {
+      "id": "BRAND-ATT",
+      "league": "BRAND",
+      "conference": "Service",
+      "region": "AT&T",
+      "name": "",
+      "abbr": "ATT",
+      "aliases": [
+        "ATT",
+        "AT and T"
+      ],
+      "palette": [
+        "#00A8E0",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Symbol",
+          "sourceUrl": "https://cdn.worldvectorlogo.com/logos/at-t-5.svg",
+          "sourcePage": "https://worldvectorlogo.com/logo/at-t-5",
+          "sourceSha256": "12d8ace8f0977004a51c2b3e972d44fb43a5b3031a8b47682c077bb861983928",
+          "ops": {
+            "viewBox": "75 96 204 179",
+            "clipToViewBox": true
+          },
+          "path": "/logos/svg/brands/att.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#22BFD3"
+          ],
+          "sourcePalette": [
+            "#22BFD3",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "48a6cee1737e78e25823480cdcf86c254a956a6dc36ce5e2184ee25a804c9e80"
+        }
+      ]
+    },
+    {
       "id": "BRAND-BOA",
       "league": "BRAND",
       "conference": "Service",
@@ -503,6 +631,52 @@
       ]
     },
     {
+      "id": "BRAND-BP",
+      "league": "BRAND",
+      "conference": "Corporate",
+      "region": "BP",
+      "name": "",
+      "abbr": "BP",
+      "aliases": [
+        "British Petroleum"
+      ],
+      "palette": [
+        "#33A457",
+        "#B1CD49",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Symbol",
+          "sourceUrl": "https://cdn.worldvectorlogo.com/logos/bp-3.svg",
+          "sourcePage": "https://worldvectorlogo.com/logo/bp-3",
+          "sourceSha256": "5ef39f8bb15524bfcc3a52bb249fc9a1eeba263a1ec417ab37b7811fa7e04a92",
+          "ops": {
+            "keepNodes": [
+              "0/1-4"
+            ],
+            "viewBox": "25.139 43.519 147.802 149.972"
+          },
+          "path": "/logos/svg/brands/bp.svg",
+          "format": "svg",
+          "colors": [
+            "#33A457",
+            "#B1CD49",
+            "#F8D930",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#33A457",
+            "#D4D33C",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "2a293c7d38fc76a30b9ec786a207680bb46abc076db8de32063d2edadbb04d4e"
+        }
+      ]
+    },
+    {
       "id": "BRAND-CHASE",
       "league": "BRAND",
       "conference": "Service",
@@ -544,6 +718,138 @@
             2
           ],
           "sha256": "b1747ab1ce9f9be170fb3fc97234a825768e578fe1091a2bea92ff5dcad02dbd"
+        }
+      ]
+    },
+    {
+      "id": "BRAND-CHEVRON",
+      "league": "BRAND",
+      "conference": "Service",
+      "region": "Chevron",
+      "name": "",
+      "abbr": "CHEVRON",
+      "aliases": [],
+      "palette": [
+        "#0054A6",
+        "#E31837",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Symbol",
+          "sourceUrl": "https://cdn.worldvectorlogo.com/logos/chevron.svg",
+          "sourcePage": "https://worldvectorlogo.com/logo/chevron",
+          "sourceSha256": "b21f7def6b75e2e184f979f4da92d54ea674390cfec2b02bb15e9700a4ca0d2b",
+          "ops": {
+            "keepNodes": [
+              "0/1-2"
+            ],
+            "viewBox": "25 48 144 135",
+            "clipToViewBox": true
+          },
+          "path": "/logos/svg/brands/chevron.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#E31837",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "77728902de1023f6bccf0435062a2480ce0cd6bf091f27f6f5920a6345914d87"
+        }
+      ]
+    },
+    {
+      "id": "BRAND-CLOUDFLARE",
+      "league": "BRAND",
+      "conference": "Service",
+      "region": "Cloudflare",
+      "name": "",
+      "abbr": "CLOUDFLARE",
+      "aliases": [
+        "Cloud Flare"
+      ],
+      "palette": [
+        "#F38020",
+        "#FAAE40",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Symbol",
+          "sourceUrl": "https://api.iconify.design/logos/cloudflare-icon.svg",
+          "sourcePage": "https://icon-sets.iconify.design/logos/cloudflare-icon/",
+          "sourceSha256": "da6003724731ef69dc8f06a25f3a2ad84189e48fde64c38e908a46a470a74689",
+          "ops": {
+            "viewBox": "-6.400 -6.400 268.800 129.800"
+          },
+          "path": "/logos/svg/brands/cloudflare.svg",
+          "format": "svg",
+          "colors": [
+            "#FBAD41",
+            "#F6821F"
+          ],
+          "sourcePalette": [
+            "#F6821F",
+            "#FBAD41",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "f1a8799af7233d5fbbb09a33b0bb36cded7d2605f66efef0b9c5f2554f59c0ef"
+        }
+      ]
+    },
+    {
+      "id": "BRAND-DEERE",
+      "league": "BRAND",
+      "conference": "Corporate",
+      "region": "John Deere",
+      "name": "",
+      "abbr": "DEERE",
+      "aliases": [
+        "Deere",
+        "Deere and Company"
+      ],
+      "palette": [
+        "#367C2B",
+        "#FFDE00",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Symbol",
+          "sourceUrl": "https://cdn.simpleicons.org/johndeere",
+          "sourcePage": "https://simpleicons.org/?q=johndeere",
+          "sourceSha256": "6cc926d47cc1db8a5f2e1e5ffb9bf67701bd76b1f87bbcf1f0ff0f39870d21f9",
+          "ops": {
+            "viewBox": "-0.600 0.560 25.200 22.880"
+          },
+          "path": "/logos/svg/brands/deere.svg",
+          "format": "svg",
+          "colors": [
+            "#367C2B"
+          ],
+          "sourcePalette": [
+            "#367C2B",
+            "#FFDE00",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "c3639c630d87a5a779ab3bb4d8a641adf91fd3db7a1278aa2555dca397b5988e"
         }
       ]
     },
@@ -615,6 +921,213 @@
           ],
           "unusedSourceSlots": [],
           "sha256": "657510dc04fa20f1b86b8403aba5d1cd86f1fa20dbc803e236d830ad20cf7caf"
+        }
+      ]
+    },
+    {
+      "id": "BRAND-DOCKER",
+      "league": "BRAND",
+      "conference": "Product",
+      "region": "Docker",
+      "name": "",
+      "abbr": "DOCKER",
+      "aliases": [],
+      "palette": [
+        "#2496ED",
+        "#1D63ED",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Symbol",
+          "sourceUrl": "https://api.iconify.design/logos/docker-icon.svg",
+          "sourcePage": "https://icon-sets.iconify.design/logos/docker-icon/",
+          "sourceSha256": "d90e0e6bb208ee674fa76ccc46aa7d24b0fc5b3535d32eb227975e68e694a1d5",
+          "ops": {
+            "viewBox": "-6.400 -6.400 268.800 197.540"
+          },
+          "path": "/logos/svg/brands/docker.svg",
+          "format": "svg",
+          "colors": [
+            "#2396ED"
+          ],
+          "sourcePalette": [
+            "#2396ED",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "01a9a0e4cbac3dcc763c3a0880aa8c7b1afb9ef4df851d4fc628d864c629547b"
+        }
+      ]
+    },
+    {
+      "id": "BRAND-DROPBOX",
+      "league": "BRAND",
+      "conference": "Service",
+      "region": "Dropbox",
+      "name": "",
+      "abbr": "DROPBOX",
+      "aliases": [
+        "Drop Box"
+      ],
+      "palette": [
+        "#0061FF",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Symbol",
+          "sourceUrl": "https://api.iconify.design/logos/dropbox.svg",
+          "sourcePage": "https://icon-sets.iconify.design/logos/dropbox/",
+          "sourceSha256": "be7fb88c71c254549e54b41e482e32c97fb96794061040467c03b8c25a2f7adc",
+          "ops": {
+            "viewBox": "-6.400 -6.400 268.800 230.340"
+          },
+          "path": "/logos/svg/brands/dropbox.svg",
+          "format": "svg",
+          "colors": [
+            "#0061FF"
+          ],
+          "sourcePalette": [
+            "#0061FF",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "4b9cb2599ee0054710d5ce6e0e1d7e0d5d4bdd78a179b8b2d912cd04aa0059b0"
+        }
+      ]
+    },
+    {
+      "id": "BRAND-FIGMA",
+      "league": "BRAND",
+      "conference": "Corporate",
+      "region": "Figma",
+      "name": "",
+      "abbr": "FIGMA",
+      "aliases": [],
+      "palette": [
+        "#F24E1E",
+        "#A259FF",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Symbol",
+          "sourceUrl": "https://api.iconify.design/logos/figma.svg",
+          "sourcePage": "https://icon-sets.iconify.design/logos/figma/",
+          "sourceSha256": "6876f8b8564ceed4a6d70ff1a2537cafdb1d90ed133486504c0804e110bfcdda",
+          "ops": {
+            "viewBox": "-9.600 -9.600 275.200 403.200"
+          },
+          "path": "/logos/svg/brands/figma.svg",
+          "format": "svg",
+          "colors": [
+            "#0ACF83",
+            "#A259FF",
+            "#F24E1E",
+            "#FF7262",
+            "#1ABCFE"
+          ],
+          "sourcePalette": [
+            "#F86040",
+            "#5E8AFE",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "58d25d8fde06c34169d5f02c91581c94b590f6d0c7db32899600d1d7187f41b0"
+        }
+      ]
+    },
+    {
+      "id": "BRAND-FIREFOX",
+      "league": "BRAND",
+      "conference": "Product",
+      "region": "Firefox",
+      "name": "",
+      "abbr": "FIREFOX",
+      "aliases": [
+        "Mozilla Firefox"
+      ],
+      "palette": [
+        "#FF7139",
+        "#20123A",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Symbol",
+          "sourceUrl": "https://api.iconify.design/logos/firefox.svg",
+          "sourcePage": "https://icon-sets.iconify.design/logos/firefox/",
+          "sourceSha256": "f3a75fc7ad418420cb5f586d14459fc015e95f708421f65a727e82f79f8e4cd9",
+          "ops": {
+            "viewBox": "-5.316 -6.606 269.231 277.851"
+          },
+          "path": "/logos/svg/brands/firefox.svg",
+          "format": "svg",
+          "colors": [
+            "#FFBD4F",
+            "#FFAC31",
+            "#FF9D17",
+            "#FF980E",
+            "#FF563B",
+            "#FF3750",
+            "#F5156C",
+            "#EB0878",
+            "#E50080",
+            "#960E18",
+            "#B11927",
+            "#DB293D",
+            "#F5334B",
+            "#FFF44F",
+            "#FFDC3E",
+            "#FF9D12",
+            "#3A8EE6",
+            "#5C79F0",
+            "#9059FF",
+            "#C139E6",
+            "#8C4FF3",
+            "#7716A8",
+            "#6E008B",
+            "#FFE226",
+            "#FFDB27",
+            "#FFC82A",
+            "#FFA930",
+            "#FF7E37",
+            "#FF7139",
+            "#FF5634",
+            "#FF3647",
+            "#E31587",
+            "#FFE847",
+            "#FFC830",
+            "#FF8B16",
+            "#FF672A",
+            "#FFE141",
+            "#FFAF1E"
+          ],
+          "sourcePalette": [
+            "#FF7139",
+            "#FFCE36",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "e1b7197379de5a771f7fa1323a03da4b091723e753a5125d325b41f3d39756e7"
         }
       ]
     },
@@ -696,6 +1209,93 @@
             2
           ],
           "sha256": "6ca1c605c4af437466af09ae54533d46655d7992745b6c3a4ad50b43ffba201a"
+        }
+      ]
+    },
+    {
+      "id": "BRAND-GITHUB",
+      "league": "BRAND",
+      "conference": "Corporate",
+      "region": "GitHub",
+      "name": "",
+      "abbr": "GITHUB",
+      "aliases": [
+        "Git Hub"
+      ],
+      "palette": [
+        "#181717",
+        "#6E5494",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Symbol",
+          "sourceUrl": "https://api.iconify.design/logos/github-icon.svg",
+          "sourcePage": "https://icon-sets.iconify.design/logos/github-icon/",
+          "sourceSha256": "db2a2493c8f4d0acba4f8f18e89e0b1b0b0f33aaf185de510e253b927c748c71",
+          "ops": {
+            "viewBox": "-6.400 -6.400 268.800 262.480"
+          },
+          "path": "/logos/svg/brands/github.svg",
+          "format": "svg",
+          "colors": [
+            "#161614"
+          ],
+          "sourcePalette": [
+            "#161614",
+            "#6E5494",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "970a31dd88b2dbb418f98cfe0e78b5343a21ae77623d39d0b3a08e7b3efa4fb4"
+        }
+      ]
+    },
+    {
+      "id": "BRAND-GITLAB",
+      "league": "BRAND",
+      "conference": "Corporate",
+      "region": "GitLab",
+      "name": "",
+      "abbr": "GITLAB",
+      "aliases": [
+        "Git Lab"
+      ],
+      "palette": [
+        "#FC6D26",
+        "#E24329",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Symbol",
+          "sourceUrl": "https://api.iconify.design/logos/gitlab-icon.svg",
+          "sourcePage": "https://icon-sets.iconify.design/logos/gitlab-icon/",
+          "sourceSha256": "a077ca2d1355183bdb997cef07224f0ecb0e2813ec04757ca129103848811531",
+          "ops": {
+            "viewBox": "-6.400 -6.400 268.800 259.290"
+          },
+          "path": "/logos/svg/brands/gitlab.svg",
+          "format": "svg",
+          "colors": [
+            "#E24329",
+            "#FC6D26",
+            "#FCA326"
+          ],
+          "sourcePalette": [
+            "#FC8826",
+            "#E24329",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "8775540145d048c4594ff44c9cd2652d9441234005616373d99466d1b2c80bd5"
         }
       ]
     },
@@ -1309,6 +1909,53 @@
       ]
     },
     {
+      "id": "BRAND-NESTLE",
+      "league": "BRAND",
+      "conference": "Corporate",
+      "region": "Nestlé",
+      "name": "",
+      "abbr": "NESTLE",
+      "aliases": [
+        "Nestle"
+      ],
+      "palette": [
+        "#000000",
+        "#63513D",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Symbol",
+          "sourceUrl": "https://cdn.worldvectorlogo.com/logos/nestle-3.svg",
+          "sourcePage": "https://worldvectorlogo.com/logo/nestle-3",
+          "sourceSha256": "b081f5078690e341181e08c4f5342a78f570f1c1bed7e8c9de3639f5587ddb73",
+          "ops": {
+            "keepNodes": [
+              "0/3-8"
+            ],
+            "viewBox": "1 70 77 53",
+            "clipToViewBox": true
+          },
+          "path": "/logos/svg/brands/nestle.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#63513D",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "d66df11630d14a6bd92a1981f9cea398956acad2acce2b27c01806058fde3ce0"
+        }
+      ]
+    },
+    {
       "id": "BRAND-NIKE",
       "league": "BRAND",
       "conference": "Corporate",
@@ -1350,6 +1997,184 @@
             2
           ],
           "sha256": "9663bf432114e86b4be29d682aaabd03a062c4e5841dd6d2237b073d3dcb8943"
+        }
+      ]
+    },
+    {
+      "id": "BRAND-NOTION",
+      "league": "BRAND",
+      "conference": "Product",
+      "region": "Notion",
+      "name": "",
+      "abbr": "NOTION",
+      "aliases": [],
+      "palette": [
+        "#000000",
+        "#808080",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Symbol",
+          "sourceUrl": "https://api.iconify.design/logos/notion-icon.svg",
+          "sourcePage": "https://icon-sets.iconify.design/logos/notion-icon/",
+          "sourceSha256": "84e90b26739159510ec39ef34254df634ba176ec5612db71085dfb5b174f141f",
+          "ops": {
+            "viewBox": "-6.687 -6.687 269.373 280.844"
+          },
+          "path": "/logos/svg/brands/notion.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "a9f6216dab263123c23ebc2ee8f694655cc635f3670b8a047282f44b0e5715ee"
+        }
+      ]
+    },
+    {
+      "id": "BRAND-NVIDIA",
+      "league": "BRAND",
+      "conference": "Corporate",
+      "region": "NVIDIA",
+      "name": "",
+      "abbr": "NVIDIA",
+      "aliases": [
+        "Nvidia Corporation"
+      ],
+      "palette": [
+        "#76B900",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Symbol",
+          "sourceUrl": "https://api.iconify.design/logos/nvidia.svg",
+          "sourcePage": "https://icon-sets.iconify.design/logos/nvidia/",
+          "sourceSha256": "bc2a197a298c9f7d8e279ef8d96682034bc7586c9c77172633ca57c298fa8cb4",
+          "ops": {
+            "keepNodes": [
+              "1"
+            ],
+            "viewBox": "-3.675 -3.675 154.340 104.570"
+          },
+          "path": "/logos/svg/brands/nvidia.svg",
+          "format": "svg",
+          "colors": [
+            "#76B900"
+          ],
+          "sourcePalette": [
+            "#76B900",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "c94912baa33fa7c2cfd4d457685821315319c5b5441b5de7a3488f9697ce8993"
+        }
+      ]
+    },
+    {
+      "id": "BRAND-OPERA",
+      "league": "BRAND",
+      "conference": "Product",
+      "region": "Opera",
+      "name": "",
+      "abbr": "OPERA",
+      "aliases": [
+        "Opera Browser"
+      ],
+      "palette": [
+        "#FF1B2D",
+        "#CC0F16",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Symbol",
+          "sourceUrl": "https://api.iconify.design/logos/opera.svg",
+          "sourcePage": "https://icon-sets.iconify.design/logos/opera/",
+          "sourceSha256": "9b58070c6bfebb79f5fd867f5db9fd34553a55e66f213ee06beaf8ad29e3f59f",
+          "ops": {},
+          "path": "/logos/svg/brands/opera.svg",
+          "format": "svg",
+          "colors": [
+            "#FF1B2D",
+            "#FA1A2C",
+            "#ED1528",
+            "#D60E21",
+            "#B70519",
+            "#A70014",
+            "#9C0000",
+            "#FF4B4B"
+          ],
+          "sourcePalette": [
+            "#F92533",
+            "#B40514",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "c1b18a2a18cadc68fb8f59030ea5476c6540ceb31e0eef8ea13e7ebf141e9211"
+        }
+      ]
+    },
+    {
+      "id": "BRAND-PAYPAL",
+      "league": "BRAND",
+      "conference": "Service",
+      "region": "PayPal",
+      "name": "",
+      "abbr": "PAYPAL",
+      "aliases": [
+        "Pay Pal"
+      ],
+      "palette": [
+        "#003087",
+        "#009CDE",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Symbol",
+          "sourceUrl": "https://api.iconify.design/logos/paypal.svg",
+          "sourcePage": "https://icon-sets.iconify.design/logos/paypal/",
+          "sourceSha256": "14052728f9f11edceba2a1791b8cb62b083008956e0c3c6c60d21f5f218d1769",
+          "ops": {
+            "viewBox": "-7.493 -6.703 270.067 315.976"
+          },
+          "path": "/logos/svg/brands/paypal.svg",
+          "format": "svg",
+          "colors": [
+            "#27346A",
+            "#2790C3",
+            "#1F264F"
+          ],
+          "sourcePalette": [
+            "#232D5C",
+            "#2790C3",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "07c71a73e73d33f15e6a8361060590cfc1403a36b1c5d4c734f28566676fa104"
         }
       ]
     },
@@ -1596,6 +2421,49 @@
       ]
     },
     {
+      "id": "BRAND-REDHAT",
+      "league": "BRAND",
+      "conference": "Corporate",
+      "region": "Red Hat",
+      "name": "",
+      "abbr": "REDHAT",
+      "aliases": [
+        "RedHat"
+      ],
+      "palette": [
+        "#EE0000",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Symbol",
+          "sourceUrl": "https://api.iconify.design/logos/redhat-icon.svg",
+          "sourcePage": "https://icon-sets.iconify.design/logos/redhat-icon/",
+          "sourceSha256": "f3b00509811da39b143adb6c833bf8ae319ce76c1bbaa3929769c2d100d801d8",
+          "ops": {
+            "viewBox": "-6.400 -6.400 268.800 206.460"
+          },
+          "path": "/logos/svg/brands/redhat.svg",
+          "format": "svg",
+          "colors": [
+            "#EE0000",
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#EE0000",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "cb1e73c25b204afe3b05d187b5b9af01ba64aa7504192623bd4c91e2318975d9"
+        }
+      ]
+    },
+    {
       "id": "BRAND-SHELL",
       "league": "BRAND",
       "conference": "Service",
@@ -1637,6 +2505,132 @@
             2
           ],
           "sha256": "aaf9f4619902b95266ba1dfdf78f0c4078943f8cc8de1b25df9ea0e7b752fc2b"
+        }
+      ]
+    },
+    {
+      "id": "BRAND-SHOPIFY",
+      "league": "BRAND",
+      "conference": "Service",
+      "region": "Shopify",
+      "name": "",
+      "abbr": "SHOPIFY",
+      "aliases": [],
+      "palette": [
+        "#95BF47",
+        "#5E8E3E",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Symbol",
+          "sourceUrl": "https://api.iconify.design/logos/shopify.svg",
+          "sourcePage": "https://icon-sets.iconify.design/logos/shopify/",
+          "sourceSha256": "3fef52edf70933d426f920be9a337d783df741029db5d704e8db300e0e3a5c26",
+          "ops": {
+            "viewBox": "-7.223 -6.482 269.975 305.025"
+          },
+          "path": "/logos/svg/brands/shopify.svg",
+          "format": "svg",
+          "colors": [
+            "#95BF46",
+            "#5E8E3E",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#95BF46",
+            "#5E8E3E",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "41e174a040bf5f785fba66f82643dddaf9b67c06e2a68d3d8e2eacd3cb91e870"
+        }
+      ]
+    },
+    {
+      "id": "BRAND-SLACK",
+      "league": "BRAND",
+      "conference": "Corporate",
+      "region": "Slack",
+      "name": "",
+      "abbr": "SLACK",
+      "aliases": [],
+      "palette": [
+        "#36C5F0",
+        "#E01E5A",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Symbol",
+          "sourceUrl": "https://api.iconify.design/logos/slack-icon.svg",
+          "sourcePage": "https://icon-sets.iconify.design/logos/slack-icon/",
+          "sourceSha256": "322a8feca7856681bd81e278a471ab1d1646a0286083012d94ca10509a3e3705",
+          "ops": {
+            "viewBox": "-6.385 -6.385 268.159 267.959"
+          },
+          "path": "/logos/svg/brands/slack.svg",
+          "format": "svg",
+          "colors": [
+            "#E01E5A",
+            "#36C5F0",
+            "#2EB67D",
+            "#ECB22E"
+          ],
+          "sourcePalette": [
+            "#32BEB6",
+            "#E66844",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "541c09b213e2c35126fef03087848f4d6225039572c2b6d98bd698e38262396f"
+        }
+      ]
+    },
+    {
+      "id": "BRAND-STEAM",
+      "league": "BRAND",
+      "conference": "Product",
+      "region": "Steam",
+      "name": "",
+      "abbr": "STEAM",
+      "aliases": [
+        "Valve Steam"
+      ],
+      "palette": [
+        "#171A21",
+        "#66C0F4",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Symbol",
+          "sourceUrl": "https://api.iconify.design/logos/steam.svg",
+          "sourcePage": "https://icon-sets.iconify.design/logos/steam/",
+          "sourceSha256": "a2b29cf0f52a96b4574346bf369a5a86a07b89646680b65a053f909c1c1097f7",
+          "ops": {
+            "viewBox": "-6.470 -6.470 268.940 271.730"
+          },
+          "path": "/logos/svg/brands/steam.svg",
+          "format": "svg",
+          "colors": [
+            "#1A1918"
+          ],
+          "sourcePalette": [
+            "#1A1918",
+            "#66C0F4",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "82ea53e047c8874a6c56b792d16475d5c030032cb5010ba9af4627f344a1a903"
         }
       ]
     },
@@ -1828,6 +2822,94 @@
             2
           ],
           "sha256": "04db6ad88b5c5cd7b12e8cd59293027f2aa86d2d3b82e7b129805f17da7b4a6b"
+        }
+      ]
+    },
+    {
+      "id": "BRAND-UBUNTU",
+      "league": "BRAND",
+      "conference": "Product",
+      "region": "Ubuntu",
+      "name": "",
+      "abbr": "UBUNTU",
+      "aliases": [
+        "Ubuntu Linux"
+      ],
+      "palette": [
+        "#E95420",
+        "#77216F",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Symbol",
+          "sourceUrl": "https://api.iconify.design/logos/ubuntu.svg",
+          "sourcePage": "https://icon-sets.iconify.design/logos/ubuntu/",
+          "sourceSha256": "6f712c07bcd00187205cfdcd7fd6776b986b6171b52f96c87c86c03d63e90287",
+          "ops": {
+            "viewBox": "-6.114 -6.384 268.139 268.129"
+          },
+          "path": "/logos/svg/brands/ubuntu.svg",
+          "format": "svg",
+          "colors": [
+            "#DD4814",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#DD4814",
+            "#77216F",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "f7da213f5600fbce4bffbb059ac337e4284e94ccd37f0e71a5c8cb9a0d84a1b1"
+        }
+      ]
+    },
+    {
+      "id": "BRAND-UNILEVER",
+      "league": "BRAND",
+      "conference": "Corporate",
+      "region": "Unilever",
+      "name": "",
+      "abbr": "UNILEVER",
+      "aliases": [],
+      "palette": [
+        "#1F36C7",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Symbol",
+          "sourceUrl": "https://cdn.worldvectorlogo.com/logos/unilever-2.svg",
+          "sourcePage": "https://worldvectorlogo.com/logo/unilever-2",
+          "sourceSha256": "ac791fbef05544b08299308938332dc7ddc0456662d257e257b21c4d64970c65",
+          "ops": {
+            "keepNodes": [
+              "1"
+            ],
+            "viewBox": "22 14 149 129",
+            "clipToViewBox": true
+          },
+          "path": "/logos/svg/brands/unilever.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#2267AE"
+          ],
+          "sourcePalette": [
+            "#2267AE",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "58b783b8c6e1b05c9b6e9740f4ba3f09be85d04f81323a6b65112f0b319858ab"
         }
       ]
     },
@@ -2063,6 +3145,55 @@
             2
           ],
           "sha256": "86705bdbf0ce360e5754c394dc70a6c3d71f4542af31ded7a00c958928044620"
+        }
+      ]
+    },
+    {
+      "id": "BRAND-ZOOM",
+      "league": "BRAND",
+      "conference": "Service",
+      "region": "Zoom",
+      "name": "",
+      "abbr": "ZOOM",
+      "aliases": [
+        "Zoom Video Communications"
+      ],
+      "palette": [
+        "#2D8CFF",
+        "#0B5CFF",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Symbol",
+          "sourceUrl": "https://api.iconify.design/logos/zoom-icon.svg",
+          "sourcePage": "https://icon-sets.iconify.design/logos/zoom-icon/",
+          "sourceSha256": "28a062c95d517e5a395bb27fd279226fe4d30a85883d661a555501e79b4a7c75",
+          "ops": {
+            "viewBox": "-6.400 -6.400 268.800 268.800"
+          },
+          "path": "/logos/svg/brands/zoom.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#0845BF",
+            "#0950DE",
+            "#0B59F6",
+            "#0B5CFF",
+            "#0E5EFE",
+            "#1665FC",
+            "#246FF9",
+            "#387FF4",
+            "#4F90EE"
+          ],
+          "sourcePalette": [
+            "#397FF4",
+            "#0C58ED",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "19084e8c63ba783ada6ffd2acf427f7cfd60bb19556660f7586f796e2466a860"
         }
       ]
     }

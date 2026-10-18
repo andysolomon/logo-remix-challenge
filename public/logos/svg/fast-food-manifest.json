@@ -1,6 +1,53 @@
 {
   "assets": [
     {
+      "id": "FOOD-APPLEBEES",
+      "league": "FOOD",
+      "conference": "Casual Dining",
+      "region": "Applebee's",
+      "name": "",
+      "abbr": "APPLEBEES",
+      "aliases": [
+        "Applebees"
+      ],
+      "palette": [
+        "#C8102E",
+        "#5F7D4F",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Symbol",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Special:FilePath/AB%20Brand%20Refresh%20Logo%20R.svg",
+          "sourcePage": "https://en.wikipedia.org/wiki/File:AB%20Brand%20Refresh%20Logo%20R.svg",
+          "sourceSha256": "bbd89fcd8ff6f613e15714369e6b51812216f0a3befdae0bec4cf65f8c9ef75b",
+          "ops": {
+            "keepNodes": [
+              "0/0",
+              "0/1",
+              "1"
+            ],
+            "viewBox": "47.383 -2.047 73.244 85.964"
+          },
+          "path": "/logos/svg/fast-food/applebees.svg",
+          "format": "svg",
+          "colors": [
+            "#CBDB2F",
+            "#AB192D",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#AB192D",
+            "#CBDB2F",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "7d9592abd1f3710d942156101c447acd9b2e0e97b341255b53845422e939ded2"
+        }
+      ]
+    },
+    {
       "id": "FOOD-ARB",
       "league": "FOOD",
       "conference": "Sandwiches",
@@ -97,6 +144,54 @@
           ],
           "unusedSourceSlots": [],
           "sha256": "01355741885704b6a198cc58caec79be807515db46e09cc05d82d78f2e887ee0"
+        }
+      ]
+    },
+    {
+      "id": "FOOD-AUNTIE",
+      "league": "FOOD",
+      "conference": "Coffee & Treats",
+      "region": "Auntie Anne's",
+      "name": "",
+      "abbr": "AUNTIE",
+      "aliases": [
+        "Auntie Annes"
+      ],
+      "palette": [
+        "#005695",
+        "#FFC72C",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Symbol",
+          "sourceUrl": "https://cdn.worldvectorlogo.com/logos/auntie-annes.svg",
+          "sourcePage": "https://worldvectorlogo.com/logo/auntie-annes",
+          "sourceSha256": "13ab9bdd1a988bdd9025631435e67cecb6095d5e229bf2c7ac5891d8e1798708",
+          "ops": {
+            "keepNodes": [
+              "2-8"
+            ],
+            "viewBox": "-4 280 203 240",
+            "clipToViewBox": true
+          },
+          "path": "/logos/svg/fast-food/auntie.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#FAB700",
+            "#FFFFFF",
+            "#0056A3",
+            "#E38E00"
+          ],
+          "sourcePalette": [
+            "#0056A3",
+            "#EEA200",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "eaf179e107f9f20253df090a83ca686eb99bc80996c233ada3707020daec5677"
         }
       ]
     },
@@ -255,6 +350,100 @@
             2
           ],
           "sha256": "4823795e14e07cce50483e6d70fe6744a85402cdb9eff3d32c47637789bc88dd"
+        }
+      ]
+    },
+    {
+      "id": "FOOD-BR",
+      "league": "FOOD",
+      "conference": "Coffee & Treats",
+      "region": "Baskin-Robbins",
+      "name": "",
+      "abbr": "BR",
+      "aliases": [
+        "Baskin Robbins",
+        "31 Flavors"
+      ],
+      "palette": [
+        "#EC008C",
+        "#003DA5",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Symbol",
+          "sourceUrl": "https://cdn.worldvectorlogo.com/logos/br31-3.svg",
+          "sourcePage": "https://worldvectorlogo.com/logo/br31-3",
+          "sourceSha256": "506804702d100cc2d0d1b9bf16c3a34975b07f0ff3410edc4f821addec842cd2",
+          "ops": {
+            "removeNodes": [
+              "4",
+              "5"
+            ],
+            "viewBox": "-2.246 -2.206 92.652 64.462"
+          },
+          "path": "/logos/svg/fast-food/br.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#07219B",
+            "#F20C90"
+          ],
+          "sourcePalette": [
+            "#F20C90",
+            "#07219B",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "62cb84228a8c37af944c5c70111dfbc20ca49589b4b585ef2065401dffd350c7"
+        }
+      ]
+    },
+    {
+      "id": "FOOD-BWW",
+      "league": "FOOD",
+      "conference": "Casual Dining",
+      "region": "Buffalo Wild Wings",
+      "name": "",
+      "abbr": "BWW",
+      "aliases": [
+        "BWW",
+        "B-Dubs",
+        "Bdubs"
+      ],
+      "palette": [
+        "#FFC600",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Symbol",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Special:FilePath/Buffalo%20Wild%20Wings%20%28logo%2C%20vertical%29.svg",
+          "sourcePage": "https://en.wikipedia.org/wiki/File:Buffalo%20Wild%20Wings%20%28logo%2C%20vertical%29.svg",
+          "sourceSha256": "e737f85c841e3d968a607ed2e9fe78d1760379e3430b4ce76e75ae55df76f247",
+          "ops": {
+            "keepNodes": [
+              "0-5"
+            ],
+            "viewBox": "-1.170 -1.170 49.130 49.050"
+          },
+          "path": "/logos/svg/fast-food/bww.svg",
+          "format": "svg",
+          "colors": [
+            "#32292A",
+            "#FAC008",
+            "#FEFEFE"
+          ],
+          "sourcePalette": [
+            "#FAC008",
+            "#32292A",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "64e10c185bf6eae67be0f45f71430d8cd3c32d6989bf12993b1b5832def1756d"
         }
       ]
     },
@@ -525,6 +714,49 @@
       ]
     },
     {
+      "id": "FOOD-CHILIS",
+      "league": "FOOD",
+      "conference": "Casual Dining",
+      "region": "Chili's",
+      "name": "",
+      "abbr": "CHILIS",
+      "aliases": [
+        "Chilis",
+        "Chili's Grill & Bar"
+      ],
+      "palette": [
+        "#ED1C24",
+        "#579A21",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Symbol",
+          "sourceUrl": "https://cdn.worldvectorlogo.com/logos/chilis.svg",
+          "sourcePage": "https://worldvectorlogo.com/logo/chilis",
+          "sourceSha256": "fef097b2ede2d507bb899f0934d5c0ad14ede7808852bda02fbf269cfe035101",
+          "ops": {
+            "viewBox": "-22.945 -22.945 984.700 547.841"
+          },
+          "path": "/logos/svg/fast-food/chilis.svg",
+          "format": "svg",
+          "colors": [
+            "#559821",
+            "#EE2722",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#EE2722",
+            "#559821",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "2ca6b04cfaef2662895d43fa60603d1f55cc231e63c383ed59036ca301493988"
+        }
+      ]
+    },
+    {
       "id": "FOOD-CHIP",
       "league": "FOOD",
       "conference": "Mexican & Asian",
@@ -572,6 +804,47 @@
       ]
     },
     {
+      "id": "FOOD-CINNABON",
+      "league": "FOOD",
+      "conference": "Coffee & Treats",
+      "region": "Cinnabon",
+      "name": "",
+      "abbr": "CINNABON",
+      "aliases": [],
+      "palette": [
+        "#005F83",
+        "#8B5B29",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Wordmark",
+          "sourceUrl": "https://cdn.worldvectorlogo.com/logos/cinnabon.svg",
+          "sourcePage": "https://worldvectorlogo.com/logo/cinnabon",
+          "sourceSha256": "2f7ab8d25fdd4725bf7c5d29758fc2c78e440c342ae84bceffd94c28438405d8",
+          "ops": {
+            "viewBox": "-2.393 -2.393 100.506 35.386"
+          },
+          "showsName": true,
+          "path": "/logos/svg/fast-food/cinnabon.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "edf536222774ae6975c1605ce0edf486e088cce78c9a256ac77d7f56f03d08e1"
+        }
+      ]
+    },
+    {
       "id": "FOOD-CUL",
       "league": "FOOD",
       "conference": "Burgers",
@@ -612,6 +885,96 @@
             2
           ],
           "sha256": "e24cc11385722f84bd6abb7b995e4cd99a574b7b4e0f230095a82221e3de1cce"
+        }
+      ]
+    },
+    {
+      "id": "FOOD-DELTACO",
+      "league": "FOOD",
+      "conference": "Mexican & Asian",
+      "region": "Del Taco",
+      "name": "",
+      "abbr": "DELTACO",
+      "aliases": [],
+      "palette": [
+        "#FFC72C",
+        "#E31837",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Symbol",
+          "sourceUrl": "https://cdn.worldvectorlogo.com/logos/del-taco.svg",
+          "sourcePage": "https://worldvectorlogo.com/logo/del-taco",
+          "sourceSha256": "4437d359475f16ffc081b17e043ce465643dfefcad6ac098cbfcb6c58ebb2f46",
+          "ops": {
+            "keepNodes": [
+              "0/1"
+            ],
+            "viewBox": "37.499 54.379 69.773 42.752"
+          },
+          "path": "/logos/svg/fast-food/deltaco.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#E31837",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "f548cf02e21e47b80713b7849000314699a51cec7ba407ed415a213e6b20ffb1"
+        }
+      ]
+    },
+    {
+      "id": "FOOD-DENNYS",
+      "league": "FOOD",
+      "conference": "Casual Dining",
+      "region": "Denny's",
+      "name": "",
+      "abbr": "DENNYS",
+      "aliases": [
+        "Dennys"
+      ],
+      "palette": [
+        "#E2231A",
+        "#FFC72C",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Wordmark",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Special:FilePath/Denny%27s_logo.svg",
+          "sourcePage": "https://en.wikipedia.org/wiki/File:Denny%27s_logo.svg",
+          "sourceSha256": "c414bd28ceabbf0f02a3f4e559ca09f7a1688e9c19f4fddbaa251149d4f9ca23",
+          "ops": {
+            "viewBox": "2.659 -0.811 295.281 152.711"
+          },
+          "showsName": true,
+          "path": "/logos/svg/fast-food/dennys.svg",
+          "format": "svg",
+          "colors": [
+            "#FFDE23",
+            "#FEC02E",
+            "#D5AC62",
+            "#FFFFFF",
+            "#EE3338",
+            "#B32E30"
+          ],
+          "sourcePalette": [
+            "#D03034",
+            "#F1C33C",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "a07a936b392c3ba79a99df867d6478fab0738def1bb6918323e6511c9d91ac24"
         }
       ]
     },
@@ -904,6 +1267,53 @@
       ]
     },
     {
+      "id": "FOOD-IHOP",
+      "league": "FOOD",
+      "conference": "Casual Dining",
+      "region": "IHOP",
+      "name": "",
+      "abbr": "IHOP",
+      "aliases": [
+        "International House of Pancakes"
+      ],
+      "palette": [
+        "#0072CE",
+        "#ED1C24",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Wordmark",
+          "sourceUrl": "https://cdn.worldvectorlogo.com/logos/ihop.svg",
+          "sourcePage": "https://worldvectorlogo.com/logo/ihop",
+          "sourceSha256": "32be44b0a8b0b986c0cabc0045e5a47ad2ad1cb48b6cb4e909f304826485cd5c",
+          "ops": {
+            "removeNodes": [
+              "0"
+            ],
+            "viewBox": "4.106 43.406 184.537 105.947"
+          },
+          "showsName": true,
+          "path": "/logos/svg/fast-food/ihop.svg",
+          "format": "svg",
+          "colors": [
+            "#226CB4",
+            "#FFFFFF",
+            "#D15256",
+            "#234B8D"
+          ],
+          "sourcePalette": [
+            "#225CA0",
+            "#D15256",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "5028dcb24e47ead0bf22e11a6a116777e31b6925bccd9f62669348cb85f60500"
+        }
+      ]
+    },
+    {
       "id": "FOOD-INO",
       "league": "FOOD",
       "conference": "Burgers",
@@ -1052,6 +1462,55 @@
       ]
     },
     {
+      "id": "FOOD-JAMBA",
+      "league": "FOOD",
+      "conference": "Coffee & Treats",
+      "region": "Jamba",
+      "name": "",
+      "abbr": "JAMBA",
+      "aliases": [
+        "Jamba Juice"
+      ],
+      "palette": [
+        "#F58220",
+        "#4B7934",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Symbol",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Special:FilePath/Jamba%20logo.svg",
+          "sourcePage": "https://en.wikipedia.org/wiki/File:Jamba%20logo.svg",
+          "sourceSha256": "99e3a5b1baa4b6001dbcd5fef97a01c9934ded8ac7d947dc3ae2e6ae226fb272",
+          "ops": {
+            "removeNodes": [
+              "1",
+              "6"
+            ],
+            "viewBox": "-4.442 -4.442 151.284 186.564"
+          },
+          "path": "/logos/svg/fast-food/jamba.svg",
+          "format": "svg",
+          "colors": [
+            "#78BA4F",
+            "#FAC53C",
+            "#B2CF65",
+            "#F0804C"
+          ],
+          "sourcePalette": [
+            "#F5A244",
+            "#95C45A",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "3fe3798559afa75120b6c873892d42bbe637421442d7ed174ffb4205341b4576"
+        }
+      ]
+    },
+    {
       "id": "FOOD-KFC",
       "league": "FOOD",
       "conference": "Chicken",
@@ -1125,6 +1584,54 @@
       ]
     },
     {
+      "id": "FOOD-KRISPY",
+      "league": "FOOD",
+      "conference": "Coffee & Treats",
+      "region": "Krispy Kreme",
+      "name": "",
+      "abbr": "KRISPY",
+      "aliases": [
+        "Krispy Kreme Doughnuts",
+        "Krispy Kreme Donuts"
+      ],
+      "palette": [
+        "#00754A",
+        "#CE0E2D",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Wordmark",
+          "sourceUrl": "https://cdn.worldvectorlogo.com/logos/krispy-kreme.svg",
+          "sourcePage": "https://worldvectorlogo.com/logo/krispy-kreme",
+          "sourceSha256": "956ec4ac58deda20f00b497a6860f4ab2006a42ebee1f49ae1fb50242acf1b2e",
+          "ops": {
+            "removeNodes": [
+              "0/0"
+            ],
+            "viewBox": "-1.847 72.333 196.445 48.095"
+          },
+          "showsName": true,
+          "path": "/logos/svg/fast-food/krispy.svg",
+          "format": "svg",
+          "colors": [
+            "#A75B53"
+          ],
+          "sourcePalette": [
+            "#A75B53",
+            "#CE0E2D",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "b97d25bf3076d7c87825d2ba5d37efb726ee2c6dc08e1ad876da09c391c12071"
+        }
+      ]
+    },
+    {
       "id": "FOOD-LC",
       "league": "FOOD",
       "conference": "Pizza",
@@ -1164,6 +1671,51 @@
           ],
           "unusedSourceSlots": [],
           "sha256": "4a8599f138b54b2d1bd6878ccb81f24047fdbb945abd782f9d874c279f3b8300"
+        }
+      ]
+    },
+    {
+      "id": "FOOD-LOBSTER",
+      "league": "FOOD",
+      "conference": "Casual Dining",
+      "region": "Red Lobster",
+      "name": "",
+      "abbr": "LOBSTER",
+      "aliases": [],
+      "palette": [
+        "#C8102E",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Symbol",
+          "sourceUrl": "https://cdn.worldvectorlogo.com/logos/red-lobster.svg",
+          "sourcePage": "https://worldvectorlogo.com/logo/red-lobster",
+          "sourceSha256": "2d229da22d3f14ad39d67eb6d6c02feaec4dd4827e191eb4f186846c2291fb36",
+          "ops": {
+            "keepNodes": [
+              "0/3-8"
+            ],
+            "viewBox": "96 49 96 61",
+            "clipToViewBox": true
+          },
+          "path": "/logos/svg/fast-food/lobster.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "658ee2e50a35f83cba6d295525e7d01a650902932d2e4be6e234baa166f391da"
         }
       ]
     },
@@ -1237,6 +1789,106 @@
       ]
     },
     {
+      "id": "FOOD-OLIVE",
+      "league": "FOOD",
+      "conference": "Casual Dining",
+      "region": "Olive Garden",
+      "name": "",
+      "abbr": "OLIVE",
+      "aliases": [
+        "Olive Garden Italian Kitchen"
+      ],
+      "palette": [
+        "#506B38",
+        "#70539B",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Symbol",
+          "sourceUrl": "https://cdn.worldvectorlogo.com/logos/olive-garden.svg",
+          "sourcePage": "https://worldvectorlogo.com/logo/olive-garden",
+          "sourceSha256": "1a08df0093ce0cabebda319c2a0e579c7fc6b17147b4ff762059acbd8a93a061",
+          "ops": {
+            "keepNodes": [
+              "0/1",
+              "0/2",
+              "0/9-25"
+            ],
+            "viewBox": "108.958 61.628 73.154 62.493"
+          },
+          "path": "/logos/svg/fast-food/olive.svg",
+          "format": "svg",
+          "colors": [
+            "#589144",
+            "#81AA6D",
+            "#000000",
+            "#04593C",
+            "#396045",
+            "#AFA7CC",
+            "#7A6CA8",
+            "#432D83",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#396045",
+            "#8E94A0",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "c049aa3fa4f2fbc5363795df61b2cfb7d4c91702506914e872be990c12ebe007"
+        }
+      ]
+    },
+    {
+      "id": "FOOD-OUTBACK",
+      "league": "FOOD",
+      "conference": "Casual Dining",
+      "region": "Outback Steakhouse",
+      "name": "",
+      "abbr": "OUTBACK",
+      "aliases": [
+        "Outback"
+      ],
+      "palette": [
+        "#9B1B2E",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Wordmark",
+          "sourceUrl": "https://cdn.worldvectorlogo.com/logos/outback-steakhouse.svg",
+          "sourcePage": "https://worldvectorlogo.com/logo/outback-steakhouse",
+          "sourceSha256": "8107671dcbe5b8da4a47e1a3021e9277d799af19f8d51759ab7a33ad2f6c63a2",
+          "ops": {
+            "removeNodes": [
+              "0/0"
+            ],
+            "viewBox": "4.116 61.596 184.537 69.567"
+          },
+          "showsName": true,
+          "path": "/logos/svg/fast-food/outback.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "dc95d650f87d9a3b5ee7c2b0562be4628b7aeb4cebff909330f7cd1b22461c9d"
+        }
+      ]
+    },
+    {
       "id": "FOOD-PANDA",
       "league": "FOOD",
       "conference": "Mexican & Asian",
@@ -1278,6 +1930,54 @@
           ],
           "unusedSourceSlots": [],
           "sha256": "d01027c36e9a411c7d9e980bd9ab185730762f14d8a2373beb4bc9745c715a46"
+        }
+      ]
+    },
+    {
+      "id": "FOOD-PANERA",
+      "league": "FOOD",
+      "conference": "Sandwiches",
+      "region": "Panera Bread",
+      "name": "",
+      "abbr": "PANERA",
+      "aliases": [
+        "Panera"
+      ],
+      "palette": [
+        "#4E702E",
+        "#E9C98A",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Symbol",
+          "sourceUrl": "https://cdn.worldvectorlogo.com/logos/panera-bread.svg",
+          "sourcePage": "https://worldvectorlogo.com/logo/panera-bread",
+          "sourceSha256": "97e1f2ff6b50bbbad490b405aa1b27866485557349b0ac4ac7d80f75188970c8",
+          "ops": {
+            "keepNodes": [
+              "0/6-12"
+            ],
+            "viewBox": "15 73 58 49",
+            "clipToViewBox": true
+          },
+          "path": "/logos/svg/fast-food/panera.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#EFD69C",
+            "#0C0E0F"
+          ],
+          "sourcePalette": [
+            "#060708",
+            "#EFD69C",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "e5b864bed916d54a5cd3242d015d392c87a78dd023988afcbdf14cf7df27e91f"
         }
       ]
     },
@@ -1463,6 +2163,100 @@
           ],
           "unusedSourceSlots": [],
           "sha256": "e524ab59723059fb7b9bc8b323b24f56da102dcd70920c4a38a557a7933df75f"
+        }
+      ]
+    },
+    {
+      "id": "FOOD-QUIZNOS",
+      "league": "FOOD",
+      "conference": "Sandwiches",
+      "region": "Quiznos",
+      "name": "",
+      "abbr": "QUIZNOS",
+      "aliases": [
+        "Quizno's",
+        "Quiznos Subs"
+      ],
+      "palette": [
+        "#4D7135",
+        "#E41E2B",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Symbol",
+          "sourceUrl": "https://cdn.worldvectorlogo.com/logos/quiznos.svg",
+          "sourcePage": "https://worldvectorlogo.com/logo/quiznos",
+          "sourceSha256": "5e4fa42616b3738776a8a611b253ddc3f9bd2333d9932cd7b8df1fcd522f49f0",
+          "ops": {
+            "keepNodes": [
+              "0",
+              "2",
+              "3"
+            ],
+            "viewBox": "206.848 -44.592 1871.615 1172.954"
+          },
+          "path": "/logos/svg/fast-food/quiznos.svg",
+          "format": "svg",
+          "colors": [
+            "#E21F26",
+            "#4D7335"
+          ],
+          "sourcePalette": [
+            "#4D7335",
+            "#E21F26",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "dd8c679430acc87ea95fd6bf39c50648512a6a87d7c027aed71d193e1f0ff333"
+        }
+      ]
+    },
+    {
+      "id": "FOOD-SHAKE",
+      "league": "FOOD",
+      "conference": "Burgers",
+      "region": "Shake Shack",
+      "name": "",
+      "abbr": "SHAKE",
+      "aliases": [],
+      "palette": [
+        "#60AE2B",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Symbol",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Special:FilePath/Shake%20Shack%20logo.svg",
+          "sourcePage": "https://en.wikipedia.org/wiki/File:Shake%20Shack%20logo.svg",
+          "sourceSha256": "8ba47cd0ccece4e1c38cbe600a420b60ae828451831f9f2a8cd1f86f937c1b6a",
+          "ops": {
+            "keepNodes": [
+              "1",
+              "3/9/0/0-4"
+            ],
+            "viewBox": "214.660 -3.100 118.880 130.200"
+          },
+          "path": "/logos/svg/fast-food/shake.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#55A335"
+          ],
+          "sourcePalette": [
+            "#55A335",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "d10405b7644c32caf001936b8a5e0b902f75f755a275177c9649a00b56988497"
         }
       ]
     },
@@ -1718,6 +2512,96 @@
       ]
     },
     {
+      "id": "FOOD-TEXAS",
+      "league": "FOOD",
+      "conference": "Casual Dining",
+      "region": "Texas Roadhouse",
+      "name": "",
+      "abbr": "TEXAS",
+      "aliases": [],
+      "palette": [
+        "#F7CE00",
+        "#C8102E",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Symbol",
+          "sourceUrl": "https://cdn.worldvectorlogo.com/logos/texas-roadhouse.svg",
+          "sourcePage": "https://worldvectorlogo.com/logo/texas-roadhouse",
+          "sourceSha256": "f19c6d69e3f721c2a1326478a19789f210383c0376dc4808dcbc88ae227649ea",
+          "ops": {
+            "keepNodes": [
+              "12-22"
+            ],
+            "viewBox": "100.376 5.447 49.287 49.287"
+          },
+          "path": "/logos/svg/fast-food/texas.svg",
+          "format": "svg",
+          "colors": [
+            "#439539",
+            "#FFDD00",
+            "#231F20"
+          ],
+          "sourcePalette": [
+            "#FFDD00",
+            "#335A2C",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "42e6a4db80d099a4ab88dd6d518b1885845eec12566bd9c01b22fb6b28e01ce3"
+        }
+      ]
+    },
+    {
+      "id": "FOOD-WAFFLE",
+      "league": "FOOD",
+      "conference": "Casual Dining",
+      "region": "Waffle House",
+      "name": "",
+      "abbr": "WAFFLE",
+      "aliases": [],
+      "palette": [
+        "#FFDD00",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Wordmark",
+          "sourceUrl": "https://cdn.worldvectorlogo.com/logos/waffle-house.svg",
+          "sourcePage": "https://worldvectorlogo.com/logo/waffle-house",
+          "sourceSha256": "c63f9b0c8530877f38c1e4ff5edfa2b908302ea409c9bfe32a041906ae71141c",
+          "ops": {
+            "removeNodes": [
+              "0/0"
+            ],
+            "viewBox": "4.106 65.136 184.537 62.488"
+          },
+          "showsName": true,
+          "path": "/logos/svg/fast-food/waffle.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "25f432fe2dcdc436a918f93bf3f3a6bcb93579f36ee8c38798b039f5799baf7e"
+        }
+      ]
+    },
+    {
       "id": "FOOD-WEN",
       "league": "FOOD",
       "conference": "Burgers",
@@ -1841,6 +2725,50 @@
             2
           ],
           "sha256": "387ba3b18c6e4ca82e09cf60160aafaa45e5baa09d79a0162113aff7f681bbb4"
+        }
+      ]
+    },
+    {
+      "id": "FOOD-WINGSTOP",
+      "league": "FOOD",
+      "conference": "Chicken",
+      "region": "Wingstop",
+      "name": "",
+      "abbr": "WINGSTOP",
+      "aliases": [
+        "Wing Stop"
+      ],
+      "palette": [
+        "#006938",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Wordmark",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Special:FilePath/Wingstop%20logo.svg",
+          "sourcePage": "https://en.wikipedia.org/wiki/File:Wingstop%20logo.svg",
+          "sourceSha256": "240fa2750b538250d87f6f502b263ba863e01b6f7a776b19db59149ae5ec9276",
+          "ops": {
+            "viewBox": "-3.541 -3.541 148.712 56.032"
+          },
+          "showsName": true,
+          "path": "/logos/svg/fast-food/wingstop.svg",
+          "format": "svg",
+          "colors": [
+            "#146A34"
+          ],
+          "sourcePalette": [
+            "#146A34",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "2c5e5dc7fc3e313058ad1bd288ca67d6193db89f8746ab13f64d64021de4fb23"
         }
       ]
     },

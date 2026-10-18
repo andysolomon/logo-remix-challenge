@@ -10,7 +10,7 @@ const root = join(import.meta.dir, '..')
 const mlb = filterTeams('MLB', 'All', '')
 const food = filterTeams('FOOD', 'All', '')
 
-describe('MLB and fast food collections', () => {
+describe('MLB and restaurant collections', () => {
   test('the MLB roster has all 30 teams, correct conferences and current full names', () => {
     expect(mlb).toHaveLength(30)
     expect(LEAGUES.MLB.conferences).toEqual(['American League', 'National League'])
@@ -27,10 +27,10 @@ describe('MLB and fast food collections', () => {
     expect(new Set(TEAMS.map((t) => t.id)).size).toBe(TEAMS.length)
   })
 
-  test('all 30 food chains are reachable through categories and punctuation-friendly search', () => {
-    expect(food).toHaveLength(30)
-    expect(new Set(food.map((t) => fullName(t))).size).toBe(30)
-    expect(LEAGUES.FOOD.label).toBe('FAST FOOD')
+  test('all 50 restaurants are reachable through categories and punctuation-friendly search', () => {
+    expect(food).toHaveLength(50)
+    expect(new Set(food.map((t) => fullName(t))).size).toBe(50)
+    expect(LEAGUES.FOOD.label).toBe('RESTAURANTS')
     for (const category of LEAGUES.FOOD.conferences) {
       expect(filterTeams('FOOD', category, '').length).toBeGreaterThan(0)
     }
@@ -56,7 +56,7 @@ describe('MLB and fast food collections', () => {
   test('random decks mix MLB, food and other sports, persist, and show meaningful hints', () => {
     expect(ALL_POOL_IDS).toContain('MLB')
     expect(ALL_POOL_IDS).toContain('Fast Food')
-    expect(poolTeams(['MLB', 'Fast Food'])).toHaveLength(60)
+    expect(poolTeams(['MLB', 'Fast Food'])).toHaveLength(80)
     // MLB teams and chains are logo-only: only NFL, NBA and college palettes color a round.
     expect(colorPoolTeams(['MLB', 'Fast Food'])).toEqual([])
     expect(randomDeck({ rounds: 20, logoPools: ['MLB'], colorPools: ['MLB', 'Fast Food'], guess: 'both', hints: true })).toEqual([])
@@ -72,8 +72,8 @@ describe('MLB and fast food collections', () => {
       }
       expect(deckFromStorage(JSON.stringify(deck))).toEqual(deck)
     }
-    expect(roundHints({ o: 'MLB-ATL', c: 'FOOD-MCD', v: 0 })).toEqual(['Logo: MLB', 'Colors: FAST FOOD'])
-    expect(roundHints({ o: 'FOOD-CFA', c: 'NBA-ATL', v: 0 })).toEqual(['Logo: FAST FOOD', 'Colors: NBA'])
+    expect(roundHints({ o: 'MLB-ATL', c: 'FOOD-MCD', v: 0 })).toEqual(['Logo: MLB', 'Colors: RESTAURANTS'])
+    expect(roundHints({ o: 'FOOD-CFA', c: 'NBA-ATL', v: 0 })).toEqual(['Logo: RESTAURANTS', 'Colors: NBA'])
   })
 
   test('all 30 MLB logos decode and each source palette matches its manifest and artwork', () => {

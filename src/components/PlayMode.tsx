@@ -345,9 +345,9 @@ export function PlayMode({ deck, timer, gameMode, guessTarget, voice, highScores
                     onChange={setGuess}
                     onKeyDown={checkLogo}
                     readOnly={logoChecked != null}
-                    placeholder="Team or brand behind the logo…"
+                    placeholder="Name the logo, symbol or object…"
                     enterKeyHint="next"
-                    ariaLabel="Team or brand behind the logo"
+                    ariaLabel="Name of the logo, symbol or object"
                   />
                   <span className="guess-field-mark" aria-live="polite">
                     {logoChecked == null ? '' : logoChecked ? '✓' : '✕'}
@@ -375,7 +375,7 @@ export function PlayMode({ deck, timer, gameMode, guessTarget, voice, highScores
                   ref={inputRef}
                   value={guess}
                   onChange={setGuess}
-                  placeholder="Type the team or brand…"
+                  placeholder="Type your answer…"
                   enterKeyHint="go"
                   ariaLabel="Your guess"
                 />

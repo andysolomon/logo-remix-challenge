@@ -1,0 +1,1265 @@
+{
+  "generator": "scripts/build_education.py",
+  "assets": [
+    {
+      "path": "/logos/svg/education/element/h.svg",
+      "sha256": "4144066184de3a25bfa63a335a2d2b3c3b8506d059ec6733229aa3b41a717ce6"
+    },
+    {
+      "path": "/logos/svg/education/element/alternates/h-symbol.svg",
+      "sha256": "94c65d4eb211ca35fa9dffa6fcfc49f8d28a74e020266bd09ca5121f9c149609"
+    },
+    {
+      "path": "/logos/svg/education/element/he.svg",
+      "sha256": "940cd2fcba382e5586c4ae312702aa03c969e2d7c64beac3cb839fd3483823b9"
+    },
+    {
+      "path": "/logos/svg/education/element/alternates/he-symbol.svg",
+      "sha256": "fd8146a19d780ec26fdcd81bab545aac385c9729df5a88475eb84d687a5aba3e"
+    },
+    {
+      "path": "/logos/svg/education/element/li.svg",
+      "sha256": "1a14ed253415539a058d51e62b69fd8b5057778e487f477a05a97b9fc2c1a137"
+    },
+    {
+      "path": "/logos/svg/education/element/alternates/li-symbol.svg",
+      "sha256": "329eb16ed3b6db0ba1f690c82efbe6aedad7f39c1e7fa8818feca8ac1d52bc1c"
+    },
+    {
+      "path": "/logos/svg/education/element/be.svg",
+      "sha256": "74093216eac8cf44b259b3434fb3bd6e1ed963eefdc3df6fe2feae7522496419"
+    },
+    {
+      "path": "/logos/svg/education/element/alternates/be-symbol.svg",
+      "sha256": "65321772e6e4ba0adb9e96cb68662e0fd9d10e0cf266f3da8c4f1d82d6d52dcb"
+    },
+    {
+      "path": "/logos/svg/education/element/b.svg",
+      "sha256": "9e86d47956dc7a771ad6b2511df106965ac914d7fd89d13de1a3472da3bbd839"
+    },
+    {
+      "path": "/logos/svg/education/element/alternates/b-symbol.svg",
+      "sha256": "bfad6b295c9579053e5e1f17829c704294154ecf1bd4d8e62b1fcf6d45b902b6"
+    },
+    {
+      "path": "/logos/svg/education/element/c.svg",
+      "sha256": "b082747805b8bbc379be07ff88f7b1a43c3cd3275b4dd9ae7331bf14b16d52ae"
+    },
+    {
+      "path": "/logos/svg/education/element/alternates/c-symbol.svg",
+      "sha256": "31d8f44db0904600a712a015906f3260b8c1eab176e7cbfeaff05b214136b3b3"
+    },
+    {
+      "path": "/logos/svg/education/element/n.svg",
+      "sha256": "d153ae254f41a5b32d4dd65e1935e6bebd427fa2b87c603cbd358dbc0c453efd"
+    },
+    {
+      "path": "/logos/svg/education/element/alternates/n-symbol.svg",
+      "sha256": "d046b876338d3b6e51be0bbbb68adcece69c4aca41fb48fb9c62b32517e743fa"
+    },
+    {
+      "path": "/logos/svg/education/element/o.svg",
+      "sha256": "84d387a7caa26b15635f51b98fa1927ba318d8be2c6fa0641aa5c08fb6a4d117"
+    },
+    {
+      "path": "/logos/svg/education/element/alternates/o-symbol.svg",
+      "sha256": "4893945b4c1c2b2190fcd898cd09144567ddd17daccfdb277eaa0d2d4abb5986"
+    },
+    {
+      "path": "/logos/svg/education/element/f.svg",
+      "sha256": "3e0f62c97c064e20413fb81253c38093274b4cf6fe353df01f66eee05dde6e0d"
+    },
+    {
+      "path": "/logos/svg/education/element/alternates/f-symbol.svg",
+      "sha256": "1614ee0892005adecb6d4cbfd9673d9f95634e0562224bd7e9e647d7b6e3e54f"
+    },
+    {
+      "path": "/logos/svg/education/element/ne.svg",
+      "sha256": "bdf95cc5b725a95ddc58a1d74e5b2980926fd5c864846967cdb5d7f9b751787a"
+    },
+    {
+      "path": "/logos/svg/education/element/alternates/ne-symbol.svg",
+      "sha256": "a344982ca3a5d44c0acb104d8de4a11e36d734c6a6d2d465ad60776911fca8c6"
+    },
+    {
+      "path": "/logos/svg/education/element/na.svg",
+      "sha256": "864f3872dc5726d914785f44d40c5f1e8ebe58d15e875ba9ce7eb3e6c7a5ebff"
+    },
+    {
+      "path": "/logos/svg/education/element/alternates/na-symbol.svg",
+      "sha256": "4351788d4e50bb6db581bb0bedd8e7fed1be2ed95951ff98b195ba69ac031068"
+    },
+    {
+      "path": "/logos/svg/education/element/mg.svg",
+      "sha256": "db7c570d71bd531047215cb74ce859ae188482bb1f03a8d910c3225c1f20c527"
+    },
+    {
+      "path": "/logos/svg/education/element/alternates/mg-symbol.svg",
+      "sha256": "8c697aa9c8c75e3dde197390b6d5c17ecfbca9d7660135e0af0f3011c514e55e"
+    },
+    {
+      "path": "/logos/svg/education/element/al.svg",
+      "sha256": "c24ec263aa00ffd749d8bce12df0776f7b8b5dfaa3efa911f31ab726d723586f"
+    },
+    {
+      "path": "/logos/svg/education/element/alternates/al-symbol.svg",
+      "sha256": "2fab3234adfb764357541dfb2c106b4c52016ddf884665262960505b45545629"
+    },
+    {
+      "path": "/logos/svg/education/element/si.svg",
+      "sha256": "9cf9a8566892a6091f222cc34a79aa4bcddf095208a96a358a4f0ce343aa8a69"
+    },
+    {
+      "path": "/logos/svg/education/element/alternates/si-symbol.svg",
+      "sha256": "5a43e52e9deff29e882da0a401131bd7a985b54c5196732fccf856c0b1ca60f4"
+    },
+    {
+      "path": "/logos/svg/education/element/p.svg",
+      "sha256": "37ecfcb9e193c3628e1f154c5190c9db4e99c02964e9a0529109ed96904f4278"
+    },
+    {
+      "path": "/logos/svg/education/element/alternates/p-symbol.svg",
+      "sha256": "d94449c61ad1c0947fb5a93a6bca9243698d84d6e07a4cde32da44f436d20e0d"
+    },
+    {
+      "path": "/logos/svg/education/element/s.svg",
+      "sha256": "20652f4acfc7d0e0b63c8e03b15bbfe44fc1b4eb6649b0cb03b4ec6022d56a9c"
+    },
+    {
+      "path": "/logos/svg/education/element/alternates/s-symbol.svg",
+      "sha256": "215cd41c95d8d2fccec9cd446e5f63aa2037d3f66ab9835c12d8d7a1e36682bb"
+    },
+    {
+      "path": "/logos/svg/education/element/cl.svg",
+      "sha256": "19f49ee1834b6a4a5e5349a38d7ae14c6732ac8fa3788d04deba30bc14e9bd7a"
+    },
+    {
+      "path": "/logos/svg/education/element/alternates/cl-symbol.svg",
+      "sha256": "2acb137eeef102b1b8b0c989ef3bcb90e8e804465a91cf11f96fe661f7e87b01"
+    },
+    {
+      "path": "/logos/svg/education/element/ar.svg",
+      "sha256": "ea3b7dd6b4be997e44805a17da29d339c7d0fd51c39128382d4d56681b186265"
+    },
+    {
+      "path": "/logos/svg/education/element/alternates/ar-symbol.svg",
+      "sha256": "746ede23a8eb80a0ff16dec197d4d20ae5ec7596a43ad8362ff2ac441f906128"
+    },
+    {
+      "path": "/logos/svg/education/element/k.svg",
+      "sha256": "204147aa82a9095dc7176fe65dd4c4d0836290cc1733ffac94e57927903ff728"
+    },
+    {
+      "path": "/logos/svg/education/element/alternates/k-symbol.svg",
+      "sha256": "20a2f2822fd49263a5c4e947e020da163bd565533522d1792fe5b14d90016c56"
+    },
+    {
+      "path": "/logos/svg/education/element/ca.svg",
+      "sha256": "c464b71624798c0b6838618114c1ec795ed797c137c03a4ef2f5f1bbe349e781"
+    },
+    {
+      "path": "/logos/svg/education/element/alternates/ca-symbol.svg",
+      "sha256": "a7867b66baad86b0a0293183174cbe32eecba9bdb1b1c078b564efc3750ab2c5"
+    },
+    {
+      "path": "/logos/svg/education/element/sc.svg",
+      "sha256": "d2353171840e23a596f7e90bcfe8b197c9667f18fcecea4d3f1a2247600e26d4"
+    },
+    {
+      "path": "/logos/svg/education/element/alternates/sc-symbol.svg",
+      "sha256": "a805b894dea5fafb579c0a96e86d141baf762dca9f7ef88b55c7b92e8f2c3caf"
+    },
+    {
+      "path": "/logos/svg/education/element/ti.svg",
+      "sha256": "28de44fc3d8b8f4c07b1b8398aba13c2b6e62796342125328f9d42f1a7faa7c3"
+    },
+    {
+      "path": "/logos/svg/education/element/alternates/ti-symbol.svg",
+      "sha256": "76720c7a6240cf5d628a38366643f078d043c9d48edf7fe4a375bde3e7eeebba"
+    },
+    {
+      "path": "/logos/svg/education/element/v.svg",
+      "sha256": "e1787fd14dc04022605685c58e8982113abe6c8a1973f689ccb6746b32ef0710"
+    },
+    {
+      "path": "/logos/svg/education/element/alternates/v-symbol.svg",
+      "sha256": "1e2f91b8836a561e83a9ea884d564987d6654399c2126d9df6bb7b59a3cec920"
+    },
+    {
+      "path": "/logos/svg/education/element/cr.svg",
+      "sha256": "8c5c592284452cd1c8074f217f9e8c7f8f7138b8697dc5f7e1c5d22832b967c7"
+    },
+    {
+      "path": "/logos/svg/education/element/alternates/cr-symbol.svg",
+      "sha256": "45f5c57e0836a0f9a841145a69d6866523b3fdb3efd3a5b7e45f0049262416fd"
+    },
+    {
+      "path": "/logos/svg/education/element/mn.svg",
+      "sha256": "ba2d5e23357a6705dbfb4a08c206e45cbf11270cd94c25ae91b1b243cbf88722"
+    },
+    {
+      "path": "/logos/svg/education/element/alternates/mn-symbol.svg",
+      "sha256": "672da6fcf74fbc3d78ddd97eea6db75e3cf0c007ccad4d3d3d30ae130870f8fe"
+    },
+    {
+      "path": "/logos/svg/education/element/fe.svg",
+      "sha256": "963d7e3577ed5f9b6caa2b0b58a099652bc6d56fed8a636c1d52f7ac0e0cc26e"
+    },
+    {
+      "path": "/logos/svg/education/element/alternates/fe-symbol.svg",
+      "sha256": "e4516e9e1360b175004c5825ad659bb5d48c081794d518a1d3afd4efa8eda5b4"
+    },
+    {
+      "path": "/logos/svg/education/element/co.svg",
+      "sha256": "a3225328201fef1c713b049c641726eb065b80b4a4366014c55a6aa1cf45544d"
+    },
+    {
+      "path": "/logos/svg/education/element/alternates/co-symbol.svg",
+      "sha256": "8e95f0d5d19b54595052792ca4676ca80048b9ed19abeb41c79833a19e3b2bea"
+    },
+    {
+      "path": "/logos/svg/education/element/ni.svg",
+      "sha256": "164e4560c252f5fca250cd8a46c5f5a86a2e857345cccf15601eca5add073fd6"
+    },
+    {
+      "path": "/logos/svg/education/element/alternates/ni-symbol.svg",
+      "sha256": "8c3bd41a833c87b4a63a315d9597969763a5afbcc3994e0e9c0f3ad47aeabee4"
+    },
+    {
+      "path": "/logos/svg/education/element/cu.svg",
+      "sha256": "6d26f72856d6c109e69145d2dd90a42d82937d4ab3ca6170f9feb3494da846a3"
+    },
+    {
+      "path": "/logos/svg/education/element/alternates/cu-symbol.svg",
+      "sha256": "b80d9ed4dfdf07fe7e4d9a5bc026d5d0a7d6d46f5b0addc0d9e364423dbd37cd"
+    },
+    {
+      "path": "/logos/svg/education/element/zn.svg",
+      "sha256": "47bd6aba3f5bbb5d45803e876e981e1f7e20cb7a999606e5c874c922d4caeec2"
+    },
+    {
+      "path": "/logos/svg/education/element/alternates/zn-symbol.svg",
+      "sha256": "290609924022b6fda9e758907577dbc4e544f70035e65e82187341029168bfa7"
+    },
+    {
+      "path": "/logos/svg/education/element/ga.svg",
+      "sha256": "6fb2ab8e0de6819377904824634d926f13ea472dd6fd909cfd5d025317535741"
+    },
+    {
+      "path": "/logos/svg/education/element/alternates/ga-symbol.svg",
+      "sha256": "4e4da4f2da6df5677fbe51995f82d3b21241d0794309bc8889d7417b753a187d"
+    },
+    {
+      "path": "/logos/svg/education/element/ge.svg",
+      "sha256": "d7acaf0ee3f0ac1b7ca27cc11121bd6cf3c440d23943fb682b81e732714e77c4"
+    },
+    {
+      "path": "/logos/svg/education/element/alternates/ge-symbol.svg",
+      "sha256": "1bdeb7c7c43d052deb9b6dbf0ba998a1cc020f1e532a8b093d31262ccefaa36b"
+    },
+    {
+      "path": "/logos/svg/education/element/as.svg",
+      "sha256": "7e68824708e59df9d617bc258434ddece58462b394befb62d96580b3bb1b073c"
+    },
+    {
+      "path": "/logos/svg/education/element/alternates/as-symbol.svg",
+      "sha256": "cb8e95bf92f15b527a44f4df1e1380bc6189c8492c3042d990344978c8f06df3"
+    },
+    {
+      "path": "/logos/svg/education/element/se.svg",
+      "sha256": "3174019f98b646b5af1c79cca41bb2dc1aa556adee28c414ccc1629cace0d2dd"
+    },
+    {
+      "path": "/logos/svg/education/element/alternates/se-symbol.svg",
+      "sha256": "2e2c97a30aba7e0c5c12d50712f7bf525f14805691c5311c90a5802309f8a02f"
+    },
+    {
+      "path": "/logos/svg/education/element/br.svg",
+      "sha256": "fa98e1ba07864b1714913f40c5f484ed8e5302aafdc287b6f8d7b95785685471"
+    },
+    {
+      "path": "/logos/svg/education/element/alternates/br-symbol.svg",
+      "sha256": "ecc26414f0da37e28078c094f4d50af221a1463bb9125ed4b93b5db1ea5e21a4"
+    },
+    {
+      "path": "/logos/svg/education/element/kr.svg",
+      "sha256": "c0b06bca5edd38c01fd2dcbfbe294199fd340c80885c4020c092b5822489af7d"
+    },
+    {
+      "path": "/logos/svg/education/element/alternates/kr-symbol.svg",
+      "sha256": "d80ef2baa69ced49d9f0388b3b0740e7d1c5fdc453c2011363d69df143c233db"
+    },
+    {
+      "path": "/logos/svg/education/element/rb.svg",
+      "sha256": "d224805c35f378f81fffb82c9e5cd7117f40b055cc3992381769ea73433ca425"
+    },
+    {
+      "path": "/logos/svg/education/element/alternates/rb-symbol.svg",
+      "sha256": "11c9d40dd7b035588cccf78da341e0b1f1751a3faf34d81516a4ee436ca189d7"
+    },
+    {
+      "path": "/logos/svg/education/element/sr.svg",
+      "sha256": "15d0fae7e063a705669586130bf6c1c3e434d1de3647d2f82da3691aa975067b"
+    },
+    {
+      "path": "/logos/svg/education/element/alternates/sr-symbol.svg",
+      "sha256": "e796458e24fd7a20e3f56957c7e7a4e985efcdefb25528d5e5f72e4c704d82e9"
+    },
+    {
+      "path": "/logos/svg/education/element/y.svg",
+      "sha256": "f5247a72c35641288a9e5f275e71f546416352f37e342cae56ba97520f3329e0"
+    },
+    {
+      "path": "/logos/svg/education/element/alternates/y-symbol.svg",
+      "sha256": "0b6d7ad6b88d931298c59825cbf66e9e78e4090b3c29bd19b287e5a25915a1fb"
+    },
+    {
+      "path": "/logos/svg/education/element/zr.svg",
+      "sha256": "aadc04252392b86cb480703bd67960e876fc8ff548c135acbb02f2457ad21b97"
+    },
+    {
+      "path": "/logos/svg/education/element/alternates/zr-symbol.svg",
+      "sha256": "940a41a1472a2f11ea276db27db036daa6eb0f96e09f1c293122e4b04972ed24"
+    },
+    {
+      "path": "/logos/svg/education/element/nb.svg",
+      "sha256": "63041cdae3e7b7bc37eecb00eef2f80183e1b3bafb454e617dc96b0ddbd4b80c"
+    },
+    {
+      "path": "/logos/svg/education/element/alternates/nb-symbol.svg",
+      "sha256": "a0aabd0999456802eb8c3ec8e2bb3e28f3cb2d998a8d972590a61e01cdd57f1b"
+    },
+    {
+      "path": "/logos/svg/education/element/mo.svg",
+      "sha256": "74d45049c62e2b6d5801ac16a395f8e6f3b3857e11d8f10356507ac0b28c6e1b"
+    },
+    {
+      "path": "/logos/svg/education/element/alternates/mo-symbol.svg",
+      "sha256": "99e7175e0cc1e7253e858ec25946a3b05c17bcce027b8689ea0593f669e12829"
+    },
+    {
+      "path": "/logos/svg/education/element/tc.svg",
+      "sha256": "f99e09f01d76166de76d00d8ace71c3982ff8a296391012f644e75a46ce958e9"
+    },
+    {
+      "path": "/logos/svg/education/element/alternates/tc-symbol.svg",
+      "sha256": "847192f0a9a1db6e914fe39868af413b52f4011a39f83e6dccea0d0e46536909"
+    },
+    {
+      "path": "/logos/svg/education/element/ru.svg",
+      "sha256": "180ec6035513117740f0f604cbdcb813f8e1f994f1ebdd71f11b0255b0e31fca"
+    },
+    {
+      "path": "/logos/svg/education/element/alternates/ru-symbol.svg",
+      "sha256": "7c2fa1e3925fc944d0e48f982f1603e7ad7cc44e327bda2a1eb48ac343b35614"
+    },
+    {
+      "path": "/logos/svg/education/element/rh.svg",
+      "sha256": "61d604a5ace1612fcc44b2a424adc0ee8e66fc1a60c9a6caa6aab6fbd9dd5004"
+    },
+    {
+      "path": "/logos/svg/education/element/alternates/rh-symbol.svg",
+      "sha256": "3f49e27eadcdf748d3f0aa7089efc527facee1ae2f3fc08711211986df2f77de"
+    },
+    {
+      "path": "/logos/svg/education/element/pd.svg",
+      "sha256": "0c50599b9271dc75e7973ea8e7e775d544db13e53a69ce11b82c47f01c28a8dc"
+    },
+    {
+      "path": "/logos/svg/education/element/alternates/pd-symbol.svg",
+      "sha256": "bd3f8cb11f5c379e61f9ce7e3a10724966f950a953ca51d29d2117dc2ccd9bca"
+    },
+    {
+      "path": "/logos/svg/education/element/ag.svg",
+      "sha256": "ca25918eb815d14a96f976a101d0f51d3b44bf3cdd907036592e95102f3a5ff5"
+    },
+    {
+      "path": "/logos/svg/education/element/alternates/ag-symbol.svg",
+      "sha256": "a9ca9fc23c2a0a9fbf6200bc76a0e4139fe61ab4419621f9210cac057d318ceb"
+    },
+    {
+      "path": "/logos/svg/education/element/cd.svg",
+      "sha256": "24f2de8cd5320708de0988403c3c5bce924b8763c4fcc75422602a696dfdadd8"
+    },
+    {
+      "path": "/logos/svg/education/element/alternates/cd-symbol.svg",
+      "sha256": "69b23317e22b63e3f7925ee9a005ef113ec59c813d08c765865adea36353236e"
+    },
+    {
+      "path": "/logos/svg/education/element/in.svg",
+      "sha256": "21c33c38359e251b9daabb5c67caaef447dd1678ac3ecfb92a305de3bb737068"
+    },
+    {
+      "path": "/logos/svg/education/element/alternates/in-symbol.svg",
+      "sha256": "adff7ba6fbf4ddb347d40fd65f8a7d3734309357f1dea2139f04ea25b178d712"
+    },
+    {
+      "path": "/logos/svg/education/element/sn.svg",
+      "sha256": "5db467040bbc7c65629f73597157aa54d68c364c5922d9861111aaf7b5574b07"
+    },
+    {
+      "path": "/logos/svg/education/element/alternates/sn-symbol.svg",
+      "sha256": "a88e5a80d1b0ff850e1856d73a6952bd6687a4e81f86a00e592a65d5125ba669"
+    },
+    {
+      "path": "/logos/svg/education/element/sb.svg",
+      "sha256": "727ef98231085712c385ca4cd333244e3ea4e4ecf047d3350e175ef153010737"
+    },
+    {
+      "path": "/logos/svg/education/element/alternates/sb-symbol.svg",
+      "sha256": "001099ae077e099332c5ab57f75c3836bec481c676b2c8eca0a307bd4159ca02"
+    },
+    {
+      "path": "/logos/svg/education/element/te.svg",
+      "sha256": "a945074d0a2ced927d53b4d28d05447520dcbb15f9b00c5e719e06e81b609986"
+    },
+    {
+      "path": "/logos/svg/education/element/alternates/te-symbol.svg",
+      "sha256": "69805b68b95d6ea71815ef2422bf70a90fb8b05f149d40560d93e8586a2d02e3"
+    },
+    {
+      "path": "/logos/svg/education/element/i.svg",
+      "sha256": "2d14d5fe1aba475d1799545592de4fb1af0bb9244f95d073082b1c9d76e408ad"
+    },
+    {
+      "path": "/logos/svg/education/element/alternates/i-symbol.svg",
+      "sha256": "5554f4f1558a8589c5eed04d75087e0b8e09782206ef2d0d5767b2eaa5e5e1c4"
+    },
+    {
+      "path": "/logos/svg/education/element/xe.svg",
+      "sha256": "8c4962d84056dbd4aaacecb37460047e987199e8c216c504aa32f2637443278c"
+    },
+    {
+      "path": "/logos/svg/education/element/alternates/xe-symbol.svg",
+      "sha256": "0162eb34a09a2100089b010bf79b56b56ccf89de24e17f8c01d9ee1a7f58599e"
+    },
+    {
+      "path": "/logos/svg/education/element/cs.svg",
+      "sha256": "95a005ac67bbe43e9af49eeb80dd629a16091200e1664b3154b46c3e2ef2694e"
+    },
+    {
+      "path": "/logos/svg/education/element/alternates/cs-symbol.svg",
+      "sha256": "3687ff959bd1865c64dfbf8484fb2d5ddce923fca28b16522be7a661067648f5"
+    },
+    {
+      "path": "/logos/svg/education/element/ba.svg",
+      "sha256": "0b502cf633d887324437197e3eb52c29c972b95f9faf66b292bee3dd1394ced7"
+    },
+    {
+      "path": "/logos/svg/education/element/alternates/ba-symbol.svg",
+      "sha256": "95d9bbeb0ba7836210280cf7d4de27b3135523bb31cdb853f01c15a18ef10e50"
+    },
+    {
+      "path": "/logos/svg/education/element/la.svg",
+      "sha256": "3564ee0a8aab66a3f6ee5eb53c01130ae97193f0812b046437443428318b6f84"
+    },
+    {
+      "path": "/logos/svg/education/element/alternates/la-symbol.svg",
+      "sha256": "7c3d9eb4f9daf06d25e08199c367df4980cbd186dcb5311b4064d1eaeceb0ed8"
+    },
+    {
+      "path": "/logos/svg/education/element/ce.svg",
+      "sha256": "5eea63ed974e7fda49778b90248df2ec23c77a37a1c16c6e75e305a682806293"
+    },
+    {
+      "path": "/logos/svg/education/element/alternates/ce-symbol.svg",
+      "sha256": "6167b55e27151ef255b16c7699aa8c3e64418710addd5deeb7a040a64a69c64d"
+    },
+    {
+      "path": "/logos/svg/education/element/pr.svg",
+      "sha256": "ecab03b05865158b930553affc2be76ede79fe674d02f1b72402ca325611b8ce"
+    },
+    {
+      "path": "/logos/svg/education/element/alternates/pr-symbol.svg",
+      "sha256": "7546b60248205179cb2153618c85966ec27021d8512a364bd082f8be01e4b953"
+    },
+    {
+      "path": "/logos/svg/education/element/nd.svg",
+      "sha256": "d308351d9cc897f8c0e982e842ba76939f6b7a7896f93dc709dcccdb8beacd0e"
+    },
+    {
+      "path": "/logos/svg/education/element/alternates/nd-symbol.svg",
+      "sha256": "e377a013f0c512e52a329876d4753253b5998ea88c10dc1f6834a334608cdda9"
+    },
+    {
+      "path": "/logos/svg/education/element/pm.svg",
+      "sha256": "a74365e23799356a04b1fdc1199a91a880ab3d3a2e4bf5f611f65509a37ccefa"
+    },
+    {
+      "path": "/logos/svg/education/element/alternates/pm-symbol.svg",
+      "sha256": "b21a1153e85d8722ba1625d8e7b07f213c9bb04cfc235b9f4115a32a1dcdf030"
+    },
+    {
+      "path": "/logos/svg/education/element/sm.svg",
+      "sha256": "f6dcfc7ffb5f2ea9b885069f05ff6476526626aa540a3df8c51d8845fd3ea71f"
+    },
+    {
+      "path": "/logos/svg/education/element/alternates/sm-symbol.svg",
+      "sha256": "0bf498b89b5a718bc27313118a921524d7e28a7d59bd838b5b7c72a357daa26c"
+    },
+    {
+      "path": "/logos/svg/education/element/eu.svg",
+      "sha256": "3725ca7b1b6810221844f89a567ce59c02cb0c2da3fcc4a00ba325cd16f97a7b"
+    },
+    {
+      "path": "/logos/svg/education/element/alternates/eu-symbol.svg",
+      "sha256": "cfe9bd566fe1d3db8af815507b1c7b1b7eada6897adb5be6678c51b70eda139d"
+    },
+    {
+      "path": "/logos/svg/education/element/gd.svg",
+      "sha256": "12bde059c75c634e9e1ae0a6841ee839e3676f3ef44d87ea7fc00329d21c96f0"
+    },
+    {
+      "path": "/logos/svg/education/element/alternates/gd-symbol.svg",
+      "sha256": "d8e58d557c6c02a98b4e263a8e869028a467b167b729c2fd574ee6a2ceb4095d"
+    },
+    {
+      "path": "/logos/svg/education/element/tb.svg",
+      "sha256": "cc0a0b9ae5f8c245c1d4f72ce1da15c22b0a3d2106b98b299777f504eef0883b"
+    },
+    {
+      "path": "/logos/svg/education/element/alternates/tb-symbol.svg",
+      "sha256": "1bcfc01d9eec000a4d24810176bd1160601709dadacbcb50baff4e2408fd2423"
+    },
+    {
+      "path": "/logos/svg/education/element/dy.svg",
+      "sha256": "f2453f661bdbf0969e45c3381f4af57b8e37409d85b0b08f7027e806943bc4d5"
+    },
+    {
+      "path": "/logos/svg/education/element/alternates/dy-symbol.svg",
+      "sha256": "5f0640363846be594c3d223ed5926a72284b2b636b7b7b129853267e66627c58"
+    },
+    {
+      "path": "/logos/svg/education/element/ho.svg",
+      "sha256": "ace90a9796d8bf09e3adf818fbde454450b8783793adeb12331898af3fed0450"
+    },
+    {
+      "path": "/logos/svg/education/element/alternates/ho-symbol.svg",
+      "sha256": "5bf0c12a16c5f0d91564805bc8b67d9b0b8fc9dd5e7dc2274e029ff09d153339"
+    },
+    {
+      "path": "/logos/svg/education/element/er.svg",
+      "sha256": "089601596e0088c15354484bf00b903323e753ea675b67e4e45927c073df29cc"
+    },
+    {
+      "path": "/logos/svg/education/element/alternates/er-symbol.svg",
+      "sha256": "dfb36c3f7f45778915cc41244a06e7b5a4f58ded0440fe4afd0fcf506dff105a"
+    },
+    {
+      "path": "/logos/svg/education/element/tm.svg",
+      "sha256": "6102bc62b02fc6d3cff723ec06380088d03fd9b6b4b4d2b510d8dc328ba9cbf8"
+    },
+    {
+      "path": "/logos/svg/education/element/alternates/tm-symbol.svg",
+      "sha256": "4e21050a4e7f516eeb7281e2dbeef3de6d8dfb611c9505ffdf57807377985cab"
+    },
+    {
+      "path": "/logos/svg/education/element/yb.svg",
+      "sha256": "14a60622490eea99a1d2f566a988c86b4b6074b7c4d1cd22978672203e2eb9ac"
+    },
+    {
+      "path": "/logos/svg/education/element/alternates/yb-symbol.svg",
+      "sha256": "22176e78fad6296b98cfcac763f714481a7c47ca0f8511dfb7bac60aee5bbeaf"
+    },
+    {
+      "path": "/logos/svg/education/element/lu.svg",
+      "sha256": "a6b524c485a030eff94d81092d47dccd96d18e10dd5cc44d98111f6268cb5b0d"
+    },
+    {
+      "path": "/logos/svg/education/element/alternates/lu-symbol.svg",
+      "sha256": "c9d3d0e12a047dc4d16673a1bb1cc1a727b528da26fc3284b6e47a8aba81895d"
+    },
+    {
+      "path": "/logos/svg/education/element/hf.svg",
+      "sha256": "7bc541794f5af89f8a92fdbc7e8e13f0bb43c3fcfc6ce3eb0f2feb969f1bfb74"
+    },
+    {
+      "path": "/logos/svg/education/element/alternates/hf-symbol.svg",
+      "sha256": "a148d295e535a3c56f5e8a3f093d77ba9aa118e575ef0f944dc337a33b876c48"
+    },
+    {
+      "path": "/logos/svg/education/element/ta.svg",
+      "sha256": "c748a299f3f269c37ea04a97c8791f1c39496f4f949a4af992b0f00376613a81"
+    },
+    {
+      "path": "/logos/svg/education/element/alternates/ta-symbol.svg",
+      "sha256": "cbf21723cf8aea933878f378e6db28f0483bf064d14bbb1e8cd4305dea7176cd"
+    },
+    {
+      "path": "/logos/svg/education/element/w.svg",
+      "sha256": "eed828f8760089af3b803e78610f4d25c0b900007ca2e240fa8311b4813ea290"
+    },
+    {
+      "path": "/logos/svg/education/element/alternates/w-symbol.svg",
+      "sha256": "d99016ea05980fc0edfc5ee68f7b17bc82cd40dde94637debedcaeda4703bad3"
+    },
+    {
+      "path": "/logos/svg/education/element/re.svg",
+      "sha256": "1256d3164f560563088ad6a738f98468e33a2e1cb65da45e69426be806724599"
+    },
+    {
+      "path": "/logos/svg/education/element/alternates/re-symbol.svg",
+      "sha256": "31b31a6d07f0cdba34513e5b1074ade2cc653e5c592b67cab9b46d364085cfb9"
+    },
+    {
+      "path": "/logos/svg/education/element/os.svg",
+      "sha256": "1b9108a0d725938d005e62f8c8b7ede3a72be8d54b04781d10f752d1aba53139"
+    },
+    {
+      "path": "/logos/svg/education/element/alternates/os-symbol.svg",
+      "sha256": "a658d26088e013d7065e0c351ab12631a929116dfad54c851b1155edd83405c2"
+    },
+    {
+      "path": "/logos/svg/education/element/ir.svg",
+      "sha256": "68b03357bd4074a8793f13941d978dcb41b3158bc0155c5ffa00c4090d777fb6"
+    },
+    {
+      "path": "/logos/svg/education/element/alternates/ir-symbol.svg",
+      "sha256": "d4b6d1912efd6c94204d7f36d3b273659a932afc2e38c5ee826206944f0a2291"
+    },
+    {
+      "path": "/logos/svg/education/element/pt.svg",
+      "sha256": "e7c9498438855edbec1a5212b5f2f915db6ea19a18f423c9943a29730c6376dc"
+    },
+    {
+      "path": "/logos/svg/education/element/alternates/pt-symbol.svg",
+      "sha256": "441b1d4c13087fb76efc153c913f6d1666a1e16e4a554145ead1f3fecc2af398"
+    },
+    {
+      "path": "/logos/svg/education/element/au.svg",
+      "sha256": "5324f7b704ecc97f349dbdede03640248444148aaa13fc674234986b5939e72b"
+    },
+    {
+      "path": "/logos/svg/education/element/alternates/au-symbol.svg",
+      "sha256": "30fd24e7e591d1619941b4900170369a7adffe6e40e25e8ab361fbef14fd2d1d"
+    },
+    {
+      "path": "/logos/svg/education/element/hg.svg",
+      "sha256": "4bedaa9ea2f4389a388e825a7d8ce78e62c2e138d2abc31a67d5229f5ca5b56f"
+    },
+    {
+      "path": "/logos/svg/education/element/alternates/hg-symbol.svg",
+      "sha256": "98e0fa34e539a21b4de026e80d8619f6244855e8d4850a45bb8310532103f0f8"
+    },
+    {
+      "path": "/logos/svg/education/element/tl.svg",
+      "sha256": "62d60caf743da50f4138257441b3a9588a1f551a7016d86f22080019dc6e1efa"
+    },
+    {
+      "path": "/logos/svg/education/element/alternates/tl-symbol.svg",
+      "sha256": "7d6660f79382623882b29e4fed5b8b5269011fa8c1e73127bf41eef0d3eb8a4d"
+    },
+    {
+      "path": "/logos/svg/education/element/pb.svg",
+      "sha256": "a7d6927bae319c11b56a67f12886eab234119059a8a2e05740e9f886697af481"
+    },
+    {
+      "path": "/logos/svg/education/element/alternates/pb-symbol.svg",
+      "sha256": "54a49be0c17c06d0b2786a0c1c4123e822337be36dee9925c0ed6f24271335be"
+    },
+    {
+      "path": "/logos/svg/education/element/bi.svg",
+      "sha256": "535448b18e6235466fd2819385f406d6ca13a6eed13b753d42f27c6555d5bff9"
+    },
+    {
+      "path": "/logos/svg/education/element/alternates/bi-symbol.svg",
+      "sha256": "d8c98e6339cbbe4f6c0b946468586ec511960ce7516a6425930ee392bb8f5419"
+    },
+    {
+      "path": "/logos/svg/education/element/po.svg",
+      "sha256": "0f69c27887ee5a0b6c6c5ae84bdc5cb195b894b57e91243908d7566c32e62db2"
+    },
+    {
+      "path": "/logos/svg/education/element/alternates/po-symbol.svg",
+      "sha256": "3c3466459df9524dd92ef6aece5b8139bc5c40d0b0d1647a2b53ac510024545b"
+    },
+    {
+      "path": "/logos/svg/education/element/at.svg",
+      "sha256": "036b3e8ee6a11f173b46acf6c258a9ad8a152f49124f22c713476bf4a2f39be0"
+    },
+    {
+      "path": "/logos/svg/education/element/alternates/at-symbol.svg",
+      "sha256": "56a4e9656f9bdb595c1e0c815c5aa5f65c891e5bdec8e3c4ad06a92451046daf"
+    },
+    {
+      "path": "/logos/svg/education/element/rn.svg",
+      "sha256": "2b2bc3844052d292a957cf22bac6efad81139fad5d56580a6c7485ec85d51833"
+    },
+    {
+      "path": "/logos/svg/education/element/alternates/rn-symbol.svg",
+      "sha256": "123d2ad6bfd5b515392f74fcfaff4f096b614338d8cebdc534c029035a309935"
+    },
+    {
+      "path": "/logos/svg/education/element/fr.svg",
+      "sha256": "b4cd4a1577dbfc9e5ba565a5493b7d43ac518a76ef9d79ee8d742ae8ae0a7ecd"
+    },
+    {
+      "path": "/logos/svg/education/element/alternates/fr-symbol.svg",
+      "sha256": "4c41c54112f5a42bb6e722da85da29c10421aaa1c2c9e0636f116da01b9770da"
+    },
+    {
+      "path": "/logos/svg/education/element/ra.svg",
+      "sha256": "90a27c2dc3ed4698d1aad3d770bc1fb4d26f4f35193985b387d0eebcaa40d924"
+    },
+    {
+      "path": "/logos/svg/education/element/alternates/ra-symbol.svg",
+      "sha256": "ef109b2ed276e2fd19a4696c3bb1860e4d98cd951c8f6d8bcb85e7ff876f88a4"
+    },
+    {
+      "path": "/logos/svg/education/element/ac.svg",
+      "sha256": "d84123a3254a8c4eb8b96d9dff1e33a55c0994da89087296fcbf79f2de7db467"
+    },
+    {
+      "path": "/logos/svg/education/element/alternates/ac-symbol.svg",
+      "sha256": "bf65dbcb647de9a127693ed3cf1e9480b4ab16c17cbc984871ef4a9224bc0e99"
+    },
+    {
+      "path": "/logos/svg/education/element/th.svg",
+      "sha256": "803c9df5b5fea6fd4a028e69cd98eacd760de650f34be96ddd1a999634fcce12"
+    },
+    {
+      "path": "/logos/svg/education/element/alternates/th-symbol.svg",
+      "sha256": "9003ae1a721bce4795bf52712398e8319e68edebedc2b2152517a25d35d7f5b1"
+    },
+    {
+      "path": "/logos/svg/education/element/pa.svg",
+      "sha256": "81d43f520f301b882d678b514d323eca35faff1d46a52919dfcebba99ac7876c"
+    },
+    {
+      "path": "/logos/svg/education/element/alternates/pa-symbol.svg",
+      "sha256": "f53472b7fcfb097a55b6579c90c72e9e4cbce17e2acd127aad7e0618c7168cdc"
+    },
+    {
+      "path": "/logos/svg/education/element/u.svg",
+      "sha256": "3b58d1ad738935690b57a66e2574b548d15f7a42709d4301eb13cf36851ed290"
+    },
+    {
+      "path": "/logos/svg/education/element/alternates/u-symbol.svg",
+      "sha256": "5842990fce28079f4825b5f802987ea8c61d333cd2882df4f816c72b2e159dbd"
+    },
+    {
+      "path": "/logos/svg/education/element/np.svg",
+      "sha256": "6cd70d7a7a7c608a26e96fc87753bb03e94dcf9aca881c7eed0b2ec66f8659aa"
+    },
+    {
+      "path": "/logos/svg/education/element/alternates/np-symbol.svg",
+      "sha256": "06d0552b0152ae1f9800bf36ae6dafe3e146b554fb98aec9d6956cc0a2a5b790"
+    },
+    {
+      "path": "/logos/svg/education/element/pu.svg",
+      "sha256": "51020c421c64b3dc1cf348b9d328f2bc71a95d325664262094a99b72da092ef3"
+    },
+    {
+      "path": "/logos/svg/education/element/alternates/pu-symbol.svg",
+      "sha256": "80b892f7b009b49caca166d505b7da4d461fc3b0c19d53214cffe5331c5735e0"
+    },
+    {
+      "path": "/logos/svg/education/element/am.svg",
+      "sha256": "1ec70ac47246d6707c2743ebf17a26adf731995dc01524cd2093a19e3b045fe7"
+    },
+    {
+      "path": "/logos/svg/education/element/alternates/am-symbol.svg",
+      "sha256": "cf1d70d506c892ccd39f76b45d42c84855fe95cd201154a2abc5baafb4e77a86"
+    },
+    {
+      "path": "/logos/svg/education/element/cm.svg",
+      "sha256": "172b1512b66b68f846c639ab3049b21ffb8948efa292b88d31c2dfa25f3eab50"
+    },
+    {
+      "path": "/logos/svg/education/element/alternates/cm-symbol.svg",
+      "sha256": "f6041ac2ac513f52a0b12217f42e494661f9e129a1fea7f134139e4b0cd15adb"
+    },
+    {
+      "path": "/logos/svg/education/element/bk.svg",
+      "sha256": "c42e28d066ae122bdce9794f7ca11a49a944221461ce41a4a40c8999d53ac90a"
+    },
+    {
+      "path": "/logos/svg/education/element/alternates/bk-symbol.svg",
+      "sha256": "360b72024e0d55cc0bd183007246de61e1ab9c4413cd1ba77805114870b32e5f"
+    },
+    {
+      "path": "/logos/svg/education/element/cf.svg",
+      "sha256": "708b7dfa5f51693bd4df2deda4bee93cad5b66901b84173334717aea70c71d55"
+    },
+    {
+      "path": "/logos/svg/education/element/alternates/cf-symbol.svg",
+      "sha256": "27b44f9fcf4b08cd7b82e10e6bc2fb98e9e95d7e8cd6c895307e46ca65614e96"
+    },
+    {
+      "path": "/logos/svg/education/element/es.svg",
+      "sha256": "ea7d7fdfd12c88dbb653a9386e4600ba0f7c5d75d9f6a4630dba36aa8b20ff83"
+    },
+    {
+      "path": "/logos/svg/education/element/alternates/es-symbol.svg",
+      "sha256": "ca9e522dfe3c646defba6a4239c5a8d3b812f8438e3f065743bd751ddc773b9e"
+    },
+    {
+      "path": "/logos/svg/education/element/fm.svg",
+      "sha256": "d4f7448771826009f1e0929ffb75575b436af5bde9a195de3d0f1696de3ce96f"
+    },
+    {
+      "path": "/logos/svg/education/element/alternates/fm-symbol.svg",
+      "sha256": "e9f6dda755737da9db7c1a3cf9b478d35d6b143bddb1cfaf28018391a7847f73"
+    },
+    {
+      "path": "/logos/svg/education/element/md.svg",
+      "sha256": "322302e3b238fabf17771d98ec776eb98efec425595397888075d09ad7301125"
+    },
+    {
+      "path": "/logos/svg/education/element/alternates/md-symbol.svg",
+      "sha256": "070383680223df7a49f9914cdb47dd4a0254e414e89495369ab49890a0f79c69"
+    },
+    {
+      "path": "/logos/svg/education/element/no.svg",
+      "sha256": "bca2a0557220cf975ad0a450ad8ba8b86120f49d1f5a0953a4f061e8cba65453"
+    },
+    {
+      "path": "/logos/svg/education/element/alternates/no-symbol.svg",
+      "sha256": "ec0842906bd6e8bdd31c37d2964f9b4bc74326de2db8e701898c78fc39860085"
+    },
+    {
+      "path": "/logos/svg/education/element/lr.svg",
+      "sha256": "3f9326027f6e7871bdc3c3c4b211f44a3bb25d50171e73ae12f9783403867858"
+    },
+    {
+      "path": "/logos/svg/education/element/alternates/lr-symbol.svg",
+      "sha256": "fa13970e6852a15e3f2a2bc01f36921bd2d2d7b64c1c22d95e70c01f2a1ef8e2"
+    },
+    {
+      "path": "/logos/svg/education/element/rf.svg",
+      "sha256": "7d2a83b60f144d252f442203809f8ad41b80b1087fe1310d8993622f0471bc27"
+    },
+    {
+      "path": "/logos/svg/education/element/alternates/rf-symbol.svg",
+      "sha256": "3a3e4c3ef65b53e8c8d304d132487748d1ec16cb1ea6918ed815eedc78d2f4cc"
+    },
+    {
+      "path": "/logos/svg/education/element/db.svg",
+      "sha256": "07d8414c32e38febd5f177210cd49501e627dcf047dc565c53b7314c1b7db0fc"
+    },
+    {
+      "path": "/logos/svg/education/element/alternates/db-symbol.svg",
+      "sha256": "2542b460e16cee721b975619e8cf494292cd314455645b9ef5c3810f9b824e97"
+    },
+    {
+      "path": "/logos/svg/education/element/sg.svg",
+      "sha256": "8584606de47ac0b232890629159549c599d093772050a413ef30f01d77e2e28f"
+    },
+    {
+      "path": "/logos/svg/education/element/alternates/sg-symbol.svg",
+      "sha256": "50c393b0eca7267d88e44bde261e53ec42f32e8b3c641f1126773be500af0f33"
+    },
+    {
+      "path": "/logos/svg/education/element/bh.svg",
+      "sha256": "db8ab67ce762421fd0eb1f6ae2288db4b03aedc394ea6a86297e9048a669a4f5"
+    },
+    {
+      "path": "/logos/svg/education/element/alternates/bh-symbol.svg",
+      "sha256": "b2ba57ae63bb15bf4e6ac13126b3513b052e08370a18fcb28f8b13cf0a9e2bc2"
+    },
+    {
+      "path": "/logos/svg/education/element/hs.svg",
+      "sha256": "be9e1074c97370b81f673441ef6f9b56b76d77d11481418934950f25d21a4620"
+    },
+    {
+      "path": "/logos/svg/education/element/alternates/hs-symbol.svg",
+      "sha256": "0e6e0c94a1f508d57aff59268d6e2081b43e6fb0b9ff02bb00ddd4ab484ae000"
+    },
+    {
+      "path": "/logos/svg/education/element/mt.svg",
+      "sha256": "d6dbc2ae69fca989f9b071a440f5af1d318eb0072ad62b5c4fd9c117a6367c74"
+    },
+    {
+      "path": "/logos/svg/education/element/alternates/mt-symbol.svg",
+      "sha256": "14f4ed7998c312f4293cf0f197c38600a30fe20cabdd3590b7cf2c58f2b12956"
+    },
+    {
+      "path": "/logos/svg/education/element/ds.svg",
+      "sha256": "82f3c4f1cd7d46bf700ebab77f42a14bd5e95da06c285245f6fc1e347f43f0d3"
+    },
+    {
+      "path": "/logos/svg/education/element/alternates/ds-symbol.svg",
+      "sha256": "657279f0e3d28c71d75c9a34160c70e97bf18b3b50dffeda0d018f2a84c98038"
+    },
+    {
+      "path": "/logos/svg/education/element/rg.svg",
+      "sha256": "780a01f261bfa59369d12f742105667138a583e8018cd9528da74b3ff7379a6f"
+    },
+    {
+      "path": "/logos/svg/education/element/alternates/rg-symbol.svg",
+      "sha256": "1908404e4267e84d3a8a1f3d10142c20bffd6189fa2667d99f2022bb573c8e31"
+    },
+    {
+      "path": "/logos/svg/education/element/cn.svg",
+      "sha256": "21eb127bd9916a690b064d01ea2bee3239fa5d34638fb7f6f5ff5ffc10e9b3a2"
+    },
+    {
+      "path": "/logos/svg/education/element/alternates/cn-symbol.svg",
+      "sha256": "966c689d05f3fcfdf972b24c4683fc20cdb49f77c38c6cd3ca00753e43aaeadf"
+    },
+    {
+      "path": "/logos/svg/education/element/nh.svg",
+      "sha256": "b1c5415681a7adfcc901c0da908d37039e516b2132c89c256a0e480e620fc80f"
+    },
+    {
+      "path": "/logos/svg/education/element/alternates/nh-symbol.svg",
+      "sha256": "f4a9565a382794393c7b35197ab8df4519efa21979bb0fca14fcb439f28c2252"
+    },
+    {
+      "path": "/logos/svg/education/element/fl.svg",
+      "sha256": "59998e5e10d1d94443e7e737812d9f51e1694788b70a2cedd7a07f2a770c9380"
+    },
+    {
+      "path": "/logos/svg/education/element/alternates/fl-symbol.svg",
+      "sha256": "f48667bc7779b7269f7fd664798ca609ddec34fb445034fa310abb5684f00827"
+    },
+    {
+      "path": "/logos/svg/education/element/mc.svg",
+      "sha256": "7690e6d2154ef715acbe0fb7ee8a0fb5923553ce487ffbe0793132a98fde6a53"
+    },
+    {
+      "path": "/logos/svg/education/element/alternates/mc-symbol.svg",
+      "sha256": "e54a5a108c50b8e397c745826c4a8c6cf6c85ec62b516e95b4155332599925b2"
+    },
+    {
+      "path": "/logos/svg/education/element/lv.svg",
+      "sha256": "09c22d894218507658d224002aa49263572dec2f038977593484ae0e8fa94294"
+    },
+    {
+      "path": "/logos/svg/education/element/alternates/lv-symbol.svg",
+      "sha256": "2c8e48ecc97d25f107b1931d9a621ca3c6b86bbca8a485439644c118bc8d1107"
+    },
+    {
+      "path": "/logos/svg/education/element/ts.svg",
+      "sha256": "1d441b0ae9966ea17732a3c139be1a5c8b3e79f06d2aacd37bbdef937228c84d"
+    },
+    {
+      "path": "/logos/svg/education/element/alternates/ts-symbol.svg",
+      "sha256": "e0c64c6aadaf62111904dab1761067d7260c604dc51be511b84b989fdab2af7b"
+    },
+    {
+      "path": "/logos/svg/education/element/og.svg",
+      "sha256": "9bb2c0ecd6309a1d5aa9a83cb95a54e28dcedcfcf780552b2a66362de4d6545e"
+    },
+    {
+      "path": "/logos/svg/education/element/alternates/og-symbol.svg",
+      "sha256": "45b9204d934ffd9ac6829f6ffc89fe6b9aeaeebb8282bf1f8131f9155b61eaef"
+    },
+    {
+      "path": "/logos/svg/education/math/pi.svg",
+      "sha256": "9c3ba945b3ce24f874350ffd211a9771d7761eb83b55351900332bf0cf8414f0"
+    },
+    {
+      "path": "/logos/svg/education/math/infinity.svg",
+      "sha256": "049668451ef4b31a0fbe514014079a94555bba7c5da05c6167eb37e8135e4205"
+    },
+    {
+      "path": "/logos/svg/education/math/delta.svg",
+      "sha256": "a0128b0c20ae4bbe41d92c9ff2aa5d0cd39f714862465dce18830b5796cb2dea"
+    },
+    {
+      "path": "/logos/svg/education/math/theta.svg",
+      "sha256": "7edba12e9333ae565b9a353c760f40ff925cb89221b1db28c958ad3bc85311c6"
+    },
+    {
+      "path": "/logos/svg/education/math/sqrt.svg",
+      "sha256": "9d09b39ddde936ae52b6ff3dbf83089c0429c66003daa0c2425c3b6a71f66f70"
+    },
+    {
+      "path": "/logos/svg/education/math/sum.svg",
+      "sha256": "4f176d60636470dc62d8b5bf1de4256a60a50562a211f17fa39ac2a813239a9e"
+    },
+    {
+      "path": "/logos/svg/education/math/integral.svg",
+      "sha256": "d5da7dc1a30dde6adfe01af3b47f1b1367db03e0e6b5144265fbf63e259f3685"
+    },
+    {
+      "path": "/logos/svg/education/math/multiply.svg",
+      "sha256": "30202ce98c4bfd7a31db06d922460015d2f790e2bed60ec37ba363f17d7d4d46"
+    },
+    {
+      "path": "/logos/svg/education/math/divide.svg",
+      "sha256": "f667db6c555b4dbe65f2374e7ae929167b8ce674bb058db834d5eb504b6119d1"
+    },
+    {
+      "path": "/logos/svg/education/math/plusminus.svg",
+      "sha256": "169b2807418e6d1e68a1e10afe25370b2f2e54297b030c356eeebda8874c318d"
+    },
+    {
+      "path": "/logos/svg/education/math/percent.svg",
+      "sha256": "348f30bd2ec2f9e22fe35a79074dde8dc82ad3fc99f8230dbcb267bda31386a6"
+    },
+    {
+      "path": "/logos/svg/education/math/equal.svg",
+      "sha256": "68a87096998d8467a02a3da3c86137a24d120ad38b983e217610fbd240d07e36"
+    },
+    {
+      "path": "/logos/svg/education/math/notequal.svg",
+      "sha256": "474e417e27ca9dc2dfdc983ccb8ca3643d4b711afec78f44914361d372c4d0a0"
+    },
+    {
+      "path": "/logos/svg/education/math/approx.svg",
+      "sha256": "33e441f8c0b3a4a55bd7fbb021b24022b88cf74e1205e19c4ef511ed35f31090"
+    },
+    {
+      "path": "/logos/svg/education/math/less.svg",
+      "sha256": "cb256f6393246cd2515d6821093246decd312d2cf767c4501c8ba833b1ac5b48"
+    },
+    {
+      "path": "/logos/svg/education/math/greater.svg",
+      "sha256": "5cf324437cf595486284ea520b27c43ec99e508ead43e37bbe7291b4f0cc7d74"
+    },
+    {
+      "path": "/logos/svg/education/math/leq.svg",
+      "sha256": "fdc1fca8521e845dab9658f80d90763a25a69bd5dc34e2b118cb621cd20a27c4"
+    },
+    {
+      "path": "/logos/svg/education/math/geq.svg",
+      "sha256": "1242061fae87455b627a1673dcc090f4f2fc9c762f753bd7a0d04af55bb6409c"
+    },
+    {
+      "path": "/logos/svg/education/math/perp.svg",
+      "sha256": "ad4267228b556714d32cb470fc73ec161860a0fe66f742c099d2b361074137b3"
+    },
+    {
+      "path": "/logos/svg/education/math/parallel.svg",
+      "sha256": "ed89f3311229215e1fce750b8b44399c312153b102f317a24e7262b6047640e6"
+    },
+    {
+      "path": "/logos/svg/education/math/angle.svg",
+      "sha256": "b7b4585ae79fe90a83f8672240ee0f0d0fc78d0bf49eb6bf8817f696c481ecd8"
+    },
+    {
+      "path": "/logos/svg/education/math/degree.svg",
+      "sha256": "5da32a5e4dcacf6c5e86d169e93ccd817f19a89c7b791d106a863d00a72f2291"
+    },
+    {
+      "path": "/logos/svg/education/shape/circle.svg",
+      "sha256": "088adea11c2b29b161df721e4fd9884605a69dfe59dd1c0a747736f68bc7cbd7"
+    },
+    {
+      "path": "/logos/svg/education/shape/alternates/circle-outline.svg",
+      "sha256": "33d58feb4aaaa76953af28b97db9a8aa2e35706e67f0a25cddf05f219e362419"
+    },
+    {
+      "path": "/logos/svg/education/shape/oval.svg",
+      "sha256": "46a0aac7e13c0a0e02e1ec89799923dea09904d4ab0849cbaa8700a75aae3a47"
+    },
+    {
+      "path": "/logos/svg/education/shape/alternates/oval-outline.svg",
+      "sha256": "eab24e1b0dec5b276ed8c56d5b5bce876574ad2a067de933c955abe293ac3cd4"
+    },
+    {
+      "path": "/logos/svg/education/shape/triangle.svg",
+      "sha256": "3c05c24d2ec3e4632c600d2af4f8707476924472ddf11baf7a6dd1f63be7cc09"
+    },
+    {
+      "path": "/logos/svg/education/shape/alternates/triangle-outline.svg",
+      "sha256": "9015f7b9d7e3a627dc59b8a3ba28eb64613e2941f7a3d2d150359bd52b119288"
+    },
+    {
+      "path": "/logos/svg/education/shape/square.svg",
+      "sha256": "76cc0c2949ade393c6501a15a8e21a03697de4bc66595329cde81e1a94565f8e"
+    },
+    {
+      "path": "/logos/svg/education/shape/alternates/square-outline.svg",
+      "sha256": "cc93553b9d0a25c07e0c85f19f529cee7cba387483504758bac1c027e2109a6e"
+    },
+    {
+      "path": "/logos/svg/education/shape/rectangle.svg",
+      "sha256": "c6d636f0cc21adcfb774946687cbc2d6652bdd9b25ff4decd769797a8019b74a"
+    },
+    {
+      "path": "/logos/svg/education/shape/alternates/rectangle-outline.svg",
+      "sha256": "f87c8880b0781ddd5e81a2aa61d9b0d97f1ff4813f719fe5976cb903fe0fa970"
+    },
+    {
+      "path": "/logos/svg/education/shape/rhombus.svg",
+      "sha256": "0768160e507c54409420f0d3d57bafd62fc35f522a4550c183b2aaa6ecae3d65"
+    },
+    {
+      "path": "/logos/svg/education/shape/alternates/rhombus-outline.svg",
+      "sha256": "0074b877604e812f955d029b67b1aefa854ad3c0d468b5d4c745c6a5852a149a"
+    },
+    {
+      "path": "/logos/svg/education/shape/trapezoid.svg",
+      "sha256": "a6d85d76abc253981059f578c20b243602ba3c9ebe80091fa82d8f83333edc97"
+    },
+    {
+      "path": "/logos/svg/education/shape/alternates/trapezoid-outline.svg",
+      "sha256": "84c2ae848a34013f6ebce7590bb5bcf7a61ab0e272a9d8acf4eb4dd0930b4644"
+    },
+    {
+      "path": "/logos/svg/education/shape/parallelogram.svg",
+      "sha256": "ab2c192b1db9c60a4cb51b9ec00c288cf124ea6d6e5e52c4d91d0bef9cb42b57"
+    },
+    {
+      "path": "/logos/svg/education/shape/alternates/parallelogram-outline.svg",
+      "sha256": "1ea875dda105a041968f0f3ac476700bdc75ca9af9e66dd8351ecfabe7578357"
+    },
+    {
+      "path": "/logos/svg/education/shape/pentagon.svg",
+      "sha256": "5221d587e42395bc1ec1ed0149228785df44a5a00aed5f2105ca2c0a3fed69f1"
+    },
+    {
+      "path": "/logos/svg/education/shape/alternates/pentagon-outline.svg",
+      "sha256": "355eadda35d54c958c3d083b082aeff61e3a9902dbf71080a31d396bb49116cb"
+    },
+    {
+      "path": "/logos/svg/education/shape/hexagon.svg",
+      "sha256": "186ce3ddf141e4cf2806ca1646410a1f0c1dc9bfb2bd8bd21e59f360ab631ea3"
+    },
+    {
+      "path": "/logos/svg/education/shape/alternates/hexagon-outline.svg",
+      "sha256": "be4b6c8c15e86cf2a5720bcb6d84f82a39d2aa32b6d06a9362d5033deee71015"
+    },
+    {
+      "path": "/logos/svg/education/shape/heptagon.svg",
+      "sha256": "f7a650c3742c182d6181f2fb023e74eb0b078c565608ff2457229a0edb99524f"
+    },
+    {
+      "path": "/logos/svg/education/shape/alternates/heptagon-outline.svg",
+      "sha256": "4e544174eca5489453af6714b17613070b542a60b7eae134d052f2a0608ec06d"
+    },
+    {
+      "path": "/logos/svg/education/shape/octagon.svg",
+      "sha256": "748793518c877d38380f54337b3547a7dbea49b2aed921fffb67b39afa18a27c"
+    },
+    {
+      "path": "/logos/svg/education/shape/alternates/octagon-outline.svg",
+      "sha256": "1c578492cb62bbcbb7a165033865b6415400952a34bab7797ea020b4dec18e60"
+    },
+    {
+      "path": "/logos/svg/education/shape/nonagon.svg",
+      "sha256": "0b1e8ab988fa16704adebe5ef71cf72dfbc18eb2272b0f7e5d8bdc13767fcdf3"
+    },
+    {
+      "path": "/logos/svg/education/shape/alternates/nonagon-outline.svg",
+      "sha256": "3ce5d8c4d13125be2268d81407937b525c96711a657f5bcd3fdd463faa5fd8ea"
+    },
+    {
+      "path": "/logos/svg/education/shape/decagon.svg",
+      "sha256": "234706edb2977ebcb423221a8a1404e9541b2923dfa311d39f8febe8fd7e6458"
+    },
+    {
+      "path": "/logos/svg/education/shape/alternates/decagon-outline.svg",
+      "sha256": "0493b79713ed629258ba6f20f40d7bf36335e2531242f1f980935e9674801506"
+    },
+    {
+      "path": "/logos/svg/education/shape/cube.svg",
+      "sha256": "508d71d6298dcf61eacb7e41b823eeb5c0a40c88200c545a4249a0ce51251eef"
+    },
+    {
+      "path": "/logos/svg/education/shape/sphere.svg",
+      "sha256": "38a406b5f8d5ef24ef1458fe3b22b64d1a0b659c21d5abfad5596ef66f8316b4"
+    },
+    {
+      "path": "/logos/svg/education/shape/cylinder.svg",
+      "sha256": "512249b7d1d135271ffad6af38de40c5b613b91b4c5d4f55df9f62f46c620477"
+    },
+    {
+      "path": "/logos/svg/education/shape/cone.svg",
+      "sha256": "fe283f57408c8bf1e902099d3e2660c3e0fa63f6a4eee83576c5220b5cae0dac"
+    },
+    {
+      "path": "/logos/svg/education/shape/pyramid.svg",
+      "sha256": "6a55a244a34059be7532c995d6849f1d0cee9f274031b4a86c0944b371bcb0f8"
+    },
+    {
+      "path": "/logos/svg/education/shape/prism.svg",
+      "sha256": "9374a0b1d2a1d140a685e482844229fb0625ea20c0c929b8f85faf57e641a8d2"
+    },
+    {
+      "path": "/logos/svg/education/space/mercury.svg",
+      "sha256": "f537acb2ab7fd4e2c44d554d142cca62dc97c61aed5896ac597a45832b155227"
+    },
+    {
+      "path": "/logos/svg/education/space/venus.svg",
+      "sha256": "02e508377b2ba3c190d9bd252675798e4319253923f9ba43815aef07ff6a4410"
+    },
+    {
+      "path": "/logos/svg/education/space/earth.svg",
+      "sha256": "6e1cc8df38d42ffd66f7074af2c2f5452cb337f9b7a2a40c046881622434ec87"
+    },
+    {
+      "path": "/logos/svg/education/space/mars.svg",
+      "sha256": "6d0230adbe7efc6f09bc0edf5290f20ac17b9d19a466f7843bab1e8269953b05"
+    },
+    {
+      "path": "/logos/svg/education/space/jupiter.svg",
+      "sha256": "6389533c9eca5726df7c77108855c05b7621667bdcd1474c178c918b82b47bfc"
+    },
+    {
+      "path": "/logos/svg/education/space/saturn.svg",
+      "sha256": "9076097c7f44202f60e4ab207021bcbefe3be0b70335d27487544a4f2af690c1"
+    },
+    {
+      "path": "/logos/svg/education/space/uranus.svg",
+      "sha256": "054e99985ca4f3ac012f8a77302909c4e93476057f28b7ee34b82a7288b8c5b6"
+    },
+    {
+      "path": "/logos/svg/education/space/neptune.svg",
+      "sha256": "603fff13c20327308a4a802b0784c92a3cdbceccbd2bedf16c5f18d9bfbfc3cb"
+    },
+    {
+      "path": "/logos/svg/education/space/pluto.svg",
+      "sha256": "fb91b4521c4e16d38c6392466bfa13dbd1f41882e2815328d111420039590872"
+    },
+    {
+      "path": "/logos/svg/education/space/sun.svg",
+      "sha256": "0b4d6f16c716b0264e3af41a2eb11670ca05a01cb921d972ee751fc754f706df"
+    },
+    {
+      "path": "/logos/svg/education/space/moon.svg",
+      "sha256": "889800e78b7b22c5a0e61cec04391edb1b02828f9df4da468986dbf5990c0f56"
+    },
+    {
+      "path": "/logos/svg/education/space/comet.svg",
+      "sha256": "5f5a667da2db3f2a3938593f5d4ed5df1769649d2530d00be03034958d285d00"
+    },
+    {
+      "path": "/logos/svg/education/space/galaxy.svg",
+      "sha256": "2090036f066f63bd509e1f8832ed8bbf016997009cf56077082f1904bbc1a302"
+    },
+    {
+      "path": "/logos/svg/education/science/atom.svg",
+      "sha256": "76b5758abe9ce8fc0777595d40b72b61175e9f57d8ff868ffe59edee285a2326"
+    },
+    {
+      "path": "/logos/svg/education/science/magnet.svg",
+      "sha256": "0ac749efdfca4b4dc43d37c694547c8cff7d3d3e9a4dce5d4d450ad90247639f"
+    },
+    {
+      "path": "/logos/svg/education/science/dna.svg",
+      "sha256": "1912d726f07611aefc887e1f29a09ae1451689604f78fc95debf4483109735ad"
+    },
+    {
+      "path": "/logos/svg/education/science/cell.svg",
+      "sha256": "4c2f6f3ca3cb0cd758e2d92c684f8dbc1137cac9958a957fdaf1de7a121440c0"
+    },
+    {
+      "path": "/logos/svg/education/science/flask.svg",
+      "sha256": "aae4fa57c10d80010b05901a59de3f064e967dd2866cbb2c73a2374ed0dd6d66"
+    },
+    {
+      "path": "/logos/svg/education/science/beaker.svg",
+      "sha256": "a6538dad4c37bb1e28d8bfae39230b169b64931e962e04e1329ef96cbfa8dae8"
+    },
+    {
+      "path": "/logos/svg/education/science/testtube.svg",
+      "sha256": "6918e6f60a1ea0aedca54036464befa55b7a71291060cd3aaad3849d668eb7e1"
+    },
+    {
+      "path": "/logos/svg/education/science/thermometer.svg",
+      "sha256": "572ea662fdd0a2411a653ad3c689c30821ddafd2709d6e1469969edf6c161c4b"
+    },
+    {
+      "path": "/logos/svg/education/science/microscope.svg",
+      "sha256": "74c82514d4bd7cd2a63960f9404c45ba67f0f549f1d4723a9e3a11af3e9bf2fb"
+    },
+    {
+      "path": "/logos/svg/education/science/telescope.svg",
+      "sha256": "172bf619eab6a2fb7a7110d59bc17b8d0ae9399618a2779fdc0b241b77f1f012"
+    }
+  ]
+}

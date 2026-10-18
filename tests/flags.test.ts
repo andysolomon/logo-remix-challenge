@@ -13,14 +13,14 @@ const REGIONS = ['Americas', 'Europe', 'Asia & Pacific', 'Africa & Middle East',
 /** The 17 flags that opened as BRANDS' Place type. */
 const MOVED = ['TX', 'CANADA', 'JAPAN', 'CHICAGO', 'MEXICO', 'USA', 'UK', 'BRAZIL', 'KOREA', 'JAMAICA', 'PR', 'CALI', 'AUS', 'INDIA', 'TURKEY', 'GREECE', 'ARG']
 /** Places whose outline is too small on the map sheets for a readable silhouette; they keep the flag only. */
-const NO_SILHOUETTE = ['FLAG-BAHAMAS', 'FLAG-BARBADOS', 'FLAG-PR', 'FLAG-RI', 'FLAG-SG', 'FLAG-TT']
+const NO_SILHOUETTE = ['FLAG-BAHAMAS', 'FLAG-BARBADOS', 'FLAG-PR', 'FLAG-SG', 'FLAG-TT']
 
 describe('the FLAGS collection', () => {
-  test('93 flags are grouped by region, and BRANDS no longer has a Place type', () => {
+  test('123 flags are grouped by region, and BRANDS no longer has a Place type', () => {
     expect(LEAGUES.FLAG).toEqual({ label: 'FLAGS', conferences: REGIONS })
-    expect(flags).toHaveLength(93)
-    expect(REGIONS.map((r) => filterTeams('FLAG', r, '').length)).toEqual([17, 19, 15, 14, 20, 8])
-    expect(new Set(flags.map((t) => fullName(t))).size).toBe(93)
+    expect(flags).toHaveLength(123)
+    expect(REGIONS.map((r) => filterTeams('FLAG', r, '').length)).toEqual([17, 19, 15, 14, 50, 8])
+    expect(new Set(flags.map((t) => fullName(t))).size).toBe(123)
     expect(LEAGUES.BRAND.conferences).not.toContain('Place')
     expect(TEAMS.filter((t) => t.league === 'BRAND' && t.conference === 'Place')).toEqual([])
     for (const abbr of MOVED) {
@@ -53,8 +53,8 @@ describe('the FLAGS collection', () => {
     expect(roundHints({ o: 'FLAG-TX', c: 'PRO-KC', v: 0 })).toEqual(['Logo: FLAGS - US States', 'Colors: NFL - AFC'])
     expect(roundHints({ o: 'FLAG-TOKYO', v: 0 })).toEqual(['Logo: FLAGS - Cities'])
     expect(ALL_POOL_IDS).toContain('Flags')
-    expect(poolTeams(['Flags'])).toHaveLength(93)
-    expect(logoPoolTeams(['Flags'])).toHaveLength(93)
+    expect(poolTeams(['Flags'])).toHaveLength(123)
+    expect(logoPoolTeams(['Flags'])).toHaveLength(123)
     expect(colorPoolTeams(['Flags'])).toEqual([])
     expect(randomDeck({ rounds: 20, logoPools: ['NFL'], colorPools: ['Flags'], guess: 'both', hints: true })).toEqual([])
     const deck = randomDeck({ rounds: 20, logoPools: ['Flags'], colorPools: ['NBA'], guess: 'both', hints: true })
@@ -104,7 +104,7 @@ describe('the FLAGS collection', () => {
       expect(fullName(resolved)).toBe(fullName(team))
     }
     for (const team of flags) for (const variant of team.alternateLogos ?? []) expect(existsSync(join(root, 'public', variant.logo))).toBe(true)
-    expect(flags.filter((t) => t.alternateLogos?.some((v) => v.id === 'silhouette'))).toHaveLength(93 - 8 - NO_SILHOUETTE.length)
+    expect(flags.filter((t) => t.alternateLogos?.some((v) => v.id === 'silhouette'))).toHaveLength(123 - 8 - NO_SILHOUETTE.length)
   })
 
   test('silhouettes are pinned cuts from the two Wikimedia map sheets, and the flags from Commons flag files', () => {
@@ -115,7 +115,7 @@ sys.path.insert(0, 'scripts')
 from download_brand_logos import pinned_sources
 from brand_rosters import FLAG, BRAND, LEAGUES
 assert not any(row[2] == 'Place' for row in BRAND) and 'Place' not in LEAGUES['BRAND']['conferences']
-assert [row[0] for row in FLAG].count('TX') == 1 and len(FLAG) == 93
+assert [row[0] for row in FLAG].count('TX') == 1 and len(FLAG) == 123
 sheets = {'BlankMap-World.svg', 'Blank_US_Map_(states_only).svg'}
 checksums = {}
 for s in pinned_sources('FLAG'):
@@ -127,7 +127,7 @@ for s in pinned_sources('FLAG'):
     elif s['id'] == 'primary':
         assert name.startswith('Flag_of_'), s['teamId']
 manifest = json.loads(Path('public/logos/svg/flags-manifest.json').read_text())['assets']
-assert len(manifest) == 93 and all(a['league'] == 'FLAG' for a in manifest)
+assert len(manifest) == 123 and all(a['league'] == 'FLAG' for a in manifest)
 for a in manifest:
     for art in a['artwork']:
         if art['id'] == 'silhouette':

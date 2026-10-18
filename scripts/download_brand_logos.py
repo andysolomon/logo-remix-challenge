@@ -137,7 +137,8 @@ def refresh(league: str, force: bool = False, cache_dir: Path | None = None) -> 
         else:
             raw = import_brand_vector(source_bytes(source, cache_dir), source.get("ops", {}))
         validate_vector(raw)
-        if len(raw) > MAX_BYTES:
+        # Detailed state seals need more vector paths; retain their original geometry.
+        if len(raw) > (750_000 if league == 'FLAG' else MAX_BYTES):
             raise ValueError(f"{path}: {len(raw)} bytes; pick a lighter vector source")
         colors = brand_colors(raw)
         palette, unused = artwork_palette(colors, primary, secondary)

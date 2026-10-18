@@ -1,0 +1,1321 @@
+{
+  "assets": [
+    {
+      "id": "NHL-ANA",
+      "league": "NHL",
+      "conference": "Western",
+      "region": "Anaheim Ducks",
+      "name": "",
+      "abbr": "ANA",
+      "aliases": [
+        "Ducks"
+      ],
+      "palette": [
+        "#010101",
+        "#AC5C36",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Primary",
+          "sourceUrl": "https://assets.nhle.com/logos/nhl/svg/ANA_light.svg",
+          "sourcePage": "https://assets.nhle.com/logos/nhl/svg/ANA_light.svg",
+          "sourceSha256": "a21be1c53858393a8b8b1e32fb602e797a2845e060b8afe33cece8c4c2b98b9c",
+          "ops": {},
+          "path": "/logos/svg/nhl/ana.svg",
+          "format": "svg",
+          "colors": [
+            "#010101",
+            "#89734C",
+            "#FFFFFF",
+            "#CF4520"
+          ],
+          "sourcePalette": [
+            "#010101",
+            "#AC5C36",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "259e03282c3aa3724b13328de1759014b6d1518e8dc08a951d43132948acc483"
+        }
+      ]
+    },
+    {
+      "id": "NHL-BOS",
+      "league": "NHL",
+      "conference": "Eastern",
+      "region": "Boston Bruins",
+      "name": "",
+      "abbr": "BOS",
+      "aliases": [
+        "Bruins"
+      ],
+      "palette": [
+        "#FFB81C",
+        "#010101",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Primary",
+          "sourceUrl": "https://assets.nhle.com/logos/nhl/svg/BOS_light.svg",
+          "sourcePage": "https://assets.nhle.com/logos/nhl/svg/BOS_light.svg",
+          "sourceSha256": "80c05e3678d3a8d2b56d46d320a2877963935677c55ec9618e506cd20e15c7e4",
+          "ops": {},
+          "path": "/logos/svg/nhl/bos.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#FFB81C",
+            "#010101"
+          ],
+          "sourcePalette": [
+            "#FFB81C",
+            "#010101",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "9f51a8d48bb1e718cb755e385499b76e486a7d8cffdb2a76497f6695c5a375aa"
+        }
+      ]
+    },
+    {
+      "id": "NHL-BUF",
+      "league": "NHL",
+      "conference": "Eastern",
+      "region": "Buffalo Sabres",
+      "name": "",
+      "abbr": "BUF",
+      "aliases": [
+        "Sabres"
+      ],
+      "palette": [
+        "#003087",
+        "#E46425",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Primary",
+          "sourceUrl": "https://assets.nhle.com/logos/nhl/svg/BUF_light.svg",
+          "sourcePage": "https://assets.nhle.com/logos/nhl/svg/BUF_light.svg",
+          "sourceSha256": "a18563d8be078c5d353f699a922f3d70cbdced5f745c1e127e5cb1914eff26d5",
+          "ops": {},
+          "path": "/logos/svg/nhl/buf.svg",
+          "format": "svg",
+          "colors": [
+            "#FFB81C",
+            "#003087",
+            "#FFFFFF",
+            "#C8102E"
+          ],
+          "sourcePalette": [
+            "#003087",
+            "#E46425",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "7f6e004cff4e26836cf22e5add157ddce42674491684757157d65f3b86c68985"
+        }
+      ]
+    },
+    {
+      "id": "NHL-CAR",
+      "league": "NHL",
+      "conference": "Eastern",
+      "region": "Carolina Hurricanes",
+      "name": "",
+      "abbr": "CAR",
+      "aliases": [
+        "Hurricanes"
+      ],
+      "palette": [
+        "#010101",
+        "#CD001A",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Primary",
+          "sourceUrl": "https://assets.nhle.com/logos/nhl/svg/CAR_light.svg",
+          "sourcePage": "https://assets.nhle.com/logos/nhl/svg/CAR_light.svg",
+          "sourceSha256": "4d1d152f939d73b9d3c756860dcab5fc0c04a70014999ea35bccc30189ad36a7",
+          "ops": {},
+          "path": "/logos/svg/nhl/car.svg",
+          "format": "svg",
+          "colors": [
+            "#010101",
+            "#A2AAAD",
+            "#FFFFFF",
+            "#CD001A"
+          ],
+          "sourcePalette": [
+            "#010101",
+            "#CD001A",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "c26cf6a943ad05d5eee9a1396af9a6bd707efb2ccfb9e4eea14db9834349ef1d"
+        }
+      ]
+    },
+    {
+      "id": "NHL-CBJ",
+      "league": "NHL",
+      "conference": "Eastern",
+      "region": "Columbus Blue Jackets",
+      "name": "",
+      "abbr": "CBJ",
+      "aliases": [
+        "Blue Jackets"
+      ],
+      "palette": [
+        "#041E42",
+        "#C8102E",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Primary",
+          "sourceUrl": "https://assets.nhle.com/logos/nhl/svg/CBJ_light.svg",
+          "sourcePage": "https://assets.nhle.com/logos/nhl/svg/CBJ_light.svg",
+          "sourceSha256": "3e9328f0bc9ff2e0a40aa1957746c1acf52ad84ecdf33b3d86966d3116a0c587",
+          "ops": {},
+          "path": "/logos/svg/nhl/cbj.svg",
+          "format": "svg",
+          "colors": [
+            "#041E42",
+            "#A2AAAD",
+            "#C8102E",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#041E42",
+            "#C8102E",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "c152411a22a834135ec7b1fa3a75c590b346d37f8814e03c40417e1ece07cd9c"
+        }
+      ]
+    },
+    {
+      "id": "NHL-CGY",
+      "league": "NHL",
+      "conference": "Western",
+      "region": "Calgary Flames",
+      "name": "",
+      "abbr": "CGY",
+      "aliases": [
+        "Flames"
+      ],
+      "palette": [
+        "#F1BE48",
+        "#C8102E",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Primary",
+          "sourceUrl": "https://assets.nhle.com/logos/nhl/svg/CGY_light.svg",
+          "sourcePage": "https://assets.nhle.com/logos/nhl/svg/CGY_light.svg",
+          "sourceSha256": "6c7d437480888d242ffff8d6f44cc82f824e0a610589b629c84b6d8617864cdb",
+          "ops": {},
+          "path": "/logos/svg/nhl/cgy.svg",
+          "format": "svg",
+          "colors": [
+            "#F1BE48",
+            "#C8102E"
+          ],
+          "sourcePalette": [
+            "#F1BE48",
+            "#C8102E",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "e9db73d523050848da041468d7a5060362bc911502f268b2596929dd2533ac89"
+        }
+      ]
+    },
+    {
+      "id": "NHL-CHI",
+      "league": "NHL",
+      "conference": "Western",
+      "region": "Chicago Blackhawks",
+      "name": "",
+      "abbr": "CHI",
+      "aliases": [
+        "Blackhawks"
+      ],
+      "palette": [
+        "#213B88",
+        "#C8102E",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Primary",
+          "sourceUrl": "https://assets.nhle.com/logos/nhl/svg/CHI_light.svg",
+          "sourcePage": "https://assets.nhle.com/logos/nhl/svg/CHI_light.svg",
+          "sourceSha256": "004c62e1715baa972087061079c39288202bed6ff6e1229d01058c44282b14da",
+          "ops": {},
+          "path": "/logos/svg/nhl/chi.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#FEDD00",
+            "#D9A510",
+            "#F5812B",
+            "#C8102E",
+            "#008755",
+            "#213B88",
+            "#010101"
+          ],
+          "sourcePalette": [
+            "#213B88",
+            "#C8102E",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "d5b85e01dcf3245a54a1b1cf54751306a150a20dc50bb33c77a58064bb52bf7f"
+        }
+      ]
+    },
+    {
+      "id": "NHL-COL",
+      "league": "NHL",
+      "conference": "Western",
+      "region": "Colorado Avalanche",
+      "name": "",
+      "abbr": "COL",
+      "aliases": [
+        "Avalanche"
+      ],
+      "palette": [
+        "#010101",
+        "#544462",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Primary",
+          "sourceUrl": "https://assets.nhle.com/logos/nhl/svg/COL_light.svg",
+          "sourcePage": "https://assets.nhle.com/logos/nhl/svg/COL_light.svg",
+          "sourceSha256": "cabc6c42f3f33a7810c0786dffcccb352c6814d83e483f745a7b07e2fe497550",
+          "ops": {},
+          "path": "/logos/svg/nhl/col.svg",
+          "format": "svg",
+          "colors": [
+            "#010101",
+            "#FFFFFF",
+            "#236192",
+            "#C1C6C8",
+            "#862633"
+          ],
+          "sourcePalette": [
+            "#44141A",
+            "#236192",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "53e5168858da739723ae0a88df1710999d52f070460d7cfb66a9a5ef56ddceb5"
+        }
+      ]
+    },
+    {
+      "id": "NHL-DAL",
+      "league": "NHL",
+      "conference": "Western",
+      "region": "Dallas Stars",
+      "name": "",
+      "abbr": "DAL",
+      "aliases": [
+        "Stars"
+      ],
+      "palette": [
+        "#010101",
+        "#00843D",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Primary",
+          "sourceUrl": "https://assets.nhle.com/logos/nhl/svg/DAL_light.svg",
+          "sourcePage": "https://assets.nhle.com/logos/nhl/svg/DAL_light.svg",
+          "sourceSha256": "bc35eb8219eed641b3ad3f219ba531bc15645e170cd087fd6d46378f6a2c8c7e",
+          "ops": {},
+          "path": "/logos/svg/nhl/dal.svg",
+          "format": "svg",
+          "colors": [
+            "#010101",
+            "#00843D",
+            "#A2AAAD",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#010101",
+            "#00843D",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "42f8c71cf810ede9b42fb083ed7ebc3edd76d97ac8c2b824a5c2f239fce404e2"
+        }
+      ]
+    },
+    {
+      "id": "NHL-DET",
+      "league": "NHL",
+      "conference": "Eastern",
+      "region": "Detroit Red Wings",
+      "name": "",
+      "abbr": "DET",
+      "aliases": [
+        "Red Wings"
+      ],
+      "palette": [
+        "#C8102E",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Primary",
+          "sourceUrl": "https://assets.nhle.com/logos/nhl/svg/DET_light.svg",
+          "sourcePage": "https://assets.nhle.com/logos/nhl/svg/DET_light.svg",
+          "sourceSha256": "df86a9617b9d0ee31e59e6abf7c9966c2285e3414c0cca65437ad7616f9aa6fb",
+          "ops": {},
+          "path": "/logos/svg/nhl/det.svg",
+          "format": "svg",
+          "colors": [
+            "#C8102E",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#C8102E",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "69b4c9c57d037235b2f9ad4e19c10583572aeb487865489f1d45990b50a5841d"
+        }
+      ]
+    },
+    {
+      "id": "NHL-EDM",
+      "league": "NHL",
+      "conference": "Western",
+      "region": "Edmonton Oilers",
+      "name": "",
+      "abbr": "EDM",
+      "aliases": [
+        "Oilers"
+      ],
+      "palette": [
+        "#00205B",
+        "#CF4520",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Primary",
+          "sourceUrl": "https://assets.nhle.com/logos/nhl/svg/EDM_light.svg",
+          "sourcePage": "https://assets.nhle.com/logos/nhl/svg/EDM_light.svg",
+          "sourceSha256": "655f783dbbda6588dc56bda566a5624a1cc76d2a348f87919c5e20e658c49ed8",
+          "ops": {},
+          "showsName": true,
+          "path": "/logos/svg/nhl/edm.svg",
+          "format": "svg",
+          "colors": [
+            "#00205B",
+            "#FFFFFF",
+            "#CF4520"
+          ],
+          "sourcePalette": [
+            "#00205B",
+            "#CF4520",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "56cefba8c78547a792757625219f2cc1aca2d6c56e7e2f0acfa8a1bd45ae6ac3"
+        }
+      ]
+    },
+    {
+      "id": "NHL-FLA",
+      "league": "NHL",
+      "conference": "Eastern",
+      "region": "Florida Panthers",
+      "name": "",
+      "abbr": "FLA",
+      "aliases": [
+        "Panthers"
+      ],
+      "palette": [
+        "#021022",
+        "#C05444",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Primary",
+          "sourceUrl": "https://assets.nhle.com/logos/nhl/svg/FLA_light.svg",
+          "sourcePage": "https://assets.nhle.com/logos/nhl/svg/FLA_light.svg",
+          "sourceSha256": "39714a28508546a725f5545cae6442eee833d18dfbf7ace217fdc6b9f65620ae",
+          "ops": {},
+          "showsName": true,
+          "path": "/logos/svg/nhl/fla.svg",
+          "format": "svg",
+          "colors": [
+            "#010101",
+            "#041E42",
+            "#B9975B",
+            "#C8102E",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#021022",
+            "#C05444",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "da2f33fe7ea5719886a447419ca53695fcc6e9a90fced175107c510b8ac887c0"
+        }
+      ]
+    },
+    {
+      "id": "NHL-LAK",
+      "league": "NHL",
+      "conference": "Western",
+      "region": "Los Angeles Kings",
+      "name": "",
+      "abbr": "LAK",
+      "aliases": [
+        "Kings"
+      ],
+      "palette": [
+        "#010101",
+        "#A2AAAD",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Primary",
+          "sourceUrl": "https://assets.nhle.com/logos/nhl/svg/LAK_light.svg",
+          "sourcePage": "https://assets.nhle.com/logos/nhl/svg/LAK_light.svg",
+          "sourceSha256": "8516b2daf79eba139ff08686a34d0ddedf907a284c1866f7b9d8a4a6057981b9",
+          "ops": {},
+          "showsName": true,
+          "path": "/logos/svg/nhl/lak.svg",
+          "format": "svg",
+          "colors": [
+            "#010101",
+            "#FFFFFF",
+            "#A2AAAD"
+          ],
+          "sourcePalette": [
+            "#010101",
+            "#A2AAAD",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "b7059eabd8d0865a1cbbae9ac54f26e5cd42bbda5006f12723f92e791e94912e"
+        }
+      ]
+    },
+    {
+      "id": "NHL-MIN",
+      "league": "NHL",
+      "conference": "Western",
+      "region": "Minnesota Wild",
+      "name": "",
+      "abbr": "MIN",
+      "aliases": [
+        "Wild"
+      ],
+      "palette": [
+        "#154734",
+        "#C86217",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Primary",
+          "sourceUrl": "https://assets.nhle.com/logos/nhl/svg/MIN_light.svg",
+          "sourcePage": "https://assets.nhle.com/logos/nhl/svg/MIN_light.svg",
+          "sourceSha256": "8dbf8805f61f5e204a810247ba03b7249ca7ea7c99ae5fa8fa1eed7b998edcbd",
+          "ops": {},
+          "path": "/logos/svg/nhl/min.svg",
+          "format": "svg",
+          "colors": [
+            "#154734",
+            "#DDCBA4",
+            "#EAAA00",
+            "#A6192E",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#5E3031",
+            "#EAAA00",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "6335cc99ea45c75e98effb3acc67d20f4971b35887457eddb1d4c14039068545"
+        }
+      ]
+    },
+    {
+      "id": "NHL-MTL",
+      "league": "NHL",
+      "conference": "Eastern",
+      "region": "Montréal Canadiens",
+      "name": "",
+      "abbr": "MTL",
+      "aliases": [
+        "Canadiens"
+      ],
+      "palette": [
+        "#001E62",
+        "#A6192E",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Primary",
+          "sourceUrl": "https://assets.nhle.com/logos/nhl/svg/MTL_light.svg",
+          "sourcePage": "https://assets.nhle.com/logos/nhl/svg/MTL_light.svg",
+          "sourceSha256": "c2b4b2f292330455e72a61b212e5303fc8923d775e13e734e2da3106dc5a8d7c",
+          "ops": {},
+          "path": "/logos/svg/nhl/mtl.svg",
+          "format": "svg",
+          "colors": [
+            "#001E62",
+            "#FFFFFF",
+            "#A6192E"
+          ],
+          "sourcePalette": [
+            "#001E62",
+            "#A6192E",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "0f5bb8ef0e09441922d288bae8b18b530bbe71c96f6d46df5802ba878f4c4dfa"
+        }
+      ]
+    },
+    {
+      "id": "NHL-NJD",
+      "league": "NHL",
+      "conference": "Eastern",
+      "region": "New Jersey Devils",
+      "name": "",
+      "abbr": "NJD",
+      "aliases": [
+        "Devils"
+      ],
+      "palette": [
+        "#010101",
+        "#CD001A",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Primary",
+          "sourceUrl": "https://assets.nhle.com/logos/nhl/svg/NJD_light.svg",
+          "sourcePage": "https://assets.nhle.com/logos/nhl/svg/NJD_light.svg",
+          "sourceSha256": "1c92a9d394394eea75f10e41ea5e86357dc9d3eb473642335300cb74cfe6dfcd",
+          "ops": {},
+          "path": "/logos/svg/nhl/njd.svg",
+          "format": "svg",
+          "colors": [
+            "#010101",
+            "#FFFFFF",
+            "#CD001A"
+          ],
+          "sourcePalette": [
+            "#010101",
+            "#CD001A",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "2d8c68dd12348fcfc6c5341473d459731efb18a7ec6948c5fda761a018c538d9"
+        }
+      ]
+    },
+    {
+      "id": "NHL-NSH",
+      "league": "NHL",
+      "conference": "Western",
+      "region": "Nashville Predators",
+      "name": "",
+      "abbr": "NSH",
+      "aliases": [
+        "Predators"
+      ],
+      "palette": [
+        "#041E42",
+        "#FFB81C",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Primary",
+          "sourceUrl": "https://assets.nhle.com/logos/nhl/svg/NSH_light.svg",
+          "sourcePage": "https://assets.nhle.com/logos/nhl/svg/NSH_light.svg",
+          "sourceSha256": "658322599492f3c8642117518b4b34ff2fb6ea11dce04c1a97bfb2fff4f9e3ac",
+          "ops": {},
+          "path": "/logos/svg/nhl/nsh.svg",
+          "format": "svg",
+          "colors": [
+            "#041E42",
+            "#FFB81C",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#041E42",
+            "#FFB81C",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "b58a7d654f0d3a818a4437e00279abc8fc4823a27c532b56a111a7c414498804"
+        }
+      ]
+    },
+    {
+      "id": "NHL-NYI",
+      "league": "NHL",
+      "conference": "Eastern",
+      "region": "New York Islanders",
+      "name": "",
+      "abbr": "NYI",
+      "aliases": [
+        "Islanders"
+      ],
+      "palette": [
+        "#003087",
+        "#FC4C02",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Primary",
+          "sourceUrl": "https://assets.nhle.com/logos/nhl/svg/NYI_light.svg",
+          "sourcePage": "https://assets.nhle.com/logos/nhl/svg/NYI_light.svg",
+          "sourceSha256": "567fa7ec2c4764d07a98ce16bf005b9f91cb5ed46126d32fe28f5f0158d7582c",
+          "ops": {},
+          "showsName": true,
+          "path": "/logos/svg/nhl/nyi.svg",
+          "format": "svg",
+          "colors": [
+            "#003087",
+            "#FC4C02",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#003087",
+            "#FC4C02",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "c449c3e12b521b1802991c89128d5a9e899807b1a92dc7d511c2bca4bc232c85"
+        }
+      ]
+    },
+    {
+      "id": "NHL-NYR",
+      "league": "NHL",
+      "conference": "Eastern",
+      "region": "New York Rangers",
+      "name": "",
+      "abbr": "NYR",
+      "aliases": [
+        "Rangers"
+      ],
+      "palette": [
+        "#0033A0",
+        "#C8102E",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Primary",
+          "sourceUrl": "https://assets.nhle.com/logos/nhl/svg/NYR_light.svg",
+          "sourcePage": "https://assets.nhle.com/logos/nhl/svg/NYR_light.svg",
+          "sourceSha256": "365fc8449f0fe659eeb330c5f219416b1d3fced3ce407b359a1d403d5752ec38",
+          "ops": {},
+          "showsName": true,
+          "path": "/logos/svg/nhl/nyr.svg",
+          "format": "svg",
+          "colors": [
+            "#0033A0",
+            "#C8102E",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#0033A0",
+            "#C8102E",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "62b4763bcc124f341c16cc7d6de1454989dc7c96e1f6d6fc1f9d02f2db95aefe"
+        }
+      ]
+    },
+    {
+      "id": "NHL-OTT",
+      "league": "NHL",
+      "conference": "Eastern",
+      "region": "Ottawa Senators",
+      "name": "",
+      "abbr": "OTT",
+      "aliases": [
+        "Senators"
+      ],
+      "palette": [
+        "#010101",
+        "#C05444",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Primary",
+          "sourceUrl": "https://assets.nhle.com/logos/nhl/svg/OTT_light.svg",
+          "sourcePage": "https://assets.nhle.com/logos/nhl/svg/OTT_light.svg",
+          "sourceSha256": "5ecf44459f3ac9da1532400a297bed585d923de85d2fba384d9d4ed352c188b7",
+          "ops": {},
+          "path": "/logos/svg/nhl/ott.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#010101",
+            "#B9975B",
+            "#C8102E"
+          ],
+          "sourcePalette": [
+            "#010101",
+            "#C05444",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "3c26c407ac55714a9b0a2798de934b16c28e516c94e7bcb76676c5f26181cf8c"
+        }
+      ]
+    },
+    {
+      "id": "NHL-PHI",
+      "league": "NHL",
+      "conference": "Eastern",
+      "region": "Philadelphia Flyers",
+      "name": "",
+      "abbr": "PHI",
+      "aliases": [
+        "Flyers"
+      ],
+      "palette": [
+        "#010101",
+        "#DC4405",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Primary",
+          "sourceUrl": "https://assets.nhle.com/logos/nhl/svg/PHI_light.svg",
+          "sourcePage": "https://assets.nhle.com/logos/nhl/svg/PHI_light.svg",
+          "sourceSha256": "d7b20decbf0abd1bd5c8370a8ebdc27bd227159781d03fb9134d61f48cc9c4c9",
+          "ops": {},
+          "path": "/logos/svg/nhl/phi.svg",
+          "format": "svg",
+          "colors": [
+            "#010101",
+            "#FFFFFF",
+            "#DC4405"
+          ],
+          "sourcePalette": [
+            "#010101",
+            "#DC4405",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "ad0f71d0f2f27477e2ca07c74db71dcfd83f81e2cf424c58d6c2282fa979ba30"
+        }
+      ]
+    },
+    {
+      "id": "NHL-PIT",
+      "league": "NHL",
+      "conference": "Eastern",
+      "region": "Pittsburgh Penguins",
+      "name": "",
+      "abbr": "PIT",
+      "aliases": [
+        "Penguins"
+      ],
+      "palette": [
+        "#010101",
+        "#FFB81C",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Primary",
+          "sourceUrl": "https://assets.nhle.com/logos/nhl/svg/PIT_light.svg",
+          "sourcePage": "https://assets.nhle.com/logos/nhl/svg/PIT_light.svg",
+          "sourceSha256": "37364eb8353ece2739fa975e73cbff23573a10c4df6b9d8146efd7fc24920658",
+          "ops": {},
+          "path": "/logos/svg/nhl/pit.svg",
+          "format": "svg",
+          "colors": [
+            "#010101",
+            "#FFFFFF",
+            "#FFB81C"
+          ],
+          "sourcePalette": [
+            "#010101",
+            "#FFB81C",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "6153c6d8232d257d2098927bd1c3289ea28bbc17e42cce40b3d3a37da1051fd1"
+        }
+      ]
+    },
+    {
+      "id": "NHL-SEA",
+      "league": "NHL",
+      "conference": "Western",
+      "region": "Seattle Kraken",
+      "name": "",
+      "abbr": "SEA",
+      "aliases": [
+        "Kraken"
+      ],
+      "palette": [
+        "#041C2C",
+        "#C8102E",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Primary",
+          "sourceUrl": "https://assets.nhle.com/logos/nhl/svg/SEA_light.svg",
+          "sourcePage": "https://assets.nhle.com/logos/nhl/svg/SEA_light.svg",
+          "sourceSha256": "941ee0182c890a3bc0b8c4b71fe9ce98ef291d008280bfe4ed77b7715d6325d6",
+          "ops": {},
+          "path": "/logos/svg/nhl/sea.svg",
+          "format": "svg",
+          "colors": [
+            "#041C2C",
+            "#9CDBD9",
+            "#C8102E",
+            "#6BA4B8"
+          ],
+          "sourcePalette": [
+            "#041C2C",
+            "#C8102E",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "49db4f1a5c28f69ecfd84022d3895dd2d07c2e3a1f0b19a0899d8ca9133d9043"
+        }
+      ]
+    },
+    {
+      "id": "NHL-SJS",
+      "league": "NHL",
+      "conference": "Western",
+      "region": "San Jose Sharks",
+      "name": "",
+      "abbr": "SJS",
+      "aliases": [
+        "Sharks"
+      ],
+      "palette": [
+        "#010101",
+        "#E57200",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Primary",
+          "sourceUrl": "https://assets.nhle.com/logos/nhl/svg/SJS_light.svg",
+          "sourcePage": "https://assets.nhle.com/logos/nhl/svg/SJS_light.svg",
+          "sourceSha256": "f4c34d5b4a461391a8d9443450f3c89257457e8ecc9dc1b9584093259ebe4302",
+          "ops": {},
+          "path": "/logos/svg/nhl/sjs.svg",
+          "format": "svg",
+          "colors": [
+            "#010101",
+            "#FFFFFF",
+            "#E57200",
+            "#00778B"
+          ],
+          "sourcePalette": [
+            "#010101",
+            "#E57200",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "c4a15fd46e93ddecf9090daf05b74933d7aff6ad9f36f4f5e21938fae5662381"
+        }
+      ]
+    },
+    {
+      "id": "NHL-STL",
+      "league": "NHL",
+      "conference": "Western",
+      "region": "St. Louis Blues",
+      "name": "",
+      "abbr": "STL",
+      "aliases": [
+        "Blues"
+      ],
+      "palette": [
+        "#006AC6",
+        "#FFB81C",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Primary",
+          "sourceUrl": "https://assets.nhle.com/logos/nhl/svg/STL_light.svg",
+          "sourcePage": "https://assets.nhle.com/logos/nhl/svg/STL_light.svg",
+          "sourceSha256": "3a61c2a870cedab47508bc46b567f572e69cf8f2173aef13eee17c87bd07c44f",
+          "ops": {},
+          "path": "/logos/svg/nhl/stl.svg",
+          "format": "svg",
+          "colors": [
+            "#006AC6",
+            "#FFB81C"
+          ],
+          "sourcePalette": [
+            "#006AC6",
+            "#FFB81C",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "48dcf9a91ab0a2263fb5b6674952e1e755c9c4f7930f041579ffe04c204609eb"
+        }
+      ]
+    },
+    {
+      "id": "NHL-TBL",
+      "league": "NHL",
+      "conference": "Eastern",
+      "region": "Tampa Bay Lightning",
+      "name": "",
+      "abbr": "TBL",
+      "aliases": [
+        "Lightning"
+      ],
+      "palette": [
+        "#00205B",
+        "#BF0A30",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Primary",
+          "sourceUrl": "https://assets.nhle.com/logos/nhl/svg/TBL_light.svg",
+          "sourcePage": "https://assets.nhle.com/logos/nhl/svg/TBL_light.svg",
+          "sourceSha256": "53a7a4b173cadfb1eb0d4aedd02a5d10761b05bdf08dc3528c7b01f9d1dbebf4",
+          "ops": {},
+          "path": "/logos/svg/nhl/tbl.svg",
+          "format": "svg",
+          "colors": [
+            "#00205B"
+          ],
+          "sourcePalette": [
+            "#00205B",
+            "#BF0A30",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "361ab6af8edaf1950354517a295962f2f370c9a76e6854addd9fd7b9f945ae17"
+        }
+      ]
+    },
+    {
+      "id": "NHL-TOR",
+      "league": "NHL",
+      "conference": "Eastern",
+      "region": "Toronto Maple Leafs",
+      "name": "",
+      "abbr": "TOR",
+      "aliases": [
+        "Maple Leafs"
+      ],
+      "palette": [
+        "#00205B",
+        "#BF0A30",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Primary",
+          "sourceUrl": "https://assets.nhle.com/logos/nhl/svg/TOR_light.svg",
+          "sourcePage": "https://assets.nhle.com/logos/nhl/svg/TOR_light.svg",
+          "sourceSha256": "e8b95e832feac68796de8f3535bae6584663829a71d3f9554371cde49afb0d52",
+          "ops": {},
+          "showsName": true,
+          "path": "/logos/svg/nhl/tor.svg",
+          "format": "svg",
+          "colors": [
+            "#00205B",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#00205B",
+            "#BF0A30",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "fcdade05d68792d339f90819fc43bb6cdb7d519c584fc3ab53f8c1bac9d495d5"
+        }
+      ]
+    },
+    {
+      "id": "NHL-UTA",
+      "league": "NHL",
+      "conference": "Western",
+      "region": "Utah Mammoth",
+      "name": "",
+      "abbr": "UTA",
+      "aliases": [
+        "Mammoth"
+      ],
+      "palette": [
+        "#6CACE4",
+        "#010101",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Primary",
+          "sourceUrl": "https://assets.nhle.com/logos/nhl/svg/UTA_light.svg",
+          "sourcePage": "https://assets.nhle.com/logos/nhl/svg/UTA_light.svg",
+          "sourceSha256": "c3435090b06ed74d93c7ac9f8fe53c862eeb5cb8976a3125d06a84e2202bf527",
+          "ops": {},
+          "path": "/logos/svg/nhl/uta.svg",
+          "format": "svg",
+          "colors": [
+            "#6CACE4",
+            "#010101",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#6CACE4",
+            "#010101",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "617a9504e6bc3a17d51d7ee61e50cb3e8d95ff72049ba6be76f818d8ccdcace2"
+        }
+      ]
+    },
+    {
+      "id": "NHL-VAN",
+      "league": "NHL",
+      "conference": "Western",
+      "region": "Vancouver Canucks",
+      "name": "",
+      "abbr": "VAN",
+      "aliases": [
+        "Canucks"
+      ],
+      "palette": [
+        "#021E44",
+        "#97999B",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Primary",
+          "sourceUrl": "https://assets.nhle.com/logos/nhl/svg/VAN_light.svg",
+          "sourcePage": "https://assets.nhle.com/logos/nhl/svg/VAN_light.svg",
+          "sourceSha256": "457ecbe473be717dfea17ec870a19c4df35de3232ac4cb484106c30a33d67b3e",
+          "ops": {},
+          "path": "/logos/svg/nhl/van.svg",
+          "format": "svg",
+          "colors": [
+            "#97999B",
+            "#00205B",
+            "#041C2C",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#021E44",
+            "#97999B",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "3f1ee87154dab729eef0a3558c299df03a8040bb407a1e972bd48afc5150b9fa"
+        }
+      ]
+    },
+    {
+      "id": "NHL-VGK",
+      "league": "NHL",
+      "conference": "Western",
+      "region": "Vegas Golden Knights",
+      "name": "",
+      "abbr": "VGK",
+      "aliases": [
+        "Golden Knights"
+      ],
+      "palette": [
+        "#766B52",
+        "#010101",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Primary",
+          "sourceUrl": "https://assets.nhle.com/logos/nhl/svg/VGK_light.svg",
+          "sourcePage": "https://assets.nhle.com/logos/nhl/svg/VGK_light.svg",
+          "sourceSha256": "b02d15ccfa2510e7696a4d0533fc3f676c6e53ca2c7745e1a1a67fcbc4ff93cf",
+          "ops": {},
+          "path": "/logos/svg/nhl/vgk.svg",
+          "format": "svg",
+          "colors": [
+            "#010101",
+            "#FFFFFF",
+            "#B9975B",
+            "#333F48"
+          ],
+          "sourcePalette": [
+            "#B9975B",
+            "#1A2024",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "7e7d1fa34f3d89efddd12c9729904a171f76e2591dd79e205a33592bb54663be"
+        }
+      ]
+    },
+    {
+      "id": "NHL-WPG",
+      "league": "NHL",
+      "conference": "Western",
+      "region": "Winnipeg Jets",
+      "name": "",
+      "abbr": "WPG",
+      "aliases": [
+        "Jets"
+      ],
+      "palette": [
+        "#2C3A4E",
+        "#8F2437",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Primary",
+          "sourceUrl": "https://assets.nhle.com/logos/nhl/svg/WPG_light.svg",
+          "sourcePage": "https://assets.nhle.com/logos/nhl/svg/WPG_light.svg",
+          "sourceSha256": "07f44caeba5bffba89c916f96ecba717a3c267fd0ec6bf0581019e69863f822c",
+          "ops": {},
+          "path": "/logos/svg/nhl/wpg.svg",
+          "format": "svg",
+          "colors": [
+            "#041E42",
+            "#A2AAAD",
+            "#FFFFFF",
+            "#782F40",
+            "#A6192E",
+            "#53565A"
+          ],
+          "sourcePalette": [
+            "#53565A",
+            "#8F2437",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "368a4871ca51f45b498484f959b85190a0d961bb71a87231c4c67fb00ee9ba6e"
+        }
+      ]
+    },
+    {
+      "id": "NHL-WSH",
+      "league": "NHL",
+      "conference": "Eastern",
+      "region": "Washington Capitals",
+      "name": "",
+      "abbr": "WSH",
+      "aliases": [
+        "Capitals"
+      ],
+      "palette": [
+        "#041E42",
+        "#C8102E",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Primary",
+          "sourceUrl": "https://assets.nhle.com/logos/nhl/svg/WSH_secondary_light.svg",
+          "sourcePage": "https://assets.nhle.com/logos/nhl/svg/WSH_secondary_light.svg",
+          "sourceSha256": "babf398d7b07362f3557ecbf1a65812bffe32dce9eb1540e1d5efc48ef51a0f0",
+          "ops": {},
+          "path": "/logos/svg/nhl/wsh.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#C8102E",
+            "#041E42"
+          ],
+          "sourcePalette": [
+            "#041E42",
+            "#C8102E",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "6c0e385c5c799ec70f6767c95319b3bc0953229c2471a22a9e663457fcd25a8f"
+        }
+      ]
+    }
+  ]
+}

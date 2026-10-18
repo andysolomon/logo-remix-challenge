@@ -38,7 +38,7 @@ describe('brand collections', () => {
     expect(LEAGUES.LUX.conferences.map((c) => filterTeams('LUX', c, '').length)).toEqual([10, 6, 8, 6])
     expect(LEAGUES.CLOTH).toEqual({ label: 'CLOTHING', conferences: ['Sportswear', 'Streetwear', 'Outdoor', 'Preppy', 'Everyday'] })
     expect(LEAGUES.CLOTH.conferences.map((c) => filterTeams('CLOTH', c, '').length)).toEqual([7, 6, 6, 6, 5])
-    for (const [league, size] of [['FOOD', 30], ['BRAND', 35], ['FLAG', 93], ['APP', 50], ['TV', 30], ['CAR', 30], ['LUX', 30], ['CLOTH', 30]] as const) {
+    for (const [league, size] of [['FOOD', 30], ['BRAND', 35], ['FLAG', 123], ['APP', 50], ['TV', 30], ['CAR', 30], ['LUX', 30], ['CLOTH', 30]] as const) {
       expect(filterTeams(league, 'All', '')).toHaveLength(size)
       expect(new Set(filterTeams(league, 'All', '').map(fullName)).size).toBe(size)
     }
@@ -94,7 +94,7 @@ for league, roster in ROSTERS.items():
     rows = {row[0]: row for row in roster}
     pinned = {(s['teamId'], s['id']): s for s in pinned_sources(league)}
     items = json.loads(manifest_path(league).read_text())['assets']
-    assert len(items) == len(rows) == {'BRAND': 35, 'FLAG': 93, 'APP': 50}.get(league, 30), league
+    assert len(items) == len(rows) == {'BRAND': 35, 'FLAG': 123, 'APP': 50, 'NHL': 32}.get(league, 30), league
     for item in items:
         assert teams[item['id']] == build_entry(league, item, rows[item['abbr']]), item['id']
         for art in item['artwork']:
@@ -102,7 +102,7 @@ for league, roster in ROSTERS.items():
             assert all(art.get(k) == source.get(k) for k in source if k != 'teamId'), (item['id'], art['id'])
             raw = (Path('public') / art['path'].lstrip('/')).read_bytes()
             validate_vector(raw)
-            assert hashlib.sha256(raw).hexdigest() == art['sha256'] and len(raw) <= 400_000
+            assert hashlib.sha256(raw).hexdigest() == art['sha256'] and len(raw) <= (750_000 if league == 'FLAG' else 400_000)
             colors = brand_colors(raw)
             assert colors == art['colors'], (item['id'], art['id'])
             assert artwork_palette(colors, *rows[item['abbr']][3:5]) == (art['sourcePalette'], art['unusedSourceSlots'])

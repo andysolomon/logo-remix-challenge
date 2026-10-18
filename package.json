@@ -45,7 +45,10 @@
     "teams:luxury": "python3 scripts/build_brand_teams.py --league LUX",
     "teams:clothing": "python3 scripts/build_brand_teams.py --league CLOTH",
     "voice": "python3 scripts/generate_voice.py",
-    "release": "semantic-release"
+    "release": "semantic-release",
+    "logos:nhl": "python3 scripts/download_brand_logos.py --league NHL",
+    "teams:nhl": "python3 scripts/build_brand_teams.py --league NHL",
+    "teams:education": "python3 scripts/build_education.py"
   },
   "dependencies": {
     "react": "^18.3.1",

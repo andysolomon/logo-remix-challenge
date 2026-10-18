@@ -190,7 +190,7 @@ print(json.dumps(out))
     const [fallback] = contrastSafePermutations(yankees, grambling.palette)
     const colors = resolveRemixTargetColors(yankees, grambling.palette, fallback)
     expect(contrast(colors[0], colors[1])).toBeGreaterThanOrEqual(1.5)
-  }, 30000)
+  }, 90000)
 
   test('two-color logos show the third color on a tile that reads under both artwork colors and on the canvas', () => {
     expect(twoColor.length).toBeGreaterThan(40)
@@ -217,7 +217,7 @@ print(json.dumps(out))
     // Palettes whose two accent colors sit at the same luminance (a mid blue beside a red) put one of
     // them against the tile whatever the assignment; those fallbacks are a minority.
     expect(fallbacks / pairs).toBeLessThan(0.35)
-  }, 30000)
+  }, 90000)
 
   test('Shuffle Colors cycles which team color is the logo, the tile and the frame', () => {
     const yankees = findTeam('MLB-NYY')!

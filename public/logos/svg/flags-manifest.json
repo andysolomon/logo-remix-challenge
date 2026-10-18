@@ -260,6 +260,75 @@
       ]
     },
     {
+      "id": "FLAG-AR",
+      "league": "FLAG",
+      "conference": "US States",
+      "region": "Arkansas",
+      "name": "",
+      "abbr": "AR",
+      "aliases": [
+        "State of Arkansas"
+      ],
+      "palette": [
+        "#00205B",
+        "#BF0A30",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "State flag",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Arkansas.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Arkansas.svg",
+          "sourceSha256": "7f7cf94618d00670ec3739e9295123f518d0f8fa65b0b8c9629666a1c7c4b6c8",
+          "ops": {},
+          "path": "/logos/svg/flags/ar.svg",
+          "format": "svg",
+          "colors": [
+            "#BF0A30",
+            "#00205B",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#00205B",
+            "#BF0A30",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "2bc92b745a30697a0979d54ab0fc23f584f78f5304f099c2d2e878d7bac185a0"
+        },
+        {
+          "id": "silhouette",
+          "label": "Silhouette",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Blank_US_Map_(states_only).svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Blank_US_Map_(states_only).svg",
+          "sourceSha256": "2279580797b53481b29fc168145129db926c21f91d4bc6d82c04e9801bdf932f",
+          "ops": {
+            "keepNodes": [
+              "2/3"
+            ],
+            "fill": "#00205B",
+            "viewBox": "500.952 330.852 95.796 86.896"
+          },
+          "path": "/logos/svg/flags/alternates/ar-silhouette.svg",
+          "format": "svg",
+          "colors": [
+            "#00205B"
+          ],
+          "sourcePalette": [
+            "#00205B",
+            "#BF0A30",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "fb7fcae1dd802ce31d5eb453794969d71503a30878c04859245e32ac6ba4bdae"
+        }
+      ]
+    },
+    {
       "id": "FLAG-ARG",
       "league": "FLAG",
       "conference": "Americas",
@@ -1706,6 +1775,93 @@
       ]
     },
     {
+      "id": "FLAG-DE",
+      "league": "FLAG",
+      "conference": "US States",
+      "region": "Delaware",
+      "name": "",
+      "abbr": "DE",
+      "aliases": [
+        "State of Delaware"
+      ],
+      "palette": [
+        "#334B4E",
+        "#B12F39",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "State flag",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Delaware.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Delaware.svg",
+          "sourceSha256": "ade4277b685ad5244e1c8acea04a1083049daf7d9e0a3a6badaa9d6c7cf9a2e6",
+          "ops": {},
+          "path": "/logos/svg/flags/de.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#669CA4",
+            "#FFFFFF",
+            "#C7A97F",
+            "#E6C737",
+            "#5A4143",
+            "#FFE2D1",
+            "#334B4E",
+            "#344B51",
+            "#586538",
+            "#C2C9CD",
+            "#863F3F",
+            "#F1DFD8",
+            "#9B9379",
+            "#B12F39",
+            "#6D8138",
+            "#629AB9",
+            "#F09B1E",
+            "#F8E38C",
+            "#F7D400",
+            "#8E4F3E"
+          ],
+          "sourcePalette": [
+            "#334B4E",
+            "#B12F39",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "53278d3bb9fbdb5276608e4d5f19827d2587a153c3576630e261263762e18c7e"
+        },
+        {
+          "id": "silhouette",
+          "label": "Silhouette",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Blank_US_Map_(states_only).svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Blank_US_Map_(states_only).svg",
+          "sourceSha256": "2279580797b53481b29fc168145129db926c21f91d4bc6d82c04e9801bdf932f",
+          "ops": {
+            "keepNodes": [
+              "2/7"
+            ],
+            "fill": "#334B4E",
+            "viewBox": "816.676 225.376 20.948 33.048"
+          },
+          "path": "/logos/svg/flags/alternates/de-silhouette.svg",
+          "format": "svg",
+          "colors": [
+            "#334B4E"
+          ],
+          "sourcePalette": [
+            "#334B4E",
+            "#B12F39",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "d333b199ae39bd7c27ce2cdb3fc34cb361b4055e656d23885a6b280dcfc6484f"
+        }
+      ]
+    },
+    {
       "id": "FLAG-DENMARK",
       "league": "FLAG",
       "conference": "Europe",
@@ -2040,6 +2196,88 @@
             2
           ],
           "sha256": "9173bc39f435a3752576fd15a8fd7edb2c8d5dc86dbd93bca38e8d1762d482bd"
+        }
+      ]
+    },
+    {
+      "id": "FLAG-FL",
+      "league": "FLAG",
+      "conference": "US States",
+      "region": "Florida",
+      "name": "",
+      "abbr": "FL",
+      "aliases": [
+        "State of Florida"
+      ],
+      "palette": [
+        "#015941",
+        "#AF0536",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "State flag",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Florida.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Florida.svg",
+          "sourceSha256": "d65149fb65037209473bd906023914a8e26a141b4634b52d881342c389d8f8ed",
+          "ops": {},
+          "path": "/logos/svg/flags/fl.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#000000",
+            "#C60013",
+            "#3D663D",
+            "#FFE03F",
+            "#7D4802",
+            "#CF7419",
+            "#015941",
+            "#007CC2",
+            "#FDBB67",
+            "#AF0536",
+            "#DE9C5F",
+            "#82C1E4",
+            "#FBBA66",
+            "#FFB900",
+            "#A80534"
+          ],
+          "sourcePalette": [
+            "#015941",
+            "#AF0536",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "a17348afe7cf8da1725e52581060280d45039b788f8aa0f4f55b176153e506f5"
+        },
+        {
+          "id": "silhouette",
+          "label": "Silhouette",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Blank_US_Map_(states_only).svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Blank_US_Map_(states_only).svg",
+          "sourceSha256": "2279580797b53481b29fc168145129db926c21f91d4bc6d82c04e9801bdf932f",
+          "ops": {
+            "keepNodes": [
+              "2/8"
+            ],
+            "fill": "#015941",
+            "viewBox": "631.912 437.112 172.476 148.876"
+          },
+          "path": "/logos/svg/flags/alternates/fl-silhouette.svg",
+          "format": "svg",
+          "colors": [
+            "#015941"
+          ],
+          "sourcePalette": [
+            "#015941",
+            "#AF0536",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "ab9771c69f325779eb16a1d26d05cf210da3e0c2ba40a51a2f8988ce1d457dab"
         }
       ]
     },
@@ -2631,6 +2869,328 @@
             2
           ],
           "sha256": "3601e83c886fbd2721661ef6bc3601289f0df75cf922df671dad135467515823"
+        }
+      ]
+    },
+    {
+      "id": "FLAG-IA",
+      "league": "FLAG",
+      "conference": "US States",
+      "region": "Iowa",
+      "name": "",
+      "abbr": "IA",
+      "aliases": [
+        "State of Iowa"
+      ],
+      "palette": [
+        "#071442",
+        "#D80025",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "State flag",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Iowa.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Iowa.svg",
+          "sourceSha256": "b4279ca9c34f91244997fe61e0d4eccf97042683a3db91675046a56765e94c93",
+          "ops": {},
+          "path": "/logos/svg/flags/ia.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#0A1F62",
+            "#0A1E65",
+            "#FFFFFF",
+            "#D80025",
+            "#69310B",
+            "#F9F9F9"
+          ],
+          "sourcePalette": [
+            "#071442",
+            "#D80025",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "36b2c1224421d958a1de2f4bc688ba03d3b088bd42af13090e572ceeb1d4efb4"
+        },
+        {
+          "id": "silhouette",
+          "label": "Silhouette",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Blank_US_Map_(states_only).svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Blank_US_Map_(states_only).svg",
+          "sourceSha256": "2279580797b53481b29fc168145129db926c21f91d4bc6d82c04e9801bdf932f",
+          "ops": {
+            "keepNodes": [
+              "2/14"
+            ],
+            "fill": "#071442",
+            "viewBox": "467.020 176.220 112.860 77.660"
+          },
+          "path": "/logos/svg/flags/alternates/ia-silhouette.svg",
+          "format": "svg",
+          "colors": [
+            "#071442"
+          ],
+          "sourcePalette": [
+            "#071442",
+            "#D80025",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "e0609f6c0a1b11eb8a7d261cf5a36688a28993f509a0d121ec511d0853b92e13"
+        }
+      ]
+    },
+    {
+      "id": "FLAG-ID",
+      "league": "FLAG",
+      "conference": "US States",
+      "region": "Idaho",
+      "name": "",
+      "abbr": "ID",
+      "aliases": [
+        "State of Idaho"
+      ],
+      "palette": [
+        "#003776",
+        "#EF1439",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "State flag",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Idaho.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Idaho.svg",
+          "sourceSha256": "3e0aef3e6ef05619680fba94b436b2721cfb530a794969c83bed3a5124d4af0e",
+          "ops": {},
+          "path": "/logos/svg/flags/id.svg",
+          "format": "svg",
+          "colors": [
+            "#003776",
+            "#FCD100",
+            "#000000",
+            "#7DB3D5",
+            "#FF9120",
+            "#7DB379",
+            "#875C4B",
+            "#D50000",
+            "#FFB32B",
+            "#FFFEFF",
+            "#FFD9C5",
+            "#966C60",
+            "#EFAE0E",
+            "#B5A886",
+            "#FFFFFF",
+            "#E14532",
+            "#FFE835",
+            "#E2C89A",
+            "#625187",
+            "#1BAE3B",
+            "#E4CDAE",
+            "#FFE80F",
+            "#7A5286",
+            "#9F989F",
+            "#866E3F",
+            "#BDA155",
+            "#7C757C",
+            "#A49055",
+            "#C5C5C5",
+            "#020000",
+            "#000100",
+            "#000001",
+            "#3D584F",
+            "#AEA466",
+            "#EF1439"
+          ],
+          "sourcePalette": [
+            "#003776",
+            "#EF1439",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "6c7d72b4ca107d688a76accac440141c522b62f49ab3fe23fef89ac26b58ba81"
+        },
+        {
+          "id": "silhouette",
+          "label": "Silhouette",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Blank_US_Map_(states_only).svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Blank_US_Map_(states_only).svg",
+          "sourceSha256": "2279580797b53481b29fc168145129db926c21f91d4bc6d82c04e9801bdf932f",
+          "ops": {
+            "keepNodes": [
+              "2/11"
+            ],
+            "fill": "#003776",
+            "viewBox": "134.160 20.760 117.580 181.980"
+          },
+          "path": "/logos/svg/flags/alternates/id-silhouette.svg",
+          "format": "svg",
+          "colors": [
+            "#003776"
+          ],
+          "sourcePalette": [
+            "#003776",
+            "#EF1439",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "7dc86223b9f1cc0b36c9821ed2a7e47f416638402b5a1bba9347a40c90006a0d"
+        }
+      ]
+    },
+    {
+      "id": "FLAG-IL",
+      "league": "FLAG",
+      "conference": "US States",
+      "region": "Illinois",
+      "name": "",
+      "abbr": "IL",
+      "aliases": [
+        "State of Illinois"
+      ],
+      "palette": [
+        "#133D26",
+        "#9B3236",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "State flag",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Illinois.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Illinois.svg",
+          "sourceSha256": "8e4c948669ee6b3cd21ae333fbc8b2446db6a35c27ab466bf19797c7cfe22b57",
+          "ops": {},
+          "path": "/logos/svg/flags/il.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#00205B",
+            "#BE0A2F",
+            "#3F863F",
+            "#000000",
+            "#FFE60F",
+            "#B4B4B4",
+            "#FFB316",
+            "#228B22",
+            "#785A3C",
+            "#000004"
+          ],
+          "sourcePalette": [
+            "#000B20",
+            "#785A3C",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "eccb917b66246f94a57524418eb21e87ff7e20fc5280eda490fccbae596b7793"
+        },
+        {
+          "id": "silhouette",
+          "label": "Silhouette",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Blank_US_Map_(states_only).svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Blank_US_Map_(states_only).svg",
+          "sourceSha256": "2279580797b53481b29fc168145129db926c21f91d4bc6d82c04e9801bdf932f",
+          "ops": {
+            "keepNodes": [
+              "2/12"
+            ],
+            "fill": "#133D26",
+            "viewBox": "550.468 194.268 79.964 133.164"
+          },
+          "path": "/logos/svg/flags/alternates/il-silhouette.svg",
+          "format": "svg",
+          "colors": [
+            "#133D26"
+          ],
+          "sourcePalette": [
+            "#133D26",
+            "#9B3236",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "9c7e816f67ee42f90037abe8312dad1ebdfdf794d812c4fe346afead4b9aa166"
+        }
+      ]
+    },
+    {
+      "id": "FLAG-IN",
+      "league": "FLAG",
+      "conference": "US States",
+      "region": "Indiana",
+      "name": "",
+      "abbr": "IN",
+      "aliases": [
+        "State of Indiana"
+      ],
+      "palette": [
+        "#000F5D",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "State flag",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Indiana.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Indiana.svg",
+          "sourceSha256": "c895f8aa2dd7191ab011ad5142507380f47b350fa7ccef24ac602af65aa827e5",
+          "ops": {},
+          "path": "/logos/svg/flags/in.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#000F5D",
+            "#FFB900"
+          ],
+          "sourcePalette": [
+            "#000F5D",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "38ca06f53d26ea30d8710b4f0143fd6f6ca2c24132b1ed7045755055049623ac"
+        },
+        {
+          "id": "silhouette",
+          "label": "Silhouette",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Blank_US_Map_(states_only).svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Blank_US_Map_(states_only).svg",
+          "sourceSha256": "2279580797b53481b29fc168145129db926c21f91d4bc6d82c04e9801bdf932f",
+          "ops": {
+            "keepNodes": [
+              "2/13"
+            ],
+            "fill": "#000F5D",
+            "viewBox": "613.652 206.052 60.996 101.196"
+          },
+          "path": "/logos/svg/flags/alternates/in-silhouette.svg",
+          "format": "svg",
+          "colors": [
+            "#000F5D"
+          ],
+          "sourcePalette": [
+            "#000F5D",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "fa00b9ef5091babb9a9648f297806934c4245f35bebffad0c2a2c0dc79b8ba69"
         }
       ]
     },
@@ -3319,6 +3879,254 @@
       ]
     },
     {
+      "id": "FLAG-KS",
+      "league": "FLAG",
+      "conference": "US States",
+      "region": "Kansas",
+      "name": "",
+      "abbr": "KS",
+      "aliases": [
+        "State of Kansas"
+      ],
+      "palette": [
+        "#00205B",
+        "#D15B25",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "State flag",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Kansas.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Kansas.svg",
+          "sourceSha256": "c30393cd21abf57ea10a41cfd23db9a01cc189f3a2604bb002998002298ba7d3",
+          "ops": {},
+          "path": "/logos/svg/flags/ks.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#00205B",
+            "#FCD100",
+            "#29B910",
+            "#FFFF00",
+            "#D15B25",
+            "#4D91C6",
+            "#FFF00F",
+            "#C89D7C",
+            "#F59316",
+            "#EDD308",
+            "#F7F1AF",
+            "#FFF200",
+            "#322323",
+            "#7C4790",
+            "#969696",
+            "#67412B",
+            "#D9D9D9",
+            "#FFE2D1",
+            "#FFFFFF",
+            "#87CEFA",
+            "#30352D",
+            "#FFFDFD"
+          ],
+          "sourcePalette": [
+            "#00205B",
+            "#D15B25",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "8568668cc183de6834708d3398cfcf1a768fa077c75ae49340d65fc8bfbc346b"
+        },
+        {
+          "id": "silhouette",
+          "label": "Silhouette",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Blank_US_Map_(states_only).svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Blank_US_Map_(states_only).svg",
+          "sourceSha256": "2279580797b53481b29fc168145129db926c21f91d4bc6d82c04e9801bdf932f",
+          "ops": {
+            "keepNodes": [
+              "2/15"
+            ],
+            "fill": "#00205B",
+            "viewBox": "369.412 251.112 140.076 80.376"
+          },
+          "path": "/logos/svg/flags/alternates/ks-silhouette.svg",
+          "format": "svg",
+          "colors": [
+            "#00205B"
+          ],
+          "sourcePalette": [
+            "#00205B",
+            "#D15B25",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "f38be142dc1ee10dabeac59bebbc797f9b00516c4312b532997f99053c0c57dc"
+        }
+      ]
+    },
+    {
+      "id": "FLAG-KY",
+      "league": "FLAG",
+      "conference": "US States",
+      "region": "Kentucky",
+      "name": "",
+      "abbr": "KY",
+      "aliases": [
+        "State of Kentucky"
+      ],
+      "palette": [
+        "#000066",
+        "#DAAB42",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "State flag",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Kentucky.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Kentucky.svg",
+          "sourceSha256": "2bc8c6e72979ec27be553a334cf60e922f4ad8e63e2e67b2bfdb2d4890f56375",
+          "ops": {},
+          "path": "/logos/svg/flags/ky.svg",
+          "format": "svg",
+          "colors": [
+            "#000066",
+            "#F6C604",
+            "#FFFFFF",
+            "#396D4B",
+            "#31A17F",
+            "#396F4A",
+            "#F7DACA",
+            "#DCBC68",
+            "#BC7E59",
+            "#8C584B",
+            "#6B7487",
+            "#9FBEF0",
+            "#000000",
+            "#040404"
+          ],
+          "sourcePalette": [
+            "#000066",
+            "#DCBC68",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "f667686d47f608ebafa438c199792f2c404288c74f8db484773030055e7d1603"
+        },
+        {
+          "id": "silhouette",
+          "label": "Silhouette",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Blank_US_Map_(states_only).svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Blank_US_Map_(states_only).svg",
+          "sourceSha256": "2279580797b53481b29fc168145129db926c21f91d4bc6d82c04e9801bdf932f",
+          "ops": {
+            "keepNodes": [
+              "2/16"
+            ],
+            "fill": "#000066",
+            "viewBox": "588.228 263.028 139.644 75.944"
+          },
+          "path": "/logos/svg/flags/alternates/ky-silhouette.svg",
+          "format": "svg",
+          "colors": [
+            "#000066"
+          ],
+          "sourcePalette": [
+            "#000066",
+            "#DAAB42",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "f00d5bba4b6d3accc99359c5cafde5e4fcb6261eedcec9bd1507cb55d0f7d2e9"
+        }
+      ]
+    },
+    {
+      "id": "FLAG-LA",
+      "league": "FLAG",
+      "conference": "US States",
+      "region": "Louisiana",
+      "name": "",
+      "abbr": "LA",
+      "aliases": [
+        "State of Louisiana"
+      ],
+      "palette": [
+        "#01447B",
+        "#ED3223",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "State flag",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Louisiana.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Louisiana.svg",
+          "sourceSha256": "2fa75a70da2185f8783207aa8f056dbe1d0483d6db09d8ff5aa95df50d0d2d3b",
+          "ops": {},
+          "path": "/logos/svg/flags/la.svg",
+          "format": "svg",
+          "colors": [
+            "#01447B",
+            "#FFFFFF",
+            "#FFDD00",
+            "#E58E1A",
+            "#F99C30",
+            "#581F01",
+            "#F4C182",
+            "#F8BA55",
+            "#A1A0A4",
+            "#AB650D",
+            "#000000",
+            "#ED3223",
+            "#8C8C8C"
+          ],
+          "sourcePalette": [
+            "#01447B",
+            "#ED3223",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "f6194c36410a27f01830dbff446510b8afa198d1ff0e8cb2370cc2a5270f9969"
+        },
+        {
+          "id": "silhouette",
+          "label": "Silhouette",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Blank_US_Map_(states_only).svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Blank_US_Map_(states_only).svg",
+          "sourceSha256": "2279580797b53481b29fc168145129db926c21f91d4bc6d82c04e9801bdf932f",
+          "ops": {
+            "keepNodes": [
+              "2/17"
+            ],
+            "fill": "#01447B",
+            "viewBox": "512.744 408.944 106.812 94.612"
+          },
+          "path": "/logos/svg/flags/alternates/la-silhouette.svg",
+          "format": "svg",
+          "colors": [
+            "#01447B"
+          ],
+          "sourcePalette": [
+            "#01447B",
+            "#ED3223",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "2bd3faf5fa11573a63e5cc9cafedeb4abd9f4f09d95a784025f2bc6a261cea78"
+        }
+      ]
+    },
+    {
       "id": "FLAG-MA",
       "league": "FLAG",
       "conference": "US States",
@@ -3535,6 +4343,85 @@
             2
           ],
           "sha256": "354cad03a119f6067204ea43a30b4dc7f33dfdae7f3a7642b53302c7a416577f"
+        }
+      ]
+    },
+    {
+      "id": "FLAG-ME",
+      "league": "FLAG",
+      "conference": "US States",
+      "region": "Maine",
+      "name": "",
+      "abbr": "ME",
+      "aliases": [
+        "State of Maine"
+      ],
+      "palette": [
+        "#002664",
+        "#FF163C",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "State flag",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Maine.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Maine.svg",
+          "sourceSha256": "3ce83fee77f0250718c642457dc4d512fbc87d53a10b27bdcb9f7f440e0e242d",
+          "ops": {},
+          "path": "/logos/svg/flags/me.svg",
+          "format": "svg",
+          "colors": [
+            "#002664",
+            "#FFE84F",
+            "#000000",
+            "#FF163C",
+            "#FFFFFF",
+            "#3C3C9E",
+            "#FFD1D1",
+            "#9ED9FF",
+            "#3E6F3E",
+            "#6F513E",
+            "#C5C5C5",
+            "#36E218",
+            "#E2FFB3"
+          ],
+          "sourcePalette": [
+            "#002664",
+            "#FF163C",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "1f8b8a7f95b28f7494adfb73d43444fff6dd468ace0ae9b9c1ccba90cad3327b"
+        },
+        {
+          "id": "silhouette",
+          "label": "Silhouette",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Blank_US_Map_(states_only).svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Blank_US_Map_(states_only).svg",
+          "sourceSha256": "2279580797b53481b29fc168145129db926c21f91d4bc6d82c04e9801bdf932f",
+          "ops": {
+            "keepNodes": [
+              "2/18"
+            ],
+            "fill": "#002664",
+            "viewBox": "859.036 32.636 72.428 109.728"
+          },
+          "path": "/logos/svg/flags/alternates/me-silhouette.svg",
+          "format": "svg",
+          "colors": [
+            "#002664"
+          ],
+          "sourcePalette": [
+            "#002664",
+            "#FF163C",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "e6de8f75c7d9484aa50605c68c8daa8e1dbf16b4e65dec7d4d3aa1e3dd1a53f1"
         }
       ]
     },
@@ -3913,6 +4800,84 @@
       ]
     },
     {
+      "id": "FLAG-MO",
+      "league": "FLAG",
+      "conference": "US States",
+      "region": "Missouri",
+      "name": "",
+      "abbr": "MO",
+      "aliases": [
+        "State of Missouri"
+      ],
+      "palette": [
+        "#00205B",
+        "#BE3731",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "State flag",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Missouri.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Missouri.svg",
+          "sourceSha256": "23ebb00edc8c78e47b7ba4f266889c6740e6364f9f0ccd23eeee03cb71d18e4e",
+          "ops": {},
+          "path": "/logos/svg/flags/mo.svg",
+          "format": "svg",
+          "colors": [
+            "#BF0A30",
+            "#00205B",
+            "#FFFFFF",
+            "#000000",
+            "#0071BA",
+            "#FFC813",
+            "#CE1126",
+            "#9A4A23",
+            "#228A43",
+            "#BC8550",
+            "#35B473",
+            "#D4272A"
+          ],
+          "sourcePalette": [
+            "#00205B",
+            "#D4272A",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "5b0114c68b456ac77de5ce2522772b9bb1681b26e33874e4a31b2f42a7a4ca76"
+        },
+        {
+          "id": "silhouette",
+          "label": "Silhouette",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Blank_US_Map_(states_only).svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Blank_US_Map_(states_only).svg",
+          "sourceSha256": "2279580797b53481b29fc168145129db926c21f91d4bc6d82c04e9801bdf932f",
+          "ops": {
+            "keepNodes": [
+              "2/24"
+            ],
+            "fill": "#00205B",
+            "viewBox": "479.832 240.232 126.036 110.136"
+          },
+          "path": "/logos/svg/flags/alternates/mo-silhouette.svg",
+          "format": "svg",
+          "colors": [
+            "#00205B"
+          ],
+          "sourcePalette": [
+            "#00205B",
+            "#BE3731",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "2d93889ac3879a1370cfde7dbd7198d43365a92920688d42672fae109d7cdbdd"
+        }
+      ]
+    },
+    {
       "id": "FLAG-MOROCCO",
       "league": "FLAG",
       "conference": "Africa & Middle East",
@@ -4060,6 +5025,313 @@
       ]
     },
     {
+      "id": "FLAG-MT",
+      "league": "FLAG",
+      "conference": "US States",
+      "region": "Montana",
+      "name": "",
+      "abbr": "MT",
+      "aliases": [
+        "State of Montana"
+      ],
+      "palette": [
+        "#004A9A",
+        "#7D421D",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "State flag",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Montana.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Montana.svg",
+          "sourceSha256": "083c5836f280f280cca30a1ec690274b18f1c4272637fde582a3f1966cae5a73",
+          "ops": {},
+          "path": "/logos/svg/flags/mt.svg",
+          "format": "svg",
+          "colors": [
+            "#002A86",
+            "#FEC70B",
+            "#F7E47C",
+            "#FFFFFF",
+            "#9DC8EB",
+            "#A2D100",
+            "#FFD90F",
+            "#969496",
+            "#E86F00",
+            "#7D421D",
+            "#008600",
+            "#006BAD",
+            "#F7E47B"
+          ],
+          "sourcePalette": [
+            "#004A9A",
+            "#7D421D",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "5f80fbd43bd3382f619064bcafe49f4bf0973a402c6509014edcb6ade81bff4a"
+        },
+        {
+          "id": "silhouette",
+          "label": "Silhouette",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Blank_US_Map_(states_only).svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Blank_US_Map_(states_only).svg",
+          "sourceSha256": "2279580797b53481b29fc168145129db926c21f91d4bc6d82c04e9801bdf932f",
+          "ops": {
+            "keepNodes": [
+              "2/25"
+            ],
+            "fill": "#004A9A",
+            "viewBox": "176.860 23.360 192.780 127.480"
+          },
+          "path": "/logos/svg/flags/alternates/mt-silhouette.svg",
+          "format": "svg",
+          "colors": [
+            "#004A9A"
+          ],
+          "sourcePalette": [
+            "#004A9A",
+            "#7D421D",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "c18c2a853bdb0455016675b777b8726f60ff4de22b3ca53a637e9bce83a0e017"
+        }
+      ]
+    },
+    {
+      "id": "FLAG-NC",
+      "league": "FLAG",
+      "conference": "US States",
+      "region": "North Carolina",
+      "name": "",
+      "abbr": "NC",
+      "aliases": [
+        "State of North Carolina"
+      ],
+      "palette": [
+        "#00102E",
+        "#BF0A30",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "State flag",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_North_Carolina.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_North_Carolina.svg",
+          "sourceSha256": "afd227bbc9e9151b4cd936c4cce95fc6107eaeb2d3fb8475ac9fcdb486c52d37",
+          "ops": {},
+          "path": "/logos/svg/flags/nc.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#BF0A30",
+            "#00205B",
+            "#FFCA00",
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#00102E",
+            "#BF0A30",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "ad73bef49af8dee98f28b8b83b35c2d5d371a0b2f52c1fe637e5d82e7ea5998f"
+        },
+        {
+          "id": "silhouette",
+          "label": "Silhouette",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Blank_US_Map_(states_only).svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Blank_US_Map_(states_only).svg",
+          "sourceSha256": "2279580797b53481b29fc168145129db926c21f91d4bc6d82c04e9801bdf932f",
+          "ops": {
+            "keepNodes": [
+              "2/32"
+            ],
+            "fill": "#00102E",
+            "viewBox": "683.316 293.516 166.968 79.968"
+          },
+          "path": "/logos/svg/flags/alternates/nc-silhouette.svg",
+          "format": "svg",
+          "colors": [
+            "#00102E"
+          ],
+          "sourcePalette": [
+            "#00102E",
+            "#BF0A30",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "d54da8c1fb342eca7a98a096f4dbf9e498c62485e5190cb943056548986199e1"
+        }
+      ]
+    },
+    {
+      "id": "FLAG-ND",
+      "league": "FLAG",
+      "conference": "US States",
+      "region": "North Dakota",
+      "name": "",
+      "abbr": "ND",
+      "aliases": [
+        "State of North Dakota"
+      ],
+      "palette": [
+        "#003A70",
+        "#A6192E",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "State flag",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_North_Dakota.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_North_Dakota.svg",
+          "sourceSha256": "fd022c8de9a46fa068f269733cde295a0099040064b5f06266bf14b511118a62",
+          "ops": {
+            "removeNodes": [
+              "129"
+            ]
+          },
+          "path": "/logos/svg/flags/nd.svg",
+          "format": "svg",
+          "colors": [
+            "#003A70",
+            "#CC8900",
+            "#CC8A00",
+            "#693F23",
+            "#857874",
+            "#DDCBA4",
+            "#94450B",
+            "#007A33",
+            "#949300",
+            "#A6192E",
+            "#FFC845",
+            "#AF6D04",
+            "#6A3F22",
+            "#FFFFFF",
+            "#000000",
+            "#004B87"
+          ],
+          "sourcePalette": [
+            "#003A70",
+            "#A6192E",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "df5e1af1e74d93a4bd6be30059c33243a58d1c11f7df6d5f0995c1523cba15f5"
+        },
+        {
+          "id": "silhouette",
+          "label": "Silhouette",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Blank_US_Map_(states_only).svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Blank_US_Map_(states_only).svg",
+          "sourceSha256": "2279580797b53481b29fc168145129db926c21f91d4bc6d82c04e9801bdf932f",
+          "ops": {
+            "keepNodes": [
+              "2/33"
+            ],
+            "fill": "#003A70",
+            "viewBox": "352.708 51.708 123.984 81.284"
+          },
+          "path": "/logos/svg/flags/alternates/nd-silhouette.svg",
+          "format": "svg",
+          "colors": [
+            "#003A70"
+          ],
+          "sourcePalette": [
+            "#003A70",
+            "#A6192E",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "bbb0890768fa9112e83ea4e281bf6a1c3787d67de4746a7dad06592b12e0127d"
+        }
+      ]
+    },
+    {
+      "id": "FLAG-NE",
+      "league": "FLAG",
+      "conference": "US States",
+      "region": "Nebraska",
+      "name": "",
+      "abbr": "NE",
+      "aliases": [
+        "State of Nebraska"
+      ],
+      "palette": [
+        "#002A86",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "State flag",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Nebraska.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Nebraska.svg",
+          "sourceSha256": "1a1249eb4b76ebd5d10a694f3ce5688debaa44c0d9120276edbb0693d0fbc061",
+          "ops": {},
+          "path": "/logos/svg/flags/ne.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#002A86",
+            "#FFCC00",
+            "#C8C8C8",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#002A86",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "450f6b15dd000459b848ce3ed69a075e9665f6777f655b79535c7ba9930252ac"
+        },
+        {
+          "id": "silhouette",
+          "label": "Silhouette",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Blank_US_Map_(states_only).svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Blank_US_Map_(states_only).svg",
+          "sourceSha256": "2279580797b53481b29fc168145129db926c21f91d4bc6d82c04e9801bdf932f",
+          "ops": {
+            "keepNodes": [
+              "2/26"
+            ],
+            "fill": "#002A86",
+            "viewBox": "341.948 181.848 155.304 83.404"
+          },
+          "path": "/logos/svg/flags/alternates/ne-silhouette.svg",
+          "format": "svg",
+          "colors": [
+            "#002A86"
+          ],
+          "sourcePalette": [
+            "#002A86",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "9fd51c927048fb1def66dba229fbda53bf94b0256d9f46a6a1ac82389fba1de4"
+        }
+      ]
+    },
+    {
       "id": "FLAG-NEPAL",
       "league": "FLAG",
       "conference": "Asia & Pacific",
@@ -4128,6 +5400,84 @@
             2
           ],
           "sha256": "edb7111966c82e4c5562c43627e4dcda472ca4d7f3515e03151a31a7e22b08c4"
+        }
+      ]
+    },
+    {
+      "id": "FLAG-NH",
+      "league": "FLAG",
+      "conference": "US States",
+      "region": "New Hampshire",
+      "name": "",
+      "abbr": "NH",
+      "aliases": [
+        "State of New Hampshire"
+      ],
+      "palette": [
+        "#002868",
+        "#D4212F",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "State flag",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_New_Hampshire.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_New_Hampshire.svg",
+          "sourceSha256": "73d4d113ba6eb11fe4e2e20ff399dc13afa018918c5e024660b0ec4b16f3da9c",
+          "ops": {},
+          "path": "/logos/svg/flags/nh.svg",
+          "format": "svg",
+          "colors": [
+            "#002A86",
+            "#EFAE0E",
+            "#FFFFFF",
+            "#000000",
+            "#946922",
+            "#4F9EFF",
+            "#2A1510",
+            "#949492",
+            "#3F863F",
+            "#D4212F",
+            "#FEFDFE",
+            "#002868"
+          ],
+          "sourcePalette": [
+            "#002868",
+            "#D4212F",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "6ffd17d3d81ff0b7f0770eadcd1f0f9508350486bde1aa35f33e6a30630b957f"
+        },
+        {
+          "id": "silhouette",
+          "label": "Silhouette",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Blank_US_Map_(states_only).svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Blank_US_Map_(states_only).svg",
+          "sourceSha256": "2279580797b53481b29fc168145129db926c21f91d4bc6d82c04e9801bdf932f",
+          "ops": {
+            "keepNodes": [
+              "2/28"
+            ],
+            "fill": "#002868",
+            "viewBox": "850.472 89.472 33.856 65.556"
+          },
+          "path": "/logos/svg/flags/alternates/nh-silhouette.svg",
+          "format": "svg",
+          "colors": [
+            "#002868"
+          ],
+          "sourcePalette": [
+            "#002868",
+            "#D4212F",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "8218c4bec5065dc3635f2b9b844ebcb818dc3919702581e498cf97c6f9b91ad8"
         }
       ]
     },
@@ -4201,6 +5551,95 @@
             2
           ],
           "sha256": "41c9b821b18376607be98cd655372456f95b76ee5654589557eccce0c9c90fe7"
+        }
+      ]
+    },
+    {
+      "id": "FLAG-NJ",
+      "league": "FLAG",
+      "conference": "US States",
+      "region": "New Jersey",
+      "name": "",
+      "abbr": "NJ",
+      "aliases": [
+        "State of New Jersey"
+      ],
+      "palette": [
+        "#443D64",
+        "#C75D48",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "State flag",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_New_Jersey.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_New_Jersey.svg",
+          "sourceSha256": "8ae3675eecc8f893f760978c4dbc1fa5ead0337251d4b38f776a31a8efacc9f9",
+          "ops": {},
+          "path": "/logos/svg/flags/nj.svg",
+          "format": "svg",
+          "colors": [
+            "#E1B584",
+            "#8D2353",
+            "#2484C6",
+            "#9BA7B9",
+            "#000000",
+            "#F4D19F",
+            "#D0202E",
+            "#FFFFFF",
+            "#5F2A2B",
+            "#E88290",
+            "#645FAA",
+            "#443D64",
+            "#B0ACD5",
+            "#9B95C9",
+            "#5C9243",
+            "#81512B",
+            "#DC6026",
+            "#2178B5",
+            "#C1AE31",
+            "#020405",
+            "#5B95CF",
+            "#0076A8",
+            "#0B0B0B"
+          ],
+          "sourcePalette": [
+            "#443D64",
+            "#DC6026",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "b620ca903935c271db0dc73c26019e6ce48049295753f81360968329863bdb40"
+        },
+        {
+          "id": "silhouette",
+          "label": "Silhouette",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Blank_US_Map_(states_only).svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Blank_US_Map_(states_only).svg",
+          "sourceSha256": "2279580797b53481b29fc168145129db926c21f91d4bc6d82c04e9801bdf932f",
+          "ops": {
+            "keepNodes": [
+              "2/29"
+            ],
+            "fill": "#443D64",
+            "viewBox": "820.344 188.344 27.412 58.212"
+          },
+          "path": "/logos/svg/flags/alternates/nj-silhouette.svg",
+          "format": "svg",
+          "colors": [
+            "#443D64"
+          ],
+          "sourcePalette": [
+            "#443D64",
+            "#C75D48",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "ea50b95af98df9bc24f7a522ab989d5cd0f4a9196f997d3c6d069126d3087751"
         }
       ]
     },
@@ -4426,6 +5865,261 @@
       ]
     },
     {
+      "id": "FLAG-NV",
+      "league": "FLAG",
+      "conference": "US States",
+      "region": "Nevada",
+      "name": "",
+      "abbr": "NV",
+      "aliases": [
+        "State of Nevada"
+      ],
+      "palette": [
+        "#0033A6",
+        "#094B28",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "State flag",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Nevada.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Nevada.svg",
+          "sourceSha256": "c73704ed9aeb27be7235d59060fc22ddfdb8a98f9bdba01c3ccb96dcf625142b",
+          "ops": {},
+          "path": "/logos/svg/flags/nv.svg",
+          "format": "svg",
+          "colors": [
+            "#0033AB",
+            "#00843D",
+            "#121212",
+            "#FFA300",
+            "#0033A0",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#0033A6",
+            "#094B28",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "73e2fa12451026c48802da10364bd042b14c39ac2714cae3204ad81b62538d44"
+        },
+        {
+          "id": "silhouette",
+          "label": "Silhouette",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Blank_US_Map_(states_only).svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Blank_US_Map_(states_only).svg",
+          "sourceSha256": "2279580797b53481b29fc168145129db926c21f91d4bc6d82c04e9801bdf932f",
+          "ops": {
+            "keepNodes": [
+              "2/27"
+            ],
+            "fill": "#0033A6",
+            "viewBox": "70.636 159.636 124.828 185.328"
+          },
+          "path": "/logos/svg/flags/alternates/nv-silhouette.svg",
+          "format": "svg",
+          "colors": [
+            "#0033A6"
+          ],
+          "sourcePalette": [
+            "#0033A6",
+            "#094B28",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "8b1dc75f09e69edb6e3dcda986d5651684af87de1c7afdc13487649a3a6091fd"
+        }
+      ]
+    },
+    {
+      "id": "FLAG-NY",
+      "league": "FLAG",
+      "conference": "US States",
+      "region": "New York",
+      "name": "",
+      "abbr": "NY",
+      "aliases": [
+        "State of New York"
+      ],
+      "palette": [
+        "#002D72",
+        "#BE1F1F",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "State flag",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_New_York.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_New_York.svg",
+          "sourceSha256": "bbccc5b95bb319bb09fd3743fe7671c199b28f378cf2eba069bdd9646207bf21",
+          "ops": {},
+          "path": "/logos/svg/flags/ny.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#002D72",
+            "#BE1F1F",
+            "#AB251C",
+            "#DE3535",
+            "#EB5050",
+            "#FA9696",
+            "#332829",
+            "#AB1C1C",
+            "#D7D7D7",
+            "#FFFFFF",
+            "#CCCCCC",
+            "#BCBCBC",
+            "#A9A9A9",
+            "#E6E6E6",
+            "#F2F2F2",
+            "#1A1A1A",
+            "#8F6E56",
+            "#7F5D47",
+            "#A58269",
+            "#AE2020",
+            "#D82C2C",
+            "#E0BE72",
+            "#C39F55",
+            "#EFD28E",
+            "#FBE8CB",
+            "#F4DBA7",
+            "#56905F",
+            "#2D94C8",
+            "#AA853C",
+            "#E84242",
+            "#F76262",
+            "#F6B58A",
+            "#FFCCAA",
+            "#40A2D4",
+            "#1F84B6",
+            "#1A6C95",
+            "#59AEDA",
+            "#85C4E3",
+            "#DDDAD1",
+            "#C0B9A8",
+            "#A0957B",
+            "#736C5B",
+            "#ECC875",
+            "#CBAA60",
+            "#F3D79D",
+            "#D8B563",
+            "#C7A454",
+            "#5F8795",
+            "#7E8775",
+            "#99A99D",
+            "#726655",
+            "#7C7468",
+            "#697871",
+            "#89B4C3",
+            "#B7B29B",
+            "#CEC0A3",
+            "#78A6B9",
+            "#83ABB7",
+            "#A7B7B3",
+            "#B7BDB3",
+            "#D0C9AA",
+            "#F1D89E",
+            "#E5CA8B",
+            "#D99643",
+            "#FAE2BC",
+            "#647385",
+            "#7D6E7E",
+            "#696586",
+            "#638080",
+            "#697966",
+            "#927973",
+            "#778474",
+            "#86876B",
+            "#49798D",
+            "#566382",
+            "#567F89",
+            "#236C8C",
+            "#A39565",
+            "#736D63",
+            "#4F694F",
+            "#2F5032",
+            "#4B5F3B",
+            "#8A884E",
+            "#ABA171",
+            "#4C2E22",
+            "#634633",
+            "#4A362E",
+            "#552200",
+            "#368EBA",
+            "#4093BC",
+            "#4C98BE",
+            "#4D8155",
+            "#508558",
+            "#52895A",
+            "#7F8C68",
+            "#8BA097",
+            "#B7A783",
+            "#D02B2B",
+            "#FF5A5A",
+            "#FED4B8",
+            "#E69C6C",
+            "#FED9C0",
+            "#FCC098",
+            "#FDC49F",
+            "#9A6B4F",
+            "#6D5246",
+            "#34292A",
+            "#DC8E75",
+            "#D37050",
+            "#F2BEAC",
+            "#1C76A3",
+            "#B4B4B4",
+            "#CBCBCB",
+            "#70689C",
+            "#D9D1BE",
+            "#AAB4BE"
+          ],
+          "sourcePalette": [
+            "#002D72",
+            "#BE1F1F",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "4a5620298c60ea5a35cfebb1685cc20deb4936212672d6d784a5f544611fcf62"
+        },
+        {
+          "id": "silhouette",
+          "label": "Silhouette",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Blank_US_Map_(states_only).svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Blank_US_Map_(states_only).svg",
+          "sourceSha256": "2279580797b53481b29fc168145129db926c21f91d4bc6d82c04e9801bdf932f",
+          "ops": {
+            "keepNodes": [
+              "2/31"
+            ],
+            "fill": "#002D72",
+            "viewBox": "737.704 101.704 142.992 111.192"
+          },
+          "path": "/logos/svg/flags/alternates/ny-silhouette.svg",
+          "format": "svg",
+          "colors": [
+            "#002D72"
+          ],
+          "sourcePalette": [
+            "#002D72",
+            "#BE1F1F",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "0c5dfc8b9777687e4c781358e030f2c8d7f4036cc2008cba27a83d3f0e5dffdd"
+        }
+      ]
+    },
+    {
       "id": "FLAG-NZ",
       "league": "FLAG",
       "conference": "Asia & Pacific",
@@ -4568,6 +6262,255 @@
             2
           ],
           "sha256": "03d93195c08968c8a1f7e8a88fff8692a72b2d83a297f598b926c4f7a62a3990"
+        }
+      ]
+    },
+    {
+      "id": "FLAG-OK",
+      "league": "FLAG",
+      "conference": "US States",
+      "region": "Oklahoma",
+      "name": "",
+      "abbr": "OK",
+      "aliases": [
+        "State of Oklahoma"
+      ],
+      "palette": [
+        "#1D5C42",
+        "#975741",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "State flag",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Oklahoma.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Oklahoma.svg",
+          "sourceSha256": "8f03fd07880d7ae6315848c3a870d89900c5eebb26cf65931614605f89014d47",
+          "ops": {},
+          "path": "/logos/svg/flags/ok.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#0073CF",
+            "#9A3B26",
+            "#EFE8C7",
+            "#B3995D",
+            "#1691FF",
+            "#395839",
+            "#773141",
+            "#D1B881",
+            "#1D5C42",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#1D5C42",
+            "#975741",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "4f8694fbd33aeb6ae3499bfce54ce1b6d5ab72a4ed54e6156533e1c71a4d57a8"
+        },
+        {
+          "id": "silhouette",
+          "label": "Silhouette",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Blank_US_Map_(states_only).svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Blank_US_Map_(states_only).svg",
+          "sourceSha256": "2279580797b53481b29fc168145129db926c21f91d4bc6d82c04e9801bdf932f",
+          "ops": {
+            "keepNodes": [
+              "2/35"
+            ],
+            "fill": "#1D5C42",
+            "viewBox": "351.456 316.256 163.188 90.288"
+          },
+          "path": "/logos/svg/flags/alternates/ok-silhouette.svg",
+          "format": "svg",
+          "colors": [
+            "#1D5C42"
+          ],
+          "sourcePalette": [
+            "#1D5C42",
+            "#975741",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "e0d7308b5f065a8eb6daf231560dae87cea63ee3e5decc9c17a3c6c4053281a8"
+        }
+      ]
+    },
+    {
+      "id": "FLAG-OR",
+      "league": "FLAG",
+      "conference": "US States",
+      "region": "Oregon",
+      "name": "",
+      "abbr": "OR",
+      "aliases": [
+        "State of Oregon"
+      ],
+      "palette": [
+        "#000080",
+        "#FFD700",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "State flag",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Oregon.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Oregon.svg",
+          "sourceSha256": "174ae1e9affbca59ee73c58c5998078e37cb74c1a83c2a9edbc39fcdf27271c9",
+          "ops": {},
+          "path": "/logos/svg/flags/or.svg",
+          "format": "svg",
+          "colors": [
+            "#FFD700",
+            "#000080"
+          ],
+          "sourcePalette": [
+            "#000080",
+            "#FFD700",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "e4158f7d721ffa179b8edb0a7e2464f9b78cdd28ca115db03232c698f2aadfd1"
+        },
+        {
+          "id": "reverse",
+          "label": "Beaver reverse",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Oregon_(reverse).svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Oregon_(reverse).svg",
+          "sourceSha256": "bce082f531f11b468b6ac7e0ed7102ff73ed5702473cbcf4603a7f1fb3c55688",
+          "ops": {},
+          "path": "/logos/svg/flags/alternates/or-reverse.svg",
+          "format": "svg",
+          "colors": [
+            "#000080",
+            "#FFD700"
+          ],
+          "sourcePalette": [
+            "#000080",
+            "#FFD700",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "01c2ecd3844876575992d0186a70e01c57aef7d3bf0a0d5985d1cd11edbe3c47"
+        },
+        {
+          "id": "silhouette",
+          "label": "Silhouette",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Blank_US_Map_(states_only).svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Blank_US_Map_(states_only).svg",
+          "sourceSha256": "2279580797b53481b29fc168145129db926c21f91d4bc6d82c04e9801bdf932f",
+          "ops": {
+            "keepNodes": [
+              "2/36"
+            ],
+            "fill": "#000080",
+            "viewBox": "20.876 53.876 151.848 129.448"
+          },
+          "path": "/logos/svg/flags/alternates/or-silhouette.svg",
+          "format": "svg",
+          "colors": [
+            "#000080"
+          ],
+          "sourcePalette": [
+            "#000080",
+            "#FFD700",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "d84fc67cc9b91d98f7116af36ca49affb6c86ea48ddff552f32615e1ab123ea3"
+        }
+      ]
+    },
+    {
+      "id": "FLAG-PA",
+      "league": "FLAG",
+      "conference": "US States",
+      "region": "Pennsylvania",
+      "name": "",
+      "abbr": "PA",
+      "aliases": [
+        "State of Pennsylvania"
+      ],
+      "palette": [
+        "#00205B",
+        "#A90F1E",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "State flag",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Pennsylvania.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Pennsylvania.svg",
+          "sourceSha256": "c328ed5571c2008c692f3998da22cccb7fa2c7be2be3e23754e5d0635963c841",
+          "ops": {},
+          "path": "/logos/svg/flags/pa.svg",
+          "format": "svg",
+          "colors": [
+            "#00205B",
+            "#FFFFFF",
+            "#414141",
+            "#DCA90D",
+            "#82CCE2",
+            "#1F5290",
+            "#FFCE00",
+            "#352B00",
+            "#FFD629",
+            "#076A21",
+            "#D10B10",
+            "#000000",
+            "#A90F1E"
+          ],
+          "sourcePalette": [
+            "#00205B",
+            "#A90F1E",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "c8a3b504c55cb242f7db0e2ecdfa88440b568929aa88ec932333895da183af8e"
+        },
+        {
+          "id": "silhouette",
+          "label": "Silhouette",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Blank_US_Map_(states_only).svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Blank_US_Map_(states_only).svg",
+          "sourceSha256": "2279580797b53481b29fc168145129db926c21f91d4bc6d82c04e9801bdf932f",
+          "ops": {
+            "keepNodes": [
+              "2/37"
+            ],
+            "fill": "#00205B",
+            "viewBox": "727.836 175.036 109.728 73.828"
+          },
+          "path": "/logos/svg/flags/alternates/pa-silhouette.svg",
+          "format": "svg",
+          "colors": [
+            "#00205B"
+          ],
+          "sourcePalette": [
+            "#00205B",
+            "#A90F1E",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "2d66531861312728fa207161cfd85ae196c5b2d711d595c86cfd8afcadd8cdea"
         }
       ]
     },
@@ -5182,6 +7125,35 @@
           ],
           "unusedSourceSlots": [],
           "sha256": "21716d94a2168b56a6d598d11b23347682a64c16e76d97b964dcd387fa61b76f"
+        },
+        {
+          "id": "silhouette",
+          "label": "Silhouette",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Blank_US_Map_(states_only).svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Blank_US_Map_(states_only).svg",
+          "sourceSha256": "2279580797b53481b29fc168145129db926c21f91d4bc6d82c04e9801bdf932f",
+          "ops": {
+            "keepNodes": [
+              "2/38"
+            ],
+            "fill": "#003271",
+            "viewBox": "869.924 162.724 15.452 20.952"
+          },
+          "path": "/logos/svg/flags/alternates/ri-silhouette.svg",
+          "format": "svg",
+          "colors": [
+            "#003271"
+          ],
+          "sourcePalette": [
+            "#003271",
+            "#FEC500",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "804d31d28dd5df5f27864547858e5207674076ff0c582146d61b482109a51d3b"
         }
       ]
     },
@@ -5404,6 +7376,76 @@
             2
           ],
           "sha256": "7f09be2726477a83db1ce1c002611645d2676b80bdda60b1ffb4067627814df2"
+        }
+      ]
+    },
+    {
+      "id": "FLAG-SD",
+      "league": "FLAG",
+      "conference": "US States",
+      "region": "South Dakota",
+      "name": "",
+      "abbr": "SD",
+      "aliases": [
+        "State of South Dakota"
+      ],
+      "palette": [
+        "#002868",
+        "#0074A8",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "State flag",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_South_Dakota.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_South_Dakota.svg",
+          "sourceSha256": "7e057b142a5a8255a9be6588743af2f36a66dd33dfe54ca36a74a2e95576a989",
+          "ops": {},
+          "path": "/logos/svg/flags/sd.svg",
+          "format": "svg",
+          "colors": [
+            "#0074A8",
+            "#FFC400",
+            "#FFFFFF",
+            "#002868"
+          ],
+          "sourcePalette": [
+            "#002868",
+            "#0074A8",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "f1bd564ee3261d1d8969bea41c00d8e308fb36bee599395f55ba24e44582e260"
+        },
+        {
+          "id": "silhouette",
+          "label": "Silhouette",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Blank_US_Map_(states_only).svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Blank_US_Map_(states_only).svg",
+          "sourceSha256": "2279580797b53481b29fc168145129db926c21f91d4bc6d82c04e9801bdf932f",
+          "ops": {
+            "keepNodes": [
+              "2/40"
+            ],
+            "fill": "#002868",
+            "viewBox": "346.500 118.100 132.300 91.200"
+          },
+          "path": "/logos/svg/flags/alternates/sd-silhouette.svg",
+          "format": "svg",
+          "colors": [
+            "#002868"
+          ],
+          "sourcePalette": [
+            "#002868",
+            "#0074A8",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "3ffd56bee2de93323f316cc73a5b12c39789752b2435a0914f0f09dbf3f60fef"
         }
       ]
     },
@@ -6662,6 +8704,127 @@
       ]
     },
     {
+      "id": "FLAG-VA",
+      "league": "FLAG",
+      "conference": "US States",
+      "region": "Virginia",
+      "name": "",
+      "abbr": "VA",
+      "aliases": [
+        "State of Virginia"
+      ],
+      "palette": [
+        "#012168",
+        "#E03C31",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "State flag",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Virginia.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Virginia.svg",
+          "sourceSha256": "c6f12816be6d6254fed5cdac8aa61e4468d3f8f7c77ff88c83bd94a7a11c1d2d",
+          "ops": {},
+          "path": "/logos/svg/flags/va.svg",
+          "format": "svg",
+          "colors": [
+            "#012168",
+            "#FFFFFF",
+            "#231F20",
+            "#2D2727",
+            "#926844",
+            "#000000",
+            "#05904C",
+            "#046A38",
+            "#E03C31",
+            "#8C0000",
+            "#104F56",
+            "#03373D",
+            "#0A484F",
+            "#085860",
+            "#074D54",
+            "#074349",
+            "#073E44",
+            "#06535B",
+            "#065159",
+            "#04565E",
+            "#044C54",
+            "#044147",
+            "#00788C",
+            "#F1C6A7",
+            "#BE9C83",
+            "#785C49",
+            "#574335",
+            "#72246C",
+            "#512D6D",
+            "#2B1739",
+            "#9B4426",
+            "#7F573C",
+            "#C1C6C8",
+            "#C0A430",
+            "#F3D03E",
+            "#E2C54E",
+            "#FFE641",
+            "#B7B6B6",
+            "#6CACE4",
+            "#F0F1F2",
+            "#703F2A",
+            "#94C2EB",
+            "#003087",
+            "#A08E6A",
+            "#D3BC8D",
+            "#93714D",
+            "#644C33",
+            "#F9DEA6",
+            "#867759",
+            "#E5EBEE",
+            "#693F23",
+            "#8F552F",
+            "#4C2E19",
+            "#D3CDCD",
+            "#929299"
+          ],
+          "sourcePalette": [
+            "#012168",
+            "#E03C31",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "31b064e140b2e2aca7abe1ab86664fdfb47dca1aaf8488ff36ac2dd25ceff9e0"
+        },
+        {
+          "id": "silhouette",
+          "label": "Silhouette",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Blank_US_Map_(states_only).svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Blank_US_Map_(states_only).svg",
+          "sourceSha256": "2279580797b53481b29fc168145129db926c21f91d4bc6d82c04e9801bdf932f",
+          "ops": {
+            "keepNodes": [
+              "2/45"
+            ],
+            "fill": "#012168",
+            "viewBox": "692.196 239.196 148.608 87.408"
+          },
+          "path": "/logos/svg/flags/alternates/va-silhouette.svg",
+          "format": "svg",
+          "colors": [
+            "#012168"
+          ],
+          "sourcePalette": [
+            "#012168",
+            "#E03C31",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "8749f92c3a7a1d3e23e3ef3f9e7451c7e44cb2ee56dc9b1551a9fc02292843eb"
+        }
+      ]
+    },
+    {
       "id": "FLAG-VIETNAM",
       "league": "FLAG",
       "conference": "Asia & Pacific",
@@ -6731,6 +8894,412 @@
             2
           ],
           "sha256": "d0bc41c59a5fb675895be6b0843970beeffb7ca00ce22c3447bd656a6a954201"
+        }
+      ]
+    },
+    {
+      "id": "FLAG-VT",
+      "league": "FLAG",
+      "conference": "US States",
+      "region": "Vermont",
+      "name": "",
+      "abbr": "VT",
+      "aliases": [
+        "State of Vermont"
+      ],
+      "palette": [
+        "#003366",
+        "#8C1E14",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "State flag",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Vermont.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Vermont.svg",
+          "sourceSha256": "898afb199913b5e97638ff8bbd9a27a3f30d518fd02a6e53c02100e5233a097e",
+          "ops": {},
+          "path": "/logos/svg/flags/vt.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#003366",
+            "#4F0000",
+            "#5A8562",
+            "#002A22",
+            "#C24B20",
+            "#990000",
+            "#FFCC33",
+            "#5C5B7C",
+            "#464646",
+            "#5A8570",
+            "#C2091D",
+            "#56301F",
+            "#FFFFFF",
+            "#4A1313",
+            "#124B41",
+            "#FFD87C",
+            "#64A264",
+            "#5D9A61",
+            "#F5ECD0",
+            "#544933",
+            "#B3A181",
+            "#6F6850",
+            "#8E473C",
+            "#4D1900",
+            "#ABCEE6",
+            "#A493B5",
+            "#EBF7C9",
+            "#E5DC8C",
+            "#C1918E",
+            "#C6FF86",
+            "#5A9860"
+          ],
+          "sourcePalette": [
+            "#003366",
+            "#7D1F15",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "a990df4b10e071de8c8ef9c9b952ca473d269e1940e597a36bd36a2c3da63c8a"
+        },
+        {
+          "id": "silhouette",
+          "label": "Silhouette",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Blank_US_Map_(states_only).svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Blank_US_Map_(states_only).svg",
+          "sourceSha256": "2279580797b53481b29fc168145129db926c21f91d4bc6d82c04e9801bdf932f",
+          "ops": {
+            "keepNodes": [
+              "2/44"
+            ],
+            "fill": "#003366",
+            "viewBox": "828.392 97.892 33.916 59.616"
+          },
+          "path": "/logos/svg/flags/alternates/vt-silhouette.svg",
+          "format": "svg",
+          "colors": [
+            "#003366"
+          ],
+          "sourcePalette": [
+            "#003366",
+            "#8C1E14",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "1c7c127085500afaadbe9f849b2ab2f145560e80c8e1246a420aabad945371c3"
+        }
+      ]
+    },
+    {
+      "id": "FLAG-WA",
+      "league": "FLAG",
+      "conference": "US States",
+      "region": "Washington",
+      "name": "",
+      "abbr": "WA",
+      "aliases": [
+        "State of Washington"
+      ],
+      "palette": [
+        "#00843D",
+        "#FFCD00",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "State flag",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Washington.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Washington.svg",
+          "sourceSha256": "d0350dae18dd8d836d7a0177bf2924b0eefdbc6dcc71ad44270189b986031d2d",
+          "ops": {},
+          "path": "/logos/svg/flags/wa.svg",
+          "format": "svg",
+          "colors": [
+            "#00843D",
+            "#FFCD00",
+            "#05C3DE",
+            "#000000",
+            "#FFFFFF",
+            "#FFB3AB",
+            "#FDD6C6"
+          ],
+          "sourcePalette": [
+            "#00843D",
+            "#FFCD00",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "745ff380630d296fd99337153b31069a38b0ddbd44e8f40fd5c1e8f40113e4c8"
+        },
+        {
+          "id": "silhouette",
+          "label": "Silhouette",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Blank_US_Map_(states_only).svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Blank_US_Map_(states_only).svg",
+          "sourceSha256": "2279580797b53481b29fc168145129db926c21f91d4bc6d82c04e9801bdf932f",
+          "ops": {
+            "keepNodes": [
+              "2/46"
+            ],
+            "fill": "#00843D",
+            "viewBox": "52.712 0.512 126.576 96.076"
+          },
+          "path": "/logos/svg/flags/alternates/wa-silhouette.svg",
+          "format": "svg",
+          "colors": [
+            "#00843D"
+          ],
+          "sourcePalette": [
+            "#00843D",
+            "#FFCD00",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "9522c1a592f803043d95f345ef0219c99955b77c900162fc5569629e0d64477b"
+        }
+      ]
+    },
+    {
+      "id": "FLAG-WI",
+      "league": "FLAG",
+      "conference": "US States",
+      "region": "Wisconsin",
+      "name": "",
+      "abbr": "WI",
+      "aliases": [
+        "State of Wisconsin"
+      ],
+      "palette": [
+        "#002986",
+        "#B72836",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "State flag",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Wisconsin.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Wisconsin.svg",
+          "sourceSha256": "329539e7421d6bbfd9ea1cca06df1809a04a4adebc4817658b50c9fd40a266dd",
+          "ops": {},
+          "path": "/logos/svg/flags/wi.svg",
+          "format": "svg",
+          "colors": [
+            "#002986",
+            "#FFFFFF",
+            "#76A4C4",
+            "#000000",
+            "#BE0A2F",
+            "#FFCC18",
+            "#BCBCBC",
+            "#F4D3B0",
+            "#753C28",
+            "#F3334B",
+            "#FFE618",
+            "#18B318",
+            "#000308"
+          ],
+          "sourcePalette": [
+            "#002986",
+            "#B72836",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "ba8cf1fa31e472fd65a2ab306a6f726e5c9b97d3d2700722de2fdcc7327fb380"
+        },
+        {
+          "id": "silhouette",
+          "label": "Silhouette",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Blank_US_Map_(states_only).svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Blank_US_Map_(states_only).svg",
+          "sourceSha256": "2279580797b53481b29fc168145129db926c21f91d4bc6d82c04e9801bdf932f",
+          "ops": {
+            "keepNodes": [
+              "2/48"
+            ],
+            "fill": "#002986",
+            "viewBox": "524.560 96.960 102.380 109.080"
+          },
+          "path": "/logos/svg/flags/alternates/wi-silhouette.svg",
+          "format": "svg",
+          "colors": [
+            "#002986"
+          ],
+          "sourcePalette": [
+            "#002986",
+            "#B72836",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "f4c48f91318869f19430931de609ed4e5722f7e10bbf1884eefcf3b9483ed0b6"
+        }
+      ]
+    },
+    {
+      "id": "FLAG-WV",
+      "league": "FLAG",
+      "conference": "US States",
+      "region": "West Virginia",
+      "name": "",
+      "abbr": "WV",
+      "aliases": [
+        "State of West Virginia"
+      ],
+      "palette": [
+        "#00205B",
+        "#BF0D3E",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "State flag",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_West_Virginia.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_West_Virginia.svg",
+          "sourceSha256": "8ebf29f97c20c87efc13fa23be30dff0b67e88019c889726dd5f08b631cf1d0b",
+          "ops": {},
+          "path": "/logos/svg/flags/wv.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#FFFFFF",
+            "#483119",
+            "#076F4F",
+            "#BF0D3E",
+            "#BA203A",
+            "#00205B",
+            "#FCD307",
+            "#020202",
+            "#C1A16B",
+            "#84592D",
+            "#FBFFFE",
+            "#000201",
+            "#0061CF",
+            "#010907",
+            "#0E0E0E",
+            "#FFFDFE",
+            "#030303",
+            "#FEFEFE"
+          ],
+          "sourcePalette": [
+            "#00205B",
+            "#BF0D3E",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "b62136ea572eba6872bc130027a772b799ce189d79bd0f41778b0468ef1b039d"
+        },
+        {
+          "id": "silhouette",
+          "label": "Silhouette",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Blank_US_Map_(states_only).svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Blank_US_Map_(states_only).svg",
+          "sourceSha256": "2279580797b53481b29fc168145129db926c21f91d4bc6d82c04e9801bdf932f",
+          "ops": {
+            "keepNodes": [
+              "2/47"
+            ],
+            "fill": "#00205B",
+            "viewBox": "706.040 221.940 85.320 84.420"
+          },
+          "path": "/logos/svg/flags/alternates/wv-silhouette.svg",
+          "format": "svg",
+          "colors": [
+            "#00205B"
+          ],
+          "sourcePalette": [
+            "#00205B",
+            "#BF0D3E",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "9af8cecaf37bc172ad830964474e700c6c7c52aecf7f6ccb11f448306243782e"
+        }
+      ]
+    },
+    {
+      "id": "FLAG-WY",
+      "league": "FLAG",
+      "conference": "US States",
+      "region": "Wyoming",
+      "name": "",
+      "abbr": "WY",
+      "aliases": [
+        "State of Wyoming"
+      ],
+      "palette": [
+        "#00102E",
+        "#BF0A30",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "State flag",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Wyoming.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Flag_of_Wyoming.svg",
+          "sourceSha256": "c277df5375fae624f64b36fec774b30c1df67021ecf26358591e211f9c25181b",
+          "ops": {},
+          "path": "/logos/svg/flags/wy.svg",
+          "format": "svg",
+          "colors": [
+            "#BF0A30",
+            "#FFFFFF",
+            "#00205B",
+            "#FEFEFE",
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#00102E",
+            "#BF0A30",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "9ab23f1a0db72fd75984060ed7eb8b0913bf6d8d504b73938a45fba1cb1d2e1c"
+        },
+        {
+          "id": "silhouette",
+          "label": "Silhouette",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Blank_US_Map_(states_only).svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Blank_US_Map_(states_only).svg",
+          "sourceSha256": "2279580797b53481b29fc168145129db926c21f91d4bc6d82c04e9801bdf932f",
+          "ops": {
+            "keepNodes": [
+              "2/49"
+            ],
+            "fill": "#00102E",
+            "viewBox": "228.316 125.616 131.868 111.068"
+          },
+          "path": "/logos/svg/flags/alternates/wy-silhouette.svg",
+          "format": "svg",
+          "colors": [
+            "#00102E"
+          ],
+          "sourcePalette": [
+            "#00102E",
+            "#BF0A30",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "69b091e30e6a34bf10e980f43f81a7e673ec4d2fbbdd4d57cece7c4f942992af"
         }
       ]
     }

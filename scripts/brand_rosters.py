@@ -363,7 +363,78 @@ FLAG = [
     ("PDX", "Portland", "Cities", "046A38", "FFB81C", ["Portland, Oregon", "Rose City", "PDX"]),
 ]
 
+# Remaining US states; existing IDs and saved rounds stay unchanged.
+FLAG += [
+    ('AR', 'Arkansas', 'US States', '00205B', 'BF0A30', ['State of Arkansas']),
+    ('DE', 'Delaware', 'US States', '334B4E', 'B12F39', ['State of Delaware']),
+    ('FL', 'Florida', 'US States', '015941', 'AF0536', ['State of Florida']),
+    ('ID', 'Idaho', 'US States', '003776', 'EF1439', ['State of Idaho']),
+    ('IL', 'Illinois', 'US States', '133D26', '9B3236', ['State of Illinois']),
+    ('IN', 'Indiana', 'US States', '000F5D', '000000', ['State of Indiana']),
+    ('IA', 'Iowa', 'US States', '071442', 'D80025', ['State of Iowa']),
+    ('KS', 'Kansas', 'US States', '00205B', 'D15B25', ['State of Kansas']),
+    ('KY', 'Kentucky', 'US States', '000066', 'DAAB42', ['State of Kentucky']),
+    ('LA', 'Louisiana', 'US States', '01447B', 'ED3223', ['State of Louisiana']),
+    ('ME', 'Maine', 'US States', '002664', 'FF163C', ['State of Maine']),
+    ('MO', 'Missouri', 'US States', '00205B', 'BE3731', ['State of Missouri']),
+    ('MT', 'Montana', 'US States', '004A9A', '7D421D', ['State of Montana']),
+    ('NE', 'Nebraska', 'US States', '002A86', '000000', ['State of Nebraska']),
+    ('NV', 'Nevada', 'US States', '0033A6', '094B28', ['State of Nevada']),
+    ('NH', 'New Hampshire', 'US States', '002868', 'D4212F', ['State of New Hampshire']),
+    ('NJ', 'New Jersey', 'US States', '443D64', 'C75D48', ['State of New Jersey']),
+    ('NY', 'New York', 'US States', '002D72', 'BE1F1F', ['State of New York']),
+    ('NC', 'North Carolina', 'US States', '00102E', 'BF0A30', ['State of North Carolina']),
+    ('ND', 'North Dakota', 'US States', '003A70', 'A6192E', ['State of North Dakota']),
+    ('OK', 'Oklahoma', 'US States', '1D5C42', '975741', ['State of Oklahoma']),
+    ('OR', 'Oregon', 'US States', '000080', 'FFD700', ['State of Oregon']),
+    ('PA', 'Pennsylvania', 'US States', '00205B', 'A90F1E', ['State of Pennsylvania']),
+    ('SD', 'South Dakota', 'US States', '002868', '0074A8', ['State of South Dakota']),
+    ('VT', 'Vermont', 'US States', '003366', '8C1E14', ['State of Vermont']),
+    ('VA', 'Virginia', 'US States', '012168', 'E03C31', ['State of Virginia']),
+    ('WA', 'Washington', 'US States', '00843D', 'FFCD00', ['State of Washington']),
+    ('WV', 'West Virginia', 'US States', '00205B', 'BF0D3E', ['State of West Virginia']),
+    ('WI', 'Wisconsin', 'US States', '002986', 'B72836', ['State of Wisconsin']),
+    ('WY', 'Wyoming', 'US States', '00102E', 'BF0A30', ['State of Wyoming']),
+]
+
+# Official NHL 2026–27 roster, pinned from api-web.nhle.com/v1/standings/now.
+NHL = [
+    ('ANA', 'Anaheim Ducks', 'Western', '010101', 'AC5C36', ['Ducks']),
+    ('BOS', 'Boston Bruins', 'Eastern', 'FFB81C', '010101', ['Bruins']),
+    ('BUF', 'Buffalo Sabres', 'Eastern', '003087', 'E46425', ['Sabres']),
+    ('CAR', 'Carolina Hurricanes', 'Eastern', '010101', 'CD001A', ['Hurricanes']),
+    ('CBJ', 'Columbus Blue Jackets', 'Eastern', '041E42', 'C8102E', ['Blue Jackets']),
+    ('CGY', 'Calgary Flames', 'Western', 'F1BE48', 'C8102E', ['Flames']),
+    ('CHI', 'Chicago Blackhawks', 'Western', '213B88', 'C8102E', ['Blackhawks']),
+    ('COL', 'Colorado Avalanche', 'Western', '010101', '544462', ['Avalanche']),
+    ('DAL', 'Dallas Stars', 'Western', '010101', '00843D', ['Stars']),
+    ('DET', 'Detroit Red Wings', 'Eastern', 'C8102E', '000000', ['Red Wings']),
+    ('EDM', 'Edmonton Oilers', 'Western', '00205B', 'CF4520', ['Oilers']),
+    ('FLA', 'Florida Panthers', 'Eastern', '021022', 'C05444', ['Panthers']),
+    ('LAK', 'Los Angeles Kings', 'Western', '010101', 'A2AAAD', ['Kings']),
+    ('MIN', 'Minnesota Wild', 'Western', '154734', 'C86217', ['Wild']),
+    ('MTL', 'Montréal Canadiens', 'Eastern', '001E62', 'A6192E', ['Canadiens']),
+    ('NJD', 'New Jersey Devils', 'Eastern', '010101', 'CD001A', ['Devils']),
+    ('NSH', 'Nashville Predators', 'Western', '041E42', 'FFB81C', ['Predators']),
+    ('NYI', 'New York Islanders', 'Eastern', '003087', 'FC4C02', ['Islanders']),
+    ('NYR', 'New York Rangers', 'Eastern', '0033A0', 'C8102E', ['Rangers']),
+    ('OTT', 'Ottawa Senators', 'Eastern', '010101', 'C05444', ['Senators']),
+    ('PHI', 'Philadelphia Flyers', 'Eastern', '010101', 'DC4405', ['Flyers']),
+    ('PIT', 'Pittsburgh Penguins', 'Eastern', '010101', 'FFB81C', ['Penguins']),
+    ('SEA', 'Seattle Kraken', 'Western', '041C2C', 'C8102E', ['Kraken']),
+    ('SJS', 'San Jose Sharks', 'Western', '010101', 'E57200', ['Sharks']),
+    ('STL', 'St. Louis Blues', 'Western', '006AC6', 'FFB81C', ['Blues']),
+    ('TBL', 'Tampa Bay Lightning', 'Eastern', '00205B', 'BF0A30', ['Lightning']),
+    ('TOR', 'Toronto Maple Leafs', 'Eastern', '00205B', 'BF0A30', ['Maple Leafs']),
+    ('UTA', 'Utah Mammoth', 'Western', '6CACE4', '010101', ['Mammoth']),
+    ('VAN', 'Vancouver Canucks', 'Western', '021E44', '97999B', ['Canucks']),
+    ('VGK', 'Vegas Golden Knights', 'Western', '766B52', '010101', ['Golden Knights']),
+    ('WPG', 'Winnipeg Jets', 'Western', '2C3A4E', '8F2437', ['Jets']),
+    ('WSH', 'Washington Capitals', 'Eastern', '041E42', 'C8102E', ['Capitals']),
+]
+
 LEAGUES = {
+    "NHL": {"label": "NHL", "conferences": ["Eastern", "Western"]},
     "FOOD": {"label": "FAST FOOD", "conferences": ["Burgers", "Chicken", "Sandwiches", "Pizza", "Mexican & Asian", "Coffee & Treats"]},
     "BRAND": {"label": "BRANDS", "conferences": ["Product", "Service", "Corporate", "Personal", "Store"]},
     "FLAG": {"label": "FLAGS", "conferences": ["Americas", "Europe", "Asia & Pacific", "Africa & Middle East", "US States", "Cities"]},
@@ -374,5 +445,5 @@ LEAGUES = {
     "CLOTH": {"label": "CLOTHING", "conferences": ["Sportswear", "Streetwear", "Outdoor", "Preppy", "Everyday"]},
 }
 
-ROSTERS = {"FOOD": FOOD, "BRAND": BRAND, "FLAG": FLAG, "APP": APP, "TV": TV, "CAR": CAR, "LUX": LUX, "CLOTH": CLOTH}
-SLUGS = {"FOOD": "fast-food", "BRAND": "brands", "FLAG": "flags", "APP": "apps", "TV": "tv", "CAR": "cars", "LUX": "luxury", "CLOTH": "clothing"}
+ROSTERS = {"NHL": NHL, "FOOD": FOOD, "BRAND": BRAND, "FLAG": FLAG, "APP": APP, "TV": TV, "CAR": CAR, "LUX": LUX, "CLOTH": CLOTH}
+SLUGS = {"NHL": "nhl", "FOOD": "fast-food", "BRAND": "brands", "FLAG": "flags", "APP": "apps", "TV": "tv", "CAR": "cars", "LUX": "luxury", "CLOTH": "clothing"}

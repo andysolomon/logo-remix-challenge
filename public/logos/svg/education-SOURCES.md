@@ -1,0 +1,15 @@
+# Educational vector artwork
+
+- Element identities: atomic numbers 1–118, symbols and names follow the [IUPAC periodic table](https://iupac.org/what-we-do/periodic-table-of-elements/). The pinned factual list is `scripts/elements.json`, transcribed from [Periodic-Table-JSON](https://github.com/Bowserinator/Periodic-Table-JSON). No atomic weights, speculative element 119 or disputed family classifications are included. Periods provide the filters. Both US and IUPAC spellings of aluminum/aluminium and cesium/caesium are accepted.
+- Letter, number and mathematical glyph outlines come from DejaVu Sans. See `education-LICENSE.txt` for the Bitstream Vera license and public-domain DejaVu additions. Glyphs are baked as paths, so exported images and offline games do not depend on installed fonts.
+- Shapes, space illustrations and science icons are original SVG geometry in `scripts/build_education.py`. Planet images are stylized identification artwork, not scale diagrams. Pluto is grouped separately as a dwarf planet. The atom icon is a conventional symbol, not a physical electron-orbit model.
+- `education-manifest.json` records SHA-256 checksums for every generated file. Run `npm run teams:education` to reproduce the assets and catalog offline with Python 3.
+- All collections are logo sources. Existing NFL, NBA and college teams remain the only color donors. Element tiles show the symbol and atomic number, with a symbol-only alternate; neither version spells the element's name.
+
+# Additional state and NHL artwork
+
+State flags and silhouettes are pinned in `scripts/brand_artwork_sources.json`, including original Wikimedia source pages, source checksums and explicit crops. All 50 states have a flag and an independently cropped silhouette, including Rhode Island. Oregon also has its beaver reverse. Existing state IDs are preserved, including `FLAG-CALI`.
+
+NHL identity and conference data were checked against the NHL standings feed on 2026-10-18. All 32 primary logos come from the NHL's `assets.nhle.com` SVG collection, with source checksums and source palettes recorded in `nhl-manifest.json`. The Utah entry is the Mammoth. Six primary marks that spell their identity are flagged `showsName`, keeping them out of random logo pools while available for manual selection. Team marks remain their owners' trademarks.
+
+A few detailed state seals exceed the former 400 KB limit; the flag importer allows up to 750 KB per vector, preserving the original artwork. The limit for other imported collections remains 400 KB. North Dakota's source contains an empty text node, removed explicitly; no live fonts or embedded rasters are shipped.

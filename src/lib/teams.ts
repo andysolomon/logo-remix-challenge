@@ -1,6 +1,6 @@
 import data from './teams.json'
 
-export type League = 'PRO' | 'NBA' | 'MLB' | 'SOCCER' | 'MLS' | 'COL' | 'HS' | 'FOOD' | 'BRAND' | 'FLAG' | 'APP' | 'TV' | 'CAR' | 'LUX' | 'CLOTH'
+export type League = 'PRO' | 'NBA' | 'MLB' | 'SOCCER' | 'MLS' | 'COL' | 'HS' | 'FOOD' | 'BRAND' | 'FLAG' | 'APP' | 'TV' | 'CAR' | 'LUX' | 'CLOTH' | 'NHL' | 'ELEMENT' | 'MATH' | 'SHAPE' | 'SPACE' | 'SCIENCE'
 
 export interface LogoVariant {
   id: string
@@ -114,7 +114,14 @@ export function nextLogoVariant(team: Team, current?: string): string | undefine
 }
 
 // Accents fold away first, so "Atletico" and "Barça" match "Atlético" and "Barca".
-export const norm = (s: string) => String(s).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9]/g, '')
+const SYMBOL_NAMES: Record<string, string> = {
+  'π': 'pi', '√': 'square root', '∞': 'infinity', '∑': 'summation', '∫': 'integral',
+  'Δ': 'delta', 'θ': 'theta', '×': 'multiplication', '÷': 'division', '±': 'plus or minus',
+  '=': 'equal', '≠': 'not equal', '≈': 'approximately equal', '<': 'less than', '>': 'greater than',
+  '≤': 'less than or equal', '≥': 'greater than or equal', '%': 'percent', '⊥': 'perpendicular',
+  '∥': 'parallel', '∠': 'angle', '°': 'degree',
+}
+export const norm = (s: string) => (SYMBOL_NAMES[String(s).trim()] ?? String(s)).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9]/g, '')
 
 export function isCorrectGuess(guess: string, team: Team): boolean {
   const g = norm(guess)
@@ -571,7 +578,7 @@ export const roundColors = (r: Round): Team => findTeam(r.c ?? r.o)!
 export const guessPrompt = (t: GuessTarget) => (t === 'both' ? 'Guess the Logo and the Colors!' : t === 'colors' ? 'Guess the Colors!' : 'Guess the Logo!')
 /** What one entry of a collection is called in search and result labels. */
 export const entryNoun = (league: League) =>
-  league === 'APP' ? 'app' : league === 'TV' ? 'channel' : league === 'FLAG' ? 'flag' : ['FOOD', 'BRAND', 'CAR', 'LUX', 'CLOTH'].includes(league) ? 'brand' : league === 'SOCCER' || league === 'MLS' ? 'club' : 'team'
+  league === 'ELEMENT' ? 'element' : league === 'MATH' ? 'symbol' : league === 'SHAPE' ? 'shape' : league === 'SPACE' ? 'object' : league === 'SCIENCE' ? 'science image' : league === 'APP' ? 'app' : league === 'TV' ? 'channel' : league === 'FLAG' ? 'flag' : ['FOOD', 'BRAND', 'CAR', 'LUX', 'CLOTH'].includes(league) ? 'brand' : league === 'SOCCER' || league === 'MLS' ? 'club' : 'team'
 /**
  * Where a team plays: the league and conference for NFL teams ("NFL - AFC"), the league label for other pro teams,
  * MLS clubs and fast food, the conference for college and high school, the domestic league for soccer clubs outside
@@ -581,7 +588,7 @@ export const entryNoun = (league: League) =>
 export const teamHint = (t: Team) =>
   t.league === 'COL' || t.league === 'HS' || (t.league === 'SOCCER' && t.conference !== 'Rest of World')
     ? t.conference
-    : t.league === 'PRO' || t.league === 'FLAG'
+    : t.league === 'PRO' || t.league === 'FLAG' || ['ELEMENT', 'MATH', 'SHAPE', 'SPACE', 'SCIENCE', 'NHL'].includes(t.league)
       ? `${LEAGUES[t.league].label} - ${t.conference}`
       : t.league === 'BRAND'
         ? `${t.conference} brand`
@@ -624,6 +631,11 @@ export const TEAM_POOLS: TeamPool[] = [
   { id: 'Cars', label: LEAGUES.CAR.label, league: 'CAR', match: (t) => t.league === 'CAR' },
   { id: 'Luxury', label: LEAGUES.LUX.label, league: 'LUX', match: (t) => t.league === 'LUX' },
   { id: 'Clothing', label: LEAGUES.CLOTH.label, league: 'CLOTH', match: (t) => t.league === 'CLOTH' },
+  { id: 'NHL', label: LEAGUES.NHL.label, league: 'NHL', match: (t) => t.league === 'NHL' },
+  { id: 'US States', label: 'US STATES', league: 'FLAG', match: (t) => t.league === 'FLAG' && t.conference === 'US States' },
+  ...(['ELEMENT', 'MATH', 'SHAPE', 'SPACE', 'SCIENCE'] as const).map((league) => ({
+    id: LEAGUES[league].label, label: LEAGUES[league].label, league, match: (t: Team) => t.league === league,
+  })),
   ...LEAGUES.COL.conferences.map((c) => ({ id: c, label: c, league: 'COL' as League, match: (t: Team) => t.league === 'COL' && t.conference === c })),
   ...LEAGUES.HS.conferences.map((c) => ({ id: c, label: c, league: 'HS' as League, match: (t: Team) => t.league === 'HS' && t.conference === c })),
 ]

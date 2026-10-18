@@ -8,6 +8,7 @@ Edits come from scripts/brand_artwork_sources.json and run in this order:
                paths is dropped; "115-192" names a run of siblings
   fill         root fill for one-color icons whose shapes rely on default black
   viewBox      reviewed crop around the remaining artwork
+  clipToViewBox enforce that crop even when CSS fits the SVG into a square tile
 Editor metadata is dropped and percentage rgb() colors become hex so the game can recolor them.
 
 Usage (review helpers):
@@ -30,7 +31,7 @@ XML = 'http://www.w3.org/XML/1998/namespace'
 ET.register_namespace('', SVG)
 ET.register_namespace('xlink', XLINK)
 EDITOR_ONLY = {'metadata', 'title', 'desc', 'namedview'}
-OPS = {'removeNodes', 'keepNodes', 'fill', 'viewBox'}
+OPS = {'removeNodes', 'keepNodes', 'fill', 'viewBox', 'clipToViewBox'}
 
 
 def node_at(root, path):
@@ -132,6 +133,25 @@ def import_brand_vector(raw, ops):
         # Pixel dimensions only describe the aspect ratio; CSS sizes the logo.
         root.set('width', number(box[2]))
         root.set('height', number(box[3]))
+    if 'clipToViewBox' in ops:
+        if ops['clipToViewBox'] is not True or 'viewBox' not in ops:
+            raise ValueError('clipToViewBox requires true and an explicit reviewed viewBox')
+        # A viewBox alone can expose neighboring wordmarks in the letterbox area.
+        # Keep source defs/styles in place and clip only the visible artwork.
+        ids = {node.get('id') for node in root.iter()}
+        clip_id = 'reviewed-artwork-crop'
+        while clip_id in ids:
+            clip_id += '-1'
+        defs = ET.Element(f'{{{SVG}}}defs')
+        clip = ET.SubElement(defs, f'{{{SVG}}}clipPath', {'id': clip_id, 'clipPathUnits': 'userSpaceOnUse'})
+        ET.SubElement(clip, f'{{{SVG}}}rect', dict(zip(('x', 'y', 'width', 'height'), map(number, box))))
+        group = ET.Element(f'{{{SVG}}}g', {'clip-path': f'url(#{clip_id})'})
+        for child in list(root):
+            if child.tag.rsplit('}', 1)[-1] not in {'defs', 'style'}:
+                root.remove(child)
+                group.append(child)
+        root.append(defs)
+        root.append(group)
     raw = ET.tostring(root, encoding='utf-8', xml_declaration=True) + b'\n'
     validate_vector(raw)
     return raw

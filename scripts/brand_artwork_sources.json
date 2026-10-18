@@ -8720,5 +8720,584 @@
       "fill": "#00102E",
       "viewBox": "228.316 125.616 131.868 111.068"
     }
+  },
+  {
+    "teamId": "BRAND-SLACK",
+    "id": "primary",
+    "label": "Symbol",
+    "sourceUrl": "https://api.iconify.design/logos/slack-icon.svg",
+    "sourcePage": "https://icon-sets.iconify.design/logos/slack-icon/",
+    "sourceSha256": "322a8feca7856681bd81e278a471ab1d1646a0286083012d94ca10509a3e3705",
+    "ops": {
+      "viewBox": "-6.385 -6.385 268.159 267.959"
+    }
+  },
+  {
+    "teamId": "BRAND-GITHUB",
+    "id": "primary",
+    "label": "Symbol",
+    "sourceUrl": "https://api.iconify.design/logos/github-icon.svg",
+    "sourcePage": "https://icon-sets.iconify.design/logos/github-icon/",
+    "sourceSha256": "db2a2493c8f4d0acba4f8f18e89e0b1b0b0f33aaf185de510e253b927c748c71",
+    "ops": {
+      "viewBox": "-6.400 -6.400 268.800 262.480"
+    }
+  },
+  {
+    "teamId": "BRAND-DROPBOX",
+    "id": "primary",
+    "label": "Symbol",
+    "sourceUrl": "https://api.iconify.design/logos/dropbox.svg",
+    "sourcePage": "https://icon-sets.iconify.design/logos/dropbox/",
+    "sourceSha256": "be7fb88c71c254549e54b41e482e32c97fb96794061040467c03b8c25a2f7adc",
+    "ops": {
+      "viewBox": "-6.400 -6.400 268.800 230.340"
+    }
+  },
+  {
+    "teamId": "BRAND-ATLASSIAN",
+    "id": "primary",
+    "label": "Symbol",
+    "sourceUrl": "https://api.iconify.design/logos/atlassian.svg",
+    "sourcePage": "https://icon-sets.iconify.design/logos/atlassian/",
+    "sourceSha256": "5078a0e14212cd03bdc5721921e6fdc0f54052b0545f514e5f164afe46a22c81",
+    "ops": {
+      "viewBox": "-6.390 -6.390 268.359 268.189"
+    }
+  },
+  {
+    "teamId": "BRAND-NVIDIA",
+    "id": "primary",
+    "label": "Symbol",
+    "sourceUrl": "https://api.iconify.design/logos/nvidia.svg",
+    "sourcePage": "https://icon-sets.iconify.design/logos/nvidia/",
+    "sourceSha256": "bc2a197a298c9f7d8e279ef8d96682034bc7586c9c77172633ca57c298fa8cb4",
+    "ops": {
+      "keepNodes": [
+        "1"
+      ],
+      "viewBox": "-3.675 -3.675 154.340 104.570"
+    }
+  },
+  {
+    "teamId": "BRAND-PAYPAL",
+    "id": "primary",
+    "label": "Symbol",
+    "sourceUrl": "https://api.iconify.design/logos/paypal.svg",
+    "sourcePage": "https://icon-sets.iconify.design/logos/paypal/",
+    "sourceSha256": "14052728f9f11edceba2a1791b8cb62b083008956e0c3c6c60d21f5f218d1769",
+    "ops": {
+      "viewBox": "-7.493 -6.703 270.067 315.976"
+    }
+  },
+  {
+    "teamId": "BRAND-FIGMA",
+    "id": "primary",
+    "label": "Symbol",
+    "sourceUrl": "https://api.iconify.design/logos/figma.svg",
+    "sourcePage": "https://icon-sets.iconify.design/logos/figma/",
+    "sourceSha256": "6876f8b8564ceed4a6d70ff1a2537cafdb1d90ed133486504c0804e110bfcdda",
+    "ops": {
+      "viewBox": "-9.600 -9.600 275.200 403.200"
+    }
+  },
+  {
+    "teamId": "BRAND-DOCKER",
+    "id": "primary",
+    "label": "Symbol",
+    "sourceUrl": "https://api.iconify.design/logos/docker-icon.svg",
+    "sourcePage": "https://icon-sets.iconify.design/logos/docker-icon/",
+    "sourceSha256": "d90e0e6bb208ee674fa76ccc46aa7d24b0fc5b3535d32eb227975e68e694a1d5",
+    "ops": {
+      "viewBox": "-6.400 -6.400 268.800 197.540"
+    }
+  },
+  {
+    "teamId": "BRAND-GITLAB",
+    "id": "primary",
+    "label": "Symbol",
+    "sourceUrl": "https://api.iconify.design/logos/gitlab-icon.svg",
+    "sourcePage": "https://icon-sets.iconify.design/logos/gitlab-icon/",
+    "sourceSha256": "a077ca2d1355183bdb997cef07224f0ecb0e2813ec04757ca129103848811531",
+    "ops": {
+      "viewBox": "-6.400 -6.400 268.800 259.290"
+    }
+  },
+  {
+    "teamId": "BRAND-UBUNTU",
+    "id": "primary",
+    "label": "Symbol",
+    "sourceUrl": "https://api.iconify.design/logos/ubuntu.svg",
+    "sourcePage": "https://icon-sets.iconify.design/logos/ubuntu/",
+    "sourceSha256": "6f712c07bcd00187205cfdcd7fd6776b986b6171b52f96c87c86c03d63e90287",
+    "ops": {
+      "viewBox": "-6.114 -6.384 268.139 268.129"
+    }
+  },
+  {
+    "teamId": "BRAND-FIREFOX",
+    "id": "primary",
+    "label": "Symbol",
+    "sourceUrl": "https://api.iconify.design/logos/firefox.svg",
+    "sourcePage": "https://icon-sets.iconify.design/logos/firefox/",
+    "sourceSha256": "f3a75fc7ad418420cb5f586d14459fc015e95f708421f65a727e82f79f8e4cd9",
+    "ops": {
+      "viewBox": "-5.316 -6.606 269.231 277.851"
+    }
+  },
+  {
+    "teamId": "BRAND-NOTION",
+    "id": "primary",
+    "label": "Symbol",
+    "sourceUrl": "https://api.iconify.design/logos/notion-icon.svg",
+    "sourcePage": "https://icon-sets.iconify.design/logos/notion-icon/",
+    "sourceSha256": "84e90b26739159510ec39ef34254df634ba176ec5612db71085dfb5b174f141f",
+    "ops": {
+      "viewBox": "-6.687 -6.687 269.373 280.844"
+    }
+  },
+  {
+    "teamId": "BRAND-REDHAT",
+    "id": "primary",
+    "label": "Symbol",
+    "sourceUrl": "https://api.iconify.design/logos/redhat-icon.svg",
+    "sourcePage": "https://icon-sets.iconify.design/logos/redhat-icon/",
+    "sourceSha256": "f3b00509811da39b143adb6c833bf8ae319ce76c1bbaa3929769c2d100d801d8",
+    "ops": {
+      "viewBox": "-6.400 -6.400 268.800 206.460"
+    }
+  },
+  {
+    "teamId": "BRAND-CLOUDFLARE",
+    "id": "primary",
+    "label": "Symbol",
+    "sourceUrl": "https://api.iconify.design/logos/cloudflare-icon.svg",
+    "sourcePage": "https://icon-sets.iconify.design/logos/cloudflare-icon/",
+    "sourceSha256": "da6003724731ef69dc8f06a25f3a2ad84189e48fde64c38e908a46a470a74689",
+    "ops": {
+      "viewBox": "-6.400 -6.400 268.800 129.800"
+    }
+  },
+  {
+    "teamId": "BRAND-ASANA",
+    "id": "primary",
+    "label": "Symbol",
+    "sourceUrl": "https://api.iconify.design/logos/asana-icon.svg",
+    "sourcePage": "https://icon-sets.iconify.design/logos/asana-icon/",
+    "sourceSha256": "49545b476863be786f8aebfe19d1c92b96bb17a9321af562ef09e8db2459350e",
+    "ops": {
+      "viewBox": "-6.400 -6.400 268.800 249.420"
+    }
+  },
+  {
+    "teamId": "BRAND-ZOOM",
+    "id": "primary",
+    "label": "Symbol",
+    "sourceUrl": "https://api.iconify.design/logos/zoom-icon.svg",
+    "sourcePage": "https://icon-sets.iconify.design/logos/zoom-icon/",
+    "sourceSha256": "28a062c95d517e5a395bb27fd279226fe4d30a85883d661a555501e79b4a7c75",
+    "ops": {
+      "viewBox": "-6.400 -6.400 268.800 268.800"
+    }
+  },
+  {
+    "teamId": "BRAND-STEAM",
+    "id": "primary",
+    "label": "Symbol",
+    "sourceUrl": "https://api.iconify.design/logos/steam.svg",
+    "sourcePage": "https://icon-sets.iconify.design/logos/steam/",
+    "sourceSha256": "a2b29cf0f52a96b4574346bf369a5a86a07b89646680b65a053f909c1c1097f7",
+    "ops": {
+      "viewBox": "-6.470 -6.470 268.940 271.730"
+    }
+  },
+  {
+    "teamId": "BRAND-SHOPIFY",
+    "id": "primary",
+    "label": "Symbol",
+    "sourceUrl": "https://api.iconify.design/logos/shopify.svg",
+    "sourcePage": "https://icon-sets.iconify.design/logos/shopify/",
+    "sourceSha256": "3fef52edf70933d426f920be9a337d783df741029db5d704e8db300e0e3a5c26",
+    "ops": {
+      "viewBox": "-7.223 -6.482 269.975 305.025"
+    }
+  },
+  {
+    "teamId": "BRAND-BP",
+    "id": "primary",
+    "label": "Symbol",
+    "sourceUrl": "https://cdn.worldvectorlogo.com/logos/bp-3.svg",
+    "sourcePage": "https://worldvectorlogo.com/logo/bp-3",
+    "sourceSha256": "5ef39f8bb15524bfcc3a52bb249fc9a1eeba263a1ec417ab37b7811fa7e04a92",
+    "ops": {
+      "keepNodes": [
+        "0/1-4"
+      ],
+      "viewBox": "25.139 43.519 147.802 149.972"
+    }
+  },
+  {
+    "teamId": "BRAND-ATT",
+    "id": "primary",
+    "label": "Symbol",
+    "sourceUrl": "https://cdn.worldvectorlogo.com/logos/at-t-5.svg",
+    "sourcePage": "https://worldvectorlogo.com/logo/at-t-5",
+    "sourceSha256": "12d8ace8f0977004a51c2b3e972d44fb43a5b3031a8b47682c077bb861983928",
+    "ops": {
+      "viewBox": "75 96 204 179",
+      "clipToViewBox": true
+    }
+  },
+  {
+    "teamId": "BRAND-UNILEVER",
+    "id": "primary",
+    "label": "Symbol",
+    "sourceUrl": "https://cdn.worldvectorlogo.com/logos/unilever-2.svg",
+    "sourcePage": "https://worldvectorlogo.com/logo/unilever-2",
+    "sourceSha256": "ac791fbef05544b08299308938332dc7ddc0456662d257e257b21c4d64970c65",
+    "ops": {
+      "keepNodes": [
+        "1"
+      ],
+      "viewBox": "22 14 149 129",
+      "clipToViewBox": true
+    }
+  },
+  {
+    "teamId": "BRAND-DEERE",
+    "id": "primary",
+    "label": "Symbol",
+    "sourceUrl": "https://cdn.simpleicons.org/johndeere",
+    "sourcePage": "https://simpleicons.org/?q=johndeere",
+    "sourceSha256": "6cc926d47cc1db8a5f2e1e5ffb9bf67701bd76b1f87bbcf1f0ff0f39870d21f9",
+    "ops": {
+      "viewBox": "-0.600 0.560 25.200 22.880"
+    }
+  },
+  {
+    "teamId": "BRAND-CHEVRON",
+    "id": "primary",
+    "label": "Symbol",
+    "sourceUrl": "https://cdn.worldvectorlogo.com/logos/chevron.svg",
+    "sourcePage": "https://worldvectorlogo.com/logo/chevron",
+    "sourceSha256": "b21f7def6b75e2e184f979f4da92d54ea674390cfec2b02bb15e9700a4ca0d2b",
+    "ops": {
+      "keepNodes": [
+        "0/1-2"
+      ],
+      "viewBox": "25 48 144 135",
+      "clipToViewBox": true
+    }
+  },
+  {
+    "teamId": "BRAND-NESTLE",
+    "id": "primary",
+    "label": "Symbol",
+    "sourceUrl": "https://cdn.worldvectorlogo.com/logos/nestle-3.svg",
+    "sourcePage": "https://worldvectorlogo.com/logo/nestle-3",
+    "sourceSha256": "b081f5078690e341181e08c4f5342a78f570f1c1bed7e8c9de3639f5587ddb73",
+    "ops": {
+      "keepNodes": [
+        "0/3-8"
+      ],
+      "viewBox": "1 70 77 53",
+      "clipToViewBox": true
+    }
+  },
+  {
+    "teamId": "BRAND-OPERA",
+    "id": "primary",
+    "label": "Symbol",
+    "sourceUrl": "https://api.iconify.design/logos/opera.svg",
+    "sourcePage": "https://icon-sets.iconify.design/logos/opera/",
+    "sourceSha256": "9b58070c6bfebb79f5fd867f5db9fd34553a55e66f213ee06beaf8ad29e3f59f",
+    "ops": {}
+  },
+  {
+    "teamId": "FOOD-PANERA",
+    "id": "primary",
+    "label": "Symbol",
+    "sourceUrl": "https://cdn.worldvectorlogo.com/logos/panera-bread.svg",
+    "sourcePage": "https://worldvectorlogo.com/logo/panera-bread",
+    "sourceSha256": "97e1f2ff6b50bbbad490b405aa1b27866485557349b0ac4ac7d80f75188970c8",
+    "ops": {
+      "keepNodes": [
+        "0/6-12"
+      ],
+      "viewBox": "15 73 58 49",
+      "clipToViewBox": true
+    }
+  },
+  {
+    "teamId": "FOOD-CHILIS",
+    "id": "primary",
+    "label": "Symbol",
+    "sourceUrl": "https://cdn.worldvectorlogo.com/logos/chilis.svg",
+    "sourcePage": "https://worldvectorlogo.com/logo/chilis",
+    "sourceSha256": "fef097b2ede2d507bb899f0934d5c0ad14ede7808852bda02fbf269cfe035101",
+    "ops": {
+      "viewBox": "-22.945 -22.945 984.700 547.841"
+    }
+  },
+  {
+    "teamId": "FOOD-APPLEBEES",
+    "id": "primary",
+    "label": "Symbol",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Special:FilePath/AB%20Brand%20Refresh%20Logo%20R.svg",
+    "sourcePage": "https://en.wikipedia.org/wiki/File:AB%20Brand%20Refresh%20Logo%20R.svg",
+    "sourceSha256": "bbd89fcd8ff6f613e15714369e6b51812216f0a3befdae0bec4cf65f8c9ef75b",
+    "ops": {
+      "keepNodes": [
+        "0/0",
+        "0/1",
+        "1"
+      ],
+      "viewBox": "47.383 -2.047 73.244 85.964"
+    }
+  },
+  {
+    "teamId": "FOOD-BR",
+    "id": "primary",
+    "label": "Symbol",
+    "sourceUrl": "https://cdn.worldvectorlogo.com/logos/br31-3.svg",
+    "sourcePage": "https://worldvectorlogo.com/logo/br31-3",
+    "sourceSha256": "506804702d100cc2d0d1b9bf16c3a34975b07f0ff3410edc4f821addec842cd2",
+    "ops": {
+      "removeNodes": [
+        "4",
+        "5"
+      ],
+      "viewBox": "-2.246 -2.206 92.652 64.462"
+    }
+  },
+  {
+    "teamId": "FOOD-BWW",
+    "id": "primary",
+    "label": "Symbol",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Special:FilePath/Buffalo%20Wild%20Wings%20%28logo%2C%20vertical%29.svg",
+    "sourcePage": "https://en.wikipedia.org/wiki/File:Buffalo%20Wild%20Wings%20%28logo%2C%20vertical%29.svg",
+    "sourceSha256": "e737f85c841e3d968a607ed2e9fe78d1760379e3430b4ce76e75ae55df76f247",
+    "ops": {
+      "keepNodes": [
+        "0-5"
+      ],
+      "viewBox": "-1.170 -1.170 49.130 49.050"
+    }
+  },
+  {
+    "teamId": "FOOD-OLIVE",
+    "id": "primary",
+    "label": "Symbol",
+    "sourceUrl": "https://cdn.worldvectorlogo.com/logos/olive-garden.svg",
+    "sourcePage": "https://worldvectorlogo.com/logo/olive-garden",
+    "sourceSha256": "1a08df0093ce0cabebda319c2a0e579c7fc6b17147b4ff762059acbd8a93a061",
+    "ops": {
+      "keepNodes": [
+        "0/1",
+        "0/2",
+        "0/9-25"
+      ],
+      "viewBox": "108.958 61.628 73.154 62.493"
+    }
+  },
+  {
+    "teamId": "FOOD-LOBSTER",
+    "id": "primary",
+    "label": "Symbol",
+    "sourceUrl": "https://cdn.worldvectorlogo.com/logos/red-lobster.svg",
+    "sourcePage": "https://worldvectorlogo.com/logo/red-lobster",
+    "sourceSha256": "2d229da22d3f14ad39d67eb6d6c02feaec4dd4827e191eb4f186846c2291fb36",
+    "ops": {
+      "keepNodes": [
+        "0/3-8"
+      ],
+      "viewBox": "96 49 96 61",
+      "clipToViewBox": true
+    }
+  },
+  {
+    "teamId": "FOOD-OUTBACK",
+    "id": "primary",
+    "label": "Wordmark",
+    "sourceUrl": "https://cdn.worldvectorlogo.com/logos/outback-steakhouse.svg",
+    "sourcePage": "https://worldvectorlogo.com/logo/outback-steakhouse",
+    "sourceSha256": "8107671dcbe5b8da4a47e1a3021e9277d799af19f8d51759ab7a33ad2f6c63a2",
+    "ops": {
+      "removeNodes": [
+        "0/0"
+      ],
+      "viewBox": "4.116 61.596 184.537 69.567"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "FOOD-TEXAS",
+    "id": "primary",
+    "label": "Symbol",
+    "sourceUrl": "https://cdn.worldvectorlogo.com/logos/texas-roadhouse.svg",
+    "sourcePage": "https://worldvectorlogo.com/logo/texas-roadhouse",
+    "sourceSha256": "f19c6d69e3f721c2a1326478a19789f210383c0376dc4808dcbc88ae227649ea",
+    "ops": {
+      "keepNodes": [
+        "12-22"
+      ],
+      "viewBox": "100.376 5.447 49.287 49.287"
+    }
+  },
+  {
+    "teamId": "FOOD-IHOP",
+    "id": "primary",
+    "label": "Wordmark",
+    "sourceUrl": "https://cdn.worldvectorlogo.com/logos/ihop.svg",
+    "sourcePage": "https://worldvectorlogo.com/logo/ihop",
+    "sourceSha256": "32be44b0a8b0b986c0cabc0045e5a47ad2ad1cb48b6cb4e909f304826485cd5c",
+    "ops": {
+      "removeNodes": [
+        "0"
+      ],
+      "viewBox": "4.106 43.406 184.537 105.947"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "FOOD-WAFFLE",
+    "id": "primary",
+    "label": "Wordmark",
+    "sourceUrl": "https://cdn.worldvectorlogo.com/logos/waffle-house.svg",
+    "sourcePage": "https://worldvectorlogo.com/logo/waffle-house",
+    "sourceSha256": "c63f9b0c8530877f38c1e4ff5edfa2b908302ea409c9bfe32a041906ae71141c",
+    "ops": {
+      "removeNodes": [
+        "0/0"
+      ],
+      "viewBox": "4.106 65.136 184.537 62.488"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "FOOD-KRISPY",
+    "id": "primary",
+    "label": "Wordmark",
+    "sourceUrl": "https://cdn.worldvectorlogo.com/logos/krispy-kreme.svg",
+    "sourcePage": "https://worldvectorlogo.com/logo/krispy-kreme",
+    "sourceSha256": "956ec4ac58deda20f00b497a6860f4ab2006a42ebee1f49ae1fb50242acf1b2e",
+    "ops": {
+      "removeNodes": [
+        "0/0"
+      ],
+      "viewBox": "-1.847 72.333 196.445 48.095"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "FOOD-CINNABON",
+    "id": "primary",
+    "label": "Wordmark",
+    "sourceUrl": "https://cdn.worldvectorlogo.com/logos/cinnabon.svg",
+    "sourcePage": "https://worldvectorlogo.com/logo/cinnabon",
+    "sourceSha256": "2f7ab8d25fdd4725bf7c5d29758fc2c78e440c342ae84bceffd94c28438405d8",
+    "ops": {
+      "viewBox": "-2.393 -2.393 100.506 35.386"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "FOOD-AUNTIE",
+    "id": "primary",
+    "label": "Symbol",
+    "sourceUrl": "https://cdn.worldvectorlogo.com/logos/auntie-annes.svg",
+    "sourcePage": "https://worldvectorlogo.com/logo/auntie-annes",
+    "sourceSha256": "13ab9bdd1a988bdd9025631435e67cecb6095d5e229bf2c7ac5891d8e1798708",
+    "ops": {
+      "keepNodes": [
+        "2-8"
+      ],
+      "viewBox": "-4 280 203 240",
+      "clipToViewBox": true
+    }
+  },
+  {
+    "teamId": "FOOD-DELTACO",
+    "id": "primary",
+    "label": "Symbol",
+    "sourceUrl": "https://cdn.worldvectorlogo.com/logos/del-taco.svg",
+    "sourcePage": "https://worldvectorlogo.com/logo/del-taco",
+    "sourceSha256": "4437d359475f16ffc081b17e043ce465643dfefcad6ac098cbfcb6c58ebb2f46",
+    "ops": {
+      "keepNodes": [
+        "0/1"
+      ],
+      "viewBox": "37.499 54.379 69.773 42.752"
+    }
+  },
+  {
+    "teamId": "FOOD-QUIZNOS",
+    "id": "primary",
+    "label": "Symbol",
+    "sourceUrl": "https://cdn.worldvectorlogo.com/logos/quiznos.svg",
+    "sourcePage": "https://worldvectorlogo.com/logo/quiznos",
+    "sourceSha256": "5e4fa42616b3738776a8a611b253ddc3f9bd2333d9932cd7b8df1fcd522f49f0",
+    "ops": {
+      "keepNodes": [
+        "0",
+        "2",
+        "3"
+      ],
+      "viewBox": "206.848 -44.592 1871.615 1172.954"
+    }
+  },
+  {
+    "teamId": "FOOD-SHAKE",
+    "id": "primary",
+    "label": "Symbol",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Special:FilePath/Shake%20Shack%20logo.svg",
+    "sourcePage": "https://en.wikipedia.org/wiki/File:Shake%20Shack%20logo.svg",
+    "sourceSha256": "8ba47cd0ccece4e1c38cbe600a420b60ae828451831f9f2a8cd1f86f937c1b6a",
+    "ops": {
+      "keepNodes": [
+        "1",
+        "3/9/0/0-4"
+      ],
+      "viewBox": "214.660 -3.100 118.880 130.200"
+    }
+  },
+  {
+    "teamId": "FOOD-WINGSTOP",
+    "id": "primary",
+    "label": "Wordmark",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Special:FilePath/Wingstop%20logo.svg",
+    "sourcePage": "https://en.wikipedia.org/wiki/File:Wingstop%20logo.svg",
+    "sourceSha256": "240fa2750b538250d87f6f502b263ba863e01b6f7a776b19db59149ae5ec9276",
+    "ops": {
+      "viewBox": "-3.541 -3.541 148.712 56.032"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "FOOD-JAMBA",
+    "id": "primary",
+    "label": "Symbol",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Special:FilePath/Jamba%20logo.svg",
+    "sourcePage": "https://en.wikipedia.org/wiki/File:Jamba%20logo.svg",
+    "sourceSha256": "99e3a5b1baa4b6001dbcd5fef97a01c9934ded8ac7d947dc3ae2e6ae226fb272",
+    "ops": {
+      "removeNodes": [
+        "1",
+        "6"
+      ],
+      "viewBox": "-4.442 -4.442 151.284 186.564"
+    }
+  },
+  {
+    "teamId": "FOOD-DENNYS",
+    "id": "primary",
+    "label": "Wordmark",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Special:FilePath/Denny%27s_logo.svg",
+    "sourcePage": "https://en.wikipedia.org/wiki/File:Denny%27s_logo.svg",
+    "sourceSha256": "c414bd28ceabbf0f02a3f4e559ca09f7a1688e9c19f4fddbaa251149d4f9ca23",
+    "ops": {
+      "viewBox": "2.659 -0.811 295.281 152.711"
+    },
+    "showsName": true
   }
 ]

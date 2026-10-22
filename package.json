@@ -48,6 +48,8 @@
     "release": "semantic-release",
     "logos:nhl": "python3 scripts/download_brand_logos.py --league NHL",
     "teams:nhl": "python3 scripts/build_brand_teams.py --league NHL",
+    "logos:wnba": "python3 scripts/download_brand_logos.py --league WNBA",
+    "teams:wnba": "python3 scripts/build_brand_teams.py --league WNBA",
     "teams:education": "python3 scripts/build_education.py"
   },
   "dependencies": {

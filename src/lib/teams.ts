@@ -1,6 +1,6 @@
 import data from './teams.json'
 
-export type League = 'PRO' | 'NBA' | 'MLB' | 'SOCCER' | 'MLS' | 'COL' | 'HS' | 'FOOD' | 'BRAND' | 'FLAG' | 'APP' | 'TV' | 'CAR' | 'LUX' | 'CLOTH' | 'NHL' | 'ELEMENT' | 'MATH' | 'SHAPE' | 'SPACE' | 'SCIENCE'
+export type League = 'PRO' | 'NBA' | 'MLB' | 'SOCCER' | 'MLS' | 'COL' | 'HS' | 'FOOD' | 'BRAND' | 'FLAG' | 'APP' | 'TV' | 'CAR' | 'LUX' | 'CLOTH' | 'NHL' | 'ELEMENT' | 'MATH' | 'SHAPE' | 'SPACE' | 'SCIENCE' | 'WNBA'
 
 export interface LogoVariant {
   id: string
@@ -588,7 +588,7 @@ export const entryNoun = (league: League) =>
 export const teamHint = (t: Team) =>
   t.league === 'COL' || t.league === 'HS' || (t.league === 'SOCCER' && t.conference !== 'Rest of World')
     ? t.conference
-    : t.league === 'PRO' || t.league === 'FLAG' || ['ELEMENT', 'MATH', 'SHAPE', 'SPACE', 'SCIENCE', 'NHL'].includes(t.league)
+    : t.league === 'PRO' || t.league === 'FLAG' || ['ELEMENT', 'MATH', 'SHAPE', 'SPACE', 'SCIENCE', 'NHL', 'WNBA'].includes(t.league)
       ? `${LEAGUES[t.league].label} - ${t.conference}`
       : t.league === 'BRAND'
         ? `${t.conference} brand`
@@ -632,6 +632,7 @@ export const TEAM_POOLS: TeamPool[] = [
   { id: 'Luxury', label: LEAGUES.LUX.label, league: 'LUX', match: (t) => t.league === 'LUX' },
   { id: 'Clothing', label: LEAGUES.CLOTH.label, league: 'CLOTH', match: (t) => t.league === 'CLOTH' },
   { id: 'NHL', label: LEAGUES.NHL.label, league: 'NHL', match: (t) => t.league === 'NHL' },
+  { id: 'WNBA', label: LEAGUES.WNBA.label, league: 'WNBA', match: (t) => t.league === 'WNBA' },
   { id: 'US States', label: 'US STATES', league: 'FLAG', match: (t) => t.league === 'FLAG' && t.conference === 'US States' },
   ...(['ELEMENT', 'MATH', 'SHAPE', 'SPACE', 'SCIENCE'] as const).map((league) => ({
     id: LEAGUES[league].label, label: LEAGUES[league].label, league, match: (t: Team) => t.league === league,

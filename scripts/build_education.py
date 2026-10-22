@@ -50,6 +50,124 @@ def circle(x,y,r,fill=INK):
 def polygon(n):
     return ' '.join(f'{128+92*math.cos(-math.pi/2+i*2*math.pi/n):.3f},{128+92*math.sin(-math.pi/2+i*2*math.pi/n):.3f}' for i in range(n))
 
+# Science figures are drawn like textbook illustrations: one thin ink outline weight,
+# white bodies, a flat accent tint for liquids, poles, mercury and organelles, and
+# real part details (graduations, a nucleus, base pairs) instead of icon strokes.
+# Every figure paints all three palette slots, so a remix needs no backdrop tile.
+OUTLINE, DETAIL, HAIRLINE = 5, 3, 2
+def solid(body, fill=WHITE, weight=OUTLINE):
+    return f'<g fill="{fill}" stroke="{INK}" stroke-width="{weight}" stroke-linecap="round" stroke-linejoin="round">{body}</g>'
+def ink(body, weight=DETAIL): return line(body, INK, weight)
+def dot(x, y, r, fill=ACCENT, weight=DETAIL): return solid(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="{r}"/>', fill, weight)
+def rect(x, y, w, h, rx=0): return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{rx}"/>'
+
+def atom():
+    """Bohr-style schematic: a nucleus cluster, three orbits and an electron on each."""
+    art = ink(''.join(f'<ellipse cx="128" cy="128" rx="102" ry="36" transform="rotate({a} 128 128)"/>' for a in (0, 60, 120)))
+    for a, t in ((0, 200), (60, 320), (120, 80)):
+        x, y = 102*math.cos(math.radians(t)), 36*math.sin(math.radians(t)); r = math.radians(a)
+        art += dot(128 + x*math.cos(r) - y*math.sin(r), 128 + x*math.sin(r) + y*math.cos(r), 7)
+    art += ''.join(dot(128+15*math.cos(math.radians(90+60*i)), 128+15*math.sin(math.radians(90+60*i)), 11, (ACCENT, WHITE)[i % 2]) for i in range(6))
+    return art + dot(128, 128, 11)
+
+def magnet():
+    """Horseshoe magnet with tinted pole faces and field lines arcing between them."""
+    field = ''.join(f'<path d="M{72+i*9} 42C{72+i*9} {6+i*13} {184-i*9} {6+i*13} {184-i*9} 42"/>' for i in range(3))
+    body = solid('<path d="M56 52V150C56 206 200 206 200 150V52H160V150C160 170 96 170 96 150V52Z"/>')
+    return ink(field, 2.5) + body + solid(rect(56, 52, 40, 36) + rect(160, 52, 40, 36), ACCENT)
+
+def dna():
+    """Double helix: two outlined ribbons (one tinted) joined by base-pair rungs, back half-turns drawn first."""
+    top, bottom, start, turns = 30, 226, math.pi/4, 1.75
+    stop = start + 2*math.pi*turns
+    x = lambda th, s: 128 + s*44*math.sin(th)
+    y = lambda th: top + (bottom-top)*(th-start)/(stop-start)
+    # Segments start and end exactly where the strands cross, so butt-capped ends tuck under the front ribbon.
+    bounds = [start] + [th for th in (math.pi/2 + k*math.pi for k in range(4)) if start < th < stop] + [stop]
+    def ribbon(front):
+        parts = ''
+        for s, tint in ((1, ACCENT), (-1, WHITE)):
+            for a, b in zip(bounds, bounds[1:]):
+                if (s*math.cos((a+b)/2) >= 0) != front: continue
+                pts = [(x(a+(b-a)*i/40, s), y(a+(b-a)*i/40)) for i in range(41)]
+                d = 'M' + 'L'.join(f'{px:.1f} {py:.1f}' for px, py in pts)
+                caps = ''.join(f'<circle cx="{px:.1f}" cy="{py:.1f}" r="5.5" fill="{INK}"/><circle cx="{px:.1f}" cy="{py:.1f}" r="2.5" fill="{tint}"/>'
+                               for th, (px, py) in ((a, pts[0]), (b, pts[-1])) if th in (start, stop))
+                parts += caps + f'<g fill="none" stroke-linecap="butt"><path d="{d}" stroke="{INK}" stroke-width="11"/><path d="{d}" stroke="{tint}" stroke-width="5"/></g>'
+        return parts
+    rungs = ''
+    for i in range(1, 16):
+        th = start + (stop-start)*i/16; xa, xb = x(th, 1), x(th, -1); inset = 5 if xa < xb else -5
+        if abs(xa-xb) > 24: rungs += f'<path d="M{xa+inset:.1f} {y(th):.1f}H{xb-inset:.1f}"/>'
+    return ribbon(False) + ink(rungs) + ribbon(True)
+
+def cell():
+    """Animal cell: membrane, tinted nucleus with nucleolus, endoplasmic reticulum, mitochondria and vesicles."""
+    art = solid('<path d="M128 36C180 34 226 66 230 112C234 160 206 222 140 226C84 230 30 196 26 140C22 86 72 38 128 36Z"/>')
+    art += solid('<circle cx="116" cy="118" r="34"/>', ACCENT) + dot(108, 110, 9, WHITE)
+    art += ink('<path d="M66 150c10-12 30-12 40 0M60 164c14-16 42-16 56 0"/>', HAIRLINE)
+    for cx, cy, a in ((178, 92, -30), (170, 176, 20)):
+        art += f'<g transform="rotate({a} {cx} {cy})">' + solid(f'<ellipse cx="{cx}" cy="{cy}" rx="26" ry="12"/>', WHITE, DETAIL)
+        art += ink(f'<path d="M{cx-18} {cy}q4-7 8 0t8 0t8 0t8 0"/>', HAIRLINE) + '</g>'
+    return art + ''.join(dot(x, y, 5, ACCENT, HAIRLINE) for x, y in ((74, 94), (92, 196), (138, 198), (200, 136)))
+
+def flask():
+    """Erlenmeyer flask: tinted liquid with a meniscus line, graduations and a glass highlight."""
+    body = 'M104 28H152V40H148V100L214 206Q220 224 200 224H56Q36 224 42 206L108 100V40H104Z'
+    level = 162; xl = 108 - 66*(level-100)/106; xr = 148 + 66*(level-100)/106
+    art = solid(f'<path d="{body}"/>') + f'<path d="M{xl:.1f} {level}H{xr:.1f}L214 206Q220 224 200 224H56Q36 224 42 206Z" fill="{ACCENT}"/>'
+    art += ink(f'<path d="M{xl:.1f} {level}H{xr:.1f}"/>') + line('<path d="M98 120L64 176"/>', WHITE, 4)
+    ticks = ''.join(f'<path d="M{148+66*(y-100)/106:.1f} {y}h{-16 if y % 40 == 0 else -9}"/>' for y in range(120, 201, 20))
+    return art + ink(ticks, HAIRLINE) + ink(f'<path d="{body}"/>', OUTLINE)
+
+def beaker():
+    """Griffin beaker with a pouring spout, tinted liquid, graduations and a glass highlight."""
+    body = 'M66 52V210Q66 222 78 222H178Q190 222 190 210V52'
+    art = solid(f'<path d="{body}Z"/>') + f'<path d="M66 134H190V210Q190 222 178 222H78Q66 222 66 210Z" fill="{ACCENT}"/>'
+    art += ink('<path d="M66 134H190"/>') + line('<path d="M80 72V200"/>', WHITE, 4)
+    ticks = ''.join(f'<path d="M190 {y}h{-18 if y % 40 == 14 else -10}"/>' for y in range(74, 200, 20))
+    return art + ink(ticks, HAIRLINE) + ink(f'<path d="{body}"/>', OUTLINE) + ink('<path d="M196 44H74Q62 44 54 34"/>', OUTLINE)
+
+def testtube():
+    """Upright test tube with a rolled rim, tinted liquid, bubbles and a glass highlight."""
+    body = 'M100 44V192A28 28 0 0 0 156 192V44'
+    art = solid(f'<path d="{body}Z"/>') + f'<path d="M100 118H156V192A28 28 0 0 1 100 192Z" fill="{ACCENT}"/>'
+    art += ink('<path d="M100 118H156"/>') + line('<path d="M112 60V200"/>', WHITE, 4)
+    art += dot(134, 170, 5, WHITE, HAIRLINE) + dot(140, 148, 3, WHITE, HAIRLINE) + ink(f'<path d="{body}"/>', OUTLINE)
+    return art + solid(rect(92, 34, 72, 10, 5))
+
+def thermometer():
+    """Glass thermometer: capillary, tinted mercury column and bulb, and a graduated scale."""
+    art = solid('<path d="M110 50A18 18 0 0 1 146 50V165A34 34 0 1 1 110 165Z"/>') + ink('<path d="M128 70V190"/>', HAIRLINE)
+    art += line('<path d="M128 84V194"/>', ACCENT, 8) + circle(128, 194, 22, ACCENT)
+    return art + ink(''.join(f'<path d="M152 {y}h{16 if y % 50 == 10 else 8}"/>' for y in range(60, 161, 10)), HAIRLINE)
+
+def microscope():
+    """Compound microscope in side view: base, curved arm, focus knob, mirror, tinted stage with a slide, tilted body tube."""
+    art = solid(rect(40, 208, 176, 24, 8))
+    arm = '<path d="M172 214V150C172 112 152 104 140 96"/>'
+    art += line(arm, INK, 22) + line(arm, WHITE, 12)
+    art += ink('<path d="M114 186H172"/>', OUTLINE) + solid('<circle cx="100" cy="186" r="14"/>') + ink('<path d="M92 176L108 196"/>', HAIRLINE)
+    art += solid(rect(60, 146, 116, 12, 2), ACCENT) + solid(rect(96, 136, 44, 10, 2), WHITE, DETAIL) + dot(176, 122, 12, ACCENT, OUTLINE)
+    tube = solid(rect(104, 20, 28, 92, 3)) + solid(rect(98, 10, 40, 16, 4), ACCENT)
+    tube += solid('<path d="M104 112H132L124 130H112Z"/>') + solid(rect(111, 130, 14, 18, 2), ACCENT, DETAIL)
+    return art + f'<g transform="rotate(-20 118 110)">{tube}</g>'
+
+def telescope():
+    """Refracting telescope on a tripod: tube with tinted lens cell and eyepiece, finder scope, focuser and mount."""
+    scope = solid(rect(48, 96, 152, 28, 4)) + solid(rect(192, 90, 26, 40, 4), ACCENT) + solid(rect(28, 101, 22, 18, 3), ACCENT, DETAIL)
+    scope += solid(rect(100, 84, 40, 10, 3), WHITE, DETAIL) + solid(rect(116, 124, 24, 14, 2), WHITE, DETAIL)
+    art = f'<g transform="rotate(-30 128 110)">{scope}</g>' + ink('<path d="M126 138L72 232M126 138L182 232M126 138V228M96 196H156"/>', OUTLINE)
+    return art + dot(126, 140, 9, ACCENT, OUTLINE)
+
+def science_figures():
+    return {
+      'ATOM':('Atom','Physics',atom()),'MAGNET':('Magnet','Physics',magnet()),'TELESCOPE':('Telescope','Physics',telescope()),
+      'DNA':('DNA','Biology',dna()),'CELL':('Cell','Biology',cell()),
+      'FLASK':('Flask','Lab equipment',flask()),'BEAKER':('Beaker','Lab equipment',beaker()),'TESTTUBE':('Test tube','Lab equipment',testtube()),
+      'THERMOMETER':('Thermometer','Lab equipment',thermometer()),'MICROSCOPE':('Microscope','Lab equipment',microscope()),
+    }
+
 entries=[]; assets=[]
 def add(league, abbr, name, group, body, aliases=(), unused=(), alternates=(), palette=PALETTE):
     folder=league.lower();path=f'/logos/svg/education/{folder}/{abbr.lower()}.svg'
@@ -122,21 +240,9 @@ def build():
     add('SPACE','MOON','Moon','Other objects',f'<path fill="{INK}" d="M172 30A99 99 0 1 0 220 170A93 93 0 0 1 172 30Z"/>',['Luna','crescent moon'],[1,2])
     add('SPACE','COMET','Comet','Other objects',circle(71,184,35)+line('<path d="M58 147 153 35 M96 169 222 84 M85 143 209 42"/>'),[],[1,2])
     add('SPACE','GALAXY','Galaxy','Other objects',circle(128,128,20)+line('<path d="M128 112C192 45 244 119 181 171C117 225 29 170 57 108C77 65 152 48 190 91 M128 144C64 211 12 137 75 85"/>'),['spiral galaxy'],[1,2])
-    science={
-      'ATOM':('Atom','Physics','<ellipse cx="128" cy="128" rx="106" ry="40"/><ellipse cx="128" cy="128" rx="106" ry="40" transform="rotate(60 128 128)"/><ellipse cx="128" cy="128" rx="106" ry="40" transform="rotate(120 128 128)"/>',circle(128,128,15)),
-      'MAGNET':('Magnet','Physics','<path d="M48 40V152C48 249 208 249 208 152V40H160V152C160 184 96 184 96 152V40Z M48 85H96 M160 85H208"/>',''),
-      'DNA':('DNA','Biology','<path d="M80 24C80 76 176 76 176 128S80 180 80 232 M176 24C176 76 80 76 80 128S176 180 176 232 M80 24H176 M100 50H156 M100 102H156 M80 128H176 M100 154H156 M100 206H156 M80 232H176"/>',''),
-      'CELL':('Cell','Biology','<ellipse cx="128" cy="128" rx="103" ry="83"/><circle cx="135" cy="125" r="30"/><path d="M61 92q23-25 28 1t-22 8 M157 173q23-25 28 1t-22 8"/>',circle(135,125,9)),
-      'FLASK':('Flask','Lab equipment','<path d="M100 28H156 M108 28V96L42 205Q36 224 56 224H200Q220 224 214 205L148 96V28 M74 159H182"/>',''),
-      'BEAKER':('Beaker','Lab equipment','<path d="M62 36H194L181 58V216H75V58Z M75 142H181 M142 80H181 M154 108H181 M154 174H181"/>',''),
-      'TESTTUBE':('Test tube','Lab equipment','<path d="M133 33 189 65 M143 39 55 191C32 233 88 258 111 219L199 66 M88 135 146 163"/>',''),
-      'THERMOMETER':('Thermometer','Lab equipment','<path d="M108 164V47A20 20 0 0 1 148 47V164A39 39 0 1 1 108 164Z M128 77V192 M168 67H189 M168 97H183 M168 127H189"/>',circle(128,194,15)),
-      'MICROSCOPE':('Microscope','Lab equipment','<path d="M83 32 151 72 128 112 60 72Z M116 35 133 7 162 24 145 52 M151 96C240 109 211 207 147 211 M62 152H152 M98 152V209 M56 224H205"/>',''),
-      'TELESCOPE':('Telescope','Physics','<path d="M39 106 176 41 201 94 64 159Z M176 41 192 34 219 91 201 99 M38 119 21 127 33 151 51 143 M128 132V173 M128 173 80 232 M128 173 176 232 M128 173V232"/>',''),
-    }
-    for ab,(name,group,art,filled) in science.items():
+    for ab,(name,group,art) in science_figures().items():
         aliases={'DNA':['deoxyribonucleic acid','double helix'],'FLASK':['Erlenmeyer flask','conical flask'],'TESTTUBE':['testtube']}.get(ab,[])
-        add('SCIENCE',ab,name,group,line(art,weight=8)+filled,aliases,[1,2])
+        add('SCIENCE',ab,name,group,art,aliases)
     text=TEAMS_JSON.read_text();data=json.loads(text)
     old=[t for t in data['teams'] if t['league'] not in LEAGUES]
     start=text.index('"teams": [');end=text.index('\n  ]',start)

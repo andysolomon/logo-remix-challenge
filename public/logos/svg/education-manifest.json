@@ -1223,43 +1223,43 @@
     },
     {
       "path": "/logos/svg/education/science/atom.svg",
-      "sha256": "76b5758abe9ce8fc0777595d40b72b61175e9f57d8ff868ffe59edee285a2326"
+      "sha256": "8d09de0247445f0c9fe109d9c4455100fec6d2dd5ccc6a27bc094d71e9afed8b"
     },
     {
       "path": "/logos/svg/education/science/magnet.svg",
-      "sha256": "0ac749efdfca4b4dc43d37c694547c8cff7d3d3e9a4dce5d4d450ad90247639f"
-    },
-    {
-      "path": "/logos/svg/education/science/dna.svg",
-      "sha256": "1912d726f07611aefc887e1f29a09ae1451689604f78fc95debf4483109735ad"
-    },
-    {
-      "path": "/logos/svg/education/science/cell.svg",
-      "sha256": "4c2f6f3ca3cb0cd758e2d92c684f8dbc1137cac9958a957fdaf1de7a121440c0"
-    },
-    {
-      "path": "/logos/svg/education/science/flask.svg",
-      "sha256": "aae4fa57c10d80010b05901a59de3f064e967dd2866cbb2c73a2374ed0dd6d66"
-    },
-    {
-      "path": "/logos/svg/education/science/beaker.svg",
-      "sha256": "a6538dad4c37bb1e28d8bfae39230b169b64931e962e04e1329ef96cbfa8dae8"
-    },
-    {
-      "path": "/logos/svg/education/science/testtube.svg",
-      "sha256": "6918e6f60a1ea0aedca54036464befa55b7a71291060cd3aaad3849d668eb7e1"
-    },
-    {
-      "path": "/logos/svg/education/science/thermometer.svg",
-      "sha256": "572ea662fdd0a2411a653ad3c689c30821ddafd2709d6e1469969edf6c161c4b"
-    },
-    {
-      "path": "/logos/svg/education/science/microscope.svg",
-      "sha256": "74c82514d4bd7cd2a63960f9404c45ba67f0f549f1d4723a9e3a11af3e9bf2fb"
+      "sha256": "a8b0c7a759b26c3f7e6988560225a3f3ef8d48cf5ad118ef2f236c9c2d8e8cf7"
     },
     {
       "path": "/logos/svg/education/science/telescope.svg",
-      "sha256": "172bf619eab6a2fb7a7110d59bc17b8d0ae9399618a2779fdc0b241b77f1f012"
+      "sha256": "d462eda63038ad986f11c52dc2de20c87ef477fae723828d270f5bb79389d2dc"
+    },
+    {
+      "path": "/logos/svg/education/science/dna.svg",
+      "sha256": "2ef0bab51e1b457f5ea9c91ca7b3c2af367401539a9099a3644ca00a829cfeeb"
+    },
+    {
+      "path": "/logos/svg/education/science/cell.svg",
+      "sha256": "262e93540929d10949ca2a281a279bf0b0bc5c30d11c455f23bf661f78c0b637"
+    },
+    {
+      "path": "/logos/svg/education/science/flask.svg",
+      "sha256": "f3d3fdd813e7c1d947c39a433911a7eb55e4871cc2f5b1e4da5e8be98adab1a5"
+    },
+    {
+      "path": "/logos/svg/education/science/beaker.svg",
+      "sha256": "6f3784a948c68d8be7828302dc474b48f55bc44e3d25c79022a12027c9b18f81"
+    },
+    {
+      "path": "/logos/svg/education/science/testtube.svg",
+      "sha256": "1b74c9d2e6f371a21ad4d2098141fea6934d36b3fabdc4a9e6e88303027cc478"
+    },
+    {
+      "path": "/logos/svg/education/science/thermometer.svg",
+      "sha256": "65336308ae67ac042c910a24447ca164d9b8a0ea7986596aa4b5ffed9080aaf9"
+    },
+    {
+      "path": "/logos/svg/education/science/microscope.svg",
+      "sha256": "2ff4bf21bfa35fd4a802091dfaf889943b94a2a5122f7dc5113898021764ba19"
     }
   ]
 }

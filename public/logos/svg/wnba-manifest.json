@@ -1,0 +1,622 @@
+{
+  "assets": [
+    {
+      "id": "WNBA-ATL",
+      "league": "WNBA",
+      "conference": "Eastern",
+      "region": "Atlanta Dream",
+      "name": "",
+      "abbr": "ATL",
+      "aliases": [
+        "Dream"
+      ],
+      "palette": [
+        "#E31837",
+        "#373A36",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Primary",
+          "sourceUrl": "https://cdn.wnba.com/logos/wnba/1611661330/primary/L/logo.svg",
+          "sourcePage": "https://cdn.wnba.com/logos/wnba/1611661330/primary/L/logo.svg",
+          "sourceSha256": "a76ce6ab16ebc69cf0cc3c40915e7d9d5dbaea8cc57a61e21699761404b7b0e8",
+          "ops": {},
+          "path": "/logos/svg/wnba/atl.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#9EA2A2",
+            "#363B37",
+            "#4891CE",
+            "#E3173E"
+          ],
+          "sourcePalette": [
+            "#E3173E",
+            "#3F6682",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "6f158ed18ca6ad3f8fccc10a18ae25182df49c48b93b9769d2cf0fa77e1e75f8"
+        }
+      ]
+    },
+    {
+      "id": "WNBA-CHI",
+      "league": "WNBA",
+      "conference": "Eastern",
+      "region": "Chicago Sky",
+      "name": "",
+      "abbr": "CHI",
+      "aliases": [
+        "Sky"
+      ],
+      "palette": [
+        "#FFD520",
+        "#5091CD",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Primary",
+          "sourceUrl": "https://cdn.wnba.com/logos/wnba/1611661329/primary/L/logo.svg",
+          "sourcePage": "https://cdn.wnba.com/logos/wnba/1611661329/primary/L/logo.svg",
+          "sourceSha256": "172aba56e343507f6b5e3edd9ea6cf4971173bc86171e90ece2e27cdc4610483",
+          "ops": {},
+          "path": "/logos/svg/wnba/chi.svg",
+          "format": "svg",
+          "colors": [
+            "#061922",
+            "#4D90CD",
+            "#FFFFFF",
+            "#FFD520"
+          ],
+          "sourcePalette": [
+            "#FFD520",
+            "#4D90CD",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "f3eb490325c80f32d22575b87d9732f69f2f5254b4dc9f5e05b00a7347881799"
+        }
+      ]
+    },
+    {
+      "id": "WNBA-CON",
+      "league": "WNBA",
+      "conference": "Eastern",
+      "region": "Connecticut Sun",
+      "name": "",
+      "abbr": "CON",
+      "aliases": [
+        "Sun"
+      ],
+      "palette": [
+        "#F05023",
+        "#0A2240",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Primary",
+          "sourceUrl": "https://cdn.wnba.com/logos/wnba/1611661323/primary/L/logo.svg",
+          "sourcePage": "https://cdn.wnba.com/logos/wnba/1611661323/primary/L/logo.svg",
+          "sourceSha256": "86a071cffb6761b35f5d3602036740182dcb5eae146ae4916a92268254de4b4b",
+          "ops": {},
+          "path": "/logos/svg/wnba/con.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#F05023",
+            "#0A2240"
+          ],
+          "sourcePalette": [
+            "#F05023",
+            "#0A2240",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "0f6aedce740e7b611c9f4ddcdfd3bb833ec59a3e3a0e51207f11ceb1f1ed9a33"
+        }
+      ]
+    },
+    {
+      "id": "WNBA-DAL",
+      "league": "WNBA",
+      "conference": "Western",
+      "region": "Dallas Wings",
+      "name": "",
+      "abbr": "DAL",
+      "aliases": [
+        "Wings"
+      ],
+      "palette": [
+        "#002B5C",
+        "#C4D600",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Primary",
+          "sourceUrl": "https://cdn.wnba.com/logos/wnba/1611661321/primary/L/logo.svg",
+          "sourcePage": "https://cdn.wnba.com/logos/wnba/1611661321/primary/L/logo.svg",
+          "sourceSha256": "34667bdc5aa8ab8349a2c6754079d197e3ee8807a5226c9271386c9016848356",
+          "ops": {},
+          "path": "/logos/svg/wnba/dal.svg",
+          "format": "svg",
+          "colors": [
+            "#00A8E1",
+            "#002B5C",
+            "#FFFFFF",
+            "#C4D600"
+          ],
+          "sourcePalette": [
+            "#002B5C",
+            "#C4D600",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "af0616590f50e2a0332b387c1a98a5525fb6bb837051b61087b72eedbb72bede"
+        }
+      ]
+    },
+    {
+      "id": "WNBA-GSV",
+      "league": "WNBA",
+      "conference": "Western",
+      "region": "Golden State Valkyries",
+      "name": "",
+      "abbr": "GSV",
+      "aliases": [
+        "Valkyries",
+        "Valks"
+      ],
+      "palette": [
+        "#B896D4",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Primary",
+          "sourceUrl": "https://cdn.wnba.com/logos/wnba/1611661331/primary/L/logo.svg",
+          "sourcePage": "https://cdn.wnba.com/logos/wnba/1611661331/primary/L/logo.svg",
+          "sourceSha256": "399de741bc06f4b8e4dd5dd7601780717c4c3da01bf93e073e42953d40cef1de",
+          "ops": {},
+          "path": "/logos/svg/wnba/gsv.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#B896D4"
+          ],
+          "sourcePalette": [
+            "#B896D4",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "16abadf101e2810295e3a930df7b8bbc7990f0315b3a0c2d1634becb5d84af63"
+        }
+      ]
+    },
+    {
+      "id": "WNBA-IND",
+      "league": "WNBA",
+      "conference": "Eastern",
+      "region": "Indiana Fever",
+      "name": "",
+      "abbr": "IND",
+      "aliases": [
+        "Fever"
+      ],
+      "palette": [
+        "#E03A3E",
+        "#0C2340",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Primary",
+          "sourceUrl": "https://cdn.wnba.com/logos/wnba/1611661325/primary/L/logo.svg",
+          "sourcePage": "https://cdn.wnba.com/logos/wnba/1611661325/primary/L/logo.svg",
+          "sourceSha256": "45882f631146fa58ed847f70665be3ff4438a790bd5d3920e0964fa5ed4cebcf",
+          "ops": {},
+          "showsName": true,
+          "path": "/logos/svg/wnba/ind.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#20305D",
+            "#FAD412",
+            "#E2293A"
+          ],
+          "sourcePalette": [
+            "#EE7E26",
+            "#20305D",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "a4a376aa3d272137080b478527a46e89b3bf184e7dd9e767b131652633f0c310"
+        }
+      ]
+    },
+    {
+      "id": "WNBA-LAS",
+      "league": "WNBA",
+      "conference": "Western",
+      "region": "Los Angeles Sparks",
+      "name": "",
+      "abbr": "LAS",
+      "aliases": [
+        "Sparks",
+        "LA Sparks"
+      ],
+      "palette": [
+        "#552583",
+        "#FDB927",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Primary",
+          "sourceUrl": "https://cdn.wnba.com/logos/wnba/1611661320/primary/L/logo.svg",
+          "sourcePage": "https://cdn.wnba.com/logos/wnba/1611661320/primary/L/logo.svg",
+          "sourceSha256": "a66284f1eb7ad98288eb0072ed625510e69623cfb0ded129058b7f4a8aaf768c",
+          "ops": {},
+          "path": "/logos/svg/wnba/las.svg",
+          "format": "svg",
+          "colors": [
+            "#FDB927",
+            "#552583",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#552583",
+            "#FDB927",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "f1e33d3744dc153f2278f14f01a72176ed56980195017c1eafd1bd2ae926be91"
+        }
+      ]
+    },
+    {
+      "id": "WNBA-LVA",
+      "league": "WNBA",
+      "conference": "Western",
+      "region": "Las Vegas Aces",
+      "name": "",
+      "abbr": "LVA",
+      "aliases": [
+        "Aces"
+      ],
+      "palette": [
+        "#000000",
+        "#A7A8AA",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Primary",
+          "sourceUrl": "https://cdn.wnba.com/logos/wnba/1611661319/primary/L/logo.svg",
+          "sourcePage": "https://cdn.wnba.com/logos/wnba/1611661319/primary/L/logo.svg",
+          "sourceSha256": "a96b8f2aaf28efe1dbec46958149a5f7b50c769b4f98b6dd2519f202d394abbc",
+          "ops": {},
+          "path": "/logos/svg/wnba/lva.svg",
+          "format": "svg",
+          "colors": [
+            "#A7A8AA",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#A7A8AA",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "87c24dcc2e2b5d2dc42a8f8106ba534ed0ed153699d3fe5a135f3c05913acaa3"
+        }
+      ]
+    },
+    {
+      "id": "WNBA-MIN",
+      "league": "WNBA",
+      "conference": "Western",
+      "region": "Minnesota Lynx",
+      "name": "",
+      "abbr": "MIN",
+      "aliases": [
+        "Lynx"
+      ],
+      "palette": [
+        "#266092",
+        "#0C233F",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Primary",
+          "sourceUrl": "https://cdn.wnba.com/logos/wnba/1611661324/primary/L/logo.svg",
+          "sourcePage": "https://cdn.wnba.com/logos/wnba/1611661324/primary/L/logo.svg",
+          "sourceSha256": "06355b777e8328a79b3779d477a238f407548779e6dabfa8a2ce43a29c5a0528",
+          "ops": {},
+          "path": "/logos/svg/wnba/min.svg",
+          "format": "svg",
+          "colors": [
+            "#9C9E9F",
+            "#172439",
+            "#315C98",
+            "#6CC32E",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#689477",
+            "#172439",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "f9c0fe4c4170c37885bd3b1d6f8bc68b8a548398ff6c0cc632ac3893baf1a9e8"
+        }
+      ]
+    },
+    {
+      "id": "WNBA-NYL",
+      "league": "WNBA",
+      "conference": "Eastern",
+      "region": "New York Liberty",
+      "name": "",
+      "abbr": "NYL",
+      "aliases": [
+        "Liberty",
+        "NY Liberty"
+      ],
+      "palette": [
+        "#86CEBC",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Primary",
+          "sourceUrl": "https://cdn.wnba.com/logos/wnba/1611661313/primary/L/logo.svg",
+          "sourcePage": "https://cdn.wnba.com/logos/wnba/1611661313/primary/L/logo.svg",
+          "sourceSha256": "84f4afb9bc1555ae62f85cb62a4146f22d08820acb0aba7ccfa3cf312d7a8ca6",
+          "ops": {},
+          "path": "/logos/svg/wnba/nyl.svg",
+          "format": "svg",
+          "colors": [
+            "#100F0D",
+            "#87D5B5",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#87D5B5",
+            "#100F0D",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "bf8007baf484493da15c1e38c3ee386839bd4f515ad920220efc7dc2dc648a08"
+        }
+      ]
+    },
+    {
+      "id": "WNBA-PHX",
+      "league": "WNBA",
+      "conference": "Western",
+      "region": "Phoenix Mercury",
+      "name": "",
+      "abbr": "PHX",
+      "aliases": [
+        "Mercury"
+      ],
+      "palette": [
+        "#FA4B0A",
+        "#3C286E",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Primary",
+          "sourceUrl": "https://cdn.wnba.com/logos/wnba/1611661317/primary/L/logo.svg",
+          "sourcePage": "https://cdn.wnba.com/logos/wnba/1611661317/primary/L/logo.svg",
+          "sourceSha256": "a829b9aca4eb148168fde21ef1ed63494765e8178c073a8e563940b867537d6a",
+          "ops": {},
+          "path": "/logos/svg/wnba/phx.svg",
+          "format": "svg",
+          "colors": [
+            "#3C286E",
+            "#FA4B0A",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#FA4B0A",
+            "#3C286E",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "2d0d7dc8ec8ffe6038a4aad1ab1888419ac42c0e67e80aab0dc1937b6dc5f88f"
+        }
+      ]
+    },
+    {
+      "id": "WNBA-POR",
+      "league": "WNBA",
+      "conference": "Western",
+      "region": "Portland Fire",
+      "name": "",
+      "abbr": "POR",
+      "aliases": [
+        "Fire",
+        "PDX"
+      ],
+      "palette": [
+        "#C8102E",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Primary",
+          "sourceUrl": "https://cdn.wnba.com/logos/wnba/1611661327/primary/L/logo.svg",
+          "sourcePage": "https://cdn.wnba.com/logos/wnba/1611661327/primary/L/logo.svg",
+          "sourceSha256": "3070f8155146c93d9bb6ef6d3ed60198fa89f04ca479fe92e0fed9521d93e453",
+          "ops": {},
+          "path": "/logos/svg/wnba/por.svg",
+          "format": "svg",
+          "colors": [
+            "#C8102E"
+          ],
+          "sourcePalette": [
+            "#C8102E",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "3b7b1bb85510e2f1768e3d62847553261fbab99ac7476c3ed19c8be17cf5b4f8"
+        }
+      ]
+    },
+    {
+      "id": "WNBA-SEA",
+      "league": "WNBA",
+      "conference": "Western",
+      "region": "Seattle Storm",
+      "name": "",
+      "abbr": "SEA",
+      "aliases": [
+        "Storm"
+      ],
+      "palette": [
+        "#2C5235",
+        "#FEE11A",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Primary",
+          "sourceUrl": "https://cdn.wnba.com/logos/wnba/1611661328/primary/L/logo.svg",
+          "sourcePage": "https://cdn.wnba.com/logos/wnba/1611661328/primary/L/logo.svg",
+          "sourceSha256": "5d5a7be49b05730b5eb212c382b1942d21ea2ffbf6dcf126ad21444496d80816",
+          "ops": {},
+          "path": "/logos/svg/wnba/sea.svg",
+          "format": "svg",
+          "colors": [
+            "#2C5235",
+            "#FEE11A",
+            "#78BE20",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#52882A",
+            "#FEE11A",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "52b1158021d32d38e5a67bebe11dcea8cdce01b1a8d8be45dcee8fddb4b1f243"
+        }
+      ]
+    },
+    {
+      "id": "WNBA-TOR",
+      "league": "WNBA",
+      "conference": "Eastern",
+      "region": "Toronto Tempo",
+      "name": "",
+      "abbr": "TOR",
+      "aliases": [
+        "Tempo"
+      ],
+      "palette": [
+        "#441E36",
+        "#B3C7E7",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Primary",
+          "sourceUrl": "https://cdn.wnba.com/logos/wnba/1611661332/primary/L/logo.svg",
+          "sourcePage": "https://cdn.wnba.com/logos/wnba/1611661332/primary/L/logo.svg",
+          "sourceSha256": "1145863d8eeb2daeedf19c5a308b69c2041e6afc1750085d92fe7c6da325e8e2",
+          "ops": {},
+          "path": "/logos/svg/wnba/tor.svg",
+          "format": "svg",
+          "colors": [
+            "#441E36"
+          ],
+          "sourcePalette": [
+            "#441E36",
+            "#B3C7E7",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "f8f4e0e1383a7d198d681f9786c5b0ee497168f0601bca5cebfdddb00952db72"
+        }
+      ]
+    },
+    {
+      "id": "WNBA-WAS",
+      "league": "WNBA",
+      "conference": "Eastern",
+      "region": "Washington Mystics",
+      "name": "",
+      "abbr": "WAS",
+      "aliases": [
+        "Mystics"
+      ],
+      "palette": [
+        "#E03A3E",
+        "#002B5C",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Primary",
+          "sourceUrl": "https://cdn.wnba.com/logos/wnba/1611661322/primary/L/logo.svg",
+          "sourcePage": "https://cdn.wnba.com/logos/wnba/1611661322/primary/L/logo.svg",
+          "sourceSha256": "831ebb30404e77d495a295af33cdb91983d850d8b35b88564d81ecc67a7def6a",
+          "ops": {},
+          "showsName": true,
+          "path": "/logos/svg/wnba/was.svg",
+          "format": "svg",
+          "colors": [
+            "#E03A3E",
+            "#C4CED4",
+            "#002B5C",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#E03A3E",
+            "#002B5C",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "4062212ead1b893f37799eef3793d5141c6e48a6aae4012995df76c6784245c0"
+        }
+      ]
+    }
+  ]
+}

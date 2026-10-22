@@ -478,8 +478,30 @@ NHL = [
     ('WSH', 'Washington Capitals', 'Eastern', '041E42', 'C8102E', ['Capitals']),
 ]
 
+# Official WNBA 2026 roster, pinned from wnba.com/teams on 2026-10-22; Cleveland joins in 2028.
+# Colors are wnba.com's team colors, swapped for the team's button color (Valkyries, Fire, Mystics) or
+# the logo's own black and silver (Aces) where the listed color never appears in the logo.
+WNBA = [
+    ('ATL', 'Atlanta Dream', 'Eastern', 'E31837', '373A36', ['Dream']),
+    ('CHI', 'Chicago Sky', 'Eastern', 'FFD520', '5091CD', ['Sky']),
+    ('CON', 'Connecticut Sun', 'Eastern', 'F05023', '0A2240', ['Sun']),
+    ('DAL', 'Dallas Wings', 'Western', '002B5C', 'C4D600', ['Wings']),
+    ('GSV', 'Golden State Valkyries', 'Western', 'B896D4', '000000', ['Valkyries', 'Valks']),
+    ('IND', 'Indiana Fever', 'Eastern', 'E03A3E', '0C2340', ['Fever']),
+    ('LAS', 'Los Angeles Sparks', 'Western', '552583', 'FDB927', ['Sparks', 'LA Sparks']),
+    ('LVA', 'Las Vegas Aces', 'Western', '000000', 'A7A8AA', ['Aces']),
+    ('MIN', 'Minnesota Lynx', 'Western', '266092', '0C233F', ['Lynx']),
+    ('NYL', 'New York Liberty', 'Eastern', '86CEBC', '000000', ['Liberty', 'NY Liberty']),
+    ('PHX', 'Phoenix Mercury', 'Western', 'FA4B0A', '3C286E', ['Mercury']),
+    ('POR', 'Portland Fire', 'Western', 'C8102E', '000000', ['Fire', 'PDX']),
+    ('SEA', 'Seattle Storm', 'Western', '2C5235', 'FEE11A', ['Storm']),
+    ('TOR', 'Toronto Tempo', 'Eastern', '441E36', 'B3C7E7', ['Tempo']),
+    ('WAS', 'Washington Mystics', 'Eastern', 'E03A3E', '002B5C', ['Mystics']),
+]
+
 LEAGUES = {
     "NHL": {"label": "NHL", "conferences": ["Eastern", "Western"]},
+    "WNBA": {"label": "WNBA", "conferences": ["Eastern", "Western"]},
     "FOOD": {"label": "RESTAURANTS", "conferences": ["Burgers", "Chicken", "Sandwiches", "Pizza", "Mexican & Asian", "Coffee & Treats", "Casual Dining"]},
     "BRAND": {"label": "BRANDS", "conferences": ["Product", "Service", "Corporate", "Personal", "Store"]},
     "FLAG": {"label": "FLAGS", "conferences": ["Americas", "Europe", "Asia & Pacific", "Africa & Middle East", "US States", "Cities"]},
@@ -490,5 +512,5 @@ LEAGUES = {
     "CLOTH": {"label": "CLOTHING", "conferences": ["Sportswear", "Streetwear", "Outdoor", "Preppy", "Everyday"]},
 }
 
-ROSTERS = {"NHL": NHL, "FOOD": FOOD, "BRAND": BRAND, "FLAG": FLAG, "APP": APP, "TV": TV, "CAR": CAR, "LUX": LUX, "CLOTH": CLOTH}
-SLUGS = {"NHL": "nhl", "FOOD": "fast-food", "BRAND": "brands", "FLAG": "flags", "APP": "apps", "TV": "tv", "CAR": "cars", "LUX": "luxury", "CLOTH": "clothing"}
+ROSTERS = {"NHL": NHL, "WNBA": WNBA, "FOOD": FOOD, "BRAND": BRAND, "FLAG": FLAG, "APP": APP, "TV": TV, "CAR": CAR, "LUX": LUX, "CLOTH": CLOTH}
+SLUGS = {"NHL": "nhl", "WNBA": "wnba", "FOOD": "fast-food", "BRAND": "brands", "FLAG": "flags", "APP": "apps", "TV": "tv", "CAR": "cars", "LUX": "luxury", "CLOTH": "clothing"}

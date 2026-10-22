@@ -4,12 +4,14 @@ iPad-first logo guessing game. A creator picks the **logo, flag, element, symbol
 
 A remix is optional: pick only a logo and **+ ADD ORIGINAL** puts it in the deck in its own colors (in portrait, step 2 offers **Skip · keep the original colors**). Any collection works this way, soccer clubs and brands included. An original-colors round always asks for the logo, shows only the logo hint, and reveals as "in its original colors". Editing it and picking a color source turns it into a remix; clearing the colors turns a remix back into an original.
 
-Real logos for all 32 NFL teams, all 30 NBA teams, all 30 MLB teams, all 32 NHL teams, 29 popular soccer clubs, all 30 MLS clubs, 50 restaurants, 60 brands, 123 flags, 50 iOS apps, 30 TV channels, 30 car brands, 30 luxury houses, 30 clothing brands, 120 college teams, 6 college conference marks, and 36 Georgia high schools (the HIGH SCHOOL league, filtered by county) live as local SVG or PNG assets under `public/logos/svg/`. SVG fills are rewritten in-browser; PNGs use a canvas-based pixel recolor.
+Real logos for all 32 NFL teams, all 30 NBA teams, all 30 MLB teams, all 32 NHL teams, all 15 WNBA teams, 29 popular soccer clubs, all 30 MLS clubs, 50 restaurants, 60 brands, 123 flags, 50 iOS apps, 30 TV channels, 30 car brands, 30 luxury houses, 30 clothing brands, 120 college teams, 6 college conference marks, and 36 Georgia high schools (the HIGH SCHOOL league, filtered by county) live as local SVG or PNG assets under `public/logos/svg/`. SVG fills are rewritten in-browser; PNGs use a canvas-based pixel recolor.
 
 
 **Educational collections** add all **118 elements**, **22 math symbols**, **20 shapes**, **13 space objects** (the eight planets, Pluto, Sun, Moon, comet and galaxy), and **10 science images**. Elements have period filters, atomic-number/symbol tiles and symbol-only alternates. Flat shapes have outline alternates. Math accepts Unicode answers such as π, √, ∞ and ∑ as well as names. Pluto is under Dwarf planets. All artwork is local SVG geometry or outlined glyphs with no runtime font dependency. Regenerate with `npm run teams:education`; provenance and licenses are in [`education-SOURCES.md`](public/logos/svg/education-SOURCES.md).
 
 **NHL** adds 32 official SVG team logos with Eastern/Western filters. Logos that spell out the team's identity remain manually selectable but are excluded from random logo pools. **US STATES** is also a dedicated random-deck pool, and every state has a tightly cropped silhouette alternate; Oregon additionally has its beaver reverse. These additions bring the catalog to **931 entries and 489 alternates**. The new collections are logo-only; NFL, NBA and college remain the color donors. The Restaurants label keeps the existing `FOOD` IDs and `Fast Food` pool ID so saved decks and pool preferences remain compatible. Wordmark-only restaurants stay manually selectable and are excluded from random logo draws. Reviewed symbol crops use explicit SVG clipping where neighboring lettering shares a path.
+
+**WNBA** adds all 15 teams of the 2026 season, including the expansion Portland Fire and Toronto Tempo, as official SVGs from the WNBA's logo CDN with Eastern/Western filters. Hints read "Logo: WNBA - Eastern". Nicknames and short forms such as Liberty, Valks, LA Sparks and PDX are accepted. The Mystics and Fever primaries spell the team's name, so like the NHL wordmarks they stay manually selectable but sit random logo pools out. WNBA is logo-only, and brings the catalog to **946 entries and 489 alternates**. Regenerate with `npm run logos:wnba && npm run teams:wnba`; sources are in [`education-SOURCES.md`](public/logos/svg/education-SOURCES.md).
 
 NBA teams are available as both logo and color donors. Filter them by Eastern or Western conference, or select NBA in Random Deck to create NBA-only or mixed-league rounds. Common answers such as Sixers, Cavs, GSW, NYK and SAS work in search, autocomplete and grading.
 
@@ -153,7 +155,7 @@ src/
   lib/exportLogo.ts        Designer exports: recolored SVG files, canvas-rendered PNGs, downloads
   lib/trace.ts             Designer uploads: trace a bitmap logo into flat-color SVG outlines (pure)
   lib/traceUpload.ts       Designer uploads: decode the file in the browser, trace it, wrap it as a logo
-  lib/teams.json           931 catalog entries across sports, restaurants, brands, flags and educational collections
+  lib/teams.json           946 catalog entries across sports, restaurants, brands, flags and educational collections
   lib/useOrientation.ts    portrait = innerHeight > innerWidth
   components/
     Logo.tsx               local PNG rendering + canvas palette-swap recoloring

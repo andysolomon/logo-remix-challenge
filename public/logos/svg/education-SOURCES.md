@@ -6,6 +6,10 @@
 - `education-manifest.json` records SHA-256 checksums for every generated file. Run `npm run teams:education` to reproduce the assets and catalog offline with Python 3.
 - All collections are logo sources. Existing NFL, NBA and college teams remain the only color donors. Element tiles show the symbol and atomic number, with a symbol-only alternate; neither version spells the element's name.
 
+# Landmark artwork
+
+The 36 LANDMARKS figures are original SVG geometry in `scripts/build_landmarks.py`, drawn in the science-figure style (one thin ink outline weight, white bodies, a flat accent tint) and painting all three palette slots. They are stylized identification drawings of the structures and mountains, not surveys or scale elevations: Chichén Itzá is El Castillo, Petra is the Al-Khazneh façade, the torii is Itsukushima Shrine's great gate and the moai is a generic Easter Island statue with its pukao. No artwork carries lettering, and no trademarked signage is drawn. `landmarks-manifest.json` records SHA-256 checksums for every generated file; `npm run teams:landmarks` reproduces the assets and catalog offline with Python 3. The collection is logo-only.
+
 # Additional state and NHL artwork
 
 State flags and silhouettes are pinned in `scripts/brand_artwork_sources.json`, including original Wikimedia source pages, source checksums and explicit crops. All 50 states have a flag and an independently cropped silhouette, including Rhode Island. Oregon also has its beaver reverse. Existing state IDs are preserved, including `FLAG-CALI`.

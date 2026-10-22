@@ -50,7 +50,8 @@
     "teams:nhl": "python3 scripts/build_brand_teams.py --league NHL",
     "logos:wnba": "python3 scripts/download_brand_logos.py --league WNBA",
     "teams:wnba": "python3 scripts/build_brand_teams.py --league WNBA",
-    "teams:education": "python3 scripts/build_education.py"
+    "teams:education": "python3 scripts/build_education.py",
+    "teams:landmarks": "python3 scripts/build_landmarks.py"
   },
   "dependencies": {
     "react": "^18.3.1",

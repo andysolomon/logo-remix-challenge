@@ -9,6 +9,8 @@ Real logos for all 32 NFL teams, all 30 NBA teams, all 30 MLB teams, all 32 NHL 
 
 **Educational collections** add all **118 elements**, **22 math symbols**, **20 shapes**, **13 space objects** (the eight planets, Pluto, Sun, Moon, comet and galaxy), and **10 science images** drawn as textbook-style figures (a Bohr-style atom, a horseshoe magnet with field lines, a double helix, an animal cell, a refracting telescope on its tripod, a compound microscope, and glassware with tinted liquids and graduations). Elements have period filters, atomic-number/symbol tiles and symbol-only alternates. Flat shapes have outline alternates. Math accepts Unicode answers such as π, √, ∞ and ∑ as well as names. Pluto is under Dwarf planets. All artwork is local SVG geometry or outlined glyphs with no runtime font dependency. Regenerate with `npm run teams:education`; provenance and licenses are in [`education-SOURCES.md`](public/logos/svg/education-SOURCES.md).
 
+**LANDMARKS** adds **36 famous landmarks** from all over the world, filtered by region: Americas (the Statue of Liberty, Golden Gate Bridge, Empire State Building, Space Needle, Gateway Arch, Washington Monument, United States Capitol, Christ the Redeemer, Chichén Itzá, CN Tower), Europe (the Eiffel Tower, Big Ben, Tower Bridge, Colosseum, Leaning Tower of Pisa, Stonehenge, Arc de Triomphe, Brandenburg Gate, Parthenon, Louvre Pyramid), Asia & Pacific (the Taj Mahal, Great Wall of China, Tokyo Tower, Petronas Towers, Angkor Wat, Mount Fuji, Itsukushima's torii, Sydney Opera House, Sydney Harbour Bridge, the moai of Easter Island) and Africa & Middle East (the Pyramids of Giza, Great Sphinx, Burj Khalifa, Burj Al Arab, Petra, Mount Kilimanjaro). Each one is drawn in the same textbook-figure style as the science images (thin ink outline, white bodies, a flat accent tint) and paints all three palette slots, so a landmark remix never needs a backdrop tile. Hints read "Logo: LANDMARKS - Europe". Common names such as Lady Liberty, Cristo Redentor, Coliseum, Tower of Pisa, Acropolis, Great Wall, Fujisan, Sphinx, Easter Island and Harbor Bridge are accepted, and guesses ignore accents, so "Chichen Itza" matches Chichén Itzá; a country or city alone is never an answer. LANDMARKS is logo-only and its own Random Deck pool, and brings the catalog to **982 entries and 489 alternates**. Regenerate with `npm run teams:landmarks`; the artwork is original SVG geometry in `scripts/build_landmarks.py`, described in [`education-SOURCES.md`](public/logos/svg/education-SOURCES.md).
+
 **NHL** adds 32 official SVG team logos with Eastern/Western filters. Logos that spell out the team's identity remain manually selectable but are excluded from random logo pools. **US STATES** is also a dedicated random-deck pool, and every state has a tightly cropped silhouette alternate; Oregon additionally has its beaver reverse. These additions bring the catalog to **931 entries and 489 alternates**. The new collections are logo-only; NFL, NBA and college remain the color donors. The Restaurants label keeps the existing `FOOD` IDs and `Fast Food` pool ID so saved decks and pool preferences remain compatible. Wordmark-only restaurants stay manually selectable and are excluded from random logo draws. Reviewed symbol crops use explicit SVG clipping where neighboring lettering shares a path.
 
 **WNBA** adds all 15 teams of the 2026 season, including the expansion Portland Fire and Toronto Tempo, as official SVGs from the WNBA's logo CDN with Eastern/Western filters. Hints read "Logo: WNBA - Eastern". Nicknames and short forms such as Liberty, Valks, LA Sparks and PDX are accepted. The Mystics and Fever primaries spell the team's name, so like the NHL wordmarks they stay manually selectable but sit random logo pools out. WNBA is logo-only, and brings the catalog to **946 entries and 489 alternates**. Regenerate with `npm run logos:wnba && npm run teams:wnba`; sources are in [`education-SOURCES.md`](public/logos/svg/education-SOURCES.md).
@@ -125,6 +127,8 @@ bun run teams:tv                               # regenerate TV channel entries f
 bun run teams:cars                             # regenerate car brand entries from cars-manifest.json
 bun run teams:luxury                           # regenerate luxury entries from luxury-manifest.json
 bun run teams:clothing                         # regenerate clothing entries from clothing-manifest.json
+bun run teams:education                        # redraw the educational artwork and regenerate its entries
+bun run teams:landmarks                        # redraw the landmark artwork and regenerate its entries
 ```
 
 The legacy ESPN PNGs (32 NFL teams + 5 conferences) can still be fetched into `public/logos/`:
@@ -155,7 +159,7 @@ src/
   lib/exportLogo.ts        Designer exports: recolored SVG files, canvas-rendered PNGs, downloads
   lib/trace.ts             Designer uploads: trace a bitmap logo into flat-color SVG outlines (pure)
   lib/traceUpload.ts       Designer uploads: decode the file in the browser, trace it, wrap it as a logo
-  lib/teams.json           946 catalog entries across sports, restaurants, brands, flags and educational collections
+  lib/teams.json           982 catalog entries across sports, restaurants, brands, flags, landmarks and educational collections
   lib/useOrientation.ts    portrait = innerHeight > innerWidth
   components/
     Logo.tsx               local PNG rendering + canvas palette-swap recoloring
@@ -193,6 +197,8 @@ scripts/
   cobb_roster.py           HIGH SCHOOL roster by county, official colors, and per-school source URLs
   build_teams.py           merge the NFL/college manifests into src/lib/teams.json
   build_hs_teams.py        merge hs-manifest.json into src/lib/teams.json
+  build_education.py       draw the ELEMENTS, MATH, SHAPES, SPACE and SCIENCE artwork and rebuild their entries
+  build_landmarks.py       draw the 36 LANDMARKS figures and rebuild their entries
   generate_voice.py        bake Chatterbox announcer clips into public/voice/
 public/logos/
   nfl/                     32 team PNGs (ESPN CDN naming, e.g. wsh.png)

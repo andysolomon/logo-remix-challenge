@@ -1,6 +1,6 @@
 import data from './teams.json'
 
-export type League = 'PRO' | 'NBA' | 'MLB' | 'SOCCER' | 'MLS' | 'COL' | 'HS' | 'FOOD' | 'BRAND' | 'FLAG' | 'APP' | 'TV' | 'CAR' | 'LUX' | 'CLOTH' | 'NHL' | 'ELEMENT' | 'MATH' | 'SHAPE' | 'SPACE' | 'SCIENCE' | 'WNBA'
+export type League = 'PRO' | 'NBA' | 'MLB' | 'SOCCER' | 'MLS' | 'COL' | 'HS' | 'FOOD' | 'BRAND' | 'FLAG' | 'APP' | 'TV' | 'CAR' | 'LUX' | 'CLOTH' | 'NHL' | 'ELEMENT' | 'MATH' | 'SHAPE' | 'SPACE' | 'SCIENCE' | 'WNBA' | 'LANDMARK'
 
 export interface LogoVariant {
   id: string
@@ -578,17 +578,17 @@ export const roundColors = (r: Round): Team => findTeam(r.c ?? r.o)!
 export const guessPrompt = (t: GuessTarget) => (t === 'both' ? 'Guess the Logo and the Colors!' : t === 'colors' ? 'Guess the Colors!' : 'Guess the Logo!')
 /** What one entry of a collection is called in search and result labels. */
 export const entryNoun = (league: League) =>
-  league === 'ELEMENT' ? 'element' : league === 'MATH' ? 'symbol' : league === 'SHAPE' ? 'shape' : league === 'SPACE' ? 'object' : league === 'SCIENCE' ? 'science image' : league === 'APP' ? 'app' : league === 'TV' ? 'channel' : league === 'FLAG' ? 'flag' : ['FOOD', 'BRAND', 'CAR', 'LUX', 'CLOTH'].includes(league) ? 'brand' : league === 'SOCCER' || league === 'MLS' ? 'club' : 'team'
+  league === 'ELEMENT' ? 'element' : league === 'MATH' ? 'symbol' : league === 'SHAPE' ? 'shape' : league === 'SPACE' ? 'object' : league === 'SCIENCE' ? 'science image' : league === 'LANDMARK' ? 'landmark' : league === 'APP' ? 'app' : league === 'TV' ? 'channel' : league === 'FLAG' ? 'flag' : ['FOOD', 'BRAND', 'CAR', 'LUX', 'CLOTH'].includes(league) ? 'brand' : league === 'SOCCER' || league === 'MLS' ? 'club' : 'team'
 /**
  * Where a team plays: the league and conference for NFL teams ("NFL - AFC"), the league label for other pro teams,
  * MLS clubs and fast food, the conference for college and high school, the domestic league for soccer clubs outside
- * "Rest of World", the region for flags ("FLAGS - Europe", "FLAGS - US States"), the type for brands, apps, channels,
+ * "Rest of World", the region for flags and landmarks ("FLAGS - Europe", "LANDMARKS - Asia & Pacific"), the type for brands, apps, channels,
  * cars, luxury houses ("Luxury watchmaker") and clothing brands ("Outdoor brand").
  */
 export const teamHint = (t: Team) =>
   t.league === 'COL' || t.league === 'HS' || (t.league === 'SOCCER' && t.conference !== 'Rest of World')
     ? t.conference
-    : t.league === 'PRO' || t.league === 'FLAG' || ['ELEMENT', 'MATH', 'SHAPE', 'SPACE', 'SCIENCE', 'NHL', 'WNBA'].includes(t.league)
+    : t.league === 'PRO' || t.league === 'FLAG' || ['ELEMENT', 'MATH', 'SHAPE', 'SPACE', 'SCIENCE', 'LANDMARK', 'NHL', 'WNBA'].includes(t.league)
       ? `${LEAGUES[t.league].label} - ${t.conference}`
       : t.league === 'BRAND'
         ? `${t.conference} brand`
@@ -634,7 +634,7 @@ export const TEAM_POOLS: TeamPool[] = [
   { id: 'NHL', label: LEAGUES.NHL.label, league: 'NHL', match: (t) => t.league === 'NHL' },
   { id: 'WNBA', label: LEAGUES.WNBA.label, league: 'WNBA', match: (t) => t.league === 'WNBA' },
   { id: 'US States', label: 'US STATES', league: 'FLAG', match: (t) => t.league === 'FLAG' && t.conference === 'US States' },
-  ...(['ELEMENT', 'MATH', 'SHAPE', 'SPACE', 'SCIENCE'] as const).map((league) => ({
+  ...(['ELEMENT', 'MATH', 'SHAPE', 'SPACE', 'SCIENCE', 'LANDMARK'] as const).map((league) => ({
     id: LEAGUES[league].label, label: LEAGUES[league].label, league, match: (t: Team) => t.league === league,
   })),
   ...LEAGUES.COL.conferences.map((c) => ({ id: c, label: c, league: 'COL' as League, match: (t: Team) => t.league === 'COL' && t.conference === c })),

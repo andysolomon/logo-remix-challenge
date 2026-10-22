@@ -1,0 +1,149 @@
+{
+  "generator": "scripts/build_landmarks.py",
+  "assets": [
+    {
+      "path": "/logos/svg/landmarks/liberty.svg",
+      "sha256": "eb7c5c5958a14eaa1697387139794a8da19409a9b417dacbf89a8e8a829abac1"
+    },
+    {
+      "path": "/logos/svg/landmarks/goldengate.svg",
+      "sha256": "eb7cbaf8ff490cc2e98de764c26766d512467bd5246ae856f1954c73ea81b79c"
+    },
+    {
+      "path": "/logos/svg/landmarks/empire.svg",
+      "sha256": "7aae7d6540114fb8161b284731caa597d1a6c0a527f39fc83613aadeb9d2a36f"
+    },
+    {
+      "path": "/logos/svg/landmarks/needle.svg",
+      "sha256": "5769915065f193dc4242f3c74e78e59d3754335da0a21b14f1c1330907b3facd"
+    },
+    {
+      "path": "/logos/svg/landmarks/arch.svg",
+      "sha256": "d038bc2bb9f37e13dece3267d7beb4c7e085efda01840d615a84058e5414b76d"
+    },
+    {
+      "path": "/logos/svg/landmarks/washington.svg",
+      "sha256": "b1db21402ca09cca5f1fec1fd3be010011c778fa122792149d1ecab50abf3f40"
+    },
+    {
+      "path": "/logos/svg/landmarks/capitol.svg",
+      "sha256": "c1df823d0c17c4f69e559ab0a5128f2d5b2ebd358ced1290684d26a1861812ed"
+    },
+    {
+      "path": "/logos/svg/landmarks/redeemer.svg",
+      "sha256": "d9e61521343a22b7846c504ec536b7ed23c88828514a9dc1bb2ac15dea34157e"
+    },
+    {
+      "path": "/logos/svg/landmarks/chichen.svg",
+      "sha256": "7636c5363b261e931566a48462ad9269e02c9b5b59517fcf0c141f4bb866ec55"
+    },
+    {
+      "path": "/logos/svg/landmarks/cntower.svg",
+      "sha256": "e16af7eb698c4403e30d076953785bd1e42de74f61f467e959c9611788d8044a"
+    },
+    {
+      "path": "/logos/svg/landmarks/eiffel.svg",
+      "sha256": "bf2ef3790b0ce7ffa159f69b1795343587b95c4d0b3578fea8a81c256a759a0d"
+    },
+    {
+      "path": "/logos/svg/landmarks/bigben.svg",
+      "sha256": "759b90012a88966760a7dbe7da17d898efe394d77e45a68c61a79bb7c1540548"
+    },
+    {
+      "path": "/logos/svg/landmarks/towerbridge.svg",
+      "sha256": "73017ed1235fcef5cd2cac9470ecc9f660ad685950c40d8f2c1877a09624b35e"
+    },
+    {
+      "path": "/logos/svg/landmarks/colosseum.svg",
+      "sha256": "f73ede8ed693cd209aba4e429911de17d8168c477a33e8765e9e8947d3ac66fe"
+    },
+    {
+      "path": "/logos/svg/landmarks/pisa.svg",
+      "sha256": "54f940f311946235e5bab3d24fce594549d1c3d09d3c8ea50293bdc9ca4cafd9"
+    },
+    {
+      "path": "/logos/svg/landmarks/stonehenge.svg",
+      "sha256": "e44250293cab98b2abdfaf84e8dd6c58e955dc24e5b47aeb215eebc58d558f9c"
+    },
+    {
+      "path": "/logos/svg/landmarks/arc.svg",
+      "sha256": "70570cdcc7bbe427e913c312810047dfcf8c510f1aa2dd112820f081dc23130c"
+    },
+    {
+      "path": "/logos/svg/landmarks/brandenburg.svg",
+      "sha256": "7a83e3912bb94cdb4c7db8111390602680e96ba04ac49a00d5339de398ac2c01"
+    },
+    {
+      "path": "/logos/svg/landmarks/parthenon.svg",
+      "sha256": "b70e0cf90a94e6aed475ab326964570697bd8b3d590b32f83c8c644181b73def"
+    },
+    {
+      "path": "/logos/svg/landmarks/louvre.svg",
+      "sha256": "1e7c3c8841cf9000c9125b4fdde56aedbc38f73699ad5aa306483a27988a940c"
+    },
+    {
+      "path": "/logos/svg/landmarks/taj.svg",
+      "sha256": "78e0332bdbad5195db8564a18538e73a96d53f103c74c599408a9ffc298280c8"
+    },
+    {
+      "path": "/logos/svg/landmarks/greatwall.svg",
+      "sha256": "a067155180348c325a0b0adbcc5e6161c831ed412c56a5de74e35aaf3ccdf2e0"
+    },
+    {
+      "path": "/logos/svg/landmarks/tokyotower.svg",
+      "sha256": "8e1b37799999e160ffc8f15cdb393c70ca469d093a8053d868c514449b910b9a"
+    },
+    {
+      "path": "/logos/svg/landmarks/petronas.svg",
+      "sha256": "ca3f1ba2b8c28f0c7283c018696320461faa64ada38a2d1d58e14d9bf09dad5a"
+    },
+    {
+      "path": "/logos/svg/landmarks/angkor.svg",
+      "sha256": "136c88d5e1a85676e82c20642e64d33c44dbed33d8ace5dca208d0a472d450db"
+    },
+    {
+      "path": "/logos/svg/landmarks/fuji.svg",
+      "sha256": "34b20ee9455a999aa0c11b0443f213f2dae69148d02113f61f00290e4d2ba761"
+    },
+    {
+      "path": "/logos/svg/landmarks/torii.svg",
+      "sha256": "09c99f2e823259454647fccc351970382115bbb5cb73260b44f9f437f9116fdc"
+    },
+    {
+      "path": "/logos/svg/landmarks/opera.svg",
+      "sha256": "e9d712b553ace69b529734135a9f6c6d2eb7b95a84cc76b51a883e210bce5a2f"
+    },
+    {
+      "path": "/logos/svg/landmarks/harbour.svg",
+      "sha256": "f8c0fd4376c1da967d07375555e2e99cecb9ae52bb76866d830fcd2dc5687d7e"
+    },
+    {
+      "path": "/logos/svg/landmarks/moai.svg",
+      "sha256": "c09b618114748608525ad3a3c088e9069c767957293583beb417ffe842f22a36"
+    },
+    {
+      "path": "/logos/svg/landmarks/pyramids.svg",
+      "sha256": "59ec9d8491451942a0aaf0a17cab408b268808821ad4f01bc161271724cd16ee"
+    },
+    {
+      "path": "/logos/svg/landmarks/sphinx.svg",
+      "sha256": "84bc239e10faa5ccc7aee53e0b8d69b4f96ef757bf6ac22c83d17850047a2554"
+    },
+    {
+      "path": "/logos/svg/landmarks/burj.svg",
+      "sha256": "4d34112eecb654877ce86ceb7c615f4470497e3952503f7fb37e656a20d85b41"
+    },
+    {
+      "path": "/logos/svg/landmarks/burjalarab.svg",
+      "sha256": "2abbf3e2f591932c261dddf20422d40438bb2a3ceb454184599c2d98af127196"
+    },
+    {
+      "path": "/logos/svg/landmarks/petra.svg",
+      "sha256": "6ec1d4619f3c5c258517afbaf39e400c82fe1f5845d0a4ab397ad6982a436d94"
+    },
+    {
+      "path": "/logos/svg/landmarks/kilimanjaro.svg",
+      "sha256": "c225d26de89bb21cb76db4554cdc88eeae963897745c9968026b1d3aea6feb2c"
+    }
+  ]
+}

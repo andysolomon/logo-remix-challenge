@@ -160,6 +160,35 @@ def telescope():
     art = f'<g transform="rotate(-30 128 110)">{scope}</g>' + ink('<path d="M126 138L72 232M126 138L182 232M126 138V228M96 196H156"/>', OUTLINE)
     return art + dot(126, 140, 9, ACCENT, OUTLINE)
 
+def taper(points, widths):
+    """A filled ribbon along a polyline whose half-width changes point by point (tails, spiral arms)."""
+    left, right = [], []
+    for i, (x, y) in enumerate(points):
+        (x0, y0), (x1, y1) = points[max(i-1, 0)], points[min(i+1, len(points)-1)]
+        n = math.hypot(x1-x0, y1-y0) or 1; nx, ny = -(y1-y0)/n, (x1-x0)/n
+        left.append((x+nx*widths[i], y+ny*widths[i])); right.append((x-nx*widths[i], y-ny*widths[i]))
+    return 'M' + 'L'.join(f'{x:.1f} {y:.1f}' for x, y in left + right[::-1]) + 'Z'
+
+def comet():
+    """Comet: outlined nucleus and coma, a tapered curved dust tail and straight ion-tail streaks."""
+    bez = lambda t: ((1-t)**2*72 + 2*(1-t)*t*176 + t*t*232, (1-t)**2*184 + 2*(1-t)*t*164 + t*t*34)
+    pts = [bez(i/24) for i in range(25)]; widths = [22*(1-i/24)**1.3 + 1 for i in range(25)]
+    tail = solid(f'<path d="{taper(pts, widths)}"/>', ACCENT, DETAIL)
+    ion = ink('<path d="M90 150L178 46M100 142L206 30M104 158L220 46"/>', HAIRLINE)
+    return ion + tail + solid('<circle cx="72" cy="184" r="34"/>', ACCENT, OUTLINE) + solid('<circle cx="72" cy="184" r="15"/>', WHITE, OUTLINE)
+
+def galaxy():
+    """Face-on spiral galaxy: two tapered logarithmic arms winding out from a bright outlined core, with star dots."""
+    arms, stars = '', ''
+    for phase in (0, math.pi):
+        pts, widths = [], []
+        for i in range(49):
+            th = 5.2*i/48; r = 12*math.exp(0.415*th)
+            pts.append((128 + r*math.cos(th+phase), 128 + r*math.sin(th+phase))); widths.append(16*(1-i/48)**0.7 + 2)
+        arms += f'<path d="{taper(pts, widths)}"/>'
+        stars += ''.join(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="{3 if i % 2 else 2}"/>' for i, (x, y) in enumerate(pts[20::7]))
+    return solid(arms, ACCENT, HAIRLINE) + solid('<circle cx="128" cy="128" r="28"/>', ACCENT, OUTLINE) + solid('<circle cx="128" cy="128" r="13"/>', WHITE, OUTLINE) + solid(stars, WHITE, 1.5)
+
 def science_figures():
     return {
       'ATOM':('Atom','Physics',atom()),'MAGNET':('Magnet','Physics',magnet()),'TELESCOPE':('Telescope','Physics',telescope()),
@@ -279,8 +308,8 @@ def build():
         add('SPACE',ab,name,'Dwarf planets' if ab=='PLUTO' else 'Planets',art,palette=pal)
     add('SPACE','SUN','Sun','Other objects',circle(128,128,61)+line(''.join(f'<path d="M{128+82*math.cos(a):.2f} {128+82*math.sin(a):.2f}L{128+110*math.cos(a):.2f} {128+110*math.sin(a):.2f}"/>' for a in [i*math.pi/6 for i in range(12)])),['Sol'],[1,2])
     add('SPACE','MOON','Moon','Other objects',f'<path fill="{INK}" d="M172 30A99 99 0 1 0 220 170A93 93 0 0 1 172 30Z"/>',['Luna','crescent moon'],[1,2])
-    add('SPACE','COMET','Comet','Other objects',circle(71,184,35)+line('<path d="M58 147 153 35 M96 169 222 84 M85 143 209 42"/>'),[],[1,2])
-    add('SPACE','GALAXY','Galaxy','Other objects',circle(128,128,20)+line('<path d="M128 112C192 45 244 119 181 171C117 225 29 170 57 108C77 65 152 48 190 91 M128 144C64 211 12 137 75 85"/>'),['spiral galaxy'],[1,2])
+    add('SPACE','COMET','Comet','Other objects',comet(),[])
+    add('SPACE','GALAXY','Galaxy','Other objects',galaxy(),['spiral galaxy'])
     for ab,(name,group,art) in science_figures().items():
         aliases={'DNA':['deoxyribonucleic acid','double helix'],'FLASK':['Erlenmeyer flask','conical flask'],'TESTTUBE':['testtube']}.get(ab,[])
         add('SCIENCE',ab,name,group,art,aliases)

@@ -1171,39 +1171,39 @@
     },
     {
       "path": "/logos/svg/education/space/mercury.svg",
-      "sha256": "f537acb2ab7fd4e2c44d554d142cca62dc97c61aed5896ac597a45832b155227"
+      "sha256": "a96af71332e455a3861f9afc43c69e4d12873e3bf081b77a76d39a6c001ad82c"
     },
     {
       "path": "/logos/svg/education/space/venus.svg",
-      "sha256": "02e508377b2ba3c190d9bd252675798e4319253923f9ba43815aef07ff6a4410"
+      "sha256": "93804100e24ba92dbb2309a986045dbc3ee3024641c9ec860f2eacb6db745304"
     },
     {
       "path": "/logos/svg/education/space/earth.svg",
-      "sha256": "6e1cc8df38d42ffd66f7074af2c2f5452cb337f9b7a2a40c046881622434ec87"
+      "sha256": "63ade299a46f5271319c498c81a17fe31743c54859909f9f5d34a1cd0b6284a5"
     },
     {
       "path": "/logos/svg/education/space/mars.svg",
-      "sha256": "6d0230adbe7efc6f09bc0edf5290f20ac17b9d19a466f7843bab1e8269953b05"
+      "sha256": "3843d1b3367085a279bd8cac24c9b7cbaf8053968b25f8dbc23171520c6ce692"
     },
     {
       "path": "/logos/svg/education/space/jupiter.svg",
-      "sha256": "6389533c9eca5726df7c77108855c05b7621667bdcd1474c178c918b82b47bfc"
+      "sha256": "02c96d03a9de221b8e52ce2ed6db4330ba3ab63984ab9bf5bfc36577e367d2d8"
     },
     {
       "path": "/logos/svg/education/space/saturn.svg",
-      "sha256": "9076097c7f44202f60e4ab207021bcbefe3be0b70335d27487544a4f2af690c1"
+      "sha256": "4f455894a06101d286af497d2dbf43704643800501aba1bf67387c46d0769318"
     },
     {
       "path": "/logos/svg/education/space/uranus.svg",
-      "sha256": "054e99985ca4f3ac012f8a77302909c4e93476057f28b7ee34b82a7288b8c5b6"
+      "sha256": "eac786d2aa483bfe81f62f3959aadc09acf463449c2f20f05ca30da439c045c4"
     },
     {
       "path": "/logos/svg/education/space/neptune.svg",
-      "sha256": "603fff13c20327308a4a802b0784c92a3cdbceccbd2bedf16c5f18d9bfbfc3cb"
+      "sha256": "618bdd43c5b282585d62aac3c173312b1be0d5e428e784549ff31db6f0dba683"
     },
     {
       "path": "/logos/svg/education/space/pluto.svg",
-      "sha256": "fb91b4521c4e16d38c6392466bfa13dbd1f41882e2815328d111420039590872"
+      "sha256": "71bbe42e22273d63a17942c39568c3d0cb5df79bc3c11f6046079f1da9b56f58"
     },
     {
       "path": "/logos/svg/education/space/sun.svg",
@@ -1215,11 +1215,11 @@
     },
     {
       "path": "/logos/svg/education/space/comet.svg",
-      "sha256": "5f5a667da2db3f2a3938593f5d4ed5df1769649d2530d00be03034958d285d00"
+      "sha256": "c04401cbe686072891423eeb5ff91d538b154222086a3c3c544f5ee4e21087df"
     },
     {
       "path": "/logos/svg/education/space/galaxy.svg",
-      "sha256": "2090036f066f63bd509e1f8832ed8bbf016997009cf56077082f1904bbc1a302"
+      "sha256": "2bcbdf9d18ff04670a189fa9f800aa2be9679c49e06ab2d8792f9138f94e2545"
     },
     {
       "path": "/logos/svg/education/science/atom.svg",

@@ -168,6 +168,59 @@ def science_figures():
       'THERMOMETER':('Thermometer','Lab equipment',thermometer()),'MICROSCOPE':('Microscope','Lab equipment',microscope()),
     }
 
+# Planets are drawn like textbook figures: a flat disk in the body's own palette with its
+# real surface cues (polar caps, belts, craters, cloud swirls, ring systems) and a white
+# specular highlight on the lit upper-left limb. Each paints all three palette slots.
+def band(y1, y2, fill, r=96, cx=128, cy=128):
+    """A horizontal zone of a disk between two heights (belts, polar caps)."""
+    w = lambda y: math.sqrt(max(r*r - (y-cy)**2, 0))
+    return f'<path fill="{fill}" d="M{cx-w(y1):.1f} {y1}H{cx+w(y1):.1f}A{r} {r} 0 0 1 {cx+w(y2):.1f} {y2}H{cx-w(y2):.1f}A{r} {r} 0 0 1 {cx-w(y1):.1f} {y1}Z"/>'
+def limb(r, cx=128, cy=128):
+    pt = lambda deg: f'{cx+r*math.cos(math.radians(deg)):.1f} {cy+r*math.sin(math.radians(deg)):.1f}'
+    return f'<path fill="none" stroke="{WHITE}" stroke-width="5" stroke-linecap="round" d="M{pt(198)}A{r} {r} 0 0 1 {pt(252)}"/>'
+def ring(rx, ry, tilt, color, width, front, cap=''):
+    """Half of a ring ellipse (front passes below the globe, back above); drawn in a tilted group."""
+    half = f'<path d="M{-rx} 0A{rx} {ry} 0 0 {0 if front else 1} {rx} 0"/>'  # sweep 1 passes above the centre line
+    return f'<g transform="translate(128 128) rotate({tilt})" fill="none" stroke="{color}" stroke-width="{width}">{half}{cap}</g>'
+
+def planet_figures():
+    figures = {}
+    def planet(ab, name, dark, light, body, art, r=96):
+        figures[ab] = (name, [dark, light, WHITE], circle(128, 128, r, body) + art + limb(r - 10))
+    gray, silver = '#555B65', '#ACB1B9'
+    craters = ((88, 92, 16), (152, 68, 9), (160, 150, 22), (96, 168, 11), (130, 120, 6), (188, 110, 7), (126, 196, 8))
+    planet('MERCURY', 'Mercury', gray, silver, silver, line(''.join(f'<circle cx="{x}" cy="{y}" r="{r}"/>' for x, y, r in craters), gray, 3)
+           + ''.join(circle(x, y, r-5, gray) + circle(x-3, y-3, r-5, silver) for x, y, r in craters if r > 10) + circle(188, 110, 3, WHITE))
+    rust, straw = '#B45D16', '#F1BC67'
+    planet('VENUS', 'Venus', rust, straw, straw, line('<path d="M44 100Q128 66 212 108M38 136Q110 178 198 170M70 196Q130 150 186 190M60 70Q100 92 140 78"/>', rust, 7))
+    ocean, land = '#1968B3', '#57AD57'
+    continents = ('M74 58C90 48 118 48 128 60C138 66 130 80 120 88C112 96 108 106 104 118C98 126 92 118 88 112C80 106 72 100 70 92C62 84 60 72 74 58Z'
+                  'M112 128C124 124 138 130 142 142C146 156 138 174 128 190C124 196 118 192 118 182C114 168 108 150 106 140C104 134 106 130 112 128Z'
+                  'M188 92C200 88 214 100 212 116C210 130 200 140 190 136C182 130 178 112 188 92Z')
+    planet('EARTH', 'Earth', ocean, land, ocean, f'<path fill="{land}" d="{continents}"/>' + band(32, 46, WHITE) + band(212, 224, WHITE)
+           + line('<path d="M60 150Q80 142 98 152M150 70Q168 60 186 70M150 176Q170 170 192 180"/>', WHITE, 4))
+    red, ochre = '#A63D24', '#D98A58'
+    maria = 'M64 112C90 96 126 104 150 118C170 128 190 126 202 140C184 156 150 152 126 144C104 138 82 136 64 128Z M150 80C166 72 184 82 180 92C168 98 150 92 150 80Z M96 176C110 170 128 176 126 186C116 192 98 188 96 176Z'
+    planet('MARS', 'Mars', red, ochre, ochre, f'<path fill="{red}" d="{maria}"/>' + band(32, 52, WHITE) + band(212, 224, WHITE))
+    umber, sand = '#B37740', '#E6BD89'
+    belts = ''.join(band(y1, y2, umber) for y1, y2 in ((56, 64), (82, 100), (122, 128), (138, 156), (174, 182), (194, 200)))
+    planet('JUPITER', 'Jupiter', umber, sand, sand, belts + f'<ellipse cx="160" cy="160" rx="22" ry="11" fill="{umber}" stroke="{WHITE}" stroke-width="3"/>')
+    gold, walnut = '#B88D42', '#66523D'
+    bands = ''.join(band(y1, y2, walnut, 68) for y1, y2 in ((88, 92), (112, 118), (144, 148)))
+    rings = lambda front: ring(116, 26, -18, walnut, 14, front) + ring(116, 26, -18, WHITE, 2, front)
+    figures['SATURN'] = ('Saturn', [gold, walnut, WHITE], rings(False) + circle(128, 128, 68, gold) + bands + limb(58) + rings(True))
+    teal, ice = '#4496A4', '#9CD5D9'
+    figures['URANUS'] = ('Uranus', [teal, ice, WHITE], ring(108, 14, 102, teal, 6, False) + circle(128, 128, 88, ice)
+                         + line('<path d="M62 100Q128 82 194 100M62 156Q128 174 194 156"/>', teal, 4) + limb(78) + ring(108, 14, 102, teal, 6, True))
+    navy, azure = '#2247A0', '#5E91DE'
+    planet('NEPTUNE', 'Neptune', navy, azure, navy, band(92, 104, azure) + band(136, 158, azure)
+           + line('<path d="M72 80Q104 70 136 78M118 172Q150 164 184 176"/>', WHITE, 4))
+    cocoa, cream = '#8F6A58', '#E6C8AB'
+    heart = 'M142 196C72 146 80 96 114 96C126 96 136 106 142 118C148 106 158 96 170 96C204 96 212 146 142 196Z'
+    lobe = 'M142 196C72 146 80 96 114 96C126 96 136 106 142 118Z'
+    planet('PLUTO', 'Pluto', cocoa, cream, cocoa, f'<path fill="{cream}" d="{heart}"/><path fill="{WHITE}" d="{lobe}"/>')
+    return figures
+
 entries=[]; assets=[]
 def add(league, abbr, name, group, body, aliases=(), unused=(), alternates=(), palette=PALETTE):
     folder=league.lower();path=f'/logos/svg/education/{folder}/{abbr.lower()}.svg'
@@ -222,20 +275,8 @@ def build():
       'PRISM':('Triangular prism','<path d="M32 204 96 76 160 204Z M96 76 160 24 224 152 160 204 M32 204 96 152 M160 24 96 152 224 152"/>',['prism']),
     }
     for ab,(name,art,aliases) in solids.items():add('SHAPE',ab,name,'3D solids',line(art),aliases,[1,2])
-    # Planet illustrations retain distinct physical cues even after recoloring.
-    bodies={
-      'MERCURY':('Mercury',circle(128,128,90)+circle(90,90,22,ACCENT)+circle(162,148,30,ACCENT)+circle(91,174,12,WHITE),['#555B65','#ACB1B9',WHITE]),
-      'VENUS':('Venus',circle(128,128,90)+line('<path d="M65 72Q180 48 184 106T72 150Q40 188 166 194 M57 119Q130 86 194 139"/>',ACCENT,14),['#B45D16','#F1BC67',WHITE]),
-      'EARTH':('Earth',circle(128,128,90)+f'<path fill="{ACCENT}" d="M82 51 128 41 145 65 123 90 133 119 102 141 82 125 58 102 45 109 52 76Z M144 135 183 118 211 151 190 187 164 210 153 177 132 158Z"/>', ['#1968B3','#57AD57',WHITE]),
-      'MARS':('Mars',circle(128,128,90)+f'<path fill="{ACCENT}" d="M48 116Q85 78 131 128T207 150L195 178Q138 147 100 165T51 173Z"/>'+f'<path fill="{WHITE}" d="M88 47Q128 27 168 47L153 65 114 71Z"/>',['#A63D24','#D98A58',WHITE]),
-      'JUPITER':('Jupiter',circle(128,128,90)+line('<path d="M64 70H192 M43 103H213 M43 145H213 M65 185H191"/>',ACCENT,14)+f'<ellipse cx="164" cy="151" rx="27" ry="17" fill="{WHITE}"/>',['#B37740','#E6BD89',WHITE]),
-      'SATURN':('Saturn',circle(128,128,66)+line('<ellipse cx="128" cy="128" rx="116" ry="31" transform="rotate(-24 128 128)"/>',ACCENT,14),['#B88D42','#66523D',WHITE]),
-      'URANUS':('Uranus',line('<ellipse cx="128" cy="128" rx="32" ry="113" transform="rotate(18 128 128)"/>',ACCENT,9)+circle(128,128,70)+line('<path d="M81 95Q119 71 166 89 M83 156Q131 179 170 152"/>',ACCENT,9),['#4496A4','#9CD5D9',WHITE]),
-      'NEPTUNE':('Neptune',circle(128,128,90)+line('<path d="M57 83Q131 112 196 83 M48 154Q112 180 207 150"/>',ACCENT,12)+f'<ellipse cx="160" cy="124" rx="25" ry="12" fill="{WHITE}"/>',['#2247A0','#5E91DE',WHITE]),
-      'PLUTO':('Pluto',circle(128,128,86)+f'<path fill="{ACCENT}" d="M128 173C36 111 89 68 128 105C167 68 220 111 128 173Z"/>',['#8F6A58','#E6C8AB',WHITE]),
-    }
-    for ab,(name,art,pal) in bodies.items():
-        art=art.replace(INK,pal[0]).replace(ACCENT,pal[1]);add('SPACE',ab,name,'Dwarf planets' if ab=='PLUTO' else 'Planets',art,palette=pal,unused=[2] if WHITE not in art else [])
+    for ab,(name,pal,art) in planet_figures().items():
+        add('SPACE',ab,name,'Dwarf planets' if ab=='PLUTO' else 'Planets',art,palette=pal)
     add('SPACE','SUN','Sun','Other objects',circle(128,128,61)+line(''.join(f'<path d="M{128+82*math.cos(a):.2f} {128+82*math.sin(a):.2f}L{128+110*math.cos(a):.2f} {128+110*math.sin(a):.2f}"/>' for a in [i*math.pi/6 for i in range(12)])),['Sol'],[1,2])
     add('SPACE','MOON','Moon','Other objects',f'<path fill="{INK}" d="M172 30A99 99 0 1 0 220 170A93 93 0 0 1 172 30Z"/>',['Luna','crescent moon'],[1,2])
     add('SPACE','COMET','Comet','Other objects',circle(71,184,35)+line('<path d="M58 147 153 35 M96 169 222 84 M85 143 209 42"/>'),[],[1,2])

@@ -36,6 +36,70 @@
     }
   },
   {
+    "teamId": "APP-AB",
+    "id": "yellow-bird",
+    "label": "Yellow triangle bird",
+    "sourceUrl": "https://logowik.com/angry-birds-characters-vector-logo-4929.html",
+    "sourcePage": "https://logowik.com/angry-birds-characters-vector-logo-4929.html",
+    "sourceSha256": "176085458a8cf0226666cc4a68a5a89af10af4f522c295b8d5ff081f2079d3ef",
+    "downloadForm": "logowik",
+    "ops": {
+      "keepNodes": [
+        "0",
+        "6"
+      ],
+      "viewBox": "239.103 55.552 112.074 107.686"
+    }
+  },
+  {
+    "teamId": "APP-AB",
+    "id": "black-bird",
+    "label": "Black bomb bird",
+    "sourceUrl": "https://logowik.com/angry-birds-characters-vector-logo-4929.html",
+    "sourcePage": "https://logowik.com/angry-birds-characters-vector-logo-4929.html",
+    "sourceSha256": "176085458a8cf0226666cc4a68a5a89af10af4f522c295b8d5ff081f2079d3ef",
+    "downloadForm": "logowik",
+    "ops": {
+      "keepNodes": [
+        "0",
+        "4"
+      ],
+      "viewBox": "59.055 404.755 100.649 105.819"
+    }
+  },
+  {
+    "teamId": "APP-AB",
+    "id": "white-bird",
+    "label": "White egg bird",
+    "sourceUrl": "https://logowik.com/angry-birds-characters-vector-logo-4929.html",
+    "sourcePage": "https://logowik.com/angry-birds-characters-vector-logo-4929.html",
+    "sourceSha256": "176085458a8cf0226666cc4a68a5a89af10af4f522c295b8d5ff081f2079d3ef",
+    "downloadForm": "logowik",
+    "ops": {
+      "keepNodes": [
+        "0",
+        "8"
+      ],
+      "viewBox": "442.488 224.294 109.419 117.559"
+    }
+  },
+  {
+    "teamId": "APP-AB",
+    "id": "green-bird",
+    "label": "Green boomerang bird",
+    "sourceUrl": "https://logowik.com/angry-birds-characters-vector-logo-4929.html",
+    "sourcePage": "https://logowik.com/angry-birds-characters-vector-logo-4929.html",
+    "sourceSha256": "176085458a8cf0226666cc4a68a5a89af10af4f522c295b8d5ff081f2079d3ef",
+    "downloadForm": "logowik",
+    "ops": {
+      "keepNodes": [
+        "0",
+        "9"
+      ],
+      "viewBox": "239.766 407.214 132.295 108.602"
+    }
+  },
+  {
     "teamId": "APP-AIRBNB",
     "id": "primary",
     "label": "Looped belo",
@@ -115,6 +179,17 @@
         "96"
       ],
       "viewBox": "109.245 230.899 54.286 54.286"
+    }
+  },
+  {
+    "teamId": "APP-CALENDAR",
+    "id": "dot-grid",
+    "label": "Dotted month grid tile",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/8/8c/Calendar_%28iOS%29_II.svg/revision/latest?cb=20240615214253",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Calendar_(iOS)_II.svg",
+    "sourceSha256": "6d0e98ee4ddd6b3da85c7161bf1927f60b7c46c3baad18b2ec1873a444d331db",
+    "ops": {
+      "viewBox": "-30.72 -30.72 1085.44 1085.44"
     }
   },
   {
@@ -245,6 +320,17 @@
     }
   },
   {
+    "teamId": "APP-DUO",
+    "id": "full-body-owl",
+    "label": "Full-body green owl (2013)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/6/65/Duolingo_%282013%29_%28App_icon%29_%28Android%29.svg/revision/latest?cb=20250808033405",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Duolingo_(2013)_(App_icon)_(Android).svg",
+    "sourceSha256": "968d00ed6500921a34e4b44376226780eb145f8d1f13d8884af5ddea17206779",
+    "ops": {
+      "viewBox": "-79.54 -79.54 2794.843 2810.414"
+    }
+  },
+  {
     "teamId": "APP-FACETIME",
     "id": "primary",
     "label": "Video camera tile",
@@ -269,6 +355,19 @@
     "sourceSha256": "38693f5a58b87f7f77f3a0ee21c4940135109a1f25df2388c028aae042e4e441",
     "ops": {
       "viewBox": "5.28 5.28 37.44 37.44"
+    }
+  },
+  {
+    "teamId": "APP-FORTNITE",
+    "id": "llama",
+    "label": "Loot llama silhouette",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/5/5e/Fortnite_%28Llama_Loot_Pi%C3%B1ata_Silhouette%29.svg/revision/latest?cb=20200907103823",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Fortnite_(Llama_Loot_Pi%C3%B1ata_Silhouette).svg",
+    "sourceSha256": "9518abf9f4ea7c8e551053d4ff24d269362f563510ac087f9acf42cfc1981fc0",
+    "ops": {
+      "fill": "#000000",
+      "clipToViewBox": true,
+      "viewBox": "95 -66 440 626"
     }
   },
   {
@@ -595,6 +694,17 @@
     }
   },
   {
+    "teamId": "APP-TELEGRAM",
+    "id": "square-plane",
+    "label": "Paper plane on blue square (2013)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/d/d4/Telegram_2013_logo.svg/revision/latest?cb=20230202162456",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Telegram_2013_logo.svg",
+    "sourceSha256": "acbf95fc5e364991236a75277d10a54566d25410d380abb58fb9770b8bb69361",
+    "ops": {
+      "viewBox": "-0.48 -0.48 16.96 16.96"
+    }
+  },
+  {
     "teamId": "APP-THREADS",
     "id": "primary",
     "label": "Looping at sign",
@@ -709,6 +819,17 @@
     "sourceSha256": "368ac210e22400910660ef6f632cd652c439dc494e75891ffc809847aa7551ac",
     "ops": {
       "viewBox": "-5.12 -5.12 266.24 189.568"
+    }
+  },
+  {
+    "teamId": "APP-YT",
+    "id": "tv-set",
+    "label": "Retro TV set tile (2007)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/4/4f/YouTube_%28iOS_1-6%29_icon.svg/revision/latest?cb=20241012181839",
+    "sourcePage": "https://logos.fandom.com/wiki/File:YouTube_(iOS_1-6)_icon.svg",
+    "sourceSha256": "34a20c7adcfb358b8cf359555c6f42547f772abd470067069243fe5496e0e27a",
+    "ops": {
+      "viewBox": "-8.46 -8.46 298.92 298.92"
     }
   },
   {
@@ -3003,6 +3124,21 @@
     }
   },
   {
+    "teamId": "TV-TELEMUNDO",
+    "id": "2000-crescent-t",
+    "label": "2000 blue T with crescent",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/7/7e/Telemundo_2000.svg/revision/latest?cb=20171117091154",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Telemundo_2000.svg",
+    "sourceSha256": "eb71487b039f5d72343717e8222f2bb3f273e71ec86d8d0fdf86eac1c0bc2993",
+    "ops": {
+      "keepNodes": [
+        "0/9",
+        "0/10"
+      ],
+      "viewBox": "-25.708 -25.708 899.253 908.35"
+    }
+  },
+  {
     "teamId": "TV-HBO",
     "id": "primary",
     "label": "Wordmark",
@@ -3265,6 +3401,17 @@
     }
   },
   {
+    "teamId": "TV-CN",
+    "id": "1992-checkerboard",
+    "label": "1992 checkerboard",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/d/d1/Cartoon_Network_%281992%29_%28Textless%29.svg/revision/latest?cb=20241003083915",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Cartoon_Network_(1992)_(Textless).svg",
+    "sourceSha256": "66258a806cb033766cb23ce5a41da716498dc8f752d664d746f3b1bf5f312a36",
+    "ops": {
+      "viewBox": "-30 -30 1060 349.576"
+    }
+  },
+  {
     "teamId": "TV-DISNEY",
     "id": "primary",
     "label": "1997 red-and-blue ears",
@@ -3316,6 +3463,27 @@
         "3/0/4"
       ],
       "viewBox": "-8.916 -8.916 463.629 399.846"
+    }
+  },
+  {
+    "teamId": "TV-NICKJR",
+    "id": "1993-dog-and-cat",
+    "label": "1993 dog and cat",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/5/53/Nick_Jr._%28Dogs%2C_1993%29.svg/revision/latest?cb=20200819150926",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Nick_Jr._(Dogs,_1993).svg",
+    "sourceSha256": "843d98a2903afc58294c6f1f7a5eef286ae887aac15308e142290cea93d30cb0",
+    "ops": {
+      "removeNodes": [
+        "3/0/2",
+        "3/0/3",
+        "3/0/4",
+        "3/0/5",
+        "3/0/7",
+        "3/0/8",
+        "3/0/10",
+        "3/0/11"
+      ],
+      "viewBox": "-22.771 -22.771 804.567 615.422"
     }
   },
   {
@@ -3381,6 +3549,22 @@
         "1/9"
       ],
       "viewBox": "-4.997 -4.997 259.858 259.837"
+    }
+  },
+  {
+    "teamId": "TV-PBSKIDS",
+    "id": "1993-p-pals",
+    "label": "1993 capped character",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/c/c8/PBS_Kids_logo_1993_P-Pals.svg/revision/latest?cb=20201107080256",
+    "sourcePage": "https://logos.fandom.com/wiki/File:PBS_Kids_logo_1993_P-Pals.svg",
+    "sourceSha256": "c3f9c66cc874c235d5fa2c6ab74b56a37282f53927343e4eb0c459fd33746ecf",
+    "ops": {
+      "removeNodes": [
+        "1/20",
+        "1/21",
+        "1/22"
+      ],
+      "viewBox": "-8.082 -29.794 1052.712 809.922"
     }
   },
   {
@@ -5030,6 +5214,17 @@
     }
   },
   {
+    "teamId": "CLOTH-CK",
+    "id": "1992-serif-monogram",
+    "label": "1992 serif monogram",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/7/78/CK_Calvin_Klein_Monogram_%281992%29.svg/revision/latest?cb=20221121073948",
+    "sourcePage": "https://logos.fandom.com/wiki/File:CK_Calvin_Klein_Monogram_(1992).svg",
+    "sourceSha256": "90015dc10dea36cfee83dd94da74014caa9be2f49c773a59b524e6e8487537cf",
+    "ops": {
+      "viewBox": "-0.295 -0.295 10.435 8.173"
+    }
+  },
+  {
     "teamId": "CLOTH-COLUMBIA",
     "id": "primary",
     "label": "Diamond grid",
@@ -5222,6 +5417,23 @@
     }
   },
   {
+    "teamId": "CLOTH-POLO",
+    "id": "jeans-flag",
+    "label": "1990s jeans flag",
+    "sourceUrl": "https://iconape.com/wp-content/files/hj/203422/svg/203422.svg",
+    "sourcePage": "https://iconape.com/polo-jeans-ralph-lauren-logo-logo-icon-svg-png.html",
+    "sourceSha256": "51fe0b37ed189c26b3ef38c4bf67d98e5034d825534e41e052fa461b01d35b7d",
+    "ops": {
+      "keepNodes": [
+        "0/0-7",
+        "0/10"
+      ],
+      "fill": "#0053A0",
+      "viewBox": "8.5 48.8 175.7 97.8",
+      "clipToViewBox": true
+    }
+  },
+  {
     "teamId": "CLOTH-PUMA",
     "id": "primary",
     "label": "Leaping cat",
@@ -5389,6 +5601,23 @@
         "2/0/0"
       ],
       "viewBox": "-1.544 -1.544 41.688 33.288"
+    }
+  },
+  {
+    "teamId": "CLOTH-WRANGLER",
+    "id": "galloping-horse",
+    "label": "Galloping horse tab",
+    "sourceUrl": "https://iconape.com/wp-content/files/uw/116293/svg/wrangler-2.svg",
+    "sourcePage": "https://iconape.com/wrangler-logo-icon-svg-png.html",
+    "sourceSha256": "5fdc6cf820797d81b9b84301eb7a5c490f62a7d2470e383676e72581c83cf95a",
+    "ops": {
+      "keepNodes": [
+        "0/2",
+        "0/3",
+        "0/4"
+      ],
+      "viewBox": "-0.075 73.854 52.724 32.94",
+      "clipToViewBox": true
     }
   },
   {
@@ -9460,6 +9689,17 @@
     }
   },
   {
+    "teamId": "APP-AMUSIC",
+    "id": "blue-disc",
+    "label": "Blue note disc (2012)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/a/a6/ITunes11.svg/revision/latest?cb=20260904002019",
+    "sourcePage": "https://logos.fandom.com/wiki/File:ITunes11.svg",
+    "sourceSha256": "5536a20d3a564fadc05f3215886a41aba4dd1e00e08453c7ed237b572c5ae837",
+    "ops": {
+      "viewBox": "-13.468 -13.468 475.886 475.886"
+    }
+  },
+  {
     "teamId": "APP-APPSTORE",
     "id": "pencil-a-2013",
     "label": "Pencil A tile (2013)",
@@ -9504,6 +9744,29 @@
     }
   },
   {
+    "teamId": "APP-CHROME",
+    "id": "glossy-orb",
+    "label": "Glossy 3D orb (2008)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/9/98/Google_Chrome_Logo_2008.svg/revision/latest?cb=20220215235053",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Google_Chrome_Logo_2008.svg",
+    "sourceSha256": "bb9d990e231c1489a4571d1c05d80d950e28ffb776f76f9df6bb45f551151a7d",
+    "ops": {
+      "viewBox": "-15.361 -15.361 542.763 521.134"
+    }
+  },
+  {
+    "teamId": "APP-CHROME",
+    "id": "pixel-dino",
+    "label": "Pixel T-rex",
+    "sourceUrl": "https://logowik.com/chrome-dinosaurio-logo-vector-59547.html",
+    "sourcePage": "https://logowik.com/chrome-dinosaurio-logo-vector-59547.html",
+    "sourceSha256": "963d1d2891fb40325a7b3d4e6318633533bafc17bf9a1bb2cb6783236cabd69d",
+    "downloadForm": "logowik",
+    "ops": {
+      "viewBox": "4.686 -9.162 301.969 323.724"
+    }
+  },
+  {
     "teamId": "APP-CRUNCHY",
     "id": "mono-hime-2024",
     "label": "One-color hime (2024)",
@@ -9512,6 +9775,20 @@
     "sourceSha256": "06215c80509b0c5548b1ddb415d377b504b3c9d684b7cd497eeacedffa42df5e",
     "ops": {
       "viewBox": "-10.583 -10.583 285.75 285.75"
+    }
+  },
+  {
+    "teamId": "APP-CRUNCHY",
+    "id": "inked-orb",
+    "label": "Inked orange orb (2006)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/3/3b/Crunchyroll_2006.svg/revision/latest?cb=20190312173523",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Crunchyroll_2006.svg",
+    "sourceSha256": "ecc83fa3cde0b2f263ef4554794954e60f8f4fd96475f5e6e5c18ac76055e8b9",
+    "ops": {
+      "removeNodes": [
+        "0/1"
+      ],
+      "viewBox": "-7.923 -7.922 279.917 244.846"
     }
   },
   {
@@ -9578,6 +9855,17 @@
     "sourceSha256": "19977e5fdfc52866484399b2cafcb6b030162018cc7f14df0ce5be6ac6089712",
     "ops": {
       "viewBox": "-43.2 -43.2 1165.4 1166.4"
+    }
+  },
+  {
+    "teamId": "APP-MC",
+    "id": "crafting-table",
+    "label": "Crafting table (2013)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/0/04/Minecraft_2013_client_icon.svg/revision/latest?cb=20250306114922",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Minecraft_2013_client_icon.svg",
+    "sourceSha256": "9170753525afea9636857d10d54a2b816934599ed62703adaa3b5df2a75b87ce",
+    "ops": {
+      "viewBox": "-4.258 -4.013 142.045 150.463"
     }
   },
   {
@@ -9757,6 +10045,17 @@
     }
   },
   {
+    "teamId": "APP-TIKTOK",
+    "id": "waveform-badge",
+    "label": "Pink waveform badge (2014)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/2/2a/Musical.ly.svg/revision/latest?cb=20170610210937",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Musical.ly.svg",
+    "sourceSha256": "07da01b3274573c972f60577b059643482071c020b2fd8f87549ad2322877b2f",
+    "ops": {
+      "viewBox": "-224 -134 1060 1060"
+    }
+  },
+  {
     "teamId": "APP-TWITCH",
     "id": "black-glitch",
     "label": "Black glitch",
@@ -9798,6 +10097,1079 @@
     "sourceSha256": "14efa8398d49af83a4709b2f54731b97c53d09c9b94744fdc4eb10871f1086cc",
     "ops": {
       "viewBox": "-14.711 -14.711 397.193 328.136"
+    }
+  },
+  {
+    "teamId": "APP-X",
+    "id": "t-tile",
+    "label": "Glossy lowercase t tile (2006)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/7/71/Twitter_2006_Icon.svg/revision/latest?cb=20241207111147",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Twitter_2006_Icon.svg",
+    "sourceSha256": "b4ebc3f95995831cb31f05e05a41f7ae942c18ff19a3751bee1245e598c2f0cf",
+    "ops": {
+      "viewBox": "-71.98 -71.98 2543.279 2530.669"
+    }
+  },
+  {
+    "teamId": "APP-X",
+    "id": "perched-bird",
+    "label": "Perched bird (2006)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/c/c4/2006_Twitter_bird.svg/revision/latest?cb=20230726002143",
+    "sourcePage": "https://logos.fandom.com/wiki/File:2006_Twitter_bird.svg",
+    "sourceSha256": "eedebee815b88556f89b24573866b1f87984089a75bbe44c4d1cdcaa1891a931",
+    "ops": {
+      "viewBox": "-7.764 -7.264 265.328 265.492"
+    }
+  },
+  {
+    "teamId": "APP-BLUESKY",
+    "id": "primary",
+    "label": "Blue butterfly",
+    "sourceUrl": "https://api.iconify.design/logos/bluesky.svg",
+    "sourcePage": "https://icon-sets.iconify.design/logos/bluesky/",
+    "sourceSha256": "98dd85ccac46744ded88c78d43da8709dcf0927fd2d0c9b46c2d88c564703e09",
+    "ops": {
+      "viewBox": "-7.68 -7.68 271.36 240.765"
+    }
+  },
+  {
+    "teamId": "APP-BLUESKY",
+    "id": "2021-cube",
+    "label": "Blue cube (2021)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/e/eb/Bluesky_2021.svg/revision/latest?cb=20231223212659",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Bluesky_2021.svg",
+    "sourceSha256": "418f8b89eaf89817913110c80f0fa79d420fe029fece849f6f859241d141b27a",
+    "ops": {
+      "viewBox": "503.499 18.59 641.001 726.877"
+    }
+  },
+  {
+    "teamId": "APP-BUMBLE",
+    "id": "primary",
+    "label": "Striped hexagon",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/a/ad/Bumble_icon.svg/revision/latest?cb=20251127234709",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Bumble_icon.svg",
+    "sourceSha256": "588cf3bee276a221dd3a80b4b382c5104b2b68ebc32c93efb7dda2c4f412df3f",
+    "ops": {
+      "viewBox": "-14.051 -14.048 496.372 440.317"
+    }
+  },
+  {
+    "teamId": "APP-BUMBLE",
+    "id": "2024-tile",
+    "label": "Striped yellow tile (2024)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/4/46/Bumble_App_icon_%282024%29.svg/revision/latest?cb=20240501221518",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Bumble_App_icon_%282024%29.svg",
+    "sourceSha256": "33c0cdd1dc75b3b1a2dd1e3787697c69664e6413a7f1fe2102547e99501f162a",
+    "ops": {
+      "viewBox": "-9 -9 318 318"
+    }
+  },
+  {
+    "teamId": "APP-CALC",
+    "id": "primary",
+    "label": "Keypad tile",
+    "sourceUrl": "https://logowik.com/ios-17-app-icons-set-icon-59931.html",
+    "sourcePage": "https://logowik.com/ios-17-app-icons-set-icon-59931.html",
+    "sourceSha256": "409ebe6d39fa43d32cac5ddf5dca708e45c0ff329eb5865ab6616bd3bbf9fd8b",
+    "downloadForm": "logowik",
+    "ops": {
+      "keepNodes": [
+        "0",
+        "34-44"
+      ],
+      "viewBox": "178.14 143.84 55.12 55.12"
+    }
+  },
+  {
+    "teamId": "APP-CALC",
+    "id": "operator-grid",
+    "label": "Operator grid tile (2013)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/0/0d/IOS_Calculator.svg/revision/latest?cb=20260212015427",
+    "sourcePage": "https://logos.fandom.com/wiki/File:IOS_Calculator.svg",
+    "sourceSha256": "43e01707caff77c5c79359b4173e286790f107f7f973ba2d2a6839b773f42dee",
+    "ops": {
+      "viewBox": "-26.88 -26.88 949.76 949.76"
+    }
+  },
+  {
+    "teamId": "APP-CAMERA",
+    "id": "primary",
+    "label": "Camera body tile",
+    "sourceUrl": "https://logowik.com/ios-17-app-icons-set-icon-59931.html",
+    "sourcePage": "https://logowik.com/ios-17-app-icons-set-icon-59931.html",
+    "sourceSha256": "409ebe6d39fa43d32cac5ddf5dca708e45c0ff329eb5865ab6616bd3bbf9fd8b",
+    "downloadForm": "logowik",
+    "ops": {
+      "keepNodes": [
+        "0",
+        "32"
+      ],
+      "viewBox": "108.94 143.84 55.12 55.12"
+    }
+  },
+  {
+    "teamId": "APP-CANDY",
+    "id": "primary",
+    "label": "Golden candy lettering",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/4/4a/Candy_Crush.svg/revision/latest?cb=20180410174759",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Candy_Crush.svg",
+    "sourceSha256": "791de07e296528e38ab3a049dfa965cd50bf726e3dcf8f4b39dda8c51a3fd9d9",
+    "ops": {
+      "viewBox": "-30 -30 1060.001 908.396"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "APP-CAPCUT",
+    "id": "primary",
+    "label": "Crossed cut mark",
+    "sourceUrl": "https://api.iconify.design/selfhst/capcut.svg",
+    "sourcePage": "https://icon-sets.iconify.design/selfhst/capcut/",
+    "sourceSha256": "ac2c9644eb32c5c9e2d9b9609a309b73f0f96942a96fcf7f3dc3f240f0548060",
+    "ops": {
+      "viewBox": "-15.36 39.54 542.72 432.82"
+    }
+  },
+  {
+    "teamId": "APP-COINBASE",
+    "id": "primary",
+    "label": "C ring",
+    "sourceUrl": "https://api.iconify.design/thesvg-color/coinbase.svg",
+    "sourcePage": "https://icon-sets.iconify.design/thesvg-color/coinbase/",
+    "sourceSha256": "8b4a70ebe093480edc87a668a14a3c5e36705f2ab540a729f066a1f42eee0131",
+    "ops": {
+      "viewBox": "-1.44 -1.44 50.88 50.88"
+    }
+  },
+  {
+    "teamId": "APP-CROSSY",
+    "id": "primary",
+    "label": "Blocky chicken",
+    "sourceUrl": "https://raw.githubusercontent.com/chouhan-rahul/icons_plus/v5.0.0/assets/images/logos/video-games/crossy-road-logo.svg",
+    "sourcePage": "https://github.com/chouhan-rahul/icons_plus/blob/v5.0.0/assets/images/logos/video-games/crossy-road-logo.svg",
+    "sourceSha256": "a869e2442affa2c35a2d1d9385631bb015d7970743b9da0052d3c99fbcab130c",
+    "ops": {
+      "viewBox": "7.21 1.71 34.08 45.58"
+    }
+  },
+  {
+    "teamId": "APP-DEEZER",
+    "id": "primary",
+    "label": "Purple pulse heart",
+    "sourceUrl": "https://api.iconify.design/selfhst/deezer.svg",
+    "sourcePage": "https://icon-sets.iconify.design/selfhst/deezer/",
+    "sourceSha256": "b833c1a514ba2a556b08a28e96c946dd0be258ccd77e190aa7888e7af7f98b29",
+    "ops": {
+      "viewBox": "-15.36 -15.36 542.72 542.72"
+    }
+  },
+  {
+    "teamId": "APP-DEEZER",
+    "id": "equalizer",
+    "label": "Rainbow equalizer bars",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/c/c6/Deezer_Equalizer_Coloured.svg/revision/latest?cb=20201221150300",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Deezer_Equalizer_Coloured.svg",
+    "sourceSha256": "83c0665eb67d97c17486032d24dd085aa2691b0051487e28424c73b159cd90d1",
+    "ops": {
+      "viewBox": "-3.559 -3.332 125.768 84.892"
+    }
+  },
+  {
+    "teamId": "APP-EVERNOTE",
+    "id": "primary",
+    "label": "Elephant head",
+    "sourceUrl": "https://api.iconify.design/thesvg-color/evernote.svg",
+    "sourcePage": "https://icon-sets.iconify.design/thesvg-color/evernote/",
+    "sourceSha256": "b17e62fbbe02bc9c6fb1880a93052b4c65d8e8aae7475376ab0a8f852883aa09",
+    "ops": {
+      "viewBox": "1.108 -0.72 21.784 25.44"
+    }
+  },
+  {
+    "teamId": "APP-EXCEL",
+    "id": "primary",
+    "label": "Gradient blocks with X",
+    "sourceUrl": "https://api.iconify.design/selfhst/microsoft-excel.svg",
+    "sourcePage": "https://icon-sets.iconify.design/selfhst/microsoft-excel/",
+    "sourceSha256": "fe9a927672014b84019c36dbaeaa7cdd4cc73cff0ebfc159e0b0e6804e221d50",
+    "ops": {
+      "viewBox": "-8.263 -15.363 528.526 542.826"
+    }
+  },
+  {
+    "teamId": "APP-EXCEL",
+    "id": "2018-tile",
+    "label": "Green grid tile with X (2018)",
+    "sourceUrl": "https://api.iconify.design/selfhst/microsoft-excel-2018.svg",
+    "sourcePage": "https://icon-sets.iconify.design/selfhst/microsoft-excel-2018/",
+    "sourceSha256": "cae0510cfb59dfc023481837ffa8675e580438b56da87509e6b3bf5312822bdb",
+    "ops": {
+      "viewBox": "-15.36 2.54 542.72 506.92"
+    }
+  },
+  {
+    "teamId": "APP-EXCEL",
+    "id": "2013-sheet",
+    "label": "X over sheet (2013)",
+    "sourceUrl": "https://api.iconify.design/selfhst/microsoft-excel-2013.svg",
+    "sourcePage": "https://icon-sets.iconify.design/selfhst/microsoft-excel-2013/",
+    "sourceSha256": "b0b0d5e63a479bc4ba9cfe1c0064739327c8030884d035340b30cbe3c074017a",
+    "ops": {
+      "viewBox": "-15.363 -1.063 542.826 514.126"
+    }
+  },
+  {
+    "teamId": "APP-EXCEL",
+    "id": "classic-x",
+    "label": "Boxed X (2000s)",
+    "sourceUrl": "https://api.iconify.design/selfhst/microsoft-excel-2000.svg",
+    "sourcePage": "https://icon-sets.iconify.design/selfhst/microsoft-excel-2000/",
+    "sourceSha256": "eff61d236156dc1e23c291593582b015a0b32a295fbf1797197e2b34f579153e",
+    "ops": {
+      "viewBox": "-15.36 -15.36 542.72 542.72"
+    }
+  },
+  {
+    "teamId": "APP-FILES",
+    "id": "primary",
+    "label": "Blue folder tile",
+    "sourceUrl": "https://logowik.com/ios-17-app-icons-set-icon-59931.html",
+    "sourcePage": "https://logowik.com/ios-17-app-icons-set-icon-59931.html",
+    "sourceSha256": "409ebe6d39fa43d32cac5ddf5dca708e45c0ff329eb5865ab6616bd3bbf9fd8b",
+    "downloadForm": "logowik",
+    "ops": {
+      "keepNodes": [
+        "0",
+        "194-199"
+      ],
+      "viewBox": "593.84 230.44 55.12 55.12"
+    }
+  },
+  {
+    "teamId": "APP-FINDMY",
+    "id": "primary",
+    "label": "Radar target tile",
+    "sourceUrl": "https://logowik.com/ios-17-app-icons-set-icon-59931.html",
+    "sourcePage": "https://logowik.com/ios-17-app-icons-set-icon-59931.html",
+    "sourceSha256": "409ebe6d39fa43d32cac5ddf5dca708e45c0ff329eb5865ab6616bd3bbf9fd8b",
+    "downloadForm": "logowik",
+    "ops": {
+      "keepNodes": [
+        "0",
+        "201-210"
+      ],
+      "viewBox": "663.14 230.44 55.12 55.12"
+    }
+  },
+  {
+    "teamId": "APP-FLAPPY",
+    "id": "primary",
+    "label": "Pixel bird over clouds",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/b/b6/Flappy_Bird_Family_Icon.svg/revision/latest?cb=20231104110639",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Flappy_Bird_Family_Icon.svg",
+    "sourceSha256": "9e78b6b790e5c56ec9733ae44218464c69f1a32249c8900b0b653c8ff5e88d3f",
+    "ops": {
+      "viewBox": "-0.72 -0.72 25.44 24.44"
+    }
+  },
+  {
+    "teamId": "APP-FLICKR",
+    "id": "primary",
+    "label": "Blue and pink dots",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/9/94/Flickr_symbol.svg/revision/latest?cb=20250414024256",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Flickr_symbol.svg",
+    "sourceSha256": "d7f38b131c067d8f85d5c41e8ce0ae327a60a435b30f54c4de0772644024c4ed",
+    "ops": {
+      "viewBox": "-8.691 -8.691 307.088 156.672"
+    }
+  },
+  {
+    "teamId": "APP-GDOCS",
+    "id": "primary",
+    "label": "Gradient page",
+    "sourceUrl": "https://api.iconify.design/thesvg-color/google-docs-2026.svg",
+    "sourcePage": "https://icon-sets.iconify.design/thesvg-color/google-docs-2026/",
+    "sourceSha256": "b3cc0eeba87f27a6531fedd756ea0270e72e620ba6596ec1cf7359ab8a4794d3",
+    "ops": {
+      "viewBox": "26.48 2.48 139.039 195.04"
+    }
+  },
+  {
+    "teamId": "APP-GDOCS",
+    "id": "lined-page",
+    "label": "Blue lined page",
+    "sourceUrl": "https://api.iconify.design/selfhst/google-docs.svg",
+    "sourcePage": "https://icon-sets.iconify.design/selfhst/google-docs/",
+    "sourceSha256": "4120e237f726845c773c5ef99d3f251c5e5d31f94aa93d6e1265993c3d3ef9e4",
+    "ops": {
+      "viewBox": "54.44 -15.36 403.12 542.72"
+    }
+  },
+  {
+    "teamId": "APP-GDRIVE",
+    "id": "primary",
+    "label": "Gradient triangle",
+    "sourceUrl": "https://api.iconify.design/logos/google-drive.svg",
+    "sourcePage": "https://icon-sets.iconify.design/logos/google-drive/",
+    "sourceSha256": "9e9e23ec983f01b22cda32383ccfe30d706224361e1d84e9809efcab3fa895a1",
+    "ops": {
+      "viewBox": "-7.68 -7.68 271.36 252.61"
+    }
+  },
+  {
+    "teamId": "APP-GDRIVE",
+    "id": "2020-triangle",
+    "label": "Four-color triangle (2020)",
+    "sourceUrl": "https://api.iconify.design/logos/google-drive-2020.svg",
+    "sourcePage": "https://icon-sets.iconify.design/logos/google-drive-2020/",
+    "sourceSha256": "9133b28fec6d277eda71bddd7dd2f079ee7d805fb7bde7648710254822d49150",
+    "ops": {
+      "viewBox": "-7.68 -7.68 271.362 244.091"
+    }
+  },
+  {
+    "teamId": "APP-GEMINI",
+    "id": "primary",
+    "label": "Gradient sparkle",
+    "sourceUrl": "https://api.iconify.design/logos/google-gemini-icon.svg",
+    "sourcePage": "https://icon-sets.iconify.design/logos/google-gemini-icon/",
+    "sourceSha256": "6544c5c96be069a370cb38a797d30075569b98c471642419d6ec447181c53d18",
+    "ops": {
+      "viewBox": "-7.68 -7.68 271.36 271.36"
+    }
+  },
+  {
+    "teamId": "APP-GENSHIN",
+    "id": "primary",
+    "label": "Floating fairy companion",
+    "sourceUrl": "https://raw.githubusercontent.com/chouhan-rahul/icons_plus/v5.0.0/assets/images/logos/video-games/genshin-impact.svg",
+    "sourcePage": "https://github.com/chouhan-rahul/icons_plus/blob/v5.0.0/assets/images/logos/video-games/genshin-impact.svg",
+    "sourceSha256": "dc6cacd8f09edae0eefe4169ada124b4ba73848ae86b4b60b4f4c156b5748aaa",
+    "ops": {
+      "viewBox": "-1.44 -0.586 50.88 48.026"
+    }
+  },
+  {
+    "teamId": "APP-GMEET",
+    "id": "primary",
+    "label": "Yellow video camera",
+    "sourceUrl": "https://api.iconify.design/logos/google-meet.svg",
+    "sourcePage": "https://icon-sets.iconify.design/logos/google-meet/",
+    "sourceSha256": "04f0a24c9059f1cc2ff97fe9c2673c6ccf4e1c7b31289e36f6e99aae9b6b2b8b",
+    "ops": {
+      "viewBox": "-7.68 -7.68 271.359 216.086"
+    }
+  },
+  {
+    "teamId": "APP-GMEET",
+    "id": "2020-camera",
+    "label": "Four-color camera (2020)",
+    "sourceUrl": "https://api.iconify.design/logos/google-meet-2020.svg",
+    "sourcePage": "https://icon-sets.iconify.design/logos/google-meet-2020/",
+    "sourceSha256": "0c4d8169a302d2dd95dca4477e30eba0451b769eaf6829b70ad4bd24264890ba",
+    "ops": {
+      "viewBox": "-7.68 -7.68 271.363 226.004"
+    }
+  },
+  {
+    "teamId": "APP-GPHOTOS",
+    "id": "primary",
+    "label": "Gradient pinwheel",
+    "sourceUrl": "https://api.iconify.design/logos/google-photos.svg",
+    "sourcePage": "https://icon-sets.iconify.design/logos/google-photos/",
+    "sourceSha256": "be49ad61cb9324f698e3f2d842a31e1b74a5769774716568aef738a95c787401",
+    "ops": {
+      "viewBox": "-7.68 -7.68 271.36 271.36"
+    }
+  },
+  {
+    "teamId": "APP-GSHEETS",
+    "id": "primary",
+    "label": "Gradient split tile",
+    "sourceUrl": "https://api.iconify.design/thesvg-color/google-sheets-2026.svg",
+    "sourcePage": "https://icon-sets.iconify.design/thesvg-color/google-sheets-2026/",
+    "sourceSha256": "6bb5d8a9893b81e7156e00847c38afce5b1a33d2089ff35d450c59dca26d999a",
+    "ops": {
+      "viewBox": "2.72 26.72 186.56 138.56"
+    }
+  },
+  {
+    "teamId": "APP-GSHEETS",
+    "id": "grid-page",
+    "label": "Green grid page",
+    "sourceUrl": "https://api.iconify.design/selfhst/google-sheets.svg",
+    "sourcePage": "https://icon-sets.iconify.design/selfhst/google-sheets/",
+    "sourceSha256": "832a49b9cb1dee24f8ee242390b8fcf1bc3db2207a93173abde2582dbc0e4952",
+    "ops": {
+      "viewBox": "54.44 -15.36 403.12 542.72"
+    }
+  },
+  {
+    "teamId": "APP-HAYDAY",
+    "id": "primary",
+    "label": "Rooster on farm tile",
+    "sourceUrl": "https://raw.githubusercontent.com/chouhan-rahul/icons_plus/v5.0.0/assets/images/logos/video-games/hay-day.svg",
+    "sourcePage": "https://github.com/chouhan-rahul/icons_plus/blob/v5.0.0/assets/images/logos/video-games/hay-day.svg",
+    "sourceSha256": "3986e407e171e380764c78b651b2fa9c8212a1eeecd305c977f4d950073acd6d",
+    "ops": {
+      "viewBox": "4.92 4.92 38.16 38.16"
+    }
+  },
+  {
+    "teamId": "APP-HEALTH",
+    "id": "primary",
+    "label": "Heart on white tile",
+    "sourceUrl": "https://logowik.com/ios-17-app-icons-set-icon-59931.html",
+    "sourcePage": "https://logowik.com/ios-17-app-icons-set-icon-59931.html",
+    "sourceSha256": "409ebe6d39fa43d32cac5ddf5dca708e45c0ff329eb5865ab6616bd3bbf9fd8b",
+    "downloadForm": "logowik",
+    "ops": {
+      "keepNodes": [
+        "0",
+        "13-15"
+      ],
+      "viewBox": "386.04 57.24 55.12 55.12"
+    }
+  },
+  {
+    "teamId": "APP-HOME",
+    "id": "primary",
+    "label": "Orange house tile",
+    "sourceUrl": "https://logowik.com/ios-17-app-icons-set-icon-59931.html",
+    "sourcePage": "https://logowik.com/ios-17-app-icons-set-icon-59931.html",
+    "sourceSha256": "409ebe6d39fa43d32cac5ddf5dca708e45c0ff329eb5865ab6616bd3bbf9fd8b",
+    "downloadForm": "logowik",
+    "ops": {
+      "keepNodes": [
+        "0",
+        "88-94"
+      ],
+      "viewBox": "663.14 143.84 55.12 55.12"
+    }
+  },
+  {
+    "teamId": "APP-IHEART",
+    "id": "primary",
+    "label": "Broadcasting heart",
+    "sourceUrl": "https://api.iconify.design/selfhst/iheartradio.svg",
+    "sourcePage": "https://icon-sets.iconify.design/selfhst/iheartradio/",
+    "sourceSha256": "7bc8724166444daddac30452741331a6c5e2887b637b2a043de2889952fb43bc",
+    "ops": {
+      "viewBox": "-15.36 51.34 542.72 409.302"
+    }
+  },
+  {
+    "teamId": "APP-INSTACART",
+    "id": "primary",
+    "label": "Leafy carrot",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/a/a9/Instacart_2022.svg/revision/latest?cb=20220401131145",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Instacart_2022.svg",
+    "sourceSha256": "8628b6b3facad51ad27d040c3e3206b74b1fda34de0f5d1c1a912b1ac9df6bf9",
+    "ops": {
+      "keepNodes": [
+        "3/1",
+        "3/2"
+      ],
+      "viewBox": "-4.272 -2.562 122.472 150.96"
+    }
+  },
+  {
+    "teamId": "APP-INSTACART",
+    "id": "2017-carrot",
+    "label": "Orange carrot (2017)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/d/df/Instacart_2017.svg/revision/latest?cb=20200716212207",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Instacart_2017.svg",
+    "sourceSha256": "6edaa17d70ddb2195562c31a044986d6f5d016e25cb513ee5a12bcecb5a88f5b",
+    "ops": {
+      "keepNodes": [
+        "5/0/0/0/0"
+      ],
+      "viewBox": "-0.747 -0.747 23.82 26.392"
+    }
+  },
+  {
+    "teamId": "APP-JETPACK",
+    "id": "primary",
+    "label": "Grinning bearded hero",
+    "sourceUrl": "https://raw.githubusercontent.com/chouhan-rahul/icons_plus/v5.0.0/assets/images/logos/video-games/jetpack-joyride.svg",
+    "sourcePage": "https://github.com/chouhan-rahul/icons_plus/blob/v5.0.0/assets/images/logos/video-games/jetpack-joyride.svg",
+    "sourceSha256": "77db19d4332ac4ecafa49a1d2442481d4faca6ffe33d94578adb607a3a070b8c",
+    "ops": {
+      "viewBox": "4.785 2.8 38.317 42.4"
+    }
+  },
+  {
+    "teamId": "APP-KAHOOT",
+    "id": "primary",
+    "label": "K! tile",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/c/c3/Kahoot%21_%282013%2C_App_Store_icon%29.svg/revision/latest?cb=20230618173051",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Kahoot%21_%282013%2C_App_Store_icon%29.svg",
+    "sourceSha256": "7dfbbf5f11d0c52a8f74447d259840d1e0c2d46c6fe0072ff32eb75e2a21199c",
+    "ops": {
+      "viewBox": "-4.5 -4.5 159 159"
+    }
+  },
+  {
+    "teamId": "APP-KHAN",
+    "id": "primary",
+    "label": "Sprout figure hexagon",
+    "sourceUrl": "https://api.iconify.design/logos/khan-academy-icon.svg",
+    "sourcePage": "https://icon-sets.iconify.design/logos/khan-academy-icon/",
+    "sourceSha256": "987ba6547f771dedbecccf5c3ebca9ac891ecfb5d28944d0cb36c4e4468295a5",
+    "ops": {
+      "viewBox": "-8.275 -8.275 272.552 292.4"
+    }
+  },
+  {
+    "teamId": "APP-LINKEDIN",
+    "id": "primary",
+    "label": "Lowercase in tile",
+    "sourceUrl": "https://api.iconify.design/skill-icons/linkedin.svg",
+    "sourcePage": "https://icon-sets.iconify.design/skill-icons/linkedin/",
+    "sourceSha256": "098ea062ccca879b43636e2e5dfb9e13a5753b7114d411b99bccad68c2a33fd7",
+    "ops": {
+      "viewBox": "-7.68 -7.68 271.36 271.36"
+    }
+  },
+  {
+    "teamId": "APP-MAIL",
+    "id": "primary",
+    "label": "Envelope tile",
+    "sourceUrl": "https://logowik.com/ios-17-app-icons-set-icon-59931.html",
+    "sourcePage": "https://logowik.com/ios-17-app-icons-set-icon-59931.html",
+    "sourceSha256": "409ebe6d39fa43d32cac5ddf5dca708e45c0ff329eb5865ab6616bd3bbf9fd8b",
+    "downloadForm": "logowik",
+    "ops": {
+      "keepNodes": [
+        "0",
+        "367"
+      ],
+      "viewBox": "593.84 317.04 55.12 55.12"
+    }
+  },
+  {
+    "teamId": "APP-MASTODON",
+    "id": "primary",
+    "label": "M speech bubble",
+    "sourceUrl": "https://api.iconify.design/selfhst/mastodon.svg",
+    "sourcePage": "https://icon-sets.iconify.design/selfhst/mastodon/",
+    "sourceSha256": "63a8a1484d6baec739cfdb25fcda960957f7436146068453ef28bad67a2d1591",
+    "ops": {
+      "viewBox": "0.389 -15.361 511.194 542.75"
+    }
+  },
+  {
+    "teamId": "APP-MASTODON",
+    "id": "2016-circle",
+    "label": "Blue circle with white bars (2016)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/4/4c/Mastodon_2016_Icon.svg/revision/latest?cb=20231026154839",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Mastodon_2016_Icon.svg",
+    "sourceSha256": "15611b15ac23fca8292de3b1136fe2dd6d0b61f3108dd4487c39e74a5b378413",
+    "ops": {
+      "viewBox": "-15 -15 530 530"
+    }
+  },
+  {
+    "teamId": "APP-MESSENGER",
+    "id": "primary",
+    "label": "Gradient bubble with bolt",
+    "sourceUrl": "https://api.iconify.design/logos/messenger.svg",
+    "sourcePage": "https://icon-sets.iconify.design/logos/messenger/",
+    "sourceSha256": "2352b59e07a7af7a9cba77796f24803054a7effc79c9fff571db5a8017fba969",
+    "ops": {
+      "viewBox": "-7.68 -7.68 271.36 271.36"
+    }
+  },
+  {
+    "teamId": "APP-MESSENGER",
+    "id": "boxy-bubble",
+    "label": "Boxy bubble with bolt (2012)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/8/8e/Facebook_Messenger_Second_Logo.svg/revision/latest?cb=20201226084801",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Facebook_Messenger_Second_Logo.svg",
+    "sourceSha256": "4099a1704554bb5740f75acddc37ba13f0c9205eaa25af6452b6d4cb8f45a8e7",
+    "ops": {
+      "viewBox": "53.306 46.367 404.974 431.201"
+    }
+  },
+  {
+    "teamId": "APP-MSTEAMS",
+    "id": "primary",
+    "label": "Gradient people with T",
+    "sourceUrl": "https://api.iconify.design/selfhst/microsoft-teams.svg",
+    "sourcePage": "https://icon-sets.iconify.design/selfhst/microsoft-teams/",
+    "sourceSha256": "8b971a6b432075c6cfa57eb04ac1b849a36c56261ae5e3f63c9902ebd0963bf8",
+    "ops": {
+      "viewBox": "-1.857 -15.257 515.714 542.614"
+    }
+  },
+  {
+    "teamId": "APP-MSTEAMS",
+    "id": "2018-tile",
+    "label": "T tile with people (2018)",
+    "sourceUrl": "https://api.iconify.design/selfhst/microsoft-teams-2018.svg",
+    "sourcePage": "https://icon-sets.iconify.design/selfhst/microsoft-teams-2018/",
+    "sourceSha256": "c15d08c58df5a2e37c8f3068cc960db62c0b050f9d2953d3aa2f36189fea2415",
+    "ops": {
+      "viewBox": "-15.36 2.54 542.72 507.02"
+    }
+  },
+  {
+    "teamId": "APP-MSWORD",
+    "id": "primary",
+    "label": "Gradient layers with W",
+    "sourceUrl": "https://api.iconify.design/selfhst/microsoft-word.svg",
+    "sourcePage": "https://icon-sets.iconify.design/selfhst/microsoft-word/",
+    "sourceSha256": "9b9397492e49ee8357b033b714f2352c6df766b90d9f4d20218a773ef9abdd8c",
+    "ops": {
+      "viewBox": "-8.26 -15.36 528.62 542.72"
+    }
+  },
+  {
+    "teamId": "APP-MSWORD",
+    "id": "2018-tile",
+    "label": "Stacked blue bars with W (2018)",
+    "sourceUrl": "https://api.iconify.design/selfhst/microsoft-word-2018.svg",
+    "sourcePage": "https://icon-sets.iconify.design/selfhst/microsoft-word-2018/",
+    "sourceSha256": "03013e693e9706892e3a85126917829b97d1e8418d8673f7b6c5689e5ba4a67f",
+    "ops": {
+      "viewBox": "-15.36 2.54 542.72 506.92"
+    }
+  },
+  {
+    "teamId": "APP-MSWORD",
+    "id": "2013-page",
+    "label": "W over page (2013)",
+    "sourceUrl": "https://api.iconify.design/selfhst/microsoft-word-2013.svg",
+    "sourcePage": "https://icon-sets.iconify.design/selfhst/microsoft-word-2013/",
+    "sourceSha256": "b49c9dc73c25b7c412903d82bd2307c354c9ecdd11ef3bd3b48ddc3368b54833",
+    "ops": {
+      "viewBox": "-15.363 -1.063 542.826 514.126"
+    }
+  },
+  {
+    "teamId": "APP-MSWORD",
+    "id": "classic-w",
+    "label": "Boxed W (2000s)",
+    "sourceUrl": "https://api.iconify.design/selfhst/microsoft-word-2000.svg",
+    "sourcePage": "https://icon-sets.iconify.design/selfhst/microsoft-word-2000/",
+    "sourceSha256": "fcaf557882f5d1c76df76ecd1d0768905654043af5e0a3a3c108e106ebe16b36",
+    "ops": {
+      "viewBox": "-15.36 -14.26 542.72 540.52"
+    }
+  },
+  {
+    "teamId": "APP-NOTES",
+    "id": "primary",
+    "label": "Yellow-topped notepad tile",
+    "sourceUrl": "https://logowik.com/ios-17-app-icons-set-icon-59931.html",
+    "sourcePage": "https://logowik.com/ios-17-app-icons-set-icon-59931.html",
+    "sourceSha256": "409ebe6d39fa43d32cac5ddf5dca708e45c0ff329eb5865ab6616bd3bbf9fd8b",
+    "downloadForm": "logowik",
+    "ops": {
+      "keepNodes": [
+        "0",
+        "369"
+      ],
+      "viewBox": "663.14 317.04 55.12 55.12"
+    }
+  },
+  {
+    "teamId": "APP-OUTLOOK",
+    "id": "primary",
+    "label": "Gradient envelope",
+    "sourceUrl": "https://api.iconify.design/selfhst/microsoft-outlook.svg",
+    "sourcePage": "https://icon-sets.iconify.design/selfhst/microsoft-outlook/",
+    "sourceSha256": "cabcef4dd78208d86b03f14ac05a309e0c17176a7294d1d35d3b489c39d39084",
+    "ops": {
+      "viewBox": "-15.36 -1.71 542.72 515.47"
+    }
+  },
+  {
+    "teamId": "APP-OUTLOOK",
+    "id": "2018-tile",
+    "label": "Layered envelope tile (2018)",
+    "sourceUrl": "https://api.iconify.design/selfhst/microsoft-outlook-2018.svg",
+    "sourcePage": "https://icon-sets.iconify.design/selfhst/microsoft-outlook-2018/",
+    "sourceSha256": "bcc172649a7e57766ce205e89fa42fa8f72cb4529047924cb33a47607895069a",
+    "ops": {
+      "viewBox": "-15.363 2.537 542.826 506.927"
+    }
+  },
+  {
+    "teamId": "APP-OUTLOOK",
+    "id": "2013-envelope",
+    "label": "O over envelope (2013)",
+    "sourceUrl": "https://api.iconify.design/selfhst/microsoft-outlook-2013.svg",
+    "sourcePage": "https://icon-sets.iconify.design/selfhst/microsoft-outlook-2013/",
+    "sourceSha256": "6dd14e74a9f3f2b8962cdef595d74543cd7215377d6096ee2af56f6d0432f1b1",
+    "ops": {
+      "viewBox": "-15.363 -1.963 542.826 515.826"
+    }
+  },
+  {
+    "teamId": "APP-PEACOCK",
+    "id": "primary",
+    "label": "P with six colored dots",
+    "sourceUrl": "https://api.iconify.design/selfhst/peacock.svg",
+    "sourcePage": "https://icon-sets.iconify.design/selfhst/peacock/",
+    "sourceSha256": "a42450b8b4daaab4845414e8149bea8d554b0958832acad2546949b14eac7d31",
+    "ops": {
+      "viewBox": "35.24 -15.36 434.52 542.72"
+    }
+  },
+  {
+    "teamId": "APP-PHONE",
+    "id": "primary",
+    "label": "Handset tile",
+    "sourceUrl": "https://logowik.com/ios-17-app-icons-set-icon-59931.html",
+    "sourcePage": "https://logowik.com/ios-17-app-icons-set-icon-59931.html",
+    "sourceSha256": "409ebe6d39fa43d32cac5ddf5dca708e45c0ff329eb5865ab6616bd3bbf9fd8b",
+    "downloadForm": "logowik",
+    "ops": {
+      "keepNodes": [
+        "0",
+        "61-63"
+      ],
+      "viewBox": "455.24 143.84 55.12 55.12"
+    }
+  },
+  {
+    "teamId": "APP-PLEX",
+    "id": "primary",
+    "label": "Chevron tile",
+    "sourceUrl": "https://api.iconify.design/selfhst/plex.svg",
+    "sourcePage": "https://icon-sets.iconify.design/selfhst/plex/",
+    "sourceSha256": "cc303b19b11d399b6121ec11f4463f2dd0e2c83fa9c371007eee17c2a21d945c",
+    "ops": {
+      "viewBox": "-15.36 -15.36 542.72 542.72"
+    }
+  },
+  {
+    "teamId": "APP-PPT",
+    "id": "primary",
+    "label": "Gradient swirl with P",
+    "sourceUrl": "https://api.iconify.design/selfhst/microsoft-powerpoint.svg",
+    "sourcePage": "https://icon-sets.iconify.design/selfhst/microsoft-powerpoint/",
+    "sourceSha256": "cc0b5158ed779a552fa748b83af3e40ec9a1c3d7bfd546795c8350132b8e75a7",
+    "ops": {
+      "viewBox": "-15.36 -7.06 542.72 526.12"
+    }
+  },
+  {
+    "teamId": "APP-PPT",
+    "id": "2018-pie",
+    "label": "Orange pie with P (2018)",
+    "sourceUrl": "https://api.iconify.design/selfhst/microsoft-powerpoint-2018.svg",
+    "sourcePage": "https://icon-sets.iconify.design/selfhst/microsoft-powerpoint-2018/",
+    "sourceSha256": "b87021afde6c5ceadcc286f8784196a306a863d4b550185912f9d422fbff4967",
+    "ops": {
+      "viewBox": "-15.36 2.44 542.72 507.02"
+    }
+  },
+  {
+    "teamId": "APP-PPT",
+    "id": "2013-slide",
+    "label": "P over slide (2013)",
+    "sourceUrl": "https://api.iconify.design/selfhst/microsoft-powerpoint-2013.svg",
+    "sourcePage": "https://icon-sets.iconify.design/selfhst/microsoft-powerpoint-2013/",
+    "sourceSha256": "668e95b2939dd10dc50e274fc8a64146e8c6c077f2dd27fa6020f51952091ba9",
+    "ops": {
+      "viewBox": "-15.36 7.84 542.72 496.32"
+    }
+  },
+  {
+    "teamId": "APP-PPT",
+    "id": "classic-chart",
+    "label": "Orange chart slide (2000s)",
+    "sourceUrl": "https://api.iconify.design/selfhst/microsoft-powerpoint-2000.svg",
+    "sourcePage": "https://icon-sets.iconify.design/selfhst/microsoft-powerpoint-2000/",
+    "sourceSha256": "5caf892d6e8c3b75991ccfcf659b94aef6f400a50e3be2f5738a8ae93e8ba686",
+    "ops": {
+      "viewBox": "-14.26 -15.36 540.42 542.72"
+    }
+  },
+  {
+    "teamId": "APP-QUORA",
+    "id": "primary",
+    "label": "Q tile",
+    "sourceUrl": "https://raw.githubusercontent.com/chouhan-rahul/icons_plus/v5.0.0/assets/images/logos/social-media/quora.svg",
+    "sourcePage": "https://github.com/chouhan-rahul/icons_plus/blob/v5.0.0/assets/images/logos/social-media/quora.svg",
+    "sourceSha256": "126be3e4f15a397241867f80401e1b0fae05e2a0b9ae8f0ddb47559409c0f187",
+    "ops": {
+      "viewBox": "4.92 4.92 38.16 38.16"
+    }
+  },
+  {
+    "teamId": "APP-REMINDERS",
+    "id": "primary",
+    "label": "Colored checklist tile",
+    "sourceUrl": "https://logowik.com/ios-17-app-icons-set-icon-59931.html",
+    "sourcePage": "https://logowik.com/ios-17-app-icons-set-icon-59931.html",
+    "sourceSha256": "409ebe6d39fa43d32cac5ddf5dca708e45c0ff329eb5865ab6616bd3bbf9fd8b",
+    "downloadForm": "logowik",
+    "ops": {
+      "keepNodes": [
+        "0",
+        "59"
+      ],
+      "viewBox": "386.04 143.84 55.12 55.12"
+    }
+  },
+  {
+    "teamId": "APP-ROBINHOOD",
+    "id": "primary",
+    "label": "Feather on neon tile",
+    "sourceUrl": "https://api.iconify.design/token-branded/robinhood-background.svg",
+    "sourcePage": "https://icon-sets.iconify.design/token-branded/robinhood-background/",
+    "sourceSha256": "3dd49eff0ad2ec54054cdc61563ee2b95a7707515efaaf0ce1bd3047403c22a4",
+    "ops": {
+      "viewBox": "-0.72 -0.72 25.44 25.44"
+    }
+  },
+  {
+    "teamId": "APP-ROBINHOOD",
+    "id": "green-feather",
+    "label": "Green feather (2013)",
+    "sourceUrl": "https://api.iconify.design/selfhst/robinhood.svg",
+    "sourcePage": "https://icon-sets.iconify.design/selfhst/robinhood/",
+    "sourceSha256": "eedcd58fa9c421a6a41aa21cac21689681a4efd4f65a60ab680d52ccc3930916",
+    "ops": {
+      "viewBox": "49.252 -15.404 413.479 542.971"
+    }
+  },
+  {
+    "teamId": "APP-SHORTCUTS",
+    "id": "primary",
+    "label": "Stacked diamonds tile",
+    "sourceUrl": "https://logowik.com/ios-17-app-icons-set-icon-59931.html",
+    "sourcePage": "https://logowik.com/ios-17-app-icons-set-icon-59931.html",
+    "sourceSha256": "409ebe6d39fa43d32cac5ddf5dca708e45c0ff329eb5865ab6616bd3bbf9fd8b",
+    "downloadForm": "logowik",
+    "ops": {
+      "keepNodes": [
+        "0",
+        "426-430"
+      ],
+      "viewBox": "385.94 490.24 55.12 55.12"
+    }
+  },
+  {
+    "teamId": "APP-SIGNAL",
+    "id": "primary",
+    "label": "Dashed speech bubble tile",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/b/bf/Signal_2024_iOS.svg/revision/latest?cb=20241111120909",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Signal_2024_iOS.svg",
+    "sourceSha256": "7001afe4c6cbf6270bfd446e87ee3738f3dccdd3812d63e08a5b1b23d745fbd8",
+    "ops": {
+      "viewBox": "-30.72 -30.72 1085.44 1085.44"
+    }
+  },
+  {
+    "teamId": "APP-SKYPE",
+    "id": "primary",
+    "label": "S cloud tile",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/0/08/Skype_IOS.svg/revision/latest?cb=20210615080100",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Skype_IOS.svg",
+    "sourceSha256": "5ea4dc94b3b8766ad3c1524f2e177b0fb58f0cdcbb07473a35d3aa83fc6d87a5",
+    "ops": {
+      "viewBox": "-6.713 -6.713 237.195 237.195"
+    }
+  },
+  {
+    "teamId": "APP-STRAVA",
+    "id": "primary",
+    "label": "Peaks tile",
+    "sourceUrl": "https://api.iconify.design/selfhst/strava.svg",
+    "sourcePage": "https://icon-sets.iconify.design/selfhst/strava/",
+    "sourceSha256": "b5ad7a539ea155b57cc3c12c9d840fbeebc1dcfd7bec53703efb8834bc620d67",
+    "ops": {
+      "viewBox": "-15.36 -15.36 542.72 542.72"
+    }
+  },
+  {
+    "teamId": "APP-TIDAL",
+    "id": "primary",
+    "label": "Four diamonds",
+    "sourceUrl": "https://api.iconify.design/logos/tidal-icon.svg",
+    "sourcePage": "https://icon-sets.iconify.design/logos/tidal-icon/",
+    "sourceSha256": "07a329ee4a559aec6d56e8f873ac3580906cdf3a958b38196329125e29ad6c46",
+    "ops": {
+      "viewBox": "-7.68 -7.68 271.36 186.036"
+    }
+  },
+  {
+    "teamId": "APP-TINDER",
+    "id": "primary",
+    "label": "Flame tile",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/1/11/Tinder_app_icon_2026.svg/revision/latest?cb=20260716173323",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Tinder_app_icon_2026.svg",
+    "sourceSha256": "85a78ae394485842cea60439a0cb48b4a8deb0a374708b84935899cec9a7b81b",
+    "ops": {
+      "viewBox": "-15.36 -15.36 542.72 542.72"
+    }
+  },
+  {
+    "teamId": "APP-TRELLO",
+    "id": "primary",
+    "label": "Board columns tile",
+    "sourceUrl": "https://api.iconify.design/logos/trello.svg",
+    "sourcePage": "https://icon-sets.iconify.design/logos/trello/",
+    "sourceSha256": "dee77212a8f6ff71c9de41d1b3df94e754080c53160ac590ffd46264c6d4f1c6",
+    "ops": {
+      "viewBox": "-7.68 -7.68 271.36 271.36"
+    }
+  },
+  {
+    "teamId": "APP-TUMBLR",
+    "id": "primary",
+    "label": "Lowercase t tile",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/4/45/Tumblr_2018_iOS_icon.svg/revision/latest?cb=20210429114435",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Tumblr_2018_iOS_icon.svg",
+    "sourceSha256": "5e9694f78961d8f7bde7cc3ce624d26bdb97cf04d67f156b7f4d2c16ca49ddb0",
+    "ops": {
+      "viewBox": "-7.937 -7.937 280.458 280.458"
+    }
+  },
+  {
+    "teamId": "APP-TUMBLR",
+    "id": "neon-outline",
+    "label": "Neon outline t (2021)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/0/07/Tumblr_2021_app_icon.svg/revision/latest?cb=20210429120049",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Tumblr_2021_app_icon.svg",
+    "sourceSha256": "017f59731f35dd4da953eb8b16de39c4fcd095d6db4c95c1abb9aaf375d7ad65",
+    "ops": {
+      "viewBox": "-30 -30 1060 1060"
+    }
+  },
+  {
+    "teamId": "APP-VIBER",
+    "id": "primary",
+    "label": "Phone in speech bubble",
+    "sourceUrl": "https://api.iconify.design/thesvg-color/viber.svg",
+    "sourcePage": "https://icon-sets.iconify.design/thesvg-color/viber/",
+    "sourceSha256": "109f0ea5d0546899231881e6a1c50ff4379dffd6f83e4b6819f633279bc70d33",
+    "ops": {
+      "viewBox": "-0.101 -0.72 24.201 25.439"
+    }
+  },
+  {
+    "teamId": "APP-VIMEO",
+    "id": "primary",
+    "label": "Cursive v on blue square",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/b/b3/Vimeo_%28Icon%29.svg/revision/latest?cb=20190602181448",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Vimeo_(Icon).svg",
+    "sourceSha256": "bcfb3b4824953fed975e193901e014f9742881560a309b04270d7d30ca567b47",
+    "ops": {
+      "viewBox": "-30 -30 1060 1060"
+    }
+  },
+  {
+    "teamId": "APP-VLC",
+    "id": "primary",
+    "label": "Striped traffic cone",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/VLC_Icon.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:VLC_Icon.svg",
+    "sourceSha256": "a2bf327feb1f6a12d919fa95ffa7d053aa57524cfdf71d8d3e0ec0d08a6afd8d",
+    "ops": {
+      "viewBox": "-19.905 -20.353 720.539 811.276"
+    }
+  },
+  {
+    "teamId": "APP-WALLET",
+    "id": "primary",
+    "label": "Card pocket tile",
+    "sourceUrl": "https://logowik.com/ios-17-app-icons-set-icon-59931.html",
+    "sourcePage": "https://logowik.com/ios-17-app-icons-set-icon-59931.html",
+    "sourceSha256": "409ebe6d39fa43d32cac5ddf5dca708e45c0ff329eb5865ab6616bd3bbf9fd8b",
+    "downloadForm": "logowik",
+    "ops": {
+      "keepNodes": [
+        "0",
+        "104"
+      ],
+      "viewBox": "247.44 230.44 55.12 55.12"
+    }
+  },
+  {
+    "teamId": "APP-WECHAT",
+    "id": "primary",
+    "label": "Twin chat bubbles",
+    "sourceUrl": "https://api.iconify.design/thesvg-color/wechat.svg",
+    "sourcePage": "https://icon-sets.iconify.design/thesvg-color/wechat/",
+    "sourceSha256": "4a7cef29f60808aad01701db26d988e90a906ebdaf9d17ae5a91e46f64fa8828",
+    "ops": {
+      "viewBox": "-0.72 1.468 25.44 21.064"
+    }
+  },
+  {
+    "teamId": "APP-WORDLE",
+    "id": "primary",
+    "label": "Letter grid tile",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/f/f2/Wordle_Icon.svg/revision/latest?cb=20260815063642",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Wordle_Icon.svg",
+    "sourceSha256": "6fd4cfef9f4188f0e186468ee649840ec2e3235c244ca81316e0c806c2683a68",
+    "ops": {
+      "viewBox": "-1.961 -1.961 598.923 598.923"
+    }
+  },
+  {
+    "teamId": "APP-YELP",
+    "id": "primary",
+    "label": "Petal burst",
+    "sourceUrl": "https://api.iconify.design/selfhst/yelp.svg",
+    "sourcePage": "https://icon-sets.iconify.design/selfhst/yelp/",
+    "sourceSha256": "4ccda45d153893c8d0114aaf4db6147a7d7fa39a462b9b816aa6e795ddb6c35b",
+    "ops": {
+      "viewBox": "36.237 -15.387 439.599 542.712"
+    }
+  },
+  {
+    "teamId": "APP-YTMUSIC",
+    "id": "primary",
+    "label": "Ringed play button",
+    "sourceUrl": "https://api.iconify.design/thesvg-color/youtube-music.svg",
+    "sourcePage": "https://icon-sets.iconify.design/thesvg-color/youtube-music/",
+    "sourceSha256": "e68e893971a6ea7e66de5074062dfee30ab8996c045b875f53f4b43aa3f26d11",
+    "ops": {
+      "viewBox": "-5.76 -5.76 203.52 203.52"
+    }
+  },
+  {
+    "teamId": "APP-YTMUSIC",
+    "id": "2015-record",
+    "label": "Play button on a record (2015)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/e/e7/YouTube_Music_Icon_2015.svg/revision/latest?cb=20160807151034",
+    "sourcePage": "https://logos.fandom.com/wiki/File:YouTube_Music_Icon_2015.svg",
+    "sourceSha256": "b92a010ecede258a8d9a56a9591a7e58edba547a97bed527795e85378ca25103",
+    "ops": {
+      "viewBox": "-30 -30 1060 1060"
+    }
+  },
+  {
+    "teamId": "APP-ZILLOW",
+    "id": "primary",
+    "label": "Z rooftop",
+    "sourceUrl": "https://api.iconify.design/thesvg-color/zillow.svg",
+    "sourcePage": "https://icon-sets.iconify.design/thesvg-color/zillow/",
+    "sourceSha256": "eaf3e5a9b6c7df7c2d498d94eb39494d0760cab5ef8add78647c552202eeb003",
+    "ops": {
+      "viewBox": "0.354 -0.72 23.292 25.44"
+    }
+  },
+  {
+    "teamId": "APP-ZILLOW",
+    "id": "2006-roofs",
+    "label": "Stacked rooftops (2006)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/c/c7/Zillow_-_2006.svg/revision/latest?cb=20241031092722",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Zillow_-_2006.svg",
+    "sourceSha256": "52cf34082f4e1417f866910bb353ec22a4835272345029fc9d3152f5fbbd7a78",
+    "ops": {
+      "keepNodes": [
+        "0",
+        "3/26-29"
+      ],
+      "viewBox": "200.552 -6.678 235.956 189.566"
     }
   },
   {
@@ -10139,6 +11511,22 @@
     "sourceSha256": "020c4dc81b0a71877e5cd0bf9b69ee6f9a9d9001d03bc7abb00a0d598a9ffd36",
     "ops": {
       "viewBox": "-57.462 -57.461 1551.465 1489.921"
+    }
+  },
+  {
+    "teamId": "TV-NICK",
+    "id": "blimp",
+    "label": "Orange blimp",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/0/0a/Nickelodeon_1984_%28Blimp%29.svg/revision/latest?cb=20200716143753",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Nickelodeon_1984_(Blimp).svg",
+    "sourceSha256": "b61533f10d3589eb73e44ba0cf131e7ba4bd0cb925f975630dffe09f8c6232eb",
+    "ops": {
+      "removeNodes": [
+        "0",
+        "2",
+        "3/2/1"
+      ],
+      "viewBox": "-24.196 -24.735 1066.917 557.295"
     }
   },
   {
@@ -12985,6 +14373,20 @@
     }
   },
   {
+    "teamId": "CLOTH-ADIDAS",
+    "id": "sport-style-sphere",
+    "label": "Striped sphere",
+    "sourceUrl": "https://iconape.com/wp-content/files/nx/203465/svg/203465.svg",
+    "sourcePage": "https://iconape.com/adidas-style-logo-logo-icon-svg-png.html",
+    "sourceSha256": "cb7ec3bcbf631c812544d96d3fe7d9ab0cc9bd8f0fae379bbaad3b0ea985ac8c",
+    "ops": {
+      "keepNodes": [
+        "1/9"
+      ],
+      "viewBox": "13.511 -4.188 147.982 132.013"
+    }
+  },
+  {
     "teamId": "CLOTH-BAPE",
     "id": "brown-ape",
     "label": "Brown ape head",
@@ -12993,6 +14395,18 @@
     "sourceSha256": "da1402aa8f4d7f2c2b57f8f6098c6878c35b5064a5d7370ef0d18327196ae3f6",
     "ops": {
       "viewBox": "-10.887 -10.887 206.932 293.954"
+    }
+  },
+  {
+    "teamId": "CLOTH-BAPE",
+    "id": "baby-milo",
+    "label": "Baby monkey mascot",
+    "sourceUrl": "https://iconape.com/wp-content/files/hb/163244/svg/163244.svg",
+    "sourcePage": "https://iconape.com/baby-milo-logo-logo-icon-svg-png.html",
+    "sourceSha256": "e4123478260b67f3822976231fa1ddb13cbec0633188f2406169a7d68e1e92e0",
+    "ops": {
+      "fill": "#1B1918",
+      "viewBox": "-5.871 -6.039 155.741 210.331"
     }
   },
   {
@@ -13029,6 +14443,21 @@
     }
   },
   {
+    "teamId": "CLOTH-CONVERSE",
+    "id": "boxed-star",
+    "label": "Star tile",
+    "sourceUrl": "https://iconape.com/wp-content/files/ft/48717/svg/converse-1293.svg",
+    "sourcePage": "https://iconape.com/converse-1293-logo-icon-svg-png.html",
+    "sourceSha256": "33c5e6354b6d4d765530587128e7f18d0a634b7ed1c6889a4814987e751be479",
+    "ops": {
+      "keepNodes": [
+        "0/3",
+        "0/4"
+      ],
+      "viewBox": "20.814 1.478 147.849 156.144"
+    }
+  },
+  {
     "teamId": "CLOTH-FILA",
     "id": "f-box-1973",
     "label": "F box (1973)",
@@ -13062,6 +14491,18 @@
     }
   },
   {
+    "teamId": "CLOTH-OFFWHITE",
+    "id": "diagonal-stripes",
+    "label": "Diagonal stripes",
+    "sourceUrl": "https://cdn.worldvectorlogo.com/logos/off-white.svg",
+    "sourcePage": "https://worldvectorlogo.com/logo/off-white",
+    "sourceSha256": "c51a2695b1646855cc19065a3be25b5fa6f9b70eff01cf96a5586b34b0f547d7",
+    "ops": {
+      "viewBox": "76.1 309.5 745.5 743.9",
+      "clipToViewBox": true
+    }
+  },
+  {
     "teamId": "CLOTH-PUMA",
     "id": "outline-cat",
     "label": "Outline cat",
@@ -13070,6 +14511,32 @@
     "sourceSha256": "c28dedca17f68b59978127cc10be2980171263429d18564b8aa57dab01fbb343",
     "ops": {
       "viewBox": "-10.249 -10.262 330.72 263.931"
+    }
+  },
+  {
+    "teamId": "CLOTH-PUMA",
+    "id": "prowling-cat",
+    "label": "Vintage prowling cat",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/d/d0/Puma_old_icon.svg/revision/latest?cb=20190525051216",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Puma_old_icon.svg",
+    "sourceSha256": "4877dfd05d292a55bdae12822363668aabf015a6814ad2e1bfca8d14387cc1ba",
+    "ops": {
+      "viewBox": "-5.271 -5.273 186.293 93.667"
+    }
+  },
+  {
+    "teamId": "CLOTH-PUMA",
+    "id": "1948-hexagon",
+    "label": "1948 cat leaping through a D",
+    "sourceUrl": "https://iconape.com/wp-content/files/sd/203011/svg/203011.svg",
+    "sourcePage": "https://iconape.com/puma-dassler-logo-logo-icon-svg-png.html",
+    "sourceSha256": "c3baab5b974c9f5b355f86f4b600a10490a31dfd5300b2594d29d90154c44781",
+    "ops": {
+      "keepNodes": [
+        "0/1",
+        "0/36-41"
+      ],
+      "viewBox": "46.8 39.089 266.536 239.403"
     }
   },
   {
@@ -13084,6 +14551,35 @@
     }
   },
   {
+    "teamId": "CLOTH-REEBOK",
+    "id": "starcrest",
+    "label": "Starcrest",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/a/a2/Reebok_Classic.svg/revision/latest?cb=20190701101915",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Reebok_Classic.svg",
+    "sourceSha256": "04403de8ddd5b9f2ca3255f097d71ca17097cb7ace87f4f820a88280a175c03d",
+    "ops": {
+      "keepNodes": [
+        "0",
+        "2-13"
+      ],
+      "viewBox": "32.739 -3.841 122.771 135.701"
+    }
+  },
+  {
+    "teamId": "CLOTH-REEBOK",
+    "id": "2014-delta",
+    "label": "2014 delta",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/e/ed/Reebok_2014.svg/revision/latest?cb=20140303121616",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Reebok_2014.svg",
+    "sourceSha256": "58319057b0df630fb02f7b69eff52a9e024d81d3a056f607d05ecd7c077387b4",
+    "ops": {
+      "keepNodes": [
+        "3/0"
+      ],
+      "viewBox": "762.867 -6.392 243.525 212.851"
+    }
+  },
+  {
     "teamId": "CLOTH-UA",
     "id": "original-1996",
     "label": "Original mark (1996)",
@@ -13093,6 +14589,958 @@
     "ops": {
       "viewBox": "-40 -40 1080 1044.847"
     }
+  },
+  {
+    "teamId": "CLOTH-ASICS",
+    "id": "primary",
+    "label": "Spiral swoosh",
+    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Asics_Logo.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Asics_Logo.svg",
+    "sourceSha256": "d25da03a9fd387fd42253be751084a86335abdfc093f6af6151848f4baf86f3a",
+    "ops": {
+      "keepNodes": [
+        "0/0"
+      ],
+      "viewBox": "2.662 2.703 80.647 82.594"
+    }
+  },
+  {
+    "teamId": "CLOTH-ASICS",
+    "id": "stripes",
+    "label": "Crossed stripes",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/7/7f/Asics_Tiger_2015-cropped.svg/revision/latest?cb=20250415235351",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Asics_Tiger_2015-cropped.svg",
+    "sourceSha256": "091cd95007b777b688a330befb650daba76a5f6e58c10a754d089f099cce30c7",
+    "ops": {
+      "removeNodes": [
+        "2/0/1"
+      ],
+      "fill": "#000000",
+      "viewBox": "-0.803 -1.038 40.005 13.22",
+      "clipToViewBox": true
+    }
+  },
+  {
+    "teamId": "CLOTH-BILLABONG",
+    "id": "primary",
+    "label": "Wave icon",
+    "sourceUrl": "https://brandeps.com/logo-download/b/billabong-logo-vector-01.svg",
+    "sourcePage": "https://brandeps.com/logo/b/billabong-01",
+    "sourceSha256": "e58ce1fd3b28c9e2b066cafe87c06536c2e0e701696414cbaffe5c6fb96baa02",
+    "ops": {
+      "keepNodes": [
+        "1/0/0/0/0"
+      ],
+      "viewBox": "266.308 110.014 252.735 177.51"
+    }
+  },
+  {
+    "teamId": "CLOTH-BROOKS",
+    "id": "primary",
+    "label": "Swoosh chevron",
+    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/5/55/Brooks_Sports_logo.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Brooks_Sports_logo.svg",
+    "sourceSha256": "f4dae37965d6f09ea38d6fcbfb33fc6307cec928a434d7405b13966819d5b00f",
+    "ops": {
+      "keepNodes": [
+        "1"
+      ],
+      "viewBox": "-1.001 -1.001 35.371 16.116"
+    }
+  },
+  {
+    "teamId": "CLOTH-BROOKS",
+    "id": "arrow-chevron",
+    "label": "Arrow chevron (older)",
+    "sourceUrl": "https://cdn.worldvectorlogo.com/logos/brooks.svg",
+    "sourcePage": "https://worldvectorlogo.com/logo/brooks",
+    "sourceSha256": "3bf358d62add621e6fe20d95927e475fb73b67a255f74e0dabb95bf816cf404b",
+    "ops": {
+      "keepNodes": [
+        "0/2"
+      ],
+      "viewBox": "24.783 81.663 46.544 28.794",
+      "clipToViewBox": true
+    }
+  },
+  {
+    "teamId": "CLOTH-BROOKSBROS",
+    "id": "primary",
+    "label": "Golden fleece medallion",
+    "sourceUrl": "https://iconape.com/wp-content/files/bu/42707/svg/brooks-bros.svg",
+    "sourcePage": "https://iconape.com/brooks-bros-logo-icon-svg-png.html",
+    "sourceSha256": "f54a35ca08de84fab631464ec6c49d14e0f5731187e743414b88945298b6f307",
+    "ops": {
+      "viewBox": "-2.293 -2.293 81.016 81.016"
+    }
+  },
+  {
+    "teamId": "CLOTH-CROCS",
+    "id": "primary",
+    "label": "Crocodile in circle",
+    "sourceUrl": "https://logowik.com/crocs-shoes-vector-logo-5149.html",
+    "sourcePage": "https://logowik.com/crocs-shoes-vector-logo-5149.html",
+    "sourceSha256": "092a155bb7cd873290e41b162ff64936a758d3801d4c7727df18c5d71c88e892",
+    "downloadForm": "logowik",
+    "ops": {
+      "removeNodes": [
+        "1/0",
+        "1/1",
+        "1/2/0/1/2/0"
+      ],
+      "viewBox": "158.836 23.336 433.328 433.328"
+    }
+  },
+  {
+    "teamId": "CLOTH-DCSHOES",
+    "id": "primary",
+    "label": "Monogram with star",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/1/1e/DC_Shoes.svg/revision/latest?cb=20200801065015",
+    "sourcePage": "https://logos.fandom.com/wiki/File:DC_Shoes.svg",
+    "sourceSha256": "f48a0b30251d1c355db44159bae618a13c4128f02427ab60c1ee4937b6747bab",
+    "ops": {
+      "viewBox": "-0.835 -18.435 651.37 548.57"
+    }
+  },
+  {
+    "teamId": "CLOTH-DICKIES",
+    "id": "primary",
+    "label": "Horseshoe emblem",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/a/a1/Dickies_2005.svg/revision/latest?cb=20230502194522",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Dickies_2005.svg",
+    "sourceSha256": "32c3638679f01dc436635b1c2c4855e881e5bcb2cb987a1ddc0689a66fada7cc",
+    "ops": {
+      "removeNodes": [
+        "1/1",
+        "1/29",
+        "1/31",
+        "1/33",
+        "1/35",
+        "1/37",
+        "1/39",
+        "1/41",
+        "1/43",
+        "1/45",
+        "1/91"
+      ],
+      "viewBox": "-33.206 -33.206 1173.294 685.411"
+    }
+  },
+  {
+    "teamId": "CLOTH-DRMARTENS",
+    "id": "primary",
+    "label": "Yellow AirWair wordmark",
+    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b5/Dr._Martens_Logo.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Dr._Martens_Logo.svg",
+    "sourceSha256": "ed64c1fcdffa2a27926f6536ccfe9d1a5d88eaed33b502d6135cb25f58f4138f",
+    "ops": {
+      "viewBox": "-8.643 -8.643 305.386 181.246"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "CLOTH-ECKO",
+    "id": "primary",
+    "label": "Rhino badge",
+    "sourceUrl": "https://cdn.worldvectorlogo.com/logos/ecko-unltd-1.svg",
+    "sourcePage": "https://worldvectorlogo.com/logo/ecko-unltd-1",
+    "sourceSha256": "c2f8d5e6d6f601a57adb6d6bda906e86e778560cb463fe5bf28c82164f4d17bc",
+    "ops": {
+      "keepNodes": [
+        "0/1-4"
+      ],
+      "viewBox": "7.467 83.19 36.634 26.116"
+    }
+  },
+  {
+    "teamId": "CLOTH-ELEMENT",
+    "id": "primary",
+    "label": "Tree in circle",
+    "sourceUrl": "https://cdn.worldvectorlogo.com/logos/element-2.svg",
+    "sourcePage": "https://worldvectorlogo.com/logo/element-2",
+    "sourceSha256": "229495d864c51ead604e7b5348a86d46f035d253af4376d1a91e282ce8b52ff8",
+    "ops": {
+      "keepNodes": [
+        "0/1",
+        "0/2"
+      ],
+      "viewBox": "7.264 74.786 43.71 43.81"
+    }
+  },
+  {
+    "teamId": "CLOTH-ELLESSE",
+    "id": "primary",
+    "label": "Half tennis ball",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/b/b6/Ellesse.svg/revision/latest?cb=20220718142530",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Ellesse.svg",
+    "sourceSha256": "4892d55238991e783dd9db2f49b780c83ddefcda41b9aa265b0ce6514abe334f",
+    "ops": {
+      "removeNodes": [
+        "1",
+        "2"
+      ],
+      "viewBox": "-5.771 -58.834 29.661 14.162"
+    }
+  },
+  {
+    "teamId": "CLOTH-FJALL",
+    "id": "primary",
+    "label": "Fox curled in a circle",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/3/34/Fj%C3%A4llr%C3%A4ven_2017_%28Icon%29.svg/revision/latest?cb=20221228165201",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Fj%C3%A4llr%C3%A4ven_2017_(Icon).svg",
+    "sourceSha256": "0571d054578c8209deb5d85540b6dd2c9bff8bb3823e012314c5121b054354d0",
+    "ops": {
+      "viewBox": "-2.805 -2.805 88.994 99.101"
+    }
+  },
+  {
+    "teamId": "CLOTH-FREDPERRY",
+    "id": "primary",
+    "label": "Laurel wreath",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/4/45/Fred_Perry_logo.svg/revision/latest?cb=20240217231418",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Fred_Perry_logo.svg",
+    "sourceSha256": "8fd6225d974b9c4e55fa13e41c5cba10bb81e3e1f82f62f4f01696324aa7888a",
+    "ops": {
+      "removeNodes": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10"
+      ],
+      "viewBox": "-9.294 -9.358 330.652 301.965"
+    }
+  },
+  {
+    "teamId": "CLOTH-HH",
+    "id": "primary",
+    "label": "Double-H monogram",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/3/30/Helly_Hansen_1989.svg/revision/latest?cb=20260618190655",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Helly_Hansen_1989.svg",
+    "sourceSha256": "b94516087e80651bf014f358ec1b284255bc82f72e8dd34be94f40d4ca33c780",
+    "ops": {
+      "viewBox": "-2.19 -2.19 77.38 43.12"
+    }
+  },
+  {
+    "teamId": "CLOTH-HM",
+    "id": "primary",
+    "label": "Red script wordmark",
+    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/5/53/H%26M-Logo.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:H%26M-Logo.svg",
+    "sourceSha256": "0720ddbfc878ab156d98bec0b10d9f17f1a140620162f8e8ce63fa70a3f99ae6",
+    "ops": {
+      "viewBox": "-10.631 -12.396 751.181 510.014"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "CLOTH-HUMMEL",
+    "id": "primary",
+    "label": "Bumblebee",
+    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Hummel_logo_aktuell.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Hummel_logo_aktuell.svg",
+    "sourceSha256": "de909ad840ea378f058c3e20ee9cb0c0ac18c874564d9e62b3acb4348958d1e0",
+    "ops": {
+      "removeNodes": [
+        "2/0",
+        "2/1",
+        "2/2",
+        "2/3",
+        "2/4",
+        "2/5"
+      ],
+      "fill": "#000000",
+      "viewBox": "15.342 -6.885 243.266 187.993"
+    }
+  },
+  {
+    "teamId": "CLOTH-HUMMEL",
+    "id": "chevrons",
+    "label": "Double chevron",
+    "sourceUrl": "https://cdn.worldvectorlogo.com/logos/hummel-1.svg",
+    "sourcePage": "https://worldvectorlogo.com/logo/hummel-1",
+    "sourceSha256": "cdbdb88ff253839fa9ffbe2f0e5a1273499887472dc6ce14eca8428b5be9d25d",
+    "ops": {
+      "keepNodes": [
+        "0/1",
+        "0/2"
+      ],
+      "fill": "#000000",
+      "viewBox": "50.905 11.451 85 169.855",
+      "clipToViewBox": true
+    }
+  },
+  {
+    "teamId": "CLOTH-HURLEY",
+    "id": "primary",
+    "label": "Twin arcs",
+    "sourceUrl": "https://brandeps.com/logo-download/h/hurley-logo-vector-01.svg",
+    "sourcePage": "https://brandeps.com/logo/h/hurley-01",
+    "sourceSha256": "28646441b64c82d61d766a966e6451f0041f3ad9dfab91afe8fad7c6e14d0194",
+    "ops": {
+      "keepNodes": [
+        "1/0",
+        "1/1"
+      ],
+      "viewBox": "376.77 190.578 139.22 130.979"
+    }
+  },
+  {
+    "teamId": "CLOTH-KANGOL",
+    "id": "primary",
+    "label": "Kangaroo",
+    "sourceUrl": "https://iconape.com/wp-content/files/sd/202489/svg/202489.svg",
+    "sourcePage": "https://iconape.com/kangol-logo-logo-icon-svg-png.html",
+    "sourceSha256": "3e9466d4941b5f825ce161ab49a49c9981a0dc4e7b882f4adf4196dc2166984d",
+    "ops": {
+      "removeNodes": [
+        "1/0",
+        "1/1"
+      ],
+      "viewBox": "-7.832 -8.797 310.637 295.272"
+    }
+  },
+  {
+    "teamId": "CLOTH-KAPPA",
+    "id": "primary",
+    "label": "Back-to-back seated pair",
+    "sourceUrl": "https://cdn.worldvectorlogo.com/logos/kappa-1.svg",
+    "sourcePage": "https://worldvectorlogo.com/logo/kappa-1",
+    "sourceSha256": "bd448dec0c5971fa42d7440496f529badb226d3c53bd0645afaf73d9b2836c5c",
+    "ops": {
+      "keepNodes": [
+        "0/1"
+      ],
+      "fill": "#000000",
+      "viewBox": "-2.652 17.761 193.809 97.467"
+    }
+  },
+  {
+    "teamId": "CLOTH-LECOQ",
+    "id": "primary",
+    "label": "Tricolor rooster",
+    "sourceUrl": "https://iconape.com/wp-content/files/fo/76193/svg/le-coq-sportif-2016.svg",
+    "sourcePage": "https://iconape.com/le-coq-sportif-2016-logo-icon-svg-png.html",
+    "sourceSha256": "2dc8ecefd2282645db6f543ff5af56ac76428cb30111528938e117b60cc2eb84",
+    "ops": {
+      "removeNodes": [
+        "0/0"
+      ],
+      "viewBox": "35.87 -9.602 515.939 419.153"
+    }
+  },
+  {
+    "teamId": "CLOTH-LECOQ",
+    "id": "red-triangle",
+    "label": "Rooster in red triangle",
+    "sourceUrl": "https://iconape.com/wp-content/files/oj/326841/svg/326841.svg",
+    "sourcePage": "https://iconape.com/le-coq-sportif-logo-logo-icon-svg-png.html",
+    "sourceSha256": "91c65fa5d8f45bb3bf803c199aa2f77775c7e788357893d43cad466d423cae3c",
+    "ops": {
+      "removeNodes": [
+        "0",
+        "1/0",
+        "1/1",
+        "1/2",
+        "1/3",
+        "1/4",
+        "1/5",
+        "1/6",
+        "1/7",
+        "1/8",
+        "1/9",
+        "1/10",
+        "1/11",
+        "1/12",
+        "1/18",
+        "1/19"
+      ],
+      "viewBox": "98.77 -6.277 248.003 216.655"
+    }
+  },
+  {
+    "teamId": "CLOTH-LLBEAN",
+    "id": "primary",
+    "label": "Hunting boot",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/8/89/L.L.Bean_%28Boot%29.svg/revision/latest?cb=20221117155105",
+    "sourcePage": "https://logos.fandom.com/wiki/File:L.L.Bean_(Boot).svg",
+    "sourceSha256": "7edfa9d11f39469b3881ab44d948217df7e9f096b5a342cfca8d09c56c89a64e",
+    "ops": {
+      "viewBox": "-5.034 -5.034 177.875 134.314"
+    }
+  },
+  {
+    "teamId": "CLOTH-LLBEAN",
+    "id": "mountain",
+    "label": "Mountain ridge",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/6/62/L.L.Bean_2010_%28Mountain%29_2.svg/revision/latest?cb=20250528131801",
+    "sourcePage": "https://logos.fandom.com/wiki/File:L.L.Bean_2010_(Mountain)_2.svg",
+    "sourceSha256": "c3f5ab2d43ee4bdc4751c891a99a8bbe7d724f6ecd2f09a8e337f3cc44847872",
+    "ops": {
+      "removeNodes": [
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19"
+      ],
+      "viewBox": "2.019 -3.581 126.522 41.822"
+    }
+  },
+  {
+    "teamId": "CLOTH-LYLESCOTT",
+    "id": "primary",
+    "label": "Golden eagle",
+    "sourceUrl": "https://iconape.com/wp-content/files/vc/203273/svg/203273.svg",
+    "sourcePage": "https://iconape.com/lyle-and-scott-logo-logo-icon-svg-png.html",
+    "sourceSha256": "e14a28f33339ac9d1961fb2902948bce778d9c969849949cdb9bed566ff13777",
+    "ops": {
+      "viewBox": "-11.715 -11.711 410.422 413.924"
+    }
+  },
+  {
+    "teamId": "CLOTH-MAMMUT",
+    "id": "primary",
+    "label": "Mammoth in a circle",
+    "sourceUrl": "https://logowik.com/mammut-swiss1862-logo-vector-svg-pdf-ai-eps-cdr-free-download-15923.html",
+    "sourcePage": "https://logowik.com/mammut-swiss1862-logo-vector-svg-pdf-ai-eps-cdr-free-download-15923.html",
+    "sourceSha256": "7990537a9a98543a22cd1ae1064a3d23d51a1efb778307b9007c2d0a3e07ca40",
+    "downloadForm": "logowik",
+    "ops": {
+      "keepNodes": [
+        "0",
+        "1"
+      ],
+      "viewBox": "161.365 69.665 259.17 243.77"
+    }
+  },
+  {
+    "teamId": "CLOTH-MARMOT",
+    "id": "primary",
+    "label": "Peaks in a red circle",
+    "sourceUrl": "https://iconape.com/wp-content/files/dt/332258/svg/332258.svg",
+    "sourcePage": "https://iconape.com/marmot-logo-logo-icon-svg-png.html",
+    "sourceSha256": "ceb5568041c04a92301439b343d103f9e68b6c6f71dddfc3d1a53de6224bf891",
+    "ops": {
+      "keepNodes": [
+        "0/8",
+        "0/9"
+      ],
+      "viewBox": "27.465 6.696 139.117 139.117"
+    }
+  },
+  {
+    "teamId": "CLOTH-MERRELL",
+    "id": "primary",
+    "label": "M in an orange circle",
+    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Merrell-Logo.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Merrell-Logo.svg",
+    "sourceSha256": "10be10b331a14db98adb1f353ebcd7180feb7d4e64908691e92ade37e4017fc1",
+    "ops": {
+      "clipToViewBox": true,
+      "viewBox": "2704.519 -5.329 527.041 530.658"
+    }
+  },
+  {
+    "teamId": "CLOTH-MIZUNO",
+    "id": "primary",
+    "label": "Runbird",
+    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/5/53/MIZUNO_logo.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:MIZUNO_logo.svg",
+    "sourceSha256": "ed41cff6d67b6e6ce1e1f70f9c3e98f53cb773755093710663e721322283b8a9",
+    "ops": {
+      "keepNodes": [
+        "2/0/0/8"
+      ],
+      "viewBox": "-7.669 -7.669 306.289 129.185"
+    }
+  },
+  {
+    "teamId": "CLOTH-MIZUNO",
+    "id": "m-monogram",
+    "label": "Slanted M monogram",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/d/da/Mizuno_M.svg/revision/latest?cb=20170818163029",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Mizuno_M.svg",
+    "sourceSha256": "1bdd2e4bcc4fbc647b0e3c15f1284daf4833d5ce1fbba3f2350266724a45d7d0",
+    "ops": {
+      "viewBox": "-29.995 -30.001 1060 570.119"
+    }
+  },
+  {
+    "teamId": "CLOTH-NAUTICA",
+    "id": "primary",
+    "label": "Spinnaker sails",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/0/0f/Nautica_2000_%28Icon%29.svg/revision/latest?cb=20221226230108",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Nautica_2000_(Icon).svg",
+    "sourceSha256": "1032c5669ecfd3f077d29c57fef873aeff4084622bd2311936edcfcb8c12e930",
+    "ops": {
+      "viewBox": "-2.688 -2.688 68.458 94.982"
+    }
+  },
+  {
+    "teamId": "CLOTH-NAUTICA",
+    "id": "1988-sail",
+    "label": "1988 sail and waves",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/3/3e/Nautica_1988.svg/revision/latest?cb=20221226225953",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Nautica_1988.svg",
+    "sourceSha256": "8f0968ea8bb5cefaeb4f72acaf3f6c2debe3185c211cd9cb7bf0b167f23e6ee2",
+    "ops": {
+      "keepNodes": [
+        "2/0/0"
+      ],
+      "viewBox": "-2.536 -2.536 55.823 89.604"
+    }
+  },
+  {
+    "teamId": "CLOTH-OAKLEY",
+    "id": "primary",
+    "label": "Ellipse",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/9/98/Oakley.svg/revision/latest?cb=20171123041451",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Oakley.svg",
+    "sourceSha256": "bac014adbc0a1de755e76d50a8a00b075b8e09239bc9cb512d72c856ba55387f",
+    "ops": {
+      "keepNodes": [
+        "3"
+      ],
+      "viewBox": "113.146 -16.203 572.484 219.095"
+    }
+  },
+  {
+    "teamId": "CLOTH-OBEY",
+    "id": "primary",
+    "label": "Face in red star",
+    "sourceUrl": "https://iconape.com/wp-content/files/se/85391/svg/obey-the-giant-2.svg",
+    "sourcePage": "https://iconape.com/obey-the-giant-logo-icon-svg-png.html",
+    "sourceSha256": "c9aae19b5f92a86aa53fcff858b2e50bfef2ef7dc1f5b97ee7d4c81157db6967",
+    "ops": {
+      "removeNodes": [
+        "0"
+      ],
+      "fill": "#000000",
+      "viewBox": "3.232 8.091 186.293 176.575"
+    }
+  },
+  {
+    "teamId": "CLOTH-OBEY",
+    "id": "giant-face",
+    "label": "Stenciled giant face",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/7/75/Obey-the-giant.svg/revision/latest?cb=20250411033921",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Obey-the-giant.svg",
+    "sourceSha256": "4b5c3f7ed76665abf7032cb3de6f426fdb24eb79474bf118b8d1be07c6bb2b56",
+    "ops": {
+      "removeNodes": [
+        "3",
+        "6",
+        "7",
+        "8",
+        "9",
+        "13",
+        "18",
+        "19"
+      ],
+      "viewBox": "35.981 42.94 366.745 463.24",
+      "clipToViewBox": true
+    }
+  },
+  {
+    "teamId": "CLOTH-OLDNAVY",
+    "id": "primary",
+    "label": "Navy oval wordmark",
+    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Old_Navy_Logo.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Old_Navy_Logo.svg",
+    "sourceSha256": "03c56ec26a98ca6e66c1db923e7fd9f34e77c565e5a85686a1020c1df613ca4e",
+    "ops": {
+      "viewBox": "-2.6 -2.601 91.849 33.341"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "CLOTH-ONEILL",
+    "id": "primary",
+    "label": "Breaking wave",
+    "sourceUrl": "https://cdn.worldvectorlogo.com/logos/oneill.svg",
+    "sourcePage": "https://worldvectorlogo.com/logo/oneill",
+    "sourceSha256": "f4617da36c5bf53409ba69390e355950ceb390f235a3f90b3ad74c55667ca78e",
+    "ops": {
+      "viewBox": "199.0 -15.036 531.25 208.56",
+      "clipToViewBox": true
+    }
+  },
+  {
+    "teamId": "CLOTH-QUIKSILVER",
+    "id": "primary",
+    "label": "Mountain and wave",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/9/95/Quiksilver.svg/revision/latest?cb=20170125131401",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Quiksilver.svg",
+    "sourceSha256": "f0262d51a51355ef5bd4e8b259612f893cca5ef17f34c2cf6de0f32f3a6614c6",
+    "ops": {
+      "viewBox": "-17.232 -17.321 608.864 338.453"
+    }
+  },
+  {
+    "teamId": "CLOTH-QUIKSILVER",
+    "id": "1970-wave",
+    "label": "Wave and peak (1970)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/9/9f/Quiksilver_-_1970.svg/revision/latest?cb=20230126154920",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Quiksilver_-_1970.svg",
+    "sourceSha256": "84f58dde3d23193af13eb5b45cdd5da2eea6a9c0eb67ccf99cf8f3d09e4feb11",
+    "ops": {
+      "viewBox": "-33.616 -27.806 1187.762 816.862"
+    }
+  },
+  {
+    "teamId": "CLOTH-RIPCURL",
+    "id": "primary",
+    "label": "Curling wave",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/c/c4/Rip_Curl_2022_S.svg/revision/latest?cb=20220909153706",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Rip_Curl_2022_S.svg",
+    "sourceSha256": "78f1fe77f9f10c98312322fc9196f899e822d88179e02a397d9eb9b2a19e59d1",
+    "ops": {
+      "keepNodes": [
+        "4/0"
+      ],
+      "viewBox": "139.809 -17.4 614.793 349.971"
+    }
+  },
+  {
+    "teamId": "CLOTH-ROXY",
+    "id": "primary",
+    "label": "Twin-wave heart",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/7/73/Roxy.svg/revision/latest?cb=20170125133516",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Roxy.svg",
+    "sourceSha256": "c9e1af30df0091051dc0cb42f528e729cd16b082570338b46a5c884df8564a11",
+    "ops": {
+      "viewBox": "-8.702 -8.652 305.704 191.404"
+    }
+  },
+  {
+    "teamId": "CLOTH-RUSSELL",
+    "id": "primary",
+    "label": "R with eagle head",
+    "sourceUrl": "https://cdn.worldvectorlogo.com/logos/russell-athletic-1.svg",
+    "sourcePage": "https://worldvectorlogo.com/logo/russell-athletic-1",
+    "sourceSha256": "7a575b36d44877d6d1fb22066be6695c03c2224357922182e40597d3a7b8edcd",
+    "ops": {
+      "keepNodes": [
+        "0/1",
+        "0/2"
+      ],
+      "viewBox": "10.534 11.596 172.05 118.942",
+      "clipToViewBox": true
+    }
+  },
+  {
+    "teamId": "CLOTH-SALOMON",
+    "id": "primary",
+    "label": "S mark",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/9/98/Salomon_icon_2022.svg/revision/latest?cb=20240812224037",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Salomon_icon_2022.svg",
+    "sourceSha256": "e7b59961a74c0cff7634a7008cec3307f9e67ffcebf576b06c7c654b9fb5f013",
+    "ops": {
+      "viewBox": "-12.343 -12.343 436.122 422.407"
+    }
+  },
+  {
+    "teamId": "CLOTH-SALOMON",
+    "id": "1996-swirl",
+    "label": "1996 swirl",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/a/aa/Salomon_icon_1996.svg/revision/latest?cb=20240812224022",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Salomon_icon_1996.svg",
+    "sourceSha256": "d6145e356aa9f280a8f914e1b7d766f6f4b68a67faf905e630b60bdb62d27997",
+    "ops": {
+      "viewBox": "-8.478 -8.478 299.556 104.723"
+    }
+  },
+  {
+    "teamId": "CLOTH-SANTACRUZ",
+    "id": "primary",
+    "label": "Screaming hand",
+    "sourceUrl": "https://cdn.worldvectorlogo.com/logos/santa-cruz-skateboards.svg",
+    "sourcePage": "https://worldvectorlogo.com/logo/santa-cruz-skateboards",
+    "sourceSha256": "a5e561c7aedb1491107dfbbab3644f2a2b2ec5a74f470eeab9e7a801da9f63a4",
+    "ops": {
+      "removeNodes": [
+        "0/0",
+        "0/24",
+        "0/25",
+        "0/26",
+        "0/27",
+        "0/28",
+        "0/29",
+        "0/30",
+        "0/31",
+        "0/32",
+        "0/33",
+        "0/34",
+        "0/35",
+        "0/36",
+        "0/37",
+        "0/38",
+        "0/39",
+        "0/40",
+        "0/41",
+        "0/42"
+      ],
+      "viewBox": "19.258 3.233 139.738 186.295"
+    }
+  },
+  {
+    "teamId": "CLOTH-SAUCONY",
+    "id": "primary",
+    "label": "Wave with three dots",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/5/51/Saucony.svg/revision/latest?cb=20190701103441",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Saucony.svg",
+    "sourceSha256": "732f8f12959cdccb69f0e1ce08114985ed11a772bc13055938e3a2a929b6672c",
+    "ops": {
+      "keepNodes": [
+        "3/0/8"
+      ],
+      "viewBox": "173.226 26.808 233.38 74.656"
+    }
+  },
+  {
+    "teamId": "CLOTH-SAUCONY",
+    "id": "1980s-swirl",
+    "label": "Swirl disc with dots (1980s)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/e/e3/Saucony_1980s.svg/revision/latest?cb=20190701105406",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Saucony_1980s.svg",
+    "sourceSha256": "9ffc4007201a1e782b3cbe034e07e09d69d810c9879d57034660cb94ec02087a",
+    "ops": {
+      "keepNodes": [
+        "3/0",
+        "3/9",
+        "3/10",
+        "3/12",
+        "3/13",
+        "3/14"
+      ],
+      "viewBox": "1350.32 -9.327 329.316 329.568"
+    }
+  },
+  {
+    "teamId": "CLOTH-SKECHERS",
+    "id": "primary",
+    "label": "Shadowed S",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/4/4c/Skechers_S_icon.svg/revision/latest?cb=20250707182144",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Skechers_S_icon.svg",
+    "sourceSha256": "e214c07247185aec5d03c1b4a5541a02e9cb77bc6f1cb14144f5a3a5ade4f9fd",
+    "ops": {
+      "viewBox": "-3.969 -3.969 140.229 68.955"
+    }
+  },
+  {
+    "teamId": "CLOTH-SKECHERS",
+    "id": "1997-oval",
+    "label": "S in bracketed oval (1997)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/8/8a/Skechers-1997.svg/revision/latest?cb=20211211201702",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Skechers-1997.svg",
+    "sourceSha256": "7b491aa003bb0ed6ee1874eced3c7dddc6191d73a6fb6e9b0c048bacdcd0dbbc",
+    "ops": {
+      "keepNodes": [
+        "1/9"
+      ],
+      "viewBox": "0.068 0.415 68.192 35.998"
+    }
+  },
+  {
+    "teamId": "CLOTH-SOUTHERNTIDE",
+    "id": "primary",
+    "label": "Skipjack fish",
+    "sourceUrl": "https://iconape.com/wp-content/files/tz/201820/svg/201820.svg",
+    "sourcePage": "https://iconape.com/southern-tide-logo-logo-icon-svg-png.html",
+    "sourceSha256": "dc15dcf92ca5fab4f0f3d5763b7a27ca5aaba71cdf4dab3c8fbc245554843c4f",
+    "ops": {
+      "keepNodes": [
+        "1/0-8"
+      ],
+      "viewBox": "72.423 -12.238 432.51 374.764"
+    }
+  },
+  {
+    "teamId": "CLOTH-SPEEDO",
+    "id": "primary",
+    "label": "Boomerang",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/4/4f/Speedo_stacked_%282010%29.svg/revision/latest?cb=20240802115925",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Speedo_stacked_(2010).svg",
+    "sourceSha256": "bdfe237501bc6bbb908cface76d70fd8c87482855cf94eb71e50ba7f972bf12d",
+    "ops": {
+      "removeNodes": [
+        "2/0",
+        "2/1",
+        "2/2",
+        "2/3",
+        "2/4",
+        "2/5"
+      ],
+      "viewBox": "122.379 283.487 849.146 332.727"
+    }
+  },
+  {
+    "teamId": "CLOTH-SPERRY",
+    "id": "primary",
+    "label": "Sail in circle",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/2/23/Sperry-2022.svg/revision/latest?cb=20221219223325",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Sperry-2022.svg",
+    "sourceSha256": "1a74d37c3855a0de43761625c9dae6f73f90d2473f3dadc3aed84f79fbccbc5c",
+    "ops": {
+      "viewBox": "-3.043 -3.048 248.95 248.95",
+      "clipToViewBox": true
+    }
+  },
+  {
+    "teamId": "CLOTH-SPERRY",
+    "id": "2015-diamond",
+    "label": "Sail in diamond (2015)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/2/2c/Sperry_Top-Sider_2015.svg/revision/latest?cb=20210506135342",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Sperry_Top-Sider_2015.svg",
+    "sourceSha256": "d930c01935f07307914a5474772b3361484c48d2a179e2814b287d889b0ec9eb",
+    "ops": {
+      "keepNodes": [
+        "3/0/0/21"
+      ],
+      "viewBox": "79.469 -2.861 101.055 76.966"
+    }
+  },
+  {
+    "teamId": "CLOTH-STARTER",
+    "id": "primary",
+    "label": "S with star",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/f/f5/Starter_%28Symbol%29.svg/revision/latest?cb=20180509060215",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Starter_(Symbol).svg",
+    "sourceSha256": "f7004332641e834fc67b7cac48942f4b73281b2c59be2deff18784c544699ac2",
+    "ops": {
+      "fill": "#000000",
+      "viewBox": "-7.938 -7.937 280.458 156.098"
+    }
+  },
+  {
+    "teamId": "CLOTH-STONEISLAND",
+    "id": "primary",
+    "label": "Compass rose",
+    "sourceUrl": "https://cdn.worldvectorlogo.com/logos/stone-island.svg",
+    "sourcePage": "https://worldvectorlogo.com/logo/stone-island",
+    "sourceSha256": "40b183b6d73a42d239412feb1958cadaf2ea696b837010767c35bf044d6dfa7a",
+    "ops": {
+      "removeNodes": [
+        "0",
+        "1"
+      ],
+      "viewBox": "56.93 53.247 68.844 68.893"
+    }
+  },
+  {
+    "teamId": "CLOTH-UGG",
+    "id": "primary",
+    "label": "Black wordmark",
+    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/8/80/UGG_logo.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:UGG_logo.svg",
+    "sourceSha256": "810a0241424a501e4ab37f4316eada30a9a12b0d4edd13f7009fd859c087aa3b",
+    "ops": {
+      "viewBox": "-12.451 241.974 627.653 308.027"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "CLOTH-UMBRO",
+    "id": "primary",
+    "label": "Double diamond with red core",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/5/58/Umbro_2024.svg/revision/latest?cb=20240123003832",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Umbro_2024.svg",
+    "sourceSha256": "706843e112546166f7c3affd218f09a5840d7e85bcea5c0945218c2bf60b06bd",
+    "ops": {
+      "removeNodes": [
+        "2/0/0/2/2",
+        "2/0/0/2/3",
+        "2/0/0/2/4",
+        "2/0/0/2/5",
+        "2/0/0/2/6"
+      ],
+      "viewBox": "-29.401 -29.595 1059.009 501.367"
+    }
+  },
+  {
+    "teamId": "CLOTH-UMBRO",
+    "id": "hollow-diamond",
+    "label": "Hollow double diamond (1974)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/d/de/Umbro_1974.svg/revision/latest?cb=20260708181329",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Umbro_1974.svg",
+    "sourceSha256": "123cd1c31cb083ade03b702d0ce9eb57a725b9fff1609abb5d5dc55c4ed2612d",
+    "ops": {
+      "fill": "#000000",
+      "viewBox": "-37.35 -37.35 1319.7 573.7"
+    }
+  },
+  {
+    "teamId": "CLOTH-UNIQLO",
+    "id": "primary",
+    "label": "Red tile wordmark",
+    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/9/92/UNIQLO_logo.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:UNIQLO_logo.svg",
+    "sourceSha256": "b9b11c1cea9f9eee79d8a7c815558c4133f2307aef1face5ff9539f85b884611",
+    "ops": {
+      "viewBox": "-6.11 -6.11 215.9 215.372"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "CLOTH-USPA",
+    "id": "primary",
+    "label": "Two polo players on horseback",
+    "sourceUrl": "https://iconape.com/wp-content/files/rt/203522/svg/203522.svg",
+    "sourcePage": "https://iconape.com/us-polo-assn-logo-2-logo-icon-svg-png.html",
+    "sourceSha256": "0aaa5d857b0eb4efb619706b79056de52160f14458bb71747e6ef79d148633d2",
+    "ops": {
+      "viewBox": "121.278 235.071 382.725 641.085"
+    }
+  },
+  {
+    "teamId": "CLOTH-VOLCOM",
+    "id": "primary",
+    "label": "Stone",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/7/71/Volcom.svg/revision/latest?cb=20170717082840",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Volcom.svg",
+    "sourceSha256": "14baecb1cfe0ea510944f049aea3378fbc7a93ac9a5eeb71bb4d374fb581fc99",
+    "ops": {
+      "viewBox": "-846.667 -846.668 21024.437 29915.558"
+    }
+  },
+  {
+    "teamId": "CLOTH-WOLFSKIN",
+    "id": "primary",
+    "label": "Paw print",
+    "sourceUrl": "https://logowik.com/jack-wolfskin-logo-vector-png-svg-free-download-21508.html",
+    "sourcePage": "https://logowik.com/jack-wolfskin-logo-vector-png-svg-free-download-21508.html",
+    "sourceSha256": "03198391c1c3242f656f3bb6a9520cda6ec24dde8ff626441130caf4369c5bae",
+    "downloadForm": "logowik",
+    "ops": {
+      "keepNodes": [
+        "4-12"
+      ],
+      "viewBox": "781.047 169.575 331.33 329.748"
+    }
+  },
+  {
+    "teamId": "CLOTH-ZARA",
+    "id": "primary",
+    "label": "Serif wordmark",
+    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Zara_Logo.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Zara_Logo.svg",
+    "sourceSha256": "59bda63cd3725b31174aef29d56a0386bb1bb11f060c39644e8bc7cf4809bd6c",
+    "ops": {
+      "fill": "#000000",
+      "viewBox": "-30 -30 1060 480.626"
+    },
+    "showsName": true
   },
   {
     "teamId": "LUX-BURBERRY",
@@ -13249,6 +15697,20 @@
     }
   },
   {
+    "teamId": "TV-PBS",
+    "id": "1971-p-head",
+    "label": "1971 P-shaped head",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/c/c2/PBS_1971_Without_Text.svg/revision/latest?cb=20240829154241",
+    "sourcePage": "https://logos.fandom.com/wiki/File:PBS_1971_Without_Text.svg",
+    "sourceSha256": "25fc99658665efbf500ee17563355f4495e8b87d395e00310812bf4278ecc9f2",
+    "ops": {
+      "keepNodes": [
+        "3/2"
+      ],
+      "viewBox": "-3.479 -2.711 110.42 122.93"
+    }
+  },
+  {
     "teamId": "TV-UNIVISION",
     "id": "tulip-1990",
     "label": "Flat tulip (1990)",
@@ -13257,6 +15719,708 @@
     "sourceSha256": "5d9e50264cfa1ca3f3cf622076104faa2ea4a6f44c2c2ed851e0c8363240dcac",
     "ops": {
       "viewBox": "-30.823 -30.823 832.213 831.978"
+    }
+  },
+  {
+    "teamId": "TV-UNIVISION",
+    "id": "1986-striped-globe",
+    "label": "1986 striped globe",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/2/27/Univision_-_1986p.svg/revision/latest?cb=20241218070248",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Univision_-_1986p.svg",
+    "sourceSha256": "734560c5d2e76e0999bc45b76890ccb16e4f2081c4c99a530a11b07db7f15021",
+    "ops": {
+      "removeNodes": [
+        "1"
+      ],
+      "viewBox": "-12.018 -9.518 424.636 265.036"
+    }
+  },
+  {
+    "teamId": "TV-ALJAZEERA",
+    "id": "primary",
+    "label": "Calligraphy drop",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/0/0f/Al_Jazeera.svg/revision/latest?cb=20171112085348",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Al_Jazeera.svg",
+    "sourceSha256": "21c4f9eacefeb11460e1402bdd31498d17ba7750a3628401c7e08a7c46578b7a",
+    "ops": {
+      "viewBox": "-30 -30 661.929 1060"
+    }
+  },
+  {
+    "teamId": "TV-AMC",
+    "id": "primary",
+    "label": "Black box wordmark",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/AMC_logo_2016.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:AMC_logo_2016.svg",
+    "sourceSha256": "755b936668108506b4dd6d59ea219ceba0473fe24f2b48d8dc5ad73b4337f749",
+    "ops": {
+      "viewBox": "-30 -30 1060 516.169"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "TV-AZTECA",
+    "id": "primary",
+    "label": "Rainbow pyramid stripes",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/0/01/TVAzteca2020.svg.svg/revision/latest?cb=20261010041827",
+    "sourcePage": "https://logos.fandom.com/wiki/File:TVAzteca2020.svg.svg",
+    "sourceSha256": "bc3b301361518ea3e645505566070b5a21e99ce8ef5b33e464f7498fcaf7ff49",
+    "ops": {
+      "removeNodes": [
+        "0"
+      ],
+      "viewBox": "46.176 -23.23 825.395 550.935"
+    }
+  },
+  {
+    "teamId": "TV-AZTECA",
+    "id": "1993-tile",
+    "label": "Green tile stripes (1993)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/c/c3/Televisi%C3%B3n_Azteca_%281993%29.svg/revision/latest?cb=20210424210938",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Televisi%C3%B3n_Azteca_%281993%29.svg",
+    "sourceSha256": "ff574ae483289e568694a3886e7063d1c6b88e1bc4fb1dc7ebe6ab1a24b2f2b3",
+    "ops": {
+      "keepNodes": [
+        "0",
+        "4/0-5"
+      ],
+      "viewBox": "-15 -15 530 371.026"
+    }
+  },
+  {
+    "teamId": "TV-BABYFIRST",
+    "id": "primary",
+    "label": "Baby face in a rainbow flower",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/a/ad/BabyFirst_TV.svg/revision/latest?cb=20240724193816",
+    "sourcePage": "https://logos.fandom.com/wiki/File:BabyFirst_TV.svg",
+    "sourceSha256": "dd5e903154b076385ed70d1e212afd3adf321eb2a977ffb740ee87824bec495c",
+    "ops": {
+      "keepNodes": [
+        "1-11"
+      ],
+      "viewBox": "22.253 -9.279 311.408 327.872"
+    }
+  },
+  {
+    "teamId": "TV-BBC",
+    "id": "primary",
+    "label": "Three blocks",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/d/d7/BBC_2021.svg/revision/latest?cb=20260727025739",
+    "sourcePage": "https://logos.fandom.com/wiki/File:BBC_2021.svg",
+    "sourceSha256": "15f96e89fa2fbf2ecd442cad7af6d569732285c200cf198bea3e1927fccb6f83",
+    "ops": {
+      "viewBox": "-30 -30 1060 345.833"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "TV-C4",
+    "id": "primary",
+    "label": "Floating blocks 4",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/4/4b/Channel_4_2015.svg/revision/latest?cb=20181107235925",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Channel_4_2015.svg",
+    "sourceSha256": "f11fa973a9ba3c6b5583f71193dac892c5e0d0e9c15125c61d9fe135571a2bd0",
+    "ops": {
+      "viewBox": "-41.347 -41.347 1081.695 1460.944"
+    }
+  },
+  {
+    "teamId": "TV-C4",
+    "id": "1982-blocks",
+    "label": "1982 colored blocks",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/c/c8/Channel_4_%281982%29.svg/revision/latest?cb=20210622210147",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Channel_4_%281982%29.svg",
+    "sourceSha256": "596b1d357d4aefe1db15c05b6a4ff175e6d1c5883f0cd0ec1d576524911e4429",
+    "ops": {
+      "viewBox": "-10.816 -10.811 286.217 382.158"
+    }
+  },
+  {
+    "teamId": "TV-C4",
+    "id": "1996-ring",
+    "label": "Numeral in a ring (1996)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/f/f8/Channel_4_1996.svg/revision/latest?cb=20210204111129",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Channel_4_1996.svg",
+    "sourceSha256": "f0ca0fef8d3489a95998dbd275dd6df0fae60fd1eed0c806ad6cd0af6ad5d652",
+    "ops": {
+      "keepNodes": [
+        "3/4"
+      ],
+      "viewBox": "2.607 2.607 994.986 994.986"
+    }
+  },
+  {
+    "teamId": "TV-CARACOL",
+    "id": "primary",
+    "label": "Orbit swoosh",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/e/ec/Caracol_Televisi%C3%B3n_%282019%29.svg/revision/latest?cb=20220705035124",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Caracol_Televisi%C3%B3n_%282019%29.svg",
+    "sourceSha256": "ec3fb7c0f63cd05cd3eed56b4db43eca0a5d78c0416571f39c5be74b790828ed",
+    "ops": {
+      "keepNodes": [
+        "3/0/0"
+      ],
+      "viewBox": "-10.16 -10.16 358.987 196.433"
+    }
+  },
+  {
+    "teamId": "TV-CARACOL",
+    "id": "1984-shell",
+    "label": "Nautilus shell (1984)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/4/49/Logotipo_de_Caracol_Radio_y_Televisi%C3%B3n_%281984-1987%29.svg/revision/latest?cb=20221130015829",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Caracol_TV_%281984-1987%29.svg",
+    "sourceSha256": "bfc167a07e4463bc2ac701ae06d18e63eb84c635cd1b802f78025a293cde80b8",
+    "ops": {
+      "keepNodes": [
+        "0",
+        "1"
+      ],
+      "viewBox": "-8.758 -9.074 736.533 697.036"
+    }
+  },
+  {
+    "teamId": "TV-CARTOONITO",
+    "id": "primary",
+    "label": "Blue square face with eyes",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/d/dd/Cartoonito_logo_2021_%28alternate%29.svg/revision/latest?cb=20210915045000",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Cartoonito_logo_2021_%28alternate%29.svg",
+    "sourceSha256": "7d2715ce61a1952757aaa015c70c07e1f0d3719a65e967713f8b26894ca17949",
+    "ops": {
+      "removeNodes": [
+        "0/0/0"
+      ],
+      "viewBox": "463.702 -8.04 283.509 284.08"
+    }
+  },
+  {
+    "teamId": "TV-CBC",
+    "id": "primary",
+    "label": "Gem",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/6/67/CBC_Logo_1992-Present.svg/revision/latest?cb=20260614001821",
+    "sourcePage": "https://logos.fandom.com/wiki/File:CBC_Logo_1992-Present.svg",
+    "sourceSha256": "5702b3e2c44216ef05428d909edcfeb4b32a937872c51fc1fdd578eff4789b04",
+    "ops": {
+      "viewBox": "-297.861 -298.861 10595.722 10597.561"
+    }
+  },
+  {
+    "teamId": "TV-CBC",
+    "id": "1974-pizza",
+    "label": "1974 exploding pizza",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/e/e2/Canadian_Broadcasting_Corporation_1974_%28transparent%29.svg/revision/latest?cb=20250917001242",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Canadian_Broadcasting_Corporation_1974_%28transparent%29.svg",
+    "sourceSha256": "4bbde99b549bc5dad5dcd431e66b173e41e9439d2cd8bc563442380382f278bc",
+    "ops": {
+      "viewBox": "-29.991 -29.992 1059.309 1059.714"
+    }
+  },
+  {
+    "teamId": "TV-CBC",
+    "id": "1966-butterfly",
+    "label": "1966 color butterfly",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/4/46/Canadian_Broadcasting_Corporation_1966.svg/revision/latest?cb=20250913144515",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Canadian_Broadcasting_Corporation_1966.svg",
+    "sourceSha256": "0de65f8eabd78855d491ffeda6c5e7fa0f1cf15445abae877bdf33aeb0fd69ef",
+    "ops": {
+      "viewBox": "-56.368 -56.368 1991.682 1980.043"
+    }
+  },
+  {
+    "teamId": "TV-CW",
+    "id": "primary",
+    "label": "Orange wordmark",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/b/b1/The_CW_2024.svg/revision/latest?cb=20240129132950",
+    "sourcePage": "https://logos.fandom.com/wiki/File:The_CW_2024.svg",
+    "sourceSha256": "9f65004fc2e37a4a8914d5bfe9cf92090eeb69dc4865db630001a4384122606c",
+    "ops": {
+      "viewBox": "-30 -30 1060 498.71"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "TV-DISNEYXD",
+    "id": "primary",
+    "label": "2009 lime letters",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/f/f6/DisneyXD_2009.svg/revision/latest?cb=20250105082817",
+    "sourcePage": "https://logos.fandom.com/wiki/File:DisneyXD_2009.svg",
+    "sourceSha256": "0c2f8ce0a6150a55fec3e9c17597657ba056e84ac88566aaa91030e891512e19",
+    "ops": {
+      "removeNodes": [
+        "4"
+      ],
+      "viewBox": "-30 -30 1060 626.904"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "TV-ESTRELLA",
+    "id": "primary",
+    "label": "Four-point gradient star",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/7/74/Estrella_TV_%282020%29.svg/revision/latest?cb=20210509221243",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Estrella_TV_%282020%29.svg",
+    "sourceSha256": "8de81b67c76769ab6a29fa826d877b677d8b6d772d1892c0a52bfee9725e2766",
+    "ops": {
+      "removeNodes": [
+        "5/0"
+      ],
+      "viewBox": "-10 -10 530 530"
+    }
+  },
+  {
+    "teamId": "TV-ESTRELLA",
+    "id": "2009-rainbow-star",
+    "label": "2009 rainbow star with e",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/e/e7/Estrella_TV_%282009%29.svg/revision/latest?cb=20210509221218",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Estrella_TV_%282009%29.svg",
+    "sourceSha256": "90eaee18b682a8eddd3319b1ff2fad6752c7969f0a2fe9a57ed8d202b2c5389e",
+    "ops": {
+      "keepNodes": [
+        "5/1-7"
+      ],
+      "viewBox": "-5.444 -5.444 545.671 530.887"
+    }
+  },
+  {
+    "teamId": "TV-FS1",
+    "id": "primary",
+    "label": "Wordmark",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/2015_Fox_Sports_1_logo.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:2015_Fox_Sports_1_logo.svg",
+    "sourceSha256": "ac567a23ad04d62065f64422ad74ea82deeadb1a5516745b4b34d4a16454c097",
+    "ops": {
+      "viewBox": "-4.39 -4.39 155.099 86.142"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "TV-FUJITV",
+    "id": "primary",
+    "label": "Medama eye",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/6/65/Fuji_TV_Logo.svg/revision/latest?cb=20250820090736",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Fuji_TV_Logo.svg",
+    "sourceSha256": "330787bea8ddc1233063b1298d0385a9f908060b0b71f2accc94b82ed942e361",
+    "ops": {
+      "keepNodes": [
+        "0",
+        "13",
+        "14"
+      ],
+      "viewBox": "4.323 -0.6 20.072 21.2"
+    }
+  },
+  {
+    "teamId": "TV-FUJITV",
+    "id": "channel-8",
+    "label": "Channel 8 mark",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/1/1b/Fuji_TV_Channel_8_Logo.svg/revision/latest?cb=20170327135008",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Fuji_TV_Channel_8_Logo.svg",
+    "sourceSha256": "883b3d2e13af32288796034c6b87b946ae2d7aa0ad4058660104d4688c67383a",
+    "ops": {
+      "keepNodes": [
+        "2"
+      ],
+      "viewBox": "-16.644 -16.591 587.381 385.938"
+    }
+  },
+  {
+    "teamId": "TV-FX",
+    "id": "primary",
+    "label": "Block letters",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/FX_International_logo.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:FX_International_logo.svg",
+    "sourceSha256": "ce978e0cd3b18ec4e8c4191f8e22d137b32acc5c60155a6c9843f3281245fbbb",
+    "ops": {
+      "viewBox": "-30 -30 1060 656.773"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "TV-GLOBO",
+    "id": "primary",
+    "label": "Glossy globe with screen",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/e/ef/Globo_2025_Vector.svg/revision/latest?cb=20260528153050",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Globo_2025_Vector.svg",
+    "sourceSha256": "b1e050a2240934da49b8966282e0c172c0e75294954ca8ac627caaf994d6308d",
+    "ops": {
+      "viewBox": "-60.423 -60.423 2134.846 2134.946"
+    }
+  },
+  {
+    "teamId": "TV-GLOBO",
+    "id": "1976-flat",
+    "label": "Flat blue globe (1976)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/8/83/Globo_75.svg/revision/latest?cb=20260103153909",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Globo_75.svg",
+    "sourceSha256": "0674c6fca17e02ffb828e29f5b3aa2a08687b3f0261b0d3750eb09fad0568e2b",
+    "ops": {
+      "viewBox": "-15.36 -15.36 542.72 542.72"
+    }
+  },
+  {
+    "teamId": "TV-GLOBO",
+    "id": "1986-chrome",
+    "label": "Chrome rainbow globe (1986)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/3/34/Rede_Globo_1986.svg/revision/latest?cb=20260219231023",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Rede_Globo_1986.svg",
+    "sourceSha256": "4de7f56317fb3ba3832e20e018741a0a76537d62196d0449002b5ddda482b5d4",
+    "ops": {
+      "viewBox": "-7.033 -7.033 248.487 248.487"
+    }
+  },
+  {
+    "teamId": "TV-GOLFCH",
+    "id": "primary",
+    "label": "G in a circle",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/f/fb/Golf_Channel_logo_2025.svg/revision/latest?cb=20260101092845",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Golf_Channel_logo_2025.svg",
+    "sourceSha256": "c7bab78cf3df082bf5ae1a96a5dfbbc3094065232e9d6d1da57819e39e62b643",
+    "ops": {
+      "keepNodes": [
+        "4/0-2"
+      ],
+      "viewBox": "-49.171 -49.168 1737.376 1737.376"
+    }
+  },
+  {
+    "teamId": "TV-MAGNOLIA",
+    "id": "primary",
+    "label": "House-shaped M in a circle",
+    "sourceUrl": "https://logowik.com/magnolia-new-2022-logo-vector-svg-pdf-ai-eps-cdr-free-download-12036.html",
+    "sourcePage": "https://logowik.com/magnolia-new-2022-logo-vector-svg-pdf-ai-eps-cdr-free-download-12036.html",
+    "sourceSha256": "7ac1ede06d32d7d7cee0b67c77df87be6122cf74697e94cfdb4ed8636fa4e56e",
+    "downloadForm": "logowik",
+    "ops": {
+      "fill": "#000000",
+      "viewBox": "192.682 92.982 414.036 414.036"
+    }
+  },
+  {
+    "teamId": "TV-MLBN",
+    "id": "primary",
+    "label": "Home-plate wordmark",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/d/dd/MLB_Network.svg/revision/latest?cb=20220618052057",
+    "sourcePage": "https://logos.fandom.com/wiki/File:MLB_Network.svg",
+    "sourceSha256": "3e21e4f0a240d39bf5c063f6958de2d6f4c005a0dd59943d699fada46d2cab18",
+    "ops": {
+      "viewBox": "-11.85 -11.85 406.694 418.7"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "TV-NBATV",
+    "id": "primary",
+    "label": "Logoman and TV tile",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/1/1a/NBA_TV_2017.svg/revision/latest?cb=20250414080547",
+    "sourcePage": "https://logos.fandom.com/wiki/File:NBA_TV_2017.svg",
+    "sourceSha256": "e33049fccef40ff2bbb1b93bfa5a823610505d9d3a6788594db3c0e3ab4f117e",
+    "ops": {
+      "viewBox": "-7.938 -7.938 280.458 280.458"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "TV-NFLN",
+    "id": "primary",
+    "label": "Football badge wordmark",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/2/20/NFL_Network.svg/revision/latest?cb=20100602105713",
+    "sourcePage": "https://logos.fandom.com/wiki/File:NFL_Network.svg",
+    "sourceSha256": "85f38b6d8ba2d5eb5d5f11ed1ca5d89d7e0a40ea8c7b5ecf5389876dd5cea800",
+    "ops": {
+      "viewBox": "-15.09 -15.09 533.18 422.18"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "TV-NINE",
+    "id": "primary",
+    "label": "Nine dots and numeral",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/2/20/Nine_2023.svg/revision/latest?cb=20240111174930",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Nine_2023.svg",
+    "sourceSha256": "e1abac5fdd29ef6fbbafe46b15a05052c0defae9c01b9d05098393e1a14bfcfc",
+    "ops": {
+      "viewBox": "-30 -30 1060 521.737"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "TV-OUTDOORCH",
+    "id": "primary",
+    "label": "Mountain peaks",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/8/89/Outdoor_Channel.svg/revision/latest?cb=20170807171622",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Outdoor_Channel.svg",
+    "sourceSha256": "f67e47a730c733169d6896f3363d6f4f7b9b2386d6ed213bc9db3f9a22ef82c5",
+    "ops": {
+      "keepNodes": [
+        "3/14",
+        "3/15"
+      ],
+      "viewBox": "-6.987 -10.053 355.487 180.252"
+    }
+  },
+  {
+    "teamId": "TV-QVC",
+    "id": "primary",
+    "label": "Coral Q ring",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/4/48/QVC.svg/revision/latest?cb=20190429184243",
+    "sourcePage": "https://logos.fandom.com/wiki/File:QVC.svg",
+    "sourceSha256": "b323f12654c4affc0d7eb20ba9cf5020cd68b5263b7dcc3e659a9129ca7f347a",
+    "ops": {
+      "keepNodes": [
+        "0/3-5"
+      ],
+      "viewBox": "-30 -30 978.527 1060"
+    }
+  },
+  {
+    "teamId": "TV-QVC",
+    "id": "boxed-q",
+    "label": "Q in a coral square",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/0/04/QVC_2019.svg/revision/latest?cb=20190206123853",
+    "sourcePage": "https://logos.fandom.com/wiki/File:QVC_2019.svg",
+    "sourceSha256": "ba1b0869576ed3742500a9ac331c3bf287f212677c752791dd6c835d581b4b19",
+    "ops": {
+      "keepNodes": [
+        "3/1"
+      ],
+      "viewBox": "-1.115 -1.115 39.397 39.397"
+    }
+  },
+  {
+    "teamId": "TV-RECORDTV",
+    "id": "primary",
+    "label": "Segmented circle",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/c/c9/RecordTV.svg/revision/latest?cb=20231113063444",
+    "sourcePage": "https://logos.fandom.com/wiki/File:RecordTV.svg",
+    "sourceSha256": "3d5d917d3495a50036aef7dd7e905b792a440ff9053214aec711ff0d7d85e4dd",
+    "ops": {
+      "keepNodes": [
+        "0/0-3"
+      ],
+      "viewBox": "224.479 -57.885 2046.98 2048.979"
+    }
+  },
+  {
+    "teamId": "TV-RECORDTV",
+    "id": "1985-arc",
+    "label": "Rainbow arc (1985)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/d/d5/Record_logo_1985.svg/revision/latest?cb=20200901143058",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Record_logo_1985.svg",
+    "sourceSha256": "e56847692ab72ca508ec634ababa6af74f7b5f8644c276554c42a07e47a608ac",
+    "ops": {
+      "viewBox": "-15.328 -14.968 571.507 571.507"
+    }
+  },
+  {
+    "teamId": "TV-RECORDTV",
+    "id": "1986-knot",
+    "label": "Gold knot (1986)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/2/2c/Rede_Record_logo_1986.svg/revision/latest?cb=20170622145232",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Rede_Record_logo_1986.svg",
+    "sourceSha256": "5d400e68a41cdb7d5566a6db2f2bb67c920aec56a6c515a132610a995e2062d5",
+    "ops": {
+      "keepNodes": [
+        "0",
+        "1"
+      ],
+      "viewBox": "86.887 -12.813 452.626 452.726"
+    }
+  },
+  {
+    "teamId": "TV-SCI",
+    "id": "primary",
+    "label": "Orange Sc tile",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/2/22/Science_Channel_2007.svg/revision/latest?cb=20210520063207",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Science_Channel_2007.svg",
+    "sourceSha256": "b204c0b5eb729984ebf89de52316188b82c4ac4f91dd33159e12fdb134fd30c6",
+    "ops": {
+      "keepNodes": [
+        "0/0",
+        "0/1"
+      ],
+      "viewBox": "-23.701 -23.701 837.452 803.82"
+    }
+  },
+  {
+    "teamId": "TV-SMITHSONIAN",
+    "id": "primary",
+    "label": "Golden sunburst",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/7/7a/Smithsonian_Channel_%28Stacked%29.svg/revision/latest?cb=20210110192353",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Smithsonian_Channel_%28Stacked%29.svg",
+    "sourceSha256": "d07409c032c15d5adfc717bf285e151235662f53b31ae242d5612ef9460a94ba",
+    "ops": {
+      "keepNodes": [
+        "0/19"
+      ],
+      "viewBox": "363.467 -7.772 274.628 274.594"
+    }
+  },
+  {
+    "teamId": "TV-SPORTSNET",
+    "id": "primary",
+    "label": "SN monogram with swooshes",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/d/d8/Sportsnet_2011_short.svg/revision/latest?cb=20230828131223",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Sportsnet_2011_short.svg",
+    "sourceSha256": "69d1aa53a43ed4e3d1dd64b08cd0ae7baf51c71e10c8f2c3877d88f02ae72ecb",
+    "ops": {
+      "viewBox": "-30 -30 1060 638.217"
+    }
+  },
+  {
+    "teamId": "TV-SPORTSNET",
+    "id": "2001-swirl",
+    "label": "Swirl and red dot (2001)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/9/90/SportsNetLogo2001.svg/revision/latest?cb=20251208200823",
+    "sourcePage": "https://logos.fandom.com/wiki/File:SportsNetLogo2001.svg",
+    "sourceSha256": "a4a393d76122d6f09cc65cb94b936b616186aa410acb5c0a44df001128353089",
+    "ops": {
+      "keepNodes": [
+        "1",
+        "2"
+      ],
+      "viewBox": "80.742 -2.819 99.613 80.645"
+    }
+  },
+  {
+    "teamId": "TV-STARZ",
+    "id": "primary",
+    "label": "Shooting star swoosh",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/d/d8/Starz_%282005%29_%28White%29.svg/revision/latest?cb=20250531120139",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Starz_%282005%29_%28White%29.svg",
+    "sourceSha256": "915d17eb895baaca633c3000a47ba508afc7d50cf33226344b95d5d5501952cd",
+    "ops": {
+      "removeNodes": [
+        "4"
+      ],
+      "viewBox": "-23.5 -23.5 830.349 552.063"
+    }
+  },
+  {
+    "teamId": "TV-STARZ",
+    "id": "1994-jagged-star",
+    "label": "1994 jagged black star",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/e/e7/Starz_%281994%29_Star.svg/revision/latest?cb=20180509082238",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Starz_%281994%29_Star.svg",
+    "sourceSha256": "5502c3c6b5c0f5662473d29f3c2b0c44222372c82a3c5ba7cf2a29fe950ee402",
+    "ops": {
+      "viewBox": "-30 -30 975.511 1060"
+    }
+  },
+  {
+    "teamId": "TV-TELEVISA",
+    "id": "primary",
+    "label": "Striped eye",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/e/ea/Televisa_%282016%29_Blue.svg/revision/latest?cb=20220606032032",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Televisa_%282016%29_Blue.svg",
+    "sourceSha256": "13d76704108067956ada07839915f3a1c73d95b053e615a0cb2a44efe25cc93e",
+    "ops": {
+      "keepNodes": [
+        "3/0/0"
+      ],
+      "viewBox": "19.738 -8.463 299.042 194.642"
+    }
+  },
+  {
+    "teamId": "TV-TELEVISA",
+    "id": "1981-sun",
+    "label": "Orange striped sun (1981)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/f/f8/Televisa_%281981%29.svg/revision/latest?cb=20251031030939",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Televisa_%281981%29.svg",
+    "sourceSha256": "2042633c181db12a4d32a2c20c0a5a503325078b0ba27e8a0b49be6f73cbf971",
+    "ops": {
+      "viewBox": "-9.7 -9.7 342.74 223.131"
+    }
+  },
+  {
+    "teamId": "TV-TELEVISA",
+    "id": "2001-sphere",
+    "label": "Glossy orange sphere (2001)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/e/e3/Televisa.svg/revision/latest?cb=20220606032746",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Televisa.svg",
+    "sourceSha256": "f9f271d22688075f04cf45d4a71ae3dc426e4922b290fc147e6427fb6f22e37c",
+    "ops": {
+      "keepNodes": [
+        "3/0/1"
+      ],
+      "viewBox": "19.71 -8.491 300.031 194.711"
+    }
+  },
+  {
+    "teamId": "TV-TENNISCH",
+    "id": "primary",
+    "label": "Court-line T",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/4/4f/Tennis_Channel_2022.svg/revision/latest?cb=20221201171651",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Tennis_Channel_2022.svg",
+    "sourceSha256": "57a95aa582287769f62848b7e5f96bf3f5ca46e1e8b786bb8dbc21efb3e83118",
+    "ops": {
+      "keepNodes": [
+        "3/256-259"
+      ],
+      "viewBox": "-24.622 -27.66 977.22 977.302"
+    }
+  },
+  {
+    "teamId": "TV-TENNISCH",
+    "id": "2003-tile",
+    "label": "Green tile T (2003)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/8/8a/Tennis_Channel_2003_stacked.svg/revision/latest?cb=20240116025610",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Tennis_Channel_2003_stacked.svg",
+    "sourceSha256": "d3132ff8c1d1f7e4398775989180609fb2a8a993919a59c0ea1f3b57528751a0",
+    "ops": {
+      "keepNodes": [
+        "3"
+      ],
+      "viewBox": "264.485 -13.738 485.4 485.018"
+    }
+  },
+  {
+    "teamId": "TV-TLC",
+    "id": "primary",
+    "label": "Three red letter tiles",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/d/dc/TLC_%282006%29.svg/revision/latest?cb=20210606163834",
+    "sourcePage": "https://logos.fandom.com/wiki/File:TLC_%282006%29.svg",
+    "sourceSha256": "ef0f76c3d65c2550e7ca1bb1e5638aee0c2dded522190eaab45377657acf59b6",
+    "ops": {
+      "viewBox": "-16.608 -16.608 586.806 298.554"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "TV-TRVL",
+    "id": "primary",
+    "label": "Swooping orange t",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/7/70/Travel_Channel_HD_2010.svg/revision/latest?cb=20251214012508",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Travel_Channel_HD_2010.svg",
+    "sourceSha256": "69e329cba9b1cfb4d498403cd9a2841629945996b646801f189c5395f79d097a",
+    "ops": {
+      "keepNodes": [
+        "16"
+      ],
+      "viewBox": "51.883 -4.702 155.791 166.12"
+    }
+  },
+  {
+    "teamId": "TV-UNIMAS",
+    "id": "primary",
+    "label": "Red brush U",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Logo_UniM%C3%A1s.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Logo_UniM%C3%A1s.svg",
+    "sourceSha256": "48e24e4e8aab2357d2d9ff0d925ae3b65019dd9cda6214b1be29792bab776961",
+    "ops": {
+      "keepNodes": [
+        "3/2"
+      ],
+      "viewBox": "13.691 -5.109 187.586 169.394"
+    }
+  },
+  {
+    "teamId": "TV-UNIMAS",
+    "id": "2002-play-triangle",
+    "label": "2002 blue play triangle",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/d/dd/Telefutura_%28Symbol%29.svg/revision/latest?cb=20180509070708",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Telefutura_%28Symbol%29.svg",
+    "sourceSha256": "17bb77141522d1e823c23d2baa71365d46e7792c8a4052f58f2b1a928253ad43",
+    "ops": {
+      "viewBox": "-7.938 -7.937 280.458 256.594"
     }
   },
   {
@@ -13861,6 +17025,20 @@
         "2"
       ],
       "viewBox": "0.84 0.84 31.32 15.32"
+    }
+  },
+  {
+    "teamId": "CHAR-PACMAN",
+    "id": "ghost",
+    "label": "Red pixel ghost",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Blinky%2C_Pinky%2C_Inky_and_Clyde.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Blinky%2C_Pinky%2C_Inky_and_Clyde.svg",
+    "sourceSha256": "fbeb711fce47f28ac16deffc776398e7b396c56dba3f6efe78f1d200fb432e42",
+    "ops": {
+      "keepNodes": [
+        "3-5"
+      ],
+      "viewBox": "-2.222 -2.222 78.528 78.528"
     }
   },
   {

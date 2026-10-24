@@ -3897,6 +3897,33 @@
             2
           ],
           "sha256": "6e63249c0d2ac8e3388a01dd04afb570c8369a08a6be5dd45daa286d3d4022dd"
+        },
+        {
+          "id": "ghost",
+          "label": "Red pixel ghost",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Blinky%2C_Pinky%2C_Inky_and_Clyde.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Blinky%2C_Pinky%2C_Inky_and_Clyde.svg",
+          "sourceSha256": "fbeb711fce47f28ac16deffc776398e7b396c56dba3f6efe78f1d200fb432e42",
+          "ops": {
+            "keepNodes": [
+              "3-5"
+            ],
+            "viewBox": "-2.222 -2.222 78.528 78.528"
+          },
+          "path": "/logos/svg/characters/alternates/pacman-ghost.svg",
+          "format": "svg",
+          "colors": [
+            "#FF0000",
+            "#DFDFDF",
+            "#1B1BDF"
+          ],
+          "sourcePalette": [
+            "#FF0000",
+            "#DFDFDF",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "47028602deae91f1f0d38d73770dd49d29949ec64395e048ba8cf47cb11e2b34"
         }
       ]
     },

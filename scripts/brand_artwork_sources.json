@@ -9161,7 +9161,7 @@
   },
   {
     "teamId": "FOOD-WAFFLE",
-    "id": "primary",
+    "id": "wordmark",
     "label": "Wordmark",
     "sourceUrl": "https://cdn.worldvectorlogo.com/logos/waffle-house.svg",
     "sourcePage": "https://worldvectorlogo.com/logo/waffle-house",
@@ -9436,6 +9436,4655 @@
     "sourceSha256": "831ebb30404e77d495a295af33cdb91983d850d8b35b88564d81ecc67a7def6a",
     "ops": {},
     "showsName": true
+  },
+  {
+    "teamId": "APP-AIRBNB",
+    "id": "pin-belo",
+    "label": "Pin belo variant",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/6/64/Airbnb_%282014%29_%28Symbol%29_%28Alt%29_%2811%29.svg/revision/latest?cb=20250301033045",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Airbnb_(2014)_(Symbol)_(Alt)_(11).svg",
+    "sourceSha256": "940f2819f7083e0a7e96e50028d71f5f68f8393c0707e2b28236b8708dfef14d",
+    "ops": {
+      "viewBox": "-40 -40 1009.132 1080"
+    }
+  },
+  {
+    "teamId": "APP-AMUSIC",
+    "id": "note-roundel",
+    "label": "Note roundel",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/e/e2/Apple_Music_circle.svg/revision/latest?cb=20250306204322",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Apple_Music_circle.svg",
+    "sourceSha256": "0135b06c664815195ded4bc3b3b8769baecd5eb9cf38e5c6e362d5ce9bda2c1e",
+    "ops": {
+      "viewBox": "-14.4 -14.4 388.8 388.792"
+    }
+  },
+  {
+    "teamId": "APP-APPSTORE",
+    "id": "pencil-a-2013",
+    "label": "Pencil A tile (2013)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/7/7d/App_Store_%28iOS%29_2013.svg/revision/latest?cb=20160818151505",
+    "sourcePage": "https://logos.fandom.com/wiki/File:App_Store_(iOS)_2013.svg",
+    "sourceSha256": "c0a728ef481b0e1951f0a8224ee2d35e3bceb057139b2e96a92014f825cdb5bd",
+    "ops": {
+      "viewBox": "-40 -40 1080 1080"
+    }
+  },
+  {
+    "teamId": "APP-CHATGPT",
+    "id": "teal-tile",
+    "label": "Teal tile",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/8/81/ChatGPT.svg/revision/latest?cb=20230315025013",
+    "sourcePage": "https://logos.fandom.com/wiki/File:ChatGPT.svg",
+    "sourceSha256": "b65e82912a9e9da63760537111d1839320d6b67cead5e1ca4a88fe8cf6efb5a0",
+    "ops": {
+      "viewBox": "-6.484 -6.484 175.068 175.068"
+    }
+  },
+  {
+    "teamId": "APP-CHROME",
+    "id": "canary",
+    "label": "Canary",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/4/44/Google_Chrome_Canary_2022_logo.svg/revision/latest?cb=20230525214955",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Google_Chrome_Canary_2022_logo.svg",
+    "sourceSha256": "3ed07dfe7acd22d7f7c2642e3f0e2fa3029147c9cb21b4b618e42dda172350db",
+    "ops": {
+      "viewBox": "-15.359 -15.36 414.679 414.709"
+    }
+  },
+  {
+    "teamId": "APP-CHROME",
+    "id": "glossy-2011",
+    "label": "Glossy icon (2011)",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Google_Chrome_icon_%28March_2011%29.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Google_Chrome_icon_(March_2011).svg",
+    "sourceSha256": "3b3e442388145192a5b2f17f5c0d2d543ecc969af13a4f3a0995e1e306af0c45",
+    "ops": {
+      "viewBox": "7.092 6.909 241.291 241.348"
+    }
+  },
+  {
+    "teamId": "APP-CRUNCHY",
+    "id": "mono-hime-2024",
+    "label": "One-color hime (2024)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/7/78/Crunchyroll_print_symbol_2024.svg/revision/latest?cb=20241030120615",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Crunchyroll_print_symbol_2024.svg",
+    "sourceSha256": "06215c80509b0c5548b1ddb415d377b504b3c9d684b7cd497eeacedffa42df5e",
+    "ops": {
+      "viewBox": "-10.583 -10.583 285.75 285.75"
+    }
+  },
+  {
+    "teamId": "APP-GD",
+    "id": "lite-tile",
+    "label": "Lite tile",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/5/56/Geometry_Dash_Lite_Icon.svg/revision/latest?cb=20220220121907",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Geometry_Dash_Lite_Icon.svg",
+    "sourceSha256": "e040ed62009b7b12869cdc5da1ca2bf874230d4332063c08f255d6e15ea7f0c6",
+    "ops": {
+      "viewBox": "-5.448 -5.448 147.103 146.86"
+    }
+  },
+  {
+    "teamId": "APP-GMAIL",
+    "id": "envelope-2015",
+    "label": "Envelope (2015)",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Logo_Gmail_%282015-2020%29.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Logo_Gmail_(2015-2020).svg",
+    "sourceSha256": "faaefa8c891eb8e26161d293ae8eddfd938552862fdc40d2b339bc7700a8bfce",
+    "ops": {
+      "viewBox": "-9.98 -10.195 275.26 214.212"
+    }
+  },
+  {
+    "teamId": "APP-GMAPS",
+    "id": "outline-pin",
+    "label": "Outline pin",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/a/a1/Google_Maps_Search_2022_mono.svg/revision/latest?cb=20260604131658",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Google_Maps_Search_2022_mono.svg",
+    "sourceSha256": "a8d33356cadb2aa5e6d874f1e4ff76520d531db883c1ca8eab3ae6bc592f6d48",
+    "ops": {
+      "viewBox": "82.359 25.598 347.192 460.837"
+    }
+  },
+  {
+    "teamId": "APP-IG",
+    "id": "outline-glyph",
+    "label": "Outline glyph",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/2/2f/Instagram_2016.svg/revision/latest?cb=20160512122832",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Instagram_2016.svg",
+    "sourceSha256": "6a783cd0147ea3d6b5a2788b883caecb2eda8654f7ac9ee029bde37bd1a03aac",
+    "ops": {
+      "viewBox": "-31.997 -32.003 863.998 864.004"
+    }
+  },
+  {
+    "teamId": "APP-MAPS",
+    "id": "freeway-2017",
+    "label": "Freeway tile (2017)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/2/2d/Apple_Maps_%28iOS%29_2017.svg/revision/latest?cb=20240615114755",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Apple_Maps_(iOS)_2017.svg",
+    "sourceSha256": "bc69a9950f2f2ea73a1ca5720592a090e9dc95adfa870adaa903ace51a685dce",
+    "ops": {
+      "viewBox": "-40.97 -40.96 1105.931 1105.921"
+    }
+  },
+  {
+    "teamId": "APP-MC",
+    "id": "pride-creeper",
+    "label": "Pride creeper",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/1/1e/Minecraft_%28Social_Media%2C_Pride%2C_2018%29.svg/revision/latest?cb=20240818141924",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Minecraft_(Social_Media,_Pride,_2018).svg",
+    "sourceSha256": "19977e5fdfc52866484399b2cafcb6b030162018cc7f14df0ce5be6ac6089712",
+    "ops": {
+      "viewBox": "-43.2 -43.2 1165.4 1166.4"
+    }
+  },
+  {
+    "teamId": "APP-NETFLIX",
+    "id": "n-tile",
+    "label": "N on black tile",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/c/c5/Netflix_%28Symbol%3B_Black_Square%29.svg/revision/latest?cb=20220429144358",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Netflix_(Symbol;_Black_Square).svg",
+    "sourceSha256": "a70a725758510cb447ab1455d95d7f400cb20d702ac86f3c9e5db6a770898928",
+    "ops": {
+      "viewBox": "-40 -40 1080 797.801"
+    }
+  },
+  {
+    "teamId": "APP-PHOTOS",
+    "id": "flower-2013",
+    "label": "Flower tile (2013)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/e/e6/Apple_Photos_%28iOS%29_2013.svg/revision/latest?cb=20240623050532",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Apple_Photos_(iOS)_2013.svg",
+    "sourceSha256": "149f4efc670931917fbbbf4dfdbbf0f37401472647256bd2f7a87239f5cd63f3",
+    "ops": {
+      "viewBox": "-40.96 -40.96 1105.92 1105.92"
+    }
+  },
+  {
+    "teamId": "APP-PIN",
+    "id": "black-p-2011",
+    "label": "Black P (2011)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/d/de/Pinterest_2011_print.svg/revision/latest?cb=20251122122903",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Pinterest_2011_print.svg",
+    "sourceSha256": "f45e0ad1d1c9190abb936a60aefb1b313b44fa8aef4972180879486a175587af",
+    "ops": {
+      "viewBox": "-26.046 -26.046 703.221 703.237"
+    }
+  },
+  {
+    "teamId": "APP-PODCASTS",
+    "id": "dark-tile",
+    "label": "Dark tile",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/c/c4/Apple_Podcasts_%28iOS%29_dark.svg/revision/latest?cb=20240614053738",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Apple_Podcasts_(iOS)_dark.svg",
+    "sourceSha256": "52d8014511e96bbd5a2b9b8a58b193f71b290e1c82e31819b774bdce605d62e6",
+    "ops": {
+      "viewBox": "-29.104 -29.104 785.808 785.808"
+    }
+  },
+  {
+    "teamId": "APP-REDDIT",
+    "id": "full-snoo",
+    "label": "Full-body alien",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/9/94/Reddit_Snoo.svg/revision/latest?cb=20180501154743",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Reddit_Snoo.svg",
+    "sourceSha256": "a28b8a5e080118de9410daf6f21d69a7e8b7993c548e3f439ba8e906cac271b6",
+    "ops": {
+      "viewBox": "-6.628 -6.628 203.763 277.838"
+    }
+  },
+  {
+    "teamId": "APP-ROBLOX",
+    "id": "r-roundel",
+    "label": "R roundel",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/e/eb/Roblox-circle-logo.svg/revision/latest?cb=20250420213113",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Roblox-circle-logo.svg",
+    "sourceSha256": "cf593fb9fe6c2949e8b79ace40425811b840e2c403217ea02cb68fc007cac3e6",
+    "ops": {
+      "viewBox": "-16.8 -16.8 453.6 453.6"
+    }
+  },
+  {
+    "teamId": "APP-ROBLOX",
+    "id": "red-r-2004",
+    "label": "Red R (2004)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/2/21/Roblox_%282004%29_%28Icon%29.svg/revision/latest?cb=20250403123003",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Roblox_(2004)_(Icon).svg",
+    "sourceSha256": "2d91969eddadfefa549911f394e8b26984f79441764397280b61816726abb351",
+    "ops": {
+      "viewBox": "-27.159 -27.159 733.281 530.012"
+    }
+  },
+  {
+    "teamId": "APP-SETTINGS",
+    "id": "dark-gear",
+    "label": "Dark gear tile",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/2/28/Settings_%28iOS%29_dark.svg/revision/latest?cb=20240614032121",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Settings_(iOS)_dark.svg",
+    "sourceSha256": "2a405db8b11c5f3c1941641b95f1a3b6dbd6988584dd5062f68c74e166c19949",
+    "ops": {
+      "viewBox": "-40.96 -40.96 1105.92 1105.92"
+    }
+  },
+  {
+    "teamId": "APP-SHAZAM",
+    "id": "roundel-1999",
+    "label": "Classic roundel (1999)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/e/e9/Shazam_1999.svg/revision/latest?cb=20171015111138",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Shazam_1999.svg",
+    "sourceSha256": "f7dfd74f17d46fe610c90494db05009557b92ee67a661b4446ab5521743d57d0",
+    "ops": {
+      "viewBox": "-40 -40 1079.991 1080"
+    }
+  },
+  {
+    "teamId": "APP-SNAP",
+    "id": "black-ghost",
+    "label": "Black ghost",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/e/ef/Snapchat_Ghost_%28Inverted%29.svg/revision/latest?cb=20200801053139",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Snapchat_Ghost_(Inverted).svg",
+    "sourceSha256": "c27344906470cb2b2b2088cd2f1cbfb0d7d11d51da508b376ee20443545c7b75",
+    "ops": {
+      "viewBox": "-14.624 -14.724 1029.348 969.748"
+    }
+  },
+  {
+    "teamId": "APP-SNAP",
+    "id": "ghost-face-2011",
+    "label": "Ghost with face (2011)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/5/52/Snapchat_Ghost_with_Face.svg/revision/latest?cb=20171018120037",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Snapchat_Ghost_with_Face.svg",
+    "sourceSha256": "5179378d81cc32c4dcf6cc8a15b06a83f4ef56c293d83289776c7e3ae9bea65a",
+    "ops": {
+      "viewBox": "-234 -110.631 1080.002 1013.263"
+    }
+  },
+  {
+    "teamId": "APP-SOUNDCLOUD",
+    "id": "black-cloud-2014",
+    "label": "Black cloud (2014)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/5/56/SoundCloud_icon_2014_vector.svg/revision/latest?cb=20231201043359",
+    "sourcePage": "https://logos.fandom.com/wiki/File:SoundCloud_icon_2014_vector.svg",
+    "sourceSha256": "6a412dffcfbc5c311314624c12900ed0c106d4895eb33e21df480b2660d23055",
+    "ops": {
+      "viewBox": "-4.459 -4.459 120.398 58.919"
+    }
+  },
+  {
+    "teamId": "APP-SOUNDCLOUD",
+    "id": "orange-tile",
+    "label": "Orange tile",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Antu_soundcloud.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Antu_soundcloud.svg",
+    "sourceSha256": "c1606405b76e8e464fcf1a325f07ad2ffe6c89f9574e3bba634dcbb16efbd6ad",
+    "ops": {
+      "viewBox": "-5.5 -5.5 162 162"
+    }
+  },
+  {
+    "teamId": "APP-SPOTIFY",
+    "id": "black-2015",
+    "label": "Black icon (2015)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/2/28/Spotify_2015_Icon_Print.svg/revision/latest?cb=20240523122752",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Spotify_2015_Icon_Print.svg",
+    "sourceSha256": "80f593d9d16d409d7aa671a8ca98c981ee84269a99f1029726be94ea679069cd",
+    "ops": {
+      "viewBox": "-40 -40 1080 1079.976"
+    }
+  },
+  {
+    "teamId": "APP-SPOTIFY",
+    "id": "classic-2008",
+    "label": "Classic icon (2008)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/8/8e/Spotify_2008_Icon.svg/revision/latest?cb=20231126095107",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Spotify_2008_Icon.svg",
+    "sourceSha256": "b1a0edd76d3602c1711059203a342ffa00d08e1b1c17ee4ca3323dd8ca726f95",
+    "ops": {
+      "viewBox": "-15.117 -15.118 408.181 408.182"
+    }
+  },
+  {
+    "teamId": "APP-TIKTOK",
+    "id": "black-roundel",
+    "label": "Black roundel",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Tiktok_icon.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Tiktok_icon.svg",
+    "sourceSha256": "929de00e5817b35eba269bfdda5f3ef056a0af84baa2b6cd3d09d45d2002a741",
+    "ops": {
+      "viewBox": "-3.84 -3.84 103.68 103.68"
+    }
+  },
+  {
+    "teamId": "APP-TWITCH",
+    "id": "black-glitch",
+    "label": "Black glitch",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/8/84/Twitch_Icon_Black_2019.svg/revision/latest?cb=20260708230747",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Twitch_Icon_Black_2019.svg",
+    "sourceSha256": "6d31ef517982caedc9de317eead5060522ccfa2813894fa0f2750ec03c94e84d",
+    "ops": {
+      "viewBox": "-54.88 -54.88 1285.76 1481.76"
+    }
+  },
+  {
+    "teamId": "APP-VENMO",
+    "id": "v-tile-2010",
+    "label": "V tile (2010)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/6/65/Venmo_2010_Icon.svg/revision/latest?cb=20220519215432",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Venmo_2010_Icon.svg",
+    "sourceSha256": "89e2b250472b52dc7fd0cbf7471446ccab3c842782e3c315ac0703cdf74ed56c",
+    "ops": {
+      "viewBox": "-20.64 -20.64 557.28 557.28"
+    }
+  },
+  {
+    "teamId": "APP-WA",
+    "id": "ios7-tile",
+    "label": "Green tile (iOS 7)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/e/e7/WhatsApp_iOS_7_Icon.svg/revision/latest?cb=20210528192650",
+    "sourcePage": "https://logos.fandom.com/wiki/File:WhatsApp_iOS_7_Icon.svg",
+    "sourceSha256": "4c3153bd30aebba095a27e73e14b305339950f1c9ac12c123b765ffed5d3c065",
+    "ops": {
+      "viewBox": "-32.004 -32.004 864.108 864.103"
+    }
+  },
+  {
+    "teamId": "APP-X",
+    "id": "black-bird-2012",
+    "label": "Black bird (2012)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/7/75/Twitter_%282012%29_%28Print%29.svg/revision/latest?cb=20210810110308",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Twitter_(2012)_(Print).svg",
+    "sourceSha256": "14efa8398d49af83a4709b2f54731b97c53d09c9b94744fdc4eb10871f1086cc",
+    "ops": {
+      "viewBox": "-14.711 -14.711 397.193 328.136"
+    }
+  },
+  {
+    "teamId": "BRAND-AA",
+    "id": "mono-flight",
+    "label": "One-color flight symbol",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/e/e9/American_Airlines_logo_2013_%28Flight_Symbol%29_%28Print%29.svg/revision/latest?cb=20210910165118",
+    "sourcePage": "https://logos.fandom.com/wiki/File:American_Airlines_logo_2013_(Flight_Symbol)_(Print).svg",
+    "sourceSha256": "22402ae26dd007f9ddabfedabce34bb6fe458f625001603d3ce20f2745c8c9a1",
+    "ops": {
+      "viewBox": "-10.583 -10.583 285.75 280.688"
+    }
+  },
+  {
+    "teamId": "BRAND-APPLE",
+    "id": "outline",
+    "label": "Outline fruit",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Apple-icon.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Apple-icon.svg",
+    "sourceSha256": "9bf3bcc340f7e901c3b9b11c3457cc0d9cedc94fc9fd75cfbda1b207228715b6",
+    "ops": {
+      "viewBox": "-31.54 -32.002 693.542 864.053"
+    }
+  },
+  {
+    "teamId": "BRAND-BP",
+    "id": "mono-helios",
+    "label": "One-color helios",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/c/cf/BP_%28Monochrome%29.svg/revision/latest?cb=20171112044059",
+    "sourcePage": "https://logos.fandom.com/wiki/File:BP_(Monochrome).svg",
+    "sourceSha256": "dbc3d79af98602a1d7f9deed20eaaaa4c398eb2734cf439f82b32400de00b2e0",
+    "ops": {
+      "viewBox": "-40 -40 832.452 1080"
+    }
+  },
+  {
+    "teamId": "BRAND-CHASE",
+    "id": "four-color-octagon",
+    "label": "Four-color octagon (1960)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/8/85/Chase_-_1960y.svg/revision/latest?cb=20250318135230",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Chase_-_1960y.svg",
+    "sourceSha256": "58993a9fdcbac1a206dfbfdf39ac7aff3b5d5236bca2d8b73bf5babba8a9f973",
+    "ops": {
+      "viewBox": "-22.787 -22.597 610.124 610.104"
+    }
+  },
+  {
+    "teamId": "BRAND-CHASE",
+    "id": "striped-octagon",
+    "label": "Striped octagon (1960)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/5/53/Chase_-_1960p.svg/revision/latest?cb=20250317232738",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Chase_-_1960p.svg",
+    "sourceSha256": "9fec4d16152ee46b58f0b5f07413825bfc72f8fccce2d4a5cc0df96af9476e21",
+    "ops": {
+      "viewBox": "-34.721 -34.721 934.482 937.462"
+    }
+  },
+  {
+    "teamId": "BRAND-DROPBOX",
+    "id": "open-box",
+    "label": "Open box (2013)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/e/e6/Dropbox_Icon_%282013-2017%29.svg/revision/latest?cb=20260702212847",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Dropbox_Icon_(2013-2017).svg",
+    "sourceSha256": "9e0fe01fe6b1d24780786b4c18f73897d3c297017242056ea5a16f994cb9917d",
+    "ops": {
+      "viewBox": "-16.96 -16.96 457.92 428.92"
+    }
+  },
+  {
+    "teamId": "BRAND-FIREFOX",
+    "id": "fox-2013",
+    "label": "Fox on globe (2013)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/e/e3/Firefox-logo.svg/revision/latest?cb=20150409212556",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Firefox-logo.svg",
+    "sourceSha256": "3eda31fb1109d08f5cc9affbcd9a647121c2e900ddacd5d4632e68390d59876b",
+    "ops": {
+      "viewBox": "-2.579 -4.926 133.004 129.024"
+    }
+  },
+  {
+    "teamId": "BRAND-GITHUB",
+    "id": "octocat-2012",
+    "label": "Octocat silhouette (2012)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/e/e5/GitHub_OctoCat_2012.svg/revision/latest?cb=20260312131815",
+    "sourcePage": "https://logos.fandom.com/wiki/File:GitHub_OctoCat_2012.svg",
+    "sourceSha256": "f91e4ea95131069dde43a4b3a1a8bd70df61f449276422731497624702ead831",
+    "ops": {
+      "viewBox": "-19.84 -11.84 535.68 523.287"
+    }
+  },
+  {
+    "teamId": "BRAND-GITHUB",
+    "id": "pride",
+    "label": "Pride Invertocat",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/8/8f/GitHub_Pride.svg/revision/latest?cb=20221005121138",
+    "sourcePage": "https://logos.fandom.com/wiki/File:GitHub_Pride.svg",
+    "sourceSha256": "56d4573453b6f022471eea1e174c2ef6e587ddd633d690d2bba95f68061a5023",
+    "ops": {
+      "viewBox": "-17.545 -17.542 473.639 462.906"
+    }
+  },
+  {
+    "teamId": "BRAND-GITLAB",
+    "id": "mono-fox",
+    "label": "One-color fox",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Font_Awesome_5_brands_gitlab.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Font_Awesome_5_brands_gitlab.svg",
+    "sourceSha256": "ca7c5d70e72c804b2f45a5d427a1f028a829dc3dc8148efebb6f38ff10e1b4b3",
+    "ops": {
+      "viewBox": "-20.48 -2.195 552.96 516.389"
+    }
+  },
+  {
+    "teamId": "BRAND-NBC",
+    "id": "peacock-1986",
+    "label": "Six-feather peacock (1986)",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/NBC_Peacock_1986.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:NBC_Peacock_1986.svg",
+    "sourceSha256": "71e2fc140355bcf0c700b82535cc2b0cf335088fbcab2893c96b37bda3c2fc2f",
+    "ops": {
+      "viewBox": "-110.28 -187.188 612.561 379.946"
+    }
+  },
+  {
+    "teamId": "BRAND-NIKE",
+    "id": "outline-swoosh",
+    "label": "Outline swoosh",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/8/86/Nike_%28Outlined%29.svg/revision/latest?cb=20171113063156",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Nike_(Outlined).svg",
+    "sourceSha256": "4ffc25b63e3a3bc0c1c197e2c79e5eb46f3a8e52814544a1786804512ccd798a",
+    "ops": {
+      "viewBox": "95.5 321.375 1080 449.03"
+    }
+  },
+  {
+    "teamId": "BRAND-NVIDIA",
+    "id": "eye-tile",
+    "label": "Eye tile (classic)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/e/e8/Nvidia_%28Symbol%29_%28Old%29.svg/revision/latest?cb=20180501171202",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Nvidia_(Symbol)_(Old).svg",
+    "sourceSha256": "9cb1c87ef2652393af59f02b1b1e355610dd68f76f69b93560a1c77346cee526",
+    "ops": {
+      "viewBox": "-212.152 -63.157 1705.246 1171.099"
+    }
+  },
+  {
+    "teamId": "BRAND-OPERA",
+    "id": "gx-ring",
+    "label": "GX ring",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Opera_GX_Icon.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Opera_GX_Icon.svg",
+    "sourceSha256": "e0a284a8afa4b84c5b0db9eaab022fe7b43cf9ee23fe045756213fc6628a5622",
+    "ops": {
+      "viewBox": "-2.172 -2.279 62.165 62.481"
+    }
+  },
+  {
+    "teamId": "BRAND-PAYPAL",
+    "id": "pride-ring",
+    "label": "Pride ring (2022)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/e/e8/PayPal_%282022%29_%28Pride%29.svg/revision/latest?cb=20220603004957",
+    "sourcePage": "https://logos.fandom.com/wiki/File:PayPal_(2022)_(Pride).svg",
+    "sourceSha256": "ed803c32d7a6bd45083dd602951d2483eaf7fdc225b4da28a526febda1b947ae",
+    "ops": {
+      "viewBox": "-13.547 -13.547 365.76 365.76"
+    }
+  },
+  {
+    "teamId": "BRAND-SHELL",
+    "id": "pecten-1909",
+    "label": "Black pecten (1909)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/8/8f/Shell-1909.svg/revision/latest?cb=20240212060413",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Shell-1909.svg",
+    "sourceSha256": "23924688490409d9f0e76a12fdefd074e1322de0c34029b14ebc8f1d0cf74afe",
+    "ops": {
+      "viewBox": "601.503 -64.416 2581.093 2266.897"
+    }
+  },
+  {
+    "teamId": "BRAND-SHOPIFY",
+    "id": "mono-bag",
+    "label": "One-color bag",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/6/6f/Shopify-logo-shopping-bag-monotone-black.svg/revision/latest?cb=20241027225650",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Shopify-logo-shopping-bag-monotone-black.svg",
+    "sourceSha256": "a43d9aa7b726041c93ee4b66bb51d474c36fc756e68339f6e548bcfefecec1e9",
+    "ops": {
+      "viewBox": "-3.673 -3.5 96.345 108"
+    }
+  },
+  {
+    "teamId": "BRAND-SWITCH",
+    "id": "mono-icon",
+    "label": "One-color icon",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Nintendo_Switch_Logo_%28without_text%29.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Nintendo_Switch_Logo_(without_text).svg",
+    "sourceSha256": "0eaa1ae693c06b76ec74e7503365dd43a5a0f83333e0b6b665a6d1b35f4ba17d",
+    "ops": {
+      "viewBox": "13.802 13.681 521.518 521.618"
+    }
+  },
+  {
+    "teamId": "BRAND-TARGET",
+    "id": "mono-bullseye",
+    "label": "One-color bullseye",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/2/24/Target_%28Black%29.svg/revision/latest?cb=20171009124446",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Target_(Black).svg",
+    "sourceSha256": "80679d3e8542607bfb34af81b41b6094e4f6b3dec616c751ea18fbdcefaecdcd",
+    "ops": {
+      "viewBox": "-40 -40 1080 1080"
+    }
+  },
+  {
+    "teamId": "BRAND-UBUNTU",
+    "id": "mono-cof",
+    "label": "One-color circle of friends",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/c/cf/Ubuntu_%282022%29_%28CoF%29_%28Print%29.svg/revision/latest?cb=20241001082951",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Ubuntu_(2022)_(CoF)_(Print).svg",
+    "sourceSha256": "473cada1d35ca01b5edaa0fe538366a87d8faa7c2b324650579d951b67a6f17a",
+    "ops": {
+      "viewBox": "-76.748 -76.799 2073.56 2000.885"
+    }
+  },
+  {
+    "teamId": "BRAND-XBOX",
+    "id": "orb-2001",
+    "label": "Black X orb (2001)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/3/37/Xbox_%282001%29_%28Symbol%29_%28Print%29.svg/revision/latest?cb=20250114131343",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Xbox_(2001)_(Symbol)_(Print).svg",
+    "sourceSha256": "e6820e5d5d289b5844be0bd7e74a217eba0445283c029371f66036f41a8a111f",
+    "ops": {
+      "viewBox": "-14.659 -14.658 395.76 314.168"
+    }
+  },
+  {
+    "teamId": "FOOD-AUNTIE",
+    "id": "pretzel-halo",
+    "label": "Pretzel halo (2023)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/2/29/Auntie_Anne%27s_2023_symbol.svg/revision/latest?cb=20260816054555",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Auntie_Anne's_2023_symbol.svg",
+    "sourceSha256": "07dbaef513d54764ccee27a54217c635df042c8fe881bc4694ac36a3cbaeca4a",
+    "ops": {
+      "viewBox": "-10.57 -10.57 272.494 285.394"
+    }
+  },
+  {
+    "teamId": "FOOD-BK",
+    "id": "monogram-bun",
+    "label": "Monogram bun (1999)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/a/a9/Burger_King_shortened.svg/revision/latest?cb=20220428130352",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Burger_King_shortened.svg",
+    "sourceSha256": "7250f1abea5dc4758b377312bbd50ebc7449fcef010f16aea2594038cc60b20d",
+    "ops": {
+      "viewBox": "-117.7 -117.175 424.387 424.387"
+    }
+  },
+  {
+    "teamId": "FOOD-DOM",
+    "id": "domino-1969",
+    "label": "Red tile (1969)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/6/66/Domino%27s_Pizza_Logo_1969_%281%29.svg/revision/latest?cb=20190823045717",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Domino's_Pizza_Logo_1969_(1).svg",
+    "sourceSha256": "0bf53f1404e095290ef92d13bb501ad0578703b0d0636bfa91fc061f9520eea3",
+    "ops": {
+      "viewBox": "-10.617 -10.62 156.24 286.74"
+    }
+  },
+  {
+    "teamId": "FOOD-DOM",
+    "id": "mono-domino",
+    "label": "One-color tile (2025)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/8/8e/Domino%27s_2025_print_domino.svg/revision/latest?cb=20251011005655",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Domino's_2025_print_domino.svg",
+    "sourceSha256": "d7fe60a0707cb972d945987b4f90886aa7a0e344b50c49e166c809522d7daa48",
+    "ops": {
+      "viewBox": "-37.84 -37.84 1021.681 1021.681"
+    }
+  },
+  {
+    "teamId": "FOOD-KFC",
+    "id": "colonel-1978",
+    "label": "Colonel portrait (1978)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/2/2f/KFC_-_1978h.svg/revision/latest?cb=20250830075852",
+    "sourcePage": "https://logos.fandom.com/wiki/File:KFC_-_1978h.svg",
+    "sourceSha256": "f13544b6d297d59a06d43adb92d197a8aba50b178bf897e15f400573a8f151c6",
+    "ops": {
+      "viewBox": "-33.509 -33.509 589.753 904.738"
+    }
+  },
+  {
+    "teamId": "FOOD-STAR",
+    "id": "mono-siren",
+    "label": "One-color siren (2011)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/4/4c/Starbucks_%282011%29_%28Print%29.svg/revision/latest?cb=20191224213654",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Starbucks_(2011)_(Print).svg",
+    "sourceSha256": "ad52fc6c9d3d1c25a32ddedab5210fbef33962b8283094a1ca427169e006fa6a",
+    "ops": {
+      "viewBox": "-40 -40 1079.981 1080"
+    }
+  },
+  {
+    "teamId": "FOOD-SUB",
+    "id": "choice-mark",
+    "label": "Choice mark S (2016)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/0/00/Subway_%E2%80%93_2016_Choice_Mark_symbol_print.svg/revision/latest?cb=20241014002415",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Subway_–_2016_Choice_Mark_symbol_print.svg",
+    "sourceSha256": "69eea04c9e54871c8cc19f1a020c10b529d8468e9a94d45907fa179a417488fb",
+    "ops": {
+      "viewBox": "-102.422 -102.422 2186.798 2765.393"
+    }
+  },
+  {
+    "teamId": "FOOD-TB",
+    "id": "bell-1985",
+    "label": "Classic bell (1985)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/d/d2/Taco_Bell_-_1985s.svg/revision/latest?cb=20250405072312",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Taco_Bell_-_1985s.svg",
+    "sourceSha256": "41894374e87ce1092136bf5afd98274fcd071db5e7a0a057eb6836f41d76f010",
+    "ops": {
+      "viewBox": "-43.164 -43.164 1165.417 934.947"
+    }
+  },
+  {
+    "teamId": "FOOD-WAFFLE",
+    "id": "primary",
+    "label": "WH monogram",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/9/9c/Waffle_House_monogram.svg/revision/latest?cb=20230820055733",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Waffle_House_monogram.svg",
+    "sourceSha256": "b1926953947591aa4ce9fbbf15bb6b44cac2cb59a9d4e8b72c75c24beafcc019",
+    "ops": {
+      "viewBox": "-2.117 -2.117 57.15 57.15"
+    }
+  },
+  {
+    "teamId": "TV-NICK",
+    "id": "splat-2023",
+    "label": "Splat (2023)",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Nickelodeon_Splat_Symbol_%282023%29.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Nickelodeon_Splat_Symbol_(2023).svg",
+    "sourceSha256": "020c4dc81b0a71877e5cd0bf9b69ee6f9a9d9001d03bc7abb00a0d598a9ffd36",
+    "ops": {
+      "viewBox": "-57.462 -57.461 1551.465 1489.921"
+    }
+  },
+  {
+    "teamId": "BRAND-3M",
+    "id": "primary",
+    "label": "Wordmark",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/3/33/3M.svg/revision/latest?cb=20240519045851",
+    "sourcePage": "https://logos.fandom.com/wiki/File:3M.svg",
+    "sourceSha256": "f0db5e958960f371230453bb0e90483fb581557db654bfd18ebc949299db641f",
+    "ops": {
+      "viewBox": "-44.26 -41.189 1191.648 661.612"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "BRAND-76",
+    "id": "primary",
+    "label": "Orange ball",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/76_Orange_Logo.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:76_Orange_Logo.svg",
+    "sourceSha256": "2d0ba549141fbbe5b940a47680adf6f7693640484c0198164a7bd3112beebf27",
+    "ops": {
+      "viewBox": "-80 -80 2160 2160"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "BRAND-AMD",
+    "id": "primary",
+    "label": "Arrow mark",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/f/fc/AMD_%28Stacked%29.svg/revision/latest?cb=20210313170042",
+    "sourcePage": "https://logos.fandom.com/wiki/File:AMD_(Stacked).svg",
+    "sourceSha256": "cfec0d8702c70fdae2194ee5db84b4d52dfa9665804b2173f05d0bc0b23be807",
+    "ops": {
+      "keepNodes": [
+        "3/0/3",
+        "3/0/4"
+      ],
+      "viewBox": "38.62 -9.54 257.58 257.583"
+    }
+  },
+  {
+    "teamId": "BRAND-AMEX",
+    "id": "primary",
+    "label": "Blue box wordmark",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/e/e5/American_Express_%282018%29_%28Alt%29.svg/revision/latest?cb=20250607164452",
+    "sourcePage": "https://logos.fandom.com/wiki/File:American_Express_(2018)_(Alt).svg",
+    "sourceSha256": "0a8999dcec0ae265d2a33b7f8c3d63595898e20d5d0274901080bbf46e4c8291",
+    "ops": {
+      "viewBox": "-68.666 -68.666 1853.979 1849.968"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "BRAND-BARBIE",
+    "id": "primary",
+    "label": "Head silhouette",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/b/b1/Barbie_Head.svg/revision/latest?cb=20170614085136",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Barbie_Head.svg",
+    "sourceSha256": "1fd8fc7d2ad9967d2bd9d3d8d195aff141a02734e8b3d076157d09db48406f9f",
+    "ops": {
+      "viewBox": "-40.001 -40 1080.001 1080.016"
+    }
+  },
+  {
+    "teamId": "BRAND-BOEING",
+    "id": "primary",
+    "label": "Planetary rings",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/2/24/Boeing_Planetary_rings.svg/revision/latest?cb=20180502103543",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Boeing_Planetary_rings.svg",
+    "sourceSha256": "387f73beec99955ef2ece66fa2c09007bb38a9c065a9f8b98d2eebe5aacff2db",
+    "ops": {
+      "viewBox": "-10.585 -10.59 285.752 239.087"
+    }
+  },
+  {
+    "teamId": "BRAND-BOSE",
+    "id": "primary",
+    "label": "Wordmark",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Bose_logo.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Bose_logo.svg",
+    "sourceSha256": "35690dc9a61407e7a471730906f5ffd016faaad048282f2302cc6628dc4fea2e",
+    "ops": {
+      "viewBox": "-2.347 -7.176 222.126 41.425"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "BRAND-CAPONE",
+    "id": "primary",
+    "label": "Wordmark with swoosh",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Capital_One_logo.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Capital_One_logo.svg",
+    "sourceSha256": "69d918170633be70ec4c0fd57f421ad7b70c59641580a0ee77e929964a157c96",
+    "ops": {
+      "viewBox": "-16.684 -16.739 451.41 183.505"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "BRAND-CAT",
+    "id": "primary",
+    "label": "CAT block",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Caterpillar-shortened.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Caterpillar-shortened.svg",
+    "sourceSha256": "1706785ff882a312a971e4139f9688a2783f1e3ab1696caa1d730491cffb6566",
+    "ops": {
+      "viewBox": "-4 -4 108 108"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "BRAND-CISCO",
+    "id": "primary",
+    "label": "Bridge wordmark",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/d/dd/Cisco.svg/revision/latest?cb=20170513091702",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Cisco.svg",
+    "sourceSha256": "6012974603a96776e5093d15dc1679af3f4bad2a83d9e7b69e80e9895794730b",
+    "ops": {
+      "viewBox": "-40 -40 1080 607.06"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "BRAND-CITI",
+    "id": "primary",
+    "label": "Wordmark with arc",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Citi_logo_March_2023.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Citi_logo_March_2023.svg",
+    "sourceSha256": "cb599b2ea12080cb20c66af5eba4accd5aab90fa28a9d72725cdcff78354f389",
+    "ops": {
+      "viewBox": "-2.236 -2.237 60.396 36.564"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "BRAND-COKE",
+    "id": "primary",
+    "label": "Spencerian script",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Coca-Cola_logo.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Coca-Cola_logo.svg",
+    "sourceSha256": "4fc464932a70e200ec6e825228543a8b3d3d12f73be9e47caee1d9a421daf52d",
+    "ops": {
+      "viewBox": "-24.619 -24.609 664.303 242.143"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "BRAND-COSTCO",
+    "id": "primary",
+    "label": "Wordmark",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Costco_Wholesale_logo_2010-10-26.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Costco_Wholesale_logo_2010-10-26.svg",
+    "sourceSha256": "9c769076aaad8c2cf16a888dee9326df7e67c4cf350fab0574209366e1fb61ac",
+    "ops": {
+      "viewBox": "209.793 291.309 201.97 69.974"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "BRAND-CVS",
+    "id": "primary",
+    "label": "Heart wordmark",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/6/6a/CVS_Pharmacy_2023.svg/revision/latest?cb=20241127140235",
+    "sourcePage": "https://logos.fandom.com/wiki/File:CVS_Pharmacy_2023.svg",
+    "sourceSha256": "4745f629d0cd7ad86a73014fbd84809ecd1e24dc684291a5d95c6f844a1b55f0",
+    "ops": {
+      "viewBox": "-38.168 -39.848 1075.899 329.696"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "BRAND-DC",
+    "id": "primary",
+    "label": "Peel symbol (2012)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/d/dc/DC_Comics_2012_%28Black%29_%28Blue%29_%28Symbol%29.svg/revision/latest?cb=20201125093344",
+    "sourcePage": "https://logos.fandom.com/wiki/File:DC_Comics_2012_(Black)_(Blue)_(Symbol).svg",
+    "sourceSha256": "647d50fee3b92e1fed1743493ea61d20f91e7345bb9deab6cfc426d577b3db26",
+    "ops": {
+      "viewBox": "-26.093 -26.537 649.916 713.016"
+    }
+  },
+  {
+    "teamId": "BRAND-DC",
+    "id": "wordmark",
+    "label": "Roundel (2016)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/b/b0/DC_Comics_2016.svg/revision/latest?cb=20210618204226",
+    "sourcePage": "https://logos.fandom.com/wiki/File:DC_Comics_2016.svg",
+    "sourceSha256": "c021063300c8028e60f4184b0a4135d4f54a2aa591fc4570de4c6d9e6442ed29",
+    "ops": {
+      "viewBox": "-17.08 -17.08 461.155 461.155"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "BRAND-DELL",
+    "id": "primary",
+    "label": "Circle wordmark",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/7/7f/Dell_%282010%29.svg/revision/latest?cb=20241003021927",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Dell_(2010).svg",
+    "sourceSha256": "568a8eedf11e839400f4c4edfe31918b691a968c477e40af6dd9d1d781e08f27",
+    "ops": {
+      "viewBox": "-44.104 -44.104 1190.808 1188.208"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "BRAND-DHL",
+    "id": "primary",
+    "label": "Wordmark",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/DHL_Logo.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:DHL_Logo.svg",
+    "sourceSha256": "b98a5d7827cab09213394840fdabbabad8c2044cd1d686856f2455b2121b7102",
+    "ops": {
+      "viewBox": "-7.03 -7.03 189.808 52.846"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "BRAND-DISNEY",
+    "id": "primary",
+    "label": "Castle",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/4/49/Walt_Disney_Pictures_2011_%28Color%29.svg/revision/latest?cb=20220630203146",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Walt_Disney_Pictures_2011_(Color).svg",
+    "sourceSha256": "a76eaab8fa44c880a75befb6390205225609d219ff18f36dcd56a77bf46a6925",
+    "ops": {
+      "keepNodes": [
+        "0",
+        "2/0",
+        "2/1"
+      ],
+      "viewBox": "0.79 -15.046 403.542 406.238"
+    }
+  },
+  {
+    "teamId": "BRAND-DORITOS",
+    "id": "primary",
+    "label": "Triangle chip",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/8/85/Doritos_2001.svg/revision/latest?cb=20190417124347",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Doritos_2001.svg",
+    "sourceSha256": "25766fb1551e894324ae5d563dc863be02f4589d83f0b187af4940f11ef4acb6",
+    "ops": {
+      "keepNodes": [
+        "0/0",
+        "0/21",
+        "0/40"
+      ],
+      "viewBox": "-40 -40 1038.714 1080.005"
+    }
+  },
+  {
+    "teamId": "BRAND-DREAMWORKS",
+    "id": "primary",
+    "label": "Moon boy",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/DreamWorks_Animation_2016_%28Moon_Boy%29.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:DreamWorks_Animation_2016_(Moon_Boy).svg",
+    "sourceSha256": "75f8dd01c69557f0916c220f1374c8b40c69730736569bd6da8709ec51a43281",
+    "ops": {
+      "viewBox": "-39.56 -39.699 1078.92 1078.771"
+    }
+  },
+  {
+    "teamId": "BRAND-DRPEPPER",
+    "id": "primary",
+    "label": "Wordmark",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/4/40/Dr_Pepper_-_1963.svg/revision/latest?cb=20250829141359",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Dr_Pepper_-_1963.svg",
+    "sourceSha256": "7dd831ccd0b24db6c4ae882a80a43835323f3ee01efd0aade640c4a7ae7c79f7",
+    "ops": {
+      "viewBox": "-41.208 -41.208 1112.616 621.616"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "BRAND-EA",
+    "id": "primary",
+    "label": "EA circle",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Electronic-Arts-Logo.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Electronic-Arts-Logo.svg",
+    "sourceSha256": "3e67cf1a00d750626b72619ff5139b1a7e9d539a66b984ebf22a7b67e2a6bfa9",
+    "ops": {
+      "viewBox": "-40 -40 1080 1080.001"
+    }
+  },
+  {
+    "teamId": "BRAND-EXXON",
+    "id": "primary",
+    "label": "Wordmark",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Exxon_Mobil_Logo.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Exxon_Mobil_Logo.svg",
+    "sourceSha256": "eebed4338b0af7bdaaceff59ec21854e2a903c1473ae6101d57aed54519bc99b",
+    "ops": {
+      "viewBox": "-10 -10 270 67.16"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "BRAND-FEDEX",
+    "id": "primary",
+    "label": "Wordmark",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/FedEx_Express.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:FedEx_Express.svg",
+    "sourceSha256": "5347f657c6e06ad92b543803e126e70935a9c92606878702c90b6b704a2075e0",
+    "ops": {
+      "viewBox": "-3.783 -3.327 80.283 39.872"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "BRAND-GE",
+    "id": "primary",
+    "label": "Monogram roundel",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/f/ff/General_Electric_logo.svg/revision/latest?cb=20170115074445",
+    "sourcePage": "https://logos.fandom.com/wiki/File:General_Electric_logo.svg",
+    "sourceSha256": "abb1f96cad27346eaaee61525a0d6df11cde641fb279c2c9ee2afe5eb7377d7c",
+    "ops": {
+      "viewBox": "-40 -40 1080 1080"
+    }
+  },
+  {
+    "teamId": "BRAND-GE",
+    "id": "monogram-1892",
+    "label": "Script monogram (1892)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/5/5a/General_Electric_%281892%29.svg/revision/latest?cb=20220815043742",
+    "sourcePage": "https://logos.fandom.com/wiki/File:General_Electric_(1892).svg",
+    "sourceSha256": "26686f0b224b28cd74aa1ba1fb08cbe604988b33d0f78bfcf046f9fa92a38062",
+    "ops": {
+      "viewBox": "-14.2 -14.2 548.4 653.4"
+    }
+  },
+  {
+    "teamId": "BRAND-GEICO",
+    "id": "primary",
+    "label": "G app tile",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/a/a1/GEICO_App_Icon.svg/revision/latest?cb=20210303225018",
+    "sourcePage": "https://logos.fandom.com/wiki/File:GEICO_App_Icon.svg",
+    "sourceSha256": "571f1e1422653dc90cb9587d2c8c8b69ce2864ef13b821dd8abe07a2a7136179",
+    "ops": {
+      "viewBox": "-4.233 -4.233 114.3 114.3"
+    }
+  },
+  {
+    "teamId": "BRAND-HASBRO",
+    "id": "primary",
+    "label": "Smile tile wordmark",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/6/65/Hasbro_%281998%29.svg/revision/latest?cb=20200804083919",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Hasbro_(1998).svg",
+    "sourceSha256": "aae0c77a4d77b26d622bb603629a621442853244a4c4147b3022b679b98bc95b",
+    "ops": {
+      "viewBox": "-40 -40 1080 1080"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "BRAND-HERSHEY",
+    "id": "primary",
+    "label": "Kiss",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/0/02/The_Hershey_Company_-_2014x.svg/revision/latest?cb=20240225203431",
+    "sourcePage": "https://logos.fandom.com/wiki/File:The_Hershey_Company_-_2014x.svg",
+    "sourceSha256": "ca151d8612e9c09a3d681dccee39a5eb9156a07581d1c6b31cbc2339c9d042ec",
+    "ops": {
+      "keepNodes": [
+        "0"
+      ],
+      "viewBox": "-9.972 -11.889 221.677 269.664"
+    }
+  },
+  {
+    "teamId": "BRAND-HILTON",
+    "id": "primary",
+    "label": "H ellipse",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/HiltonHotelsIcon.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:HiltonHotelsIcon.svg",
+    "sourceSha256": "476dc70fafcd0fe8da64f8c6b1d303be6da505344811dd6b39a5414049215be6",
+    "ops": {
+      "viewBox": "48.079 60.065 482.823 345.144"
+    }
+  },
+  {
+    "teamId": "BRAND-HP",
+    "id": "primary",
+    "label": "Blue roundel",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/HP_logo_2025.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:HP_logo_2025.svg",
+    "sourceSha256": "dfa525e9ace6faf045347b29cea5228d2d5d02a993c8c6e32695c5dc84fd4c43",
+    "ops": {
+      "viewBox": "-50.56 -40.56 1095.12 1093.12"
+    }
+  },
+  {
+    "teamId": "BRAND-HP",
+    "id": "classic-roundel",
+    "label": "Classic roundel",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/b/bb/HP_Inc..svg/revision/latest?cb=20210928212856",
+    "sourcePage": "https://logos.fandom.com/wiki/File:HP_Inc..svg",
+    "sourceSha256": "521288552b6b9d3f03b83fd0b31a82265152c43d8a1c57ae78a26cc9e6b31611",
+    "ops": {
+      "viewBox": "-40 -40 1079.986 1079.999"
+    }
+  },
+  {
+    "teamId": "BRAND-IBM",
+    "id": "primary",
+    "label": "Striped wordmark",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/IBM_logo.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:IBM_logo.svg",
+    "sourceSha256": "e8cf75280cbf46bf015f59859182ecec0c83c1b3d3d03323e151c6e91d4c339c",
+    "ops": {
+      "viewBox": "-42.96 -42.96 1159.92 487.09"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "BRAND-INTEL",
+    "id": "primary",
+    "label": "Wordmark",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Intel_logo_2023.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Intel_logo_2023.svg",
+    "sourceSha256": "1986c2a2d4b3991fc58bce96d18e75e170c59c15a1330c1289db66a7df4e5379",
+    "ops": {
+      "viewBox": "-15.528 -15.528 419.256 181.656"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "BRAND-JAVA",
+    "id": "primary",
+    "label": "Steaming cup",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/d/d4/Oracle_Java.svg/revision/latest?cb=20220409174634",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Oracle_Java.svg",
+    "sourceSha256": "9ccd0d50750f36c12edad55833b62a2ca3aadc449bef94d4ebb28e82fefdbc6e",
+    "ops": {
+      "keepNodes": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ],
+      "viewBox": "-31.845 -59.45 1091.3 1605.162"
+    }
+  },
+  {
+    "teamId": "BRAND-JNJ",
+    "id": "primary",
+    "label": "Script monogram",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/3/3f/Johnson_%26_Johnson_J%26J_Monogram.svg/revision/latest?cb=20210210163443",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Johnson_&_Johnson_J&J_Monogram.svg",
+    "sourceSha256": "eba20cb6639c728efc6f1876a817c5bffebae1f24d829f38de9f8054b5544a40",
+    "ops": {
+      "viewBox": "-5.419 -5.419 146.306 133.514"
+    }
+  },
+  {
+    "teamId": "BRAND-KELLOGGS",
+    "id": "primary",
+    "label": "Script wordmark",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/2/2a/Kellogg%27s_logo.svg/revision/latest?cb=20241224092153",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Kellogg's_logo.svg",
+    "sourceSha256": "cb14cb57b022f4f909f64ae6bf0cef6f1b9f77accea0c9dff65f9be164024854",
+    "ops": {
+      "viewBox": "-10.054 -10.054 271.462 111.226"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "BRAND-KROGER",
+    "id": "primary",
+    "label": "Wordmark",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/7/76/Kroger_2019.svg/revision/latest?cb=20191106161223",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Kroger_2019.svg",
+    "sourceSha256": "8450d539f5a5f508b856267f23a1616121e7293767f4a830aa709adae5c1b102",
+    "ops": {
+      "viewBox": "-40 -40 1080 637.055"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "BRAND-LAYS",
+    "id": "primary",
+    "label": "Banner wordmark",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Lay%27s_2025.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Lay's_2025.svg",
+    "sourceSha256": "91e64ca29859e70bbca60198df9213223d1d06d1f8e61a580b312015cf13a4bb",
+    "ops": {
+      "viewBox": "-10.054 -10.054 271.463 251.569"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "BRAND-LEGO",
+    "id": "primary",
+    "label": "Red tile wordmark",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/LEGO_logo.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:LEGO_logo.svg",
+    "sourceSha256": "e692c130a90f4e348fc484cce8e13d43e5275fef4cec1a3878b8e3d96071a6e0",
+    "ops": {
+      "viewBox": "-7.2 -7.2 194.4 194.4"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "BRAND-LINUX",
+    "id": "primary",
+    "label": "Tux",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Tux.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Tux.svg",
+    "sourceSha256": "cd503ad510e16ff2869f959cf57b892bb2175a6874ff696b495bd94fd7db9743",
+    "ops": {
+      "viewBox": "-10.24 -10.24 236.48 276.48"
+    }
+  },
+  {
+    "teamId": "BRAND-LINUX",
+    "id": "mono",
+    "label": "One-color penguin",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/3/3a/Tux_Mono.svg/revision/latest?cb=20181201191414",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Tux_Mono.svg",
+    "sourceSha256": "6eecaa2f5a3ded22b40af59b2fab142bb758b4d31457c13faba05f32108d9558",
+    "ops": {
+      "viewBox": "-48.418 -48.418 1096.835 1307.276"
+    }
+  },
+  {
+    "teamId": "BRAND-LYFT",
+    "id": "primary",
+    "label": "Wordmark",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Lyft_logo_2025.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Lyft_logo_2025.svg",
+    "sourceSha256": "55695332137c2d7a1fa0d927eebbdeb50f128c86d3170232edfef4aa69c6e5b7",
+    "ops": {
+      "viewBox": "1.96 6.033 28.08 19.641"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "BRAND-MARRIOTT",
+    "id": "primary",
+    "label": "Red M",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Marriott_hotels_logo14.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Marriott_hotels_logo14.svg",
+    "sourceSha256": "b2f678076e236c7d97f99414e85c052e43195fef724dde1d4bff5cc438672f53",
+    "ops": {
+      "keepNodes": [
+        "8"
+      ],
+      "viewBox": "-12.236 -12.236 330.372 275.972"
+    }
+  },
+  {
+    "teamId": "BRAND-MARVEL",
+    "id": "primary",
+    "label": "Red box wordmark",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Marvel_Logo.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Marvel_Logo.svg",
+    "sourceSha256": "7e3f489fba31d8c92310afef4789ddd32fdf6a621990377348a722bbf33f5775",
+    "ops": {
+      "viewBox": "-255.19 -126.608 1080 482.473"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "BRAND-MATTEL",
+    "id": "primary",
+    "label": "Seal wordmark",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Mattel_%282019%29.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Mattel_(2019).svg",
+    "sourceSha256": "00b528fed3b9c96b7309a073297ab9675cf628382fcf67e2b091993aeebded1f",
+    "ops": {
+      "viewBox": "-36 -36 972 970.11"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "BRAND-MMS",
+    "id": "primary",
+    "label": "Wordmark",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/M%26M%27s_2022.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:M&M's_2022.svg",
+    "sourceSha256": "6c568c1a8220642e41f2853956881a2d649b7e670d87a6d22f306451521d850e",
+    "ops": {
+      "viewBox": "-40 -40 1080 407.084"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "BRAND-MOBIL",
+    "id": "primary",
+    "label": "Wordmark",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Mobil_logo.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Mobil_logo.svg",
+    "sourceSha256": "7cf59d7a456b01fb8ecae16201b714fc4cd1d06aa22eef9116ecd77cab23e7ec",
+    "ops": {
+      "viewBox": "-12 -12 324 115.506"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "BRAND-MONSTER",
+    "id": "primary",
+    "label": "Claw M",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/d/de/Monster_Energy_horizontal.svg/revision/latest?cb=20260910123231",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Monster_Energy_horizontal.svg",
+    "sourceSha256": "4478746932dab55eb9b7994eb0c8755e8ad1d4fcd9bb83cbd55811705a5efe6f",
+    "ops": {
+      "keepNodes": [
+        "0",
+        "1/0"
+      ],
+      "viewBox": "-17.46 -17.435 346.847 473.134"
+    }
+  },
+  {
+    "teamId": "BRAND-MTNDEW",
+    "id": "primary",
+    "label": "Wordmark",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Mountain_Dew_logo.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Mountain_Dew_logo.svg",
+    "sourceSha256": "aa45736c2222a7ff3cd4d2e7f01842d152ec7f0b9635e32a0e9b6061cb5a5203",
+    "ops": {
+      "viewBox": "-11.259 -11.259 303.988 217.058"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "BRAND-NASA",
+    "id": "primary",
+    "label": "Meatball insignia",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/e/e5/NASA_logo.svg/revision/latest?cb=20250707120422",
+    "sourcePage": "https://logos.fandom.com/wiki/File:NASA_logo.svg",
+    "sourceSha256": "65e79eb4fc47f91f49b130241528ddad78656b446274873b3a6c827ca7db6847",
+    "ops": {
+      "viewBox": "-277.939 -277.386 7501.071 6305.343"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "BRAND-NERF",
+    "id": "primary",
+    "label": "Wordmark",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Nerf_logo.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Nerf_logo.svg",
+    "sourceSha256": "7ba4e2c96a987c45626eea0d685e15f03778f525c22e20e4e6fd0a7690ffac3f",
+    "ops": {
+      "viewBox": "-6 -4.645 162 80.645"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "BRAND-NODE",
+    "id": "primary",
+    "label": "Green hexagon",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Node.js_logo.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Node.js_logo.svg",
+    "sourceSha256": "dc8800bf281108aff24d4c7bb3c59e8c55eeaaa26e7dbc7b1e7f5de36ba6e60c",
+    "ops": {
+      "keepNodes": [
+        "0",
+        "5",
+        "6",
+        "7"
+      ],
+      "viewBox": "57.95 10.271 210.313 210.984"
+    }
+  },
+  {
+    "teamId": "BRAND-ORACLE",
+    "id": "primary",
+    "label": "Wordmark",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Oracle_logo.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Oracle_logo.svg",
+    "sourceSha256": "305d310fda8165fb38e24273c643f2c61107e2440e12abc3c209bd49c2deff15",
+    "ops": {
+      "viewBox": "-9.628 -9.247 249.561 48.521"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "BRAND-OREO",
+    "id": "primary",
+    "label": "Wordmark",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Oreo_Logo_2014.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Oreo_Logo_2014.svg",
+    "sourceSha256": "7c1be604cd4d0d5ece454f0edbdf16bdc49d1e4c8a27e2df522a53a16ec863c5",
+    "ops": {
+      "viewBox": "-3.666 -3.56 1206.81 487.249"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "BRAND-PARAMOUNT",
+    "id": "primary",
+    "label": "Mountain with stars",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/4/46/Paramount_Pictures_2020.svg/revision/latest?cb=20210819173940",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Paramount_Pictures_2020.svg",
+    "sourceSha256": "0f93b0420df2d46a34888dc08652e1f3f9757e18e081ebc9aba54d9d4d3d7acd",
+    "ops": {
+      "keepNodes": [
+        "2"
+      ],
+      "viewBox": "-40 -40 1080 815.561"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "BRAND-PFIZER",
+    "id": "primary",
+    "label": "Helix ribbon (2021)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/5/5b/Pfizer_2021_%28symbol%29.svg/revision/latest?cb=20210106120055",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Pfizer_2021_(symbol).svg",
+    "sourceSha256": "d04b06baec8ae2aaac0193860037d59c8dbb7df39d8b1cb6d50c6f4ef081d091",
+    "ops": {
+      "viewBox": "-242.282 175.02 1080 1076.878"
+    }
+  },
+  {
+    "teamId": "BRAND-PG",
+    "id": "primary",
+    "label": "Moon and stars (1991)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/f/fd/Procter_%26_Gamble_Star_Moon_1991.svg/revision/latest?cb=20180501083443",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Procter_&_Gamble_Star_Moon_1991.svg",
+    "sourceSha256": "f8259b0273aad6f645b73a331ddfd7340d1b5a0699b4649a414a39b2e4554c31",
+    "ops": {
+      "viewBox": "-10.583 -10.583 285.75 285.75"
+    }
+  },
+  {
+    "teamId": "BRAND-PG",
+    "id": "roundel",
+    "label": "Blue roundel monogram",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Procter_%26_Gamble_logo.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Procter_&_Gamble_logo.svg",
+    "sourceSha256": "80cfe6d9ad348d61fc3bf262fd6bab453ed3dc10e965f88aa4a7136de577fc4f",
+    "ops": {
+      "viewBox": "-28.8 -28.8 777.6 777.6"
+    }
+  },
+  {
+    "teamId": "BRAND-PRINGLES",
+    "id": "primary",
+    "label": "Mr. P face",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/6/68/Pringles-logo-2021.svg/revision/latest?cb=20211214115538",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Pringles-logo-2021.svg",
+    "sourceSha256": "f0f2adb9abaf3e5c6f3a5b8455710476e3344ee345b8e42bcba20067ec79c066",
+    "ops": {
+      "keepNodes": [
+        "0",
+        "1",
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "viewBox": "-10.006 -10.032 221.096 270.155"
+    }
+  },
+  {
+    "teamId": "BRAND-PUBLIX",
+    "id": "primary",
+    "label": "Green P",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/0/07/Publix-p-2012.svg/revision/latest?cb=20201211143730",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Publix-p-2012.svg",
+    "sourceSha256": "178b920e48333f0f57c4790e3aa248ab31515140da8cc2ea129b8e13bd8fde41",
+    "ops": {
+      "viewBox": "-8.64 -8.64 233.28 233.28"
+    }
+  },
+  {
+    "teamId": "BRAND-REACT",
+    "id": "primary",
+    "label": "Atom",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/React_Logo_SVG.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:React_Logo_SVG.svg",
+    "sourceSha256": "1f1167604e4284d586ee343b28d9e209524ae3246643a3a80e88e718d01043ac",
+    "ops": {
+      "viewBox": "-10.873 -11.783 21.746 23.566"
+    }
+  },
+  {
+    "teamId": "BRAND-ROCKSTAR",
+    "id": "primary",
+    "label": "R-star tile",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Rockstar_Games_Logo.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Rockstar_Games_Logo.svg",
+    "sourceSha256": "3a2b6be8920fdb0e8cab172e88f2219411ca6d35d578e7e7f4f7e32aa44609fc",
+    "ops": {
+      "viewBox": "-8.64 -8.64 233.28 216.18"
+    }
+  },
+  {
+    "teamId": "BRAND-ROCKSTAR",
+    "id": "squareless",
+    "label": "R-star without tile",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/8/82/Rockstar_Games_%28squareless%29.svg/revision/latest?cb=20231206233024",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Rockstar_Games_(squareless).svg",
+    "sourceSha256": "fb3796043e0610d1504ad174b714b70b70665872aa6e436f7c68bbd41de7d817",
+    "ops": {
+      "viewBox": "-12.038 -12.038 321.038 325.028"
+    }
+  },
+  {
+    "teamId": "BRAND-SALESFORCE",
+    "id": "primary",
+    "label": "Cloud",
+    "sourceUrl": "https://api.iconify.design/simple-icons/salesforce.svg?color=%2300A1E0",
+    "sourcePage": "https://icon-sets.iconify.design/simple-icons/salesforce/",
+    "sourceSha256": "cc25888e1b7d9c18dbda65fa4e6a85d13ef82af1a7a6c74bef009c8581bbb2cb",
+    "ops": {
+      "viewBox": "-0.96 2.64 25.92 18.72"
+    }
+  },
+  {
+    "teamId": "BRAND-SAMSUNG",
+    "id": "primary",
+    "label": "Ellipse wordmark",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/a/a1/Samsung_%281993%29.svg/revision/latest?cb=20180721193710",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Samsung_(1993).svg",
+    "sourceSha256": "cc4ef8df912ae9f07f5e67c4e7c4d098a9a6a3cc14947d9d594e950e1703b24c",
+    "ops": {
+      "viewBox": "-10.583 -10.583 285.75 109.188"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "BRAND-SEGA",
+    "id": "primary",
+    "label": "Wordmark",
+    "sourceUrl": "https://api.iconify.design/simple-icons/sega.svg?color=%230060A8",
+    "sourcePage": "https://icon-sets.iconify.design/simple-icons/sega/",
+    "sourceSha256": "d1ff835663176bdb3b48e866bfb31820570bcb8fb4c39d176690d09834f71394",
+    "ops": {
+      "viewBox": "1.788 -0.96 20.401 25.92"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "BRAND-SONY",
+    "id": "primary",
+    "label": "Wordmark",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Sony_logo.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Sony_logo.svg",
+    "sourceSha256": "f6191bc69f8df259c86a13dc9582ba9ed2e0101d4452ba3f1d33ec8e907ddda0",
+    "ops": {
+      "viewBox": "-51.2 -51.2 1382.4 327.68"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "BRAND-SPACEX",
+    "id": "primary",
+    "label": "X icon",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/f/f6/SpaceX_icon.svg/revision/latest?cb=20190309033516",
+    "sourcePage": "https://logos.fandom.com/wiki/File:SpaceX_icon.svg",
+    "sourceSha256": "071c1541dc299d1bccc23eccadb6e73ef7459987b90fd7832fcee35d8883c345",
+    "ops": {
+      "viewBox": "-24.842 -24.842 670.738 284.509"
+    }
+  },
+  {
+    "teamId": "BRAND-SPRITE",
+    "id": "primary",
+    "label": "Wordmark with lemon",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Sprite_2026.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Sprite_2026.svg",
+    "sourceSha256": "ccbd33b21d2548d4146394d4964b819516b9075084b57b1ef3dcf99e99083e36",
+    "ops": {
+      "viewBox": "-26.8 -26.8 723.609 329.138"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "BRAND-STATEFARM",
+    "id": "primary",
+    "label": "Three ovals",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/6/62/State_Farm_symbol.svg/revision/latest?cb=20240904205208",
+    "sourcePage": "https://logos.fandom.com/wiki/File:State_Farm_symbol.svg",
+    "sourceSha256": "68955eb3c40c90c6162018ab55921f51fa311f9a1f07b0cce2d16d17eba59b11",
+    "ops": {
+      "viewBox": "-6.061 -6.061 163.649 112.209"
+    }
+  },
+  {
+    "teamId": "BRAND-TEXACO",
+    "id": "primary",
+    "label": "Star T",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/8/8f/Texaco_logo.svg/revision/latest?cb=20231227063220",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Texaco_logo.svg",
+    "sourceSha256": "7d2ffcb2a9cdb5cd07712c720f7c041c1fae5da057a1a720f604ac497e98a38f",
+    "ops": {
+      "viewBox": "-27.255 -27.255 733.82 735.89"
+    }
+  },
+  {
+    "teamId": "BRAND-TEXACO",
+    "id": "black-star",
+    "label": "One-color star",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/8/80/Texaco_symbol_print.svg/revision/latest?cb=20220718190811",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Texaco_symbol_print.svg",
+    "sourceSha256": "eb0671b0345eca553595ac7d922dc13d5be4523de73a6c171d4c8b15fe922307",
+    "ops": {
+      "viewBox": "-5.631 -5.631 150.109 152.035"
+    }
+  },
+  {
+    "teamId": "BRAND-TMOBILE",
+    "id": "primary",
+    "label": "T with dots",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Deutsche_Telekom_2022.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Deutsche_Telekom_2022.svg",
+    "sourceSha256": "c139829f3f5aa2ef8eeacf7cc48253ac186b8b63c7a0e7c740d5dce38f04df26",
+    "ops": {
+      "viewBox": "-3.048 -3.036 82.807 97.396"
+    }
+  },
+  {
+    "teamId": "BRAND-UBER",
+    "id": "primary",
+    "label": "Wordmark",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Uber_logo_2018.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Uber_logo_2018.svg",
+    "sourceSha256": "be2e4d01f03207b8da8ff584516e52c2c861e1070487caab185dabcf55d6b156",
+    "ops": {
+      "viewBox": "-37.076 -37.076 1001.057 395.929"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "BRAND-UBISOFT",
+    "id": "primary",
+    "label": "Swirl",
+    "sourceUrl": "https://api.iconify.design/simple-icons/ubisoft.svg?color=%23000000",
+    "sourcePage": "https://icon-sets.iconify.design/simple-icons/ubisoft/",
+    "sourceSha256": "3108083bdcc3c55ee7ef813d2ececf3b401c3b979ed50ba1a60f5c365dfe18c7",
+    "ops": {
+      "viewBox": "-0.521 -0.96 25.042 25.92"
+    }
+  },
+  {
+    "teamId": "BRAND-UNIVERSAL",
+    "id": "primary",
+    "label": "Globe with rings",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/a/a1/Universal_Pictures_2012.svg/revision/latest?cb=20151125162456",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Universal_Pictures_2012.svg",
+    "sourceSha256": "186f05283dc69425a02f11bd06c778997d93f7662e8d2bd01df3e610e5c7d8e4",
+    "ops": {
+      "keepNodes": [
+        "0/0",
+        "0/1",
+        "0/2"
+      ],
+      "viewBox": "162.452 -15.692 403.942 423.672"
+    }
+  },
+  {
+    "teamId": "BRAND-UPS",
+    "id": "primary",
+    "label": "Shield wordmark",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/United_Parcel_Service_logo_2014.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:United_Parcel_Service_logo_2014.svg",
+    "sourceSha256": "3b07d40f0cadfc766b26b0bb282cf37ad7af87c132883e5dae5777d9cb9baa65",
+    "ops": {
+      "viewBox": "-1.989 -1.893 56.12 65.858"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "BRAND-USPS",
+    "id": "primary",
+    "label": "Sonic eagle",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/9/9a/United_States_Postal_Service_%E2%80%93_1993_symbol.svg/revision/latest?cb=20241019194851",
+    "sourcePage": "https://logos.fandom.com/wiki/File:United_States_Postal_Service_–_1993_symbol.svg",
+    "sourceSha256": "f95e70ad71a919a0879f97c133674d0f5c8a953acb092c6b3bb8b1777d345e49",
+    "ops": {
+      "viewBox": "131.236 9.146 469.649 301.059"
+    }
+  },
+  {
+    "teamId": "BRAND-VERIZON",
+    "id": "primary",
+    "label": "Red V",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Verizon_2024_%28symbol%29.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Verizon_2024_(symbol).svg",
+    "sourceSha256": "25388dd317a3e632db2faf33fbf8da95187450df6b2fbb4bb105095a84f09dfd",
+    "ops": {
+      "viewBox": "-10.583 -10.583 285.75 261.241"
+    }
+  },
+  {
+    "teamId": "BRAND-VERIZON",
+    "id": "checkmark",
+    "label": "Checkmark",
+    "sourceUrl": "https://api.iconify.design/simple-icons/verizon.svg?color=%23CD040B",
+    "sourcePage": "https://icon-sets.iconify.design/simple-icons/verizon/",
+    "sourceSha256": "7e59b62e410beeb7d51b12a4b8b1d982390ae3fa18c07be3b23c6f2f6b642500",
+    "ops": {
+      "viewBox": "1.04 -0.96 21.92 25.92"
+    }
+  },
+  {
+    "teamId": "BRAND-VISA",
+    "id": "primary",
+    "label": "Wordmark",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Visa_Inc._logo_%282021%E2%80%93present%29.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Visa_Inc._logo_(2021–present).svg",
+    "sourceSha256": "a9800215097d4cfa792c723af023dbcbec92cd656e0f95df62af21c78f48b060",
+    "ops": {
+      "viewBox": "-39.46 -39.46 1078.92 403.61"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "BRAND-WALGREENS",
+    "id": "primary",
+    "label": "Script W",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/b/b0/Walgreens_%22W%22_2020.svg/revision/latest?cb=20210920210239",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Walgreens_\"W\"_2020.svg",
+    "sourceSha256": "cbd85087140fa8e6f441070e8601918c06d8b18e77371bc15c24613677855ac2",
+    "ops": {
+      "viewBox": "-10.583 -10.583 285.75 192.506"
+    }
+  },
+  {
+    "teamId": "BRAND-WELLS",
+    "id": "primary",
+    "label": "Stagecoach",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/6/68/Wells_Fargo_2019_Stagecoach_a.svg/revision/latest?cb=20260808185338",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Wells_Fargo_2019_Stagecoach_a.svg",
+    "sourceSha256": "0277999522c4bd633685c2875e492aa65bf0f4486058133fcde28be69654ff4b",
+    "ops": {
+      "viewBox": "-16.558 -16.558 447.065 121.983"
+    }
+  },
+  {
+    "teamId": "BRAND-WELLS",
+    "id": "wordmark",
+    "label": "Wordmark",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Wells_Fargo_Logo_%282020%29.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Wells_Fargo_Logo_(2020).svg",
+    "sourceSha256": "d0bb253e04de6972500ebb3ac645db4dda03e35a779a447e29225ef614bae74a",
+    "ops": {
+      "viewBox": "-3.175 -3.175 85.725 85.725"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "BRAND-WHOLEFOODS",
+    "id": "primary",
+    "label": "Green roundel wordmark",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/b/b7/Whole_Foods_Market_%282016%29_%28Circle%29.svg/revision/latest?cb=20260119224744",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Whole_Foods_Market_(2016)_(Circle).svg",
+    "sourceSha256": "cce96af4555bf2399914e0ccee9d3ca2c78fe9a9dbda4cd710c57911cce0891a",
+    "ops": {
+      "viewBox": "-10.595 -10.593 163.471 163.471"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "CHAR-AC",
+    "id": "primary",
+    "label": "Assassin insignia",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/3/37/Assassins_Creed_Logo.svg/revision/latest?cb=20230521104810",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Assassins_Creed_Logo.svg",
+    "sourceSha256": "61fde73b72985753fea8b048e6295bdd75c72dbb8045481bb2fe3aa0d80644e5",
+    "ops": {
+      "keepNodes": [
+        "0",
+        "1"
+      ],
+      "viewBox": "84.86 -3.813 126.499 149.839"
+    }
+  },
+  {
+    "teamId": "CHAR-ANIMALCROSSING",
+    "id": "primary",
+    "label": "Nook Inc. leaf",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/2/2e/Nook_Inc.svg/revision/latest?cb=20200331090306",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Nook_Inc.svg",
+    "sourceSha256": "655c6e1a329a1bf7258a362053850b3bbadac983087a92f06b0c396f9dab6bfd",
+    "ops": {
+      "viewBox": "-44.864 -44.864 1211.328 1211.328"
+    }
+  },
+  {
+    "teamId": "CHAR-APERTURE",
+    "id": "primary",
+    "label": "Shutter ring",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Aperture_Science.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Aperture_Science.svg",
+    "sourceSha256": "2d50cb602fcd80461a68455f966987d4279becd2350df07ab8bf9f03efe6e693",
+    "ops": {
+      "viewBox": "-89.873 -89.873 711.745 711.745"
+    }
+  },
+  {
+    "teamId": "CHAR-APERTURE",
+    "id": "black",
+    "label": "One-color shutter",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/5/52/Aperture_Science_Symbol.svg/revision/latest?cb=20190609012652",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Aperture_Science_Symbol.svg",
+    "sourceSha256": "8fbbb87f3544693722105b3429aec96f563812ac5873cf8b7bc72aab9b27d8d6",
+    "ops": {
+      "viewBox": "-24.995 -24.995 674.867 674.868"
+    }
+  },
+  {
+    "teamId": "CHAR-AQUAMAN",
+    "id": "primary",
+    "label": "Golden A",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/6/65/Aquaman.svg/revision/latest?cb=20170808135051",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Aquaman.svg",
+    "sourceSha256": "4a0bfe2f053cc7865f2e6c43f3eb255cfcae74ed28dfabbf419ee53a1bb12076",
+    "ops": {
+      "viewBox": "-40 -39.999 1080 951.229"
+    }
+  },
+  {
+    "teamId": "CHAR-AUTOBOT",
+    "id": "primary",
+    "label": "Autobot insignia",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/c/cc/Autobot_Insignia.svg/revision/latest?cb=20200706193804",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Autobot_Insignia.svg",
+    "sourceSha256": "78e75cb6dff8781893d3a74ca71a2529e0fd7fedaac4abc7cf0d600829e8fc90",
+    "ops": {
+      "viewBox": "-39.895 -40 1060.586 1080"
+    }
+  },
+  {
+    "teamId": "CHAR-AUTOBOT",
+    "id": "g1",
+    "label": "G1 insignia",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/5/5d/Autobot_Insignia_%28G1%29.svg/revision/latest?cb=20200724140125",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Autobot_Insignia_(G1).svg",
+    "sourceSha256": "c8058cba9766e618ab4cb727aa025021b7786eb179b3ce7b7fb44a59a49a5aea",
+    "ops": {
+      "viewBox": "-42.001 -42.001 1134.037 974.17"
+    }
+  },
+  {
+    "teamId": "CHAR-AVENGERS",
+    "id": "primary",
+    "label": "Wordmark with A",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/4/4f/Marvel%27s_The_Avengers_logo.svg/revision/latest?cb=20250401130812",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Marvel's_The_Avengers_logo.svg",
+    "sourceSha256": "eb4d8e18dec2d36a494599f9f128dcc3f177af0ca8a8dce8acb17900530debf2",
+    "ops": {
+      "viewBox": "-25.051 -25.051 676.383 280.202"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "CHAR-BATMAN",
+    "id": "primary",
+    "label": "Yellow oval bat",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Batman_symbol.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Batman_symbol.svg",
+    "sourceSha256": "1902f2b1e4d32e8e2262fcef9f8c9f013e75d5499c6e10f2eab063db3526ec26",
+    "ops": {
+      "viewBox": "-40 -40.001 1080 647.849"
+    }
+  },
+  {
+    "teamId": "CHAR-BATMAN",
+    "id": "bat-1989",
+    "label": "1989 film bat",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/b/b2/Batman_1989_Symbol.svg/revision/latest?cb=20230923220232",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Batman_1989_Symbol.svg",
+    "sourceSha256": "68053354827d81857fb61364714f343e9f645d7d2cd2142a74170aea85a952f3",
+    "ops": {
+      "viewBox": "-6.985 -6.985 188.595 133.826"
+    }
+  },
+  {
+    "teamId": "CHAR-BATMAN",
+    "id": "begins",
+    "label": "Begins bat (2005)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/3/35/Batman_Begins_Symbol.svg/revision/latest?cb=20190611024143",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Batman_Begins_Symbol.svg",
+    "sourceSha256": "de246de0d97c4d4310968bca3ec9c2070e678baf934a4fdfbd7850c7d9f675e0",
+    "ops": {
+      "viewBox": "-5.669 -5.669 153.072 68.511"
+    }
+  },
+  {
+    "teamId": "CHAR-BTTF",
+    "id": "primary",
+    "label": "Title wordmark",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Back-to-the-future-logo.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Back-to-the-future-logo.svg",
+    "sourceSha256": "aa464f6bccb38ed120ff8c9820d6171f44a02b2ffe078365b45d2667b7c71700",
+    "ops": {
+      "viewBox": "-40 -40 1080.001 525.1"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "CHAR-CAP",
+    "id": "primary",
+    "label": "Shield",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Captain_America_Shield.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Captain_America_Shield.svg",
+    "sourceSha256": "2b8d5cafa8dff48406fb0721d6993fe1edd027a90fadc789bbef5974ace36735",
+    "ops": {
+      "viewBox": "-259.2 -259.2 518.4 518.4"
+    }
+  },
+  {
+    "teamId": "CHAR-CAP",
+    "id": "shield-alt",
+    "label": "Shield (alternate)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/1/1a/Captain_America_Shield.svg/revision/latest?cb=20261002214724",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Captain_America_Shield.svg",
+    "sourceSha256": "495c1b13cfe6c46042e984bb5de20291cb4aac81b5c20d04494576050170b60e",
+    "ops": {
+      "viewBox": "-18 -18 486 486"
+    }
+  },
+  {
+    "teamId": "CHAR-CREEPER",
+    "id": "primary",
+    "label": "Creeper face",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Minecraft-creeper-face.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Minecraft-creeper-face.svg",
+    "sourceSha256": "9e4987019836edd39f87414bb07cbc0453760703ff66b84f5ca995d59a8ddff8",
+    "ops": {
+      "viewBox": "-43.003 -42.003 1165.443 1163.933"
+    }
+  },
+  {
+    "teamId": "CHAR-DEADPOOL",
+    "id": "primary",
+    "label": "Mask roundel",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/3/32/Deadpool-symbol.svg/revision/latest?cb=20240211020534",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Deadpool-symbol.svg",
+    "sourceSha256": "19d54fa1606a8ec317150d495050d5fa065f4c0593902193b2af0375790fb51c",
+    "ops": {
+      "viewBox": "-33.278 -33.278 898.515 898.514"
+    }
+  },
+  {
+    "teamId": "CHAR-DECEPTICON",
+    "id": "primary",
+    "label": "Decepticon insignia",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/0/02/Decepticon_Insignia.svg/revision/latest?cb=20200706193818",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Decepticon_Insignia.svg",
+    "sourceSha256": "5a28f1ea4e02f5ef08fa17eb30c11641b6551ac8d2312a867f686842cfd47c38",
+    "ops": {
+      "viewBox": "-40 -40 935.18 1080"
+    }
+  },
+  {
+    "teamId": "CHAR-DECEPTICON",
+    "id": "g1",
+    "label": "G1 insignia",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/9/9b/Decepticon_Insignia_%28G1%29.svg/revision/latest?cb=20200724140156",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Decepticon_Insignia_(G1).svg",
+    "sourceSha256": "b3d5150a0003fb3f2484efd54601bffc2f5b4aa351f4e01f95f5422f2f38a91f",
+    "ops": {
+      "viewBox": "-271.065 -137.652 1535.179 1386.902"
+    }
+  },
+  {
+    "teamId": "CHAR-DRAGONBALL",
+    "id": "primary",
+    "label": "Dragon Ball Z wordmark",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Dragon_Ball_Z_logo.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Dragon_Ball_Z_logo.svg",
+    "sourceSha256": "cfdbea0cd540ee36ec4660017901aa760bf91992f5869af5791cec7ece257dfe",
+    "ops": {
+      "viewBox": "-4000 -4000 108000 33500"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "CHAR-F4",
+    "id": "primary",
+    "label": "Circled 4",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/c/c4/Fantastic_Four_%28MCU%29.svg/revision/latest?cb=20250208190425",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Fantastic_Four_(MCU).svg",
+    "sourceSha256": "55954dd057132810545f2ecf3fd08fc7ac1e514870e28373c6e4c6e3dbb5a9fd",
+    "ops": {
+      "viewBox": "-9.5 -9 459.001 459"
+    }
+  },
+  {
+    "teamId": "CHAR-FIRSTORDER",
+    "id": "primary",
+    "label": "Hexagon emblem",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Banner_of_the_First_Order_%28Star_Wars%29.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Banner_of_the_First_Order_(Star_Wars).svg",
+    "sourceSha256": "dc725e683021b3feb6703d2c50fc6a08928f619e6561f27af4ead612d14ed7ab",
+    "ops": {
+      "keepNodes": [
+        "1"
+      ],
+      "viewBox": "56.711 988.1 509.925 550.8"
+    }
+  },
+  {
+    "teamId": "CHAR-GHOSTBUSTERS",
+    "id": "primary",
+    "label": "No-ghost sign",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/3/3d/Ghostbusters.svg/revision/latest?cb=20211028203058",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Ghostbusters.svg",
+    "sourceSha256": "2718a9ab1cae9201498d49b9c3122df6bbf12f3d5200fde5802f6a4f3dd9872f",
+    "ops": {
+      "keepNodes": [
+        "1",
+        "5"
+      ],
+      "viewBox": "153.427 -5.682 153.41 132.272"
+    }
+  },
+  {
+    "teamId": "CHAR-GL",
+    "id": "primary",
+    "label": "Lantern ring",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/7/7d/Green_lantern_logo.svg/revision/latest?cb=20170713200211",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Green_lantern_logo.svg",
+    "sourceSha256": "3b825b7709eea84b153233aa543cb9524b9d89b09a3107c1089271eb0aa6e385",
+    "ops": {
+      "viewBox": "-2.691 -2.691 72.662 72.663"
+    }
+  },
+  {
+    "teamId": "CHAR-GL",
+    "id": "black-ring",
+    "label": "Black ring",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/c/ca/Green_Lantern.svg/revision/latest?cb=20200710145448",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Green_Lantern.svg",
+    "sourceSha256": "6ff1231515fe852eee6dcae37fd836ec25f4a4388dbf142db1c36037bee6214d",
+    "ops": {
+      "viewBox": "-40 -40 1080 1079.982"
+    }
+  },
+  {
+    "teamId": "CHAR-HELLOKITTY",
+    "id": "primary",
+    "label": "Kitty face",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/b/b4/Hello_Kitty_2.svg/revision/latest?cb=20170628114941",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Hello_Kitty_2.svg",
+    "sourceSha256": "585705e8158308ad81118967526378b4d19c34b983e05c09d11bb8b35cd1ae25",
+    "ops": {
+      "viewBox": "-40 -39.999 1080 750.873"
+    }
+  },
+  {
+    "teamId": "CHAR-HP",
+    "id": "primary",
+    "label": "Deathly Hallows",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Deathly_Hallows_Sign.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Deathly_Hallows_Sign.svg",
+    "sourceSha256": "1165ce8aaff9d8cb90ca44379871b177cd657970d317de4b1dd864de2b5b10f0",
+    "ops": {
+      "viewBox": "4.393 4.604 478.764 419.264"
+    }
+  },
+  {
+    "teamId": "CHAR-HP",
+    "id": "monogram",
+    "label": "Lightning monogram",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/d/dd/Harry_Potter_HP.svg/revision/latest?cb=20170702152413",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Harry_Potter_HP.svg",
+    "sourceSha256": "472999d02ccbe2bd095d937e9abd9d8794b878de5b82dfea708f4f2c1fdea376",
+    "ops": {
+      "viewBox": "-32 -32 793.209 864"
+    }
+  },
+  {
+    "teamId": "CHAR-INCREDIBLES",
+    "id": "primary",
+    "label": "i symbol",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/5/55/The_Incredibles_Symbol.svg/revision/latest?cb=20170702121754",
+    "sourcePage": "https://logos.fandom.com/wiki/File:The_Incredibles_Symbol.svg",
+    "sourceSha256": "9a03874d554ea1c984a07aaff3c445af1b10b6cb325904bb5bca5ddf4f689bdc",
+    "ops": {
+      "viewBox": "-40 -40 1080 770.441"
+    }
+  },
+  {
+    "teamId": "CHAR-INCREDIBLES",
+    "id": "print",
+    "label": "One-color symbol",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/c/cd/The_Incredibles_Symbol_%28Print%29.svg/revision/latest?cb=20180305154038",
+    "sourcePage": "https://logos.fandom.com/wiki/File:The_Incredibles_Symbol_(Print).svg",
+    "sourceSha256": "907c5df92eacc8c77cf3ba6430a0f09f1439de7242cc30c1b2d7b41197f0991c",
+    "ops": {
+      "viewBox": "-40 -40 1080 770.441"
+    }
+  },
+  {
+    "teamId": "CHAR-JEDI",
+    "id": "primary",
+    "label": "Jedi Order crest",
+    "sourceUrl": "https://api.iconify.design/fa6-brands/jedi-order.svg?color=%23000000",
+    "sourcePage": "https://icon-sets.iconify.design/fa6-brands/jedi-order/",
+    "sourceSha256": "940ccfda3f3d603cb26aeb06aef85bbb2f4269135643ca18450ec0ea7da104b4",
+    "ops": {
+      "viewBox": "-17.912 8.088 484.524 491.724"
+    }
+  },
+  {
+    "teamId": "CHAR-JL",
+    "id": "primary",
+    "label": "JL roundel",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/9/9b/Justice_League.svg/revision/latest?cb=20170808132413",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Justice_League.svg",
+    "sourceSha256": "3477a091e7a1f44a32e8d072725f5024b59af5eb834804423936ba742fe5c8fc",
+    "ops": {
+      "viewBox": "-40 -40 1080 1080"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "CHAR-JURASSIC",
+    "id": "primary",
+    "label": "T. rex badge",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/1/1a/Jurassic_Park.svg/revision/latest?cb=20260525084549",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Jurassic_Park.svg",
+    "sourceSha256": "568e033c77cb95feb5439fb354503908b699377e544e8064a36d329c65b0c58e",
+    "ops": {
+      "keepNodes": [
+        "0/0/0",
+        "0/0/1"
+      ],
+      "clipToViewBox": true,
+      "viewBox": "-18.999 -18.999 526.483 288.7"
+    }
+  },
+  {
+    "teamId": "CHAR-LOL",
+    "id": "primary",
+    "label": "L mark",
+    "sourceUrl": "https://api.iconify.design/simple-icons/leagueoflegends.svg?color=%23C28F2C",
+    "sourcePage": "https://icon-sets.iconify.design/simple-icons/leagueoflegends/",
+    "sourceSha256": "cf37f18c7aeb706eeb78a691071cf2127627eef22b9f246b1e31be80bd59346e",
+    "ops": {
+      "viewBox": "-0.21 -0.96 24.421 25.92"
+    }
+  },
+  {
+    "teamId": "CHAR-LOONEY",
+    "id": "primary",
+    "label": "Concentric rings",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Looney_Tunes_2024.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Looney_Tunes_2024.svg",
+    "sourceSha256": "c1a79a07567d482081a5efb85d2aa362950f2704b08d9e65c958bbba7bc04e34",
+    "ops": {
+      "keepNodes": [
+        "1",
+        "2/0"
+      ],
+      "viewBox": "-4.242 -4.242 114.336 114.54"
+    }
+  },
+  {
+    "teamId": "CHAR-MANDO",
+    "id": "primary",
+    "label": "Mythosaur skull",
+    "sourceUrl": "https://api.iconify.design/fa6-brands/mandalorian.svg?color=%23000000",
+    "sourcePage": "https://icon-sets.iconify.design/fa6-brands/mandalorian/",
+    "sourceSha256": "a4ee08d04fe4c372217a774bfc549c07b96dd4a18a76ab20a431fbffd44907b7",
+    "ops": {
+      "viewBox": "8.517 -20.479 431.823 552.929"
+    }
+  },
+  {
+    "teamId": "CHAR-METROID",
+    "id": "primary",
+    "label": "Screw Attack symbol",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Metroid_Symbol_Smash_Bros_Brawl.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Metroid_Symbol_Smash_Bros_Brawl.svg",
+    "sourceSha256": "b7f14643806444c2e53428f44803370378fc117b37a3a95c2226ba55e4b177ee",
+    "ops": {
+      "viewBox": "30.484 21.046 195.032 213.907"
+    }
+  },
+  {
+    "teamId": "CHAR-MICKEY",
+    "id": "primary",
+    "label": "Head and ears",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Mickey_Mouse_head_and_ears.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Mickey_Mouse_head_and_ears.svg",
+    "sourceSha256": "d3f3a89c0860ae885b75b64773203af36b5e287887a58116c4ce0d7ebc2a175a",
+    "ops": {
+      "viewBox": "-112.48 -112.48 552.96 462.96"
+    }
+  },
+  {
+    "teamId": "CHAR-MINNIE",
+    "id": "primary",
+    "label": "Vintage Minnie",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Minnie_Mouse.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Minnie_Mouse.svg",
+    "sourceSha256": "e1ad22a8de3d5fbc502b8388f43e3cb91ea92dca4039302bba5d4407d7103b0e",
+    "ops": {
+      "viewBox": "-3.429 -3.948 179.602 152.829"
+    }
+  },
+  {
+    "teamId": "CHAR-MONSTERS",
+    "id": "primary",
+    "label": "M-eye roundel",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/3/36/Monsters%2C_Inc._%28Icon%29.svg/revision/latest?cb=20241216035901",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Monsters,_Inc._(Icon).svg",
+    "sourceSha256": "8e778603742ac1357e150cf2938dbb45f4f233564fa04a88bc809a513d2d1625",
+    "ops": {
+      "viewBox": "-67.08 -67.08 1809.307 1811.164"
+    }
+  },
+  {
+    "teamId": "CHAR-OVERWATCH",
+    "id": "primary",
+    "label": "Overwatch symbol",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Overwatch_2_full_logo.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Overwatch_2_full_logo.svg",
+    "sourceSha256": "1e06848fa13d8086cfd490c1b05f78184eddc318b4cc47a78be47abca8bbe7a4",
+    "ops": {
+      "keepNodes": [
+        "0",
+        "1"
+      ],
+      "viewBox": "173.28 -8.706 235.44 235.388"
+    }
+  },
+  {
+    "teamId": "CHAR-PEPPA",
+    "id": "primary",
+    "label": "Pig on blue splash",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/4/4b/Peppa_Pig_Former_Latin_American.svg/revision/latest?cb=20210531072024",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Peppa_Pig_Former_Latin_American.svg",
+    "sourceSha256": "b3be95f13d217f3cf2eb688f35807d78d88d124d83b0c8ecf696edf27bfad214",
+    "ops": {
+      "removeNodes": [
+        "3/0/1",
+        "3/0/2",
+        "3/0/3",
+        "3/0/4",
+        "3/0/5"
+      ],
+      "viewBox": "-24.539 -24.54 662.567 457.03"
+    }
+  },
+  {
+    "teamId": "CHAR-PIKACHU",
+    "id": "primary",
+    "label": "Pikachu silhouette",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/4/43/25_years_pikachu.svg/revision/latest?cb=20210117230703",
+    "sourcePage": "https://logos.fandom.com/wiki/File:25_years_pikachu.svg",
+    "sourceSha256": "149a9ead612fd7b4ddc0f1ebeb78d52696da482621a64987267918a4c50c15fc",
+    "ops": {
+      "keepNodes": [
+        "0",
+        "1/0/0",
+        "1/0/1",
+        "1/0/2"
+      ],
+      "viewBox": "-78.264 -78.291 2113.612 1601.823"
+    }
+  },
+  {
+    "teamId": "CHAR-POKEBALL",
+    "id": "primary",
+    "label": "Poké Ball",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Pok%C3%A9_Ball_icon.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Poké_Ball_icon.svg",
+    "sourceSha256": "6f1121045b551300d6f9a4651d37b9232edb30aa8465e8a0d0951f43361022cf",
+    "ops": {
+      "viewBox": "21.44 20.84 552.42 552.32"
+    }
+  },
+  {
+    "teamId": "CHAR-POWERRANGERS",
+    "id": "primary",
+    "label": "Lightning bolt",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/f/f9/Power_Rangers_Alternate_Lightning_Logo.svg/revision/latest?cb=20220203231702",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Power_Rangers_Alternate_Lightning_Logo.svg",
+    "sourceSha256": "b92a5a86a0fbce930337e6f618f6765f318743c23d8c1c6cbf42dadf5983446e",
+    "ops": {
+      "viewBox": "-873.6 -340.806 1664.821 1522.06"
+    }
+  },
+  {
+    "teamId": "CHAR-PUNISHER",
+    "id": "primary",
+    "label": "Skull",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/e/e4/Punisher.svg/revision/latest?cb=20171001072840",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Punisher.svg",
+    "sourceSha256": "899ba7977a21c55abfae78ff4358f5f1f9341dc77ab0b3838798e88650fd6f54",
+    "ops": {
+      "viewBox": "-1.871 -2.034 49.258 64.568"
+    }
+  },
+  {
+    "teamId": "CHAR-REBEL",
+    "id": "primary",
+    "label": "Starbird",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Rebel_Alliance_%28red%29.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Rebel_Alliance_(red).svg",
+    "sourceSha256": "a7224b2257dd9af44904d2c43190968a016dab6d3ba50420e5adad0cce1d6fb8",
+    "ops": {
+      "viewBox": "-4.367 -8.684 310.399 316.371"
+    }
+  },
+  {
+    "teamId": "CHAR-REPUBLIC",
+    "id": "primary",
+    "label": "Republic cog",
+    "sourceUrl": "https://api.iconify.design/fa6-brands/galactic-republic.svg?color=%23000000",
+    "sourcePage": "https://icon-sets.iconify.design/fa6-brands/galactic-republic/",
+    "sourceSha256": "4a8dd9a9953cd321abd47b0b32bb313173bf98d35d0895c1b8bb4c1fa18f2a7b",
+    "ops": {
+      "viewBox": "-19.84 -11.84 535.68 535.68"
+    }
+  },
+  {
+    "teamId": "CHAR-RESISTANCE",
+    "id": "primary",
+    "label": "Resistance starbird",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Resistance_Emblem_Star_Wars.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Resistance_Emblem_Star_Wars.svg",
+    "sourceSha256": "b457c8cfef541ad998ebed4f7ba4b1d37b0fd97e7bb8a03b35b40bd2efa7b334",
+    "ops": {
+      "viewBox": "-4.367 -8.684 310.399 316.371"
+    }
+  },
+  {
+    "teamId": "CHAR-ROBIN",
+    "id": "primary",
+    "label": "R roundel",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Robin_logo_%28classic%29.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Robin_logo_(classic).svg",
+    "sourceSha256": "b771f1dbc4a7b1e8f79ea65ce2f85ffc085a901cb93f1934e7e99a002bde427f",
+    "ops": {
+      "viewBox": "-78.77 -79.015 2158.337 2206.935"
+    }
+  },
+  {
+    "teamId": "CHAR-SESAME",
+    "id": "primary",
+    "label": "Street sign",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Sesame_Street_logo.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Sesame_Street_logo.svg",
+    "sourceSha256": "41ed69bdd8a5585e7912bd321e029a308df28b1c39d4a1c6212e1daa2308675f",
+    "ops": {
+      "viewBox": "-33.736 -33.736 910.863 395.243"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "CHAR-SIMPSONS",
+    "id": "primary",
+    "label": "Title wordmark",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/b/bc/The_Simpsons_Logo.svg/revision/latest?cb=20221216162526",
+    "sourcePage": "https://logos.fandom.com/wiki/File:The_Simpsons_Logo.svg",
+    "sourceSha256": "31c99e5f894a6b2cd1998a465efc0ae3e27cea1d19eb592a648069e91ca95847",
+    "ops": {
+      "viewBox": "598.272 -5.699 313.68 156.236"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "CHAR-SITH",
+    "id": "primary",
+    "label": "Sith emblem",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Sith_Emblem_%28Star_Wars%29.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Sith_Emblem_(Star_Wars).svg",
+    "sourceSha256": "a6328c2a8663e55098c026348f1bbcf2d8a8ca463cb6cadc9a99df7bb104eb14",
+    "ops": {
+      "viewBox": "-36 -36 972 972"
+    }
+  },
+  {
+    "teamId": "CHAR-SNOOPY",
+    "id": "primary",
+    "label": "Snoopy",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/6/6c/Peanuts_by_Schulz_2.svg/revision/latest?cb=20171013190350",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Peanuts_by_Schulz_2.svg",
+    "sourceSha256": "6dcbefb14222e1c3a19fe87cc3baecd4396af17af02a35add3724bf5b696ef8b",
+    "ops": {
+      "keepNodes": [
+        "0/1"
+      ],
+      "viewBox": "20.635 10.786 941.732 1016.376"
+    }
+  },
+  {
+    "teamId": "CHAR-SPIDEY",
+    "id": "primary",
+    "label": "Classic spider (1962)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/8/88/Spider-Man%27s_Symbol_%281962%29.svg/revision/latest?cb=20240502093929",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Spider-Man's_Symbol_(1962).svg",
+    "sourceSha256": "84a178c9d1af4d8477f6086ec6c388959bd5ddaf9cb0aa619e52793697ca7646",
+    "ops": {
+      "viewBox": "-10.349 -10.349 279.428 209.138"
+    }
+  },
+  {
+    "teamId": "CHAR-SPIDEY",
+    "id": "film-2002",
+    "label": "Film spider (2002)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/d/d2/Spider-Man_symbol_%282002_film%29.svg/revision/latest?cb=20250703130912",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Spider-Man_symbol_(2002_film).svg",
+    "sourceSha256": "332b9cf02124530087fcdda13c493a20a056f7961be177322b99266a701a6c8f",
+    "ops": {
+      "viewBox": "-11.443 -11.408 250.085 306.251"
+    }
+  },
+  {
+    "teamId": "CHAR-SPIDEY",
+    "id": "miles",
+    "label": "Morales spider (Spider-Verse)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/c/c9/Spider-Man_symbol_Spider-Man-_Miles_Morales_.svg/revision/latest?cb=20230829164608",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Spider-Man_symbol_Spider-Man-_Miles_Morales_.svg",
+    "sourceSha256": "e4316b8571e99ca360b10a30cf39d6377a33cc9a02c17638aed60ec331fcdc49",
+    "ops": {
+      "viewBox": "-65.874 -65.874 1217.706 1778.602"
+    }
+  },
+  {
+    "teamId": "CHAR-SPIDEY",
+    "id": "unlimited",
+    "label": "Red spider (Unlimited)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/8/8d/Spider-Man_symbol_%28Unlimited%29.svg/revision/latest?cb=20240920202937",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Spider-Man_symbol_(Unlimited).svg",
+    "sourceSha256": "99a9a1218798a06c85a8ebace2bbe291a07e773aa3a1146af888ac3e188eaa2d",
+    "ops": {
+      "viewBox": "-16.46 1.434 672.92 547.13"
+    }
+  },
+  {
+    "teamId": "CHAR-STARTREK",
+    "id": "primary",
+    "label": "Starfleet delta",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Emblem.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Emblem.svg",
+    "sourceSha256": "ef9353a93cd1a745576838951a00a9d2b1a9bc6199a469edbce43ad0cc8fd526",
+    "ops": {
+      "viewBox": "91.266 59.766 419.999 642.499"
+    }
+  },
+  {
+    "teamId": "CHAR-STARWARS",
+    "id": "primary",
+    "label": "Title wordmark",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Star_Wars_Logo.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Star_Wars_Logo.svg",
+    "sourceSha256": "803ce4ca197f80ac62f3e431e82d445822cf8636611e9d1b8cf8281f23eabe4f",
+    "ops": {
+      "viewBox": "-34.103 -31.73 756.502 479.016"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "CHAR-SUPERMAN",
+    "id": "primary",
+    "label": "S shield",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Superman_shield.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Superman_shield.svg",
+    "sourceSha256": "572fcd7b9c45328c142bc4d645bef043a8261482468492eca1d0be15a444c458",
+    "ops": {
+      "viewBox": "-1.8 -6.646 723.6 553.292"
+    }
+  },
+  {
+    "teamId": "CHAR-SUPERMAN",
+    "id": "classic",
+    "label": "Classic shield",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/a/ad/Superman_%28Classic_logo%29.svg/revision/latest?cb=20211009194140",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Superman_(Classic_logo).svg",
+    "sourceSha256": "34d9a489900f1dfe609d6516e3b18e6b7b1529d3a5a1734f007a57409ee43fcd",
+    "ops": {
+      "viewBox": "-13.004 -13.404 397.008 304.408"
+    }
+  },
+  {
+    "teamId": "CHAR-SUPERMAN",
+    "id": "outline",
+    "label": "Outline shield",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/4/4d/Superman_shield_print.svg/revision/latest?cb=20170918091950",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Superman_shield_print.svg",
+    "sourceSha256": "e91dce21e90125bdc7e5302ee4b4a21b8417690e9dc70c7a49fe599126642905",
+    "ops": {
+      "viewBox": "-24.456 -28.368 1048.912 802.032"
+    }
+  },
+  {
+    "teamId": "CHAR-SUPERMAN",
+    "id": "year-one",
+    "label": "Year One shield",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/0/08/Superman_logo_%28Year_One%29.svg/revision/latest?cb=20241011084205",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Superman_logo_(Year_One).svg",
+    "sourceSha256": "4e3fcdef3f980dcc1109a4d638b798109e7bb235944463703413e2e8a83e7c31",
+    "ops": {
+      "viewBox": "-29.209 -29.209 788.643 591.503"
+    }
+  },
+  {
+    "teamId": "CHAR-TEAMROCKET",
+    "id": "primary",
+    "label": "Red R",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Team_Rocket_Logo.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Team_Rocket_Logo.svg",
+    "sourceSha256": "20020ec3daff8963ed29cf1a5b582af72b0da9894b1b29f8f06e2a229d7f76cf",
+    "ops": {
+      "viewBox": "301.146 72.873 283.451 272.051"
+    }
+  },
+  {
+    "teamId": "CHAR-TETRIS",
+    "id": "primary",
+    "label": "T-tetromino wordmark",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Tetris_logo_2019.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Tetris_logo_2019.svg",
+    "sourceSha256": "e8637af0e0ccd618874498ba8f8643a23361364a93d9dbe2bb9229c8268f4891",
+    "ops": {
+      "viewBox": "-25.812 -25.812 696.924 499.714"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "CHAR-THOR",
+    "id": "primary",
+    "label": "Thor with Mjolnir",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Marvel_Thor.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Marvel_Thor.svg",
+    "sourceSha256": "bdc692cf8105015c382bccba9056817813647b42238886aed37a0693e420a943",
+    "ops": {
+      "viewBox": "-20.905 -20.355 404.045 549.594"
+    }
+  },
+  {
+    "teamId": "CHAR-TRIFORCE",
+    "id": "primary",
+    "label": "Golden triangles",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Triforce.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Triforce.svg",
+    "sourceSha256": "d6dd2c0a612bd51e4109395ccbdfe32cb536deb6542c761b326efa4d26503f4f",
+    "ops": {
+      "viewBox": "-8 -8 216 189.2"
+    }
+  },
+  {
+    "teamId": "CHAR-TRIFORCE",
+    "id": "black",
+    "label": "One-color triangles",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Triforce_-_Delapouite_-_game-icons.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Triforce_-_Delapouite_-_game-icons.svg",
+    "sourceSha256": "9b52cae53fe997ac5558122a39b8f889050254be3512909cd03f758be7f1e9c1",
+    "ops": {
+      "viewBox": "11.246 41.59 489.509 428.82"
+    }
+  },
+  {
+    "teamId": "CHAR-UMBRELLA",
+    "id": "primary",
+    "label": "Umbrella emblem",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/0/0e/Umbrella_Corporation_logo.svg/revision/latest?cb=20200727061909",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Umbrella_Corporation_logo.svg",
+    "sourceSha256": "612eb128bf731f812ad2d5f22302e8910cb9a5cbd190ac29d31da8b26a916606",
+    "ops": {
+      "viewBox": "-12.96 -12.96 349.92 349.82"
+    }
+  },
+  {
+    "teamId": "CHAR-VALORANT",
+    "id": "primary",
+    "label": "V mark",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/e/e6/Valorant_%28Black%29.svg/revision/latest?cb=20240803235908",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Valorant_(Black).svg",
+    "sourceSha256": "25ead9df89e404a3da3dc37439a2cc0c266f021c520715912d597d21521656f0",
+    "ops": {
+      "keepNodes": [
+        "0",
+        "1/0"
+      ],
+      "viewBox": "93.826 -8.67 233.85 195.064"
+    }
+  },
+  {
+    "teamId": "CHAR-WW",
+    "id": "primary",
+    "label": "Golden WW eagle",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/2/21/Wonder_Woman_Yellow_Outlined.svg/revision/latest?cb=20170808133618",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Wonder_Woman_Yellow_Outlined.svg",
+    "sourceSha256": "98ef56f532199add02a485b1fd84c4a3d0f7793c0ac7a26c695642eb8114b856",
+    "ops": {
+      "viewBox": "-40 -40 1080 545.307"
+    }
+  },
+  {
+    "teamId": "CHAR-WW",
+    "id": "black",
+    "label": "One-color WW",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/4/44/Wonder_Woman_Black.svg/revision/latest?cb=20170808133254",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Wonder_Woman_Black.svg",
+    "sourceSha256": "b1378358e7d81d97928a0de7bd25c634758d7934795124b41cda8a4795682d0f",
+    "ops": {
+      "viewBox": "-40 -40 1080 502.561"
+    }
+  },
+  {
+    "teamId": "CHAR-WW",
+    "id": "new-52",
+    "label": "New 52 emblem",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/5/52/Wonder_Woman_-_New_52.svg/revision/latest?cb=20220517143729",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Wonder_Woman_-_New_52.svg",
+    "sourceSha256": "9626fdfe83a2fbf5fbd013d865458891b405084cf8c5b0d8263ade3423d1b2d3",
+    "ops": {
+      "viewBox": "-12.52 -12.52 338.04 119.24"
+    }
+  },
+  {
+    "teamId": "CHAR-XMEN",
+    "id": "primary",
+    "label": "X circle",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/X-Men_logo.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:X-Men_logo.svg",
+    "sourceSha256": "39890bf1ce6b9715fe96ba3a77f9cbe4313e2518c2fac7324c551959fc657837",
+    "ops": {
+      "keepNodes": [
+        "1",
+        "3"
+      ],
+      "viewBox": "6.478 -8.919 256.542 256.542"
+    }
+  },
+  {
+    "teamId": "FOOD-BOSTON",
+    "id": "primary",
+    "label": "Wordmark oval",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/c/c8/Boston_Market_%282018%29.svg/revision/latest?cb=20260401215207",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Boston_Market_(2018).svg",
+    "sourceSha256": "63d39709d90c543c43ce4fe2ba217fcc1107ce3321b1ed14ee97d974ff87f391",
+    "ops": {
+      "viewBox": "-10.162 -10.162 274.374 180.112"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "FOOD-CAPTAIND",
+    "id": "primary",
+    "label": "Fish",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/b/bf/Captain_D%27s_-_2006.svg/revision/latest?cb=20240703055003",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Captain_D's_-_2006.svg",
+    "sourceSha256": "b32d76ab187c57c930a84561a4d012b967d593df1deaf79f5a04b72c1291f31b",
+    "ops": {
+      "keepNodes": [
+        "0",
+        "13"
+      ],
+      "viewBox": "19.768 64.136 367.58 174.248"
+    }
+  },
+  {
+    "teamId": "FOOD-CARVEL",
+    "id": "primary",
+    "label": "Wordmark with cone",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/7/70/Carvel_2023.svg/revision/latest?cb=20250625171712",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Carvel_2023.svg",
+    "sourceSha256": "dac7589bdc194d0ee1fde8931f4098f59249855552b77da033cbd28c1afffb8f",
+    "ops": {
+      "viewBox": "-7.978 -7.978 215.397 103.002"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "FOOD-CB",
+    "id": "primary",
+    "label": "Wordmark",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Cracker_Barrel_Logo_%282%29.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Cracker_Barrel_Logo_(2).svg",
+    "sourceSha256": "078844e5c330840c22292ff54558dd3c37047264f6ba90c3df1eaaf9ee4df7de",
+    "ops": {
+      "viewBox": "-79.645 -79.641 2150.297 1373.621"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "FOOD-CEC",
+    "id": "primary",
+    "label": "Mouse head circle",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/5/51/Chuck-E-Cheese_new_logo.svg/revision/latest?cb=20260728072055",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Chuck-E-Cheese_new_logo.svg",
+    "sourceSha256": "a4c8de62a2958c0a44f0d2dd6a917158aba9371bff63e3bb3b866931366992da",
+    "ops": {
+      "removeNodes": [
+        "20"
+      ],
+      "viewBox": "-3.298 -3.298 89.052 86.596"
+    }
+  },
+  {
+    "teamId": "FOOD-CEC",
+    "id": "mascot",
+    "label": "Full mascot",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/a/ac/CEC_Herndon.svg/revision/latest?cb=20240601042000",
+    "sourcePage": "https://logos.fandom.com/wiki/File:CEC_Herndon.svg",
+    "sourceSha256": "fd107b81fbe5357bfadd65e5244bc48e07aae8a7c3f5d20acd3b4a9c546114ee",
+    "ops": {
+      "viewBox": "-13.448 -13.448 363.086 319.631"
+    }
+  },
+  {
+    "teamId": "FOOD-CHEESE",
+    "id": "primary",
+    "label": "Wordmark",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Cheesecake_Factory_logo.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:The_Cheesecake_Factory_logo.svg",
+    "sourceSha256": "6e2b4634c241dbe49bcfca63fc930124273dd4d18b4f79bbd43682670ec44b2c",
+    "ops": {
+      "viewBox": "-5.144 -5.144 152.379 35.51"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "FOOD-CHURCH",
+    "id": "primary",
+    "label": "Star roundel",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Churchs-logo.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Churchs-logo.svg",
+    "sourceSha256": "a293e39e72f692a36cad9cb135ad687247e341c30e2651832a0b64ee77287ab4",
+    "ops": {
+      "keepNodes": [
+        "0",
+        "1/22",
+        "1/23",
+        "1/24",
+        "1/25",
+        "1/26"
+      ],
+      "viewBox": "-0.031 -1.711 382.273 403.414"
+    }
+  },
+  {
+    "teamId": "FOOD-CPK",
+    "id": "primary",
+    "label": "Palm diamond",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/6/61/California_Pizza_Kitchen_2012.svg/revision/latest?cb=20210212151756",
+    "sourcePage": "https://logos.fandom.com/wiki/File:California_Pizza_Kitchen_2012.svg",
+    "sourceSha256": "362b276d5b3afa182c25b7c9cda64e9e1abf7c3495d59a940624fcf29b3d271a",
+    "ops": {
+      "keepNodes": [
+        "1",
+        "3/1"
+      ],
+      "viewBox": "131.847 -15.987 431.643 431.625"
+    }
+  },
+  {
+    "teamId": "FOOD-CRUMBL",
+    "id": "primary",
+    "label": "Chef-hat cookie",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/5/59/Crumbl_Cookies_2018_icon.svg/revision/latest?cb=20230809222708",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Crumbl_Cookies_2018_icon.svg",
+    "sourceSha256": "3545134aca3876ba53801104a5d0a3ad2c45814ef6ae56ad3f055621bff85b77",
+    "ops": {
+      "viewBox": "-44.497 -44.497 1088.995 1201.431"
+    }
+  },
+  {
+    "teamId": "FOOD-CRUMBL",
+    "id": "circle",
+    "label": "Black circle icon",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/3/3f/Crumbl_Cookies_2018_icon_circle.svg/revision/latest?cb=20230809222724",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Crumbl_Cookies_2018_icon_circle.svg",
+    "sourceSha256": "c39115acb6a5774950d27a50f5a9459c52f9133d39c60909a261f5151003ef34",
+    "ops": {
+      "viewBox": "-40 -40 1080 1080"
+    }
+  },
+  {
+    "teamId": "FOOD-DB",
+    "id": "primary",
+    "label": "D&B roundel",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/DaveAndBusters.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:DaveAndBusters.svg",
+    "sourceSha256": "762f885484e887a06379f3e43a5ba90b3a21e50431933b8bb013a507004e6819",
+    "ops": {
+      "keepNodes": [
+        "1",
+        "3/0",
+        "3/1",
+        "3/2",
+        "3/18",
+        "3/19",
+        "3/24"
+      ],
+      "viewBox": "-7.483 -7.483 201.703 202.054"
+    }
+  },
+  {
+    "teamId": "FOOD-DUTCH",
+    "id": "primary",
+    "label": "Windmill",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/0/0f/Dutch_Bros_2021_Windmill.svg/revision/latest?cb=20221019165340",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Dutch_Bros_2021_Windmill.svg",
+    "sourceSha256": "5cbb3ac148e536bf4e2a8c1a0331b155a440265f48e5947b33ec97719c1fc726",
+    "ops": {
+      "keepNodes": [
+        "1",
+        "3"
+      ],
+      "viewBox": "-8.584 -0.566 174.991 231.761"
+    }
+  },
+  {
+    "teamId": "FOOD-EPL",
+    "id": "primary",
+    "label": "Wordmark badge",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/4/46/El_Pollo_Loco_%281%29.svg/revision/latest?cb=20190316150000",
+    "sourcePage": "https://logos.fandom.com/wiki/File:El_Pollo_Loco_(1).svg",
+    "sourceSha256": "e2d9d1a7b16af7878250d0f6be7d7bd86af9ad501da11a4654dd6be6d20d05ab",
+    "ops": {
+      "viewBox": "-251.045 -249.751 6802.313 6662.141"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "FOOD-FAT",
+    "id": "primary",
+    "label": "Wordmark badge",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Fatburger_logo.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Fatburger_logo.svg",
+    "sourceSha256": "6a759f6b2ecbc8d998df17c159634e5828638c3abbce2064880ed6a70b63ceaf",
+    "ops": {
+      "viewBox": "2.946 13.875 396.277 307.294"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "FOOD-FIREHOUSE",
+    "id": "primary",
+    "label": "Wordmark",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/2/21/Firehouse_subs_2024.svg/revision/latest?cb=20260423124403",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Firehouse_subs_2024.svg",
+    "sourceSha256": "50707e620cf3f31a3ad07b94fdb0583e317b49982accbb646972323bbdee9fe1",
+    "ops": {
+      "viewBox": "-5.449 -5.449 147.128 46.538"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "FOOD-FREDDYS",
+    "id": "primary",
+    "label": "Wordmark",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Freddy%27s_Frozen_Custard_%26_Steakburgers_logo.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Freddy's_Frozen_Custard_&_Steakburgers_logo.svg",
+    "sourceSha256": "5123f505047f6482479efdc52c51251a771f4f4a9424213ed1dfbe5914b627f7",
+    "ops": {
+      "viewBox": "-2.39 -2.39 71.676 30.642"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "FOOD-GC",
+    "id": "primary",
+    "label": "Wordmark",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Golden_Corral_logo.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Golden_Corral_logo.svg",
+    "sourceSha256": "55337dfc1b5a6b8b3a8a1b758e089d7fc4f09bf7ad8b5789089ef517c76a0579",
+    "ops": {
+      "viewBox": "-183.349 -183.349 4950.42 3256.775"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "FOOD-HABIT",
+    "id": "primary",
+    "label": "Wordmark",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/8/83/The_Habit_Burger_Grill.svg/revision/latest?cb=20240211161848",
+    "sourcePage": "https://logos.fandom.com/wiki/File:The_Habit_Burger_Grill.svg",
+    "sourceSha256": "b40561014a89d54c44544a71a8ca59e3d5950793e8280cac7359502294d9f97c",
+    "ops": {
+      "viewBox": "-10.583 -10.583 285.75 218.493"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "FOOD-HD",
+    "id": "primary",
+    "label": "Wordmark",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/H%C3%A4agen-Dazs_Logo.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Häagen-Dazs_Logo.svg",
+    "sourceSha256": "7530efaaa56788ddcf7e38a70add4435c643d14eeaf091553afbf5f1c2ec8079",
+    "ops": {
+      "viewBox": "2.474 2.553 201.053 102.894"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "FOOD-HOOT",
+    "id": "primary",
+    "label": "Owl",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/2/25/Hooters_logo_2013.svg/revision/latest?cb=20180903164325",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Hooters_logo_2013.svg",
+    "sourceSha256": "94f52bf5dd5f76836f17940e73f9e782d6823f0476e27f75711070c9d9358df4",
+    "ops": {
+      "removeNodes": [
+        "3",
+        "4",
+        "34",
+        "35",
+        "36"
+      ],
+      "viewBox": "28.06 -11.028 173.428 297.756"
+    }
+  },
+  {
+    "teamId": "FOOD-HRC",
+    "id": "primary",
+    "label": "Wordmark roundel",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/f/f0/Hard_Rock_Cafe_%28Print_2%29.svg/revision/latest?cb=20171203120322",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Hard_Rock_Cafe_(Print_2).svg",
+    "sourceSha256": "2ff0ea3adbd188680b1b1eecf60403df3023e4212677dc026c6cf5009bace94d",
+    "ops": {
+      "viewBox": "-40 -40 1079.999 684.787"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "FOOD-JJ",
+    "id": "primary",
+    "label": "JJ roundel",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/0/08/Jimmy_John%27s.svg/revision/latest?cb=20191207101226",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Jimmy_John's.svg",
+    "sourceSha256": "4b94d745480d006faf585a89008641bc1490c49aff0e304274420b78e01a8ee5",
+    "ops": {
+      "keepNodes": [
+        "0",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "viewBox": "-40 -40 1080 1080"
+    }
+  },
+  {
+    "teamId": "FOOD-JM",
+    "id": "primary",
+    "label": "Wordmark oval",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Jersey_Mike%27s_logo.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Jersey_Mike's_logo.svg",
+    "sourceSha256": "3c67216775d8c2d68adf43b167a7a8df3099a42b3ffaf73daa9fca295b395eff",
+    "ops": {
+      "viewBox": "-13.809 -13.809 372.83 278.465"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "FOOD-JOLLI",
+    "id": "primary",
+    "label": "Red bee",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/f/f0/Jollibee_%282011%29.svg/revision/latest?cb=20231024194501",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Jollibee_(2011).svg",
+    "sourceSha256": "20cd54315db2666283967ae764682cd51bf7a36a203c4855e4379c7989ef08f2",
+    "ops": {
+      "keepNodes": [
+        "0",
+        "1",
+        "2/0",
+        "2/1",
+        "2/2",
+        "3"
+      ],
+      "viewBox": "130.945 -7.899 379.133 440.066"
+    }
+  },
+  {
+    "teamId": "FOOD-LJS",
+    "id": "primary",
+    "label": "Golden fish",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/0/07/Long_John_Silver%27s_2017.svg/revision/latest?cb=20220416023448",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Long_John_Silver's_2017.svg",
+    "sourceSha256": "52424314801d2198d2cd3bf562e6e764a6885ceab14953fbb83e0fd3aa6019af",
+    "ops": {
+      "keepNodes": [
+        "0",
+        "2/0/0/16",
+        "2/0/0/17"
+      ],
+      "viewBox": "458.81 -64.312 1736.4 732.268"
+    }
+  },
+  {
+    "teamId": "FOOD-LONGHORN",
+    "id": "primary",
+    "label": "Steer head",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/2/22/Longhorn-steakhouse-old.svg/revision/latest?cb=20260518064413",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Longhorn-steakhouse-old.svg",
+    "sourceSha256": "d9129c9d771670fe1a7b11f23842532688fe3f830cbd1415836e7b04ff48f216",
+    "ops": {
+      "keepNodes": [
+        "2/0",
+        "2/1"
+      ],
+      "viewBox": "5.374 4.057 84.558 63.764"
+    }
+  },
+  {
+    "teamId": "FOOD-MARCOS",
+    "id": "primary",
+    "label": "M with pizza",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/b/bb/Marco%27s_Pizza_2018.svg/revision/latest?cb=20251225013150",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Marco's_Pizza_2018.svg",
+    "sourceSha256": "68b800a9b240d1a82e8dba4e82698ed79e434f717c4155dbb2347de398108062",
+    "ops": {
+      "keepNodes": [
+        "0",
+        "1/0/0",
+        "1/0/1"
+      ],
+      "clipToViewBox": true,
+      "viewBox": "-79.637 -79.639 2150.261 1419.695"
+    }
+  },
+  {
+    "teamId": "FOOD-MOES",
+    "id": "primary",
+    "label": "Wordmark diamond",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/c/ca/Moe%27s_Southwest_Grill_2018.svg/revision/latest?cb=20231118122942",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Moe's_Southwest_Grill_2018.svg",
+    "sourceSha256": "b774d8325e69b4b4ee32d26ddf1a8ced2832c720e156cb3d64a85c72b2cbc467",
+    "ops": {
+      "viewBox": "-6.328 -6.328 170.845 115.502"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "FOOD-NANDOS",
+    "id": "primary",
+    "label": "Barcelos rooster",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/c/c5/Nandos_logo.svg/revision/latest?cb=20211216174848",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Nandos_logo.svg",
+    "sourceSha256": "436e49855bf663729265a5a89ad5c23a57b59a8e551cde311c29b959e2d0abb8",
+    "ops": {
+      "keepNodes": [
+        "0",
+        "2",
+        "3"
+      ],
+      "viewBox": "-7.52 -7.527 138.236 203.259"
+    }
+  },
+  {
+    "teamId": "FOOD-NOODLES",
+    "id": "primary",
+    "label": "Noodle swirl",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/5/5f/Noodles_%26_Company_2019.svg/revision/latest?cb=20211112160642",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Noodles_&_Company_2019.svg",
+    "sourceSha256": "48d324df9f8a6bea8e2b12eb6cdaeb4e3f10d47ce8423a17bc5d77fc3f514593",
+    "ops": {
+      "keepNodes": [
+        "1",
+        "4/0/0"
+      ],
+      "viewBox": "-9.697 -0.298 261.809 222.672"
+    }
+  },
+  {
+    "teamId": "FOOD-PFC",
+    "id": "primary",
+    "label": "Wordmark",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/c/cf/PF_Chang%27s.svg/revision/latest?cb=20190908175540",
+    "sourcePage": "https://logos.fandom.com/wiki/File:PF_Chang's.svg",
+    "sourceSha256": "4a1d5933980784d9f31fddd98292418cc73110d6f2c3dc327d1f4231c65fadc2",
+    "ops": {
+      "viewBox": "-8.918 -8.918 321.78 79.336"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "FOOD-PM",
+    "id": "primary",
+    "label": "Wordmark",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/6/6d/Papa_Murphy%27s_2010.svg/revision/latest?cb=20211120153616",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Papa_Murphy's_2010.svg",
+    "sourceSha256": "67d6078c38b00d46d40a91ca0375bbcd7a60d36bb1ee7746ed549d5315b0780c",
+    "ops": {
+      "viewBox": "-45.705 -45.704 1234.031 425.202"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "FOOD-QDOBA",
+    "id": "primary",
+    "label": "Wordmark",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/7/72/Qdoba_Mexican_Eats.svg/revision/latest?cb=20230807160014",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Qdoba_Mexican_Eats.svg",
+    "sourceSha256": "9e32a4d30f015f6c0bb3c9cb22bcd48fd2651e80fb9fd75fc5833feb96c9d90c",
+    "ops": {
+      "viewBox": "-23.442 -23.442 632.925 165.073"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "FOOD-RAIN",
+    "id": "primary",
+    "label": "Wordmark",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/3/36/Rainforest-Cafe.svg/revision/latest?cb=20250603202211",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Rainforest-Cafe.svg",
+    "sourceSha256": "437999fd96d4e32a9a9277f23b80f166b5b72938c22efa2ab17767f9a41a1db8",
+    "ops": {
+      "viewBox": "-16.001 -16 432.001 226.435"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "FOOD-ROBIN",
+    "id": "primary",
+    "label": "RR monogram",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/d/d8/Red_robin_icon.svg/revision/latest?cb=20210613052348",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Red_robin_icon.svg",
+    "sourceSha256": "5c737bb661ce102b6d0380a83076bb79605a8e7dcb3d58b0c8174f6e7e741bcb",
+    "ops": {
+      "viewBox": "-1.136 -1.636 44.169 43.2"
+    }
+  },
+  {
+    "teamId": "FOOD-RUBY",
+    "id": "primary",
+    "label": "Wordmark",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/3/3a/Ruby_Tuesday_2006.svg/revision/latest?cb=20231005062427",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Ruby_Tuesday_2006.svg",
+    "sourceSha256": "5b2a0cdeb3ccb504c153386e2be988f29b841966d1849c2812dcac0cbaaa21c3",
+    "ops": {
+      "viewBox": "-16.996 -16.996 458.892 91.992"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "FOOD-SK",
+    "id": "primary",
+    "label": "Crown",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/0/07/Smoothie_King_Center.svg/revision/latest?cb=20241202112457",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Smoothie_King_Center.svg",
+    "sourceSha256": "da06bfefcc7301fadc817a952dbf8118f7c18da14e4a299070a8900e69e12ce3",
+    "ops": {
+      "keepNodes": [
+        "0",
+        "2",
+        "3/1"
+      ],
+      "viewBox": "-5.464 -7.394 199.642 156.986"
+    }
+  },
+  {
+    "teamId": "FOOD-SMASH",
+    "id": "primary",
+    "label": "Smashed burger icon",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/2/27/Smashburger_2021.svg/revision/latest?cb=20250509160332",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Smashburger_2021.svg",
+    "sourceSha256": "f021d983d0140feca5a021d2218a278eaa9a55a83c62fd860871b6bee9fc17b9",
+    "ops": {
+      "removeNodes": [
+        "2/0/8",
+        "2/0/9",
+        "2/0/10",
+        "2/0/11",
+        "2/0/12",
+        "2/0/13",
+        "2/0/14",
+        "2/0/15",
+        "2/0/16",
+        "2/0/17",
+        "2/0/18"
+      ],
+      "viewBox": "325.012 -45.552 1229.91 927.812"
+    }
+  },
+  {
+    "teamId": "FOOD-SNS",
+    "id": "primary",
+    "label": "Wings badge (1981)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/2/21/Steak_%27n_Shake_1981_logo.svg/revision/latest?cb=20240411030411",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Steak_'n_Shake_1981_logo.svg",
+    "sourceSha256": "f23d122f7931135114119c90797c886fd2b40edb3b9859e0eea18914b0ad53e2",
+    "ops": {
+      "viewBox": "1.957 26.376 253.085 204.257"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "FOOD-TGIF",
+    "id": "primary",
+    "label": "Red stripes",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Tgi_fridays_logo13.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Tgi_fridays_logo13.svg",
+    "sourceSha256": "d7c881b440fad954b79e0fe509db383d874231839bbba8d99c9fd990b71c59a4",
+    "ops": {
+      "removeNodes": [
+        "3/8"
+      ],
+      "viewBox": "-67.557 286.913 512.876 220.635"
+    }
+  },
+  {
+    "teamId": "FOOD-TIMS",
+    "id": "primary",
+    "label": "Wordmark",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/8/84/Tim_Hortons_2017.svg/revision/latest?cb=20221228231556",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Tim_Hortons_2017.svg",
+    "sourceSha256": "805bcc670ed545596b32ac3524cf5adb5e95a6da9d2a0b85c1ee0bdd3c25022e",
+    "ops": {
+      "viewBox": "-4.499 -4.499 121.464 31.651"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "FOOD-TSC",
+    "id": "primary",
+    "label": "Palm",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/3/33/TSCLogoNav.svg/revision/latest?cb=20260916124741",
+    "sourcePage": "https://logos.fandom.com/wiki/File:TSCLogoNav.svg",
+    "sourceSha256": "83497a5d50a6f3d3a68b0bcbea42914e70c300b549584d5734416c5d55540c7b",
+    "ops": {
+      "keepNodes": [
+        "0",
+        "1/0/0/21"
+      ],
+      "viewBox": "-149.289 -128.007 4030.8 3576.73"
+    }
+  },
+  {
+    "teamId": "FOOD-WC",
+    "id": "primary",
+    "label": "Castle outline",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/5/53/White_Castle_One_Color.svg/revision/latest?cb=20240517004459",
+    "sourcePage": "https://logos.fandom.com/wiki/File:White_Castle_One_Color.svg",
+    "sourceSha256": "56e5c19d737a0fcfdb65048a929df16bf39de771c8734dd03e243c73d395d232",
+    "ops": {
+      "keepNodes": [
+        "0",
+        "1/0/1",
+        "1/0/7"
+      ],
+      "viewBox": "-79.65 -79.64 2150.269 1863.659"
+    }
+  },
+  {
+    "teamId": "FOOD-WIENER",
+    "id": "primary",
+    "label": "W on red pill",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Wienerschnitzel_logo.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Wienerschnitzel_logo.svg",
+    "sourceSha256": "247fedfeb83c863c5dfc23f7525dfc9b5fffca6c64b9faceec3912603077c8a8",
+    "ops": {
+      "keepNodes": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "viewBox": "-3.029 -3.029 81.789 59.343"
+    }
+  },
+  {
+    "teamId": "CAR-ALFA",
+    "id": "flat-2015",
+    "label": "Flat badge (2015)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/d/d4/Alfa_Romeo_2015_flat.svg/revision/latest?cb=20210325122754",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Alfa_Romeo_2015_flat.svg",
+    "sourceSha256": "9a120254dc6e69b9c1c56fe9110236c10ab1a2897b470087b918eac980f07713",
+    "ops": {
+      "viewBox": "-20 -20 540 540"
+    }
+  },
+  {
+    "teamId": "CAR-ALFA",
+    "id": "sketch-2015",
+    "label": "Sketch badge (2015)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/f/f4/Alfa_Romeo_2015_sketch.svg/revision/latest?cb=20210325122755",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Alfa_Romeo_2015_sketch.svg",
+    "sourceSha256": "6cf98c18dcffc34b943260575dbcbf8dca5963dcf08d57b948925db7bd5b2e0a",
+    "ops": {
+      "viewBox": "-20 -20 540 540"
+    }
+  },
+  {
+    "teamId": "CAR-AUDI",
+    "id": "oval-1978",
+    "label": "Red oval (1978)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/9/91/Audi_%281978%29.svg/revision/latest?cb=20200801050020",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Audi_(1978).svg",
+    "sourceSha256": "25c0bbb79dadc0e814d0785a52d73542a7a7125c2dd04996264cb517daa3e314",
+    "ops": {
+      "viewBox": "-39.999 -39.999 1079.962 730.085"
+    }
+  },
+  {
+    "teamId": "CAR-AUDI",
+    "id": "rings-2016",
+    "label": "Black rings (2016)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/7/7d/Audi_2016.svg/revision/latest?cb=20260614040148",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Audi_2016.svg",
+    "sourceSha256": "1c6e012aa56c24eed88f9a4309dc4b298b07381abf6c2c35a670ec71fad304c0",
+    "ops": {
+      "viewBox": "-54 -53 2754 1040"
+    }
+  },
+  {
+    "teamId": "CAR-BENTLEY",
+    "id": "wings-2002",
+    "label": "Wings (2002)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/3/38/Bentley_-_2002sy.svg/revision/latest?cb=20250702093822",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Bentley_-_2002sy.svg",
+    "sourceSha256": "170bbab80b34e5e99e43ff8803fb597b3f45fedfd1baad751f435a7e154b1a54",
+    "ops": {
+      "viewBox": "-50.64 -50.64 1367.28 511.28"
+    }
+  },
+  {
+    "teamId": "CAR-BMW",
+    "id": "gray-roundel",
+    "label": "Gray roundel",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/BMW_logo_%28gray%29.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:BMW_logo_(gray).svg",
+    "sourceSha256": "d797f1774d210ba5d2854dfca6927ca95e8fa3c464efb1800bd2f4b90b91413a",
+    "ops": {
+      "viewBox": "-3.634 -3.634 98.126 98.126"
+    }
+  },
+  {
+    "teamId": "CAR-BMW",
+    "id": "m-stripes",
+    "label": "M stripes",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/5/55/BMW_M_1993.svg/revision/latest?cb=20190307023726",
+    "sourcePage": "https://logos.fandom.com/wiki/File:BMW_M_1993.svg",
+    "sourceSha256": "2cc42cd46136670163c068479221ba7b32a286c11707fc5708f6c24991df096b",
+    "ops": {
+      "viewBox": "-2.319 -2.321 62.616 25.599"
+    }
+  },
+  {
+    "teamId": "CAR-CADILLAC",
+    "id": "wreath-crest",
+    "label": "Wreath crest",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/f/fc/Cadillac_logo.svg/revision/latest?cb=20200504034827",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Cadillac_logo.svg",
+    "sourceSha256": "423c133482854d94f9ba10b187bd1c01b68519887125475a86f9a506a9311034",
+    "ops": {
+      "viewBox": "-14.832 -14.832 400.473 372.166"
+    }
+  },
+  {
+    "teamId": "CAR-CHEVY",
+    "id": "outline-bowtie",
+    "label": "Outline bowtie",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Chevrolet_bowtie_2023.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Chevrolet_bowtie_2023.svg",
+    "sourceSha256": "3c44365f4ca7388345f3bc675373e6382508b46d2e510c6ad768acb792853e20",
+    "ops": {
+      "viewBox": "-3.76 -3.76 101.52 37.514"
+    }
+  },
+  {
+    "teamId": "CAR-DODGE",
+    "id": "db-triangle-1914",
+    "label": "DB triangle (1914)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/5/5e/Dodge_%281914%29.svg/revision/latest?cb=20241002163030",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Dodge_(1914).svg",
+    "sourceSha256": "e59d7f0eb649d9ec8a067716227fa9631a18fb385b1001800fab6359050b1d8a",
+    "ops": {
+      "viewBox": "-11.3 -11.3 272.167 305.095"
+    }
+  },
+  {
+    "teamId": "CAR-FERRARI",
+    "id": "scudetto",
+    "label": "Scuderia shield",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/4/4f/Scuderia_Ferrari_Logo1.svg/revision/latest?cb=20181125213943",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Scuderia_Ferrari_Logo1.svg",
+    "sourceSha256": "93150eb42d3ec7854bf4835d6b3edaf2d4a3d74d9985f84d7897565984dfc3eb",
+    "ops": {
+      "viewBox": "-11.04 -11.04 222.08 298.08"
+    }
+  },
+  {
+    "teamId": "CAR-HONDA",
+    "id": "wing-1961",
+    "label": "Wing (1961)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/6/6b/Honda_%281961%29.svg/revision/latest?cb=20210621031751",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Honda_(1961).svg",
+    "sourceSha256": "39db0a47d307cb56687b171e07114c14d23e025209d9c5f122b68d0fc9626f13",
+    "ops": {
+      "viewBox": "-48.512 -48.604 1319.345 608.722"
+    }
+  },
+  {
+    "teamId": "CAR-HYUNDAI",
+    "id": "distancing-h",
+    "label": "Distancing H (2020)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/a/a0/Hyundai_%28Symbol%29_%28Social_Distancing%29.svg/revision/latest?cb=20250209051357",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Hyundai_(Symbol)_(Social_Distancing).svg",
+    "sourceSha256": "3c45d4376bd61dcbd58a6b3ea4865d4c7554e6a99fab25e5b3b2abe9da172526",
+    "ops": {
+      "viewBox": "-59.602 -59.602 1609.243 882.459"
+    }
+  },
+  {
+    "teamId": "CAR-HYUNDAI",
+    "id": "silver-h",
+    "label": "Silver H",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/f/f3/Hyundai_%28Symbol%29_%28Silver%29.svg/revision/latest?cb=20250209051330",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Hyundai_(Symbol)_(Silver).svg",
+    "sourceSha256": "33346f09cdeca4128fb0937b22a44f7d3a322290a889ef9be8bac83b20fe3f3d",
+    "ops": {
+      "viewBox": "-12 -12 324 178.37"
+    }
+  },
+  {
+    "teamId": "CAR-JAGUAR",
+    "id": "monogram-2024",
+    "label": "Monogram (2024)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/2/28/Jaguar_2024_symbol_Print.svg/revision/latest?cb=20241123075116",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Jaguar_2024_symbol_Print.svg",
+    "sourceSha256": "8863b454149c183c13e544859c949252bb0d96f42557d417d6d645008ffa0424",
+    "ops": {
+      "viewBox": "-11.889 -11.889 320.977 320.992"
+    }
+  },
+  {
+    "teamId": "CAR-LAMBO",
+    "id": "bull-2024",
+    "label": "Bull (2024)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/8/82/Lamborghini_%282024%29_%28Bull%29.svg/revision/latest?cb=20240928015628",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Lamborghini_(2024)_(Bull).svg",
+    "sourceSha256": "e70dfb8e632b900f561275948614ce698e201131fa85af84e4609e3782d6e1d5",
+    "ops": {
+      "viewBox": "-54.814 -54.814 1284.405 1479.967"
+    }
+  },
+  {
+    "teamId": "CAR-MASERATI",
+    "id": "trident-1954",
+    "label": "Trident (1954)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/2/24/Maserati_1954.svg/revision/latest?cb=20220524105217",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Maserati_1954.svg",
+    "sourceSha256": "b97cf6ef69d4c947fac9b07b368d4d07472ebf1095da6a097dbd7f0937250177",
+    "ops": {
+      "viewBox": "-2.137 -2.137 42.826 57.705"
+    }
+  },
+  {
+    "teamId": "CAR-MB",
+    "id": "element-1989",
+    "label": "Faceted star (1989)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/8/8d/Mercedes-Benz_%281989%29_%28Element%29.svg/revision/latest?cb=20250419120926",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Mercedes-Benz_(1989)_(Element).svg",
+    "sourceSha256": "6f7054a1eb8004e83e36c5ff7c793055c0c88d717ea948f3aa3be13a003a5d0f",
+    "ops": {
+      "viewBox": "-83.351 -83.351 2250.478 2116.378"
+    }
+  },
+  {
+    "teamId": "CAR-MB",
+    "id": "star-1933",
+    "label": "Star (1933)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/b/bc/Mercedes-Benz_1933.svg/revision/latest?cb=20250911203607",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Mercedes-Benz_1933.svg",
+    "sourceSha256": "d13211761ff11956f63a2d3c47570d56351f36f3587b688bcf1520c08d3ad206",
+    "ops": {
+      "viewBox": "-16.762 -16.762 448.065 452.585"
+    }
+  },
+  {
+    "teamId": "CAR-MCLAREN",
+    "id": "speedmark-1991",
+    "label": "Speedmark (1991)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/e/ee/McLaren_%281991%2C_icon%29.svg/revision/latest?cb=20260922214514",
+    "sourcePage": "https://logos.fandom.com/wiki/File:McLaren_(1991,_icon).svg",
+    "sourceSha256": "adc9cea82061dccd268ad04a8dbad870428aeff8de724853f940f1cd45957b56",
+    "ops": {
+      "viewBox": "-15.585 -15.215 434.29 407.11"
+    }
+  },
+  {
+    "teamId": "CAR-MCLAREN",
+    "id": "speedmark-2022",
+    "label": "Speedmark (2022)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/b/b4/McLaren_%282022%2C_icon%29.svg/revision/latest?cb=20260922220326",
+    "sourcePage": "https://logos.fandom.com/wiki/File:McLaren_(2022,_icon).svg",
+    "sourceSha256": "303c9a9f88378baa0d367d3cf59ed122d1c53f54b4530ce198e36cb5750cf2cb",
+    "ops": {
+      "viewBox": "-10.791 -10.391 280.55 162.981"
+    }
+  },
+  {
+    "teamId": "CAR-SUBARU",
+    "id": "stars-1953",
+    "label": "Six stars (1953)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/9/95/Subaru_1953_Print.svg/revision/latest?cb=20230428081220",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Subaru_1953_Print.svg",
+    "sourceSha256": "2ea3da704af6a1baf4b0a8e5af296966f6c480d489edbc6fd55e6cca50022cbf",
+    "ops": {
+      "viewBox": "-15.564 -15.564 420.228 280.428"
+    }
+  },
+  {
+    "teamId": "CAR-TESLA",
+    "id": "red-t",
+    "label": "Red T",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/b/be/Tesla_%28Symbol%29.svg/revision/latest?cb=20250430093443",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Tesla_(Symbol).svg",
+    "sourceSha256": "14589e9957ffdf91505f4bd8ecb7bdcd4a9e19ab746f3499c5096cbf83ba466d",
+    "ops": {
+      "viewBox": "-9.684 -9.641 273.888 272.788"
+    }
+  },
+  {
+    "teamId": "CAR-VW",
+    "id": "cog-1937",
+    "label": "Cog wheel (1937)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/0/0f/Volkswagen_%281937%29.svg/revision/latest?cb=20221117130627",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Volkswagen_(1937).svg",
+    "sourceSha256": "7b5dc897f7cd2c54258a2f4593c714fa83fe230a2e7c58ce35eecd0b2e68ebf4",
+    "ops": {
+      "viewBox": "-2.885 -2.885 77.893 77.893"
+    }
+  },
+  {
+    "teamId": "CAR-VW",
+    "id": "roundel-1960",
+    "label": "Roundel (1960)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/7/72/Volkswagen_1960.svg/revision/latest?cb=20190910092158",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Volkswagen_1960.svg",
+    "sourceSha256": "f537ea29fbc4d83921a517c1f1806f840cd49ca75d9ff93332fe942f985aaa2a",
+    "ops": {
+      "viewBox": "-30.36 -30.36 819.72 819.72"
+    }
+  },
+  {
+    "teamId": "CLOTH-ADIDAS",
+    "id": "lines-1991",
+    "label": "Three bars (1991)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/e/e8/Adidas_%281991%29_%28Line%29.svg/revision/latest?cb=20260717233845",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Adidas_(1991)_(Line).svg",
+    "sourceSha256": "ab57dcb15dc3b1c0a638f2285831f928dc1f5292d3306f75c2e9c748525040de",
+    "ops": {
+      "viewBox": "-40 -40 1080 673"
+    }
+  },
+  {
+    "teamId": "CLOTH-BAPE",
+    "id": "brown-ape",
+    "label": "Brown ape head",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/1/16/A_Bathing_Ape_%281993%29.svg/revision/latest?cb=20221117235315",
+    "sourcePage": "https://logos.fandom.com/wiki/File:A_Bathing_Ape_(1993).svg",
+    "sourceSha256": "da1402aa8f4d7f2c2b57f8f6098c6878c35b5064a5d7370ef0d18327196ae3f6",
+    "ops": {
+      "viewBox": "-10.887 -10.887 206.932 293.954"
+    }
+  },
+  {
+    "teamId": "CLOTH-CARHARTT",
+    "id": "black-c",
+    "label": "One-color C",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/3/35/Carhartt_black_symbol.svg/revision/latest?cb=20230819014129",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Carhartt_black_symbol.svg",
+    "sourceSha256": "65275accfdd43914a65fb872717c47de0d1552f23d64b344742e302a018d8757",
+    "ops": {
+      "viewBox": "-10.94 -10.94 255.377 295.387"
+    }
+  },
+  {
+    "teamId": "CLOTH-CHAMPION",
+    "id": "mono-c",
+    "label": "One-color C",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/7/75/Champion_symbol_print.svg/revision/latest?cb=20220818154416",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Champion_symbol_print.svg",
+    "sourceSha256": "f1abb919a2e384fb3af08b4f9b9c931bfcddfefd19f81de5095874a6fb926fcd",
+    "ops": {
+      "viewBox": "-14.618 -14.618 394.682 266.087"
+    }
+  },
+  {
+    "teamId": "CLOTH-CONVERSE",
+    "id": "chevron-star-2017",
+    "label": "Star chevron (2017)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/1/13/Converse_2017-cropped.svg/revision/latest?cb=20260711034116",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Converse_2017-cropped.svg",
+    "sourceSha256": "25f58077863a1848f79a637104a8ad3ce88935af6e88ad295c42134997b006ce",
+    "ops": {
+      "viewBox": "-238.36 -225.36 6084.72 5275.72"
+    }
+  },
+  {
+    "teamId": "CLOTH-FILA",
+    "id": "f-box-1973",
+    "label": "F box (1973)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/0/0f/Fila_1973_%28F-Box%29.svg/revision/latest?cb=20250222141459",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Fila_1973_(F-Box).svg",
+    "sourceSha256": "042465f5541c7767040b33020edc6b31bf68e3b1819c1d5baef958d154c2b6ea",
+    "ops": {
+      "viewBox": "204.216 128.588 340.68 333.888"
+    }
+  },
+  {
+    "teamId": "CLOTH-HOLLISTER",
+    "id": "seagull",
+    "label": "Seagull",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/2/26/Hollister-seagul-icon-seeklogo.svg/revision/latest?cb=20250120233403",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Hollister-seagul-icon-seeklogo.svg",
+    "sourceSha256": "a92d5689b8acf622baf76fb4e038e9118de60179e61a8b7d68a292870bc2fb03",
+    "ops": {
+      "viewBox": "-27.021 -27.179 731.587 308.824"
+    }
+  },
+  {
+    "teamId": "CLOTH-OFFWHITE",
+    "id": "arrows-2015",
+    "label": "Crossed arrows (2015)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/e/e8/Off-White_%28Arrows%2C_2015%29.svg/revision/latest?cb=20240126135349",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Off-White_(Arrows,_2015).svg",
+    "sourceSha256": "a6d9668fd185f4cbaa08fa6df31eaaf1f220bf0ba7453c129957cd0d29aaf61e",
+    "ops": {
+      "viewBox": "-6.248 -6.248 127.66 168.694"
+    }
+  },
+  {
+    "teamId": "CLOTH-PUMA",
+    "id": "outline-cat",
+    "label": "Outline cat",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/1/1c/Puma_Outline.svg/revision/latest?cb=20190526001204",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Puma_Outline.svg",
+    "sourceSha256": "c28dedca17f68b59978127cc10be2980171263429d18564b8aa57dab01fbb343",
+    "ops": {
+      "viewBox": "-10.249 -10.262 330.72 263.931"
+    }
+  },
+  {
+    "teamId": "CLOTH-REEBOK",
+    "id": "vector-2019",
+    "label": "Vector (2019)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/1/1e/Reebok_2019iconPrint.svg/revision/latest?cb=20191112134153",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Reebok_2019iconPrint.svg",
+    "sourceSha256": "0e167f268f3eb736d39238203e792288a23ae4c6c1166d679bd6f8b790d43136",
+    "ops": {
+      "viewBox": "-22.588 -22.529 612 204.083"
+    }
+  },
+  {
+    "teamId": "CLOTH-UA",
+    "id": "original-1996",
+    "label": "Original mark (1996)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/1/1a/Under_Armour_Original.svg/revision/latest?cb=20170707045826",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Under_Armour_Original.svg",
+    "sourceSha256": "7ee35ae11e957d6a22399be420906d6f8177ab63013c28f2e803706959e0a734",
+    "ops": {
+      "viewBox": "-40 -40 1080 1044.847"
+    }
+  },
+  {
+    "teamId": "LUX-BURBERRY",
+    "id": "knight",
+    "label": "Equestrian knight",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/3/3c/Burberry_Blue_Prorsum_knight_Icon.svg/revision/latest?cb=20260621121555",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Burberry_Blue_Prorsum_knight_Icon.svg",
+    "sourceSha256": "436d04408409f4237895b206b499db8343e4d5415b54b026e8fd90a9009bb926",
+    "ops": {
+      "viewBox": "-40 -40 1080 762.9"
+    }
+  },
+  {
+    "teamId": "LUX-CHANEL",
+    "id": "circle",
+    "label": "Circled monogram",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/f/f3/Chanel_Circle.svg/revision/latest?cb=20170819050224",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Chanel_Circle.svg",
+    "sourceSha256": "346b5137f9aa14ccdc6fc59b0ca6d15803f7105a12c6090e721b01882b4ff12e",
+    "ops": {
+      "viewBox": "-40 -40 1080 1079.988"
+    }
+  },
+  {
+    "teamId": "LUX-GUCCI",
+    "id": "town-2021",
+    "label": "Town colors (2021)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/5/55/Gucci_Town_%28Symbol%29.svg/revision/latest?cb=20230514114018",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Gucci_Town_(Symbol).svg",
+    "sourceSha256": "8a250813b663402c993dfc119b0b3bfc0beebf85d5673711484bc660a45f3ad3",
+    "ops": {
+      "viewBox": "-4.818 -4.818 130.085 97.623"
+    }
+  },
+  {
+    "teamId": "LUX-KATE",
+    "id": "spade-tile",
+    "label": "Spade tile (2019)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/9/9c/Kate_Spade_New_York_%282019%29_icon.svg/revision/latest?cb=20191022104432",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Kate_Spade_New_York_(2019)_icon.svg",
+    "sourceSha256": "a8a54d32bd143dfa9899f3e01bbc68b82d4490e5094b096c620dcc9eee40d37a",
+    "ops": {
+      "viewBox": "-21.167 -21.167 571.5 571.5"
+    }
+  },
+  {
+    "teamId": "LUX-LV",
+    "id": "flower-1",
+    "label": "Monogram flower",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/d/d1/Louis_Vuitton_Flower_1.svg/revision/latest?cb=20171114125103",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Louis_Vuitton_Flower_1.svg",
+    "sourceSha256": "5b16ffc6b397ecc3b72e3c17cb0b619d9d50ba1ddb4ec32733a15da13eefa59e",
+    "ops": {
+      "viewBox": "-10.583 -10.583 285.75 285.75"
+    }
+  },
+  {
+    "teamId": "LUX-LV",
+    "id": "flower-2",
+    "label": "Monogram quatrefoil",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/d/d6/Louis_Vuitton_Flower_2.svg/revision/latest?cb=20171114125145",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Louis_Vuitton_Flower_2.svg",
+    "sourceSha256": "4d6988de2b054b995276415529fd74f4ac4386d489182c7389f15651fab2224e",
+    "ops": {
+      "viewBox": "-10.583 -10.583 285.75 285.75"
+    }
+  },
+  {
+    "teamId": "LUX-SWAROVSKI",
+    "id": "pink-swan",
+    "label": "Pink swan (2021)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/3/3c/Swarovski_2021_Pink.svg/revision/latest?cb=20210821165433",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Swarovski_2021_Pink.svg",
+    "sourceSha256": "cc6f23364ef63d365689bb9bcab9f6466952856d836ef2bd8507b2a39b02f5e5",
+    "ops": {
+      "viewBox": "-60.92 -60.92 1346.84 1644.84"
+    }
+  },
+  {
+    "teamId": "TV-BET",
+    "id": "pink-star-tile",
+    "label": "Pink tile with star",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/0/0d/BET_%28Pink%29.svg/revision/latest?cb=20210117113439",
+    "sourcePage": "https://logos.fandom.com/wiki/File:BET_(Pink).svg",
+    "sourceSha256": "1d97c8d46015d388db7ecc598714e98e2dfaa6702f0c6900ceb498abd580fc0b",
+    "ops": {
+      "viewBox": "-40 -40 1080 759.733"
+    }
+  },
+  {
+    "teamId": "TV-BOOM",
+    "id": "b-star-2014",
+    "label": "B with star (2014)",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Boomerang_2014_logo.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Boomerang_2014_logo.svg",
+    "sourceSha256": "cdb15e84403194c2a999317614cf0d0ada09abef9471a23951b5bf61480e3268",
+    "ops": {
+      "viewBox": "-12 -12 324 251.906"
+    }
+  },
+  {
+    "teamId": "TV-DISC",
+    "id": "d-globe-2019",
+    "label": "Globe in D (2019)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/f/ff/Discovery_Channel_2019_%28Symbol%29.svg/revision/latest?cb=20210519151253",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Discovery_Channel_2019_(Symbol).svg",
+    "sourceSha256": "25b47f213570bdc46f2cd6bd08b2fc90fd7b96fa37b9184ead1b233664580f61",
+    "ops": {
+      "viewBox": "-40 -40 958.195 1080"
+    }
+  },
+  {
+    "teamId": "TV-DISNEY",
+    "id": "ears-2019",
+    "label": "Ear outline (2019)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/e/e1/Disney_Channel_white_and_blue.svg/revision/latest?cb=20250110195322",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Disney_Channel_white_and_blue.svg",
+    "sourceSha256": "f520424b4a7782480d945be67d9108ae74136893a43a7a0f6d74ce090d2b335d",
+    "ops": {
+      "viewBox": "-12.584 -12.584 339.756 152.516"
+    }
+  },
+  {
+    "teamId": "TV-MTV",
+    "id": "outline-m-1981",
+    "label": "Outline M (1981)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/c/c4/MTV_%281981%29_%28White_Outlined%29.svg/revision/latest?cb=20251024000519",
+    "sourcePage": "https://logos.fandom.com/wiki/File:MTV_(1981)_(White_Outlined).svg",
+    "sourceSha256": "c7db3aca7e1163c5fe1438cbbdc99f3406dff91fa238dc98b5db493038beee01",
+    "ops": {
+      "viewBox": "-10.583 -10.583 285.75 225.843"
+    }
+  },
+  {
+    "teamId": "TV-NATGEO",
+    "id": "black-border",
+    "label": "One-color border",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/7/79/National_Geographic_%28Print%29.svg/revision/latest?cb=20201205130309",
+    "sourcePage": "https://logos.fandom.com/wiki/File:National_Geographic_(Print).svg",
+    "sourceSha256": "427c6a9dbac34b871aa85db4b7ffc2864b52f273e33a69ee8e55d8246948c0d8",
+    "ops": {
+      "viewBox": "-40 -40 777.8 1080"
+    }
+  },
+  {
+    "teamId": "TV-PBS",
+    "id": "pink-head",
+    "label": "Pink head (2025)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/d/de/PBS_%28Right_P_Head_Female%29.svg/revision/latest?cb=20260928075422",
+    "sourcePage": "https://logos.fandom.com/wiki/File:PBS_(Right_P_Head_Female).svg",
+    "sourceSha256": "3a7143abe42bf2eec14feb34d2edbe8bb44ff0a7232367eea757b28dda5a012d",
+    "ops": {
+      "viewBox": "-54.48 -54.48 1208.96 1497.96"
+    }
+  },
+  {
+    "teamId": "TV-UNIVISION",
+    "id": "tulip-1990",
+    "label": "Flat tulip (1990)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/a/af/Univision_%281990%29_%27U%27.svg/revision/latest?cb=20260922141854",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Univision_(1990)_'U'.svg",
+    "sourceSha256": "5d9e50264cfa1ca3f3cf622076104faa2ea4a6f44c2c2ed851e0c8363240dcac",
+    "ops": {
+      "viewBox": "-30.823 -30.823 832.213 831.978"
+    }
+  },
+  {
+    "teamId": "BRAND-BARBIE",
+    "id": "wordmark",
+    "label": "Wordmark",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/d/d8/Barbie.svg/revision/latest?cb=20200804123148",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Barbie.svg",
+    "sourceSha256": "614b4a8ec39e6f1d38844825ecf7ee8680f6523fb68ca75697e9ff7311eeba52",
+    "ops": {
+      "viewBox": "-40 -40 1080 574.825"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "CHAR-ANIMALCROSSING",
+    "id": "leaf",
+    "label": "Plain leaf",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Animal_Crossing_Leaf.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Animal_Crossing_Leaf.svg",
+    "sourceSha256": "fbc479259a157193aa81c441bffc72beacd24e7783ed65792a722837efc6f3fb",
+    "ops": {
+      "viewBox": "-13.05 -13.047 352.335 337.147"
+    }
+  },
+  {
+    "teamId": "CHAR-APERTURE",
+    "id": "stripes-70s",
+    "label": "Striped symbol (70s)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/5/51/Aperture_Science_70s_Symbol.svg/revision/latest?cb=20190609012132",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Aperture_Science_70s_Symbol.svg",
+    "sourceSha256": "ee9440abc2e66be3c7b67671880cdd2f57de2c78fc0e4b98312574503a1b7af5",
+    "ops": {
+      "viewBox": "-5.776 -5.776 155.919 155.961"
+    }
+  },
+  {
+    "teamId": "CHAR-BATMAN",
+    "id": "signal-1966",
+    "label": "Signal bat (1966)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/1/11/Bat_Signal_1966.svg/revision/latest?cb=20230923213344",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Bat_Signal_1966.svg",
+    "sourceSha256": "5e9fcbc00a1e730b2e58a33be3577590288903104dd6d2bf230a82cb04979ac2",
+    "ops": {
+      "viewBox": "-2.049 -2.05 55.337 52.099"
+    }
+  },
+  {
+    "teamId": "CHAR-CREEPER",
+    "id": "grass-block",
+    "label": "Grass block",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/b/b4/Minecraft_2014_Bedrock.svg/revision/latest?cb=20230630003941",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Minecraft_2014_Bedrock.svg",
+    "sourceSha256": "8e6d5740479b0afb8596516f500801b280d54efaa36bfb15fb5570d0011cee0c",
+    "ops": {
+      "viewBox": "-42.521 -42.147 1064.305 1215.004"
+    }
+  },
+  {
+    "teamId": "CHAR-AOT",
+    "id": "primary",
+    "label": "Title wordmark",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/2/23/Attack_on_Titan.svg/revision/latest?cb=20201217131605",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Attack_on_Titan.svg",
+    "sourceSha256": "fd62cd35fc6cf1cca15bd0b7d2f1aebdfca478747c2ae865687e12590ef205df",
+    "ops": {
+      "viewBox": "-43.181 -43.181 1165.875 372.51"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "CHAR-APEX",
+    "id": "primary",
+    "label": "Apex symbol",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/f/f8/Apex_Legends_Symbol.svg/revision/latest?cb=20260805094800",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Apex_Legends_Symbol.svg",
+    "sourceSha256": "faf4678cdce48c8acb42db426530ff8dc9043c259de33fff0f933f485bfaea1e",
+    "ops": {
+      "viewBox": "-39.96 -39.96 1078.92 1049.92"
+    }
+  },
+  {
+    "teamId": "CHAR-BETTY",
+    "id": "primary",
+    "label": "1932 figure",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Betty_Boop%2C_April_1932.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Betty_Boop,_April_1932.svg",
+    "sourceSha256": "4538ff78fa8218a16a1068fb75c851c78078a008eb91d85f5e2068ae72953e17",
+    "ops": {
+      "viewBox": "-1.089 -1.089 16.265 29.395"
+    }
+  },
+  {
+    "teamId": "CHAR-BLUEY",
+    "id": "primary",
+    "label": "Title wordmark",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/6/63/Bluey.svg/revision/latest?cb=20201126215832",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Bluey.svg",
+    "sourceSha256": "634813ffd03402faae4df4fc963d03179ffd9178448f5bd6a5d921611d98a4b6",
+    "ops": {
+      "viewBox": "-40 -40 1080 553.998"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "CHAR-BOND",
+    "id": "primary",
+    "label": "Gun logo",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/4/4c/007_Logo_2.svg/revision/latest?cb=20170912112900",
+    "sourcePage": "https://logos.fandom.com/wiki/File:007_Logo_2.svg",
+    "sourceSha256": "7474efae62671789f53061b4e3884c260fc1c328315a146e80360529e0971de0",
+    "ops": {
+      "viewBox": "-40.5 -40.2 1080 397.155"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "CHAR-BRAWL",
+    "id": "primary",
+    "label": "Skull tile",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/e/ec/Brawl-Stars-Icon.svg/revision/latest?cb=20241020030356",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Brawl-Stars-Icon.svg",
+    "sourceSha256": "b9c6457a3eb62e7b9b47419a733d7eefb24dd40be9a55fdd5f4664bc652831d8",
+    "ops": {
+      "viewBox": "-14.4 -14.4 388.8 388.8"
+    }
+  },
+  {
+    "teamId": "CHAR-COD",
+    "id": "primary",
+    "label": "Wordmark",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/c/c9/Call_of_Duty_2003.svg/revision/latest?cb=20220623131848",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Call_of_Duty_2003.svg",
+    "sourceSha256": "25e4c7aceda68567fa4a03117ae21c9ca33b4bd64322ae1371c05a74101e6f3d",
+    "ops": {
+      "viewBox": "-40 -40 1080 263.026"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "CHAR-DEATHSTAR",
+    "id": "primary",
+    "label": "Battle station",
+    "sourceUrl": "https://api.iconify.design/game-icons/death-star.svg?color=%23000000",
+    "sourcePage": "https://icon-sets.iconify.design/game-icons/death-star/",
+    "sourceSha256": "a0cb031a8930e90e6d296de16d63aa4e3806d9409a55ca771476cd3d1b521c7c",
+    "ops": {
+      "viewBox": "14.2 14.08 483.62 483.84"
+    }
+  },
+  {
+    "teamId": "CHAR-DEMONSLAYER",
+    "id": "primary",
+    "label": "Kanji title",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Kimetsu_no_Yaiba_logo.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Kimetsu_no_Yaiba_logo.svg",
+    "sourceSha256": "e9d2c224e7386e490b13ed8e6568114caccbd4e64cf9d82d81334d6f38f598fe",
+    "ops": {
+      "viewBox": "-28.8 -28.8 777.6 467.059"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "CHAR-DK",
+    "id": "primary",
+    "label": "Wordmark (2024)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/0/0e/Donkey_Kong_2024.svg/revision/latest?cb=20260917224102",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Donkey_Kong_2024.svg",
+    "sourceSha256": "1a937d7f275e24a1bde1cb2a90fe7967a46c2cabfb0175b4db9b90cb6b4bddbc",
+    "ops": {
+      "viewBox": "-23.927 -23.938 646.048 147.565"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "CHAR-DOCTORWHO",
+    "id": "primary",
+    "label": "Police box emoji",
+    "sourceUrl": "https://api.iconify.design/openmoji/tardis.svg",
+    "sourcePage": "https://icon-sets.iconify.design/openmoji/tardis/",
+    "sourceSha256": "ea3d6ee79f2552abc6c5db3cc22e992a8283a0348fea9d46452ecf74f6f91190",
+    "ops": {
+      "viewBox": "20.76 5.76 30.48 60.48"
+    }
+  },
+  {
+    "teamId": "CHAR-DOCTORWHO",
+    "id": "wordmark",
+    "label": "Wordmark (1970)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/8/81/Doctor_Who_1970_PURE.svg/revision/latest?cb=20240811052247",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Doctor_Who_1970_PURE.svg",
+    "sourceSha256": "a42e564d7904500485561a0ee0f4d0d57310a43e337ce101d9f29d3eeceff7c6",
+    "ops": {
+      "viewBox": "-12.598 -12.598 340.154 190.451"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "CHAR-ELDENRING",
+    "id": "primary",
+    "label": "Title wordmark",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/c/c9/Elden_Ring.svg/revision/latest?cb=20220615200010",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Elden_Ring.svg",
+    "sourceSha256": "3c7895adea828faed8d65a8fc78d43b7422237e5995be6b5a7e423ad2c6e6abc",
+    "ops": {
+      "viewBox": "-35.126 -35.126 948.391 198.675"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "CHAR-EMPIRE",
+    "id": "primary",
+    "label": "Imperial crest",
+    "sourceUrl": "https://api.iconify.design/fa6-brands/empire.svg?color=%23000000",
+    "sourcePage": "https://icon-sets.iconify.design/fa6-brands/empire/",
+    "sourceSha256": "457ddcb2e42af765c06db49f8091a457a2aabc581e5b176952b16d51748260d5",
+    "ops": {
+      "viewBox": "-19.84 -11.84 535.68 535.68"
+    }
+  },
+  {
+    "teamId": "CHAR-ENCANTO",
+    "id": "primary",
+    "label": "Title wordmark",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/f/fa/Disney_Encanto.svg/revision/latest?cb=20210815125322",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Disney_Encanto.svg",
+    "sourceSha256": "6f7568a47e9acf07d407ef5d66116655cd24fdca59185db18d2ab0ce21343031",
+    "ops": {
+      "viewBox": "-39.999 -39.999 1080.001 503.018"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "CHAR-FALLGUYS",
+    "id": "primary",
+    "label": "Wordmark",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/a/a3/Fall_Guys.svg/revision/latest?cb=20220517231053",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Fall_Guys.svg",
+    "sourceSha256": "2b16c1dab1ace416f79ef22dd5ec2d2afdfa0d30ecf240ee0d7ae45236f5b8a7",
+    "ops": {
+      "viewBox": "-16.669 -16.669 639.06 567.127"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "CHAR-FELIX",
+    "id": "primary",
+    "label": "Walking cat",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Felix_for_Judy_-_Svg.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Felix_for_Judy_-_Svg.svg",
+    "sourceSha256": "1ec69652e4098f12f361bfb4fbf30cd4341d1a61bb6a9ee9ca8b55646c7ca26f",
+    "ops": {
+      "viewBox": "4.124 -11.838 598.772 680.649"
+    }
+  },
+  {
+    "teamId": "CHAR-FROZEN",
+    "id": "primary",
+    "label": "Title wordmark",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Frozen_Logo_Black.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Frozen_Logo_Black.svg",
+    "sourceSha256": "0211f76bb1884fa68200a6b1790f0b58d48ad809a6b6908418310b58d5d85e27",
+    "ops": {
+      "viewBox": "-10.799 -10.803 291.588 118.374"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "CHAR-GIJOE",
+    "id": "primary",
+    "label": "Star shield",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/c/cd/G.I._Joe_%28Symbol%29.svg/revision/latest?cb=20200706193640",
+    "sourcePage": "https://logos.fandom.com/wiki/File:G.I._Joe_(Symbol).svg",
+    "sourceSha256": "e778a29d3cdf588f6584a2d42d7045981a6d4499ba2cb8ed157f7b63c6b6cd7f",
+    "ops": {
+      "viewBox": "-40 -40 928.155 1080"
+    }
+  },
+  {
+    "teamId": "CHAR-GODZILLA",
+    "id": "primary",
+    "label": "Head silhouette (2023)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/7/7e/Godzilla_2023_logo.svg/revision/latest?cb=20251106024942",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Godzilla_2023_logo.svg",
+    "sourceSha256": "f6dd417cb3b70fe0bc8045f038c77f7d2e66c42d2cc8e038e6ba8ed702cf38b6",
+    "ops": {
+      "viewBox": "-44.403 92.588 1700.901 1822.46"
+    }
+  },
+  {
+    "teamId": "CHAR-GOT",
+    "id": "primary",
+    "label": "Title wordmark",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/7/71/Game_of_Thrones.svg/revision/latest?cb=20180324065353",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Game_of_Thrones.svg",
+    "sourceSha256": "d7b81f6ad583ffd196f420765e7597663042156d13310c55c37484550c074d63",
+    "ops": {
+      "viewBox": "-40 -40 1080 202.919"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "CHAR-GOW",
+    "id": "primary",
+    "label": "Omega icon (2016)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/b/b3/God_of_War_2016_%28Icon%29.svg/revision/latest?cb=20221110002755",
+    "sourcePage": "https://logos.fandom.com/wiki/File:God_of_War_2016_(Icon).svg",
+    "sourceSha256": "3d9b992abf77e2378e2497f709edb22338915f57cf32bf6a2dd142c4d429d476",
+    "ops": {
+      "viewBox": "-5.701 -5.701 153.928 136.842"
+    }
+  },
+  {
+    "teamId": "CHAR-GTA",
+    "id": "primary",
+    "label": "Oval wordmark (1999)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/5/51/Grand_Theft_Auto_1999.svg/revision/latest?cb=20171114080401",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Grand_Theft_Auto_1999.svg",
+    "sourceSha256": "5da4745e8bfce93123e722684ea47b3c1290fe6ca8fac139ad88dbe18f39e71c",
+    "ops": {
+      "viewBox": "-10.583 -10.583 285.75 131.485"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "CHAR-HALFLIFE",
+    "id": "primary",
+    "label": "Lambda",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/4/46/Half-Life_Lambda.svg/revision/latest?cb=20190608140846",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Half-Life_Lambda.svg",
+    "sourceSha256": "28b2f306d249e3481c48d1d31ae9a41785fe0a3b44c044cdbbcbbeab92bad798",
+    "ops": {
+      "viewBox": "1.995 1.995 144.953 144.952"
+    }
+  },
+  {
+    "teamId": "CHAR-HALFLIFE",
+    "id": "orange-lambda",
+    "label": "Orange symbol (sequel)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/8/88/Half-Life_logo.svg/revision/latest?cb=20190608235422",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Half-Life_logo.svg",
+    "sourceSha256": "a222c886ff049ab0492083b398ee22b6f0bcb3c898d8df52fd73558f99b7efb7",
+    "ops": {
+      "viewBox": "-27.843 -6.972 751.775 557.122"
+    }
+  },
+  {
+    "teamId": "CHAR-HUNGER",
+    "id": "primary",
+    "label": "Title wordmark",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Hunger_Games_%28Liongate_films%29_logo.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:The_Hunger_Games_(Liongate_films)_logo.svg",
+    "sourceSha256": "01afc07685a23f0d07ece9422c41eb6cd905cc0ee223067667c4e1d1448896ad",
+    "ops": {
+      "viewBox": "-4.134 -3.966 321.082 128.047"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "CHAR-INVADER",
+    "id": "primary",
+    "label": "Pixel alien",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Twemoji_1f47e.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Twemoji_1f47e.svg",
+    "sourceSha256": "0e071b6a2d2c3d8c6246bff5c17af0a775a90527eab5946e40bba2a7bdfe517c",
+    "ops": {
+      "viewBox": "-0.55 1.95 48.6 44.85"
+    }
+  },
+  {
+    "teamId": "CHAR-INVADER",
+    "id": "wordmark",
+    "label": "Wordmark",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/e/e5/Space_Invaders.svg/revision/latest?cb=20230104233928",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Space_Invaders.svg",
+    "sourceSha256": "5f8281273d2fe14c1b2b8b7fbd39ac837aba22e4740754da6241874ff8bcdee2",
+    "ops": {
+      "viewBox": "-40 -40 1080 513.107"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "CHAR-IRONMAN",
+    "id": "primary",
+    "label": "Title wordmark",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/5/5d/Iron_Man_%282008%29_II.svg/revision/latest?cb=20190519082618",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Iron_Man_(2008)_II.svg",
+    "sourceSha256": "d4cd96dff60d49467b041ef3a0b4ac19c437d9f2c72447a997614ffce95f6445",
+    "ops": {
+      "viewBox": "-40 -40 1080 304.604"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "CHAR-JJK",
+    "id": "primary",
+    "label": "Kanji title",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Jujutsu_Kaisen_%28Japanese%29_logo.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Jujutsu_Kaisen_(Japanese)_logo.svg",
+    "sourceSha256": "5d15299ac1002817abe88d673c576e4c3c9ce78bc70c3c67ce39d3d4765f2b4a",
+    "ops": {
+      "viewBox": "-5.904 -5.704 184.853 74.035"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "CHAR-KIRBY",
+    "id": "primary",
+    "label": "Wordmark",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Kirby-Logo-New.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Kirby-Logo-New.svg",
+    "sourceSha256": "c89bea95bd4eabb136e28291095955dc1d75e6563e4b0686339115676be5d656",
+    "ops": {
+      "viewBox": "-10.527 -10.527 284.218 134.368"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "CHAR-KUNGFUPANDA",
+    "id": "primary",
+    "label": "Title wordmark",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/2/22/Kung_Fu_Panda_%28Print%29.svg/revision/latest?cb=20210107222448",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Kung_Fu_Panda_(Print).svg",
+    "sourceSha256": "4971dfbe8d396f9af2ea89ba2f2313430a420f5b402636eac6500329a348ce10",
+    "ops": {
+      "viewBox": "-40 -40 1080 358.853"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "CHAR-LIONKING",
+    "id": "primary",
+    "label": "Title wordmark",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/5/56/The_Lion_King.svg/revision/latest?cb=20250320094712",
+    "sourcePage": "https://logos.fandom.com/wiki/File:The_Lion_King.svg",
+    "sourceSha256": "aa831435c60c6ca58e91846318ae0b24d00e111d64bf1fc3af9ff245dec60a32",
+    "ops": {
+      "viewBox": "-10.583 -10.583 285.75 73.375"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "CHAR-LOTR",
+    "id": "primary",
+    "label": "Ring inscription",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/One_Ring_inscription.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:One_Ring_inscription.svg",
+    "sourceSha256": "05952cbb5359df8614044f012beee6680660af447e711d47a13851e36c24979e",
+    "ops": {
+      "viewBox": "-29.202 -128.202 4595.45 1535.404"
+    }
+  },
+  {
+    "teamId": "CHAR-MARIO",
+    "id": "primary",
+    "label": "Power Star",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/SM64_Power_Star.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:SM64_Power_Star.svg",
+    "sourceSha256": "f24b0dd990b495900a936075362bf5c02ce1834805b8af00141f67d9ca092281",
+    "ops": {
+      "viewBox": "-6.48 -6.48 174.96 154.96"
+    }
+  },
+  {
+    "teamId": "CHAR-MARIO",
+    "id": "grand-star",
+    "label": "Grand Star",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/6/63/Grand_Star.svg/revision/latest?cb=20250106225113",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Grand_Star.svg",
+    "sourceSha256": "d9f25943e0b567f1ab9aa0295c6f68798011c650424574503a7ddea01d6c01f7",
+    "ops": {
+      "viewBox": "-9.171 -10.598 290.619 280.389"
+    }
+  },
+  {
+    "teamId": "CHAR-MARIO",
+    "id": "mushroom",
+    "label": "Red-capped power-up",
+    "sourceUrl": "https://api.iconify.design/game-icons/super-mushroom.svg?color=%23E52521",
+    "sourcePage": "https://icon-sets.iconify.design/game-icons/super-mushroom/",
+    "sourceSha256": "02caec1c4b2542329e60ce8fe6c05094f2d0bf8076944c999c8eed515cf6b72e",
+    "ops": {
+      "viewBox": "3.75 6.862 503.575 505.744"
+    }
+  },
+  {
+    "teamId": "CHAR-MARIO",
+    "id": "wordmark",
+    "label": "Series wordmark",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Mario_Series_Logo.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Mario_Series_Logo.svg",
+    "sourceSha256": "76a0825015d61e09d870fa75e5dc2aa0eec547a161451eaf93c19f6451ff9a94",
+    "ops": {
+      "viewBox": "-435.328 -435.296 11753.856 5966.16"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "CHAR-MHA",
+    "id": "primary",
+    "label": "Title wordmark",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/0/0e/My_Hero_Academia.svg/revision/latest?cb=20241009192208",
+    "sourcePage": "https://logos.fandom.com/wiki/File:My_Hero_Academia.svg",
+    "sourceSha256": "a298dfefef1348eded8391af7ee0e2b8ed3dbcbf215244c135a0dd3913c54320",
+    "ops": {
+      "viewBox": "-75.048 -75.048 2026.298 745.177"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "CHAR-MINIONS",
+    "id": "primary",
+    "label": "Title wordmark",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Minions_%28film%29_logo.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Minions_(film)_logo.svg",
+    "sourceSha256": "89ddf694f0fff4650ede5186739747f34451cef9d1a98a2cd292990e171b53b0",
+    "ops": {
+      "viewBox": "-12 -12 324 96.746"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "CHAR-MOANA",
+    "id": "primary",
+    "label": "Title wordmark",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Moana.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Moana.svg",
+    "sourceSha256": "5dcee55946ec8a9ff71b2045ef9f6a5ea0fa73e568e4ff39f3118b4be2ae9c6e",
+    "ops": {
+      "viewBox": "-1093.393 -1093.655 35521.927 10401.584"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "CHAR-NARUTO",
+    "id": "primary",
+    "label": "Title wordmark",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/f/fe/Naruto.svg/revision/latest?cb=20241009175408",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Naruto.svg",
+    "sourceSha256": "6d379f6662acf92c3e705b2dc0177a782eb5ed221dc9f13d5fe7fbd8ff682c38",
+    "ops": {
+      "viewBox": "-76.955 -76.955 2077.786 1005.819"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "CHAR-NEMO",
+    "id": "primary",
+    "label": "Title wordmark",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/1/1a/Finding_Nemo.svg/revision/latest?cb=20261020222509",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Finding_Nemo.svg",
+    "sourceSha256": "25b5a5ef984d05d3910beef6985a5a2af45aa42957bcce7c594610511ee8f9f2",
+    "ops": {
+      "viewBox": "-50.438 -50.438 1361.824 656.158"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "CHAR-ONEPIECE",
+    "id": "primary",
+    "label": "Title wordmark",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/7/72/One_Piece_Alternative_logo_version_2.svg/revision/latest?cb=20241029074458",
+    "sourcePage": "https://logos.fandom.com/wiki/File:One_Piece_Alternative_logo_version_2.svg",
+    "sourceSha256": "b0cc6ac3609487a9033d5609df145ad42c15f89d71ee84c263177956e9f664c0",
+    "ops": {
+      "viewBox": "-33.753 -33.614 909.456 669.165"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "CHAR-OSWALD",
+    "id": "primary",
+    "label": "Jumping rabbit",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Oswald_jump.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Oswald_jump.svg",
+    "sourceSha256": "9de7c9bd1134f6f111e92bb3c4bc92204f2e3520a791525230123abacc4c88c8",
+    "ops": {
+      "viewBox": "-8.553 -8.94 226.228 284.602"
+    }
+  },
+  {
+    "teamId": "CHAR-OSWALD",
+    "id": "pointing",
+    "label": "Pointing rabbit",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Oswald_pointing_at_himself_-_Color.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Oswald_pointing_at_himself_-_Color.svg",
+    "sourceSha256": "d731ba2b8a2ab1dd2e9141c0a05cba9d421283c8c2fed63af83fa2b78b4cf02f",
+    "ops": {
+      "viewBox": "-37.396 -36.178 912.126 1023.853"
+    }
+  },
+  {
+    "teamId": "CHAR-PACMAN",
+    "id": "primary",
+    "label": "Chomper with dots",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Pac-Man_eating_dots.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Pac-Man_eating_dots.svg",
+    "sourceSha256": "cc273cbc4c73d6f1d49e791e323fe02b16e8903ceeb5ae742910452cd009cc1c",
+    "ops": {
+      "keepNodes": [
+        "1",
+        "2"
+      ],
+      "viewBox": "0.84 0.84 31.32 15.32"
+    }
+  },
+  {
+    "teamId": "CHAR-PAW",
+    "id": "primary",
+    "label": "Badge with wordmark",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/6/69/Paw_Patrol_%28Print%29.svg/revision/latest?cb=20220413214709",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Paw_Patrol_(Print).svg",
+    "sourceSha256": "8b9bc7e5ae450efb20a7ffd22fba618d0ebc746650f7988af498aed9324f2e56",
+    "ops": {
+      "viewBox": "-40 -40 1080 934.786"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "CHAR-POOH",
+    "id": "primary",
+    "label": "Title wordmark",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Winnie_the_Pooh_%282011_film%29_logo.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Winnie_the_Pooh_(2011_film)_logo.svg",
+    "sourceSha256": "1fcbbe36f1b36572d26da5b9265ba01ebd4d15e40d2e6b271b855ae63745e7ae",
+    "ops": {
+      "viewBox": "-12 -12 324 208.507"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "CHAR-PUBG",
+    "id": "primary",
+    "label": "Helmet",
+    "sourceUrl": "https://api.iconify.design/simple-icons/pubg.svg?color=%23F2A900",
+    "sourcePage": "https://icon-sets.iconify.design/simple-icons/pubg/",
+    "sourceSha256": "28274addfd8b368ed0e6571904eaaacba716e7b4c4faf3c6d70809ae694e08e0",
+    "ops": {
+      "viewBox": "-0.96 2.233 25.92 19.534"
+    }
+  },
+  {
+    "teamId": "CHAR-SAILORMOON",
+    "id": "primary",
+    "label": "Title wordmark",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/8/83/Pretty_Guardian_Sailor_Moon_Crystal_Season_III.svg/revision/latest?cb=20210203061835",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Pretty_Guardian_Sailor_Moon_Crystal_Season_III.svg",
+    "sourceSha256": "312b4d1bd7416ad4af205d18790872740e407a0fff9f5a9c324745c4c4da9a64",
+    "ops": {
+      "viewBox": "-40 -40 1079.999 591.288"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "CHAR-SCOOBY",
+    "id": "primary",
+    "label": "Title wordmark",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/d/d9/Scooby-Doo%21_II.svg/revision/latest?cb=20200710083926",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Scooby-Doo!_II.svg",
+    "sourceSha256": "26d09b0114947bce91799160fcbdb16765bd440ea77ebed379e66a42f87325aa",
+    "ops": {
+      "viewBox": "-40 -40 1079.997 452.005"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "CHAR-SHARINGAN",
+    "id": "primary",
+    "label": "Three-tomoe eye",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Sharingan_Triple.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Sharingan_Triple.svg",
+    "sourceSha256": "87e5f655c638d58d602dcdc22809dd5ac3f0a5cfd6094b88225a81c35cca4102",
+    "ops": {
+      "viewBox": "-7.201 -7.201 314.403 314.403"
+    }
+  },
+  {
+    "teamId": "CHAR-SHREK",
+    "id": "primary",
+    "label": "Title wordmark",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Shrek_logo.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Shrek_logo.svg",
+    "sourceSha256": "a806259bba6aa79d00604ad2970e74ebfeec4e4c1d4bd41cc13ccae9f547ff30",
+    "ops": {
+      "viewBox": "-2317.56 -2321.56 65328.12 22104.12"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "CHAR-SMURFS",
+    "id": "primary",
+    "label": "Title wordmark (2019)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/2/25/The_Smurfs_2019_II.svg/revision/latest?cb=20190529100339",
+    "sourcePage": "https://logos.fandom.com/wiki/File:The_Smurfs_2019_II.svg",
+    "sourceSha256": "7e4742e3f73bd0ceda7136d191f70f2353d095b65a86b451ca4943e3c1de2978",
+    "ops": {
+      "viewBox": "-425.001 -187.919 1080.001 465.837"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "CHAR-SONIC",
+    "id": "primary",
+    "label": "Wordmark (2020)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/6/66/Sonic_the_Hedgehog_2020.svg/revision/latest?cb=20200108121328",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Sonic_the_Hedgehog_2020.svg",
+    "sourceSha256": "4d83c7b6b4fd55465aee9f983ac60b3c1cb45e9b83f1965a0058244e78ac9471",
+    "ops": {
+      "viewBox": "-40 -40 1080 411.223"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "CHAR-SPLATOON",
+    "id": "primary",
+    "label": "Wordmark",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/f/f3/Splatoon.svg/revision/latest?cb=20220625150051",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Splatoon.svg",
+    "sourceSha256": "1abc77e5f26db5c3021bba72b6a29f3a7185607c1e5487084bbfd9b5ca43fa4e",
+    "ops": {
+      "viewBox": "-40 -40 1080 547.127"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "CHAR-SPONGEBOB",
+    "id": "primary",
+    "label": "Title wordmark",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/c/c6/SpongeBob_SquarePants.svg/revision/latest?cb=20251217114337",
+    "sourcePage": "https://logos.fandom.com/wiki/File:SpongeBob_SquarePants.svg",
+    "sourceSha256": "56e0fe49e4bfbe873ea8bbad8fb6bb7bf6352d6a0ee8038470742dff53495e5e",
+    "ops": {
+      "viewBox": "-103.457 -44.435 1135.88 1199.269"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "CHAR-STITCH",
+    "id": "primary",
+    "label": "Title wordmark",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/7/73/Lilo_%26_Stitch.svg/revision/latest?cb=20220215135742",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Lilo_&_Stitch.svg",
+    "sourceSha256": "e7a1379b78ce1bf7ff3abb958d951f5e54857567828f0d3267fe3e70f8d188d8",
+    "ops": {
+      "viewBox": "-12 -12 324 78.612"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "CHAR-STRANGER",
+    "id": "primary",
+    "label": "Title wordmark",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/f/f5/Stranger_Things.svg/revision/latest?cb=20250612084933",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Stranger_Things.svg",
+    "sourceSha256": "2a84bddc06769148a702a8f5c46962d4521aee13b37597723bd8e2edb942e265",
+    "ops": {
+      "viewBox": "-33.266 -33.266 898.176 365.881"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "CHAR-TEENTITANS",
+    "id": "primary",
+    "label": "Title wordmark",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Teen_Titans.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Teen_Titans.svg",
+    "sourceSha256": "548deae51147971f58b278eefd4294b77db2d12c7113ce19914ec4772b9377f6",
+    "ops": {
+      "viewBox": "-37.539 -38.339 1035.159 1008.398"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "CHAR-THUNDERCATS",
+    "id": "primary",
+    "label": "Cat emblem",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/d/dd/Thundercats-Emblem.svg/revision/latest?cb=20260424050135",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Thundercats-Emblem.svg",
+    "sourceSha256": "d2848e49d30fcd7e954ca282834cf75826ac674a3ed93d728891bd24b405fa96",
+    "ops": {
+      "viewBox": "-19.825 -19.124 516.443 516.443"
+    }
+  },
+  {
+    "teamId": "CHAR-TMNT",
+    "id": "primary",
+    "label": "Title wordmark (1987)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/4/45/Teenage_Mutant_Ninja_Turtles_1987.svg/revision/latest?cb=20200707065848",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Teenage_Mutant_Ninja_Turtles_1987.svg",
+    "sourceSha256": "cbd208ed860631008f6e7305193d3993df03d77d76deea79c14ee26c206a42e0",
+    "ops": {
+      "viewBox": "-40.002 -40 1080.004 437.696"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "CHAR-TOYSTORY",
+    "id": "primary",
+    "label": "Title wordmark (1995)",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/d/d0/Toy_Story_1995.svg/revision/latest?cb=20250228061143",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Toy_Story_1995.svg",
+    "sourceSha256": "fa9ea3be9d6a0e916357d278561dc7f30423d65838206533ce609a1aaaaa1df1",
+    "ops": {
+      "viewBox": "-20.2 -20.2 545.402 431.933"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "CHAR-VADER",
+    "id": "primary",
+    "label": "Helmet emoji",
+    "sourceUrl": "https://api.iconify.design/openmoji/darth-vader.svg",
+    "sourcePage": "https://icon-sets.iconify.design/openmoji/darth-vader/",
+    "sourceSha256": "7f298604b0f614f8d50651bddabccc602356f1a9def6721041d7f773c9f8686a",
+    "ops": {
+      "viewBox": "15.313 11.746 41.417 51.232"
+    }
+  },
+  {
+    "teamId": "CHAR-WAKANDA",
+    "id": "primary",
+    "label": "Wakandan roundel",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Wakandan_roundel_flag_%283-2%29.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Wakandan_roundel_flag_(3-2).svg",
+    "sourceSha256": "b939400f4c039fc516997e2214fe656daa20e8e4107fe8ac8733815c02b9f232",
+    "ops": {
+      "viewBox": "-36 -36 972 672"
+    }
   },
   {
     "teamId": "LANDMARK-LIBERTY",

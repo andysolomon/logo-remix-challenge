@@ -76,6 +76,8 @@ for team in teams:
             text = data.decode('utf-8', 'replace')
             colors = artwork_colors(data)
             colors += [c for c in map(to_hex, re.findall(r'stop-color\\s*[:=]\\s*["\\']?\\s*(#[0-9a-fA-F]{3,8}|rgba?\\([^)]*\\)|[a-zA-Z]+)', text)) if c]
+            # A gradient stop without a stop-color paints the SVG default, black (as the brand refresh records).
+            colors += ['#000000'] * len(re.findall(r'<stop\\b(?![^>]*stop-color)[^>]*>', text))
             for raster in re.findall(r'data:image/[a-z]+;base64,([A-Za-z0-9+/=\\s]+)', text):
                 image = Image.open(io.BytesIO(base64.b64decode(raster))).convert('RGBA')
                 counts = {}

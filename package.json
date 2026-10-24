@@ -51,8 +51,11 @@
     "logos:wnba": "python3 scripts/download_brand_logos.py --league WNBA",
     "teams:wnba": "python3 scripts/build_brand_teams.py --league WNBA",
     "teams:education": "python3 scripts/build_education.py",
+    "teams:education": "python3 scripts/build_education.py",
     "logos:landmarks": "python3 scripts/download_brand_logos.py --league LANDMARK",
-    "teams:landmarks": "python3 scripts/build_brand_teams.py --league LANDMARK"
+    "teams:landmarks": "python3 scripts/build_brand_teams.py --league LANDMARK",
+    "logos:characters": "python3 scripts/download_brand_logos.py --league CHAR",
+    "teams:characters": "python3 scripts/build_brand_teams.py --league CHAR"
   },
   "dependencies": {
     "react": "^18.3.1",

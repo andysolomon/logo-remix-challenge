@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="31.32" height="15.32" viewBox="0.84 0.84 31.32 15.32" shape-rendering="crispEdges" fill-rule="evenodd">
+	<path fill="#FFF000" d="M 6 2 h 5 v 1 h 2 v 1 h 1 v 2 h -2 v 1 h -3 v 1 h -3 v 1 h 3 v 1 h 3 v 1 h 2 v 2 h -1 v 1 h -2 v 1 h -5 v -1 h -2 v -1 h -1 v -2 h -1 v -5 h 1 v -2 h 1 v -1 h 2 z" />
+	<path fill="#FFB9AF" d="M 15 8 h 2 v 2 h -2 z M 22 8 h 2 v 2 h -2 z M 29 8 h 2 v 2 h -2 z" />
+</svg>

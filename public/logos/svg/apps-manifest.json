@@ -131,6 +131,30 @@
             2
           ],
           "sha256": "00a0277b984f1f51fa5f37d5282b9d10275941e642b61aca4045f87da02e6b31"
+        },
+        {
+          "id": "pin-belo",
+          "label": "Pin belo variant",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/6/64/Airbnb_%282014%29_%28Symbol%29_%28Alt%29_%2811%29.svg/revision/latest?cb=20250301033045",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Airbnb_(2014)_(Symbol)_(Alt)_(11).svg",
+          "sourceSha256": "940f2819f7083e0a7e96e50028d71f5f68f8393c0707e2b28236b8708dfef14d",
+          "ops": {
+            "viewBox": "-40 -40 1009.132 1080"
+          },
+          "path": "/logos/svg/apps/alternates/airbnb-pin-belo.svg",
+          "format": "svg",
+          "colors": [
+            "#FF5A60",
+            "#7A001C",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#FF5A60",
+            "#7A001C",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "5bfd409dd1599838f0df580b52f4d0c81f84a957b8d2e617071f032691325f08"
         }
       ]
     },
@@ -247,6 +271,31 @@
           ],
           "unusedSourceSlots": [],
           "sha256": "ca4dcf6dcc8190dd69c6b5f981fd5f809438d8d57216910e924eacb878f822eb"
+        },
+        {
+          "id": "note-roundel",
+          "label": "Note roundel",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/e/e2/Apple_Music_circle.svg/revision/latest?cb=20250306204322",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Apple_Music_circle.svg",
+          "sourceSha256": "0135b06c664815195ded4bc3b3b8769baecd5eb9cf38e5c6e362d5ce9bda2c1e",
+          "ops": {
+            "viewBox": "-14.4 -14.4 388.8 388.792"
+          },
+          "path": "/logos/svg/apps/alternates/amusic-note-roundel.svg",
+          "format": "svg",
+          "colors": [
+            "#00BFFF",
+            "#FFFFFF",
+            "#FA233B",
+            "#FB5C74"
+          ],
+          "sourcePalette": [
+            "#FA233B",
+            "#FB5C74",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "f6c522228671132f4d090ef57fab3d324d4e0fc8046a0a203b327f4a8012ec3a"
         }
       ]
     },
@@ -290,6 +339,30 @@
           ],
           "unusedSourceSlots": [],
           "sha256": "133c3b0c2b832dcaf3add97ed985a767a8935d0ac6f3256cf24f31962fdd2106"
+        },
+        {
+          "id": "pencil-a-2013",
+          "label": "Pencil A tile (2013)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/7/7d/App_Store_%28iOS%29_2013.svg/revision/latest?cb=20160818151505",
+          "sourcePage": "https://logos.fandom.com/wiki/File:App_Store_(iOS)_2013.svg",
+          "sourceSha256": "c0a728ef481b0e1951f0a8224ee2d35e3bceb057139b2e96a92014f825cdb5bd",
+          "ops": {
+            "viewBox": "-40 -40 1080 1080"
+          },
+          "path": "/logos/svg/apps/alternates/appstore-pencil-a-2013.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#1AD4FD",
+            "#1D62F0"
+          ],
+          "sourcePalette": [
+            "#1D62F0",
+            "#1AD4FD",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "e05b9599eec142a487a7a7a992d5f9609efca28b5dcfb7765369ab6e3246c53e"
         }
       ]
     },
@@ -473,6 +546,30 @@
             2
           ],
           "sha256": "968ac7685ad30cd4a7d1c739268ef67473a517006480256a6ed80486e3264f36"
+        },
+        {
+          "id": "teal-tile",
+          "label": "Teal tile",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/8/81/ChatGPT.svg/revision/latest?cb=20230315025013",
+          "sourcePage": "https://logos.fandom.com/wiki/File:ChatGPT.svg",
+          "sourceSha256": "b65e82912a9e9da63760537111d1839320d6b67cead5e1ca4a88fe8cf6efb5a0",
+          "ops": {
+            "viewBox": "-6.484 -6.484 175.068 175.068"
+          },
+          "path": "/logos/svg/apps/alternates/chatgpt-teal-tile.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#74AA9C",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#74AA9C",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "48b3493a9f6fd7c78e460fe189e7bdb8a0df875bf4c65c7a0040e650e96edb4c"
         }
       ]
     },
@@ -563,6 +660,64 @@
           ],
           "unusedSourceSlots": [],
           "sha256": "13a6c8126d12676e5d9c8ef993c0366ac206921f2127c43cf66b2e9a1199b1fc"
+        },
+        {
+          "id": "canary",
+          "label": "Canary",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/4/44/Google_Chrome_Canary_2022_logo.svg/revision/latest?cb=20230525214955",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Google_Chrome_Canary_2022_logo.svg",
+          "sourceSha256": "3ed07dfe7acd22d7f7c2642e3f0e2fa3029147c9cb21b4b618e42dda172350db",
+          "ops": {
+            "viewBox": "-15.359 -15.36 414.679 414.709"
+          },
+          "path": "/logos/svg/apps/alternates/chrome-canary.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#F29900",
+            "#FBBC04",
+            "#FDD663"
+          ],
+          "sourcePalette": [
+            "#F6AA02",
+            "#FDD663",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "77eb52d5ebaacd1584eed87389ca40a5c168219ade204c85a37255b761a0bb85"
+        },
+        {
+          "id": "glossy-2011",
+          "label": "Glossy icon (2011)",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Google_Chrome_icon_%28March_2011%29.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Google_Chrome_icon_(March_2011).svg",
+          "sourceSha256": "3b3e442388145192a5b2f17f5c0d2d543ecc969af13a4f3a0995e1e306af0c45",
+          "ops": {
+            "viewBox": "7.092 6.909 241.291 241.348"
+          },
+          "path": "/logos/svg/apps/alternates/chrome-glossy-2011.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#F06B59",
+            "#DF2227",
+            "#4CB749",
+            "#388B41",
+            "#FCD209",
+            "#F7C616",
+            "#BC821E",
+            "#7FB3DF",
+            "#0F5B94",
+            "#F6F0EE",
+            "#DDDDDD"
+          ],
+          "sourcePalette": [
+            "#E0752D",
+            "#7FB3DF",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "7d2f89700487b7a0f491c465c592ad3c801b8ac57274ba25429f4865e5215e9d"
         }
       ]
     },
@@ -702,6 +857,31 @@
             2
           ],
           "sha256": "0406d27ddf3689a7c97032d2f8588fef04a933bbb57c19a4203ec027d4e80e7e"
+        },
+        {
+          "id": "mono-hime-2024",
+          "label": "One-color hime (2024)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/7/78/Crunchyroll_print_symbol_2024.svg/revision/latest?cb=20241030120615",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Crunchyroll_print_symbol_2024.svg",
+          "sourceSha256": "06215c80509b0c5548b1ddb415d377b504b3c9d684b7cd497eeacedffa42df5e",
+          "ops": {
+            "viewBox": "-10.583 -10.583 285.75 285.75"
+          },
+          "path": "/logos/svg/apps/alternates/crunchy-mono-hime-2024.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "2bf49cc415b46f4254f68475d9820dc2893dcd42d5478b0d04d5ad7069cf8e14"
         }
       ]
     },
@@ -1005,6 +1185,54 @@
           ],
           "unusedSourceSlots": [],
           "sha256": "d13607eb378ab207942fb9f85b86ab80a662f92d9acd3c01da44a8c71554dfd8"
+        },
+        {
+          "id": "lite-tile",
+          "label": "Lite tile",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/5/56/Geometry_Dash_Lite_Icon.svg/revision/latest?cb=20220220121907",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Geometry_Dash_Lite_Icon.svg",
+          "sourceSha256": "e040ed62009b7b12869cdc5da1ca2bf874230d4332063c08f255d6e15ea7f0c6",
+          "ops": {
+            "viewBox": "-5.448 -5.448 147.103 146.86"
+          },
+          "path": "/logos/svg/apps/alternates/gd-lite-tile.svg",
+          "format": "svg",
+          "colors": [
+            "#64B4FF",
+            "#00D4FF",
+            "#000005",
+            "#000000",
+            "#FFFFFF",
+            "#D33F05",
+            "#FFF481",
+            "#FEE10B",
+            "#FFE600",
+            "#FFFF00",
+            "#FFFFBE",
+            "#FFF056",
+            "#0E4800",
+            "#E2FD5F",
+            "#31DF03",
+            "#A8F612",
+            "#2D8A06",
+            "#FFFF50",
+            "#82FFFF",
+            "#013C3C",
+            "#1195C0",
+            "#032936",
+            "#F5860B",
+            "#FECE01",
+            "#01FFFF",
+            "#34FFFA",
+            "#F0C209"
+          ],
+          "sourcePalette": [
+            "#FFE600",
+            "#22D2F1",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "1ca9e7a5e59f3d22bec362605e098e7322c7f40b6f809bc022fcf019f097f27d"
         }
       ]
     },
@@ -1087,6 +1315,32 @@
             2
           ],
           "sha256": "27660baa83b5b304e1573a76e039ca4acf83fd1f6ef20a4b1857c24004ae2157"
+        },
+        {
+          "id": "envelope-2015",
+          "label": "Envelope (2015)",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Logo_Gmail_%282015-2020%29.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Logo_Gmail_(2015-2020).svg",
+          "sourceSha256": "faaefa8c891eb8e26161d293ae8eddfd938552862fdc40d2b339bc7700a8bfce",
+          "ops": {
+            "viewBox": "-9.98 -10.195 275.26 214.212"
+          },
+          "path": "/logos/svg/apps/alternates/gmail-envelope-2015.svg",
+          "format": "svg",
+          "colors": [
+            "#E3E3E3",
+            "#231F20",
+            "#D54B3D",
+            "#D72B27",
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#D63B32",
+            "#E3E3E3",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "349a84735bdd4333f4a7b22bde113ca0f6ffa4eb79da838064013b9bd0f077d9"
         }
       ]
     },
@@ -1164,6 +1418,31 @@
           ],
           "unusedSourceSlots": [],
           "sha256": "c91363358dc25fea67c9b6b435ed96713ad279fdcbabd254640f5bdb0baaf58f"
+        },
+        {
+          "id": "outline-pin",
+          "label": "Outline pin",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/a/a1/Google_Maps_Search_2022_mono.svg/revision/latest?cb=20260604131658",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Google_Maps_Search_2022_mono.svg",
+          "sourceSha256": "a8d33356cadb2aa5e6d874f1e4ff76520d531db883c1ca8eab3ae6bc592f6d48",
+          "ops": {
+            "viewBox": "82.359 25.598 347.192 460.837"
+          },
+          "path": "/logos/svg/apps/alternates/gmaps-outline-pin.svg",
+          "format": "svg",
+          "colors": [
+            "#5E6166"
+          ],
+          "sourcePalette": [
+            "#5E6166",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "0044948c18b286029a63497ad662a000ca3c445b09a775771b3153cc4bfc1251"
         }
       ]
     },
@@ -1242,6 +1521,31 @@
           ],
           "unusedSourceSlots": [],
           "sha256": "1f572a073ad3602dc6f928c5bbdf9deb4ea2adc16cb4fe49298cbf6bc816039d"
+        },
+        {
+          "id": "outline-glyph",
+          "label": "Outline glyph",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/2/2f/Instagram_2016.svg/revision/latest?cb=20160512122832",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Instagram_2016.svg",
+          "sourceSha256": "6a783cd0147ea3d6b5a2788b883caecb2eda8654f7ac9ee029bde37bd1a03aac",
+          "ops": {
+            "viewBox": "-31.997 -32.003 863.998 864.004"
+          },
+          "path": "/logos/svg/apps/alternates/ig-outline-glyph.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#FF543E",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "dd809df3e1c7c992bc6155e0ee1d0431759b0eadfee310905c9c9f0ad9609aae"
         }
       ]
     },
@@ -1325,6 +1629,42 @@
           ],
           "unusedSourceSlots": [],
           "sha256": "14316a7eff604620e1ffd1bc0ee10b88d33851d8d5354f9dde46b08e54763da0"
+        },
+        {
+          "id": "freeway-2017",
+          "label": "Freeway tile (2017)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/2/2d/Apple_Maps_%28iOS%29_2017.svg/revision/latest?cb=20240615114755",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Apple_Maps_(iOS)_2017.svg",
+          "sourceSha256": "bc69a9950f2f2ea73a1ca5720592a090e9dc95adfa870adaa903ace51a685dce",
+          "ops": {
+            "viewBox": "-40.97 -40.96 1105.931 1105.921"
+          },
+          "path": "/logos/svg/apps/alternates/maps-freeway-2017.svg",
+          "format": "svg",
+          "colors": [
+            "#E3E1DA",
+            "#CBC8C1",
+            "#FFCCD6",
+            "#FFB2C2",
+            "#9DE07B",
+            "#8AC66C",
+            "#F3F0E9",
+            "#FCAB1A",
+            "#FFD634",
+            "#ED9C17",
+            "#EAC52F",
+            "#FFFFFF",
+            "#3394E3",
+            "#0078D9",
+            "#DF1D25"
+          ],
+          "sourcePalette": [
+            "#D4C13F",
+            "#1A86DE",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "99d3e12b84f7b93fffa114abdbeec242ebb1746ca1cede512cad0b0d43477f0c"
         }
       ]
     },
@@ -1441,6 +1781,36 @@
             2
           ],
           "sha256": "dea4bddab622a472b87e3dbdff3f65c1a652c5c8b164529c9c72f2fca092f5b3"
+        },
+        {
+          "id": "pride-creeper",
+          "label": "Pride creeper",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/1/1e/Minecraft_%28Social_Media%2C_Pride%2C_2018%29.svg/revision/latest?cb=20240818141924",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Minecraft_(Social_Media,_Pride,_2018).svg",
+          "sourceSha256": "19977e5fdfc52866484399b2cafcb6b030162018cc7f14df0ce5be6ac6089712",
+          "ops": {
+            "viewBox": "-43.2 -43.2 1165.4 1166.4"
+          },
+          "path": "/logos/svg/apps/alternates/mc-pride-creeper.svg",
+          "format": "svg",
+          "colors": [
+            "#FA2323",
+            "#FD7D00",
+            "#FCFB01",
+            "#4B9E3D",
+            "#006FBB",
+            "#6827AC",
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#4B9E3D",
+            "#FC5012",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "5aaf03ea2863a52990140ad59c4409100911d85d3552cd4de2cdca2384120133"
         }
       ]
     },
@@ -1530,6 +1900,32 @@
             2
           ],
           "sha256": "53c7be602655340c38ea06c2fe28cdfdaea797a7f6d08dc7b2c323537d0cfc29"
+        },
+        {
+          "id": "n-tile",
+          "label": "N on black tile",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/c/c5/Netflix_%28Symbol%3B_Black_Square%29.svg/revision/latest?cb=20220429144358",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Netflix_(Symbol;_Black_Square).svg",
+          "sourceSha256": "a70a725758510cb447ab1455d95d7f400cb20d702ac86f3c9e5db6a770898928",
+          "ops": {
+            "viewBox": "-40 -40 1080 797.801"
+          },
+          "path": "/logos/svg/apps/alternates/netflix-n-tile.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#E50914",
+            "#B20710"
+          ],
+          "sourcePalette": [
+            "#CC0812",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "e9fd86b189cffc01ba268c76d5c02db2b6243f4bce43825564784f8ddbfa3e55"
         }
       ]
     },
@@ -1596,6 +1992,77 @@
             2
           ],
           "sha256": "c07d97a4b5d711cc1d20b1c307ae85518237baab510b6e325a9506189dc84a7d"
+        },
+        {
+          "id": "flower-2013",
+          "label": "Flower tile (2013)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/e/e6/Apple_Photos_%28iOS%29_2013.svg/revision/latest?cb=20240623050532",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Apple_Photos_(iOS)_2013.svg",
+          "sourceSha256": "149f4efc670931917fbbbf4dfdbbf0f37401472647256bd2f7a87239f5cd63f3",
+          "ops": {
+            "viewBox": "-40.96 -40.96 1105.92 1105.92"
+          },
+          "path": "/logos/svg/apps/alternates/photos-flower-2013.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#F89B34",
+            "#FFE41A",
+            "#FFE51A",
+            "#C8DC42",
+            "#C7DB43",
+            "#68C380",
+            "#69C381",
+            "#68B8E5",
+            "#69B8E5",
+            "#948FC5",
+            "#958EC4",
+            "#CD8CBD",
+            "#F26667",
+            "#F7953F",
+            "#F15E6D",
+            "#2C8D73",
+            "#4B9F3B",
+            "#33818B",
+            "#3C68B1",
+            "#774E92",
+            "#4F60A7",
+            "#8D497E",
+            "#C23450",
+            "#E21F06",
+            "#C2131B",
+            "#EB3A00",
+            "#F77800",
+            "#EA9B08",
+            "#E3AF03",
+            "#D6BA02",
+            "#C9C407",
+            "#A6BC0F",
+            "#53A822",
+            "#B00200",
+            "#A70200",
+            "#B24300",
+            "#9B5700",
+            "#637F01",
+            "#428301",
+            "#0D530A",
+            "#0A4E0C",
+            "#0E4120",
+            "#0A372A",
+            "#1D205D",
+            "#231C5E",
+            "#500F2D",
+            "#3F1237",
+            "#7A0A07",
+            "#8F0A04"
+          ],
+          "sourcePalette": [
+            "#F89B34",
+            "#F15E6D",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "c404b17a4a3eea7729781f25bc9cedfabf1310ecc7192a332c10a1b50c702407"
         }
       ]
     },
@@ -1640,6 +2107,31 @@
             2
           ],
           "sha256": "06600334b60c636d6619e3c068df8daadcc9b5d96080e886e2d1cb520ec0f4b3"
+        },
+        {
+          "id": "black-p-2011",
+          "label": "Black P (2011)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/d/de/Pinterest_2011_print.svg/revision/latest?cb=20251122122903",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Pinterest_2011_print.svg",
+          "sourceSha256": "f45e0ad1d1c9190abb936a60aefb1b313b44fa8aef4972180879486a175587af",
+          "ops": {
+            "viewBox": "-26.046 -26.046 703.221 703.237"
+          },
+          "path": "/logos/svg/apps/alternates/pin-black-p-2011.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "673c8f52d8df9287e4f7d25123b3f94b855e35849a4a8c8202b39c6e048b437c"
         }
       ]
     },
@@ -1684,6 +2176,34 @@
             2
           ],
           "sha256": "c6cd7a3a4fc0bdab64065f3db022556f79b89339ee164948835e6dd1a73b8deb"
+        },
+        {
+          "id": "dark-tile",
+          "label": "Dark tile",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/c/c4/Apple_Podcasts_%28iOS%29_dark.svg/revision/latest?cb=20240614053738",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Apple_Podcasts_(iOS)_dark.svg",
+          "sourceSha256": "52d8014511e96bbd5a2b9b8a58b193f71b290e1c82e31819b774bdce605d62e6",
+          "ops": {
+            "viewBox": "-29.104 -29.104 785.808 785.808"
+          },
+          "path": "/logos/svg/apps/alternates/podcasts-dark-tile.svg",
+          "format": "svg",
+          "colors": [
+            "#E366FF",
+            "#8E22C8",
+            "#30312F",
+            "#232222",
+            "#141414"
+          ],
+          "sourcePalette": [
+            "#8E22C8",
+            "#E366FF",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "d470ec39e237c1cfaee391502c220456868eb0cfb9b12818359c6d10fafafb16"
         }
       ]
     },
@@ -1820,6 +2340,30 @@
           ],
           "unusedSourceSlots": [],
           "sha256": "206118e0f01032c1c745d7817b303e7b4ee350488ff9ffbdbef4692ba43b6e2e"
+        },
+        {
+          "id": "full-snoo",
+          "label": "Full-body alien",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/9/94/Reddit_Snoo.svg/revision/latest?cb=20180501154743",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Reddit_Snoo.svg",
+          "sourceSha256": "a28b8a5e080118de9410daf6f21d69a7e8b7993c548e3f439ba8e906cac271b6",
+          "ops": {
+            "viewBox": "-6.628 -6.628 203.763 277.838"
+          },
+          "path": "/logos/svg/apps/alternates/reddit-full-snoo.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#FFFFFF",
+            "#FF4500"
+          ],
+          "sourcePalette": [
+            "#FF4500",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "1cfc09fd9cb5a74def02e9312791a831754595125028e74462a7cad4eb4dfec9"
         }
       ]
     },
@@ -1861,6 +2405,60 @@
             1
           ],
           "sha256": "f5294ea6a39204a5cc9de6f4e0d09da08811fa36fb60c120f5a784011cfeab13"
+        },
+        {
+          "id": "r-roundel",
+          "label": "R roundel",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/e/eb/Roblox-circle-logo.svg/revision/latest?cb=20250420213113",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Roblox-circle-logo.svg",
+          "sourceSha256": "cf593fb9fe6c2949e8b79ace40425811b840e2c403217ea02cb68fc007cac3e6",
+          "ops": {
+            "viewBox": "-16.8 -16.8 453.6 453.6"
+          },
+          "path": "/logos/svg/apps/alternates/roblox-r-roundel.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#EE222E",
+            "#FFFFFF",
+            "#89181D",
+            "#971A1F",
+            "#5F1316"
+          ],
+          "sourcePalette": [
+            "#300A0B",
+            "#C21E26",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "53633975a1cb650143b453a4ce54ecdb0b9cc1ec35363d5186d2b24c8021ec87"
+        },
+        {
+          "id": "red-r-2004",
+          "label": "Red R (2004)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/2/21/Roblox_%282004%29_%28Icon%29.svg/revision/latest?cb=20250403123003",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Roblox_(2004)_(Icon).svg",
+          "sourceSha256": "2d91969eddadfefa549911f394e8b26984f79441764397280b61816726abb351",
+          "ops": {
+            "viewBox": "-27.159 -27.159 733.281 530.012"
+          },
+          "path": "/logos/svg/apps/alternates/roblox-red-r-2004.svg",
+          "format": "svg",
+          "colors": [
+            "#0000FF",
+            "#FF0000",
+            "#000000",
+            "#FFFFFF",
+            "#E0FEFD",
+            "#82C1E7"
+          ],
+          "sourcePalette": [
+            "#0000FF",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "e552593e6f9d6239960afdd8c7ce4ab885a972619bf20a15af488ab58699a737"
         }
       ]
     },
@@ -1960,6 +2558,47 @@
           ],
           "unusedSourceSlots": [],
           "sha256": "369323def956f4c262398818fb2c35a22bac823fa62bf91612c80f78c1b506fa"
+        },
+        {
+          "id": "dark-gear",
+          "label": "Dark gear tile",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/2/28/Settings_%28iOS%29_dark.svg/revision/latest?cb=20240614032121",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Settings_(iOS)_dark.svg",
+          "sourceSha256": "2a405db8b11c5f3c1941641b95f1a3b6dbd6988584dd5062f68c74e166c19949",
+          "ops": {
+            "viewBox": "-40.96 -40.96 1105.92 1105.92"
+          },
+          "path": "/logos/svg/apps/alternates/settings-dark-gear.svg",
+          "format": "svg",
+          "colors": [
+            "#ABABAB",
+            "#9C9C9C",
+            "#868686",
+            "#717171",
+            "#626262",
+            "#757577",
+            "#6B6B6E",
+            "#616163",
+            "#313131",
+            "#2B2B2B",
+            "#222222",
+            "#1A1A1A",
+            "#141414",
+            "#1F1F1F",
+            "#1B1B1B",
+            "#151515",
+            "#121212",
+            "#0E0E0E"
+          ],
+          "sourcePalette": [
+            "#313131",
+            "#8A8A8B",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "80d30edb33a049ad71b8b1fced5a2f818a5a8b424e348d42432b6ddc7624cb57"
         }
       ]
     },
@@ -2001,6 +2640,32 @@
             2
           ],
           "sha256": "9271a9ac8a2c46d8f944a247a739bc890344d078c076806b8f9cbd9a711f5db4"
+        },
+        {
+          "id": "roundel-1999",
+          "label": "Classic roundel (1999)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/e/e9/Shazam_1999.svg/revision/latest?cb=20171015111138",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Shazam_1999.svg",
+          "sourceSha256": "f7dfd74f17d46fe610c90494db05009557b92ee67a661b4446ab5521743d57d0",
+          "ops": {
+            "viewBox": "-40 -40 1079.991 1080"
+          },
+          "path": "/logos/svg/apps/alternates/shazam-roundel-1999.svg",
+          "format": "svg",
+          "colors": [
+            "#1D1D1B",
+            "#FFFFFF",
+            "#404040",
+            "#000000",
+            "#808080"
+          ],
+          "sourcePalette": [
+            "#1D1D1B",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "f545926a128ca2ddec8ddb466a6190e2a3cfafbc686945a765c8c2b37f3e4518"
         }
       ]
     },
@@ -2044,6 +2709,56 @@
           ],
           "unusedSourceSlots": [],
           "sha256": "1ea92652a3f13e68f80e4e389754af3fc934e44b60ae7cb2304ad7326813622f"
+        },
+        {
+          "id": "black-ghost",
+          "label": "Black ghost",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/e/ef/Snapchat_Ghost_%28Inverted%29.svg/revision/latest?cb=20200801053139",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Snapchat_Ghost_(Inverted).svg",
+          "sourceSha256": "c27344906470cb2b2b2088cd2f1cbfb0d7d11d51da508b376ee20443545c7b75",
+          "ops": {
+            "viewBox": "-14.624 -14.724 1029.348 969.748"
+          },
+          "path": "/logos/svg/apps/alternates/snap-black-ghost.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "85eda067016a1784e2b884df6590bfd4549572e07c91d1bff17c63d19dc3c91c"
+        },
+        {
+          "id": "ghost-face-2011",
+          "label": "Ghost with face (2011)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/5/52/Snapchat_Ghost_with_Face.svg/revision/latest?cb=20171018120037",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Snapchat_Ghost_with_Face.svg",
+          "sourceSha256": "5179378d81cc32c4dcf6cc8a15b06a83f4ef56c293d83289776c7e3ae9bea65a",
+          "ops": {
+            "viewBox": "-234 -110.631 1080.002 1013.263"
+          },
+          "path": "/logos/svg/apps/alternates/snap-ghost-face-2011.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "da6b3443ef2c480b18456d9be77f7f40c206876bab404f8b973b9840cb653696"
         }
       ]
     },
@@ -2088,6 +2803,56 @@
             2
           ],
           "sha256": "e531287f8dc4c7b933194dcaa7cd62555b1a0d5e2a0d8bea4b790fb5c4c78301"
+        },
+        {
+          "id": "black-cloud-2014",
+          "label": "Black cloud (2014)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/5/56/SoundCloud_icon_2014_vector.svg/revision/latest?cb=20231201043359",
+          "sourcePage": "https://logos.fandom.com/wiki/File:SoundCloud_icon_2014_vector.svg",
+          "sourceSha256": "6a412dffcfbc5c311314624c12900ed0c106d4895eb33e21df480b2660d23055",
+          "ops": {
+            "viewBox": "-4.459 -4.459 120.398 58.919"
+          },
+          "path": "/logos/svg/apps/alternates/soundcloud-black-cloud-2014.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "38c0297d0d034bfc06d8fd1c16756260dbb593275208d7143f6f86954e30a541"
+        },
+        {
+          "id": "orange-tile",
+          "label": "Orange tile",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Antu_soundcloud.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Antu_soundcloud.svg",
+          "sourceSha256": "c1606405b76e8e464fcf1a325f07ad2ffe6c89f9574e3bba634dcbb16efbd6ad",
+          "ops": {
+            "viewBox": "-5.5 -5.5 162 162"
+          },
+          "path": "/logos/svg/apps/alternates/soundcloud-orange-tile.svg",
+          "format": "svg",
+          "colors": [
+            "#FF5500",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#FF5500",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "d50859394da6363ac1bb272278d9728bb61d888ac35b2439610811c6dbc9216e"
         }
       ]
     },
@@ -2131,6 +2896,64 @@
             2
           ],
           "sha256": "5ad96b4913843fdbfeda892419c6a23bd93e401270e10a464f69788722e41a5d"
+        },
+        {
+          "id": "black-2015",
+          "label": "Black icon (2015)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/2/28/Spotify_2015_Icon_Print.svg/revision/latest?cb=20240523122752",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Spotify_2015_Icon_Print.svg",
+          "sourceSha256": "80f593d9d16d409d7aa671a8ca98c981ee84269a99f1029726be94ea679069cd",
+          "ops": {
+            "viewBox": "-40 -40 1080 1079.976"
+          },
+          "path": "/logos/svg/apps/alternates/spotify-black-2015.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "fcfc7f53c02ba8df137115bd4fd7b05627f2ecf5bfed88aa8fa7bbcb9928a8d7"
+        },
+        {
+          "id": "classic-2008",
+          "label": "Classic icon (2008)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/8/8e/Spotify_2008_Icon.svg/revision/latest?cb=20231126095107",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Spotify_2008_Icon.svg",
+          "sourceSha256": "b1a0edd76d3602c1711059203a342ffa00d08e1b1c17ee4ca3323dd8ca726f95",
+          "ops": {
+            "viewBox": "-15.117 -15.118 408.181 408.182"
+          },
+          "path": "/logos/svg/apps/alternates/spotify-classic-2008.svg",
+          "format": "svg",
+          "colors": [
+            "#95BA3D",
+            "#619C41",
+            "#2F5125",
+            "#29401B",
+            "#3F6D34",
+            "#335628",
+            "#60903E",
+            "#55893D",
+            "#203419",
+            "#162614"
+          ],
+          "sourcePalette": [
+            "#6B9C3E",
+            "#27401E",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "1aca4e0a0c3c89b3cadecd63294f2940e9f93ead6deb86d4be226939852583c1"
         }
       ]
     },
@@ -2324,6 +3147,31 @@
           ],
           "unusedSourceSlots": [],
           "sha256": "735a091cae66c515f4a10981823c96c366ba6e1680f21198c41b86588690c715"
+        },
+        {
+          "id": "black-roundel",
+          "label": "Black roundel",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Tiktok_icon.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Tiktok_icon.svg",
+          "sourceSha256": "929de00e5817b35eba269bfdda5f3ef056a0af84baa2b6cd3d09d45d2002a741",
+          "ops": {
+            "viewBox": "-3.84 -3.84 103.68 103.68"
+          },
+          "path": "/logos/svg/apps/alternates/tiktok-black-roundel.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#FE2C55",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "179c0b711ac85b96cb540da5827f4cb2161b0e5926f7d92cb250e2498a39d698"
         }
       ]
     },
@@ -2368,6 +3216,31 @@
             1
           ],
           "sha256": "6577c871b20565b14645391f789272d2cfe19601ecd4a1956abfef4fdc984d99"
+        },
+        {
+          "id": "black-glitch",
+          "label": "Black glitch",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/8/84/Twitch_Icon_Black_2019.svg/revision/latest?cb=20260708230747",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Twitch_Icon_Black_2019.svg",
+          "sourceSha256": "6d31ef517982caedc9de317eead5060522ccfa2813894fa0f2750ec03c94e84d",
+          "ops": {
+            "viewBox": "-54.88 -54.88 1285.76 1481.76"
+          },
+          "path": "/logos/svg/apps/alternates/twitch-black-glitch.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "4dcd79dfbdbf8facc074ea0190108ceb1ba291b0d7dd80eb54990b777a5122b8"
         }
       ]
     },
@@ -2409,6 +3282,31 @@
             1
           ],
           "sha256": "5e738b770b4f383b248e535b1c28c985dc685dae77d8dbb386d922ffcda1392d"
+        },
+        {
+          "id": "v-tile-2010",
+          "label": "V tile (2010)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/6/65/Venmo_2010_Icon.svg/revision/latest?cb=20220519215432",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Venmo_2010_Icon.svg",
+          "sourceSha256": "89e2b250472b52dc7fd0cbf7471446ccab3c842782e3c315ac0703cdf74ed56c",
+          "ops": {
+            "viewBox": "-20.64 -20.64 557.28 557.28"
+          },
+          "path": "/logos/svg/apps/alternates/venmo-v-tile-2010.svg",
+          "format": "svg",
+          "colors": [
+            "#3396CD",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#3396CD",
+            "#1A1A1A",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "cab54065b861b36d4db887c41f17a62cd4ee327c2b322450220d3de6e30f76f3"
         }
       ]
     },
@@ -2453,6 +3351,33 @@
           ],
           "unusedSourceSlots": [],
           "sha256": "476aca83a9b056522b93f38c189087a2c415191d945fa9c17585f29bc97751de"
+        },
+        {
+          "id": "ios7-tile",
+          "label": "Green tile (iOS 7)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/e/e7/WhatsApp_iOS_7_Icon.svg/revision/latest?cb=20210528192650",
+          "sourcePage": "https://logos.fandom.com/wiki/File:WhatsApp_iOS_7_Icon.svg",
+          "sourceSha256": "4c3153bd30aebba095a27e73e14b305339950f1c9ac12c123b765ffed5d3c065",
+          "ops": {
+            "viewBox": "-32.004 -32.004 864.108 864.103"
+          },
+          "path": "/logos/svg/apps/alternates/wa-ios7-tile.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#20B038",
+            "#60D66A",
+            "#F9F9F9",
+            "#60FC7C",
+            "#05B723"
+          ],
+          "sourcePalette": [
+            "#12B42E",
+            "#60E973",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "728a347ec9c8f20be0b6af69dc514f198cae1b4673ddeca7ec55f5c8007f6f42"
         }
       ]
     },
@@ -2613,6 +3538,31 @@
             2
           ],
           "sha256": "685e1297dcddcd9bd958382ff9ea6e4ccdf75a1aa5875d4075f6583ee7739b24"
+        },
+        {
+          "id": "black-bird-2012",
+          "label": "Black bird (2012)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/7/75/Twitter_%282012%29_%28Print%29.svg/revision/latest?cb=20210810110308",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Twitter_(2012)_(Print).svg",
+          "sourceSha256": "14efa8398d49af83a4709b2f54731b97c53d09c9b94744fdc4eb10871f1086cc",
+          "ops": {
+            "viewBox": "-14.711 -14.711 397.193 328.136"
+          },
+          "path": "/logos/svg/apps/alternates/x-black-bird-2012.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#1D9BF0",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "ec3a7b99710012bbb9a5a0443c70acf2679b5f4b5fe573627cf48f76259adebf"
         }
       ]
     },

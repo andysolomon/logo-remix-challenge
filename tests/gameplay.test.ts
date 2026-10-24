@@ -21,8 +21,25 @@ describe('gameplay polish scaffolding', () => {
     expect(read('src/App.tsx')).toContain('useVisualViewport()')
     const css = read('src/styles.css')
     expect(css).toContain('height: var(--vvh, 100dvh)')
-    expect(css).toContain('html.kb-open .q-hero { flex: 1 0 auto; min-height: 96px')
-    expect(css).toContain('html.kb-open .question { overflow-y: auto')
+    expect(css).toContain('html.kb-open .question { display: grid;')
+    expect(css).toContain('grid-template-rows: auto auto minmax(80px, 1fr)')
+    expect(css).toContain('html.kb-open .q-top, html.kb-open .timer { display: contents; }')
+    expect(css).toContain('html.kb-open .timer-num { grid-area: 1 / 2;')
+  })
+
+  test('with the keyboard up, suggestions sit in the prompt slot as one row of chips instead of over the logo', () => {
+    const css = read('src/styles.css')
+    expect(css).toContain('html.kb-open .prompt { min-height: 44px;')
+    expect(css).toContain('html.kb-open .guess-form { position: relative;')
+    expect(css).toContain('html.kb-open .guess-ac { position: static; }')
+    expect(css).toContain('html.kb-open .guess-suggest { bottom: calc(100% + 8px); display: flex;')
+    expect(css).toContain('html.kb-open .guess-suggest-item { flex: none; min-height: 44px;')
+    expect(css).toContain('html.kb-open .guess-form.both .btn-submit { grid-area: 1 / 2 / 3 / 3;')
+
+    // A swipe across the chip row scrolls it; only a tap (click) picks a suggestion.
+    const gi = read('src/components/GuessInput.tsx')
+    expect(gi).toContain('onPointerDown={(e) => e.preventDefault()}')
+    expect(gi).toContain('onClick={() => pick(t)}')
   })
 
   test('PlayMode exposes live round and reveal status plus phaseRef submit guards', () => {

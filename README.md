@@ -9,7 +9,7 @@ Real logos for all 32 NFL teams, all 30 NBA teams, all 30 MLB teams, all 32 NHL 
 
 **Educational collections** add all **118 elements**, **22 math symbols**, **20 shapes**, **13 space objects** (the eight planets and Pluto as textbook-style figures in their own colors, with polar caps, belts, craters, cloud bands, Saturn's rings and Pluto's heart, plus the Sun, Moon, a comet with dust and ion tails and a face-on spiral galaxy), and **10 science images** drawn as textbook-style figures (a Bohr-style atom, a horseshoe magnet with field lines, a double helix, an animal cell, a refracting telescope on its tripod, a compound microscope, and glassware with tinted liquids and graduations). Elements have period filters, atomic-number/symbol tiles and symbol-only alternates. Flat shapes have outline alternates. Math accepts Unicode answers such as π, √, ∞ and ∑ as well as names. Pluto is under Dwarf planets. All artwork is local SVG geometry or outlined glyphs with no runtime font dependency. Regenerate with `npm run teams:education`; provenance and licenses are in [`education-SOURCES.md`](public/logos/svg/education-SOURCES.md).
 
-**LANDMARKS** adds **66 famous landmarks** from all over the world, filtered by region: Americas (the Statue of Liberty, Golden Gate Bridge, Empire State Building, Space Needle, Gateway Arch, Washington Monument, United States Capitol, Christ the Redeemer, Chichén Itzá, CN Tower, Niagara Falls, Machu Picchu, Chrysler Building, White House, Brooklyn Bridge, the Alamo, Mount Rushmore, Sugarloaf Mountain), Europe (the Eiffel Tower, Big Ben, Tower Bridge, Colosseum, Leaning Tower of Pisa, Stonehenge, Arc de Triomphe, Brandenburg Gate, Parthenon, Louvre Pyramid, Sagrada Família, Neuschwanstein, Saint Basil's Cathedral, Atomium, London Eye, a Dutch windmill, Mont-Saint-Michel, the Matterhorn), Asia & Pacific (the Taj Mahal, Great Wall of China, Tokyo Tower, Petronas Towers, Angkor Wat, Mount Fuji, Itsukushima's torii, Sydney Opera House, Sydney Harbour Bridge, the moai of Easter Island, Forbidden City, Marina Bay Sands, Oriental Pearl Tower, Himeji Castle, Uluru, the Merlion, Mount Everest, Gateway of India) and Africa & Middle East (the Pyramids of Giza, Great Sphinx, Burj Khalifa, Burj Al Arab, Petra, Mount Kilimanjaro, Table Mountain, Abu Simbel, Victoria Falls, Palm Jumeirah, the Avenue of the Baobabs, Karnak Temple). Each one is drawn in the same textbook-figure style as the science images (thin ink outline, white bodies, a flat accent tint) and paints all three palette slots, so a landmark remix never needs a backdrop tile. Hints read "Logo: LANDMARKS - Europe". Common names such as Lady Liberty, Cristo Redentor, Coliseum, Tower of Pisa, Acropolis, Great Wall, Fujisan, Sphinx, Easter Island, Harbor Bridge, Ayers Rock, Millennium Wheel and Pão de Açúcar are accepted, and guesses ignore accents, so "Chichen Itza" matches Chichén Itzá; a country or city alone is never an answer. LANDMARKS is logo-only and its own Random Deck pool, and brings the catalog to **1,012 entries and 489 alternates**. Regenerate with `npm run teams:landmarks`; the artwork is original SVG geometry in `scripts/build_landmarks.py`, described in [`education-SOURCES.md`](public/logos/svg/education-SOURCES.md).
+**LANDMARKS** adds **40 famous landmarks** from all over the world, filtered by region: Americas (the Statue of Liberty, Golden Gate Bridge, Space Needle, Gateway Arch, White House, Brooklyn Bridge, Mount Rushmore, Christ the Redeemer), Europe (the Eiffel Tower, Big Ben, Tower Bridge, Colosseum, Leaning Tower of Pisa, Stonehenge, Arc de Triomphe, Brandenburg Gate, Parthenon, Neuschwanstein, Saint Basil's Cathedral, Atomium, a Dutch windmill, Mont-Saint-Michel), Asia & Pacific (the Taj Mahal, Great Wall of China, Tokyo Skytree, Petronas Towers, Angkor Wat, Mount Fuji, Itsukushima's torii, Himeji Castle, Oriental Pearl Tower, Marina Bay Sands, the Merlion, Mount Everest, Sydney Opera House, Sydney Harbour Bridge, the moai of Easter Island) and Africa & Middle East (the Pyramids of Giza, Great Sphinx, Burj Khalifa). Every landmark is real artwork of the actual structure, not a sketch: silhouettes, line drawings and flat illustrations published as public domain (CC0) on Openclipart, pinned by source checksum through the same pipeline as the brand collections and imported without rasters, text or scripts. Most are one-color silhouettes, so a remix shows them on a backdrop tile with a frame, like the flag silhouettes; the illustrations with two or three colors (Big Ben, the Arc de Triomphe, the Atomium, the Colosseum, Everest…) recolor slot by slot. Hints read "Logo: LANDMARKS - Europe". Common names such as Lady Liberty, Cristo Redentor, Coliseum, Tower of Pisa, Acropolis, Great Wall, Fujisan, Sphinx, Easter Island, Harbor Bridge and Skytree are accepted; a country or city alone is never an answer. LANDMARKS is logo-only and its own Random Deck pool, and brings the catalog to **986 entries and 489 alternates**. Refresh with `npm run logos:landmarks && npm run teams:landmarks`; sources and licenses are in [`education-SOURCES.md`](public/logos/svg/education-SOURCES.md).
 
 **NHL** adds 32 official SVG team logos with Eastern/Western filters. Logos that spell out the team's identity remain manually selectable but are excluded from random logo pools. **US STATES** is also a dedicated random-deck pool, and every state has a tightly cropped silhouette alternate; Oregon additionally has its beaver reverse. These additions bring the catalog to **931 entries and 489 alternates**. The new collections are logo-only; NFL, NBA and college remain the color donors. The Restaurants label keeps the existing `FOOD` IDs and `Fast Food` pool ID so saved decks and pool preferences remain compatible. Wordmark-only restaurants stay manually selectable and are excluded from random logo draws. Reviewed symbol crops use explicit SVG clipping where neighboring lettering shares a path.
 
@@ -128,7 +128,8 @@ bun run teams:cars                             # regenerate car brand entries fr
 bun run teams:luxury                           # regenerate luxury entries from luxury-manifest.json
 bun run teams:clothing                         # regenerate clothing entries from clothing-manifest.json
 bun run teams:education                        # redraw the educational artwork and regenerate its entries
-bun run teams:landmarks                        # redraw the landmark artwork and regenerate its entries
+bun run logos:landmarks                        # refresh the pinned landmark artwork and manifest
+bun run teams:landmarks                        # regenerate landmark entries from landmarks-manifest.json
 ```
 
 The legacy ESPN PNGs (32 NFL teams + 5 conferences) can still be fetched into `public/logos/`:
@@ -159,7 +160,7 @@ src/
   lib/exportLogo.ts        Designer exports: recolored SVG files, canvas-rendered PNGs, downloads
   lib/trace.ts             Designer uploads: trace a bitmap logo into flat-color SVG outlines (pure)
   lib/traceUpload.ts       Designer uploads: decode the file in the browser, trace it, wrap it as a logo
-  lib/teams.json           1,012 catalog entries across sports, restaurants, brands, flags, landmarks and educational collections
+  lib/teams.json           986 catalog entries across sports, restaurants, brands, flags, landmarks and educational collections
   lib/useOrientation.ts    portrait = innerHeight > innerWidth
   components/
     Logo.tsx               local PNG rendering + canvas palette-swap recoloring
@@ -186,7 +187,7 @@ scripts/
   download_extra_logos.py  fetch official MLB SVG marks, soccer club crests and MLS club crests
   extra_rosters.py         pinned MLB IDs, soccer and MLS clubs, groupings, colors and aliases
   build_extra_teams.py     validate and rebuild only MLB, soccer or MLS entries (with MLB/MLS alternates)
-  brand_rosters.py         fast-food, brand, flag, app, TV, car, luxury and clothing rosters, categories, colors and aliases
+  brand_rosters.py         fast-food, brand, flag, app, TV, car, luxury, clothing and landmark rosters, categories, colors and aliases
   brand_artwork_sources.json  pinned name-free artwork: sources, checksums, reviewed edits
   brand_vector.py          replay reviewed SVG edits (strip wordmark, fill, crop); review helpers
   download_brand_logos.py  refresh fast-food, brand, flag, app, TV or car artwork and its manifest
@@ -198,7 +199,6 @@ scripts/
   build_teams.py           merge the NFL/college manifests into src/lib/teams.json
   build_hs_teams.py        merge hs-manifest.json into src/lib/teams.json
   build_education.py       draw the ELEMENTS, MATH, SHAPES, SPACE and SCIENCE artwork and rebuild their entries
-  build_landmarks.py       draw the 66 LANDMARKS figures and rebuild their entries
   generate_voice.py        bake Chatterbox announcer clips into public/voice/
 public/logos/
   nfl/                     32 team PNGs (ESPN CDN naming, e.g. wsh.png)

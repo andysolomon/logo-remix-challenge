@@ -499,6 +499,49 @@ WNBA = [
     ('WAS', 'Washington Mystics', 'Eastern', 'E03A3E', '002B5C', ['Mystics']),
 ]
 
+LANDMARK = [
+    ("LIBERTY", "Statue of Liberty", "Americas", "6FA287", "8B5A2B", ["Lady Liberty"]),
+    ("GOLDENGATE", "Golden Gate Bridge", "Americas", "C0362C", "5B6770", ["Golden Gate"]),
+    ("NEEDLE", "Space Needle", "Americas", "8A8F98", "D9534F", []),
+    ("ARCH", "Gateway Arch", "Americas", "9BA3AD", "1F3A5F", ["St. Louis Arch", "Saint Louis Arch"]),
+    ("REDEEMER", "Christ the Redeemer", "Americas", "B8B5A8", "2E5E4E", ["Cristo Redentor"]),
+    ("WHITEHOUSE", "White House", "Americas", "F2EFE9", "2F3E5C", ["The White House"]),
+    ("BROOKLYN", "Brooklyn Bridge", "Americas", "7A6E63", "3E4C5E", []),
+    ("RUSHMORE", "Mount Rushmore", "Americas", "9C8E7E", "4F4336", ["Mt. Rushmore", "Rushmore"]),
+    ("EIFFEL", "Eiffel Tower", "Europe", "5B5B5B", "9E7B4F", ["Tour Eiffel"]),
+    ("BIGBEN", "Big Ben", "Europe", "8B7355", "3C4F6B", ["Elizabeth Tower", "Palace of Westminster"]),
+    ("TOWERBRIDGE", "Tower Bridge", "Europe", "3E6B9E", "C9C9C9", []),
+    ("COLOSSEUM", "Colosseum", "Europe", "8C7B6B", "3D3A37", ["Coliseum", "Roman Colosseum"]),
+    ("PISA", "Leaning Tower of Pisa", "Europe", "EDE6D8", "8A8A8A", ["Tower of Pisa"]),
+    ("STONEHENGE", "Stonehenge", "Europe", "7F8C8D", "4C6B3C", []),
+    ("ARC", "Arc de Triomphe", "Europe", "D9D2C5", "4F4A45", ["Arc de Triomphe de l'Étoile"]),
+    ("BRANDENBURG", "Brandenburg Gate", "Europe", "BDB6A6", "2F6F6B", ["Brandenburger Tor"]),
+    ("PARTHENON", "Parthenon", "Europe", "E0D8C8", "7A7266", ["Acropolis"]),
+    ("NEUSCHWANSTEIN", "Neuschwanstein Castle", "Europe", "E8E6E1", "3C5A7A", ["Neuschwanstein"]),
+    ("STBASIL", "Saint Basil's Cathedral", "Europe", "C0392B", "2E86AB", ["St. Basil's Cathedral", "St Basil's", "Saint Basil"]),
+    ("ATOMIUM", "Atomium", "Europe", "BFC3C7", "4A5A6A", []),
+    ("WINDMILL", "Dutch Windmill", "Europe", "6B4F3A", "7FA86B", ["Windmill", "Kinderdijk", "Windmills of Kinderdijk"]),
+    ("MONTSTMICHEL", "Mont-Saint-Michel", "Europe", "8E8E8E", "3F6FA0", ["Mont Saint-Michel", "Mont St. Michel"]),
+    ("TAJ", "Taj Mahal", "Asia & Pacific", "F2EEE6", "8FB3D9", []),
+    ("GREATWALL", "Great Wall of China", "Asia & Pacific", "9C8B6E", "5A7A4A", ["Great Wall"]),
+    ("PETRONAS", "Petronas Towers", "Asia & Pacific", "A9B0B8", "2C5F8A", ["Petronas Twin Towers"]),
+    ("ANGKOR", "Angkor Wat", "Asia & Pacific", "A66900", "3F4F2F", ["Angkor"]),
+    ("FUJI", "Mount Fuji", "Asia & Pacific", "3F5F9F", "F2F2F2", ["Fuji", "Fujisan", "Mt. Fuji"]),
+    ("TORII", "Itsukushima Torii", "Asia & Pacific", "E34805", "1F6F9F", ["Itsukushima Shrine", "Torii", "Torii gate", "Miyajima"]),
+    ("OPERA", "Sydney Opera House", "Asia & Pacific", "F2F2F2", "3F7FBF", ["Opera House"]),
+    ("HARBOUR", "Sydney Harbour Bridge", "Asia & Pacific", "5A6572", "3F7FBF", ["Sydney Harbor Bridge", "Harbour Bridge"]),
+    ("MOAI", "Moai", "Asia & Pacific", "6E6A63", "7FA86B", ["Easter Island heads", "Easter Island statues", "Easter Island"]),
+    ("MARINABAY", "Marina Bay Sands", "Asia & Pacific", "A9B0B8", "3F88C5", ["Marina Bay"]),
+    ("PEARL", "Oriental Pearl Tower", "Asia & Pacific", "B23A48", "8FB3D9", ["Oriental Pearl", "Pearl Tower"]),
+    ("HIMEJI", "Himeji Castle", "Asia & Pacific", "F2F2F2", "3F4F5F", ["Himeji", "White Heron Castle"]),
+    ("MERLION", "Merlion", "Asia & Pacific", "D9D9D9", "3F88C5", []),
+    ("EVEREST", "Mount Everest", "Asia & Pacific", "317FC1", "FFFCED", ["Everest", "Mt. Everest", "Sagarmatha", "Chomolungma"]),
+    ("PYRAMIDS", "Pyramids of Giza", "Africa & Middle East", "E4C27A", "5B4A2E", ["Great Pyramid of Giza", "Great Pyramid", "Giza Pyramids", "Egyptian Pyramids", "Pyramids"]),
+    ("SPHINX", "Great Sphinx of Giza", "Africa & Middle East", "C9A66B", "5B4A2E", ["Sphinx", "Great Sphinx"]),
+    ("BURJ", "Burj Khalifa", "Africa & Middle East", "9FA8B3", "2C3E50", []),
+    ("SKYTREE", "Tokyo Skytree", "Asia & Pacific", "7D8597", "8FB3D9", ["Skytree", "Tokyo Sky Tree"]),
+]
+
 LEAGUES = {
     "NHL": {"label": "NHL", "conferences": ["Eastern", "Western"]},
     "WNBA": {"label": "WNBA", "conferences": ["Eastern", "Western"]},
@@ -509,8 +552,9 @@ LEAGUES = {
     "TV": {"label": "TV", "conferences": ["Broadcast", "Cable", "Music & Pop", "Kids", "Discovery & Lifestyle"]},
     "CAR": {"label": "CARS", "conferences": ["American", "Japanese & Korean", "German", "Italian", "British"]},
     "LUX": {"label": "LUXURY", "conferences": ["Fashion House", "Leather Goods", "Watchmaker", "Jeweler"]},
+    "LANDMARK": {"label": "LANDMARKS", "conferences": ["Americas", "Europe", "Asia & Pacific", "Africa & Middle East"]},
     "CLOTH": {"label": "CLOTHING", "conferences": ["Sportswear", "Streetwear", "Outdoor", "Preppy", "Everyday"]},
 }
 
-ROSTERS = {"NHL": NHL, "WNBA": WNBA, "FOOD": FOOD, "BRAND": BRAND, "FLAG": FLAG, "APP": APP, "TV": TV, "CAR": CAR, "LUX": LUX, "CLOTH": CLOTH}
-SLUGS = {"NHL": "nhl", "WNBA": "wnba", "FOOD": "fast-food", "BRAND": "brands", "FLAG": "flags", "APP": "apps", "TV": "tv", "CAR": "cars", "LUX": "luxury", "CLOTH": "clothing"}
+ROSTERS = {"NHL": NHL, "WNBA": WNBA, "FOOD": FOOD, "BRAND": BRAND, "FLAG": FLAG, "APP": APP, "TV": TV, "CAR": CAR, "LUX": LUX, "CLOTH": CLOTH, "LANDMARK": LANDMARK}
+SLUGS = {"NHL": "nhl", "WNBA": "wnba", "FOOD": "fast-food", "BRAND": "brands", "FLAG": "flags", "APP": "apps", "TV": "tv", "CAR": "cars", "LUX": "luxury", "CLOTH": "clothing", "LANDMARK": "landmarks"}

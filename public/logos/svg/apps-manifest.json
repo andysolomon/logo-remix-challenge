@@ -87,6 +87,137 @@
           ],
           "unusedSourceSlots": [],
           "sha256": "35bb2d22e83abb581d0ed83261c253276d234a8f6c1b2b8def1eda043cb63206"
+        },
+        {
+          "id": "yellow-bird",
+          "label": "Yellow triangle bird",
+          "sourceUrl": "https://logowik.com/angry-birds-characters-vector-logo-4929.html",
+          "sourcePage": "https://logowik.com/angry-birds-characters-vector-logo-4929.html",
+          "sourceSha256": "176085458a8cf0226666cc4a68a5a89af10af4f522c295b8d5ff081f2079d3ef",
+          "downloadForm": "logowik",
+          "ops": {
+            "keepNodes": [
+              "0",
+              "6"
+            ],
+            "viewBox": "239.103 55.552 112.074 107.686"
+          },
+          "path": "/logos/svg/apps/alternates/ab-yellow-bird.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#462817",
+            "#2B1F1A",
+            "#FCE900",
+            "#C04318",
+            "#F2B60D"
+          ],
+          "sourcePalette": [
+            "#C04318",
+            "#382418",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "4b668fc52155201dc1dac7e8cb39650447c46d8c77d21c2a39b416a1d9ab07b6"
+        },
+        {
+          "id": "black-bird",
+          "label": "Black bomb bird",
+          "sourceUrl": "https://logowik.com/angry-birds-characters-vector-logo-4929.html",
+          "sourcePage": "https://logowik.com/angry-birds-characters-vector-logo-4929.html",
+          "sourceSha256": "176085458a8cf0226666cc4a68a5a89af10af4f522c295b8d5ff081f2079d3ef",
+          "downloadForm": "logowik",
+          "ops": {
+            "keepNodes": [
+              "0",
+              "4"
+            ],
+            "viewBox": "59.055 404.755 100.649 105.819"
+          },
+          "path": "/logos/svg/apps/alternates/ab-black-bird.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#462817",
+            "#2B1F1A",
+            "#4C4846",
+            "#FFEB00",
+            "#C04318",
+            "#EFA900",
+            "#2A1813"
+          ],
+          "sourcePalette": [
+            "#D8760C",
+            "#3A2A22",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "9abc82511facca9300939533e148dc83a07cd04b1ac5af3c4508f817d28ae133"
+        },
+        {
+          "id": "white-bird",
+          "label": "White egg bird",
+          "sourceUrl": "https://logowik.com/angry-birds-characters-vector-logo-4929.html",
+          "sourcePage": "https://logowik.com/angry-birds-characters-vector-logo-4929.html",
+          "sourceSha256": "176085458a8cf0226666cc4a68a5a89af10af4f522c295b8d5ff081f2079d3ef",
+          "downloadForm": "logowik",
+          "ops": {
+            "keepNodes": [
+              "0",
+              "8"
+            ],
+            "viewBox": "442.488 224.294 109.419 117.559"
+          },
+          "path": "/logos/svg/apps/alternates/ab-white-bird.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#462817",
+            "#2B1F1A",
+            "#FFED92",
+            "#EAE8CD",
+            "#F2B60D"
+          ],
+          "sourcePalette": [
+            "#382418",
+            "#F8D250",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "9a910ca048dba03a70aa434f0a029d2b907ebc30679b6e6af681eb69062691c2"
+        },
+        {
+          "id": "green-bird",
+          "label": "Green boomerang bird",
+          "sourceUrl": "https://logowik.com/angry-birds-characters-vector-logo-4929.html",
+          "sourcePage": "https://logowik.com/angry-birds-characters-vector-logo-4929.html",
+          "sourceSha256": "176085458a8cf0226666cc4a68a5a89af10af4f522c295b8d5ff081f2079d3ef",
+          "downloadForm": "logowik",
+          "ops": {
+            "keepNodes": [
+              "0",
+              "9"
+            ],
+            "viewBox": "239.766 407.214 132.295 108.602"
+          },
+          "path": "/logos/svg/apps/alternates/ab-green-bird.svg",
+          "format": "svg",
+          "colors": [
+            "#1A1614",
+            "#2B8442",
+            "#2B1F1A",
+            "#FFFFFF",
+            "#EDE268",
+            "#E59400",
+            "#DD6312"
+          ],
+          "sourcePalette": [
+            "#221A17",
+            "#2B8442",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "04205282fead08075fa633ea773e5d9c01c7399e712c3aa4a38c2477df026b04"
         }
       ]
     },
@@ -247,6 +378,36 @@
           ],
           "unusedSourceSlots": [],
           "sha256": "ca4dcf6dcc8190dd69c6b5f981fd5f809438d8d57216910e924eacb878f822eb"
+        },
+        {
+          "id": "blue-disc",
+          "label": "Blue note disc (2012)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/a/a6/ITunes11.svg/revision/latest?cb=20260904002019",
+          "sourcePage": "https://logos.fandom.com/wiki/File:ITunes11.svg",
+          "sourceSha256": "5536a20d3a564fadc05f3215886a41aba4dd1e00e08453c7ed237b572c5ae837",
+          "ops": {
+            "viewBox": "-13.468 -13.468 475.886 475.886"
+          },
+          "path": "/logos/svg/apps/alternates/amusic-blue-disc.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#E8E7E9",
+            "#2CC9F1",
+            "#043F84",
+            "#FFFFFF",
+            "#E8E8E8",
+            "#BABABA",
+            "#ABABAB",
+            "#949494"
+          ],
+          "sourcePalette": [
+            "#022042",
+            "#60AEC2",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "aaa92b088fea2a75e1e7666df7cac4d2dae98f006ffef39b18980d5dc53475d5"
         }
       ]
     },
@@ -290,6 +451,30 @@
           ],
           "unusedSourceSlots": [],
           "sha256": "133c3b0c2b832dcaf3add97ed985a767a8935d0ac6f3256cf24f31962fdd2106"
+        },
+        {
+          "id": "ringed-a",
+          "label": "Pencil-and-brush A in ring (2013)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/7/7d/App_Store_%28iOS%29_2013.svg/revision/latest?cb=20160818151505",
+          "sourcePage": "https://logos.fandom.com/wiki/File:App_Store_(iOS)_2013.svg",
+          "sourceSha256": "c0a728ef481b0e1951f0a8224ee2d35e3bceb057139b2e96a92014f825cdb5bd",
+          "ops": {
+            "viewBox": "-30 -30 1060 1060"
+          },
+          "path": "/logos/svg/apps/alternates/appstore-ringed-a.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#1AD4FD",
+            "#1D62F0"
+          ],
+          "sourcePalette": [
+            "#1D62F0",
+            "#1AD4FD",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "ce16f6c8667f341abc04753d4c51d76555381d4c7b87f2aa7f3c91083aa43321"
         }
       ]
     },
@@ -333,6 +518,266 @@
             2
           ],
           "sha256": "688640fa80825495081921a9fb311ad8c06213bec7dd34bd92b6d43b42846a0c"
+        }
+      ]
+    },
+    {
+      "id": "APP-BLUESKY",
+      "league": "APP",
+      "conference": "Social",
+      "region": "Bluesky",
+      "name": "",
+      "abbr": "BLUESKY",
+      "aliases": [
+        "Blue Sky",
+        "Bluesky Social",
+        "BSky"
+      ],
+      "palette": [
+        "#1185FE",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Blue butterfly",
+          "sourceUrl": "https://api.iconify.design/logos/bluesky.svg",
+          "sourcePage": "https://icon-sets.iconify.design/logos/bluesky/",
+          "sourceSha256": "98dd85ccac46744ded88c78d43da8709dcf0927fd2d0c9b46c2d88c564703e09",
+          "ops": {
+            "viewBox": "-7.68 -7.68 271.36 240.765"
+          },
+          "path": "/logos/svg/apps/bluesky.svg",
+          "format": "svg",
+          "colors": [
+            "#1185FE"
+          ],
+          "sourcePalette": [
+            "#1185FE",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "cb4580d6c879e106ef89f78c015efe4ace471362a3f54463c5f3e210cdaa4700"
+        },
+        {
+          "id": "2021-cube",
+          "label": "Blue cube (2021)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/e/eb/Bluesky_2021.svg/revision/latest?cb=20231223212659",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Bluesky_2021.svg",
+          "sourceSha256": "418f8b89eaf89817913110c80f0fa79d420fe029fece849f6f859241d141b27a",
+          "ops": {
+            "viewBox": "503.499 18.59 641.001 726.877"
+          },
+          "path": "/logos/svg/apps/alternates/bluesky-2021-cube.svg",
+          "format": "svg",
+          "colors": [
+            "#0146BE",
+            "#1C9BF0",
+            "#6DB3FF",
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#2E87E4",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "25d10a0f659ff8056d58c12d0b1ab37a10b34eb7bfe9caecf24f3ff178abba13"
+        }
+      ]
+    },
+    {
+      "id": "APP-BRAWL",
+      "league": "APP",
+      "conference": "Games",
+      "region": "Brawl Stars",
+      "name": "",
+      "abbr": "BRAWL",
+      "aliases": [
+        "Brawlstars"
+      ],
+      "palette": [
+        "#FFBE20",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Skull on yellow tile",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/e/ec/Brawl-Stars-Icon.svg/revision/latest?cb=20241020030356",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Brawl-Stars-Icon.svg",
+          "sourceSha256": "b9c6457a3eb62e7b9b47419a733d7eefb24dd40be9a55fdd5f4664bc652831d8",
+          "ops": {
+            "viewBox": "-10.8 -10.8 381.6 381.6"
+          },
+          "path": "/logos/svg/apps/brawl.svg",
+          "format": "svg",
+          "colors": [
+            "#FFE25B",
+            "#000000",
+            "#FFBE20",
+            "#FFFFFF",
+            "#FFB820",
+            "#EF7527"
+          ],
+          "sourcePalette": [
+            "#FBB330",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "6971032d2164a67ebc1e25b89e2861257f08caf654d961b5bcc57fbb5a5b0cdc"
+        }
+      ]
+    },
+    {
+      "id": "APP-BUMBLE",
+      "league": "APP",
+      "conference": "Everyday",
+      "region": "Bumble",
+      "name": "",
+      "abbr": "BUMBLE",
+      "aliases": [
+        "Bumble Dating"
+      ],
+      "palette": [
+        "#F6C347",
+        "#1B1722",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Striped hexagon",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/a/ad/Bumble_icon.svg/revision/latest?cb=20251127234709",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Bumble_icon.svg",
+          "sourceSha256": "588cf3bee276a221dd3a80b4b382c5104b2b68ebc32c93efb7dda2c4f412df3f",
+          "ops": {
+            "viewBox": "-14.051 -14.048 496.372 440.317"
+          },
+          "path": "/logos/svg/apps/bumble.svg",
+          "format": "svg",
+          "colors": [
+            "#F6C347",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#F6C347",
+            "#1B1722",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "44cee17538e98f687013bea810fbb111bdecdb4b6e9cd91934178ffcdfede442"
+        },
+        {
+          "id": "2024-tile",
+          "label": "Striped yellow tile (2024)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/4/46/Bumble_App_icon_%282024%29.svg/revision/latest?cb=20240501221518",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Bumble_App_icon_%282024%29.svg",
+          "sourceSha256": "33c0cdd1dc75b3b1a2dd1e3787697c69664e6413a7f1fe2102547e99501f162a",
+          "ops": {
+            "viewBox": "-9 -9 318 318"
+          },
+          "path": "/logos/svg/apps/alternates/bumble-2024-tile.svg",
+          "format": "svg",
+          "colors": [
+            "#F4EB0A",
+            "#1B1722"
+          ],
+          "sourcePalette": [
+            "#F4EB0A",
+            "#1B1722",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "2042815c03671b09752a3e602f8f9ceb268f2ec1707b61a94d24d50078d09892"
+        }
+      ]
+    },
+    {
+      "id": "APP-CALC",
+      "league": "APP",
+      "conference": "Built-in",
+      "region": "Calculator",
+      "name": "",
+      "abbr": "CALC",
+      "aliases": [
+        "Apple Calculator",
+        "iPhone Calculator"
+      ],
+      "palette": [
+        "#FF9500",
+        "#1C1C1C",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Keypad tile",
+          "sourceUrl": "https://logowik.com/ios-17-app-icons-set-icon-59931.html",
+          "sourcePage": "https://logowik.com/ios-17-app-icons-set-icon-59931.html",
+          "sourceSha256": "409ebe6d39fa43d32cac5ddf5dca708e45c0ff329eb5865ab6616bd3bbf9fd8b",
+          "downloadForm": "logowik",
+          "ops": {
+            "keepNodes": [
+              "0",
+              "34-44"
+            ],
+            "viewBox": "178.14 143.84 55.12 55.12"
+          },
+          "path": "/logos/svg/apps/calc.svg",
+          "format": "svg",
+          "colors": [
+            "#D4D4D2",
+            "#1C1C1C",
+            "#505050",
+            "#C4C4C4",
+            "#FF9500"
+          ],
+          "sourcePalette": [
+            "#FF9500",
+            "#363636",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "927291a7ff7b9474002e59e125858692144de16bf0a90ebbd152e76283c18f11"
+        },
+        {
+          "id": "operator-grid",
+          "label": "Operator grid tile (2013)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/0/0d/IOS_Calculator.svg/revision/latest?cb=20260212015427",
+          "sourcePage": "https://logos.fandom.com/wiki/File:IOS_Calculator.svg",
+          "sourceSha256": "43e01707caff77c5c79359b4173e286790f107f7f973ba2d2a6839b773f42dee",
+          "ops": {
+            "viewBox": "-26.88 -26.88 949.76 949.76"
+          },
+          "path": "/logos/svg/apps/alternates/calc-operator-grid.svg",
+          "format": "svg",
+          "colors": [
+            "#050008",
+            "#FF9600",
+            "#C6C7CB",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#FF9600",
+            "#050008",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "43d71aac396cc431e83ac1f11559f2dc934847fd2bd49c3bc83d0ffe38438ab4"
         }
       ]
     },
@@ -383,6 +828,360 @@
           ],
           "unusedSourceSlots": [],
           "sha256": "a71dd2e4b7e7148d4b0c09fa5025397dd2b8dc21ea3dcb98c600cdecf26723ee"
+        },
+        {
+          "id": "dot-grid",
+          "label": "Dotted month grid tile",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/8/8c/Calendar_%28iOS%29_II.svg/revision/latest?cb=20240615214253",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Calendar_(iOS)_II.svg",
+          "sourceSha256": "6d0e98ee4ddd6b3da85c7161bf1927f60b7c46c3baad18b2ec1873a444d331db",
+          "ops": {
+            "viewBox": "-30.72 -30.72 1085.44 1085.44"
+          },
+          "path": "/logos/svg/apps/alternates/calendar-dot-grid.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#FFFFFF",
+            "#FF3B30"
+          ],
+          "sourcePalette": [
+            "#FF3B30",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "b97c4f6a5bce637f03cfbe46eced59b2abebfc3f3b4c6d9892b71b613befe78a"
+        }
+      ]
+    },
+    {
+      "id": "APP-CAMERA",
+      "league": "APP",
+      "conference": "Built-in",
+      "region": "Camera",
+      "name": "",
+      "abbr": "CAMERA",
+      "aliases": [
+        "Apple Camera",
+        "iPhone Camera"
+      ],
+      "palette": [
+        "#8F8E92",
+        "#2D2D2D",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Camera body tile",
+          "sourceUrl": "https://logowik.com/ios-17-app-icons-set-icon-59931.html",
+          "sourcePage": "https://logowik.com/ios-17-app-icons-set-icon-59931.html",
+          "sourceSha256": "409ebe6d39fa43d32cac5ddf5dca708e45c0ff329eb5865ab6616bd3bbf9fd8b",
+          "downloadForm": "logowik",
+          "ops": {
+            "keepNodes": [
+              "0",
+              "32"
+            ],
+            "viewBox": "108.94 143.84 55.12 55.12"
+          },
+          "path": "/logos/svg/apps/camera.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#FFFFFF",
+            "#FCCA00",
+            "#E5E4EB",
+            "#8F8E92",
+            "#2D2D2D",
+            "#2D2C2E",
+            "#C4C3C7",
+            "#AAA9B0"
+          ],
+          "sourcePalette": [
+            "#AAA9AE",
+            "#1E1E1E",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "9ca24f32a598ebcbfbad65c9ef1337fc35b52e581ff14658d0d5867ea03d5d20"
+        }
+      ]
+    },
+    {
+      "id": "APP-CANDY",
+      "league": "APP",
+      "conference": "Games",
+      "region": "Candy Crush Saga",
+      "name": "",
+      "abbr": "CANDY",
+      "aliases": [
+        "Candy Crush",
+        "CandyCrush"
+      ],
+      "palette": [
+        "#CA9853",
+        "#70272A",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Golden candy lettering",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/4/4a/Candy_Crush.svg/revision/latest?cb=20180410174759",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Candy_Crush.svg",
+          "sourceSha256": "791de07e296528e38ab3a049dfa965cd50bf726e3dcf8f4b39dda8c51a3fd9d9",
+          "ops": {
+            "viewBox": "-30 -30 1060.001 908.396"
+          },
+          "showsName": true,
+          "path": "/logos/svg/apps/candy.svg",
+          "format": "svg",
+          "colors": [
+            "#453530",
+            "#CA9853",
+            "#70272A",
+            "#71282A",
+            "#73282B",
+            "#74282B",
+            "#76282B",
+            "#77282C",
+            "#78292C",
+            "#79292C",
+            "#7B292C",
+            "#7D292D",
+            "#7E2A2D",
+            "#7F2B2D",
+            "#812B2D",
+            "#832B2E",
+            "#842C2E",
+            "#842B2E",
+            "#872D2E",
+            "#882D2F",
+            "#8A2C2F",
+            "#8B2D2F",
+            "#8D2D2F",
+            "#8F2D30",
+            "#902E30",
+            "#912E30",
+            "#932E31",
+            "#952E31",
+            "#973031",
+            "#982F31",
+            "#993031",
+            "#9B2F32",
+            "#9D3132",
+            "#9E2F32",
+            "#A03032",
+            "#A23132",
+            "#A22F33",
+            "#A53132",
+            "#A63033",
+            "#A83133",
+            "#AA3033",
+            "#AB3033",
+            "#AD3132",
+            "#AE2F34",
+            "#B03134",
+            "#B13133",
+            "#B33033",
+            "#B53133",
+            "#B63234",
+            "#B83134",
+            "#B83233",
+            "#BA3235",
+            "#BC3134",
+            "#BD3235",
+            "#C03135",
+            "#C13034",
+            "#C32F34",
+            "#C53134",
+            "#C73134",
+            "#C93034",
+            "#CA3034",
+            "#CB3134",
+            "#CD3034",
+            "#CF3035",
+            "#332727",
+            "#000000",
+            "#E4BA48",
+            "#E1B447",
+            "#E1B146",
+            "#DFAD44",
+            "#DEAA43",
+            "#DDA643",
+            "#D9A144",
+            "#D89E43",
+            "#D59941",
+            "#D4963F",
+            "#D4933E",
+            "#D28E3D",
+            "#D08B3C",
+            "#CF873B",
+            "#D08A3C",
+            "#D4933F",
+            "#D59740",
+            "#D89C43",
+            "#DAA144",
+            "#DDA644",
+            "#DFAA44",
+            "#DFAE45",
+            "#DFAE44",
+            "#DFAE43",
+            "#E0AF42",
+            "#E1B042",
+            "#E1B141",
+            "#E1B140",
+            "#E1B13F",
+            "#E2B23E",
+            "#E3B23D",
+            "#E3B43C",
+            "#E2B43C",
+            "#E4B83F",
+            "#E4BC41",
+            "#E6BE44",
+            "#E7C347",
+            "#EAC74A",
+            "#EDCC4D",
+            "#EECF50",
+            "#EFD352",
+            "#F0D655",
+            "#F1DA57",
+            "#F1DA56",
+            "#F2DA54",
+            "#F1D855",
+            "#F1D854",
+            "#F1D853",
+            "#F0D753",
+            "#F1D852",
+            "#F3DD57",
+            "#F3DD56",
+            "#F2DC56",
+            "#F2DC55",
+            "#F2DC54",
+            "#F3DB53",
+            "#F2D952",
+            "#F1D951",
+            "#F2D951",
+            "#F2D950",
+            "#F1D84F",
+            "#EFD54F",
+            "#EED44E",
+            "#EED34E",
+            "#EDD14F",
+            "#EACE4F",
+            "#EACD4E",
+            "#E8CB4E",
+            "#E6C74B",
+            "#E4C14A",
+            "#E2BC4A",
+            "#E0B749",
+            "#E0B347",
+            "#DDAC46",
+            "#DBA747",
+            "#D9A145",
+            "#D69B41",
+            "#D3913D",
+            "#D18C3C",
+            "#D0883B",
+            "#E2B147",
+            "#E4B447",
+            "#E8B948",
+            "#EABC47",
+            "#EDC048",
+            "#EDC149",
+            "#EDC34A",
+            "#EDC54A",
+            "#EEC64C",
+            "#EEC84C",
+            "#EFC94E",
+            "#EFCB4F",
+            "#EECC4F",
+            "#F0CE51",
+            "#F0D051",
+            "#F0D152",
+            "#F1D351",
+            "#F1D454",
+            "#F2D654",
+            "#F1D756",
+            "#F1D856",
+            "#F0D651",
+            "#F0D650",
+            "#F0D64F",
+            "#EFD54E",
+            "#EFD44D",
+            "#EFD24B",
+            "#EECF4C",
+            "#EAC94B",
+            "#E9C64A",
+            "#E7C349",
+            "#E6BF47",
+            "#E5BC48",
+            "#E4B847",
+            "#E1B145",
+            "#DFAC43",
+            "#DDA844",
+            "#DCA544",
+            "#D9A044",
+            "#D99E42",
+            "#D69A42",
+            "#D3903D",
+            "#D18D3C",
+            "#D0893C"
+          ],
+          "sourcePalette": [
+            "#E5BB49",
+            "#70272A",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "ca252005c5ce7dd29695aeb95ecac5a9421fcc8efcb75ac49950ea0a45f97645"
+        }
+      ]
+    },
+    {
+      "id": "APP-CAPCUT",
+      "league": "APP",
+      "conference": "Music & Video",
+      "region": "CapCut",
+      "name": "",
+      "abbr": "CAPCUT",
+      "aliases": [
+        "Cap Cut"
+      ],
+      "palette": [
+        "#000000",
+        "#999999",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Crossed cut mark",
+          "sourceUrl": "https://api.iconify.design/selfhst/capcut.svg",
+          "sourcePage": "https://icon-sets.iconify.design/selfhst/capcut/",
+          "sourceSha256": "ac2c9644eb32c5c9e2d9b9609a309b73f0f96942a96fcf7f3dc3f240f0548060",
+          "ops": {
+            "viewBox": "-15.36 39.54 542.72 432.82"
+          },
+          "path": "/logos/svg/apps/capcut.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#999999",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "4d62988df186ffd4e96a2a98d3853071c3dd038190300a8ca08e7a2a404f6bef"
         }
       ]
     },
@@ -563,6 +1362,102 @@
           ],
           "unusedSourceSlots": [],
           "sha256": "13a6c8126d12676e5d9c8ef993c0366ac206921f2127c43cf66b2e9a1199b1fc"
+        },
+        {
+          "id": "glossy-orb",
+          "label": "Glossy 3D orb (2008)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/9/98/Google_Chrome_Logo_2008.svg/revision/latest?cb=20220215235053",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Google_Chrome_Logo_2008.svg",
+          "sourceSha256": "bb9d990e231c1489a4571d1c05d80d950e28ffb776f76f9df6bb45f551151a7d",
+          "ops": {
+            "viewBox": "-15.361 -15.361 542.763 521.134"
+          },
+          "path": "/logos/svg/apps/alternates/chrome-glossy-orb.svg",
+          "format": "svg",
+          "colors": [
+            "#4E4A4A",
+            "#007A3F",
+            "#005A2B",
+            "#00663F",
+            "#262626",
+            "#AF8513",
+            "#591F00",
+            "#8F0404",
+            "#FFFFFF",
+            "#D1AB1A",
+            "#DED9D9",
+            "#6A6363",
+            "#8DDB92",
+            "#77CE7C",
+            "#3EAB45",
+            "#078A0F",
+            "#108C18",
+            "#28922F",
+            "#299230",
+            "#F60000",
+            "#E70505",
+            "#C41212",
+            "#DD7878",
+            "#B1DDF4",
+            "#A9D7F3",
+            "#93C7F1",
+            "#6EADEE",
+            "#5B9FEC",
+            "#0B85D1",
+            "#1375B3",
+            "#166FA8",
+            "#1E608B",
+            "#2B475C",
+            "#33383F",
+            "#363233",
+            "#FFE650",
+            "#FFDB00",
+            "#D5B319",
+            "#29506B",
+            "#304D68",
+            "#424560",
+            "#613854",
+            "#673551",
+            "#4D7EBE",
+            "#633753",
+            "#343539",
+            "#C7DD85",
+            "#496D4E",
+            "#F4DD80"
+          ],
+          "sourcePalette": [
+            "#C41212",
+            "#5B9FEC",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "672aea4d532ef017f00bcad173447bf4a428c7889275b4e629793c3819a1e957"
+        },
+        {
+          "id": "pixel-dino",
+          "label": "Pixel T-rex",
+          "sourceUrl": "https://logowik.com/chrome-dinosaurio-logo-vector-59547.html",
+          "sourcePage": "https://logowik.com/chrome-dinosaurio-logo-vector-59547.html",
+          "sourceSha256": "963d1d2891fb40325a7b3d4e6318633533bafc17bf9a1bb2cb6783236cabd69d",
+          "downloadForm": "logowik",
+          "ops": {
+            "viewBox": "4.686 -9.162 301.969 323.724"
+          },
+          "path": "/logos/svg/apps/alternates/chrome-pixel-dino.svg",
+          "format": "svg",
+          "colors": [
+            "#666666",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#666666",
+            "#4285F4",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "455e9d15cba205fa301193cb956e2af0423df5eb8556d03b1db0c4552f362887"
         }
       ]
     },
@@ -616,6 +1511,49 @@
       ]
     },
     {
+      "id": "APP-COINBASE",
+      "league": "APP",
+      "conference": "Everyday",
+      "region": "Coinbase",
+      "name": "",
+      "abbr": "COINBASE",
+      "aliases": [
+        "Coin Base"
+      ],
+      "palette": [
+        "#0052FF",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "C ring",
+          "sourceUrl": "https://api.iconify.design/thesvg-color/coinbase.svg",
+          "sourcePage": "https://icon-sets.iconify.design/thesvg-color/coinbase/",
+          "sourceSha256": "8b4a70ebe093480edc87a668a14a3c5e36705f2ab540a729f066a1f42eee0131",
+          "ops": {
+            "viewBox": "-1.44 -1.44 50.88 50.88"
+          },
+          "path": "/logos/svg/apps/coinbase.svg",
+          "format": "svg",
+          "colors": [
+            "#0052FF",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#0052FF",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "b187d3638ee9c900aa89d7573070e075654cebe8d2bb83f12f658434b6b68c82"
+        }
+      ]
+    },
+    {
       "id": "APP-CR",
       "league": "APP",
       "conference": "Games",
@@ -663,6 +1601,55 @@
       ]
     },
     {
+      "id": "APP-CROSSY",
+      "league": "APP",
+      "conference": "Games",
+      "region": "Crossy Road",
+      "name": "",
+      "abbr": "CROSSY",
+      "aliases": [
+        "Crossy",
+        "CrossyRoad"
+      ],
+      "palette": [
+        "#ECEFF1",
+        "#EC407A",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Blocky chicken",
+          "sourceUrl": "https://raw.githubusercontent.com/chouhan-rahul/icons_plus/v5.0.0/assets/images/logos/video-games/crossy-road-logo.svg",
+          "sourcePage": "https://github.com/chouhan-rahul/icons_plus/blob/v5.0.0/assets/images/logos/video-games/crossy-road-logo.svg",
+          "sourceSha256": "a869e2442affa2c35a2d1d9385631bb015d7970743b9da0052d3c99fbcab130c",
+          "ops": {
+            "viewBox": "7.21 1.71 34.08 45.58"
+          },
+          "path": "/logos/svg/apps/crossy.svg",
+          "format": "svg",
+          "colors": [
+            "#CFD8DC",
+            "#ECEFF1",
+            "#F48FB1",
+            "#F06292",
+            "#EC407A",
+            "#424242",
+            "#FF8A65",
+            "#FF7043",
+            "#E64A19"
+          ],
+          "sourcePalette": [
+            "#E2B4C6",
+            "#EC407A",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "355be2bd68e7ff6bbe666c04ffebc18534b9438bb80368d9fb579675f116fdd7"
+        }
+      ]
+    },
+    {
       "id": "APP-CRUNCHY",
       "league": "APP",
       "conference": "Music & Video",
@@ -702,6 +1689,112 @@
             2
           ],
           "sha256": "0406d27ddf3689a7c97032d2f8588fef04a933bbb57c19a4203ec027d4e80e7e"
+        },
+        {
+          "id": "inked-orb",
+          "label": "Inked orange orb (2006)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/3/3b/Crunchyroll_2006.svg/revision/latest?cb=20190312173523",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Crunchyroll_2006.svg",
+          "sourceSha256": "ecc83fa3cde0b2f263ef4554794954e60f8f4fd96475f5e6e5c18ac76055e8b9",
+          "ops": {
+            "removeNodes": [
+              "0/1"
+            ],
+            "viewBox": "-7.923 -7.922 279.917 244.846"
+          },
+          "path": "/logos/svg/apps/alternates/crunchy-inked-orb.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#FCB040"
+          ],
+          "sourcePalette": [
+            "#FCB040",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "b1cca1512df66d53d179bb3613928057c84a689ab3ad74d7f91b9deb31789513"
+        }
+      ]
+    },
+    {
+      "id": "APP-DEEZER",
+      "league": "APP",
+      "conference": "Music & Video",
+      "region": "Deezer",
+      "name": "",
+      "abbr": "DEEZER",
+      "aliases": [],
+      "palette": [
+        "#A238FF",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Purple pulse heart",
+          "sourceUrl": "https://api.iconify.design/selfhst/deezer.svg",
+          "sourcePage": "https://icon-sets.iconify.design/selfhst/deezer/",
+          "sourceSha256": "b833c1a514ba2a556b08a28e96c946dd0be258ccd77e190aa7888e7af7f98b29",
+          "ops": {
+            "viewBox": "-15.36 -15.36 542.72 542.72"
+          },
+          "path": "/logos/svg/apps/deezer.svg",
+          "format": "svg",
+          "colors": [
+            "#A238FF"
+          ],
+          "sourcePalette": [
+            "#A238FF",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "299511bb66c55fcbfa6ff6ef6c10104e96df83f8b1067e6b007f0aaea3d8f0d1"
+        },
+        {
+          "id": "equalizer",
+          "label": "Rainbow equalizer bars",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/c/c6/Deezer_Equalizer_Coloured.svg/revision/latest?cb=20201221150300",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Deezer_Equalizer_Coloured.svg",
+          "sourceSha256": "83c0665eb67d97c17486032d24dd085aa2691b0051487e28424c73b159cd90d1",
+          "ops": {
+            "viewBox": "-3.559 -3.332 125.768 84.892"
+          },
+          "path": "/logos/svg/apps/alternates/deezer-equalizer.svg",
+          "format": "svg",
+          "colors": [
+            "#40AB5D",
+            "#FFD100",
+            "#FD5A22",
+            "#FFCC00",
+            "#CE1938",
+            "#CC1953",
+            "#241284",
+            "#222B90",
+            "#3559A6",
+            "#FF8000",
+            "#FF9900",
+            "#367B99",
+            "#358C7B",
+            "#33A65E"
+          ],
+          "sourcePalette": [
+            "#316B81",
+            "#FF9D07",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "c7047eb711c3eca209b14e1e065d8974b8bac0555c5545a90380bfe3831e4cf4"
         }
       ]
     },
@@ -860,6 +1953,225 @@
           ],
           "unusedSourceSlots": [],
           "sha256": "d1ccfb37dc662de7e6d2aba65e16e1df93a86ad85fa9a06dd295eafd727a0c82"
+        },
+        {
+          "id": "full-body-owl",
+          "label": "Full-body green owl (2013)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/6/65/Duolingo_%282013%29_%28App_icon%29_%28Android%29.svg/revision/latest?cb=20250808033405",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Duolingo_(2013)_(App_icon)_(Android).svg",
+          "sourceSha256": "968d00ed6500921a34e4b44376226780eb145f8d1f13d8884af5ddea17206779",
+          "ops": {
+            "viewBox": "-79.54 -79.54 2794.843 2810.414"
+          },
+          "path": "/logos/svg/apps/alternates/duo-full-body-owl.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#3F3F3F",
+            "#71B200",
+            "#F49000",
+            "#FFC200",
+            "#FFF3B8",
+            "#FE9E00",
+            "#2FB517",
+            "#47BD0F",
+            "#94F31B",
+            "#75EB25",
+            "#94DE25",
+            "#3BCD21"
+          ],
+          "sourcePalette": [
+            "#47BD0F",
+            "#C2C711",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "ff1e302b030b192a7c1c9eacaa3d54ef6c212b16cd3770b1abbdacb9cae9b9f2"
+        }
+      ]
+    },
+    {
+      "id": "APP-EVERNOTE",
+      "league": "APP",
+      "conference": "Productivity",
+      "region": "Evernote",
+      "name": "",
+      "abbr": "EVERNOTE",
+      "aliases": [
+        "Ever Note"
+      ],
+      "palette": [
+        "#00A82D",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Elephant head",
+          "sourceUrl": "https://api.iconify.design/thesvg-color/evernote.svg",
+          "sourcePage": "https://icon-sets.iconify.design/thesvg-color/evernote/",
+          "sourceSha256": "b17e62fbbe02bc9c6fb1880a93052b4c65d8e8aae7475376ab0a8f852883aa09",
+          "ops": {
+            "viewBox": "1.108 -0.72 21.784 25.44"
+          },
+          "path": "/logos/svg/apps/evernote.svg",
+          "format": "svg",
+          "colors": [
+            "#00A82D"
+          ],
+          "sourcePalette": [
+            "#00A82D",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "330c3cca7a59380ab95eb16938f1f3c672fbbcc8ffc3c58b9bcc19256ecc8211"
+        }
+      ]
+    },
+    {
+      "id": "APP-EXCEL",
+      "league": "APP",
+      "conference": "Productivity",
+      "region": "Microsoft Excel",
+      "name": "",
+      "abbr": "EXCEL",
+      "aliases": [
+        "Excel",
+        "MS Excel"
+      ],
+      "palette": [
+        "#107C41",
+        "#33C481",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Gradient blocks with X",
+          "sourceUrl": "https://api.iconify.design/selfhst/microsoft-excel.svg",
+          "sourcePage": "https://icon-sets.iconify.design/selfhst/microsoft-excel/",
+          "sourceSha256": "fe9a927672014b84019c36dbaeaa7cdd4cc73cff0ebfc159e0b0e6804e221d50",
+          "ops": {
+            "viewBox": "-8.263 -15.363 528.526 542.826"
+          },
+          "path": "/logos/svg/apps/excel.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#379539",
+            "#297C2D",
+            "#15561C",
+            "#073B10",
+            "#084A13",
+            "#52D17C",
+            "#4AA647",
+            "#29852F",
+            "#66D052",
+            "#85E972",
+            "#4EB43B",
+            "#72CC61",
+            "#C0E075",
+            "#D1EB95",
+            "#79E96D",
+            "#D0EB76",
+            "#20A85E",
+            "#09442A",
+            "#33A662",
+            "#98F0B0"
+          ],
+          "sourcePalette": [
+            "#257930",
+            "#7BD56D",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "d8c7ead03e72bd76ca9dffa8f9d1d8ba7d7d2f9ce922f4c3bd0d1a592a657612"
+        },
+        {
+          "id": "2018-tile",
+          "label": "Green grid tile with X (2018)",
+          "sourceUrl": "https://api.iconify.design/selfhst/microsoft-excel-2018.svg",
+          "sourcePage": "https://icon-sets.iconify.design/selfhst/microsoft-excel-2018/",
+          "sourceSha256": "cae0510cfb59dfc023481837ffa8675e580438b56da87509e6b3bf5312822bdb",
+          "ops": {
+            "viewBox": "-15.36 2.54 542.72 506.92"
+          },
+          "path": "/logos/svg/apps/alternates/excel-2018-tile.svg",
+          "format": "svg",
+          "colors": [
+            "#185C37",
+            "#21A366",
+            "#107C41",
+            "#000000",
+            "#FFFFFF",
+            "#33C481",
+            "#18884F",
+            "#117E43",
+            "#0B6631"
+          ],
+          "sourcePalette": [
+            "#107C41",
+            "#2AB474",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "319d08b3d44e70bda73edfa744ae57685b1fcbacc5e77d68722b06e7d519e68e"
+        },
+        {
+          "id": "2013-sheet",
+          "label": "X over sheet (2013)",
+          "sourceUrl": "https://api.iconify.design/selfhst/microsoft-excel-2013.svg",
+          "sourcePage": "https://icon-sets.iconify.design/selfhst/microsoft-excel-2013/",
+          "sourceSha256": "b0b0d5e63a479bc4ba9cfe1c0064739327c8030884d035340b30cbe3c074017a",
+          "ops": {
+            "viewBox": "-15.363 -1.063 542.826 514.126"
+          },
+          "path": "/logos/svg/apps/alternates/excel-2013-sheet.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#1D6B40",
+            "#217748"
+          ],
+          "sourcePalette": [
+            "#1F7144",
+            "#33C481",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "e828b65322e6c2c74bee4159497c88f4f126027c7266d2265f3862b5762826ab"
+        },
+        {
+          "id": "classic-x",
+          "label": "Boxed X (2000s)",
+          "sourceUrl": "https://api.iconify.design/selfhst/microsoft-excel-2000.svg",
+          "sourcePage": "https://icon-sets.iconify.design/selfhst/microsoft-excel-2000/",
+          "sourceSha256": "eff61d236156dc1e23c291593582b015a0b32a295fbf1797197e2b34f579153e",
+          "ops": {
+            "viewBox": "-15.36 -15.36 542.72 542.72"
+          },
+          "path": "/logos/svg/apps/alternates/excel-classic-x.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#006600"
+          ],
+          "sourcePalette": [
+            "#006600",
+            "#33C481",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "ae3a6be9a82e981ae15b9a241c1464bd2e92d40723461a0f31d30ac799931c8c"
         }
       ]
     },
@@ -911,6 +2223,390 @@
       ]
     },
     {
+      "id": "APP-FILES",
+      "league": "APP",
+      "conference": "Built-in",
+      "region": "Files",
+      "name": "",
+      "abbr": "FILES",
+      "aliases": [
+        "Apple Files",
+        "iPhone Files",
+        "Files app"
+      ],
+      "palette": [
+        "#0283EC",
+        "#2ABAFB",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Blue folder tile",
+          "sourceUrl": "https://logowik.com/ios-17-app-icons-set-icon-59931.html",
+          "sourcePage": "https://logowik.com/ios-17-app-icons-set-icon-59931.html",
+          "sourceSha256": "409ebe6d39fa43d32cac5ddf5dca708e45c0ff329eb5865ab6616bd3bbf9fd8b",
+          "downloadForm": "logowik",
+          "ops": {
+            "keepNodes": [
+              "0",
+              "194-199"
+            ],
+            "viewBox": "593.84 230.44 55.12 55.12"
+          },
+          "path": "/logos/svg/apps/files.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#13B0F8",
+            "#0283EC",
+            "#2ABAFB",
+            "#2676F6"
+          ],
+          "sourcePalette": [
+            "#147CF1",
+            "#1EB5FA",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "cae2a9a93a87c9b13c625a3161dceddeb9f268cb63c3898b27c271b98295c66d"
+        }
+      ]
+    },
+    {
+      "id": "APP-FINDMY",
+      "league": "APP",
+      "conference": "Built-in",
+      "region": "Find My",
+      "name": "",
+      "abbr": "FINDMY",
+      "aliases": [
+        "Find My iPhone",
+        "Find My Friends",
+        "Apple Find My",
+        "FindMy"
+      ],
+      "palette": [
+        "#35C862",
+        "#007AFF",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Radar target tile",
+          "sourceUrl": "https://logowik.com/ios-17-app-icons-set-icon-59931.html",
+          "sourcePage": "https://logowik.com/ios-17-app-icons-set-icon-59931.html",
+          "sourceSha256": "409ebe6d39fa43d32cac5ddf5dca708e45c0ff329eb5865ab6616bd3bbf9fd8b",
+          "downloadForm": "logowik",
+          "ops": {
+            "keepNodes": [
+              "0",
+              "201-210"
+            ],
+            "viewBox": "663.14 230.44 55.12 55.12"
+          },
+          "path": "/logos/svg/apps/findmy.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#007AFF",
+            "#DCDCDA",
+            "#CCCCCA",
+            "#4BE477",
+            "#35C862",
+            "#63EF7D",
+            "#41CE59"
+          ],
+          "sourcePalette": [
+            "#49DA6C",
+            "#007AFF",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "a216536a040c5b4b8ae2e0915939faa560879e65b1eae02e33edf9b620839f28"
+        }
+      ]
+    },
+    {
+      "id": "APP-FLAPPY",
+      "league": "APP",
+      "conference": "Games",
+      "region": "Flappy Bird",
+      "name": "",
+      "abbr": "FLAPPY",
+      "aliases": [
+        "Flappy",
+        "FlappyBird"
+      ],
+      "palette": [
+        "#F7B637",
+        "#2CD0F6",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Pixel bird over clouds",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/b/b6/Flappy_Bird_Family_Icon.svg/revision/latest?cb=20231104110639",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Flappy_Bird_Family_Icon.svg",
+          "sourceSha256": "9e78b6b790e5c56ec9733ae44218464c69f1a32249c8900b0b653c8ff5e88d3f",
+          "ops": {
+            "viewBox": "-0.72 -0.72 25.44 24.44"
+          },
+          "path": "/logos/svg/apps/flappy.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#07C7F4",
+            "#0CC8F4",
+            "#10CAF4",
+            "#13CBF5",
+            "#1ACCF5",
+            "#1FCDF5",
+            "#22CEF5",
+            "#26CFF5",
+            "#2AD0F6",
+            "#2BD0F6",
+            "#2CD0F6",
+            "#28CFF6",
+            "#24CFF5",
+            "#1CCCF5",
+            "#16CBF5",
+            "#13CAF5",
+            "#0DC9F4",
+            "#09C7F4",
+            "#19CCF5",
+            "#1ECDF5",
+            "#25CFF5",
+            "#31D1F6",
+            "#37D2F6",
+            "#39D3F6",
+            "#3CD4F6",
+            "#3DD4F6",
+            "#3BD4F6",
+            "#38D3F6",
+            "#33D2F6",
+            "#30D1F6",
+            "#29D0F6",
+            "#1DCDF5",
+            "#15CBF5",
+            "#0FC9F4",
+            "#10C9F4",
+            "#18CCF5",
+            "#20CEF5",
+            "#2ED1F6",
+            "#36D3F6",
+            "#3AD4F6",
+            "#41D5F7",
+            "#46D6F7",
+            "#48D6F7",
+            "#49D7F7",
+            "#47D6F7",
+            "#43D5F7",
+            "#3ED5F7",
+            "#32D1F6",
+            "#1BCDF5",
+            "#23CEF5",
+            "#2DD0F6",
+            "#34D2F6",
+            "#48D7F7",
+            "#4ED8F7",
+            "#55DAF7",
+            "#5BDBF8",
+            "#5EDBF8",
+            "#60DCF8",
+            "#5FDCF8",
+            "#59DAF7",
+            "#52D9F7",
+            "#4DD8F7",
+            "#27CFF5",
+            "#11CAF5",
+            "#21CEF5",
+            "#4FD8F7",
+            "#5ADAF7",
+            "#6ADEF8",
+            "#70DFF8",
+            "#73E0F8",
+            "#75E0F9",
+            "#74E0F9",
+            "#6DDFF8",
+            "#65DDF8",
+            "#35D2F6",
+            "#42D5F7",
+            "#4BD7F7",
+            "#59DAF8",
+            "#6CDFF8",
+            "#76E1F9",
+            "#7DE2F9",
+            "#80E3F9",
+            "#82E3F9",
+            "#81E3F9",
+            "#7FE3F9",
+            "#7AE1F9",
+            "#71E0F9",
+            "#6CDEF8",
+            "#5FDBF8",
+            "#3AD3F6",
+            "#1CCDF5",
+            "#31D2F6",
+            "#40D5F7",
+            "#50D8F7",
+            "#5ADAF8",
+            "#78E1F9",
+            "#7FE2F9",
+            "#8AE5FA",
+            "#85E4F9",
+            "#7EE3F9",
+            "#71DFF8",
+            "#63DCF8",
+            "#5DDBF8",
+            "#68DEF8",
+            "#87E4F9",
+            "#F9D68D",
+            "#FFFFFF",
+            "#8EE6FA",
+            "#67DDF8",
+            "#54D9F7",
+            "#26CFF6",
+            "#3FD5F7",
+            "#64DDF8",
+            "#6FDFF8",
+            "#F7B637",
+            "#88E4F9",
+            "#79E1F9",
+            "#6EDFF8",
+            "#3ED4F6",
+            "#D6E5CC",
+            "#84E4F9",
+            "#51D8F7",
+            "#40D5F6",
+            "#62DCF8",
+            "#8DE5FA",
+            "#58DAF7",
+            "#4BD8F7",
+            "#32D2F6",
+            "#66DDF8",
+            "#91E7FA",
+            "#70DFF9",
+            "#53D9F7",
+            "#69DEF8",
+            "#88E5F9",
+            "#51D9F7",
+            "#FB3803",
+            "#45D6F7",
+            "#88E4FA",
+            "#7EE2F9",
+            "#88E5FA",
+            "#73E0F9",
+            "#B6EEFB",
+            "#B0EDFB",
+            "#A1EAFA",
+            "#AAEBFA",
+            "#AFEDFB",
+            "#B9EFFB",
+            "#C3F1FB",
+            "#C1F1FC",
+            "#DF7F2E",
+            "#A3EAFB",
+            "#B8EFFB",
+            "#B4EEFB",
+            "#AEEDFB",
+            "#A0E9FA",
+            "#A7EBFA",
+            "#ADEDFB",
+            "#BFF0FB",
+            "#C5F2FC",
+            "#CDF4FC",
+            "#C9F2FC",
+            "#C4F1FB",
+            "#BAF0FB",
+            "#B1EDFB",
+            "#ACECFA",
+            "#9EE9FA",
+            "#A6EBFA",
+            "#ABECFA",
+            "#BDF0FB",
+            "#C2F1FB",
+            "#CBF3FC",
+            "#D2F5FC",
+            "#D7F5FC",
+            "#E5F9FD",
+            "#E0F8FD",
+            "#DAF6FC",
+            "#D6F6FC",
+            "#CEF4FC",
+            "#C6F2FC",
+            "#C1F1FB",
+            "#CCF4FC",
+            "#F0FBFF",
+            "#B7EFFB",
+            "#BCF0FB",
+            "#CFF4FC",
+            "#D6F5FC",
+            "#F6FDFF",
+            "#F7FDFF",
+            "#ECFAFF",
+            "#D8F6FC",
+            "#F4FCFF",
+            "#B2EDFB",
+            "#D1F4FD",
+            "#C8F2FC",
+            "#F2FCFF",
+            "#F1FBFF"
+          ],
+          "sourcePalette": [
+            "#F7B637",
+            "#4CD7F7",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "6e81ea234b8542e349756d99b6c3d243b2e2e24ff8f5c9f3ac160f71bc642921"
+        }
+      ]
+    },
+    {
+      "id": "APP-FLICKR",
+      "league": "APP",
+      "conference": "Social",
+      "region": "Flickr",
+      "name": "",
+      "abbr": "FLICKR",
+      "aliases": [],
+      "palette": [
+        "#0062DD",
+        "#FF0084",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Blue and pink dots",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/9/94/Flickr_symbol.svg/revision/latest?cb=20250414024256",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Flickr_symbol.svg",
+          "sourceSha256": "d7f38b131c067d8f85d5c41e8ce0ae327a60a435b30f54c4de0772644024c4ed",
+          "ops": {
+            "viewBox": "-8.691 -8.691 307.088 156.672"
+          },
+          "path": "/logos/svg/apps/flickr.svg",
+          "format": "svg",
+          "colors": [
+            "#0062DD",
+            "#FF0084"
+          ],
+          "sourcePalette": [
+            "#0062DD",
+            "#FF0084",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "3be09a26ca991fb94e4b4ee0a28794ac15e5a7a6c961daa594c42ae555ddbddd"
+        }
+      ]
+    },
+    {
       "id": "APP-FORTNITE",
       "league": "APP",
       "conference": "Games",
@@ -950,6 +2646,33 @@
             1
           ],
           "sha256": "b9382c7cee4755c1db63599c8900f32b16884683a1fba2ce85bebb4c887f47df"
+        },
+        {
+          "id": "llama",
+          "label": "Loot llama silhouette",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/5/5e/Fortnite_%28Llama_Loot_Pi%C3%B1ata_Silhouette%29.svg/revision/latest?cb=20200907103823",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Fortnite_(Llama_Loot_Pi%C3%B1ata_Silhouette).svg",
+          "sourceSha256": "9518abf9f4ea7c8e551053d4ff24d269362f563510ac087f9acf42cfc1981fc0",
+          "ops": {
+            "fill": "#000000",
+            "clipToViewBox": true,
+            "viewBox": "95 -66 440 626"
+          },
+          "path": "/logos/svg/apps/alternates/fortnite-llama.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "c64614a9dafe2cc6132d4b2ea7d0eda77027b4b0cce80dca9f993ea80b4cf264"
         }
       ]
     },
@@ -1005,6 +2728,252 @@
           ],
           "unusedSourceSlots": [],
           "sha256": "d13607eb378ab207942fb9f85b86ab80a662f92d9acd3c01da44a8c71554dfd8"
+        }
+      ]
+    },
+    {
+      "id": "APP-GDOCS",
+      "league": "APP",
+      "conference": "Productivity",
+      "region": "Google Docs",
+      "name": "",
+      "abbr": "GDOCS",
+      "aliases": [
+        "GDocs",
+        "Google Doc"
+      ],
+      "palette": [
+        "#3186FF",
+        "#76BBFF",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Gradient page",
+          "sourceUrl": "https://api.iconify.design/thesvg-color/google-docs-2026.svg",
+          "sourcePage": "https://icon-sets.iconify.design/thesvg-color/google-docs-2026/",
+          "sourceSha256": "b3cc0eeba87f27a6531fedd756ea0270e72e620ba6596ec1cf7359ab8a4794d3",
+          "ops": {
+            "viewBox": "26.48 2.48 139.039 195.04"
+          },
+          "path": "/logos/svg/apps/gdocs.svg",
+          "format": "svg",
+          "colors": [
+            "#3186FF",
+            "#76BBFF",
+            "#FFFFFF",
+            "#A9A8FF"
+          ],
+          "sourcePalette": [
+            "#3186FF",
+            "#90B2FF",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "015dc8d22b1a0e38e8c25fc414c7c0f95568bb0ac037b98891dbfa36dc244def"
+        },
+        {
+          "id": "lined-page",
+          "label": "Blue lined page",
+          "sourceUrl": "https://api.iconify.design/selfhst/google-docs.svg",
+          "sourcePage": "https://icon-sets.iconify.design/selfhst/google-docs/",
+          "sourceSha256": "4120e237f726845c773c5ef99d3f251c5e5d31f94aa93d6e1265993c3d3ef9e4",
+          "ops": {
+            "viewBox": "54.44 -15.36 403.12 542.72"
+          },
+          "path": "/logos/svg/apps/alternates/gdocs-lined-page.svg",
+          "format": "svg",
+          "colors": [
+            "#3086F6",
+            "#0C67D6",
+            "#FDFFFF"
+          ],
+          "sourcePalette": [
+            "#3086F6",
+            "#0C67D6",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "e79c449ebd262c726ef264fb83e49329289d103eeb2dd314bf48ceec659b1acb"
+        }
+      ]
+    },
+    {
+      "id": "APP-GDRIVE",
+      "league": "APP",
+      "conference": "Productivity",
+      "region": "Google Drive",
+      "name": "",
+      "abbr": "GDRIVE",
+      "aliases": [
+        "GDrive"
+      ],
+      "palette": [
+        "#0EBC5F",
+        "#3186FF",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Gradient triangle",
+          "sourceUrl": "https://api.iconify.design/logos/google-drive.svg",
+          "sourcePage": "https://icon-sets.iconify.design/logos/google-drive/",
+          "sourceSha256": "9e9e23ec983f01b22cda32383ccfe30d706224361e1d84e9809efcab3fa895a1",
+          "ops": {
+            "viewBox": "-7.68 -7.68 271.36 252.61"
+          },
+          "path": "/logos/svg/apps/gdrive.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#FFE921",
+            "#FEC700",
+            "#A9A8FF",
+            "#6D97FF",
+            "#3186FF",
+            "#0EBC5F",
+            "#78C9FF"
+          ],
+          "sourcePalette": [
+            "#0EBC5F",
+            "#5DA2FF",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "3466ef3d120c0dc1ea88a44d4628149c548d2531c0e653894855093220468d09"
+        },
+        {
+          "id": "2020-triangle",
+          "label": "Four-color triangle (2020)",
+          "sourceUrl": "https://api.iconify.design/logos/google-drive-2020.svg",
+          "sourcePage": "https://icon-sets.iconify.design/logos/google-drive-2020/",
+          "sourceSha256": "9133b28fec6d277eda71bddd7dd2f079ee7d805fb7bde7648710254822d49150",
+          "ops": {
+            "viewBox": "-7.68 -7.68 271.362 244.091"
+          },
+          "path": "/logos/svg/apps/alternates/gdrive-2020-triangle.svg",
+          "format": "svg",
+          "colors": [
+            "#0066DA",
+            "#EA4335",
+            "#00832D",
+            "#2684FC",
+            "#00AC47",
+            "#FFBA00"
+          ],
+          "sourcePalette": [
+            "#00983A",
+            "#1375EB",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "ca241d7b0f5e70ee418f41be999bb0821f892ffac356d29a0fca282d57c5e425"
+        }
+      ]
+    },
+    {
+      "id": "APP-GEMINI",
+      "league": "APP",
+      "conference": "Everyday",
+      "region": "Gemini",
+      "name": "",
+      "abbr": "GEMINI",
+      "aliases": [
+        "Google Gemini"
+      ],
+      "palette": [
+        "#3186FF",
+        "#FC413D",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Gradient sparkle",
+          "sourceUrl": "https://api.iconify.design/logos/google-gemini-icon.svg",
+          "sourcePage": "https://icon-sets.iconify.design/logos/google-gemini-icon/",
+          "sourceSha256": "6544c5c96be069a370cb38a797d30075569b98c471642419d6ec447181c53d18",
+          "ops": {
+            "viewBox": "-7.68 -7.68 271.36 271.36"
+          },
+          "path": "/logos/svg/apps/gemini.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#FFE432",
+            "#FC413D",
+            "#00B95C",
+            "#3186FF",
+            "#FBBC04",
+            "#749BFF",
+            "#FFEE48",
+            "#000000",
+            "#4893FC",
+            "#969DFF",
+            "#BD99FE"
+          ],
+          "sourcePalette": [
+            "#3186FF",
+            "#FC413D",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "3b38b590434f0b51f582b956859d95095289881bf8da0f0d2ede5fd3f627563a"
+        }
+      ]
+    },
+    {
+      "id": "APP-GENSHIN",
+      "league": "APP",
+      "conference": "Games",
+      "region": "Genshin Impact",
+      "name": "",
+      "abbr": "GENSHIN",
+      "aliases": [
+        "Genshin"
+      ],
+      "palette": [
+        "#5E35B1",
+        "#E8EAF6",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Floating fairy companion",
+          "sourceUrl": "https://raw.githubusercontent.com/chouhan-rahul/icons_plus/v5.0.0/assets/images/logos/video-games/genshin-impact.svg",
+          "sourcePage": "https://github.com/chouhan-rahul/icons_plus/blob/v5.0.0/assets/images/logos/video-games/genshin-impact.svg",
+          "sourceSha256": "dc6cacd8f09edae0eefe4169ada124b4ba73848ae86b4b60b4f4c156b5748aaa",
+          "ops": {
+            "viewBox": "-1.44 -0.586 50.88 48.026"
+          },
+          "path": "/logos/svg/apps/genshin.svg",
+          "format": "svg",
+          "colors": [
+            "#E8EAF6",
+            "#9E9E9E",
+            "#FFE0B2",
+            "#5E35B1",
+            "#FF9E80",
+            "#536DFE",
+            "#FFFFFF",
+            "#FF6E40",
+            "#FFD180",
+            "#CFD8DC"
+          ],
+          "sourcePalette": [
+            "#5851D8",
+            "#E2C1A2",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "fae06de07c118cde951492879e963a48c1ba108a02d375db670b199bbdd141ac"
         }
       ]
     },
@@ -1087,6 +3056,33 @@
             2
           ],
           "sha256": "27660baa83b5b304e1573a76e039ca4acf83fd1f6ef20a4b1857c24004ae2157"
+        },
+        {
+          "id": "envelope",
+          "label": "Red M envelope (2013)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/f/f8/Gmail_Old_Icon.svg/revision/latest?cb=20190827180002",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Gmail_Old_Icon.svg",
+          "sourceSha256": "299a3301ea2ad061a1b7ced82082671b674998c5fc7ed8faf4e3a481fd1d46cc",
+          "ops": {
+            "viewBox": "-14.395 190.306 624.071 461.279"
+          },
+          "path": "/logos/svg/apps/alternates/gmail-envelope.svg",
+          "format": "svg",
+          "colors": [
+            "#E75A4D",
+            "#E7E4D7",
+            "#B8B7AE",
+            "#B7B6AD",
+            "#B2392F",
+            "#F7F5ED"
+          ],
+          "sourcePalette": [
+            "#CC4A3E",
+            "#C7C6BB",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "4d3603299a58114420b99cbcb5bcb90de1c3c3d681a3e7349f61df801ee3e578"
         }
       ]
     },
@@ -1168,6 +3164,353 @@
       ]
     },
     {
+      "id": "APP-GMEET",
+      "league": "APP",
+      "conference": "Productivity",
+      "region": "Google Meet",
+      "name": "",
+      "abbr": "GMEET",
+      "aliases": [
+        "GMeet",
+        "Hangouts Meet"
+      ],
+      "palette": [
+        "#FFBE00",
+        "#00832D",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Yellow video camera",
+          "sourceUrl": "https://api.iconify.design/logos/google-meet.svg",
+          "sourcePage": "https://icon-sets.iconify.design/logos/google-meet/",
+          "sourceSha256": "04f0a24c9059f1cc2ff97fe9c2673c6ccf4e1c7b31289e36f6e99aae9b6b2b8b",
+          "ops": {
+            "viewBox": "-7.68 -7.68 271.359 216.086"
+          },
+          "path": "/logos/svg/apps/gmeet.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#F6A100",
+            "#FFBE00",
+            "#FFB5E8",
+            "#FFDBF5",
+            "#FFE921",
+            "#FEC700"
+          ],
+          "sourcePalette": [
+            "#FCC408",
+            "#FFB5E8",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "c13dd2232e97cb4f16a6cdc40caff6a8b5694827c53d8cc8955ec4cf600b4ed7"
+        },
+        {
+          "id": "2020-camera",
+          "label": "Four-color camera (2020)",
+          "sourceUrl": "https://api.iconify.design/logos/google-meet-2020.svg",
+          "sourcePage": "https://icon-sets.iconify.design/logos/google-meet-2020/",
+          "sourceSha256": "0c4d8169a302d2dd95dca4477e30eba0451b769eaf6829b70ad4bd24264890ba",
+          "ops": {
+            "viewBox": "-7.68 -7.68 271.363 226.004"
+          },
+          "path": "/logos/svg/apps/alternates/gmeet-2020-camera.svg",
+          "format": "svg",
+          "colors": [
+            "#00832D",
+            "#0066DA",
+            "#E94235",
+            "#2684FC",
+            "#00AC47",
+            "#FFBA00"
+          ],
+          "sourcePalette": [
+            "#F47E1A",
+            "#00832D",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "8aaeb705dbac4cdecd7fdefe1a3ec4b122b1dfd8fa96174ae55db1f559a6e925"
+        }
+      ]
+    },
+    {
+      "id": "APP-GPHOTOS",
+      "league": "APP",
+      "conference": "Productivity",
+      "region": "Google Photos",
+      "name": "",
+      "abbr": "GPHOTOS",
+      "aliases": [
+        "GPhotos"
+      ],
+      "palette": [
+        "#FECA01",
+        "#2F89FF",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Gradient pinwheel",
+          "sourceUrl": "https://api.iconify.design/logos/google-photos.svg",
+          "sourcePage": "https://icon-sets.iconify.design/logos/google-photos/",
+          "sourceSha256": "be49ad61cb9324f698e3f2d842a31e1b74a5769774716568aef738a95c787401",
+          "ops": {
+            "viewBox": "-7.68 -7.68 271.36 271.36"
+          },
+          "path": "/logos/svg/apps/gphotos.svg",
+          "format": "svg",
+          "colors": [
+            "#7ACAFF",
+            "#00B054",
+            "#FDED1C",
+            "#FECA01",
+            "#FF81D0",
+            "#FF4041",
+            "#AAA7FF",
+            "#2F89FF"
+          ],
+          "sourcePalette": [
+            "#FECA01",
+            "#54AAFF",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "621db9082af01453c474a70428d75ea5afc070c17935e56db8cfe00fceee9f25"
+        }
+      ]
+    },
+    {
+      "id": "APP-GSHEETS",
+      "league": "APP",
+      "conference": "Productivity",
+      "region": "Google Sheets",
+      "name": "",
+      "abbr": "GSHEETS",
+      "aliases": [
+        "GSheets",
+        "Google Sheet"
+      ],
+      "palette": [
+        "#0EBC5F",
+        "#78C9FF",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Gradient split tile",
+          "sourceUrl": "https://api.iconify.design/thesvg-color/google-sheets-2026.svg",
+          "sourcePage": "https://icon-sets.iconify.design/thesvg-color/google-sheets-2026/",
+          "sourceSha256": "6bb5d8a9893b81e7156e00847c38afce5b1a33d2089ff35d450c59dca26d999a",
+          "ops": {
+            "viewBox": "2.72 26.72 186.56 138.56"
+          },
+          "path": "/logos/svg/apps/gsheets.svg",
+          "format": "svg",
+          "colors": [
+            "#0EBC5F",
+            "#009954",
+            "#FFFFFF",
+            "#78C9FF"
+          ],
+          "sourcePalette": [
+            "#07AA5A",
+            "#78C9FF",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "ee17f2c6de2232352968cbb486aaa517309b1796e080806a36f6d3eb4e4d95c9"
+        },
+        {
+          "id": "grid-page",
+          "label": "Green grid page",
+          "sourceUrl": "https://api.iconify.design/selfhst/google-sheets.svg",
+          "sourcePage": "https://icon-sets.iconify.design/selfhst/google-sheets/",
+          "sourceSha256": "832a49b9cb1dee24f8ee242390b8fcf1bc3db2207a93173abde2582dbc0e4952",
+          "ops": {
+            "viewBox": "54.44 -15.36 403.12 542.72"
+          },
+          "path": "/logos/svg/apps/alternates/gsheets-grid-page.svg",
+          "format": "svg",
+          "colors": [
+            "#188038",
+            "#34A853",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#34A853",
+            "#188038",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "6da890a9a99ee8f2306953248fcb44ee10bb3386cfed6a5ace4b5a02391f44a0"
+        }
+      ]
+    },
+    {
+      "id": "APP-HAYDAY",
+      "league": "APP",
+      "conference": "Games",
+      "region": "Hay Day",
+      "name": "",
+      "abbr": "HAYDAY",
+      "aliases": [
+        "Hayday"
+      ],
+      "palette": [
+        "#E53935",
+        "#81D4FA",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Rooster on farm tile",
+          "sourceUrl": "https://raw.githubusercontent.com/chouhan-rahul/icons_plus/v5.0.0/assets/images/logos/video-games/hay-day.svg",
+          "sourcePage": "https://github.com/chouhan-rahul/icons_plus/blob/v5.0.0/assets/images/logos/video-games/hay-day.svg",
+          "sourceSha256": "3986e407e171e380764c78b651b2fa9c8212a1eeecd305c977f4d950073acd6d",
+          "ops": {
+            "viewBox": "4.92 4.92 38.16 38.16"
+          },
+          "path": "/logos/svg/apps/hayday.svg",
+          "format": "svg",
+          "colors": [
+            "#81D4FA",
+            "#B3E5FC",
+            "#80CBC4",
+            "#A5D6A7",
+            "#4DB6AC",
+            "#81C784",
+            "#FFF3E0",
+            "#E53935",
+            "#FF9800",
+            "#E65100",
+            "#FFFFFF",
+            "#ECEFF1",
+            "#212121",
+            "#BF360C"
+          ],
+          "sourcePalette": [
+            "#E25610",
+            "#86CEC3",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "a8236b9e18e0b5831a784d1678075428591dcd32f644aac4c058c5b93a9a4ab7"
+        }
+      ]
+    },
+    {
+      "id": "APP-HEALTH",
+      "league": "APP",
+      "conference": "Built-in",
+      "region": "Health",
+      "name": "",
+      "abbr": "HEALTH",
+      "aliases": [
+        "Apple Health",
+        "iPhone Health"
+      ],
+      "palette": [
+        "#FF2718",
+        "#FF5FA9",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Heart on white tile",
+          "sourceUrl": "https://logowik.com/ios-17-app-icons-set-icon-59931.html",
+          "sourcePage": "https://logowik.com/ios-17-app-icons-set-icon-59931.html",
+          "sourceSha256": "409ebe6d39fa43d32cac5ddf5dca708e45c0ff329eb5865ab6616bd3bbf9fd8b",
+          "downloadForm": "logowik",
+          "ops": {
+            "keepNodes": [
+              "0",
+              "13-15"
+            ],
+            "viewBox": "386.04 57.24 55.12 55.12"
+          },
+          "path": "/logos/svg/apps/health.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#FF5FA9",
+            "#FF2718"
+          ],
+          "sourcePalette": [
+            "#FF2718",
+            "#FF5FA9",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "3b206eaca16692809f9fba62fd1aec64935b006b6e88e39b85e2d6075a19b7c3"
+        }
+      ]
+    },
+    {
+      "id": "APP-HOME",
+      "league": "APP",
+      "conference": "Built-in",
+      "region": "Home",
+      "name": "",
+      "abbr": "HOME",
+      "aliases": [
+        "Apple Home",
+        "HomeKit",
+        "Apple HomeKit"
+      ],
+      "palette": [
+        "#F78E1B",
+        "#FFD466",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Orange house tile",
+          "sourceUrl": "https://logowik.com/ios-17-app-icons-set-icon-59931.html",
+          "sourcePage": "https://logowik.com/ios-17-app-icons-set-icon-59931.html",
+          "sourceSha256": "409ebe6d39fa43d32cac5ddf5dca708e45c0ff329eb5865ab6616bd3bbf9fd8b",
+          "downloadForm": "logowik",
+          "ops": {
+            "keepNodes": [
+              "0",
+              "88-94"
+            ],
+            "viewBox": "663.14 143.84 55.12 55.12"
+          },
+          "path": "/logos/svg/apps/home.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#F78E1B",
+            "#F88E1A",
+            "#FFAE27",
+            "#FFC149",
+            "#FFD466",
+            "#FEE780"
+          ],
+          "sourcePalette": [
+            "#FA991F",
+            "#FFD465",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "bedb91d23fbfc9bc2117c8073d30a6da982172669cab98a339f5bc6633cfa231"
+        }
+      ]
+    },
+    {
       "id": "APP-IG",
       "league": "APP",
       "conference": "Social",
@@ -1242,6 +3585,353 @@
           ],
           "unusedSourceSlots": [],
           "sha256": "1f572a073ad3602dc6f928c5bbdf9deb4ea2adc16cb4fe49298cbf6bc816039d"
+        }
+      ]
+    },
+    {
+      "id": "APP-IHEART",
+      "league": "APP",
+      "conference": "Music & Video",
+      "region": "iHeartRadio",
+      "name": "",
+      "abbr": "IHEART",
+      "aliases": [
+        "iHeart",
+        "iHeart Radio"
+      ],
+      "palette": [
+        "#C6002B",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Broadcasting heart",
+          "sourceUrl": "https://api.iconify.design/selfhst/iheartradio.svg",
+          "sourcePage": "https://icon-sets.iconify.design/selfhst/iheartradio/",
+          "sourceSha256": "7bc8724166444daddac30452741331a6c5e2887b637b2a043de2889952fb43bc",
+          "ops": {
+            "viewBox": "-15.36 51.34 542.72 409.302"
+          },
+          "path": "/logos/svg/apps/iheart.svg",
+          "format": "svg",
+          "colors": [
+            "#C6002B"
+          ],
+          "sourcePalette": [
+            "#C6002B",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "9ec5ccceaed81354768cbb3234434422cb98b2bd8a1103dd908d7080e8b495b4"
+        }
+      ]
+    },
+    {
+      "id": "APP-INSTACART",
+      "league": "APP",
+      "conference": "Everyday",
+      "region": "Instacart",
+      "name": "",
+      "abbr": "INSTACART",
+      "aliases": [
+        "Insta Cart"
+      ],
+      "palette": [
+        "#0AAD0A",
+        "#FF7009",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Leafy carrot",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/a/a9/Instacart_2022.svg/revision/latest?cb=20220401131145",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Instacart_2022.svg",
+          "sourceSha256": "8628b6b3facad51ad27d040c3e3206b74b1fda34de0f5d1c1a912b1ac9df6bf9",
+          "ops": {
+            "keepNodes": [
+              "3/1",
+              "3/2"
+            ],
+            "viewBox": "-4.272 -2.562 122.472 150.96"
+          },
+          "path": "/logos/svg/apps/instacart.svg",
+          "format": "svg",
+          "colors": [
+            "#0AAD0A",
+            "#FF7009"
+          ],
+          "sourcePalette": [
+            "#0AAD0A",
+            "#FF7009",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "d6a9df5e7b93d74b5a0252ea1a134adc26e22b386b42cca7288552e751feb8e3"
+        },
+        {
+          "id": "2017-carrot",
+          "label": "Orange carrot (2017)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/d/df/Instacart_2017.svg/revision/latest?cb=20200716212207",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Instacart_2017.svg",
+          "sourceSha256": "6edaa17d70ddb2195562c31a044986d6f5d016e25cb513ee5a12bcecb5a88f5b",
+          "ops": {
+            "keepNodes": [
+              "5/0/0/0/0"
+            ],
+            "viewBox": "-0.747 -0.747 23.82 26.392"
+          },
+          "path": "/logos/svg/apps/alternates/instacart-2017-carrot.svg",
+          "format": "svg",
+          "colors": [
+            "#FF8200",
+            "#43B02A"
+          ],
+          "sourcePalette": [
+            "#43B02A",
+            "#FF8200",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "d841abc6db05077d59d35d72c9d3cf31d222732fe09e3db1cdf8d645e9d866e1"
+        }
+      ]
+    },
+    {
+      "id": "APP-JETPACK",
+      "league": "APP",
+      "conference": "Games",
+      "region": "Jetpack Joyride",
+      "name": "",
+      "abbr": "JETPACK",
+      "aliases": [
+        "Jetpack",
+        "Jet Pack Joyride"
+      ],
+      "palette": [
+        "#FFB74D",
+        "#6D4C41",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Grinning bearded hero",
+          "sourceUrl": "https://raw.githubusercontent.com/chouhan-rahul/icons_plus/v5.0.0/assets/images/logos/video-games/jetpack-joyride.svg",
+          "sourcePage": "https://github.com/chouhan-rahul/icons_plus/blob/v5.0.0/assets/images/logos/video-games/jetpack-joyride.svg",
+          "sourceSha256": "77db19d4332ac4ecafa49a1d2442481d4faca6ffe33d94578adb607a3a070b8c",
+          "ops": {
+            "viewBox": "4.785 2.8 38.317 42.4"
+          },
+          "path": "/logos/svg/apps/jetpack.svg",
+          "format": "svg",
+          "colors": [
+            "#FFB74D",
+            "#7F8C8D",
+            "#EAA549",
+            "#FFFFFF",
+            "#6D4C41",
+            "#333333"
+          ],
+          "sourcePalette": [
+            "#F4AE4B",
+            "#605956",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "c5b87d777ee1f8d9016a8f0f49bebe2cc910f6fe12f3e48081b7041d124917dd"
+        }
+      ]
+    },
+    {
+      "id": "APP-KAHOOT",
+      "league": "APP",
+      "conference": "Everyday",
+      "region": "Kahoot!",
+      "name": "",
+      "abbr": "KAHOOT",
+      "aliases": [
+        "Kahoot"
+      ],
+      "palette": [
+        "#46178F",
+        "#E21B3C",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "K! tile",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/c/c3/Kahoot%21_%282013%2C_App_Store_icon%29.svg/revision/latest?cb=20230618173051",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Kahoot%21_%282013%2C_App_Store_icon%29.svg",
+          "sourceSha256": "7dfbbf5f11d0c52a8f74447d259840d1e0c2d46c6fe0072ff32eb75e2a21199c",
+          "ops": {
+            "viewBox": "-4.5 -4.5 159 159"
+          },
+          "path": "/logos/svg/apps/kahoot.svg",
+          "format": "svg",
+          "colors": [
+            "#46178F",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#46178F",
+            "#E21B3C",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "269d679c944bfd6a7095b6be56460257d9e908101c6a48e590c0d1f99b5bc4cc"
+        }
+      ]
+    },
+    {
+      "id": "APP-KHAN",
+      "league": "APP",
+      "conference": "Everyday",
+      "region": "Khan Academy",
+      "name": "",
+      "abbr": "KHAN",
+      "aliases": [
+        "Khan",
+        "KhanAcademy"
+      ],
+      "palette": [
+        "#14BF96",
+        "#0B2149",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Sprout figure hexagon",
+          "sourceUrl": "https://api.iconify.design/logos/khan-academy-icon.svg",
+          "sourcePage": "https://icon-sets.iconify.design/logos/khan-academy-icon/",
+          "sourceSha256": "987ba6547f771dedbecccf5c3ebca9ac891ecfb5d28944d0cb36c4e4468295a5",
+          "ops": {
+            "viewBox": "-8.275 -8.275 272.552 292.4"
+          },
+          "path": "/logos/svg/apps/khan.svg",
+          "format": "svg",
+          "colors": [
+            "#14BF96",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#14BF96",
+            "#0B2149",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "705dc1030418c69a01584d5a71282153cbc2bf86e8d349f8c1adb9b4ea6c9b3d"
+        }
+      ]
+    },
+    {
+      "id": "APP-LINKEDIN",
+      "league": "APP",
+      "conference": "Social",
+      "region": "LinkedIn",
+      "name": "",
+      "abbr": "LINKEDIN",
+      "aliases": [
+        "Linked In"
+      ],
+      "palette": [
+        "#0A66C2",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Lowercase in tile",
+          "sourceUrl": "https://api.iconify.design/skill-icons/linkedin.svg",
+          "sourcePage": "https://icon-sets.iconify.design/skill-icons/linkedin/",
+          "sourceSha256": "098ea062ccca879b43636e2e5dfb9e13a5753b7114d411b99bccad68c2a33fd7",
+          "ops": {
+            "viewBox": "-7.68 -7.68 271.36 271.36"
+          },
+          "path": "/logos/svg/apps/linkedin.svg",
+          "format": "svg",
+          "colors": [
+            "#0A66C2",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#0A66C2",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "e1da00dbe5679a0ca47ff5f0aebed3709ae173808b350270907f29d5128b3ed7"
+        }
+      ]
+    },
+    {
+      "id": "APP-MAIL",
+      "league": "APP",
+      "conference": "Built-in",
+      "region": "Mail",
+      "name": "",
+      "abbr": "MAIL",
+      "aliases": [
+        "Apple Mail",
+        "iPhone Mail",
+        "Mail app"
+      ],
+      "palette": [
+        "#1A6AE7",
+        "#20C2F4",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Envelope tile",
+          "sourceUrl": "https://logowik.com/ios-17-app-icons-set-icon-59931.html",
+          "sourcePage": "https://logowik.com/ios-17-app-icons-set-icon-59931.html",
+          "sourceSha256": "409ebe6d39fa43d32cac5ddf5dca708e45c0ff329eb5865ab6616bd3bbf9fd8b",
+          "downloadForm": "logowik",
+          "ops": {
+            "keepNodes": [
+              "0",
+              "367"
+            ],
+            "viewBox": "593.84 317.04 55.12 55.12"
+          },
+          "path": "/logos/svg/apps/mail.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#FFFFFF",
+            "#1A6AE7",
+            "#20C2F4",
+            "#F7F7F7",
+            "#F9F9F9"
+          ],
+          "sourcePalette": [
+            "#1A6AE7",
+            "#20C2F4",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "2a456106d9f9d9414073ab8b83384b7a634dc4b969179bd85145c91d5814c8d3"
         }
       ]
     },
@@ -1325,6 +4015,71 @@
           ],
           "unusedSourceSlots": [],
           "sha256": "14316a7eff604620e1ffd1bc0ee10b88d33851d8d5354f9dde46b08e54763da0"
+        }
+      ]
+    },
+    {
+      "id": "APP-MASTODON",
+      "league": "APP",
+      "conference": "Social",
+      "region": "Mastodon",
+      "name": "",
+      "abbr": "MASTODON",
+      "aliases": [],
+      "palette": [
+        "#6364FF",
+        "#563ACC",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "M speech bubble",
+          "sourceUrl": "https://api.iconify.design/selfhst/mastodon.svg",
+          "sourcePage": "https://icon-sets.iconify.design/selfhst/mastodon/",
+          "sourceSha256": "63a8a1484d6baec739cfdb25fcda960957f7436146068453ef28bad67a2d1591",
+          "ops": {
+            "viewBox": "0.389 -15.361 511.194 542.75"
+          },
+          "path": "/logos/svg/apps/mastodon.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#6364FF",
+            "#563ACC"
+          ],
+          "sourcePalette": [
+            "#6364FF",
+            "#563ACC",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "03d280dd66528b2714709fee9f2e74e40b939e7991fcc612e291205520d042c0"
+        },
+        {
+          "id": "2016-circle",
+          "label": "Blue circle with white bars (2016)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/4/4c/Mastodon_2016_Icon.svg/revision/latest?cb=20231026154839",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Mastodon_2016_Icon.svg",
+          "sourceSha256": "15611b15ac23fca8292de3b1136fe2dd6d0b61f3108dd4487c39e74a5b378413",
+          "ops": {
+            "viewBox": "-15 -15 530 530"
+          },
+          "path": "/logos/svg/apps/alternates/mastodon-2016-circle.svg",
+          "format": "svg",
+          "colors": [
+            "#199EFA",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#199EFA",
+            "#563ACC",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "031abeaef6fd9f306ed4831ca328cd25c59c0a105e0fdf8f68da4fbc316b67cf"
         }
       ]
     },
@@ -1441,6 +4196,242 @@
             2
           ],
           "sha256": "dea4bddab622a472b87e3dbdff3f65c1a652c5c8b164529c9c72f2fca092f5b3"
+        },
+        {
+          "id": "crafting-table",
+          "label": "Crafting table (2013)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/0/04/Minecraft_2013_client_icon.svg/revision/latest?cb=20250306114922",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Minecraft_2013_client_icon.svg",
+          "sourceSha256": "9170753525afea9636857d10d54a2b816934599ed62703adaa3b5df2a75b87ce",
+          "ops": {
+            "viewBox": "-4.258 -4.013 142.045 150.463"
+          },
+          "path": "/logos/svg/apps/alternates/mc-crafting-table.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#89703F",
+            "#190D00",
+            "#9F633E",
+            "#491D0B",
+            "#451B09",
+            "#A58252",
+            "#A68253",
+            "#A58253",
+            "#9F7C4B",
+            "#614C2C",
+            "#9F7B4B",
+            "#0F0800",
+            "#451A09",
+            "#694726",
+            "#150B00",
+            "#604C2C",
+            "#574326",
+            "#392C15",
+            "#392C14",
+            "#332610",
+            "#120500",
+            "#604B2C",
+            "#5C482A",
+            "#9F7B4A",
+            "#85572F",
+            "#524324",
+            "#120600",
+            "#A58152",
+            "#8A713F",
+            "#BEBBBA",
+            "#9E9C9B",
+            "#624D2E",
+            "#DCD8D7",
+            "#9C9A99",
+            "#362A14",
+            "#9E9C9C",
+            "#5E4A2C",
+            "#BDBABA",
+            "#624D2F",
+            "#BEBBBB",
+            "#856C3D",
+            "#9D9C9B",
+            "#534325",
+            "#5D492A",
+            "#5D482A",
+            "#020000",
+            "#876F3F",
+            "#5C492A",
+            "#564326",
+            "#2F240D",
+            "#30240D",
+            "#574426",
+            "#120900",
+            "#8F6133",
+            "#876F3E",
+            "#85562E",
+            "#DDDAD8",
+            "#624E2F",
+            "#9E7B4B",
+            "#524224",
+            "#A68352",
+            "#685130",
+            "#685230",
+            "#3B2D18",
+            "#604B26",
+            "#753E23",
+            "#270100",
+            "#240100",
+            "#723D25",
+            "#775932",
+            "#72542C",
+            "#3C2E18",
+            "#72542D",
+            "#5F4B26",
+            "#442715",
+            "#5F4A26",
+            "#352510",
+            "#170800",
+            "#3B2D17",
+            "#0E0000",
+            "#452815",
+            "#452615",
+            "#614B26",
+            "#72532C",
+            "#5B341D",
+            "#775A32",
+            "#3D2D18",
+            "#8A8483",
+            "#342510",
+            "#3B2E17",
+            "#785932",
+            "#8A8583",
+            "#3E2D18",
+            "#8A8684",
+            "#2F240F",
+            "#716F6C",
+            "#2F230F",
+            "#716E6C",
+            "#392915",
+            "#3C2D18",
+            "#604B25",
+            "#71542C",
+            "#614C27",
+            "#633C21",
+            "#7A5B33",
+            "#452715",
+            "#3A2D18",
+            "#44301A",
+            "#433018",
+            "#3B2E18",
+            "#190A00",
+            "#413C36",
+            "#393634",
+            "#453D36",
+            "#403B35",
+            "#423B35",
+            "#483F37",
+            "#423C36",
+            "#47423A",
+            "#403B36",
+            "#433D36",
+            "#EDC78B",
+            "#53493B",
+            "#EEA975",
+            "#EDA875",
+            "#554A3C",
+            "#EEC78B",
+            "#423A35",
+            "#E3A36F",
+            "#E7A571",
+            "#DD9E69",
+            "#E5A471",
+            "#E2A16E",
+            "#EAAA75",
+            "#E7A671",
+            "#E8A571",
+            "#413E36",
+            "#E8A773",
+            "#87644C",
+            "#79543F",
+            "#84624A",
+            "#7A553F",
+            "#85634A",
+            "#816049",
+            "#826049",
+            "#3A3835",
+            "#393734",
+            "#EDA775",
+            "#E5A26F",
+            "#83624A",
+            "#DE8D5F",
+            "#E69362",
+            "#EEA976",
+            "#DF8E60",
+            "#EDAA79",
+            "#413C35",
+            "#EDA876",
+            "#E5A571",
+            "#6E4E3C",
+            "#D1885B",
+            "#795A42",
+            "#CB8257",
+            "#DE8E60",
+            "#3F3A34",
+            "#84634A",
+            "#7A5A42",
+            "#84614A",
+            "#7B5640",
+            "#76513D",
+            "#E6A571",
+            "#3B3633",
+            "#8B6751",
+            "#ECA876",
+            "#EBA472",
+            "#403B34",
+            "#D78F61",
+            "#86644B",
+            "#EDA976",
+            "#E1A16D",
+            "#C97F56",
+            "#79553F",
+            "#815F47",
+            "#755842",
+            "#E9A874",
+            "#484037",
+            "#76523D",
+            "#6B4B3B",
+            "#E4A370",
+            "#F0AC78",
+            "#85624A",
+            "#E08E5F",
+            "#85634C",
+            "#E08F61",
+            "#413B36",
+            "#51473A",
+            "#52483A",
+            "#383634",
+            "#ECC78A",
+            "#E2A06C",
+            "#E8A572",
+            "#E7A674",
+            "#EECA8B",
+            "#3C3936",
+            "#3B3835",
+            "#EDA773",
+            "#EBA471",
+            "#443F36",
+            "#383533",
+            "#7E4D3C",
+            "#754739",
+            "#7E4E3C",
+            "#7F4D3C",
+            "#7C4B3B",
+            "#3E3A35"
+          ],
+          "sourcePalette": [
+            "#BB8A63",
+            "#6E4E3C",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "60632fa9c9a3786b98bb0a9ecc98f29bdeb784b64527897c2bfecaa0263bc215"
         }
       ]
     },
@@ -1490,6 +4481,303 @@
       ]
     },
     {
+      "id": "APP-MESSENGER",
+      "league": "APP",
+      "conference": "Social",
+      "region": "Messenger",
+      "name": "",
+      "abbr": "MESSENGER",
+      "aliases": [
+        "Facebook Messenger",
+        "FB Messenger",
+        "Messenger app"
+      ],
+      "palette": [
+        "#0099FF",
+        "#A033FF",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Gradient bubble with bolt",
+          "sourceUrl": "https://api.iconify.design/logos/messenger.svg",
+          "sourcePage": "https://icon-sets.iconify.design/logos/messenger/",
+          "sourceSha256": "2352b59e07a7af7a9cba77796f24803054a7effc79c9fff571db5a8017fba969",
+          "ops": {
+            "viewBox": "-7.68 -7.68 271.36 271.36"
+          },
+          "path": "/logos/svg/apps/messenger.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#0099FF",
+            "#A033FF",
+            "#FF5280",
+            "#FF7061"
+          ],
+          "sourcePalette": [
+            "#0099FF",
+            "#D042C0",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "012009df9949602f73020cafef1dcffd7d6342145e3714b91387de0c67c9da6f"
+        },
+        {
+          "id": "boxy-bubble",
+          "label": "Boxy bubble with bolt (2012)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/8/8e/Facebook_Messenger_Second_Logo.svg/revision/latest?cb=20201226084801",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Facebook_Messenger_Second_Logo.svg",
+          "sourceSha256": "4099a1704554bb5740f75acddc37ba13f0c9205eaa25af6452b6d4cb8f45a8e7",
+          "ops": {
+            "viewBox": "53.306 46.367 404.974 431.201"
+          },
+          "path": "/logos/svg/apps/alternates/messenger-boxy-bubble.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#5D80CB",
+            "#243D71",
+            "#FFFFFF",
+            "#EBEBEE"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#405E9E",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "0a43b3ad3fae2e5f6a238b4a38ce7b3af01e1b8c31c00cf1a7f5127d39b91248"
+        }
+      ]
+    },
+    {
+      "id": "APP-MSTEAMS",
+      "league": "APP",
+      "conference": "Productivity",
+      "region": "Microsoft Teams",
+      "name": "",
+      "abbr": "MSTEAMS",
+      "aliases": [
+        "Teams",
+        "MS Teams"
+      ],
+      "palette": [
+        "#5059C9",
+        "#7B83EB",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Gradient people with T",
+          "sourceUrl": "https://api.iconify.design/selfhst/microsoft-teams.svg",
+          "sourcePage": "https://icon-sets.iconify.design/selfhst/microsoft-teams/",
+          "sourceSha256": "8b971a6b432075c6cfa57eb04ac1b849a36c56261ae5e3f63c9902ebd0963bf8",
+          "ops": {
+            "viewBox": "-1.857 -15.257 515.714 542.614"
+          },
+          "path": "/logos/svg/apps/msteams.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#A98AFF",
+            "#8C75FF",
+            "#5F50E2",
+            "#3C2CB8",
+            "#85C2FF",
+            "#7588FF",
+            "#6459FE",
+            "#6864F6",
+            "#5149DE",
+            "#BD96FF",
+            "#6868F7",
+            "#3923B1",
+            "#A1D3FF",
+            "#E3ACFD",
+            "#9FA2FF",
+            "#8282FF",
+            "#688EFF",
+            "#230F94",
+            "#6965F6",
+            "#8F8FFF"
+          ],
+          "sourcePalette": [
+            "#4738CA",
+            "#8589FD",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "78d291337ea0fe39aad010f8b9ee684235cb3d44e12351ea3eb4f3880d23d99b"
+        },
+        {
+          "id": "2018-tile",
+          "label": "T tile with people (2018)",
+          "sourceUrl": "https://api.iconify.design/selfhst/microsoft-teams-2018.svg",
+          "sourcePage": "https://icon-sets.iconify.design/selfhst/microsoft-teams-2018/",
+          "sourceSha256": "c15d08c58df5a2e37c8f3068cc960db62c0b050f9d2953d3aa2f36189fea2415",
+          "ops": {
+            "viewBox": "-15.36 2.54 542.72 507.02"
+          },
+          "path": "/logos/svg/apps/alternates/msteams-2018-tile.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#5059C9",
+            "#7B83EB",
+            "#FFFFFF",
+            "#5A62C3",
+            "#4D55BD",
+            "#3940AB"
+          ],
+          "sourcePalette": [
+            "#4C54BD",
+            "#7B83EB",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "873d80c1b5c279bf4f57bd5095bd3f19518d440f29e902063945a7bc0119ab94"
+        }
+      ]
+    },
+    {
+      "id": "APP-MSWORD",
+      "league": "APP",
+      "conference": "Productivity",
+      "region": "Microsoft Word",
+      "name": "",
+      "abbr": "MSWORD",
+      "aliases": [
+        "Word",
+        "MS Word"
+      ],
+      "palette": [
+        "#185ABD",
+        "#41A5EE",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Gradient layers with W",
+          "sourceUrl": "https://api.iconify.design/selfhst/microsoft-word.svg",
+          "sourcePage": "https://icon-sets.iconify.design/selfhst/microsoft-word/",
+          "sourceSha256": "9b9397492e49ee8357b033b714f2352c6df766b90d9f4d20218a773ef9abdd8c",
+          "ops": {
+            "viewBox": "-8.26 -15.36 528.62 542.72"
+          },
+          "path": "/logos/svg/apps/msword.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#1657F4",
+            "#0036C4",
+            "#66C0FF",
+            "#0094F0",
+            "#D471FF",
+            "#509DF5",
+            "#4F006F",
+            "#9DEAFF",
+            "#3BD5FF",
+            "#E4A7FE",
+            "#367AF2",
+            "#001A8F",
+            "#2763E5",
+            "#58AAFE"
+          ],
+          "sourcePalette": [
+            "#2763E5",
+            "#509DF5",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "8a63cf25bbb6cec408952f16d365044074707d387e9342e8b02296557f233d3a"
+        },
+        {
+          "id": "2018-tile",
+          "label": "Stacked blue bars with W (2018)",
+          "sourceUrl": "https://api.iconify.design/selfhst/microsoft-word-2018.svg",
+          "sourcePage": "https://icon-sets.iconify.design/selfhst/microsoft-word-2018/",
+          "sourceSha256": "03013e693e9706892e3a85126917829b97d1e8418d8673f7b6c5689e5ba4a67f",
+          "ops": {
+            "viewBox": "-15.36 2.54 542.72 506.92"
+          },
+          "path": "/logos/svg/apps/alternates/msword-2018-tile.svg",
+          "format": "svg",
+          "colors": [
+            "#41A5EE",
+            "#2B7CD3",
+            "#185ABD",
+            "#103F91",
+            "#000000",
+            "#FFFFFF",
+            "#2368C4",
+            "#1A5DBE",
+            "#1146AC"
+          ],
+          "sourcePalette": [
+            "#1B5BB8",
+            "#41A5EE",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "3b79cb11d5becba5d297ee7e933cdfde4c2e8a6e59e763a42ec3c0d6d6325165"
+        },
+        {
+          "id": "2013-page",
+          "label": "W over page (2013)",
+          "sourceUrl": "https://api.iconify.design/selfhst/microsoft-word-2013.svg",
+          "sourcePage": "https://icon-sets.iconify.design/selfhst/microsoft-word-2013/",
+          "sourceSha256": "b49c9dc73c25b7c412903d82bd2307c354c9ecdd11ef3bd3b48ddc3368b54833",
+          "ops": {
+            "viewBox": "-15.363 -1.063 542.826 514.126"
+          },
+          "path": "/logos/svg/apps/alternates/msword-2013-page.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#285294",
+            "#2C5A9E"
+          ],
+          "sourcePalette": [
+            "#2A5699",
+            "#41A5EE",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "d74287bfe696f40952e30dcd80fa6abac02350e5ea771539d81eb89d18b006cb"
+        },
+        {
+          "id": "classic-w",
+          "label": "Boxed W (2000s)",
+          "sourceUrl": "https://api.iconify.design/selfhst/microsoft-word-2000.svg",
+          "sourcePage": "https://icon-sets.iconify.design/selfhst/microsoft-word-2000/",
+          "sourceSha256": "fcaf557882f5d1c76df76ecd1d0768905654043af5e0a3a3c108e106ebe16b36",
+          "ops": {
+            "viewBox": "-15.36 -14.26 542.72 540.52"
+          },
+          "path": "/logos/svg/apps/alternates/msword-classic-w.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#25468D"
+          ],
+          "sourcePalette": [
+            "#25468D",
+            "#41A5EE",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "14a620fa9830b8537d19ed47e31869c877c6e6d5ecb24b07694722e1a5bd1235"
+        }
+      ]
+    },
+    {
       "id": "APP-NETFLIX",
       "league": "APP",
       "conference": "Music & Video",
@@ -1530,6 +4818,399 @@
             2
           ],
           "sha256": "53c7be602655340c38ea06c2fe28cdfdaea797a7f6d08dc7b2c323537d0cfc29"
+        }
+      ]
+    },
+    {
+      "id": "APP-NOTES",
+      "league": "APP",
+      "conference": "Built-in",
+      "region": "Notes",
+      "name": "",
+      "abbr": "NOTES",
+      "aliases": [
+        "Apple Notes",
+        "iPhone Notes"
+      ],
+      "palette": [
+        "#FDCB00",
+        "#C7C6CA",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Yellow-topped notepad tile",
+          "sourceUrl": "https://logowik.com/ios-17-app-icons-set-icon-59931.html",
+          "sourcePage": "https://logowik.com/ios-17-app-icons-set-icon-59931.html",
+          "sourceSha256": "409ebe6d39fa43d32cac5ddf5dca708e45c0ff329eb5865ab6616bd3bbf9fd8b",
+          "downloadForm": "logowik",
+          "ops": {
+            "keepNodes": [
+              "0",
+              "369"
+            ],
+            "viewBox": "663.14 317.04 55.12 55.12"
+          },
+          "path": "/logos/svg/apps/notes.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#FFFFFF",
+            "#C7C6CA",
+            "#C8C7CB",
+            "#9C9A9B",
+            "#D7D7D7",
+            "#FFDD5F",
+            "#FDCB00"
+          ],
+          "sourcePalette": [
+            "#FED430",
+            "#C0C0C2",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "2af3dbfb1effeb6c650036d3be3ebf91ed549240acadbe2af65e3e737c85d5a2"
+        }
+      ]
+    },
+    {
+      "id": "APP-OUTLOOK",
+      "league": "APP",
+      "conference": "Productivity",
+      "region": "Microsoft Outlook",
+      "name": "",
+      "abbr": "OUTLOOK",
+      "aliases": [
+        "Outlook",
+        "MS Outlook"
+      ],
+      "palette": [
+        "#0078D4",
+        "#28A8EA",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Gradient envelope",
+          "sourceUrl": "https://api.iconify.design/selfhst/microsoft-outlook.svg",
+          "sourcePage": "https://icon-sets.iconify.design/selfhst/microsoft-outlook/",
+          "sourceSha256": "cabcef4dd78208d86b03f14ac05a309e0c17176a7294d1d35d3b489c39d39084",
+          "ops": {
+            "viewBox": "-15.36 -1.71 542.72 515.47"
+          },
+          "path": "/logos/svg/apps/outlook.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#20A7FA",
+            "#3BD5FF",
+            "#C4B0FF",
+            "#165AD9",
+            "#1880E5",
+            "#8587FF",
+            "#448AFF",
+            "#0032B1",
+            "#1A43A6",
+            "#2052CB",
+            "#5F20CB",
+            "#0045B9",
+            "#0D1F69",
+            "#275FF0",
+            "#002177",
+            "#4DC4FF",
+            "#0FAFFF",
+            "#0060D1",
+            "#0383F1",
+            "#F4A7F7",
+            "#49DEFF",
+            "#29C3FF",
+            "#6CE0FF",
+            "#50D5FF",
+            "#0091FF",
+            "#183DAD",
+            "#0FA5F7",
+            "#74C6FF"
+          ],
+          "sourcePalette": [
+            "#0060D1",
+            "#3BB4FD",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "4389f81f41e5ab8c5180c019185c50c49f72af1892dc445847ad303a26242eed"
+        },
+        {
+          "id": "2018-tile",
+          "label": "Layered envelope tile (2018)",
+          "sourceUrl": "https://api.iconify.design/selfhst/microsoft-outlook-2018.svg",
+          "sourcePage": "https://icon-sets.iconify.design/selfhst/microsoft-outlook-2018/",
+          "sourceSha256": "bcc172649a7e57766ce205e89fa42fa8f72cb4529047924cb33a47607895069a",
+          "ops": {
+            "viewBox": "-15.363 2.537 542.826 506.927"
+          },
+          "path": "/logos/svg/apps/alternates/outlook-2018-tile.svg",
+          "format": "svg",
+          "colors": [
+            "#0A2767",
+            "#0364B8",
+            "#0078D4",
+            "#28A8EA",
+            "#14447D",
+            "#1490DF",
+            "#000000",
+            "#FFFFFF",
+            "#50D9FF",
+            "#35B8F1",
+            "#1784D9",
+            "#107AD5",
+            "#0A63C9"
+          ],
+          "sourcePalette": [
+            "#0078D4",
+            "#3ABEF3",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "ea409a6fc4f1dc6f49b802564ae18a37abcdb05848fdf2bb1eff4054124e341f"
+        },
+        {
+          "id": "2013-envelope",
+          "label": "O over envelope (2013)",
+          "sourceUrl": "https://api.iconify.design/selfhst/microsoft-outlook-2013.svg",
+          "sourcePage": "https://icon-sets.iconify.design/selfhst/microsoft-outlook-2013/",
+          "sourceSha256": "6dd14e74a9f3f2b8962cdef595d74543cd7215377d6096ee2af56f6d0432f1b1",
+          "ops": {
+            "viewBox": "-15.363 -1.963 542.826 515.826"
+          },
+          "path": "/logos/svg/apps/alternates/outlook-2013-envelope.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#006BC2",
+            "#0077C9"
+          ],
+          "sourcePalette": [
+            "#0071C6",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "c88a75b93186ace4e87e2ec78db10ab57def13d8e4b607c7b7136bce6c7b71b2"
+        }
+      ]
+    },
+    {
+      "id": "APP-PACMAN",
+      "league": "APP",
+      "conference": "Games",
+      "region": "Pac-Man",
+      "name": "",
+      "abbr": "PACMAN",
+      "aliases": [
+        "Pacman",
+        "Pac Man"
+      ],
+      "palette": [
+        "#F2F000",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Yellow chomper",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Pac_Man.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Pac_Man.svg",
+          "sourceSha256": "f13e00a9d519d46342e6fd170daf22b17e077af21ba2a3cf2c50dbb9a628d4da",
+          "ops": {
+            "viewBox": "-7.143 -6.781 396.56 454.286"
+          },
+          "path": "/logos/svg/apps/pacman.svg",
+          "format": "svg",
+          "colors": [
+            "#F2F000",
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#F2F000",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "ae7a84a142b6ca9eeff6677d49689d384979fa03857483beaa616a64b135ef24"
+        },
+        {
+          "id": "ghost",
+          "label": "Red pixel ghost",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Blinky%2C_Pinky%2C_Inky_and_Clyde.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Blinky%2C_Pinky%2C_Inky_and_Clyde.svg",
+          "sourceSha256": "fbeb711fce47f28ac16deffc776398e7b396c56dba3f6efe78f1d200fb432e42",
+          "ops": {
+            "keepNodes": [
+              "3-5"
+            ],
+            "viewBox": "-2.222 -2.222 78.528 78.528"
+          },
+          "path": "/logos/svg/apps/alternates/pacman-ghost.svg",
+          "format": "svg",
+          "colors": [
+            "#FF0000",
+            "#DFDFDF",
+            "#1B1BDF"
+          ],
+          "sourcePalette": [
+            "#FF0000",
+            "#DFDFDF",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "47028602deae91f1f0d38d73770dd49d29949ec64395e048ba8cf47cb11e2b34"
+        }
+      ]
+    },
+    {
+      "id": "APP-PARAMOUNTPLUS",
+      "league": "APP",
+      "conference": "Music & Video",
+      "region": "Paramount+",
+      "name": "",
+      "abbr": "PARAMOUNTPLUS",
+      "aliases": [
+        "Paramount Plus"
+      ],
+      "palette": [
+        "#0064FF",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Star-ringed mountain",
+          "sourceUrl": "https://api.iconify.design/selfhst/paramount-plus.svg",
+          "sourcePage": "https://icon-sets.iconify.design/selfhst/paramount-plus/",
+          "sourceSha256": "83ff57ecd9d497efb47301e75563e69c03f61ce67c1869886a14ae3f2a537854",
+          "ops": {
+            "viewBox": "-15.372 36.728 543.145 438.544"
+          },
+          "path": "/logos/svg/apps/paramountplus.svg",
+          "format": "svg",
+          "colors": [
+            "#0064FF"
+          ],
+          "sourcePalette": [
+            "#0064FF",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "b007513e5a862630134eeb1b208b8c233e1b6b58870315e42307085e0eb5202f"
+        }
+      ]
+    },
+    {
+      "id": "APP-PEACOCK",
+      "league": "APP",
+      "conference": "Music & Video",
+      "region": "Peacock",
+      "name": "",
+      "abbr": "PEACOCK",
+      "aliases": [
+        "Peacock TV"
+      ],
+      "palette": [
+        "#000000",
+        "#069DE0",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "P with six colored dots",
+          "sourceUrl": "https://api.iconify.design/selfhst/peacock.svg",
+          "sourcePage": "https://icon-sets.iconify.design/selfhst/peacock/",
+          "sourceSha256": "a42450b8b4daaab4845414e8149bea8d554b0958832acad2546949b14eac7d31",
+          "ops": {
+            "viewBox": "35.24 -15.36 434.52 542.72"
+          },
+          "path": "/logos/svg/apps/peacock.svg",
+          "format": "svg",
+          "colors": [
+            "#069DE0",
+            "#6E55DC",
+            "#05AC3F",
+            "#EF1541",
+            "#FF7112",
+            "#FCCC12",
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#069DE0",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "bbc77535b81885eee20317cc4693f3cc2aba0f8d8151bcf3f94f703a1c40de66"
+        }
+      ]
+    },
+    {
+      "id": "APP-PHONE",
+      "league": "APP",
+      "conference": "Built-in",
+      "region": "Phone",
+      "name": "",
+      "abbr": "PHONE",
+      "aliases": [
+        "Apple Phone",
+        "iPhone Phone",
+        "Phone app"
+      ],
+      "palette": [
+        "#0EBC29",
+        "#1C1C1E",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Handset tile",
+          "sourceUrl": "https://logowik.com/ios-17-app-icons-set-icon-59931.html",
+          "sourcePage": "https://logowik.com/ios-17-app-icons-set-icon-59931.html",
+          "sourceSha256": "409ebe6d39fa43d32cac5ddf5dca708e45c0ff329eb5865ab6616bd3bbf9fd8b",
+          "downloadForm": "logowik",
+          "ops": {
+            "keepNodes": [
+              "0",
+              "61-63"
+            ],
+            "viewBox": "455.24 143.84 55.12 55.12"
+          },
+          "path": "/logos/svg/apps/phone.svg",
+          "format": "svg",
+          "colors": [
+            "#FEFEFE",
+            "#5CF777",
+            "#0EBC29"
+          ],
+          "sourcePalette": [
+            "#0EBC29",
+            "#5CF777",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "773dc7f5dd60c1936953bc35d6c40babb4f2f8fec6345cc6ce7a54ded219a2ee"
         }
       ]
     },
@@ -1644,6 +5325,49 @@
       ]
     },
     {
+      "id": "APP-PLEX",
+      "league": "APP",
+      "conference": "Music & Video",
+      "region": "Plex",
+      "name": "",
+      "abbr": "PLEX",
+      "aliases": [
+        "Plex Media Server"
+      ],
+      "palette": [
+        "#E5A00D",
+        "#282A2D",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Chevron tile",
+          "sourceUrl": "https://api.iconify.design/selfhst/plex.svg",
+          "sourcePage": "https://icon-sets.iconify.design/selfhst/plex/",
+          "sourceSha256": "cc303b19b11d399b6121ec11f4463f2dd0e2c83fa9c371007eee17c2a21d945c",
+          "ops": {
+            "viewBox": "-15.36 -15.36 542.72 542.72"
+          },
+          "path": "/logos/svg/apps/plex.svg",
+          "format": "svg",
+          "colors": [
+            "#282A2D",
+            "#E5A00D"
+          ],
+          "sourcePalette": [
+            "#E5A00D",
+            "#282A2D",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "39fd30a6f6e026fc63006b4cf86435c06f16b1b03d36813d64e2b958c966537e"
+        }
+      ]
+    },
+    {
       "id": "APP-PODCASTS",
       "league": "APP",
       "conference": "Music & Video",
@@ -1736,6 +5460,189 @@
       ]
     },
     {
+      "id": "APP-PPT",
+      "league": "APP",
+      "conference": "Productivity",
+      "region": "Microsoft PowerPoint",
+      "name": "",
+      "abbr": "PPT",
+      "aliases": [
+        "PowerPoint",
+        "Power Point",
+        "MS PowerPoint"
+      ],
+      "palette": [
+        "#D35230",
+        "#FF8F6B",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Gradient swirl with P",
+          "sourceUrl": "https://api.iconify.design/selfhst/microsoft-powerpoint.svg",
+          "sourcePage": "https://icon-sets.iconify.design/selfhst/microsoft-powerpoint/",
+          "sourceSha256": "cc0b5158ed779a552fa748b83af3e40ec9a1c3d7bfd546795c8350132b8e75a7",
+          "ops": {
+            "viewBox": "-15.36 -7.06 542.72 526.12"
+          },
+          "path": "/logos/svg/apps/ppt.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#FF7F48",
+            "#E5495B",
+            "#AA1D2D",
+            "#D12B18",
+            "#FF3C00",
+            "#FF66FB",
+            "#EA3D01",
+            "#FF6E30",
+            "#FFA05C",
+            "#FFCE84",
+            "#FF99E9",
+            "#FD6EF9",
+            "#FF9944",
+            "#FCC479",
+            "#FF8D13",
+            "#FF7F29",
+            "#F8193E",
+            "#920616",
+            "#FFB055",
+            "#FFF2BE"
+          ],
+          "sourcePalette": [
+            "#D52A23",
+            "#FF9B4B",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "b5940dd3e70057e59b78b6dde77d098fe496ef8f1e080c61723e27c62c29dd58"
+        },
+        {
+          "id": "2018-pie",
+          "label": "Orange pie with P (2018)",
+          "sourceUrl": "https://api.iconify.design/selfhst/microsoft-powerpoint-2018.svg",
+          "sourcePage": "https://icon-sets.iconify.design/selfhst/microsoft-powerpoint-2018/",
+          "sourceSha256": "b87021afde6c5ceadcc286f8784196a306a863d4b550185912f9d422fbff4967",
+          "ops": {
+            "viewBox": "-15.36 2.44 542.72 507.02"
+          },
+          "path": "/logos/svg/apps/alternates/ppt-2018-pie.svg",
+          "format": "svg",
+          "colors": [
+            "#ED6C47",
+            "#FF8F6B",
+            "#D35230",
+            "#000000",
+            "#FFFFFF",
+            "#CA4C28",
+            "#C5401E",
+            "#B62F14"
+          ],
+          "sourcePalette": [
+            "#CE4B2A",
+            "#F67E59",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "6a8fcfb616d73a115f77d9d01a540564573509cdf326a51424d4016a2531b911"
+        },
+        {
+          "id": "2013-slide",
+          "label": "P over slide (2013)",
+          "sourceUrl": "https://api.iconify.design/selfhst/microsoft-powerpoint-2013.svg",
+          "sourcePage": "https://icon-sets.iconify.design/selfhst/microsoft-powerpoint-2013/",
+          "sourceSha256": "668e95b2939dd10dc50e274fc8a64146e8c6c077f2dd27fa6020f51952091ba9",
+          "ops": {
+            "viewBox": "-15.36 7.84 542.72 496.32"
+          },
+          "path": "/logos/svg/apps/alternates/ppt-2013-slide.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#D04223",
+            "#D44A27"
+          ],
+          "sourcePalette": [
+            "#D24625",
+            "#FF8F6B",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "623f100dda6d0ee38f59bcfdd41d1d800bb59cccbf2a08c9db1a6b2c5630edf3"
+        },
+        {
+          "id": "classic-chart",
+          "label": "Orange chart slide (2000s)",
+          "sourceUrl": "https://api.iconify.design/selfhst/microsoft-powerpoint-2000.svg",
+          "sourcePage": "https://icon-sets.iconify.design/selfhst/microsoft-powerpoint-2000/",
+          "sourceSha256": "5caf892d6e8c3b75991ccfcf659b94aef6f400a50e3be2f5738a8ae93e8ba686",
+          "ops": {
+            "viewBox": "-14.26 -15.36 540.42 542.72"
+          },
+          "path": "/logos/svg/apps/alternates/ppt-classic-chart.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#E06B20"
+          ],
+          "sourcePalette": [
+            "#E06B20",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "6b20239f025c4ee2244028cae0dc0fa4dac4fb612d8a5c21e41b24d7115f1738"
+        }
+      ]
+    },
+    {
+      "id": "APP-QUORA",
+      "league": "APP",
+      "conference": "Social",
+      "region": "Quora",
+      "name": "",
+      "abbr": "QUORA",
+      "aliases": [],
+      "palette": [
+        "#B71C1C",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Q tile",
+          "sourceUrl": "https://raw.githubusercontent.com/chouhan-rahul/icons_plus/v5.0.0/assets/images/logos/social-media/quora.svg",
+          "sourcePage": "https://github.com/chouhan-rahul/icons_plus/blob/v5.0.0/assets/images/logos/social-media/quora.svg",
+          "sourceSha256": "126be3e4f15a397241867f80401e1b0fae05e2a0b9ae8f0ddb47559409c0f187",
+          "ops": {
+            "viewBox": "4.92 4.92 38.16 38.16"
+          },
+          "path": "/logos/svg/apps/quora.svg",
+          "format": "svg",
+          "colors": [
+            "#B71C1C",
+            "#F9F9F9"
+          ],
+          "sourcePalette": [
+            "#B71C1C",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "848d0f53b3801fd5728152cb21a3b35471546355604dbd6015f486a7a2ddc647"
+        }
+      ]
+    },
+    {
       "id": "APP-REDDIT",
       "league": "APP",
       "conference": "Social",
@@ -1820,6 +5727,151 @@
           ],
           "unusedSourceSlots": [],
           "sha256": "206118e0f01032c1c745d7817b303e7b4ee350488ff9ffbdbef4692ba43b6e2e"
+        },
+        {
+          "id": "full-body",
+          "label": "Full-body alien",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/9/94/Reddit_Snoo.svg/revision/latest?cb=20180501154743",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Reddit_Snoo.svg",
+          "sourceSha256": "a28b8a5e080118de9410daf6f21d69a7e8b7993c548e3f439ba8e906cac271b6",
+          "ops": {
+            "viewBox": "-4.055 -4.055 198.618 272.693"
+          },
+          "path": "/logos/svg/apps/alternates/reddit-full-body.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#FFFFFF",
+            "#FF4500"
+          ],
+          "sourcePalette": [
+            "#FF4500",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "bf326cc83aeaa3b656bb2718d7222af68f21e374707ae7b2d095291de27bb0c7"
+        }
+      ]
+    },
+    {
+      "id": "APP-REMINDERS",
+      "league": "APP",
+      "conference": "Built-in",
+      "region": "Reminders",
+      "name": "",
+      "abbr": "REMINDERS",
+      "aliases": [
+        "Apple Reminders",
+        "iPhone Reminders"
+      ],
+      "palette": [
+        "#077CFF",
+        "#FF3F33",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Colored checklist tile",
+          "sourceUrl": "https://logowik.com/ios-17-app-icons-set-icon-59931.html",
+          "sourcePage": "https://logowik.com/ios-17-app-icons-set-icon-59931.html",
+          "sourceSha256": "409ebe6d39fa43d32cac5ddf5dca708e45c0ff329eb5865ab6616bd3bbf9fd8b",
+          "downloadForm": "logowik",
+          "ops": {
+            "keepNodes": [
+              "0",
+              "59"
+            ],
+            "viewBox": "386.04 143.84 55.12 55.12"
+          },
+          "path": "/logos/svg/apps/reminders.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#FFFFFF",
+            "#C6C5C9",
+            "#077CFF",
+            "#047BFE",
+            "#FD4235",
+            "#FF3F33",
+            "#FF9700",
+            "#FE9404"
+          ],
+          "sourcePalette": [
+            "#067CFE",
+            "#FE6B1B",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "2d09a702060bea6b92a3dd85f3935faf032f0d86aeab8cccc03bd70dd7908d54"
+        }
+      ]
+    },
+    {
+      "id": "APP-ROBINHOOD",
+      "league": "APP",
+      "conference": "Everyday",
+      "region": "Robinhood",
+      "name": "",
+      "abbr": "ROBINHOOD",
+      "aliases": [
+        "Robin Hood"
+      ],
+      "palette": [
+        "#CCFF00",
+        "#1C180D",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Feather on neon tile",
+          "sourceUrl": "https://api.iconify.design/token-branded/robinhood-background.svg",
+          "sourcePage": "https://icon-sets.iconify.design/token-branded/robinhood-background/",
+          "sourceSha256": "3dd49eff0ad2ec54054cdc61563ee2b95a7707515efaaf0ce1bd3047403c22a4",
+          "ops": {
+            "viewBox": "-0.72 -0.72 25.44 25.44"
+          },
+          "path": "/logos/svg/apps/robinhood.svg",
+          "format": "svg",
+          "colors": [
+            "#CCFF00",
+            "#1C180D",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#CCFF00",
+            "#1C180D",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "84caa25e5f760e59effea8a8b10b5e985bfc70a2a248e3d854f74825dfb03ad7"
+        },
+        {
+          "id": "green-feather",
+          "label": "Green feather (2013)",
+          "sourceUrl": "https://api.iconify.design/selfhst/robinhood.svg",
+          "sourcePage": "https://icon-sets.iconify.design/selfhst/robinhood/",
+          "sourceSha256": "eedcd58fa9c421a6a41aa21cac21689681a4efd4f65a60ab680d52ccc3930916",
+          "ops": {
+            "viewBox": "49.252 -15.404 413.479 542.971"
+          },
+          "path": "/logos/svg/apps/alternates/robinhood-green-feather.svg",
+          "format": "svg",
+          "colors": [
+            "#00C805"
+          ],
+          "sourcePalette": [
+            "#00C805",
+            "#1C180D",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "be1e79f8b51b755c1c0f84315f276d0d6e1c2a737f76331cf34fdc7fa858c4f5"
         }
       ]
     },
@@ -1861,6 +5913,33 @@
             1
           ],
           "sha256": "f5294ea6a39204a5cc9de6f4e0d09da08811fa36fb60c120f5a784011cfeab13"
+        },
+        {
+          "id": "tilted-r",
+          "label": "Tilted R in red circle (2011)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/e/eb/Roblox-circle-logo.svg/revision/latest?cb=20250420213113",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Roblox-circle-logo.svg",
+          "sourceSha256": "cf593fb9fe6c2949e8b79ace40425811b840e2c403217ea02cb68fc007cac3e6",
+          "ops": {
+            "viewBox": "-12.6 -12.6 445.2 445.2"
+          },
+          "path": "/logos/svg/apps/alternates/roblox-tilted-r.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#EE222E",
+            "#FFFFFF",
+            "#89181D",
+            "#971A1F",
+            "#5F1316"
+          ],
+          "sourcePalette": [
+            "#300A0B",
+            "#C21E26",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "f90c8edc7388d3014d3e5cf91a1020172e84648fdb69a62da1994067d0991418"
         }
       ]
     },
@@ -2005,6 +6084,148 @@
       ]
     },
     {
+      "id": "APP-SHORTCUTS",
+      "league": "APP",
+      "conference": "Built-in",
+      "region": "Shortcuts",
+      "name": "",
+      "abbr": "SHORTCUTS",
+      "aliases": [
+        "Apple Shortcuts",
+        "Siri Shortcuts"
+      ],
+      "palette": [
+        "#1D1F5A",
+        "#F16350",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Stacked diamonds tile",
+          "sourceUrl": "https://logowik.com/ios-17-app-icons-set-icon-59931.html",
+          "sourcePage": "https://logowik.com/ios-17-app-icons-set-icon-59931.html",
+          "sourceSha256": "409ebe6d39fa43d32cac5ddf5dca708e45c0ff329eb5865ab6616bd3bbf9fd8b",
+          "downloadForm": "logowik",
+          "ops": {
+            "keepNodes": [
+              "0",
+              "426-430"
+            ],
+            "viewBox": "385.94 490.24 55.12 55.12"
+          },
+          "path": "/logos/svg/apps/shortcuts.svg",
+          "format": "svg",
+          "colors": [
+            "#1D1F5A",
+            "#1185FD",
+            "#40C9A0",
+            "#D460C0",
+            "#F16350"
+          ],
+          "sourcePalette": [
+            "#1D1F5A",
+            "#E26288",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "b5c8831bbbc52f50c952ea6926553ad6f7fd3bcd28722f4f9c3cee9a7ad2d221"
+        }
+      ]
+    },
+    {
+      "id": "APP-SIGNAL",
+      "league": "APP",
+      "conference": "Social",
+      "region": "Signal",
+      "name": "",
+      "abbr": "SIGNAL",
+      "aliases": [
+        "Signal Messenger",
+        "Signal Private Messenger"
+      ],
+      "palette": [
+        "#1B78F8",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Dashed speech bubble tile",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/b/bf/Signal_2024_iOS.svg/revision/latest?cb=20241111120909",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Signal_2024_iOS.svg",
+          "sourceSha256": "7001afe4c6cbf6270bfd446e87ee3738f3dccdd3812d63e08a5b1b23d745fbd8",
+          "ops": {
+            "viewBox": "-30.72 -30.72 1085.44 1085.44"
+          },
+          "path": "/logos/svg/apps/signal.svg",
+          "format": "svg",
+          "colors": [
+            "#1B78F8",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#1B78F8",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "c0549fb1e749a07063f98060984dd04e722aa9a72f5ff6173db69ce0df6811de"
+        }
+      ]
+    },
+    {
+      "id": "APP-SKYPE",
+      "league": "APP",
+      "conference": "Social",
+      "region": "Skype",
+      "name": "",
+      "abbr": "SKYPE",
+      "aliases": [
+        "Microsoft Skype"
+      ],
+      "palette": [
+        "#00B0EF",
+        "#0078D4",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "S cloud tile",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/0/08/Skype_IOS.svg/revision/latest?cb=20210615080100",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Skype_IOS.svg",
+          "sourceSha256": "5ea4dc94b3b8766ad3c1524f2e177b0fb58f0cdcbb07473a35d3aa83fc6d87a5",
+          "ops": {
+            "viewBox": "-6.713 -6.713 237.195 237.195"
+          },
+          "path": "/logos/svg/apps/skype.svg",
+          "format": "svg",
+          "colors": [
+            "#00B0EF",
+            "#FFFFFF",
+            "#4C6F76",
+            "#8DFFFF",
+            "#921E78",
+            "#AFE9FE",
+            "#09A6E1"
+          ],
+          "sourcePalette": [
+            "#04ABE8",
+            "#6F4677",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "2e1940d6361f69a32dcf77309b65e3298b036579db6304d919be4dbcb56fbdec"
+        }
+      ]
+    },
+    {
       "id": "APP-SNAP",
       "league": "APP",
       "conference": "Social",
@@ -2044,6 +6265,54 @@
           ],
           "unusedSourceSlots": [],
           "sha256": "1ea92652a3f13e68f80e4e389754af3fc934e44b60ae7cb2304ad7326813622f"
+        },
+        {
+          "id": "smiling-ghost",
+          "label": "Smiling ghost tile (2011)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/a/a8/Snapchat_2011.svg/revision/latest?cb=20190813115852",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Snapchat_2011.svg",
+          "sourceSha256": "05de437ac37aac22c41ef02dd50d4a875bd53b44b2f5d98eda130a8d06f52934",
+          "ops": {
+            "viewBox": "-0.245 -1.728 265.074 264.956"
+          },
+          "path": "/logos/svg/apps/alternates/snap-smiling-ghost.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFF00",
+            "#231F20",
+            "#FFFFFF",
+            "#FF0000",
+            "#040707",
+            "#EF4D7F",
+            "#F5EF53",
+            "#F5EE52",
+            "#F4ED50",
+            "#F3EB4C",
+            "#F2E848",
+            "#F0E442",
+            "#EEE03A",
+            "#EBDB34",
+            "#E8D32A",
+            "#E5CD20",
+            "#FFFCD9",
+            "#FDFAC9",
+            "#FCF8B9",
+            "#FBF7A9",
+            "#FAF59A",
+            "#F9F48B",
+            "#F8F37E",
+            "#F8F270",
+            "#F7F061",
+            "#F7EF54",
+            "#EBE349"
+          ],
+          "sourcePalette": [
+            "#F2E847",
+            "#141314",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "aefd15e01b202942191795daa7ea932e180934be93bce11187963d025bbf76c7"
         }
       ]
     },
@@ -2131,6 +6400,47 @@
             2
           ],
           "sha256": "5ad96b4913843fdbfeda892419c6a23bd93e401270e10a464f69788722e41a5d"
+        }
+      ]
+    },
+    {
+      "id": "APP-STRAVA",
+      "league": "APP",
+      "conference": "Everyday",
+      "region": "Strava",
+      "name": "",
+      "abbr": "STRAVA",
+      "aliases": [],
+      "palette": [
+        "#F5561D",
+        "#F8B38E",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Peaks tile",
+          "sourceUrl": "https://api.iconify.design/selfhst/strava.svg",
+          "sourcePage": "https://icon-sets.iconify.design/selfhst/strava/",
+          "sourceSha256": "b5ad7a539ea155b57cc3c12c9d840fbeebc1dcfd7bec53703efb8834bc620d67",
+          "ops": {
+            "viewBox": "-15.36 -15.36 542.72 542.72"
+          },
+          "path": "/logos/svg/apps/strava.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#F8B38E",
+            "#F5731F",
+            "#F5561D"
+          ],
+          "sourcePalette": [
+            "#F5641E",
+            "#F8B38E",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "667eaeb939634daa10a50e46319835b98869c61ab1f8a1157ee57522929b6a3d"
         }
       ]
     },
@@ -2234,6 +6544,88 @@
             1
           ],
           "sha256": "606e349c6d89f3e8a1aa84dca9025b8d8ee652c7cdd7708b061bc667bf9fc985"
+        },
+        {
+          "id": "square-plane",
+          "label": "Paper plane on blue square (2013)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/d/d4/Telegram_2013_logo.svg/revision/latest?cb=20230202162456",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Telegram_2013_logo.svg",
+          "sourceSha256": "acbf95fc5e364991236a75277d10a54566d25410d380abb58fb9770b8bb69361",
+          "ops": {
+            "viewBox": "-0.48 -0.48 16.96 16.96"
+          },
+          "path": "/logos/svg/apps/alternates/telegram-square-plane.svg",
+          "format": "svg",
+          "colors": [
+            "#416390",
+            "#D9ECF8",
+            "#F8FEED",
+            "#BDD9EF",
+            "#B3BCC0",
+            "#7C9BBE",
+            "#788B9B"
+          ],
+          "sourcePalette": [
+            "#6783A3",
+            "#C3D6E2",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "3596a2759e215e5b2693e5b47c2556f1dab293af8d8e327be3601d16585cfd45"
+        }
+      ]
+    },
+    {
+      "id": "APP-TETRIS",
+      "league": "APP",
+      "conference": "Games",
+      "region": "Tetris",
+      "name": "",
+      "abbr": "TETRIS",
+      "aliases": [],
+      "palette": [
+        "#2D2E83",
+        "#F32735",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Rainbow block letters on T-piece",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Tetris_logo_2019.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Tetris_logo_2019.svg",
+          "sourceSha256": "e8637af0e0ccd618874498ba8f8643a23361364a93d9dbe2bb9229c8268f4891",
+          "ops": {
+            "removeNodes": [
+              "1/0/0/1/0/1/1",
+              "1/0/0/1/1/0/4",
+              "1/0/0/1/1/0/7"
+            ],
+            "viewBox": "-19.359 -19.359 684.018 486.808"
+          },
+          "showsName": true,
+          "path": "/logos/svg/apps/tetris.svg",
+          "format": "svg",
+          "colors": [
+            "#1A428A",
+            "#F32735",
+            "#FFB71B",
+            "#FF6C0E",
+            "#00A0DF",
+            "#9D1D96",
+            "#3DAE2B",
+            "#2D2E83",
+            "#000F1F",
+            "#FFFFFF",
+            "#1D1D1B"
+          ],
+          "sourcePalette": [
+            "#2D2E83",
+            "#FB6E1F",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "c960ee581608d5107a18069ec2e3b1c4c6be03d33bac96e1513e01f25e537ab1"
         }
       ]
     },
@@ -2283,6 +6675,49 @@
       ]
     },
     {
+      "id": "APP-TIDAL",
+      "league": "APP",
+      "conference": "Music & Video",
+      "region": "Tidal",
+      "name": "",
+      "abbr": "TIDAL",
+      "aliases": [
+        "Tidal Music"
+      ],
+      "palette": [
+        "#000000",
+        "#33FFEE",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Four diamonds",
+          "sourceUrl": "https://api.iconify.design/logos/tidal-icon.svg",
+          "sourcePage": "https://icon-sets.iconify.design/logos/tidal-icon/",
+          "sourceSha256": "07a329ee4a559aec6d56e8f873ac3580906cdf3a958b38196329125e29ad6c46",
+          "ops": {
+            "viewBox": "-7.68 -7.68 271.36 186.036"
+          },
+          "path": "/logos/svg/apps/tidal.svg",
+          "format": "svg",
+          "colors": [
+            "#0A0B09"
+          ],
+          "sourcePalette": [
+            "#0A0B09",
+            "#33FFEE",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "010be4f8c9875415fa342e281ca208cc456a3db151d357d102424193b5d8c855"
+        }
+      ]
+    },
+    {
       "id": "APP-TIKTOK",
       "league": "APP",
       "conference": "Social",
@@ -2324,6 +6759,181 @@
           ],
           "unusedSourceSlots": [],
           "sha256": "735a091cae66c515f4a10981823c96c366ba6e1680f21198c41b86588690c715"
+        },
+        {
+          "id": "waveform-badge",
+          "label": "Pink waveform badge (2014)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/2/2a/Musical.ly.svg/revision/latest?cb=20170610210937",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Musical.ly.svg",
+          "sourceSha256": "07da01b3274573c972f60577b059643482071c020b2fd8f87549ad2322877b2f",
+          "ops": {
+            "viewBox": "-224 -134 1060 1060"
+          },
+          "path": "/logos/svg/apps/alternates/tiktok-waveform-badge.svg",
+          "format": "svg",
+          "colors": [
+            "#FF0F50",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#FF0F50",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "4bd2411a04bcb00b9a1213e644167cc79d1528bd0d0a1822363df1bbab245e22"
+        }
+      ]
+    },
+    {
+      "id": "APP-TINDER",
+      "league": "APP",
+      "conference": "Everyday",
+      "region": "Tinder",
+      "name": "",
+      "abbr": "TINDER",
+      "aliases": [],
+      "palette": [
+        "#CD130A",
+        "#F1E6EF",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Flame tile",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/1/11/Tinder_app_icon_2026.svg/revision/latest?cb=20260716173323",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Tinder_app_icon_2026.svg",
+          "sourceSha256": "85a78ae394485842cea60439a0cb48b4a8deb0a374708b84935899cec9a7b81b",
+          "ops": {
+            "viewBox": "-15.36 -15.36 542.72 542.72"
+          },
+          "path": "/logos/svg/apps/tinder.svg",
+          "format": "svg",
+          "colors": [
+            "#CD130A",
+            "#F1E6EF"
+          ],
+          "sourcePalette": [
+            "#CD130A",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "897863deddffb4209787451728a7990445fd8d04056b922354fa7e07501054be"
+        }
+      ]
+    },
+    {
+      "id": "APP-TRELLO",
+      "league": "APP",
+      "conference": "Productivity",
+      "region": "Trello",
+      "name": "",
+      "abbr": "TRELLO",
+      "aliases": [],
+      "palette": [
+        "#0079BF",
+        "#172B4D",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Board columns tile",
+          "sourceUrl": "https://api.iconify.design/logos/trello.svg",
+          "sourcePage": "https://icon-sets.iconify.design/logos/trello/",
+          "sourceSha256": "dee77212a8f6ff71c9de41d1b3df94e754080c53160ac590ffd46264c6d4f1c6",
+          "ops": {
+            "viewBox": "-7.68 -7.68 271.36 271.36"
+          },
+          "path": "/logos/svg/apps/trello.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#0091E6",
+            "#0079BF"
+          ],
+          "sourcePalette": [
+            "#0079BF",
+            "#0091E6",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "ce161158108dc6d545ba96984bb4a2a6223bcdb2f93b86793d64d39d8a8a2f68"
+        }
+      ]
+    },
+    {
+      "id": "APP-TUMBLR",
+      "league": "APP",
+      "conference": "Social",
+      "region": "Tumblr",
+      "name": "",
+      "abbr": "TUMBLR",
+      "aliases": [],
+      "palette": [
+        "#001935",
+        "#36465D",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Lowercase t tile",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/4/45/Tumblr_2018_iOS_icon.svg/revision/latest?cb=20210429114435",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Tumblr_2018_iOS_icon.svg",
+          "sourceSha256": "5e9694f78961d8f7bde7cc3ce624d26bdb97cf04d67f156b7f4d2c16ca49ddb0",
+          "ops": {
+            "viewBox": "-7.937 -7.937 280.458 280.458"
+          },
+          "path": "/logos/svg/apps/tumblr.svg",
+          "format": "svg",
+          "colors": [
+            "#001935",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#001935",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "d90fb56a60c2b053127d2b7462fa395be1810f6fe76d2f580d73650afc34f906"
+        },
+        {
+          "id": "neon-outline",
+          "label": "Neon outline t (2021)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/0/07/Tumblr_2021_app_icon.svg/revision/latest?cb=20210429120049",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Tumblr_2021_app_icon.svg",
+          "sourceSha256": "017f59731f35dd4da953eb8b16de39c4fcd095d6db4c95c1abb9aaf375d7ad65",
+          "ops": {
+            "viewBox": "-30 -30 1060 1060"
+          },
+          "path": "/logos/svg/apps/alternates/tumblr-neon-outline.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#7AE8FE",
+            "#E546E9",
+            "#237BBD",
+            "#234093"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#235EA8",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "bdf678e5a368b4a775c4b6f7f77597ddb00d576e7c26940fc9195d747b79eeac"
         }
       ]
     },
@@ -2372,6 +6982,77 @@
       ]
     },
     {
+      "id": "APP-UBER",
+      "league": "APP",
+      "conference": "Everyday",
+      "region": "Uber",
+      "name": "",
+      "abbr": "UBER",
+      "aliases": [
+        "Uber Rides"
+      ],
+      "palette": [
+        "#000000",
+        "#276EF1",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Bit tile (2016)",
+          "sourceUrl": "https://api.iconify.design/selfhst/uber.svg",
+          "sourcePage": "https://icon-sets.iconify.design/selfhst/uber/",
+          "sourceSha256": "1f9d8a5df506a063e7c7f2ba16b347d9e3a49f4ea28bce8ae95666b96d23993e",
+          "ops": {
+            "viewBox": "-15.36 -15.36 542.72 542.72"
+          },
+          "path": "/logos/svg/apps/uber.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#276EF1",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "d695d805c97aee61dacf4a442c86cd5018df53980b9219b8d29e333ca3977170"
+        },
+        {
+          "id": "2010-u",
+          "label": "Red U (2010)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/d/d8/Uber_%282010%29.svg/revision/latest?cb=20240314000525",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Uber_%282010%29.svg",
+          "sourceSha256": "66ed11abc75f3d14f841515d28e44727678742afc3dc51473c380cb44601fad0",
+          "ops": {
+            "keepNodes": [
+              "2/0/3"
+            ],
+            "viewBox": "-0.219 294.391 721.459 721.459"
+          },
+          "path": "/logos/svg/apps/alternates/uber-2010-u.svg",
+          "format": "svg",
+          "colors": [
+            "#C6202C"
+          ],
+          "sourcePalette": [
+            "#C6202C",
+            "#276EF1",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "d6ef9c04e6cc0270b9a884246cb1906be46eee900384cdb9cace918a7a8be479"
+        }
+      ]
+    },
+    {
       "id": "APP-VENMO",
       "league": "APP",
       "conference": "Everyday",
@@ -2409,6 +7090,151 @@
             1
           ],
           "sha256": "5e738b770b4f383b248e535b1c28c985dc685dae77d8dbb386d922ffcda1392d"
+        }
+      ]
+    },
+    {
+      "id": "APP-VIBER",
+      "league": "APP",
+      "conference": "Social",
+      "region": "Viber",
+      "name": "",
+      "abbr": "VIBER",
+      "aliases": [
+        "Rakuten Viber"
+      ],
+      "palette": [
+        "#7360F2",
+        "#59267C",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Phone in speech bubble",
+          "sourceUrl": "https://api.iconify.design/thesvg-color/viber.svg",
+          "sourcePage": "https://icon-sets.iconify.design/thesvg-color/viber/",
+          "sourceSha256": "109f0ea5d0546899231881e6a1c50ff4379dffd6f83e4b6819f633279bc70d33",
+          "ops": {
+            "viewBox": "-0.101 -0.72 24.201 25.439"
+          },
+          "path": "/logos/svg/apps/viber.svg",
+          "format": "svg",
+          "colors": [
+            "#7360F2"
+          ],
+          "sourcePalette": [
+            "#7360F2",
+            "#59267C",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "d97e3b2b4fad42ddafec582627f9537a4e7ef9a22e37904e26ae062c1038541a"
+        }
+      ]
+    },
+    {
+      "id": "APP-VIMEO",
+      "league": "APP",
+      "conference": "Music & Video",
+      "region": "Vimeo",
+      "name": "",
+      "abbr": "VIMEO",
+      "aliases": [],
+      "palette": [
+        "#00ADEF",
+        "#1A2E3B",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Cursive v on blue square",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/b/b3/Vimeo_%28Icon%29.svg/revision/latest?cb=20190602181448",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Vimeo_(Icon).svg",
+          "sourceSha256": "bcfb3b4824953fed975e193901e014f9742881560a309b04270d7d30ca567b47",
+          "ops": {
+            "viewBox": "-30 -30 1060 1060"
+          },
+          "path": "/logos/svg/apps/vimeo.svg",
+          "format": "svg",
+          "colors": [
+            "#00ADEF",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#00ADEF",
+            "#1A2E3B",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "12b2c9e2fbe2ef11b2054aa50b1447b4cea44b470c124d54aec29724ba7d2e5f"
+        }
+      ]
+    },
+    {
+      "id": "APP-VLC",
+      "league": "APP",
+      "conference": "Music & Video",
+      "region": "VLC",
+      "name": "",
+      "abbr": "VLC",
+      "aliases": [
+        "VLC Media Player",
+        "VLC Player",
+        "VideoLAN"
+      ],
+      "palette": [
+        "#F48200",
+        "#CB5600",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Striped traffic cone",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/VLC_Icon.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:VLC_Icon.svg",
+          "sourceSha256": "a2bf327feb1f6a12d919fa95ffa7d053aa57524cfdf71d8d3e0ec0d08a6afd8d",
+          "ops": {
+            "viewBox": "-19.905 -20.353 720.539 811.276"
+          },
+          "path": "/logos/svg/apps/vlc.svg",
+          "format": "svg",
+          "colors": [
+            "#CB5600",
+            "#FFFFFF",
+            "#CB5C00",
+            "#EE6900",
+            "#E26400",
+            "#FFB900",
+            "#9B4400",
+            "#E56300",
+            "#F48200",
+            "#CC5F00",
+            "#A43D00",
+            "#A1ABB2",
+            "#EAECED",
+            "#C6CCD0",
+            "#7A8288",
+            "#9FA3A7",
+            "#7D858B",
+            "#FFD76B",
+            "#F68000",
+            "#FD9800"
+          ],
+          "sourcePalette": [
+            "#F48200",
+            "#CB5600",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "fbfbdbc8504d4e593349b6312fb6551ed2d28a7112df2110600200ed0ee627de"
         }
       ]
     },
@@ -2453,6 +7279,60 @@
           ],
           "unusedSourceSlots": [],
           "sha256": "476aca83a9b056522b93f38c189087a2c415191d945fa9c17585f29bc97751de"
+        }
+      ]
+    },
+    {
+      "id": "APP-WALLET",
+      "league": "APP",
+      "conference": "Built-in",
+      "region": "Wallet",
+      "name": "",
+      "abbr": "WALLET",
+      "aliases": [
+        "Apple Wallet",
+        "iPhone Wallet",
+        "Passbook"
+      ],
+      "palette": [
+        "#1E1D1F",
+        "#FEB000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Card pocket tile",
+          "sourceUrl": "https://logowik.com/ios-17-app-icons-set-icon-59931.html",
+          "sourcePage": "https://logowik.com/ios-17-app-icons-set-icon-59931.html",
+          "sourceSha256": "409ebe6d39fa43d32cac5ddf5dca708e45c0ff329eb5865ab6616bd3bbf9fd8b",
+          "downloadForm": "logowik",
+          "ops": {
+            "keepNodes": [
+              "0",
+              "104"
+            ],
+            "viewBox": "247.44 230.44 55.12 55.12"
+          },
+          "path": "/logos/svg/apps/wallet.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#1E1D1F",
+            "#D8D6CC",
+            "#C4C4C4",
+            "#3B98C6",
+            "#FEB000",
+            "#4DBE3B",
+            "#F16D5F"
+          ],
+          "sourcePalette": [
+            "#1E1D1F",
+            "#F88E30",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "fe119fb9bff31b8f7b5674b545f7dd6929d1fd8e0a30653941db47000569cd72"
         }
       ]
     },
@@ -2547,6 +7427,93 @@
       ]
     },
     {
+      "id": "APP-WECHAT",
+      "league": "APP",
+      "conference": "Social",
+      "region": "WeChat",
+      "name": "",
+      "abbr": "WECHAT",
+      "aliases": [
+        "We Chat",
+        "Weixin"
+      ],
+      "palette": [
+        "#07C160",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Twin chat bubbles",
+          "sourceUrl": "https://api.iconify.design/thesvg-color/wechat.svg",
+          "sourcePage": "https://icon-sets.iconify.design/thesvg-color/wechat/",
+          "sourceSha256": "4a7cef29f60808aad01701db26d988e90a906ebdaf9d17ae5a91e46f64fa8828",
+          "ops": {
+            "viewBox": "-0.72 1.468 25.44 21.064"
+          },
+          "path": "/logos/svg/apps/wechat.svg",
+          "format": "svg",
+          "colors": [
+            "#07C160"
+          ],
+          "sourcePalette": [
+            "#07C160",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "874188abcc57f3bb4af159557a66582cb8c202d19ab989e5f7a3d0b9fb5d6bd0"
+        }
+      ]
+    },
+    {
+      "id": "APP-WORDLE",
+      "league": "APP",
+      "conference": "Games",
+      "region": "Wordle",
+      "name": "",
+      "abbr": "WORDLE",
+      "aliases": [
+        "NYT Wordle"
+      ],
+      "palette": [
+        "#6AAA64",
+        "#D1B036",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Letter grid tile",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/f/f2/Wordle_Icon.svg/revision/latest?cb=20260815063642",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Wordle_Icon.svg",
+          "sourceSha256": "6fd4cfef9f4188f0e186468ee649840ec2e3235c244ca81316e0c806c2683a68",
+          "ops": {
+            "viewBox": "-1.961 -1.961 598.923 598.923"
+          },
+          "path": "/logos/svg/apps/wordle.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#D1B036",
+            "#6AAA64",
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#6AAA64",
+            "#D1B036",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "66b7a7296a683a1182baea0f2c14c64268bd86dfa42fd3fd28c4deb16cc6d09d"
+        }
+      ]
+    },
+    {
       "id": "APP-X",
       "league": "APP",
       "conference": "Social",
@@ -2613,6 +7580,99 @@
             2
           ],
           "sha256": "685e1297dcddcd9bd958382ff9ea6e4ccdf75a1aa5875d4075f6583ee7739b24"
+        },
+        {
+          "id": "t-tile",
+          "label": "Glossy lowercase t tile (2006)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/7/71/Twitter_2006_Icon.svg/revision/latest?cb=20241207111147",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Twitter_2006_Icon.svg",
+          "sourceSha256": "b4ebc3f95995831cb31f05e05a41f7ae942c18ff19a3751bee1245e598c2f0cf",
+          "ops": {
+            "viewBox": "-71.98 -71.98 2543.279 2530.669"
+          },
+          "path": "/logos/svg/apps/alternates/x-t-tile.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#99E4F7",
+            "#2FB1D5",
+            "#49D3F7",
+            "#B4F2FE",
+            "#7EDDF7"
+          ],
+          "sourcePalette": [
+            "#99E6F9",
+            "#3CC2E6",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "501adda34dc46af7541347f581464925b946a715c5829a103e19f3a210380a5b"
+        },
+        {
+          "id": "perched-bird",
+          "label": "Perched bird (2006)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/c/c4/2006_Twitter_bird.svg/revision/latest?cb=20230726002143",
+          "sourcePage": "https://logos.fandom.com/wiki/File:2006_Twitter_bird.svg",
+          "sourceSha256": "eedebee815b88556f89b24573866b1f87984089a75bbe44c4d1cdcaa1891a931",
+          "ops": {
+            "viewBox": "-7.764 -7.264 265.328 265.492"
+          },
+          "path": "/logos/svg/apps/alternates/x-perched-bird.svg",
+          "format": "svg",
+          "colors": [
+            "#2EAADB",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#2EAADB",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "6b77305f97d3de919efe85061d305dd6119eed8d16e802fa2ad3e7f72c3ca2ce"
+        }
+      ]
+    },
+    {
+      "id": "APP-YELP",
+      "league": "APP",
+      "conference": "Everyday",
+      "region": "Yelp",
+      "name": "",
+      "abbr": "YELP",
+      "aliases": [],
+      "palette": [
+        "#FF1A1A",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Petal burst",
+          "sourceUrl": "https://api.iconify.design/selfhst/yelp.svg",
+          "sourcePage": "https://icon-sets.iconify.design/selfhst/yelp/",
+          "sourceSha256": "4ccda45d153893c8d0114aaf4db6147a7d7fa39a462b9b816aa6e795ddb6c35b",
+          "ops": {
+            "viewBox": "36.237 -15.387 439.599 542.712"
+          },
+          "path": "/logos/svg/apps/yelp.svg",
+          "format": "svg",
+          "colors": [
+            "#FF1A1A"
+          ],
+          "sourcePalette": [
+            "#FF1A1A",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "99bb0c5e274761d6ecab4137e4abcf2cadc80e9d471fddbdf3b94e712a838528"
         }
       ]
     },
@@ -2657,6 +7717,194 @@
             1
           ],
           "sha256": "358e6deab492fce82e7be55b051f2b6c9c749b1d880b3beb89e132d52136148a"
+        },
+        {
+          "id": "tv-set",
+          "label": "Retro TV set tile (2007)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/4/4f/YouTube_%28iOS_1-6%29_icon.svg/revision/latest?cb=20241012181839",
+          "sourcePage": "https://logos.fandom.com/wiki/File:YouTube_(iOS_1-6)_icon.svg",
+          "sourceSha256": "34a20c7adcfb358b8cf359555c6f42547f772abd470067069243fe5496e0e27a",
+          "ops": {
+            "viewBox": "-8.46 -8.46 298.92 298.92"
+          },
+          "path": "/logos/svg/apps/alternates/yt-tv-set.svg",
+          "format": "svg",
+          "colors": [
+            "#D9D9D9",
+            "#FFFFFF",
+            "#9EB57E",
+            "#CFC2C2",
+            "#927561",
+            "#9F7C63",
+            "#65513F",
+            "#CCB272",
+            "#FCECCF",
+            "#764E2C",
+            "#8B684D",
+            "#50583D",
+            "#546043",
+            "#66724B",
+            "#73805C",
+            "#75855E",
+            "#8B9B73",
+            "#000000",
+            "#35302E",
+            "#554D46",
+            "#60574F",
+            "#2C2626",
+            "#B59E8F",
+            "#725434",
+            "#C4BEB7",
+            "#494949",
+            "#1E1813"
+          ],
+          "sourcePalette": [
+            "#C2BDA2",
+            "#2C2626",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "05885b5f16d29a469262de508d1149ef682eceafea70c31454cd06e4db4b3cd9"
+        }
+      ]
+    },
+    {
+      "id": "APP-YTMUSIC",
+      "league": "APP",
+      "conference": "Music & Video",
+      "region": "YouTube Music",
+      "name": "",
+      "abbr": "YTMUSIC",
+      "aliases": [
+        "YT Music",
+        "YouTubeMusic"
+      ],
+      "palette": [
+        "#FF0000",
+        "#282828",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Ringed play button",
+          "sourceUrl": "https://api.iconify.design/thesvg-color/youtube-music.svg",
+          "sourcePage": "https://icon-sets.iconify.design/thesvg-color/youtube-music/",
+          "sourceSha256": "e68e893971a6ea7e66de5074062dfee30ab8996c045b875f53f4b43aa3f26d11",
+          "ops": {
+            "viewBox": "-5.76 -5.76 203.52 203.52"
+          },
+          "path": "/logos/svg/apps/ytmusic.svg",
+          "format": "svg",
+          "colors": [
+            "#FF0000",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#FF0000",
+            "#282828",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "0e95b0e778f0e8a0edcce4a4e384e94f3daeb9fe96ca86046de94e933ff61fb1"
+        },
+        {
+          "id": "2015-record",
+          "label": "Play button on a record (2015)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/e/e7/YouTube_Music_Icon_2015.svg/revision/latest?cb=20160807151034",
+          "sourcePage": "https://logos.fandom.com/wiki/File:YouTube_Music_Icon_2015.svg",
+          "sourceSha256": "b92a010ecede258a8d9a56a9591a7e58edba547a97bed527795e85378ca25103",
+          "ops": {
+            "viewBox": "-30 -30 1060 1060"
+          },
+          "path": "/logos/svg/apps/alternates/ytmusic-2015-record.svg",
+          "format": "svg",
+          "colors": [
+            "#333333",
+            "#3D3D3D",
+            "#E23229",
+            "#C7322A",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#D4322A",
+            "#383838",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "82e7e8250d2a340a5982f6792d9c2c751d89eb5fb428f4bb6ad21da1b1fc1bf1"
+        }
+      ]
+    },
+    {
+      "id": "APP-ZILLOW",
+      "league": "APP",
+      "conference": "Everyday",
+      "region": "Zillow",
+      "name": "",
+      "abbr": "ZILLOW",
+      "aliases": [],
+      "palette": [
+        "#006AFF",
+        "#001751",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Z rooftop",
+          "sourceUrl": "https://api.iconify.design/thesvg-color/zillow.svg",
+          "sourcePage": "https://icon-sets.iconify.design/thesvg-color/zillow/",
+          "sourceSha256": "eaf3e5a9b6c7df7c2d498d94eb39494d0760cab5ef8add78647c552202eeb003",
+          "ops": {
+            "viewBox": "0.354 -0.72 23.292 25.44"
+          },
+          "path": "/logos/svg/apps/zillow.svg",
+          "format": "svg",
+          "colors": [
+            "#006AFF"
+          ],
+          "sourcePalette": [
+            "#006AFF",
+            "#001751",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "465d64867778522a138b433ae45e7335ab930a0f315528c2c095e462702acd93"
+        },
+        {
+          "id": "2006-roofs",
+          "label": "Stacked rooftops (2006)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/c/c7/Zillow_-_2006.svg/revision/latest?cb=20241031092722",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Zillow_-_2006.svg",
+          "sourceSha256": "52cf34082f4e1417f866910bb353ec22a4835272345029fc9d3152f5fbbd7a78",
+          "ops": {
+            "keepNodes": [
+              "0",
+              "3/26-29"
+            ],
+            "viewBox": "200.552 -6.678 235.956 189.566"
+          },
+          "path": "/logos/svg/apps/alternates/zillow-2006-roofs.svg",
+          "format": "svg",
+          "colors": [
+            "#5D76B8",
+            "#66C45D"
+          ],
+          "sourcePalette": [
+            "#5D76B8",
+            "#66C45D",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "6fe1e31cf71ce51b40e38c1c5f50afdea2b18f49fcd02523cad24eb77b89db3f"
         }
       ]
     }

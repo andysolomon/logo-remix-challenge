@@ -15,10 +15,12 @@ const entries = TEAMS.filter((t) => COLLECTIONS.includes(t.league))
 const norm = (s: string) => s.toLowerCase().replace(/[^a-z0-9]/g, '')
 /** Entries with name-visible imported artwork; random decks skip them, but they can still be picked by hand. */
 const WORDMARK_ONLY = [
-  'CAR-FIAT', 'CAR-FORD', 'CLOTH-GAP', 'CLOTH-SUPREME',
+  'APP-CANDY', 'APP-TETRIS',
+  'CAR-FIAT', 'CAR-FORD', 'CLOTH-DRMARTENS', 'CLOTH-GAP', 'CLOTH-HM', 'CLOTH-OLDNAVY', 'CLOTH-SUPREME', 'CLOTH-UGG', 'CLOTH-UNIQLO', 'CLOTH-ZARA',
   'FOOD-BOJ', 'FOOD-CANE', 'FOOD-CINNABON', 'FOOD-CUL', 'FOOD-DENNYS', 'FOOD-FIVE', 'FOOD-IHOP', 'FOOD-KRISPY', 'FOOD-OUTBACK', 'FOOD-PAPA', 'FOOD-WAFFLE', 'FOOD-WINGSTOP',
   'LUX-BVLGARI', 'LUX-DIOR', 'LUX-PRADA', 'LUX-RM', 'LUX-TAG', 'LUX-TIFFANY', 'LUX-VCA',
-  'TV-ABC', 'TV-CMT', 'TV-CNN', 'TV-EENT', 'TV-ESPN', 'TV-FOX', 'TV-HBO', 'TV-HGTV', 'TV-TNT', 'TV-TWC', 'TV-VH1',
+  'TV-ABC', 'TV-AMC', 'TV-BBC', 'TV-CMT', 'TV-CNN', 'TV-CW', 'TV-DISNEYXD', 'TV-EENT', 'TV-ESPN', 'TV-FOX', 'TV-FS1', 'TV-FX', 'TV-HBO', 'TV-HGTV',
+  'TV-MLBN', 'TV-NBATV', 'TV-NFLN', 'TV-NINE', 'TV-TLC', 'TV-TNT', 'TV-TWC', 'TV-VH1',
 ]
 /** Brands that lead with their symbol and keep the wordmark as a hand-pickable alternate: the MK circle, the Dunkin' cup, the Vans flying V. */
 const WORDMARK_ALTERNATES = ['CLOTH-VANS', 'FOOD-DUNK', 'LUX-MK']
@@ -27,18 +29,18 @@ const wordmarks = (league: League) => WORDMARK_ONLY.filter((id) => id.startsWith
 describe('brand collections', () => {
   test('fast food, brands, apps, TV, cars, luxury and clothing have full rosters split across their categories', () => {
     expect(LEAGUES.BRAND).toEqual({ label: 'BRANDS', conferences: ['Product', 'Service', 'Corporate', 'Personal', 'Store'] })
-    expect(LEAGUES.APP).toEqual({ label: 'APPS', conferences: ['Built-in', 'Social', 'Games', 'Music & Video', 'Everyday'] })
+    expect(LEAGUES.APP).toEqual({ label: 'APPS', conferences: ['Built-in', 'Social', 'Games', 'Music & Video', 'Everyday', 'Productivity'] })
     expect(LEAGUES.BRAND.conferences.map((c) => filterTeams('BRAND', c, '').length)).toEqual([14, 16, 20, 4, 6])
-    expect(LEAGUES.APP.conferences.map((c) => filterTeams('APP', c, '').length)).toEqual([10, 10, 10, 10, 10])
-    expect(LEAGUES.TV).toEqual({ label: 'TV', conferences: ['Broadcast', 'Cable', 'Music & Pop', 'Kids', 'Discovery & Lifestyle'] })
-    expect(LEAGUES.TV.conferences.map((c) => filterTeams('TV', c, '').length)).toEqual([6, 6, 5, 7, 6])
+    expect(LEAGUES.APP.conferences.map((c) => filterTeams('APP', c, '').length)).toEqual([22, 21, 20, 20, 22, 12])
+    expect(LEAGUES.TV).toEqual({ label: 'TV', conferences: ['Broadcast', 'Cable', 'Music & Pop', 'Kids', 'Discovery & Lifestyle', 'Sports', 'International'] })
+    expect(LEAGUES.TV.conferences.map((c) => filterTeams('TV', c, '').length)).toEqual([9, 10, 5, 10, 11, 8, 11])
     expect(LEAGUES.CAR).toEqual({ label: 'CARS', conferences: ['American', 'Japanese & Korean', 'German', 'Italian', 'British'] })
     expect(LEAGUES.CAR.conferences.map((c) => filterTeams('CAR', c, '').length)).toEqual([6, 8, 5, 5, 6])
     expect(LEAGUES.LUX).toEqual({ label: 'LUXURY', conferences: ['Fashion House', 'Leather Goods', 'Watchmaker', 'Jeweler'] })
     expect(LEAGUES.LUX.conferences.map((c) => filterTeams('LUX', c, '').length)).toEqual([10, 6, 8, 6])
-    expect(LEAGUES.CLOTH).toEqual({ label: 'CLOTHING', conferences: ['Sportswear', 'Streetwear', 'Outdoor', 'Preppy', 'Everyday'] })
-    expect(LEAGUES.CLOTH.conferences.map((c) => filterTeams('CLOTH', c, '').length)).toEqual([7, 6, 6, 6, 5])
-    for (const [league, size] of [['FOOD', 50], ['BRAND', 60], ['FLAG', 123], ['APP', 50], ['TV', 30], ['CAR', 30], ['LUX', 30], ['CLOTH', 30]] as const) {
+    expect(LEAGUES.CLOTH).toEqual({ label: 'CLOTHING', conferences: ['Sportswear', 'Streetwear', 'Outdoor', 'Preppy', 'Everyday', 'Surf & Skate', 'Footwear'] })
+    expect(LEAGUES.CLOTH.conferences.map((c) => filterTeams('CLOTH', c, '').length)).toEqual([17, 11, 15, 12, 9, 10, 7])
+    for (const [league, size] of [['FOOD', 50], ['BRAND', 60], ['FLAG', 123], ['APP', 117], ['TV', 64], ['CAR', 30], ['LUX', 30], ['CLOTH', 81]] as const) {
       expect(filterTeams(league, 'All', '')).toHaveLength(size)
       expect(new Set(filterTeams(league, 'All', '').map(fullName)).size).toBe(size)
     }
@@ -54,7 +56,7 @@ describe('brand collections', () => {
       }
       expect(new Set(logoVariants(team).map((v) => v.logo)).size).toBe(logoVariants(team).length)
     }
-    expect(entries.filter((t) => t.alternateLogos?.length).length).toBeGreaterThanOrEqual(70)
+    expect(entries.filter((t) => t.alternateLogos?.length).length).toBeGreaterThanOrEqual(260)
   })
 
   test('artwork never spells the answer, apart from the wordmark-only entries kept for manual selection', () => {
@@ -94,7 +96,7 @@ for league, roster in ROSTERS.items():
     rows = {row[0]: row for row in roster}
     pinned = {(s['teamId'], s['id']): s for s in pinned_sources(league)}
     items = json.loads(manifest_path(league).read_text())['assets']
-    assert len(items) == len(rows) == {'FOOD': 50, 'BRAND': 60, 'FLAG': 123, 'APP': 50, 'NHL': 32, 'WNBA': 15}.get(league, 30), league
+    assert len(items) == len(rows) == {'FOOD': 50, 'BRAND': 60, 'FLAG': 123, 'APP': 117, 'TV': 64, 'CLOTH': 81, 'NHL': 32, 'WNBA': 15}.get(league, 30), league
     for item in items:
         assert teams[item['id']] == build_entry(league, item, rows[item['abbr']]), item['id']
         for art in item['artwork']:
@@ -148,14 +150,14 @@ for league, roster in ROSTERS.items():
 
   test('random decks draw brand, app, channel, car, luxury and clothing logos, skip wordmarks, take colors from teams and show the type as a hint', () => {
     expect(ALL_POOL_IDS).toEqual(expect.arrayContaining(['Fast Food', 'Brands', 'Apps', 'TV', 'Cars', 'Luxury', 'Clothing']))
-    expect(poolTeams(['Brands', 'Apps'])).toHaveLength(110)
-    expect(poolTeams(['TV', 'Cars'])).toHaveLength(60)
-    expect(poolTeams(['Luxury', 'Clothing'])).toHaveLength(60)
+    expect(poolTeams(['Brands', 'Apps'])).toHaveLength(177)
+    expect(poolTeams(['TV', 'Cars'])).toHaveLength(94)
+    expect(poolTeams(['Luxury', 'Clothing'])).toHaveLength(111)
     expect(logoPoolTeams(['Fast Food'])).toHaveLength(50 - wordmarks('FOOD'))
-    expect(logoPoolTeams(['TV'])).toHaveLength(30 - wordmarks('TV'))
+    expect(logoPoolTeams(['TV'])).toHaveLength(64 - wordmarks('TV'))
     expect(logoPoolTeams(['Cars'])).toHaveLength(30 - wordmarks('CAR'))
     expect(logoPoolTeams(['Luxury'])).toHaveLength(30 - wordmarks('LUX'))
-    expect(logoPoolTeams(['Clothing'])).toHaveLength(30 - wordmarks('CLOTH'))
+    expect(logoPoolTeams(['Clothing'])).toHaveLength(81 - wordmarks('CLOTH'))
     // Brand palettes never color a round, so a wordmark-only brand sits random decks out entirely.
     expect(colorPoolTeams(['Fast Food', 'Brands', 'Apps', 'TV', 'Cars', 'Luxury', 'Clothing'])).toEqual([])
     expect(randomDeck({ rounds: 20, logoPools: ['Brands'], colorPools: ['Apps'], guess: 'both', hints: true })).toEqual([])
@@ -178,6 +180,9 @@ for league, roster in ROSTERS.items():
     expect(roundHints({ o: 'LUX-ROLEX', c: 'NBA-ATL', v: 0 })).toEqual(['Logo: Luxury watchmaker', 'Colors: NBA'])
     expect(roundHints({ o: 'LUX-HERMES', c: 'COL-ALA', v: 0 })).toEqual(['Logo: Luxury leather goods', 'Colors: SEC'])
     expect(roundHints({ o: 'CLOTH-TNF', c: 'PRO-KC', v: 0 })).toEqual(['Logo: Outdoor brand', 'Colors: NFL - AFC'])
+    expect(roundHints({ o: 'CLOTH-CROCS', c: 'TV-CBC', v: 0 })).toEqual(['Logo: Footwear brand', 'Colors: International channel'])
+    expect(roundHints({ o: 'APP-MSWORD', c: 'TV-GOLFCH', v: 0 })).toEqual(['Logo: Productivity app', 'Colors: Sports channel'])
+    expect(roundHints({ o: 'CLOTH-QUIKSILVER', c: 'NBA-ATL', v: 0 })).toEqual(['Logo: Surf & Skate brand', 'Colors: NBA'])
   })
 })
 

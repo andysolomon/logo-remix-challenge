@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="svg1" width="2250.478" height="2116.378" viewBox="-83.351 -83.351 2250.478 2116.378">
+  <defs id="defs1">
+    <linearGradient id="linearGradient10">
+      <stop style="stop-color:#292929;stop-opacity:1;" offset="0" id="stop9" />
+      <stop style="stop-color:#e1e1e1;stop-opacity:1;" offset="1" id="stop10" />
+    </linearGradient>
+    <linearGradient id="linearGradient7">
+      <stop style="stop-color:#000000;stop-opacity:1;" offset="0" id="stop6" />
+      <stop style="stop-color:#5f5f5f;stop-opacity:1;" offset="1" id="stop7" />
+    </linearGradient>
+    <linearGradient id="linearGradient4">
+      <stop style="stop-color:#f9f9f9;stop-opacity:1;" offset="0" id="stop3" />
+      <stop style="stop-color:#b8b8b8;stop-opacity:1;" offset="1" id="stop4" />
+    </linearGradient>
+    <linearGradient id="linearGradient1">
+      <stop style="stop-color:#5d5d5d;stop-opacity:1;" offset="0" id="stop1" />
+      <stop style="stop-color:#e8e8e8;stop-opacity:1;" offset="1" id="stop2" />
+    </linearGradient>
+    <linearGradient xlink:href="#linearGradient1" id="linearGradient2" x1="63.374222" y1="46.315441" x2="49.385555" y2="49.991627" gradientUnits="userSpaceOnUse" gradientTransform="translate(-2e-6)" />
+    <linearGradient xlink:href="#linearGradient4" id="linearGradient3" gradientUnits="userSpaceOnUse" x1="57.140686" y1="45.995773" x2="47.627377" y2="43.917923" gradientTransform="matrix(-1,0,0,1,126.57614,-4.3223e-4)" />
+    <linearGradient xlink:href="#linearGradient7" id="linearGradient5" gradientUnits="userSpaceOnUse" gradientTransform="rotate(-122.55604,64.031707,78.49267)" x1="58.824448" y1="51.659641" x2="48.869492" y2="50.799938" />
+    <linearGradient xlink:href="#linearGradient4" id="linearGradient6" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0.53812436,0.84286546,0.84286546,-0.53812436,-35.7841,68.015175)" x1="57.140686" y1="45.995773" x2="47.627377" y2="43.917923" />
+    <linearGradient xlink:href="#linearGradient10" id="linearGradient8" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0.53812426,-0.84286552,-0.84286552,-0.53812426,94.254042,174.70159)" x1="58.824448" y1="51.659641" x2="48.869492" y2="50.799938" />
+    <linearGradient xlink:href="#linearGradient4" id="linearGradient9" gradientUnits="userSpaceOnUse" gradientTransform="rotate(122.55605,62.548482,78.495037)" x1="56.410862" y1="44.852646" x2="48.8577" y2="43.534698" />
+  </defs>
+  <g id="g1" transform="matrix(17.91336,0,0,17.91336,-91.884644,-145.76101)" style="stroke-width:0.0558243">
+    <path style="display:inline;fill:url(#linearGradient2);stroke-width:0.223297;stroke-linecap:round;paint-order:stroke fill markers" d="M 63.292,8.1374322 V 80.018 l -17.18,-8.702 z" id="path1" />
+    <path style="display:inline;fill:url(#linearGradient3);stroke-width:0.223297;stroke-linecap:round;paint-order:stroke fill markers" d="M 63.292,8.137 V 80.018 L 80.464,71.316 Z" id="path1-4" />
+    <path style="display:inline;fill:url(#linearGradient5);stroke-width:0.223297;stroke-linecap:round;paint-order:stroke fill markers" d="M 5.1297562,116.976 63.292,80.018 v 19.64 z" id="path1-7" />
+    <path style="display:inline;fill:url(#linearGradient6);stroke-width:0.223297;stroke-linecap:round;paint-order:stroke fill markers" d="M 5.1293919,116.97623 63.292,80.018 46.112,71.316 Z" id="path1-4-6" />
+    <path style="display:inline;fill:url(#linearGradient8);stroke-width:0.223297;stroke-linecap:round;paint-order:stroke fill markers" d="M 121.45425,116.97599 63.292,80.018 v 19.64 z" id="path1-7-8" />
+    <path style="display:inline;fill:url(#linearGradient9);stroke-width:0.223297;stroke-linecap:round;paint-order:stroke fill markers" d="M 121.45461,116.97623 63.292,80.018 80.472,71.316 Z" id="path1-4-6-5" />
+  </g>
+</svg>

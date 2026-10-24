@@ -1,6 +1,96 @@
 {
   "assets": [
     {
+      "id": "BRAND-3M",
+      "league": "BRAND",
+      "conference": "Corporate",
+      "region": "3M",
+      "name": "",
+      "abbr": "3M",
+      "aliases": [
+        "3M Company",
+        "Minnesota Mining and Manufacturing"
+      ],
+      "palette": [
+        "#E6002D",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Wordmark",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/3/33/3M.svg/revision/latest?cb=20240519045851",
+          "sourcePage": "https://logos.fandom.com/wiki/File:3M.svg",
+          "sourceSha256": "f0db5e958960f371230453bb0e90483fb581557db654bfd18ebc949299db641f",
+          "ops": {
+            "viewBox": "-44.26 -41.189 1191.648 661.612"
+          },
+          "showsName": true,
+          "path": "/logos/svg/brands/3m.svg",
+          "format": "svg",
+          "colors": [
+            "#E6002D"
+          ],
+          "sourcePalette": [
+            "#E6002D",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "e5d822a3558403fd36e292847fbc4e11a2724da2c476e98e78ac1e23b68afbef"
+        }
+      ]
+    },
+    {
+      "id": "BRAND-76",
+      "league": "BRAND",
+      "conference": "Service",
+      "region": "76",
+      "name": "",
+      "abbr": "76",
+      "aliases": [
+        "76 gas",
+        "Union 76",
+        "Phillips 66"
+      ],
+      "palette": [
+        "#FF8000",
+        "#0000AA",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Orange ball",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/76_Orange_Logo.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:76_Orange_Logo.svg",
+          "sourceSha256": "2d0ba549141fbbe5b940a47680adf6f7693640484c0198164a7bd3112beebf27",
+          "ops": {
+            "viewBox": "-80 -80 2160 2160"
+          },
+          "showsName": true,
+          "path": "/logos/svg/brands/76.svg",
+          "format": "svg",
+          "colors": [
+            "#FF8000",
+            "#FFFFFF",
+            "#0000AA"
+          ],
+          "sourcePalette": [
+            "#FF8000",
+            "#0000AA",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "abf23ce91a15b780b54676177ca53e719f6fe986673cc5989a79e79d9065f36c"
+        }
+      ]
+    },
+    {
       "id": "BRAND-AA",
       "league": "BRAND",
       "conference": "Service",
@@ -61,6 +151,68 @@
           ],
           "unusedSourceSlots": [],
           "sha256": "2e24f3c07ec790c14a7d7cbf14253bdb954cb5a92a59cef65bc265ed3a995f52"
+        },
+        {
+          "id": "mono-flight",
+          "label": "One-color flight symbol",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/e/e9/American_Airlines_logo_2013_%28Flight_Symbol%29_%28Print%29.svg/revision/latest?cb=20210910165118",
+          "sourcePage": "https://logos.fandom.com/wiki/File:American_Airlines_logo_2013_(Flight_Symbol)_(Print).svg",
+          "sourceSha256": "22402ae26dd007f9ddabfedabce34bb6fe458f625001603d3ce20f2745c8c9a1",
+          "ops": {
+            "viewBox": "-10.583 -10.583 285.75 280.688"
+          },
+          "path": "/logos/svg/brands/alternates/aa-mono-flight.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#ED1C24",
+            "#780E0F",
+            "#69231D",
+            "#D1342A",
+            "#EFF2F4",
+            "#96A7B0",
+            "#1C2F72",
+            "#00AFEB",
+            "#EB2023",
+            "#E92026",
+            "#E31E27",
+            "#E01E26",
+            "#D81F27",
+            "#CF2027",
+            "#C62127",
+            "#B92025",
+            "#AE1F23",
+            "#A01D22",
+            "#901C1C",
+            "#6C221F",
+            "#7F2620",
+            "#982B24",
+            "#B53125",
+            "#CB3327",
+            "#E7EBEE",
+            "#DFE4E8",
+            "#CAD1D7",
+            "#A8B5BD",
+            "#93A6AD",
+            "#05AEE9",
+            "#00A9E0",
+            "#07A3DC",
+            "#089DD5",
+            "#0A92CC",
+            "#0F87C3",
+            "#127CB8",
+            "#0E70AD",
+            "#0F63A3",
+            "#135393",
+            "#184485"
+          ],
+          "sourcePalette": [
+            "#0F87C3",
+            "#B62223",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "eda612bad6c660d93a1e822a3cc33b71ac04947a1b923734fbb2ab0a04916613"
         }
       ]
     },
@@ -312,6 +464,98 @@
       ]
     },
     {
+      "id": "BRAND-AMD",
+      "league": "BRAND",
+      "conference": "Corporate",
+      "region": "AMD",
+      "name": "",
+      "abbr": "AMD",
+      "aliases": [
+        "Advanced Micro Devices"
+      ],
+      "palette": [
+        "#000000",
+        "#808080",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Arrow mark",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/f/fc/AMD_%28Stacked%29.svg/revision/latest?cb=20210313170042",
+          "sourcePage": "https://logos.fandom.com/wiki/File:AMD_(Stacked).svg",
+          "sourceSha256": "cfec0d8702c70fdae2194ee5db84b4d52dfa9665804b2173f05d0bc0b23be807",
+          "ops": {
+            "keepNodes": [
+              "3/0/3",
+              "3/0/4"
+            ],
+            "viewBox": "38.62 -9.54 257.58 257.583"
+          },
+          "path": "/logos/svg/brands/amd.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "6319cbf61492696e1d648098734377813c4511faffba7323f7f1705c10995ed7"
+        }
+      ]
+    },
+    {
+      "id": "BRAND-AMEX",
+      "league": "BRAND",
+      "conference": "Service",
+      "region": "American Express",
+      "name": "",
+      "abbr": "AMEX",
+      "aliases": [
+        "Amex",
+        "AmEx"
+      ],
+      "palette": [
+        "#007EE4",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Blue box wordmark",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/e/e5/American_Express_%282018%29_%28Alt%29.svg/revision/latest?cb=20250607164452",
+          "sourcePage": "https://logos.fandom.com/wiki/File:American_Express_(2018)_(Alt).svg",
+          "sourceSha256": "0a8999dcec0ae265d2a33b7f8c3d63595898e20d5d0274901080bbf46e4c8291",
+          "ops": {
+            "viewBox": "-68.666 -68.666 1853.979 1849.968"
+          },
+          "showsName": true,
+          "path": "/logos/svg/brands/amex.svg",
+          "format": "svg",
+          "colors": [
+            "#007EE4",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#007EE4",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "d0e8eaa47e9d18e253ee1abab72536f94529c44a019d0efc0b83a94998e9a8ed"
+        }
+      ]
+    },
+    {
       "id": "BRAND-ANDROID",
       "league": "BRAND",
       "conference": "Product",
@@ -454,6 +698,31 @@
             2
           ],
           "sha256": "e76ab7cd07d9b624da3f56f3dd23d8299eb2936e6b3affad8e3cd095bbc2f10a"
+        },
+        {
+          "id": "outline",
+          "label": "Outline fruit",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Apple-icon.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Apple-icon.svg",
+          "sourceSha256": "9bf3bcc340f7e901c3b9b11c3457cc0d9cedc94fc9fd75cfbda1b207228715b6",
+          "ops": {
+            "viewBox": "-31.54 -32.002 693.542 864.053"
+          },
+          "path": "/logos/svg/brands/alternates/apple-outline.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#A2AAAD",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "7485ebbd15ea264b087674773f3c31c780fe4adf12202a738be64773f458a3a1"
         }
       ]
     },
@@ -586,6 +855,73 @@
       ]
     },
     {
+      "id": "BRAND-BARBIE",
+      "league": "BRAND",
+      "conference": "Product",
+      "region": "Barbie",
+      "name": "",
+      "abbr": "BARBIE",
+      "aliases": [],
+      "palette": [
+        "#000000",
+        "#EC4399",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Head silhouette",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/b/b1/Barbie_Head.svg/revision/latest?cb=20170614085136",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Barbie_Head.svg",
+          "sourceSha256": "1fd8fc7d2ad9967d2bd9d3d8d195aff141a02734e8b3d076157d09db48406f9f",
+          "ops": {
+            "viewBox": "-40.001 -40 1080.001 1080.016"
+          },
+          "path": "/logos/svg/brands/barbie.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#EC4399"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#EC4399",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "ee8ec9cbe624170abe17c2e543ec49b812a23f3138008afa735a67ba118d0250"
+        },
+        {
+          "id": "wordmark",
+          "label": "Wordmark",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/d/d8/Barbie.svg/revision/latest?cb=20200804123148",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Barbie.svg",
+          "sourceSha256": "614b4a8ec39e6f1d38844825ecf7ee8680f6523fb68ca75697e9ff7311eeba52",
+          "ops": {
+            "viewBox": "-40 -40 1080 574.825"
+          },
+          "showsName": true,
+          "path": "/logos/svg/brands/alternates/barbie-wordmark.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#EC4399"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#EC4399",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "07ea528810b49df8254d27ab7baaf9868a3fde5d92c7c548b485fd9d2e1ff951"
+        }
+      ]
+    },
+    {
       "id": "BRAND-BOA",
       "league": "BRAND",
       "conference": "Service",
@@ -627,6 +963,93 @@
             2
           ],
           "sha256": "d814e364d52110cf1dab93a60763eaf8fb8a724815d674f56306e020958f7a18"
+        }
+      ]
+    },
+    {
+      "id": "BRAND-BOEING",
+      "league": "BRAND",
+      "conference": "Corporate",
+      "region": "Boeing",
+      "name": "",
+      "abbr": "BOEING",
+      "aliases": [
+        "The Boeing Company"
+      ],
+      "palette": [
+        "#000000",
+        "#808080",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Planetary rings",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/2/24/Boeing_Planetary_rings.svg/revision/latest?cb=20180502103543",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Boeing_Planetary_rings.svg",
+          "sourceSha256": "387f73beec99955ef2ece66fa2c09007bb38a9c065a9f8b98d2eebe5aacff2db",
+          "ops": {
+            "viewBox": "-10.585 -10.59 285.752 239.087"
+          },
+          "path": "/logos/svg/brands/boeing.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "eb20a461de9acdaec435a95763a7ca9716dbcede146169fae71460003c940b1d"
+        }
+      ]
+    },
+    {
+      "id": "BRAND-BOSE",
+      "league": "BRAND",
+      "conference": "Product",
+      "region": "Bose",
+      "name": "",
+      "abbr": "BOSE",
+      "aliases": [
+        "Bose Corporation"
+      ],
+      "palette": [
+        "#000000",
+        "#808080",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Wordmark",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Bose_logo.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Bose_logo.svg",
+          "sourceSha256": "35690dc9a61407e7a471730906f5ffd016faaad048282f2302cc6628dc4fea2e",
+          "ops": {
+            "viewBox": "-2.347 -7.176 222.126 41.425"
+          },
+          "showsName": true,
+          "path": "/logos/svg/brands/bose.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "ddd79303307bf8ea48d88d2d09668d354c3554128c4ef0823216c92083ca4457"
         }
       ]
     },
@@ -673,6 +1096,121 @@
           ],
           "unusedSourceSlots": [],
           "sha256": "2a293c7d38fc76a30b9ec786a207680bb46abc076db8de32063d2edadbb04d4e"
+        },
+        {
+          "id": "mono-helios",
+          "label": "One-color helios",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/c/cf/BP_%28Monochrome%29.svg/revision/latest?cb=20171112044059",
+          "sourcePage": "https://logos.fandom.com/wiki/File:BP_(Monochrome).svg",
+          "sourceSha256": "dbc3d79af98602a1d7f9deed20eaaaa4c398eb2734cf439f82b32400de00b2e0",
+          "ops": {
+            "viewBox": "-40 -40 832.452 1080"
+          },
+          "path": "/logos/svg/brands/alternates/bp-mono-helios.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#B1CD49",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "00bc8600cc44590a39accd46e41224fe15a760bbd4d52eaa927fd0381aaea881"
+        }
+      ]
+    },
+    {
+      "id": "BRAND-CAPONE",
+      "league": "BRAND",
+      "conference": "Service",
+      "region": "Capital One",
+      "name": "",
+      "abbr": "CAPONE",
+      "aliases": [
+        "Capital One Bank",
+        "CapOne"
+      ],
+      "palette": [
+        "#CC2427",
+        "#013D5B",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Wordmark with swoosh",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Capital_One_logo.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Capital_One_logo.svg",
+          "sourceSha256": "69d918170633be70ec4c0fd57f421ad7b70c59641580a0ee77e929964a157c96",
+          "ops": {
+            "viewBox": "-16.684 -16.739 451.41 183.505"
+          },
+          "showsName": true,
+          "path": "/logos/svg/brands/capone.svg",
+          "format": "svg",
+          "colors": [
+            "#CC2427",
+            "#013D5B"
+          ],
+          "sourcePalette": [
+            "#CC2427",
+            "#013D5B",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "a11390712fe28762d3ad4a049508b9694fd3cb438a86d49f19d985eeb50ddd1c"
+        }
+      ]
+    },
+    {
+      "id": "BRAND-CAT",
+      "league": "BRAND",
+      "conference": "Corporate",
+      "region": "Caterpillar",
+      "name": "",
+      "abbr": "CAT",
+      "aliases": [
+        "CAT",
+        "Caterpillar Inc."
+      ],
+      "palette": [
+        "#F7BC60",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "CAT block",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Caterpillar-shortened.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Caterpillar-shortened.svg",
+          "sourceSha256": "1706785ff882a312a971e4139f9688a2783f1e3ab1696caa1d730491cffb6566",
+          "ops": {
+            "viewBox": "-4 -4 108 108"
+          },
+          "showsName": true,
+          "path": "/logos/svg/brands/cat.svg",
+          "format": "svg",
+          "colors": [
+            "#F7BC60",
+            "#FFFFFF",
+            "#000000",
+            "#FEC40E"
+          ],
+          "sourcePalette": [
+            "#FAC037",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "37b02b4c5aa3d84c2d636a9793c96d6e6e9e23e2cf6881a6d6481ac90230f4ff"
         }
       ]
     },
@@ -718,6 +1256,58 @@
             2
           ],
           "sha256": "b1747ab1ce9f9be170fb3fc97234a825768e578fe1091a2bea92ff5dcad02dbd"
+        },
+        {
+          "id": "four-color-octagon",
+          "label": "Four-color octagon (1960)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/8/85/Chase_-_1960y.svg/revision/latest?cb=20250318135230",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Chase_-_1960y.svg",
+          "sourceSha256": "58993a9fdcbac1a206dfbfdf39ac7aff3b5d5236bca2d8b73bf5babba8a9f973",
+          "ops": {
+            "viewBox": "-22.787 -22.597 610.124 610.104"
+          },
+          "path": "/logos/svg/brands/alternates/chase-four-color-octagon.svg",
+          "format": "svg",
+          "colors": [
+            "#223D90",
+            "#000000",
+            "#899C47",
+            "#E33B13"
+          ],
+          "sourcePalette": [
+            "#566C6C",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "031e364a6936afc2f194797dd443b5e820b4c59b080212e0591bff2247b60d54"
+        },
+        {
+          "id": "striped-octagon",
+          "label": "Striped octagon (1960)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/5/53/Chase_-_1960p.svg/revision/latest?cb=20250317232738",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Chase_-_1960p.svg",
+          "sourceSha256": "9fec4d16152ee46b58f0b5f07413825bfc72f8fccce2d4a5cc0df96af9476e21",
+          "ops": {
+            "viewBox": "-34.721 -34.721 934.482 937.462"
+          },
+          "path": "/logos/svg/brands/alternates/chase-striped-octagon.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "5c28e56437e5b75bd848e5cbdc00288c436a72292f972ae25c4356ec1e6cbb6b"
         }
       ]
     },
@@ -767,6 +1357,96 @@
       ]
     },
     {
+      "id": "BRAND-CISCO",
+      "league": "BRAND",
+      "conference": "Corporate",
+      "region": "Cisco",
+      "name": "",
+      "abbr": "CISCO",
+      "aliases": [
+        "Cisco Systems"
+      ],
+      "palette": [
+        "#000000",
+        "#808080",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Bridge wordmark",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/d/dd/Cisco.svg/revision/latest?cb=20170513091702",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Cisco.svg",
+          "sourceSha256": "6012974603a96776e5093d15dc1679af3f4bad2a83d9e7b69e80e9895794730b",
+          "ops": {
+            "viewBox": "-40 -40 1080 607.06"
+          },
+          "showsName": true,
+          "path": "/logos/svg/brands/cisco.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "c20db803bdc972f6d3411e4de745b14a277d4e01cd58998d9487bb2b9fc9aa50"
+        }
+      ]
+    },
+    {
+      "id": "BRAND-CITI",
+      "league": "BRAND",
+      "conference": "Service",
+      "region": "Citi",
+      "name": "",
+      "abbr": "CITI",
+      "aliases": [
+        "Citibank",
+        "Citigroup",
+        "Citi Bank"
+      ],
+      "palette": [
+        "#255BE3",
+        "#FF3C28",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Wordmark with arc",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Citi_logo_March_2023.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Citi_logo_March_2023.svg",
+          "sourceSha256": "cb599b2ea12080cb20c66af5eba4accd5aab90fa28a9d72725cdcff78354f389",
+          "ops": {
+            "viewBox": "-2.236 -2.237 60.396 36.564"
+          },
+          "showsName": true,
+          "path": "/logos/svg/brands/citi.svg",
+          "format": "svg",
+          "colors": [
+            "#255BE3",
+            "#FF3C28"
+          ],
+          "sourcePalette": [
+            "#255BE3",
+            "#FF3C28",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "985cd887a362d13eec8b0fe2234ba2fd106c0ce5212221fc33027218bdac543b"
+        }
+      ]
+    },
+    {
       "id": "BRAND-CLOUDFLARE",
       "league": "BRAND",
       "conference": "Service",
@@ -806,6 +1486,211 @@
             2
           ],
           "sha256": "f1a8799af7233d5fbbb09a33b0bb36cded7d2605f66efef0b9c5f2554f59c0ef"
+        }
+      ]
+    },
+    {
+      "id": "BRAND-COKE",
+      "league": "BRAND",
+      "conference": "Product",
+      "region": "Coca-Cola",
+      "name": "",
+      "abbr": "COKE",
+      "aliases": [
+        "Coke",
+        "Coca Cola",
+        "The Coca-Cola Company"
+      ],
+      "palette": [
+        "#E61D2B",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Spencerian script",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Coca-Cola_logo.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Coca-Cola_logo.svg",
+          "sourceSha256": "4fc464932a70e200ec6e825228543a8b3d3d12f73be9e47caee1d9a421daf52d",
+          "ops": {
+            "viewBox": "-24.619 -24.609 664.303 242.143"
+          },
+          "showsName": true,
+          "path": "/logos/svg/brands/coke.svg",
+          "format": "svg",
+          "colors": [
+            "#E61D2B"
+          ],
+          "sourcePalette": [
+            "#E61D2B",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "a404baf107aa84a5de1d9676a3229ea8e60ad74205743ad7e76dacec98cb874e"
+        }
+      ]
+    },
+    {
+      "id": "BRAND-COSTCO",
+      "league": "BRAND",
+      "conference": "Store",
+      "region": "Costco",
+      "name": "",
+      "abbr": "COSTCO",
+      "aliases": [
+        "Costco Wholesale"
+      ],
+      "palette": [
+        "#005DAA",
+        "#E31837",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Wordmark",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Costco_Wholesale_logo_2010-10-26.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Costco_Wholesale_logo_2010-10-26.svg",
+          "sourceSha256": "9c769076aaad8c2cf16a888dee9326df7e67c4cf350fab0574209366e1fb61ac",
+          "ops": {
+            "viewBox": "209.793 291.309 201.97 69.974"
+          },
+          "showsName": true,
+          "path": "/logos/svg/brands/costco.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#005DAA",
+            "#E31837"
+          ],
+          "sourcePalette": [
+            "#005DAA",
+            "#E31837",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "7c56d02dea8a8d98f1a81df2548b9fb40f13903c651a8f64c00a064ec516665d"
+        }
+      ]
+    },
+    {
+      "id": "BRAND-CVS",
+      "league": "BRAND",
+      "conference": "Store",
+      "region": "CVS",
+      "name": "",
+      "abbr": "CVS",
+      "aliases": [
+        "CVS Pharmacy",
+        "CVS Health"
+      ],
+      "palette": [
+        "#CC0000",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Heart wordmark",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/6/6a/CVS_Pharmacy_2023.svg/revision/latest?cb=20241127140235",
+          "sourcePage": "https://logos.fandom.com/wiki/File:CVS_Pharmacy_2023.svg",
+          "sourceSha256": "4745f629d0cd7ad86a73014fbd84809ecd1e24dc684291a5d95c6f844a1b55f0",
+          "ops": {
+            "viewBox": "-38.168 -39.848 1075.899 329.696"
+          },
+          "showsName": true,
+          "path": "/logos/svg/brands/cvs.svg",
+          "format": "svg",
+          "colors": [
+            "#CC0000"
+          ],
+          "sourcePalette": [
+            "#CC0000",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "27568d27cadb39a15dbf19efc55262a82bf9a4c31a0aa8fa7a79eb0658de323b"
+        }
+      ]
+    },
+    {
+      "id": "BRAND-DC",
+      "league": "BRAND",
+      "conference": "Corporate",
+      "region": "DC Comics",
+      "name": "",
+      "abbr": "DC",
+      "aliases": [
+        "DC",
+        "DC Entertainment",
+        "Detective Comics"
+      ],
+      "palette": [
+        "#000000",
+        "#2D64B6",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Peel symbol (2012)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/d/dc/DC_Comics_2012_%28Black%29_%28Blue%29_%28Symbol%29.svg/revision/latest?cb=20201125093344",
+          "sourcePage": "https://logos.fandom.com/wiki/File:DC_Comics_2012_(Black)_(Blue)_(Symbol).svg",
+          "sourceSha256": "647d50fee3b92e1fed1743493ea61d20f91e7345bb9deab6cfc426d577b3db26",
+          "ops": {
+            "viewBox": "-26.093 -26.537 649.916 713.016"
+          },
+          "path": "/logos/svg/brands/dc.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#2D64B6",
+            "#3793CF",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#327CC2",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "288f63f38711003ad1c22bbf6e514d52faf2b50354f4802bdf3fc7c17ef784a8"
+        },
+        {
+          "id": "wordmark",
+          "label": "Roundel (2016)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/b/b0/DC_Comics_2016.svg/revision/latest?cb=20210618204226",
+          "sourcePage": "https://logos.fandom.com/wiki/File:DC_Comics_2016.svg",
+          "sourceSha256": "c021063300c8028e60f4184b0a4135d4f54a2aa591fc4570de4c6d9e6442ed29",
+          "ops": {
+            "viewBox": "-17.08 -17.08 461.155 461.155"
+          },
+          "showsName": true,
+          "path": "/logos/svg/brands/alternates/dc-wordmark.svg",
+          "format": "svg",
+          "colors": [
+            "#147BEB"
+          ],
+          "sourcePalette": [
+            "#147BEB",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "caadab03d2c8db6e76a3e6820b5bf349cbcb1a246fff6896496380f2807a80ea"
         }
       ]
     },
@@ -850,6 +1735,51 @@
             2
           ],
           "sha256": "c3639c630d87a5a779ab3bb4d8a641adf91fd3db7a1278aa2555dca397b5988e"
+        }
+      ]
+    },
+    {
+      "id": "BRAND-DELL",
+      "league": "BRAND",
+      "conference": "Corporate",
+      "region": "Dell",
+      "name": "",
+      "abbr": "DELL",
+      "aliases": [
+        "Dell Technologies",
+        "Dell Computer"
+      ],
+      "palette": [
+        "#0080C9",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Circle wordmark",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/7/7f/Dell_%282010%29.svg/revision/latest?cb=20241003021927",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Dell_(2010).svg",
+          "sourceSha256": "568a8eedf11e839400f4c4edfe31918b691a968c477e40af6dd9d1d781e08f27",
+          "ops": {
+            "viewBox": "-44.104 -44.104 1190.808 1188.208"
+          },
+          "showsName": true,
+          "path": "/logos/svg/brands/dell.svg",
+          "format": "svg",
+          "colors": [
+            "#0080C9"
+          ],
+          "sourcePalette": [
+            "#0080C9",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "e5800669cb5791931ec1dc3fbf70500c90afdf12870cd9c23d0e1390f970f62e"
         }
       ]
     },
@@ -925,6 +1855,101 @@
       ]
     },
     {
+      "id": "BRAND-DHL",
+      "league": "BRAND",
+      "conference": "Service",
+      "region": "DHL",
+      "name": "",
+      "abbr": "DHL",
+      "aliases": [
+        "DHL Express"
+      ],
+      "palette": [
+        "#FECC00",
+        "#D50029",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Wordmark",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/DHL_Logo.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:DHL_Logo.svg",
+          "sourceSha256": "b98a5d7827cab09213394840fdabbabad8c2044cd1d686856f2455b2121b7102",
+          "ops": {
+            "viewBox": "-7.03 -7.03 189.808 52.846"
+          },
+          "showsName": true,
+          "path": "/logos/svg/brands/dhl.svg",
+          "format": "svg",
+          "colors": [
+            "#FECC00",
+            "#D50029"
+          ],
+          "sourcePalette": [
+            "#FECC00",
+            "#D50029",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "41df40a1c94da2ad1939a02b6b65d89a4f58fd738af3447af862212405173a75"
+        }
+      ]
+    },
+    {
+      "id": "BRAND-DISNEY",
+      "league": "BRAND",
+      "conference": "Corporate",
+      "region": "Disney",
+      "name": "",
+      "abbr": "DISNEY",
+      "aliases": [
+        "The Walt Disney Company",
+        "Walt Disney",
+        "Walt Disney Pictures",
+        "Disney Castle"
+      ],
+      "palette": [
+        "#1166AB",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Castle",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/4/49/Walt_Disney_Pictures_2011_%28Color%29.svg/revision/latest?cb=20220630203146",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Walt_Disney_Pictures_2011_(Color).svg",
+          "sourceSha256": "a76eaab8fa44c880a75befb6390205225609d219ff18f36dcd56a77bf46a6925",
+          "ops": {
+            "keepNodes": [
+              "0",
+              "2/0",
+              "2/1"
+            ],
+            "viewBox": "0.79 -15.046 403.542 406.238"
+          },
+          "path": "/logos/svg/brands/disney.svg",
+          "format": "svg",
+          "colors": [
+            "#1166AB"
+          ],
+          "sourcePalette": [
+            "#1166AB",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "f614c20538f5902b1ca81e14964a1248ce392654de73ca80322faaff055d4737"
+        }
+      ]
+    },
+    {
       "id": "BRAND-DOCKER",
       "league": "BRAND",
       "conference": "Product",
@@ -962,6 +1987,99 @@
             2
           ],
           "sha256": "01a9a0e4cbac3dcc763c3a0880aa8c7b1afb9ef4df851d4fc628d864c629547b"
+        }
+      ]
+    },
+    {
+      "id": "BRAND-DORITOS",
+      "league": "BRAND",
+      "conference": "Product",
+      "region": "Doritos",
+      "name": "",
+      "abbr": "DORITOS",
+      "aliases": [
+        "Dorito"
+      ],
+      "palette": [
+        "#000000",
+        "#EE252D",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Triangle chip",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/8/85/Doritos_2001.svg/revision/latest?cb=20190417124347",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Doritos_2001.svg",
+          "sourceSha256": "25766fb1551e894324ae5d563dc863be02f4589d83f0b187af4940f11ef4acb6",
+          "ops": {
+            "keepNodes": [
+              "0/0",
+              "0/21",
+              "0/40"
+            ],
+            "viewBox": "-40 -40 1038.714 1080.005"
+          },
+          "path": "/logos/svg/brands/doritos.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#EE252D",
+            "#008DD0"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#EE252D",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "4340d3c77c3267701392a90c3df0031bc89a4a012c294adc893c95ccf0f45bf2"
+        }
+      ]
+    },
+    {
+      "id": "BRAND-DREAMWORKS",
+      "league": "BRAND",
+      "conference": "Corporate",
+      "region": "DreamWorks",
+      "name": "",
+      "abbr": "DREAMWORKS",
+      "aliases": [
+        "DreamWorks Animation",
+        "Dream Works"
+      ],
+      "palette": [
+        "#092E6D",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Moon boy",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/DreamWorks_Animation_2016_%28Moon_Boy%29.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:DreamWorks_Animation_2016_(Moon_Boy).svg",
+          "sourceSha256": "75f8dd01c69557f0916c220f1374c8b40c69730736569bd6da8709ec51a43281",
+          "ops": {
+            "viewBox": "-39.56 -39.699 1078.92 1078.771"
+          },
+          "path": "/logos/svg/brands/dreamworks.svg",
+          "format": "svg",
+          "colors": [
+            "#092E6D"
+          ],
+          "sourcePalette": [
+            "#092E6D",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "1fddad1a2350b9923da321d6a961cb93b974578eac20451ea281011b56ed9bba"
         }
       ]
     },
@@ -1005,6 +2123,211 @@
             2
           ],
           "sha256": "4b9cb2599ee0054710d5ce6e0e1d7e0d5d4bdd78a179b8b2d912cd04aa0059b0"
+        },
+        {
+          "id": "open-box",
+          "label": "Open box (2013)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/e/e6/Dropbox_Icon_%282013-2017%29.svg/revision/latest?cb=20260702212847",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Dropbox_Icon_(2013-2017).svg",
+          "sourceSha256": "9e0fe01fe6b1d24780786b4c18f73897d3c297017242056ea5a16f994cb9917d",
+          "ops": {
+            "viewBox": "-16.96 -16.96 457.92 428.92"
+          },
+          "path": "/logos/svg/brands/alternates/dropbox-open-box.svg",
+          "format": "svg",
+          "colors": [
+            "#007EE5"
+          ],
+          "sourcePalette": [
+            "#007EE5",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "485ae9c9acd4c19904ccf7193695ae9f1da8b79d7950ae051b828b39a0fcbdae"
+        }
+      ]
+    },
+    {
+      "id": "BRAND-DRPEPPER",
+      "league": "BRAND",
+      "conference": "Product",
+      "region": "Dr Pepper",
+      "name": "",
+      "abbr": "DRPEPPER",
+      "aliases": [
+        "Dr. Pepper",
+        "Doctor Pepper"
+      ],
+      "palette": [
+        "#CC0000",
+        "#290E00",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Wordmark",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/4/40/Dr_Pepper_-_1963.svg/revision/latest?cb=20250829141359",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Dr_Pepper_-_1963.svg",
+          "sourceSha256": "7dd831ccd0b24db6c4ae882a80a43835323f3ee01efd0aade640c4a7ae7c79f7",
+          "ops": {
+            "viewBox": "-41.208 -41.208 1112.616 621.616"
+          },
+          "showsName": true,
+          "path": "/logos/svg/brands/drpepper.svg",
+          "format": "svg",
+          "colors": [
+            "#CC0000",
+            "#FFFFFF",
+            "#290E00"
+          ],
+          "sourcePalette": [
+            "#CC0000",
+            "#290E00",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "76567e07c0d1d14069d3d30aacb54d4bdb30fd26a4957f9f11ac17e597675520"
+        }
+      ]
+    },
+    {
+      "id": "BRAND-EA",
+      "league": "BRAND",
+      "conference": "Corporate",
+      "region": "Electronic Arts",
+      "name": "",
+      "abbr": "EA",
+      "aliases": [
+        "EA",
+        "EA Sports",
+        "EA Games"
+      ],
+      "palette": [
+        "#FF4747",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "EA circle",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Electronic-Arts-Logo.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Electronic-Arts-Logo.svg",
+          "sourceSha256": "3e67cf1a00d750626b72619ff5139b1a7e9d539a66b984ebf22a7b67e2a6bfa9",
+          "ops": {
+            "viewBox": "-40 -40 1080 1080.001"
+          },
+          "path": "/logos/svg/brands/ea.svg",
+          "format": "svg",
+          "colors": [
+            "#FF4747"
+          ],
+          "sourcePalette": [
+            "#FF4747",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "fa80edb9f79822c9d2b2e9fb2febe06916f5c4d4f3fe178e74de71f09907d65b"
+        }
+      ]
+    },
+    {
+      "id": "BRAND-EXXON",
+      "league": "BRAND",
+      "conference": "Service",
+      "region": "ExxonMobil",
+      "name": "",
+      "abbr": "EXXON",
+      "aliases": [
+        "Exxon",
+        "Exxon Mobil",
+        "Esso"
+      ],
+      "palette": [
+        "#ED1B2D",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Wordmark",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Exxon_Mobil_Logo.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Exxon_Mobil_Logo.svg",
+          "sourceSha256": "eebed4338b0af7bdaaceff59ec21854e2a903c1473ae6101d57aed54519bc99b",
+          "ops": {
+            "viewBox": "-10 -10 270 67.16"
+          },
+          "showsName": true,
+          "path": "/logos/svg/brands/exxon.svg",
+          "format": "svg",
+          "colors": [
+            "#ED1B2D"
+          ],
+          "sourcePalette": [
+            "#ED1B2D",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "aefd9181b81f1c4c6cf7cb5ce410a81cc3b91dc6b0a782a0cad5941cd8e07db5"
+        }
+      ]
+    },
+    {
+      "id": "BRAND-FEDEX",
+      "league": "BRAND",
+      "conference": "Service",
+      "region": "FedEx",
+      "name": "",
+      "abbr": "FEDEX",
+      "aliases": [
+        "Fed Ex",
+        "Federal Express"
+      ],
+      "palette": [
+        "#FF5900",
+        "#2A007C",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Wordmark",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/FedEx_Express.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:FedEx_Express.svg",
+          "sourceSha256": "5347f657c6e06ad92b543803e126e70935a9c92606878702c90b6b704a2075e0",
+          "ops": {
+            "viewBox": "-3.783 -3.327 80.283 39.872"
+          },
+          "showsName": true,
+          "path": "/logos/svg/brands/fedex.svg",
+          "format": "svg",
+          "colors": [
+            "#FF5900",
+            "#2A007C"
+          ],
+          "sourcePalette": [
+            "#FF5900",
+            "#2A007C",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "02cad8ba4f674c838aa91c2eb4305c7f5cb831d3f9c50171fcca7628f80c02e6"
         }
       ]
     },
@@ -1128,6 +2451,104 @@
             2
           ],
           "sha256": "e1b7197379de5a771f7fa1323a03da4b091723e753a5125d325b41f3d39756e7"
+        },
+        {
+          "id": "fox-2013",
+          "label": "Fox on globe (2013)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/e/e3/Firefox-logo.svg/revision/latest?cb=20150409212556",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Firefox-logo.svg",
+          "sourceSha256": "3eda31fb1109d08f5cc9affbcd9a647121c2e900ddacd5d4632e68390d59876b",
+          "ops": {
+            "viewBox": "-2.579 -4.926 133.004 129.024"
+          },
+          "path": "/logos/svg/brands/alternates/firefox-fox-2013.svg",
+          "format": "svg",
+          "colors": [
+            "#110070",
+            "#000000",
+            "#A40000",
+            "#67C5D5",
+            "#66C2D3",
+            "#62B9CE",
+            "#5CA8C6",
+            "#5392BA",
+            "#4874AA",
+            "#3A5097",
+            "#2A2781",
+            "#1B006D",
+            "#596AAD",
+            "#0F80BC",
+            "#0A5F9E",
+            "#00145A",
+            "#0B629B",
+            "#031747",
+            "#00022F",
+            "#C4E0E3",
+            "#CDE5E8",
+            "#E8F4F7",
+            "#F2FAFC",
+            "#DF731B",
+            "#EC8811",
+            "#F4950B",
+            "#F79A09",
+            "#941403",
+            "#E85C0A",
+            "#A32104",
+            "#C84107",
+            "#DF5509",
+            "#F2C8A9",
+            "#FFFFCC",
+            "#B30000",
+            "#DE5C01",
+            "#DE7210",
+            "#F6C08F",
+            "#F9BD5F",
+            "#FFFCCF",
+            "#E35100",
+            "#EEA272",
+            "#EFA777",
+            "#F2B585",
+            "#F6CD9C",
+            "#FCEEBB",
+            "#F2C06E",
+            "#FFFAEE",
+            "#F5F89B",
+            "#F3ED91",
+            "#ECC267",
+            "#E6A046",
+            "#E2872E",
+            "#E07820",
+            "#F2C072",
+            "#EED8A5",
+            "#8B8B89",
+            "#120500",
+            "#FEFD00",
+            "#FEFE26",
+            "#FFFE54",
+            "#FFFF76",
+            "#FFFF8B",
+            "#FFFF92",
+            "#B9120D",
+            "#BB180D",
+            "#C0290C",
+            "#C8450A",
+            "#D36C08",
+            "#E29E05",
+            "#F4DA02",
+            "#FEFD07",
+            "#FEFD1B",
+            "#FEFE3C",
+            "#FFFE69",
+            "#FFFFA3",
+            "#FFFFC7"
+          ],
+          "sourcePalette": [
+            "#E2872E",
+            "#031747",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "0709c259fecdc4e7109ff75c2120eb0048fbb49f329dda23d4bbf39863f47878"
         }
       ]
     },
@@ -1213,6 +2634,118 @@
       ]
     },
     {
+      "id": "BRAND-GE",
+      "league": "BRAND",
+      "conference": "Corporate",
+      "region": "General Electric",
+      "name": "",
+      "abbr": "GE",
+      "aliases": [
+        "GE",
+        "GE Aerospace"
+      ],
+      "palette": [
+        "#000000",
+        "#808080",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Monogram roundel",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/f/ff/General_Electric_logo.svg/revision/latest?cb=20170115074445",
+          "sourcePage": "https://logos.fandom.com/wiki/File:General_Electric_logo.svg",
+          "sourceSha256": "abb1f96cad27346eaaee61525a0d6df11cde641fb279c2c9ee2afe5eb7377d7c",
+          "ops": {
+            "viewBox": "-40 -40 1080 1080"
+          },
+          "path": "/logos/svg/brands/ge.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "f049fed6c2c3fca966ec2961665d531bbdf1562518061c955b38c1a09b740f33"
+        },
+        {
+          "id": "monogram-1892",
+          "label": "Script monogram (1892)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/5/5a/General_Electric_%281892%29.svg/revision/latest?cb=20220815043742",
+          "sourcePage": "https://logos.fandom.com/wiki/File:General_Electric_(1892).svg",
+          "sourceSha256": "26686f0b224b28cd74aa1ba1fb08cbe604988b33d0f78bfcf046f9fa92a38062",
+          "ops": {
+            "viewBox": "-14.2 -14.2 548.4 653.4"
+          },
+          "path": "/logos/svg/brands/alternates/ge-monogram-1892.svg",
+          "format": "svg",
+          "colors": [
+            "#0F0001"
+          ],
+          "sourcePalette": [
+            "#0F0001",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "1e0b44368cd4de33d48a72e07781b3c26a6c541e2f50609d1fcc707efb65ae9c"
+        }
+      ]
+    },
+    {
+      "id": "BRAND-GEICO",
+      "league": "BRAND",
+      "conference": "Service",
+      "region": "GEICO",
+      "name": "",
+      "abbr": "GEICO",
+      "aliases": [
+        "Geico Insurance"
+      ],
+      "palette": [
+        "#104293",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "G app tile",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/a/a1/GEICO_App_Icon.svg/revision/latest?cb=20210303225018",
+          "sourcePage": "https://logos.fandom.com/wiki/File:GEICO_App_Icon.svg",
+          "sourceSha256": "571f1e1422653dc90cb9587d2c8c8b69ce2864ef13b821dd8abe07a2a7136179",
+          "ops": {
+            "viewBox": "-4.233 -4.233 114.3 114.3"
+          },
+          "path": "/logos/svg/brands/geico.svg",
+          "format": "svg",
+          "colors": [
+            "#104293",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#104293",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "f4ccc367bb58fb37dcf7d0f0874c9e49a15cdaa931dab9cfb0766ce4420572fb"
+        }
+      ]
+    },
+    {
       "id": "BRAND-GITHUB",
       "league": "BRAND",
       "conference": "Corporate",
@@ -1252,6 +2785,60 @@
             2
           ],
           "sha256": "970a31dd88b2dbb418f98cfe0e78b5343a21ae77623d39d0b3a08e7b3efa4fb4"
+        },
+        {
+          "id": "octocat-2012",
+          "label": "Octocat silhouette (2012)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/e/e5/GitHub_OctoCat_2012.svg/revision/latest?cb=20260312131815",
+          "sourcePage": "https://logos.fandom.com/wiki/File:GitHub_OctoCat_2012.svg",
+          "sourceSha256": "f91e4ea95131069dde43a4b3a1a8bd70df61f449276422731497624702ead831",
+          "ops": {
+            "viewBox": "-19.84 -11.84 535.68 523.287"
+          },
+          "path": "/logos/svg/brands/alternates/github-octocat-2012.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#6E5494",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "b985a78719898bbd3037df2849e3c7f38914b50f03b33adcc94401ef3a1b257c"
+        },
+        {
+          "id": "pride",
+          "label": "Pride Invertocat",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/8/8f/GitHub_Pride.svg/revision/latest?cb=20221005121138",
+          "sourcePage": "https://logos.fandom.com/wiki/File:GitHub_Pride.svg",
+          "sourceSha256": "56d4573453b6f022471eea1e174c2ef6e587ddd633d690d2bba95f68061a5023",
+          "ops": {
+            "viewBox": "-17.545 -17.542 473.639 462.906"
+          },
+          "path": "/logos/svg/brands/alternates/github-pride.svg",
+          "format": "svg",
+          "colors": [
+            "#2B64CE",
+            "#D73A4A",
+            "#E5732F",
+            "#FFD23D",
+            "#53A451",
+            "#6944BA"
+          ],
+          "sourcePalette": [
+            "#2B64CE",
+            "#6944BA",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "4c3eac3ff607327231910d49af5bf2a251970332e31b74550286cc8baacabb2c"
         }
       ]
     },
@@ -1296,6 +2883,31 @@
             2
           ],
           "sha256": "8775540145d048c4594ff44c9cd2652d9441234005616373d99466d1b2c80bd5"
+        },
+        {
+          "id": "mono-fox",
+          "label": "One-color fox",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Font_Awesome_5_brands_gitlab.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Font_Awesome_5_brands_gitlab.svg",
+          "sourceSha256": "ca7c5d70e72c804b2f45a5d427a1f028a829dc3dc8148efebb6f38ff10e1b4b3",
+          "ops": {
+            "viewBox": "-20.48 -2.195 552.96 516.389"
+          },
+          "path": "/logos/svg/brands/alternates/gitlab-mono-fox.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#E24329",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "0bf1eceb2a22e2b03dbde15bb3be3b586e2bb35606c363b0a4f21c07acbb15a8"
         }
       ]
     },
@@ -1342,6 +2954,721 @@
             2
           ],
           "sha256": "e9a132ab1588450d83ca0bd854cfa183314f366ca084d46aa69b2c7598958d80"
+        }
+      ]
+    },
+    {
+      "id": "BRAND-HASBRO",
+      "league": "BRAND",
+      "conference": "Corporate",
+      "region": "Hasbro",
+      "name": "",
+      "abbr": "HASBRO",
+      "aliases": [],
+      "palette": [
+        "#00938E",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Smile tile wordmark",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/6/65/Hasbro_%281998%29.svg/revision/latest?cb=20200804083919",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Hasbro_(1998).svg",
+          "sourceSha256": "aae0c77a4d77b26d622bb603629a621442853244a4c4147b3022b679b98bc95b",
+          "ops": {
+            "viewBox": "-40 -40 1080 1080"
+          },
+          "showsName": true,
+          "path": "/logos/svg/brands/hasbro.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#00938E"
+          ],
+          "sourcePalette": [
+            "#00938E",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "6c87fc42a3d9d2ea4df8825598372dcbfdc7af43570aeb99d54ac1c36aa4754c"
+        }
+      ]
+    },
+    {
+      "id": "BRAND-HERSHEY",
+      "league": "BRAND",
+      "conference": "Corporate",
+      "region": "Hershey's",
+      "name": "",
+      "abbr": "HERSHEY",
+      "aliases": [
+        "Hershey",
+        "The Hershey Company",
+        "Hershey's Kisses",
+        "Hershey Kiss"
+      ],
+      "palette": [
+        "#000000",
+        "#808080",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Kiss",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/0/02/The_Hershey_Company_-_2014x.svg/revision/latest?cb=20240225203431",
+          "sourcePage": "https://logos.fandom.com/wiki/File:The_Hershey_Company_-_2014x.svg",
+          "sourceSha256": "ca151d8612e9c09a3d681dccee39a5eb9156a07581d1c6b31cbc2339c9d042ec",
+          "ops": {
+            "keepNodes": [
+              "0"
+            ],
+            "viewBox": "-9.972 -11.889 221.677 269.664"
+          },
+          "path": "/logos/svg/brands/hershey.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "737ef31ab3142d1d199a5d58dc0479b82b074bf1edf3d06a47ef45442c6b3944"
+        }
+      ]
+    },
+    {
+      "id": "BRAND-HILTON",
+      "league": "BRAND",
+      "conference": "Service",
+      "region": "Hilton",
+      "name": "",
+      "abbr": "HILTON",
+      "aliases": [
+        "Hilton Hotels",
+        "Hilton Hotels & Resorts"
+      ],
+      "palette": [
+        "#1E4380",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "H ellipse",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/HiltonHotelsIcon.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:HiltonHotelsIcon.svg",
+          "sourceSha256": "476dc70fafcd0fe8da64f8c6b1d303be6da505344811dd6b39a5414049215be6",
+          "ops": {
+            "viewBox": "48.079 60.065 482.823 345.144"
+          },
+          "path": "/logos/svg/brands/hilton.svg",
+          "format": "svg",
+          "colors": [
+            "#1E4380"
+          ],
+          "sourcePalette": [
+            "#1E4380",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "7066a30eabf7a8cb0f7c2a63be3e2515677b28f28265efe8069777723c431030"
+        }
+      ]
+    },
+    {
+      "id": "BRAND-HP",
+      "league": "BRAND",
+      "conference": "Corporate",
+      "region": "HP",
+      "name": "",
+      "abbr": "HP",
+      "aliases": [
+        "Hewlett-Packard",
+        "Hewlett Packard",
+        "HP Inc."
+      ],
+      "palette": [
+        "#024AD8",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Blue roundel",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/HP_logo_2025.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:HP_logo_2025.svg",
+          "sourceSha256": "dfa525e9ace6faf045347b29cea5228d2d5d02a993c8c6e32695c5dc84fd4c43",
+          "ops": {
+            "viewBox": "-50.56 -40.56 1095.12 1093.12"
+          },
+          "path": "/logos/svg/brands/hp.svg",
+          "format": "svg",
+          "colors": [
+            "#024AD8"
+          ],
+          "sourcePalette": [
+            "#024AD8",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "8de40fd064fbb37e5fb2efef6f6ba4cd2d44cdf96a0c2b58b8c9639ff325e64c"
+        },
+        {
+          "id": "classic-roundel",
+          "label": "Classic roundel",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/b/bb/HP_Inc..svg/revision/latest?cb=20210928212856",
+          "sourcePage": "https://logos.fandom.com/wiki/File:HP_Inc..svg",
+          "sourceSha256": "521288552b6b9d3f03b83fd0b31a82265152c43d8a1c57ae78a26cc9e6b31611",
+          "ops": {
+            "viewBox": "-40 -40 1079.986 1079.999"
+          },
+          "path": "/logos/svg/brands/alternates/hp-classic-roundel.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#519BD5"
+          ],
+          "sourcePalette": [
+            "#519BD5",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "0e209ce40260b79eb454058c8225641b2aaea2228f450e78e671638e0bd1239a"
+        }
+      ]
+    },
+    {
+      "id": "BRAND-IBM",
+      "league": "BRAND",
+      "conference": "Corporate",
+      "region": "IBM",
+      "name": "",
+      "abbr": "IBM",
+      "aliases": [
+        "International Business Machines",
+        "Big Blue"
+      ],
+      "palette": [
+        "#1F70C1",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Striped wordmark",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/IBM_logo.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:IBM_logo.svg",
+          "sourceSha256": "e8cf75280cbf46bf015f59859182ecec0c83c1b3d3d03323e151c6e91d4c339c",
+          "ops": {
+            "viewBox": "-42.96 -42.96 1159.92 487.09"
+          },
+          "showsName": true,
+          "path": "/logos/svg/brands/ibm.svg",
+          "format": "svg",
+          "colors": [
+            "#1F70C1"
+          ],
+          "sourcePalette": [
+            "#1F70C1",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "02cf1141538ca70a1a2b4ddab44e4e47ab35906cbb3ea95b7e476d95c519a215"
+        }
+      ]
+    },
+    {
+      "id": "BRAND-INTEL",
+      "league": "BRAND",
+      "conference": "Corporate",
+      "region": "Intel",
+      "name": "",
+      "abbr": "INTEL",
+      "aliases": [
+        "Intel Corporation"
+      ],
+      "palette": [
+        "#04C7FD",
+        "#0068B5",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Wordmark",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Intel_logo_2023.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Intel_logo_2023.svg",
+          "sourceSha256": "1986c2a2d4b3991fc58bce96d18e75e170c59c15a1330c1289db66a7df4e5379",
+          "ops": {
+            "viewBox": "-15.528 -15.528 419.256 181.656"
+          },
+          "showsName": true,
+          "path": "/logos/svg/brands/intel.svg",
+          "format": "svg",
+          "colors": [
+            "#04C7FD",
+            "#0068B5"
+          ],
+          "sourcePalette": [
+            "#04C7FD",
+            "#0068B5",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "ca71085a6ba4412647bda76a51b84a26746a9f40064b46cc26d9c6fd3e1456e0"
+        }
+      ]
+    },
+    {
+      "id": "BRAND-JAVA",
+      "league": "BRAND",
+      "conference": "Product",
+      "region": "Java",
+      "name": "",
+      "abbr": "JAVA",
+      "aliases": [
+        "Java programming language",
+        "Oracle Java"
+      ],
+      "palette": [
+        "#ED8B00",
+        "#007396",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Steaming cup",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/d/d4/Oracle_Java.svg/revision/latest?cb=20220409174634",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Oracle_Java.svg",
+          "sourceSha256": "9ccd0d50750f36c12edad55833b62a2ca3aadc449bef94d4ebb28e82fefdbc6e",
+          "ops": {
+            "keepNodes": [
+              "0",
+              "1",
+              "2",
+              "3"
+            ],
+            "viewBox": "-31.845 -59.45 1091.3 1605.162"
+          },
+          "path": "/logos/svg/brands/java.svg",
+          "format": "svg",
+          "colors": [
+            "#ED8B00",
+            "#007396"
+          ],
+          "sourcePalette": [
+            "#ED8B00",
+            "#007396",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "28ccf6c7a8a63c1d6b2599d45a503ba1165de70a3a28c91ca118144e7624c1a7"
+        }
+      ]
+    },
+    {
+      "id": "BRAND-JNJ",
+      "league": "BRAND",
+      "conference": "Corporate",
+      "region": "Johnson & Johnson",
+      "name": "",
+      "abbr": "JNJ",
+      "aliases": [
+        "Johnson and Johnson",
+        "J&J",
+        "JNJ"
+      ],
+      "palette": [
+        "#D51900",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Script monogram",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/3/3f/Johnson_%26_Johnson_J%26J_Monogram.svg/revision/latest?cb=20210210163443",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Johnson_&_Johnson_J&J_Monogram.svg",
+          "sourceSha256": "eba20cb6639c728efc6f1876a817c5bffebae1f24d829f38de9f8054b5544a40",
+          "ops": {
+            "viewBox": "-5.419 -5.419 146.306 133.514"
+          },
+          "path": "/logos/svg/brands/jnj.svg",
+          "format": "svg",
+          "colors": [
+            "#D51900"
+          ],
+          "sourcePalette": [
+            "#D51900",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "ab330615fe84bc60ce0258a7614464ee60db64bb225b552e8b0a550186ef5562"
+        }
+      ]
+    },
+    {
+      "id": "BRAND-KELLOGGS",
+      "league": "BRAND",
+      "conference": "Corporate",
+      "region": "Kellogg's",
+      "name": "",
+      "abbr": "KELLOGGS",
+      "aliases": [
+        "Kelloggs",
+        "Kellogg",
+        "Kellanova"
+      ],
+      "palette": [
+        "#D90000",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Script wordmark",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/2/2a/Kellogg%27s_logo.svg/revision/latest?cb=20241224092153",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Kellogg's_logo.svg",
+          "sourceSha256": "cb14cb57b022f4f909f64ae6bf0cef6f1b9f77accea0c9dff65f9be164024854",
+          "ops": {
+            "viewBox": "-10.054 -10.054 271.462 111.226"
+          },
+          "showsName": true,
+          "path": "/logos/svg/brands/kelloggs.svg",
+          "format": "svg",
+          "colors": [
+            "#D90000"
+          ],
+          "sourcePalette": [
+            "#D90000",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "c7185e5e5eb68d169690566b190ca7240504080a3e0aa5ddecba49566c7e0a64"
+        }
+      ]
+    },
+    {
+      "id": "BRAND-KROGER",
+      "league": "BRAND",
+      "conference": "Store",
+      "region": "Kroger",
+      "name": "",
+      "abbr": "KROGER",
+      "aliases": [
+        "The Kroger Company",
+        "Krogers"
+      ],
+      "palette": [
+        "#134B97",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Wordmark",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/7/76/Kroger_2019.svg/revision/latest?cb=20191106161223",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Kroger_2019.svg",
+          "sourceSha256": "8450d539f5a5f508b856267f23a1616121e7293767f4a830aa709adae5c1b102",
+          "ops": {
+            "viewBox": "-40 -40 1080 637.055"
+          },
+          "showsName": true,
+          "path": "/logos/svg/brands/kroger.svg",
+          "format": "svg",
+          "colors": [
+            "#134B97"
+          ],
+          "sourcePalette": [
+            "#134B97",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "1e78e408055fffadaac8b02e7ac047f567de7ce72a71272d90ce62ddcd86ce20"
+        }
+      ]
+    },
+    {
+      "id": "BRAND-LAYS",
+      "league": "BRAND",
+      "conference": "Product",
+      "region": "Lay's",
+      "name": "",
+      "abbr": "LAYS",
+      "aliases": [
+        "Lays",
+        "Lay's Chips",
+        "Frito-Lay"
+      ],
+      "palette": [
+        "#000000",
+        "#DA1A1B",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Banner wordmark",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Lay%27s_2025.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Lay's_2025.svg",
+          "sourceSha256": "91e64ca29859e70bbca60198df9213223d1d06d1f8e61a580b312015cf13a4bb",
+          "ops": {
+            "viewBox": "-10.054 -10.054 271.463 251.569"
+          },
+          "showsName": true,
+          "path": "/logos/svg/brands/lays.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#FFFFFF",
+            "#DA1A1B",
+            "#FFF141",
+            "#FEE434",
+            "#FDCC00"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#DA1A1B",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "27b8e8f41abbcaea6d7d4f168c3e4faaf30ab812d7aa2369cec1c84c57294590"
+        }
+      ]
+    },
+    {
+      "id": "BRAND-LEGO",
+      "league": "BRAND",
+      "conference": "Product",
+      "region": "Lego",
+      "name": "",
+      "abbr": "LEGO",
+      "aliases": [
+        "The Lego Group",
+        "Legos"
+      ],
+      "palette": [
+        "#FFED00",
+        "#E3000B",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Red tile wordmark",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/LEGO_logo.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:LEGO_logo.svg",
+          "sourceSha256": "e692c130a90f4e348fc484cce8e13d43e5275fef4cec1a3878b8e3d96071a6e0",
+          "ops": {
+            "viewBox": "-7.2 -7.2 194.4 194.4"
+          },
+          "showsName": true,
+          "path": "/logos/svg/brands/lego.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#FFED00",
+            "#E3000B"
+          ],
+          "sourcePalette": [
+            "#FFED00",
+            "#E3000B",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "06f278c9a25735170ae1779832728adaeb67103ec32c69014fc7bb5c83ffce67"
+        }
+      ]
+    },
+    {
+      "id": "BRAND-LINUX",
+      "league": "BRAND",
+      "conference": "Product",
+      "region": "Linux",
+      "name": "",
+      "abbr": "LINUX",
+      "aliases": [
+        "Tux",
+        "Tux the Penguin",
+        "GNU/Linux"
+      ],
+      "palette": [
+        "#020204",
+        "#7C7C7C",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Tux",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Tux.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Tux.svg",
+          "sourceSha256": "cd503ad510e16ff2869f959cf57b892bb2175a6874ff696b495bd94fd7db9743",
+          "ops": {
+            "viewBox": "-10.24 -10.24 236.48 276.48"
+          },
+          "path": "/logos/svg/brands/linux.svg",
+          "format": "svg",
+          "colors": [
+            "#020204",
+            "#FDFDFB",
+            "#000000",
+            "#7C7C7C",
+            "#838384",
+            "#D99A03",
+            "#F5BD0C",
+            "#CD8907",
+            "#F5C021",
+            "#D9B30D",
+            "#604405",
+            "#F6DA4A",
+            "#110800",
+            "#A65A00",
+            "#FF921E",
+            "#B98309",
+            "#382605",
+            "#EBC40C",
+            "#3E2A06",
+            "#AD780A",
+            "#F3CD0C",
+            "#FEFEFC",
+            "#D4D4D4",
+            "#757574",
+            "#949494",
+            "#C8C8C8",
+            "#797978",
+            "#747474",
+            "#8C8C8C",
+            "#A4A4A4",
+            "#646464",
+            "#5C5C5C",
+            "#D2940A",
+            "#D89C08",
+            "#B67E07",
+            "#946106",
+            "#D89E08",
+            "#EDB80B",
+            "#EBC80D",
+            "#F5D838",
+            "#F6D811",
+            "#F5CD31",
+            "#3A2903",
+            "#735208",
+            "#AC8C04",
+            "#F5CE2D",
+            "#D79B08"
+          ],
+          "sourcePalette": [
+            "#2A1C03",
+            "#7C7C7C",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "7f2458775589b87d96967036f5e05533b9ee954c33dbe3fa91f071c23e096190"
+        },
+        {
+          "id": "mono",
+          "label": "One-color penguin",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/3/3a/Tux_Mono.svg/revision/latest?cb=20181201191414",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Tux_Mono.svg",
+          "sourceSha256": "6eecaa2f5a3ded22b40af59b2fab142bb758b4d31457c13faba05f32108d9558",
+          "ops": {
+            "viewBox": "-48.418 -48.418 1096.835 1307.276"
+          },
+          "path": "/logos/svg/brands/alternates/linux-mono.svg",
+          "format": "svg",
+          "colors": [
+            "#C17D11",
+            "#CE5C00",
+            "#729FCF",
+            "#402C07",
+            "#000000",
+            "#FFFFFF",
+            "#FEFEFC",
+            "#D4D4D4",
+            "#020204",
+            "#5C5C5C",
+            "#949494",
+            "#747474",
+            "#8C8C8C",
+            "#A4A4A4",
+            "#7C7C7C",
+            "#646464",
+            "#757574",
+            "#D2940A",
+            "#D89C08",
+            "#B67E07",
+            "#946106",
+            "#AD780A",
+            "#D89E08",
+            "#EDB80B",
+            "#EBC80D",
+            "#F5D838",
+            "#F6D811",
+            "#F5CD31",
+            "#3A2903",
+            "#735208",
+            "#AC8C04",
+            "#110800",
+            "#A65A00",
+            "#FF921E"
+          ],
+          "sourcePalette": [
+            "#1C1303",
+            "#7C7C7C",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "23ba4b07a042dae2383aa88c0e96ebedfc9946376460f1e55b4bd737c0d27147"
         }
       ]
     },
@@ -1427,6 +3754,48 @@
       ]
     },
     {
+      "id": "BRAND-LYFT",
+      "league": "BRAND",
+      "conference": "Service",
+      "region": "Lyft",
+      "name": "",
+      "abbr": "LYFT",
+      "aliases": [],
+      "palette": [
+        "#FF00BF",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Wordmark",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Lyft_logo_2025.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Lyft_logo_2025.svg",
+          "sourceSha256": "55695332137c2d7a1fa0d927eebbdeb50f128c86d3170232edfef4aa69c6e5b7",
+          "ops": {
+            "viewBox": "1.96 6.033 28.08 19.641"
+          },
+          "showsName": true,
+          "path": "/logos/svg/brands/lyft.svg",
+          "format": "svg",
+          "colors": [
+            "#FF00BF"
+          ],
+          "sourcePalette": [
+            "#FF00BF",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "a5f9a9b076553c98cb1ab483ef8cee73ad654c0edd5bee7aa466d23356e9b205"
+        }
+      ]
+    },
+    {
       "id": "BRAND-MACYS",
       "league": "BRAND",
       "conference": "Store",
@@ -1467,6 +3836,142 @@
             2
           ],
           "sha256": "0938a8217ecbd57121d6d8ef650dea1bc4df0b1705faa3c7b1a903209c135c19"
+        }
+      ]
+    },
+    {
+      "id": "BRAND-MARRIOTT",
+      "league": "BRAND",
+      "conference": "Service",
+      "region": "Marriott",
+      "name": "",
+      "abbr": "MARRIOTT",
+      "aliases": [
+        "Marriott International",
+        "Marriott Hotels",
+        "Marriott Bonvoy"
+      ],
+      "palette": [
+        "#A11D2B",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Red M",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Marriott_hotels_logo14.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Marriott_hotels_logo14.svg",
+          "sourceSha256": "b2f678076e236c7d97f99414e85c052e43195fef724dde1d4bff5cc438672f53",
+          "ops": {
+            "keepNodes": [
+              "8"
+            ],
+            "viewBox": "-12.236 -12.236 330.372 275.972"
+          },
+          "path": "/logos/svg/brands/marriott.svg",
+          "format": "svg",
+          "colors": [
+            "#A11D2B"
+          ],
+          "sourcePalette": [
+            "#A11D2B",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "da02ba255dacaed5ca973210d56884b12b492131f38a209e6f72ee0d4b48ca6a"
+        }
+      ]
+    },
+    {
+      "id": "BRAND-MARVEL",
+      "league": "BRAND",
+      "conference": "Corporate",
+      "region": "Marvel",
+      "name": "",
+      "abbr": "MARVEL",
+      "aliases": [
+        "Marvel Comics",
+        "Marvel Entertainment",
+        "Marvel Studios"
+      ],
+      "palette": [
+        "#ED1D24",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Red box wordmark",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Marvel_Logo.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Marvel_Logo.svg",
+          "sourceSha256": "7e3f489fba31d8c92310afef4789ddd32fdf6a621990377348a722bbf33f5775",
+          "ops": {
+            "viewBox": "-255.19 -126.608 1080 482.473"
+          },
+          "showsName": true,
+          "path": "/logos/svg/brands/marvel.svg",
+          "format": "svg",
+          "colors": [
+            "#ED1D24",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#ED1D24",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "d0b4513d6eb9d351e687e720ff4c786174debc28c559449df9ab836e7049dbfb"
+        }
+      ]
+    },
+    {
+      "id": "BRAND-MATTEL",
+      "league": "BRAND",
+      "conference": "Corporate",
+      "region": "Mattel",
+      "name": "",
+      "abbr": "MATTEL",
+      "aliases": [],
+      "palette": [
+        "#FF0028",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Seal wordmark",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Mattel_%282019%29.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Mattel_(2019).svg",
+          "sourceSha256": "00b528fed3b9c96b7309a073297ab9675cf628382fcf67e2b091993aeebded1f",
+          "ops": {
+            "viewBox": "-36 -36 972 970.11"
+          },
+          "showsName": true,
+          "path": "/logos/svg/brands/mattel.svg",
+          "format": "svg",
+          "colors": [
+            "#FF0028",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#FF0028",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "441b13b16cd4b0dda443b2f5f4306c6c7f759673baa81678365d7dadf68a224b"
         }
       ]
     },
@@ -1711,6 +4216,159 @@
       ]
     },
     {
+      "id": "BRAND-MMS",
+      "league": "BRAND",
+      "conference": "Product",
+      "region": "M&M's",
+      "name": "",
+      "abbr": "MMS",
+      "aliases": [
+        "M&Ms",
+        "M and Ms",
+        "MMs",
+        "M&M"
+      ],
+      "palette": [
+        "#592411",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Wordmark",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/M%26M%27s_2022.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:M&M's_2022.svg",
+          "sourceSha256": "6c568c1a8220642e41f2853956881a2d649b7e670d87a6d22f306451521d850e",
+          "ops": {
+            "viewBox": "-40 -40 1080 407.084"
+          },
+          "showsName": true,
+          "path": "/logos/svg/brands/mms.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#592411"
+          ],
+          "sourcePalette": [
+            "#592411",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "f167390602a0b56d3089df3b6735220af935338b223a3e6bf0838a96dab6ad31"
+        }
+      ]
+    },
+    {
+      "id": "BRAND-MOBIL",
+      "league": "BRAND",
+      "conference": "Service",
+      "region": "Mobil",
+      "name": "",
+      "abbr": "MOBIL",
+      "aliases": [
+        "Mobil Oil",
+        "Mobil 1"
+      ],
+      "palette": [
+        "#ED1B2D",
+        "#006BB6",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Wordmark",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Mobil_logo.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Mobil_logo.svg",
+          "sourceSha256": "7cf59d7a456b01fb8ecae16201b714fc4cd1d06aa22eef9116ecd77cab23e7ec",
+          "ops": {
+            "viewBox": "-12 -12 324 115.506"
+          },
+          "showsName": true,
+          "path": "/logos/svg/brands/mobil.svg",
+          "format": "svg",
+          "colors": [
+            "#ED1B2D",
+            "#006BB6"
+          ],
+          "sourcePalette": [
+            "#ED1B2D",
+            "#006BB6",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "5e2237e05ce735ab90b7c124c1723c408f4d8dd3583bcd079ab91d31ee7191ea"
+        }
+      ]
+    },
+    {
+      "id": "BRAND-MONSTER",
+      "league": "BRAND",
+      "conference": "Product",
+      "region": "Monster Energy",
+      "name": "",
+      "abbr": "MONSTER",
+      "aliases": [
+        "Monster",
+        "Monster Energy Drink"
+      ],
+      "palette": [
+        "#000000",
+        "#DDD300",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Claw M",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/d/de/Monster_Energy_horizontal.svg/revision/latest?cb=20260910123231",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Monster_Energy_horizontal.svg",
+          "sourceSha256": "4478746932dab55eb9b7994eb0c8755e8ad1d4fcd9bb83cbd55811705a5efe6f",
+          "ops": {
+            "keepNodes": [
+              "0",
+              "1/0"
+            ],
+            "viewBox": "-17.46 -17.435 346.847 473.134"
+          },
+          "path": "/logos/svg/brands/monster.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#DDD300",
+            "#449A35",
+            "#82B228",
+            "#5FA431",
+            "#4E9D34",
+            "#CECE00",
+            "#57A133",
+            "#6AA92F",
+            "#9BBD1D",
+            "#BECA00",
+            "#A4C118",
+            "#B0C50F",
+            "#8FB923",
+            "#B8C706"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#8FB71D",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "5f1900f3557845f37df7f939ee1e958234f78c40153f95db2c7a8691d2da2e4e"
+        }
+      ]
+    },
+    {
       "id": "BRAND-MRBEAST",
       "league": "BRAND",
       "conference": "Personal",
@@ -1756,6 +4414,53 @@
           ],
           "unusedSourceSlots": [],
           "sha256": "33a7b0f3492974eb83f1a1f51d0948c58c9a16654cd8ef5263250a945fdd7938"
+        }
+      ]
+    },
+    {
+      "id": "BRAND-MTNDEW",
+      "league": "BRAND",
+      "conference": "Product",
+      "region": "Mountain Dew",
+      "name": "",
+      "abbr": "MTNDEW",
+      "aliases": [
+        "Mtn Dew",
+        "Dew"
+      ],
+      "palette": [
+        "#231F20",
+        "#94C93D",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Wordmark",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Mountain_Dew_logo.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Mountain_Dew_logo.svg",
+          "sourceSha256": "aa45736c2222a7ff3cd4d2e7f01842d152ec7f0b9635e32a0e9b6061cb5a5203",
+          "ops": {
+            "viewBox": "-11.259 -11.259 303.988 217.058"
+          },
+          "showsName": true,
+          "path": "/logos/svg/brands/mtndew.svg",
+          "format": "svg",
+          "colors": [
+            "#231F20",
+            "#94C93D",
+            "#F3F3F9",
+            "#07703C",
+            "#ED1A37",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#15482E",
+            "#94C93D",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "130ae7bd97af03ccec8c2e1992bc69732b2a762151d82954645da6e68aad5def"
         }
       ]
     },
@@ -1827,6 +4532,51 @@
             1
           ],
           "sha256": "abc85a67ac45bf339775d3bda08863ca5a6c4141e04c8aa970adf754916cb1db"
+        }
+      ]
+    },
+    {
+      "id": "BRAND-NASA",
+      "league": "BRAND",
+      "conference": "Corporate",
+      "region": "NASA",
+      "name": "",
+      "abbr": "NASA",
+      "aliases": [
+        "National Aeronautics and Space Administration",
+        "NASA meatball"
+      ],
+      "palette": [
+        "#000000",
+        "#1C63B7",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Meatball insignia",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/e/e5/NASA_logo.svg/revision/latest?cb=20250707120422",
+          "sourcePage": "https://logos.fandom.com/wiki/File:NASA_logo.svg",
+          "sourceSha256": "65e79eb4fc47f91f49b130241528ddad78656b446274873b3a6c827ca7db6847",
+          "ops": {
+            "viewBox": "-277.939 -277.386 7501.071 6305.343"
+          },
+          "showsName": true,
+          "path": "/logos/svg/brands/nasa.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#1C63B7",
+            "#FFFFFF",
+            "#ED1C24"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#1C63B7",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "33e4a85abcd3312dcff7f55ebc604272d3f007eebcecee547beee65cde75fe01"
         }
       ]
     },
@@ -1905,6 +4655,79 @@
           ],
           "unusedSourceSlots": [],
           "sha256": "59b3a454c4624488cb915cab01238db6e89fac092a1bc53331da184c893161ef"
+        },
+        {
+          "id": "peacock-1986",
+          "label": "Six-feather peacock (1986)",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/NBC_Peacock_1986.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:NBC_Peacock_1986.svg",
+          "sourceSha256": "71e2fc140355bcf0c700b82535cc2b0cf335088fbcab2893c96b37bda3c2fc2f",
+          "ops": {
+            "viewBox": "-110.28 -187.188 612.561 379.946"
+          },
+          "path": "/logos/svg/brands/alternates/nbc-peacock-1986.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#F37021",
+            "#CC004C",
+            "#6460AA",
+            "#0089D0",
+            "#0DB14B",
+            "#FCB711"
+          ],
+          "sourcePalette": [
+            "#6460AA",
+            "#F89419",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "21cd3147ef8a6e71fae1030c7493c79b888df3565e2f50fd2c3b7b3d43c0f413"
+        }
+      ]
+    },
+    {
+      "id": "BRAND-NERF",
+      "league": "BRAND",
+      "conference": "Product",
+      "region": "Nerf",
+      "name": "",
+      "abbr": "NERF",
+      "aliases": [
+        "Nerf Blasters"
+      ],
+      "palette": [
+        "#210800",
+        "#EE2D2B",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Wordmark",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Nerf_logo.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Nerf_logo.svg",
+          "sourceSha256": "7ba4e2c96a987c45626eea0d685e15f03778f525c22e20e4e6fd0a7690ffac3f",
+          "ops": {
+            "viewBox": "-6 -4.645 162 80.645"
+          },
+          "showsName": true,
+          "path": "/logos/svg/brands/nerf.svg",
+          "format": "svg",
+          "colors": [
+            "#210800",
+            "#EE2D2B",
+            "#FFD51F"
+          ],
+          "sourcePalette": [
+            "#210800",
+            "#F68125",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "5d4e151fb7a0fbe309400b63a9ffbb6bbbabeae18484d81cbb542f3c560fcfa0"
         }
       ]
     },
@@ -1997,6 +4820,90 @@
             2
           ],
           "sha256": "9663bf432114e86b4be29d682aaabd03a062c4e5841dd6d2237b073d3dcb8943"
+        },
+        {
+          "id": "outline-swoosh",
+          "label": "Outline swoosh",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/8/86/Nike_%28Outlined%29.svg/revision/latest?cb=20171113063156",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Nike_(Outlined).svg",
+          "sourceSha256": "4ffc25b63e3a3bc0c1c197e2c79e5eb46f3a8e52814544a1786804512ccd798a",
+          "ops": {
+            "viewBox": "95.5 321.375 1080 449.03"
+          },
+          "path": "/logos/svg/brands/alternates/nike-outline-swoosh.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#FA5400",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "7ff203606d7f377ad064b7197ab147ea5160120853777e17f4c26f3b6611637b"
+        }
+      ]
+    },
+    {
+      "id": "BRAND-NODE",
+      "league": "BRAND",
+      "conference": "Product",
+      "region": "Node.js",
+      "name": "",
+      "abbr": "NODE",
+      "aliases": [
+        "Node",
+        "NodeJS",
+        "Node JS"
+      ],
+      "palette": [
+        "#000000",
+        "#3E863D",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Green hexagon",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Node.js_logo.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Node.js_logo.svg",
+          "sourceSha256": "dc8800bf281108aff24d4c7bb3c59e8c55eeaaa26e7dbc7b1e7f5de36ba6e60c",
+          "ops": {
+            "keepNodes": [
+              "0",
+              "5",
+              "6",
+              "7"
+            ],
+            "viewBox": "57.95 10.271 210.313 210.984"
+          },
+          "path": "/logos/svg/brands/node.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#3E863D",
+            "#55934F",
+            "#5AAD45",
+            "#619857",
+            "#76AC64",
+            "#6BBF47",
+            "#79B461",
+            "#75AC64",
+            "#659E5A"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#64A454",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "861f243695ddb7c7f953ce94f47a3a57397123c6eec9d5ed7ed1e3d0facdcda8"
         }
       ]
     },
@@ -2084,6 +4991,31 @@
             2
           ],
           "sha256": "c94912baa33fa7c2cfd4d457685821315319c5b5441b5de7a3488f9697ce8993"
+        },
+        {
+          "id": "eye-tile",
+          "label": "Eye tile (classic)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/e/e8/Nvidia_%28Symbol%29_%28Old%29.svg/revision/latest?cb=20180501171202",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Nvidia_(Symbol)_(Old).svg",
+          "sourceSha256": "9cb1c87ef2652393af59f02b1b1e355610dd68f76f69b93560a1c77346cee526",
+          "ops": {
+            "viewBox": "-212.152 -63.157 1705.246 1171.099"
+          },
+          "path": "/logos/svg/brands/alternates/nvidia-eye-tile.svg",
+          "format": "svg",
+          "colors": [
+            "#C1D72F",
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#C1D72F",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "d2c0b83b4f537efe552bb1e4cccb7f2be14edfcd8b0c42a93856138b3c1c6594"
         }
       ]
     },
@@ -2131,6 +5063,170 @@
             2
           ],
           "sha256": "c1b18a2a18cadc68fb8f59030ea5476c6540ceb31e0eef8ea13e7ebf141e9211"
+        },
+        {
+          "id": "gx-ring",
+          "label": "GX ring",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Opera_GX_Icon.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Opera_GX_Icon.svg",
+          "sourceSha256": "e0a284a8afa4b84c5b0db9eaab022fe7b43cf9ee23fe045756213fc6628a5622",
+          "ops": {
+            "viewBox": "-2.172 -2.279 62.165 62.481"
+          },
+          "path": "/logos/svg/brands/alternates/opera-gx-ring.svg",
+          "format": "svg",
+          "colors": [
+            "#FA1E4E"
+          ],
+          "sourcePalette": [
+            "#FA1E4E",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "cc21c6c44fb5fe3937b2e9673b98075265310631470b6ebc5d3ac67e78971996"
+        }
+      ]
+    },
+    {
+      "id": "BRAND-ORACLE",
+      "league": "BRAND",
+      "conference": "Corporate",
+      "region": "Oracle",
+      "name": "",
+      "abbr": "ORACLE",
+      "aliases": [
+        "Oracle Corporation"
+      ],
+      "palette": [
+        "#C74634",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Wordmark",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Oracle_logo.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Oracle_logo.svg",
+          "sourceSha256": "305d310fda8165fb38e24273c643f2c61107e2440e12abc3c209bd49c2deff15",
+          "ops": {
+            "viewBox": "-9.628 -9.247 249.561 48.521"
+          },
+          "showsName": true,
+          "path": "/logos/svg/brands/oracle.svg",
+          "format": "svg",
+          "colors": [
+            "#C74634"
+          ],
+          "sourcePalette": [
+            "#C74634",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "66dc6f2808df590998ad6d67ac14cb6b753b4c0cfda27cf7ae0296ee91f4ce5e"
+        }
+      ]
+    },
+    {
+      "id": "BRAND-OREO",
+      "league": "BRAND",
+      "conference": "Product",
+      "region": "Oreo",
+      "name": "",
+      "abbr": "OREO",
+      "aliases": [
+        "Oreos",
+        "Oreo Cookies"
+      ],
+      "palette": [
+        "#3194CF",
+        "#88B2D6",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Wordmark",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Oreo_Logo_2014.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Oreo_Logo_2014.svg",
+          "sourceSha256": "7c1be604cd4d0d5ece454f0edbdf16bdc49d1e4c8a27e2df522a53a16ec863c5",
+          "ops": {
+            "viewBox": "-3.666 -3.56 1206.81 487.249"
+          },
+          "showsName": true,
+          "path": "/logos/svg/brands/oreo.svg",
+          "format": "svg",
+          "colors": [
+            "#3194CF",
+            "#88B2D6",
+            "#51C4F1",
+            "#1064AD",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#207CBE",
+            "#6CBBE4",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "7e93e24daf64d766b8cac61cec5a9e3bae7a3294d79968e2bf6834b707f6feef"
+        }
+      ]
+    },
+    {
+      "id": "BRAND-PARAMOUNT",
+      "league": "BRAND",
+      "conference": "Corporate",
+      "region": "Paramount",
+      "name": "",
+      "abbr": "PARAMOUNT",
+      "aliases": [
+        "Paramount Pictures",
+        "Paramount Global",
+        "Paramount Plus"
+      ],
+      "palette": [
+        "#000000",
+        "#808080",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Mountain with stars",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/4/46/Paramount_Pictures_2020.svg/revision/latest?cb=20210819173940",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Paramount_Pictures_2020.svg",
+          "sourceSha256": "0f93b0420df2d46a34888dc08652e1f3f9757e18e081ebc9aba54d9d4d3d7acd",
+          "ops": {
+            "keepNodes": [
+              "2"
+            ],
+            "viewBox": "-40 -40 1080 815.561"
+          },
+          "showsName": true,
+          "path": "/logos/svg/brands/paramount.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "b4d76d325ab93eec790bc095f989020aa87cac46a170c9c8682100457900076e"
         }
       ]
     },
@@ -2175,6 +5271,40 @@
             2
           ],
           "sha256": "07c71a73e73d33f15e6a8361060590cfc1403a36b1c5d4c734f28566676fa104"
+        },
+        {
+          "id": "pride-ring",
+          "label": "Pride ring (2022)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/e/e8/PayPal_%282022%29_%28Pride%29.svg/revision/latest?cb=20220603004957",
+          "sourcePage": "https://logos.fandom.com/wiki/File:PayPal_(2022)_(Pride).svg",
+          "sourceSha256": "ed803c32d7a6bd45083dd602951d2483eaf7fdc225b4da28a526febda1b947ae",
+          "ops": {
+            "viewBox": "-13.547 -13.547 365.76 365.76"
+          },
+          "path": "/logos/svg/brands/alternates/paypal-pride-ring.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#760087",
+            "#FFFFFF",
+            "#0070E0",
+            "#FFAEC6",
+            "#231F20",
+            "#603914",
+            "#E40000",
+            "#FF8D00",
+            "#FFED00",
+            "#028120",
+            "#003087",
+            "#001C63"
+          ],
+          "sourcePalette": [
+            "#003087",
+            "#0070E0",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "e5d6743e3aca846966296d184ba5cd0b11e76ddf7e38bcae2a331a14e52b6848"
         }
       ]
     },
@@ -2258,6 +5388,147 @@
       ]
     },
     {
+      "id": "BRAND-PFIZER",
+      "league": "BRAND",
+      "conference": "Corporate",
+      "region": "Pfizer",
+      "name": "",
+      "abbr": "PFIZER",
+      "aliases": [],
+      "palette": [
+        "#0190FF",
+        "#2B01BE",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Helix ribbon (2021)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/5/5b/Pfizer_2021_%28symbol%29.svg/revision/latest?cb=20210106120055",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Pfizer_2021_(symbol).svg",
+          "sourceSha256": "d04b06baec8ae2aaac0193860037d59c8dbb7df39d8b1cb6d50c6f4ef081d091",
+          "ops": {
+            "viewBox": "-242.282 175.02 1080 1076.878"
+          },
+          "path": "/logos/svg/brands/pfizer.svg",
+          "format": "svg",
+          "colors": [
+            "#0190FF",
+            "#2B01BE"
+          ],
+          "sourcePalette": [
+            "#0190FF",
+            "#2B01BE",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "59eebf03631bf56291d91872a6a75a72eb92b138994e05452f0c168efdeb8034"
+        }
+      ]
+    },
+    {
+      "id": "BRAND-PG",
+      "league": "BRAND",
+      "conference": "Corporate",
+      "region": "Procter & Gamble",
+      "name": "",
+      "abbr": "PG",
+      "aliases": [
+        "P&G",
+        "Procter and Gamble",
+        "Proctor & Gamble",
+        "Proctor and Gamble"
+      ],
+      "palette": [
+        "#000000",
+        "#808080",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Moon and stars (1991)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/f/fd/Procter_%26_Gamble_Star_Moon_1991.svg/revision/latest?cb=20180501083443",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Procter_&_Gamble_Star_Moon_1991.svg",
+          "sourceSha256": "f8259b0273aad6f645b73a331ddfd7340d1b5a0699b4649a414a39b2e4554c31",
+          "ops": {
+            "viewBox": "-10.583 -10.583 285.75 285.75"
+          },
+          "path": "/logos/svg/brands/pg.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "791e479983678694f27f515ad25bae359e886aae4f89b4ab98e62d1db55eb988"
+        },
+        {
+          "id": "roundel",
+          "label": "Blue roundel monogram",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Procter_%26_Gamble_logo.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Procter_&_Gamble_logo.svg",
+          "sourceSha256": "80cfe6d9ad348d61fc3bf262fd6bab453ed3dc10e965f88aa4a7136de577fc4f",
+          "ops": {
+            "viewBox": "-28.8 -28.8 777.6 777.6"
+          },
+          "path": "/logos/svg/brands/alternates/pg-roundel.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#00A1DF",
+            "#0092D7",
+            "#006CC1",
+            "#003DA6",
+            "#043799",
+            "#102777",
+            "#152169",
+            "#FBFEFF",
+            "#BAE7F9",
+            "#87D5F4",
+            "#63C9F1",
+            "#4CC1EF",
+            "#44BEEE",
+            "#37B8EB",
+            "#19ACE5",
+            "#07A4E0",
+            "#0045AB",
+            "#0059B6",
+            "#FDFDFD",
+            "#F6F6F6",
+            "#EAEAEA",
+            "#D9D9D9",
+            "#C3C3C3",
+            "#A7A7A7",
+            "#868686",
+            "#606060",
+            "#353535",
+            "#060606",
+            "#000000",
+            "#2B99D9",
+            "#1476C6",
+            "#0561BA"
+          ],
+          "sourcePalette": [
+            "#131A39",
+            "#868686",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "a9e15b76b18a14a58b71feb636c62b719b46005478abb772cafc331b0f1205ba"
+        }
+      ]
+    },
+    {
       "id": "BRAND-PRINCE",
       "league": "BRAND",
       "conference": "Personal",
@@ -2300,6 +5571,57 @@
             2
           ],
           "sha256": "c5188608d4bd27aafbb1f298910ef4aca9255f15de9a284beaf444d24f22ea10"
+        }
+      ]
+    },
+    {
+      "id": "BRAND-PRINGLES",
+      "league": "BRAND",
+      "conference": "Product",
+      "region": "Pringles",
+      "name": "",
+      "abbr": "PRINGLES",
+      "aliases": [
+        "Mr. P",
+        "Julius Pringles"
+      ],
+      "palette": [
+        "#C10C1A",
+        "#1C1C1A",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Mr. P face",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/6/68/Pringles-logo-2021.svg/revision/latest?cb=20211214115538",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Pringles-logo-2021.svg",
+          "sourceSha256": "f0f2adb9abaf3e5c6f3a5b8455710476e3344ee345b8e42bcba20067ec79c066",
+          "ops": {
+            "keepNodes": [
+              "0",
+              "1",
+              "3",
+              "4",
+              "5",
+              "6"
+            ],
+            "viewBox": "-10.006 -10.032 221.096 270.155"
+          },
+          "path": "/logos/svg/brands/pringles.svg",
+          "format": "svg",
+          "colors": [
+            "#C10C1A",
+            "#FFFFFF",
+            "#1C1C1A"
+          ],
+          "sourcePalette": [
+            "#C10C1A",
+            "#1C1C1A",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "82c730d9e2118f5976e260d34cf46eb750c11db73d788aef6d93cec1b8648756"
         }
       ]
     },
@@ -2373,6 +5695,94 @@
             2
           ],
           "sha256": "a1eb818d0ed98c5985b6f043e8ce13643346afa57d0c61b6f4dd1ba3ff31a554"
+        }
+      ]
+    },
+    {
+      "id": "BRAND-PUBLIX",
+      "league": "BRAND",
+      "conference": "Store",
+      "region": "Publix",
+      "name": "",
+      "abbr": "PUBLIX",
+      "aliases": [
+        "Publix Super Markets"
+      ],
+      "palette": [
+        "#3E8C2F",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Green P",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/0/07/Publix-p-2012.svg/revision/latest?cb=20201211143730",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Publix-p-2012.svg",
+          "sourceSha256": "178b920e48333f0f57c4790e3aa248ab31515140da8cc2ea129b8e13bd8fde41",
+          "ops": {
+            "viewBox": "-8.64 -8.64 233.28 233.28"
+          },
+          "path": "/logos/svg/brands/publix.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#3E8C2F"
+          ],
+          "sourcePalette": [
+            "#3E8C2F",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "a6cb41f7e1fd38bb20e5346d0749dc99860d39ed45867b8cfe37c9beee687ae1"
+        }
+      ]
+    },
+    {
+      "id": "BRAND-REACT",
+      "league": "BRAND",
+      "conference": "Product",
+      "region": "React",
+      "name": "",
+      "abbr": "REACT",
+      "aliases": [
+        "React.js",
+        "ReactJS",
+        "React JS"
+      ],
+      "palette": [
+        "#087EA4",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Atom",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/React_Logo_SVG.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:React_Logo_SVG.svg",
+          "sourceSha256": "1f1167604e4284d586ee343b28d9e209524ae3246643a3a80e88e718d01043ac",
+          "ops": {
+            "viewBox": "-10.873 -11.783 21.746 23.566"
+          },
+          "path": "/logos/svg/brands/react.svg",
+          "format": "svg",
+          "colors": [
+            "#087EA4"
+          ],
+          "sourcePalette": [
+            "#087EA4",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "d97d0800d4d460d405a31a5994cc2b6b8ee587fbec4dbb31c251a1bba8ac9d97"
         }
       ]
     },
@@ -2464,6 +5874,208 @@
       ]
     },
     {
+      "id": "BRAND-ROCKSTAR",
+      "league": "BRAND",
+      "conference": "Corporate",
+      "region": "Rockstar Games",
+      "name": "",
+      "abbr": "ROCKSTAR",
+      "aliases": [
+        "Rockstar",
+        "Rockstar North"
+      ],
+      "palette": [
+        "#000000",
+        "#FFAB00",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "R-star tile",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Rockstar_Games_Logo.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Rockstar_Games_Logo.svg",
+          "sourceSha256": "3a2b6be8920fdb0e8cab172e88f2219411ca6d35d578e7e7f4f7e32aa44609fc",
+          "ops": {
+            "viewBox": "-8.64 -8.64 233.28 216.18"
+          },
+          "path": "/logos/svg/brands/rockstar.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#040301",
+            "#FFAB00",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#020200",
+            "#FFAB00",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "c95c38e6f695a9fd9f454131b08a4331413b93358c3ee8d2f0a584a6d0e4eb77"
+        },
+        {
+          "id": "squareless",
+          "label": "R-star without tile",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/8/82/Rockstar_Games_%28squareless%29.svg/revision/latest?cb=20231206233024",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Rockstar_Games_(squareless).svg",
+          "sourceSha256": "fb3796043e0610d1504ad174b714b70b70665872aa6e436f7c68bbd41de7d817",
+          "ops": {
+            "viewBox": "-12.038 -12.038 321.038 325.028"
+          },
+          "path": "/logos/svg/brands/alternates/rockstar-squareless.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#FFAB00",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "6bd73f6d4af4fbe983f7d880fb84af8d20a3ed46e2a0a4e1f879bee158e895dd"
+        }
+      ]
+    },
+    {
+      "id": "BRAND-SALESFORCE",
+      "league": "BRAND",
+      "conference": "Corporate",
+      "region": "Salesforce",
+      "name": "",
+      "abbr": "SALESFORCE",
+      "aliases": [
+        "Sales Force"
+      ],
+      "palette": [
+        "#00A1E0",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Cloud",
+          "sourceUrl": "https://api.iconify.design/simple-icons/salesforce.svg?color=%2300A1E0",
+          "sourcePage": "https://icon-sets.iconify.design/simple-icons/salesforce/",
+          "sourceSha256": "cc25888e1b7d9c18dbda65fa4e6a85d13ef82af1a7a6c74bef009c8581bbb2cb",
+          "ops": {
+            "viewBox": "-0.96 2.64 25.92 18.72"
+          },
+          "path": "/logos/svg/brands/salesforce.svg",
+          "format": "svg",
+          "colors": [
+            "#00A1E0"
+          ],
+          "sourcePalette": [
+            "#00A1E0",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "ecb7105a17e875c9c0ddbd6acaabb6f91a10513d6e352670497bebd552d92324"
+        }
+      ]
+    },
+    {
+      "id": "BRAND-SAMSUNG",
+      "league": "BRAND",
+      "conference": "Corporate",
+      "region": "Samsung",
+      "name": "",
+      "abbr": "SAMSUNG",
+      "aliases": [
+        "Samsung Electronics",
+        "Samsung Galaxy"
+      ],
+      "palette": [
+        "#034EA1",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Ellipse wordmark",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/a/a1/Samsung_%281993%29.svg/revision/latest?cb=20180721193710",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Samsung_(1993).svg",
+          "sourceSha256": "cc4ef8df912ae9f07f5e67c4e7c4d098a9a6a3cc14947d9d594e950e1703b24c",
+          "ops": {
+            "viewBox": "-10.583 -10.583 285.75 109.188"
+          },
+          "showsName": true,
+          "path": "/logos/svg/brands/samsung.svg",
+          "format": "svg",
+          "colors": [
+            "#034EA1",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#034EA1",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "6cc577ef1c05bfa75f24a6d0119873cd2a2c56a65682509f4338fb3bce29e5f1"
+        }
+      ]
+    },
+    {
+      "id": "BRAND-SEGA",
+      "league": "BRAND",
+      "conference": "Corporate",
+      "region": "Sega",
+      "name": "",
+      "abbr": "SEGA",
+      "aliases": [
+        "Sega Corporation",
+        "Sega Genesis"
+      ],
+      "palette": [
+        "#0060A8",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Wordmark",
+          "sourceUrl": "https://api.iconify.design/simple-icons/sega.svg?color=%230060A8",
+          "sourcePage": "https://icon-sets.iconify.design/simple-icons/sega/",
+          "sourceSha256": "d1ff835663176bdb3b48e866bfb31820570bcb8fb4c39d176690d09834f71394",
+          "ops": {
+            "viewBox": "1.788 -0.96 20.401 25.92"
+          },
+          "showsName": true,
+          "path": "/logos/svg/brands/sega.svg",
+          "format": "svg",
+          "colors": [
+            "#0060A8"
+          ],
+          "sourcePalette": [
+            "#0060A8",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "c1326cc0c363f341fd2315e69121a04478936fc93bbff7f9445e8f97465bde1a"
+        }
+      ]
+    },
+    {
       "id": "BRAND-SHELL",
       "league": "BRAND",
       "conference": "Service",
@@ -2505,6 +6117,31 @@
             2
           ],
           "sha256": "aaf9f4619902b95266ba1dfdf78f0c4078943f8cc8de1b25df9ea0e7b752fc2b"
+        },
+        {
+          "id": "pecten-1909",
+          "label": "Black pecten (1909)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/8/8f/Shell-1909.svg/revision/latest?cb=20240212060413",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Shell-1909.svg",
+          "sourceSha256": "23924688490409d9f0e76a12fdefd074e1322de0c34029b14ebc8f1d0cf74afe",
+          "ops": {
+            "viewBox": "601.503 -64.416 2581.093 2266.897"
+          },
+          "path": "/logos/svg/brands/alternates/shell-pecten-1909.svg",
+          "format": "svg",
+          "colors": [
+            "#040404",
+            "#FAFAFA"
+          ],
+          "sourcePalette": [
+            "#040404",
+            "#DD1D21",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "f0d533728518dec4fff5f4f6030ee66e7a0f955b1ccf8b7c651cc096dae0ffe9"
         }
       ]
     },
@@ -2545,6 +6182,31 @@
           ],
           "unusedSourceSlots": [],
           "sha256": "41e174a040bf5f785fba66f82643dddaf9b67c06e2a68d3d8e2eacd3cb91e870"
+        },
+        {
+          "id": "mono-bag",
+          "label": "One-color bag",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/6/6f/Shopify-logo-shopping-bag-monotone-black.svg/revision/latest?cb=20241027225650",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Shopify-logo-shopping-bag-monotone-black.svg",
+          "sourceSha256": "a43d9aa7b726041c93ee4b66bb51d474c36fc756e68339f6e548bcfefecec1e9",
+          "ops": {
+            "viewBox": "-3.673 -3.5 96.345 108"
+          },
+          "path": "/logos/svg/brands/alternates/shopify-mono-bag.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#5E8E3E",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "5da85498e80fae04d9405e903c692ccd21e9def5b93afdf120f9bfd24cdca922"
         }
       ]
     },
@@ -2588,6 +6250,182 @@
             2
           ],
           "sha256": "541c09b213e2c35126fef03087848f4d6225039572c2b6d98bd698e38262396f"
+        }
+      ]
+    },
+    {
+      "id": "BRAND-SONY",
+      "league": "BRAND",
+      "conference": "Corporate",
+      "region": "Sony",
+      "name": "",
+      "abbr": "SONY",
+      "aliases": [
+        "Sony Corporation",
+        "Sony Group"
+      ],
+      "palette": [
+        "#000000",
+        "#808080",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Wordmark",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Sony_logo.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Sony_logo.svg",
+          "sourceSha256": "f6191bc69f8df259c86a13dc9582ba9ed2e0101d4452ba3f1d33ec8e907ddda0",
+          "ops": {
+            "viewBox": "-51.2 -51.2 1382.4 327.68"
+          },
+          "showsName": true,
+          "path": "/logos/svg/brands/sony.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "7f1c252df1ef6ee4b8b7ad6921f4fe53653035e7dac271c3e5e47a4da47a9c47"
+        }
+      ]
+    },
+    {
+      "id": "BRAND-SPACEX",
+      "league": "BRAND",
+      "conference": "Corporate",
+      "region": "SpaceX",
+      "name": "",
+      "abbr": "SPACEX",
+      "aliases": [
+        "Space X",
+        "Space Exploration Technologies"
+      ],
+      "palette": [
+        "#005288",
+        "#A7A9AC",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "X icon",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/f/f6/SpaceX_icon.svg/revision/latest?cb=20190309033516",
+          "sourcePage": "https://logos.fandom.com/wiki/File:SpaceX_icon.svg",
+          "sourceSha256": "071c1541dc299d1bccc23eccadb6e73ef7459987b90fd7832fcee35d8883c345",
+          "ops": {
+            "viewBox": "-24.842 -24.842 670.738 284.509"
+          },
+          "path": "/logos/svg/brands/spacex.svg",
+          "format": "svg",
+          "colors": [
+            "#005288",
+            "#A7A9AC"
+          ],
+          "sourcePalette": [
+            "#005288",
+            "#A7A9AC",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "ececc0a09e22cc6c0a65d4a4235042e394804ddc488e15325260afa6467dc7c7"
+        }
+      ]
+    },
+    {
+      "id": "BRAND-SPRITE",
+      "league": "BRAND",
+      "conference": "Product",
+      "region": "Sprite",
+      "name": "",
+      "abbr": "SPRITE",
+      "aliases": [],
+      "palette": [
+        "#18A94B",
+        "#35D630",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Wordmark with lemon",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Sprite_2026.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Sprite_2026.svg",
+          "sourceSha256": "ccbd33b21d2548d4146394d4964b819516b9075084b57b1ef3dcf99e99083e36",
+          "ops": {
+            "viewBox": "-26.8 -26.8 723.609 329.138"
+          },
+          "showsName": true,
+          "path": "/logos/svg/brands/sprite.svg",
+          "format": "svg",
+          "colors": [
+            "#18A94B",
+            "#35D630",
+            "#FCDB02"
+          ],
+          "sourcePalette": [
+            "#18A94B",
+            "#35D630",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "f5e3239e74cf47fde144737f02e7505c9f75fa6e382d3dbb1ea526931c2c8012"
+        }
+      ]
+    },
+    {
+      "id": "BRAND-STATEFARM",
+      "league": "BRAND",
+      "conference": "Service",
+      "region": "State Farm",
+      "name": "",
+      "abbr": "STATEFARM",
+      "aliases": [
+        "State Farm Insurance",
+        "StateFarm"
+      ],
+      "palette": [
+        "#EB1D27",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Three ovals",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/6/62/State_Farm_symbol.svg/revision/latest?cb=20240904205208",
+          "sourcePage": "https://logos.fandom.com/wiki/File:State_Farm_symbol.svg",
+          "sourceSha256": "68955eb3c40c90c6162018ab55921f51fa311f9a1f07b0cce2d16d17eba59b11",
+          "ops": {
+            "viewBox": "-6.061 -6.061 163.649 112.209"
+          },
+          "path": "/logos/svg/brands/statefarm.svg",
+          "format": "svg",
+          "colors": [
+            "#EB1D27"
+          ],
+          "sourcePalette": [
+            "#EB1D27",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "c5056fd841ed8f8e83482d7dcdcc7de8ebdf0ea81f349a3069181e6ee7faec02"
         }
       ]
     },
@@ -2768,6 +6606,31 @@
             1
           ],
           "sha256": "c54309792823b16195cfab4126968fd6a6508d708ff2146223f534f5bc8d6a69"
+        },
+        {
+          "id": "mono-icon",
+          "label": "One-color icon",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Nintendo_Switch_Logo_%28without_text%29.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Nintendo_Switch_Logo_(without_text).svg",
+          "sourceSha256": "0eaa1ae693c06b76ec74e7503365dd43a5a0f83333e0b6b665a6d1b35f4ba17d",
+          "ops": {
+            "viewBox": "13.802 13.681 521.518 521.618"
+          },
+          "path": "/logos/svg/brands/alternates/switch-mono-icon.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "ae5ce33a0e0e13b98a7bc8da0b5d5f2abcf8f19ce22239d35aa4dd14fcfcdbef"
         }
       ]
     },
@@ -2822,6 +6685,232 @@
             2
           ],
           "sha256": "04db6ad88b5c5cd7b12e8cd59293027f2aa86d2d3b82e7b129805f17da7b4a6b"
+        },
+        {
+          "id": "mono-bullseye",
+          "label": "One-color bullseye",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/2/24/Target_%28Black%29.svg/revision/latest?cb=20171009124446",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Target_(Black).svg",
+          "sourceSha256": "80679d3e8542607bfb34af81b41b6094e4f6b3dec616c751ea18fbdcefaecdcd",
+          "ops": {
+            "viewBox": "-40 -40 1080 1080"
+          },
+          "path": "/logos/svg/brands/alternates/target-mono-bullseye.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "6b478860cd0118deb237012c41626b9a5a33d4dedbf91477df6056d20e7f3454"
+        }
+      ]
+    },
+    {
+      "id": "BRAND-TEXACO",
+      "league": "BRAND",
+      "conference": "Service",
+      "region": "Texaco",
+      "name": "",
+      "abbr": "TEXACO",
+      "aliases": [
+        "The Texas Company"
+      ],
+      "palette": [
+        "#FF1F1F",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Star T",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/8/8f/Texaco_logo.svg/revision/latest?cb=20231227063220",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Texaco_logo.svg",
+          "sourceSha256": "7d2ffcb2a9cdb5cd07712c720f7c041c1fae5da057a1a720f604ac497e98a38f",
+          "ops": {
+            "viewBox": "-27.255 -27.255 733.82 735.89"
+          },
+          "path": "/logos/svg/brands/texaco.svg",
+          "format": "svg",
+          "colors": [
+            "#FF1F1F",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#FF1F1F",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "3de4aa745a2e1a6f195abb80b11a12306fd056b33d1845fe52ef48e7eb197865"
+        },
+        {
+          "id": "black-star",
+          "label": "One-color star",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/8/80/Texaco_symbol_print.svg/revision/latest?cb=20220718190811",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Texaco_symbol_print.svg",
+          "sourceSha256": "eb0671b0345eca553595ac7d922dc13d5be4523de73a6c171d4c8b15fe922307",
+          "ops": {
+            "viewBox": "-5.631 -5.631 150.109 152.035"
+          },
+          "path": "/logos/svg/brands/alternates/texaco-black-star.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "def2a81f4bd09461270db75357890bac7a65c9f35afb41dbd7a3e873a019cebc"
+        }
+      ]
+    },
+    {
+      "id": "BRAND-TMOBILE",
+      "league": "BRAND",
+      "conference": "Service",
+      "region": "T-Mobile",
+      "name": "",
+      "abbr": "TMOBILE",
+      "aliases": [
+        "T Mobile",
+        "TMobile",
+        "Deutsche Telekom"
+      ],
+      "palette": [
+        "#E20074",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "T with dots",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Deutsche_Telekom_2022.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Deutsche_Telekom_2022.svg",
+          "sourceSha256": "c139829f3f5aa2ef8eeacf7cc48253ac186b8b63c7a0e7c740d5dce38f04df26",
+          "ops": {
+            "viewBox": "-3.048 -3.036 82.807 97.396"
+          },
+          "path": "/logos/svg/brands/tmobile.svg",
+          "format": "svg",
+          "colors": [
+            "#E20074"
+          ],
+          "sourcePalette": [
+            "#E20074",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "32f645deab3b82c0e870dbefa5115a34112749c3f5eebccffbd56da2f584ced5"
+        }
+      ]
+    },
+    {
+      "id": "BRAND-UBER",
+      "league": "BRAND",
+      "conference": "Service",
+      "region": "Uber",
+      "name": "",
+      "abbr": "UBER",
+      "aliases": [
+        "Uber Technologies",
+        "Uber Eats"
+      ],
+      "palette": [
+        "#010202",
+        "#808080",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Wordmark",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Uber_logo_2018.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Uber_logo_2018.svg",
+          "sourceSha256": "be2e4d01f03207b8da8ff584516e52c2c861e1070487caab185dabcf55d6b156",
+          "ops": {
+            "viewBox": "-37.076 -37.076 1001.057 395.929"
+          },
+          "showsName": true,
+          "path": "/logos/svg/brands/uber.svg",
+          "format": "svg",
+          "colors": [
+            "#010202"
+          ],
+          "sourcePalette": [
+            "#010202",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "f595f2b57c801d205be4e0869a0c97d5c76c5c2fd18cf5cc7a68c5bc26fe8567"
+        }
+      ]
+    },
+    {
+      "id": "BRAND-UBISOFT",
+      "league": "BRAND",
+      "conference": "Corporate",
+      "region": "Ubisoft",
+      "name": "",
+      "abbr": "UBISOFT",
+      "aliases": [
+        "Ubi Soft"
+      ],
+      "palette": [
+        "#000000",
+        "#808080",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Swirl",
+          "sourceUrl": "https://api.iconify.design/simple-icons/ubisoft.svg?color=%23000000",
+          "sourcePage": "https://icon-sets.iconify.design/simple-icons/ubisoft/",
+          "sourceSha256": "3108083bdcc3c55ee7ef813d2ececf3b401c3b979ed50ba1a60f5c365dfe18c7",
+          "ops": {
+            "viewBox": "-0.521 -0.96 25.042 25.92"
+          },
+          "path": "/logos/svg/brands/ubisoft.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "505c735ad5fbb4f852d18b1ce5c6e88bcaf9fa738d0af0d1399de28a8b7d8163"
         }
       ]
     },
@@ -2865,6 +6954,31 @@
             1
           ],
           "sha256": "f7da213f5600fbce4bffbb059ac337e4284e94ccd37f0e71a5c8cb9a0d84a1b1"
+        },
+        {
+          "id": "mono-cof",
+          "label": "One-color circle of friends",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/c/cf/Ubuntu_%282022%29_%28CoF%29_%28Print%29.svg/revision/latest?cb=20241001082951",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Ubuntu_(2022)_(CoF)_(Print).svg",
+          "sourceSha256": "473cada1d35ca01b5edaa0fe538366a87d8faa7c2b324650579d951b67a6f17a",
+          "ops": {
+            "viewBox": "-76.748 -76.799 2073.56 2000.885"
+          },
+          "path": "/logos/svg/brands/alternates/ubuntu-mono-cof.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#77216F",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "fd4d6e2b1d8a28d67bcd636dba6898637a6a2b9d297211b7d833c9654a90a0e5"
         }
       ]
     },
@@ -2979,6 +7093,306 @@
             2
           ],
           "sha256": "cbcb68215c8c7fc91017df0dca24d522c796d425655ac396a04ad8b76a63e832"
+        }
+      ]
+    },
+    {
+      "id": "BRAND-UNIVERSAL",
+      "league": "BRAND",
+      "conference": "Corporate",
+      "region": "Universal",
+      "name": "",
+      "abbr": "UNIVERSAL",
+      "aliases": [
+        "Universal Pictures",
+        "Universal Studios",
+        "NBCUniversal"
+      ],
+      "palette": [
+        "#000000",
+        "#808080",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Globe with rings",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/a/a1/Universal_Pictures_2012.svg/revision/latest?cb=20151125162456",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Universal_Pictures_2012.svg",
+          "sourceSha256": "186f05283dc69425a02f11bd06c778997d93f7662e8d2bd01df3e610e5c7d8e4",
+          "ops": {
+            "keepNodes": [
+              "0/0",
+              "0/1",
+              "0/2"
+            ],
+            "viewBox": "162.452 -15.692 403.942 423.672"
+          },
+          "path": "/logos/svg/brands/universal.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "0cdf0f5f3ed54d46a684ba2c4d41bfcd4ff7fdf4df445805211e1ff791689f2a"
+        }
+      ]
+    },
+    {
+      "id": "BRAND-UPS",
+      "league": "BRAND",
+      "conference": "Service",
+      "region": "UPS",
+      "name": "",
+      "abbr": "UPS",
+      "aliases": [
+        "United Parcel Service",
+        "Brown"
+      ],
+      "palette": [
+        "#301506",
+        "#FAB80A",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Shield wordmark",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/United_Parcel_Service_logo_2014.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:United_Parcel_Service_logo_2014.svg",
+          "sourceSha256": "3b07d40f0cadfc766b26b0bb282cf37ad7af87c132883e5dae5777d9cb9baa65",
+          "ops": {
+            "viewBox": "-1.989 -1.893 56.12 65.858"
+          },
+          "showsName": true,
+          "path": "/logos/svg/brands/ups.svg",
+          "format": "svg",
+          "colors": [
+            "#301506",
+            "#FAB80A"
+          ],
+          "sourcePalette": [
+            "#301506",
+            "#FAB80A",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "35f6e955c341a043e77ff033b5699df14c16cc5edd5e640e49868b297eddd0dc"
+        }
+      ]
+    },
+    {
+      "id": "BRAND-USPS",
+      "league": "BRAND",
+      "conference": "Service",
+      "region": "USPS",
+      "name": "",
+      "abbr": "USPS",
+      "aliases": [
+        "United States Postal Service",
+        "US Postal Service",
+        "Postal Service",
+        "Post Office",
+        "U.S. Mail"
+      ],
+      "palette": [
+        "#15569C",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Sonic eagle",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/9/9a/United_States_Postal_Service_%E2%80%93_1993_symbol.svg/revision/latest?cb=20241019194851",
+          "sourcePage": "https://logos.fandom.com/wiki/File:United_States_Postal_Service_–_1993_symbol.svg",
+          "sourceSha256": "f95e70ad71a919a0879f97c133674d0f5c8a953acb092c6b3bb8b1777d345e49",
+          "ops": {
+            "viewBox": "131.236 9.146 469.649 301.059"
+          },
+          "path": "/logos/svg/brands/usps.svg",
+          "format": "svg",
+          "colors": [
+            "#15569C"
+          ],
+          "sourcePalette": [
+            "#15569C",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "3f3712683a09945c1a59fb74e3f2a6538a88b2af7539e129681a5985f8579bb9"
+        }
+      ]
+    },
+    {
+      "id": "BRAND-VERIZON",
+      "league": "BRAND",
+      "conference": "Service",
+      "region": "Verizon",
+      "name": "",
+      "abbr": "VERIZON",
+      "aliases": [
+        "Verizon Wireless",
+        "Verizon Communications"
+      ],
+      "palette": [
+        "#F50A23",
+        "#F5FF1E",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Red V",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Verizon_2024_%28symbol%29.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Verizon_2024_(symbol).svg",
+          "sourceSha256": "25388dd317a3e632db2faf33fbf8da95187450df6b2fbb4bb105095a84f09dfd",
+          "ops": {
+            "viewBox": "-10.583 -10.583 285.75 261.241"
+          },
+          "path": "/logos/svg/brands/verizon.svg",
+          "format": "svg",
+          "colors": [
+            "#F50A23",
+            "#F5FF1E"
+          ],
+          "sourcePalette": [
+            "#F50A23",
+            "#F5FF1E",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "3506901b75344bd70f8c973a2b4dc837eb2d15fa72dc0d2ea0d824d882860815"
+        },
+        {
+          "id": "checkmark",
+          "label": "Checkmark",
+          "sourceUrl": "https://api.iconify.design/simple-icons/verizon.svg?color=%23CD040B",
+          "sourcePage": "https://icon-sets.iconify.design/simple-icons/verizon/",
+          "sourceSha256": "7e59b62e410beeb7d51b12a4b8b1d982390ae3fa18c07be3b23c6f2f6b642500",
+          "ops": {
+            "viewBox": "1.04 -0.96 21.92 25.92"
+          },
+          "path": "/logos/svg/brands/alternates/verizon-checkmark.svg",
+          "format": "svg",
+          "colors": [
+            "#CD040B"
+          ],
+          "sourcePalette": [
+            "#CD040B",
+            "#F5FF1E",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "b0b07d9c83065468238be95686a3ce733fbee3ce185e39780daf91a7bedea012"
+        }
+      ]
+    },
+    {
+      "id": "BRAND-VISA",
+      "league": "BRAND",
+      "conference": "Service",
+      "region": "Visa",
+      "name": "",
+      "abbr": "VISA",
+      "aliases": [
+        "Visa Inc.",
+        "Visa Card"
+      ],
+      "palette": [
+        "#1434CB",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Wordmark",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Visa_Inc._logo_%282021%E2%80%93present%29.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Visa_Inc._logo_(2021–present).svg",
+          "sourceSha256": "a9800215097d4cfa792c723af023dbcbec92cd656e0f95df62af21c78f48b060",
+          "ops": {
+            "viewBox": "-39.46 -39.46 1078.92 403.61"
+          },
+          "showsName": true,
+          "path": "/logos/svg/brands/visa.svg",
+          "format": "svg",
+          "colors": [
+            "#1434CB"
+          ],
+          "sourcePalette": [
+            "#1434CB",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "7e747f8b69bdcaeeeeaec12c8b6ba44baccd6b5c13531c2d806ad856d628518b"
+        }
+      ]
+    },
+    {
+      "id": "BRAND-WALGREENS",
+      "league": "BRAND",
+      "conference": "Store",
+      "region": "Walgreens",
+      "name": "",
+      "abbr": "WALGREENS",
+      "aliases": [
+        "Walgreen",
+        "Walgreens Pharmacy"
+      ],
+      "palette": [
+        "#E62324",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Script W",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/b/b0/Walgreens_%22W%22_2020.svg/revision/latest?cb=20210920210239",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Walgreens_\"W\"_2020.svg",
+          "sourceSha256": "cbd85087140fa8e6f441070e8601918c06d8b18e77371bc15c24613677855ac2",
+          "ops": {
+            "viewBox": "-10.583 -10.583 285.75 192.506"
+          },
+          "path": "/logos/svg/brands/walgreens.svg",
+          "format": "svg",
+          "colors": [
+            "#E62324"
+          ],
+          "sourcePalette": [
+            "#E62324",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "f85ab36622f5eae23cc051fe22caaeaa994e66e12738d5a83d2455888d3610a9"
         }
       ]
     },
@@ -3103,6 +7517,121 @@
       ]
     },
     {
+      "id": "BRAND-WELLS",
+      "league": "BRAND",
+      "conference": "Service",
+      "region": "Wells Fargo",
+      "name": "",
+      "abbr": "WELLS",
+      "aliases": [
+        "Wells Fargo Bank",
+        "WF"
+      ],
+      "palette": [
+        "#FBC308",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Stagecoach",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/6/68/Wells_Fargo_2019_Stagecoach_a.svg/revision/latest?cb=20260808185338",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Wells_Fargo_2019_Stagecoach_a.svg",
+          "sourceSha256": "0277999522c4bd633685c2875e492aa65bf0f4486058133fcde28be69654ff4b",
+          "ops": {
+            "viewBox": "-16.558 -16.558 447.065 121.983"
+          },
+          "path": "/logos/svg/brands/wells.svg",
+          "format": "svg",
+          "colors": [
+            "#FBC308"
+          ],
+          "sourcePalette": [
+            "#FBC308",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "dfa87cf83c0499257995b3643bb5d268d4043d820fd8f84b3598ed9f0c96e192"
+        },
+        {
+          "id": "wordmark",
+          "label": "Wordmark",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Wells_Fargo_Logo_%282020%29.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Wells_Fargo_Logo_(2020).svg",
+          "sourceSha256": "d0bb253e04de6972500ebb3ac645db4dda03e35a779a447e29225ef614bae74a",
+          "ops": {
+            "viewBox": "-3.175 -3.175 85.725 85.725"
+          },
+          "showsName": true,
+          "path": "/logos/svg/brands/alternates/wells-wordmark.svg",
+          "format": "svg",
+          "colors": [
+            "#DD1E25",
+            "#FEFEFE"
+          ],
+          "sourcePalette": [
+            "#DD1E25",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "fc500ed6d143c17ca260a36518834a70e134227a82342df190b7d6ed08b2eff6"
+        }
+      ]
+    },
+    {
+      "id": "BRAND-WHOLEFOODS",
+      "league": "BRAND",
+      "conference": "Store",
+      "region": "Whole Foods Market",
+      "name": "",
+      "abbr": "WHOLEFOODS",
+      "aliases": [
+        "Whole Foods",
+        "Whole Paycheck"
+      ],
+      "palette": [
+        "#006F46",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Green roundel wordmark",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/b/b7/Whole_Foods_Market_%282016%29_%28Circle%29.svg/revision/latest?cb=20260119224744",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Whole_Foods_Market_(2016)_(Circle).svg",
+          "sourceSha256": "cce96af4555bf2399914e0ccee9d3ca2c78fe9a9dbda4cd710c57911cce0891a",
+          "ops": {
+            "viewBox": "-10.595 -10.593 163.471 163.471"
+          },
+          "showsName": true,
+          "path": "/logos/svg/brands/wholefoods.svg",
+          "format": "svg",
+          "colors": [
+            "#006F46"
+          ],
+          "sourcePalette": [
+            "#006F46",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "d69a48597a9595d5df47e354b2f9c4df6ac93ebe2f4aabfeefcff11e0ca51d80"
+        }
+      ]
+    },
+    {
       "id": "BRAND-XBOX",
       "league": "BRAND",
       "conference": "Product",
@@ -3145,6 +7674,31 @@
             2
           ],
           "sha256": "86705bdbf0ce360e5754c394dc70a6c3d71f4542af31ded7a00c958928044620"
+        },
+        {
+          "id": "orb-2001",
+          "label": "Black X orb (2001)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/3/37/Xbox_%282001%29_%28Symbol%29_%28Print%29.svg/revision/latest?cb=20250114131343",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Xbox_(2001)_(Symbol)_(Print).svg",
+          "sourceSha256": "e6820e5d5d289b5844be0bd7e74a217eba0445283c029371f66036f41a8a111f",
+          "ops": {
+            "viewBox": "-14.659 -14.658 395.76 314.168"
+          },
+          "path": "/logos/svg/brands/alternates/xbox-orb-2001.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "1581c025575151e08e32415c989229872776b6eea3fe6f571d9b8863eb61343a"
         }
       ]
     },

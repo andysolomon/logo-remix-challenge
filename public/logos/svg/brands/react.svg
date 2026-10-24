@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="-10.873 -11.783 21.746 23.566" width="21.746" height="23.566">
+  <circle r="2" fill="#087ea4" />
+  <g stroke="#087ea4">
+    <ellipse rx="10" ry="4.5" />
+    <ellipse rx="10" ry="4.5" transform="rotate(60)" />
+    <ellipse rx="10" ry="4.5" transform="rotate(120)" />
+  </g>
+</svg>

@@ -1,7 +1,7 @@
 {
   "name": "logo-remix-challenge",
   "private": true,
-  "version": "0.45.0",
+  "version": "0.46.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -50,7 +50,6 @@
     "teams:nhl": "python3 scripts/build_brand_teams.py --league NHL",
     "logos:wnba": "python3 scripts/download_brand_logos.py --league WNBA",
     "teams:wnba": "python3 scripts/build_brand_teams.py --league WNBA",
-    "teams:education": "python3 scripts/build_education.py",
     "teams:education": "python3 scripts/build_education.py",
     "logos:landmarks": "python3 scripts/download_brand_logos.py --league LANDMARK",
     "teams:landmarks": "python3 scripts/build_brand_teams.py --league LANDMARK",

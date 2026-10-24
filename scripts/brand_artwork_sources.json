@@ -9436,5 +9436,346 @@
     "sourceSha256": "831ebb30404e77d495a295af33cdb91983d850d8b35b88564d81ecc67a7def6a",
     "ops": {},
     "showsName": true
+  },
+  {
+    "teamId": "LANDMARK-LIBERTY",
+    "id": "primary",
+    "label": "Silhouette",
+    "sourceUrl": "https://openclipart.org/download/312625/1545770176.svg",
+    "sourcePage": "https://openclipart.org/detail/312625/statue-of-liberty-with-pedestal-silhouette",
+    "sourceSha256": "0bc5d86123ab7d6653113f784d666650dd4075108a934d007c91cafa845b5bda"
+  },
+  {
+    "teamId": "LANDMARK-GOLDENGATE",
+    "id": "primary",
+    "label": "Silhouette",
+    "sourceUrl": "https://openclipart.org/download/315125/1549922106.svg",
+    "sourcePage": "https://openclipart.org/detail/315125/golden-gate-bridge-silhouette-2-by-3dman-eu",
+    "sourceSha256": "5b6680799dddfebe0466fbb68a1ed0083c7019cddb95187d3f0b1f8519401d75"
+  },
+  {
+    "teamId": "LANDMARK-NEEDLE",
+    "id": "primary",
+    "label": "Illustration",
+    "sourceUrl": "https://openclipart.org/download/317146/1553181540.svg",
+    "sourcePage": "https://openclipart.org/detail/317146/space-needle",
+    "sourceSha256": "4c3154c348862619b4e6e4cbb00e5ef7507732dcd89add433ecfed3d20249e52"
+  },
+  {
+    "teamId": "LANDMARK-ARCH",
+    "id": "primary",
+    "label": "Silhouette",
+    "sourceUrl": "https://openclipart.org/download/927/Gerald-G-St.-Louis-Gateway-Arch.svg",
+    "sourcePage": "https://openclipart.org/detail/927/st-louis-gateway-arch",
+    "sourceSha256": "1675f6d28ba2346a69e9d2779b345cc36c599f7cf95f529323c9a214b1b44cd9"
+  },
+  {
+    "teamId": "LANDMARK-REDEEMER",
+    "id": "primary",
+    "label": "Silhouette",
+    "sourceUrl": "https://openclipart.org/download/280167/Christ-The-Redeemer-Statue-Silhouette.svg",
+    "sourcePage": "https://openclipart.org/detail/280167/christ-the-redeemer-statue-silhouette",
+    "sourceSha256": "549258bf7ed2e41f6bec2972fb2cbab9a38f6ef6e4e13371d36c147343d26008"
+  },
+  {
+    "teamId": "LANDMARK-WHITEHOUSE",
+    "id": "primary",
+    "label": "Line art",
+    "sourceUrl": "https://openclipart.org/download/285542/white-house.svg",
+    "sourcePage": "https://openclipart.org/detail/285542/the-nut-house",
+    "sourceSha256": "95bda61d775c37d132ab20f474a1c20aa9933497b70b18588ab5652f9249fe31"
+  },
+  {
+    "teamId": "LANDMARK-BROOKLYN",
+    "id": "primary",
+    "label": "Silhouette",
+    "sourceUrl": "https://openclipart.org/download/315155/1549923654.svg",
+    "sourcePage": "https://openclipart.org/detail/315155/brooklyn-bridge-silhouette",
+    "sourceSha256": "50e23277d7bc55e57c41178fc5c9bec26d53d5424832f3d51b0a24f303b1cb79"
+  },
+  {
+    "teamId": "LANDMARK-RUSHMORE",
+    "id": "primary",
+    "label": "Line art",
+    "sourceUrl": "https://openclipart.org/download/284719/mt-rushmore.svg",
+    "sourcePage": "https://openclipart.org/detail/284719/mt-rushmore",
+    "sourceSha256": "f737dd427b7c22dfd7cb92d734603eb769d969574e78ff0b0f9cbd111d7a3f40",
+    "ops": {
+      "viewBox": "16 14 1010 690",
+      "clipToViewBox": true
+    }
+  },
+  {
+    "teamId": "LANDMARK-EIFFEL",
+    "id": "primary",
+    "label": "Silhouette",
+    "sourceUrl": "https://openclipart.org/download/328267/detailed-eiffel-tower-silhouette.svg",
+    "sourcePage": "https://openclipart.org/detail/328267/detailed-eiffel-tower-silhouette",
+    "sourceSha256": "91965b1cd68bd98fda2b3b5c78edf369776316268fd66a438733fb8aeb3cd631"
+  },
+  {
+    "teamId": "LANDMARK-BIGBEN",
+    "id": "primary",
+    "label": "Illustration",
+    "sourceUrl": "https://openclipart.org/download/284969/big-ben.svg",
+    "sourcePage": "https://openclipart.org/detail/284969/in-honor-of-big-ben",
+    "sourceSha256": "cc2257c5443a86b1bee8b662001da747b4af5c9d39c1db68f79346edbe41e3fb"
+  },
+  {
+    "teamId": "LANDMARK-TOWERBRIDGE",
+    "id": "primary",
+    "label": "Silhouette",
+    "sourceUrl": "https://openclipart.org/download/315116/1549921571.svg",
+    "sourcePage": "https://openclipart.org/detail/315116/london-tower-bridge-silhouette-by-maja7777",
+    "sourceSha256": "a52cdab55b36cbb900d3d117b523505e1b06b1029c304bf3b147718d751dad91"
+  },
+  {
+    "teamId": "LANDMARK-COLOSSEUM",
+    "id": "primary",
+    "label": "Illustration",
+    "sourceUrl": "https://openclipart.org/download/295717/1517580661.svg",
+    "sourcePage": "https://openclipart.org/detail/295717/roma",
+    "sourceSha256": "5a7301928188163b4f562175683dd4a027ce6712dc81f482fbf718a74ed0cf95",
+    "ops": {
+      "removeNodes": [
+        "3/1"
+      ]
+    }
+  },
+  {
+    "teamId": "LANDMARK-PISA",
+    "id": "primary",
+    "label": "Silhouette",
+    "sourceUrl": "https://openclipart.org/download/317629/1553893467.svg",
+    "sourcePage": "https://openclipart.org/detail/317629/leaning-tower-of-pisa-silhouette-by-maja7777",
+    "sourceSha256": "2ac43f1d200de0690a31227db4ec798a5fdc2c12d4b100960f724889175f41da"
+  },
+  {
+    "teamId": "LANDMARK-STONEHENGE",
+    "id": "primary",
+    "label": "Silhouette",
+    "sourceUrl": "https://openclipart.org/download/223210/Stonehenge4.svg",
+    "sourcePage": "https://openclipart.org/detail/223210/stonehenge-silhouette",
+    "sourceSha256": "1a771d79315384bd97ea2b28147b092eb76590195ae49af528fd56dbc1ad5862"
+  },
+  {
+    "teamId": "LANDMARK-ARC",
+    "id": "primary",
+    "label": "Illustration",
+    "sourceUrl": "https://openclipart.org/download/311552/1544522774.svg",
+    "sourcePage": "https://openclipart.org/detail/311552/arc-de-triomphe",
+    "sourceSha256": "afa12bbbaf8d95d0c860abd0992c9b0cc927bbf8b8120c44610c491ca8ef2f50"
+  },
+  {
+    "teamId": "LANDMARK-BRANDENBURG",
+    "id": "primary",
+    "label": "Silhouette",
+    "sourceUrl": "https://openclipart.org/download/266448/brandenburggate.svg",
+    "sourcePage": "https://openclipart.org/detail/266448/brandenburg-gate",
+    "sourceSha256": "058a8683fafde218dd109ecb656cd4a0a728667d717fb27e28b78c9caeb3ea2b"
+  },
+  {
+    "teamId": "LANDMARK-PARTHENON",
+    "id": "primary",
+    "label": "Line art",
+    "sourceUrl": "https://openclipart.org/download/285282/parthenon.svg",
+    "sourcePage": "https://openclipart.org/detail/285282/greek-parthenon",
+    "sourceSha256": "bf1515097ce4696ae1666a9e22ec92b1dfaa40626fda374a6e71a4443f4b5caa"
+  },
+  {
+    "teamId": "LANDMARK-NEUSCHWANSTEIN",
+    "id": "primary",
+    "label": "Illustration",
+    "sourceUrl": "https://openclipart.org/download/23067/gurica-Neuschwanstein-Castle.svg",
+    "sourcePage": "https://openclipart.org/detail/23067/neuschwanstein-castle",
+    "sourceSha256": "1a0c6d9bf24ef2a5e0439bad26ba9080179a748966b11bbec8e21d6f2cfccbd5"
+  },
+  {
+    "teamId": "LANDMARK-STBASIL",
+    "id": "primary",
+    "label": "Silhouette",
+    "sourceUrl": "https://openclipart.org/download/308025/1539372982.svg",
+    "sourcePage": "https://openclipart.org/detail/308025/saint-basils-cathedral-silhouette",
+    "sourceSha256": "e74e0efd2fab3f3a6fbde15c0aa400b7c1d1718945f5a67b82723c03a661301c"
+  },
+  {
+    "teamId": "LANDMARK-ATOMIUM",
+    "id": "primary",
+    "label": "Illustration",
+    "sourceUrl": "https://openclipart.org/download/7648/BenBois-Atomium-Belgium.svg",
+    "sourcePage": "https://openclipart.org/detail/7648/atomium-belgium",
+    "sourceSha256": "1e22919adcd821881681a5d02fb0a66f54c3f937b3a1db2228635fb47dfe5994"
+  },
+  {
+    "teamId": "LANDMARK-WINDMILL",
+    "id": "primary",
+    "label": "Silhouette",
+    "sourceUrl": "https://openclipart.org/download/288589/Windmill-Silhouette-2.svg",
+    "sourcePage": "https://openclipart.org/detail/288589/windmill-silhouette-2",
+    "sourceSha256": "bd9ea8bed78956fbd83f20e36818d905dd2680be4b696f90f310023bf923db85"
+  },
+  {
+    "teamId": "LANDMARK-MONTSTMICHEL",
+    "id": "primary",
+    "label": "Silhouette",
+    "sourceUrl": "https://openclipart.org/download/311069/1543528284.svg",
+    "sourcePage": "https://openclipart.org/detail/311069/mont-saint-michel-silhouette-2",
+    "sourceSha256": "3e6b095a8344ed20e35c346cddebbd16fabd6518664f56d2e442c4e1530fb6db"
+  },
+  {
+    "teamId": "LANDMARK-TAJ",
+    "id": "primary",
+    "label": "Silhouette",
+    "sourceUrl": "https://openclipart.org/download/162985/1317917164.svg",
+    "sourcePage": "https://openclipart.org/detail/162985/taj-mahal",
+    "sourceSha256": "0f8e559508575560b6dd5ff19bf0efac6206b2a59ee7fb12334692c2e9f6691b"
+  },
+  {
+    "teamId": "LANDMARK-GREATWALL",
+    "id": "primary",
+    "label": "Illustration",
+    "sourceUrl": "https://openclipart.org/download/285283/great-wall.svg",
+    "sourcePage": "https://openclipart.org/detail/285283/great-wall-of-china",
+    "sourceSha256": "361f90b60b374a408616518f8bd36524c457d9a7fc43bdbbe8b68c111778e844"
+  },
+  {
+    "teamId": "LANDMARK-PETRONAS",
+    "id": "primary",
+    "label": "Illustration",
+    "sourceUrl": "https://openclipart.org/download/221033/klcc.svg",
+    "sourcePage": "https://openclipart.org/detail/221033/petronas-twin-towers-silhouette",
+    "sourceSha256": "c8ce65ecee15c55504d2c2702cd9766d2a5cc433e41eec29454329d59f6a680f"
+  },
+  {
+    "teamId": "LANDMARK-ANGKOR",
+    "id": "primary",
+    "label": "Illustration",
+    "sourceUrl": "https://openclipart.org/download/248599/AngkorWat.svg",
+    "sourcePage": "https://openclipart.org/detail/248599/angkor-wat",
+    "sourceSha256": "7fb901d84499c8561d56adfd046926484ea8d4e071b1102e2e05b0aa15034839"
+  },
+  {
+    "teamId": "LANDMARK-FUJI",
+    "id": "primary",
+    "label": "Illustration",
+    "sourceUrl": "https://openclipart.org/download/327899/isolated-fuji-hokusai-simplified.svg",
+    "sourcePage": "https://openclipart.org/detail/327899/isolated-woodblock-mount-fuji-simplified",
+    "sourceSha256": "bc1827e10ee524732b7277c451cfde30fd30f807a735aae959420f68af04a455",
+    "ops": {
+      "removeNodes": [
+        "3/0/0/0/0",
+        "3/0/0/0/1",
+        "3/0/0/0/2"
+      ]
+    }
+  },
+  {
+    "teamId": "LANDMARK-TORII",
+    "id": "primary",
+    "label": "Silhouette",
+    "sourceUrl": "https://openclipart.org/download/314875/1549491218.svg",
+    "sourcePage": "https://openclipart.org/detail/314875/japanese-torii-gate-silhouette",
+    "sourceSha256": "af610d50187182b444c92ef0cd4ffa7ce9f6b465e66e7b85443a96d0028157c7"
+  },
+  {
+    "teamId": "LANDMARK-OPERA",
+    "id": "primary",
+    "label": "Line art",
+    "sourceUrl": "https://openclipart.org/download/333800/sydneyoperahouse-pd.svg",
+    "sourcePage": "https://openclipart.org/detail/333800/sydney-opera-house",
+    "sourceSha256": "88212176c24c37a67a15ae25d4b26302cf0ef8635235ec6c30cc13086fd50979"
+  },
+  {
+    "teamId": "LANDMARK-HARBOUR",
+    "id": "primary",
+    "label": "Silhouette",
+    "sourceUrl": "https://openclipart.org/download/313259/1546976661.svg",
+    "sourcePage": "https://openclipart.org/detail/313259/sydney-harbor-bridge-detailed-silhouette",
+    "sourceSha256": "9736bf65c2c274660788f8989ac67a646e4e613cc507ca41843abf443079abd4"
+  },
+  {
+    "teamId": "LANDMARK-MOAI",
+    "id": "primary",
+    "label": "Silhouette",
+    "sourceUrl": "https://openclipart.org/download/253282/Moai-Statues-Silhouette.svg",
+    "sourcePage": "https://openclipart.org/detail/253282/moai-statues-silhouette",
+    "sourceSha256": "7b411f062259f9588ea6eb0cc14d46505c3524f28f6c877f68d9909dad151c83"
+  },
+  {
+    "teamId": "LANDMARK-MARINABAY",
+    "id": "primary",
+    "label": "Illustration",
+    "sourceUrl": "https://openclipart.org/download/316610/1552388059.svg",
+    "sourcePage": "https://openclipart.org/detail/316610/marina-bay-sands",
+    "sourceSha256": "8054c24f806c82457dd53f079e3b46c25f9f830503932951f0a523d6e4ad7f2d"
+  },
+  {
+    "teamId": "LANDMARK-PEARL",
+    "id": "primary",
+    "label": "Silhouette",
+    "sourceUrl": "https://openclipart.org/download/313554/1547385900.svg",
+    "sourcePage": "https://openclipart.org/detail/313554/oriental-pearl-tower",
+    "sourceSha256": "28625538a7d0d892c03b746d280169ab9c6f879653a19d4e437d20d3939e83af"
+  },
+  {
+    "teamId": "LANDMARK-HIMEJI",
+    "id": "primary",
+    "label": "Illustration",
+    "sourceUrl": "https://openclipart.org/download/270120/japanesecastle.svg",
+    "sourcePage": "https://openclipart.org/detail/270120/japanese-castle",
+    "sourceSha256": "7581fc2839d84f47773559b95771f3ffbe18543ca8bb73c0dde0ee501f255d31"
+  },
+  {
+    "teamId": "LANDMARK-MERLION",
+    "id": "primary",
+    "label": "Illustration",
+    "sourceUrl": "https://openclipart.org/download/314381/1548752264.svg",
+    "sourcePage": "https://openclipart.org/detail/314381/merlion",
+    "sourceSha256": "a6a96abc8204831dcda976425ea177a2498d30a610df2fd7266a04485ce8aa45"
+  },
+  {
+    "teamId": "LANDMARK-EVEREST",
+    "id": "primary",
+    "label": "Illustration",
+    "sourceUrl": "https://openclipart.org/download/215778/Mount-Everest.svg",
+    "sourcePage": "https://openclipart.org/detail/215778/mount-everest",
+    "sourceSha256": "ad6802a15b64c238a3fc4873ed521ea0ac96a987d71fa8aa60e671952fec6603",
+    "ops": {
+      "removeNodes": [
+        "3/0/0"
+      ]
+    }
+  },
+  {
+    "teamId": "LANDMARK-PYRAMIDS",
+    "id": "primary",
+    "label": "Illustration",
+    "sourceUrl": "https://openclipart.org/download/278748/Egyptian-pyramids.svg",
+    "sourcePage": "https://openclipart.org/detail/278748/egyptian-pyramids",
+    "sourceSha256": "160e2570311294101a89aefbcd0fea3aa5d1fe1826ff462a8608188e0c46f620"
+  },
+  {
+    "teamId": "LANDMARK-SPHINX",
+    "id": "primary",
+    "label": "Illustration",
+    "sourceUrl": "https://openclipart.org/download/328553/sphinx-of-giza.svg",
+    "sourcePage": "https://openclipart.org/detail/328553/sphinx-of-giza",
+    "sourceSha256": "d08efd27f06af65c099d2e57537595f18e0ae5e58e387558783758b4acc7ce9b"
+  },
+  {
+    "teamId": "LANDMARK-BURJ",
+    "id": "primary",
+    "label": "Silhouette",
+    "sourceUrl": "https://openclipart.org/download/275637/BurjKhalifa.svg",
+    "sourcePage": "https://openclipart.org/detail/275637/burj-khalifa-silhouette",
+    "sourceSha256": "99ac9b1142a4a997b2e58a116abc42e60d7d6d0534b81dc027ea58594b632352"
+  },
+  {
+    "teamId": "LANDMARK-SKYTREE",
+    "id": "primary",
+    "label": "Silhouette",
+    "sourceUrl": "https://openclipart.org/download/313553/1547383891.svg",
+    "sourcePage": "https://openclipart.org/detail/313553/tokyo-skytree-silhouette",
+    "sourceSha256": "e6a759533df2859728b5b67401352939596544bde6898c8321925fbe49735f30"
   }
 ]

@@ -29,7 +29,7 @@ Alternates now number 61 for apps, 43 for channels and 28 for clothing. 41 went 
 ## Validation
 
 - `npm run logos:apps|tv|clothing` reuses every checked-in asset offline (a forbidden-fetch check passes), and all eight brand builders leave `teams.json` byte-for-byte unchanged.
-- Full suite: 188 passed, 1 skipped (the optional Potrace test), 0 failed. `npm run build` passes with Vite's standard >500 KB bundle advisory.
+- Full suite: 189 passed, 1 skipped (the optional Potrace test), 0 failed. `npm run build` passes with Vite's standard >500 KB bundle advisory.
 - Playwright Chromium, 1024×1366 with touch: CLOTHING → Footwear shows 7 tiles; Crocs picked and remixed in Los Angeles Lakers colors.
 - Playwright Chromium, 390×844 with touch, dark mode: APPS → Productivity shows 12 tiles and TV → International shows 11 (Sports is next to it); no page-wide horizontal overflow, no page errors and no failed requests.
 

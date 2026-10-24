@@ -27,9 +27,9 @@ describe('MLB and restaurant collections', () => {
     expect(new Set(TEAMS.map((t) => t.id)).size).toBe(TEAMS.length)
   })
 
-  test('all 50 restaurants are reachable through categories and punctuation-friendly search', () => {
-    expect(food).toHaveLength(50)
-    expect(new Set(food.map((t) => fullName(t))).size).toBe(50)
+  test('all 93 restaurants are reachable through categories and punctuation-friendly search', () => {
+    expect(food).toHaveLength(93)
+    expect(new Set(food.map((t) => fullName(t))).size).toBe(93)
     expect(LEAGUES.FOOD.label).toBe('RESTAURANTS')
     for (const category of LEAGUES.FOOD.conferences) {
       expect(filterTeams('FOOD', category, '').length).toBeGreaterThan(0)
@@ -37,7 +37,7 @@ describe('MLB and restaurant collections', () => {
     expect(filterTeams('FOOD', 'All', 'chickfila')[0].id).toBe('FOOD-CFA')
     expect(filterTeams('FOOD', 'All', 'mcdonalds')[0].id).toBe('FOOD-MCD')
     expect(filterTeams('FOOD', 'Chicken', 'Burger King')).toHaveLength(0)
-    expect(filterTeams('FOOD', 'Pizza', '').map((t) => t.id).sort()).toEqual(['FOOD-DOM', 'FOOD-LC', 'FOOD-PAPA', 'FOOD-PH'])
+    expect(filterTeams('FOOD', 'Pizza', '').map((t) => t.id).sort()).toEqual(['FOOD-CEC', 'FOOD-CPK', 'FOOD-DOM', 'FOOD-LC', 'FOOD-MARCOS', 'FOOD-PAPA', 'FOOD-PH', 'FOOD-PM'])
   })
 
   test('brand names, MLB names and their aliases work in grading and autocomplete', () => {
@@ -56,7 +56,7 @@ describe('MLB and restaurant collections', () => {
   test('random decks mix MLB, food and other sports, persist, and show meaningful hints', () => {
     expect(ALL_POOL_IDS).toContain('MLB')
     expect(ALL_POOL_IDS).toContain('Fast Food')
-    expect(poolTeams(['MLB', 'Fast Food'])).toHaveLength(80)
+    expect(poolTeams(['MLB', 'Fast Food'])).toHaveLength(123)
     // MLB teams and chains are logo-only: only NFL, NBA and college palettes color a round.
     expect(colorPoolTeams(['MLB', 'Fast Food'])).toEqual([])
     expect(randomDeck({ rounds: 20, logoPools: ['MLB'], colorPools: ['MLB', 'Fast Food'], guess: 'both', hints: true })).toEqual([])
@@ -109,7 +109,7 @@ sys.path.insert(0, 'scripts')
 import build_extra_teams as extras, build_brand_teams as brands, build_nba_teams as nba, build_teams as college, build_hs_teams as hs
 root = Path.cwd()
 original = Path('src/lib/teams.json').read_text()
-kept = ('MLB', 'SOCCER', 'FOOD', 'BRAND', 'FLAG', 'APP', 'TV', 'CAR', 'LUX', 'CLOTH')
+kept = ('MLB', 'SOCCER', 'FOOD', 'BRAND', 'FLAG', 'APP', 'TV', 'CAR', 'LUX', 'CLOTH', 'CHAR')
 wanted = [t for t in json.loads(original)['teams'] if t['league'] in kept]
 with tempfile.TemporaryDirectory(dir=root) as tmp:
     target = Path(tmp) / 'teams.json'
@@ -121,7 +121,7 @@ with tempfile.TemporaryDirectory(dir=root) as tmp:
         actual = [t for t in json.loads(target.read_text())['teams'] if t['league'] in kept]
         assert actual == wanted
     target.write_text(original)
-    for league in ('FOOD', 'BRAND', 'FLAG', 'APP', 'TV', 'CAR', 'LUX', 'CLOTH'):
+    for league in ('FOOD', 'BRAND', 'FLAG', 'APP', 'TV', 'CAR', 'LUX', 'CLOTH', 'CHAR'):
         sys.argv = ['builder', '--league', league]
         brands.main()
     assert target.read_text() == original, 'brand rebuild changed data, order or formatting'

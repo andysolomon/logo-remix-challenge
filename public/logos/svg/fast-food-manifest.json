@@ -192,6 +192,31 @@
           ],
           "unusedSourceSlots": [],
           "sha256": "eaf179e107f9f20253df090a83ca686eb99bc80996c233ada3707020daec5677"
+        },
+        {
+          "id": "pretzel-halo",
+          "label": "Pretzel halo (2023)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/2/29/Auntie_Anne%27s_2023_symbol.svg/revision/latest?cb=20260816054555",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Auntie_Anne's_2023_symbol.svg",
+          "sourceSha256": "07dbaef513d54764ccee27a54217c635df042c8fe881bc4694ac36a3cbaeca4a",
+          "ops": {
+            "viewBox": "-10.57 -10.57 272.494 285.394"
+          },
+          "path": "/logos/svg/fast-food/alternates/auntie-pretzel-halo.svg",
+          "format": "svg",
+          "colors": [
+            "#FF9E13"
+          ],
+          "sourcePalette": [
+            "#FF9E13",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "1a2c50395887d52219becda5b8fa464c25ef1f2f866a0bf7958f2121ff70a3ae"
         }
       ]
     },
@@ -308,6 +333,37 @@
           ],
           "unusedSourceSlots": [],
           "sha256": "34e0944dee08c1f7cbaaf7177876ee4fe2e0a69a66e2bc6105be7198b347cfb0"
+        },
+        {
+          "id": "monogram-bun",
+          "label": "Monogram bun (1999)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/a/a9/Burger_King_shortened.svg/revision/latest?cb=20220428130352",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Burger_King_shortened.svg",
+          "sourceSha256": "7250f1abea5dc4758b377312bbd50ebc7449fcef010f16aea2594038cc60b20d",
+          "ops": {
+            "viewBox": "-117.7 -117.175 424.387 424.387"
+          },
+          "path": "/logos/svg/fast-food/alternates/bk-monogram-bun.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#B20637",
+            "#F79F19",
+            "#01538A",
+            "#267BB0",
+            "#005387",
+            "#FCBD32",
+            "#F69F1D",
+            "#DE3547",
+            "#B31E3B"
+          ],
+          "sourcePalette": [
+            "#C11E3E",
+            "#F8A923",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "58358c51bfef9b4d51f99910ffb9a814e40d7508a5884581dfbdf2cee10a1d60"
         }
       ]
     },
@@ -350,6 +406,50 @@
             2
           ],
           "sha256": "4823795e14e07cce50483e6d70fe6744a85402cdb9eff3d32c47637789bc88dd"
+        }
+      ]
+    },
+    {
+      "id": "FOOD-BOSTON",
+      "league": "FOOD",
+      "conference": "Casual Dining",
+      "region": "Boston Market",
+      "name": "",
+      "abbr": "BOSTON",
+      "aliases": [
+        "Boston Chicken"
+      ],
+      "palette": [
+        "#000000",
+        "#ED1B2D",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Wordmark oval",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/c/c8/Boston_Market_%282018%29.svg/revision/latest?cb=20260401215207",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Boston_Market_(2018).svg",
+          "sourceSha256": "63d39709d90c543c43ce4fe2ba217fcc1107ce3321b1ed14ee97d974ff87f391",
+          "ops": {
+            "viewBox": "-10.162 -10.162 274.374 180.112"
+          },
+          "showsName": true,
+          "path": "/logos/svg/fast-food/boston.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#FFFFFF",
+            "#ED1B2D",
+            "#231F20"
+          ],
+          "sourcePalette": [
+            "#121010",
+            "#ED1B2D",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "dcb490452767ee6006f9e1ddf7750e4f8a0f5b70b8afcf570197bb39abb5a129"
         }
       ]
     },
@@ -508,6 +608,54 @@
       ]
     },
     {
+      "id": "FOOD-CAPTAIND",
+      "league": "FOOD",
+      "conference": "Casual Dining",
+      "region": "Captain D's",
+      "name": "",
+      "abbr": "CAPTAIND",
+      "aliases": [
+        "Captain Ds",
+        "Captain D"
+      ],
+      "palette": [
+        "#F26A36",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Fish",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/b/bf/Captain_D%27s_-_2006.svg/revision/latest?cb=20240703055003",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Captain_D's_-_2006.svg",
+          "sourceSha256": "b32d76ab187c57c930a84561a4d012b967d593df1deaf79f5a04b72c1291f31b",
+          "ops": {
+            "keepNodes": [
+              "0",
+              "13"
+            ],
+            "viewBox": "19.768 64.136 367.58 174.248"
+          },
+          "path": "/logos/svg/fast-food/captaind.svg",
+          "format": "svg",
+          "colors": [
+            "#F26A36"
+          ],
+          "sourcePalette": [
+            "#F26A36",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "5dc5077af98802e0270c64c30a6be59a03c2545e67c398bb87ea8e109d8bb913"
+        }
+      ]
+    },
+    {
       "id": "FOOD-CARL",
       "league": "FOOD",
       "conference": "Burgers",
@@ -558,6 +706,176 @@
             2
           ],
           "sha256": "3ab0be641d334cbf65733cc2a3f08766efee975069736293404da94b6b8e865f"
+        }
+      ]
+    },
+    {
+      "id": "FOOD-CARVEL",
+      "league": "FOOD",
+      "conference": "Coffee & Treats",
+      "region": "Carvel",
+      "name": "",
+      "abbr": "CARVEL",
+      "aliases": [
+        "Carvel Ice Cream"
+      ],
+      "palette": [
+        "#EE2737",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Wordmark with cone",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/7/70/Carvel_2023.svg/revision/latest?cb=20250625171712",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Carvel_2023.svg",
+          "sourceSha256": "dac7589bdc194d0ee1fde8931f4098f59249855552b77da033cbd28c1afffb8f",
+          "ops": {
+            "viewBox": "-7.978 -7.978 215.397 103.002"
+          },
+          "showsName": true,
+          "path": "/logos/svg/fast-food/carvel.svg",
+          "format": "svg",
+          "colors": [
+            "#EE2737"
+          ],
+          "sourcePalette": [
+            "#EE2737",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "7eba5f10e66483c85de510882dc838764f1cc628318a76e95a320af0c1bb0f49"
+        }
+      ]
+    },
+    {
+      "id": "FOOD-CB",
+      "league": "FOOD",
+      "conference": "Casual Dining",
+      "region": "Cracker Barrel",
+      "name": "",
+      "abbr": "CB",
+      "aliases": [
+        "Cracker Barrel Old Country Store"
+      ],
+      "palette": [
+        "#FF9901",
+        "#3E0E0A",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Wordmark",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Cracker_Barrel_Logo_%282%29.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Cracker_Barrel_Logo_(2).svg",
+          "sourceSha256": "078844e5c330840c22292ff54558dd3c37047264f6ba90c3df1eaaf9ee4df7de",
+          "ops": {
+            "viewBox": "-79.645 -79.641 2150.297 1373.621"
+          },
+          "showsName": true,
+          "path": "/logos/svg/fast-food/cb.svg",
+          "format": "svg",
+          "colors": [
+            "#FF9901",
+            "#3E0E0A"
+          ],
+          "sourcePalette": [
+            "#FF9901",
+            "#3E0E0A",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "c43408324c3ee56064bcec4874161e80fcec15297e77b509f9cb4e20291529c9"
+        }
+      ]
+    },
+    {
+      "id": "FOOD-CEC",
+      "league": "FOOD",
+      "conference": "Pizza",
+      "region": "Chuck E. Cheese",
+      "name": "",
+      "abbr": "CEC",
+      "aliases": [
+        "Chuck E Cheese",
+        "Chuck E. Cheese's",
+        "Chuck E Cheeses",
+        "ShowBiz Pizza"
+      ],
+      "palette": [
+        "#8B827A",
+        "#E7004C",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Mouse head circle",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/5/51/Chuck-E-Cheese_new_logo.svg/revision/latest?cb=20260728072055",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Chuck-E-Cheese_new_logo.svg",
+          "sourceSha256": "a4c8de62a2958c0a44f0d2dd6a917158aba9371bff63e3bb3b866931366992da",
+          "ops": {
+            "removeNodes": [
+              "20"
+            ],
+            "viewBox": "-3.298 -3.298 89.052 86.596"
+          },
+          "path": "/logos/svg/fast-food/cec.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#8B827A",
+            "#E7004C",
+            "#D5D1CA",
+            "#020101",
+            "#E5C0B1",
+            "#70A22A",
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#7E9252",
+            "#E7004C",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "1d361ceee9e23df04dd4a837c34b28f3a837731c5c135584f86dd857035b03af"
+        },
+        {
+          "id": "mascot",
+          "label": "Full mascot",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/a/ac/CEC_Herndon.svg/revision/latest?cb=20240601042000",
+          "sourcePage": "https://logos.fandom.com/wiki/File:CEC_Herndon.svg",
+          "sourceSha256": "fd107b81fbe5357bfadd65e5244bc48e07aae8a7c3f5d20acd3b4a9c546114ee",
+          "ops": {
+            "viewBox": "-13.448 -13.448 363.086 319.631"
+          },
+          "path": "/logos/svg/fast-food/alternates/cec-mascot.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#FFFFFF",
+            "#B9B9B9",
+            "#E60042",
+            "#F69D85",
+            "#61BB46",
+            "#FAE700",
+            "#32C864"
+          ],
+          "sourcePalette": [
+            "#61BB46",
+            "#E60042",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "e1cf40d9a22240a387abdabd343a8610e6e6b66a3f55ecde3b11001a223c0d7b"
         }
       ]
     },
@@ -714,6 +1032,50 @@
       ]
     },
     {
+      "id": "FOOD-CHEESE",
+      "league": "FOOD",
+      "conference": "Casual Dining",
+      "region": "The Cheesecake Factory",
+      "name": "",
+      "abbr": "CHEESE",
+      "aliases": [
+        "Cheesecake Factory"
+      ],
+      "palette": [
+        "#FDE488",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Wordmark",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Cheesecake_Factory_logo.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:The_Cheesecake_Factory_logo.svg",
+          "sourceSha256": "6e2b4634c241dbe49bcfca63fc930124273dd4d18b4f79bbd43682670ec44b2c",
+          "ops": {
+            "viewBox": "-5.144 -5.144 152.379 35.51"
+          },
+          "showsName": true,
+          "path": "/logos/svg/fast-food/cheese.svg",
+          "format": "svg",
+          "colors": [
+            "#FDE488"
+          ],
+          "sourcePalette": [
+            "#FDE488",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "30ac18d6a3fe83b974a27eed5d34ae5156df0f7add66cd26c12f211df43308e7"
+        }
+      ]
+    },
+    {
       "id": "FOOD-CHILIS",
       "league": "FOOD",
       "conference": "Casual Dining",
@@ -804,6 +1166,59 @@
       ]
     },
     {
+      "id": "FOOD-CHURCH",
+      "league": "FOOD",
+      "conference": "Chicken",
+      "region": "Church's Texas Chicken",
+      "name": "",
+      "abbr": "CHURCH",
+      "aliases": [
+        "Church's Chicken",
+        "Churchs",
+        "Church's"
+      ],
+      "palette": [
+        "#F6B318",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Star roundel",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Churchs-logo.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Churchs-logo.svg",
+          "sourceSha256": "a293e39e72f692a36cad9cb135ad687247e341c30e2651832a0b64ee77287ab4",
+          "ops": {
+            "keepNodes": [
+              "0",
+              "1/22",
+              "1/23",
+              "1/24",
+              "1/25",
+              "1/26"
+            ],
+            "viewBox": "-0.031 -1.711 382.273 403.414"
+          },
+          "path": "/logos/svg/fast-food/church.svg",
+          "format": "svg",
+          "colors": [
+            "#F6B318"
+          ],
+          "sourcePalette": [
+            "#F6B318",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "2a83258a37d00861179016cd8097cc0fb0da05003ed5699c2911bcce32aba942"
+        }
+      ]
+    },
+    {
       "id": "FOOD-CINNABON",
       "league": "FOOD",
       "conference": "Coffee & Treats",
@@ -841,6 +1256,121 @@
           ],
           "unusedSourceSlots": [],
           "sha256": "edf536222774ae6975c1605ce0edf486e088cce78c9a256ac77d7f56f03d08e1"
+        }
+      ]
+    },
+    {
+      "id": "FOOD-CPK",
+      "league": "FOOD",
+      "conference": "Pizza",
+      "region": "California Pizza Kitchen",
+      "name": "",
+      "abbr": "CPK",
+      "aliases": [
+        "CPK"
+      ],
+      "palette": [
+        "#FFCC00",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Palm diamond",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/6/61/California_Pizza_Kitchen_2012.svg/revision/latest?cb=20210212151756",
+          "sourcePage": "https://logos.fandom.com/wiki/File:California_Pizza_Kitchen_2012.svg",
+          "sourceSha256": "362b276d5b3afa182c25b7c9cda64e9e1abf7c3495d59a940624fcf29b3d271a",
+          "ops": {
+            "keepNodes": [
+              "1",
+              "3/1"
+            ],
+            "viewBox": "131.847 -15.987 431.643 431.625"
+          },
+          "path": "/logos/svg/fast-food/cpk.svg",
+          "format": "svg",
+          "colors": [
+            "#FFCC00",
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#FFCC00",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "4d514e7d83cad6d3c18578623612ea94434bf1ebb19e8d3043690d05b3bda204"
+        }
+      ]
+    },
+    {
+      "id": "FOOD-CRUMBL",
+      "league": "FOOD",
+      "conference": "Coffee & Treats",
+      "region": "Crumbl",
+      "name": "",
+      "abbr": "CRUMBL",
+      "aliases": [
+        "Crumbl Cookies"
+      ],
+      "palette": [
+        "#000000",
+        "#808080",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Chef-hat cookie",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/5/59/Crumbl_Cookies_2018_icon.svg/revision/latest?cb=20230809222708",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Crumbl_Cookies_2018_icon.svg",
+          "sourceSha256": "3545134aca3876ba53801104a5d0a3ad2c45814ef6ae56ad3f055621bff85b77",
+          "ops": {
+            "viewBox": "-44.497 -44.497 1088.995 1201.431"
+          },
+          "path": "/logos/svg/fast-food/crumbl.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "f3b4b94f267e254d3b01ba4a95a6750da66be0ec054d8f80bc8c6975064d1bf7"
+        },
+        {
+          "id": "circle",
+          "label": "Black circle icon",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/3/3f/Crumbl_Cookies_2018_icon_circle.svg/revision/latest?cb=20230809222724",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Crumbl_Cookies_2018_icon_circle.svg",
+          "sourceSha256": "c39115acb6a5774950d27a50f5a9459c52f9133d39c60909a261f5151003ef34",
+          "ops": {
+            "viewBox": "-40 -40 1080 1080"
+          },
+          "path": "/logos/svg/fast-food/alternates/crumbl-circle.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "251d637027a97179a195ad1ca1a18808dae51c1610c9aa5dde4e53764fa50db8"
         }
       ]
     },
@@ -885,6 +1415,61 @@
             2
           ],
           "sha256": "e24cc11385722f84bd6abb7b995e4cd99a574b7b4e0f230095a82221e3de1cce"
+        }
+      ]
+    },
+    {
+      "id": "FOOD-DB",
+      "league": "FOOD",
+      "conference": "Casual Dining",
+      "region": "Dave & Buster's",
+      "name": "",
+      "abbr": "DB",
+      "aliases": [
+        "Dave and Busters",
+        "Dave & Busters",
+        "D&B"
+      ],
+      "palette": [
+        "#040606",
+        "#E28129",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "D&B roundel",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/DaveAndBusters.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:DaveAndBusters.svg",
+          "sourceSha256": "762f885484e887a06379f3e43a5ba90b3a21e50431933b8bb013a507004e6819",
+          "ops": {
+            "keepNodes": [
+              "1",
+              "3/0",
+              "3/1",
+              "3/2",
+              "3/18",
+              "3/19",
+              "3/24"
+            ],
+            "viewBox": "-7.483 -7.483 201.703 202.054"
+          },
+          "path": "/logos/svg/fast-food/db.svg",
+          "format": "svg",
+          "colors": [
+            "#040606",
+            "#E28129",
+            "#00558F"
+          ],
+          "sourcePalette": [
+            "#022E4A",
+            "#E28129",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "700965575328dbc11061413595a4c573a71f2b02ea028cfef0dfe7f50b463129"
         }
       ]
     },
@@ -1046,6 +1631,56 @@
           ],
           "unusedSourceSlots": [],
           "sha256": "1d951918a79de8527a0aa3d2f15c140302d26f06b7d6c3e60dc6eddd09dde812"
+        },
+        {
+          "id": "domino-1969",
+          "label": "Red tile (1969)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/6/66/Domino%27s_Pizza_Logo_1969_%281%29.svg/revision/latest?cb=20190823045717",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Domino's_Pizza_Logo_1969_(1).svg",
+          "sourceSha256": "0bf53f1404e095290ef92d13bb501ad0578703b0d0636bfa91fc061f9520eea3",
+          "ops": {
+            "viewBox": "-10.617 -10.62 156.24 286.74"
+          },
+          "path": "/logos/svg/fast-food/alternates/dom-domino-1969.svg",
+          "format": "svg",
+          "colors": [
+            "#E1251B",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#E1251B",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "eae1452ef0d388d4f00f0a567394a4c996b9e2d4e8670492f91fea1bccf66ed4"
+        },
+        {
+          "id": "mono-domino",
+          "label": "One-color tile (2025)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/8/8e/Domino%27s_2025_print_domino.svg/revision/latest?cb=20251011005655",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Domino's_2025_print_domino.svg",
+          "sourceSha256": "d7fe60a0707cb972d945987b4f90886aa7a0e344b50c49e166c809522d7daa48",
+          "ops": {
+            "viewBox": "-37.84 -37.84 1021.681 1021.681"
+          },
+          "path": "/logos/svg/fast-food/alternates/dom-mono-domino.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#FF0000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "a171a4e6ebb6605fa2dfa6f78f8d0b1839852e2b52cc9a97d8c4db3eff343936"
         }
       ]
     },
@@ -1176,6 +1811,190 @@
       ]
     },
     {
+      "id": "FOOD-DUTCH",
+      "league": "FOOD",
+      "conference": "Coffee & Treats",
+      "region": "Dutch Bros",
+      "name": "",
+      "abbr": "DUTCH",
+      "aliases": [
+        "Dutch Brothers",
+        "Dutch Bros Coffee",
+        "Dutch Bros."
+      ],
+      "palette": [
+        "#006098",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Windmill",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/0/0f/Dutch_Bros_2021_Windmill.svg/revision/latest?cb=20221019165340",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Dutch_Bros_2021_Windmill.svg",
+          "sourceSha256": "5cbb3ac148e536bf4e2a8c1a0331b155a440265f48e5947b33ec97719c1fc726",
+          "ops": {
+            "keepNodes": [
+              "1",
+              "3"
+            ],
+            "viewBox": "-8.584 -0.566 174.991 231.761"
+          },
+          "path": "/logos/svg/fast-food/dutch.svg",
+          "format": "svg",
+          "colors": [
+            "#006098"
+          ],
+          "sourcePalette": [
+            "#006098",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "18025cfece87c287af08e44ca6ca47154ac6f8130c6921d75cadad4a3ae064e3"
+        }
+      ]
+    },
+    {
+      "id": "FOOD-EPL",
+      "league": "FOOD",
+      "conference": "Chicken",
+      "region": "El Pollo Loco",
+      "name": "",
+      "abbr": "EPL",
+      "aliases": [
+        "Pollo Loco"
+      ],
+      "palette": [
+        "#FDC525",
+        "#EC410E",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Wordmark badge",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/4/46/El_Pollo_Loco_%281%29.svg/revision/latest?cb=20190316150000",
+          "sourcePage": "https://logos.fandom.com/wiki/File:El_Pollo_Loco_(1).svg",
+          "sourceSha256": "e2d9d1a7b16af7878250d0f6be7d7bd86af9ad501da11a4654dd6be6d20d05ab",
+          "ops": {
+            "viewBox": "-251.045 -249.751 6802.313 6662.141"
+          },
+          "showsName": true,
+          "path": "/logos/svg/fast-food/epl.svg",
+          "format": "svg",
+          "colors": [
+            "#FDC525",
+            "#EC410E"
+          ],
+          "sourcePalette": [
+            "#FDC525",
+            "#EC410E",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "01c84dc4b4a6e5bcddbe84dc2fe4138337d0304f4ad677e29bcdc06c110ee4ec"
+        }
+      ]
+    },
+    {
+      "id": "FOOD-FAT",
+      "league": "FOOD",
+      "conference": "Burgers",
+      "region": "Fatburger",
+      "name": "",
+      "abbr": "FAT",
+      "aliases": [
+        "Fat Burger"
+      ],
+      "palette": [
+        "#000000",
+        "#FFF797",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Wordmark badge",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Fatburger_logo.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Fatburger_logo.svg",
+          "sourceSha256": "6a759f6b2ecbc8d998df17c159634e5828638c3abbce2064880ed6a70b63ceaf",
+          "ops": {
+            "viewBox": "2.946 13.875 396.277 307.294"
+          },
+          "showsName": true,
+          "path": "/logos/svg/fast-food/fat.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#FFF797",
+            "#E03A3E",
+            "#D73648",
+            "#1FBBB0"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#FFF797",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "6efe34e481a910bebe0aa59562684c6ce98eda3336f16da72a41c236eebd89ac"
+        }
+      ]
+    },
+    {
+      "id": "FOOD-FIREHOUSE",
+      "league": "FOOD",
+      "conference": "Sandwiches",
+      "region": "Firehouse Subs",
+      "name": "",
+      "abbr": "FIREHOUSE",
+      "aliases": [
+        "Firehouse"
+      ],
+      "palette": [
+        "#C40000",
+        "#E0A52E",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Wordmark",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/2/21/Firehouse_subs_2024.svg/revision/latest?cb=20260423124403",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Firehouse_subs_2024.svg",
+          "sourceSha256": "50707e620cf3f31a3ad07b94fdb0583e317b49982accbb646972323bbdee9fe1",
+          "ops": {
+            "viewBox": "-5.449 -5.449 147.128 46.538"
+          },
+          "showsName": true,
+          "path": "/logos/svg/fast-food/firehouse.svg",
+          "format": "svg",
+          "colors": [
+            "#C40000",
+            "#F8F0E4",
+            "#E0A52E",
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#C40000",
+            "#E0A52E",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "7ec6ae19678c7208fb054f5697689c1d71089a5485125ff15ff004c819c044a1"
+        }
+      ]
+    },
+    {
       "id": "FOOD-FIVE",
       "league": "FOOD",
       "conference": "Burgers",
@@ -1214,6 +2033,144 @@
             2
           ],
           "sha256": "b890c57a941b16db8d6fcf1cb7aad3bc6306d1fa75258c3e721165d5831f2604"
+        }
+      ]
+    },
+    {
+      "id": "FOOD-FREDDYS",
+      "league": "FOOD",
+      "conference": "Burgers",
+      "region": "Freddy's",
+      "name": "",
+      "abbr": "FREDDYS",
+      "aliases": [
+        "Freddy's Frozen Custard & Steakburgers",
+        "Freddys"
+      ],
+      "palette": [
+        "#DF002C",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Wordmark",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Freddy%27s_Frozen_Custard_%26_Steakburgers_logo.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Freddy's_Frozen_Custard_&_Steakburgers_logo.svg",
+          "sourceSha256": "5123f505047f6482479efdc52c51251a771f4f4a9424213ed1dfbe5914b627f7",
+          "ops": {
+            "viewBox": "-2.39 -2.39 71.676 30.642"
+          },
+          "showsName": true,
+          "path": "/logos/svg/fast-food/freddys.svg",
+          "format": "svg",
+          "colors": [
+            "#DF002C",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#DF002C",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "c94972266b17c6858e75703be284c1857a96d37b7ba49d454895dccb297a6ecc"
+        }
+      ]
+    },
+    {
+      "id": "FOOD-GC",
+      "league": "FOOD",
+      "conference": "Casual Dining",
+      "region": "Golden Corral",
+      "name": "",
+      "abbr": "GC",
+      "aliases": [],
+      "palette": [
+        "#D81F2A",
+        "#F3E2A7",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Wordmark",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Golden_Corral_logo.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Golden_Corral_logo.svg",
+          "sourceSha256": "55337dfc1b5a6b8b3a8a1b758e089d7fc4f09bf7ad8b5789089ef517c76a0579",
+          "ops": {
+            "viewBox": "-183.349 -183.349 4950.42 3256.775"
+          },
+          "showsName": true,
+          "path": "/logos/svg/fast-food/gc.svg",
+          "format": "svg",
+          "colors": [
+            "#D81F2A",
+            "#F3E2A7",
+            "#FEC85A"
+          ],
+          "sourcePalette": [
+            "#D81F2A",
+            "#F8D580",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "c3b2c07a39827ca5411e53e3bf3d6902809c8fde38955759068ab34442efe4ac"
+        }
+      ]
+    },
+    {
+      "id": "FOOD-HABIT",
+      "league": "FOOD",
+      "conference": "Burgers",
+      "region": "The Habit Burger Grill",
+      "name": "",
+      "abbr": "HABIT",
+      "aliases": [
+        "Habit Burger",
+        "The Habit",
+        "Habit"
+      ],
+      "palette": [
+        "#000000",
+        "#B1212C",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Wordmark",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/8/83/The_Habit_Burger_Grill.svg/revision/latest?cb=20240211161848",
+          "sourcePage": "https://logos.fandom.com/wiki/File:The_Habit_Burger_Grill.svg",
+          "sourceSha256": "b40561014a89d54c44544a71a8ca59e3d5950793e8280cac7359502294d9f97c",
+          "ops": {
+            "viewBox": "-10.583 -10.583 285.75 218.493"
+          },
+          "showsName": true,
+          "path": "/logos/svg/fast-food/habit.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#B1212C",
+            "#F2AC20",
+            "#12110F",
+            "#F2B82F",
+            "#151211"
+          ],
+          "sourcePalette": [
+            "#0D0C0B",
+            "#B1212C",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "ed6a034cb596fc0252d6a30f290bd111e46ad257b52c2fb42bccf663e3535981"
         }
       ]
     },
@@ -1263,6 +2220,146 @@
             2
           ],
           "sha256": "ce12af36c70d791988288549cd25cbb74a1707d7c490fbc0e08eb311b2aac51d"
+        }
+      ]
+    },
+    {
+      "id": "FOOD-HD",
+      "league": "FOOD",
+      "conference": "Coffee & Treats",
+      "region": "Häagen-Dazs",
+      "name": "",
+      "abbr": "HD",
+      "aliases": [
+        "Haagen-Dazs",
+        "Haagen Dazs"
+      ],
+      "palette": [
+        "#6C172F",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Wordmark",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/H%C3%A4agen-Dazs_Logo.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Häagen-Dazs_Logo.svg",
+          "sourceSha256": "7530efaaa56788ddcf7e38a70add4435c643d14eeaf091553afbf5f1c2ec8079",
+          "ops": {
+            "viewBox": "2.474 2.553 201.053 102.894"
+          },
+          "showsName": true,
+          "path": "/logos/svg/fast-food/hd.svg",
+          "format": "svg",
+          "colors": [
+            "#6C172F"
+          ],
+          "sourcePalette": [
+            "#6C172F",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "7fe5fa39f32a5f56422f867704b8396a1389f3104bda47d12108289226e436d9"
+        }
+      ]
+    },
+    {
+      "id": "FOOD-HOOT",
+      "league": "FOOD",
+      "conference": "Casual Dining",
+      "region": "Hooters",
+      "name": "",
+      "abbr": "HOOT",
+      "aliases": [],
+      "palette": [
+        "#DAD6CC",
+        "#672D00",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Owl",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/2/25/Hooters_logo_2013.svg/revision/latest?cb=20180903164325",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Hooters_logo_2013.svg",
+          "sourceSha256": "94f52bf5dd5f76836f17940e73f9e782d6823f0476e27f75711070c9d9358df4",
+          "ops": {
+            "removeNodes": [
+              "3",
+              "4",
+              "34",
+              "35",
+              "36"
+            ],
+            "viewBox": "28.06 -11.028 173.428 297.756"
+          },
+          "path": "/logos/svg/fast-food/hoot.svg",
+          "format": "svg",
+          "colors": [
+            "#DAD6CC",
+            "#CDC3B9",
+            "#672D00",
+            "#93775F",
+            "#FFFFFF",
+            "#FF5000"
+          ],
+          "sourcePalette": [
+            "#D4CCC2",
+            "#672D00",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "d7a204af7e0661f0950f22c0248ed7526ab2c19a3407c5d30f22d22931fbc8ae"
+        }
+      ]
+    },
+    {
+      "id": "FOOD-HRC",
+      "league": "FOOD",
+      "conference": "Casual Dining",
+      "region": "Hard Rock Cafe",
+      "name": "",
+      "abbr": "HRC",
+      "aliases": [
+        "Hard Rock",
+        "Hard Rock Café"
+      ],
+      "palette": [
+        "#010101",
+        "#808080",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Wordmark roundel",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/f/f0/Hard_Rock_Cafe_%28Print_2%29.svg/revision/latest?cb=20171203120322",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Hard_Rock_Cafe_(Print_2).svg",
+          "sourceSha256": "2ff0ea3adbd188680b1b1eecf60403df3023e4212677dc026c6cf5009bace94d",
+          "ops": {
+            "viewBox": "-40 -40 1079.999 684.787"
+          },
+          "showsName": true,
+          "path": "/logos/svg/fast-food/hrc.svg",
+          "format": "svg",
+          "colors": [
+            "#010101"
+          ],
+          "sourcePalette": [
+            "#010101",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "ecfbde178aa289334c4097b61d11e94f2ad4ede335f4ab344d3c37ea8cb96c94"
         }
       ]
     },
@@ -1511,6 +2608,151 @@
       ]
     },
     {
+      "id": "FOOD-JJ",
+      "league": "FOOD",
+      "conference": "Sandwiches",
+      "region": "Jimmy John's",
+      "name": "",
+      "abbr": "JJ",
+      "aliases": [
+        "Jimmy Johns"
+      ],
+      "palette": [
+        "#000000",
+        "#CF0A2C",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "JJ roundel",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/0/08/Jimmy_John%27s.svg/revision/latest?cb=20191207101226",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Jimmy_John's.svg",
+          "sourceSha256": "4b94d745480d006faf585a89008641bc1490c49aff0e304274420b78e01a8ee5",
+          "ops": {
+            "keepNodes": [
+              "0",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6"
+            ],
+            "viewBox": "-40 -40 1080 1080"
+          },
+          "path": "/logos/svg/fast-food/jj.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#FFFFFF",
+            "#CF0A2C"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#CF0A2C",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "e62de0a907823074fce3dc9c3e99c54f6a6227492c51854c4e327986f74469b6"
+        }
+      ]
+    },
+    {
+      "id": "FOOD-JM",
+      "league": "FOOD",
+      "conference": "Sandwiches",
+      "region": "Jersey Mike's",
+      "name": "",
+      "abbr": "JM",
+      "aliases": [
+        "Jersey Mikes",
+        "Jersey Mike's Subs"
+      ],
+      "palette": [
+        "#EE3227",
+        "#134A7C",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Wordmark oval",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Jersey_Mike%27s_logo.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Jersey_Mike's_logo.svg",
+          "sourceSha256": "3c67216775d8c2d68adf43b167a7a8df3099a42b3ffaf73daa9fca295b395eff",
+          "ops": {
+            "viewBox": "-13.809 -13.809 372.83 278.465"
+          },
+          "showsName": true,
+          "path": "/logos/svg/fast-food/jm.svg",
+          "format": "svg",
+          "colors": [
+            "#EE3227",
+            "#FFFFFF",
+            "#134A7C"
+          ],
+          "sourcePalette": [
+            "#EE3227",
+            "#134A7C",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "99622438cfad705944b966fe792aa155ebead6420cadbaeac5b436fb36dcfe4e"
+        }
+      ]
+    },
+    {
+      "id": "FOOD-JOLLI",
+      "league": "FOOD",
+      "conference": "Chicken",
+      "region": "Jollibee",
+      "name": "",
+      "abbr": "JOLLI",
+      "aliases": [
+        "Jollibee Foods"
+      ],
+      "palette": [
+        "#231F20",
+        "#E5173F",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Red bee",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/f/f0/Jollibee_%282011%29.svg/revision/latest?cb=20231024194501",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Jollibee_(2011).svg",
+          "sourceSha256": "20cd54315db2666283967ae764682cd51bf7a36a203c4855e4379c7989ef08f2",
+          "ops": {
+            "keepNodes": [
+              "0",
+              "1",
+              "2/0",
+              "2/1",
+              "2/2",
+              "3"
+            ],
+            "viewBox": "130.945 -7.899 379.133 440.066"
+          },
+          "path": "/logos/svg/fast-food/jolli.svg",
+          "format": "svg",
+          "colors": [
+            "#231F20",
+            "#FFFFFF",
+            "#E5173F",
+            "#221E1F"
+          ],
+          "sourcePalette": [
+            "#221E20",
+            "#E5173F",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "5ca90121ecf233885d3d73390935e7427dc7f9d4f0a69e857f0944cc718217c1"
+        }
+      ]
+    },
+    {
       "id": "FOOD-KFC",
       "league": "FOOD",
       "conference": "Chicken",
@@ -1580,6 +2822,31 @@
           ],
           "unusedSourceSlots": [],
           "sha256": "1821c6f59fb432ce5af116ef4fe4492723dcc50d9a3ff91032cb549d8368bf60"
+        },
+        {
+          "id": "colonel-1978",
+          "label": "Colonel portrait (1978)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/2/2f/KFC_-_1978h.svg/revision/latest?cb=20250830075852",
+          "sourcePage": "https://logos.fandom.com/wiki/File:KFC_-_1978h.svg",
+          "sourceSha256": "f13544b6d297d59a06d43adb92d197a8aba50b178bf897e15f400573a8f151c6",
+          "ops": {
+            "viewBox": "-33.509 -33.509 589.753 904.738"
+          },
+          "path": "/logos/svg/fast-food/alternates/kfc-colonel-1978.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "47a83ee3384a7592db82818feecfef6641c670db19fc21fa81b1678cbed64d7e"
         }
       ]
     },
@@ -1675,6 +2942,56 @@
       ]
     },
     {
+      "id": "FOOD-LJS",
+      "league": "FOOD",
+      "conference": "Casual Dining",
+      "region": "Long John Silver's",
+      "name": "",
+      "abbr": "LJS",
+      "aliases": [
+        "Long John Silvers",
+        "LJS"
+      ],
+      "palette": [
+        "#000000",
+        "#D59001",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Golden fish",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/0/07/Long_John_Silver%27s_2017.svg/revision/latest?cb=20220416023448",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Long_John_Silver's_2017.svg",
+          "sourceSha256": "52424314801d2198d2cd3bf562e6e764a6885ceab14953fbb83e0fd3aa6019af",
+          "ops": {
+            "keepNodes": [
+              "0",
+              "2/0/0/16",
+              "2/0/0/17"
+            ],
+            "viewBox": "458.81 -64.312 1736.4 732.268"
+          },
+          "path": "/logos/svg/fast-food/ljs.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#D59001",
+            "#F5D34B"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#E5B226",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "243cb612613190f655343023d6ce7627f120bfec99f172a058d5f51265fd0bd9"
+        }
+      ]
+    },
+    {
       "id": "FOOD-LOBSTER",
       "league": "FOOD",
       "conference": "Casual Dining",
@@ -1716,6 +3033,105 @@
             2
           ],
           "sha256": "658ee2e50a35f83cba6d295525e7d01a650902932d2e4be6e234baa166f391da"
+        }
+      ]
+    },
+    {
+      "id": "FOOD-LONGHORN",
+      "league": "FOOD",
+      "conference": "Casual Dining",
+      "region": "LongHorn Steakhouse",
+      "name": "",
+      "abbr": "LONGHORN",
+      "aliases": [
+        "Longhorn",
+        "Longhorn Steak House"
+      ],
+      "palette": [
+        "#000000",
+        "#808080",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Steer head",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/2/22/Longhorn-steakhouse-old.svg/revision/latest?cb=20260518064413",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Longhorn-steakhouse-old.svg",
+          "sourceSha256": "d9129c9d771670fe1a7b11f23842532688fe3f830cbd1415836e7b04ff48f216",
+          "ops": {
+            "keepNodes": [
+              "2/0",
+              "2/1"
+            ],
+            "viewBox": "5.374 4.057 84.558 63.764"
+          },
+          "path": "/logos/svg/fast-food/longhorn.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "c2725489aafdd5b980e47ab1f85b5a931dfce3c40436dfaed4eae6decde045ca"
+        }
+      ]
+    },
+    {
+      "id": "FOOD-MARCOS",
+      "league": "FOOD",
+      "conference": "Pizza",
+      "region": "Marco's Pizza",
+      "name": "",
+      "abbr": "MARCOS",
+      "aliases": [
+        "Marcos Pizza",
+        "Marcos"
+      ],
+      "palette": [
+        "#000000",
+        "#FCB515",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "M with pizza",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/b/bb/Marco%27s_Pizza_2018.svg/revision/latest?cb=20251225013150",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Marco's_Pizza_2018.svg",
+          "sourceSha256": "68b800a9b240d1a82e8dba4e82698ed79e434f717c4155dbb2347de398108062",
+          "ops": {
+            "keepNodes": [
+              "0",
+              "1/0/0",
+              "1/0/1"
+            ],
+            "clipToViewBox": true,
+            "viewBox": "-79.637 -79.639 2150.261 1419.695"
+          },
+          "path": "/logos/svg/fast-food/marcos.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#FCB515",
+            "#D80322"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#FCB515",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "b8a9eb66d1fe78173f89b000f5c0df89cdf8d0cdf3f5f17b46cc2ed5a812a0b1"
         }
       ]
     },
@@ -1785,6 +3201,149 @@
             2
           ],
           "sha256": "13a3682e3744674497584a68bb6f208bc6ce3eb3c4e024893d0476df7bc69a12"
+        }
+      ]
+    },
+    {
+      "id": "FOOD-MOES",
+      "league": "FOOD",
+      "conference": "Mexican & Asian",
+      "region": "Moe's Southwest Grill",
+      "name": "",
+      "abbr": "MOES",
+      "aliases": [
+        "Moe's",
+        "Moes"
+      ],
+      "palette": [
+        "#42BBC6",
+        "#494343",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Wordmark diamond",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/c/ca/Moe%27s_Southwest_Grill_2018.svg/revision/latest?cb=20231118122942",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Moe's_Southwest_Grill_2018.svg",
+          "sourceSha256": "b774d8325e69b4b4ee32d26ddf1a8ced2832c720e156cb3d64a85c72b2cbc467",
+          "ops": {
+            "viewBox": "-6.328 -6.328 170.845 115.502"
+          },
+          "showsName": true,
+          "path": "/logos/svg/fast-food/moes.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#42BBC6",
+            "#494343",
+            "#D43C16"
+          ],
+          "sourcePalette": [
+            "#42BBC6",
+            "#8E402C",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "2acd04086b957fc9ec68558bcbd75ad6b5032fb7daa7616c8b45fd7309aee154"
+        }
+      ]
+    },
+    {
+      "id": "FOOD-NANDOS",
+      "league": "FOOD",
+      "conference": "Chicken",
+      "region": "Nando's",
+      "name": "",
+      "abbr": "NANDOS",
+      "aliases": [
+        "Nandos",
+        "Nando's PERi-PERi"
+      ],
+      "palette": [
+        "#020203",
+        "#CE1326",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Barcelos rooster",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/c/c5/Nandos_logo.svg/revision/latest?cb=20211216174848",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Nandos_logo.svg",
+          "sourceSha256": "436e49855bf663729265a5a89ad5c23a57b59a8e551cde311c29b959e2d0abb8",
+          "ops": {
+            "keepNodes": [
+              "0",
+              "2",
+              "3"
+            ],
+            "viewBox": "-7.52 -7.527 138.236 203.259"
+          },
+          "path": "/logos/svg/fast-food/nandos.svg",
+          "format": "svg",
+          "colors": [
+            "#020203",
+            "#CE1326"
+          ],
+          "sourcePalette": [
+            "#020203",
+            "#CE1326",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "97a4590cdcd0e97f434734d86165edaba90c288419c2637f4976033523edd1e9"
+        }
+      ]
+    },
+    {
+      "id": "FOOD-NOODLES",
+      "league": "FOOD",
+      "conference": "Mexican & Asian",
+      "region": "Noodles & Company",
+      "name": "",
+      "abbr": "NOODLES",
+      "aliases": [
+        "Noodles and Company",
+        "Noodles & Co",
+        "Noodles"
+      ],
+      "palette": [
+        "#C33D32",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Noodle swirl",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/5/5f/Noodles_%26_Company_2019.svg/revision/latest?cb=20211112160642",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Noodles_&_Company_2019.svg",
+          "sourceSha256": "48d324df9f8a6bea8e2b12eb6cdaeb4e3f10d47ce8423a17bc5d77fc3f514593",
+          "ops": {
+            "keepNodes": [
+              "1",
+              "4/0/0"
+            ],
+            "viewBox": "-9.697 -0.298 261.809 222.672"
+          },
+          "path": "/logos/svg/fast-food/noodles.svg",
+          "format": "svg",
+          "colors": [
+            "#C33D32"
+          ],
+          "sourcePalette": [
+            "#C33D32",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "9c4a5197d541f40c56bdac88382c3296c64ff16f6d2b7afd70d5cc5ce8e83c6f"
         }
       ]
     },
@@ -2027,6 +3586,53 @@
       ]
     },
     {
+      "id": "FOOD-PFC",
+      "league": "FOOD",
+      "conference": "Mexican & Asian",
+      "region": "P.F. Chang's",
+      "name": "",
+      "abbr": "PFC",
+      "aliases": [
+        "PF Changs",
+        "P.F. Chang's China Bistro",
+        "PF Chang's"
+      ],
+      "palette": [
+        "#8A1F03",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Wordmark",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/c/cf/PF_Chang%27s.svg/revision/latest?cb=20190908175540",
+          "sourcePage": "https://logos.fandom.com/wiki/File:PF_Chang's.svg",
+          "sourceSha256": "4a1d5933980784d9f31fddd98292418cc73110d6f2c3dc327d1f4231c65fadc2",
+          "ops": {
+            "viewBox": "-8.918 -8.918 321.78 79.336"
+          },
+          "showsName": true,
+          "path": "/logos/svg/fast-food/pfc.svg",
+          "format": "svg",
+          "colors": [
+            "#8A1F03",
+            "#891F02"
+          ],
+          "sourcePalette": [
+            "#8A1F02",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "1e47ae8f9b94ef9c9da588597e4c9b4075360ebec2555306bb36caf6e961274e"
+        }
+      ]
+    },
+    {
       "id": "FOOD-PH",
       "league": "FOOD",
       "conference": "Pizza",
@@ -2103,6 +3709,51 @@
       ]
     },
     {
+      "id": "FOOD-PM",
+      "league": "FOOD",
+      "conference": "Pizza",
+      "region": "Papa Murphy's",
+      "name": "",
+      "abbr": "PM",
+      "aliases": [
+        "Papa Murphys",
+        "Papa Murphy's Take 'N' Bake"
+      ],
+      "palette": [
+        "#E3B120",
+        "#01673E",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Wordmark",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/6/6d/Papa_Murphy%27s_2010.svg/revision/latest?cb=20211120153616",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Papa_Murphy's_2010.svg",
+          "sourceSha256": "67d6078c38b00d46d40a91ca0375bbcd7a60d36bb1ee7746ed549d5315b0780c",
+          "ops": {
+            "viewBox": "-45.705 -45.704 1234.031 425.202"
+          },
+          "showsName": true,
+          "path": "/logos/svg/fast-food/pm.svg",
+          "format": "svg",
+          "colors": [
+            "#E3B120",
+            "#01673E",
+            "#D40126",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#DC5923",
+            "#01673E",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "af3b74fd1150e2647c0bac4bdd892f66db5a7ec658b4db0d49c36b3358f11f48"
+        }
+      ]
+    },
+    {
       "id": "FOOD-POP",
       "league": "FOOD",
       "conference": "Chicken",
@@ -2167,6 +3818,51 @@
       ]
     },
     {
+      "id": "FOOD-QDOBA",
+      "league": "FOOD",
+      "conference": "Mexican & Asian",
+      "region": "Qdoba",
+      "name": "",
+      "abbr": "QDOBA",
+      "aliases": [
+        "Qdoba Mexican Eats",
+        "Qdoba Mexican Grill"
+      ],
+      "palette": [
+        "#000000",
+        "#EF9600",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Wordmark",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/7/72/Qdoba_Mexican_Eats.svg/revision/latest?cb=20230807160014",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Qdoba_Mexican_Eats.svg",
+          "sourceSha256": "9e32a4d30f015f6c0bb3c9cb22bcd48fd2651e80fb9fd75fc5833feb96c9d90c",
+          "ops": {
+            "viewBox": "-23.442 -23.442 632.925 165.073"
+          },
+          "showsName": true,
+          "path": "/logos/svg/fast-food/qdoba.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#EF9600"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#EF9600",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "7709568a5d13b9a8fa853a4845b988b9e7ceabc1b25303945ef1e871395fe4e0"
+        }
+      ]
+    },
+    {
       "id": "FOOD-QUIZNOS",
       "league": "FOOD",
       "conference": "Sandwiches",
@@ -2216,6 +3912,134 @@
       ]
     },
     {
+      "id": "FOOD-RAIN",
+      "league": "FOOD",
+      "conference": "Casual Dining",
+      "region": "Rainforest Cafe",
+      "name": "",
+      "abbr": "RAIN",
+      "aliases": [
+        "Rainforest Café"
+      ],
+      "palette": [
+        "#000000",
+        "#E91B3A",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Wordmark",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/3/36/Rainforest-Cafe.svg/revision/latest?cb=20250603202211",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Rainforest-Cafe.svg",
+          "sourceSha256": "437999fd96d4e32a9a9277f23b80f166b5b72938c22efa2ab17767f9a41a1db8",
+          "ops": {
+            "viewBox": "-16.001 -16 432.001 226.435"
+          },
+          "showsName": true,
+          "path": "/logos/svg/fast-food/rain.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#FFFFFF",
+            "#E91B3A"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#E91B3A",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "773eae3e180f052280fd62fbf7fba6b60b0ff28b8dccbd79fd6a9e24524789a6"
+        }
+      ]
+    },
+    {
+      "id": "FOOD-ROBIN",
+      "league": "FOOD",
+      "conference": "Casual Dining",
+      "region": "Red Robin",
+      "name": "",
+      "abbr": "ROBIN",
+      "aliases": [
+        "Red Robin Gourmet Burgers"
+      ],
+      "palette": [
+        "#EC1D24",
+        "#8B0304",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "RR monogram",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/d/d8/Red_robin_icon.svg/revision/latest?cb=20210613052348",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Red_robin_icon.svg",
+          "sourceSha256": "5c737bb661ce102b6d0380a83076bb79605a8e7dcb3d58b0c8174f6e7e741bcb",
+          "ops": {
+            "viewBox": "-1.136 -1.636 44.169 43.2"
+          },
+          "path": "/logos/svg/fast-food/robin.svg",
+          "format": "svg",
+          "colors": [
+            "#EC1D24",
+            "#8B0304"
+          ],
+          "sourcePalette": [
+            "#EC1D24",
+            "#8B0304",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "996b9008ddddb0c67fe3b5c4d6b4c35a63e817d84384789f8b03fe07c36bbfb4"
+        }
+      ]
+    },
+    {
+      "id": "FOOD-RUBY",
+      "league": "FOOD",
+      "conference": "Casual Dining",
+      "region": "Ruby Tuesday",
+      "name": "",
+      "abbr": "RUBY",
+      "aliases": [],
+      "palette": [
+        "#D31145",
+        "#231F20",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Wordmark",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/3/3a/Ruby_Tuesday_2006.svg/revision/latest?cb=20231005062427",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Ruby_Tuesday_2006.svg",
+          "sourceSha256": "5b2a0cdeb3ccb504c153386e2be988f29b841966d1849c2812dcac0cbaaa21c3",
+          "ops": {
+            "viewBox": "-16.996 -16.996 458.892 91.992"
+          },
+          "showsName": true,
+          "path": "/logos/svg/fast-food/ruby.svg",
+          "format": "svg",
+          "colors": [
+            "#D31145",
+            "#231F20"
+          ],
+          "sourcePalette": [
+            "#D31145",
+            "#231F20",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "d498aae7fa94a03a0bf76ec7c963e32c08f296a239cec440358535d5f8750da0"
+        }
+      ]
+    },
+    {
       "id": "FOOD-SHAKE",
       "league": "FOOD",
       "conference": "Burgers",
@@ -2257,6 +4081,153 @@
             2
           ],
           "sha256": "d10405b7644c32caf001936b8a5e0b902f75f755a275177c9649a00b56988497"
+        }
+      ]
+    },
+    {
+      "id": "FOOD-SK",
+      "league": "FOOD",
+      "conference": "Coffee & Treats",
+      "region": "Smoothie King",
+      "name": "",
+      "abbr": "SK",
+      "aliases": [],
+      "palette": [
+        "#000000",
+        "#E41B23",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Crown",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/0/07/Smoothie_King_Center.svg/revision/latest?cb=20241202112457",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Smoothie_King_Center.svg",
+          "sourceSha256": "da06bfefcc7301fadc817a952dbf8118f7c18da14e4a299070a8900e69e12ce3",
+          "ops": {
+            "keepNodes": [
+              "0",
+              "2",
+              "3/1"
+            ],
+            "viewBox": "-5.464 -7.394 199.642 156.986"
+          },
+          "path": "/logos/svg/fast-food/sk.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#E41B23"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#E41B23",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "a5997a971f9b66b64cdcadabd85bd5aca8f0fa96613a2d2f521e26c857fc32e5"
+        }
+      ]
+    },
+    {
+      "id": "FOOD-SMASH",
+      "league": "FOOD",
+      "conference": "Burgers",
+      "region": "Smashburger",
+      "name": "",
+      "abbr": "SMASH",
+      "aliases": [
+        "Smash Burger"
+      ],
+      "palette": [
+        "#D76931",
+        "#808080",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Smashed burger icon",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/2/27/Smashburger_2021.svg/revision/latest?cb=20250509160332",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Smashburger_2021.svg",
+          "sourceSha256": "f021d983d0140feca5a021d2218a278eaa9a55a83c62fd860871b6bee9fc17b9",
+          "ops": {
+            "removeNodes": [
+              "2/0/8",
+              "2/0/9",
+              "2/0/10",
+              "2/0/11",
+              "2/0/12",
+              "2/0/13",
+              "2/0/14",
+              "2/0/15",
+              "2/0/16",
+              "2/0/17",
+              "2/0/18"
+            ],
+            "viewBox": "325.012 -45.552 1229.91 927.812"
+          },
+          "path": "/logos/svg/fast-food/smash.svg",
+          "format": "svg",
+          "colors": [
+            "#D76931"
+          ],
+          "sourcePalette": [
+            "#D76931",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "0fc8e7b2ed04b129e797193b00f3a932a56c39820d03bda6df9234a3896a75c6"
+        }
+      ]
+    },
+    {
+      "id": "FOOD-SNS",
+      "league": "FOOD",
+      "conference": "Burgers",
+      "region": "Steak 'n Shake",
+      "name": "",
+      "abbr": "SNS",
+      "aliases": [
+        "Steak n Shake",
+        "Steak and Shake"
+      ],
+      "palette": [
+        "#231F20",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Wings badge (1981)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/2/21/Steak_%27n_Shake_1981_logo.svg/revision/latest?cb=20240411030411",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Steak_'n_Shake_1981_logo.svg",
+          "sourceSha256": "f23d122f7931135114119c90797c886fd2b40edb3b9859e0eea18914b0ad53e2",
+          "ops": {
+            "viewBox": "1.957 26.376 253.085 204.257"
+          },
+          "showsName": true,
+          "path": "/logos/svg/fast-food/sns.svg",
+          "format": "svg",
+          "colors": [
+            "#231F20",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#231F20",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "7d316c96f3fc5209f0a02c920bf0399ae5ab83950d3760364046fb27f07b63f2"
         }
       ]
     },
@@ -2380,6 +4351,31 @@
             1
           ],
           "sha256": "1f08104c9b16119d4ed22ec75ddf5be61d76e4c88adfab761954c73333a17623"
+        },
+        {
+          "id": "mono-siren",
+          "label": "One-color siren (2011)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/4/4c/Starbucks_%282011%29_%28Print%29.svg/revision/latest?cb=20191224213654",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Starbucks_(2011)_(Print).svg",
+          "sourceSha256": "ad52fc6c9d3d1c25a32ddedab5210fbef33962b8283094a1ca427169e006fa6a",
+          "ops": {
+            "viewBox": "-40 -40 1079.981 1080"
+          },
+          "path": "/logos/svg/fast-food/alternates/star-mono-siren.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "d72490eddc65dcf0be321982ffbecbbb5a9ce30fd1d29c552e96c7c0f01c8a07"
         }
       ]
     },
@@ -2421,6 +4417,31 @@
             2
           ],
           "sha256": "2afaf77b30babdfccbcb4e5eb1270d38de5785113be195fc81ee328fe7e68090"
+        },
+        {
+          "id": "choice-mark",
+          "label": "Choice mark S (2016)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/0/00/Subway_%E2%80%93_2016_Choice_Mark_symbol_print.svg/revision/latest?cb=20241014002415",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Subway_–_2016_Choice_Mark_symbol_print.svg",
+          "sourceSha256": "69eea04c9e54871c8cc19f1a020c10b529d8468e9a94d45907fa179a417488fb",
+          "ops": {
+            "viewBox": "-102.422 -102.422 2186.798 2765.393"
+          },
+          "path": "/logos/svg/fast-food/alternates/sub-choice-mark.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#F2B700",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "869480deaf222aa2b3fa5688312d7b29d5fbe8cf024966a3815488c4af96d42b"
         }
       ]
     },
@@ -2508,6 +4529,33 @@
             2
           ],
           "sha256": "c68b3168b1abf466ed43ec82bbaa84f2ef57c11c78f55c20e35a2098b4297f7a"
+        },
+        {
+          "id": "bell-1985",
+          "label": "Classic bell (1985)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/d/d2/Taco_Bell_-_1985s.svg/revision/latest?cb=20250405072312",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Taco_Bell_-_1985s.svg",
+          "sourceSha256": "41894374e87ce1092136bf5afd98274fcd071db5e7a0a057eb6836f41d76f010",
+          "ops": {
+            "viewBox": "-43.164 -43.164 1165.417 934.947"
+          },
+          "path": "/logos/svg/fast-food/alternates/tb-bell-1985.svg",
+          "format": "svg",
+          "colors": [
+            "#D01D00",
+            "#FFE817",
+            "#2E6A1B",
+            "#FF7919"
+          ],
+          "sourcePalette": [
+            "#E84B0C",
+            "#FFE817",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "00a5b2fb8fcb05d8fc4f33989eae1583f55e6764a95fdc3f03bcc681e3039cce"
         }
       ]
     },
@@ -2557,6 +4605,149 @@
       ]
     },
     {
+      "id": "FOOD-TGIF",
+      "league": "FOOD",
+      "conference": "Casual Dining",
+      "region": "TGI Fridays",
+      "name": "",
+      "abbr": "TGIF",
+      "aliases": [
+        "TGI Friday's",
+        "Fridays",
+        "T.G.I. Friday's",
+        "TGIF"
+      ],
+      "palette": [
+        "#D9003D",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Red stripes",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Tgi_fridays_logo13.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Tgi_fridays_logo13.svg",
+          "sourceSha256": "d7c881b440fad954b79e0fe509db383d874231839bbba8d99c9fd990b71c59a4",
+          "ops": {
+            "removeNodes": [
+              "3/8"
+            ],
+            "viewBox": "-67.557 286.913 512.876 220.635"
+          },
+          "path": "/logos/svg/fast-food/tgif.svg",
+          "format": "svg",
+          "colors": [
+            "#D9003D"
+          ],
+          "sourcePalette": [
+            "#D9003D",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "f5bf9ddb2bc5974f87a63c76ee210ceed3c5178b6bc02f7a43eff32d3b235498"
+        }
+      ]
+    },
+    {
+      "id": "FOOD-TIMS",
+      "league": "FOOD",
+      "conference": "Coffee & Treats",
+      "region": "Tim Hortons",
+      "name": "",
+      "abbr": "TIMS",
+      "aliases": [
+        "Tims",
+        "Tim Horton's",
+        "Timmies"
+      ],
+      "palette": [
+        "#000000",
+        "#C20132",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Wordmark",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/8/84/Tim_Hortons_2017.svg/revision/latest?cb=20221228231556",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Tim_Hortons_2017.svg",
+          "sourceSha256": "805bcc670ed545596b32ac3524cf5adb5e95a6da9d2a0b85c1ee0bdd3c25022e",
+          "ops": {
+            "viewBox": "-4.499 -4.499 121.464 31.651"
+          },
+          "showsName": true,
+          "path": "/logos/svg/fast-food/tims.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#C20132"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#C20132",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "7613d98ce630c284d0851a1182094371bf90a9bf4712d594ec48c42e8798a597"
+        }
+      ]
+    },
+    {
+      "id": "FOOD-TSC",
+      "league": "FOOD",
+      "conference": "Coffee & Treats",
+      "region": "Tropical Smoothie Cafe",
+      "name": "",
+      "abbr": "TSC",
+      "aliases": [
+        "Tropical Smoothie",
+        "Tropical Smoothie Café"
+      ],
+      "palette": [
+        "#55D88E",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Palm",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/3/33/TSCLogoNav.svg/revision/latest?cb=20260916124741",
+          "sourcePage": "https://logos.fandom.com/wiki/File:TSCLogoNav.svg",
+          "sourceSha256": "83497a5d50a6f3d3a68b0bcbea42914e70c300b549584d5734416c5d55540c7b",
+          "ops": {
+            "keepNodes": [
+              "0",
+              "1/0/0/21"
+            ],
+            "viewBox": "-149.289 -128.007 4030.8 3576.73"
+          },
+          "path": "/logos/svg/fast-food/tsc.svg",
+          "format": "svg",
+          "colors": [
+            "#55D88E"
+          ],
+          "sourcePalette": [
+            "#55D88E",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "8a130dc74f9ab1cfec42eef884b38292ee19ee408b08082b60b9c6d02ebf36a4"
+        }
+      ]
+    },
+    {
       "id": "FOOD-WAFFLE",
       "league": "FOOD",
       "conference": "Casual Dining",
@@ -2572,6 +4763,31 @@
       "artwork": [
         {
           "id": "primary",
+          "label": "WH monogram",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/9/9c/Waffle_House_monogram.svg/revision/latest?cb=20230820055733",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Waffle_House_monogram.svg",
+          "sourceSha256": "b1926953947591aa4ce9fbbf15bb6b44cac2cb59a9d4e8b72c75c24beafcc019",
+          "ops": {
+            "viewBox": "-2.117 -2.117 57.15 57.15"
+          },
+          "path": "/logos/svg/fast-food/waffle.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#FFF200"
+          ],
+          "sourcePalette": [
+            "#FFF200",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "7b29f12a6b3cc5b56e5c1ece6b821c85ff47bc87e9cbb92125d8e3d6a347f599"
+        },
+        {
+          "id": "wordmark",
           "label": "Wordmark",
           "sourceUrl": "https://cdn.worldvectorlogo.com/logos/waffle-house.svg",
           "sourcePage": "https://worldvectorlogo.com/logo/waffle-house",
@@ -2583,7 +4799,7 @@
             "viewBox": "4.106 65.136 184.537 62.488"
           },
           "showsName": true,
-          "path": "/logos/svg/fast-food/waffle.svg",
+          "path": "/logos/svg/fast-food/alternates/waffle-wordmark.svg",
           "format": "svg",
           "colors": [
             "#000000",
@@ -2598,6 +4814,54 @@
             1
           ],
           "sha256": "25f432fe2dcdc436a918f93bf3f3a6bcb93579f36ee8c38798b039f5799baf7e"
+        }
+      ]
+    },
+    {
+      "id": "FOOD-WC",
+      "league": "FOOD",
+      "conference": "Burgers",
+      "region": "White Castle",
+      "name": "",
+      "abbr": "WC",
+      "aliases": [
+        "White Castle Burgers"
+      ],
+      "palette": [
+        "#0063EC",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Castle outline",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/5/53/White_Castle_One_Color.svg/revision/latest?cb=20240517004459",
+          "sourcePage": "https://logos.fandom.com/wiki/File:White_Castle_One_Color.svg",
+          "sourceSha256": "56e5c19d737a0fcfdb65048a929df16bf39de771c8734dd03e243c73d395d232",
+          "ops": {
+            "keepNodes": [
+              "0",
+              "1/0/1",
+              "1/0/7"
+            ],
+            "viewBox": "-79.65 -79.64 2150.269 1863.659"
+          },
+          "path": "/logos/svg/fast-food/wc.svg",
+          "format": "svg",
+          "colors": [
+            "#0063EC"
+          ],
+          "sourcePalette": [
+            "#0063EC",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "095ce6c92de2c179d422b21597229db48f2ac83ddfb44b702458e15836d42f29"
         }
       ]
     },
@@ -2725,6 +4989,58 @@
             2
           ],
           "sha256": "387ba3b18c6e4ca82e09cf60160aafaa45e5baa09d79a0162113aff7f681bbb4"
+        }
+      ]
+    },
+    {
+      "id": "FOOD-WIENER",
+      "league": "FOOD",
+      "conference": "Sandwiches",
+      "region": "Wienerschnitzel",
+      "name": "",
+      "abbr": "WIENER",
+      "aliases": [
+        "Der Wienerschnitzel"
+      ],
+      "palette": [
+        "#FF0018",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "W on red pill",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Wienerschnitzel_logo.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Wienerschnitzel_logo.svg",
+          "sourceSha256": "247fedfeb83c863c5dfc23f7525dfc9b5fffca6c64b9faceec3912603077c8a8",
+          "ops": {
+            "keepNodes": [
+              "0",
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6"
+            ],
+            "viewBox": "-3.029 -3.029 81.789 59.343"
+          },
+          "path": "/logos/svg/fast-food/wiener.svg",
+          "format": "svg",
+          "colors": [
+            "#FF0018",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#FF0018",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "869ec9b822f435da9bd91699437e4d543bc72cb0bba9b22704e8b0f715898011"
         }
       ]
     },

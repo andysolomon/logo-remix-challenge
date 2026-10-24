@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="svg2" width="314.403" height="314.403" viewBox="-7.201 -7.201 314.403 314.403">
+  <defs id="defs6" />
+  <g id="g8">
+    <circle style="fill:none;stroke:#000000;stroke-width:8.88615;stroke-linecap:square;stroke-dasharray:none" id="path291" cx="150" cy="150" r="145.55693" />
+    <circle style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:square;stroke-dasharray:none" id="path3805" cx="150" cy="150" r="77.788071" />
+    <circle style="fill:#000000;stroke:#000000;stroke-width:3;stroke-linecap:square;stroke-dasharray:none;fill-opacity:1" id="path4533" cx="150" cy="150" r="28.620218" />
+    <g id="g9077">
+      <circle style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:3;stroke-linecap:square;stroke-dasharray:none;stroke-opacity:1" id="path4535" cx="150" cy="72.211929" r="21.107159" />
+      <path style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:3;stroke-linecap:square;stroke-dasharray:none;stroke-opacity:1" d="M 147.57497,90.607699 C 148.09191,45.606375 166.5017,44.611257 189.93936,51.271742 169.05836,28.786664 129.54155,33.375973 128.89284,72.211929 Z" id="path4591" />
+    </g>
+    <use x="0" y="0" xlink:href="#g9077" id="use9081" transform="rotate(120 150 150)" />
+    <use x="0" y="0" xlink:href="#g9077" id="use9083" transform="rotate(240 150 150)" />
+  </g>
+</svg>

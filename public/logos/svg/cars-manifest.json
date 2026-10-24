@@ -85,6 +85,70 @@
             1
           ],
           "sha256": "b01150be74c818f2e1ed7f793d60acf90acd1ed0a138b4723cc884481117b928"
+        },
+        {
+          "id": "flat-2015",
+          "label": "Flat badge (2015)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/d/d4/Alfa_Romeo_2015_flat.svg/revision/latest?cb=20210325122754",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Alfa_Romeo_2015_flat.svg",
+          "sourceSha256": "9a120254dc6e69b9c1c56fe9110236c10ab1a2897b470087b918eac980f07713",
+          "ops": {
+            "viewBox": "-20 -20 540 540"
+          },
+          "path": "/logos/svg/cars/alternates/alfa-flat-2015.svg",
+          "format": "svg",
+          "colors": [
+            "#041C2C",
+            "#85888B",
+            "#E9EAE8",
+            "#000000",
+            "#9D2235",
+            "#115740",
+            "#97999B",
+            "#53565A",
+            "#FFFFFF",
+            "#D3D4D6",
+            "#94969A",
+            "#B4B5B8",
+            "#DDDDDF",
+            "#F6F6F6",
+            "#F1F2F2",
+            "#CECFD0",
+            "#D4D4D5",
+            "#E5E5E5"
+          ],
+          "sourcePalette": [
+            "#9D2235",
+            "#1A3232",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "0683619f5654569baf12a612ab129b06abe08979ac67fba4cf21d13859d0813a"
+        },
+        {
+          "id": "sketch-2015",
+          "label": "Sketch badge (2015)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/f/f4/Alfa_Romeo_2015_sketch.svg/revision/latest?cb=20210325122755",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Alfa_Romeo_2015_sketch.svg",
+          "sourceSha256": "6cf98c18dcffc34b943260575dbcbf8dca5963dcf08d57b948925db7bd5b2e0a",
+          "ops": {
+            "viewBox": "-20 -20 540 540"
+          },
+          "path": "/logos/svg/cars/alternates/alfa-sketch-2015.svg",
+          "format": "svg",
+          "colors": [
+            "#9D2235"
+          ],
+          "sourcePalette": [
+            "#9D2235",
+            "#157031",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "131f51cb8812b5bfcb77a79ceb2566607a252df0ced9bed32b32d15f2a2974ef"
         }
       ]
     },
@@ -209,6 +273,56 @@
             2
           ],
           "sha256": "477e896ec4335099f20d96ee6b927323d7b4f8e39e0ce3818560e544360d6357"
+        },
+        {
+          "id": "oval-1978",
+          "label": "Red oval (1978)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/9/91/Audi_%281978%29.svg/revision/latest?cb=20200801050020",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Audi_(1978).svg",
+          "sourceSha256": "25c0bbb79dadc0e814d0785a52d73542a7a7125c2dd04996264cb517daa3e314",
+          "ops": {
+            "viewBox": "-39.999 -39.999 1079.962 730.085"
+          },
+          "path": "/logos/svg/cars/alternates/audi-oval-1978.svg",
+          "format": "svg",
+          "colors": [
+            "#DF1B1B"
+          ],
+          "sourcePalette": [
+            "#DF1B1B",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "4d0dc34333d9859e7121d9c2c0303cb3c3cfb728f6025d9b31d17fdf898b3b65"
+        },
+        {
+          "id": "rings-2016",
+          "label": "Black rings (2016)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/7/7d/Audi_2016.svg/revision/latest?cb=20260614040148",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Audi_2016.svg",
+          "sourceSha256": "1c6e012aa56c24eed88f9a4309dc4b298b07381abf6c2c35a670ec71fad304c0",
+          "ops": {
+            "viewBox": "-54 -53 2754 1040"
+          },
+          "path": "/logos/svg/cars/alternates/audi-rings-2016.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "9223fc64073157770f99eacb859060cef908fed6c06698b322438a59e42d713c"
         }
       ]
     },
@@ -282,6 +396,31 @@
           ],
           "unusedSourceSlots": [],
           "sha256": "afbc33ebfdf1925ce4f40a97401f4826ffe563e5ff4e67dbf83388317f31b601"
+        },
+        {
+          "id": "wings-2002",
+          "label": "Wings (2002)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/3/38/Bentley_-_2002sy.svg/revision/latest?cb=20250702093822",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Bentley_-_2002sy.svg",
+          "sourceSha256": "170bbab80b34e5e99e43ff8803fb597b3f45fedfd1baad751f435a7e154b1a54",
+          "ops": {
+            "viewBox": "-50.64 -50.64 1367.28 511.28"
+          },
+          "path": "/logos/svg/cars/alternates/bentley-wings-2002.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "c0a65446c7f332732cf31101c4b99bbae937faa67305ba19c83f59eddc53efac"
         }
       ]
     },
@@ -469,6 +608,70 @@
           ],
           "unusedSourceSlots": [],
           "sha256": "d5769a120f27edd69a18593b219819e5a0f8f6f6d643af28d09e1d4e572c1591"
+        },
+        {
+          "id": "gray-roundel",
+          "label": "Gray roundel",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/BMW_logo_%28gray%29.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:BMW_logo_(gray).svg",
+          "sourceSha256": "d797f1774d210ba5d2854dfca6927ca95e8fa3c464efb1800bd2f4b90b91413a",
+          "ops": {
+            "viewBox": "-3.634 -3.634 98.126 98.126"
+          },
+          "path": "/logos/svg/cars/alternates/bmw-gray-roundel.svg",
+          "format": "svg",
+          "colors": [
+            "#0166B1",
+            "#FFFFFF",
+            "#6F6F6F"
+          ],
+          "sourcePalette": [
+            "#0166B1",
+            "#6F6F6F",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "29de7b44abd636deb0de1f6cd02d41cc63d5c041a5c9620b968d3eeddc883f44"
+        },
+        {
+          "id": "m-stripes",
+          "label": "M stripes",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/5/55/BMW_M_1993.svg/revision/latest?cb=20190307023726",
+          "sourcePage": "https://logos.fandom.com/wiki/File:BMW_M_1993.svg",
+          "sourceSha256": "2cc42cd46136670163c068479221ba7b32a286c11707fc5708f6c24991df096b",
+          "ops": {
+            "viewBox": "-2.319 -2.321 62.616 25.599"
+          },
+          "path": "/logos/svg/cars/alternates/bmw-m-stripes.svg",
+          "format": "svg",
+          "colors": [
+            "#B4B6B8",
+            "#000000",
+            "#525557",
+            "#888C8F",
+            "#525659",
+            "#498BC0",
+            "#255886",
+            "#003D68",
+            "#5F8DD3",
+            "#002A49",
+            "#619ED5",
+            "#AACCFF",
+            "#3F7FBE",
+            "#DB1E1C",
+            "#DE8787",
+            "#C81A17",
+            "#797E81",
+            "#F0F0F0",
+            "#BABCBD"
+          ],
+          "sourcePalette": [
+            "#255886",
+            "#001524",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "9734caa959d738d9724af346328e69bea96096f5c39782b36734893900e8a903"
         }
       ]
     },
@@ -692,6 +895,160 @@
             1
           ],
           "sha256": "4e6a689fab5eb7370d96cebb95e4ff696f415f03b09bc089f9ca022c77f4c250"
+        },
+        {
+          "id": "wreath-crest",
+          "label": "Wreath crest",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/f/fc/Cadillac_logo.svg/revision/latest?cb=20200504034827",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Cadillac_logo.svg",
+          "sourceSha256": "423c133482854d94f9ba10b187bd1c01b68519887125475a86f9a506a9311034",
+          "ops": {
+            "viewBox": "-14.832 -14.832 400.473 372.166"
+          },
+          "path": "/logos/svg/cars/alternates/cadillac-wreath-crest.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#81878B",
+            "#7D8488",
+            "#798186",
+            "#757D82",
+            "#71797F",
+            "#6E777D",
+            "#6A737A",
+            "#667077",
+            "#626E75",
+            "#5E6A72",
+            "#5A6770",
+            "#57656E",
+            "#52626B",
+            "#4F6069",
+            "#FFFFFF",
+            "#CFCFCF",
+            "#CED0D2",
+            "#C9CBCD",
+            "#C6C8CB",
+            "#C1C4C7",
+            "#BEC1C3",
+            "#BABDC0",
+            "#B7BABD",
+            "#B3B7BA",
+            "#AFB3B7",
+            "#ACB0B3",
+            "#A9ADB0",
+            "#A5AAAE",
+            "#A2A7AB",
+            "#9EA4A8",
+            "#9BA1A5",
+            "#989EA2",
+            "#949B9F",
+            "#91989C",
+            "#8E9599",
+            "#8B9296",
+            "#888F94",
+            "#858C91",
+            "#818A8F",
+            "#7F878C",
+            "#7C8489",
+            "#788186",
+            "#D6DDE4",
+            "#E1E8F5",
+            "#CCD4DB",
+            "#C6CED4",
+            "#C0C7CE",
+            "#B9C1C8",
+            "#B3BBC1",
+            "#ACB4BB",
+            "#A5AEB4",
+            "#9FA7AD",
+            "#99A0A6",
+            "#929AA0",
+            "#8C9499",
+            "#858D93",
+            "#737B7F",
+            "#6D7479",
+            "#676E73",
+            "#62686D",
+            "#5B6266",
+            "#555C60",
+            "#4F5559",
+            "#E0E0E0",
+            "#86888B",
+            "#8B8D90",
+            "#CDCFD0",
+            "#DEE8F6",
+            "#C1C2C4",
+            "#95979A",
+            "#888A8C",
+            "#8FA1B1",
+            "#B7B9BC",
+            "#6C7479",
+            "#D6E1F0",
+            "#354961",
+            "#A1524D",
+            "#7E7459",
+            "#A05752",
+            "#355578",
+            "#697786",
+            "#8DB3DF",
+            "#BACEEB",
+            "#C2D5EE",
+            "#8BAFDC",
+            "#505E62",
+            "#636D71",
+            "#EEF3FA",
+            "#697F92",
+            "#5A6E7D",
+            "#AFC1D8",
+            "#C7DAF1",
+            "#EBF0F9",
+            "#B6CFEC",
+            "#4C616C",
+            "#BACBDE",
+            "#829FC1",
+            "#B3CCEA",
+            "#7E9EC3",
+            "#EDF3FA",
+            "#D4E2F3",
+            "#C1D6EE",
+            "#B7CEEB",
+            "#7192B4",
+            "#8BADD8",
+            "#CCDFF3",
+            "#98B2D2",
+            "#82A2C8",
+            "#2A383D",
+            "#8293A4",
+            "#8EAAC9",
+            "#E7EEF8",
+            "#7599BC",
+            "#7EA0C0",
+            "#99B2CE",
+            "#C8D6E6",
+            "#55728F",
+            "#778FAA",
+            "#9EB1C7",
+            "#AEBED2",
+            "#D1E1F3",
+            "#B9CCE4",
+            "#788EA3",
+            "#A8C2E5",
+            "#95B7E1",
+            "#B6CBE7",
+            "#D4B170",
+            "#E6CB90",
+            "#ED1C2E",
+            "#DD7C6D",
+            "#003876",
+            "#4E80C1"
+          ],
+          "sourcePalette": [
+            "#0E253C",
+            "#A1524D",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "70cdffb47cdc510da42cd31fc6215ad7e47ad640f2a42761e5d3b43d1f83f654"
         }
       ]
     },
@@ -854,6 +1211,31 @@
             2
           ],
           "sha256": "9a357ca7c702e72214d14239419b305ba32e126ef58dfebd2adee0e26c9908b2"
+        },
+        {
+          "id": "outline-bowtie",
+          "label": "Outline bowtie",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Chevrolet_bowtie_2023.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Chevrolet_bowtie_2023.svg",
+          "sourceSha256": "3c44365f4ca7388345f3bc675373e6382508b46d2e510c6ad768acb792853e20",
+          "ops": {
+            "viewBox": "-3.76 -3.76 101.52 37.514"
+          },
+          "path": "/logos/svg/cars/alternates/chevy-outline-bowtie.svg",
+          "format": "svg",
+          "colors": [
+            "#262626"
+          ],
+          "sourcePalette": [
+            "#262626",
+            "#A7A9AC",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "741d3de7e6c58b8b063e47c2c0c5e9f1c09e734cbaa59eecfbb37d9573d77a64"
         }
       ]
     },
@@ -926,6 +1308,31 @@
             2
           ],
           "sha256": "70e816c052555159751d537b3b4929014d255a6e495805d4010cf26bb83abd29"
+        },
+        {
+          "id": "db-triangle-1914",
+          "label": "DB triangle (1914)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/5/5e/Dodge_%281914%29.svg/revision/latest?cb=20241002163030",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Dodge_(1914).svg",
+          "sourceSha256": "e59d7f0eb649d9ec8a067716227fa9631a18fb385b1001800fab6359050b1d8a",
+          "ops": {
+            "viewBox": "-11.3 -11.3 272.167 305.095"
+          },
+          "path": "/logos/svg/cars/alternates/dodge-db-triangle-1914.svg",
+          "format": "svg",
+          "colors": [
+            "#C6C5C5",
+            "#FFFFFF",
+            "#0107FF",
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#C6C5C5",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "6efac8639f8479f795b2a31f256b927effd4adfa50a4edc07563c94c1c05ffbc"
         }
       ]
     },
@@ -1033,6 +1440,33 @@
           ],
           "unusedSourceSlots": [],
           "sha256": "2df4d22e5e5ffde5b3085de408956bcc3835491d36bba328507e6329a5816b32"
+        },
+        {
+          "id": "scudetto",
+          "label": "Scuderia shield",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/4/4f/Scuderia_Ferrari_Logo1.svg/revision/latest?cb=20181125213943",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Scuderia_Ferrari_Logo1.svg",
+          "sourceSha256": "93150eb42d3ec7854bf4835d6b3edaf2d4a3d74d9985f84d7897565984dfc3eb",
+          "ops": {
+            "viewBox": "-11.04 -11.04 222.08 298.08"
+          },
+          "path": "/logos/svg/cars/alternates/ferrari-scudetto.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#FFFFFF",
+            "#07611C",
+            "#E61900",
+            "#DEBD19",
+            "#827A38"
+          ],
+          "sourcePalette": [
+            "#E61900",
+            "#B09C28",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "6ecbdf4e2ca8a352738cee4c3417c28f27e96532bd627eb57ca87fe6de53c553"
         }
       ]
     },
@@ -1222,6 +1656,31 @@
             2
           ],
           "sha256": "b071447037f3d83b20c201080b6955546e50c5303f037adf61b6c704790ff8eb"
+        },
+        {
+          "id": "wing-1961",
+          "label": "Wing (1961)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/6/6b/Honda_%281961%29.svg/revision/latest?cb=20210621031751",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Honda_(1961).svg",
+          "sourceSha256": "39db0a47d307cb56687b171e07114c14d23e025209d9c5f122b68d0fc9626f13",
+          "ops": {
+            "viewBox": "-48.512 -48.604 1319.345 608.722"
+          },
+          "path": "/logos/svg/cars/alternates/honda-wing-1961.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "5eeedf237b9cd3ec71d7e983e4327a4b9937b5507c34918ad907b5c7695b05ef"
         }
       ]
     },
@@ -1545,6 +2004,79 @@
             1
           ],
           "sha256": "6c2dcaa4ae6647076972ac5fbec10a76114ae054e1063c543227f12232396759"
+        },
+        {
+          "id": "distancing-h",
+          "label": "Distancing H (2020)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/a/a0/Hyundai_%28Symbol%29_%28Social_Distancing%29.svg/revision/latest?cb=20250209051357",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Hyundai_(Symbol)_(Social_Distancing).svg",
+          "sourceSha256": "3c45d4376bd61dcbd58a6b3ea4865d4c7554e6a99fab25e5b3b2abe9da172526",
+          "ops": {
+            "viewBox": "-59.602 -59.602 1609.243 882.459"
+          },
+          "path": "/logos/svg/cars/alternates/hyundai-distancing-h.svg",
+          "format": "svg",
+          "colors": [
+            "#003468"
+          ],
+          "sourcePalette": [
+            "#003468",
+            "#00AAD2",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "185c7107077094550f4a35ede2c6ffc95c324027e270a4d61747337258bde275"
+        },
+        {
+          "id": "silver-h",
+          "label": "Silver H",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/f/f3/Hyundai_%28Symbol%29_%28Silver%29.svg/revision/latest?cb=20250209051330",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Hyundai_(Symbol)_(Silver).svg",
+          "sourceSha256": "33346f09cdeca4128fb0937b22a44f7d3a322290a889ef9be8bac83b20fe3f3d",
+          "ops": {
+            "viewBox": "-12 -12 324 178.37"
+          },
+          "path": "/logos/svg/cars/alternates/hyundai-silver-h.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#FFFFFF",
+            "#959BA0",
+            "#7C8184",
+            "#A0A6AA",
+            "#85898D",
+            "#55595C",
+            "#8C9296",
+            "#C8CFD3",
+            "#ADB2B5",
+            "#92989C",
+            "#E7EDF0",
+            "#BFC4C9",
+            "#AAB0B5",
+            "#686D71",
+            "#4A4D50",
+            "#3E4042",
+            "#B4BBBF",
+            "#2F3031",
+            "#D2D9DD",
+            "#71777B",
+            "#BAC3C8",
+            "#D9E1E7",
+            "#484C50",
+            "#1A1D21",
+            "#DDE3E7",
+            "#73787B"
+          ],
+          "sourcePalette": [
+            "#2F3031",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "dfe11f01b3cf3dc14720dc99abe12b6415da2b760dd515e5b9f2d2c4e17c426e"
         }
       ]
     },
@@ -1620,6 +2152,31 @@
             2
           ],
           "sha256": "0b3c33a5a98cd79ff216bb6700ee5562c2e18a48ad768ae568e9785d7712e9a0"
+        },
+        {
+          "id": "monogram-2024",
+          "label": "Monogram (2024)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/2/28/Jaguar_2024_symbol_Print.svg/revision/latest?cb=20241123075116",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Jaguar_2024_symbol_Print.svg",
+          "sourceSha256": "8863b454149c183c13e544859c949252bb0d96f42557d417d6d645008ffa0424",
+          "ops": {
+            "viewBox": "-11.889 -11.889 320.977 320.992"
+          },
+          "path": "/logos/svg/cars/alternates/jaguar-monogram-2024.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#9A9A9A",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "d6b4267b1f56b51daaf7fb9fd47f75a4f316edddf51a5555fcf3a8895bbd81c5"
         }
       ]
     },
@@ -1737,6 +2294,31 @@
             2
           ],
           "sha256": "49295e1fefd51fa878625b847c198fff3b119042cafb71fbe7fe160e9f5b8814"
+        },
+        {
+          "id": "bull-2024",
+          "label": "Bull (2024)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/8/82/Lamborghini_%282024%29_%28Bull%29.svg/revision/latest?cb=20240928015628",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Lamborghini_(2024)_(Bull).svg",
+          "sourceSha256": "e70dfb8e632b900f561275948614ce698e201131fa85af84e4609e3782d6e1d5",
+          "ops": {
+            "viewBox": "-54.814 -54.814 1284.405 1479.967"
+          },
+          "path": "/logos/svg/cars/alternates/lambo-bull-2024.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "4e6f075343430dfb4bf40093f5fc24390eedcf5ae63f9c6dabba56ea2cc8f087"
         }
       ]
     },
@@ -1881,6 +2463,30 @@
             2
           ],
           "sha256": "c58c9110fae132d8fd8857b3015bfe129c148680a2a8b296027e7326e3f0174e"
+        },
+        {
+          "id": "trident-1954",
+          "label": "Trident (1954)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/2/24/Maserati_1954.svg/revision/latest?cb=20220524105217",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Maserati_1954.svg",
+          "sourceSha256": "b97cf6ef69d4c947fac9b07b368d4d07472ebf1095da6a097dbd7f0937250177",
+          "ops": {
+            "viewBox": "-2.137 -2.137 42.826 57.705"
+          },
+          "path": "/logos/svg/cars/alternates/maserati-trident-1954.svg",
+          "format": "svg",
+          "colors": [
+            "#042A58",
+            "#FFFFFF",
+            "#E3131C"
+          ],
+          "sourcePalette": [
+            "#042A58",
+            "#E3131C",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "353db3f183c453fe104024d65769451f97c58d574dd29dc8efb545bb84158b3b"
         }
       ]
     },
@@ -2215,6 +2821,60 @@
           ],
           "unusedSourceSlots": [],
           "sha256": "cc7c4bafb5814d07672eeda17114e8d725eefe239a7c785a9457e6ac175d6717"
+        },
+        {
+          "id": "element-1989",
+          "label": "Faceted star (1989)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/8/8d/Mercedes-Benz_%281989%29_%28Element%29.svg/revision/latest?cb=20250419120926",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Mercedes-Benz_(1989)_(Element).svg",
+          "sourceSha256": "6f7054a1eb8004e83e36c5ff7c793055c0c88d717ea948f3aa3be13a003a5d0f",
+          "ops": {
+            "viewBox": "-83.351 -83.351 2250.478 2116.378"
+          },
+          "path": "/logos/svg/cars/alternates/mb-element-1989.svg",
+          "format": "svg",
+          "colors": [
+            "#292929",
+            "#E1E1E1",
+            "#000000",
+            "#5F5F5F",
+            "#F9F9F9",
+            "#B8B8B8",
+            "#5D5D5D",
+            "#E8E8E8"
+          ],
+          "sourcePalette": [
+            "#292929",
+            "#B8B8B8",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "51f0d96f62def0e3597908ce208e5a4ad4f3316c3c307a9a6b439bdfc2c9bf24"
+        },
+        {
+          "id": "star-1933",
+          "label": "Star (1933)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/b/bc/Mercedes-Benz_1933.svg/revision/latest?cb=20250911203607",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Mercedes-Benz_1933.svg",
+          "sourceSha256": "d13211761ff11956f63a2d3c47570d56351f36f3587b688bcf1520c08d3ad206",
+          "ops": {
+            "viewBox": "-16.762 -16.762 448.065 452.585"
+          },
+          "path": "/logos/svg/cars/alternates/mb-star-1933.svg",
+          "format": "svg",
+          "colors": [
+            "#404040"
+          ],
+          "sourcePalette": [
+            "#404040",
+            "#A4AAAE",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "5ec3d0bcbb15f3a4726012cf1c54e07843a6f158870b939d35d49c6de6ceecb3"
         }
       ]
     },
@@ -2296,6 +2956,56 @@
             2
           ],
           "sha256": "e49962a1b797ae0e2bde027173efb078943aa7b89bc01098f9fb26d18af744cd"
+        },
+        {
+          "id": "speedmark-1991",
+          "label": "Speedmark (1991)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/e/ee/McLaren_%281991%2C_icon%29.svg/revision/latest?cb=20260922214514",
+          "sourcePage": "https://logos.fandom.com/wiki/File:McLaren_(1991,_icon).svg",
+          "sourceSha256": "adc9cea82061dccd268ad04a8dbad870428aeff8de724853f940f1cd45957b56",
+          "ops": {
+            "viewBox": "-15.585 -15.215 434.29 407.11"
+          },
+          "path": "/logos/svg/cars/alternates/mclaren-speedmark-1991.svg",
+          "format": "svg",
+          "colors": [
+            "#EF1C25"
+          ],
+          "sourcePalette": [
+            "#EF1C25",
+            "#54565A",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "56cb657d50a8a5a18edb5760e83bf85144021930d3812125c31ced14e7dfc689"
+        },
+        {
+          "id": "speedmark-2022",
+          "label": "Speedmark (2022)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/b/b4/McLaren_%282022%2C_icon%29.svg/revision/latest?cb=20260922220326",
+          "sourcePage": "https://logos.fandom.com/wiki/File:McLaren_(2022,_icon).svg",
+          "sourceSha256": "303c9a9f88378baa0d367d3cf59ed122d1c53f54b4530ce198e36cb5750cf2cb",
+          "ops": {
+            "viewBox": "-10.791 -10.391 280.55 162.981"
+          },
+          "path": "/logos/svg/cars/alternates/mclaren-speedmark-2022.svg",
+          "format": "svg",
+          "colors": [
+            "#FF8000"
+          ],
+          "sourcePalette": [
+            "#FF8000",
+            "#54565A",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "2ba79fa45c8c12a0bca96c191ad76e7190faf32de5fe7bce1df5534b5c52633a"
         }
       ]
     },
@@ -3110,6 +3820,31 @@
             2
           ],
           "sha256": "78d99aa885d277ae54a9f40325141855482ce42adb4da88d863f05eee715ba8b"
+        },
+        {
+          "id": "stars-1953",
+          "label": "Six stars (1953)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/9/95/Subaru_1953_Print.svg/revision/latest?cb=20230428081220",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Subaru_1953_Print.svg",
+          "sourceSha256": "2ea3da704af6a1baf4b0a8e5af296966f6c480d489edbc6fd55e6cca50022cbf",
+          "ops": {
+            "viewBox": "-15.564 -15.564 420.228 280.428"
+          },
+          "path": "/logos/svg/cars/alternates/subaru-stars-1953.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#A7A9AC",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "ba67bc3526606a87ed3f04250c3e5f6ddc472e1a4eeab45782c101e9c56bfdb6"
         }
       ]
     },
@@ -3181,6 +3916,31 @@
             1
           ],
           "sha256": "90760277b7107065eb93d16ef06d3332e00a5d1f81f0d5fb6615553b32380f10"
+        },
+        {
+          "id": "red-t",
+          "label": "Red T",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/b/be/Tesla_%28Symbol%29.svg/revision/latest?cb=20250430093443",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Tesla_(Symbol).svg",
+          "sourceSha256": "14589e9957ffdf91505f4bd8ecb7bdcd4a9e19ab746f3499c5096cbf83ba466d",
+          "ops": {
+            "viewBox": "-9.684 -9.641 273.888 272.788"
+          },
+          "path": "/logos/svg/cars/alternates/tesla-red-t.svg",
+          "format": "svg",
+          "colors": [
+            "#E82127"
+          ],
+          "sourcePalette": [
+            "#E82127",
+            "#171A20",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "7956113872f9f5ea66446094030f67821a463a84b2ca74aac0b3b3bf23462ed9"
         }
       ]
     },
@@ -3438,6 +4198,56 @@
           ],
           "unusedSourceSlots": [],
           "sha256": "86cc637f933317bd45e1f79bd759b681d7a9e8471487430a81a62c16debfadd4"
+        },
+        {
+          "id": "cog-1937",
+          "label": "Cog wheel (1937)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/0/0f/Volkswagen_%281937%29.svg/revision/latest?cb=20221117130627",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Volkswagen_(1937).svg",
+          "sourceSha256": "7b5dc897f7cd2c54258a2f4593c714fa83fe230a2e7c58ce35eecd0b2e68ebf4",
+          "ops": {
+            "viewBox": "-2.885 -2.885 77.893 77.893"
+          },
+          "path": "/logos/svg/cars/alternates/vw-cog-1937.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#2058AF",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "a2ddb25bf90aec113b6f3986b82bef1df8177b4c5c359e57264ee8bfaee5b73f"
+        },
+        {
+          "id": "roundel-1960",
+          "label": "Roundel (1960)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/7/72/Volkswagen_1960.svg/revision/latest?cb=20190910092158",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Volkswagen_1960.svg",
+          "sourceSha256": "f537ea29fbc4d83921a517c1f1806f840cd49ca75d9ff93332fe942f985aaa2a",
+          "ops": {
+            "viewBox": "-30.36 -30.36 819.72 819.72"
+          },
+          "path": "/logos/svg/cars/alternates/vw-roundel-1960.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#2058AF",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "1c53e3a93e5b1a8d4da9cbd4a9bd30317337f2958e787250568fd2489846d36e"
         }
       ]
     }

@@ -468,6 +468,30 @@
             2
           ],
           "sha256": "f67c629bc884049142843fb62172a8a4e450c00a8095f9d79761b8ce175cd780"
+        },
+        {
+          "id": "pink-star-tile",
+          "label": "Pink tile with star",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/0/0d/BET_%28Pink%29.svg/revision/latest?cb=20210117113439",
+          "sourcePage": "https://logos.fandom.com/wiki/File:BET_(Pink).svg",
+          "sourceSha256": "1d97c8d46015d388db7ecc598714e98e2dfaa6702f0c6900ceb498abd580fc0b",
+          "ops": {
+            "viewBox": "-40 -40 1080 759.733"
+          },
+          "path": "/logos/svg/tv/alternates/bet-pink-star-tile.svg",
+          "format": "svg",
+          "colors": [
+            "#EC008C",
+            "#FFFFFF",
+            "#F067A6"
+          ],
+          "sourcePalette": [
+            "#EC008C",
+            "#F067A6",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "5f4a54e4fde6fc56d07f8b4af03866c91d082ba35e688890ffce852af3ae8a26"
         }
       ]
     },
@@ -545,6 +569,31 @@
           ],
           "unusedSourceSlots": [],
           "sha256": "695318118a54a4ab65b7acf598cedc372a5dadefa444fea21f791ad9c15b65b5"
+        },
+        {
+          "id": "b-star-2014",
+          "label": "B with star (2014)",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Boomerang_2014_logo.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Boomerang_2014_logo.svg",
+          "sourceSha256": "cdb15e84403194c2a999317614cf0d0ada09abef9471a23951b5bf61480e3268",
+          "ops": {
+            "viewBox": "-12 -12 324 251.906"
+          },
+          "path": "/logos/svg/tv/alternates/boom-b-star-2014.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#61A9D6",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "d821de1613a1d5954ee9976ffbf290d07e7c73210d2cc635f4c5eb66f69b290b"
         }
       ]
     },
@@ -1307,6 +1356,31 @@
             1
           ],
           "sha256": "e62afc843de624b78e06aaf68d0ff17e5fb7d3c15825ecf9fe1cfe261c60ffc5"
+        },
+        {
+          "id": "d-globe-2019",
+          "label": "Globe in D (2019)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/f/ff/Discovery_Channel_2019_%28Symbol%29.svg/revision/latest?cb=20210519151253",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Discovery_Channel_2019_(Symbol).svg",
+          "sourceSha256": "25b47f213570bdc46f2cd6bd08b2fc90fd7b96fa37b9184ead1b233664580f61",
+          "ops": {
+            "viewBox": "-40 -40 958.195 1080"
+          },
+          "path": "/logos/svg/tv/alternates/disc-d-globe-2019.svg",
+          "format": "svg",
+          "colors": [
+            "#0B0A0B"
+          ],
+          "sourcePalette": [
+            "#0B0A0B",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "5defc9e3df9e1347c548cff859b4d70e5e8173af68c08cea8d7af2fb35f17190"
         }
       ]
     },
@@ -1406,6 +1480,31 @@
             2
           ],
           "sha256": "6c2c50bf12e7b3477ba170ec2de3ed535c4a8943b4d758647afe4d0c983cc49b"
+        },
+        {
+          "id": "ears-2019",
+          "label": "Ear outline (2019)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/e/e1/Disney_Channel_white_and_blue.svg/revision/latest?cb=20250110195322",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Disney_Channel_white_and_blue.svg",
+          "sourceSha256": "f520424b4a7782480d945be67d9108ae74136893a43a7a0f6d74ce090d2b335d",
+          "ops": {
+            "viewBox": "-12.584 -12.584 339.756 152.516"
+          },
+          "path": "/logos/svg/tv/alternates/disney-ears-2019.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#41CAFF"
+          ],
+          "sourcePalette": [
+            "#41CAFF",
+            "#EE2724",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "573f19c8447f69351c540efeaa710ea47dccd6865ef3fcf63d26e782debc6bb3"
         }
       ]
     },
@@ -2800,6 +2899,31 @@
             2
           ],
           "sha256": "f28d66683a44ee1da1eb256ea793f1a48f6650921c9f71f506fd0dc9d2144c02"
+        },
+        {
+          "id": "outline-m-1981",
+          "label": "Outline M (1981)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/c/c4/MTV_%281981%29_%28White_Outlined%29.svg/revision/latest?cb=20251024000519",
+          "sourcePage": "https://logos.fandom.com/wiki/File:MTV_(1981)_(White_Outlined).svg",
+          "sourceSha256": "c7db3aca7e1163c5fe1438cbbdc99f3406dff91fa238dc98b5db493038beee01",
+          "ops": {
+            "viewBox": "-10.583 -10.583 285.75 225.843"
+          },
+          "path": "/logos/svg/tv/alternates/mtv-outline-m-1981.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#007CB1",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "255f52ff2a7e3ceb24795e33c6088ba6190bfc4e8a50659a03e99cfab54d5f62"
         }
       ]
     },
@@ -2925,6 +3049,31 @@
             2
           ],
           "sha256": "bb08803786f7a9be3942a9177f85e1206bdcd5af5d0add636ba4ec23208c98fe"
+        },
+        {
+          "id": "black-border",
+          "label": "One-color border",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/7/79/National_Geographic_%28Print%29.svg/revision/latest?cb=20201205130309",
+          "sourcePage": "https://logos.fandom.com/wiki/File:National_Geographic_(Print).svg",
+          "sourceSha256": "427c6a9dbac34b871aa85db4b7ffc2864b52f273e33a69ee8e55d8246948c0d8",
+          "ops": {
+            "viewBox": "-40 -40 777.8 1080"
+          },
+          "path": "/logos/svg/tv/alternates/natgeo-black-border.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "5aa0ab138d834d9fb67a5cb66b66a40657030b75447c3bbe26df73606cf69f75"
         }
       ]
     },
@@ -3112,6 +3261,31 @@
             2
           ],
           "sha256": "786454c35f7fea9673a7b28ccaa1c7e328a6156a0129da5587bb225fc4931d4a"
+        },
+        {
+          "id": "splat-2023",
+          "label": "Splat (2023)",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Nickelodeon_Splat_Symbol_%282023%29.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Nickelodeon_Splat_Symbol_(2023).svg",
+          "sourceSha256": "020c4dc81b0a71877e5cd0bf9b69ee6f9a9d9001d03bc7abb00a0d598a9ffd36",
+          "ops": {
+            "viewBox": "-57.462 -57.461 1551.465 1489.921"
+          },
+          "path": "/logos/svg/tv/alternates/nick-splat-2023.svg",
+          "format": "svg",
+          "colors": [
+            "#FF6700"
+          ],
+          "sourcePalette": [
+            "#FF6700",
+            "#8DC63F",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "5bd6572e08d971f7d4589bcc7e7bce9898e249afe9255ae8582539c51c3b98ee"
         },
         {
           "id": "blimp",
@@ -3397,6 +3571,30 @@
             2
           ],
           "sha256": "a673933b694d999088ad033020fd19d165aef9dab481f7285ac98c6935a7f662"
+        },
+        {
+          "id": "pink-head",
+          "label": "Pink head (2025)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/d/de/PBS_%28Right_P_Head_Female%29.svg/revision/latest?cb=20260928075422",
+          "sourcePage": "https://logos.fandom.com/wiki/File:PBS_(Right_P_Head_Female).svg",
+          "sourceSha256": "3a7143abe42bf2eec14feb34d2edbe8bb44ff0a7232367eea757b28dda5a012d",
+          "ops": {
+            "viewBox": "-54.48 -54.48 1208.96 1497.96"
+          },
+          "path": "/logos/svg/tv/alternates/pbs-pink-head.svg",
+          "format": "svg",
+          "colors": [
+            "#FF74B5",
+            "#000000",
+            "#FEFAFA"
+          ],
+          "sourcePalette": [
+            "#FF74B5",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "3b5296e66a8576d3f3aa739b7d78696a5c7219dffbc2241d60e61d6bd23a0075"
         },
         {
           "id": "1971-p-head",
@@ -4588,6 +4786,33 @@
             2
           ],
           "sha256": "9c459f0a11e7b363fcf2a10a7aaf6dfc3c2997017aea9e0e5677e1e087a11f2a"
+        },
+        {
+          "id": "tulip-1990",
+          "label": "Flat tulip (1990)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/a/af/Univision_%281990%29_%27U%27.svg/revision/latest?cb=20260922141854",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Univision_(1990)_'U'.svg",
+          "sourceSha256": "5d9e50264cfa1ca3f3cf622076104faa2ea4a6f44c2c2ed851e0c8363240dcac",
+          "ops": {
+            "viewBox": "-30.823 -30.823 832.213 831.978"
+          },
+          "path": "/logos/svg/tv/alternates/univision-tulip-1990.svg",
+          "format": "svg",
+          "colors": [
+            "#00A54F",
+            "#5F53AE",
+            "#EE1C23",
+            "#0995DC"
+          ],
+          "sourcePalette": [
+            "#EE1C23",
+            "#0995DC",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "ed23d508ddf057af5c5162d3db84ac1732b0d2d555fe6f4df940a3762acac76d"
         },
         {
           "id": "1986-striped-globe",

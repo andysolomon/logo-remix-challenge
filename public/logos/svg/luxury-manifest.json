@@ -133,6 +133,31 @@
             2
           ],
           "sha256": "895b356cbb0f6f38705b3c0aac0614e1912a6c0c4453d714e5b83796b51535c5"
+        },
+        {
+          "id": "knight",
+          "label": "Equestrian knight",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/3/3c/Burberry_Blue_Prorsum_knight_Icon.svg/revision/latest?cb=20260621121555",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Burberry_Blue_Prorsum_knight_Icon.svg",
+          "sourceSha256": "436d04408409f4237895b206b499db8343e4d5415b54b026e8fd90a9009bb926",
+          "ops": {
+            "viewBox": "-40 -40 1080 762.9"
+          },
+          "path": "/logos/svg/luxury/alternates/burberry-knight.svg",
+          "format": "svg",
+          "colors": [
+            "#000F9F"
+          ],
+          "sourcePalette": [
+            "#000F9F",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "1254710c8e253cd7bba7245082decb5875e4dd0f6b82cc8e39d10622b0279c69"
         }
       ]
     },
@@ -271,6 +296,31 @@
             2
           ],
           "sha256": "8c2aeebe1e70e4c9d9fc68a2a329d1df9f6a716d8cc286b211ab437f8542fa77"
+        },
+        {
+          "id": "circle",
+          "label": "Circled monogram",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/f/f3/Chanel_Circle.svg/revision/latest?cb=20170819050224",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Chanel_Circle.svg",
+          "sourceSha256": "346b5137f9aa14ccdc6fc59b0ca6d15803f7105a12c6090e721b01882b4ff12e",
+          "ops": {
+            "viewBox": "-40 -40 1080 1079.988"
+          },
+          "path": "/logos/svg/luxury/alternates/chanel-circle.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#C9A96E",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "76da9869c4fe9a2f265af9f50a99e7a8e0d215c77edf2b2267e7e2a203752dc0"
         }
       ]
     },
@@ -547,6 +597,32 @@
             2
           ],
           "sha256": "e4d924816ad833d71caf7e40340fe10c50d49e14fe0f69940b96faca69b2c6bf"
+        },
+        {
+          "id": "town-2021",
+          "label": "Town colors (2021)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/5/55/Gucci_Town_%28Symbol%29.svg/revision/latest?cb=20230514114018",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Gucci_Town_(Symbol).svg",
+          "sourceSha256": "8a250813b663402c993dfc119b0b3bfc0beebf85d5673711484bc660a45f3ad3",
+          "ops": {
+            "viewBox": "-4.818 -4.818 130.085 97.623"
+          },
+          "path": "/logos/svg/luxury/alternates/gucci-town-2021.svg",
+          "format": "svg",
+          "colors": [
+            "#FF7E00",
+            "#5A20FF",
+            "#079E60"
+          ],
+          "sourcePalette": [
+            "#079E60",
+            "#FF7E00",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "f3e463eac3a9290ea6e6d7c8f82ff10ea435b40c756909f185e1bb9fb848928a"
         }
       ]
     },
@@ -686,6 +762,31 @@
             2
           ],
           "sha256": "b1dc2f62e316cc50a18bb93f097af7dd8ba27e78294bfec0d2d61051e5011f05"
+        },
+        {
+          "id": "spade-tile",
+          "label": "Spade tile (2019)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/9/9c/Kate_Spade_New_York_%282019%29_icon.svg/revision/latest?cb=20191022104432",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Kate_Spade_New_York_(2019)_icon.svg",
+          "sourceSha256": "a8a54d32bd143dfa9899f3e01bbc68b82d4490e5094b096c620dcc9eee40d37a",
+          "ops": {
+            "viewBox": "-21.167 -21.167 571.5 571.5"
+          },
+          "path": "/logos/svg/luxury/alternates/kate-spade-tile.svg",
+          "format": "svg",
+          "colors": [
+            "#FE7A9F",
+            "#213627"
+          ],
+          "sourcePalette": [
+            "#213627",
+            "#FE7A9F",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "7422ea181c01fdd21c017cf0095bc323c49eca52994c5dccd00f6f9c1db7b804"
         }
       ]
     },
@@ -731,6 +832,56 @@
             2
           ],
           "sha256": "cba7666576c85c9512d1b1686c8a0c50a66da2df3f8e73ddff65271dd461f338"
+        },
+        {
+          "id": "flower-1",
+          "label": "Monogram flower",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/d/d1/Louis_Vuitton_Flower_1.svg/revision/latest?cb=20171114125103",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Louis_Vuitton_Flower_1.svg",
+          "sourceSha256": "5b16ffc6b397ecc3b72e3c17cb0b619d9d50ba1ddb4ec32733a15da13eefa59e",
+          "ops": {
+            "viewBox": "-10.583 -10.583 285.75 285.75"
+          },
+          "path": "/logos/svg/luxury/alternates/lv-flower-1.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#97733F",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "9b347840750ea166c9f89afe880c850a5ba6257cb2f8a28d364a2280602a1989"
+        },
+        {
+          "id": "flower-2",
+          "label": "Monogram quatrefoil",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/d/d6/Louis_Vuitton_Flower_2.svg/revision/latest?cb=20171114125145",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Louis_Vuitton_Flower_2.svg",
+          "sourceSha256": "4d6988de2b054b995276415529fd74f4ac4386d489182c7389f15651fab2224e",
+          "ops": {
+            "viewBox": "-10.583 -10.583 285.75 285.75"
+          },
+          "path": "/logos/svg/luxury/alternates/lv-flower-2.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#97733F",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "93164dad4f7f26b5841a9e157abf40d3d5ccab970d4251147f8a60cf09db3818"
         }
       ]
     },
@@ -1122,6 +1273,31 @@
             2
           ],
           "sha256": "ce929592c3c03bb852046768cad19660ee01be700fe5f8bc8d2b599dffe1e5d4"
+        },
+        {
+          "id": "pink-swan",
+          "label": "Pink swan (2021)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/3/3c/Swarovski_2021_Pink.svg/revision/latest?cb=20210821165433",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Swarovski_2021_Pink.svg",
+          "sourceSha256": "cc6f23364ef63d365689bb9bcab9f6466952856d836ef2bd8507b2a39b02f5e5",
+          "ops": {
+            "viewBox": "-60.92 -60.92 1346.84 1644.84"
+          },
+          "path": "/logos/svg/luxury/alternates/swarovski-pink-swan.svg",
+          "format": "svg",
+          "colors": [
+            "#F8AAB6"
+          ],
+          "sourcePalette": [
+            "#F8AAB6",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "762eb7b8d2c78682edad9823ca3346fb6c29489de76855479537ff09ebc6c9d9"
         }
       ]
     },

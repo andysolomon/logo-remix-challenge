@@ -1,6 +1,6 @@
 # Restaurants, brands, alternates and characters expansion
 
-Adds 43 restaurants, 78 brands, 115 fictional characters and franchises (the new **CHARACTERS** collection) and 115 alternate marks on existing restaurant, brand, app, TV, car, luxury and clothing entries. The catalog grows from **982 entries and 489 alternates** to **1218 entries and 645 alternates**.
+Adds 43 restaurants, 78 brands, 115 fictional characters and franchises (the new **CHARACTERS** collection) and 115 alternate marks on existing restaurant, brand, app, TV, car, luxury and clothing entries. On top of main's 986 entries and 489 alternates (with its 40 Openclipart landmarks), the catalog grows to **1222 entries and 645 alternates**.
 
 ## What changed
 
@@ -22,7 +22,7 @@ Every mark is a name-free symbol where one exists. Where a franchise or brand pu
 
 - `npm run build`: passes (Vite's standard >500 KB bundle advisory).
 - Full suite file by file with `bun test`: 179 pass, 1 skip (the optional Potrace test), 3 fail. All three failures are timing limits on this container, not data regressions: the two high-school checks decode 36 PNGs in pure Python and take 5.3 s against a 5 s limit, and the team-alternates rebuild check takes 36 s against its 30 s limit; the same Python run directly completes and passes every assertion (`NBA`, `COL`, `MLB`, `MLS`, `HS` rebuilds reproduce `teams.json`, stale manifests are refused). Neither touches the new data.
-- `bun test tests/brands.test.ts tests/collections.test.ts tests/color-donors.test.ts tests/backdrop.test.ts tests/education.test.ts`: all pass, including the manifest check that re-derives every checksum, reviewed edit and palette role for all 1050 pinned variants, the offline refresh test, and the backdrop rule for every one of the 1218 entries and their alternates.
+- `bun test tests/brands.test.ts tests/collections.test.ts tests/color-donors.test.ts tests/backdrop.test.ts tests/education.test.ts`: all pass, including the manifest check that re-derives every checksum, reviewed edit and palette role for all 1090 pinned variants, the offline refresh test, and the backdrop rule for every one of the 1222 entries and their alternates.
 - Rebuilds are idempotent: `npm run teams:<collection>` for every brand collection, plus the education, NBA, college, MLB, MLS and high-school builders, leave `teams.json` unchanged.
 - Playwright Chromium, 1024×768: opened CHARACTERS (115 characters, DC filter), picked Batman and remixed it in Kansas City Chiefs colors; the yellow-oval bat paints two palette slots and sits on a tile. Shuffle Logo cycled to "1989 film bat · 2 of 4". RESTAURANTS lists 93 and BRANDS 138 entries. No page errors.
 - Playwright Chromium, 390×844: CHARACTERS is reachable at the end of the collection row in the stepped portrait layout; 115 entries, no page errors.

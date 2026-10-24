@@ -109,7 +109,7 @@ for league, roster in ROSTERS.items():
     rows = {row[0]: row for row in roster}
     pinned = {(s['teamId'], s['id']): s for s in pinned_sources(league)}
     items = json.loads(manifest_path(league).read_text())['assets']
-    assert len(items) == len(rows) == {'FOOD': 93, 'BRAND': 138, 'FLAG': 123, 'APP': 50, 'NHL': 32, 'WNBA': 15, 'CHAR': 115}.get(league, 30), league
+    assert len(items) == len(rows) == {'FOOD': 93, 'BRAND': 138, 'FLAG': 123, 'APP': 50, 'NHL': 32, 'WNBA': 15, 'CHAR': 115, 'LANDMARK': 40}.get(league, 30), league
     for item in items:
         assert teams[item['id']] == build_entry(league, item, rows[item['abbr']]), item['id']
         for art in item['artwork']:

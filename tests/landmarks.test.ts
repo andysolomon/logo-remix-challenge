@@ -10,16 +10,16 @@ import {
 
 const root = join(import.meta.dir, '..')
 const landmarks = filterTeams('LANDMARK', 'All', '')
-const regions = { Americas: 10, Europe: 10, 'Asia & Pacific': 10, 'Africa & Middle East': 6 }
+const regions = { Americas: 18, Europe: 18, 'Asia & Pacific': 18, 'Africa & Middle East': 12 }
 
 describe('world landmarks collection', () => {
-  test('36 landmarks grouped by region, with unique IDs, names and artwork', () => {
-    expect(landmarks).toHaveLength(36)
+  test('66 landmarks grouped by region, with unique IDs, names and artwork', () => {
+    expect(landmarks).toHaveLength(66)
     expect(LEAGUES.LANDMARK).toEqual({ label: 'LANDMARKS', conferences: Object.keys(regions) })
     for (const [region, count] of Object.entries(regions)) expect(filterTeams('LANDMARK', region, '')).toHaveLength(count)
     expect(new Set(TEAMS.map((t) => t.id)).size).toBe(TEAMS.length)
-    expect(new Set(landmarks.map((t) => fullName(t))).size).toBe(36)
-    expect(new Set(landmarks.map((t) => t.logo)).size).toBe(36)
+    expect(new Set(landmarks.map((t) => fullName(t))).size).toBe(66)
+    expect(new Set(landmarks.map((t) => t.logo)).size).toBe(66)
     for (const t of landmarks) {
       expect(t.logo).toMatch(/^\/logos\/svg\/landmarks\/[a-z]+\.svg$/)
       expect(t.palette).toEqual(['#183153', '#009688', '#FFFFFF'])
@@ -31,6 +31,10 @@ describe('world landmarks collection', () => {
     expect(findTeam('LANDMARK-EIFFEL')!.conference).toBe('Europe')
     expect(findTeam('LANDMARK-TAJ')!.conference).toBe('Asia & Pacific')
     expect(findTeam('LANDMARK-PYRAMIDS')!.conference).toBe('Africa & Middle East')
+    expect(findTeam('LANDMARK-RUSHMORE')!.conference).toBe('Americas')
+    expect(findTeam('LANDMARK-STBASIL')!.conference).toBe('Europe')
+    expect(findTeam('LANDMARK-ULURU')!.conference).toBe('Asia & Pacific')
+    expect(findTeam('LANDMARK-PALM')!.conference).toBe('Africa & Middle East')
   })
 
   test('hints name the region and search uses the landmark noun', () => {
@@ -50,6 +54,11 @@ describe('world landmarks collection', () => {
       ['LANDMARK-FUJI', ['Mount Fuji', 'Mt. Fuji', 'Fujisan']], ['LANDMARK-HARBOUR', ['Sydney Harbour Bridge', 'Sydney Harbor Bridge']],
       ['LANDMARK-MOAI', ['Moai', 'Easter Island']], ['LANDMARK-SPHINX', ['Great Sphinx of Giza', 'Sphinx']],
       ['LANDMARK-PETRA', ['Petra', 'Al-Khazneh']], ['LANDMARK-KILIMANJARO', ['Mount Kilimanjaro', 'Kilimanjaro']],
+      ['LANDMARK-RUSHMORE', ['Mount Rushmore', 'Mt. Rushmore']], ['LANDMARK-SUGARLOAF', ['Sugarloaf Mountain', 'Pão de Açúcar', 'Pao de Acucar']],
+      ['LANDMARK-SAGRADA', ['Sagrada Família', 'Sagrada Familia']], ['LANDMARK-STBASIL', ["Saint Basil's Cathedral", "St. Basil's Cathedral"]],
+      ['LANDMARK-LONDONEYE', ['London Eye', 'Millennium Wheel']], ['LANDMARK-ULURU', ['Uluru', 'Ayers Rock']],
+      ['LANDMARK-EVEREST', ['Mount Everest', 'Everest', 'Sagarmatha']], ['LANDMARK-WHITEHOUSE', ['White House', 'The White House']],
+      ['LANDMARK-PALM', ['Palm Jumeirah', 'The Palm']], ['LANDMARK-KARNAK', ['Karnak Temple', 'Karnak']],
     ] as [string, string[]][]) {
       const t = findTeam(id)!
       for (const answer of answers) {
@@ -94,7 +103,7 @@ describe('world landmarks collection', () => {
   test('landmark SVGs are self-contained vectors and reproduce byte-for-byte offline', () => {
     const manifest = JSON.parse(readFileSync(join(root, 'public/logos/svg/landmarks-manifest.json'), 'utf8'))
     expect(manifest.generator).toBe('scripts/build_landmarks.py')
-    expect(manifest.assets).toHaveLength(36)
+    expect(manifest.assets).toHaveLength(66)
     expect(manifest.assets.map((a: { path: string }) => a.path)).toEqual(landmarks.map((t) => t.logo))
     for (const asset of manifest.assets) {
       const raw = readFileSync(join(root, 'public', asset.path), 'utf8')
@@ -117,7 +126,7 @@ with tempfile.TemporaryDirectory() as folder:
     with contextlib.redirect_stdout(io.StringIO()):b.build()
     assert b.TEAMS_JSON.read_bytes()==before
     files=[p for p in (b.ROOT/'public').rglob('*') if p.is_file()]
-    assert len(files)==37, len(files)
+    assert len(files)==67, len(files)
     for p in files:
         assert p.read_bytes()==(root/p.relative_to(b.ROOT)).read_bytes(), p
         if p.suffix=='.svg':validate_vector(p.read_bytes())

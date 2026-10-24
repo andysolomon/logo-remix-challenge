@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Rebuild the LANDMARKS collection: famous structures and natural wonders drawn as vector figures (Python stdlib only).
+"""Rebuild the LANDMARKS collection: 66 famous structures and natural wonders drawn as vector figures (Python stdlib only).
 
 The artwork is original schematic geometry in the style of the science figures in build_education.py:
 one thin ink outline weight, white bodies and a flat accent tint. Every figure paints all three
@@ -386,6 +386,279 @@ def kilimanjaro():
     art += ground(216, 4, 252) + ink('<path d="M64 232V190M64 206L48 194M64 202L82 190"/>', OUTLINE)
     return art + solid('<path d="M28 192Q64 166 100 192Z"/>', INK, DETAIL)
 
+# ---------------------------------------------------------------- second batch
+def niagara():
+    """Niagara Falls: the horseshoe lip, the curtain of water, the plunge pool and rising mist."""
+    art = tint(rect(12, 70, 232, 44, 2)) + solid('<path d="M24 110Q128 150 232 110V200Q128 232 24 200Z"/>')
+    art += ink(''.join(f'<path d="M{x} {solve(lambda t: quad((24,110),(128,150),(232,110), t), 0, x)+4:.1f}V{196 - abs(x-128)*0.15:.0f}"/>' for x in range(36, 221, 14)), HAIRLINE)
+    art += waves(214, 8, 248, 24, ACCENT, DETAIL) + waves(226, 8, 248, 24, ACCENT, DETAIL)
+    cloud = '<path d="M0 0a12 12 0 0 1 22-8a14 14 0 0 1 26 2a10 10 0 0 1 14 12H-6a9 9 0 0 1 6-6Z"/>'
+    return art + f'<g transform="translate(60 196)">' + solid(cloud, WHITE, DETAIL) + '</g>' + f'<g transform="translate(140 190)">' + solid(cloud, WHITE, DETAIL) + '</g>'
+
+def machu():
+    """Machu Picchu: Huayna Picchu rising behind the terraces and stone houses of the citadel."""
+    art = tint('<path d="M60 232C80 150 110 60 150 36C176 90 196 160 212 232Z"/>')
+    terraces = 'M8 232V196H40V180H72V166H104V154H136V144H168V136H200V232Z'
+    art += solid(f'<path d="{terraces}"/>') + ink(''.join(f'<path d="M{x} {y}V232"/>' for x, y in ((40, 196), (72, 180), (104, 166), (136, 154), (168, 144))), HAIRLINE)
+    for x, y in ((48, 160), (112, 132), (176, 112)):
+        art += solid(rect(x, y, 26, 20, 1)) + solid(tri(x - 2, y, x + 13, y - 12, x + 28, y), ACCENT, DETAIL)
+    return art
+
+def chrysler():
+    """Chrysler Building: the shaft and the crown of nested arches with triangular windows and the spire."""
+    art = tint(rect(72, 224, 112, 8, 2)) + solid(rect(80, 180, 96, 44, 2)) + solid(rect(92, 124, 72, 60, 2)) + vlines(range(100, 157, 8), 132, 216)
+    for k in range(5):
+        half, y = 32 - k * 6, 124 - k * 16
+        art += solid(f'<path d="M{128-half} 124V{y}A{half} {half} 0 0 1 {128+half} {y}V124Z"/>')
+        art += tint(tri(128 - half + 4, y - 2, 128, y - half + 4, 128 + half - 4, y - 2), HAIRLINE)
+    return art + ink('<path d="M128 44V8"/>', DETAIL)
+
+def whitehouse():
+    """White House: the north front, its portico of columns under a pediment, and the flag on the roof."""
+    art = tint(rect(12, 224, 232, 8, 2)) + solid(rect(24, 140, 208, 84, 2)) + ink('<path d="M24 150H232"/>', HAIRLINE)
+    art += ''.join(tint(rect(x, y, 10, 14, 1), HAIRLINE) for y in (160, 192) for x in (34, 52, 70, 176, 194, 212))
+    art += solid(rect(88, 124, 80, 100, 2)) + columns((98, 118, 138, 158), 140, 224, 8) + solid(tri(84, 124, 128, 100, 172, 124))
+    art += f'<rect x="118" y="196" width="20" height="28" fill="{INK}"/>'
+    return art + ink('<path d="M128 100V72"/>', DETAIL) + tint('<path d="M128 72H152L146 80L152 88H128Z"/>', HAIRLINE)
+
+def brooklyn():
+    """Brooklyn Bridge: the twin Gothic stone towers, main cables, fanning stays and the deck."""
+    art = waves(216) + waves(228)
+    for x in (64, 152):
+        art += solid(rect(x, 56, 40, 160, 2))
+        for ax in (x + 6, x + 22): art += f'<path d="M{ax} 150V100L{ax+6} 88L{ax+12} 100V150Z" fill="{ACCENT}"/>' + ink(f'<path d="M{ax} 150V100L{ax+6} 88L{ax+12} 100V150Z"/>', HAIRLINE)
+    cable = 'M6 160Q40 156 64 62M104 62Q128 128 152 62M192 62Q216 156 250 160'
+    art += ink(f'<path d="{cable}"/>', OUTLINE)
+    stays = ''.join(f'<path d="M{x} 62L{x+dx} 158"/>' for x in (84, 172) for dx in (-40, -24, -8, 8, 24, 40))
+    return art + ink(stays, HAIRLINE) + solid(rect(4, 156, 248, 10, 2))
+
+def alamo():
+    """The Alamo: the limestone chapel front with its curved parapet, arched door and side wings."""
+    art = tint(rect(12, 224, 232, 8, 2)) + solid(rect(24, 164, 36, 60, 2)) + solid(rect(196, 164, 36, 60, 2))
+    art += solid('<path d="M56 224V124Q80 118 96 104Q128 82 160 104Q176 118 200 124V224Z"/>')
+    art += vlines((72, 100, 156, 184), 136, 212, INK, DETAIL)
+    door = '<path d="M112 224V168A16 16 0 0 1 144 168V224Z"/>'
+    art += f'<g fill="{ACCENT}">{door}</g>' + ink(door, DETAIL)
+    for x in (80, 164): art += tint(rect(x, 150, 12, 20, 1), HAIRLINE)
+    return art + tint(rect(120, 134, 16, 14, 1), HAIRLINE)
+
+def rushmore():
+    """Mount Rushmore: four carved heads in the granite face above the talus slope."""
+    art = tint('<path d="M4 232L36 130Q60 70 110 60Q170 50 212 86L252 232Z"/>')
+    for cx, cy in ((64, 124), (104, 104), (148, 100), (194, 122)):
+        art += solid(f'<ellipse cx="{cx}" cy="{cy}" rx="17" ry="22"/>') + ink(f'<path d="M{cx-14} {cy-10}Q{cx} {cy-26} {cx+14} {cy-10}"/>', OUTLINE)
+        art += ink(f'<path d="M{cx-9} {cy-2}h5M{cx+4} {cy-2}h5M{cx} {cy-2}L{cx-3} {cy+8}h5M{cx-5} {cy+15}q5 3 10 0"/>', HAIRLINE)
+    return art + ink('<path d="M24 200L60 170M200 176L236 206M120 150L136 160"/>', HAIRLINE)
+
+def sugarloaf():
+    """Sugarloaf Mountain: the granite dome over the bay, with the cable car on its line."""
+    art = waves(220) + waves(232, 8, 248)
+    art += tint('<path d="M4 212V190Q40 150 92 170V212Z"/>') + tint('<path d="M106 212V112Q138 36 172 72Q204 112 216 212Z"/>')
+    art += ink('<path d="M44 150L158 68"/>', DETAIL) + ink('<path d="M100 110V124"/>', HAIRLINE) + solid(rect(90, 124, 20, 14, 2))
+    cloud = '<path d="M0 0a9 9 0 0 1 16-6a11 11 0 0 1 20 2a8 8 0 0 1 10 10H-4a7 7 0 0 1 4-6Z"/>'
+    return art + '<g transform="translate(200 60)">' + solid(cloud, WHITE, DETAIL) + '</g>'
+
+def sagrada():
+    """Sagrada Família: the cluster of tapering spires with their finials over the arched portals."""
+    art = tint(rect(20, 224, 216, 8, 2))
+    for cx, top, hw in ((128, 22, 18), (56, 70, 14), (200, 70, 14), (92, 46, 16), (164, 46, 16)):
+        art += solid(f'<path d="M{cx-hw} 170L{cx-4} {top}H{cx+4}L{cx+hw} 170Z"/>')
+        art += ink(''.join(f'<path d="M{cx-hw+(hw-4)*(170-y)/(170-top):.1f} {y}H{cx+hw-(hw-4)*(170-y)/(170-top):.1f}"/>' for y in range(top + 20, 170, 18)), HAIRLINE)
+        art += dot(cx, top - 4, 5, ACCENT, HAIRLINE)
+    art += solid(rect(32, 170, 192, 54, 2))
+    for x in (56, 112, 168):
+        portal = f'<path d="M{x} 224V196A16 16 0 0 1 {x+32} 196V224Z"/>'
+        art += f'<g fill="{ACCENT}">{portal}</g>' + ink(portal, DETAIL)
+    return art
+
+def neuschwanstein():
+    """Neuschwanstein Castle: the keep and towers with their steep roofs on the wooded crag."""
+    art = tint('<path d="M4 232V200Q60 186 128 194Q196 202 252 188V232Z"/>') + solid(rect(56, 120, 144, 80, 2))
+    for x, top, w in ((40, 90, 26), (190, 90, 26)):
+        art += solid(rect(x, top, w, 110, 2)) + tint(tri(x - 4, top, x + w / 2, top - 44, x + w + 4, top), DETAIL)
+    art += solid(rect(102, 70, 52, 130, 2)) + tint(tri(98, 70, 128, 28, 158, 70), DETAIL) + solid(rect(140, 96, 12, 104, 2)) + tint(tri(138, 96, 146, 72, 154, 96), HAIRLINE)
+    art += ''.join(tint(rect(x, y, 8, 14, 2), HAIRLINE) for y in (136, 168) for x in (68, 84, 112, 170, 186))
+    return art + tint(rect(118, 88, 8, 12, 2), HAIRLINE) + tint(rect(118, 112, 8, 12, 2), HAIRLINE)
+
+def stbasil():
+    """Saint Basil's Cathedral: the ring of patterned onion domes around the central tented tower."""
+    def onion(cx, y, r):
+        d = f'<path d="M{cx-r} {y}Q{cx-r} {y-r*1.2:.0f} {cx} {y-r*1.9:.0f}Q{cx+r} {y-r*1.2:.0f} {cx+r} {y}Z"/>'
+        return tint(d) + ink(f'<path d="M{cx} {y-r*1.9:.0f}V{y-r*2.4:.0f}"/>', DETAIL) + dot(cx, y - r * 2.5, 3, WHITE, HAIRLINE)
+    art = solid(rect(28, 212, 200, 20, 2)) + solid(rect(40, 130, 176, 82, 2))
+    for cx, y, r, h in ((56, 136, 18, 76), (200, 136, 18, 76), (90, 116, 14, 96), (166, 116, 14, 96)):
+        art += solid(rect(cx - r, y, 2 * r, h, 2)) + ink(f'<path d="M{cx-r} {y+16}H{cx+r}"/>', HAIRLINE) + onion(cx, y, r)
+    art += solid(rect(112, 110, 32, 102, 2)) + tint(tri(106, 110, 128, 40, 150, 110), DETAIL) + onion(128, 44, 8)
+    return art + ink(''.join(f'<path d="M{x} 150V200"/>' for x in (120, 128, 136)), HAIRLINE)
+
+def atomium():
+    """Atomium: nine spheres joined by tubes, an iron crystal cell standing on its diagonal."""
+    ring = [(200, 128), (164, 66), (92, 66), (56, 128), (92, 190), (164, 190)]
+    tubes = ''.join(f'<path d="M128 128L{x} {y}"/>' for x, y in ring)
+    tubes += ''.join(f'<path d="M128 32L{x} {y}"/>' for x, y in ((164, 66), (92, 66), (128, 128)))
+    tubes += ''.join(f'<path d="M128 224L{x} {y}"/>' for x, y in ((164, 190), (92, 190), (128, 128)))
+    tubes += 'M200 128L164 66L92 66L56 128L92 190L164 190Z'.join(['<path d="', '"/>'])
+    art = ink(tubes, 7) + white_line(tubes, 3)
+    for x, y in ring + [(128, 32), (128, 224)]: art += solid(f'<circle cx="{x}" cy="{y}" r="15"/>')
+    return art + dot(128, 128, 17, ACCENT, OUTLINE) + ink('<path d="M118 238L128 224L138 238"/>', DETAIL)
+
+def londoneye():
+    """London Eye: the great observation wheel with its capsules and the A-frame that props it."""
+    import math
+    art = ground(232, 16, 240) + ink('<path d="M128 116L84 232M128 116L120 232"/>', OUTLINE)
+    art += ink(''.join(f'<path d="M128 116L{128+88*math.cos(a):.1f} {116+88*math.sin(a):.1f}"/>' for a in [i * math.pi / 8 for i in range(16)]), HAIRLINE)
+    art += ink('<circle cx="128" cy="116" r="88"/><circle cx="128" cy="116" r="78"/>', DETAIL)
+    for i in range(16):
+        a = i * math.pi / 8; art += solid(f'<ellipse cx="{128+88*math.cos(a):.1f}" cy="{116+88*math.sin(a):.1f}" rx="7" ry="5"/>', WHITE, HAIRLINE)
+    return art + dot(128, 116, 9)
+
+def windmill():
+    """Dutch windmill: the tapering tower, its cap and four latticed sails."""
+    art = tint('<path d="M4 232V222Q128 206 252 222V232Z"/>') + solid('<path d="M92 232L104 110H152L164 232Z"/>')
+    art += tint('<path d="M100 110Q128 80 156 110Z"/>') + f'<path d="M118 232V204A10 10 0 0 1 138 204V232Z" fill="{ACCENT}"/>' + tint(rect(122, 150, 12, 16, 1), HAIRLINE)
+    sail = solid(rect(-5, -96, 10, 80, 2), WHITE, DETAIL) + ink(''.join(f'<path d="M-5 {y}H5"/>' for y in range(-88, -16, 12)), HAIRLINE)
+    art += ''.join(f'<g transform="rotate({a} 128 112)"><g transform="translate(128 112)">{sail}</g></g>' for a in (45, 135, 225, 315))
+    return art + dot(128, 112, 6)
+
+def montstmichel():
+    """Mont-Saint-Michel: the abbey and village climbing the tidal island to the spire."""
+    art = waves(220) + waves(232, 8, 248) + tint('<path d="M20 220Q40 160 80 150L128 60L176 150Q216 160 236 220Z"/>')
+    art += solid(rect(36, 192, 184, 28, 2)) + ink(''.join(f'<path d="M{x} 192V200"/>' for x in range(44, 216, 12)), HAIRLINE)
+    art += solid(rect(76, 150, 104, 42, 2)) + ''.join(tint(rect(x, 162, 8, 14, 1), HAIRLINE) for x in (88, 108, 140, 160))
+    art += solid(rect(104, 112, 48, 38, 2)) + tint(rect(118, 124, 8, 16, 1), HAIRLINE) + tint(rect(130, 124, 8, 16, 1), HAIRLINE)
+    return art + tint(tri(100, 112, 128, 24, 156, 112), DETAIL) + ink('<path d="M128 24V8M122 14H134"/>', DETAIL)
+
+def matterhorn():
+    """Matterhorn: the hooked pyramidal summit with snow on its upper faces."""
+    art = tint('<path d="M8 232L84 140L112 86L132 40L150 72L172 118L248 232Z"/>')
+    art += solid('<path d="M112 86L132 40L150 72L166 108Q152 100 142 112Q130 102 120 116Q110 104 100 110Z"/>')
+    art += ink('<path d="M132 40L128 150M150 72L184 160"/>', HAIRLINE) + ground(232, 8, 248)
+    cloud = '<path d="M0 0a10 10 0 0 1 18-6a12 12 0 0 1 22 2a9 9 0 0 1 12 10H-4a8 8 0 0 1 4-6Z"/>'
+    return art + '<g transform="translate(28 110)">' + solid(cloud, WHITE, DETAIL) + '</g>'
+
+def forbidden():
+    """Forbidden City: the Hall of Supreme Harmony's double roof over its columns and marble terrace."""
+    art = solid(rect(2, 218, 252, 14, 2)) + solid(rect(12, 204, 232, 14, 2)) + solid(rect(24, 190, 208, 14, 2))
+    art += solid(rect(60, 150, 136, 40, 2)) + ''.join(tint(rect(x, 150, 6, 40), HAIRLINE) for x in range(68, 189, 20))
+    art += tint('<path d="M36 150Q128 136 220 150L206 126Q128 116 50 126Z"/>') + ink('<path d="M36 150Q24 140 30 130M220 150Q232 140 226 130"/>', DETAIL)
+    art += solid(rect(76, 96, 104, 30, 2)) + ''.join(tint(rect(x, 96, 5, 30), HAIRLINE) for x in range(84, 173, 16))
+    art += tint('<path d="M64 96Q128 84 192 96L180 72Q128 62 76 72Z"/>') + ink('<path d="M64 96Q54 88 58 78M192 96Q202 88 198 78"/>', DETAIL)
+    return art + ink('<path d="M76 72Q128 60 180 72"/>', DETAIL)
+
+def marinabay():
+    """Marina Bay Sands: the three leaning hotel towers carrying the SkyPark."""
+    art = waves(220) + waves(232, 8, 248)
+    for x in (30, 106, 182):
+        art += solid(f'<path d="M{x} 212L{x+8} 92H{x+36}L{x+44} 212Z"/>') + vlines((x + 14, x + 22, x + 30), 104, 200)
+    art += solid('<path d="M20 92Q128 70 236 92L240 76Q128 54 16 76Z"/>') + tint('<path d="M30 80Q128 62 226 80L228 86Q128 70 28 86Z"/>', HAIRLINE)
+    return art + solid(rect(12, 212, 232, 10, 2))
+
+def pearl():
+    """Oriental Pearl Tower: the spheres threaded on the shaft above its tripod base."""
+    art = tint(rect(48, 224, 160, 8, 2)) + ink('<path d="M128 150L70 224M128 150L186 224M128 150V224"/>', 9) + white_line('<path d="M128 150L70 224M128 150L186 224"/>', 4)
+    art += ink('<path d="M128 150V8"/>', 8) + white_line('<path d="M128 150V20"/>', 3)
+    art += tint('<circle cx="128" cy="156" r="30"/>', OUTLINE) + tint('<circle cx="128" cy="84" r="20"/>', OUTLINE) + tint('<circle cx="128" cy="36" r="8"/>')
+    art += dot(118, 146, 6, WHITE, HAIRLINE) + dot(121, 77, 4, WHITE, HAIRLINE)
+    return art + solid(rect(96, 190, 64, 10, 3)) + solid(rect(104, 114, 48, 8, 3))
+
+def himeji():
+    """Himeji Castle: the white keep's stacked tiers of curved roofs on the stone base."""
+    art = solid('<path d="M40 232L56 184H200L216 232Z"/>') + ink('<path d="M52 208H204M60 196H196M48 220H208"/>', HAIRLINE)
+    for i, (x0, x1, top) in enumerate(((60, 196, 150), (72, 184, 116), (84, 172, 84), (96, 160, 56))):
+        base = 184 if i == 0 else (150, 116, 84)[i - 1]
+        art += solid(rect(x0 + 6, top, x1 - x0 - 12, base - top, 1))
+        art += tint(f'<path d="M{x0-6} {top}Q128 {top-6} {x1+6} {top}L{x1-8} {top-14}H{x0+8}Z"/>')
+        art += ink(f'<path d="M{x0-6} {top}Q{x0-12} {top-4} {x0-10} {top-10}M{x1+6} {top}Q{x1+12} {top-4} {x1+10} {top-10}"/>', DETAIL)
+        art += ''.join(tint(rect(x, top + 10, 8, 10, 1), HAIRLINE) for x in range(x0 + 14, x1 - 16, 20))
+    return art + dot(102, 40, 4, ACCENT, HAIRLINE) + dot(154, 40, 4, ACCENT, HAIRLINE)
+
+def uluru():
+    """Uluru: the great sandstone monolith on the flat desert, ridged by the weather."""
+    art = tint('<path d="M20 212Q24 150 60 132Q128 100 196 132Q232 150 236 212Z"/>') + ground(212, 4, 252)
+    art += ink('<path d="M52 212Q70 170 82 142M96 212Q104 160 112 126M160 212Q154 160 146 126M200 212Q188 170 176 142"/>', HAIRLINE)
+    return art + dot(206, 56, 16, WHITE, DETAIL) + ink('<path d="M4 228H252"/>', HAIRLINE)
+
+def merlion():
+    """Merlion: Singapore's lion-headed fish spouting water into the bay."""
+    import math
+    art = waves(220) + waves(232, 8, 248) + solid(rect(100, 196, 88, 24, 3))
+    art += ink('<path d="M118 94Q60 100 44 180"/>', 8) + accent_line('<path d="M118 94Q60 100 44 180"/>', 4)
+    art += solid('<path d="M116 100Q98 150 118 196H174Q186 160 160 126Q148 108 140 100Z"/>')
+    art += ink(''.join(f'<path d="M{x} {y}q6-6 12 0" />' for y in (150, 166, 182) for x in range(116, 170, 12)), HAIRLINE)
+    art += ''.join(tint(tri(128 + 30*math.cos(a), 84 + 30*math.sin(a), 128 + 44*math.cos(a+0.2), 84 + 44*math.sin(a+0.2), 128 + 30*math.cos(a+0.4), 84 + 30*math.sin(a+0.4)), HAIRLINE) for a in [i * math.pi / 6 for i in range(12)])
+    art += solid('<circle cx="128" cy="84" r="26"/>') + ink('<path d="M116 78h6M134 78h6M122 92Q128 98 134 92M128 86V92"/>', DETAIL)
+    return art
+
+def everest():
+    """Mount Everest: the summit pyramid over its ridges, snow on the high faces."""
+    art = tint('<path d="M8 232L70 150L100 170L140 60L176 140L200 120L248 232Z"/>')
+    art += solid('<path d="M140 60L176 140Q164 130 154 142Q144 130 132 144Q122 132 112 136Z"/>')
+    art += solid('<path d="M70 150L84 164Q76 170 66 166Q60 160 56 168Z"/>', WHITE, DETAIL) + solid('<path d="M200 120L212 136Q204 138 198 134Q192 138 186 134Z"/>', WHITE, DETAIL)
+    return art + ink('<path d="M140 60L148 160M176 140L196 200"/>', HAIRLINE) + ground(232, 8, 248)
+
+def gatewayindia():
+    """Gateway of India: the basalt arch on the Mumbai waterfront with its four corner turrets."""
+    art = waves(228) + solid(rect(40, 100, 176, 120, 2))
+    arch = '<path d="M96 220V164A32 32 0 0 1 160 164V220Z"/>'
+    art += f'<g fill="{ACCENT}">{arch}</g>' + ink(arch, DETAIL)
+    for x in (52, 180):
+        side = f'<path d="M{x} 220V190A12 12 0 0 1 {x+24} 190V220Z"/>'
+        art += f'<g fill="{ACCENT}">{side}</g>' + ink(side, DETAIL)
+    for x in (44, 196): art += solid(rect(x, 76, 16, 30, 2)) + solid(f'<path d="M{x-2} 76Q{x+8} 60 {x+18} 76Z"/>') + dot(x + 8, 60, 2, ACCENT, HAIRLINE)
+    art += ink(''.join(f'<path d="M{x} 100V110"/>' for x in range(70, 190, 10)), HAIRLINE) + ink('<path d="M40 120H216M40 150H216"/>', HAIRLINE)
+    return art + solid(rect(28, 220, 200, 10, 2))
+
+def tablemountain():
+    """Table Mountain: the flat summit under its tablecloth cloud, above Cape Town's shore."""
+    art = tint('<path d="M8 220L60 110H196L248 220Z"/>') + ink('<path d="M84 150L72 190M160 140L176 200"/>', HAIRLINE)
+    art += solid('<path d="M48 112a14 14 0 0 1 24-8a16 16 0 0 1 32 0a16 16 0 0 1 32 0a16 16 0 0 1 32 0a16 16 0 0 1 32 0a14 14 0 0 1 20 8Z"/>', WHITE, DETAIL)
+    art += ''.join(solid(rect(x, 206, 10, 14, 1), WHITE, HAIRLINE) for x in range(24, 70, 14)) + ''.join(solid(rect(x, 208, 10, 12, 1), WHITE, HAIRLINE) for x in range(190, 236, 14))
+    return art + ground(220, 4, 252) + waves(230, 8, 248)
+
+def abusimbel():
+    """Abu Simbel: the four seated colossi of Ramesses II carved into the cliff beside the entrance."""
+    art = tint('<path d="M8 232V60Q60 30 128 44Q196 30 248 60V232Z"/>') + tint(rect(2, 220, 252, 12, 2))
+    for cx in (52, 96, 160, 204):
+        art += solid(rect(cx - 16, 160, 32, 60, 2)) + solid(rect(cx - 13, 118, 26, 44, 2))
+        art += solid(f'<path d="M{cx-12} 118L{cx-10} 92Q{cx} 76 {cx+10} 92L{cx+12} 118Z"/>') + ink(f'<path d="M{cx-5} 100h3M{cx+2} 100h3M{cx-3} 110h6"/>', HAIRLINE)
+        art += ink(f'<path d="M{cx-16} 190H{cx+16}"/>', HAIRLINE)
+    return art + f'<rect x="118" y="178" width="20" height="42" fill="{INK}"/>'
+
+def victoriafalls():
+    """Victoria Falls: the Zambezi dropping as one sheet into the narrow gorge, mist rising."""
+    art = tint(rect(8, 64, 240, 40, 2)) + solid(rect(16, 104, 224, 90, 2))
+    art += ink(''.join(f'<path d="M{x} 110V{188 - (x % 28) * 0.3:.0f}"/>' for x in range(24, 236, 10)), HAIRLINE)
+    art += tint('<path d="M4 232V180Q16 190 16 200V232Z"/>') + tint('<path d="M252 232V180Q240 190 240 200V232Z"/>')
+    art += waves(210, 24, 232, 24, ACCENT, DETAIL) + waves(224, 24, 232, 24, ACCENT, DETAIL)
+    cloud = '<path d="M0 0a12 12 0 0 1 22-8a14 14 0 0 1 26 2a10 10 0 0 1 14 12H-6a9 9 0 0 1 6-6Z"/>'
+    return art + '<g transform="translate(96 198)">' + solid(cloud, WHITE, DETAIL) + '</g>'
+
+def palm():
+    """Palm Jumeirah: the palm-shaped island and its crescent breakwater, seen from above."""
+    import math
+    art = ink('<path d="M44 108A96 96 0 0 1 212 108"/>', 16) + white_line('<path d="M44 108A96 96 0 0 1 212 108"/>', 9)
+    fronds = ''.join(f'<path d="M128 {y}L{128+dx} {y-dy}"/>' for y, dx, dy in ((96, 0, 46), (100, 28, 40), (100, -28, 40), (108, 50, 26), (108, -50, 26), (118, 62, 8), (118, -62, 8), (130, 60, -10), (130, -60, -10), (142, 50, -24), (142, -50, -24), (154, 36, -32), (154, -36, -32), (166, 20, -34), (166, -20, -34)))
+    art += ink(fronds, 12) + accent_line(fronds, 7)
+    return art + ink('<path d="M128 100V224"/>', 14) + accent_line('<path d="M128 100V224"/>', 9) + tint('<ellipse cx="128" cy="226" rx="20" ry="7"/>')
+
+def baobabs():
+    """Avenue of the Baobabs: the bottle-trunked trees on Madagascar's red earth road."""
+    art = tint('<path d="M4 232V214Q128 202 252 214V232Z"/>')
+    for x, top, w in ((46, 96, 26), (120, 56, 34), (198, 110, 24)):
+        art += solid(f'<path d="M{x-w/2-6} 214L{x-w/2} {top+10}Q{x} {top} {x+w/2} {top+10}L{x+w/2+6} 214Z"/>')
+        art += ink(f'<path d="M{x-w/2+2} {top+8}L{x-w/2-16} {top-18}M{x-6} {top+2}L{x-14} {top-26}M{x+6} {top+2}L{x+14} {top-26}M{x+w/2-2} {top+8}L{x+w/2+16} {top-18}M{x} {top+2}V{top-30}"/>', OUTLINE)
+        art += ink(f'<path d="M{x-w/2-16} {top-18}l-8-10M{x-w/2-16} {top-18}l6-12M{x+w/2+16} {top-18}l8-10M{x+w/2+16} {top-18}l-6-12M{x} {top-30}l-6-8M{x} {top-30}l6-8"/>', DETAIL)
+    return art + dot(222, 52, 12, WHITE, DETAIL)
+
+def karnak():
+    """Karnak Temple: papyrus-capital columns of the hypostyle hall beside an obelisk."""
+    art = tint(rect(8, 224, 240, 8, 2)) + solid('<path d="M196 224L202 72H222L228 224Z"/>') + tint(tri(202, 72, 212, 48, 222, 72), DETAIL)
+    art += ink(''.join(f'<path d="M{204-(y-72)*3/152:.1f} {y}H{220+(y-72)*3/152:.1f}"/>' for y in range(96, 220, 24)), HAIRLINE)
+    for x in (34, 84, 134):
+        art += solid(rect(x, 110, 28, 114, 2)) + ink(''.join(f'<path d="M{x} {y}H{x+28}"/>' for y in range(130, 220, 18)), HAIRLINE)
+        art += tint(f'<path d="M{x-6} 86Q{x+14} 80 {x+34} 86L{x+28} 110H{x}Z"/>')
+    return art + solid(rect(22, 76, 150, 12, 2))
+
 def figures():
     return [
       ('Americas', 'LIBERTY', 'Statue of Liberty', ['Lady Liberty'], liberty()),
@@ -398,6 +671,14 @@ def figures():
       ('Americas', 'REDEEMER', 'Christ the Redeemer', ['Cristo Redentor'], redeemer()),
       ('Americas', 'CHICHEN', 'Chichén Itzá', ['El Castillo', 'Temple of Kukulcán'], chichen()),
       ('Americas', 'CNTOWER', 'CN Tower', [], cntower()),
+      ('Americas', 'NIAGARA', 'Niagara Falls', ['Niagara', 'Horseshoe Falls'], niagara()),
+      ('Americas', 'MACHU', 'Machu Picchu', [], machu()),
+      ('Americas', 'CHRYSLER', 'Chrysler Building', [], chrysler()),
+      ('Americas', 'WHITEHOUSE', 'White House', ['The White House'], whitehouse()),
+      ('Americas', 'BROOKLYN', 'Brooklyn Bridge', [], brooklyn()),
+      ('Americas', 'ALAMO', 'The Alamo', ['Alamo', 'Alamo Mission'], alamo()),
+      ('Americas', 'RUSHMORE', 'Mount Rushmore', ['Mt. Rushmore', 'Rushmore'], rushmore()),
+      ('Americas', 'SUGARLOAF', 'Sugarloaf Mountain', ['Sugarloaf', 'Pão de Açúcar', 'Pao de Acucar'], sugarloaf()),
       ('Europe', 'EIFFEL', 'Eiffel Tower', ['Tour Eiffel'], eiffel()),
       ('Europe', 'BIGBEN', 'Big Ben', ['Elizabeth Tower', 'Palace of Westminster'], bigben()),
       ('Europe', 'TOWERBRIDGE', 'Tower Bridge', [], towerbridge()),
@@ -408,6 +689,14 @@ def figures():
       ('Europe', 'BRANDENBURG', 'Brandenburg Gate', ['Brandenburger Tor'], brandenburg()),
       ('Europe', 'PARTHENON', 'Parthenon', ['Acropolis'], parthenon()),
       ('Europe', 'LOUVRE', 'Louvre Pyramid', ['Louvre', 'Pyramide du Louvre'], louvre()),
+      ('Europe', 'SAGRADA', 'Sagrada Família', ['Sagrada Familia', 'La Sagrada Familia'], sagrada()),
+      ('Europe', 'NEUSCHWANSTEIN', 'Neuschwanstein Castle', ['Neuschwanstein'], neuschwanstein()),
+      ('Europe', 'STBASIL', "Saint Basil's Cathedral", ["St. Basil's Cathedral", "St Basil's", 'Saint Basil'], stbasil()),
+      ('Europe', 'ATOMIUM', 'Atomium', [], atomium()),
+      ('Europe', 'LONDONEYE', 'London Eye', ['Millennium Wheel'], londoneye()),
+      ('Europe', 'WINDMILL', 'Dutch Windmill', ['Windmill', 'Kinderdijk', 'Windmills of Kinderdijk'], windmill()),
+      ('Europe', 'MONTSTMICHEL', 'Mont-Saint-Michel', ['Mont Saint-Michel', 'Mont St. Michel'], montstmichel()),
+      ('Europe', 'MATTERHORN', 'Matterhorn', ['Monte Cervino'], matterhorn()),
       ('Asia & Pacific', 'TAJ', 'Taj Mahal', [], taj()),
       ('Asia & Pacific', 'GREATWALL', 'Great Wall of China', ['Great Wall'], greatwall()),
       ('Asia & Pacific', 'TOKYOTOWER', 'Tokyo Tower', [], tokyotower()),
@@ -418,12 +707,26 @@ def figures():
       ('Asia & Pacific', 'OPERA', 'Sydney Opera House', ['Opera House'], opera()),
       ('Asia & Pacific', 'HARBOUR', 'Sydney Harbour Bridge', ['Sydney Harbor Bridge', 'Harbour Bridge'], harbour()),
       ('Asia & Pacific', 'MOAI', 'Moai', ['Easter Island heads', 'Easter Island statues', 'Easter Island'], moai()),
+      ('Asia & Pacific', 'FORBIDDEN', 'Forbidden City', ['Hall of Supreme Harmony', 'Palace Museum'], forbidden()),
+      ('Asia & Pacific', 'MARINABAY', 'Marina Bay Sands', ['Marina Bay'], marinabay()),
+      ('Asia & Pacific', 'PEARL', 'Oriental Pearl Tower', ['Oriental Pearl', 'Pearl Tower'], pearl()),
+      ('Asia & Pacific', 'HIMEJI', 'Himeji Castle', ['Himeji', 'White Heron Castle'], himeji()),
+      ('Asia & Pacific', 'ULURU', 'Uluru', ['Ayers Rock'], uluru()),
+      ('Asia & Pacific', 'MERLION', 'Merlion', [], merlion()),
+      ('Asia & Pacific', 'EVEREST', 'Mount Everest', ['Everest', 'Mt. Everest', 'Sagarmatha', 'Chomolungma'], everest()),
+      ('Asia & Pacific', 'GATEWAYINDIA', 'Gateway of India', [], gatewayindia()),
       ('Africa & Middle East', 'PYRAMIDS', 'Pyramids of Giza', ['Great Pyramid of Giza', 'Great Pyramid', 'Giza Pyramids', 'Egyptian Pyramids', 'Pyramids'], pyramids()),
       ('Africa & Middle East', 'SPHINX', 'Great Sphinx of Giza', ['Sphinx', 'Great Sphinx'], sphinx()),
       ('Africa & Middle East', 'BURJ', 'Burj Khalifa', [], burj()),
       ('Africa & Middle East', 'BURJALARAB', 'Burj Al Arab', [], burjalarab()),
       ('Africa & Middle East', 'PETRA', 'Petra', ['Al-Khazneh', 'The Treasury', 'Treasury of Petra'], petra()),
       ('Africa & Middle East', 'KILIMANJARO', 'Mount Kilimanjaro', ['Kilimanjaro', 'Mt. Kilimanjaro'], kilimanjaro()),
+      ('Africa & Middle East', 'TABLEMOUNTAIN', 'Table Mountain', [], tablemountain()),
+      ('Africa & Middle East', 'ABUSIMBEL', 'Abu Simbel', ['Abu Simbel Temples', 'Temple of Ramesses II'], abusimbel()),
+      ('Africa & Middle East', 'VICTORIAFALLS', 'Victoria Falls', ['Mosi-oa-Tunya'], victoriafalls()),
+      ('Africa & Middle East', 'PALM', 'Palm Jumeirah', ['The Palm', 'Palm Islands', 'Palm Island'], palm()),
+      ('Africa & Middle East', 'BAOBABS', 'Avenue of the Baobabs', ['Baobabs', 'Baobab Alley', 'Baobab'], baobabs()),
+      ('Africa & Middle East', 'KARNAK', 'Karnak Temple', ['Karnak', 'Temple of Karnak'], karnak()),
     ]
 
 def build():

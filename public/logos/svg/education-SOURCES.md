@@ -8,7 +8,7 @@
 
 # Landmark artwork
 
-The 36 LANDMARKS figures are original SVG geometry in `scripts/build_landmarks.py`, drawn in the science-figure style (one thin ink outline weight, white bodies, a flat accent tint) and painting all three palette slots. They are stylized identification drawings of the structures and mountains, not surveys or scale elevations: Chichén Itzá is El Castillo, Petra is the Al-Khazneh façade, the torii is Itsukushima Shrine's great gate and the moai is a generic Easter Island statue with its pukao. No artwork carries lettering, and no trademarked signage is drawn. `landmarks-manifest.json` records SHA-256 checksums for every generated file; `npm run teams:landmarks` reproduces the assets and catalog offline with Python 3. The collection is logo-only.
+The 66 LANDMARKS figures are original SVG geometry in `scripts/build_landmarks.py`, drawn in the science-figure style (one thin ink outline weight, white bodies, a flat accent tint) and painting all three palette slots. They are stylized identification drawings of the structures and mountains, not surveys or scale elevations: Chichén Itzá is El Castillo, Petra is the Al-Khazneh façade, the torii is Itsukushima Shrine's great gate, the moai is a generic Easter Island statue with its pukao, the Forbidden City is the Hall of Supreme Harmony, Abu Simbel is the Great Temple's four colossi, Palm Jumeirah is seen from above and the Dutch windmill stands for the Kinderdijk mills. No artwork carries lettering, and no trademarked signage is drawn. `landmarks-manifest.json` records SHA-256 checksums for every generated file; `npm run teams:landmarks` reproduces the assets and catalog offline with Python 3. The collection is logo-only.
 
 # Additional state and NHL artwork
 

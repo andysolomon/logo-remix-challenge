@@ -42,6 +42,38 @@
       "sha256": "e16af7eb698c4403e30d076953785bd1e42de74f61f467e959c9611788d8044a"
     },
     {
+      "path": "/logos/svg/landmarks/niagara.svg",
+      "sha256": "584fb1586857ba3fd5ccdc818b009a78bff42ff1bbb284713049e7bcf84b8f20"
+    },
+    {
+      "path": "/logos/svg/landmarks/machu.svg",
+      "sha256": "1c2d0edfa6a4ba502d1e76a300cd6278b9913e7de2dfa27203e354d497fd83c7"
+    },
+    {
+      "path": "/logos/svg/landmarks/chrysler.svg",
+      "sha256": "91cf181fd2fe2fab992b44b968e25be6cac6767427f3c59d48f689bdde8a5a87"
+    },
+    {
+      "path": "/logos/svg/landmarks/whitehouse.svg",
+      "sha256": "c4c576a50a5a9b915baf0c03c0349aaef2c6d7e99dbeb6b23b6e119703d0ea2a"
+    },
+    {
+      "path": "/logos/svg/landmarks/brooklyn.svg",
+      "sha256": "08d0c4b7bbf5d6efe931530e39485b074f1482828b52489390b48bd2a8d94d3f"
+    },
+    {
+      "path": "/logos/svg/landmarks/alamo.svg",
+      "sha256": "1ef8ffa6dfc7eed76587cd777e037c667efe092a77366965d43d26b83592eec3"
+    },
+    {
+      "path": "/logos/svg/landmarks/rushmore.svg",
+      "sha256": "1659b6c8887192ac587a5f486c89dd71454ffbe00aac69c6b6f429b5900f02e5"
+    },
+    {
+      "path": "/logos/svg/landmarks/sugarloaf.svg",
+      "sha256": "bb3194b6e47e0cfc3b88e4f8cea374067fa2d27004004b6e5a664916c594c899"
+    },
+    {
       "path": "/logos/svg/landmarks/eiffel.svg",
       "sha256": "bf2ef3790b0ce7ffa159f69b1795343587b95c4d0b3578fea8a81c256a759a0d"
     },
@@ -80,6 +112,38 @@
     {
       "path": "/logos/svg/landmarks/louvre.svg",
       "sha256": "1e7c3c8841cf9000c9125b4fdde56aedbc38f73699ad5aa306483a27988a940c"
+    },
+    {
+      "path": "/logos/svg/landmarks/sagrada.svg",
+      "sha256": "f9516f437e012309267c8b59f7359d38f3c106b1a10ba773438b32084e177f49"
+    },
+    {
+      "path": "/logos/svg/landmarks/neuschwanstein.svg",
+      "sha256": "82b2443cb6429063bba38ec537f239798f970ad519b693cfb6bd0d20a619f13c"
+    },
+    {
+      "path": "/logos/svg/landmarks/stbasil.svg",
+      "sha256": "fbfa2cf06a56634ac76e336242bdcb6d6dcd72967477e8146e77cf14a1f6187c"
+    },
+    {
+      "path": "/logos/svg/landmarks/atomium.svg",
+      "sha256": "d9e315991d2c528492fc07bded48b95ea3c2d544bac05d3b502ef711714f8ff0"
+    },
+    {
+      "path": "/logos/svg/landmarks/londoneye.svg",
+      "sha256": "e2462617c047c474066be28815f60073c43427da968ceaa7a87c9a512cb563de"
+    },
+    {
+      "path": "/logos/svg/landmarks/windmill.svg",
+      "sha256": "5c2bdc4e8891f72065a7bc2ca28a0749293eccbe35b357867b2d8359f6e26d2e"
+    },
+    {
+      "path": "/logos/svg/landmarks/montstmichel.svg",
+      "sha256": "b744edba675171e7273486bc41777fbbcb709bff6f75d064896906f1b99c6cc2"
+    },
+    {
+      "path": "/logos/svg/landmarks/matterhorn.svg",
+      "sha256": "8b59920874f6f40960fc54524d02661158367a1f568e413458e0dd190db33ae5"
     },
     {
       "path": "/logos/svg/landmarks/taj.svg",
@@ -122,6 +186,38 @@
       "sha256": "c09b618114748608525ad3a3c088e9069c767957293583beb417ffe842f22a36"
     },
     {
+      "path": "/logos/svg/landmarks/forbidden.svg",
+      "sha256": "a98072e7b5a680f09fc4ad62f037f9a170e3855da6bf7009516821ae0ca6353e"
+    },
+    {
+      "path": "/logos/svg/landmarks/marinabay.svg",
+      "sha256": "5e9279c3c19c846298155fccfd94b73d61bcff5e6f585a00a817b62d614d696a"
+    },
+    {
+      "path": "/logos/svg/landmarks/pearl.svg",
+      "sha256": "e25f63623450649ea4ac224531ec51fcf4f24e176f3347d2d031ea6d5081606b"
+    },
+    {
+      "path": "/logos/svg/landmarks/himeji.svg",
+      "sha256": "1a15ff9403e06d5bc393c6267b005ee3204318b8f0a24795b32fd6663cd9479a"
+    },
+    {
+      "path": "/logos/svg/landmarks/uluru.svg",
+      "sha256": "0124a1a2747faa2881f57d26c43cbdc23f89f1c7f847a7661e9a4946b042bc6c"
+    },
+    {
+      "path": "/logos/svg/landmarks/merlion.svg",
+      "sha256": "64ed5f674c335adba2012a49bdcf14aff7fcde65395c45c4319761c7234ddaef"
+    },
+    {
+      "path": "/logos/svg/landmarks/everest.svg",
+      "sha256": "23c2fcd5930cf59f65206018851d5c28f5aeedddfda0ae1bb6604a151454f0d8"
+    },
+    {
+      "path": "/logos/svg/landmarks/gatewayindia.svg",
+      "sha256": "2341ea3701dc6f003fa180df3742b8998bf3c9a89d586a63d9e0b74c5e02470a"
+    },
+    {
       "path": "/logos/svg/landmarks/pyramids.svg",
       "sha256": "59ec9d8491451942a0aaf0a17cab408b268808821ad4f01bc161271724cd16ee"
     },
@@ -144,6 +240,30 @@
     {
       "path": "/logos/svg/landmarks/kilimanjaro.svg",
       "sha256": "c225d26de89bb21cb76db4554cdc88eeae963897745c9968026b1d3aea6feb2c"
+    },
+    {
+      "path": "/logos/svg/landmarks/tablemountain.svg",
+      "sha256": "356124a1fe17f1e0d8a054d99b38bc4622622a7734e99c7d8b0faf1c452d5bb1"
+    },
+    {
+      "path": "/logos/svg/landmarks/abusimbel.svg",
+      "sha256": "152339cbf4615fe8fe6680d7f78517258bb41270633dede5c0d5429fc16bb611"
+    },
+    {
+      "path": "/logos/svg/landmarks/victoriafalls.svg",
+      "sha256": "b1ae4d4125794248478e98550e1d2be890f8f8c328fbce4c7aa32813c7509f5a"
+    },
+    {
+      "path": "/logos/svg/landmarks/palm.svg",
+      "sha256": "8152270263231eb6a5b6b004fa8dec463147152f15e30f625ab546349900c047"
+    },
+    {
+      "path": "/logos/svg/landmarks/baobabs.svg",
+      "sha256": "239593ea66fa8ca3875a17bec244ff8f7b331b025895ab87fd9fa5c681aee4e2"
+    },
+    {
+      "path": "/logos/svg/landmarks/karnak.svg",
+      "sha256": "711d791e32cdb715eaf1a67049b71eae7af2ccb1af1cfbc11c9b9cc81496c800"
     }
   ]
 }

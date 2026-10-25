@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useReducer, useRef, useState } from 'react'
-import { canShuffleRoundColors, deckUndoReducer, findTeam, formatScore, fullName, GUESS_TARGETS, GUESS_LABEL, roundHints, roundTarget, shuffleRoundColors, shuffleRoundLogo, speak, voiceSupported, TIMER_OPTIONS, HIGH_SCORE_LIMIT, MAX_DECK_ROUNDS, type GameMode, type HighScore, type GuessTarget, type Round, type TimerSeconds } from '../lib/teams'
+import { canShuffleRoundColors, deckUndoReducer, findTeam, formatScore, fullName, GUESS_TARGETS, GUESS_LABEL, jerseyLine, roundHints, roundPlayer, roundTarget, shuffleRoundColors, shuffleRoundLogo, speak, voiceSupported, TIMER_OPTIONS, HIGH_SCORE_LIMIT, MAX_DECK_ROUNDS, type GameMode, type HighScore, type GuessTarget, type Round, type TimerSeconds } from '../lib/teams'
 import { RoundLogo } from './Logo'
 import { RandomDeckModal } from './RandomDeckModal'
 import { useDialogA11y } from './SettingsModal'
@@ -86,7 +86,7 @@ export function DeckMode({ deck, portrait, timer, gameMode, guessTarget, voice, 
         {deck.length === 0 ? (
           <div className="deck-empty">
             <h2>Your deck is empty</h2>
-            <p>Remix a logo to add your first round.</p>
+            <p>Remix a logo or pick a jersey to add your first round.</p>
             <button className="btn-create" onClick={onCreate}>
               CREATE A ROUND
             </button>
@@ -112,67 +112,79 @@ export function DeckMode({ deck, portrait, timer, gameMode, guessTarget, voice, 
             {deck.map((r, i) => {
               const ot = findTeam(r.o)!
               const ct = r.c === undefined ? null : findTeam(r.c)!
+              const player = roundPlayer(r)
               return (
-                <div key={`${i}-${r.o}-${r.c ?? 'original'}`} className="round-card">
+                <div key={`${i}-${r.o}-${r.p ?? r.c ?? 'original'}`} className="round-card">
                   <div className="round-label">ROUND {i + 1}</div>
                   <div className="round-logo">
                     <RoundLogo round={r} />
                   </div>
-                  <div className="round-name">{fullName(ot)}</div>
-                  <div className="round-sub">{ct ? `in ${fullName(ct)} colors` : 'in its original colors'}</div>
-                  <div className="round-target">
-                    <span className="round-target-lb">GUESS</span>
-                    <div className="seg-group" role="group" aria-label={`Round ${i + 1}: what to guess`}>
-                      {GUESS_TARGETS.map((t) => [t, GUESS_LABEL[t]] as const).map(([t, lb]) => (
-                        <button
-                          key={t}
-                          className={`seg${roundTarget(r, guessTarget) === t ? ' active' : ''}`}
-                          aria-pressed={roundTarget(r, guessTarget) === t}
-                          title={ct || t === 'team' ? `Guess the ${lb}` : 'Original-colors rounds ask for the logo'}
-                          disabled={!ct && t !== 'team'}
-                          onClick={() => mut((d) => { d[i] = { ...d[i], g: t }; return d })}
-                        >
-                          {lb}
-                        </button>
-                      ))}
+                  <div className="round-name">{player ? player.name : fullName(ot)}</div>
+                  <div className="round-sub">{player ? jerseyLine(player) : ct ? `in ${fullName(ct)} colors` : 'in its original colors'}</div>
+                  {player ? (
+                    <div className="round-target">
+                      <span className="round-target-lb">GUESS</span>
+                      <div className="seg-group one" role="group" aria-label={`Round ${i + 1}: what to guess`}>
+                        <span className="seg active" title="Jersey rounds ask who wore it">Player</span>
+                      </div>
                     </div>
-                  </div>
+                  ) : (
+                    <div className="round-target">
+                      <span className="round-target-lb">GUESS</span>
+                      <div className="seg-group" role="group" aria-label={`Round ${i + 1}: what to guess`}>
+                        {GUESS_TARGETS.map((t) => [t, GUESS_LABEL[t]] as const).map(([t, lb]) => (
+                          <button
+                            key={t}
+                            className={`seg${roundTarget(r, guessTarget) === t ? ' active' : ''}`}
+                            aria-pressed={roundTarget(r, guessTarget) === t}
+                            title={ct || t === 'team' ? `Guess the ${lb}` : 'Original-colors rounds ask for the logo'}
+                            disabled={!ct && t !== 'team'}
+                            onClick={() => mut((d) => { d[i] = { ...d[i], g: t }; return d })}
+                          >
+                            {lb}
+                          </button>
+                        ))}
+                      </div>
+                    </div>
+                  )}
                   <div className="round-hint">
                     <span className="round-target-lb">HINT</span>
                     <button
                       className={`hint-toggle${r.h ? ' active' : ''}`}
                       aria-pressed={!!r.h}
-                      title={r.h ? 'Hide the league/conference hint' : 'Show the league/conference hint'}
+                      title={player ? (r.h ? "Hide the player's position" : "Show the player's position") : r.h ? 'Hide the league/conference hint' : 'Show the league/conference hint'}
                       onClick={() => mut((d) => { d[i] = { ...d[i], h: !d[i].h }; return d })}
                     >
                       {r.h ? roundHints(r).join(' · ') : 'Off'}
                     </button>
                   </div>
-                  <div className="round-shuffle">
-                    <span className="round-target-lb">SHUFFLE</span>
-                    <div className="shuffle-btns" role="group" aria-label={`Round ${i + 1}: shuffle`}>
-                      <button
-                        type="button"
-                        className="shuffle-btn"
-                        aria-label={`Shuffle round ${i + 1} logo`}
-                        title={ot.alternateLogos?.length ? 'Switch to the next alternate logo' : 'This logo has no alternates'}
-                        disabled={!ot.alternateLogos?.length}
-                        onClick={() => mut((d) => { d[i] = shuffleRoundLogo(d[i]); return d })}
-                      >
-                        <span aria-hidden="true">🔀</span> Logo
-                      </button>
-                      <button
-                        type="button"
-                        className="shuffle-btn"
-                        aria-label={`Shuffle round ${i + 1} colors`}
-                        title={!ct ? 'Original-colors rounds keep their own colors' : canShuffleRoundColors(r) ? 'Rearrange where each color goes' : 'Only one readable color arrangement'}
-                        disabled={!canShuffleRoundColors(r)}
-                        onClick={() => mut((d) => { d[i] = shuffleRoundColors(d[i]); return d })}
-                      >
-                        <span aria-hidden="true">🔀</span> Colors
-                      </button>
+                  {!player && (
+                    <div className="round-shuffle">
+                      <span className="round-target-lb">SHUFFLE</span>
+                      <div className="shuffle-btns" role="group" aria-label={`Round ${i + 1}: shuffle`}>
+                        <button
+                          type="button"
+                          className="shuffle-btn"
+                          aria-label={`Shuffle round ${i + 1} logo`}
+                          title={ot.alternateLogos?.length ? 'Switch to the next alternate logo' : 'This logo has no alternates'}
+                          disabled={!ot.alternateLogos?.length}
+                          onClick={() => mut((d) => { d[i] = shuffleRoundLogo(d[i]); return d })}
+                        >
+                          <span aria-hidden="true">🔀</span> Logo
+                        </button>
+                        <button
+                          type="button"
+                          className="shuffle-btn"
+                          aria-label={`Shuffle round ${i + 1} colors`}
+                          title={!ct ? 'Original-colors rounds keep their own colors' : canShuffleRoundColors(r) ? 'Rearrange where each color goes' : 'Only one readable color arrangement'}
+                          disabled={!canShuffleRoundColors(r)}
+                          onClick={() => mut((d) => { d[i] = shuffleRoundColors(d[i]); return d })}
+                        >
+                          <span aria-hidden="true">🔀</span> Colors
+                        </button>
+                      </div>
                     </div>
-                  </div>
+                  )}
                   <div className="round-ctl">
                     <button className={`icon-btn${i === 0 ? ' dim' : ''}`} aria-label="Move earlier" onClick={() => i > 0 && mut((d) => swap(d, i - 1, i))}>
                       ◀

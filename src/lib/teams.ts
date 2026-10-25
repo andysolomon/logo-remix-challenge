@@ -1,4 +1,7 @@
 import data from './teams.json'
+import { findPlayer, PLAYERS, type Player, type PlayerLeague } from './players'
+
+export { findPlayer, PLAYERS, type Player, type PlayerLeague }
 
 export type League = 'PRO' | 'NBA' | 'MLB' | 'SOCCER' | 'MLS' | 'COL' | 'HS' | 'FOOD' | 'BRAND' | 'FLAG' | 'APP' | 'TV' | 'CAR' | 'LUX' | 'CLOTH' | 'NHL' | 'ELEMENT' | 'MATH' | 'SHAPE' | 'SPACE' | 'SCIENCE' | 'WNBA' | 'LANDMARK' | 'CHAR'
 
@@ -44,6 +47,8 @@ export interface Round {
   h?: boolean
   /** Stable alternate artwork id for the original team; unset uses its primary logo. */
   l?: string
+  /** "Who wore it?" round: a player id from players.ts. The round shows that player's jersey and `o` is its team. */
+  p?: string
 }
 
 export type GameMode = 'type' | 'host'
@@ -53,6 +58,8 @@ export const GUESS_TARGETS: GuessTarget[] = ['team', 'colors', 'both']
 export const isGuessTarget = (v: unknown): v is GuessTarget => GUESS_TARGETS.includes(v as GuessTarget)
 /** Button labels for each guess target, shared by the settings, deck cards and random deck modal. */
 export const GUESS_LABEL: Record<GuessTarget, string> = { team: 'Logo', colors: 'Colors', both: 'Both' }
+/** What one round asks for: a guess target, or the player who wore a jersey. */
+export type RoundTarget = GuessTarget | 'player'
 export const TIMER_OPTIONS = [5, 10, 15, 30] as const
 export type TimerSeconds = number
 export const TIMER_MIN = 3
@@ -127,6 +134,60 @@ export function isCorrectGuess(guess: string, team: Team): boolean {
   const g = norm(guess)
   if (!g) return false
   return [fullName(team), team.region, team.name, team.abbr, ...(team.aliases ?? [])].map(norm).includes(g)
+}
+
+// ---------- Jersey rounds ("Who wore it?") ----------
+/** "1995–96" for an NBA season, "2023" for an NFL one. */
+export const seasonLabel = (p: Player) =>
+  p.league === 'NBA' ? `${p.season}–${String((p.season + 1) % 100).padStart(2, '0')}` : String(p.season)
+/** "#23 · Chicago Bulls · 1995–96": everything a jersey round shows. */
+export const jerseyLine = (p: Player) => `#${p.number} · ${fullName(findTeam(p.team)!)} · ${seasonLabel(p)}`
+
+const NAME_SUFFIXES = new Set(['jr', 'sr', 'ii', 'iii', 'iv'])
+/** Last name without a Jr./III suffix: "Odell Beckham Jr." → "Beckham". */
+export const playerSurname = (name: string) => {
+  const words = name.trim().split(/\s+/)
+  while (words.length > 1 && NAME_SUFFIXES.has(norm(words[words.length - 1]))) words.pop()
+  return words[words.length - 1]
+}
+const playerKeys = (p: Player) => [p.name, playerSurname(p.name), ...(p.aliases ?? [])].map(norm)
+
+/** The team, number and season single out one player, so the surname or a nickname is enough. */
+export function isCorrectPlayerGuess(guess: string, p: Player): boolean {
+  const g = norm(guess)
+  return !!g && playerKeys(p).includes(g)
+}
+
+/** Autocomplete for a player guess: one entry per name (Kobe has two jerseys), name-start matches first. */
+export function suggestPlayers(query: string, limit = 6): Player[] {
+  const q = norm(query)
+  if (q.length < 2) return []
+  const starts = new Map<string, Player>()
+  const inside = new Map<string, Player>()
+  for (const p of PLAYERS) {
+    if (starts.has(p.name) || inside.has(p.name)) continue
+    const keys = playerKeys(p)
+    if (keys.some((k) => k.startsWith(q))) starts.set(p.name, p)
+    else if (keys.some((k) => k.includes(q))) inside.set(p.name, p)
+  }
+  return [...starts.values(), ...inside.values()].slice(0, limit)
+}
+
+/** Jersey eras offered as filters, oldest first. */
+export const JERSEY_ERAS = ['Before 1990', '1990s', '2000s', '2010s', '2020s'] as const
+export const jerseyEra = (p: Player): string =>
+  p.season < 1990 ? 'Before 1990' : `${Math.min(2020, Math.floor(p.season / 10) * 10)}s`
+export function filterPlayers(league: PlayerLeague, era: string): Player[] {
+  return PLAYERS.filter((p) => p.league === league && (era === 'All' || jerseyEra(p) === era)).sort(
+    (a, b) => fullName(findTeam(a.team)!).localeCompare(fullName(findTeam(b.team)!)) || a.season - b.season || Number(a.number) - Number(b.number),
+  )
+}
+
+/** A jersey in its team's colors: the body in the primary, the number in whichever other color reads best on it, the trim in the last. */
+export function jerseyColors(team: Team): { body: string; number: string; trim: string } {
+  const [body, a, b] = team.palette
+  const number = contrastRatio(a, body) >= contrastRatio(b, body) ? a : b
+  return { body, number, trim: number === a ? b : a }
 }
 
 /**
@@ -571,11 +632,14 @@ const playJoined = async (urls: string[], fallback = urls[0]) => {
     playSrc(fallback)
   }
 }
-/** An original-colors round wears its own colors, so it only ever asks for the logo. */
-export const roundTarget = (r: Round, fallback: GuessTarget): GuessTarget => (r.c === undefined ? 'team' : r.g ?? fallback)
+/** A jersey round asks for its player; an original-colors round wears its own colors, so it only ever asks for the logo. */
+export const roundTarget = (r: Round, fallback: GuessTarget): RoundTarget =>
+  r.p !== undefined ? 'player' : r.c === undefined ? 'team' : r.g ?? fallback
+/** The player a jersey round asks for. */
+export const roundPlayer = (r: Round): Player | undefined => (r.p === undefined ? undefined : findPlayer(r.p))
 /** The team whose colors a round wears: its color team, or the logo's own team in an original-colors round. */
 export const roundColors = (r: Round): Team => findTeam(r.c ?? r.o)!
-export const guessPrompt = (t: GuessTarget) => (t === 'both' ? 'Guess the Logo and the Colors!' : t === 'colors' ? 'Guess the Colors!' : 'Guess the Logo!')
+export const guessPrompt = (t: RoundTarget) => (t === 'player' ? 'Who wore it?' : t === 'both' ? 'Guess the Logo and the Colors!' : t === 'colors' ? 'Guess the Colors!' : 'Guess the Logo!')
 /** What one entry of a collection is called in search and result labels. */
 export const entryNoun = (league: League) =>
   league === 'ELEMENT' ? 'element' : league === 'MATH' ? 'symbol' : league === 'SHAPE' ? 'shape' : league === 'SPACE' ? 'object' : league === 'SCIENCE' ? 'science image' : league === 'LANDMARK' ? 'landmark' : league === 'CHAR' ? 'character' : league === 'APP' ? 'app' : league === 'TV' ? 'channel' : league === 'FLAG' ? 'flag' : ['FOOD', 'BRAND', 'CAR', 'LUX', 'CLOTH'].includes(league) ? 'brand' : league === 'SOCCER' || league === 'MLS' ? 'club' : 'team'
@@ -603,8 +667,8 @@ export const teamHint = (t: Team) =>
                 : t.league === 'CLOTH'
                   ? `${t.conference} brand`
                   : LEAGUES[t.league].label
-/** Hint lines for a round: one for the logo team, plus one for the colors team when the round is a remix. */
-export const roundHints = (r: Round): string[] => [
+/** Hint lines for a round: the player's position for a jersey; one for the logo team, plus one for the colors team when the round is a remix. */
+export const roundHints = (r: Round): string[] => r.p !== undefined ? [`Position: ${findPlayer(r.p)?.position ?? ''}`] : [
   `Logo: ${teamHint(findTeam(r.o)!)}`,
   ...(r.c === undefined ? [] : [`Colors: ${teamHint(findTeam(r.c)!)}`]),
 ]
@@ -654,6 +718,19 @@ export interface RandomDeckOptions {
   colorPools: string[]
   guess: RandomGuess
   hints: boolean
+  /** Jersey collections ("NFL", "NBA") to draw "Who wore it?" rounds from; none when omitted. */
+  playerPools?: string[]
+}
+
+/** Jersey collections a random deck may draw "Who wore it?" rounds from. */
+export const PLAYER_POOLS: { id: string; label: string; league: PlayerLeague }[] = [
+  { id: 'NFL', label: LEAGUES.PRO.label, league: 'PRO' },
+  { id: 'NBA', label: LEAGUES.NBA.label, league: 'NBA' },
+]
+export const PLAYER_POOL_IDS = PLAYER_POOLS.map((p) => p.id)
+export const poolPlayers = (ids: string[]) => {
+  const leagues = PLAYER_POOLS.filter((p) => ids.includes(p.id)).map((p) => p.league)
+  return PLAYERS.filter((p) => leagues.includes(p.league))
 }
 
 export const poolTeams = (ids: string[]) => {
@@ -676,7 +753,7 @@ const channelLuminance = (hex: string) => {
   return 0.2126 * r + 0.7152 * g + 0.0722 * b
 }
 
-const contrastRatio = (a: string, b: string) => {
+export const contrastRatio = (a: string, b: string) => {
   const l1 = channelLuminance(a)
   const l2 = channelLuminance(b)
   return (Math.max(l1, l2) + 0.05) / (Math.min(l1, l2) + 0.05)
@@ -907,10 +984,17 @@ function isRound(r: unknown): r is Round {
   return !!findTeam(round.o) && (round.c === undefined || !!findTeam(round.c)) && Number.isFinite(round.v) &&
     (round.g === undefined || isGuessTarget(round.g)) &&
     (round.h === undefined || typeof round.h === 'boolean') &&
-    (round.l === undefined || typeof round.l === 'string')
+    (round.l === undefined || typeof round.l === 'string') &&
+    (round.p === undefined || (typeof round.p === 'string' && !!findPlayer(round.p)))
 }
 
 export function normalizeRound(round: Round): Round {
+  if (round.p !== undefined) {
+    // A jersey round is its player plus the hint switch: the team follows the player, and colors, art and guess target don't apply.
+    const player = findPlayer(round.p)
+    if (!player) return round
+    return { o: player.team, v: 0, ...(round.h === undefined ? {} : { h: round.h }), p: player.id }
+  }
   const original = findTeam(round.o)
   if (!original) return round
   const { l, c, g, ...base } = round
@@ -924,6 +1008,7 @@ export function normalizeRound(round: Round): Round {
 
 /** Deck-card Shuffle Logo: the round's next alternate artwork, its color mapping re-checked against the new art. */
 export function shuffleRoundLogo(round: Round): Round {
+  if (round.p !== undefined) return round
   const original = findTeam(round.o)
   return original ? normalizeRound({ ...round, l: nextLogoVariant(original, round.l) }) : round
 }
@@ -978,18 +1063,30 @@ export function deckUndoReducer(state: DeckUndoSnapshot | null, action: DeckUndo
  * and only color-donor collections (NFL, NBA, college) supply colors. Never pairs a team with itself
  * or with a look-alike palette, never repeats a pairing already in `existing`, and spreads originals
  * out so the same logo does not show up twice until every candidate has been used.
+ * Jersey pools add "Who wore it?" rounds, never a jersey already in `existing`; with remixes on offer
+ * too, each round is a coin flip between the two.
  * May return fewer rounds than asked for when the pools are too small.
  */
 export function randomDeck(opts: RandomDeckOptions, existing: Round[] = []): Round[] {
   const logos = logoPoolTeams(opts.logoPools)
   const colors = colorPoolTeams(opts.colorPools)
-  if (!logos.length || !colors.length) return []
+  const remixes = logos.length > 0 && colors.length > 0
+  const usedJerseys = new Set(existing.map((r) => r.p))
+  let jerseys = poolPlayers(opts.playerPools ?? []).filter((p) => !usedJerseys.has(p.id))
+  if (!remixes && !jerseys.length) return []
   const seen = new Set(existing.map((r) => `${r.o}|${r.c}`))
   const out: Round[] = []
   let fresh = [...logos]
   const capacity = Math.max(0, MAX_DECK_ROUNDS - existing.length)
   const requested = Math.min(capacity, Math.max(0, Math.floor(opts.rounds)))
   for (let attempt = 0; out.length < requested && attempt < requested * 40; attempt++) {
+    if (jerseys.length && (!remixes || Math.random() < 0.5)) {
+      const p = pick(jerseys)
+      jerseys = jerseys.filter((j) => j.id !== p.id)
+      out.push({ o: p.team, v: 0, h: opts.hints || undefined, p: p.id })
+      continue
+    }
+    if (!remixes) break
     if (!fresh.length) fresh = [...logos]
     const o = pick(fresh)
     const options = colors.filter((c) => c.id !== o.id && !samePalette(c, o) && !seen.has(`${o.id}|${c.id}`))

@@ -1,5 +1,5 @@
 import { forwardRef, useId, useState, type KeyboardEvent } from 'react'
-import { fullName, suggestTeams, type Team } from '../lib/teams'
+import { fullName, suggestPlayers, suggestTeams } from '../lib/teams'
 
 interface Props {
   value: string
@@ -10,6 +10,15 @@ interface Props {
   ariaLabel: string
   enterKeyHint: 'go' | 'next'
   readOnly?: boolean
+  /** Suggest player names instead of teams (jersey rounds). */
+  players?: boolean
+}
+
+interface Pick {
+  key: string
+  name: string
+  /** Shown beside a team name; player picks carry none, since a team or season would point at the answer. */
+  tag?: string
 }
 
 /**
@@ -18,16 +27,20 @@ interface Props {
  * Suggestions sit above the field, where a phone keyboard can't cover them.
  */
 export const GuessInput = forwardRef<HTMLInputElement, Props>(function GuessInput(
-  { value, onChange, onKeyDown, placeholder, ariaLabel, enterKeyHint, readOnly = false },
+  { value, onChange, onKeyDown, placeholder, ariaLabel, enterKeyHint, readOnly = false, players = false },
   ref,
 ) {
   const [open, setOpen] = useState(false)
   const [active, setActive] = useState(-1)
   const listId = useId()
-  const picks = open && !readOnly ? suggestTeams(value) : []
+  const picks: Pick[] = !open || readOnly
+    ? []
+    : players
+      ? suggestPlayers(value).map((p) => ({ key: p.id, name: p.name }))
+      : suggestTeams(value).map((t) => ({ key: t.id, name: fullName(t), tag: t.conference }))
 
-  const pick = (t: Team) => {
-    onChange(fullName(t))
+  const pick = (t: Pick) => {
+    onChange(t.name)
     setOpen(false)
     setActive(-1)
   }
@@ -74,7 +87,7 @@ export const GuessInput = forwardRef<HTMLInputElement, Props>(function GuessInpu
         onBlur={() => setOpen(false)}
         readOnly={readOnly}
         placeholder={placeholder}
-        // Native keyboards keep their own suggestion strip; ours only adds team names.
+        // Native keyboards keep their own suggestion strip; ours only adds team or player names.
         autoComplete="off"
         autoCorrect="on"
         autoCapitalize="words"
@@ -87,10 +100,10 @@ export const GuessInput = forwardRef<HTMLInputElement, Props>(function GuessInpu
         aria-activedescendant={active >= 0 && picks[active] ? `${listId}-${active}` : undefined}
       />
       {picks.length > 0 && (
-        <ul className="guess-suggest" id={listId} role="listbox" aria-label="Team suggestions">
+        <ul className="guess-suggest" id={listId} role="listbox" aria-label={players ? 'Player suggestions' : 'Team suggestions'}>
           {picks.map((t, i) => (
             <li
-              key={t.id}
+              key={t.key}
               id={`${listId}-${i}`}
               role="option"
               aria-selected={i === active}
@@ -100,8 +113,8 @@ export const GuessInput = forwardRef<HTMLInputElement, Props>(function GuessInpu
               onPointerDown={(e) => e.preventDefault()}
               onClick={() => pick(t)}
             >
-              <span className="guess-suggest-name">{fullName(t)}</span>
-              <span className="guess-suggest-tag">{t.conference}</span>
+              <span className="guess-suggest-name">{t.name}</span>
+              {t.tag && <span className="guess-suggest-tag">{t.tag}</span>}
             </li>
           ))}
         </ul>

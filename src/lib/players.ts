@@ -1,0 +1,201 @@
+/**
+ * Famous NFL and NBA jerseys for "Who wore it?" rounds: a team, a number and a season name exactly one player.
+ * Seasons are the year a season started, so the 1995–96 Bulls are 1995. Every row is a season the player
+ * actually wore that number for that team, under the team's current name and city (relocated eras are left out).
+ */
+
+export type PlayerLeague = 'PRO' | 'NBA'
+
+export interface Player {
+  /** `${team}-${number}-${season}`, e.g. "NBA-CHI-23-1995". */
+  id: string
+  /** Team id from teams.json. */
+  team: string
+  league: PlayerLeague
+  number: string
+  /** Year the season started. */
+  season: number
+  name: string
+  position: string
+  /** Nicknames accepted as answers on top of the full name and surname. */
+  aliases?: string[]
+}
+
+const POSITIONS: Record<string, string> = {
+  G: 'Guard', F: 'Forward', C: 'Center',
+  QB: 'Quarterback', RB: 'Running back', WR: 'Wide receiver', TE: 'Tight end',
+  LB: 'Linebacker', DE: 'Defensive end', DT: 'Defensive tackle', S: 'Safety', CB: 'Cornerback',
+}
+
+type Row = [team: string, number: string, season: number, name: string, position: keyof typeof POSITIONS, aliases?: string[]]
+
+const ROWS: Row[] = [
+  // ---- NBA ----
+  ['NBA-ATL', '21', 1987, 'Dominique Wilkins', 'F', ['Nique', 'Human Highlight Film']],
+  ['NBA-ATL', '11', 2020, 'Trae Young', 'G', ['Ice Trae']],
+  ['NBA-BKN', '7', 2020, 'Kevin Durant', 'F', ['KD']],
+  ['NBA-BOS', '6', 1964, 'Bill Russell', 'C'],
+  ['NBA-BOS', '33', 1985, 'Larry Bird', 'F', ['Larry Legend']],
+  ['NBA-BOS', '34', 2007, 'Paul Pierce', 'F', ['The Truth']],
+  ['NBA-BOS', '5', 2007, 'Kevin Garnett', 'F', ['KG']],
+  ['NBA-BOS', '0', 2023, 'Jayson Tatum', 'F'],
+  ['NBA-CHA', '1', 2021, 'LaMelo Ball', 'G'],
+  ['NBA-CHI', '23', 1995, 'Michael Jordan', 'G', ['MJ', 'Air Jordan']],
+  ['NBA-CHI', '33', 1995, 'Scottie Pippen', 'F', ['Pip']],
+  ['NBA-CHI', '91', 1995, 'Dennis Rodman', 'F', ['The Worm']],
+  ['NBA-CHI', '1', 2010, 'Derrick Rose', 'G', ['D-Rose']],
+  ['NBA-CLE', '23', 2003, 'LeBron James', 'F', ['LeBron', 'King James', 'LBJ']],
+  ['NBA-CLE', '2', 2016, 'Kyrie Irving', 'G', ['Kyrie', 'Uncle Drew']],
+  ['NBA-DAL', '41', 2010, 'Dirk Nowitzki', 'F', ['Dirk']],
+  ['NBA-DAL', '77', 2023, 'Luka Dončić', 'G', ['Luka']],
+  ['NBA-DEN', '15', 2008, 'Carmelo Anthony', 'F', ['Melo']],
+  ['NBA-DEN', '15', 2022, 'Nikola Jokić', 'C', ['Joker']],
+  ['NBA-DET', '11', 1988, 'Isiah Thomas', 'G', ['Zeke']],
+  ['NBA-DET', '3', 2003, 'Ben Wallace', 'C', ['Big Ben']],
+  ['NBA-GS', '30', 2015, 'Stephen Curry', 'G', ['Steph', 'Steph Curry', 'Chef Curry']],
+  ['NBA-GS', '11', 2015, 'Klay Thompson', 'G', ['Klay']],
+  ['NBA-GS', '23', 2015, 'Draymond Green', 'F', ['Draymond']],
+  ['NBA-GS', '35', 2016, 'Kevin Durant', 'F', ['KD']],
+  ['NBA-HOU', '34', 1993, 'Hakeem Olajuwon', 'C', ['Hakeem', 'The Dream']],
+  ['NBA-HOU', '11', 2004, 'Yao Ming', 'C', ['Yao']],
+  ['NBA-HOU', '13', 2017, 'James Harden', 'G', ['The Beard']],
+  ['NBA-IND', '31', 1997, 'Reggie Miller', 'G'],
+  ['NBA-IND', '0', 2023, 'Tyrese Haliburton', 'G', ['Hali']],
+  ['NBA-LAC', '2', 2019, 'Kawhi Leonard', 'F', ['Kawhi', 'The Klaw']],
+  ['NBA-LAL', '33', 1979, 'Kareem Abdul-Jabbar', 'C', ['Kareem']],
+  ['NBA-LAL', '32', 1986, 'Magic Johnson', 'G', ['Magic', 'Earvin Johnson']],
+  ['NBA-LAL', '34', 1999, "Shaquille O'Neal", 'C', ['Shaq']],
+  ['NBA-LAL', '8', 2002, 'Kobe Bryant', 'G', ['Kobe', 'Black Mamba']],
+  ['NBA-LAL', '24', 2007, 'Kobe Bryant', 'G', ['Kobe', 'Black Mamba']],
+  ['NBA-LAL', '23', 2019, 'LeBron James', 'F', ['LeBron', 'King James', 'LBJ']],
+  ['NBA-LAL', '3', 2019, 'Anthony Davis', 'F', ['AD']],
+  ['NBA-MEM', '12', 2022, 'Ja Morant', 'G'],
+  ['NBA-MIA', '3', 2005, 'Dwyane Wade', 'G', ['D-Wade', 'Flash']],
+  ['NBA-MIA', '6', 2011, 'LeBron James', 'F', ['LeBron', 'King James', 'LBJ']],
+  ['NBA-MIA', '22', 2022, 'Jimmy Butler', 'F', ['Jimmy Buckets']],
+  ['NBA-MIL', '34', 2020, 'Giannis Antetokounmpo', 'F', ['Giannis', 'Greek Freak']],
+  ['NBA-MIN', '21', 2003, 'Kevin Garnett', 'F', ['KG']],
+  ['NBA-MIN', '5', 2023, 'Anthony Edwards', 'G', ['Ant', 'Ant-Man']],
+  ['NBA-NO', '1', 2020, 'Zion Williamson', 'F', ['Zion']],
+  ['NBA-NY', '33', 1993, 'Patrick Ewing', 'C'],
+  ['NBA-NY', '7', 2012, 'Carmelo Anthony', 'F', ['Melo']],
+  ['NBA-OKC', '35', 2011, 'Kevin Durant', 'F', ['KD']],
+  ['NBA-OKC', '0', 2016, 'Russell Westbrook', 'G', ['Russ']],
+  ['NBA-OKC', '2', 2024, 'Shai Gilgeous-Alexander', 'G', ['SGA', 'Shai']],
+  ['NBA-ORL', '32', 1994, "Shaquille O'Neal", 'C', ['Shaq']],
+  ['NBA-ORL', '1', 1994, 'Penny Hardaway', 'G', ['Penny', 'Anfernee Hardaway']],
+  ['NBA-PHI', '6', 1982, 'Julius Erving', 'F', ['Dr. J', 'Doctor J']],
+  ['NBA-PHI', '3', 2000, 'Allen Iverson', 'G', ['AI', 'The Answer']],
+  ['NBA-PHI', '21', 2022, 'Joel Embiid', 'C'],
+  ['NBA-PHX', '34', 1992, 'Charles Barkley', 'F', ['Sir Charles', 'Chuck']],
+  ['NBA-PHX', '13', 2004, 'Steve Nash', 'G'],
+  ['NBA-PHX', '1', 2020, 'Devin Booker', 'G', ['Book']],
+  ['NBA-POR', '0', 2018, 'Damian Lillard', 'G', ['Dame', 'Dame Time']],
+  ['NBA-SA', '50', 1994, 'David Robinson', 'C', ['The Admiral']],
+  ['NBA-SA', '21', 2002, 'Tim Duncan', 'F', ['The Big Fundamental']],
+  ['NBA-SA', '20', 2004, 'Manu Ginóbili', 'G', ['Manu']],
+  ['NBA-SA', '9', 2004, 'Tony Parker', 'G'],
+  ['NBA-SA', '1', 2023, 'Victor Wembanyama', 'C', ['Wemby']],
+  ['NBA-SAC', '4', 2001, 'Chris Webber', 'F', ['C-Webb']],
+  ['NBA-TOR', '15', 1999, 'Vince Carter', 'G', ['Vinsanity', 'VC']],
+  ['NBA-TOR', '2', 2018, 'Kawhi Leonard', 'F', ['Kawhi', 'The Klaw']],
+  ['NBA-UTAH', '12', 1996, 'John Stockton', 'G'],
+  ['NBA-UTAH', '32', 1996, 'Karl Malone', 'F', ['The Mailman']],
+  ['NBA-WSH', '3', 2018, 'Bradley Beal', 'G'],
+
+  // ---- NFL ----
+  ['PRO-ARI', '11', 2015, 'Larry Fitzgerald', 'WR', ['Fitz']],
+  ['PRO-ATL', '21', 1990, 'Deion Sanders', 'CB', ['Prime Time', 'Neon Deion', 'Coach Prime']],
+  ['PRO-ATL', '7', 2002, 'Michael Vick', 'QB'],
+  ['PRO-ATL', '2', 2016, 'Matt Ryan', 'QB', ['Matty Ice']],
+  ['PRO-ATL', '11', 2016, 'Julio Jones', 'WR', ['Julio']],
+  ['PRO-BAL', '52', 2000, 'Ray Lewis', 'LB'],
+  ['PRO-BAL', '20', 2004, 'Ed Reed', 'S'],
+  ['PRO-BAL', '8', 2019, 'Lamar Jackson', 'QB', ['Lamar']],
+  ['PRO-BUF', '12', 1990, 'Jim Kelly', 'QB'],
+  ['PRO-BUF', '34', 1991, 'Thurman Thomas', 'RB'],
+  ['PRO-BUF', '17', 2023, 'Josh Allen', 'QB'],
+  ['PRO-CAR', '1', 2015, 'Cam Newton', 'QB', ['Cam', 'Superman']],
+  ['PRO-CHI', '34', 1985, 'Walter Payton', 'RB', ['Sweetness']],
+  ['PRO-CHI', '54', 2006, 'Brian Urlacher', 'LB'],
+  ['PRO-CIN', '9', 2021, 'Joe Burrow', 'QB', ['Joe Brrr']],
+  ['PRO-CIN', '1', 2021, "Ja'Marr Chase", 'WR'],
+  ['PRO-CLE', '32', 1963, 'Jim Brown', 'RB'],
+  ['PRO-CLE', '95', 2023, 'Myles Garrett', 'DE'],
+  ['PRO-DAL', '8', 1995, 'Troy Aikman', 'QB'],
+  ['PRO-DAL', '22', 1995, 'Emmitt Smith', 'RB', ['Emmitt']],
+  ['PRO-DAL', '88', 1995, 'Michael Irvin', 'WR', ['The Playmaker']],
+  ['PRO-DAL', '4', 2023, 'Dak Prescott', 'QB', ['Dak']],
+  ['PRO-DAL', '11', 2023, 'Micah Parsons', 'LB'],
+  ['PRO-DEN', '7', 1997, 'John Elway', 'QB'],
+  ['PRO-DEN', '18', 2015, 'Peyton Manning', 'QB', ['Peyton']],
+  ['PRO-DET', '20', 1997, 'Barry Sanders', 'RB'],
+  ['PRO-DET', '81', 2012, 'Calvin Johnson', 'WR', ['Megatron']],
+  ['PRO-DET', '14', 2023, 'Amon-Ra St. Brown', 'WR', ['St. Brown', 'Sun God']],
+  ['PRO-GB', '4', 1996, 'Brett Favre', 'QB'],
+  ['PRO-GB', '92', 1996, 'Reggie White', 'DE', ['Minister of Defense']],
+  ['PRO-GB', '12', 2010, 'Aaron Rodgers', 'QB', ['A-Rod']],
+  ['PRO-HOU', '99', 2014, 'J.J. Watt', 'DE', ['JJ Watt']],
+  ['PRO-IND', '88', 2004, 'Marvin Harrison', 'WR'],
+  ['PRO-IND', '18', 2006, 'Peyton Manning', 'QB', ['Peyton']],
+  ['PRO-JAX', '16', 2022, 'Trevor Lawrence', 'QB'],
+  ['PRO-KC', '58', 1990, 'Derrick Thomas', 'LB'],
+  ['PRO-KC', '15', 2023, 'Patrick Mahomes', 'QB', ['Mahomes']],
+  ['PRO-KC', '87', 2023, 'Travis Kelce', 'TE', ['Kelce']],
+  ['PRO-LAC', '10', 2023, 'Justin Herbert', 'QB'],
+  ['PRO-LAR', '99', 2018, 'Aaron Donald', 'DT'],
+  ['PRO-LAR', '10', 2021, 'Cooper Kupp', 'WR'],
+  ['PRO-LV', '17', 2022, 'Davante Adams', 'WR'],
+  ['PRO-MIA', '13', 1984, 'Dan Marino', 'QB'],
+  ['PRO-MIA', '10', 2023, 'Tyreek Hill', 'WR', ['Cheetah']],
+  ['PRO-MIN', '84', 1998, 'Randy Moss', 'WR'],
+  ['PRO-MIN', '28', 2012, 'Adrian Peterson', 'RB', ['AP', 'All Day']],
+  ['PRO-MIN', '18', 2022, 'Justin Jefferson', 'WR', ['Jettas']],
+  ['PRO-NE', '81', 2007, 'Randy Moss', 'WR'],
+  ['PRO-NE', '87', 2011, 'Rob Gronkowski', 'TE', ['Gronk']],
+  ['PRO-NE', '12', 2016, 'Tom Brady', 'QB', ['TB12']],
+  ['PRO-NO', '9', 2009, 'Drew Brees', 'QB'],
+  ['PRO-NO', '41', 2017, 'Alvin Kamara', 'RB'],
+  ['PRO-NYG', '56', 1986, 'Lawrence Taylor', 'LB', ['LT']],
+  ['PRO-NYG', '92', 2001, 'Michael Strahan', 'DE'],
+  ['PRO-NYG', '10', 2011, 'Eli Manning', 'QB', ['Eli']],
+  ['PRO-NYG', '13', 2014, 'Odell Beckham Jr.', 'WR', ['OBJ', 'Odell']],
+  ['PRO-NYJ', '12', 1968, 'Joe Namath', 'QB', ['Broadway Joe']],
+  ['PRO-PHI', '5', 2004, 'Donovan McNabb', 'QB'],
+  ['PRO-PHI', '20', 2008, 'Brian Dawkins', 'S', ['Weapon X']],
+  ['PRO-PHI', '1', 2022, 'Jalen Hurts', 'QB'],
+  ['PRO-PHI', '26', 2024, 'Saquon Barkley', 'RB', ['Saquon']],
+  ['PRO-PIT', '12', 1978, 'Terry Bradshaw', 'QB'],
+  ['PRO-PIT', '7', 2008, 'Ben Roethlisberger', 'QB', ['Big Ben']],
+  ['PRO-PIT', '43', 2008, 'Troy Polamalu', 'S'],
+  ['PRO-PIT', '90', 2021, 'T.J. Watt', 'LB', ['TJ Watt']],
+  ['PRO-SEA', '3', 2013, 'Russell Wilson', 'QB', ['Russ', 'DangeRussWilson']],
+  ['PRO-SEA', '24', 2013, 'Marshawn Lynch', 'RB', ['Beast Mode']],
+  ['PRO-SEA', '25', 2013, 'Richard Sherman', 'CB'],
+  ['PRO-SF', '16', 1984, 'Joe Montana', 'QB', ['Joe Cool']],
+  ['PRO-SF', '8', 1994, 'Steve Young', 'QB'],
+  ['PRO-SF', '80', 1994, 'Jerry Rice', 'WR'],
+  ['PRO-SF', '52', 2009, 'Patrick Willis', 'LB'],
+  ['PRO-SF', '23', 2023, 'Christian McCaffrey', 'RB', ['CMC']],
+  ['PRO-SF', '85', 2023, 'George Kittle', 'TE', ['Kittle']],
+  ['PRO-SF', '97', 2023, 'Nick Bosa', 'DE'],
+  ['PRO-TB', '55', 2002, 'Derrick Brooks', 'LB'],
+  ['PRO-TB', '12', 2020, 'Tom Brady', 'QB', ['TB12']],
+  ['PRO-TEN', '9', 1999, 'Steve McNair', 'QB', ['Air McNair']],
+  ['PRO-TEN', '27', 1999, 'Eddie George', 'RB'],
+  ['PRO-TEN', '22', 2020, 'Derrick Henry', 'RB', ['King Henry']],
+]
+
+export const PLAYERS: Player[] = ROWS.map(([team, number, season, name, position, aliases]) => ({
+  id: `${team}-${number}-${season}`,
+  team,
+  league: team.startsWith('NBA-') ? 'NBA' : 'PRO',
+  number,
+  season,
+  name,
+  position: POSITIONS[position],
+  ...(aliases ? { aliases } : {}),
+}))
+
+const byId = new Map(PLAYERS.map((p) => [p.id, p]))
+export const findPlayer = (id: string): Player | undefined => byId.get(id)

@@ -1,5 +1,5 @@
 import { useRef, useState } from 'react'
-import { ALL_POOL_IDS, COLOR_POOLS, COLOR_POOL_IDS, COLOR_SOURCE_NOTE, MAX_DECK_ROUNDS, RANDOM_ROUND_OPTIONS, TEAM_POOLS, colorPoolTeams, logoPoolTeams, randomDeck, type GuessTarget, type RandomDeckOptions, type RandomGuess, type Round, type TeamPool } from '../lib/teams'
+import { ALL_POOL_IDS, COLOR_POOLS, COLOR_POOL_IDS, COLOR_SOURCE_NOTE, MAX_DECK_ROUNDS, PLAYER_POOLS, PLAYER_POOL_IDS, RANDOM_ROUND_OPTIONS, TEAM_POOLS, colorPoolTeams, logoPoolTeams, poolPlayers, randomDeck, type GuessTarget, type RandomDeckOptions, type RandomGuess, type Round, type TeamPool } from '../lib/teams'
 import { useDialogA11y } from './SettingsModal'
 
 interface Props {
@@ -24,9 +24,10 @@ export function RandomDeckModal({ deck, guessTarget, onRoll, onClose }: Props) {
 
   const logoCount = logoPoolTeams(opts.logoPools).length
   const colorCount = colorPoolTeams(opts.colorPools).length
+  const jerseyCount = poolPlayers(opts.playerPools ?? []).length
   const capacity = replace ? MAX_DECK_ROUNDS : Math.max(0, MAX_DECK_ROUNDS - deck.length)
   const rollCount = Math.min(opts.rounds, capacity)
-  const ready = logoCount > 0 && colorCount > 0 && rollCount > 0
+  const ready = ((logoCount > 0 && colorCount > 0) || jerseyCount > 0) && rollCount > 0
 
   const roll = () => {
     if (!ready) return
@@ -60,6 +61,14 @@ export function RandomDeckModal({ deck, guessTarget, onRoll, onClose }: Props) {
           <PoolPicker label="LOGOS FROM" pools={TEAM_POOLS} allIds={ALL_POOL_IDS} value={opts.logoPools} count={logoCount} onChange={(v) => setOpts((o) => ({ ...o, logoPools: v }))} />
           <PoolPicker label="COLORS FROM" pools={COLOR_POOLS} allIds={COLOR_POOL_IDS} value={opts.colorPools} count={colorCount} unit="palettes" onChange={(v) => setOpts((o) => ({ ...o, colorPools: v }))} />
           <div className="mode-hint">{COLOR_SOURCE_NOTE}</div>
+          <PoolPicker label="JERSEYS FROM" pools={PLAYER_POOLS} allIds={PLAYER_POOL_IDS} value={opts.playerPools ?? []} count={jerseyCount} unit="jerseys" onChange={(v) => setOpts((o) => ({ ...o, playerPools: v }))} />
+          <div className="mode-hint">
+            {jerseyCount === 0
+              ? 'Add “Who wore it?” rounds: a famous jersey, and players name who wore it.'
+              : logoCount > 0 && colorCount > 0
+                ? 'Each round is a coin flip between a logo remix and a jersey. Jersey rounds always ask for the player.'
+                : 'Every round is a jersey: players name who wore it.'}
+          </div>
 
           <div className="rail-label" id="rnd-guess-label">GUESS</div>
           <div className="grid4" role="group" aria-labelledby="rnd-guess-label">
@@ -110,7 +119,7 @@ export function RandomDeckModal({ deck, guessTarget, onRoll, onClose }: Props) {
           <button type="button" className={`btn-start${ready ? '' : ' disabled'}`} onClick={roll} disabled={!ready} aria-label={ready ? `Roll ${rollCount} random round${rollCount === 1 ? '' : 's'}` : 'Roll disabled, adjust options'}>
             🎲 ROLL {rollCount || opts.rounds} ROUND{(rollCount || opts.rounds) === 1 ? '' : 'S'}
           </button>
-          {!ready && <div className="mode-hint">{capacity === 0 ? 'Replace the deck to roll new rounds.' : 'Pick at least one collection for logos and one for colors.'}</div>}
+          {!ready && <div className="mode-hint">{capacity === 0 ? 'Replace the deck to roll new rounds.' : 'Pick at least one collection for logos and one for colors, or a jersey collection.'}</div>}
         </div>
       </div>
     </div>
@@ -127,7 +136,7 @@ function PoolPicker({
   onChange,
 }: {
   label: string
-  pools: TeamPool[]
+  pools: Pick<TeamPool, 'id' | 'label'>[]
   allIds: string[]
   value: string[]
   count: number

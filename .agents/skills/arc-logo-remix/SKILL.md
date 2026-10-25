@@ -26,7 +26,7 @@ For generating wavs, follow the `creating-audio` skill, then copy into the app (
 |---|---|
 | Clip map `VoiceClipId` → wav | `src/lib/teams.ts` (`VOICE_CLIPS`) |
 | `speak(id)` / `speakScore(n, total)` / `stopSpeak()` | `src/lib/teams.ts` — one shared `HTMLAudioElement` |
-| Round start | `PlayMode.beginRound` → `speak(roundTarget(deck[i], guessTarget))` |
+| Round start | `PlayMode.beginRound` → `speak(roundTarget(deck[i], guessTarget))`; jersey ("Who wore it?") rounds have no clip yet and start silently |
 | Reveal | `PlayMode.reveal` → `speak('correct' \| 'wrong' \| 'timeout')` |
 | Final score | `PlayMode.finish` → `speakScore(score, deck.length)` (joins you-scored-N + out-of-M into one wav) |
 | Preview | Deck rail + Settings: On → `speak(guessTarget)` |

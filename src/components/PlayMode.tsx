@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useRef, useState, type FormEvent, type KeyboardEvent } from 'react'
-import { findTeam, formatScore, fullName, roundColors, roundCredit, roundHints, spokenScore, roundTarget, speak, speakScore, stopSpeak, isCorrectGuess, insertHighScore, qualifiesForHighScore, INITIALS_LENGTH, INITIALS_ALPHABET, type GameMode, type GuessTarget, type HighScore, type Round, type TimerSeconds } from '../lib/teams'
+import { findTeam, formatScore, fullName, jerseyLine, roundColors, roundCredit, roundHints, roundPlayer, spokenScore, roundTarget, speak, speakScore, stopSpeak, isCorrectGuess, isCorrectPlayerGuess, insertHighScore, qualifiesForHighScore, INITIALS_LENGTH, INITIALS_ALPHABET, type GameMode, type GuessTarget, type HighScore, type Round, type RoundTarget, type TimerSeconds } from '../lib/teams'
 import { Logo, RoundLogo } from './Logo'
 import { GuessInput } from './GuessInput'
 
@@ -82,7 +82,9 @@ export function PlayMode({ deck, timer, gameMode, guessTarget, voice, highScores
       setHostParts([null, null])
       setTimeLeft(timer)
       setPhase('question')
-      if (voice) speak(roundTarget(deck[i], guessTarget))
+      const ask = roundTarget(deck[i], guessTarget)
+      // No announcer clip asks for a player yet, so jersey rounds start without a prompt.
+      if (voice && ask !== 'player') speak(ask)
       const started = performance.now()
       iv.current = window.setInterval(() => {
         const t = timer - (performance.now() - started) / 1000
@@ -197,7 +199,8 @@ export function PlayMode({ deck, timer, gameMode, guessTarget, voice, highScores
       return
     }
     if (!guess.trim()) return
-    revealSingle(isCorrectGuess(guess, target === 'colors' ? c : o))
+    const player = roundPlayer(deck[rIdx])
+    revealSingle(player ? isCorrectPlayerGuess(guess, player) : isCorrectGuess(guess, target === 'colors' ? c : o))
   }
 
   const revealSingle = (ok: boolean) => reveal(ok ? 'correct' : 'wrong', ok ? 1 : 0)
@@ -253,24 +256,31 @@ export function PlayMode({ deck, timer, gameMode, guessTarget, voice, highScores
   // The intro promises what the deck actually asks, which may be one mode or both.
   const targets = new Set(deck.map((r) => roundTarget(r, guessTarget)))
   const introSub = targets.size > 1
-    ? 'Rounds vary: some want the name behind the logo, some want whose colors it wears, some want both. Read each prompt.'
-    : targets.has('both')
+    ? targets.has('player')
+      ? 'Rounds vary: some show a logo, some show a jersey and want the player who wore it. Read each prompt.'
+      : 'Rounds vary: some want the name behind the logo, some want whose colors it wears, some want both. Read each prompt.'
+    : targets.has('player')
+      ? 'Each round shows a jersey: the team, the number and the season. Name the player who wore it.'
+      : targets.has('both')
       ? 'Name the team or brand behind the logo and whose colors it wears. Each one you get is worth half a point.'
       : targets.has('colors')
         ? 'Ignore the logo. Name the team or brand whose colors it wears.'
         : 'Ignore the colors. Name the team or brand behind the logo.'
 
   const round = deck[rIdx]
-  const target: GuessTarget = round ? roundTarget(round, guessTarget) : guessTarget
+  const target: RoundTarget = round ? roundTarget(round, guessTarget) : guessTarget
+  const player = round ? roundPlayer(round) : undefined
   const ot = round ? findTeam(round.o)! : null
   const ct = round ? roundColors(round) : null
   const questionLocked = phase !== 'question'
   const promptStatus =
-    target === 'both' ? 'Name the logo and color sources.' : target === 'colors' ? 'Name the color source.' : 'Name the logo source.'
+    player ? `Name the player who wore ${jerseyLine(player)}.` : target === 'both' ? 'Name the logo and color sources.' : target === 'colors' ? 'Name the color source.' : 'Name the logo source.'
   const revealStatus =
     phase === 'reveal' && ot && ct
       ? `${REVEAL_TITLE[kind]}. ${
-          target === 'both'
+          player
+            ? `${player.name}.`
+            : target === 'both'
             ? `Logo: ${fullName(ot)}. Colors: ${fullName(ct)}.`
             : `${fullName(target === 'colors' ? ct : ot)}.`
         }${credit >= 1 ? ' Plus one.' : credit > 0 ? ' Plus a half.' : ''}`
@@ -326,7 +336,8 @@ export function PlayMode({ deck, timer, gameMode, guessTarget, voice, highScores
               <RoundLogo round={round} />
             </div>
           </div>
-          <div className="prompt">{target === 'both' ? 'WHOSE LOGO · WHOSE COLORS?' : target === 'colors' ? 'WHOSE COLORS ARE THESE?' : 'WHOSE LOGO IS THIS?'}</div>
+          {player && <div className="q-jersey">{jerseyLine(player)}</div>}
+          <div className="prompt">{player ? 'WHO WORE IT?' : target === 'both' ? 'WHOSE LOGO · WHOSE COLORS?' : target === 'colors' ? 'WHOSE COLORS ARE THESE?' : 'WHOSE LOGO IS THIS?'}</div>
           {round.h && (
             <div className="hints" aria-label="Hints">
               {roundHints(round).map((h) => (
@@ -375,9 +386,10 @@ export function PlayMode({ deck, timer, gameMode, guessTarget, voice, highScores
                   ref={inputRef}
                   value={guess}
                   onChange={setGuess}
-                  placeholder="Type your answer…"
+                  placeholder={player ? 'Name the player…' : 'Type your answer…'}
                   enterKeyHint="go"
-                  ariaLabel="Your guess"
+                  ariaLabel={player ? 'Player who wore the jersey' : 'Your guess'}
+                  players={!!player}
                 />
                 <button type="submit" className="btn-submit" disabled={questionLocked}>
                   SUBMIT
@@ -432,7 +444,15 @@ export function PlayMode({ deck, timer, gameMode, guessTarget, voice, highScores
         <div className="reveal pop">
           <div className={`reveal-icon k-${kind}`}>{REVEAL_ICON[kind]}</div>
           <div className={`reveal-title k-${kind}`}>{REVEAL_TITLE[kind].toUpperCase()}</div>
-          {target === 'both' ? (
+          {player ? (
+            <>
+              <div className="reveal-logo">
+                <RoundLogo round={round} />
+              </div>
+              <div className="reveal-name">{player.name}</div>
+              <div className="reveal-note">{jerseyLine(player)}</div>
+            </>
+          ) : target === 'both' ? (
             <div className="reveal-pair">
               {([[ot, 'LOGO'], [ct, 'COLORS']] as const).map(([t, lb], i) => (
                 <div key={lb} className="reveal-part">
@@ -528,6 +548,7 @@ export function PlayMode({ deck, timer, gameMode, guessTarget, voice, highScores
               if (!r) return null
               const o = findTeam(r.o)!
               const c = roundColors(r)
+              const ask = roundTarget(r, guessTarget)
               return (
                 <div key={i} className="recap-row">
                   <div className={`recap-mark ${pts >= 1 ? 'ok' : pts > 0 ? 'half' : 'no'}`}>{pts >= 1 ? '✓' : pts > 0 ? '½' : '✕'}</div>
@@ -535,7 +556,7 @@ export function PlayMode({ deck, timer, gameMode, guessTarget, voice, highScores
                     <RoundLogo round={r} />
                   </div>
                   <div className="recap-name">
-                    {roundTarget(r, guessTarget) === 'both' ? `${fullName(o)} · ${fullName(c)}` : fullName(roundTarget(r, guessTarget) === 'colors' ? c : o)}
+                    {ask === 'player' ? roundPlayer(r)!.name : ask === 'both' ? `${fullName(o)} · ${fullName(c)}` : fullName(ask === 'colors' ? c : o)}
                   </div>
                 </div>
               )

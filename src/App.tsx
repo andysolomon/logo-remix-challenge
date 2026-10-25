@@ -6,6 +6,7 @@ import { Header } from './components/Header'
 import { PlayMode } from './components/PlayMode'
 import { SettingsModal } from './components/SettingsModal'
 import {
+  findPlayer,
   findTeam,
   loadDeck,
   loadDesigner,
@@ -129,10 +130,17 @@ export default function App() {
 
   const editRound = (i: number) => {
     const r = deck[i]
+    const player = r.p === undefined ? undefined : findPlayer(r.p)
+    if (player) {
+      setCreate((s) => ({ ...s, kind: 'jersey', pId: player.id, editIdx: i, jerseyStep: 2, browserP: { league: player.league, era: 'All' } }))
+      setMode('create')
+      return
+    }
     const o = findTeam(r.o)!
     const c = r.c === undefined ? null : findTeam(r.c)!
     setCreate((s) => ({
       ...s,
+      kind: 'remix',
       oId: r.o,
       cId: r.c ?? null,
       perm: r.v,

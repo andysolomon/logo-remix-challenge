@@ -35,6 +35,8 @@ Every remix shows all three of the color team's colors. Artwork that paints all 
 
 Each round asks for the **logo's team**, the **team whose colors it wears**, or **both** — set per round on its deck card, with a deck-wide default for rounds left alone. Single-answer rounds are worth a point. A Both round is worth half a point per source named, so getting one of the two shows **HALF RIGHT** and scores ½; scores and high scores show halves as "7½". If time runs out on a Both round, a half that was already locked in still counts: the logo answer once Enter has graded it, or a half the host has marked correct. An optional voice announcer plays Chatterbox clips (`public/voice/`) for the round prompt, the verdict, and the final score.
 
+**Who wore it?** rounds show a famous jersey instead of a logo: the team's colors and logo patch, a number and a season (an NBA season like "1995–96", an NFL season like "2023"), and players name who wore it. Pick **Who wore it?** at the top of Create to browse 151 jerseys (71 NBA, 80 NFL) by league and era, from Bill Russell's 1964–65 Celtics #6 to Saquon Barkley's 2024 Eagles #26; a team, number and season single out one player, so the same player can come back in another jersey (Kobe's #8 and #24, LeBron in Cleveland, Miami and Los Angeles). The full name, the surname or a well-known nickname all count (Jordan, MJ, Shaq, KD, Gronk, Beast Mode), accents and punctuation are ignored, and autocomplete lists player names with no team or season beside them. Jersey rounds sit in the same deck as remixes with the same timer, Type and Host modes, scoring and high scores; they always ask for the player, their hint is the position ("Position: Guard"), and **Random Deck** can draw them from NFL and/or NBA jerseys, alone or as a coin flip with remixes. Jerseys are drawn in today's team colors, and only seasons played under the team's current name and city are included. The announcer has no "who wore it?" clip yet, so jersey rounds start without a spoken prompt (verdicts and the final score are still announced). The list lives in `src/lib/players.ts`.
+
 **Designer mode** is tucked away under Settings → Advanced. Switch it on and a **Designer** tab joins Create and Deck: pick any logo (and any of its alternates), start from an NFL, NBA or college team's palette or type exact hex codes for each of the artwork's color slots, and download the result as an **SVG** (vector, any size) or a square **PNG** at 512, 1024 or 2048 px with a transparent, white, black or custom background. Tiled logos keep their backdrop tile (and one-color logos their frame) in the export, bitmap artwork exports as PNG only, and the tab disappears again when the mode is switched off.
 
 **Upload Logo** in Designer mode traces any image you bring (JPG, PNG, WebP, GIF or SVG; drop it on the canvas or pick a file) into flat-color vector outlines, right in the browser; nothing is sent anywhere. The tracer (`src/lib/trace.ts`) finds the artwork's flat fills as peaks in a color histogram, so JPEG noise and anti-aliased edges don't become extra colors, removes the background around the logo while keeping white details enclosed by it, and smooths each color's outline with potrace's corner rule. **Auto** keeps up to three colors (the Designer's three slots) and drops thin anti-aliasing halos; 1, 2 or 3 forces a count, and **Remove background** can be switched off. The traced logo then recolors slot by slot, picks up a backdrop tile and frame when it has fewer than three colors, and downloads as SVG or PNG like any other logo.
@@ -164,6 +166,7 @@ src/
   lib/exportLogo.ts        Designer exports: recolored SVG files, canvas-rendered PNGs, downloads
   lib/trace.ts             Designer uploads: trace a bitmap logo into flat-color SVG outlines (pure)
   lib/traceUpload.ts       Designer uploads: decode the file in the browser, trace it, wrap it as a logo
+  lib/players.ts           151 famous NFL and NBA jerseys (team, number, season, player) for "Who wore it?" rounds
   lib/teams.json           1222 catalog entries across sports, restaurants, brands, flags, characters, landmarks and educational collections
   lib/useOrientation.ts    portrait = innerHeight > innerWidth
   components/
@@ -171,7 +174,10 @@ src/
     Header.tsx             wordmark, Create / Deck (/ Designer) tabs, PLAY
     TeamBrowser.tsx        league toggle, search, conference chips, tile grid
     RemixCanvas.tsx        hero remix logo, Shuffle Logo, Shuffle Colors, + ADD ROUND / + ADD ORIGINAL
-    CreateMode.tsx         landscape 3-column / portrait stepped composition
+    Jersey.tsx             a jersey in team colors with number, logo patch and season tag
+    JerseyBrowser.tsx      Who wore it?: NFL / NBA toggle, era chips, jersey tile grid
+    JerseyCanvas.tsx       Who wore it?: jersey preview, answer, + ADD ROUND
+    CreateMode.tsx         Logo remix / Who wore it? switch; landscape columns / portrait stepped composition
     DesignerMode.tsx       opt-in logo designer: per-slot colors, SVG / PNG export
     DeckMode.tsx           round cards, game setup rail, high score
     PlayMode.tsx           intro → question (type / host) → reveal → results

@@ -1,9 +1,19 @@
 import { useEffect, useRef, useState } from 'react'
-import { COLOR_DONOR_LEAGUES, COLOR_SOURCE_NOTE, findTeam, MAX_DECK_ROUNDS, nextContrastSafePermutation, nextLogoVariant, withLogoVariant, type Round, type Team } from '../lib/teams'
+import { COLOR_DONOR_LEAGUES, COLOR_SOURCE_NOTE, findPlayer, findTeam, MAX_DECK_ROUNDS, nextContrastSafePermutation, nextLogoVariant, withLogoVariant, type Player, type Round, type Team } from '../lib/teams'
+import { JerseyBrowser, type JerseyBrowserState } from './JerseyBrowser'
+import { JerseyCanvas } from './JerseyCanvas'
 import { RemixCanvas, type AddState } from './RemixCanvas'
 import { TeamBrowser, type BrowserState } from './TeamBrowser'
 
+/** What Create is making: a logo remix, or a "Who wore it?" jersey round. */
+export type CreateKind = 'remix' | 'jersey'
+const KINDS: [CreateKind, string][] = [
+  ['remix', 'Logo remix'],
+  ['jersey', 'Who wore it?'],
+]
+
 export interface CreateState {
+  kind: CreateKind
   oId: string | null
   cId: string | null
   perm: number
@@ -12,9 +22,14 @@ export interface CreateState {
   step: 1 | 2 | 3
   browserO: BrowserState
   browserC: BrowserState
+  /** Jersey rounds: the picked player, the portrait step and the jersey browser's filters. */
+  pId: string | null
+  jerseyStep: 1 | 2
+  browserP: JerseyBrowserState
 }
 
 export const initialCreateState: CreateState = {
+  kind: 'remix',
   oId: null,
   cId: null,
   perm: 0,
@@ -22,6 +37,9 @@ export const initialCreateState: CreateState = {
   step: 1,
   browserO: { league: 'PRO', conference: 'All' },
   browserC: { league: 'PRO', conference: 'All' },
+  pId: null,
+  jerseyStep: 1,
+  browserP: { league: 'NBA', era: 'All' },
 }
 
 interface Props {
@@ -43,6 +61,7 @@ export function CreateMode({ state, setState, portrait, deckCount, onAddRound, h
   const originalTeam = state.oId ? findTeam(state.oId) ?? null : null
   const original = originalTeam ? withLogoVariant(originalTeam, state.logoVariant) : null
   const colors = state.cId ? findTeam(state.cId) ?? null : null
+  const player = state.pId ? findPlayer(state.pId) ?? null : null
   const [justAdded, setJustAdded] = useState(false)
   const addedTimer = useRef<number | undefined>(undefined)
   const addLock = useRef(false)
@@ -51,6 +70,7 @@ export function CreateMode({ state, setState, portrait, deckCount, onAddRound, h
   const deckFull = state.editIdx == null && deckCount >= MAX_DECK_ROUNDS
   // A logo with no color source goes in as-is, in its original colors.
   const addState: AddState = justAdded ? 'added' : deckFull ? 'full' : !original ? 'disabled' : state.editIdx != null ? 'save' : 'add'
+  const jerseyAddState: AddState = justAdded ? 'added' : deckFull ? 'full' : !player ? 'disabled' : state.editIdx != null ? 'save' : 'add'
 
   // Clicking the already-selected tile deselects it.
   const selectOriginal = (t: Team) =>
@@ -67,10 +87,21 @@ export function CreateMode({ state, setState, portrait, deckCount, onAddRound, h
   const shuffleLogo = () => {
     if (originalTeam) setState((s) => ({ ...s, logoVariant: nextLogoVariant(originalTeam, s.logoVariant) }))
   }
+  const selectPlayer = (p: Player) =>
+    setState((s) => (s.pId === p.id ? { ...s, pId: null, jerseyStep: 1 } : { ...s, pId: p.id, jerseyStep: 2 }))
+  const clearPlayer = () => setState((s) => ({ ...s, pId: null, jerseyStep: 1 }))
   const add = () => {
-    if (!original || deckFull || addLock.current) return
-    addLock.current = true
+    if (!original) return
     const round: Round = colors ? { o: original.id, c: colors.id, v: state.perm, l: state.logoVariant } : { o: original.id, v: 0, l: state.logoVariant }
+    // Reset the canvas to its default state for the next remix.
+    commit(round, (s) => ({ ...s, oId: null, cId: null, perm: 0, logoVariant: undefined, step: 1 }))
+  }
+  const addJersey = () => {
+    if (player) commit({ o: player.team, v: 0, p: player.id }, (s) => ({ ...s, pId: null, jerseyStep: 1 }))
+  }
+  const commit = (round: Round, reset: (s: CreateState) => CreateState) => {
+    if (deckFull || addLock.current) return
+    addLock.current = true
     const added = onAddRound(round, state.editIdx)
     if (!added) {
       addLock.current = false
@@ -82,9 +113,57 @@ export function CreateMode({ state, setState, portrait, deckCount, onAddRound, h
     addedTimer.current = window.setTimeout(() => {
       setJustAdded(false)
       addLock.current = false
-      // Reset the canvas to its default state for the next remix.
-      setState((s) => ({ ...s, oId: null, cId: null, perm: 0, logoVariant: undefined, step: 1 }))
+      setState(reset)
     }, 1000)
+  }
+
+  const kindSwitch = (
+    <div className="seg create-kind" role="group" aria-label="Round type">
+      {KINDS.map(([k, lb]) => (
+        <button key={k} type="button" className={`seg-btn${state.kind === k ? ' active' : ''}`} aria-pressed={state.kind === k} onClick={() => setState((s) => ({ ...s, kind: k }))}>
+          {lb}
+        </button>
+      ))}
+    </div>
+  )
+
+  if (state.kind === 'jersey') {
+    const browser = (
+      <JerseyBrowser state={state.browserP} onState={(b) => setState((s) => ({ ...s, browserP: b }))} selectedId={state.pId} onSelect={selectPlayer} portrait={portrait} />
+    )
+    const preview = <JerseyCanvas player={player} addState={jerseyAddState} onAdd={addJersey} onClear={clearPlayer} portrait={portrait} />
+    if (!portrait) {
+      return (
+        <div className="create-land jersey" {...panelProps} hidden={hidden}>
+          {kindSwitch}
+          {browser}
+          {preview}
+        </div>
+      )
+    }
+    const steps: [1 | 2, string][] = [
+      [1, '1 · Jersey'],
+      [2, '2 · Preview'],
+    ]
+    return (
+      <div className="create-port portrait" {...panelProps} hidden={hidden}>
+        {kindSwitch}
+        <div className="steps" role="group" aria-label="Create jersey round steps">
+          {steps.map(([n, lb]) => (
+            <button
+              key={n}
+              type="button"
+              className={`step${state.jerseyStep === n ? ' active' : ''}`}
+              aria-current={state.jerseyStep === n ? 'step' : undefined}
+              onClick={() => setState((s) => ({ ...s, jerseyStep: n }))}
+            >
+              {lb}
+            </button>
+          ))}
+        </div>
+        {state.jerseyStep === 1 ? browser : preview}
+      </div>
+    )
   }
 
   const canvas = (
@@ -112,6 +191,7 @@ export function CreateMode({ state, setState, portrait, deckCount, onAddRound, h
     ]
     return (
       <div className="create-port portrait" {...panelProps} hidden={hidden}>
+        {kindSwitch}
         <div className="steps" role="group" aria-label="Create remix steps">
           {steps.map(([n, lb]) => (
             <button
@@ -160,6 +240,7 @@ export function CreateMode({ state, setState, portrait, deckCount, onAddRound, h
 
   return (
     <div className="create-land" {...panelProps} hidden={hidden}>
+      {kindSwitch}
       <TeamBrowser
         title="ORIGINAL"
         state={state.browserO}

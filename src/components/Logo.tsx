@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { framedTileImage } from '../lib/designer'
-import { findTeam, remixLayout, resolveRemixTargetColors, sinksIntoDark, withLogoVariant, type Round, type Team } from '../lib/teams'
+import { Jersey } from './Jersey'
+import { findPlayer, findTeam, remixLayout, resolveRemixTargetColors, sinksIntoDark, withLogoVariant, type Round, type Team } from '../lib/teams'
 
 interface Props {
   team: Team
@@ -347,7 +348,10 @@ export function Logo({ team: baseTeam, palette, perm = 0, variantId, targetColor
 /** A deck round's logo: remixed into its color team's palette, or in its own colors for an original-colors round. */
 export function RoundLogo({ round }: { round: Round }) {
   const team = findTeam(round.o)!
-  return round.c === undefined ? (
+  const player = round.p === undefined ? undefined : findPlayer(round.p)
+  return player ? (
+    <Jersey player={player} />
+  ) : round.c === undefined ? (
     <Logo team={team} variantId={round.l} />
   ) : (
     <Logo team={team} palette={findTeam(round.c)!.palette} perm={round.v} variantId={round.l} />

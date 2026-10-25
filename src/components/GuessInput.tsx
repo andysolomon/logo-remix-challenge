@@ -95,11 +95,10 @@ export const GuessInput = forwardRef<HTMLInputElement, Props>(function GuessInpu
               role="option"
               aria-selected={i === active}
               className={`guess-suggest-item${i === active ? ' active' : ''}`}
-              // Pointer-down would blur the field first; holding focus keeps typing alive.
-              onPointerDown={(e) => {
-                e.preventDefault()
-                pick(t)
-              }}
+              // Pointer-down would blur the field first; holding focus keeps typing alive. Picking on
+              // click (a tap, not a swipe) lets the keyboard-up chip row scroll sideways without choosing.
+              onPointerDown={(e) => e.preventDefault()}
+              onClick={() => pick(t)}
             >
               <span className="guess-suggest-name">{fullName(t)}</span>
               <span className="guess-suggest-tag">{t.conference}</span>

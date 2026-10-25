@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="svg29" viewBox="-0.48 -0.48 16.96 16.96" version="1.1" enable-background="new 0 0 16 16" width="16.96" height="16.96">
+  <defs id="defs19">
+    <linearGradient gradientUnits="userSpaceOnUse" gradientTransform="translate(-.38352 -2.3011)" y2="7.1827" y1="12.33" x2="12.157" x1="8.958" id="c">
+      <stop id="stop4" offset="0" stop-color="#d9ecf8" />
+      <stop id="stop6" offset="1" stop-color="#f8feed" />
+    </linearGradient>
+    <linearGradient gradientUnits="userSpaceOnUse" gradientTransform="translate(-.38352 -2.3011)" y2="9.2405" y1="12.46" x2="9.6838" x1="5.9589" id="b">
+      <stop id="stop9" offset="0" stop-color="#bdd9ef" />
+      <stop id="stop11" offset="1" stop-color="#b3bcc0" />
+    </linearGradient>
+    <linearGradient gradientUnits="userSpaceOnUse" gradientTransform="translate(-.38352 -2.3011)" y2="12.458" y1="14.339" x2="7.8421" x1="6.7977" id="a">
+      <stop id="stop14" offset="0" stop-color="#7c9bbe" />
+      <stop id="stop16" offset="1" stop-color="#788b9b" />
+    </linearGradient>
+  </defs>
+  <rect id="rect21" style="paint-order:normal" fill="#416390" height="16" width="16" y="-9.0206e-16" />
+  <path id="path23" fill="url(#c)" d="m2.2945 7.8742 3.2329 0.89484 0.88674 3.2689 1.6677-1.585 3.0291 2.2029 2.2115-9.0888z" />
+  <path id="path25" fill="url(#b)" d="m6.8784 9.4268-0.46428 2.6111-0.88674-3.2689 6.2462-3.8874z" />
+  <path id="path27" fill="url(#a)" d="m6.4141 12.038 0.46428-2.6111 1.2034 1.0261z" />
+</svg>

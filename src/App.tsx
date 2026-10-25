@@ -8,6 +8,7 @@ import { SettingsModal } from './components/SettingsModal'
 import {
   findPlayer,
   findTeam,
+  JERSEYS_FILTER,
   loadDeck,
   loadDesigner,
   loadGameMode,
@@ -132,7 +133,17 @@ export default function App() {
     const r = deck[i]
     const player = r.p === undefined ? undefined : findPlayer(r.p)
     if (player) {
-      setCreate((s) => ({ ...s, kind: 'jersey', pId: player.id, editIdx: i, jerseyStep: 2, browserP: { league: player.league, era: 'All' } }))
+      setCreate((s) => ({
+        ...s,
+        pId: player.id,
+        oId: null,
+        cId: null,
+        perm: 0,
+        logoVariant: undefined,
+        editIdx: i,
+        step: 3,
+        browserO: { league: player.league, conference: JERSEYS_FILTER },
+      }))
       setMode('create')
       return
     }
@@ -140,8 +151,8 @@ export default function App() {
     const c = r.c === undefined ? null : findTeam(r.c)!
     setCreate((s) => ({
       ...s,
-      kind: 'remix',
       oId: r.o,
+      pId: null,
       cId: r.c ?? null,
       perm: r.v,
       logoVariant: r.l,

@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="280.458" height="280.458" viewBox="-7.937 -7.937 280.458 280.458" version="1.1" id="svg8">
+  <defs id="defs2" />
+  <g id="layer1" transform="translate(152.70254,575.87003)">
+    <g id="g55" transform="matrix(1.827233,0,0,1.827233,-598.54739,-589.20883)">
+      <path class="st1" d="m 359.9,7.3 h -87 C 257,7.3 244,20.3 244,36.2 v 87 c 0,15.9 13,28.9 28.9,28.9 h 87 c 15.9,0 28.9,-13 28.9,-28.9 v -87 c 0,-15.9 -13,-28.9 -28.9,-28.9 z" id="path57" style="fill:#001935" />
+      <path class="st0" d="M 341.3,124.8 H 326 c -13.7,0 -24,-7.1 -24,-24 V 73.7 H 289.5 V 59 C 303.2,55.4 309,43.6 309.7,33.4 H 324 v 23.3 h 16.6 v 17 H 324 v 23.6 c 0,7.1 3.6,9.5 9.2,9.5 h 8.1 z" id="path59" style="fill:#ffffff" />
+    </g>
+  </g>
+</svg>

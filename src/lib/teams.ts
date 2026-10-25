@@ -728,6 +728,9 @@ export const PLAYER_POOLS: { id: string; label: string; league: PlayerLeague }[]
   { id: 'NBA', label: LEAGUES.NBA.label, league: 'NBA' },
 ]
 export const PLAYER_POOL_IDS = PLAYER_POOLS.map((p) => p.id)
+/** Filter chip that swaps a league's logos for its famous jerseys in the Original picker. */
+export const JERSEYS_FILTER = 'Jerseys'
+export const hasJerseys = (league: League): league is PlayerLeague => PLAYER_POOLS.some((p) => p.league === league)
 export const poolPlayers = (ids: string[]) => {
   const leagues = PLAYER_POOLS.filter((p) => ids.includes(p.id)).map((p) => p.league)
   return PLAYERS.filter((p) => leagues.includes(p.league))

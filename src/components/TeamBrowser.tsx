@@ -1,5 +1,6 @@
 import { useEffect, useRef, type WheelEvent } from 'react'
-import { entryNoun, filterTeams, fullName, LEAGUES, type League, type Team } from '../lib/teams'
+import { entryNoun, filterPlayers, filterTeams, findTeam, fullName, hasJerseys, JERSEYS_FILTER, LEAGUES, seasonLabel, type League, type Player, type Team } from '../lib/teams'
+import { Jersey } from './Jersey'
 import { Logo } from './Logo'
 
 export interface BrowserState {
@@ -19,6 +20,8 @@ interface Props {
   leagues?: readonly League[]
   /** One line under the title explaining the collections on offer. */
   note?: string
+  /** Offer a Jerseys filter in leagues with famous jerseys; picking one makes a "Who wore it?" round. */
+  jerseys?: { selectedId: string | null; onSelect: (p: Player) => void }
 }
 
 /** A mouse wheel scrolls a swipeable row sideways; trackpads and touch already scroll it natively. */
@@ -28,7 +31,7 @@ function wheelSideways(e: WheelEvent<HTMLDivElement>) {
   row.scrollLeft += e.deltaY
 }
 
-export function TeamBrowser({ title, state: rawState, onState, selectedId, onSelect, showSwatches, portrait, leagues, note }: Props) {
+export function TeamBrowser({ title, state: rawState, onState, selectedId, onSelect, showSwatches, portrait, leagues, note, jerseys }: Props) {
   const offered = (Object.keys(LEAGUES) as League[]).filter((lg) => !leagues || leagues.includes(lg))
   const state = offered.includes(rawState.league) ? rawState : { league: offered[0], conference: 'All' }
   const leagueRef = useRef<HTMLDivElement>(null)
@@ -44,8 +47,10 @@ export function TeamBrowser({ title, state: rawState, onState, selectedId, onSel
       else if (button.right > bounds.right - 6) group.scrollLeft += button.right - bounds.right + 6
     }
   }, [state.league, state.conference, portrait])
-  const teams = filterTeams(state.league, state.conference, '')
-  const chips = ['All', ...LEAGUES[state.league].conferences]
+  const jerseyLeague = jerseys && hasJerseys(state.league) ? state.league : null
+  const players = jerseyLeague && state.conference === JERSEYS_FILTER ? filterPlayers(jerseyLeague, 'All') : null
+  const teams = players ? [] : filterTeams(state.league, state.conference, '')
+  const chips = ['All', ...LEAGUES[state.league].conferences, ...(jerseyLeague ? [JERSEYS_FILTER] : [])]
   const noun = entryNoun(state.league)
   const panelId = `browser-${title.replace(/\s+/g, '-').toLowerCase()}`
   return (
@@ -67,6 +72,7 @@ export function TeamBrowser({ title, state: rawState, onState, selectedId, onSel
         </div>
       </div>
       {note && <div className="panel-note">{note}</div>}
+      {players && <div className="panel-note">Players guess who wore it from the team, the number and the season.</div>}
       <div ref={chipsRef} className="chips" role="group" aria-label={state.league === 'BRAND' ? 'Brand type filter' : state.league === 'FLAG' ? 'Region filter' : state.league === 'SOCCER' ? 'League filter' : state.league === 'HS' ? 'County filter' : noun === 'team' || state.league === 'MLS' ? 'Conference filter' : 'Category filter'} onWheel={wheelSideways}>
         {chips.map((c) => (
           <button
@@ -80,36 +86,64 @@ export function TeamBrowser({ title, state: rawState, onState, selectedId, onSel
           </button>
         ))}
       </div>
-      <div className="tile-grid" role="list" aria-label={`${title} results, ${teams.length} ${noun}${teams.length === 1 ? '' : 's'}`}>
-        {teams.map((t) => {
-          const sel = t.id === selectedId
-          return (
-            <div key={t.id} role="listitem">
-              <button
-                type="button"
-                className={`tile${showSwatches ? ' colors' : ''}${sel ? ' selected' : ''}`}
-                onClick={() => onSelect(t)}
-                aria-pressed={sel}
-                aria-label={fullName(t)}
-              >
-                <div className="tile-logo">
-                  <Logo team={t} />
-                </div>
-                <div className="tile-name">{fullName(t)}</div>
-                {!showSwatches && t.alternateLogos?.length ? <div className="tile-variants">{t.alternateLogos.length + 1} logos</div> : null}
-                {showSwatches && (
-                  <div className="swatches">
-                    {t.palette.map((h, i) => (
-                      <span key={i} className={`swatch ${portrait ? 's13' : 's12'}`} style={{ background: h }} />
-                    ))}
+      {players ? (
+        <div className="tile-grid" role="list" aria-label={`${title} results, ${players.length} jersey${players.length === 1 ? '' : 's'}`}>
+          {players.map((p) => {
+            const sel = p.id === jerseys!.selectedId
+            return (
+              <div key={p.id} role="listitem">
+                <button
+                  type="button"
+                  className={`tile${sel ? ' selected' : ''}`}
+                  onClick={() => jerseys!.onSelect(p)}
+                  aria-pressed={sel}
+                  aria-label={`${p.name}, number ${p.number}, ${findTeam(p.team)!.name}, ${seasonLabel(p)}`}
+                >
+                  <div className="tile-logo">
+                    <Jersey player={p} />
                   </div>
-                )}
-                {sel && <div className="check">✓</div>}
-              </button>
-            </div>
-          )
-        })}
-      </div>
+                  <div className="tile-name">{p.name}</div>
+                  <div className="tile-variants">
+                    {findTeam(p.team)!.abbr} · #{p.number} · {seasonLabel(p)}
+                  </div>
+                  {sel && <div className="check">✓</div>}
+                </button>
+              </div>
+            )
+          })}
+        </div>
+      ) : (
+        <div className="tile-grid" role="list" aria-label={`${title} results, ${teams.length} ${noun}${teams.length === 1 ? '' : 's'}`}>
+          {teams.map((t) => {
+            const sel = t.id === selectedId
+            return (
+              <div key={t.id} role="listitem">
+                <button
+                  type="button"
+                  className={`tile${showSwatches ? ' colors' : ''}${sel ? ' selected' : ''}`}
+                  onClick={() => onSelect(t)}
+                  aria-pressed={sel}
+                  aria-label={fullName(t)}
+                >
+                  <div className="tile-logo">
+                    <Logo team={t} />
+                  </div>
+                  <div className="tile-name">{fullName(t)}</div>
+                  {!showSwatches && t.alternateLogos?.length ? <div className="tile-variants">{t.alternateLogos.length + 1} logos</div> : null}
+                  {showSwatches && (
+                    <div className="swatches">
+                      {t.palette.map((h, i) => (
+                        <span key={i} className={`swatch ${portrait ? 's13' : 's12'}`} style={{ background: h }} />
+                      ))}
+                    </div>
+                  )}
+                  {sel && <div className="check">✓</div>}
+                </button>
+              </div>
+            )
+          })}
+        </div>
+      )}
     </section>
   )
 }

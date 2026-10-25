@@ -337,14 +337,17 @@ export function PlayMode({ deck, timer, gameMode, guessTarget, voice, highScores
             </div>
           </div>
           {player && <div className="q-jersey">{jerseyLine(player)}</div>}
-          <div className="prompt">{player ? 'WHO WORE IT?' : target === 'both' ? 'WHOSE LOGO · WHOSE COLORS?' : target === 'colors' ? 'WHOSE COLORS ARE THESE?' : 'WHOSE LOGO IS THIS?'}</div>
-          {round.h && (
-            <div className="hints" aria-label="Hints">
-              {roundHints(round).map((h) => (
-                <span key={h} className="hint-chip">{h}</span>
-              ))}
-            </div>
-          )}
+          {/* Keyboard up, the question and its hints share the one slot the suggestion chips cover. */}
+          <div className="q-ask">
+            <div className="prompt">{player ? 'WHO WORE IT?' : target === 'both' ? 'WHOSE LOGO · WHOSE COLORS?' : target === 'colors' ? 'WHOSE COLORS ARE THESE?' : 'WHOSE LOGO IS THIS?'}</div>
+            {round.h && (
+              <div className="hints" aria-label="Hints">
+                {roundHints(round).map((h) => (
+                  <span key={h} className="hint-chip">{h}</span>
+                ))}
+              </div>
+            )}
+          </div>
           {gameMode === 'type' ? (
             target === 'both' ? (
               <form className="guess-form both" onSubmit={submit}>
@@ -356,9 +359,9 @@ export function PlayMode({ deck, timer, gameMode, guessTarget, voice, highScores
                     onChange={setGuess}
                     onKeyDown={checkLogo}
                     readOnly={logoChecked != null}
-                    placeholder="Name the logo, symbol or object…"
+                    placeholder="Logo, symbol or object…"
                     enterKeyHint="next"
-                    ariaLabel="Name of the logo, symbol or object"
+                    ariaLabel="Logo, symbol or object"
                   />
                   <span className="guess-field-mark" aria-live="polite">
                     {logoChecked == null ? '' : logoChecked ? '✓' : '✕'}
@@ -386,7 +389,7 @@ export function PlayMode({ deck, timer, gameMode, guessTarget, voice, highScores
                   ref={inputRef}
                   value={guess}
                   onChange={setGuess}
-                  placeholder={player ? 'Name the player…' : 'Type your answer…'}
+                  placeholder={player ? 'Player who wore it…' : 'Type your answer…'}
                   enterKeyHint="go"
                   ariaLabel={player ? 'Player who wore the jersey' : 'Your guess'}
                   players={!!player}

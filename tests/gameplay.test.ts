@@ -18,27 +18,33 @@ describe('gameplay polish scaffolding', () => {
     expect(hook).toContain("classList.toggle('kb-open'")
     expect(hook).toContain('window.scrollTo(0, 0)')
     expect(hook).toContain('vv.scale > 1.01')
+    // iOS 26 shrinks innerHeight with the keyboard, so the keyboard is measured against the tallest view at this width.
+    expect(hook).toContain('tallest = Math.max(tallest, window.innerHeight, h)')
+    expect(hook).toContain('tallest - h >= KEYBOARD_MIN_PX || typingOnTouch()')
+    expect(hook).not.toContain('window.innerHeight - h')
     expect(read('src/App.tsx')).toContain('useVisualViewport()')
     const css = read('src/styles.css')
     expect(css).toContain('height: var(--vvh, 100dvh)')
     expect(css).toContain('html.kb-open .question { display: grid;')
-    expect(css).toContain('grid-template-rows: auto auto minmax(80px, 1fr)')
+    expect(css).toContain('grid-template-rows: auto auto minmax(120px, 1fr)')
     expect(css).toContain('html.kb-open .q-top, html.kb-open .timer { display: contents; }')
     expect(css).toContain('html.kb-open .timer-num { grid-area: 1 / 2;')
   })
 
   test('with the keyboard up, suggestions sit in the prompt slot as one row of chips instead of over the logo', () => {
     const css = read('src/styles.css')
-    expect(css).toContain('html.kb-open .prompt { min-height: 44px;')
+    expect(css).toContain('html.kb-open .q-ask { min-height: 44px;')
     expect(css).toContain('html.kb-open .guess-form { position: relative;')
     expect(css).toContain('html.kb-open .guess-ac { position: static; }')
-    expect(css).toContain('html.kb-open .guess-suggest { bottom: calc(100% + 8px); display: flex;')
+    expect(css).toContain('html.kb-open .guess-suggest { bottom: calc(100% + 6px); display: flex;')
     expect(css).toContain('html.kb-open .guess-suggest-item { flex: none; min-height: 44px;')
     expect(css).toContain('html.kb-open .guess-form.both .btn-submit { grid-area: 1 / 2 / 3 / 3;')
 
-    // A swipe across the chip row scrolls it; only a tap (click) picks a suggestion.
+    // A swipe across the chip row scrolls it; only a tap (click) picks a suggestion. Mouse-down holds focus;
+    // preventing pointer-down instead makes iOS Safari drop the click, so a tapped suggestion never filled the field.
     const gi = read('src/components/GuessInput.tsx')
-    expect(gi).toContain('onPointerDown={(e) => e.preventDefault()}')
+    expect(gi).toContain('onMouseDown={(e) => e.preventDefault()}')
+    expect(gi).not.toContain('onPointerDown')
     expect(gi).toContain('onClick={() => pick(t)}')
   })
 

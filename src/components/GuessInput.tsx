@@ -108,9 +108,10 @@ export const GuessInput = forwardRef<HTMLInputElement, Props>(function GuessInpu
               role="option"
               aria-selected={i === active}
               className={`guess-suggest-item${i === active ? ' active' : ''}`}
-              // Pointer-down would blur the field first; holding focus keeps typing alive. Picking on
-              // click (a tap, not a swipe) lets the keyboard-up chip row scroll sideways without choosing.
-              onPointerDown={(e) => e.preventDefault()}
+              // Mouse-down would blur the field first; holding focus keeps typing alive. Not pointer-down:
+              // iOS Safari drops the click after a touch whose pointer-down was prevented, so a tap picked
+              // nothing. Picking on click (a tap, not a swipe) lets the keyboard-up chip row scroll sideways.
+              onMouseDown={(e) => e.preventDefault()}
               onClick={() => pick(t)}
             >
               <span className="guess-suggest-name">{t.name}</span>

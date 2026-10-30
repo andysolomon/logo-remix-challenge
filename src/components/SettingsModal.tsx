@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState, type RefObject } from 'react'
+import { SKIN_SETTING_LABEL, SKIN_SETTINGS, findSkin, type Skin, type SkinSetting } from '../lib/skins'
 import { clampTimer, GUESS_TARGETS, GUESS_LABEL, speak, THEME_LABEL, THEMES, voiceSupported, TIMER_MAX, TIMER_MIN, TIMER_OPTIONS, type GameMode, type GuessTarget, type Theme, type TimerSeconds } from '../lib/teams'
 
 const DIALOG_FOCUSABLE = 'button:not(:disabled), [href], input:not(:disabled), select:not(:disabled), textarea:not(:disabled), summary, [tabindex]:not([tabindex="-1"])'
@@ -52,6 +53,10 @@ interface Props {
   guessTarget: GuessTarget
   voice: boolean
   theme: Theme
+  /** Holiday skin choice: follow the calendar, never, or one skin all year. */
+  skin: SkinSetting
+  /** The skin in force right now (null for the plain look), so the hint can say what Auto resolved to. */
+  activeSkin: Skin | null
   /** Designer mode (Settings → Advanced): adds a tab for recoloring any logo with exact colors and exporting it. */
   designer: boolean
   onTimer: (t: TimerSeconds) => void
@@ -59,11 +64,12 @@ interface Props {
   onGuessTarget: (t: GuessTarget) => void
   onVoice: (on: boolean) => void
   onTheme: (t: Theme) => void
+  onSkin: (s: SkinSetting) => void
   onDesigner: (on: boolean) => void
   onClose: () => void
 }
 
-export function SettingsModal({ timer, gameMode, guessTarget, voice, theme, designer, onTimer, onGameMode, onGuessTarget, onVoice, onTheme, onDesigner, onClose }: Props) {
+export function SettingsModal({ timer, gameMode, guessTarget, voice, theme, skin, activeSkin, designer, onTimer, onGameMode, onGuessTarget, onVoice, onTheme, onSkin, onDesigner, onClose }: Props) {
   const [custom, setCustom] = useState(String(timer))
   // Advanced stays folded unless Designer mode is already on, so the toggle is there when you go looking for it.
   const [advancedOpen, setAdvancedOpen] = useState(designer)
@@ -79,6 +85,12 @@ export function SettingsModal({ timer, gameMode, guessTarget, voice, theme, desi
     else setCustom(String(timer))
   }
   const step = (d: number) => onTimer(clampTimer(timer + d))
+  const skinHint =
+    skin === 'auto'
+      ? `Follows the calendar: ${activeSkin ? `${activeSkin.label} is on now.` : 'no holiday in season right now, so the plain look.'}`
+      : skin === 'off'
+        ? 'The plain look all year.'
+        : findSkin(skin)?.hint ?? ''
 
   return (
     <div className="modal-backdrop" onClick={onClose}>
@@ -182,6 +194,16 @@ export function SettingsModal({ timer, gameMode, guessTarget, voice, theme, desi
           <div className="mode-hint">
             {theme === 'system' ? 'Follows your device’s light or dark setting.' : `Always ${theme}.`} The game screen stays dark either way.
           </div>
+
+          <div className="rail-label" id="settings-skin-label">HOLIDAY SKIN</div>
+          <div className={`grid${Math.min(SKIN_SETTINGS.length, 4)}`} role="group" aria-labelledby="settings-skin-label">
+            {SKIN_SETTINGS.map((s) => (
+              <button key={s} type="button" className={`opt mode${skin === s ? ' active' : ''}`} aria-pressed={skin === s} onClick={() => onSkin(s)}>
+                {SKIN_SETTING_LABEL[s]}
+              </button>
+            ))}
+          </div>
+          <div className="mode-hint">{skinHint} Works with light and dark alike.</div>
 
           <details
             className="settings-advanced"

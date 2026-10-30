@@ -1,5 +1,6 @@
 import data from './teams.json'
 import { findPlayer, PLAYERS, type Player, type PlayerLeague } from './players'
+import { isSkinSetting, type SkinSetting } from './skins'
 
 export { findPlayer, PLAYERS, type Player, type PlayerLeague }
 
@@ -367,6 +368,15 @@ export function loadTheme(): Theme {
   return isTheme(t) ? t : 'system'
 }
 export const saveTheme = (t: Theme) => safeSet(LS.theme, t)
+
+/** Holiday skin choice (Settings → Holiday skin); the registry and calendar logic live in skins.ts. */
+export function loadSkinSetting(): SkinSetting {
+  const s = safeGet(LS.skin)
+  return isSkinSetting(s) ? s : 'auto'
+}
+export const saveSkinSetting = (s: SkinSetting) => safeSet(LS.skin, s)
+/** The skin last applied, so index.html can restore an `auto` pick before first paint. */
+export const saveActiveSkin = (id: string | null) => safeSet(LS.skinActive, id ?? '')
 
 /** Designer mode: an opt-in tab (Settings → Advanced) for recoloring any logo with custom colors and exporting it. */
 export const loadDesigner = (): boolean => safeGet(LS.designer) === '1'

@@ -45,12 +45,14 @@ Each round asks for the **logo's team**, the **team whose colors it wears**, or 
 
 **Upload Logo** in Designer mode traces any image you bring (JPG, PNG, WebP, GIF or SVG; drop it on the canvas or pick a file) into flat-color vector outlines, right in the browser; nothing is sent anywhere. The tracer (`src/lib/trace.ts`) finds the artwork's flat fills as peaks in a color histogram, so JPEG noise and anti-aliased edges don't become extra colors, removes the background around the logo while keeping white details enclosed by it, and smooths each color's outline with potrace's corner rule. **Auto** keeps up to three colors (the Designer's three slots) and drops thin anti-aliasing halos; 1, 2 or 3 forces a count, and **Remove background** can be switched off. The traced logo then recolors slot by slot, picks up a backdrop tile and frame when it has fewer than three colors, and downloads as SVG or PNG like any other logo.
 
-Client-only SPA — no backend, no auth. Deck, timer, game mode, guess mode, voice, high score, and the Designer mode switch persist in `localStorage`.
+**Holiday skins** dress the whole app for the season on top of the light or dark scheme. Settings → Holiday skin is **Auto** by default, which follows the calendar (Halloween from October 24 through November 1: pumpkin orange, midnight purple and a jack-o'-lantern beside the wordmark and on the game intro); **Off** keeps the plain look all year, and any skin can be picked by hand out of season. Thanksgiving, Christmas and the rest slot in the same way (see *Adding a holiday skin* below).
+
+Client-only SPA — no backend, no auth. Deck, timer, game mode, guess mode, voice, high score, holiday skin, and the Designer mode switch persist in `localStorage`.
 
 ## Stack
 
 - Vite + React 18 + TypeScript
-- Plain CSS with design tokens from `design_handoff_logo_remix/DESIGN_SYSTEM.md` (`src/styles.css`); a dark theme (Settings → Appearance: System / Light / Dark) swaps the same tokens
+- Plain CSS with design tokens from `design_handoff_logo_remix/DESIGN_SYSTEM.md` (`src/styles.css`); a dark theme (Settings → Appearance: System / Light / Dark) swaps the same tokens, and holiday skins (`src/lib/skins.ts`, Settings → Holiday skin) layer a second swap on top under `:root[data-skin]`
 - Google Fonts: Chakra Petch (600/700), Space Grotesk (400–700)
 - Local SVG logos recolored in-browser by fill substitution, with a canvas fallback for PNGs (`src/components/Logo.tsx`, `public/logos/svg/`)
 - Voice announcer: baked Chatterbox Turbo wavs in `public/voice/` — round prompts, correct / not quite / time's up, and score fragments (regenerate with `scripts/generate_voice.py`)
@@ -69,6 +71,16 @@ Announcer clips live in `public/voice/`. To regenerate them you need a Chatterbo
 ```sh
 ~/Documents/Github/chatterbox/.venv/bin/python scripts/generate_voice.py
 ```
+
+## Adding a holiday skin
+
+A skin is a token swap, nothing more: no component knows which holiday is on. Three steps add one.
+
+1. **Register it** in `src/lib/skins.ts`: add the id to `SkinId` and an entry to `SKINS` with a label, a hint for the Settings picker and a `season` window (`from` / `to` as `[month, day]`, inclusive; a window that ends in January wraps over New Year). Seasons must not overlap, so Auto always has one answer.
+2. **Style it** in `src/styles.css` under the *Holiday skins* heading: a `:root[data-skin="<id>"]` block overriding the light tokens (and the `--dark-*` tokens the Play screen uses), and a `:root[data-skin="<id>"][data-theme="dark"]` block for the dark scheme. Any decoration (a badge after `.wordmark` or `.intro-title`, a background glow) hangs off the same attribute. Never hardcode a skin color anywhere else.
+3. **Run `bun test`**: `tests/skins.test.ts` checks the registry, both CSS blocks, non-overlapping seasons and the pre-paint hook in `index.html`.
+
+The Settings picker, the `auto` resolution and the `lrx-skin` persistence pick the new skin up on their own. `index.html` restores the last applied skin before first paint from `lrx-skin-active`, which App.tsx refreshes whenever the resolved skin changes.
 
 Agent Skill for this app (Voice Announcer, clip map, regen): `.agents/skills/arc-logo-remix/`. The bake workflow lives with Chatterbox as `creating-audio`.
 
@@ -167,6 +179,8 @@ vercel
 src/
   App.tsx                  mode router (create / deck / designer / play) + persisted state
   styles.css               tokens, keyframes, all component styles
+  lib/skins.ts             holiday skin registry, season windows, Auto resolution
+  lib/useActiveSkin.ts     the skin in force, re-checked hourly so Auto flips at midnight
   lib/teams.ts             dataset, answer matching, filtering, localStorage
   lib/designer.ts          Designer mode: slot roles, palette seeding, SVG sizing/composition (pure)
   lib/exportLogo.ts        Designer exports: recolored SVG files, canvas-rendered PNGs, downloads
@@ -187,7 +201,7 @@ src/
     DeckMode.tsx           round cards, game setup rail, high score
     PlayMode.tsx           intro → question (type / host) → reveal → results
     DeckMode.tsx           deck cards (per-round guess mode) + settings rail
-    SettingsModal.tsx      timer, defaults, voice announcer, appearance, Advanced → Designer mode
+    SettingsModal.tsx      timer, defaults, voice announcer, appearance, holiday skin, Advanced → Designer mode
 public/voice/              Chatterbox clips for Guess the Logo / Colors / both
 scripts/
   download_logos.py        fetch the 37 logo PNGs from ESPN into public/logos/

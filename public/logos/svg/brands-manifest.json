@@ -3000,55 +3000,6 @@
       ]
     },
     {
-      "id": "BRAND-HERSHEY",
-      "league": "BRAND",
-      "conference": "Corporate",
-      "region": "Hershey's",
-      "name": "",
-      "abbr": "HERSHEY",
-      "aliases": [
-        "Hershey",
-        "The Hershey Company",
-        "Hershey's Kisses",
-        "Hershey Kiss"
-      ],
-      "palette": [
-        "#000000",
-        "#808080",
-        "#FFFFFF"
-      ],
-      "artwork": [
-        {
-          "id": "primary",
-          "label": "Kiss",
-          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/0/02/The_Hershey_Company_-_2014x.svg/revision/latest?cb=20240225203431",
-          "sourcePage": "https://logos.fandom.com/wiki/File:The_Hershey_Company_-_2014x.svg",
-          "sourceSha256": "ca151d8612e9c09a3d681dccee39a5eb9156a07581d1c6b31cbc2339c9d042ec",
-          "ops": {
-            "keepNodes": [
-              "0"
-            ],
-            "viewBox": "-9.972 -11.889 221.677 269.664"
-          },
-          "path": "/logos/svg/brands/hershey.svg",
-          "format": "svg",
-          "colors": [
-            "#000000"
-          ],
-          "sourcePalette": [
-            "#000000",
-            "#808080",
-            "#FFFFFF"
-          ],
-          "unusedSourceSlots": [
-            1,
-            2
-          ],
-          "sha256": "737ef31ab3142d1d199a5d58dc0479b82b074bf1edf3d06a47ef45442c6b3944"
-        }
-      ]
-    },
-    {
       "id": "BRAND-HILTON",
       "league": "BRAND",
       "conference": "Service",
@@ -4216,53 +4167,6 @@
       ]
     },
     {
-      "id": "BRAND-MMS",
-      "league": "BRAND",
-      "conference": "Product",
-      "region": "M&M's",
-      "name": "",
-      "abbr": "MMS",
-      "aliases": [
-        "M&Ms",
-        "M and Ms",
-        "MMs",
-        "M&M"
-      ],
-      "palette": [
-        "#592411",
-        "#000000",
-        "#FFFFFF"
-      ],
-      "artwork": [
-        {
-          "id": "primary",
-          "label": "Wordmark",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/M%26M%27s_2022.svg",
-          "sourcePage": "https://commons.wikimedia.org/wiki/File:M&M's_2022.svg",
-          "sourceSha256": "6c568c1a8220642e41f2853956881a2d649b7e670d87a6d22f306451521d850e",
-          "ops": {
-            "viewBox": "-40 -40 1080 407.084"
-          },
-          "showsName": true,
-          "path": "/logos/svg/brands/mms.svg",
-          "format": "svg",
-          "colors": [
-            "#FFFFFF",
-            "#592411"
-          ],
-          "sourcePalette": [
-            "#592411",
-            "#000000",
-            "#FFFFFF"
-          ],
-          "unusedSourceSlots": [
-            1
-          ],
-          "sha256": "f167390602a0b56d3089df3b6735220af935338b223a3e6bf0838a96dab6ad31"
-        }
-      ]
-    },
-    {
       "id": "BRAND-MOBIL",
       "league": "BRAND",
       "conference": "Service",
@@ -5132,52 +5036,6 @@
             2
           ],
           "sha256": "66dc6f2808df590998ad6d67ac14cb6b753b4c0cfda27cf7ae0296ee91f4ce5e"
-        }
-      ]
-    },
-    {
-      "id": "BRAND-OREO",
-      "league": "BRAND",
-      "conference": "Product",
-      "region": "Oreo",
-      "name": "",
-      "abbr": "OREO",
-      "aliases": [
-        "Oreos",
-        "Oreo Cookies"
-      ],
-      "palette": [
-        "#3194CF",
-        "#88B2D6",
-        "#FFFFFF"
-      ],
-      "artwork": [
-        {
-          "id": "primary",
-          "label": "Wordmark",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Oreo_Logo_2014.svg",
-          "sourcePage": "https://commons.wikimedia.org/wiki/File:Oreo_Logo_2014.svg",
-          "sourceSha256": "7c1be604cd4d0d5ece454f0edbdf16bdc49d1e4c8a27e2df522a53a16ec863c5",
-          "ops": {
-            "viewBox": "-3.666 -3.56 1206.81 487.249"
-          },
-          "showsName": true,
-          "path": "/logos/svg/brands/oreo.svg",
-          "format": "svg",
-          "colors": [
-            "#3194CF",
-            "#88B2D6",
-            "#51C4F1",
-            "#1064AD",
-            "#FFFFFF"
-          ],
-          "sourcePalette": [
-            "#207CBE",
-            "#6CBBE4",
-            "#FFFFFF"
-          ],
-          "unusedSourceSlots": [],
-          "sha256": "7e93e24daf64d766b8cac61cec5a9e3bae7a3294d79968e2bf6834b707f6feef"
         }
       ]
     },

@@ -1,5 +1,5 @@
 """Brand collections: restaurants, brands grouped by brand type, iOS apps, TV channels, carmakers,
-luxury houses and clothing brands.
+luxury houses, clothing brands and candy and sweets makers.
 
 Each row is (abbr, display name, category, primary color, secondary color, answer aliases).
 The colors are the donor palette and white completes the third slot. Fast-food colors keep
@@ -172,7 +172,6 @@ BRAND = [
     ("SPRITE", "Sprite", "Product", "18A94B", "35D630", []),
     ("MTNDEW", "Mountain Dew", "Product", "231F20", "94C93D", ["Mtn Dew", "Dew"]),
     ("DRPEPPER", "Dr Pepper", "Product", "CC0000", "290E00", ["Dr. Pepper", "Doctor Pepper"]),
-    ("OREO", "Oreo", "Product", "3194CF", "88B2D6", ["Oreos", "Oreo Cookies"]),
     ("AMEX", "American Express", "Service", "007EE4", "000000", ["Amex", "AmEx"]),
     ("BARBIE", "Barbie", "Product", "000000", "EC4399", []),
     ("BOSE", "Bose", "Product", "000000", "808080", ["Bose Corporation"]),
@@ -195,9 +194,7 @@ BRAND = [
     ("MONSTER", "Monster Energy", "Product", "000000", "DDD300", ["Monster", "Monster Energy Drink"]),
     ("AMD", "AMD", "Corporate", "000000", "808080", ["Advanced Micro Devices"]),
     ("CISCO", "Cisco", "Corporate", "000000", "808080", ["Cisco Systems"]),
-    ("HERSHEY", "Hershey's", "Corporate", "000000", "808080", ["Hershey", "The Hershey Company", "Hershey's Kisses", "Hershey Kiss"]),
     ("DORITOS", "Doritos", "Product", "000000", "EE252D", ["Dorito"]),
-    ("MMS", "M&M's", "Product", "592411", "000000", ["M&Ms", "M and Ms", "MMs", "M&M"]),
     ("NERF", "Nerf", "Product", "210800", "EE2D2B", ["Nerf Blasters"]),
     ("ORACLE", "Oracle", "Corporate", "C74634", "000000", ["Oracle Corporation"]),
     ("REACT", "React", "Product", "087EA4", "000000", ["React.js", "ReactJS", "React JS"]),
@@ -935,6 +932,64 @@ CHAR = [
     ("ELDENRING", "Elden Ring", "Video Games", "000000", "808080", ["Elden Ring Nightreign", "Tarnished"]),
 ]
 
+# Candy and sweets: Hershey's, M&M's and Oreo moved here from BRANDS (saved rounds follow them). Most candy
+# brands publish only a wordmark, flagged for manual selection; Lindt's crest, Godiva's rider, Toblerone's
+# mountain, the Chupa Chups daisy, the Klondike bear and the ice-cream heart are name-free.
+SWEET = [
+    ("HERSHEY", "Hershey's", "Chocolate", "000000", "808080", ["Hershey", "The Hershey Company", "Hershey's Kisses", "Hershey Kiss"]),
+    ("MMS", "M&M's", "Chocolate", "592411", "000000", ["M&Ms", "M and Ms", "MMs", "M&M"]),
+    ("REESES", "Reese's", "Chocolate", "FCDC00", "580000", ["Reeses", "Reese's Peanut Butter Cups", "Reese's Cups", "Reese's Pieces"]),
+    ("KITKAT", "Kit Kat", "Chocolate", "D3000A", "502C1C", ["KitKat", "Kit-Kat"]),
+    ("SNICKERS", "Snickers", "Chocolate", "451A0B", "2E3192", []),
+    ("TWIX", "Twix", "Chocolate", "E4002B", "D4A017", []),
+    ("BUTTERFINGER", "Butterfinger", "Chocolate", "005CB9", "FFD200", ["Butter Finger"]),
+    ("CADBURY", "Cadbury", "Chocolate", "313C93", "000000", ["Cadbury's", "Cadbury Dairy Milk"]),
+    ("LINDT", "Lindt", "Chocolate", "B5995A", "000000", ["Lindt & Sprüngli", "Lindt and Sprungli", "Lindor"]),
+    ("GODIVA", "Godiva", "Chocolate", "231F20", "B8975A", ["Godiva Chocolatier", "Lady Godiva"]),
+    ("TOBLERONE", "Toblerone", "Chocolate", "CE9C39", "D2232A", []),
+    ("FERRERO", "Ferrero Rocher", "Chocolate", "D6AB4D", "6B3E26", ["Ferrero", "Rocher"]),
+    ("KINDER", "Kinder", "Chocolate", "EF3526", "000000", ["Kinder Surprise", "Kinder Joy", "Kinder Bueno", "Kinder Egg"]),
+    ("MILKA", "Milka", "Chocolate", "7D68AB", "000000", []),
+    ("NUTELLA", "Nutella", "Chocolate", "E2001A", "000000", []),
+    ("HARIBO", "Haribo", "Gummy & Chewy", "E20015", "000000", ["Haribo Goldbears", "Gold-Bears", "Goldbears"]),
+    ("SKITTLES", "Skittles", "Gummy & Chewy", "C70925", "3B46A6", []),
+    ("JELLYBELLY", "Jelly Belly", "Gummy & Chewy", "ED1C24", "FFF200", ["Jellybelly", "Jelly Belly Jelly Beans"]),
+    ("TWIZZLERS", "Twizzlers", "Gummy & Chewy", "CE2030", "233F96", []),
+    ("TROLLI", "Trolli", "Gummy & Chewy", "FF7500", "C60046", []),
+    ("NERDS", "Nerds", "Gummy & Chewy", "7460A8", "E15DA2", ["Wonka Nerds", "Nerds Candy"]),
+    ("TOOTSIE", "Tootsie Roll", "Gummy & Chewy", "FF0000", "5C3317", ["Tootsie", "Tootsie Rolls", "Tootsie Pop", "Tootsie Pops"]),
+    ("CHUPA", "Chupa Chups", "Hard Candy", "CE1141", "FFF200", ["Chupa Chup", "Chupa"]),
+    ("JOLLY", "Jolly Rancher", "Hard Candy", "223F87", "FBDD01", ["Jolly Ranchers"]),
+    ("LIFESAVERS", "Life Savers", "Hard Candy", "1F4FA2", "000000", ["Lifesavers", "Life Saver"]),
+    ("PEZ", "PEZ", "Hard Candy", "003398", "000000", ["Pez Candy"]),
+    ("DUMDUMS", "Dum Dums", "Hard Candy", "3982FF", "FFCE00", ["Dum-Dums", "Dum Dum", "DumDums"]),
+    ("RICOLA", "Ricola", "Hard Candy", "04542B", "FFCD00", []),
+    ("EXTRA", "Extra", "Gum & Mints", "2E247B", "00B0E9", ["Extra Gum", "Wrigley's Extra"]),
+    ("ORBIT", "Orbit", "Gum & Mints", "00B0E9", "2E247B", ["Orbit Gum", "Wrigley's Orbit"]),
+    ("DOUBLEMINT", "Doublemint", "Gum & Mints", "0E4A37", "000000", ["Wrigley's Doublemint", "Doublemint Gum"]),
+    ("JUICYFRUIT", "Juicy Fruit", "Gum & Mints", "E60119", "0318DC", ["Wrigley's Juicy Fruit", "Juicyfruit"]),
+    ("HUBBA", "Hubba Bubba", "Gum & Mints", "9860B6", "FFF200", ["Hubba Bubba Bubble Gum"]),
+    ("TRIDENT", "Trident", "Gum & Mints", "032A75", "0C79BE", ["Trident Gum"]),
+    ("MENTOS", "Mentos", "Gum & Mints", "2B338C", "B9C5D1", []),
+    ("TICTAC", "Tic Tac", "Gum & Mints", "0066AB", "242F55", ["TicTac", "Tic Tacs"]),
+    ("ALTOIDS", "Altoids", "Gum & Mints", "33348E", "DBB86B", []),
+    ("OREO", "Oreo", "Cookies & Cakes", "3194CF", "88B2D6", ["Oreos", "Oreo Cookies"]),
+    ("CHIPSAHOY", "Chips Ahoy!", "Cookies & Cakes", "14206C", "CF152D", ["Chips Ahoy", "ChipsAhoy"]),
+    ("LITTLEDEBBIE", "Little Debbie", "Cookies & Cakes", "000000", "808080", ["Little Debbie Snacks", "McKee Foods"]),
+    ("HOSTESS", "Hostess", "Cookies & Cakes", "003DA5", "CD001A", ["Hostess Brands", "Twinkies"]),
+    ("KEEBLER", "Keebler", "Cookies & Cakes", "CC2229", "8CBE4F", ["Keebler Elves"]),
+    ("PILLSBURY", "Pillsbury", "Cookies & Cakes", "002E6D", "000000", ["Pillsbury Doughboy"]),
+    ("ENTENMANNS", "Entenmann's", "Cookies & Cakes", "3B4095", "FFF22D", ["Entenmanns"]),
+    ("POPTARTS", "Pop-Tarts", "Cookies & Cakes", "0055B8", "303074", ["Pop Tarts", "PopTarts"]),
+    ("PEPPERIDGE", "Pepperidge Farm", "Cookies & Cakes", "EC1B2E", "FFC10E", ["Pepperidge", "Milano"]),
+    ("GOODHUMOR", "Good Humor", "Ice Cream", "DE242F", "C7C8CA", ["Wall's", "Walls", "Algida", "Streets", "Ola", "Kibon", "Langnese", "Frigo", "Heartbrand"]),
+    ("BENJERRY", "Ben & Jerry's", "Ice Cream", "231F20", "FDB813", ["Ben and Jerry's", "Ben & Jerrys", "Ben and Jerrys"]),
+    ("KLONDIKE", "Klondike", "Ice Cream", "184377", "111518", ["Klondike Bar"]),
+    ("BREYERS", "Breyers", "Ice Cream", "000000", "808080", ["Breyer's"]),
+    ("MAGNUM", "Magnum", "Ice Cream", "CBB05F", "3B2314", ["Magnum Ice Cream"]),
+    ("POPSICLE", "Popsicle", "Ice Cream", "003DA6", "EC1C24", []),
+]
+
 LEAGUES = {
     "NHL": {"label": "NHL", "conferences": ["Eastern", "Western"]},
     "WNBA": {"label": "WNBA", "conferences": ["Eastern", "Western"]},
@@ -948,7 +1003,8 @@ LEAGUES = {
     "LANDMARK": {"label": "LANDMARKS", "conferences": ["Americas", "Europe", "Asia & Pacific", "Africa & Middle East"]},
     "CLOTH": {"label": "CLOTHING", "conferences": ["Sportswear", "Streetwear", "Outdoor", "Preppy", "Everyday", "Surf & Skate", "Footwear"]},
     "CHAR": {"label": "CHARACTERS", "conferences": ["Marvel", "DC", "Disney & Pixar", "Star Wars", "Movies & TV", "Video Games", "Cartoons & Anime"]},
+    "SWEET": {"label": "SWEETS", "conferences": ["Chocolate", "Gummy & Chewy", "Hard Candy", "Gum & Mints", "Cookies & Cakes", "Ice Cream"]},
 }
 
-ROSTERS = {"NHL": NHL, "WNBA": WNBA, "FOOD": FOOD, "BRAND": BRAND, "FLAG": FLAG, "APP": APP, "TV": TV, "CAR": CAR, "LUX": LUX, "CLOTH": CLOTH, "LANDMARK": LANDMARK, "CHAR": CHAR}
-SLUGS = {"NHL": "nhl", "WNBA": "wnba", "FOOD": "fast-food", "BRAND": "brands", "FLAG": "flags", "APP": "apps", "TV": "tv", "CAR": "cars", "LUX": "luxury", "CLOTH": "clothing", "LANDMARK": "landmarks", "CHAR": "characters"}
+ROSTERS = {"NHL": NHL, "WNBA": WNBA, "FOOD": FOOD, "BRAND": BRAND, "FLAG": FLAG, "APP": APP, "TV": TV, "CAR": CAR, "LUX": LUX, "CLOTH": CLOTH, "LANDMARK": LANDMARK, "CHAR": CHAR, "SWEET": SWEET}
+SLUGS = {"NHL": "nhl", "WNBA": "wnba", "FOOD": "fast-food", "BRAND": "brands", "FLAG": "flags", "APP": "apps", "TV": "tv", "CAR": "cars", "LUX": "luxury", "CLOTH": "clothing", "LANDMARK": "landmarks", "CHAR": "characters", "SWEET": "sweets"}

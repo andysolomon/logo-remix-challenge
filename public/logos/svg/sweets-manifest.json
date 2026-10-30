@@ -1,0 +1,2589 @@
+{
+  "assets": [
+    {
+      "id": "SWEET-ALTOIDS",
+      "league": "SWEET",
+      "conference": "Gum & Mints",
+      "region": "Altoids",
+      "name": "",
+      "abbr": "ALTOIDS",
+      "aliases": [],
+      "palette": [
+        "#33348E",
+        "#DBB86B",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Wordmark",
+          "sourceUrl": "https://cdn.worldvectorlogo.com/logos/altoids.svg",
+          "sourcePage": "https://worldvectorlogo.com/logo/altoids",
+          "sourceSha256": "31d5f0992cbf2c4fcd93f1300d3c87e9916a2a46e48dc27d58f7733ac2de4962",
+          "ops": {
+            "viewBox": "-7.71 -7.71 208.176 208.176"
+          },
+          "showsName": true,
+          "path": "/logos/svg/sweets/altoids.svg",
+          "format": "svg",
+          "colors": [
+            "#33348E",
+            "#DBB86B",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#33348E",
+            "#DBB86B",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "b2d4aa244f134e0cb141787e1bc3bf2026b80307b1c9327557a0bb9edc1418d7"
+        }
+      ]
+    },
+    {
+      "id": "SWEET-BENJERRY",
+      "league": "SWEET",
+      "conference": "Ice Cream",
+      "region": "Ben & Jerry's",
+      "name": "",
+      "abbr": "BENJERRY",
+      "aliases": [
+        "Ben and Jerry's",
+        "Ben & Jerrys",
+        "Ben and Jerrys"
+      ],
+      "palette": [
+        "#231F20",
+        "#FDB813",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Wordmark",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/3/3c/Ben_%26_Jerry%27s.svg/revision/latest?cb=20240211165653",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Ben_&_Jerry's.svg",
+          "sourceSha256": "6c368df5952bbefa8528f8a744fcb788dbf10d6958cf5a44539dd736257bb6f9",
+          "ops": {
+            "viewBox": "-40 -40 1080 367.5"
+          },
+          "showsName": true,
+          "path": "/logos/svg/sweets/benjerry.svg",
+          "format": "svg",
+          "colors": [
+            "#231F20",
+            "#FFFFFF",
+            "#FDB813",
+            "#790000"
+          ],
+          "sourcePalette": [
+            "#4E1010",
+            "#FDB813",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "6ba8ef884b08c5cea4838592ded0308d35aa8cabe558780fdba8af95855a7910"
+        }
+      ]
+    },
+    {
+      "id": "SWEET-BREYERS",
+      "league": "SWEET",
+      "conference": "Ice Cream",
+      "region": "Breyers",
+      "name": "",
+      "abbr": "BREYERS",
+      "aliases": [
+        "Breyer's"
+      ],
+      "palette": [
+        "#000000",
+        "#808080",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Wordmark",
+          "sourceUrl": "https://cdn.worldvectorlogo.com/logos/breyers.svg",
+          "sourcePage": "https://worldvectorlogo.com/logo/breyers",
+          "sourceSha256": "b131ed03ae3ffb1db077f08a5800d4e63fd7e318a95267d747060aae6bf5cbbc",
+          "ops": {
+            "viewBox": "-2.614 -2.614 70.582 45.149"
+          },
+          "showsName": true,
+          "path": "/logos/svg/sweets/breyers.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "70b2c97e77f125a13a8293b80284154bda4e92fea06bea9b1443ed498885cddf"
+        }
+      ]
+    },
+    {
+      "id": "SWEET-BUTTERFINGER",
+      "league": "SWEET",
+      "conference": "Chocolate",
+      "region": "Butterfinger",
+      "name": "",
+      "abbr": "BUTTERFINGER",
+      "aliases": [
+        "Butter Finger"
+      ],
+      "palette": [
+        "#005CB9",
+        "#FFD200",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Wordmark",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/0/04/Butterfinger_2019.svg/revision/latest?cb=20250823002643",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Butterfinger_2019.svg",
+          "sourceSha256": "e85ed53d5851174842cd78ba9e455788bb78ecc7d41cccae581a8236494b6675",
+          "ops": {
+            "viewBox": "-217.024 -217.024 5859.648 1645.765"
+          },
+          "showsName": true,
+          "path": "/logos/svg/sweets/butterfinger.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#7DA9DC",
+            "#000000",
+            "#005CB9"
+          ],
+          "sourcePalette": [
+            "#005CB9",
+            "#7DA9DC",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "a3c5456530a0fb0a414adac810caf00707155850c0117fc183218886ec6961cb"
+        }
+      ]
+    },
+    {
+      "id": "SWEET-CADBURY",
+      "league": "SWEET",
+      "conference": "Chocolate",
+      "region": "Cadbury",
+      "name": "",
+      "abbr": "CADBURY",
+      "aliases": [
+        "Cadbury's",
+        "Cadbury Dairy Milk"
+      ],
+      "palette": [
+        "#313C93",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Wordmark",
+          "sourceUrl": "https://cdn.worldvectorlogo.com/logos/cadbury.svg",
+          "sourcePage": "https://worldvectorlogo.com/logo/cadbury",
+          "sourceSha256": "02076ea879943c76cbbc3f7413518ae55e3a9cdb5ec1ea3ea997cc8347148b2e",
+          "ops": {
+            "removeNodes": [
+              "0/0"
+            ],
+            "viewBox": "-4.761 49.692 202.278 93.371"
+          },
+          "showsName": true,
+          "path": "/logos/svg/sweets/cadbury.svg",
+          "format": "svg",
+          "colors": [
+            "#313C93"
+          ],
+          "sourcePalette": [
+            "#313C93",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "e00daaba4068d88f94affb197a2deae87806ff1c899887a9750ea9c2422bf821"
+        }
+      ]
+    },
+    {
+      "id": "SWEET-CHIPSAHOY",
+      "league": "SWEET",
+      "conference": "Cookies & Cakes",
+      "region": "Chips Ahoy!",
+      "name": "",
+      "abbr": "CHIPSAHOY",
+      "aliases": [
+        "Chips Ahoy",
+        "ChipsAhoy"
+      ],
+      "palette": [
+        "#14206C",
+        "#CF152D",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Wordmark",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/a/a4/Chips_Ahoy%21_2024.svg/revision/latest?cb=20240825071241",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Chips_Ahoy!_2024.svg",
+          "sourceSha256": "3b75ea0e600ac02b720da9cc08f748b51f7157a0fbb7cf2da2f6434e26dd661f",
+          "ops": {
+            "viewBox": "-10.272 -10.063 271.689 224.56"
+          },
+          "showsName": true,
+          "path": "/logos/svg/sweets/chipsahoy.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#000000",
+            "#CDECF9",
+            "#CF152D",
+            "#14206C"
+          ],
+          "sourcePalette": [
+            "#0A1036",
+            "#CF152D",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "de30ab99eff5ae7a81f44fa02640d3131c4ccd0d94be905f041f39881d261104"
+        }
+      ]
+    },
+    {
+      "id": "SWEET-CHUPA",
+      "league": "SWEET",
+      "conference": "Hard Candy",
+      "region": "Chupa Chups",
+      "name": "",
+      "abbr": "CHUPA",
+      "aliases": [
+        "Chupa Chup",
+        "Chupa"
+      ],
+      "palette": [
+        "#CE1141",
+        "#FFF200",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Daisy",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/5/5a/Chupa_Chups.svg/revision/latest?cb=20220516135107",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Chupa_Chups.svg",
+          "sourceSha256": "d6aa219958d55abe60e94aa3f65e49ab90f652635a53dec64e762f8bcae1cb84",
+          "ops": {
+            "removeNodes": [
+              "1/3",
+              "1/4",
+              "1/5",
+              "1/6",
+              "1/7",
+              "1/8"
+            ],
+            "viewBox": "-3.337 -5.537 228.69 228.69"
+          },
+          "path": "/logos/svg/sweets/chupa.svg",
+          "format": "svg",
+          "colors": [
+            "#CE1141",
+            "#FFFFFF",
+            "#FFF200",
+            "#A69256"
+          ],
+          "sourcePalette": [
+            "#BA524C",
+            "#FFF200",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "c118b2e1570e489dbfa9c2227aad98eb7dc9bf9cc0f04065f76ed826a49d9b3f"
+        },
+        {
+          "id": "wordmark",
+          "label": "Wordmark",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/5/5a/Chupa_Chups.svg/revision/latest?cb=20220516135107",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Chupa_Chups.svg",
+          "sourceSha256": "d6aa219958d55abe60e94aa3f65e49ab90f652635a53dec64e762f8bcae1cb84",
+          "ops": {
+            "viewBox": "-3.337 -5.537 228.69 228.69"
+          },
+          "showsName": true,
+          "path": "/logos/svg/sweets/alternates/chupa-wordmark.svg",
+          "format": "svg",
+          "colors": [
+            "#CE1141",
+            "#FFFFFF",
+            "#FFF200",
+            "#A69256"
+          ],
+          "sourcePalette": [
+            "#BA524C",
+            "#FFF200",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "c7a75d002f1083bcb6ae5b519ee9b8c00990da9617814dd1a96bf2cf6079a9ed"
+        }
+      ]
+    },
+    {
+      "id": "SWEET-DOUBLEMINT",
+      "league": "SWEET",
+      "conference": "Gum & Mints",
+      "region": "Doublemint",
+      "name": "",
+      "abbr": "DOUBLEMINT",
+      "aliases": [
+        "Wrigley's Doublemint",
+        "Doublemint Gum"
+      ],
+      "palette": [
+        "#0E4A37",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Wordmark",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/9/95/Doublemint_2002.svg/revision/latest?cb=20240725100938",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Doublemint_2002.svg",
+          "sourceSha256": "e2f7c9dc5dd94cc43133d21767f19aa4abafb98968c81970c0f5b2efda59f9ca",
+          "ops": {
+            "viewBox": "-11.561 -11.561 312.152 112.962"
+          },
+          "showsName": true,
+          "path": "/logos/svg/sweets/doublemint.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#0E4A37",
+            "#FFFFFF",
+            "#233E91",
+            "#33BDF2",
+            "#C2EBFB",
+            "#5CCAF5"
+          ],
+          "sourcePalette": [
+            "#184464",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "e0656b46d17b990fb986abcf4a0f9294b9c9838954e23e831fd35059c46d07d4"
+        }
+      ]
+    },
+    {
+      "id": "SWEET-DUMDUMS",
+      "league": "SWEET",
+      "conference": "Hard Candy",
+      "region": "Dum Dums",
+      "name": "",
+      "abbr": "DUMDUMS",
+      "aliases": [
+        "Dum-Dums",
+        "Dum Dum",
+        "DumDums"
+      ],
+      "palette": [
+        "#3982FF",
+        "#FFCE00",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Wordmark",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/c/c0/DumDum_logo.svg/revision/latest?cb=20250617033912",
+          "sourcePage": "https://logos.fandom.com/wiki/File:DumDum_logo.svg",
+          "sourceSha256": "8be5079872a148574218b6834afc8eb6d16fcb802bab2bac6372238d458a9154",
+          "ops": {
+            "viewBox": "-9.18 89.82 1098.36 900.36"
+          },
+          "showsName": true,
+          "path": "/logos/svg/sweets/dumdums.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#3982FF",
+            "#FFCE00"
+          ],
+          "sourcePalette": [
+            "#3982FF",
+            "#FFCE00",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "32a0b86934391567e4cefde84cbae0584fd23ad34105fe3ac271496bdb813657"
+        }
+      ]
+    },
+    {
+      "id": "SWEET-ENTENMANNS",
+      "league": "SWEET",
+      "conference": "Cookies & Cakes",
+      "region": "Entenmann's",
+      "name": "",
+      "abbr": "ENTENMANNS",
+      "aliases": [
+        "Entenmanns"
+      ],
+      "palette": [
+        "#3B4095",
+        "#FFF22D",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Wordmark",
+          "sourceUrl": "https://cdn.worldvectorlogo.com/logos/entenmanns.svg",
+          "sourcePage": "https://worldvectorlogo.com/logo/entenmanns",
+          "sourceSha256": "b51d2cc5f00a008ef4735a7070d851083b5c52cb33ef20f8b973cb642c8329d9",
+          "ops": {
+            "viewBox": "-1.65 -1.65 44.555 29.325"
+          },
+          "showsName": true,
+          "path": "/logos/svg/sweets/entenmanns.svg",
+          "format": "svg",
+          "colors": [
+            "#3B4095",
+            "#FFFFFF",
+            "#FFF22D"
+          ],
+          "sourcePalette": [
+            "#3B4095",
+            "#FFF22D",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "640eebad04b7805a3bc7cd232b0a5c5a027c665f27143a3df26e17d8c79c2865"
+        }
+      ]
+    },
+    {
+      "id": "SWEET-EXTRA",
+      "league": "SWEET",
+      "conference": "Gum & Mints",
+      "region": "Extra",
+      "name": "",
+      "abbr": "EXTRA",
+      "aliases": [
+        "Extra Gum",
+        "Wrigley's Extra"
+      ],
+      "palette": [
+        "#2E247B",
+        "#00B0E9",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Wordmark",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/f/fa/Wrigley%27s_Extra_gum_brand_2021.svg/revision/latest?cb=20211104152022",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Wrigley's_Extra_gum_brand_2021.svg",
+          "sourceSha256": "3614de92a8e265719c6757e406c6bef5494afde274e06a3c20455f57ac23f54a",
+          "ops": {
+            "viewBox": "-155.307 -155.307 4193.284 2151.646"
+          },
+          "showsName": true,
+          "path": "/logos/svg/sweets/extra.svg",
+          "format": "svg",
+          "colors": [
+            "#2E247B",
+            "#00B0E9",
+            "#FFFFFF",
+            "#FEFEFE"
+          ],
+          "sourcePalette": [
+            "#2E247B",
+            "#00B0E9",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "7105bba061510e0c701812eb5759ed5bf050b1080e54423a78fb42cb7d8ed7b5"
+        }
+      ]
+    },
+    {
+      "id": "SWEET-FERRERO",
+      "league": "SWEET",
+      "conference": "Chocolate",
+      "region": "Ferrero Rocher",
+      "name": "",
+      "abbr": "FERRERO",
+      "aliases": [
+        "Ferrero",
+        "Rocher"
+      ],
+      "palette": [
+        "#D6AB4D",
+        "#6B3E26",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Wordmark",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/6/6c/Ferrero_Rocher_alt.svg/revision/latest?cb=20230220125753",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Ferrero_Rocher_alt.svg",
+          "sourceSha256": "9978a93d304654698d2c8739014713a83ab879a98c8ac930129944d8be5325fc",
+          "ops": {
+            "viewBox": "-4.653 -4.653 125.623 58.738"
+          },
+          "showsName": true,
+          "path": "/logos/svg/sweets/ferrero.svg",
+          "format": "svg",
+          "colors": [
+            "#FFD373",
+            "#D6AB4D",
+            "#F6D58F"
+          ],
+          "sourcePalette": [
+            "#D6AB4D",
+            "#FAD481",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "fe1356ec69949546d5eb42814ded5247f20c1dbababf7d3cb4d5568439c3741b"
+        }
+      ]
+    },
+    {
+      "id": "SWEET-GODIVA",
+      "league": "SWEET",
+      "conference": "Chocolate",
+      "region": "Godiva",
+      "name": "",
+      "abbr": "GODIVA",
+      "aliases": [
+        "Godiva Chocolatier",
+        "Lady Godiva"
+      ],
+      "palette": [
+        "#231F20",
+        "#B8975A",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Rider on horseback",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/7/79/Godiva_Chocolatier.svg/revision/latest?cb=20230209224411",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Godiva_Chocolatier.svg",
+          "sourceSha256": "876edb8cb785f9064c56119f9ce225c3128802e9368c7f218c3da87f1042ddab",
+          "ops": {
+            "keepNodes": [
+              "3/0/18-326"
+            ],
+            "viewBox": "86.509 -1.593 88.549 85.177"
+          },
+          "path": "/logos/svg/sweets/godiva.svg",
+          "format": "svg",
+          "colors": [
+            "#231F20",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#231F20",
+            "#B8975A",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "c54f11821cacb92980b1b00c4e78adf91529d31454085d72951f7ea2d053347d"
+        },
+        {
+          "id": "wordmark",
+          "label": "Wordmark",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/7/79/Godiva_Chocolatier.svg/revision/latest?cb=20230209224411",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Godiva_Chocolatier.svg",
+          "sourceSha256": "876edb8cb785f9064c56119f9ce225c3128802e9368c7f218c3da87f1042ddab",
+          "ops": {
+            "viewBox": "-8.296 -8.296 269.518 183.312"
+          },
+          "showsName": true,
+          "path": "/logos/svg/sweets/alternates/godiva-wordmark.svg",
+          "format": "svg",
+          "colors": [
+            "#231F20",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#231F20",
+            "#B8975A",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "a102fdfdb6ec1091581165814f8f3d05386cf053e5e510021d24795856e58dd0"
+        }
+      ]
+    },
+    {
+      "id": "SWEET-GOODHUMOR",
+      "league": "SWEET",
+      "conference": "Ice Cream",
+      "region": "Good Humor",
+      "name": "",
+      "abbr": "GOODHUMOR",
+      "aliases": [
+        "Wall's",
+        "Walls",
+        "Algida",
+        "Streets",
+        "Ola",
+        "Kibon",
+        "Langnese",
+        "Frigo",
+        "Heartbrand"
+      ],
+      "palette": [
+        "#DE242F",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Heart",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/c/cd/Heartbrand_2003.svg/revision/latest?cb=20251130164734",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Heartbrand_2003.svg",
+          "sourceSha256": "cef4948c03f9ee81047f35e2bb6d48636b150f3a7be2cfb486b41bc4f885380c",
+          "ops": {
+            "viewBox": "-10.813 -10.592 285.988 168.469"
+          },
+          "path": "/logos/svg/sweets/goodhumor.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#DE242F"
+          ],
+          "sourcePalette": [
+            "#DE242F",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "85d23801a08e2a7252539f4c6a28b187153855e00466205b335538033409e7ba"
+        },
+        {
+          "id": "wordmark",
+          "label": "Wordmark",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/8/83/Good_Humor_2015.svg/revision/latest?cb=20230326183623",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Good_Humor_2015.svg",
+          "sourceSha256": "6749f1d66350bec97dc3a7e8c997b82442c63e4992813b78c0da2098dbdfe9f4",
+          "ops": {
+            "viewBox": "-3.922 -3.842 103.737 76.465"
+          },
+          "showsName": true,
+          "path": "/logos/svg/sweets/alternates/goodhumor-wordmark.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#EF4135",
+            "#C7C8CA"
+          ],
+          "sourcePalette": [
+            "#EF4135",
+            "#C7C8CA",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "bae7ac3536f7e126a5a471d7b00e050bcbedae21c5682c8bf75fa5f259cf40e7"
+        }
+      ]
+    },
+    {
+      "id": "SWEET-HARIBO",
+      "league": "SWEET",
+      "conference": "Gummy & Chewy",
+      "region": "Haribo",
+      "name": "",
+      "abbr": "HARIBO",
+      "aliases": [
+        "Haribo Goldbears",
+        "Gold-Bears",
+        "Goldbears"
+      ],
+      "palette": [
+        "#E20015",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Wordmark",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/c/c1/Haribo_logo.svg/revision/latest?cb=20101019164758",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Haribo_logo.svg",
+          "sourceSha256": "45cc33bcda5abcf42958323ceca1936f2ea99a40f075cd6ebbaac8102fa22db2",
+          "ops": {
+            "viewBox": "-30.44 -30.44 821.88 268.252"
+          },
+          "showsName": true,
+          "path": "/logos/svg/sweets/haribo.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#000000",
+            "#E20015"
+          ],
+          "sourcePalette": [
+            "#E20015",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "34679fc9524b069cb47e83f5de145d9698150618644dbb8d0150473d590d341d"
+        }
+      ]
+    },
+    {
+      "id": "SWEET-HERSHEY",
+      "league": "SWEET",
+      "conference": "Chocolate",
+      "region": "Hershey's",
+      "name": "",
+      "abbr": "HERSHEY",
+      "aliases": [
+        "Hershey",
+        "The Hershey Company",
+        "Hershey's Kisses",
+        "Hershey Kiss"
+      ],
+      "palette": [
+        "#000000",
+        "#808080",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Kiss",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/0/02/The_Hershey_Company_-_2014x.svg/revision/latest?cb=20240225203431",
+          "sourcePage": "https://logos.fandom.com/wiki/File:The_Hershey_Company_-_2014x.svg",
+          "sourceSha256": "ca151d8612e9c09a3d681dccee39a5eb9156a07581d1c6b31cbc2339c9d042ec",
+          "ops": {
+            "keepNodes": [
+              "0"
+            ],
+            "viewBox": "-9.972 -11.889 221.677 269.664"
+          },
+          "path": "/logos/svg/sweets/hershey.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "737ef31ab3142d1d199a5d58dc0479b82b074bf1edf3d06a47ef45442c6b3944"
+        }
+      ]
+    },
+    {
+      "id": "SWEET-HOSTESS",
+      "league": "SWEET",
+      "conference": "Cookies & Cakes",
+      "region": "Hostess",
+      "name": "",
+      "abbr": "HOSTESS",
+      "aliases": [
+        "Hostess Brands",
+        "Twinkies"
+      ],
+      "palette": [
+        "#003DA5",
+        "#CD001A",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Wordmark",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/1/1a/Hostess_%282024%29.svg/revision/latest?cb=20241217043654",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Hostess_(2024).svg",
+          "sourceSha256": "557ca338d4db4c246022bdb34693e7025f7c55983046675deaa7098d857fff09",
+          "ops": {
+            "viewBox": "-40 -40 1080 485"
+          },
+          "showsName": true,
+          "path": "/logos/svg/sweets/hostess.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#00A3E0",
+            "#40BAE8",
+            "#003DA5",
+            "#5981C4",
+            "#CD001A",
+            "#DE596A"
+          ],
+          "sourcePalette": [
+            "#003DA5",
+            "#D62C42",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "38544ce020e999965934ef4b9ef4706882796fa9384f418e15c5f882cc5e66f0"
+        }
+      ]
+    },
+    {
+      "id": "SWEET-HUBBA",
+      "league": "SWEET",
+      "conference": "Gum & Mints",
+      "region": "Hubba Bubba",
+      "name": "",
+      "abbr": "HUBBA",
+      "aliases": [
+        "Hubba Bubba Bubble Gum"
+      ],
+      "palette": [
+        "#9860B6",
+        "#FFF200",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Wordmark",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/1/11/Hubba_Bubba.svg/revision/latest?cb=20220425160643",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Hubba_Bubba.svg",
+          "sourceSha256": "7166ffec4fb73810e083f2c8eaaffb55e6d7be02c64e29f209d11ffe9d772013",
+          "ops": {
+            "viewBox": "-7.185 -7.185 193.997 114.662"
+          },
+          "showsName": true,
+          "path": "/logos/svg/sweets/hubba.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#155196",
+            "#9860B6",
+            "#155195",
+            "#232B77",
+            "#E51635",
+            "#FFF200",
+            "#A9271B",
+            "#8E2219",
+            "#FFFFFF",
+            "#519245",
+            "#427048",
+            "#F53A4B",
+            "#FF5AC6",
+            "#D0E1FF",
+            "#75319B",
+            "#172D68",
+            "#1C205D",
+            "#FFFEE6"
+          ],
+          "sourcePalette": [
+            "#9860B6",
+            "#FFF200",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "a1b6c0ab7893cbd274831e7437e06e0e0b44df6478fc43a674fead88be27f0d7"
+        }
+      ]
+    },
+    {
+      "id": "SWEET-JELLYBELLY",
+      "league": "SWEET",
+      "conference": "Gummy & Chewy",
+      "region": "Jelly Belly",
+      "name": "",
+      "abbr": "JELLYBELLY",
+      "aliases": [
+        "Jellybelly",
+        "Jelly Belly Jelly Beans"
+      ],
+      "palette": [
+        "#ED1C24",
+        "#FFF200",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Wordmark",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/2/2d/Jelly_Belly.svg/revision/latest?cb=20240427021229",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Jelly_Belly.svg",
+          "sourceSha256": "ae32f91525945119110ca49d1ee0f0d56ecd72c27df35aba239daf51eabbd227",
+          "ops": {
+            "viewBox": "-1.86 -1.86 50.22 32.395"
+          },
+          "showsName": true,
+          "path": "/logos/svg/sweets/jellybelly.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#FFF200",
+            "#ED1C24"
+          ],
+          "sourcePalette": [
+            "#ED1C24",
+            "#FFF200",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "1bcefd311328470e5fd6d2d04519991d540be3725a03e967a740a411665bb62c"
+        }
+      ]
+    },
+    {
+      "id": "SWEET-JOLLY",
+      "league": "SWEET",
+      "conference": "Hard Candy",
+      "region": "Jolly Rancher",
+      "name": "",
+      "abbr": "JOLLY",
+      "aliases": [
+        "Jolly Ranchers"
+      ],
+      "palette": [
+        "#223F87",
+        "#FBDD01",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Wordmark",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/5/50/Jolly_Rancher_2024.svg/revision/latest?cb=20240412075840",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Jolly_Rancher_2024.svg",
+          "sourceSha256": "73b339766302a846b2d16ddec24bf066a21b45ca6212eb5b4c7c75ceda080d8d",
+          "ops": {
+            "viewBox": "-9.191 -9.003 243.09 170.374"
+          },
+          "showsName": true,
+          "path": "/logos/svg/sweets/jolly.svg",
+          "format": "svg",
+          "colors": [
+            "#FBDD01",
+            "#223F87",
+            "#FFFFFF",
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#112044",
+            "#FBDD01",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "ffdfc546266a11660e72efa956f1476f86d078ccdd2ea5ba8c83fe19125cd5d0"
+        }
+      ]
+    },
+    {
+      "id": "SWEET-JUICYFRUIT",
+      "league": "SWEET",
+      "conference": "Gum & Mints",
+      "region": "Juicy Fruit",
+      "name": "",
+      "abbr": "JUICYFRUIT",
+      "aliases": [
+        "Wrigley's Juicy Fruit",
+        "Juicyfruit"
+      ],
+      "palette": [
+        "#E60119",
+        "#0318DC",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Wordmark",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/d/db/Juicy_Fruit_red_blue.svg/revision/latest?cb=20240428204204",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Juicy_Fruit_red_blue.svg",
+          "sourceSha256": "240c77d213d97fc9e86d57446e14de508731b1c4ae761f7d28b8b02e4617ec19",
+          "ops": {
+            "viewBox": "-26.987 -31.653 854.64 265.307"
+          },
+          "showsName": true,
+          "path": "/logos/svg/sweets/juicyfruit.svg",
+          "format": "svg",
+          "colors": [
+            "#E60119",
+            "#0318DC"
+          ],
+          "sourcePalette": [
+            "#E60119",
+            "#0318DC",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "a7f1a87606baf81588d4a54abb342f3afe1c0b4ac8deaca20a055a40784eb254"
+        }
+      ]
+    },
+    {
+      "id": "SWEET-KEEBLER",
+      "league": "SWEET",
+      "conference": "Cookies & Cakes",
+      "region": "Keebler",
+      "name": "",
+      "abbr": "KEEBLER",
+      "aliases": [
+        "Keebler Elves"
+      ],
+      "palette": [
+        "#CC2229",
+        "#8CBE4F",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Wordmark",
+          "sourceUrl": "https://cdn.worldvectorlogo.com/logos/keebler.svg",
+          "sourcePage": "https://worldvectorlogo.com/logo/keebler",
+          "sourceSha256": "f4d7b7611ab825b531fabfbe25d5dea400e9c83044b052022712c9f740f898df",
+          "ops": {
+            "removeNodes": [
+              "0"
+            ],
+            "viewBox": "0.443 44.777 191.869 103.202"
+          },
+          "showsName": true,
+          "path": "/logos/svg/sweets/keebler.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#0C0E0F",
+            "#CC2229",
+            "#8CBE4F"
+          ],
+          "sourcePalette": [
+            "#CC2229",
+            "#8CBE4F",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "a84367dc35a0f54c0959cb09f690efd06dd953a39f2d8965d60b05aae05b1d3f"
+        }
+      ]
+    },
+    {
+      "id": "SWEET-KINDER",
+      "league": "SWEET",
+      "conference": "Chocolate",
+      "region": "Kinder",
+      "name": "",
+      "abbr": "KINDER",
+      "aliases": [
+        "Kinder Surprise",
+        "Kinder Joy",
+        "Kinder Bueno",
+        "Kinder Egg"
+      ],
+      "palette": [
+        "#EF3526",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Wordmark",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/c/cb/Kinder.svg/revision/latest?cb=20240124185752",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Kinder.svg",
+          "sourceSha256": "e355f32d5f84c758d22658d317d38b4136553fbf3f300f3e8190fc0da917204e",
+          "ops": {
+            "viewBox": "-18.13 -18.13 489.51 165.059"
+          },
+          "showsName": true,
+          "path": "/logos/svg/sweets/kinder.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#EF3526"
+          ],
+          "sourcePalette": [
+            "#EF3526",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "1dbf6e62ac6495d7a42145cb45362ecff53f95c8f28ca9ec95b907aa196acaa7"
+        }
+      ]
+    },
+    {
+      "id": "SWEET-KITKAT",
+      "league": "SWEET",
+      "conference": "Chocolate",
+      "region": "Kit Kat",
+      "name": "",
+      "abbr": "KITKAT",
+      "aliases": [
+        "KitKat",
+        "Kit-Kat"
+      ],
+      "palette": [
+        "#D3000A",
+        "#502C1C",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Wordmark",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/8/8a/Kit_Kat_-_2024.svg/revision/latest?cb=20240514070849",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Kit_Kat_-_2024.svg",
+          "sourceSha256": "6321794214a5472bc8daa159edfea05fb44c0ef3e1f11578843a2de37de0b7cd",
+          "ops": {
+            "viewBox": "-40.736 -40.736 1099.872 738.34"
+          },
+          "showsName": true,
+          "path": "/logos/svg/sweets/kitkat.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#D3000A",
+            "#502C1C"
+          ],
+          "sourcePalette": [
+            "#D3000A",
+            "#502C1C",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "c7f0508e49b086567d03b3f5e09f3f93242d3edd618526074954f27d178abe39"
+        }
+      ]
+    },
+    {
+      "id": "SWEET-KLONDIKE",
+      "league": "SWEET",
+      "conference": "Ice Cream",
+      "region": "Klondike",
+      "name": "",
+      "abbr": "KLONDIKE",
+      "aliases": [
+        "Klondike Bar"
+      ],
+      "palette": [
+        "#184377",
+        "#111518",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Polar bear",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/d/d5/Klondike_logo.svg/revision/latest?cb=20141022235558",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Klondike_logo.svg",
+          "sourceSha256": "b2796004abc6c337ee3a33da120baf6cd92cf5efa27c21893e715c48d91dd310",
+          "ops": {
+            "keepNodes": [
+              "0",
+              "20",
+              "21",
+              "22"
+            ],
+            "viewBox": "36.44 -2.72 209.362 111.746"
+          },
+          "path": "/logos/svg/sweets/klondike.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#FFFFFF",
+            "#184377",
+            "#111518"
+          ],
+          "sourcePalette": [
+            "#184377",
+            "#080A0C",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "34d9ecde786f999c857245500f7baae75dff023b55170a4bc0017a537a822754"
+        },
+        {
+          "id": "wordmark",
+          "label": "Wordmark",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/d/d5/Klondike_logo.svg/revision/latest?cb=20141022235558",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Klondike_logo.svg",
+          "sourceSha256": "b2796004abc6c337ee3a33da120baf6cd92cf5efa27c21893e715c48d91dd310",
+          "ops": {
+            "viewBox": "19.57 -4.043 245.07 167.529"
+          },
+          "showsName": true,
+          "path": "/logos/svg/sweets/alternates/klondike-wordmark.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#FFFFFF",
+            "#063451",
+            "#8EABD3",
+            "#CDD5E5",
+            "#184377",
+            "#111518"
+          ],
+          "sourcePalette": [
+            "#0F3C64",
+            "#080A0C",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "7dfe11a18ce0797f4a9afcb9e3d7621460815532566898eb8d8575f76d5e3673"
+        }
+      ]
+    },
+    {
+      "id": "SWEET-LIFESAVERS",
+      "league": "SWEET",
+      "conference": "Hard Candy",
+      "region": "Life Savers",
+      "name": "",
+      "abbr": "LIFESAVERS",
+      "aliases": [
+        "Lifesavers",
+        "Life Saver"
+      ],
+      "palette": [
+        "#1F4FA2",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Wordmark",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/0/03/Life_Savers_1997.svg/revision/latest?cb=20240725095926",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Life_Savers_1997.svg",
+          "sourceSha256": "02c5c87cd3feafc8612af7bea26268d9027c704e85303f6aa3eda744cc9f3cd5",
+          "ops": {
+            "viewBox": "-19.283 -19.283 520.639 177.162"
+          },
+          "showsName": true,
+          "path": "/logos/svg/sweets/lifesavers.svg",
+          "format": "svg",
+          "colors": [
+            "#1F4FA2",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#1F4FA2",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "ba382885cc6daa59218ea409a0244eba10485185872f7a2fa91a70ce93b9f3e6"
+        }
+      ]
+    },
+    {
+      "id": "SWEET-LINDT",
+      "league": "SWEET",
+      "conference": "Chocolate",
+      "region": "Lindt",
+      "name": "",
+      "abbr": "LINDT",
+      "aliases": [
+        "Lindt & Sprüngli",
+        "Lindt and Sprungli",
+        "Lindor"
+      ],
+      "palette": [
+        "#B5995A",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Crest",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/3/33/Lindt.svg/revision/latest?cb=20160403215147",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Lindt.svg",
+          "sourceSha256": "4444fd513a2da440ed29eb8c56db8d5896666da1009340093f71de396fb3f4ec",
+          "ops": {
+            "removeNodes": [
+              "3/3"
+            ],
+            "viewBox": "797.933 -11.233 213.3 303.3"
+          },
+          "path": "/logos/svg/sweets/lindt.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#B5995A"
+          ],
+          "sourcePalette": [
+            "#B5995A",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "237e1d4f054103bd1c363f021ce39bcae97449733a7e8d99528ee6157d8bef0e"
+        },
+        {
+          "id": "wordmark",
+          "label": "Wordmark",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/3/33/Lindt.svg/revision/latest?cb=20160403215147",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Lindt.svg",
+          "sourceSha256": "4444fd513a2da440ed29eb8c56db8d5896666da1009340093f71de396fb3f4ec",
+          "ops": {
+            "viewBox": "-40 -40 1080 360.833"
+          },
+          "showsName": true,
+          "path": "/logos/svg/sweets/alternates/lindt-wordmark.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#B5995A"
+          ],
+          "sourcePalette": [
+            "#B5995A",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "b1d718372210abd91c828deac7fd99576eb6bcbbaf3a4813083c05e64ac836cf"
+        }
+      ]
+    },
+    {
+      "id": "SWEET-LITTLEDEBBIE",
+      "league": "SWEET",
+      "conference": "Cookies & Cakes",
+      "region": "Little Debbie",
+      "name": "",
+      "abbr": "LITTLEDEBBIE",
+      "aliases": [
+        "Little Debbie Snacks",
+        "McKee Foods"
+      ],
+      "palette": [
+        "#000000",
+        "#808080",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Wordmark",
+          "sourceUrl": "https://cdn.worldvectorlogo.com/logos/little-debbie.svg",
+          "sourcePage": "https://worldvectorlogo.com/logo/little-debbie",
+          "sourceSha256": "47a2c7687644f2970945f8dbb1a65c113e0399048d5347ec82fc82b35a5c19de",
+          "ops": {
+            "removeNodes": [
+              "0/0"
+            ],
+            "viewBox": "1.311 50.785 190.135 91.186"
+          },
+          "showsName": true,
+          "path": "/logos/svg/sweets/littledebbie.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "a72640def433f0fce2ee3ab10433c978dfa4c6cd5a1075601814ba4e60cd57af"
+        }
+      ]
+    },
+    {
+      "id": "SWEET-MAGNUM",
+      "league": "SWEET",
+      "conference": "Ice Cream",
+      "region": "Magnum",
+      "name": "",
+      "abbr": "MAGNUM",
+      "aliases": [
+        "Magnum Ice Cream"
+      ],
+      "palette": [
+        "#CBB05F",
+        "#3B2314",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Wordmark",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/d/d8/Magnum_2021_SVG.svg/revision/latest?cb=20230326184031",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Magnum_2021_SVG.svg",
+          "sourceSha256": "132da22dd4693c7c6712ba936c61e429e1f2173da7bd3de681b4586c1232240e",
+          "ops": {
+            "viewBox": "-29.976 -29.976 809.356 249.177"
+          },
+          "showsName": true,
+          "path": "/logos/svg/sweets/magnum.svg",
+          "format": "svg",
+          "colors": [
+            "#EEDD9D",
+            "#CBB05F",
+            "#CEB363",
+            "#D3BA6D",
+            "#E2CD87"
+          ],
+          "sourcePalette": [
+            "#CFB465",
+            "#E8D592",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "8659cdf38eec30ad8abe0669f6a0b803623d5fbff454c479ef84d38647d68304"
+        }
+      ]
+    },
+    {
+      "id": "SWEET-MENTOS",
+      "league": "SWEET",
+      "conference": "Gum & Mints",
+      "region": "Mentos",
+      "name": "",
+      "abbr": "MENTOS",
+      "aliases": [],
+      "palette": [
+        "#2B338C",
+        "#B9C5D1",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Wordmark",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/d/d8/Mentos.svg/revision/latest?cb=20200726161337",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Mentos.svg",
+          "sourceSha256": "226d8c61937bacaa9525428c329cae8779049a06cf68da3320bbed0a60517036",
+          "ops": {
+            "viewBox": "-40 -40 1080 282.5"
+          },
+          "showsName": true,
+          "path": "/logos/svg/sweets/mentos.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#B9C5D1",
+            "#2B338C",
+            "#6A68A9"
+          ],
+          "sourcePalette": [
+            "#4A4E9A",
+            "#B9C5D1",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "f98e51f1d9e56471c2a8c14d175b938d76a1d4f6896bb5068bf5fe0c4413430e"
+        }
+      ]
+    },
+    {
+      "id": "SWEET-MILKA",
+      "league": "SWEET",
+      "conference": "Chocolate",
+      "region": "Milka",
+      "name": "",
+      "abbr": "MILKA",
+      "aliases": [],
+      "palette": [
+        "#7D68AB",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Wordmark",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/d/d1/Milka_2018.svg/revision/latest?cb=20181212120532",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Milka_2018.svg",
+          "sourceSha256": "95e6760d92e5e71d4f31e2bbc4f20780e2db9c0c77bbbd0903fe8f56b85df720",
+          "ops": {
+            "viewBox": "-10.583 -10.583 285.75 215.194"
+          },
+          "showsName": true,
+          "path": "/logos/svg/sweets/milka.svg",
+          "format": "svg",
+          "colors": [
+            "#7D68AB",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#7D68AB",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "84bc845455aa57be53fabd6bdc03684a1a93183a6c005a58979dd039a1fbe963"
+        }
+      ]
+    },
+    {
+      "id": "SWEET-MMS",
+      "league": "SWEET",
+      "conference": "Chocolate",
+      "region": "M&M's",
+      "name": "",
+      "abbr": "MMS",
+      "aliases": [
+        "M&Ms",
+        "M and Ms",
+        "MMs",
+        "M&M"
+      ],
+      "palette": [
+        "#592411",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Wordmark",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/M%26M%27s_2022.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:M&M's_2022.svg",
+          "sourceSha256": "6c568c1a8220642e41f2853956881a2d649b7e670d87a6d22f306451521d850e",
+          "ops": {
+            "viewBox": "-40 -40 1080 407.084"
+          },
+          "showsName": true,
+          "path": "/logos/svg/sweets/mms.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#592411"
+          ],
+          "sourcePalette": [
+            "#592411",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "f167390602a0b56d3089df3b6735220af935338b223a3e6bf0838a96dab6ad31"
+        }
+      ]
+    },
+    {
+      "id": "SWEET-NERDS",
+      "league": "SWEET",
+      "conference": "Gummy & Chewy",
+      "region": "Nerds",
+      "name": "",
+      "abbr": "NERDS",
+      "aliases": [
+        "Wonka Nerds",
+        "Nerds Candy"
+      ],
+      "palette": [
+        "#7460A8",
+        "#E15DA2",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Wordmark",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/b/b5/Nerds-2020_logo.svg/revision/latest?cb=20240211181226",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Nerds-2020_logo.svg",
+          "sourceSha256": "96c9c749180362398251bdad1759e87b5b1f53c7a98f92168c6d19de6e8db01a",
+          "ops": {
+            "viewBox": "-27.871 -27.871 752.511 458.706"
+          },
+          "showsName": true,
+          "path": "/logos/svg/sweets/nerds.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#03B0E2",
+            "#7460A8",
+            "#F4F31E",
+            "#203C7C",
+            "#E15DA2",
+            "#09AAE8",
+            "#92C64B",
+            "#25B2E8",
+            "#010100",
+            "#FFFFFF",
+            "#28A0D9",
+            "#FFFEFF",
+            "#FFFBFA"
+          ],
+          "sourcePalette": [
+            "#7460A8",
+            "#E15DA2",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "59d11016971430e19d5cdc5d27d7afc059ec3f7b52fb38d29a40bc0f6ae37b93"
+        }
+      ]
+    },
+    {
+      "id": "SWEET-NUTELLA",
+      "league": "SWEET",
+      "conference": "Chocolate",
+      "region": "Nutella",
+      "name": "",
+      "abbr": "NUTELLA",
+      "aliases": [],
+      "palette": [
+        "#E2001A",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Wordmark",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Logo_Nutella.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Logo_Nutella.svg",
+          "sourceSha256": "0db46f317a271dd46a6daa044cb8282699052ad80bfec620a48b6585bbc4f985",
+          "ops": {
+            "viewBox": "-10.042 -10.042 271.122 93.033"
+          },
+          "showsName": true,
+          "path": "/logos/svg/sweets/nutella.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#E2001A",
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#E2001A",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "b5ffdb3e1fbcf556e896b3138e840e35e4399df127558b1733de5c95f0785982"
+        }
+      ]
+    },
+    {
+      "id": "SWEET-ORBIT",
+      "league": "SWEET",
+      "conference": "Gum & Mints",
+      "region": "Orbit",
+      "name": "",
+      "abbr": "ORBIT",
+      "aliases": [
+        "Orbit Gum",
+        "Wrigley's Orbit"
+      ],
+      "palette": [
+        "#00B0E9",
+        "#2E247B",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Wordmark",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/f/f7/Wrigley%27s_Orbit_gum_brand_2022.svg/revision/latest?cb=20211104152424",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Wrigley's_Orbit_gum_brand_2022.svg",
+          "sourceSha256": "53f143a206d875a9114dc7ec0c46bb40845894e0da7c76ea9e0d6ca9952cd9b4",
+          "ops": {
+            "viewBox": "-144.264 -144.264 3895.128 2061.773"
+          },
+          "showsName": true,
+          "path": "/logos/svg/sweets/orbit.svg",
+          "format": "svg",
+          "colors": [
+            "#2E247B",
+            "#00B0E9",
+            "#FFFFFF",
+            "#FEFEFE"
+          ],
+          "sourcePalette": [
+            "#00B0E9",
+            "#2E247B",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "266dbb198b6d6ae049c3b7189ef4c93a5526efcada269301d2a028a30f0e4e9c"
+        }
+      ]
+    },
+    {
+      "id": "SWEET-OREO",
+      "league": "SWEET",
+      "conference": "Cookies & Cakes",
+      "region": "Oreo",
+      "name": "",
+      "abbr": "OREO",
+      "aliases": [
+        "Oreos",
+        "Oreo Cookies"
+      ],
+      "palette": [
+        "#3194CF",
+        "#88B2D6",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Wordmark",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Oreo_Logo_2014.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Oreo_Logo_2014.svg",
+          "sourceSha256": "7c1be604cd4d0d5ece454f0edbdf16bdc49d1e4c8a27e2df522a53a16ec863c5",
+          "ops": {
+            "viewBox": "-3.666 -3.56 1206.81 487.249"
+          },
+          "showsName": true,
+          "path": "/logos/svg/sweets/oreo.svg",
+          "format": "svg",
+          "colors": [
+            "#3194CF",
+            "#88B2D6",
+            "#51C4F1",
+            "#1064AD",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#207CBE",
+            "#6CBBE4",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "7e93e24daf64d766b8cac61cec5a9e3bae7a3294d79968e2bf6834b707f6feef"
+        }
+      ]
+    },
+    {
+      "id": "SWEET-PEPPERIDGE",
+      "league": "SWEET",
+      "conference": "Cookies & Cakes",
+      "region": "Pepperidge Farm",
+      "name": "",
+      "abbr": "PEPPERIDGE",
+      "aliases": [
+        "Pepperidge",
+        "Milano"
+      ],
+      "palette": [
+        "#EC1B2E",
+        "#FFC10E",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Wordmark",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/2/2d/Pepperidge_farm_vector_logo.svg/revision/latest?cb=20200512211205",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Pepperidge_farm_vector_logo.svg",
+          "sourceSha256": "42a4e5d47d28fb96080c83b959d2f478bfa47b883443dffa64dcd7ef5ae421d8",
+          "ops": {
+            "viewBox": "-16.099 -16.099 434.661 166.687"
+          },
+          "showsName": true,
+          "path": "/logos/svg/sweets/pepperidge.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#FFFFFF",
+            "#EC1B2E",
+            "#ED1C29",
+            "#D1EDFB",
+            "#412020",
+            "#F2765F",
+            "#FFC10E",
+            "#9CDBF8",
+            "#B8E4FA",
+            "#8DD7F7",
+            "#FBB218",
+            "#FFEC6C",
+            "#9D2D3A",
+            "#E41E30",
+            "#A92B39",
+            "#FBB216"
+          ],
+          "sourcePalette": [
+            "#EC1B2E",
+            "#FDC42A",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "8a344dfca44896f1484f3f5e20a5334b893dc57b130b07270af65316adec832c"
+        }
+      ]
+    },
+    {
+      "id": "SWEET-PEZ",
+      "league": "SWEET",
+      "conference": "Hard Candy",
+      "region": "PEZ",
+      "name": "",
+      "abbr": "PEZ",
+      "aliases": [
+        "Pez Candy"
+      ],
+      "palette": [
+        "#003398",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Wordmark",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/c/c6/PEZ_2024.svg/revision/latest?cb=20240320140828",
+          "sourcePage": "https://logos.fandom.com/wiki/File:PEZ_2024.svg",
+          "sourceSha256": "f6b79a84a523beb9cfbe131d8740f176eb5987e818e85dfb22dee6466ab73042",
+          "ops": {
+            "viewBox": "-40 -40 1080 417.5"
+          },
+          "showsName": true,
+          "path": "/logos/svg/sweets/pez.svg",
+          "format": "svg",
+          "colors": [
+            "#003398",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#003398",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "7be1bb398f11b0d70e446f2f9b1b14dbb8a78005ce3dc702627aebb8b797b38e"
+        }
+      ]
+    },
+    {
+      "id": "SWEET-PILLSBURY",
+      "league": "SWEET",
+      "conference": "Cookies & Cakes",
+      "region": "Pillsbury",
+      "name": "",
+      "abbr": "PILLSBURY",
+      "aliases": [
+        "Pillsbury Doughboy"
+      ],
+      "palette": [
+        "#002E6D",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Wordmark",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/5/5b/Pillsbury_2025.svg/revision/latest?cb=20250824025829",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Pillsbury_2025.svg",
+          "sourceSha256": "9743f490a49e4248f733ad0c252a22ecae3f32f335d46a9af17ebff6171b06ea",
+          "ops": {
+            "viewBox": "-5.406 -5.295 142.978 142.868"
+          },
+          "showsName": true,
+          "path": "/logos/svg/sweets/pillsbury.svg",
+          "format": "svg",
+          "colors": [
+            "#002E6D",
+            "#FFF9E4"
+          ],
+          "sourcePalette": [
+            "#002E6D",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "4af09e66838b036782b9c292289fd1fb4ddf3461ef0d1a8f1378eb6db362d656"
+        }
+      ]
+    },
+    {
+      "id": "SWEET-POPSICLE",
+      "league": "SWEET",
+      "conference": "Ice Cream",
+      "region": "Popsicle",
+      "name": "",
+      "abbr": "POPSICLE",
+      "aliases": [],
+      "palette": [
+        "#003DA6",
+        "#EC1C24",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Wordmark",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/e/ea/Popsicle_1990_%282D%29.svg/revision/latest?cb=20221220015754",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Popsicle_1990_(2D).svg",
+          "sourceSha256": "e70b7cd8e0c22178f75145acb6d47ad73481c2c78f2381734147c53d65d0026c",
+          "ops": {
+            "viewBox": "-7.954 -7.954 214.77 119.814"
+          },
+          "showsName": true,
+          "path": "/logos/svg/sweets/popsicle.svg",
+          "format": "svg",
+          "colors": [
+            "#003DA6",
+            "#EC1C24",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#001E53",
+            "#EC1C24",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "4f74ef10f5c9e2c22ac5af30939a82bb43c9414301e8219a16b465fb51b8d1d2"
+        }
+      ]
+    },
+    {
+      "id": "SWEET-POPTARTS",
+      "league": "SWEET",
+      "conference": "Cookies & Cakes",
+      "region": "Pop-Tarts",
+      "name": "",
+      "abbr": "POPTARTS",
+      "aliases": [
+        "Pop Tarts",
+        "PopTarts"
+      ],
+      "palette": [
+        "#0055B8",
+        "#303074",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Wordmark",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/e/e7/Pop-tarts_%282023%29.svg/revision/latest?cb=20240822014137",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Pop-tarts_(2023).svg",
+          "sourceSha256": "ddafaadb85b2eca60bce455dac604e16be3cbc039245cc40698a9af069b6b861",
+          "ops": {
+            "viewBox": "-14.049 -14.049 379.329 253.178"
+          },
+          "showsName": true,
+          "path": "/logos/svg/sweets/poptarts.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#303074",
+            "#0055B8",
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#0055B8",
+            "#18183A",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "187b4aeba1741da01f0d783be61a463787deedaf601c9d2ef05a11aacde9a42b"
+        }
+      ]
+    },
+    {
+      "id": "SWEET-REESES",
+      "league": "SWEET",
+      "conference": "Chocolate",
+      "region": "Reese's",
+      "name": "",
+      "abbr": "REESES",
+      "aliases": [
+        "Reeses",
+        "Reese's Peanut Butter Cups",
+        "Reese's Cups",
+        "Reese's Pieces"
+      ],
+      "palette": [
+        "#FCDC00",
+        "#580000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Wordmark",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/3/3a/Reese%27s_2025.svg/revision/latest?cb=20250823184830",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Reese's_2025.svg",
+          "sourceSha256": "ea0ed302d8ba2c51928e873b61b7b4b1a814ad2579cfdd3116c14f0158ae4a96",
+          "ops": {
+            "viewBox": "-79.64 -79.64 2150.28 849.493"
+          },
+          "showsName": true,
+          "path": "/logos/svg/sweets/reeses.svg",
+          "format": "svg",
+          "colors": [
+            "#580000",
+            "#FCDC00"
+          ],
+          "sourcePalette": [
+            "#FCDC00",
+            "#580000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "32269f08376458e9d0ed6a2fd68a852a63be0042cf0a09f85fcb39da4cc76b0d"
+        }
+      ]
+    },
+    {
+      "id": "SWEET-RICOLA",
+      "league": "SWEET",
+      "conference": "Hard Candy",
+      "region": "Ricola",
+      "name": "",
+      "abbr": "RICOLA",
+      "aliases": [],
+      "palette": [
+        "#04542B",
+        "#FFCD00",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Wordmark",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/c/c4/Ricola_2021.svg/revision/latest?cb=20230910114153",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Ricola_2021.svg",
+          "sourceSha256": "8e3aae26cb9d4ae58129fe8188b3b6cf6e6b625d55ef2749ecd7710985bb0e5b",
+          "ops": {
+            "viewBox": "-26.537 -29.301 716.495 222.799"
+          },
+          "showsName": true,
+          "path": "/logos/svg/sweets/ricola.svg",
+          "format": "svg",
+          "colors": [
+            "#04542B"
+          ],
+          "sourcePalette": [
+            "#04542B",
+            "#FFCD00",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "324304b59acc0e6f95ead4adef9f23f43e963b48ebc0d5b8c7c9977302614d06"
+        }
+      ]
+    },
+    {
+      "id": "SWEET-SKITTLES",
+      "league": "SWEET",
+      "conference": "Gummy & Chewy",
+      "region": "Skittles",
+      "name": "",
+      "abbr": "SKITTLES",
+      "aliases": [],
+      "palette": [
+        "#C70925",
+        "#3B46A6",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Wordmark",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/c/c2/Skittles_2024.svg/revision/latest?cb=20260512125442",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Skittles_2024.svg",
+          "sourceSha256": "29d0e44b4c40d3ce23fd5a7bf62924b6973d7f63ca073d6774bc729713fd2a2d",
+          "ops": {
+            "viewBox": "-9.258 -9.258 272.861 107.537"
+          },
+          "showsName": true,
+          "path": "/logos/svg/sweets/skittles.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#C70925",
+            "#181F1A",
+            "#3B46A6",
+            "#FFFFFF",
+            "#C9E8FA",
+            "#FFFAF5",
+            "#FFE9D1",
+            "#CA0C25",
+            "#6B030E"
+          ],
+          "sourcePalette": [
+            "#A9081D",
+            "#3B46A6",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "ecfb9a39a9de969c745412434d0ef703833fde2b75f2ec1dc7b3e14e3754e9b6"
+        }
+      ]
+    },
+    {
+      "id": "SWEET-SNICKERS",
+      "league": "SWEET",
+      "conference": "Chocolate",
+      "region": "Snickers",
+      "name": "",
+      "abbr": "SNICKERS",
+      "aliases": [],
+      "palette": [
+        "#451A0B",
+        "#2E3192",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Wordmark",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/d/dc/Snickers_2019.svg/revision/latest?cb=20220403030209",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Snickers_2019.svg",
+          "sourceSha256": "bfcbefa035586ed861742925cce2f8fabc11d038c20c314d571c7146231db70f",
+          "ops": {
+            "viewBox": "-106.187 -106.187 2867.039 1148.143"
+          },
+          "showsName": true,
+          "path": "/logos/svg/sweets/snickers.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#451A0B",
+            "#ED1C24",
+            "#FFFFFF",
+            "#2E3192"
+          ],
+          "sourcePalette": [
+            "#451A0B",
+            "#2E3192",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "fb63b500a70f1e47e251872d058bd97fb163042d8554fd9d5d0e6e2f989440c4"
+        }
+      ]
+    },
+    {
+      "id": "SWEET-TICTAC",
+      "league": "SWEET",
+      "conference": "Gum & Mints",
+      "region": "Tic Tac",
+      "name": "",
+      "abbr": "TICTAC",
+      "aliases": [
+        "TicTac",
+        "Tic Tacs"
+      ],
+      "palette": [
+        "#0066AB",
+        "#242F55",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Wordmark",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/3/36/Tic_Tac_blue.svg/revision/latest?cb=20211010163853",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Tic_Tac_blue.svg",
+          "sourceSha256": "ef16c5ee97efbe36b0e0a3f1970bc3ba087014bab1543d9b5435ac22f7abe1f0",
+          "ops": {
+            "removeNodes": [
+              "2/4/1/0/0"
+            ],
+            "viewBox": "-7.507 -7.354 198.565 172.234"
+          },
+          "showsName": true,
+          "path": "/logos/svg/sweets/tictac.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#242F55",
+            "#85B7D8",
+            "#808080",
+            "#767F81",
+            "#0066AB",
+            "#005895"
+          ],
+          "sourcePalette": [
+            "#005FA0",
+            "#5E6572",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "dbce58bf889006d18f5dcc27624bf3af8d1f3d05fb23993745a31673efb39e07"
+        }
+      ]
+    },
+    {
+      "id": "SWEET-TOBLERONE",
+      "league": "SWEET",
+      "conference": "Chocolate",
+      "region": "Toblerone",
+      "name": "",
+      "abbr": "TOBLERONE",
+      "aliases": [],
+      "palette": [
+        "#CE9C39",
+        "#D2232A",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Golden mountain",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/2/2e/Toblerone_2021-emblem.svg/revision/latest?cb=20230310145426",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Toblerone_2021-emblem.svg",
+          "sourceSha256": "368fb44bbd2d7f75e52f8546bb9b40286a553a4ae80e48b0b0369de6379553b4",
+          "ops": {
+            "viewBox": "-5.239 -5.239 141.445 107.502"
+          },
+          "path": "/logos/svg/sweets/toblerone.svg",
+          "format": "svg",
+          "colors": [
+            "#CE9C39"
+          ],
+          "sourcePalette": [
+            "#CE9C39",
+            "#D2232A",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "d0a0061ba5d2a816888e502e89d5b7e3297d3113bf9ce2a2b01e875921683c31"
+        },
+        {
+          "id": "mountain-1999",
+          "label": "1999 yellow mountain",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/6/63/Toblerone_1999-emblem.svg/revision/latest?cb=20230310112213",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Toblerone_1999-emblem.svg",
+          "sourceSha256": "1200a0a2279c3b993551f5f534a989526da72b5c8c5a79ed8083e7dc5f1d5cb7",
+          "ops": {
+            "viewBox": "-16.219 -16.219 437.921 340.267"
+          },
+          "path": "/logos/svg/sweets/alternates/toblerone-mountain-1999.svg",
+          "format": "svg",
+          "colors": [
+            "#EFD621"
+          ],
+          "sourcePalette": [
+            "#EFD621",
+            "#D2232A",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "1346e4143c01d9f2d01c7c972a92e6511251e36a12df9dbb2066cc1d0e06c856"
+        },
+        {
+          "id": "wordmark",
+          "label": "Wordmark",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/0/09/Toblerone_-_2021.svg/revision/latest?cb=20260610020503",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Toblerone_-_2021.svg",
+          "sourceSha256": "11bfd45db97c6e5021350c7706619fc8cfe3242a877437246fa8d706a6f9088c",
+          "ops": {
+            "viewBox": "-10.054 -10.054 271.462 60.744"
+          },
+          "showsName": true,
+          "path": "/logos/svg/sweets/alternates/toblerone-wordmark.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#DA2B1F",
+            "#DD8F2D",
+            "#FED069",
+            "#DD902D",
+            "#F6C864"
+          ],
+          "sourcePalette": [
+            "#ECAE4A",
+            "#DA2B1F",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "d641fce2fb273d78e590c5890915ecaa306225b1df407e5a46759d01b23c8d34"
+        }
+      ]
+    },
+    {
+      "id": "SWEET-TOOTSIE",
+      "league": "SWEET",
+      "conference": "Gummy & Chewy",
+      "region": "Tootsie Roll",
+      "name": "",
+      "abbr": "TOOTSIE",
+      "aliases": [
+        "Tootsie",
+        "Tootsie Rolls",
+        "Tootsie Pop",
+        "Tootsie Pops"
+      ],
+      "palette": [
+        "#FF0000",
+        "#5C3317",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Wordmark",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/1/19/Tootsie_logo.svg/revision/latest?cb=20240621070202",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Tootsie_logo.svg",
+          "sourceSha256": "38220210838101b73a9e8b0d85963b672905815d1b9d4a2b05ad2cfd90b4f19b",
+          "ops": {
+            "viewBox": "-40 -40 1080.004 343.335"
+          },
+          "showsName": true,
+          "path": "/logos/svg/sweets/tootsie.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#FF0000"
+          ],
+          "sourcePalette": [
+            "#FF0000",
+            "#5C3317",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "8d5d36f18ac37d31d32e6def5b56b90732d7219d6744b82570fa477b5e2182bf"
+        }
+      ]
+    },
+    {
+      "id": "SWEET-TRIDENT",
+      "league": "SWEET",
+      "conference": "Gum & Mints",
+      "region": "Trident",
+      "name": "",
+      "abbr": "TRIDENT",
+      "aliases": [
+        "Trident Gum"
+      ],
+      "palette": [
+        "#032A75",
+        "#0C79BE",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Wordmark",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/4/4f/Trident_logo_2019.svg/revision/latest?cb=20200120183652",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Trident_logo_2019.svg",
+          "sourceSha256": "f3d60aa2c9194f143421d4d87e841a10b44be9f55806ebb741346a48eb832a18",
+          "ops": {
+            "viewBox": "-86.641 -86.641 2339.312 2050.508"
+          },
+          "showsName": true,
+          "path": "/logos/svg/sweets/trident.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#032A75",
+            "#0C79BE",
+            "#59C5F3",
+            "#E20611",
+            "#000000",
+            "#231F20"
+          ],
+          "sourcePalette": [
+            "#0D1832",
+            "#329FD8",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "62c92ecce2a43a3d6724741c6bb811304d7bdedc1a5566b0a740492120c5a113"
+        }
+      ]
+    },
+    {
+      "id": "SWEET-TROLLI",
+      "league": "SWEET",
+      "conference": "Gummy & Chewy",
+      "region": "Trolli",
+      "name": "",
+      "abbr": "TROLLI",
+      "aliases": [],
+      "palette": [
+        "#FF7500",
+        "#C60046",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Wordmark",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/6/65/Trolli_%282022%29.svg/revision/latest?cb=20220912203809",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Trolli_(2022).svg",
+          "sourceSha256": "c9a420bd7febc5fc45fd18b17b1f6abb48099420460b84b279acd4a07a186563",
+          "ops": {
+            "viewBox": "-9.2 -9.2 248.4 156.592"
+          },
+          "showsName": true,
+          "path": "/logos/svg/sweets/trolli.svg",
+          "format": "svg",
+          "colors": [
+            "#FF7500",
+            "#C60046",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#FF7500",
+            "#C60046",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "5d2285ff3c5e15aea231524961b3f1cd39b85a7af7462fe3f8db126b2f546d58"
+        }
+      ]
+    },
+    {
+      "id": "SWEET-TWIX",
+      "league": "SWEET",
+      "conference": "Chocolate",
+      "region": "Twix",
+      "name": "",
+      "abbr": "TWIX",
+      "aliases": [],
+      "palette": [
+        "#E4002B",
+        "#D4A017",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Wordmark",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/4/48/Twix_2024.svg/revision/latest?cb=20250209113922",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Twix_2024.svg",
+          "sourceSha256": "bb01b2f186fdc10e8f18edee4a055cdbf33256e13852cbfa737b029ca17fcb59",
+          "ops": {
+            "viewBox": "-10.574 -10.574 285.498 139.004"
+          },
+          "showsName": true,
+          "path": "/logos/svg/sweets/twix.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#E4002B"
+          ],
+          "sourcePalette": [
+            "#E4002B",
+            "#D4A017",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "338592ee0f451c4b9ab83fe66c13ace781fb3be231ea6ec397f04507baa25945"
+        }
+      ]
+    },
+    {
+      "id": "SWEET-TWIZZLERS",
+      "league": "SWEET",
+      "conference": "Gummy & Chewy",
+      "region": "Twizzlers",
+      "name": "",
+      "abbr": "TWIZZLERS",
+      "aliases": [],
+      "palette": [
+        "#CE2030",
+        "#233F96",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Wordmark",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/3/30/Twizzlers_1994_logo.svg/revision/latest?cb=20240229191940",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Twizzlers_1994_logo.svg",
+          "sourceSha256": "e777c7b5c227b2a9cd7c44073c7f934b74473c871686f6dbe6c5642d4ba010b9",
+          "ops": {
+            "viewBox": "7.018 99.698 286.254 100.056"
+          },
+          "showsName": true,
+          "path": "/logos/svg/sweets/twizzlers.svg",
+          "format": "svg",
+          "colors": [
+            "#233F96",
+            "#CE2030",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#CE2030",
+            "#233F96",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "9268fca2c086a169cc69cad9607b9681fc3772a8135f51c47c5471516e708a8f"
+        }
+      ]
+    }
+  ]
+}

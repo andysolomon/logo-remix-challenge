@@ -11474,7 +11474,7 @@
     "id": "choice-mark",
     "label": "Choice mark S (2016)",
     "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/0/00/Subway_%E2%80%93_2016_Choice_Mark_symbol_print.svg/revision/latest?cb=20241014002415",
-    "sourcePage": "https://logos.fandom.com/wiki/File:Subway_–_2016_Choice_Mark_symbol_print.svg",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Subway_\u2013_2016_Choice_Mark_symbol_print.svg",
     "sourceSha256": "69eea04c9e54871c8cc19f1a020c10b529d8468e9a94d45907fa179a417488fb",
     "ops": {
       "viewBox": "-102.422 -102.422 2186.798 2765.393"
@@ -11881,7 +11881,7 @@
     "showsName": true
   },
   {
-    "teamId": "BRAND-HERSHEY",
+    "teamId": "SWEET-HERSHEY",
     "id": "primary",
     "label": "Kiss",
     "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/0/02/The_Hershey_Company_-_2014x.svg/revision/latest?cb=20240225203431",
@@ -12100,7 +12100,7 @@
     "showsName": true
   },
   {
-    "teamId": "BRAND-MMS",
+    "teamId": "SWEET-MMS",
     "id": "primary",
     "label": "Wordmark",
     "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/M%26M%27s_2022.svg",
@@ -12204,7 +12204,7 @@
     "showsName": true
   },
   {
-    "teamId": "BRAND-OREO",
+    "teamId": "SWEET-OREO",
     "id": "primary",
     "label": "Wordmark",
     "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Oreo_Logo_2014.svg",
@@ -12496,7 +12496,7 @@
     "id": "primary",
     "label": "Sonic eagle",
     "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/9/9a/United_States_Postal_Service_%E2%80%93_1993_symbol.svg/revision/latest?cb=20241019194851",
-    "sourcePage": "https://logos.fandom.com/wiki/File:United_States_Postal_Service_–_1993_symbol.svg",
+    "sourcePage": "https://logos.fandom.com/wiki/File:United_States_Postal_Service_\u2013_1993_symbol.svg",
     "sourceSha256": "f95e70ad71a919a0879f97c133674d0f5c8a953acb092c6b3bb8b1777d345e49",
     "ops": {
       "viewBox": "131.236 9.146 469.649 301.059"
@@ -12529,7 +12529,7 @@
     "id": "primary",
     "label": "Wordmark",
     "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Visa_Inc._logo_%282021%E2%80%93present%29.svg",
-    "sourcePage": "https://commons.wikimedia.org/wiki/File:Visa_Inc._logo_(2021–present).svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Visa_Inc._logo_(2021\u2013present).svg",
     "sourceSha256": "a9800215097d4cfa792c723af023dbcbec92cd656e0f95df62af21c78f48b060",
     "ops": {
       "viewBox": "-39.46 -39.46 1078.92 403.61"
@@ -13088,9 +13088,9 @@
   {
     "teamId": "CHAR-POKEBALL",
     "id": "primary",
-    "label": "Poké Ball",
+    "label": "Pok\u00e9 Ball",
     "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Pok%C3%A9_Ball_icon.svg",
-    "sourcePage": "https://commons.wikimedia.org/wiki/File:Poké_Ball_icon.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Pok\u00e9_Ball_icon.svg",
     "sourceSha256": "6f1121045b551300d6f9a4651d37b9232edb30aa8465e8a0d0951f43361022cf",
     "ops": {
       "viewBox": "21.44 20.84 552.42 552.32"
@@ -13708,7 +13708,7 @@
     "id": "primary",
     "label": "Wordmark",
     "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/H%C3%A4agen-Dazs_Logo.svg",
-    "sourcePage": "https://commons.wikimedia.org/wiki/File:Häagen-Dazs_Logo.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:H\u00e4agen-Dazs_Logo.svg",
     "sourceSha256": "7530efaaa56788ddcf7e38a70add4435c643d14eeaf091553afbf5f1c2ec8079",
     "ops": {
       "viewBox": "2.474 2.553 201.053 102.894"
@@ -17604,5 +17604,702 @@
     "sourceUrl": "https://openclipart.org/download/313553/1547383891.svg",
     "sourcePage": "https://openclipart.org/detail/313553/tokyo-skytree-silhouette",
     "sourceSha256": "e6a759533df2859728b5b67401352939596544bde6898c8321925fbe49735f30"
+  },
+  {
+    "teamId": "SWEET-REESES",
+    "id": "primary",
+    "label": "Wordmark",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/3/3a/Reese%27s_2025.svg/revision/latest?cb=20250823184830",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Reese's_2025.svg",
+    "sourceSha256": "ea0ed302d8ba2c51928e873b61b7b4b1a814ad2579cfdd3116c14f0158ae4a96",
+    "ops": {
+      "viewBox": "-79.64 -79.64 2150.28 849.493"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "SWEET-KITKAT",
+    "id": "primary",
+    "label": "Wordmark",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/8/8a/Kit_Kat_-_2024.svg/revision/latest?cb=20240514070849",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Kit_Kat_-_2024.svg",
+    "sourceSha256": "6321794214a5472bc8daa159edfea05fb44c0ef3e1f11578843a2de37de0b7cd",
+    "ops": {
+      "viewBox": "-40.736 -40.736 1099.872 738.34"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "SWEET-SNICKERS",
+    "id": "primary",
+    "label": "Wordmark",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/d/dc/Snickers_2019.svg/revision/latest?cb=20220403030209",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Snickers_2019.svg",
+    "sourceSha256": "bfcbefa035586ed861742925cce2f8fabc11d038c20c314d571c7146231db70f",
+    "ops": {
+      "viewBox": "-106.187 -106.187 2867.039 1148.143"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "SWEET-TWIX",
+    "id": "primary",
+    "label": "Wordmark",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/4/48/Twix_2024.svg/revision/latest?cb=20250209113922",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Twix_2024.svg",
+    "sourceSha256": "bb01b2f186fdc10e8f18edee4a055cdbf33256e13852cbfa737b029ca17fcb59",
+    "ops": {
+      "viewBox": "-10.574 -10.574 285.498 139.004"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "SWEET-BUTTERFINGER",
+    "id": "primary",
+    "label": "Wordmark",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/0/04/Butterfinger_2019.svg/revision/latest?cb=20250823002643",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Butterfinger_2019.svg",
+    "sourceSha256": "e85ed53d5851174842cd78ba9e455788bb78ecc7d41cccae581a8236494b6675",
+    "ops": {
+      "viewBox": "-217.024 -217.024 5859.648 1645.765"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "SWEET-CADBURY",
+    "id": "primary",
+    "label": "Wordmark",
+    "sourceUrl": "https://cdn.worldvectorlogo.com/logos/cadbury.svg",
+    "sourcePage": "https://worldvectorlogo.com/logo/cadbury",
+    "sourceSha256": "02076ea879943c76cbbc3f7413518ae55e3a9cdb5ec1ea3ea997cc8347148b2e",
+    "ops": {
+      "removeNodes": [
+        "0/0"
+      ],
+      "viewBox": "-4.761 49.692 202.278 93.371"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "SWEET-LINDT",
+    "id": "primary",
+    "label": "Crest",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/3/33/Lindt.svg/revision/latest?cb=20160403215147",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Lindt.svg",
+    "sourceSha256": "4444fd513a2da440ed29eb8c56db8d5896666da1009340093f71de396fb3f4ec",
+    "ops": {
+      "removeNodes": [
+        "3/3"
+      ],
+      "viewBox": "797.933 -11.233 213.3 303.3"
+    }
+  },
+  {
+    "teamId": "SWEET-LINDT",
+    "id": "wordmark",
+    "label": "Wordmark",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/3/33/Lindt.svg/revision/latest?cb=20160403215147",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Lindt.svg",
+    "sourceSha256": "4444fd513a2da440ed29eb8c56db8d5896666da1009340093f71de396fb3f4ec",
+    "ops": {
+      "viewBox": "-40 -40 1080 360.833"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "SWEET-GODIVA",
+    "id": "primary",
+    "label": "Rider on horseback",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/7/79/Godiva_Chocolatier.svg/revision/latest?cb=20230209224411",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Godiva_Chocolatier.svg",
+    "sourceSha256": "876edb8cb785f9064c56119f9ce225c3128802e9368c7f218c3da87f1042ddab",
+    "ops": {
+      "keepNodes": [
+        "3/0/18-326"
+      ],
+      "viewBox": "86.509 -1.593 88.549 85.177"
+    }
+  },
+  {
+    "teamId": "SWEET-GODIVA",
+    "id": "wordmark",
+    "label": "Wordmark",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/7/79/Godiva_Chocolatier.svg/revision/latest?cb=20230209224411",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Godiva_Chocolatier.svg",
+    "sourceSha256": "876edb8cb785f9064c56119f9ce225c3128802e9368c7f218c3da87f1042ddab",
+    "ops": {
+      "viewBox": "-8.296 -8.296 269.518 183.312"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "SWEET-TOBLERONE",
+    "id": "primary",
+    "label": "Golden mountain",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/2/2e/Toblerone_2021-emblem.svg/revision/latest?cb=20230310145426",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Toblerone_2021-emblem.svg",
+    "sourceSha256": "368fb44bbd2d7f75e52f8546bb9b40286a553a4ae80e48b0b0369de6379553b4",
+    "ops": {
+      "viewBox": "-5.239 -5.239 141.445 107.502"
+    }
+  },
+  {
+    "teamId": "SWEET-TOBLERONE",
+    "id": "mountain-1999",
+    "label": "1999 yellow mountain",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/6/63/Toblerone_1999-emblem.svg/revision/latest?cb=20230310112213",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Toblerone_1999-emblem.svg",
+    "sourceSha256": "1200a0a2279c3b993551f5f534a989526da72b5c8c5a79ed8083e7dc5f1d5cb7",
+    "ops": {
+      "viewBox": "-16.219 -16.219 437.921 340.267"
+    }
+  },
+  {
+    "teamId": "SWEET-TOBLERONE",
+    "id": "wordmark",
+    "label": "Wordmark",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/0/09/Toblerone_-_2021.svg/revision/latest?cb=20260610020503",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Toblerone_-_2021.svg",
+    "sourceSha256": "11bfd45db97c6e5021350c7706619fc8cfe3242a877437246fa8d706a6f9088c",
+    "ops": {
+      "viewBox": "-10.054 -10.054 271.462 60.744"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "SWEET-FERRERO",
+    "id": "primary",
+    "label": "Wordmark",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/6/6c/Ferrero_Rocher_alt.svg/revision/latest?cb=20230220125753",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Ferrero_Rocher_alt.svg",
+    "sourceSha256": "9978a93d304654698d2c8739014713a83ab879a98c8ac930129944d8be5325fc",
+    "ops": {
+      "viewBox": "-4.653 -4.653 125.623 58.738"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "SWEET-KINDER",
+    "id": "primary",
+    "label": "Wordmark",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/c/cb/Kinder.svg/revision/latest?cb=20240124185752",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Kinder.svg",
+    "sourceSha256": "e355f32d5f84c758d22658d317d38b4136553fbf3f300f3e8190fc0da917204e",
+    "ops": {
+      "viewBox": "-18.13 -18.13 489.51 165.059"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "SWEET-MILKA",
+    "id": "primary",
+    "label": "Wordmark",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/d/d1/Milka_2018.svg/revision/latest?cb=20181212120532",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Milka_2018.svg",
+    "sourceSha256": "95e6760d92e5e71d4f31e2bbc4f20780e2db9c0c77bbbd0903fe8f56b85df720",
+    "ops": {
+      "viewBox": "-10.583 -10.583 285.75 215.194"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "SWEET-NUTELLA",
+    "id": "primary",
+    "label": "Wordmark",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Logo_Nutella.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Logo_Nutella.svg",
+    "sourceSha256": "0db46f317a271dd46a6daa044cb8282699052ad80bfec620a48b6585bbc4f985",
+    "ops": {
+      "viewBox": "-10.042 -10.042 271.122 93.033"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "SWEET-HARIBO",
+    "id": "primary",
+    "label": "Wordmark",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/c/c1/Haribo_logo.svg/revision/latest?cb=20101019164758",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Haribo_logo.svg",
+    "sourceSha256": "45cc33bcda5abcf42958323ceca1936f2ea99a40f075cd6ebbaac8102fa22db2",
+    "ops": {
+      "viewBox": "-30.44 -30.44 821.88 268.252"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "SWEET-SKITTLES",
+    "id": "primary",
+    "label": "Wordmark",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/c/c2/Skittles_2024.svg/revision/latest?cb=20260512125442",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Skittles_2024.svg",
+    "sourceSha256": "29d0e44b4c40d3ce23fd5a7bf62924b6973d7f63ca073d6774bc729713fd2a2d",
+    "ops": {
+      "viewBox": "-9.258 -9.258 272.861 107.537"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "SWEET-JELLYBELLY",
+    "id": "primary",
+    "label": "Wordmark",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/2/2d/Jelly_Belly.svg/revision/latest?cb=20240427021229",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Jelly_Belly.svg",
+    "sourceSha256": "ae32f91525945119110ca49d1ee0f0d56ecd72c27df35aba239daf51eabbd227",
+    "ops": {
+      "viewBox": "-1.86 -1.86 50.22 32.395"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "SWEET-TWIZZLERS",
+    "id": "primary",
+    "label": "Wordmark",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/3/30/Twizzlers_1994_logo.svg/revision/latest?cb=20240229191940",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Twizzlers_1994_logo.svg",
+    "sourceSha256": "e777c7b5c227b2a9cd7c44073c7f934b74473c871686f6dbe6c5642d4ba010b9",
+    "ops": {
+      "viewBox": "7.018 99.698 286.254 100.056"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "SWEET-TROLLI",
+    "id": "primary",
+    "label": "Wordmark",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/6/65/Trolli_%282022%29.svg/revision/latest?cb=20220912203809",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Trolli_(2022).svg",
+    "sourceSha256": "c9a420bd7febc5fc45fd18b17b1f6abb48099420460b84b279acd4a07a186563",
+    "ops": {
+      "viewBox": "-9.2 -9.2 248.4 156.592"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "SWEET-NERDS",
+    "id": "primary",
+    "label": "Wordmark",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/b/b5/Nerds-2020_logo.svg/revision/latest?cb=20240211181226",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Nerds-2020_logo.svg",
+    "sourceSha256": "96c9c749180362398251bdad1759e87b5b1f53c7a98f92168c6d19de6e8db01a",
+    "ops": {
+      "viewBox": "-27.871 -27.871 752.511 458.706"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "SWEET-TOOTSIE",
+    "id": "primary",
+    "label": "Wordmark",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/1/19/Tootsie_logo.svg/revision/latest?cb=20240621070202",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Tootsie_logo.svg",
+    "sourceSha256": "38220210838101b73a9e8b0d85963b672905815d1b9d4a2b05ad2cfd90b4f19b",
+    "ops": {
+      "viewBox": "-40 -40 1080.004 343.335"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "SWEET-CHUPA",
+    "id": "primary",
+    "label": "Daisy",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/5/5a/Chupa_Chups.svg/revision/latest?cb=20220516135107",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Chupa_Chups.svg",
+    "sourceSha256": "d6aa219958d55abe60e94aa3f65e49ab90f652635a53dec64e762f8bcae1cb84",
+    "ops": {
+      "removeNodes": [
+        "1/3",
+        "1/4",
+        "1/5",
+        "1/6",
+        "1/7",
+        "1/8"
+      ],
+      "viewBox": "-3.337 -5.537 228.69 228.69"
+    }
+  },
+  {
+    "teamId": "SWEET-CHUPA",
+    "id": "wordmark",
+    "label": "Wordmark",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/5/5a/Chupa_Chups.svg/revision/latest?cb=20220516135107",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Chupa_Chups.svg",
+    "sourceSha256": "d6aa219958d55abe60e94aa3f65e49ab90f652635a53dec64e762f8bcae1cb84",
+    "ops": {
+      "viewBox": "-3.337 -5.537 228.69 228.69"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "SWEET-JOLLY",
+    "id": "primary",
+    "label": "Wordmark",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/5/50/Jolly_Rancher_2024.svg/revision/latest?cb=20240412075840",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Jolly_Rancher_2024.svg",
+    "sourceSha256": "73b339766302a846b2d16ddec24bf066a21b45ca6212eb5b4c7c75ceda080d8d",
+    "ops": {
+      "viewBox": "-9.191 -9.003 243.09 170.374"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "SWEET-LIFESAVERS",
+    "id": "primary",
+    "label": "Wordmark",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/0/03/Life_Savers_1997.svg/revision/latest?cb=20240725095926",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Life_Savers_1997.svg",
+    "sourceSha256": "02c5c87cd3feafc8612af7bea26268d9027c704e85303f6aa3eda744cc9f3cd5",
+    "ops": {
+      "viewBox": "-19.283 -19.283 520.639 177.162"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "SWEET-PEZ",
+    "id": "primary",
+    "label": "Wordmark",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/c/c6/PEZ_2024.svg/revision/latest?cb=20240320140828",
+    "sourcePage": "https://logos.fandom.com/wiki/File:PEZ_2024.svg",
+    "sourceSha256": "f6b79a84a523beb9cfbe131d8740f176eb5987e818e85dfb22dee6466ab73042",
+    "ops": {
+      "viewBox": "-40 -40 1080 417.5"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "SWEET-DUMDUMS",
+    "id": "primary",
+    "label": "Wordmark",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/c/c0/DumDum_logo.svg/revision/latest?cb=20250617033912",
+    "sourcePage": "https://logos.fandom.com/wiki/File:DumDum_logo.svg",
+    "sourceSha256": "8be5079872a148574218b6834afc8eb6d16fcb802bab2bac6372238d458a9154",
+    "ops": {
+      "viewBox": "-9.18 89.82 1098.36 900.36"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "SWEET-RICOLA",
+    "id": "primary",
+    "label": "Wordmark",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/c/c4/Ricola_2021.svg/revision/latest?cb=20230910114153",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Ricola_2021.svg",
+    "sourceSha256": "8e3aae26cb9d4ae58129fe8188b3b6cf6e6b625d55ef2749ecd7710985bb0e5b",
+    "ops": {
+      "viewBox": "-26.537 -29.301 716.495 222.799"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "SWEET-EXTRA",
+    "id": "primary",
+    "label": "Wordmark",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/f/fa/Wrigley%27s_Extra_gum_brand_2021.svg/revision/latest?cb=20211104152022",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Wrigley's_Extra_gum_brand_2021.svg",
+    "sourceSha256": "3614de92a8e265719c6757e406c6bef5494afde274e06a3c20455f57ac23f54a",
+    "ops": {
+      "viewBox": "-155.307 -155.307 4193.284 2151.646"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "SWEET-ORBIT",
+    "id": "primary",
+    "label": "Wordmark",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/f/f7/Wrigley%27s_Orbit_gum_brand_2022.svg/revision/latest?cb=20211104152424",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Wrigley's_Orbit_gum_brand_2022.svg",
+    "sourceSha256": "53f143a206d875a9114dc7ec0c46bb40845894e0da7c76ea9e0d6ca9952cd9b4",
+    "ops": {
+      "viewBox": "-144.264 -144.264 3895.128 2061.773"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "SWEET-DOUBLEMINT",
+    "id": "primary",
+    "label": "Wordmark",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/9/95/Doublemint_2002.svg/revision/latest?cb=20240725100938",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Doublemint_2002.svg",
+    "sourceSha256": "e2f7c9dc5dd94cc43133d21767f19aa4abafb98968c81970c0f5b2efda59f9ca",
+    "ops": {
+      "viewBox": "-11.561 -11.561 312.152 112.962"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "SWEET-JUICYFRUIT",
+    "id": "primary",
+    "label": "Wordmark",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/d/db/Juicy_Fruit_red_blue.svg/revision/latest?cb=20240428204204",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Juicy_Fruit_red_blue.svg",
+    "sourceSha256": "240c77d213d97fc9e86d57446e14de508731b1c4ae761f7d28b8b02e4617ec19",
+    "ops": {
+      "viewBox": "-26.987 -31.653 854.64 265.307"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "SWEET-HUBBA",
+    "id": "primary",
+    "label": "Wordmark",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/1/11/Hubba_Bubba.svg/revision/latest?cb=20220425160643",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Hubba_Bubba.svg",
+    "sourceSha256": "7166ffec4fb73810e083f2c8eaaffb55e6d7be02c64e29f209d11ffe9d772013",
+    "ops": {
+      "viewBox": "-7.185 -7.185 193.997 114.662"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "SWEET-TRIDENT",
+    "id": "primary",
+    "label": "Wordmark",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/4/4f/Trident_logo_2019.svg/revision/latest?cb=20200120183652",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Trident_logo_2019.svg",
+    "sourceSha256": "f3d60aa2c9194f143421d4d87e841a10b44be9f55806ebb741346a48eb832a18",
+    "ops": {
+      "viewBox": "-86.641 -86.641 2339.312 2050.508"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "SWEET-MENTOS",
+    "id": "primary",
+    "label": "Wordmark",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/d/d8/Mentos.svg/revision/latest?cb=20200726161337",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Mentos.svg",
+    "sourceSha256": "226d8c61937bacaa9525428c329cae8779049a06cf68da3320bbed0a60517036",
+    "ops": {
+      "viewBox": "-40 -40 1080 282.5"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "SWEET-TICTAC",
+    "id": "primary",
+    "label": "Wordmark",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/3/36/Tic_Tac_blue.svg/revision/latest?cb=20211010163853",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Tic_Tac_blue.svg",
+    "sourceSha256": "ef16c5ee97efbe36b0e0a3f1970bc3ba087014bab1543d9b5435ac22f7abe1f0",
+    "ops": {
+      "removeNodes": [
+        "2/4/1/0/0"
+      ],
+      "viewBox": "-7.507 -7.354 198.565 172.234"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "SWEET-ALTOIDS",
+    "id": "primary",
+    "label": "Wordmark",
+    "sourceUrl": "https://cdn.worldvectorlogo.com/logos/altoids.svg",
+    "sourcePage": "https://worldvectorlogo.com/logo/altoids",
+    "sourceSha256": "31d5f0992cbf2c4fcd93f1300d3c87e9916a2a46e48dc27d58f7733ac2de4962",
+    "ops": {
+      "viewBox": "-7.71 -7.71 208.176 208.176"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "SWEET-CHIPSAHOY",
+    "id": "primary",
+    "label": "Wordmark",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/a/a4/Chips_Ahoy%21_2024.svg/revision/latest?cb=20240825071241",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Chips_Ahoy!_2024.svg",
+    "sourceSha256": "3b75ea0e600ac02b720da9cc08f748b51f7157a0fbb7cf2da2f6434e26dd661f",
+    "ops": {
+      "viewBox": "-10.272 -10.063 271.689 224.56"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "SWEET-LITTLEDEBBIE",
+    "id": "primary",
+    "label": "Wordmark",
+    "sourceUrl": "https://cdn.worldvectorlogo.com/logos/little-debbie.svg",
+    "sourcePage": "https://worldvectorlogo.com/logo/little-debbie",
+    "sourceSha256": "47a2c7687644f2970945f8dbb1a65c113e0399048d5347ec82fc82b35a5c19de",
+    "ops": {
+      "removeNodes": [
+        "0/0"
+      ],
+      "viewBox": "1.311 50.785 190.135 91.186"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "SWEET-HOSTESS",
+    "id": "primary",
+    "label": "Wordmark",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/1/1a/Hostess_%282024%29.svg/revision/latest?cb=20241217043654",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Hostess_(2024).svg",
+    "sourceSha256": "557ca338d4db4c246022bdb34693e7025f7c55983046675deaa7098d857fff09",
+    "ops": {
+      "viewBox": "-40 -40 1080 485"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "SWEET-KEEBLER",
+    "id": "primary",
+    "label": "Wordmark",
+    "sourceUrl": "https://cdn.worldvectorlogo.com/logos/keebler.svg",
+    "sourcePage": "https://worldvectorlogo.com/logo/keebler",
+    "sourceSha256": "f4d7b7611ab825b531fabfbe25d5dea400e9c83044b052022712c9f740f898df",
+    "ops": {
+      "removeNodes": [
+        "0"
+      ],
+      "viewBox": "0.443 44.777 191.869 103.202"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "SWEET-PILLSBURY",
+    "id": "primary",
+    "label": "Wordmark",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/5/5b/Pillsbury_2025.svg/revision/latest?cb=20250824025829",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Pillsbury_2025.svg",
+    "sourceSha256": "9743f490a49e4248f733ad0c252a22ecae3f32f335d46a9af17ebff6171b06ea",
+    "ops": {
+      "viewBox": "-5.406 -5.295 142.978 142.868"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "SWEET-ENTENMANNS",
+    "id": "primary",
+    "label": "Wordmark",
+    "sourceUrl": "https://cdn.worldvectorlogo.com/logos/entenmanns.svg",
+    "sourcePage": "https://worldvectorlogo.com/logo/entenmanns",
+    "sourceSha256": "b51d2cc5f00a008ef4735a7070d851083b5c52cb33ef20f8b973cb642c8329d9",
+    "ops": {
+      "viewBox": "-1.65 -1.65 44.555 29.325"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "SWEET-POPTARTS",
+    "id": "primary",
+    "label": "Wordmark",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/e/e7/Pop-tarts_%282023%29.svg/revision/latest?cb=20240822014137",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Pop-tarts_(2023).svg",
+    "sourceSha256": "ddafaadb85b2eca60bce455dac604e16be3cbc039245cc40698a9af069b6b861",
+    "ops": {
+      "viewBox": "-14.049 -14.049 379.329 253.178"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "SWEET-PEPPERIDGE",
+    "id": "primary",
+    "label": "Wordmark",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/2/2d/Pepperidge_farm_vector_logo.svg/revision/latest?cb=20200512211205",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Pepperidge_farm_vector_logo.svg",
+    "sourceSha256": "42a4e5d47d28fb96080c83b959d2f478bfa47b883443dffa64dcd7ef5ae421d8",
+    "ops": {
+      "viewBox": "-16.099 -16.099 434.661 166.687"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "SWEET-GOODHUMOR",
+    "id": "primary",
+    "label": "Heart",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/c/cd/Heartbrand_2003.svg/revision/latest?cb=20251130164734",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Heartbrand_2003.svg",
+    "sourceSha256": "cef4948c03f9ee81047f35e2bb6d48636b150f3a7be2cfb486b41bc4f885380c",
+    "ops": {
+      "viewBox": "-10.813 -10.592 285.988 168.469"
+    }
+  },
+  {
+    "teamId": "SWEET-GOODHUMOR",
+    "id": "wordmark",
+    "label": "Wordmark",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/8/83/Good_Humor_2015.svg/revision/latest?cb=20230326183623",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Good_Humor_2015.svg",
+    "sourceSha256": "6749f1d66350bec97dc3a7e8c997b82442c63e4992813b78c0da2098dbdfe9f4",
+    "ops": {
+      "viewBox": "-3.922 -3.842 103.737 76.465"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "SWEET-BENJERRY",
+    "id": "primary",
+    "label": "Wordmark",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/3/3c/Ben_%26_Jerry%27s.svg/revision/latest?cb=20240211165653",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Ben_&_Jerry's.svg",
+    "sourceSha256": "6c368df5952bbefa8528f8a744fcb788dbf10d6958cf5a44539dd736257bb6f9",
+    "ops": {
+      "viewBox": "-40 -40 1080 367.5"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "SWEET-KLONDIKE",
+    "id": "primary",
+    "label": "Polar bear",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/d/d5/Klondike_logo.svg/revision/latest?cb=20141022235558",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Klondike_logo.svg",
+    "sourceSha256": "b2796004abc6c337ee3a33da120baf6cd92cf5efa27c21893e715c48d91dd310",
+    "ops": {
+      "keepNodes": [
+        "0",
+        "20",
+        "21",
+        "22"
+      ],
+      "viewBox": "36.44 -2.72 209.362 111.746"
+    }
+  },
+  {
+    "teamId": "SWEET-KLONDIKE",
+    "id": "wordmark",
+    "label": "Wordmark",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/d/d5/Klondike_logo.svg/revision/latest?cb=20141022235558",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Klondike_logo.svg",
+    "sourceSha256": "b2796004abc6c337ee3a33da120baf6cd92cf5efa27c21893e715c48d91dd310",
+    "ops": {
+      "viewBox": "19.57 -4.043 245.07 167.529"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "SWEET-BREYERS",
+    "id": "primary",
+    "label": "Wordmark",
+    "sourceUrl": "https://cdn.worldvectorlogo.com/logos/breyers.svg",
+    "sourcePage": "https://worldvectorlogo.com/logo/breyers",
+    "sourceSha256": "b131ed03ae3ffb1db077f08a5800d4e63fd7e318a95267d747060aae6bf5cbbc",
+    "ops": {
+      "viewBox": "-2.614 -2.614 70.582 45.149"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "SWEET-MAGNUM",
+    "id": "primary",
+    "label": "Wordmark",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/d/d8/Magnum_2021_SVG.svg/revision/latest?cb=20230326184031",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Magnum_2021_SVG.svg",
+    "sourceSha256": "132da22dd4693c7c6712ba936c61e429e1f2173da7bd3de681b4586c1232240e",
+    "ops": {
+      "viewBox": "-29.976 -29.976 809.356 249.177"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "SWEET-POPSICLE",
+    "id": "primary",
+    "label": "Wordmark",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/e/ea/Popsicle_1990_%282D%29.svg/revision/latest?cb=20221220015754",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Popsicle_1990_(2D).svg",
+    "sourceSha256": "e70b7cd8e0c22178f75145acb6d47ad73481c2c78f2381734147c53d65d0026c",
+    "ops": {
+      "viewBox": "-7.954 -7.954 214.77 119.814"
+    },
+    "showsName": true
   }
 ]

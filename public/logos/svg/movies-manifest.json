@@ -95,7 +95,7 @@
     {
       "id": "MOVIE-GHOSTBUSTERS",
       "league": "MOVIE",
-      "conference": "Haunted",
+      "conference": "Halloween",
       "region": "Ghostbusters",
       "name": "",
       "abbr": "GHOSTBUSTERS",
@@ -485,6 +485,55 @@
             1
           ],
           "sha256": "ea1985873aa9c37f9575c5dd24f3730e4010250508b1b1de7480562597dd3c38"
+        }
+      ]
+    },
+    {
+      "id": "MOVIE-SCOOBY",
+      "league": "MOVIE",
+      "conference": "Halloween",
+      "region": "Scooby-Doo",
+      "name": "",
+      "abbr": "SCOOBY",
+      "aliases": [
+        "Scooby Doo",
+        "Scooby",
+        "Scoob",
+        "Scoob!",
+        "Mystery Inc",
+        "Mystery Machine",
+        "Shaggy"
+      ],
+      "palette": [
+        "#F3AF5E",
+        "#75278A",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Title wordmark",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/d/d9/Scooby-Doo%21_II.svg/revision/latest?cb=20200710083926",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Scooby-Doo!_II.svg",
+          "sourceSha256": "26d09b0114947bce91799160fcbdb16765bd440ea77ebed379e66a42f87325aa",
+          "ops": {
+            "viewBox": "-40 -40 1079.997 452.005"
+          },
+          "showsName": true,
+          "path": "/logos/svg/movies/scooby.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#F3AF5E",
+            "#75278A"
+          ],
+          "sourcePalette": [
+            "#F3AF5E",
+            "#75278A",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "369e2ec7b3837e1fbe1ad1506b4c2ed880490b80dbe0e892398f4d39e4fd4a37"
         }
       ]
     },

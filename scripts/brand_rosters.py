@@ -857,7 +857,6 @@ CHAR = [
     ("DRAGONBALL", "Dragon Ball Z", "Cartoons & Anime", "000000", "E30613", ["Dragon Ball", "DBZ", "Dragonball", "Dragon Ball Super"]),
     ("OSWALD", "Oswald the Lucky Rabbit", "Disney & Pixar", "000000", "808080", ["Oswald", "Lucky Rabbit"]),
     ("WAKANDA", "Black Panther", "Marvel", "D50000", "000000", ["Wakanda", "T'Challa", "Wakanda Forever"]),
-    ("SCOOBY", "Scooby-Doo", "Cartoons & Anime", "F3AF5E", "75278A", ["Scooby Doo", "Scooby"]),
     ("FELIX", "Felix the Cat", "Cartoons & Anime", "000000", "808080", ["Felix"]),
     ("BETTY", "Betty Boop", "Cartoons & Anime", "000000", "808080", []),
     ("SHARINGAN", "Sharingan", "Cartoons & Anime", "000000", "808080", ["Uchiha", "Mangekyo Sharingan", "Naruto eye"]),
@@ -905,7 +904,8 @@ MOVIE = [
     ("BTTF", "Back to the Future", "Sci-Fi & Action", "0089CF", "000000", ["BTTF"]),
     ("GODZILLA", "Godzilla", "Sci-Fi & Action", "000000", "808080", ["Gojira", "King of the Monsters"]),
     ("BOND", "James Bond", "Sci-Fi & Action", "000000", "808080", ["007", "Bond", "Agent 007"]),
-    ("GHOSTBUSTERS", "Ghostbusters", "Haunted", "000000", "1D1D1B", ["Ghost Busters", "No-Ghost", "No Ghost"]),
+    ("GHOSTBUSTERS", "Ghostbusters", "Halloween", "000000", "1D1D1B", ["Ghost Busters", "No-Ghost", "No Ghost"]),
+    ("SCOOBY", "Scooby-Doo", "Halloween", "F3AF5E", "75278A", ["Scooby Doo", "Scooby", "Scoob", "Scoob!", "Mystery Inc", "Mystery Machine", "Shaggy"]),
 ]
 
 GAME = [
@@ -954,7 +954,7 @@ LEAGUES = {
     "LANDMARK": {"label": "LANDMARKS", "conferences": ["Americas", "Europe", "Asia & Pacific", "Africa & Middle East"]},
     "CLOTH": {"label": "CLOTHING", "conferences": ["Sportswear", "Streetwear", "Outdoor", "Preppy", "Everyday", "Surf & Skate", "Footwear"]},
     "CHAR": {"label": "CHARACTERS", "conferences": ["Marvel", "DC", "Disney & Pixar", "Star Wars", "TV", "Cartoons & Anime"]},
-    "MOVIE": {"label": "MOVIES", "conferences": ["Animated", "Adventure & Fantasy", "Sci-Fi & Action", "Haunted"]},
+    "MOVIE": {"label": "MOVIES", "conferences": ["Animated", "Adventure & Fantasy", "Sci-Fi & Action", "Halloween"]},
     "GAME": {"label": "VIDEO GAMES", "conferences": ["Nintendo", "Adventure", "Battle & Shooters", "Arcade & Puzzle", "Sports & Racing", "Indie"]},
 }
 

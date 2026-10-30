@@ -93,7 +93,7 @@ const MOVED_TEAMS = new Map([
   ...['TX', 'CANADA', 'JAPAN', 'CHICAGO', 'MEXICO', 'USA', 'UK', 'BRAZIL', 'KOREA', 'JAMAICA', 'PR', 'CALI', 'AUS', 'INDIA', 'TURKEY', 'GREECE', 'ARG']
     .map((abbr): [string, string] => [`BRAND-${abbr}`, `FLAG-${abbr}`]),
   // CHARACTERS' movie franchises and video games now have collections of their own.
-  ...['GHOSTBUSTERS', 'JURASSIC', 'HP', 'BTTF', 'GODZILLA', 'BOND', 'LOTR', 'HUNGER', 'MINIONS', 'SHREK', 'KUNGFUPANDA']
+  ...['GHOSTBUSTERS', 'SCOOBY', 'JURASSIC', 'HP', 'BTTF', 'GODZILLA', 'BOND', 'LOTR', 'HUNGER', 'MINIONS', 'SHREK', 'KUNGFUPANDA']
     .map((abbr): [string, string] => [`CHAR-${abbr}`, `MOVIE-${abbr}`]),
   ...['TRIFORCE', 'POKEBALL', 'PIKACHU', 'TEAMROCKET', 'METROID', 'ANIMALCROSSING', 'MARIO', 'KIRBY', 'DK', 'SPLATOON', 'AC', 'GOW', 'GTA',
     'ELDENRING', 'SONIC', 'CREEPER', 'HALFLIFE', 'APERTURE', 'UMBRELLA', 'OVERWATCH', 'VALORANT', 'LOL', 'PUBG', 'APEX', 'COD', 'BRAWL', 'PACMAN',
@@ -655,7 +655,7 @@ export const entryNoun = (league: League) =>
  * MLS clubs and fast food, the conference for college and high school, the domestic league for soccer clubs outside
  * "Rest of World", the region for flags and landmarks ("FLAGS - Europe", "LANDMARKS - Asia & Pacific"), the type for brands, apps, channels,
  * cars, luxury houses ("Luxury watchmaker") and clothing brands ("Outdoor brand"), the franchise for characters ("CHARACTERS - Marvel")
- * and the genre for movies and video games ("MOVIES - Haunted", "VIDEO GAMES - Nintendo").
+ * and the genre for movies and video games ("MOVIES - Halloween", "VIDEO GAMES - Nintendo").
  */
 export const teamHint = (t: Team) =>
   t.league === 'COL' || t.league === 'HS' || (t.league === 'SOCCER' && t.conference !== 'Rest of World')

@@ -2793,50 +2793,6 @@
       ]
     },
     {
-      "id": "CHAR-SCOOBY",
-      "league": "CHAR",
-      "conference": "Cartoons & Anime",
-      "region": "Scooby-Doo",
-      "name": "",
-      "abbr": "SCOOBY",
-      "aliases": [
-        "Scooby Doo",
-        "Scooby"
-      ],
-      "palette": [
-        "#F3AF5E",
-        "#75278A",
-        "#FFFFFF"
-      ],
-      "artwork": [
-        {
-          "id": "primary",
-          "label": "Title wordmark",
-          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/d/d9/Scooby-Doo%21_II.svg/revision/latest?cb=20200710083926",
-          "sourcePage": "https://logos.fandom.com/wiki/File:Scooby-Doo!_II.svg",
-          "sourceSha256": "26d09b0114947bce91799160fcbdb16765bd440ea77ebed379e66a42f87325aa",
-          "ops": {
-            "viewBox": "-40 -40 1079.997 452.005"
-          },
-          "showsName": true,
-          "path": "/logos/svg/characters/scooby.svg",
-          "format": "svg",
-          "colors": [
-            "#FFFFFF",
-            "#F3AF5E",
-            "#75278A"
-          ],
-          "sourcePalette": [
-            "#F3AF5E",
-            "#75278A",
-            "#FFFFFF"
-          ],
-          "unusedSourceSlots": [],
-          "sha256": "369e2ec7b3837e1fbe1ad1506b4c2ed880490b80dbe0e892398f4d39e4fd4a37"
-        }
-      ]
-    },
-    {
       "id": "CHAR-SESAME",
       "league": "CHAR",
       "conference": "TV",

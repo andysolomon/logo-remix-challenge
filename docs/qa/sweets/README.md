@@ -35,7 +35,8 @@ Candidates came from Logopedia file search, worldvectorlogo and Wikimedia Common
 ## Validation
 
 - `bun test tests/sweets.test.ts tests/brands.test.ts tests/color-donors.test.ts`: 19 pass, 0 fail. This includes the manifest check, which re-derives every checksum, reviewed edit and palette role for all pinned variants.
-- Full suite: see the results below.
+- Full suite (`bun test`): 206 pass, 1 skip (the optional Potrace test), 1 fail. The one failure is the `team-alternates.test.ts` rebuild check timing out at its 30 s limit. It fails the same way on unchanged `main` in this container, and its Python body passes every assertion in 30.9 s on this branch while leaving `teams.json` untouched. (The run counted 205 pass, 2 fail; `highschool.test.ts` then got its last league-label list updated and passes 24/24.)
+- `npm run logos:sweets` reuses the verified checked-in files offline, without fetching anything.
 - Rebuilds are idempotent: `npm run teams:education`, `npm run teams:sweets` and `npm run teams:brands` leave `teams.json` unchanged in sequence.
 - `npm run build`: passes, with Vite's standard >500 KB bundle advisory.
 - Playwright Chromium, 1366×1024 with touch:

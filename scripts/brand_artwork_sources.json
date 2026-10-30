@@ -12583,7 +12583,7 @@
     "showsName": true
   },
   {
-    "teamId": "CHAR-AC",
+    "teamId": "GAME-AC",
     "id": "primary",
     "label": "Assassin insignia",
     "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/3/37/Assassins_Creed_Logo.svg/revision/latest?cb=20230521104810",
@@ -12598,7 +12598,7 @@
     }
   },
   {
-    "teamId": "CHAR-ANIMALCROSSING",
+    "teamId": "GAME-ANIMALCROSSING",
     "id": "primary",
     "label": "Nook Inc. leaf",
     "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/2/2e/Nook_Inc.svg/revision/latest?cb=20200331090306",
@@ -12609,7 +12609,7 @@
     }
   },
   {
-    "teamId": "CHAR-APERTURE",
+    "teamId": "GAME-APERTURE",
     "id": "primary",
     "label": "Shutter ring",
     "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Aperture_Science.svg",
@@ -12620,7 +12620,7 @@
     }
   },
   {
-    "teamId": "CHAR-APERTURE",
+    "teamId": "GAME-APERTURE",
     "id": "black",
     "label": "One-color shutter",
     "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/5/52/Aperture_Science_Symbol.svg/revision/latest?cb=20190609012652",
@@ -12709,7 +12709,7 @@
     }
   },
   {
-    "teamId": "CHAR-BTTF",
+    "teamId": "MOVIE-BTTF",
     "id": "primary",
     "label": "Title wordmark",
     "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Back-to-the-future-logo.svg",
@@ -12743,7 +12743,7 @@
     }
   },
   {
-    "teamId": "CHAR-CREEPER",
+    "teamId": "GAME-CREEPER",
     "id": "primary",
     "label": "Creeper face",
     "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Minecraft-creeper-face.svg",
@@ -12824,7 +12824,7 @@
     }
   },
   {
-    "teamId": "CHAR-GHOSTBUSTERS",
+    "teamId": "MOVIE-GHOSTBUSTERS",
     "id": "primary",
     "label": "No-ghost sign",
     "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/3/3d/Ghostbusters.svg/revision/latest?cb=20211028203058",
@@ -12872,7 +12872,7 @@
     }
   },
   {
-    "teamId": "CHAR-HP",
+    "teamId": "MOVIE-HP",
     "id": "primary",
     "label": "Deathly Hallows",
     "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Deathly_Hallows_Sign.svg",
@@ -12883,7 +12883,7 @@
     }
   },
   {
-    "teamId": "CHAR-HP",
+    "teamId": "MOVIE-HP",
     "id": "monogram",
     "label": "Lightning monogram",
     "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/d/dd/Harry_Potter_HP.svg/revision/latest?cb=20170702152413",
@@ -12939,7 +12939,7 @@
     "showsName": true
   },
   {
-    "teamId": "CHAR-JURASSIC",
+    "teamId": "MOVIE-JURASSIC",
     "id": "primary",
     "label": "T. rex badge",
     "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/1/1a/Jurassic_Park.svg/revision/latest?cb=20260525084549",
@@ -12955,7 +12955,7 @@
     }
   },
   {
-    "teamId": "CHAR-LOL",
+    "teamId": "GAME-LOL",
     "id": "primary",
     "label": "L mark",
     "sourceUrl": "https://api.iconify.design/simple-icons/leagueoflegends.svg?color=%23C28F2C",
@@ -12992,7 +12992,7 @@
     }
   },
   {
-    "teamId": "CHAR-METROID",
+    "teamId": "GAME-METROID",
     "id": "primary",
     "label": "Screw Attack symbol",
     "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Metroid_Symbol_Smash_Bros_Brawl.svg",
@@ -13036,7 +13036,7 @@
     }
   },
   {
-    "teamId": "CHAR-OVERWATCH",
+    "teamId": "GAME-OVERWATCH",
     "id": "primary",
     "label": "Overwatch symbol",
     "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Overwatch_2_full_logo.svg",
@@ -13069,7 +13069,7 @@
     }
   },
   {
-    "teamId": "CHAR-PIKACHU",
+    "teamId": "GAME-PIKACHU",
     "id": "primary",
     "label": "Pikachu silhouette",
     "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/4/43/25_years_pikachu.svg/revision/latest?cb=20210117230703",
@@ -13086,7 +13086,7 @@
     }
   },
   {
-    "teamId": "CHAR-POKEBALL",
+    "teamId": "GAME-POKEBALL",
     "id": "primary",
     "label": "Poké Ball",
     "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Pok%C3%A9_Ball_icon.svg",
@@ -13323,7 +13323,7 @@
     }
   },
   {
-    "teamId": "CHAR-TEAMROCKET",
+    "teamId": "GAME-TEAMROCKET",
     "id": "primary",
     "label": "Red R",
     "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Team_Rocket_Logo.svg",
@@ -13334,7 +13334,7 @@
     }
   },
   {
-    "teamId": "CHAR-TETRIS",
+    "teamId": "GAME-TETRIS",
     "id": "primary",
     "label": "T-tetromino wordmark",
     "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Tetris_logo_2019.svg",
@@ -13357,7 +13357,7 @@
     }
   },
   {
-    "teamId": "CHAR-TRIFORCE",
+    "teamId": "GAME-TRIFORCE",
     "id": "primary",
     "label": "Golden triangles",
     "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Triforce.svg",
@@ -13368,7 +13368,7 @@
     }
   },
   {
-    "teamId": "CHAR-TRIFORCE",
+    "teamId": "GAME-TRIFORCE",
     "id": "black",
     "label": "One-color triangles",
     "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Triforce_-_Delapouite_-_game-icons.svg",
@@ -13379,7 +13379,7 @@
     }
   },
   {
-    "teamId": "CHAR-UMBRELLA",
+    "teamId": "GAME-UMBRELLA",
     "id": "primary",
     "label": "Umbrella emblem",
     "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/0/0e/Umbrella_Corporation_logo.svg/revision/latest?cb=20200727061909",
@@ -13390,7 +13390,7 @@
     }
   },
   {
-    "teamId": "CHAR-VALORANT",
+    "teamId": "GAME-VALORANT",
     "id": "primary",
     "label": "V mark",
     "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/e/e6/Valorant_%28Black%29.svg/revision/latest?cb=20240803235908",
@@ -16436,7 +16436,7 @@
     "showsName": true
   },
   {
-    "teamId": "CHAR-ANIMALCROSSING",
+    "teamId": "GAME-ANIMALCROSSING",
     "id": "leaf",
     "label": "Plain leaf",
     "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Animal_Crossing_Leaf.svg",
@@ -16447,7 +16447,7 @@
     }
   },
   {
-    "teamId": "CHAR-APERTURE",
+    "teamId": "GAME-APERTURE",
     "id": "stripes-70s",
     "label": "Striped symbol (70s)",
     "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/5/51/Aperture_Science_70s_Symbol.svg/revision/latest?cb=20190609012132",
@@ -16469,7 +16469,7 @@
     }
   },
   {
-    "teamId": "CHAR-CREEPER",
+    "teamId": "GAME-CREEPER",
     "id": "grass-block",
     "label": "Grass block",
     "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/b/b4/Minecraft_2014_Bedrock.svg/revision/latest?cb=20230630003941",
@@ -16492,7 +16492,7 @@
     "showsName": true
   },
   {
-    "teamId": "CHAR-APEX",
+    "teamId": "GAME-APEX",
     "id": "primary",
     "label": "Apex symbol",
     "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/f/f8/Apex_Legends_Symbol.svg/revision/latest?cb=20260805094800",
@@ -16526,7 +16526,7 @@
     "showsName": true
   },
   {
-    "teamId": "CHAR-BOND",
+    "teamId": "MOVIE-BOND",
     "id": "primary",
     "label": "Gun logo",
     "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/4/4c/007_Logo_2.svg/revision/latest?cb=20170912112900",
@@ -16538,7 +16538,7 @@
     "showsName": true
   },
   {
-    "teamId": "CHAR-BRAWL",
+    "teamId": "GAME-BRAWL",
     "id": "primary",
     "label": "Skull tile",
     "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/e/ec/Brawl-Stars-Icon.svg/revision/latest?cb=20241020030356",
@@ -16549,7 +16549,7 @@
     }
   },
   {
-    "teamId": "CHAR-COD",
+    "teamId": "GAME-COD",
     "id": "primary",
     "label": "Wordmark",
     "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/c/c9/Call_of_Duty_2003.svg/revision/latest?cb=20220623131848",
@@ -16584,7 +16584,7 @@
     "showsName": true
   },
   {
-    "teamId": "CHAR-DK",
+    "teamId": "GAME-DK",
     "id": "primary",
     "label": "Wordmark (2024)",
     "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/0/0e/Donkey_Kong_2024.svg/revision/latest?cb=20260917224102",
@@ -16619,7 +16619,7 @@
     "showsName": true
   },
   {
-    "teamId": "CHAR-ELDENRING",
+    "teamId": "GAME-ELDENRING",
     "id": "primary",
     "label": "Title wordmark",
     "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/c/c9/Elden_Ring.svg/revision/latest?cb=20220615200010",
@@ -16654,7 +16654,7 @@
     "showsName": true
   },
   {
-    "teamId": "CHAR-FALLGUYS",
+    "teamId": "GAME-FALLGUYS",
     "id": "primary",
     "label": "Wordmark",
     "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/a/a3/Fall_Guys.svg/revision/latest?cb=20220517231053",
@@ -16700,7 +16700,7 @@
     }
   },
   {
-    "teamId": "CHAR-GODZILLA",
+    "teamId": "MOVIE-GODZILLA",
     "id": "primary",
     "label": "Head silhouette (2023)",
     "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/7/7e/Godzilla_2023_logo.svg/revision/latest?cb=20251106024942",
@@ -16723,7 +16723,7 @@
     "showsName": true
   },
   {
-    "teamId": "CHAR-GOW",
+    "teamId": "GAME-GOW",
     "id": "primary",
     "label": "Omega icon (2016)",
     "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/b/b3/God_of_War_2016_%28Icon%29.svg/revision/latest?cb=20221110002755",
@@ -16734,7 +16734,7 @@
     }
   },
   {
-    "teamId": "CHAR-GTA",
+    "teamId": "GAME-GTA",
     "id": "primary",
     "label": "Oval wordmark (1999)",
     "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/5/51/Grand_Theft_Auto_1999.svg/revision/latest?cb=20171114080401",
@@ -16746,7 +16746,7 @@
     "showsName": true
   },
   {
-    "teamId": "CHAR-HALFLIFE",
+    "teamId": "GAME-HALFLIFE",
     "id": "primary",
     "label": "Lambda",
     "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/4/46/Half-Life_Lambda.svg/revision/latest?cb=20190608140846",
@@ -16757,7 +16757,7 @@
     }
   },
   {
-    "teamId": "CHAR-HALFLIFE",
+    "teamId": "GAME-HALFLIFE",
     "id": "orange-lambda",
     "label": "Orange symbol (sequel)",
     "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/8/88/Half-Life_logo.svg/revision/latest?cb=20190608235422",
@@ -16768,7 +16768,7 @@
     }
   },
   {
-    "teamId": "CHAR-HUNGER",
+    "teamId": "MOVIE-HUNGER",
     "id": "primary",
     "label": "Title wordmark",
     "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Hunger_Games_%28Liongate_films%29_logo.svg",
@@ -16780,7 +16780,7 @@
     "showsName": true
   },
   {
-    "teamId": "CHAR-INVADER",
+    "teamId": "GAME-INVADER",
     "id": "primary",
     "label": "Pixel alien",
     "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Twemoji_1f47e.svg",
@@ -16791,7 +16791,7 @@
     }
   },
   {
-    "teamId": "CHAR-INVADER",
+    "teamId": "GAME-INVADER",
     "id": "wordmark",
     "label": "Wordmark",
     "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/e/e5/Space_Invaders.svg/revision/latest?cb=20230104233928",
@@ -16827,7 +16827,7 @@
     "showsName": true
   },
   {
-    "teamId": "CHAR-KIRBY",
+    "teamId": "GAME-KIRBY",
     "id": "primary",
     "label": "Wordmark",
     "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Kirby-Logo-New.svg",
@@ -16839,7 +16839,7 @@
     "showsName": true
   },
   {
-    "teamId": "CHAR-KUNGFUPANDA",
+    "teamId": "MOVIE-KUNGFUPANDA",
     "id": "primary",
     "label": "Title wordmark",
     "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/2/22/Kung_Fu_Panda_%28Print%29.svg/revision/latest?cb=20210107222448",
@@ -16863,7 +16863,7 @@
     "showsName": true
   },
   {
-    "teamId": "CHAR-LOTR",
+    "teamId": "MOVIE-LOTR",
     "id": "primary",
     "label": "Ring inscription",
     "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/One_Ring_inscription.svg",
@@ -16874,7 +16874,7 @@
     }
   },
   {
-    "teamId": "CHAR-MARIO",
+    "teamId": "GAME-MARIO",
     "id": "primary",
     "label": "Power Star",
     "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/SM64_Power_Star.svg",
@@ -16885,7 +16885,7 @@
     }
   },
   {
-    "teamId": "CHAR-MARIO",
+    "teamId": "GAME-MARIO",
     "id": "grand-star",
     "label": "Grand Star",
     "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/6/63/Grand_Star.svg/revision/latest?cb=20250106225113",
@@ -16896,7 +16896,7 @@
     }
   },
   {
-    "teamId": "CHAR-MARIO",
+    "teamId": "GAME-MARIO",
     "id": "mushroom",
     "label": "Red-capped power-up",
     "sourceUrl": "https://api.iconify.design/game-icons/super-mushroom.svg?color=%23E52521",
@@ -16907,7 +16907,7 @@
     }
   },
   {
-    "teamId": "CHAR-MARIO",
+    "teamId": "GAME-MARIO",
     "id": "wordmark",
     "label": "Series wordmark",
     "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Mario_Series_Logo.svg",
@@ -16931,7 +16931,7 @@
     "showsName": true
   },
   {
-    "teamId": "CHAR-MINIONS",
+    "teamId": "MOVIE-MINIONS",
     "id": "primary",
     "label": "Title wordmark",
     "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Minions_%28film%29_logo.svg",
@@ -17013,7 +17013,7 @@
     }
   },
   {
-    "teamId": "CHAR-PACMAN",
+    "teamId": "GAME-PACMAN",
     "id": "primary",
     "label": "Chomper with dots",
     "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Pac-Man_eating_dots.svg",
@@ -17028,7 +17028,7 @@
     }
   },
   {
-    "teamId": "CHAR-PACMAN",
+    "teamId": "GAME-PACMAN",
     "id": "ghost",
     "label": "Red pixel ghost",
     "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Blinky%2C_Pinky%2C_Inky_and_Clyde.svg",
@@ -17066,7 +17066,7 @@
     "showsName": true
   },
   {
-    "teamId": "CHAR-PUBG",
+    "teamId": "GAME-PUBG",
     "id": "primary",
     "label": "Helmet",
     "sourceUrl": "https://api.iconify.design/simple-icons/pubg.svg?color=%23F2A900",
@@ -17112,7 +17112,7 @@
     }
   },
   {
-    "teamId": "CHAR-SHREK",
+    "teamId": "MOVIE-SHREK",
     "id": "primary",
     "label": "Title wordmark",
     "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Shrek_logo.svg",
@@ -17136,7 +17136,7 @@
     "showsName": true
   },
   {
-    "teamId": "CHAR-SONIC",
+    "teamId": "GAME-SONIC",
     "id": "primary",
     "label": "Wordmark (2020)",
     "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/6/66/Sonic_the_Hedgehog_2020.svg/revision/latest?cb=20200108121328",
@@ -17148,7 +17148,7 @@
     "showsName": true
   },
   {
-    "teamId": "CHAR-SPLATOON",
+    "teamId": "GAME-SPLATOON",
     "id": "primary",
     "label": "Wordmark",
     "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/f/f3/Splatoon.svg/revision/latest?cb=20220625150051",

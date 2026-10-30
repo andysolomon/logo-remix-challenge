@@ -1,0 +1,537 @@
+{
+  "assets": [
+    {
+      "id": "MOVIE-BOND",
+      "league": "MOVIE",
+      "conference": "Sci-Fi & Action",
+      "region": "James Bond",
+      "name": "",
+      "abbr": "BOND",
+      "aliases": [
+        "007",
+        "Bond",
+        "Agent 007"
+      ],
+      "palette": [
+        "#000000",
+        "#808080",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Gun logo",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/4/4c/007_Logo_2.svg/revision/latest?cb=20170912112900",
+          "sourcePage": "https://logos.fandom.com/wiki/File:007_Logo_2.svg",
+          "sourceSha256": "7474efae62671789f53061b4e3884c260fc1c328315a146e80360529e0971de0",
+          "ops": {
+            "viewBox": "-40.5 -40.2 1080 397.155"
+          },
+          "showsName": true,
+          "path": "/logos/svg/movies/bond.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "4a52e401252e1c33ae44b188fce15142339df24b10645f38d9edc0cbbb0a28c1"
+        }
+      ]
+    },
+    {
+      "id": "MOVIE-BTTF",
+      "league": "MOVIE",
+      "conference": "Sci-Fi & Action",
+      "region": "Back to the Future",
+      "name": "",
+      "abbr": "BTTF",
+      "aliases": [
+        "BTTF"
+      ],
+      "palette": [
+        "#0089CF",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Title wordmark",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Back-to-the-future-logo.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Back-to-the-future-logo.svg",
+          "sourceSha256": "aa464f6bccb38ed120ff8c9820d6171f44a02b2ffe078365b45d2667b7c71700",
+          "ops": {
+            "viewBox": "-40 -40 1080.001 525.1"
+          },
+          "showsName": true,
+          "path": "/logos/svg/movies/bttf.svg",
+          "format": "svg",
+          "colors": [
+            "#0089CF",
+            "#000000",
+            "#F04E27",
+            "#FFC91B"
+          ],
+          "sourcePalette": [
+            "#0089CF",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "6cfa3f89287f0e1833eb623615421fd35891c2a98f34995fbff57e1c15f27981"
+        }
+      ]
+    },
+    {
+      "id": "MOVIE-GHOSTBUSTERS",
+      "league": "MOVIE",
+      "conference": "Haunted",
+      "region": "Ghostbusters",
+      "name": "",
+      "abbr": "GHOSTBUSTERS",
+      "aliases": [
+        "Ghost Busters",
+        "No-Ghost",
+        "No Ghost"
+      ],
+      "palette": [
+        "#000000",
+        "#1D1D1B",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "No-ghost sign",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/3/3d/Ghostbusters.svg/revision/latest?cb=20211028203058",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Ghostbusters.svg",
+          "sourceSha256": "2718a9ab1cae9201498d49b9c3122df6bbf12f3d5200fde5802f6a4f3dd9872f",
+          "ops": {
+            "keepNodes": [
+              "1",
+              "5"
+            ],
+            "viewBox": "153.427 -5.682 153.41 132.272"
+          },
+          "path": "/logos/svg/movies/ghostbusters.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#FFFFFF",
+            "#1D1D1B",
+            "#E52713"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#1D1D1B",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "b9a62f0f2da2051a1969712c5d140defdb07498f57932502c7724181858ee1af"
+        }
+      ]
+    },
+    {
+      "id": "MOVIE-GODZILLA",
+      "league": "MOVIE",
+      "conference": "Sci-Fi & Action",
+      "region": "Godzilla",
+      "name": "",
+      "abbr": "GODZILLA",
+      "aliases": [
+        "Gojira",
+        "King of the Monsters"
+      ],
+      "palette": [
+        "#000000",
+        "#808080",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Head silhouette (2023)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/7/7e/Godzilla_2023_logo.svg/revision/latest?cb=20251106024942",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Godzilla_2023_logo.svg",
+          "sourceSha256": "f6dd417cb3b70fe0bc8045f038c77f7d2e66c42d2cc8e038e6ba8ed702cf38b6",
+          "ops": {
+            "viewBox": "-44.403 92.588 1700.901 1822.46"
+          },
+          "path": "/logos/svg/movies/godzilla.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "148131a91ebc49ac1960241a2588d93cc459161ff104689bc0c8425f3517934f"
+        }
+      ]
+    },
+    {
+      "id": "MOVIE-HP",
+      "league": "MOVIE",
+      "conference": "Adventure & Fantasy",
+      "region": "Harry Potter",
+      "name": "",
+      "abbr": "HP",
+      "aliases": [
+        "Deathly Hallows",
+        "The Deathly Hallows",
+        "Wizarding World",
+        "Hogwarts"
+      ],
+      "palette": [
+        "#000000",
+        "#808080",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Deathly Hallows",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Deathly_Hallows_Sign.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Deathly_Hallows_Sign.svg",
+          "sourceSha256": "1165ce8aaff9d8cb90ca44379871b177cd657970d317de4b1dd864de2b5b10f0",
+          "ops": {
+            "viewBox": "4.393 4.604 478.764 419.264"
+          },
+          "path": "/logos/svg/movies/hp.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "c3176f93bd6332609a28d0433b166191a36a48bf8db6ee931eb1667a810ff6b1"
+        },
+        {
+          "id": "monogram",
+          "label": "Lightning monogram",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/d/dd/Harry_Potter_HP.svg/revision/latest?cb=20170702152413",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Harry_Potter_HP.svg",
+          "sourceSha256": "472999d02ccbe2bd095d937e9abd9d8794b878de5b82dfea708f4f2c1fdea376",
+          "ops": {
+            "viewBox": "-32 -32 793.209 864"
+          },
+          "path": "/logos/svg/movies/alternates/hp-monogram.svg",
+          "format": "svg",
+          "colors": [
+            "#030303"
+          ],
+          "sourcePalette": [
+            "#030303",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "fce8fee4c9862c088219a9450a1637abd3ce01c97204f20d69509e736326fb4d"
+        }
+      ]
+    },
+    {
+      "id": "MOVIE-HUNGER",
+      "league": "MOVIE",
+      "conference": "Adventure & Fantasy",
+      "region": "The Hunger Games",
+      "name": "",
+      "abbr": "HUNGER",
+      "aliases": [
+        "Hunger Games",
+        "Mockingjay",
+        "Panem"
+      ],
+      "palette": [
+        "#000000",
+        "#808080",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Title wordmark",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Hunger_Games_%28Liongate_films%29_logo.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:The_Hunger_Games_(Liongate_films)_logo.svg",
+          "sourceSha256": "01afc07685a23f0d07ece9422c41eb6cd905cc0ee223067667c4e1d1448896ad",
+          "ops": {
+            "viewBox": "-4.134 -3.966 321.082 128.047"
+          },
+          "showsName": true,
+          "path": "/logos/svg/movies/hunger.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "18d6b41e4c1b80e27199673e6780903409debfc28e7bb0f8a4d4e29be668d33f"
+        }
+      ]
+    },
+    {
+      "id": "MOVIE-JURASSIC",
+      "league": "MOVIE",
+      "conference": "Sci-Fi & Action",
+      "region": "Jurassic Park",
+      "name": "",
+      "abbr": "JURASSIC",
+      "aliases": [
+        "Jurassic World"
+      ],
+      "palette": [
+        "#000000",
+        "#FFDD00",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "T. rex badge",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/1/1a/Jurassic_Park.svg/revision/latest?cb=20260525084549",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Jurassic_Park.svg",
+          "sourceSha256": "568e033c77cb95feb5439fb354503908b699377e544e8064a36d329c65b0c58e",
+          "ops": {
+            "keepNodes": [
+              "0/0/0",
+              "0/0/1"
+            ],
+            "clipToViewBox": true,
+            "viewBox": "-18.999 -18.999 526.483 288.7"
+          },
+          "path": "/logos/svg/movies/jurassic.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#FFDD00",
+            "#E3000B",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#FFDD00",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "79f2593a9a2496d9bc9784ea5d52a2c483bdcca10651cada583e3b5d4a5db35c"
+        }
+      ]
+    },
+    {
+      "id": "MOVIE-KUNGFUPANDA",
+      "league": "MOVIE",
+      "conference": "Animated",
+      "region": "Kung Fu Panda",
+      "name": "",
+      "abbr": "KUNGFUPANDA",
+      "aliases": [
+        "Po",
+        "Kung Fu Panda 4"
+      ],
+      "palette": [
+        "#010101",
+        "#808080",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Title wordmark",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/2/22/Kung_Fu_Panda_%28Print%29.svg/revision/latest?cb=20210107222448",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Kung_Fu_Panda_(Print).svg",
+          "sourceSha256": "4971dfbe8d396f9af2ea89ba2f2313430a420f5b402636eac6500329a348ce10",
+          "ops": {
+            "viewBox": "-40 -40 1080 358.853"
+          },
+          "showsName": true,
+          "path": "/logos/svg/movies/kungfupanda.svg",
+          "format": "svg",
+          "colors": [
+            "#010101"
+          ],
+          "sourcePalette": [
+            "#010101",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "0d7b3ee9df3959a69ec6f8ef149459aa608af3e7ad03ab798713181880fb912f"
+        }
+      ]
+    },
+    {
+      "id": "MOVIE-LOTR",
+      "league": "MOVIE",
+      "conference": "Adventure & Fantasy",
+      "region": "The Lord of the Rings",
+      "name": "",
+      "abbr": "LOTR",
+      "aliases": [
+        "Lord of the Rings",
+        "LOTR",
+        "One Ring",
+        "The One Ring",
+        "Ring inscription"
+      ],
+      "palette": [
+        "#000000",
+        "#808080",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Ring inscription",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/One_Ring_inscription.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:One_Ring_inscription.svg",
+          "sourceSha256": "05952cbb5359df8614044f012beee6680660af447e711d47a13851e36c24979e",
+          "ops": {
+            "viewBox": "-29.202 -128.202 4595.45 1535.404"
+          },
+          "path": "/logos/svg/movies/lotr.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "22b65127c36b6ee75c8c8f265c8c2cac0c78dbc6b2357c5670638da565c8d98c"
+        }
+      ]
+    },
+    {
+      "id": "MOVIE-MINIONS",
+      "league": "MOVIE",
+      "conference": "Animated",
+      "region": "Minions",
+      "name": "",
+      "abbr": "MINIONS",
+      "aliases": [
+        "Despicable Me",
+        "Minion",
+        "Gru"
+      ],
+      "palette": [
+        "#000000",
+        "#808080",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Title wordmark",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Minions_%28film%29_logo.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Minions_(film)_logo.svg",
+          "sourceSha256": "89ddf694f0fff4650ede5186739747f34451cef9d1a98a2cd292990e171b53b0",
+          "ops": {
+            "viewBox": "-12 -12 324 96.746"
+          },
+          "showsName": true,
+          "path": "/logos/svg/movies/minions.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "ea1985873aa9c37f9575c5dd24f3730e4010250508b1b1de7480562597dd3c38"
+        }
+      ]
+    },
+    {
+      "id": "MOVIE-SHREK",
+      "league": "MOVIE",
+      "conference": "Animated",
+      "region": "Shrek",
+      "name": "",
+      "abbr": "SHREK",
+      "aliases": [
+        "Shrek 2",
+        "Shrek the Third"
+      ],
+      "palette": [
+        "#000000",
+        "#808080",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Title wordmark",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Shrek_logo.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Shrek_logo.svg",
+          "sourceSha256": "a806259bba6aa79d00604ad2970e74ebfeec4e4c1d4bd41cc13ccae9f547ff30",
+          "ops": {
+            "viewBox": "-2317.56 -2321.56 65328.12 22104.12"
+          },
+          "showsName": true,
+          "path": "/logos/svg/movies/shrek.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "776c087084ca640836b7dfa454b1ceaa2d0c7e63e4e1fff36cbe8c58147db3e3"
+        }
+      ]
+    }
+  ]
+}

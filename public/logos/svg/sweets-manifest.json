@@ -667,7 +667,7 @@
       ],
       "palette": [
         "#DE242F",
-        "#000000",
+        "#C7C8CA",
         "#FFFFFF"
       ],
       "artwork": [
@@ -688,7 +688,7 @@
           ],
           "sourcePalette": [
             "#DE242F",
-            "#000000",
+            "#C7C8CA",
             "#FFFFFF"
           ],
           "unusedSourceSlots": [

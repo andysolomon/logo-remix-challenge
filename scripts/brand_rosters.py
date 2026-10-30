@@ -982,7 +982,7 @@ SWEET = [
     ("ENTENMANNS", "Entenmann's", "Cookies & Cakes", "3B4095", "FFF22D", ["Entenmanns"]),
     ("POPTARTS", "Pop-Tarts", "Cookies & Cakes", "0055B8", "303074", ["Pop Tarts", "PopTarts"]),
     ("PEPPERIDGE", "Pepperidge Farm", "Cookies & Cakes", "EC1B2E", "FFC10E", ["Pepperidge", "Milano"]),
-    ("GOODHUMOR", "Good Humor", "Ice Cream", "DE242F", "000000", ["Wall's", "Walls", "Algida", "Streets", "Ola", "Kibon", "Langnese", "Frigo", "Heartbrand"]),
+    ("GOODHUMOR", "Good Humor", "Ice Cream", "DE242F", "C7C8CA", ["Wall's", "Walls", "Algida", "Streets", "Ola", "Kibon", "Langnese", "Frigo", "Heartbrand"]),
     ("BENJERRY", "Ben & Jerry's", "Ice Cream", "231F20", "FDB813", ["Ben and Jerry's", "Ben & Jerrys", "Ben and Jerrys"]),
     ("KLONDIKE", "Klondike", "Ice Cream", "184377", "111518", ["Klondike Bar"]),
     ("BREYERS", "Breyers", "Ice Cream", "000000", "808080", ["Breyer's"]),

@@ -947,95 +947,95 @@
     },
     {
       "path": "/logos/svg/education/math/pi.svg",
-      "sha256": "9c3ba945b3ce24f874350ffd211a9771d7761eb83b55351900332bf0cf8414f0"
+      "sha256": "07bcc68beb7cbf615b073f9f2e118d094097616c4d0cd28750dc6365aa7623f7"
     },
     {
       "path": "/logos/svg/education/math/infinity.svg",
-      "sha256": "049668451ef4b31a0fbe514014079a94555bba7c5da05c6167eb37e8135e4205"
+      "sha256": "2bbc75e5ac7dc4f4f8f01423fb9c889ef6a7d6c9ef9169d42d4d9739d4880fa8"
     },
     {
       "path": "/logos/svg/education/math/delta.svg",
-      "sha256": "a0128b0c20ae4bbe41d92c9ff2aa5d0cd39f714862465dce18830b5796cb2dea"
+      "sha256": "47415ce31fbe67a818254d652b32df45f7b4a78d6f685970b51ac100501d3a18"
     },
     {
       "path": "/logos/svg/education/math/theta.svg",
-      "sha256": "7edba12e9333ae565b9a353c760f40ff925cb89221b1db28c958ad3bc85311c6"
+      "sha256": "f1f8635dbbf5b2ae4472145edadc8dbd885e8e0020b937ca8005d023962ac7fd"
     },
     {
       "path": "/logos/svg/education/math/sqrt.svg",
-      "sha256": "9d09b39ddde936ae52b6ff3dbf83089c0429c66003daa0c2425c3b6a71f66f70"
+      "sha256": "4f103532e41291f5c2066cb25ae3edbc37db1c46e482ad1776e92584aef23fe9"
     },
     {
       "path": "/logos/svg/education/math/sum.svg",
-      "sha256": "4f176d60636470dc62d8b5bf1de4256a60a50562a211f17fa39ac2a813239a9e"
+      "sha256": "b79950bdf6adfe6bedb60159f04a8dac69a70302a95e4ff3aeafd1ba60dbb800"
     },
     {
       "path": "/logos/svg/education/math/integral.svg",
-      "sha256": "d5da7dc1a30dde6adfe01af3b47f1b1367db03e0e6b5144265fbf63e259f3685"
+      "sha256": "3e93ecfbb110f3b7a3ce5280ac797e3bd756d602ed7e7bbca3f8e12b42f17862"
     },
     {
       "path": "/logos/svg/education/math/multiply.svg",
-      "sha256": "30202ce98c4bfd7a31db06d922460015d2f790e2bed60ec37ba363f17d7d4d46"
+      "sha256": "a9d0b8000ac4567a5921da976a520e7b0f6fa4e4169a2ba2f970246a28296295"
     },
     {
       "path": "/logos/svg/education/math/divide.svg",
-      "sha256": "f667db6c555b4dbe65f2374e7ae929167b8ce674bb058db834d5eb504b6119d1"
+      "sha256": "599240b8fc250d0752f9e27bae20c75136c07d0d149087079189cb5a1ad55a33"
     },
     {
       "path": "/logos/svg/education/math/plusminus.svg",
-      "sha256": "169b2807418e6d1e68a1e10afe25370b2f2e54297b030c356eeebda8874c318d"
+      "sha256": "76834af529b0a6546a8c504dffc879e2b4385b2a25c1d11367419b6d3972c611"
     },
     {
       "path": "/logos/svg/education/math/percent.svg",
-      "sha256": "348f30bd2ec2f9e22fe35a79074dde8dc82ad3fc99f8230dbcb267bda31386a6"
+      "sha256": "450889d0ce2c38e44c42b5994f9ee9a9d9f7ce90a6ed12632c32527beabca4b4"
     },
     {
       "path": "/logos/svg/education/math/equal.svg",
-      "sha256": "68a87096998d8467a02a3da3c86137a24d120ad38b983e217610fbd240d07e36"
+      "sha256": "4f13e8c6cefa6307f2216615a33bcd659c0ae0d36083f4a301258533e1f52b4b"
     },
     {
       "path": "/logos/svg/education/math/notequal.svg",
-      "sha256": "474e417e27ca9dc2dfdc983ccb8ca3643d4b711afec78f44914361d372c4d0a0"
+      "sha256": "45918466c450fb3dede045ff92bd4b7532d8ca86af087962cd5b6d49aba41adc"
     },
     {
       "path": "/logos/svg/education/math/approx.svg",
-      "sha256": "33e441f8c0b3a4a55bd7fbb021b24022b88cf74e1205e19c4ef511ed35f31090"
+      "sha256": "36b7293207960a14c6b35733fef14f2e573a93fd16198dcb46b915e2812338d9"
     },
     {
       "path": "/logos/svg/education/math/less.svg",
-      "sha256": "cb256f6393246cd2515d6821093246decd312d2cf767c4501c8ba833b1ac5b48"
+      "sha256": "f102e9cffe1bde8ae0515f6788ff761af8bc6369f6f96822f8270ced402cd0fc"
     },
     {
       "path": "/logos/svg/education/math/greater.svg",
-      "sha256": "5cf324437cf595486284ea520b27c43ec99e508ead43e37bbe7291b4f0cc7d74"
+      "sha256": "581e30dc74b335d2ed6dbc5b8476c25e5a6f415c895abbf5eadbdc2b7f630b8a"
     },
     {
       "path": "/logos/svg/education/math/leq.svg",
-      "sha256": "fdc1fca8521e845dab9658f80d90763a25a69bd5dc34e2b118cb621cd20a27c4"
+      "sha256": "c0a39dd67eb4b021a830c5ee3be4d2745b2d47a2065a770e92ca41b73575f866"
     },
     {
       "path": "/logos/svg/education/math/geq.svg",
-      "sha256": "1242061fae87455b627a1673dcc090f4f2fc9c762f753bd7a0d04af55bb6409c"
+      "sha256": "16e3449a81899d45613c4564621724ef99ee53733c1ace9c0b4b502159b4957e"
     },
     {
       "path": "/logos/svg/education/math/perp.svg",
-      "sha256": "ad4267228b556714d32cb470fc73ec161860a0fe66f742c099d2b361074137b3"
+      "sha256": "f05d4b75a44403a565e4b57e33da37ab6af2af3af68fdc837b9d856bfeefbeee"
     },
     {
       "path": "/logos/svg/education/math/parallel.svg",
-      "sha256": "ed89f3311229215e1fce750b8b44399c312153b102f317a24e7262b6047640e6"
+      "sha256": "387cf3b54fccd0a11bac4ea21b2ae97126a1db465e9b7b269ec989d962978eaf"
     },
     {
       "path": "/logos/svg/education/math/angle.svg",
-      "sha256": "b7b4585ae79fe90a83f8672240ee0f0d0fc78d0bf49eb6bf8817f696c481ecd8"
+      "sha256": "7ef56caea4dce4deccc36c55771236c192fe4c519d9909f672aeee4974e0d6b0"
     },
     {
       "path": "/logos/svg/education/math/degree.svg",
-      "sha256": "5da32a5e4dcacf6c5e86d169e93ccd817f19a89c7b791d106a863d00a72f2291"
+      "sha256": "52cc3d91b1ffac9693c5d26f32947860b385fa0926d35b50e3e773cb896c046e"
     },
     {
       "path": "/logos/svg/education/shape/circle.svg",
-      "sha256": "088adea11c2b29b161df721e4fd9884605a69dfe59dd1c0a747736f68bc7cbd7"
+      "sha256": "258882f36cdbb329ec578c47be7dd5b4afde1b5544ca1c39c018fde75809bfbe"
     },
     {
       "path": "/logos/svg/education/shape/alternates/circle-outline.svg",
@@ -1043,7 +1043,7 @@
     },
     {
       "path": "/logos/svg/education/shape/oval.svg",
-      "sha256": "46a0aac7e13c0a0e02e1ec89799923dea09904d4ab0849cbaa8700a75aae3a47"
+      "sha256": "ad4cb26fd37f1374f1f6ed212292073567ea08ec5dae56a2c3223a9c9151ae3b"
     },
     {
       "path": "/logos/svg/education/shape/alternates/oval-outline.svg",
@@ -1051,7 +1051,7 @@
     },
     {
       "path": "/logos/svg/education/shape/triangle.svg",
-      "sha256": "3c05c24d2ec3e4632c600d2af4f8707476924472ddf11baf7a6dd1f63be7cc09"
+      "sha256": "4e10fdd8eab61a999febb4b3f98e1dc7a3729231680d65cad2671de73bd6b193"
     },
     {
       "path": "/logos/svg/education/shape/alternates/triangle-outline.svg",
@@ -1059,7 +1059,7 @@
     },
     {
       "path": "/logos/svg/education/shape/square.svg",
-      "sha256": "76cc0c2949ade393c6501a15a8e21a03697de4bc66595329cde81e1a94565f8e"
+      "sha256": "7b372d2dce8895602cea76aaa997c464bfe3d425a43e786ec5072a058e5cdec7"
     },
     {
       "path": "/logos/svg/education/shape/alternates/square-outline.svg",
@@ -1067,7 +1067,7 @@
     },
     {
       "path": "/logos/svg/education/shape/rectangle.svg",
-      "sha256": "c6d636f0cc21adcfb774946687cbc2d6652bdd9b25ff4decd769797a8019b74a"
+      "sha256": "9d307b5851efb3de89e3de49cba0f41b226debac84afcfa6dddc284ca0a42bd5"
     },
     {
       "path": "/logos/svg/education/shape/alternates/rectangle-outline.svg",
@@ -1075,7 +1075,7 @@
     },
     {
       "path": "/logos/svg/education/shape/rhombus.svg",
-      "sha256": "0768160e507c54409420f0d3d57bafd62fc35f522a4550c183b2aaa6ecae3d65"
+      "sha256": "0f2790063447009f9e4b22a69ab4ce9769799ca0e63dbb412fe38c35f65ac7b3"
     },
     {
       "path": "/logos/svg/education/shape/alternates/rhombus-outline.svg",
@@ -1083,7 +1083,7 @@
     },
     {
       "path": "/logos/svg/education/shape/trapezoid.svg",
-      "sha256": "a6d85d76abc253981059f578c20b243602ba3c9ebe80091fa82d8f83333edc97"
+      "sha256": "b45a8e7b66b76a1c5678460d5bed53433871cdf340e53ad30bfb89ba35e198cd"
     },
     {
       "path": "/logos/svg/education/shape/alternates/trapezoid-outline.svg",
@@ -1091,7 +1091,7 @@
     },
     {
       "path": "/logos/svg/education/shape/parallelogram.svg",
-      "sha256": "ab2c192b1db9c60a4cb51b9ec00c288cf124ea6d6e5e52c4d91d0bef9cb42b57"
+      "sha256": "bd50a1d9c8b8649a92ae053eda243399103adec734a649c2e3e68624e40fe53c"
     },
     {
       "path": "/logos/svg/education/shape/alternates/parallelogram-outline.svg",
@@ -1099,7 +1099,7 @@
     },
     {
       "path": "/logos/svg/education/shape/pentagon.svg",
-      "sha256": "5221d587e42395bc1ec1ed0149228785df44a5a00aed5f2105ca2c0a3fed69f1"
+      "sha256": "e1cab3d11c499a9aea7d68fec7bd23a65c6aa05d9b5c81e585af7a619bec6f47"
     },
     {
       "path": "/logos/svg/education/shape/alternates/pentagon-outline.svg",
@@ -1107,7 +1107,7 @@
     },
     {
       "path": "/logos/svg/education/shape/hexagon.svg",
-      "sha256": "186ce3ddf141e4cf2806ca1646410a1f0c1dc9bfb2bd8bd21e59f360ab631ea3"
+      "sha256": "5c5cdc0759117d209711dbc9bd0b44f02e53a23832d6373032f1053d8977ff38"
     },
     {
       "path": "/logos/svg/education/shape/alternates/hexagon-outline.svg",
@@ -1115,7 +1115,7 @@
     },
     {
       "path": "/logos/svg/education/shape/heptagon.svg",
-      "sha256": "f7a650c3742c182d6181f2fb023e74eb0b078c565608ff2457229a0edb99524f"
+      "sha256": "2ae3f5469a5f797fdf18eda81c32a6aa14a0be97c74397fb630540304c7292c5"
     },
     {
       "path": "/logos/svg/education/shape/alternates/heptagon-outline.svg",
@@ -1123,7 +1123,7 @@
     },
     {
       "path": "/logos/svg/education/shape/octagon.svg",
-      "sha256": "748793518c877d38380f54337b3547a7dbea49b2aed921fffb67b39afa18a27c"
+      "sha256": "4a911c881c2e5cac5936bd3ba193d9320a1c48d26565a9dfcc9ef39771b60d61"
     },
     {
       "path": "/logos/svg/education/shape/alternates/octagon-outline.svg",
@@ -1131,7 +1131,7 @@
     },
     {
       "path": "/logos/svg/education/shape/nonagon.svg",
-      "sha256": "0b1e8ab988fa16704adebe5ef71cf72dfbc18eb2272b0f7e5d8bdc13767fcdf3"
+      "sha256": "80c6b6f70108ecd3fceb9fc21f2c46d235b0ab7304b6c016bcbba493d4e23f08"
     },
     {
       "path": "/logos/svg/education/shape/alternates/nonagon-outline.svg",
@@ -1139,7 +1139,7 @@
     },
     {
       "path": "/logos/svg/education/shape/decagon.svg",
-      "sha256": "234706edb2977ebcb423221a8a1404e9541b2923dfa311d39f8febe8fd7e6458"
+      "sha256": "6a10bc6ae9e380c2c86b310d7be18aaf964b92f9976c4b29af0957720b61d7f0"
     },
     {
       "path": "/logos/svg/education/shape/alternates/decagon-outline.svg",
@@ -1147,119 +1147,119 @@
     },
     {
       "path": "/logos/svg/education/shape/cube.svg",
-      "sha256": "508d71d6298dcf61eacb7e41b823eeb5c0a40c88200c545a4249a0ce51251eef"
+      "sha256": "d8f9d8c5779304280c6eb55b1954014a7f58562a1c0cb9fa300b033a3eb7d471"
     },
     {
       "path": "/logos/svg/education/shape/sphere.svg",
-      "sha256": "38a406b5f8d5ef24ef1458fe3b22b64d1a0b659c21d5abfad5596ef66f8316b4"
+      "sha256": "8884fc4391bfbf54dd00ec692a58550b66c5159ba3f89916f91c4d5024e8a03e"
     },
     {
       "path": "/logos/svg/education/shape/cylinder.svg",
-      "sha256": "512249b7d1d135271ffad6af38de40c5b613b91b4c5d4f55df9f62f46c620477"
+      "sha256": "abc59fb65600d5252e4bffa5a85e082fa69f6c70b9e15ff2c03028ca9ed0c5d9"
     },
     {
       "path": "/logos/svg/education/shape/cone.svg",
-      "sha256": "fe283f57408c8bf1e902099d3e2660c3e0fa63f6a4eee83576c5220b5cae0dac"
+      "sha256": "a134e846fe2b1e62cf02031738c67487b1f8b6b3a8993e32c591fb32ca5be3e2"
     },
     {
       "path": "/logos/svg/education/shape/pyramid.svg",
-      "sha256": "6a55a244a34059be7532c995d6849f1d0cee9f274031b4a86c0944b371bcb0f8"
+      "sha256": "b82f4331851c80fbf40b67892c1db90e8e5386c33406ff1b0dd01044f4b0191e"
     },
     {
       "path": "/logos/svg/education/shape/prism.svg",
-      "sha256": "9374a0b1d2a1d140a685e482844229fb0625ea20c0c929b8f85faf57e641a8d2"
+      "sha256": "0c73cc73457a510f077439b5a6fe08e76ca6ff51c922ec1962f108dba12b26ad"
     },
     {
       "path": "/logos/svg/education/space/mercury.svg",
-      "sha256": "a96af71332e455a3861f9afc43c69e4d12873e3bf081b77a76d39a6c001ad82c"
+      "sha256": "b4793a3defa74f39c645f46d779d6a6dd2ff579d3859702a13dd44fc51c34693"
     },
     {
       "path": "/logos/svg/education/space/venus.svg",
-      "sha256": "93804100e24ba92dbb2309a986045dbc3ee3024641c9ec860f2eacb6db745304"
+      "sha256": "c61a56e19944523e00a2c27d64388e7aa0d422532a52dc3eb0d328b40116ffa9"
     },
     {
       "path": "/logos/svg/education/space/earth.svg",
-      "sha256": "63ade299a46f5271319c498c81a17fe31743c54859909f9f5d34a1cd0b6284a5"
+      "sha256": "0d58a6b607381ae8073edca96d1fdfc7e88526ce1b0d85a02c4e67315f386d4d"
     },
     {
       "path": "/logos/svg/education/space/mars.svg",
-      "sha256": "3843d1b3367085a279bd8cac24c9b7cbaf8053968b25f8dbc23171520c6ce692"
+      "sha256": "dce129807d5cad3b49cc54f459ca2f2345b3ff14029b19c42dae6fcf6670e665"
     },
     {
       "path": "/logos/svg/education/space/jupiter.svg",
-      "sha256": "02c96d03a9de221b8e52ce2ed6db4330ba3ab63984ab9bf5bfc36577e367d2d8"
+      "sha256": "4ef8285b71cdfa183b57629b04177b2688f205cdbfd1e753fd11526d354d8192"
     },
     {
       "path": "/logos/svg/education/space/saturn.svg",
-      "sha256": "4f455894a06101d286af497d2dbf43704643800501aba1bf67387c46d0769318"
+      "sha256": "99f01ca45683f9e53697323498bc73551042a401143848465534e6ffb46c718d"
     },
     {
       "path": "/logos/svg/education/space/uranus.svg",
-      "sha256": "eac786d2aa483bfe81f62f3959aadc09acf463449c2f20f05ca30da439c045c4"
+      "sha256": "6dbe9e1201d43f6280cd6f6d7791a57237a924f673be3a4c07eb225a7cfd99bb"
     },
     {
       "path": "/logos/svg/education/space/neptune.svg",
-      "sha256": "618bdd43c5b282585d62aac3c173312b1be0d5e428e784549ff31db6f0dba683"
+      "sha256": "f5b70e3b5276272fd85140a7c2f314b0a8c6535036251f1fa851ab11f997cba0"
     },
     {
       "path": "/logos/svg/education/space/pluto.svg",
-      "sha256": "71bbe42e22273d63a17942c39568c3d0cb5df79bc3c11f6046079f1da9b56f58"
+      "sha256": "abceaf9657d0dcd874f492b81654bd247bb80bd50244d7600b57235da1e31190"
     },
     {
       "path": "/logos/svg/education/space/sun.svg",
-      "sha256": "0b4d6f16c716b0264e3af41a2eb11670ca05a01cb921d972ee751fc754f706df"
+      "sha256": "cdb4ce050308ee289a82627a6e40808c4c080faba6a2352f966e04002301ce1b"
     },
     {
       "path": "/logos/svg/education/space/moon.svg",
-      "sha256": "889800e78b7b22c5a0e61cec04391edb1b02828f9df4da468986dbf5990c0f56"
+      "sha256": "5ccde7a5dfc9f86d03d6faf86f6b3b3ecf577575d067392f5764f4e008eb32d5"
     },
     {
       "path": "/logos/svg/education/space/comet.svg",
-      "sha256": "c04401cbe686072891423eeb5ff91d538b154222086a3c3c544f5ee4e21087df"
+      "sha256": "e9617e3da80b56f855702d6649ca7e6ca6e5c78f033871fea5613758172e0f6b"
     },
     {
       "path": "/logos/svg/education/space/galaxy.svg",
-      "sha256": "2bcbdf9d18ff04670a189fa9f800aa2be9679c49e06ab2d8792f9138f94e2545"
+      "sha256": "345595284eb69e14d2154416f34f7c68768c69e3b9fc8b6a3aa9234f060262be"
     },
     {
       "path": "/logos/svg/education/science/atom.svg",
-      "sha256": "8d09de0247445f0c9fe109d9c4455100fec6d2dd5ccc6a27bc094d71e9afed8b"
+      "sha256": "f7e3f6f40ea4b742262cdd73bef3093b3d0a12fa5366f9b961aa5f6eae7598f5"
     },
     {
       "path": "/logos/svg/education/science/magnet.svg",
-      "sha256": "a8b0c7a759b26c3f7e6988560225a3f3ef8d48cf5ad118ef2f236c9c2d8e8cf7"
+      "sha256": "b8678ce685af0aaaf0fe2caa6de100d298d52d5b70ac5c67eb60fde07cccec54"
     },
     {
       "path": "/logos/svg/education/science/telescope.svg",
-      "sha256": "d462eda63038ad986f11c52dc2de20c87ef477fae723828d270f5bb79389d2dc"
+      "sha256": "2523bdf8e99aa66c08c0bfbb4112a6797cf964a1c5c6ba0e28479aa77ee48a4b"
     },
     {
       "path": "/logos/svg/education/science/dna.svg",
-      "sha256": "2ef0bab51e1b457f5ea9c91ca7b3c2af367401539a9099a3644ca00a829cfeeb"
+      "sha256": "b68931b49013a3f3efe65913730e3b60f63780a56cdb903b60540588ec667d31"
     },
     {
       "path": "/logos/svg/education/science/cell.svg",
-      "sha256": "262e93540929d10949ca2a281a279bf0b0bc5c30d11c455f23bf661f78c0b637"
+      "sha256": "f1b559fcf7fba2511ad14dbf44f7426b573cbdc86052f28328289206fcf24ac5"
     },
     {
       "path": "/logos/svg/education/science/flask.svg",
-      "sha256": "f3d3fdd813e7c1d947c39a433911a7eb55e4871cc2f5b1e4da5e8be98adab1a5"
+      "sha256": "2539780aa35bdc191f5c80683f91f82b95aafb67e6cb00fa23c3ab398682dc8c"
     },
     {
       "path": "/logos/svg/education/science/beaker.svg",
-      "sha256": "6f3784a948c68d8be7828302dc474b48f55bc44e3d25c79022a12027c9b18f81"
+      "sha256": "a93548eba9fe2fb640ef365a3506fc2ef776151d5bd23261ad62c77088015ff3"
     },
     {
       "path": "/logos/svg/education/science/testtube.svg",
-      "sha256": "1b74c9d2e6f371a21ad4d2098141fea6934d36b3fabdc4a9e6e88303027cc478"
+      "sha256": "fa0d038cf828a7d42cd6af0edba74809fc111f31a722a2365b8d34a9ee388c37"
     },
     {
       "path": "/logos/svg/education/science/thermometer.svg",
-      "sha256": "65336308ae67ac042c910a24447ca164d9b8a0ea7986596aa4b5ffed9080aaf9"
+      "sha256": "4e3cb9540c65e1450d6f07100df1ec9d3065956b519917b99b8e3a2f136ab2fc"
     },
     {
       "path": "/logos/svg/education/science/microscope.svg",
-      "sha256": "2ff4bf21bfa35fd4a802091dfaf889943b94a2a5122f7dc5113898021764ba19"
+      "sha256": "991af2cbc1def0269078100867b21d24a7f33777f7032ffc50904a86c0f7f61f"
     }
   ]
 }

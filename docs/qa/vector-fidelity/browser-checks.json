@@ -1,0 +1,95 @@
+{
+  "savedAlternate": "webbed-mask",
+  "exported": [
+    {
+      "id": "LANDMARK-TAJ",
+      "alternate": "primary",
+      "remixed": false,
+      "svgBytes": 4510,
+      "pngBytes": 193748
+    },
+    {
+      "id": "LANDMARK-TAJ",
+      "alternate": "primary",
+      "remixed": true,
+      "svgBytes": 4510,
+      "pngBytes": 196430
+    },
+    {
+      "id": "MATH-PI",
+      "alternate": "primary",
+      "remixed": false,
+      "svgBytes": 597,
+      "pngBytes": 171958
+    },
+    {
+      "id": "MATH-PI",
+      "alternate": "primary",
+      "remixed": true,
+      "svgBytes": 795,
+      "pngBytes": 119161
+    },
+    {
+      "id": "SHAPE-SPHERE",
+      "alternate": "primary",
+      "remixed": false,
+      "svgBytes": 380,
+      "pngBytes": 513410
+    },
+    {
+      "id": "SHAPE-SPHERE",
+      "alternate": "primary",
+      "remixed": true,
+      "svgBytes": 380,
+      "pngBytes": 516633
+    },
+    {
+      "id": "SPACE-EARTH",
+      "alternate": "primary",
+      "remixed": false,
+      "svgBytes": 1329,
+      "pngBytes": 232313
+    },
+    {
+      "id": "SPACE-EARTH",
+      "alternate": "primary",
+      "remixed": true,
+      "svgBytes": 1329,
+      "pngBytes": 245856
+    },
+    {
+      "id": "SCIENCE-FLASK",
+      "alternate": "primary",
+      "remixed": false,
+      "svgBytes": 1641,
+      "pngBytes": 137771
+    },
+    {
+      "id": "SCIENCE-FLASK",
+      "alternate": "primary",
+      "remixed": true,
+      "svgBytes": 1641,
+      "pngBytes": 138748
+    },
+    {
+      "id": "CHAR-SPIDEY",
+      "alternate": "webbed-mask",
+      "remixed": false,
+      "svgBytes": 2210,
+      "pngBytes": 212120
+    },
+    {
+      "id": "CHAR-SPIDEY",
+      "alternate": "webbed-mask",
+      "remixed": true,
+      "svgBytes": 2225,
+      "pngBytes": 214932
+    }
+  ],
+  "viewports": [
+    "1366x1024 light",
+    "390x844 dark",
+    "820x1180 light"
+  ],
+  "pageErrors": []
+}

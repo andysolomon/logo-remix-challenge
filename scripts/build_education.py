@@ -9,12 +9,14 @@ No runtime fonts, remote requests, embedded rasters or labels spelling the answe
 import hashlib
 import json
 import math
+import education_artwork as detail
 from pathlib import Path
 from build_teams import atomic_write_text, fmt_entry
 
 ROOT = Path(__file__).resolve().parent.parent
 TEAMS_JSON = ROOT / 'src/lib/teams.json'
 GLYPHS = json.loads((ROOT / 'scripts/education_glyphs.json').read_text())
+MATH_GLYPHS = json.loads((ROOT / 'scripts/math_glyphs.json').read_text())
 INK, ACCENT, WHITE = '#183153', '#009688', '#FFFFFF'
 PALETTE = [INK, ACCENT, WHITE]
 LEAGUES = {
@@ -25,11 +27,11 @@ LEAGUES = {
     'SCIENCE': {'label': 'SCIENCE', 'conferences': ['Physics', 'Biology', 'Lab equipment']},
 }
 
-def glyph(text, x, y, width, height, fill=WHITE):
+def glyph(text, x, y, width, height, fill=WHITE, glyphs=GLYPHS):
     """Fit outlines to a box using their real ink bounds, preserving aspect ratio."""
     offset = 0; parts = []; bounds = []
     for char in text:
-        g = GLYPHS[char]; a,b,c,d = g['bounds']
+        g = glyphs[char]; a,b,c,d = g['bounds']
         bounds.append((a+offset,b,c+offset,d)); parts.append((offset,g['path'])); offset += g['advance']
     left=min(b[0] for b in bounds); bottom=min(b[1] for b in bounds)
     right=max(b[2] for b in bounds); top=max(b[3] for b in bounds)
@@ -39,6 +41,7 @@ def glyph(text, x, y, width, height, fill=WHITE):
     return f'<g fill="{fill}" transform="translate({tx:.4f} {ty:.4f}) scale({s:.6f} {-s:.6f})">{paths}</g>'
 
 def svg(body):
+    body=detail.prune_defs(body)
     return f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">{body}</svg>\n'
 
 def line(body, color=INK, weight=10):
@@ -206,7 +209,7 @@ def band(y1, y2, fill, r=96, cx=128, cy=128):
     return f'<path fill="{fill}" d="M{cx-w(y1):.1f} {y1}H{cx+w(y1):.1f}A{r} {r} 0 0 1 {cx+w(y2):.1f} {y2}H{cx-w(y2):.1f}A{r} {r} 0 0 1 {cx-w(y1):.1f} {y1}Z"/>'
 def limb(r, cx=128, cy=128):
     pt = lambda deg: f'{cx+r*math.cos(math.radians(deg)):.1f} {cy+r*math.sin(math.radians(deg)):.1f}'
-    return f'<path fill="none" stroke="{WHITE}" stroke-width="5" stroke-linecap="round" d="M{pt(198)}A{r} {r} 0 0 1 {pt(252)}"/>'
+    return f'<path fill="none" stroke="{WHITE}" stroke-width="2" opacity=".3" stroke-linecap="round" d="M{pt(198)}A{r} {r} 0 0 1 {pt(252)}"/>'
 def ring(rx, ry, tilt, color, width, front, cap=''):
     """Half of a ring ellipse (front passes below the globe, back above); drawn in a tilted group."""
     half = f'<path d="M{-rx} 0A{rx} {ry} 0 0 {0 if front else 1} {rx} 0"/>'  # sweep 1 passes above the centre line
@@ -288,31 +291,29 @@ def build():
         ('PERP','Perpendicular','⊥','Geometry',[]),('PARALLEL','Parallel','∥','Geometry',[]),
         ('ANGLE','Angle','∠','Geometry',[]),('DEGREE','Degree','°','Geometry',['degrees']),
     ]
-    for ab,name,sym,group,aliases in maths:add('MATH',ab,name,group,glyph(sym,36,36,184,184,INK),[*aliases,sym],unused=[1,2])
+    for ab,name,sym,group,aliases in maths:add('MATH',ab,name,group,detail.math_symbol(glyph(sym,36,36,184,184,INK,GLYPHS if ab == 'PI' else MATH_GLYPHS)),[*aliases,sym],unused=[2])
     shapes=[('CIRCLE','Circle','<circle cx="128" cy="128" r="90"/>',[]),('OVAL','Oval','<ellipse cx="128" cy="128" rx="104" ry="68"/>',['ellipse']),
       ('TRIANGLE','Triangle',f'<polygon points="{polygon(3)}"/>',[]),('SQUARE','Square','<rect x="40" y="40" width="176" height="176"/>',[]),
       ('RECTANGLE','Rectangle','<rect x="24" y="68" width="208" height="120"/>',[]),('RHOMBUS','Rhombus','<polygon points="128,24 224,128 128,232 32,128"/>',['diamond']),
       ('TRAPEZOID','Trapezoid','<polygon points="76,52 180,52 232,204 24,204"/>',['trapezium']),('PARALLELOGRAM','Parallelogram','<polygon points="76,52 232,52 180,204 24,204"/>',[])]
     for n,name in [(5,'Pentagon'),(6,'Hexagon'),(7,'Heptagon'),(8,'Octagon'),(9,'Nonagon'),(10,'Decagon')]:shapes.append((name.upper(),name,f'<polygon points="{polygon(n)}"/>',[]))
-    for ab,name,art,aliases in shapes:add('SHAPE',ab,name,'2D shapes',f'<g fill="{INK}">{art}</g>',aliases,[1,2],[('outline','Outline',line(art),[1,2])])
-    solids={
-      'CUBE':('Cube','<path d="M128 24 224 76 224 180 128 232 32 180 32 76Z M32 76 128 132 224 76 M128 132V232 M128 24V124"/>',[]),
-      'SPHERE':('Sphere','<circle cx="128" cy="128" r="96"/><ellipse cx="128" cy="128" rx="96" ry="30"/><ellipse cx="128" cy="128" rx="38" ry="96"/>',[]),
-      'CYLINDER':('Cylinder','<ellipse cx="128" cy="52" rx="80" ry="28"/><path d="M48 52V200C48 238 208 238 208 200V52"/><path d="M48 200C48 164 208 164 208 200"/>',[]),
-      'CONE':('Cone','<path d="M128 24 32 200 M128 24 224 200"/><ellipse cx="128" cy="200" rx="96" ry="28"/>',[]),
-      'PYRAMID':('Pyramid','<path d="M128 24 24 192 128 232 232 192Z M128 24V232 M24 192 128 156 232 192"/>',['square pyramid']),
-      'PRISM':('Triangular prism','<path d="M32 204 96 76 160 204Z M96 76 160 24 224 152 160 204 M32 204 96 152 M160 24 96 152 224 152"/>',['prism']),
-    }
-    for ab,(name,art,aliases) in solids.items():add('SHAPE',ab,name,'3D solids',line(art),aliases,[1,2])
+    for ab,name,art,aliases in shapes:add('SHAPE',ab,name,'2D shapes',detail.shape_2d(art),aliases,[],[('outline','Outline',line(art),[1,2])])
+    solid_names = {'CUBE': ('Cube', []), 'SPHERE': ('Sphere', []),
+                   'CYLINDER': ('Cylinder', []), 'CONE': ('Cone', []),
+                   'PYRAMID': ('Pyramid', ['square pyramid']), 'PRISM': ('Triangular prism', ['prism'])}
+    for ab,art in detail.solids().items():
+        name,aliases=solid_names[ab]
+        add('SHAPE',ab,name,'3D solids',detail.defs()+art,aliases)
     for ab,(name,pal,art) in planet_figures().items():
-        add('SPACE',ab,name,'Dwarf planets' if ab=='PLUTO' else 'Planets',art,palette=pal)
-    add('SPACE','SUN','Sun','Other objects',circle(128,128,61)+line(''.join(f'<path d="M{128+82*math.cos(a):.2f} {128+82*math.sin(a):.2f}L{128+110*math.cos(a):.2f} {128+110*math.sin(a):.2f}"/>' for a in [i*math.pi/6 for i in range(12)])),['Sol'],[1,2])
-    add('SPACE','MOON','Moon','Other objects',f'<path fill="{INK}" d="M172 30A99 99 0 1 0 220 170A93 93 0 0 1 172 30Z"/>',['Luna','crescent moon'],[1,2])
-    add('SPACE','COMET','Comet','Other objects',comet(),[])
-    add('SPACE','GALAXY','Galaxy','Other objects',galaxy(),['spiral galaxy'])
+        add('SPACE',ab,name,'Dwarf planets' if ab=='PLUTO' else 'Planets',detail.planet(ab,art,pal),palette=pal)
+    sun_art,sun_palette=detail.sun();moon_art,moon_palette=detail.moon()
+    add('SPACE','SUN','Sun','Other objects',sun_art,['Sol'],palette=sun_palette)
+    add('SPACE','MOON','Moon','Other objects',moon_art,['Luna','crescent moon'],palette=moon_palette)
+    add('SPACE','COMET','Comet','Other objects',detail.science('COMET',comet()),[])
+    add('SPACE','GALAXY','Galaxy','Other objects',detail.science('GALAXY',galaxy()),['spiral galaxy'])
     for ab,(name,group,art) in science_figures().items():
         aliases={'DNA':['deoxyribonucleic acid','double helix'],'FLASK':['Erlenmeyer flask','conical flask'],'TESTTUBE':['testtube']}.get(ab,[])
-        add('SCIENCE',ab,name,group,art,aliases)
+        add('SCIENCE',ab,name,group,detail.science(ab,art),aliases)
     text=TEAMS_JSON.read_text();data=json.loads(text)
     old=[t for t in data['teams'] if t['league'] not in LEAGUES]
     start=text.index('"teams": [');end=text.index('\n  ]',start)

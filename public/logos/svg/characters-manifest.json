@@ -944,6 +944,29 @@
           ],
           "unusedSourceSlots": [],
           "sha256": "885e222d886147bcbbdd0ac24a0f0297c8f1ef4386e9545ac2ac4c42ac7ec718"
+        },
+        {
+          "id": "heater-shield",
+          "label": "Heater shield",
+          "sourceUrl": "https://github.com/andysolomon/logo-remix-challenge/blob/main/scripts/character_artwork.py",
+          "sourceSha256": "b92f8c8b1126c18a2850a936ea248a968984be621ed9dcb9c97146f1a952a120",
+          "generator": "character_artwork",
+          "license": "Original project illustration; depicted character rights remain with their owners",
+          "path": "/logos/svg/characters/alternates/cap-heater-shield.svg",
+          "format": "svg",
+          "colors": [
+            "#17202C",
+            "#FFFFFF",
+            "#C73535",
+            "#24518B"
+          ],
+          "sourcePalette": [
+            "#C73535",
+            "#1E385C",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "a45ac1b953929375f97c661dff896d0acf651d2c4328484f2ec1df26e76a067a"
         }
       ]
     },
@@ -1118,6 +1141,29 @@
             2
           ],
           "sha256": "c707e687c3a54dab8a44ff65a6e579a151ad2d81dbf4c412387f70832243576e"
+        },
+        {
+          "id": "voxel-head",
+          "label": "Voxel head",
+          "sourceUrl": "https://github.com/andysolomon/logo-remix-challenge/blob/main/scripts/character_artwork.py",
+          "sourceSha256": "54cb847b8180c4526ad7c488cce5923ba89cfcdb563ae8cda4613c5dda621acb",
+          "generator": "character_artwork",
+          "license": "Original project illustration; depicted character rights remain with their owners",
+          "path": "/logos/svg/characters/alternates/creeper-voxel-head.svg",
+          "format": "svg",
+          "colors": [
+            "#72AA45",
+            "#17202C",
+            "#FFFFFF",
+            "#4E8B39"
+          ],
+          "sourcePalette": [
+            "#609A3F",
+            "#17202C",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "3da9975cb3f7623230d4b1ba46a4190c0cb79b873be4dca85d37835bd65814dc"
         }
       ]
     },
@@ -1162,6 +1208,28 @@
           ],
           "unusedSourceSlots": [],
           "sha256": "55fc73bec2ea9d0416956c3b562fa0347c19e71a98dea7379bec407984d8fad9"
+        },
+        {
+          "id": "mask-portrait",
+          "label": "Mask portrait",
+          "sourceUrl": "https://github.com/andysolomon/logo-remix-challenge/blob/main/scripts/character_artwork.py",
+          "sourceSha256": "f3745bd5abdac35b8b05cf91110f6c312fc356156bcd75f275aa79172f109d84",
+          "generator": "character_artwork",
+          "license": "Original project illustration; depicted character rights remain with their owners",
+          "path": "/logos/svg/characters/alternates/deadpool-mask-portrait.svg",
+          "format": "svg",
+          "colors": [
+            "#17202C",
+            "#FFFFFF",
+            "#BA2737"
+          ],
+          "sourcePalette": [
+            "#17202C",
+            "#BA2737",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "59d913bd79fdf11b32f41c3e255a029ecf2bbf00af01bf463d439728ac371168"
         }
       ]
     },
@@ -3155,6 +3223,28 @@
             2
           ],
           "sha256": "72cb176bc53d63a181ee7440bd22d8914e2b82598954ee178bb4ffb27dd634c8"
+        },
+        {
+          "id": "beskar-helmet",
+          "label": "Armored helmet",
+          "sourceUrl": "https://github.com/andysolomon/logo-remix-challenge/blob/main/scripts/character_artwork.py",
+          "sourceSha256": "73fa9b0fca3a8e4bfceac6364d0b2b7cd5d87f847f0081c6239de08f78f8620a",
+          "generator": "character_artwork",
+          "license": "Original project illustration; depicted character rights remain with their owners",
+          "path": "/logos/svg/characters/alternates/mando-beskar-helmet.svg",
+          "format": "svg",
+          "colors": [
+            "#17202C",
+            "#FFFFFF",
+            "#A5AFB9"
+          ],
+          "sourcePalette": [
+            "#17202C",
+            "#A5AFB9",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "ba55def42589e5e3dffda5d91663de314e87ed358e42656e45f1e563820d6650"
         }
       ]
     },
@@ -3280,6 +3370,28 @@
             2
           ],
           "sha256": "aa76f82da363fdefcfb42ad55401b870aed1b106e1b95e5ee6ee599be854f665"
+        },
+        {
+          "id": "fire-flower",
+          "label": "Fire flower",
+          "sourceUrl": "https://github.com/andysolomon/logo-remix-challenge/blob/main/scripts/character_artwork.py",
+          "sourceSha256": "bd5b6e0f6d25f2f1806c3cb1b673198cd8293d0907df9207da143bcdd641c879",
+          "generator": "character_artwork",
+          "license": "Original project illustration; depicted character rights remain with their owners",
+          "path": "/logos/svg/characters/alternates/mario-fire-flower.svg",
+          "format": "svg",
+          "colors": [
+            "#E84522",
+            "#17202C",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#E84522",
+            "#17202C",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "afe37e83d7212cb97df93d1f6678f4ac10415f1d457705aa912d604b6767adc0"
         }
       ]
     },
@@ -4075,6 +4187,29 @@
             2
           ],
           "sha256": "964a9d60fefe262c8f520cbe48541d0782edc555d4c133d0d6e4ac781f921967"
+        },
+        {
+          "id": "face-portrait",
+          "label": "Face portrait",
+          "sourceUrl": "https://github.com/andysolomon/logo-remix-challenge/blob/main/scripts/character_artwork.py",
+          "sourceSha256": "3638266bef7abb9fb24c91cd9e989655f0582ff461980b1691257e071c33bd68",
+          "generator": "character_artwork",
+          "license": "Original project illustration; depicted character rights remain with their owners",
+          "path": "/logos/svg/characters/alternates/pikachu-face-portrait.svg",
+          "format": "svg",
+          "colors": [
+            "#17202C",
+            "#FFFFFF",
+            "#E54132",
+            "#E9BA2B"
+          ],
+          "sourcePalette": [
+            "#E77E2E",
+            "#17202C",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "44214aa1ba0191ac65c52d2ac4c6347cf0483584eb148f660c62177ceafefc88"
         }
       ]
     },
@@ -4123,6 +4258,29 @@
           ],
           "unusedSourceSlots": [],
           "sha256": "2325b6c54bd30a5db3fbbeb6118bf9605c407978f67ef906475fb9943b8e8d36"
+        },
+        {
+          "id": "great-ball",
+          "label": "Great ball",
+          "sourceUrl": "https://github.com/andysolomon/logo-remix-challenge/blob/main/scripts/character_artwork.py",
+          "sourceSha256": "0c85df88aa6ed586b7dfdd1b7894d56da4ba52d78349d1cab5e5c94fa40317ad",
+          "generator": "character_artwork",
+          "license": "Original project illustration; depicted character rights remain with their owners",
+          "path": "/logos/svg/characters/alternates/pokeball-great-ball.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#17202C",
+            "#DC3A32",
+            "#3074C0"
+          ],
+          "sourcePalette": [
+            "#244A76",
+            "#DC3A32",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "50521d6f79da4fbb3285f7edf35bafb44f8614356da5cef2a9d2ea0f83f392fa"
         }
       ]
     },
@@ -5184,6 +5342,28 @@
             2
           ],
           "sha256": "e0c3882b5d5b63c6a053f8735fd4eb1527fb79404532253f3015cb75d4b49855"
+        },
+        {
+          "id": "webbed-mask",
+          "label": "Webbed mask",
+          "sourceUrl": "https://github.com/andysolomon/logo-remix-challenge/blob/main/scripts/character_artwork.py",
+          "sourceSha256": "0d018fe1e075f2115232cd751ab2ccd0d6e37f65c19c00826b55040c06ada06e",
+          "generator": "character_artwork",
+          "license": "Original project illustration; depicted character rights remain with their owners",
+          "path": "/logos/svg/characters/alternates/spidey-webbed-mask.svg",
+          "format": "svg",
+          "colors": [
+            "#17202C",
+            "#FFFFFF",
+            "#C83236"
+          ],
+          "sourcePalette": [
+            "#17202C",
+            "#C83236",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "ab217ade74afbc435aaf9b229afaee3559b6943ffe429802046153dcf33acbf7"
         }
       ]
     },
@@ -5781,6 +5961,28 @@
           ],
           "unusedSourceSlots": [],
           "sha256": "e898262b9eebc515990e8fbde6d158ad4b7153c270df0cb75b605bd496228865"
+        },
+        {
+          "id": "hammer",
+          "label": "Hammer",
+          "sourceUrl": "https://github.com/andysolomon/logo-remix-challenge/blob/main/scripts/character_artwork.py",
+          "sourceSha256": "2b517406bbf355c67b795d6c459d6e762916ec168e403aac832648a789ea52a0",
+          "generator": "character_artwork",
+          "license": "Original project illustration; depicted character rights remain with their owners",
+          "path": "/logos/svg/characters/alternates/thor-hammer.svg",
+          "format": "svg",
+          "colors": [
+            "#17202C",
+            "#FFFFFF",
+            "#8F9EAA"
+          ],
+          "sourcePalette": [
+            "#17202C",
+            "#8F9EAA",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "4fc1e29d172937693ffa7dd70b079cb9c9663c3ab3cf27102ddabee68fda7954"
         }
       ]
     },
@@ -6080,6 +6282,28 @@
             2
           ],
           "sha256": "068147d23e4131bc056efcee0c1dec09cba5fbd58cdb589463e8ac7bbd117a9e"
+        },
+        {
+          "id": "helmet-study",
+          "label": "Helmet study",
+          "sourceUrl": "https://github.com/andysolomon/logo-remix-challenge/blob/main/scripts/character_artwork.py",
+          "sourceSha256": "476bfb3b0069ebd199bd1acb24fa2b24a178cc6b758e5f537e25db9e0531f452",
+          "generator": "character_artwork",
+          "license": "Original project illustration; depicted character rights remain with their owners",
+          "path": "/logos/svg/characters/alternates/vader-helmet-study.svg",
+          "format": "svg",
+          "colors": [
+            "#17202C",
+            "#FFFFFF",
+            "#68778A"
+          ],
+          "sourcePalette": [
+            "#17202C",
+            "#68778A",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "b947d9ba68f2d641e0bdf1b72fd841be7e6726fbc63fefa30b668ad0ac805e44"
         }
       ]
     },

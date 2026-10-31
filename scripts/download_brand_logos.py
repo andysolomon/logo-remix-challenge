@@ -29,7 +29,7 @@ from nfl_vector_artwork import validate_vector
 
 ROOT = Path(__file__).resolve().parent.parent
 SOURCES = ROOT / "scripts/brand_artwork_sources.json"
-SOURCE_KEYS = ("sourceUrl", "sourceSha256", "downloadForm", "ops")
+SOURCE_KEYS = ("sourceUrl", "sourceSha256", "downloadForm", "ops", "generator")
 MAX_BYTES = 400_000
 WHITE = "#FFFFFF"
 DISTINCT = 40 * 40
@@ -96,12 +96,23 @@ def pinned_sources(league: str) -> list[dict]:
     for source in sources:
         if not re.fullmatch(r"[a-z0-9]+(?:-[a-z0-9]+)*", source["id"]) or not source.get("label"):
             raise ValueError(f"{source['teamId']}: invalid variant id or missing label")
+        generator = source.get("generator")
+        if generator and (league not in ('LANDMARK', 'CHAR') or generator != ('landmark_artwork' if league == 'LANDMARK' else 'character_artwork')):
+            raise ValueError(f"{source['teamId']}: unrecognized artwork generator")
         if not source["sourceUrl"].startswith("https://") or not re.fullmatch(r"[0-9a-f]{64}", source.get("sourceSha256", "")):
             raise ValueError(f"{source['teamId']}/{source['id']}: pin an https source and its SHA-256")
     return sources
 
 
 def source_bytes(source: dict, cache_dir: Path | None) -> bytes:
+    if source.get("generator"):
+        # Explicit dispatch, never import or execute a path supplied by a source record.
+        import landmark_artwork, character_artwork
+        generator = {'landmark_artwork': landmark_artwork, 'character_artwork': character_artwork}[source['generator']]
+        raw = generator.render(source['teamId'].split('-', 1)[1]).encode()
+        if hashlib.sha256(raw).hexdigest() != source['sourceSha256']:
+            raise ValueError(f"{source['teamId']}: generated source changed; review and pin its checksum")
+        return raw
     hit = cache_dir / f"{source['sourceSha256']}.src" if cache_dir else None
     if hit and hit.is_file() and hashlib.sha256(hit.read_bytes()).hexdigest() == source["sourceSha256"]:
         return hit.read_bytes()

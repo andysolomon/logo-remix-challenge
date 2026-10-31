@@ -11474,7 +11474,7 @@
     "id": "choice-mark",
     "label": "Choice mark S (2016)",
     "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/0/00/Subway_%E2%80%93_2016_Choice_Mark_symbol_print.svg/revision/latest?cb=20241014002415",
-    "sourcePage": "https://logos.fandom.com/wiki/File:Subway_–_2016_Choice_Mark_symbol_print.svg",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Subway_\u2013_2016_Choice_Mark_symbol_print.svg",
     "sourceSha256": "69eea04c9e54871c8cc19f1a020c10b529d8468e9a94d45907fa179a417488fb",
     "ops": {
       "viewBox": "-102.422 -102.422 2186.798 2765.393"
@@ -12496,7 +12496,7 @@
     "id": "primary",
     "label": "Sonic eagle",
     "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/9/9a/United_States_Postal_Service_%E2%80%93_1993_symbol.svg/revision/latest?cb=20241019194851",
-    "sourcePage": "https://logos.fandom.com/wiki/File:United_States_Postal_Service_–_1993_symbol.svg",
+    "sourcePage": "https://logos.fandom.com/wiki/File:United_States_Postal_Service_\u2013_1993_symbol.svg",
     "sourceSha256": "f95e70ad71a919a0879f97c133674d0f5c8a953acb092c6b3bb8b1777d345e49",
     "ops": {
       "viewBox": "131.236 9.146 469.649 301.059"
@@ -12529,7 +12529,7 @@
     "id": "primary",
     "label": "Wordmark",
     "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Visa_Inc._logo_%282021%E2%80%93present%29.svg",
-    "sourcePage": "https://commons.wikimedia.org/wiki/File:Visa_Inc._logo_(2021–present).svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Visa_Inc._logo_(2021\u2013present).svg",
     "sourceSha256": "a9800215097d4cfa792c723af023dbcbec92cd656e0f95df62af21c78f48b060",
     "ops": {
       "viewBox": "-39.46 -39.46 1078.92 403.61"
@@ -13088,9 +13088,9 @@
   {
     "teamId": "GAME-POKEBALL",
     "id": "primary",
-    "label": "Poké Ball",
+    "label": "Pok\u00e9 Ball",
     "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Pok%C3%A9_Ball_icon.svg",
-    "sourcePage": "https://commons.wikimedia.org/wiki/File:Poké_Ball_icon.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Pok\u00e9_Ball_icon.svg",
     "sourceSha256": "6f1121045b551300d6f9a4651d37b9232edb30aa8465e8a0d0951f43361022cf",
     "ops": {
       "viewBox": "21.44 20.84 552.42 552.32"
@@ -13708,7 +13708,7 @@
     "id": "primary",
     "label": "Wordmark",
     "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/H%C3%A4agen-Dazs_Logo.svg",
-    "sourcePage": "https://commons.wikimedia.org/wiki/File:Häagen-Dazs_Logo.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:H\u00e4agen-Dazs_Logo.svg",
     "sourceSha256": "7530efaaa56788ddcf7e38a70add4435c643d14eeaf091553afbf5f1c2ec8079",
     "ops": {
       "viewBox": "2.474 2.553 201.053 102.894"
@@ -17604,5 +17604,524 @@
     "sourceUrl": "https://openclipart.org/download/313553/1547383891.svg",
     "sourcePage": "https://openclipart.org/detail/313553/tokyo-skytree-silhouette",
     "sourceSha256": "e6a759533df2859728b5b67401352939596544bde6898c8321925fbe49735f30"
+  },
+  {
+    "teamId": "GAME-SMASHBROS",
+    "id": "primary",
+    "label": "Cross-split ball emblem",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/1/1b/SmashBall.svg/revision/latest?cb=20260613223222",
+    "sourcePage": "https://logos.fandom.com/wiki/File:SmashBall.svg",
+    "sourceSha256": "0189ea12b016c4861961577ee9ea43647efd1efc04c98c7017d089ce75519c6d",
+    "ops": {
+      "viewBox": "-30 -30 810 810"
+    }
+  },
+  {
+    "teamId": "GAME-MARIOKART",
+    "id": "primary",
+    "label": "Blue racing wordmark with a big 8",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/1/10/Mario_Kart_8_-_Monochrome_logo.svg/revision/latest?cb=20210224231529",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Mario_Kart_8_-_Monochrome_logo.svg",
+    "sourceSha256": "75181659e742047c6030ded181117c06d325c2440f5612774c7bc6810143132b",
+    "ops": {
+      "viewBox": "-5532.649 -1906.12 11325.298 3888.237"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "GAME-CRASH",
+    "id": "primary",
+    "label": "Orange cartoon title lettering",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/9/95/Crash_Bandicoot_2020_logo.svg/revision/latest?cb=20240405125253",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Crash_Bandicoot_2020_logo.svg",
+    "sourceSha256": "62723153847297b4204112e15346664a5070a8cefc3b995812a539e342c3c3d4",
+    "ops": {
+      "viewBox": "-17.281 127.921 534.562 244.158"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "GAME-HALO",
+    "id": "primary",
+    "label": "Spaced-out sci-fi wordmark",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/2/26/Halo_print_logo_%282001-2010%29.svg/revision/latest?cb=20210515025917",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Halo_print_logo_(2001-2010).svg",
+    "sourceSha256": "610ef9b8691b2bb6b2999cfc4a3273dd465be34edf05eaaba51852d750a56e6b",
+    "ops": {
+      "viewBox": "-11.379 -11.379 307.239 61.493"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "GAME-STREETFIGHTER",
+    "id": "primary",
+    "label": "Red brush-script title with Roman numeral",
+    "sourceUrl": "https://iconape.com/wp-content/files/nr/99748/svg/street-fighter-ii.svg",
+    "sourcePage": "https://iconape.com/street-fighter-ii-logo-icon-svg-png.html",
+    "sourceSha256": "6271e062c321eb2d4053fecc421c7c625a61972eebdfe268d31dc9c76ae261d3",
+    "ops": {
+      "removeNodes": [
+        "0/0"
+      ],
+      "viewBox": "-4.65 41.134 202.055 110.488"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "GAME-DESTINY",
+    "id": "primary",
+    "label": "Three-horned crest",
+    "sourceUrl": "https://raw.githubusercontent.com/chouhan-rahul/icons_plus/v5.0.0/assets/images/logos/video-games/destiny-2.svg",
+    "sourcePage": "https://github.com/chouhan-rahul/icons_plus/blob/v5.0.0/assets/images/logos/video-games/destiny-2.svg",
+    "sourceSha256": "4cf5bd772af6e4602c04e064a664aa09b49f19c2198c363d072e092d27d3f59a",
+    "ops": {
+      "viewBox": "4.557 7.561 38.886 35.879"
+    }
+  },
+  {
+    "teamId": "GAME-PVZ",
+    "id": "primary",
+    "label": "Green and stone title with grass",
+    "sourceUrl": "https://iconape.com/wp-content/files/ih/247785/svg/247785.svg",
+    "sourcePage": "https://iconape.com/plants-vs-zombies-logo-logo-icon-svg-png.html",
+    "sourceSha256": "ac71b7c9f6529b4b317a42612459cfbf11c2bd9ec09696762a9815129a2c6698",
+    "ops": {
+      "removeNodes": [
+        "1/49",
+        "1/51",
+        "1/54",
+        "1/58",
+        "1/64",
+        "1/65",
+        "1/66",
+        "1/68",
+        "1/70",
+        "1/71",
+        "1/73",
+        "1/77",
+        "1/79",
+        "1/80",
+        "1/81",
+        "1/82",
+        "1/83",
+        "1/84",
+        "1/85",
+        "1/86",
+        "1/87",
+        "1/88",
+        "1/91",
+        "1/92",
+        "1/93",
+        "1/94",
+        "1/95",
+        "1/120",
+        "1/121",
+        "1/122",
+        "1/123",
+        "1/124",
+        "1/127",
+        "1/130",
+        "1/134",
+        "1/142",
+        "1/160",
+        "1/176",
+        "1/177",
+        "1/178",
+        "1/187",
+        "1/201",
+        "1/207",
+        "1/212",
+        "1/214",
+        "1/225",
+        "1/226",
+        "1/227",
+        "1/234",
+        "1/238",
+        "1/242",
+        "1/244",
+        "1/250",
+        "1/252",
+        "1/282",
+        "1/291"
+      ],
+      "viewBox": "-3.092 -3.096 83.476 52.289"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "GAME-MEGAMAN",
+    "id": "primary",
+    "label": "Striped blue-and-pink arcade title",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/a/a0/Mega_Man.svg/revision/latest?cb=20231225132919",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Mega_Man.svg",
+    "sourceSha256": "6a04e10c2e581d4fb1bfd3277bd096e150a99164cfd679664c4aeaa0dcf798f7",
+    "ops": {
+      "viewBox": "-29.46 -29.273 808.92 206.17"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "GAME-ROCKETLEAGUE",
+    "id": "primary",
+    "label": "Blue shield with boosting car and ball",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/9/90/Rocket_League.svg/revision/latest?cb=20171202171315",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Rocket_League.svg",
+    "sourceSha256": "f95ab4fb1c527e6b8188e82b2d1f923e8e91fb49d609fd788f980d55c4ab3ea2",
+    "ops": {
+      "removeNodes": [
+        "3/1",
+        "3/2"
+      ],
+      "viewBox": "0.763 0.587 98.309 94.302"
+    }
+  },
+  {
+    "teamId": "GAME-EAFC",
+    "id": "primary",
+    "label": "Round badge beside slanted letters",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/3/31/EA_Sports_FC_logo.svg/revision/latest?cb=20230412041159",
+    "sourcePage": "https://logos.fandom.com/wiki/File:EA_Sports_FC_logo.svg",
+    "sourceSha256": "d703a7be1d831d50c6c78a3dd2e843daae65a52c6b062492a4dfc91552d2169e",
+    "ops": {
+      "viewBox": "-40 -40 1080 576.414"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "GAME-NBA2K",
+    "id": "primary",
+    "label": "Red numeral-and-letter mark with league silhouette",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/1/13/NBA_2K26.svg/revision/latest?cb=20260430212758",
+    "sourcePage": "https://logos.fandom.com/wiki/File:NBA_2K26.svg",
+    "sourceSha256": "cd7bd3e131824d2b48e143e02529236ebcc4bc31abff46c1ac1d299c80285ea5",
+    "ops": {
+      "removeNodes": [
+        "2/0/3",
+        "2/0/4"
+      ],
+      "viewBox": "-23.118 -23.118 624.192 259.21"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "GAME-FORZA",
+    "id": "primary",
+    "label": "Speed-striped F emblem",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/2/2f/ForzaSymbol.svg/revision/latest?cb=20191021000650",
+    "sourcePage": "https://logos.fandom.com/wiki/File:ForzaSymbol.svg",
+    "sourceSha256": "48e2f6bc921477870e1fe8e5b45bf3a1f462368d03887d2a4e2bfff2a3852cb8",
+    "ops": {
+      "viewBox": "-48.386 -102.284 2977.67 1474.37"
+    }
+  },
+  {
+    "teamId": "GAME-GRANTURISMO",
+    "id": "primary",
+    "label": "Red-and-blue racing monogram",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/e/e1/Gran_Turismo_%28textless%2C_coloured%29.svg/revision/latest?cb=20231031092749",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Gran_Turismo_(textless,_coloured).svg",
+    "sourceSha256": "2b1d4dcf5119ed0fe38f8de010d3d999eaff0f162e8988f38bc4fcd0155e8c0f",
+    "ops": {
+      "viewBox": "-14.659 -14.648 419.239 278.646"
+    }
+  },
+  {
+    "teamId": "GAME-FNAF",
+    "id": "primary",
+    "label": "Bold stacked horror-movie title",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/c/cb/FNAF_%28Film%29_%28Print%29.svg/revision/latest?cb=20240420151912",
+    "sourcePage": "https://logos.fandom.com/wiki/File:FNAF_(Film)_(Print).svg",
+    "sourceSha256": "b8ca95c2f784a7e275d5769e1b5754ff19f131445bb56265df0f21c27cad2fac",
+    "ops": {
+      "viewBox": "-50.4 -50.4 1360.8 570.8"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "GAME-UNDERTALE",
+    "id": "primary",
+    "label": "Pixel title with a red heart",
+    "sourceUrl": "https://iconape.com/wp-content/files/gt/247022/svg/undertale-seeklogo.com.svg",
+    "sourcePage": "https://iconape.com/undertale-logo-logo-icon-svg-png.html",
+    "sourceSha256": "8dd83e4268b017b58cbd7c6fa2684cc7c20ed16dc35206472553e2d5729cbbb9",
+    "ops": {
+      "viewBox": "-22.56 -22.56 609.12 123.12"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "GAME-TERRARIA",
+    "id": "primary",
+    "label": "Pixel-art tree",
+    "sourceUrl": "https://raw.githubusercontent.com/chouhan-rahul/icons_plus/v5.0.0/assets/images/logos/video-games/terraria.svg",
+    "sourcePage": "https://github.com/chouhan-rahul/icons_plus/blob/v5.0.0/assets/images/logos/video-games/terraria.svg",
+    "sourceSha256": "a0803154080daf931642be5e152344298feff15877b427221843b8de109be548",
+    "ops": {
+      "viewBox": "9.4 2.4 29.2 43.2"
+    }
+  },
+  {
+    "teamId": "GAME-TERRARIA",
+    "id": "title-2020",
+    "label": "Pixel wordmark with a tree",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/d/de/Terraria_2020.svg/revision/latest?cb=20240308113232",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Terraria_2020.svg",
+    "sourceSha256": "6eac2eff5951c6d561554d4fe12f223788df5976acdeace23aae660535474ae1",
+    "ops": {
+      "viewBox": "-19.44 -19.44 524.88 179.88"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "GAME-HOLLOWKNIGHT",
+    "id": "primary",
+    "label": "Ornate gothic wordmark",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/9/96/Hollow_Knight.svg/revision/latest?cb=20220430220711",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Hollow_Knight.svg",
+    "sourceSha256": "7dd81e9616e98d2c307986dbe618a9659bd6db3059881b77de6d111c18a06713",
+    "ops": {
+      "viewBox": "-28.859 -28.859 779.198 321.438"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "MOVIE-AVATAR",
+    "id": "primary",
+    "label": "Brushy blue letters",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/d/d6/Avatar_Logo_%282009%29.svg/revision/latest?cb=20200926032232",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Avatar_Logo_(2009).svg",
+    "sourceSha256": "b21922a9a0a47892a8a9d0bb32fc7a873de1be6bc9d92ee8d468026dbc613a62",
+    "ops": {
+      "viewBox": "-40 40 1080 204",
+      "clipToViewBox": true
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "MOVIE-TRON",
+    "id": "primary",
+    "label": "Glowing outline letters",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/a/af/Tron_franchise_logo_%281%29.svg/revision/latest?cb=20240106010453",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Tron_franchise_logo_(1).svg",
+    "sourceSha256": "33b8e491854d46f83c667237eff3c2803e72ac4f28322a5e2b53f0148126c396",
+    "ops": {
+      "viewBox": "-40 140 2080 511",
+      "clipToViewBox": true
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "MOVIE-ET",
+    "id": "primary",
+    "label": "Rough black initials",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/4/4c/E.T._The_Extra-Terrestrial.svg/revision/latest?cb=20180410174838",
+    "sourcePage": "https://logos.fandom.com/wiki/File:E.T._The_Extra-Terrestrial.svg",
+    "sourceSha256": "3950ff542253f89f071943e16b8264483bdf27bd48a923ccc8f94ff48857a4d2",
+    "ops": {
+      "viewBox": "-40 -40 1080 740"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "MOVIE-WIZARDOFOZ",
+    "id": "primary",
+    "label": "Swirly black title",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/4/40/The_Wizard_of_Oz_%28Print%29.svg/revision/latest?cb=20210103174547",
+    "sourcePage": "https://logos.fandom.com/wiki/File:The_Wizard_of_Oz_(Print).svg",
+    "sourceSha256": "3e98ffa47e514bbd6512d248f0e1033312f7573563851d95ac8ce1fa77f25b04",
+    "ops": {
+      "viewBox": "-40 -40 1080 594.5"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "MOVIE-KONG",
+    "id": "primary",
+    "label": "Red and yellow jagged title",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/2/26/King_Kong_%281933%29.svg/revision/latest?cb=20200717171904",
+    "sourcePage": "https://logos.fandom.com/wiki/File:King_Kong_(1933).svg",
+    "sourceSha256": "4d26c48287854c992fe5c29175c1a4f845cc8539ceed90a5bb8bd31e342680a3",
+    "ops": {
+      "viewBox": "-40 -40 1080 428.572"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "MOVIE-MISSIONIMP",
+    "id": "primary",
+    "label": "Red condensed title",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/d/d2/Mission_Impossible_1996.svg/revision/latest?cb=20161208070818",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Mission_Impossible_1996.svg",
+    "sourceSha256": "a52d41109ea1a91b73d719d1d86823a68c6651890cc3f9aa6fd78732f3c8f29a",
+    "ops": {
+      "viewBox": "-31.106 -31.106 839.858 184.228"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "MOVIE-FAST",
+    "id": "primary",
+    "label": "Black italic racing title",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/3/30/Fast_%26_Furious.svg/revision/latest?cb=20220606030614",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Fast_&_Furious.svg",
+    "sourceSha256": "1b2b1f0a41e9b8c0616ec58dfd3929f1c8610e2c2836988f59767f2e1f8040f0",
+    "ops": {
+      "viewBox": "-2.57 -2.57 69.392 22.148"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "MOVIE-INDY",
+    "id": "primary",
+    "label": "Fiery adventure title",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/a/a2/Indiana_Jones.svg/revision/latest?cb=20180106213547",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Indiana_Jones.svg",
+    "sourceSha256": "b4c234bd6d9f487dff31906fcd2c809b1ed45f7a80d2474e8078f360a9164c35",
+    "showsName": true
+  },
+  {
+    "teamId": "MOVIE-JAWS",
+    "id": "primary",
+    "label": "Bold red title",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/9/9a/Jaws_SVG.svg/revision/latest?cb=20250328204249",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Jaws_SVG.svg",
+    "sourceSha256": "5373fd641ed72bc95a51db6e47eb6e38e025f36796510a6da10e378e9a30047e",
+    "ops": {
+      "removeNodes": [
+        "2",
+        "3"
+      ],
+      "viewBox": "-9.44 -9.44 254.88 104.88"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "MOVIE-TOPGUN",
+    "id": "primary",
+    "label": "Winged title with star",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/2/2c/Top_Gun.svg/revision/latest?cb=20210420211517",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Top_Gun.svg",
+    "sourceSha256": "6f177a93a8e606891a71ff5a54f62aa58990fe6372ba5ecaf4a8147351a1fdf8",
+    "ops": {
+      "viewBox": "-40 -40 1080 345.951"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "MOVIE-WONKA",
+    "id": "primary",
+    "label": "Candy-colored 1971 title",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/5/55/Willy_Wonka_and_the_Chocolate_Factory.svg/revision/latest?cb=20200710173320",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Willy_Wonka_and_the_Chocolate_Factory.svg",
+    "sourceSha256": "17b7e6bf559c8ebc0d6c9ae53f0b219aa80f72b226414e0a4908d91458da9f6f",
+    "ops": {
+      "viewBox": "-40 -40 1080 582.043"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "MOVIE-PIRATES",
+    "id": "primary",
+    "label": "Weathered seafaring title",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/e/e8/Pirates_of_the_Caribbean.svg/revision/latest?cb=20230705015400",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Pirates_of_the_Caribbean.svg",
+    "sourceSha256": "b293b954537e6d9841e486044d22f96820bcb61bab7197ab402fd6da9f307e63",
+    "ops": {
+      "viewBox": "-48 -48 1310 241"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "MOVIE-NARNIA",
+    "id": "primary",
+    "label": "Red flourished title",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Chronicles_of_Narnia_logo.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:The_Chronicles_of_Narnia_logo.svg",
+    "sourceSha256": "b8a8d4e06a7c50fcad53706e79f6f82b34a75bb6bd521ff60189227f8228b3cb",
+    "ops": {
+      "viewBox": "-12 -12 324 102.65"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "MOVIE-MAZERUNNER",
+    "id": "primary",
+    "label": "Stacked black block letters",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Maze_Runner_Logo.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Maze_Runner_Logo.svg",
+    "sourceSha256": "247271d910d46fc8679d3aa6cc2b4194033127787aafcd33f0ff3bd5410a0daa",
+    "ops": {
+      "removeNodes": [
+        "0"
+      ],
+      "viewBox": "-23 -22 696 271"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "MOVIE-MIB",
+    "id": "primary",
+    "label": "Heavy black initials",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Men_In_Black_(film_franchise)_logo.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Men_In_Black_(film_franchise)_logo.svg",
+    "sourceSha256": "3970fde0594b14971c03a84e164bc8e14a99c0352698437767ced198f6127be8",
+    "ops": {
+      "viewBox": "-35 -29 954 474"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "MOVIE-SPYKIDS",
+    "id": "primary",
+    "label": "Red and black title with eye swoosh",
+    "sourceUrl": "https://cdn.worldvectorlogo.com/logos/spy-kids.svg",
+    "sourcePage": "https://worldvectorlogo.com/logo/spy-kids",
+    "sourceSha256": "4de5b9daac5c74c63058ed40265d81a5145b8ea32c9e48c1a8c7823e9fd947e7",
+    "ops": {
+      "removeNodes": [
+        "0"
+      ],
+      "viewBox": "9.6 58.9 181.4 77.9"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "MOVIE-NIGHTMUSEUM",
+    "id": "primary",
+    "label": "Tall yellow art-deco title",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Night-at-the-museum-logo.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Night-at-the-museum-logo.svg",
+    "sourceSha256": "a12f25369655b72726c85087045f12fbdeed5597beb8b466912212e7a3e36d1e",
+    "ops": {
+      "viewBox": "-23.9 -15.9 942.2 212.9"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "MOVIE-KARATEKID",
+    "id": "primary",
+    "label": "Red serif title",
+    "sourceUrl": "https://iconape.com/wp-content/files/em/179357/svg/179357.svg",
+    "sourcePage": "https://iconape.com/the-karate-kid-logo-logo-icon-svg-png.html",
+    "sourceSha256": "a1f4157aa998276266c741cd9fc8bf32ccf535fcb1ae26da919425f8395a8ff4",
+    "ops": {
+      "removeNodes": [
+        "0/0",
+        "0/13",
+        "0/14",
+        "0/15",
+        "0/16",
+        "0/17",
+        "0/18",
+        "0/19",
+        "0/20",
+        "0/21",
+        "0/22",
+        "0/23",
+        "0/24"
+      ],
+      "viewBox": "224.4 377.07 163.2 37.86"
+    },
+    "showsName": true
   }
 ]

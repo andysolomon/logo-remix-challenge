@@ -29,7 +29,7 @@ from nfl_vector_artwork import validate_vector
 
 ROOT = Path(__file__).resolve().parent.parent
 SOURCES = ROOT / "scripts/brand_artwork_sources.json"
-SOURCE_KEYS = ("sourceUrl", "sourceSha256", "downloadForm", "ops", "generator")
+SOURCE_KEYS = ("sourceUrl", "sourceSha256", "downloadForm", "ops", "generator", "inputs", "flagViewBox", "flagFit", "backgroundFill", "flagFrame")
 MAX_BYTES = 400_000
 WHITE = "#FFFFFF"
 DISTINCT = 40 * 40
@@ -98,7 +98,10 @@ def pinned_sources(league: str) -> list[dict]:
             raise ValueError(f"{source['teamId']}: invalid variant id or missing label")
         generator = source.get("generator")
         # Character studies follow their entry when it moves to MOVIES or VIDEO GAMES.
-        if generator and (league not in ('LANDMARK', 'CHAR', 'MOVIE', 'GAME') or generator != ('landmark_artwork' if league == 'LANDMARK' else 'character_artwork')):
+        allowed_generator = {'LANDMARK': 'landmark_artwork', 'CHAR': 'character_artwork',
+                             'MOVIE': 'character_artwork', 'GAME': 'character_artwork',
+                             'FLAG': 'state_flag_artwork'}.get(league)
+        if generator and generator != allowed_generator:
             raise ValueError(f"{source['teamId']}: unrecognized artwork generator")
         if not source["sourceUrl"].startswith("https://") or not re.fullmatch(r"[0-9a-f]{64}", source.get("sourceSha256", "")):
             raise ValueError(f"{source['teamId']}/{source['id']}: pin an https source and its SHA-256")
@@ -108,9 +111,9 @@ def pinned_sources(league: str) -> list[dict]:
 def source_bytes(source: dict, cache_dir: Path | None) -> bytes:
     if source.get("generator"):
         # Explicit dispatch, never import or execute a path supplied by a source record.
-        import landmark_artwork, character_artwork
-        generator = {'landmark_artwork': landmark_artwork, 'character_artwork': character_artwork}[source['generator']]
-        raw = generator.render(source['teamId'].split('-', 1)[1]).encode()
+        import landmark_artwork, character_artwork, state_flag_artwork
+        generator = {'landmark_artwork': landmark_artwork, 'character_artwork': character_artwork, 'state_flag_artwork': state_flag_artwork}[source['generator']]
+        raw = generator.render(source) if source['generator'] == 'state_flag_artwork' else generator.render(source['teamId'].split('-', 1)[1]).encode()
         if hashlib.sha256(raw).hexdigest() != source['sourceSha256']:
             raise ValueError(f"{source['teamId']}: generated source changed; review and pin its checksum")
         return raw
@@ -142,11 +145,15 @@ def refresh(league: str, force: bool = False, cache_dir: Path | None = None) -> 
         previous = cached.get((source["teamId"], source["id"]))
         reuse = (not force and previous and previous["path"] == path and target.is_file()
                  and all(previous.get(k) == source.get(k) for k in SOURCE_KEYS))
+        if source.get('generator') == 'state_flag_artwork':
+            generated = source_bytes(source, None)
+            if not reuse:
+                raw = import_brand_vector(generated, source.get('ops', {}))
         if reuse:
             raw = target.read_bytes()
             if hashlib.sha256(raw).hexdigest() != previous["sha256"]:
                 raise ValueError(f"{path}: checked-in artwork differs from the manifest; review or refresh with --force")
-        else:
+        elif source.get('generator') != 'state_flag_artwork':
             raw = import_brand_vector(source_bytes(source, cache_dir), source.get("ops", {}))
         validate_vector(raw)
         # Detailed state seals need more vector paths; retain their original geometry.
@@ -160,6 +167,12 @@ def refresh(league: str, force: bool = False, cache_dir: Path | None = None) -> 
 
     with ThreadPoolExecutor(max_workers=4) as pool:
         results = list(pool.map(download, sources))
+    # Compositions must use the exact input versions about to be committed.
+    staged = {item['path']: item['sha256'] for item, _ in results}
+    for item, _ in results:
+        if item.get('generator') == 'state_flag_artwork':
+            if any(staged.get(dep['path']) != dep['sha256'] for dep in item['inputs']):
+                raise ValueError(f"{item['teamId']}: composed inputs differ from staged assets; repin the composition")
     assets = []
     for abbr, name, category, primary, secondary, aliases in sorted(roster.values()):
         team_id = f"{league}-{abbr}"

@@ -1,0 +1,296 @@
+[
+  {
+    "id": "FLAG-AK",
+    "outside": 0,
+    "missing": 0,
+    "inside": 11311
+  },
+  {
+    "id": "FLAG-AL",
+    "outside": 0,
+    "missing": 0,
+    "inside": 21359
+  },
+  {
+    "id": "FLAG-AR",
+    "outside": 0,
+    "missing": 0,
+    "inside": 33652
+  },
+  {
+    "id": "FLAG-AZ",
+    "outside": 0,
+    "missing": 0,
+    "inside": 29728
+  },
+  {
+    "id": "FLAG-CALI",
+    "outside": 0,
+    "missing": 0,
+    "inside": 13621
+  },
+  {
+    "id": "FLAG-CO",
+    "outside": 0,
+    "missing": 0,
+    "inside": 32271
+  },
+  {
+    "id": "FLAG-CT",
+    "outside": 0,
+    "missing": 0,
+    "inside": 27003
+  },
+  {
+    "id": "FLAG-DE",
+    "outside": 0,
+    "missing": 0,
+    "inside": 11306
+  },
+  {
+    "id": "FLAG-FL",
+    "outside": 0,
+    "missing": 0,
+    "inside": 11282
+  },
+  {
+    "id": "FLAG-GA",
+    "outside": 0,
+    "missing": 0,
+    "inside": 29857
+  },
+  {
+    "id": "FLAG-HI",
+    "outside": 0,
+    "missing": 0,
+    "inside": 2504
+  },
+  {
+    "id": "FLAG-IA",
+    "outside": 0,
+    "missing": 0,
+    "inside": 25669
+  },
+  {
+    "id": "FLAG-ID",
+    "outside": 0,
+    "missing": 0,
+    "inside": 14547
+  },
+  {
+    "id": "FLAG-IL",
+    "outside": 0,
+    "missing": 0,
+    "inside": 18543
+  },
+  {
+    "id": "FLAG-IN",
+    "outside": 0,
+    "missing": 0,
+    "inside": 20502
+  },
+  {
+    "id": "FLAG-KS",
+    "outside": 0,
+    "missing": 0,
+    "inside": 24202
+  },
+  {
+    "id": "FLAG-KY",
+    "outside": 0,
+    "missing": 0,
+    "inside": 11842
+  },
+  {
+    "id": "FLAG-LA",
+    "outside": 0,
+    "missing": 0,
+    "inside": 23605
+  },
+  {
+    "id": "FLAG-MA",
+    "outside": 0,
+    "missing": 0,
+    "inside": 11125
+  },
+  {
+    "id": "FLAG-MD",
+    "outside": 0,
+    "missing": 0,
+    "inside": 8321
+  },
+  {
+    "id": "FLAG-ME",
+    "outside": 0,
+    "missing": 0,
+    "inside": 15897
+  },
+  {
+    "id": "FLAG-MI",
+    "outside": 0,
+    "missing": 0,
+    "inside": 15128
+  },
+  {
+    "id": "FLAG-MN",
+    "outside": 0,
+    "missing": 0,
+    "inside": 25266
+  },
+  {
+    "id": "FLAG-MO",
+    "outside": 0,
+    "missing": 0,
+    "inside": 25428
+  },
+  {
+    "id": "FLAG-MS",
+    "outside": 0,
+    "missing": 0,
+    "inside": 20319
+  },
+  {
+    "id": "FLAG-MT",
+    "outside": 0,
+    "missing": 0,
+    "inside": 22816
+  },
+  {
+    "id": "FLAG-NC",
+    "outside": 0,
+    "missing": 0,
+    "inside": 10327
+  },
+  {
+    "id": "FLAG-ND",
+    "outside": 0,
+    "missing": 0,
+    "inside": 26615
+  },
+  {
+    "id": "FLAG-NE",
+    "outside": 0,
+    "missing": 0,
+    "inside": 18453
+  },
+  {
+    "id": "FLAG-NH",
+    "outside": 0,
+    "missing": 0,
+    "inside": 12535
+  },
+  {
+    "id": "FLAG-NJ",
+    "outside": 0,
+    "missing": 0,
+    "inside": 13171
+  },
+  {
+    "id": "FLAG-NM",
+    "outside": 0,
+    "missing": 0,
+    "inside": 37910
+  },
+  {
+    "id": "FLAG-NV",
+    "outside": 0,
+    "missing": 0,
+    "inside": 18724
+  },
+  {
+    "id": "FLAG-NY",
+    "outside": 0,
+    "missing": 0,
+    "inside": 13675
+  },
+  {
+    "id": "FLAG-OH",
+    "outside": 0,
+    "missing": 0,
+    "inside": 29095
+  },
+  {
+    "id": "FLAG-OK",
+    "outside": 0,
+    "missing": 0,
+    "inside": 15074
+  },
+  {
+    "id": "FLAG-OR",
+    "outside": 0,
+    "missing": 0,
+    "inside": 24272
+  },
+  {
+    "id": "FLAG-PA",
+    "outside": 0,
+    "missing": 0,
+    "inside": 21773
+  },
+  {
+    "id": "FLAG-RI",
+    "outside": 0,
+    "missing": 0,
+    "inside": 14271
+  },
+  {
+    "id": "FLAG-SC",
+    "outside": 0,
+    "missing": 0,
+    "inside": 19489
+  },
+  {
+    "id": "FLAG-SD",
+    "outside": 0,
+    "missing": 0,
+    "inside": 25488
+  },
+  {
+    "id": "FLAG-TN",
+    "outside": 0,
+    "missing": 0,
+    "inside": 9217
+  },
+  {
+    "id": "FLAG-UT",
+    "outside": 0,
+    "missing": 0,
+    "inside": 27934
+  },
+  {
+    "id": "FLAG-VA",
+    "outside": 0,
+    "missing": 0,
+    "inside": 10331
+  },
+  {
+    "id": "FLAG-VT",
+    "outside": 0,
+    "missing": 0,
+    "inside": 15439
+  },
+  {
+    "id": "FLAG-WA",
+    "outside": 0,
+    "missing": 0,
+    "inside": 24123
+  },
+  {
+    "id": "FLAG-WI",
+    "outside": 0,
+    "missing": 0,
+    "inside": 27471
+  },
+  {
+    "id": "FLAG-WV",
+    "outside": 0,
+    "missing": 0,
+    "inside": 19209
+  },
+  {
+    "id": "FLAG-WY",
+    "outside": 0,
+    "missing": 0,
+    "inside": 32696
+  }
+]

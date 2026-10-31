@@ -21135,5 +21135,1207 @@
     "ops": {
       "viewBox": "41.943 -0.041 428.114 507.986"
     }
+  },
+  {
+    "teamId": "FLAG-AK",
+    "id": "flag-map",
+    "label": "Flag-filled state outline",
+    "sourceUrl": "https://github.com/andysolomon/logo-remix-challenge/blob/main/scripts/state_flag_artwork.py",
+    "generator": "state_flag_artwork",
+    "flagViewBox": "0.606857 0.593035 1414.786286 998.81393",
+    "inputs": [
+      {
+        "path": "/logos/svg/flags/ak.svg",
+        "sha256": "dfd102ab8e778ca4abcf7e5e9bb296e4ca47398ae8a8fce3c3a046987198572c",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Alaska.svg",
+        "sourceSha256": "6acace46543ad78958a2d35832d5a4d507b810e9e3cf4d906d21cdee966158ca"
+      },
+      {
+        "path": "/logos/svg/flags/alternates/ak-silhouette.svg",
+        "sha256": "835671990fea214b0cd14b8305cab05e6ae3d8435695fd828c36b998e0e73061",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Blank_US_Map_(states_only).svg",
+        "sourceSha256": "2279580797b53481b29fc168145129db926c21f91d4bc6d82c04e9801bdf932f"
+      }
+    ],
+    "sourceSha256": "7169db2af322d8d47bce4cd89f998f1a881970fab5eaaadd086b19a7d24b41d7",
+    "flagFit": "xMidYMid meet",
+    "backgroundFill": "#0F204B",
+    "flagFrame": [
+      0.4,
+      0,
+      0.6,
+      0.82
+    ]
+  },
+  {
+    "teamId": "FLAG-AL",
+    "id": "flag-map",
+    "label": "Flag-filled state outline",
+    "sourceUrl": "https://github.com/andysolomon/logo-remix-challenge/blob/main/scripts/state_flag_artwork.py",
+    "generator": "state_flag_artwork",
+    "flagViewBox": "-11.777143 -11.777077 623.554286 423.554154",
+    "inputs": [
+      {
+        "path": "/logos/svg/flags/al.svg",
+        "sha256": "a4ed659d75f3accaf6b35bf6f965f0404db162bbb3d2b1e138ee5f50863b0843",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Alabama.svg",
+        "sourceSha256": "55bd2b313407cf609ddb36c33d51c8f9b6f5f3978ecf2a42560e65ff7422cfe0"
+      },
+      {
+        "path": "/logos/svg/flags/alternates/al-silhouette.svg",
+        "sha256": "08b0c2f1c7bc5f7f03808b6ef877bc625b656ed3491ed2bf76d9ff4bcb95237f",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Blank_US_Map_(states_only).svg",
+        "sourceSha256": "2279580797b53481b29fc168145129db926c21f91d4bc6d82c04e9801bdf932f"
+      }
+    ],
+    "sourceSha256": "f244957940adba749d86640167d7b260af594c968bdb42041090053fdbd58c0f"
+  },
+  {
+    "teamId": "FLAG-AR",
+    "id": "flag-map",
+    "label": "Flag-filled state outline",
+    "sourceUrl": "https://github.com/andysolomon/logo-remix-challenge/blob/main/scripts/state_flag_artwork.py",
+    "generator": "state_flag_artwork",
+    "flagViewBox": "0.160714 0.160772 449.678571 299.678457",
+    "inputs": [
+      {
+        "path": "/logos/svg/flags/ar.svg",
+        "sha256": "2bc92b745a30697a0979d54ab0fc23f584f78f5304f099c2d2e878d7bac185a0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Arkansas.svg",
+        "sourceSha256": "7f7cf94618d00670ec3739e9295123f518d0f8fa65b0b8c9629666a1c7c4b6c8"
+      },
+      {
+        "path": "/logos/svg/flags/alternates/ar-silhouette.svg",
+        "sha256": "fb7fcae1dd802ce31d5eb453794969d71503a30878c04859245e32ac6ba4bdae",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Blank_US_Map_(states_only).svg",
+        "sourceSha256": "2279580797b53481b29fc168145129db926c21f91d4bc6d82c04e9801bdf932f"
+      }
+    ],
+    "sourceSha256": "84a0512ac2bb0d7c9c614f9afe756b2eae0119554537f480eb57da4e34cfc262"
+  },
+  {
+    "teamId": "FLAG-AZ",
+    "id": "flag-map",
+    "label": "Flag-filled state outline",
+    "sourceUrl": "https://github.com/andysolomon/logo-remix-challenge/blob/main/scripts/state_flag_artwork.py",
+    "generator": "state_flag_artwork",
+    "flagViewBox": "-287.753143 -191.749653 575.506286 383.499306",
+    "inputs": [
+      {
+        "path": "/logos/svg/flags/az.svg",
+        "sha256": "acbd265c484d1040372af409c572b4715213b6a8061910ed1166d36564275e5b",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Arizona.svg",
+        "sourceSha256": "8c9e75cabd5bcc04557e60feee64f2b03e6e36658df2ae7258faeb2b6208ddf6"
+      },
+      {
+        "path": "/logos/svg/flags/alternates/az-silhouette.svg",
+        "sha256": "a9ad275f81f33212267b19b71192f3f8e1db9897b57193860addf8b884ad4181",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Blank_US_Map_(states_only).svg",
+        "sourceSha256": "2279580797b53481b29fc168145129db926c21f91d4bc6d82c04e9801bdf932f"
+      }
+    ],
+    "sourceSha256": "7d255b58f6c1a032366317f24348171bc0179691c7a77f15f1989e3844b536ff"
+  },
+  {
+    "teamId": "FLAG-CALI",
+    "id": "flag-map",
+    "label": "Flag-filled state outline",
+    "sourceUrl": "https://github.com/andysolomon/logo-remix-challenge/blob/main/scripts/state_flag_artwork.py",
+    "generator": "state_flag_artwork",
+    "flagViewBox": "0.385714 0.391167 899.228571 599.217666",
+    "inputs": [
+      {
+        "path": "/logos/svg/flags/cali.svg",
+        "sha256": "aa01e011295cbab296d8a97ff58eee96ed1ecd520d73f8f4d346df1c72e259c6",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_California.svg",
+        "sourceSha256": "f821e8533fe9fd1564b4972938c62dbce9ddeefe1a67a430b651eafb2571fe00"
+      },
+      {
+        "path": "/logos/svg/flags/alternates/cali-silhouette.svg",
+        "sha256": "221649b1c6d3ab171f895aff9b8d30617378caf048f977830109aa00d767e7c9",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Blank_US_Map_(states_only).svg",
+        "sourceSha256": "2279580797b53481b29fc168145129db926c21f91d4bc6d82c04e9801bdf932f"
+      }
+    ],
+    "sourceSha256": "5129e6e66d56097f48346b8b95915d2eda13775ed516f7224cf38bd9032a7b44"
+  },
+  {
+    "teamId": "FLAG-CO",
+    "id": "flag-map",
+    "label": "Flag-filled state outline",
+    "sourceUrl": "https://github.com/andysolomon/logo-remix-challenge/blob/main/scripts/state_flag_artwork.py",
+    "generator": "state_flag_artwork",
+    "flagViewBox": "0.771429 0.782334 1798.457143 1198.435331",
+    "inputs": [
+      {
+        "path": "/logos/svg/flags/co.svg",
+        "sha256": "759847ae220458e851d8ed42016d64ae098eb249399f8fe1f46b2bf7c59fa677",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Colorado.svg",
+        "sourceSha256": "a9599630c49bac85d9a3df622d956e1f6f49683df35e6db218c4b22de82bc2ff"
+      },
+      {
+        "path": "/logos/svg/flags/alternates/co-silhouette.svg",
+        "sha256": "8aae9da50ff69bb15d5dfd76629d16d4d54da91a3ce1435a9eb025073dd544ca",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Blank_US_Map_(states_only).svg",
+        "sourceSha256": "2279580797b53481b29fc168145129db926c21f91d4bc6d82c04e9801bdf932f"
+      }
+    ],
+    "sourceSha256": "aea48147f2df58bec2d7f07aaa337f53218ee9dd724229714a351af8332231b0"
+  },
+  {
+    "teamId": "FLAG-CT",
+    "id": "flag-map",
+    "label": "Flag-filled state outline",
+    "sourceUrl": "https://github.com/andysolomon/logo-remix-challenge/blob/main/scripts/state_flag_artwork.py",
+    "generator": "state_flag_artwork",
+    "flagViewBox": "0.03767 0.03839 87.237661 68.715221",
+    "inputs": [
+      {
+        "path": "/logos/svg/flags/ct.svg",
+        "sha256": "3de5aa8693e3a1b0ebacbc09700f92b0a5aba8bf61afefdd2397f4fdf10e215c",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Connecticut.svg",
+        "sourceSha256": "40069f3fbbfc7a426a29515a553d4c7ac0a8aa8514b4d90b32c20037709b1f61"
+      },
+      {
+        "path": "/logos/svg/flags/alternates/ct-silhouette.svg",
+        "sha256": "8bf10379a682f7f40826ec6a5bb1cfa9d086d4ad46913bd4226262017e0d79b4",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Blank_US_Map_(states_only).svg",
+        "sourceSha256": "2279580797b53481b29fc168145129db926c21f91d4bc6d82c04e9801bdf932f"
+      }
+    ],
+    "sourceSha256": "33fbc19cabfe575d05f6d04095ddcbf0c6a4f7e36de6dc6328bd02ea9b4faf7f",
+    "flagFit": "xMidYMid meet",
+    "backgroundFill": "#0C2D83"
+  },
+  {
+    "teamId": "FLAG-DE",
+    "id": "flag-map",
+    "label": "Flag-filled state outline",
+    "sourceUrl": "https://github.com/andysolomon/logo-remix-challenge/blob/main/scripts/state_flag_artwork.py",
+    "generator": "state_flag_artwork",
+    "flagViewBox": "0.214286 0.214362 599.571429 399.571275",
+    "inputs": [
+      {
+        "path": "/logos/svg/flags/de.svg",
+        "sha256": "53278d3bb9fbdb5276608e4d5f19827d2587a153c3576630e261263762e18c7e",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Delaware.svg",
+        "sourceSha256": "ade4277b685ad5244e1c8acea04a1083049daf7d9e0a3a6badaa9d6c7cf9a2e6"
+      },
+      {
+        "path": "/logos/svg/flags/alternates/de-silhouette.svg",
+        "sha256": "d333b199ae39bd7c27ce2cdb3fc34cb361b4055e656d23885a6b280dcfc6484f",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Blank_US_Map_(states_only).svg",
+        "sourceSha256": "2279580797b53481b29fc168145129db926c21f91d4bc6d82c04e9801bdf932f"
+      }
+    ],
+    "sourceSha256": "ff4d08ebc376797bce1e000d7f7ecf7f93c40872e6718db0208dd5b07d37ecf2",
+    "flagFit": "xMidYMid meet",
+    "backgroundFill": "#669CA4"
+  },
+  {
+    "teamId": "FLAG-FL",
+    "id": "flag-map",
+    "label": "Flag-filled state outline",
+    "sourceUrl": "https://github.com/andysolomon/logo-remix-challenge/blob/main/scripts/state_flag_artwork.py",
+    "generator": "state_flag_artwork",
+    "flagViewBox": "1.607143 1.607717 4496.785714 2996.784566",
+    "inputs": [
+      {
+        "path": "/logos/svg/flags/fl.svg",
+        "sha256": "a17348afe7cf8da1725e52581060280d45039b788f8aa0f4f55b176153e506f5",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Florida.svg",
+        "sourceSha256": "d65149fb65037209473bd906023914a8e26a141b4634b52d881342c389d8f8ed"
+      },
+      {
+        "path": "/logos/svg/flags/alternates/fl-silhouette.svg",
+        "sha256": "ab9771c69f325779eb16a1d26d05cf210da3e0c2ba40a51a2f8988ce1d457dab",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Blank_US_Map_(states_only).svg",
+        "sourceSha256": "2279580797b53481b29fc168145129db926c21f91d4bc6d82c04e9801bdf932f"
+      }
+    ],
+    "sourceSha256": "4a873963abd9fedf567f72b92dfbb34ffebe8ce577247ee5c72886c472b2d90c"
+  },
+  {
+    "teamId": "FLAG-GA",
+    "id": "flag-map",
+    "label": "Flag-filled state outline",
+    "sourceUrl": "https://github.com/andysolomon/logo-remix-challenge/blob/main/scripts/state_flag_artwork.py",
+    "generator": "state_flag_artwork",
+    "flagViewBox": "2.962286 2.992626 6906.075429 4314.014749",
+    "inputs": [
+      {
+        "path": "/logos/svg/flags/ga.svg",
+        "sha256": "0064b9eb40e8b514cab056027cfa0c9203d9c4e0f5714a5621dbf203714a661d",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Georgia_(U.S._state).svg",
+        "sourceSha256": "91b6e797d19ed88ebf883e224359f917ca1c9f04ce2e2c766be28c150d228cec"
+      },
+      {
+        "path": "/logos/svg/flags/alternates/ga-silhouette.svg",
+        "sha256": "c4957da50ae4c4788e4ab3b530a1d01bd28bd2a10198b7a1b9136f8060a56dd2",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Blank_US_Map_(states_only).svg",
+        "sourceSha256": "2279580797b53481b29fc168145129db926c21f91d4bc6d82c04e9801bdf932f"
+      }
+    ],
+    "sourceSha256": "154c2dc345e575e2d58fb57b762745fb859e37b93e023b643c63a307945018f5",
+    "flagFit": "xMinYMid slice"
+  },
+  {
+    "teamId": "FLAG-HI",
+    "id": "flag-map",
+    "label": "Flag-filled state outline",
+    "sourceUrl": "https://github.com/andysolomon/logo-remix-challenge/blob/main/scripts/state_flag_artwork.py",
+    "generator": "state_flag_artwork",
+    "flagViewBox": "0.020571 0.020468 47.958857 23.959065",
+    "inputs": [
+      {
+        "path": "/logos/svg/flags/hi.svg",
+        "sha256": "f56d6b05926b3f131347587453e6c1fb594914a692d5dbb1fbef4e2d34be8cfc",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Hawaii.svg",
+        "sourceSha256": "d13c98a92833e8b72d46d171b76c46a94844890daec822771c8177ad6424f31a"
+      },
+      {
+        "path": "/logos/svg/flags/alternates/hi-silhouette.svg",
+        "sha256": "4e915b30c4847a0132ccb7801f972b26ca55e832e59158596b41a44cbee714de",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Blank_US_Map_(states_only).svg",
+        "sourceSha256": "2279580797b53481b29fc168145129db926c21f91d4bc6d82c04e9801bdf932f"
+      }
+    ],
+    "sourceSha256": "89357f38537e611943815fad7dfcc53de888ab257e87ebc38f1faae377acaad2"
+  },
+  {
+    "teamId": "FLAG-IA",
+    "id": "flag-map",
+    "label": "Flag-filled state outline",
+    "sourceUrl": "https://github.com/andysolomon/logo-remix-challenge/blob/main/scripts/state_flag_artwork.py",
+    "generator": "state_flag_artwork",
+    "flagViewBox": "0.067469 0.06749 188.778062 126.07102",
+    "inputs": [
+      {
+        "path": "/logos/svg/flags/ia.svg",
+        "sha256": "36b2c1224421d958a1de2f4bc688ba03d3b088bd42af13090e572ceeb1d4efb4",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Iowa.svg",
+        "sourceSha256": "b4279ca9c34f91244997fe61e0d4eccf97042683a3db91675046a56765e94c93"
+      },
+      {
+        "path": "/logos/svg/flags/alternates/ia-silhouette.svg",
+        "sha256": "e0609f6c0a1b11eb8a7d261cf5a36688a28993f509a0d121ec511d0853b92e13",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Blank_US_Map_(states_only).svg",
+        "sourceSha256": "2279580797b53481b29fc168145129db926c21f91d4bc6d82c04e9801bdf932f"
+      }
+    ],
+    "sourceSha256": "9dd21e14b0cf8ea054826b4f39655bd8063d51da6a1c3b1b4fcdf548c32489a4"
+  },
+  {
+    "teamId": "FLAG-ID",
+    "id": "flag-map",
+    "label": "Flag-filled state outline",
+    "sourceUrl": "https://github.com/andysolomon/logo-remix-challenge/blob/main/scripts/state_flag_artwork.py",
+    "generator": "state_flag_artwork",
+    "flagViewBox": "1.131429 1.13146 3165.737143 2493.737081",
+    "inputs": [
+      {
+        "path": "/logos/svg/flags/id.svg",
+        "sha256": "6c7d72b4ca107d688a76accac440141c522b62f49ab3fe23fef89ac26b58ba81",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Idaho.svg",
+        "sourceSha256": "3e0aef3e6ef05619680fba94b436b2721cfb530a794969c83bed3a5124d4af0e"
+      },
+      {
+        "path": "/logos/svg/flags/alternates/id-silhouette.svg",
+        "sha256": "7dc86223b9f1cc0b36c9821ed2a7e47f416638402b5a1bba9347a40c90006a0d",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Blank_US_Map_(states_only).svg",
+        "sourceSha256": "2279580797b53481b29fc168145129db926c21f91d4bc6d82c04e9801bdf932f"
+      }
+    ],
+    "sourceSha256": "8c5d5d1fd1a96c8851ac655c3fe1cd3029426a735d82b662b461e8dee22244aa",
+    "flagFit": "xMidYMid meet",
+    "backgroundFill": "#003776"
+  },
+  {
+    "teamId": "FLAG-IL",
+    "id": "flag-map",
+    "label": "Flag-filled state outline",
+    "sourceUrl": "https://github.com/andysolomon/logo-remix-challenge/blob/main/scripts/state_flag_artwork.py",
+    "generator": "state_flag_artwork",
+    "flagViewBox": "0.178571 0.178571 499.642857 299.642857",
+    "inputs": [
+      {
+        "path": "/logos/svg/flags/il.svg",
+        "sha256": "eccb917b66246f94a57524418eb21e87ff7e20fc5280eda490fccbae596b7793",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Illinois.svg",
+        "sourceSha256": "8e4c948669ee6b3cd21ae333fbc8b2446db6a35c27ab466bf19797c7cfe22b57"
+      },
+      {
+        "path": "/logos/svg/flags/alternates/il-silhouette.svg",
+        "sha256": "9c7e816f67ee42f90037abe8312dad1ebdfdf794d812c4fe346afead4b9aa166",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Blank_US_Map_(states_only).svg",
+        "sourceSha256": "2279580797b53481b29fc168145129db926c21f91d4bc6d82c04e9801bdf932f"
+      }
+    ],
+    "sourceSha256": "4959bb52dc7219f2905dacd2d9016053cad20a23dc8953e148bba78f8e598534",
+    "flagFit": "xMidYMid meet",
+    "backgroundFill": "#FFFFFF"
+  },
+  {
+    "teamId": "FLAG-IN",
+    "id": "flag-map",
+    "label": "Flag-filled state outline",
+    "sourceUrl": "https://github.com/andysolomon/logo-remix-challenge/blob/main/scripts/state_flag_artwork.py",
+    "generator": "state_flag_artwork",
+    "flagViewBox": "0.267857 0.267953 749.464286 499.464094",
+    "inputs": [
+      {
+        "path": "/logos/svg/flags/in.svg",
+        "sha256": "38ca06f53d26ea30d8710b4f0143fd6f6ca2c24132b1ed7045755055049623ac",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Indiana.svg",
+        "sourceSha256": "c895f8aa2dd7191ab011ad5142507380f47b350fa7ccef24ac602af65aa827e5"
+      },
+      {
+        "path": "/logos/svg/flags/alternates/in-silhouette.svg",
+        "sha256": "fa00b9ef5091babb9a9648f297806934c4245f35bebffad0c2a2c0dc79b8ba69",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Blank_US_Map_(states_only).svg",
+        "sourceSha256": "2279580797b53481b29fc168145129db926c21f91d4bc6d82c04e9801bdf932f"
+      }
+    ],
+    "sourceSha256": "96c07e05fe11ce947f0f50a3d1256fc7e3d5c67a89c9d41f50bc36de75095dbb",
+    "flagFit": "xMidYMid meet",
+    "backgroundFill": "#000F5D"
+  },
+  {
+    "teamId": "FLAG-KS",
+    "id": "flag-map",
+    "label": "Flag-filled state outline",
+    "sourceUrl": "https://github.com/andysolomon/logo-remix-challenge/blob/main/scripts/state_flag_artwork.py",
+    "generator": "state_flag_artwork",
+    "flagViewBox": "0.178571 0.178571 499.642857 299.642857",
+    "inputs": [
+      {
+        "path": "/logos/svg/flags/ks.svg",
+        "sha256": "8568668cc183de6834708d3398cfcf1a768fa077c75ae49340d65fc8bfbc346b",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Kansas.svg",
+        "sourceSha256": "c30393cd21abf57ea10a41cfd23db9a01cc189f3a2604bb002998002298ba7d3"
+      },
+      {
+        "path": "/logos/svg/flags/alternates/ks-silhouette.svg",
+        "sha256": "f38be142dc1ee10dabeac59bebbc797f9b00516c4312b532997f99053c0c57dc",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Blank_US_Map_(states_only).svg",
+        "sourceSha256": "2279580797b53481b29fc168145129db926c21f91d4bc6d82c04e9801bdf932f"
+      }
+    ],
+    "sourceSha256": "bcc4d92ec09f84fda574a6eaa26d77186f08d1ecd01bfbf45de9ebfdf151d51d",
+    "flagFit": "xMidYMid meet",
+    "backgroundFill": "#00205B"
+  },
+  {
+    "teamId": "FLAG-KY",
+    "id": "flag-map",
+    "label": "Flag-filled state outline",
+    "sourceUrl": "https://github.com/andysolomon/logo-remix-challenge/blob/main/scripts/state_flag_artwork.py",
+    "generator": "state_flag_artwork",
+    "flagViewBox": "0.339286 0.339213 949.321429 499.321574",
+    "inputs": [
+      {
+        "path": "/logos/svg/flags/ky.svg",
+        "sha256": "f667686d47f608ebafa438c199792f2c404288c74f8db484773030055e7d1603",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Kentucky.svg",
+        "sourceSha256": "2bc8c6e72979ec27be553a334cf60e922f4ad8e63e2e67b2bfdb2d4890f56375"
+      },
+      {
+        "path": "/logos/svg/flags/alternates/ky-silhouette.svg",
+        "sha256": "f00d5bba4b6d3accc99359c5cafde5e4fcb6261eedcec9bd1507cb55d0f7d2e9",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Blank_US_Map_(states_only).svg",
+        "sourceSha256": "2279580797b53481b29fc168145129db926c21f91d4bc6d82c04e9801bdf932f"
+      }
+    ],
+    "sourceSha256": "050009706ead54f250d13e50f2b22852518aa3b599c4ffcef9d74227e1efa434",
+    "flagFit": "xMidYMid meet",
+    "backgroundFill": "#000066"
+  },
+  {
+    "teamId": "FLAG-LA",
+    "id": "flag-map",
+    "label": "Flag-filled state outline",
+    "sourceUrl": "https://github.com/andysolomon/logo-remix-challenge/blob/main/scripts/state_flag_artwork.py",
+    "generator": "state_flag_artwork",
+    "flagViewBox": "2.514286 2.514084 7034.971429 4550.491832",
+    "inputs": [
+      {
+        "path": "/logos/svg/flags/la.svg",
+        "sha256": "f6194c36410a27f01830dbff446510b8afa198d1ff0e8cb2370cc2a5270f9969",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Louisiana.svg",
+        "sourceSha256": "2fa75a70da2185f8783207aa8f056dbe1d0483d6db09d8ff5aa95df50d0d2d3b"
+      },
+      {
+        "path": "/logos/svg/flags/alternates/la-silhouette.svg",
+        "sha256": "2bd3faf5fa11573a63e5cc9cafedeb4abd9f4f09d95a784025f2bc6a261cea78",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Blank_US_Map_(states_only).svg",
+        "sourceSha256": "2279580797b53481b29fc168145129db926c21f91d4bc6d82c04e9801bdf932f"
+      }
+    ],
+    "sourceSha256": "6d18291db955a327ef28966f21a7991485d2f2d15a6896c4111f31ebac5529a8",
+    "flagFit": "xMidYMid meet",
+    "backgroundFill": "#01447B"
+  },
+  {
+    "teamId": "FLAG-MA",
+    "id": "flag-map",
+    "label": "Flag-filled state outline",
+    "sourceUrl": "https://github.com/andysolomon/logo-remix-challenge/blob/main/scripts/state_flag_artwork.py",
+    "generator": "state_flag_artwork",
+    "flagViewBox": "0.642857 0.62645 1498.714286 898.7471",
+    "inputs": [
+      {
+        "path": "/logos/svg/flags/ma.svg",
+        "sha256": "d330e8a8eb695c99cb950e502aac80226088cfa4dcf8429ae381f4f94ce6f2a2",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Massachusetts.svg",
+        "sourceSha256": "ef3cd029e716d36f2888e43b2607096dc57e580efc83c3c7567461b022740d09"
+      },
+      {
+        "path": "/logos/svg/flags/alternates/ma-silhouette.svg",
+        "sha256": "fb1cabaca9679e51914e84b95ec9eafe4c130de5c992acd207a5eab78e31c9bb",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Blank_US_Map_(states_only).svg",
+        "sourceSha256": "2279580797b53481b29fc168145129db926c21f91d4bc6d82c04e9801bdf932f"
+      }
+    ],
+    "sourceSha256": "81feff22225a76268881705cffd878a297387df168f89f35d3c97002e57eee46",
+    "flagFit": "xMidYMid meet",
+    "backgroundFill": "#FFFFFF"
+  },
+  {
+    "teamId": "FLAG-MD",
+    "id": "flag-map",
+    "label": "Flag-filled state outline",
+    "sourceUrl": "https://github.com/andysolomon/logo-remix-challenge/blob/main/scripts/state_flag_artwork.py",
+    "generator": "state_flag_artwork",
+    "flagViewBox": "0.015429 0.015647 35.969143 23.968707",
+    "inputs": [
+      {
+        "path": "/logos/svg/flags/md.svg",
+        "sha256": "3b168c6bad3de1b636f2f3b048d549d04fcb11931bfd7dbd2a1e9cf72554fba9",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Maryland.svg",
+        "sourceSha256": "873396c04c1c42e4a438226fdb3974d4835aa411cc1b7685b6dc8052d8d25cae"
+      },
+      {
+        "path": "/logos/svg/flags/alternates/md-silhouette.svg",
+        "sha256": "354cad03a119f6067204ea43a30b4dc7f33dfdae7f3a7642b53302c7a416577f",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Blank_US_Map_(states_only).svg",
+        "sourceSha256": "2279580797b53481b29fc168145129db926c21f91d4bc6d82c04e9801bdf932f"
+      }
+    ],
+    "sourceSha256": "66b544fb94567478e14b41c888f61b808b5c0f603f148c05af2f17819658564a"
+  },
+  {
+    "teamId": "FLAG-ME",
+    "id": "flag-map",
+    "label": "Flag-filled state outline",
+    "sourceUrl": "https://github.com/andysolomon/logo-remix-challenge/blob/main/scripts/state_flag_artwork.py",
+    "generator": "state_flag_artwork",
+    "flagViewBox": "2.262857 2.262919 6331.474286 4987.474161",
+    "inputs": [
+      {
+        "path": "/logos/svg/flags/me.svg",
+        "sha256": "1f8b8a7f95b28f7494adfb73d43444fff6dd468ace0ae9b9c1ccba90cad3327b",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Maine.svg",
+        "sourceSha256": "3ce83fee77f0250718c642457dc4d512fbc87d53a10b27bdcb9f7f440e0e242d"
+      },
+      {
+        "path": "/logos/svg/flags/alternates/me-silhouette.svg",
+        "sha256": "e6de8f75c7d9484aa50605c68c8daa8e1dbf16b4e65dec7d4d3aa1e3dd1a53f1",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Blank_US_Map_(states_only).svg",
+        "sourceSha256": "2279580797b53481b29fc168145129db926c21f91d4bc6d82c04e9801bdf932f"
+      }
+    ],
+    "sourceSha256": "ac8a00f43f3edd2458b623692552750f12864f205013534f3724ab6ca74de848",
+    "flagFit": "xMidYMid meet",
+    "backgroundFill": "#002664"
+  },
+  {
+    "teamId": "FLAG-MI",
+    "id": "flag-map",
+    "label": "Flag-filled state outline",
+    "sourceUrl": "https://github.com/andysolomon/logo-remix-challenge/blob/main/scripts/state_flag_artwork.py",
+    "generator": "state_flag_artwork",
+    "flagViewBox": "0.293571 0.292647 684.412857 456.414706",
+    "inputs": [
+      {
+        "path": "/logos/svg/flags/mi.svg",
+        "sha256": "1eda304c4ba6c7b3a8656e2d625e8b01332d9a7e4700e4375f18f7f0ccd6bbce",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Michigan.svg",
+        "sourceSha256": "080189ccf6b0d3c7830a9ca52468374ba5d034f9e96f2c8bd7c2dcb45d729275"
+      },
+      {
+        "path": "/logos/svg/flags/alternates/mi-silhouette.svg",
+        "sha256": "bdba47bbd8722d57e66dc82ae4f969a9352b4f92039a7c8f539b17ddba6b0097",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Blank_US_Map_(states_only).svg",
+        "sourceSha256": "2279580797b53481b29fc168145129db926c21f91d4bc6d82c04e9801bdf932f"
+      }
+    ],
+    "sourceSha256": "00744e0ed892832dc1f75a87690a6ecfba6d20b737e13d25608d7e2809a56403",
+    "flagFit": "xMidYMid meet",
+    "backgroundFill": "#00287E",
+    "flagFrame": [
+      0.4,
+      0.33,
+      0.6,
+      0.67
+    ]
+  },
+  {
+    "teamId": "FLAG-MN",
+    "id": "flag-map",
+    "label": "Flag-filled state outline",
+    "sourceUrl": "https://github.com/andysolomon/logo-remix-challenge/blob/main/scripts/state_flag_artwork.py",
+    "generator": "state_flag_artwork",
+    "flagViewBox": "0.428571 0.417633 999.142857 599.164733",
+    "inputs": [
+      {
+        "path": "/logos/svg/flags/mn.svg",
+        "sha256": "515f73e96343e170db3a9099200f4cd52d166319036be4f494aa73a008deb86e",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Minnesota.svg",
+        "sourceSha256": "18456d126e2548d772039e4e5d8718ee68966ebe1d646e6b083ea301dd2d7f49"
+      },
+      {
+        "path": "/logos/svg/flags/alternates/mn-silhouette.svg",
+        "sha256": "a2e84fdd681cf929198ad38081469fe03667d0b81ce4c01e6cce4911e8c62b22",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Blank_US_Map_(states_only).svg",
+        "sourceSha256": "2279580797b53481b29fc168145129db926c21f91d4bc6d82c04e9801bdf932f"
+      }
+    ],
+    "sourceSha256": "bc3a1a5bc2397ca43a534175d7991c8ba3be13f0d9069a37610f6d2d5dcab86c",
+    "flagFit": "xMinYMid slice"
+  },
+  {
+    "teamId": "FLAG-MO",
+    "id": "flag-map",
+    "label": "Flag-filled state outline",
+    "sourceUrl": "https://github.com/andysolomon/logo-remix-challenge/blob/main/scripts/state_flag_artwork.py",
+    "generator": "state_flag_artwork",
+    "flagViewBox": "0.857143 0.856793 2398.285714 1398.286414",
+    "inputs": [
+      {
+        "path": "/logos/svg/flags/mo.svg",
+        "sha256": "5b0114c68b456ac77de5ce2522772b9bb1681b26e33874e4a31b2f42a7a4ca76",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Missouri.svg",
+        "sourceSha256": "23ebb00edc8c78e47b7ba4f266889c6740e6364f9f0ccd23eeee03cb71d18e4e"
+      },
+      {
+        "path": "/logos/svg/flags/alternates/mo-silhouette.svg",
+        "sha256": "2d93889ac3879a1370cfde7dbd7198d43365a92920688d42672fae109d7cdbdd",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Blank_US_Map_(states_only).svg",
+        "sourceSha256": "2279580797b53481b29fc168145129db926c21f91d4bc6d82c04e9801bdf932f"
+      }
+    ],
+    "sourceSha256": "c7656098b7509720b065b9a8e167aafbddc9da9921245bc33787bdd6d23a140f"
+  },
+  {
+    "teamId": "FLAG-MS",
+    "id": "flag-map",
+    "label": "Flag-filled state outline",
+    "sourceUrl": "https://github.com/andysolomon/logo-remix-challenge/blob/main/scripts/state_flag_artwork.py",
+    "generator": "state_flag_artwork",
+    "flagViewBox": "15.428571 15.034803 35969.142857 21569.930394",
+    "inputs": [
+      {
+        "path": "/logos/svg/flags/ms.svg",
+        "sha256": "fc4b97785662a5dda753a835a35e5b6d7e419a07b69b9ad32720e66e5b9d331e",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Mississippi.svg",
+        "sourceSha256": "33335082191d551bd4bdddd965c7f060f602683d3278ef1425b1132d6e9d5fc1"
+      },
+      {
+        "path": "/logos/svg/flags/alternates/ms-silhouette.svg",
+        "sha256": "e8abd1665d719974c692440c51260ff279825d344e1ab07cf708b4b3781109d4",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Blank_US_Map_(states_only).svg",
+        "sourceSha256": "2279580797b53481b29fc168145129db926c21f91d4bc6d82c04e9801bdf932f"
+      }
+    ],
+    "sourceSha256": "f515f7cf34470554d9751c7fc557114e59f4214470d1faa179aed05b08c03b13"
+  },
+  {
+    "teamId": "FLAG-MT",
+    "id": "flag-map",
+    "label": "Flag-filled state outline",
+    "sourceUrl": "https://github.com/andysolomon/logo-remix-challenge/blob/main/scripts/state_flag_artwork.py",
+    "generator": "state_flag_artwork",
+    "flagViewBox": "0.274286 0.274384 767.451429 511.451233",
+    "inputs": [
+      {
+        "path": "/logos/svg/flags/mt.svg",
+        "sha256": "5f80fbd43bd3382f619064bcafe49f4bf0973a402c6509014edcb6ade81bff4a",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Montana.svg",
+        "sourceSha256": "083c5836f280f280cca30a1ec690274b18f1c4272637fde582a3f1966cae5a73"
+      },
+      {
+        "path": "/logos/svg/flags/alternates/mt-silhouette.svg",
+        "sha256": "c18c2a853bdb0455016675b777b8726f60ff4de22b3ca53a637e9bce83a0e017",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Blank_US_Map_(states_only).svg",
+        "sourceSha256": "2279580797b53481b29fc168145129db926c21f91d4bc6d82c04e9801bdf932f"
+      }
+    ],
+    "sourceSha256": "ac07e29b197c2dd00a2968b28c032bc9be753808a33ac3d146b0e61c4fffb00c",
+    "flagFit": "xMidYMid meet",
+    "backgroundFill": "#002A86"
+  },
+  {
+    "teamId": "FLAG-NC",
+    "id": "flag-map",
+    "label": "Flag-filled state outline",
+    "sourceUrl": "https://github.com/andysolomon/logo-remix-challenge/blob/main/scripts/state_flag_artwork.py",
+    "generator": "state_flag_artwork",
+    "flagViewBox": "0.267857 0.267953 749.464286 499.464094",
+    "inputs": [
+      {
+        "path": "/logos/svg/flags/nc.svg",
+        "sha256": "ad73bef49af8dee98f28b8b83b35c2d5d371a0b2f52c1fe637e5d82e7ea5998f",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_North_Carolina.svg",
+        "sourceSha256": "afd227bbc9e9151b4cd936c4cce95fc6107eaeb2d3fb8475ac9fcdb486c52d37"
+      },
+      {
+        "path": "/logos/svg/flags/alternates/nc-silhouette.svg",
+        "sha256": "d54da8c1fb342eca7a98a096f4dbf9e498c62485e5190cb943056548986199e1",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Blank_US_Map_(states_only).svg",
+        "sourceSha256": "2279580797b53481b29fc168145129db926c21f91d4bc6d82c04e9801bdf932f"
+      }
+    ],
+    "sourceSha256": "957ef6c25d9795eefcdf92faf7ed67e45af6213fc5b5e784b6bc769bb3ec834b"
+  },
+  {
+    "teamId": "FLAG-ND",
+    "id": "flag-map",
+    "label": "Flag-filled state outline",
+    "sourceUrl": "https://github.com/andysolomon/logo-remix-challenge/blob/main/scripts/state_flag_artwork.py",
+    "generator": "state_flag_artwork",
+    "flagViewBox": "0.445372 0.445394 1246.152255 981.649211",
+    "inputs": [
+      {
+        "path": "/logos/svg/flags/nd.svg",
+        "sha256": "df5e1af1e74d93a4bd6be30059c33243a58d1c11f7df6d5f0995c1523cba15f5",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_North_Dakota.svg",
+        "sourceSha256": "fd022c8de9a46fa068f269733cde295a0099040064b5f06266bf14b511118a62"
+      },
+      {
+        "path": "/logos/svg/flags/alternates/nd-silhouette.svg",
+        "sha256": "bbb0890768fa9112e83ea4e281bf6a1c3787d67de4746a7dad06592b12e0127d",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Blank_US_Map_(states_only).svg",
+        "sourceSha256": "2279580797b53481b29fc168145129db926c21f91d4bc6d82c04e9801bdf932f"
+      }
+    ],
+    "sourceSha256": "b7339ef4be441ae53924b4f16b7e6405406d900408690255125a0fcf95a72dda",
+    "flagFit": "xMidYMid meet",
+    "backgroundFill": "#003A70"
+  },
+  {
+    "teamId": "FLAG-NE",
+    "id": "flag-map",
+    "label": "Flag-filled state outline",
+    "sourceUrl": "https://github.com/andysolomon/logo-remix-challenge/blob/main/scripts/state_flag_artwork.py",
+    "generator": "state_flag_artwork",
+    "flagViewBox": "0.267857 0.267857 749.464286 449.464286",
+    "inputs": [
+      {
+        "path": "/logos/svg/flags/ne.svg",
+        "sha256": "450f6b15dd000459b848ce3ed69a075e9665f6777f655b79535c7ba9930252ac",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Nebraska.svg",
+        "sourceSha256": "1a1249eb4b76ebd5d10a694f3ce5688debaa44c0d9120276edbb0693d0fbc061"
+      },
+      {
+        "path": "/logos/svg/flags/alternates/ne-silhouette.svg",
+        "sha256": "9fd51c927048fb1def66dba229fbda53bf94b0256d9f46a6a1ac82389fba1de4",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Blank_US_Map_(states_only).svg",
+        "sourceSha256": "2279580797b53481b29fc168145129db926c21f91d4bc6d82c04e9801bdf932f"
+      }
+    ],
+    "sourceSha256": "5abe9c3a5c0b82e11fce637df75d5f7a3c08491e643da35bedd4825f435ebe46",
+    "flagFit": "xMidYMid meet",
+    "backgroundFill": "#002A86"
+  },
+  {
+    "teamId": "FLAG-NH",
+    "id": "flag-map",
+    "label": "Flag-filled state outline",
+    "sourceUrl": "https://github.com/andysolomon/logo-remix-challenge/blob/main/scripts/state_flag_artwork.py",
+    "generator": "state_flag_artwork",
+    "flagViewBox": "0.235714 0.235798 659.528571 439.528403",
+    "inputs": [
+      {
+        "path": "/logos/svg/flags/nh.svg",
+        "sha256": "6ffd17d3d81ff0b7f0770eadcd1f0f9508350486bde1aa35f33e6a30630b957f",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_New_Hampshire.svg",
+        "sourceSha256": "73d4d113ba6eb11fe4e2e20ff399dc13afa018918c5e024660b0ec4b16f3da9c"
+      },
+      {
+        "path": "/logos/svg/flags/alternates/nh-silhouette.svg",
+        "sha256": "8218c4bec5065dc3635f2b9b844ebcb818dc3919702581e498cf97c6f9b91ad8",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Blank_US_Map_(states_only).svg",
+        "sourceSha256": "2279580797b53481b29fc168145129db926c21f91d4bc6d82c04e9801bdf932f"
+      }
+    ],
+    "sourceSha256": "d62e8607350a2d013e704b2a390928786d43ebb2aaa89caf5e0eb9c16ee57bee",
+    "flagFit": "xMidYMid meet",
+    "backgroundFill": "#002A86"
+  },
+  {
+    "teamId": "FLAG-NJ",
+    "id": "flag-map",
+    "label": "Flag-filled state outline",
+    "sourceUrl": "https://github.com/andysolomon/logo-remix-challenge/blob/main/scripts/state_flag_artwork.py",
+    "generator": "state_flag_artwork",
+    "flagViewBox": "0.357143 0.357143 999.285714 599.285714",
+    "inputs": [
+      {
+        "path": "/logos/svg/flags/nj.svg",
+        "sha256": "b620ca903935c271db0dc73c26019e6ce48049295753f81360968329863bdb40",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_New_Jersey.svg",
+        "sourceSha256": "8ae3675eecc8f893f760978c4dbc1fa5ead0337251d4b38f776a31a8efacc9f9"
+      },
+      {
+        "path": "/logos/svg/flags/alternates/nj-silhouette.svg",
+        "sha256": "ea50b95af98df9bc24f7a522ab989d5cd0f4a9196f997d3c6d069126d3087751",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Blank_US_Map_(states_only).svg",
+        "sourceSha256": "2279580797b53481b29fc168145129db926c21f91d4bc6d82c04e9801bdf932f"
+      }
+    ],
+    "sourceSha256": "c8ea5bebc4c2a24ea641744066e83e9d7c6c322aff79bfde9fbade02abac99be",
+    "flagFit": "xMidYMid meet",
+    "backgroundFill": "#E1B584"
+  },
+  {
+    "teamId": "FLAG-NM",
+    "id": "flag-map",
+    "label": "Flag-filled state outline",
+    "sourceUrl": "https://github.com/andysolomon/logo-remix-challenge/blob/main/scripts/state_flag_artwork.py",
+    "generator": "state_flag_artwork",
+    "flagViewBox": "0.771429 0.782334 1798.457143 1198.435331",
+    "inputs": [
+      {
+        "path": "/logos/svg/flags/nm.svg",
+        "sha256": "08ee4db66286c6cdccf1e070e90849b660e6fbbc4e833cc8475b00c88b4a0658",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_New_Mexico.svg",
+        "sourceSha256": "7ebc561ab772fcf092b86f412361af51a0f3ab5adfbea8cab1dba8d9fef922f4"
+      },
+      {
+        "path": "/logos/svg/flags/alternates/nm-silhouette.svg",
+        "sha256": "4823304b5e072c350b487278cd9edf46be961d3bbd56551a91faabb0381c7706",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Blank_US_Map_(states_only).svg",
+        "sourceSha256": "2279580797b53481b29fc168145129db926c21f91d4bc6d82c04e9801bdf932f"
+      }
+    ],
+    "sourceSha256": "1dc0961b0b5ab8fe045f87e3d558d73870beeffa13b726145ccc54a6f9b6a4b5"
+  },
+  {
+    "teamId": "FLAG-NV",
+    "id": "flag-map",
+    "label": "Flag-filled state outline",
+    "sourceUrl": "https://github.com/andysolomon/logo-remix-challenge/blob/main/scripts/state_flag_artwork.py",
+    "generator": "state_flag_artwork",
+    "flagViewBox": "0.214286 0.214362 599.571429 399.571275",
+    "inputs": [
+      {
+        "path": "/logos/svg/flags/nv.svg",
+        "sha256": "73e2fa12451026c48802da10364bd042b14c39ac2714cae3204ad81b62538d44",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Nevada.svg",
+        "sourceSha256": "c73704ed9aeb27be7235d59060fc22ddfdb8a98f9bdba01c3ccb96dcf625142b"
+      },
+      {
+        "path": "/logos/svg/flags/alternates/nv-silhouette.svg",
+        "sha256": "8b1dc75f09e69edb6e3dcda986d5651684af87de1c7afdc13487649a3a6091fd",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Blank_US_Map_(states_only).svg",
+        "sourceSha256": "2279580797b53481b29fc168145129db926c21f91d4bc6d82c04e9801bdf932f"
+      }
+    ],
+    "sourceSha256": "557d7971c550a4ce169abab6ea7a599f143f0fbe91c239d90d63c489693c41c4",
+    "flagFit": "xMinYMid slice",
+    "backgroundFill": "#0033AB"
+  },
+  {
+    "teamId": "FLAG-NY",
+    "id": "flag-map",
+    "label": "Flag-filled state outline",
+    "sourceUrl": "https://github.com/andysolomon/logo-remix-challenge/blob/main/scripts/state_flag_artwork.py",
+    "generator": "state_flag_artwork",
+    "flagViewBox": "0.321429 0.321429 899.357143 449.357143",
+    "inputs": [
+      {
+        "path": "/logos/svg/flags/ny.svg",
+        "sha256": "4a5620298c60ea5a35cfebb1685cc20deb4936212672d6d784a5f544611fcf62",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_New_York.svg",
+        "sourceSha256": "bbccc5b95bb319bb09fd3743fe7671c199b28f378cf2eba069bdd9646207bf21"
+      },
+      {
+        "path": "/logos/svg/flags/alternates/ny-silhouette.svg",
+        "sha256": "0c5dfc8b9777687e4c781358e030f2c8d7f4036cc2008cba27a83d3f0e5dffdd",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Blank_US_Map_(states_only).svg",
+        "sourceSha256": "2279580797b53481b29fc168145129db926c21f91d4bc6d82c04e9801bdf932f"
+      }
+    ],
+    "sourceSha256": "7170afcd101465599370273b7802481c8bc787b32072415435df54acdb353ae9",
+    "flagFit": "xMidYMid meet",
+    "backgroundFill": "#002D72"
+  },
+  {
+    "teamId": "FLAG-OH",
+    "id": "flag-map",
+    "label": "Flag-filled state outline",
+    "sourceUrl": "https://github.com/andysolomon/logo-remix-challenge/blob/main/scripts/state_flag_artwork.py",
+    "generator": "state_flag_artwork",
+    "flagViewBox": "0.011143 0.011293 25.977714 15.977415",
+    "inputs": [
+      {
+        "path": "/logos/svg/flags/oh.svg",
+        "sha256": "f824408c4dcccbe45627b1ba3a705635154956437d10d78edbc0197395282e61",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Ohio.svg",
+        "sourceSha256": "ce12c81c2bdfeb9896f8200cf662ce8d2605bf605a227efeb78aed1b8d8e8129"
+      },
+      {
+        "path": "/logos/svg/flags/alternates/oh-silhouette.svg",
+        "sha256": "03d93195c08968c8a1f7e8a88fff8692a72b2d83a297f598b926c4f7a62a3990",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Blank_US_Map_(states_only).svg",
+        "sourceSha256": "2279580797b53481b29fc168145129db926c21f91d4bc6d82c04e9801bdf932f"
+      }
+    ],
+    "sourceSha256": "80c3ad05c262d71b7eb2d03282742ea78b7e50e32dc667a0024f32a2cf407965",
+    "backgroundFill": "#FFFFFF"
+  },
+  {
+    "teamId": "FLAG-OK",
+    "id": "flag-map",
+    "label": "Flag-filled state outline",
+    "sourceUrl": "https://github.com/andysolomon/logo-remix-challenge/blob/main/scripts/state_flag_artwork.py",
+    "generator": "state_flag_artwork",
+    "flagViewBox": "0.241071 0.241158 674.517857 449.517685",
+    "inputs": [
+      {
+        "path": "/logos/svg/flags/ok.svg",
+        "sha256": "4f8694fbd33aeb6ae3499bfce54ce1b6d5ab72a4ed54e6156533e1c71a4d57a8",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Oklahoma.svg",
+        "sourceSha256": "8f03fd07880d7ae6315848c3a870d89900c5eebb26cf65931614605f89014d47"
+      },
+      {
+        "path": "/logos/svg/flags/alternates/ok-silhouette.svg",
+        "sha256": "e0d7308b5f065a8eb6daf231560dae87cea63ee3e5decc9c17a3c6c4053281a8",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Blank_US_Map_(states_only).svg",
+        "sourceSha256": "2279580797b53481b29fc168145129db926c21f91d4bc6d82c04e9801bdf932f"
+      }
+    ],
+    "sourceSha256": "6ab288b0e2620b4543f9469b3a2a4464d1c8886daee2c8b369be5e427dc4c65c",
+    "flagFit": "xMidYMid meet",
+    "backgroundFill": "#0073CF"
+  },
+  {
+    "teamId": "FLAG-OR",
+    "id": "flag-map",
+    "label": "Flag-filled state outline",
+    "sourceUrl": "https://github.com/andysolomon/logo-remix-challenge/blob/main/scripts/state_flag_artwork.py",
+    "generator": "state_flag_artwork",
+    "flagViewBox": "0.274286 0.274384 767.451429 511.451233",
+    "inputs": [
+      {
+        "path": "/logos/svg/flags/or.svg",
+        "sha256": "e4158f7d721ffa179b8edb0a7e2464f9b78cdd28ca115db03232c698f2aadfd1",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Oregon.svg",
+        "sourceSha256": "174ae1e9affbca59ee73c58c5998078e37cb74c1a83c2a9edbc39fcdf27271c9"
+      },
+      {
+        "path": "/logos/svg/flags/alternates/or-silhouette.svg",
+        "sha256": "d84fc67cc9b91d98f7116af36ca49affb6c86ea48ddff552f32615e1ab123ea3",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Blank_US_Map_(states_only).svg",
+        "sourceSha256": "2279580797b53481b29fc168145129db926c21f91d4bc6d82c04e9801bdf932f"
+      }
+    ],
+    "sourceSha256": "9a11126ff99e0b3f8e43d18050b0c32e7b053d5d2c0290158901e8654cc2152b",
+    "flagFit": "xMidYMid meet",
+    "backgroundFill": "#01017F"
+  },
+  {
+    "teamId": "FLAG-PA",
+    "id": "flag-map",
+    "label": "Flag-filled state outline",
+    "sourceUrl": "https://github.com/andysolomon/logo-remix-challenge/blob/main/scripts/state_flag_artwork.py",
+    "generator": "state_flag_artwork",
+    "flagViewBox": "0.264286 0.264188 739.471429 539.471624",
+    "inputs": [
+      {
+        "path": "/logos/svg/flags/pa.svg",
+        "sha256": "c8a3b504c55cb242f7db0e2ecdfa88440b568929aa88ec932333895da183af8e",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Pennsylvania.svg",
+        "sourceSha256": "c328ed5571c2008c692f3998da22cccb7fa2c7be2be3e23754e5d0635963c841"
+      },
+      {
+        "path": "/logos/svg/flags/alternates/pa-silhouette.svg",
+        "sha256": "2d66531861312728fa207161cfd85ae196c5b2d711d595c86cfd8afcadd8cdea",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Blank_US_Map_(states_only).svg",
+        "sourceSha256": "2279580797b53481b29fc168145129db926c21f91d4bc6d82c04e9801bdf932f"
+      }
+    ],
+    "sourceSha256": "c80b73d88c9af4ba654181b079eb329b49aba0671753ea477ae4c37742b5fd09",
+    "flagFit": "xMidYMid meet",
+    "backgroundFill": "#00205B"
+  },
+  {
+    "teamId": "FLAG-RI",
+    "id": "flag-map",
+    "label": "Flag-filled state outline",
+    "sourceUrl": "https://github.com/andysolomon/logo-remix-challenge/blob/main/scripts/state_flag_artwork.py",
+    "generator": "state_flag_artwork",
+    "flagViewBox": "0.282857 0.281002 659.434286 579.437995",
+    "inputs": [
+      {
+        "path": "/logos/svg/flags/ri.svg",
+        "sha256": "21716d94a2168b56a6d598d11b23347682a64c16e76d97b964dcd387fa61b76f",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Rhode_Island.svg",
+        "sourceSha256": "0f5117e94e3d6c28ca592ac204cfe5dbe8522cf0e39ce95730ded231075598c4"
+      },
+      {
+        "path": "/logos/svg/flags/alternates/ri-silhouette.svg",
+        "sha256": "804d31d28dd5df5f27864547858e5207674076ff0c582146d61b482109a51d3b",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Blank_US_Map_(states_only).svg",
+        "sourceSha256": "2279580797b53481b29fc168145129db926c21f91d4bc6d82c04e9801bdf932f"
+      }
+    ],
+    "sourceSha256": "e403c3b72414a4ebbe21e6103209e3028291d4e4ad1a7fd4aa36db5563ec8c58",
+    "flagFit": "xMidYMid meet",
+    "backgroundFill": "#FFFFFF"
+  },
+  {
+    "teamId": "FLAG-SC",
+    "id": "flag-map",
+    "label": "Flag-filled state outline",
+    "sourceUrl": "https://github.com/andysolomon/logo-remix-challenge/blob/main/scripts/state_flag_artwork.py",
+    "generator": "state_flag_artwork",
+    "flagViewBox": "0.321429 0.325973 749.914286 499.905363",
+    "inputs": [
+      {
+        "path": "/logos/svg/flags/sc.svg",
+        "sha256": "f7a829d2b63752acb9de1fdb8bb2dee4791772149bbb9abece10050cb16d92b8",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_South_Carolina.svg",
+        "sourceSha256": "3ef68bc3b7065ac9fade67c51b40cf61555c484f3cc1ee67e162c6d317ca6825"
+      },
+      {
+        "path": "/logos/svg/flags/alternates/sc-silhouette.svg",
+        "sha256": "7f09be2726477a83db1ce1c002611645d2676b80bdda60b1ffb4067627814df2",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Blank_US_Map_(states_only).svg",
+        "sourceSha256": "2279580797b53481b29fc168145129db926c21f91d4bc6d82c04e9801bdf932f"
+      }
+    ],
+    "sourceSha256": "be370c69734bffc7372e69424c4087d9e4154951fa5f0d88f82e0c56acc0adda",
+    "flagFit": "xMidYMid meet",
+    "backgroundFill": "#041E42"
+  },
+  {
+    "teamId": "FLAG-SD",
+    "id": "flag-map",
+    "label": "Flag-filled state outline",
+    "sourceUrl": "https://github.com/andysolomon/logo-remix-challenge/blob/main/scripts/state_flag_artwork.py",
+    "generator": "state_flag_artwork",
+    "flagViewBox": "0.257143 0.257143 719.485714 449.485714",
+    "inputs": [
+      {
+        "path": "/logos/svg/flags/sd.svg",
+        "sha256": "f1bd564ee3261d1d8969bea41c00d8e308fb36bee599395f55ba24e44582e260",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_South_Dakota.svg",
+        "sourceSha256": "7e057b142a5a8255a9be6588743af2f36a66dd33dfe54ca36a74a2e95576a989"
+      },
+      {
+        "path": "/logos/svg/flags/alternates/sd-silhouette.svg",
+        "sha256": "3ffd56bee2de93323f316cc73a5b12c39789752b2435a0914f0f09dbf3f60fef",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Blank_US_Map_(states_only).svg",
+        "sourceSha256": "2279580797b53481b29fc168145129db926c21f91d4bc6d82c04e9801bdf932f"
+      }
+    ],
+    "sourceSha256": "c055ee9d3b17d8d9bc1e4123d61cd2839840f1f6d9ff84083b78ed3e324d7eb2",
+    "flagFit": "xMidYMid meet",
+    "backgroundFill": "#0074A8"
+  },
+  {
+    "teamId": "FLAG-TN",
+    "id": "flag-map",
+    "label": "Flag-filled state outline",
+    "sourceUrl": "https://github.com/andysolomon/logo-remix-challenge/blob/main/scripts/state_flag_artwork.py",
+    "generator": "state_flag_artwork",
+    "flagViewBox": "0.102857 0.100232 239.794286 143.799536",
+    "inputs": [
+      {
+        "path": "/logos/svg/flags/tn.svg",
+        "sha256": "9addc4f02ee99e4aadad5789313acd11601058dba5f76b154b75b5172c2ec145",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Tennessee.svg",
+        "sourceSha256": "104bc2bfe3575462b2902f88690055064dd829bfbfbe100c70bb729a1dc98c48"
+      },
+      {
+        "path": "/logos/svg/flags/alternates/tn-silhouette.svg",
+        "sha256": "9f8638e91877984db955f542b07fb2e1fc55e23c0fe383e916f7fb59c6ac33de",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Blank_US_Map_(states_only).svg",
+        "sourceSha256": "2279580797b53481b29fc168145129db926c21f91d4bc6d82c04e9801bdf932f"
+      }
+    ],
+    "sourceSha256": "53f3b3099c0f1aedc6f5c8a3b0a40a318a090ed1322c04038a2157232953ba98"
+  },
+  {
+    "teamId": "FLAG-UT",
+    "id": "flag-map",
+    "label": "Flag-filled state outline",
+    "sourceUrl": "https://github.com/andysolomon/logo-remix-challenge/blob/main/scripts/state_flag_artwork.py",
+    "generator": "state_flag_artwork",
+    "flagViewBox": "0.081643 0.079559 190.336714 114.140882",
+    "inputs": [
+      {
+        "path": "/logos/svg/flags/ut.svg",
+        "sha256": "65e396d2f59075f00c6b1b557b58c6496571f7dbc1a5380e4b26183e5b27bac4",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Utah.svg",
+        "sourceSha256": "686e53f4a0aa36cddc1eb127f1aa4f1757e973d583280b23987ab015a66d3814"
+      },
+      {
+        "path": "/logos/svg/flags/alternates/ut-silhouette.svg",
+        "sha256": "64d5d1db35c5a1cc0734010018bce17dfcc1f941dc3618b4413c1add2b34b416",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Blank_US_Map_(states_only).svg",
+        "sourceSha256": "2279580797b53481b29fc168145129db926c21f91d4bc6d82c04e9801bdf932f"
+      }
+    ],
+    "sourceSha256": "f6eed6b662cf7ceb56433a4ad2fdb06e8954cd9d1ee34e1e4e23db07e296c2af"
+  },
+  {
+    "teamId": "FLAG-VA",
+    "id": "flag-map",
+    "label": "Flag-filled state outline",
+    "sourceUrl": "https://github.com/andysolomon/logo-remix-challenge/blob/main/scripts/state_flag_artwork.py",
+    "generator": "state_flag_artwork",
+    "flagViewBox": "0.4875 0.487674 1364.025 909.024652",
+    "inputs": [
+      {
+        "path": "/logos/svg/flags/va.svg",
+        "sha256": "31b064e140b2e2aca7abe1ab86664fdfb47dca1aaf8488ff36ac2dd25ceff9e0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Virginia.svg",
+        "sourceSha256": "c6f12816be6d6254fed5cdac8aa61e4468d3f8f7c77ff88c83bd94a7a11c1d2d"
+      },
+      {
+        "path": "/logos/svg/flags/alternates/va-silhouette.svg",
+        "sha256": "8749f92c3a7a1d3e23e3ef3f9e7451c7e44cb2ee56dc9b1551a9fc02292843eb",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Blank_US_Map_(states_only).svg",
+        "sourceSha256": "2279580797b53481b29fc168145129db926c21f91d4bc6d82c04e9801bdf932f"
+      }
+    ],
+    "sourceSha256": "75bce92fc9203ddc6646b8ad1521ecd295cfe97fc6d3ec36db5631602e25200e",
+    "flagFit": "xMidYMid meet",
+    "backgroundFill": "#012168"
+  },
+  {
+    "teamId": "FLAG-VT",
+    "id": "flag-map",
+    "label": "Flag-filled state outline",
+    "sourceUrl": "https://github.com/andysolomon/logo-remix-challenge/blob/main/scripts/state_flag_artwork.py",
+    "generator": "state_flag_artwork",
+    "flagViewBox": "0.267857 0.267857 749.464286 449.464286",
+    "inputs": [
+      {
+        "path": "/logos/svg/flags/vt.svg",
+        "sha256": "a990df4b10e071de8c8ef9c9b952ca473d269e1940e597a36bd36a2c3da63c8a",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Vermont.svg",
+        "sourceSha256": "898afb199913b5e97638ff8bbd9a27a3f30d518fd02a6e53c02100e5233a097e"
+      },
+      {
+        "path": "/logos/svg/flags/alternates/vt-silhouette.svg",
+        "sha256": "1c7c127085500afaadbe9f849b2ab2f145560e80c8e1246a420aabad945371c3",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Blank_US_Map_(states_only).svg",
+        "sourceSha256": "2279580797b53481b29fc168145129db926c21f91d4bc6d82c04e9801bdf932f"
+      }
+    ],
+    "sourceSha256": "b265414be1b2cb854d05ed85a77aab5d37cde47d58340c650af75c720a3ccb18",
+    "flagFit": "xMidYMid meet",
+    "backgroundFill": "#003366"
+  },
+  {
+    "teamId": "FLAG-WA",
+    "id": "flag-map",
+    "label": "Flag-filled state outline",
+    "sourceUrl": "https://github.com/andysolomon/logo-remix-challenge/blob/main/scripts/state_flag_artwork.py",
+    "generator": "state_flag_artwork",
+    "flagViewBox": "0.571329 0.571329 1598.857043 998.857143",
+    "inputs": [
+      {
+        "path": "/logos/svg/flags/wa.svg",
+        "sha256": "745ff380630d296fd99337153b31069a38b0ddbd44e8f40fd5c1e8f40113e4c8",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Washington.svg",
+        "sourceSha256": "d0350dae18dd8d836d7a0177bf2924b0eefdbc6dcc71ad44270189b986031d2d"
+      },
+      {
+        "path": "/logos/svg/flags/alternates/wa-silhouette.svg",
+        "sha256": "9522c1a592f803043d95f345ef0219c99955b77c900162fc5569629e0d64477b",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Blank_US_Map_(states_only).svg",
+        "sourceSha256": "2279580797b53481b29fc168145129db926c21f91d4bc6d82c04e9801bdf932f"
+      }
+    ],
+    "sourceSha256": "7a127ecd8cb8e2236a7a790bff14c3d1a5fab5a5e2f97eb21df8c91bd09aedbb",
+    "flagFit": "xMidYMid meet",
+    "backgroundFill": "#00843D"
+  },
+  {
+    "teamId": "FLAG-WI",
+    "id": "flag-map",
+    "label": "Flag-filled state outline",
+    "sourceUrl": "https://github.com/andysolomon/logo-remix-challenge/blob/main/scripts/state_flag_artwork.py",
+    "generator": "state_flag_artwork",
+    "flagViewBox": "0.107143 0.107181 299.785714 199.785638",
+    "inputs": [
+      {
+        "path": "/logos/svg/flags/wi.svg",
+        "sha256": "ba8cf1fa31e472fd65a2ab306a6f726e5c9b97d3d2700722de2fdcc7327fb380",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Wisconsin.svg",
+        "sourceSha256": "329539e7421d6bbfd9ea1cca06df1809a04a4adebc4817658b50c9fd40a266dd"
+      },
+      {
+        "path": "/logos/svg/flags/alternates/wi-silhouette.svg",
+        "sha256": "f4c48f91318869f19430931de609ed4e5722f7e10bbf1884eefcf3b9483ed0b6",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Blank_US_Map_(states_only).svg",
+        "sourceSha256": "2279580797b53481b29fc168145129db926c21f91d4bc6d82c04e9801bdf932f"
+      }
+    ],
+    "sourceSha256": "236957bd86f149dd893c30978b305b8fe0e5ac04658aedfe1d2fb529c4e1f9f4",
+    "flagFit": "xMidYMid meet",
+    "backgroundFill": "#002986"
+  },
+  {
+    "teamId": "FLAG-WV",
+    "id": "flag-map",
+    "label": "Flag-filled state outline",
+    "sourceUrl": "https://github.com/andysolomon/logo-remix-challenge/blob/main/scripts/state_flag_artwork.py",
+    "generator": "state_flag_artwork",
+    "flagViewBox": "0.271429 0.27137 759.457143 399.457259",
+    "inputs": [
+      {
+        "path": "/logos/svg/flags/wv.svg",
+        "sha256": "b62136ea572eba6872bc130027a772b799ce189d79bd0f41778b0468ef1b039d",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_West_Virginia.svg",
+        "sourceSha256": "8ebf29f97c20c87efc13fa23be30dff0b67e88019c889726dd5f08b631cf1d0b"
+      },
+      {
+        "path": "/logos/svg/flags/alternates/wv-silhouette.svg",
+        "sha256": "9af8cecaf37bc172ad830964474e700c6c7c52aecf7f6ccb11f448306243782e",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Blank_US_Map_(states_only).svg",
+        "sourceSha256": "2279580797b53481b29fc168145129db926c21f91d4bc6d82c04e9801bdf932f"
+      }
+    ],
+    "sourceSha256": "3da7b0f5ec8cfa32ae2c8f7d061c86cc82a97fcc712f48f4eab09ee4bd8e82cd",
+    "flagFit": "xMidYMid meet",
+    "backgroundFill": "#FFFFFF"
+  },
+  {
+    "teamId": "FLAG-WY",
+    "id": "flag-map",
+    "label": "Flag-filled state outline",
+    "sourceUrl": "https://github.com/andysolomon/logo-remix-challenge/blob/main/scripts/state_flag_artwork.py",
+    "generator": "state_flag_artwork",
+    "flagViewBox": "1.071429 1.071429 2997.857143 2097.857143",
+    "inputs": [
+      {
+        "path": "/logos/svg/flags/wy.svg",
+        "sha256": "9ab23f1a0db72fd75984060ed7eb8b0913bf6d8d504b73938a45fba1cb1d2e1c",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Wyoming.svg",
+        "sourceSha256": "c277df5375fae624f64b36fec774b30c1df67021ecf26358591e211f9c25181b"
+      },
+      {
+        "path": "/logos/svg/flags/alternates/wy-silhouette.svg",
+        "sha256": "69b091e30e6a34bf10e980f43f81a7e673ec4d2fbbdd4d57cece7c4f942992af",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Blank_US_Map_(states_only).svg",
+        "sourceSha256": "2279580797b53481b29fc168145129db926c21f91d4bc6d82c04e9801bdf932f"
+      }
+    ],
+    "sourceSha256": "349edee25ab7daa71458b268c9a6251243b7e38cec6d8a5e89900ee7a4ec41c5"
   }
 ]

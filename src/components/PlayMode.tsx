@@ -542,7 +542,7 @@ export function PlayMode({ deck, timer, gameMode, guessTarget, voice, highScores
                 <li key={`${h.date}-${i}`} className={`hs-row${h.date === entryDate ? ' mine' : ''}`}>
                   <span className="hs-rank">{String(i + 1).padStart(2, '0')}</span>
                   <span className="hs-initials">{h.initials}</span>
-                  <span className="hs-score">{formatScore(h.score)}</span>
+                  <span className="hs-score">{formatScore(h.score)}<span className="hs-total"> / {h.total}</span></span>
                 </li>
               ))}
             </ol>

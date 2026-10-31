@@ -119,6 +119,10 @@ assert [row[0] for row in FLAG].count('TX') == 1 and len(FLAG) == 123
 sheets = {'BlankMap-World.svg', 'Blank_US_Map_(states_only).svg'}
 checksums = {}
 for s in pinned_sources('FLAG'):
+    if s.get('generator') == 'state_flag_artwork':
+        assert s['id'] == 'flag-map' and len(s['inputs']) == 2
+        assert all(i['sourceUrl'].startswith('https://commons.wikimedia.org/wiki/Special:FilePath/') for i in s['inputs'])
+        continue
     name = s['sourceUrl'].rsplit('/', 1)[1]
     assert s['sourceUrl'].startswith('https://commons.wikimedia.org/wiki/Special:FilePath/'), s['sourceUrl']
     if s['id'] == 'silhouette':

@@ -545,6 +545,29 @@
           ],
           "unusedSourceSlots": [],
           "sha256": "885e222d886147bcbbdd0ac24a0f0297c8f1ef4386e9545ac2ac4c42ac7ec718"
+        },
+        {
+          "id": "heater-shield",
+          "label": "Heater shield",
+          "sourceUrl": "https://github.com/andysolomon/logo-remix-challenge/blob/main/scripts/character_artwork.py",
+          "sourceSha256": "b92f8c8b1126c18a2850a936ea248a968984be621ed9dcb9c97146f1a952a120",
+          "generator": "character_artwork",
+          "license": "Original project illustration; depicted character rights remain with their owners",
+          "path": "/logos/svg/characters/alternates/cap-heater-shield.svg",
+          "format": "svg",
+          "colors": [
+            "#17202C",
+            "#FFFFFF",
+            "#C73535",
+            "#24518B"
+          ],
+          "sourcePalette": [
+            "#C73535",
+            "#1E385C",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "a45ac1b953929375f97c661dff896d0acf651d2c4328484f2ec1df26e76a067a"
         }
       ]
     },
@@ -589,6 +612,28 @@
           ],
           "unusedSourceSlots": [],
           "sha256": "55fc73bec2ea9d0416956c3b562fa0347c19e71a98dea7379bec407984d8fad9"
+        },
+        {
+          "id": "mask-portrait",
+          "label": "Mask portrait",
+          "sourceUrl": "https://github.com/andysolomon/logo-remix-challenge/blob/main/scripts/character_artwork.py",
+          "sourceSha256": "f3745bd5abdac35b8b05cf91110f6c312fc356156bcd75f275aa79172f109d84",
+          "generator": "character_artwork",
+          "license": "Original project illustration; depicted character rights remain with their owners",
+          "path": "/logos/svg/characters/alternates/deadpool-mask-portrait.svg",
+          "format": "svg",
+          "colors": [
+            "#17202C",
+            "#FFFFFF",
+            "#BA2737"
+          ],
+          "sourcePalette": [
+            "#17202C",
+            "#BA2737",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "59d913bd79fdf11b32f41c3e255a029ecf2bbf00af01bf463d439728ac371168"
         }
       ]
     },
@@ -1765,6 +1810,28 @@
             2
           ],
           "sha256": "72cb176bc53d63a181ee7440bd22d8914e2b82598954ee178bb4ffb27dd634c8"
+        },
+        {
+          "id": "beskar-helmet",
+          "label": "Armored helmet",
+          "sourceUrl": "https://github.com/andysolomon/logo-remix-challenge/blob/main/scripts/character_artwork.py",
+          "sourceSha256": "73fa9b0fca3a8e4bfceac6364d0b2b7cd5d87f847f0081c6239de08f78f8620a",
+          "generator": "character_artwork",
+          "license": "Original project illustration; depicted character rights remain with their owners",
+          "path": "/logos/svg/characters/alternates/mando-beskar-helmet.svg",
+          "format": "svg",
+          "colors": [
+            "#17202C",
+            "#FFFFFF",
+            "#A5AFB9"
+          ],
+          "sourcePalette": [
+            "#17202C",
+            "#A5AFB9",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "ba55def42589e5e3dffda5d91663de314e87ed358e42656e45f1e563820d6650"
         }
       ]
     },
@@ -3182,6 +3249,28 @@
             2
           ],
           "sha256": "e0c3882b5d5b63c6a053f8735fd4eb1527fb79404532253f3015cb75d4b49855"
+        },
+        {
+          "id": "webbed-mask",
+          "label": "Webbed mask",
+          "sourceUrl": "https://github.com/andysolomon/logo-remix-challenge/blob/main/scripts/character_artwork.py",
+          "sourceSha256": "0d018fe1e075f2115232cd751ab2ccd0d6e37f65c19c00826b55040c06ada06e",
+          "generator": "character_artwork",
+          "license": "Original project illustration; depicted character rights remain with their owners",
+          "path": "/logos/svg/characters/alternates/spidey-webbed-mask.svg",
+          "format": "svg",
+          "colors": [
+            "#17202C",
+            "#FFFFFF",
+            "#C83236"
+          ],
+          "sourcePalette": [
+            "#17202C",
+            "#C83236",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "ab217ade74afbc435aaf9b229afaee3559b6943ffe429802046153dcf33acbf7"
         }
       ]
     },
@@ -3639,6 +3728,28 @@
           ],
           "unusedSourceSlots": [],
           "sha256": "e898262b9eebc515990e8fbde6d158ad4b7153c270df0cb75b605bd496228865"
+        },
+        {
+          "id": "hammer",
+          "label": "Hammer",
+          "sourceUrl": "https://github.com/andysolomon/logo-remix-challenge/blob/main/scripts/character_artwork.py",
+          "sourceSha256": "2b517406bbf355c67b795d6c459d6e762916ec168e403aac832648a789ea52a0",
+          "generator": "character_artwork",
+          "license": "Original project illustration; depicted character rights remain with their owners",
+          "path": "/logos/svg/characters/alternates/thor-hammer.svg",
+          "format": "svg",
+          "colors": [
+            "#17202C",
+            "#FFFFFF",
+            "#8F9EAA"
+          ],
+          "sourcePalette": [
+            "#17202C",
+            "#8F9EAA",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "4fc1e29d172937693ffa7dd70b079cb9c9663c3ab3cf27102ddabee68fda7954"
         }
       ]
     },
@@ -3822,6 +3933,28 @@
             2
           ],
           "sha256": "068147d23e4131bc056efcee0c1dec09cba5fbd58cdb589463e8ac7bbd117a9e"
+        },
+        {
+          "id": "helmet-study",
+          "label": "Helmet study",
+          "sourceUrl": "https://github.com/andysolomon/logo-remix-challenge/blob/main/scripts/character_artwork.py",
+          "sourceSha256": "476bfb3b0069ebd199bd1acb24fa2b24a178cc6b758e5f537e25db9e0531f452",
+          "generator": "character_artwork",
+          "license": "Original project illustration; depicted character rights remain with their owners",
+          "path": "/logos/svg/characters/alternates/vader-helmet-study.svg",
+          "format": "svg",
+          "colors": [
+            "#17202C",
+            "#FFFFFF",
+            "#68778A"
+          ],
+          "sourcePalette": [
+            "#17202C",
+            "#68778A",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "b947d9ba68f2d641e0bdf1b72fd841be7e6726fbc63fefa30b668ad0ac805e44"
         }
       ]
     },

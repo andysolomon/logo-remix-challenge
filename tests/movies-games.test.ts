@@ -47,6 +47,6 @@ describe('movies and video games', () => {
     expect(deck).toHaveLength(20)
     for (const round of deck) expect(['MOVIE', 'GAME']).toContain(findTeam(round.o)!.league)
     expect(roundHints({ o: 'MOVIE-GHOSTBUSTERS', v: 0 })).toEqual(['Logo: MOVIES - Halloween'])
-    expect(roundHints({ o: 'GAME-ROCKETLEAGUE', c: 'NBA-BOS', v: 0 })).toEqual(['Logo: VIDEO GAMES - Sports & Racing', 'Colors: NBA'])
+    expect(roundHints({ o: 'GAME-FORZA', c: 'NBA-BOS', v: 0 })).toEqual(['Logo: VIDEO GAMES - Sports & Racing', 'Colors: NBA'])
   })
 })

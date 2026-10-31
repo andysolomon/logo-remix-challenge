@@ -85,24 +85,32 @@ describe('world landmarks collection', () => {
 
   test('one-color silhouettes remix onto a tile and frame; multi-color illustrations paint their own slots', () => {
     const silhouettes = landmarks.filter((t) => t.unusedSourceSlots?.length === 2)
-    expect(silhouettes.length).toBeGreaterThanOrEqual(20)
+    expect(silhouettes.length).toBeGreaterThan(0)
     for (const t of landmarks) {
       const layout = remixLayout(t)
       const used = t.unusedSourceSlots ?? []
       expect(layout.frame !== undefined).toBe(used.length === 2)
       expect(layout.backdrop !== undefined).toBe(used.length >= 1)
     }
-    for (const id of ['LANDMARK-LIBERTY', 'LANDMARK-EIFFEL', 'LANDMARK-BURJ', 'LANDMARK-BRANDENBURG']) expect(findTeam(id)!.unusedSourceSlots).toEqual([1, 2])
-    for (const id of ['LANDMARK-BIGBEN', 'LANDMARK-ATOMIUM', 'LANDMARK-ARC']) expect(findTeam(id)!.unusedSourceSlots).toBeUndefined()
+    for (const id of ['LANDMARK-EIFFEL', 'LANDMARK-BRANDENBURG']) expect(findTeam(id)!.unusedSourceSlots).toEqual([1, 2])
+    for (const id of ['LANDMARK-BIGBEN', 'LANDMARK-ATOMIUM', 'LANDMARK-ARC', 'LANDMARK-LIBERTY', 'LANDMARK-BURJ', 'LANDMARK-TAJ']) expect(findTeam(id)!.unusedSourceSlots).toBeUndefined()
   })
 
-  test('every landmark is a pinned Openclipart (CC0) vector, imported through the brand pipeline', () => {
-    const sources = JSON.parse(readFileSync(join(root, 'scripts/brand_artwork_sources.json'), 'utf8')) as { teamId: string; id: string; sourceUrl: string; sourcePage: string }[]
+  test('every landmark is a pinned vector source or reproducible original study', () => {
+    const sources = JSON.parse(readFileSync(join(root, 'scripts/brand_artwork_sources.json'), 'utf8')) as { teamId: string; id: string; sourceUrl: string; sourcePage?: string; generator?: string; previousSource?: { sourceUrl: string; sourcePage: string } }[]
     const pinned = sources.filter((s) => s.teamId.startsWith('LANDMARK-'))
     expect(pinned).toHaveLength(40)
+    expect(pinned.filter(s => s.generator)).toHaveLength(16)
     expect(new Set(pinned.map((s) => s.teamId))).toEqual(new Set(landmarks.map((t) => t.id)))
     for (const s of pinned) {
       expect(s.id).toBe('primary')
+      if (s.generator) {
+        expect(s.generator).toBe('landmark_artwork')
+        expect(s.sourceUrl).toContain('/scripts/landmark_artwork.py')
+        expect(s.previousSource?.sourceUrl).toContain('https://openclipart.org/download/')
+        expect(s.previousSource?.sourcePage).toContain('https://openclipart.org/detail/')
+        continue
+      }
       expect(s.sourceUrl).toMatch(/^https:\/\/openclipart\.org\/download\/\d+\//)
       expect(s.sourcePage).toMatch(/^https:\/\/openclipart\.org\/detail\/\d+\/[a-z0-9-]+$/)
     }

@@ -1,7 +1,7 @@
 {
   "name": "logo-remix-challenge",
   "private": true,
-  "version": "0.49.1",
+  "version": "0.54.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -55,6 +55,8 @@
     "teams:landmarks": "python3 scripts/build_brand_teams.py --league LANDMARK",
     "logos:characters": "python3 scripts/download_brand_logos.py --league CHAR",
     "teams:characters": "python3 scripts/build_brand_teams.py --league CHAR",
+    "logos:sweets": "python3 scripts/download_brand_logos.py --league SWEET",
+    "teams:sweets": "python3 scripts/build_brand_teams.py --league SWEET",
     "logos:movies": "python3 scripts/download_brand_logos.py --league MOVIE",
     "teams:movies": "python3 scripts/build_brand_teams.py --league MOVIE",
     "logos:games": "python3 scripts/download_brand_logos.py --league GAME",

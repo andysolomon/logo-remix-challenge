@@ -538,6 +538,29 @@
             2
           ],
           "sha256": "c707e687c3a54dab8a44ff65a6e579a151ad2d81dbf4c412387f70832243576e"
+        },
+        {
+          "id": "voxel-head",
+          "label": "Voxel head",
+          "sourceUrl": "https://github.com/andysolomon/logo-remix-challenge/blob/main/scripts/character_artwork.py",
+          "sourceSha256": "54cb847b8180c4526ad7c488cce5923ba89cfcdb563ae8cda4613c5dda621acb",
+          "generator": "character_artwork",
+          "license": "Original project illustration; depicted character rights remain with their owners",
+          "path": "/logos/svg/games/alternates/creeper-voxel-head.svg",
+          "format": "svg",
+          "colors": [
+            "#72AA45",
+            "#17202C",
+            "#FFFFFF",
+            "#4E8B39"
+          ],
+          "sourcePalette": [
+            "#609A3F",
+            "#17202C",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "3da9975cb3f7623230d4b1ba46a4190c0cb79b873be4dca85d37835bd65814dc"
         }
       ]
     },
@@ -1454,6 +1477,28 @@
             2
           ],
           "sha256": "aa76f82da363fdefcfb42ad55401b870aed1b106e1b95e5ee6ee599be854f665"
+        },
+        {
+          "id": "fire-flower",
+          "label": "Fire flower",
+          "sourceUrl": "https://github.com/andysolomon/logo-remix-challenge/blob/main/scripts/character_artwork.py",
+          "sourceSha256": "bd5b6e0f6d25f2f1806c3cb1b673198cd8293d0907df9207da143bcdd641c879",
+          "generator": "character_artwork",
+          "license": "Original project illustration; depicted character rights remain with their owners",
+          "path": "/logos/svg/games/alternates/mario-fire-flower.svg",
+          "format": "svg",
+          "colors": [
+            "#E84522",
+            "#17202C",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#E84522",
+            "#17202C",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "afe37e83d7212cb97df93d1f6678f4ac10415f1d457705aa912d604b6767adc0"
         }
       ]
     },
@@ -1816,6 +1861,29 @@
             2
           ],
           "sha256": "964a9d60fefe262c8f520cbe48541d0782edc555d4c133d0d6e4ac781f921967"
+        },
+        {
+          "id": "face-portrait",
+          "label": "Face portrait",
+          "sourceUrl": "https://github.com/andysolomon/logo-remix-challenge/blob/main/scripts/character_artwork.py",
+          "sourceSha256": "3638266bef7abb9fb24c91cd9e989655f0582ff461980b1691257e071c33bd68",
+          "generator": "character_artwork",
+          "license": "Original project illustration; depicted character rights remain with their owners",
+          "path": "/logos/svg/games/alternates/pikachu-face-portrait.svg",
+          "format": "svg",
+          "colors": [
+            "#17202C",
+            "#FFFFFF",
+            "#E54132",
+            "#E9BA2B"
+          ],
+          "sourcePalette": [
+            "#E77E2E",
+            "#17202C",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "44214aa1ba0191ac65c52d2ac4c6347cf0483584eb148f660c62177ceafefc88"
         }
       ]
     },
@@ -1864,6 +1932,29 @@
           ],
           "unusedSourceSlots": [],
           "sha256": "2325b6c54bd30a5db3fbbeb6118bf9605c407978f67ef906475fb9943b8e8d36"
+        },
+        {
+          "id": "great-ball",
+          "label": "Great ball",
+          "sourceUrl": "https://github.com/andysolomon/logo-remix-challenge/blob/main/scripts/character_artwork.py",
+          "sourceSha256": "0c85df88aa6ed586b7dfdd1b7894d56da4ba52d78349d1cab5e5c94fa40317ad",
+          "generator": "character_artwork",
+          "license": "Original project illustration; depicted character rights remain with their owners",
+          "path": "/logos/svg/games/alternates/pokeball-great-ball.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#17202C",
+            "#DC3A32",
+            "#3074C0"
+          ],
+          "sourcePalette": [
+            "#244A76",
+            "#DC3A32",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "50521d6f79da4fbb3285f7edf35bafb44f8614356da5cef2a9d2ea0f83f392fa"
         }
       ]
     },
@@ -1910,174 +2001,6 @@
             2
           ],
           "sha256": "e2a0a6326f2eaa73a5d2671696e4e8ddc927f16ccf573fee7dc84cf59c5eee59"
-        }
-      ]
-    },
-    {
-      "id": "GAME-PVZ",
-      "league": "GAME",
-      "conference": "Arcade & Puzzle",
-      "region": "Plants vs. Zombies",
-      "name": "",
-      "abbr": "PVZ",
-      "aliases": [
-        "PvZ",
-        "Plants vs Zombies",
-        "Plants versus Zombies",
-        "Plants Vs Zombies 2"
-      ],
-      "palette": [
-        "#B2D14B",
-        "#B7BDBE",
-        "#FFFFFF"
-      ],
-      "artwork": [
-        {
-          "id": "primary",
-          "label": "Green and stone title with grass",
-          "sourceUrl": "https://iconape.com/wp-content/files/ih/247785/svg/247785.svg",
-          "sourcePage": "https://iconape.com/plants-vs-zombies-logo-logo-icon-svg-png.html",
-          "sourceSha256": "ac71b7c9f6529b4b317a42612459cfbf11c2bd9ec09696762a9815129a2c6698",
-          "ops": {
-            "removeNodes": [
-              "1/49",
-              "1/51",
-              "1/54",
-              "1/58",
-              "1/64",
-              "1/65",
-              "1/66",
-              "1/68",
-              "1/70",
-              "1/71",
-              "1/73",
-              "1/77",
-              "1/79",
-              "1/80",
-              "1/81",
-              "1/82",
-              "1/83",
-              "1/84",
-              "1/85",
-              "1/86",
-              "1/87",
-              "1/88",
-              "1/91",
-              "1/92",
-              "1/93",
-              "1/94",
-              "1/95",
-              "1/120",
-              "1/121",
-              "1/122",
-              "1/123",
-              "1/124",
-              "1/127",
-              "1/130",
-              "1/134",
-              "1/142",
-              "1/160",
-              "1/176",
-              "1/177",
-              "1/178",
-              "1/187",
-              "1/201",
-              "1/207",
-              "1/212",
-              "1/214",
-              "1/225",
-              "1/226",
-              "1/227",
-              "1/234",
-              "1/238",
-              "1/242",
-              "1/244",
-              "1/250",
-              "1/252",
-              "1/282",
-              "1/291"
-            ],
-            "viewBox": "-3.092 -3.096 83.476 52.289"
-          },
-          "showsName": true,
-          "path": "/logos/svg/games/pvz.svg",
-          "format": "svg",
-          "colors": [
-            "#000000",
-            "#FCFDFD",
-            "#008152",
-            "#231F20",
-            "#CFD2D0",
-            "#B2D14B",
-            "#75C155",
-            "#B7BDBE",
-            "#757779",
-            "#00AA4F",
-            "#DE8432",
-            "#9FA5A6",
-            "#953425"
-          ],
-          "sourcePalette": [
-            "#B2D14B",
-            "#B7BCBC",
-            "#FFFFFF"
-          ],
-          "unusedSourceSlots": [],
-          "sha256": "82032d689da82d38583991f7401b562cd56d97da4bb7fbb75788d93a8c0e8664"
-        }
-      ]
-    },
-    {
-      "id": "GAME-ROCKETLEAGUE",
-      "league": "GAME",
-      "conference": "Sports & Racing",
-      "region": "Rocket League",
-      "name": "",
-      "abbr": "ROCKETLEAGUE",
-      "aliases": [
-        "RocketLeague",
-        "Rocket League Sideswipe"
-      ],
-      "palette": [
-        "#00A5F7",
-        "#0065BA",
-        "#FFFFFF"
-      ],
-      "artwork": [
-        {
-          "id": "primary",
-          "label": "Blue shield with boosting car and ball",
-          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/9/90/Rocket_League.svg/revision/latest?cb=20171202171315",
-          "sourcePage": "https://logos.fandom.com/wiki/File:Rocket_League.svg",
-          "sourceSha256": "f95ab4fb1c527e6b8188e82b2d1f923e8e91fb49d609fd788f980d55c4ab3ea2",
-          "ops": {
-            "removeNodes": [
-              "3/1",
-              "3/2"
-            ],
-            "viewBox": "0.763 0.587 98.309 94.302"
-          },
-          "path": "/logos/svg/games/rocketleague.svg",
-          "format": "svg",
-          "colors": [
-            "#000000",
-            "#00AEFF",
-            "#00A5F7",
-            "#008DE0",
-            "#0065BA",
-            "#002F87",
-            "#00217A",
-            "#FFFFFF",
-            "#7A7A7A",
-            "#404040"
-          ],
-          "sourcePalette": [
-            "#00A0F2",
-            "#0065BA",
-            "#FFFFFF"
-          ],
-          "unusedSourceSlots": [],
-          "sha256": "5a71c7eca13f1a669ddab176cbbb76ac8de167eac509756048b16a293c4e185b"
         }
       ]
     },
@@ -2311,107 +2234,6 @@
             2
           ],
           "sha256": "8c8a3c7aff092a95d71987371289618f5e32685cb4b4ac7ab8d863ea8e18a959"
-        }
-      ]
-    },
-    {
-      "id": "GAME-TERRARIA",
-      "league": "GAME",
-      "conference": "Indie",
-      "region": "Terraria",
-      "name": "",
-      "abbr": "TERRARIA",
-      "aliases": [],
-      "palette": [
-        "#27AE60",
-        "#6D4C41",
-        "#FFFFFF"
-      ],
-      "artwork": [
-        {
-          "id": "primary",
-          "label": "Pixel-art tree",
-          "sourceUrl": "https://raw.githubusercontent.com/chouhan-rahul/icons_plus/v5.0.0/assets/images/logos/video-games/terraria.svg",
-          "sourcePage": "https://github.com/chouhan-rahul/icons_plus/blob/v5.0.0/assets/images/logos/video-games/terraria.svg",
-          "sourceSha256": "a0803154080daf931642be5e152344298feff15877b427221843b8de109be548",
-          "ops": {
-            "viewBox": "9.4 2.4 29.2 43.2"
-          },
-          "path": "/logos/svg/games/terraria.svg",
-          "format": "svg",
-          "colors": [
-            "#6D4C41",
-            "#27AE60"
-          ],
-          "sourcePalette": [
-            "#27AE60",
-            "#6D4C41",
-            "#FFFFFF"
-          ],
-          "unusedSourceSlots": [
-            2
-          ],
-          "sha256": "6fbcad31850235aa616526faa79cbea0240184eb2087102b1b8ce76029eaba92"
-        },
-        {
-          "id": "wordmark",
-          "label": "Pixel wordmark with a tree",
-          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/d/de/Terraria_2020.svg/revision/latest?cb=20240308113232",
-          "sourcePage": "https://logos.fandom.com/wiki/File:Terraria_2020.svg",
-          "sourceSha256": "6eac2eff5951c6d561554d4fe12f223788df5976acdeace23aae660535474ae1",
-          "ops": {
-            "viewBox": "-19.44 -19.44 524.88 179.88"
-          },
-          "showsName": true,
-          "path": "/logos/svg/games/alternates/terraria-wordmark.svg",
-          "format": "svg",
-          "colors": [
-            "#000000",
-            "#0A4A1B",
-            "#22A851",
-            "#1D9045",
-            "#197B3C",
-            "#0D6424",
-            "#1BCF5A",
-            "#17331C",
-            "#1CD85E",
-            "#2EED52",
-            "#1E9648",
-            "#0D632B",
-            "#023416",
-            "#644730",
-            "#875F41",
-            "#976B4B",
-            "#D12F77",
-            "#AD7966",
-            "#971F5A",
-            "#742997",
-            "#20BA65",
-            "#750836",
-            "#9C3CBC",
-            "#380D65",
-            "#392F2B",
-            "#636363",
-            "#404040",
-            "#563E2C",
-            "#CBCBCB",
-            "#818080",
-            "#19BF53",
-            "#A5A5A5",
-            "#735239",
-            "#A97D5D",
-            "#3C2C18",
-            "#BE8F6F"
-          ],
-          "sourcePalette": [
-            "#1FB451",
-            "#735239",
-            "#FFFFFF"
-          ],
-          "unusedSourceSlots": [
-            2
-          ],
-          "sha256": "0a248cf291be0a0c220193156598fa465be1af232d07a8f55f8a2abe1b6abdca"
         }
       ]
     },

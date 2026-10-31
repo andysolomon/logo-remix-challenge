@@ -57,6 +57,124 @@
   --swatch-ring: rgba(255, 255, 255, 0.28);
 }
 
+/* ---------- Holiday skins ----------
+   A skin is a token swap layered over the light / dark scheme: App.tsx sets data-skin from the Settings choice
+   (skins.ts resolves Auto from the calendar) and index.html restores it before first paint. Each skin needs a
+   light block, a dark block, and may hang decoration off the same attribute. Never hardcode a skin color outside
+   its blocks: everything else reads the tokens. */
+
+/* Halloween: pumpkin orange and midnight purple. */
+:root[data-skin="halloween"] {
+  --bg: #FBF2E6;
+  --surface: #FFFDFA;
+  --line: #EBDACB;
+  --ink: #1C1230;
+  --muted: #6B5C76;
+  --faint: #998AA5;
+  --chip-bg: #F4E5D8;
+  --chip-fg: #5E4A62;
+  --input-bg: #FFFAF4;
+  --disabled: #DCCFC3;
+  --tile-sel: #FFE8D0;
+  --on-ink: #FFF4E6;
+  --on-ink-line: rgba(255, 244, 230, 0.45);
+  --scrim: rgba(28, 18, 48, 0.5);
+
+  --accent: #F26A1B;
+  --link: #C9500E;
+  --link-hover: #9C3C07;
+  --gold: #F5B82A;
+
+  --dark-bg: #140B1F;
+  --dark-surface: #211436;
+  --dark-input: #261840;
+  --dark-input-line: #4A3470;
+  --dark-ink: #FBF0E4;
+  --dark-muted: #C6B6D3;
+  --dark-faint: #917FA6;
+}
+:root[data-skin="halloween"][data-theme="dark"] {
+  --bg: #140B1F;
+  --surface: #1E1230;
+  --line: #3B2A55;
+  --ink: #FBF0E4;
+  --muted: #C6B6D3;
+  --faint: #917FA6;
+  --chip-bg: #2B1C42;
+  --chip-fg: #DACCE4;
+  --input-bg: #221639;
+  --disabled: #4E3C69;
+  --tile-sel: #3C2544;
+  --on-ink: #140B1F;
+  --on-ink-line: rgba(20, 11, 31, 0.45);
+  --scrim: rgba(6, 2, 12, 0.65);
+  --accent: #FF7A1F;
+  --link: #FFA15C;
+  --link-hover: #FFBE8A;
+}
+/* A jack-o'-lantern keeps the wordmark and the game intro company; the glow is a hint of candlelight on the dark screens. */
+:root[data-skin="halloween"] .wordmark::after,
+:root[data-skin="halloween"] .intro-title::after { content: '🎃'; display: inline-block; margin-left: 10px; vertical-align: -2px; animation: skin-badge-sway 3.2s ease-in-out infinite; }
+:root[data-skin="halloween"] .intro-title::after { margin-left: 14px; }
+:root[data-skin="halloween"][data-theme="dark"] .app { background-image: radial-gradient(60% 40% at 50% 0%, rgba(255, 122, 31, 0.14), transparent 70%); }
+@keyframes skin-badge-sway { 0%, 100% { transform: rotate(-8deg); } 50% { transform: rotate(8deg); } }
+
+/* Skin stage: PlayMode renders eight empty sprites behind the game (SkinStage.tsx); a skin shows and animates the ones it uses.
+   The stage sits under the game's own content (negative z-index inside .play's stacking context) and never takes a tap. */
+.play { position: relative; isolation: isolate; }
+.skin-stage { display: none; position: absolute; inset: 0; z-index: -1; overflow: hidden; pointer-events: none; }
+.skin-stage .sprite { position: absolute; display: block; background: center / contain no-repeat; }
+:root[data-skin] .skin-stage { display: block; }
+
+/* Halloween wallpaper: a moonlit graveyard behind the whole game, with bats, ghosts and clouds on the stage.
+   Everything moves on transform and opacity only, and the global reduced-motion rule parks it all. */
+:root[data-skin="halloween"] .play {
+  background-color: #140B1F;
+  background-image: url('/skins/halloween/wallpaper.svg'), linear-gradient(180deg, #1B0F31 0%, #140B1F 55%, #0E0718 100%);
+  background-size: cover, auto;
+  background-position: center bottom, center;
+  background-repeat: no-repeat;
+}
+/* Bats cross the top band; the bat itself flaps on a pseudo-element so the flight and the flap do not fight over one transform. */
+:root[data-skin="halloween"] .sprite.s1,
+:root[data-skin="halloween"] .sprite.s2,
+:root[data-skin="halloween"] .sprite.s3,
+:root[data-skin="halloween"] .sprite.s4 { left: -12%; width: 64px; height: 32px; animation: skin-bat-fly 14s linear infinite; }
+:root[data-skin="halloween"] .sprite.s1::before,
+:root[data-skin="halloween"] .sprite.s2::before,
+:root[data-skin="halloween"] .sprite.s3::before,
+:root[data-skin="halloween"] .sprite.s4::before { content: ''; position: absolute; inset: 0; background: center / contain no-repeat url('/skins/halloween/bat.svg'); animation: skin-bat-flap 0.5s ease-in-out infinite alternate; }
+:root[data-skin="halloween"] .sprite.s1 { top: 8%; animation-duration: 15s; }
+:root[data-skin="halloween"] .sprite.s2 { top: 16%; width: 44px; height: 22px; animation-duration: 11s; animation-delay: -4s; }
+:root[data-skin="halloween"] .sprite.s3 { top: 24%; width: 52px; height: 26px; animation-duration: 18s; animation-delay: -9s; }
+:root[data-skin="halloween"] .sprite.s4 { top: 12%; width: 36px; height: 18px; animation-duration: 13s; animation-delay: -12s; }
+/* Ghosts rise at the edges of the screen, clear of the logo, fading in and out as they go. */
+:root[data-skin="halloween"] .sprite.s5,
+:root[data-skin="halloween"] .sprite.s6 { bottom: -14%; width: 56px; height: 70px; opacity: 0; background-image: url('/skins/halloween/ghost.svg'); animation: skin-ghost-rise 16s ease-in-out infinite; }
+:root[data-skin="halloween"] .sprite.s5 { left: 6%; }
+:root[data-skin="halloween"] .sprite.s6 { right: 7%; width: 44px; height: 55px; animation-duration: 21s; animation-delay: -10s; }
+/* Clouds drift across the moon. */
+:root[data-skin="halloween"] .sprite.s7,
+:root[data-skin="halloween"] .sprite.s8 { left: -30%; width: 240px; height: 70px; opacity: 0.85; background-image: url('/skins/halloween/cloud.svg'); animation: skin-cloud-drift 60s linear infinite; }
+:root[data-skin="halloween"] .sprite.s7 { top: 10%; }
+:root[data-skin="halloween"] .sprite.s8 { top: 20%; width: 170px; height: 50px; opacity: 0.6; animation-duration: 85s; animation-delay: -40s; }
+@keyframes skin-bat-fly {
+  0% { transform: translate(0, 0); }
+  25% { transform: translate(28vw, -18px); }
+  50% { transform: translate(56vw, 10px); }
+  75% { transform: translate(84vw, -12px); }
+  100% { transform: translate(115vw, 6px); }
+}
+@keyframes skin-bat-flap { from { transform: scaleY(1); } to { transform: scaleY(0.45); } }
+@keyframes skin-ghost-rise {
+  0% { transform: translate(0, 0); opacity: 0; }
+  15% { opacity: 0.55; }
+  50% { transform: translate(18px, -50vh); }
+  85% { opacity: 0.4; }
+  100% { transform: translate(-12px, -110vh); opacity: 0; }
+}
+@keyframes skin-cloud-drift { from { transform: translateX(0); } to { transform: translateX(140vw); } }
+
 * { box-sizing: border-box; }
 [hidden] { display: none !important; }
 html, body, #root { height: 100%; }
@@ -83,7 +201,7 @@ input::placeholder { color: var(--faint); }
 :focus-visible {
   outline: 2px solid var(--accent);
   outline-offset: 2px;
-  box-shadow: 0 0 0 4px rgba(216, 68, 43, 0.18);
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--accent) 18%, transparent);
 }
 .tab:focus-visible,
 .seg-btn:focus-visible,
@@ -101,7 +219,7 @@ input::placeholder { color: var(--faint); }
 .stepper-input:focus-visible {
   outline: 2px solid var(--accent);
   outline-offset: 2px;
-  box-shadow: 0 0 0 4px rgba(216, 68, 43, 0.18);
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--accent) 18%, transparent);
 }
 .close-btn:focus-visible { outline-color: var(--ink); box-shadow: 0 0 0 4px color-mix(in srgb, var(--ink) 12%, transparent); }
 

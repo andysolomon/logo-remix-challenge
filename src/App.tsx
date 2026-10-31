@@ -15,6 +15,7 @@ import {
   loadGuessTarget,
   loadVoice,
   loadHighScores,
+  loadSkinSetting,
   loadTheme,
   loadTimer,
   MAX_DECK_ROUNDS,
@@ -27,6 +28,8 @@ import {
   saveGuessTarget,
   saveVoice,
   saveHighScores,
+  saveActiveSkin,
+  saveSkinSetting,
   saveTheme,
   saveTimer,
   type GameMode,
@@ -36,6 +39,8 @@ import {
   type Theme,
   type TimerSeconds,
 } from './lib/teams'
+import { type SkinSetting } from './lib/skins'
+import { useActiveSkin } from './lib/useActiveSkin'
 import { usePrefersDark } from './lib/useColorScheme'
 import { useIsPortrait } from './lib/useOrientation'
 import { useVisualViewport } from './lib/useVisualViewport'
@@ -53,6 +58,8 @@ export default function App() {
   const [guessTarget, setGuessTargetState] = useState<GuessTarget>(loadGuessTarget)
   const [voice, setVoiceState] = useState<boolean>(loadVoice)
   const [theme, setThemeState] = useState<Theme>(loadTheme)
+  const [skinSetting, setSkinSettingState] = useState<SkinSetting>(loadSkinSetting)
+  const activeSkin = useActiveSkin(skinSetting)
   const [highScores, setHighScoresState] = useState<HighScore[]>(loadHighScores)
   const [create, setCreate] = useState<CreateState>(initialCreateState)
   const [designer, setDesignerState] = useState<boolean>(loadDesigner)
@@ -88,6 +95,10 @@ export default function App() {
     saveTheme(t)
     setThemeState(t)
   }
+  const setSkinSetting = (s: SkinSetting) => {
+    saveSkinSetting(s)
+    setSkinSettingState(s)
+  }
   const setDesigner = (on: boolean) => {
     saveDesigner(on)
     setDesignerState(on)
@@ -108,15 +119,21 @@ export default function App() {
     prevModeRef.current = mode
   }, [mode])
 
-  // Apply the color theme and match the browser chrome (iOS status bar / toolbar tint) to the active screen.
+  // Apply the color theme and holiday skin, then match the browser chrome (iOS status bar / toolbar tint) to the active screen.
   const themeDark = theme === 'dark' || (theme === 'system' && prefersDark)
+  const skinId = activeSkin?.id ?? null
   useEffect(() => {
     const root = document.documentElement
     root.dataset.theme = themeDark ? 'dark' : 'light'
+    if (skinId) root.dataset.skin = skinId
+    else delete root.dataset.skin
+    saveActiveSkin(skinId)
     const dark = themeDark || mode === 'play'
     root.classList.toggle('dark', dark)
-    document.querySelector('meta[name="theme-color"]')?.setAttribute('content', dark ? '#12100D' : '#F7F5F1')
-  }, [mode, themeDark])
+    // The skin may have recolored the page background, so read the token back rather than assuming the base palette.
+    const bg = getComputedStyle(root).getPropertyValue(dark ? '--dark-bg' : '--bg').trim() || (dark ? '#12100D' : '#F7F5F1')
+    document.querySelector('meta[name="theme-color"]')?.setAttribute('content', bg)
+  }, [mode, themeDark, skinId])
 
   const addRound =(round: Round, editIdx: number | null) => {
     const d = [...deck]
@@ -193,12 +210,15 @@ export default function App() {
           guessTarget={guessTarget}
           voice={voice}
           theme={theme}
+          skin={skinSetting}
+          activeSkin={activeSkin}
           designer={designer}
           onTimer={setTimer}
           onGameMode={setGameMode}
           onGuessTarget={setGuessTarget}
           onVoice={setVoice}
           onTheme={setTheme}
+          onSkin={setSkinSetting}
           onDesigner={setDesigner}
           onClose={closeSettings}
         />

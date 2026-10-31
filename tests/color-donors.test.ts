@@ -31,7 +31,7 @@ describe('only NFL, NBA and college palettes color a remix', () => {
   test('the donor collections are NFL, NBA and college; every other collection is logo-only', () => {
     expect(COLOR_DONOR_LEAGUES).toEqual(['PRO', 'NBA', 'COL'])
     expect(LEAGUES.PRO.label).toBe('NFL')
-    const logoOnly: League[] = ['MLB', 'SOCCER', 'MLS', 'HS', 'FOOD', 'BRAND', 'FLAG', 'APP', 'TV', 'CAR', 'LUX', 'CLOTH', 'NHL', 'ELEMENT', 'MATH', 'SHAPE', 'SPACE', 'SCIENCE', 'WNBA', 'LANDMARK', 'CHAR', 'MOVIE', 'GAME']
+    const logoOnly: League[] = ['MLB', 'SOCCER', 'MLS', 'HS', 'FOOD', 'BRAND', 'FLAG', 'APP', 'TV', 'CAR', 'LUX', 'CLOTH', 'NHL', 'ELEMENT', 'MATH', 'SHAPE', 'SPACE', 'SCIENCE', 'WNBA', 'LANDMARK', 'CHAR', 'SWEET', 'MOVIE', 'GAME']
     expect([...COLOR_DONOR_LEAGUES, ...logoOnly].sort()).toEqual(Object.keys(LEAGUES).sort())
     for (const team of TEAMS) expect(isColorDonor(team)).toBe(COLOR_DONOR_LEAGUES.includes(team.league))
     for (const league of logoOnly) expect(filterTeams(league, 'All', '').length).toBeGreaterThan(0)

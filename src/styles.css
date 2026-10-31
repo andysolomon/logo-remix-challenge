@@ -623,6 +623,19 @@ html.kb-open .guess-form.both .guess-input { height: 44px; font-size: 16px; }
 html.kb-open .guess-field { gap: 8px; }
 html.kb-open .guess-field-lb { width: 56px; font-size: 11px; letter-spacing: 1px; }
 html.kb-open .guess-field-mark { width: 22px; }
+/* Keyboard up on a wide strip (a tablet or phone in landscape): stacking leaves the logo a sliver of the height while most of the
+   width sits empty, so the logo takes the left column at the strip's full height and the answer stack the right. The timer column
+   between them is the gutter. .play is the size container, so this follows the visible strip whether or not the browser shrinks
+   the layout viewport along with it. */
+.play { container: play / size; }
+@container play (min-aspect-ratio: 2 / 1) {
+  html.kb-open .question { grid-template-rows: auto auto minmax(0, 1fr) auto auto auto minmax(0, 1fr); column-gap: 16px; padding-bottom: 6px; }
+  html.kb-open .question > .q-hero { grid-area: 3 / 1 / -1 / 2; padding: 4px 0; }
+  html.kb-open .q-logo { width: min(520px, 100cqw, 100cqh); height: min(520px, 100cqw, 100cqh); }
+  html.kb-open .question > .q-jersey { grid-area: 4 / 3; }
+  html.kb-open .question > .q-ask { grid-area: 5 / 3; }
+  html.kb-open .question > .guess-form, html.kb-open .question > .host { grid-area: 6 / 3; width: min(560px, 100%); margin: 6px auto 0; }
+}
 .host { display: flex; flex-direction: column; align-items: center; gap: 10px; width: min(640px, 86%); margin: 14px auto 24px; }
 .host-hint { font: 500 14px var(--ui); color: var(--dark-faint); }
 .host-row { display: flex; gap: 14px; width: 100%; }

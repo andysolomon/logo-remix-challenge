@@ -31,7 +31,7 @@ Adds 66 clothing brands and 21 alternates: **147 clothing brands, 1581 total ent
 ## Validation
 
 - `npm run logos:clothing` reuses every checked-in asset offline (a forbidden-fetch check passes), and every brand builder leaves `teams.json` byte-for-byte unchanged.
-- Brand, backdrop, collection, dark-plate and color-donor tests: 31 passed, 0 failed. `npm run build` passes with Vite's standard >500 KB bundle advisory.
+- Full suite (`bun test --timeout 180000`): 223 passed, 1 skipped (the optional Potrace test), 0 failed. `npm run build` passes with Vite's standard >500 KB bundle advisory.
 - Playwright Chromium, 1024×1366 with touch: CLOTHING → Surf & Skate shows 23 tiles; Spitfire Wheels picked and remixed in Los Angeles Lakers colors.
 - Playwright Chromium, 390×844 with touch, dark mode: CLOTHING → Streetwear shows 19 tiles and Footwear 16; no page-wide horizontal overflow, no page errors and no failed requests.
 

@@ -1,7 +1,8 @@
 import { afterAll, beforeEach, describe, expect, test } from 'bun:test'
-import { readFileSync } from 'node:fs'
+import { existsSync, readFileSync } from 'node:fs'
 import { join } from 'node:path'
 import { SKINS, SKIN_SETTINGS, SKIN_SETTING_LABEL, findSkin, isSkinSetting, resolveSkin, skinInSeason, type Skin } from '../src/lib/skins'
+import { SPRITE_COUNT } from '../src/components/SkinStage'
 import { LS, loadSkinSetting, saveActiveSkin, saveSkinSetting } from '../src/lib/teams'
 
 const root = join(import.meta.dir, '..')
@@ -73,6 +74,32 @@ describe('skin registry', () => {
     expect(html).toContain(`localStorage.getItem('${LS.skin}')`)
     expect(html).toContain(`localStorage.getItem('${LS.skinActive}')`)
     expect(html).toContain('document.documentElement.dataset.skin = s')
+  })
+
+  test('the Play screen carries a sprite stage that skins show and animate', () => {
+    expect(read('src/components/PlayMode.tsx')).toContain('<SkinStage />')
+    expect(SPRITE_COUNT).toBeGreaterThanOrEqual(8)
+    const css = read('src/styles.css')
+    expect(css).toContain('.skin-stage { display: none;')
+    expect(css).toContain(':root[data-skin] .skin-stage { display: block; }')
+    expect(css).toContain('pointer-events: none')
+  })
+
+  test('every stylesheet url under /skins/ points at a shipped asset', () => {
+    const css = read('src/styles.css')
+    const urls = [...css.matchAll(/url\('(\/skins\/[^']+)'\)/g)].map((m) => m[1])
+    expect(urls.length).toBeGreaterThan(0)
+    for (const url of urls) expect(existsSync(join(root, 'public', url))).toBe(true)
+  })
+
+  test('the Halloween skin dresses the Play screen with a wallpaper, bats, ghosts and clouds', () => {
+    const css = read('src/styles.css')
+    expect(css).toContain(`:root[data-skin="halloween"] .play {`)
+    expect(css).toContain("url('/skins/halloween/wallpaper.svg')")
+    expect(css).toContain("url('/skins/halloween/bat.svg')")
+    expect(css).toContain("url('/skins/halloween/ghost.svg')")
+    expect(css).toContain("url('/skins/halloween/cloud.svg')")
+    for (let i = 1; i <= 8; i++) expect(css).toContain(`:root[data-skin="halloween"] .sprite.s${i}`)
   })
 
   test('the Halloween skin recolors the accent and the Play screen background', () => {

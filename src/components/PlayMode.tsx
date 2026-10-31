@@ -1,3 +1,4 @@
+import { SkinStage } from './SkinStage'
 import { useCallback, useEffect, useRef, useState, type FormEvent, type KeyboardEvent } from 'react'
 import { findTeam, formatScore, fullName, jerseyLine, roundColors, roundCredit, roundHints, roundPlayer, spokenScore, roundTarget, speak, speakScore, stopSpeak, isCorrectGuess, isCorrectPlayerGuess, insertHighScore, qualifiesForHighScore, INITIALS_LENGTH, INITIALS_ALPHABET, type GameMode, type GuessTarget, type HighScore, type Round, type RoundTarget, type TimerSeconds } from '../lib/teams'
 import { Logo, RoundLogo } from './Logo'
@@ -289,6 +290,7 @@ export function PlayMode({ deck, timer, gameMode, guessTarget, voice, highScores
 
   return (
     <div className="play">
+      <SkinStage />
       <div className="sr-only" role="status" aria-live="polite" aria-atomic="true">
         {liveStatus}
       </div>

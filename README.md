@@ -43,7 +43,7 @@ Each round asks for the **logo's team**, the **team whose colors it wears**, or 
 
 **Upload Logo** in Designer mode traces any image you bring (JPG, PNG, WebP, GIF or SVG; drop it on the canvas or pick a file) into flat-color vector outlines, right in the browser; nothing is sent anywhere. The tracer (`src/lib/trace.ts`) finds the artwork's flat fills as peaks in a color histogram, so JPEG noise and anti-aliased edges don't become extra colors, removes the background around the logo while keeping white details enclosed by it, and smooths each color's outline with potrace's corner rule. **Auto** keeps up to three colors (the Designer's three slots) and drops thin anti-aliasing halos; 1, 2 or 3 forces a count, and **Remove background** can be switched off. The traced logo then recolors slot by slot, picks up a backdrop tile and frame when it has fewer than three colors, and downloads as SVG or PNG like any other logo.
 
-**Holiday skins** dress the whole app for the season on top of the light or dark scheme. Settings → Holiday skin is **Auto** by default, which follows the calendar (Halloween from October 24 through November 1: pumpkin orange, midnight purple and a jack-o'-lantern beside the wordmark and on the game intro); **Off** keeps the plain look all year, and any skin can be picked by hand out of season. Thanksgiving, Christmas and the rest slot in the same way (see *Adding a holiday skin* below).
+**Holiday skins** dress the whole app for the season on top of the light or dark scheme. Settings → Holiday skin is **Auto** by default, which follows the calendar (Halloween from October 24 through November 1: pumpkin orange, midnight purple and a jack-o'-lantern beside the wordmark and on the game intro, and in Play a moonlit graveyard wallpaper with bats, ghosts and clouds drifting behind the game); **Off** keeps the plain look all year, and any skin can be picked by hand out of season. Thanksgiving, Christmas and the rest slot in the same way (see *Adding a holiday skin* below).
 
 Client-only SPA — no backend, no auth. Deck, timer, game mode, guess mode, voice, high score, holiday skin, and the Designer mode switch persist in `localStorage`.
 
@@ -76,6 +76,7 @@ A skin is a token swap, nothing more: no component knows which holiday is on. Th
 
 1. **Register it** in `src/lib/skins.ts`: add the id to `SkinId` and an entry to `SKINS` with a label, a hint for the Settings picker and a `season` window (`from` / `to` as `[month, day]`, inclusive; a window that ends in January wraps over New Year). Seasons must not overlap, so Auto always has one answer.
 2. **Style it** in `src/styles.css` under the *Holiday skins* heading: a `:root[data-skin="<id>"]` block overriding the light tokens (and the `--dark-*` tokens the Play screen uses), and a `:root[data-skin="<id>"][data-theme="dark"]` block for the dark scheme. Any decoration (a badge after `.wordmark` or `.intro-title`, a background glow) hangs off the same attribute. Never hardcode a skin color anywhere else.
+   For the game itself, `PlayMode` renders a **skin stage** (`src/components/SkinStage.tsx`): eight empty sprites behind the game, hidden until a skin styles them. Give `.play` a wallpaper and dress `.sprite.s1`…`.s8` with an image and a `transform` / `opacity` animation (snowflakes, falling leaves, bats). Assets live in `public/skins/<id>/`. The stage never takes a tap, and the global reduced-motion rule parks every animation.
 3. **Run `bun test`**: `tests/skins.test.ts` checks the registry, both CSS blocks, non-overlapping seasons and the pre-paint hook in `index.html`.
 
 The Settings picker, the `auto` resolution and the `lrx-skin` persistence pick the new skin up on their own. `index.html` restores the last applied skin before first paint from `lrx-skin-active`, which App.tsx refreshes whenever the resolved skin changes.
@@ -198,6 +199,7 @@ src/
     PlayMode.tsx           intro → question (type / host) → reveal → results
     DeckMode.tsx           deck cards (per-round guess mode) + settings rail
     SettingsModal.tsx      timer, defaults, voice announcer, appearance, holiday skin, Advanced → Designer mode
+    SkinStage.tsx          decorative sprites behind the game that holiday skins animate
 public/voice/              Chatterbox clips for Guess the Logo / Colors / both
 scripts/
   download_logos.py        fetch the 37 logo PNGs from ESPN into public/logos/

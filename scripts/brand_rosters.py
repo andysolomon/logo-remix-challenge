@@ -1,5 +1,5 @@
 """Brand collections: restaurants, brands grouped by brand type, iOS apps, TV channels, carmakers,
-luxury houses and clothing brands.
+luxury houses, clothing brands, characters, movies and video games.
 
 Each row is (abbr, display name, category, primary color, secondary color, answer aliases).
 The colors are the donor palette and white completes the third slot. Fast-food colors keep
@@ -897,6 +897,10 @@ MOVIE = [
     ("MINIONS", "Minions", "Animated", "000000", "808080", ["Despicable Me", "Minion", "Gru"]),
     ("SHREK", "Shrek", "Animated", "000000", "808080", ["Shrek 2", "Shrek the Third"]),
     ("KUNGFUPANDA", "Kung Fu Panda", "Animated", "010101", "808080", ["Po", "Kung Fu Panda 4"]),
+    ("MADAGASCAR", "Madagascar", "Animated", "FFE03A", "ED1C24", ["Madagascar 2", "Madagascar: Escape 2 Africa", "Madagascar 3", "Madagascar 3: Europe's Most Wanted", "King Julien"]),
+    ("ICEAGE", "Ice Age", "Animated", "39BBF0", "231F20", ["Ice Age 2", "Ice Age: The Meltdown", "Ice Age: Dawn of the Dinosaurs", "Scrat", "Sid the Sloth"]),
+    ("TROLLS", "Trolls", "Animated", "FF6400", "808080", ["DreamWorks Trolls", "Trolls World Tour", "Trolls Band Together", "Poppy and Branch", "Princess Poppy"]),
+    ("TOTORO", "My Neighbor Totoro", "Animated", "000000", "808080", ["Totoro", "My Neighbour Totoro", "Tonari no Totoro", "Studio Ghibli", "Chibi Totoro"]),
     ("HP", "Harry Potter", "Adventure & Fantasy", "000000", "808080", ["Deathly Hallows", "The Deathly Hallows", "Wizarding World", "Hogwarts"]),
     ("LOTR", "The Lord of the Rings", "Adventure & Fantasy", "000000", "808080", ["Lord of the Rings", "LOTR", "One Ring", "The One Ring", "Ring inscription"]),
     ("HUNGER", "The Hunger Games", "Adventure & Fantasy", "000000", "808080", ["Hunger Games", "Mockingjay", "Panem"]),
@@ -924,6 +928,16 @@ MOVIE = [
     ("JAWS", "Jaws", "Sci-Fi & Action", "E20001", "808080", []),
     ("GHOSTBUSTERS", "Ghostbusters", "Halloween", "000000", "1D1D1B", ["Ghost Busters", "No-Ghost", "No Ghost"]),
     ("SCOOBY", "Scooby-Doo", "Halloween", "F3AF5E", "75278A", ["Scooby Doo", "Scooby", "Scoob", "Scoob!", "Mystery Inc", "Mystery Machine", "Shaggy"]),
+    ("CASPER", "Casper", "Halloween", "D60052", "FFD600", ["Casper the Friendly Ghost", "Casper the Ghost", "Casper 1995"]),
+    ("BEETLEJUICE", "Beetlejuice", "Halloween", "000000", "808080", ["Beetlejuice Beetlejuice", "Beetle Juice", "Betelgeuse", "Beetlejuice 2"]),
+    ("HAUNTEDMANSION", "The Haunted Mansion", "Halloween", "000000", "808080", ["Haunted Mansion", "Disney's The Haunted Mansion", "Disney Haunted Mansion"]),
+    ("CORALINE", "Coraline", "Halloween", "000000", "808080", ["Coraline Jones", "The Other Mother"]),
+    ("NIGHTMARE", "The Nightmare Before Christmas", "Halloween", "000000", "808080", ["Nightmare Before Christmas", "Tim Burton's The Nightmare Before Christmas", "Jack Skellington", "Oogie Boogie"]),
+    ("HOTELT", "Hotel Transylvania", "Halloween", "000000", "808080", ["Hotel T", "Hotel Transylvania 2", "Hotel Transylvania 3", "Hotel Transylvania: Transformania"]),
+    ("GOOSEBUMPS", "Goosebumps", "Halloween", "5C04BC", "44BA1D", ["Goosebumps 2", "Goosebumps 2: Haunted Halloween", "R.L. Stine's Goosebumps", "Slappy the Dummy"]),
+    ("ADDAMS", "The Addams Family", "Halloween", "000000", "808080", ["Addams Family", "Addams Family Values", "Wednesday Addams", "Gomez Addams", "Morticia Addams"]),
+    ("GREMLINS", "Gremlins", "Halloween", "ED2127", "FFFFFF", ["Gremlins 2", "Gremlins 2: The New Batch", "Gizmo the Mogwai", "Mogwai"]),
+    ("FRANKENSTEIN", "Frankenstein", "Halloween", "3A7D44", "808080", ["Frankenstein's Monster", "Frankenstein 1931", "Frankenstein's Creature", "Frankenstein Monster"]),
 ]
 
 GAME = [

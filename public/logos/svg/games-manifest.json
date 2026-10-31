@@ -2354,7 +2354,7 @@
           "sha256": "6fbcad31850235aa616526faa79cbea0240184eb2087102b1b8ce76029eaba92"
         },
         {
-          "id": "title-2020",
+          "id": "wordmark",
           "label": "Pixel wordmark with a tree",
           "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/d/de/Terraria_2020.svg/revision/latest?cb=20240308113232",
           "sourcePage": "https://logos.fandom.com/wiki/File:Terraria_2020.svg",
@@ -2363,7 +2363,7 @@
             "viewBox": "-19.44 -19.44 524.88 179.88"
           },
           "showsName": true,
-          "path": "/logos/svg/games/alternates/terraria-title-2020.svg",
+          "path": "/logos/svg/games/alternates/terraria-wordmark.svg",
           "format": "svg",
           "colors": [
             "#000000",

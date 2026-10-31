@@ -17862,7 +17862,7 @@
   },
   {
     "teamId": "GAME-TERRARIA",
-    "id": "title-2020",
+    "id": "wordmark",
     "label": "Pixel wordmark with a tree",
     "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/d/de/Terraria_2020.svg/revision/latest?cb=20240308113232",
     "sourcePage": "https://logos.fandom.com/wiki/File:Terraria_2020.svg",
@@ -18123,5 +18123,177 @@
       "viewBox": "224.4 377.07 163.2 37.86"
     },
     "showsName": true
+  },
+  {
+    "teamId": "MOVIE-CASPER",
+    "id": "primary",
+    "label": "Classic cartoon title lettering",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/9/9c/Casper.svg/revision/latest?cb=20201126215822",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Casper.svg",
+    "sourceSha256": "c76b5bc8108a2f94b072e64ef0e43da18ad83c985d19bc2b8f983016cdad5139",
+    "ops": {
+      "viewBox": "-40 -40 1080 475.333"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "MOVIE-BEETLEJUICE",
+    "id": "primary",
+    "label": "1988 framed sign wordmark",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Beetlejuice_logo.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Beetlejuice_logo.svg",
+    "sourceSha256": "d82767bd025aa0e69bbd65ae74a70b55ce4191010467e808987d7381de5ca504",
+    "ops": {
+      "viewBox": "3.987 -6.22 443.528 268.511"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "MOVIE-HAUNTEDMANSION",
+    "id": "primary",
+    "label": "Gothic film title lettering",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Haunted_Mansion_logo.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:The_Haunted_Mansion_logo.svg",
+    "sourceSha256": "ce992d742e05e17febcc3b2c1a02382829b00d34e5a96beb7bf8d9009bacbbaa",
+    "ops": {
+      "removeNodes": [
+        "1/4"
+      ]
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "MOVIE-CORALINE",
+    "id": "primary",
+    "label": "Button-eye title lettering",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Coraline.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Coraline.svg",
+    "sourceSha256": "e19e899b96c428e988beb946ab109566246357a4f400fa0f53a22829a4ad921e",
+    "ops": {
+      "viewBox": "-2.095 -2.423 168.531 63.008"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "MOVIE-NIGHTMARE",
+    "id": "primary",
+    "label": "Spindly Burton title lettering",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/a/a6/Tim_Burton%27s_The_Nightmare_Before_Christmas.svg/revision/latest?cb=20200710070859",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Tim_Burton's_The_Nightmare_Before_Christmas.svg",
+    "sourceSha256": "65c2043d1058d56cfb770816329938af0ab19c3793b8c8aacbb1cc8858f7e42d",
+    "ops": {
+      "viewBox": "-40 -40 1080 526"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "MOVIE-HOTELT",
+    "id": "primary",
+    "label": "Spooky stacked title lettering",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Hotel_Transylvania_logo.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Hotel_Transylvania_logo.svg",
+    "sourceSha256": "cbfc6228706114b183c47e5c5a94bbc72422fd407bfa171e7074853650059642",
+    "ops": {
+      "viewBox": "-12 -12 324 159.71"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "MOVIE-GOOSEBUMPS",
+    "id": "primary",
+    "label": "Slime splat with drippy G",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/8/88/Goosebumps_splat.svg/revision/latest?cb=20260311014309",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Goosebumps_splat.svg",
+    "sourceSha256": "28611b29214dc392c93524cc7e5577349ecbd3db791cbafa504a9ffbf746b5fb",
+    "ops": {
+      "viewBox": "-15.723 -15.723 431.712 391.712"
+    }
+  },
+  {
+    "teamId": "MOVIE-ADDAMS",
+    "id": "primary",
+    "label": "Stacked black serif title",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Addams_Family_%28Tee_%26_Charles_Addams_Foundation%29_franchise_logo_%281%29.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:The_Addams_Family_%28Tee_%26_Charles_Addams_Foundation%29_franchise_logo_%281%29.svg",
+    "sourceSha256": "6e2830a986b3a41715a662cb6e712bb4f51db65cfe79e9df6449082298d6f799",
+    "ops": {
+      "viewBox": "-28.4 -25.56 904.824 723.632"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "MOVIE-GREMLINS",
+    "id": "primary",
+    "label": "1984 red title lettering",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/9/91/Gremlins.svg/revision/latest?cb=20200717171856",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Gremlins.svg",
+    "sourceSha256": "2296f3130d377884f935fc6aa814ceff2cebe787dbb1986d56ace20117323ffe",
+    "ops": {
+      "viewBox": "-40 -40 1080 263.877"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "MOVIE-MADAGASCAR",
+    "id": "primary",
+    "label": "2005 yellow island title",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/d/dd/Madagascar_film_logo_SVG.svg/revision/latest?cb=20251021143512",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Madagascar_film_logo_SVG.svg",
+    "sourceSha256": "2d83caaef037d1316b1f01e7aa9ac8f28b1bf2238d42c1337bcc3e1ebd42d75b",
+    "ops": {
+      "removeNodes": [
+        "2",
+        "3"
+      ],
+      "viewBox": "-17.842 103.422 1305.988 438.484"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "MOVIE-ICEAGE",
+    "id": "primary",
+    "label": "Stacked blue block title",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Iceage-logo.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Iceage-logo.svg",
+    "sourceSha256": "8834f5f9d02b75a2ab67173920ded8ec61ed668acb0838ebd8c386ee04de6660",
+    "ops": {
+      "viewBox": "-4.127 -3.988 216.415 193.502"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "MOVIE-TROLLS",
+    "id": "primary",
+    "label": "Orange bubbly title",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/1/11/Trolls.svg/revision/latest?cb=20180424085529",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Trolls.svg",
+    "sourceSha256": "20009303c3a420adf3573a5a0d19f51a6d8a23a36e228022752b044dd0ccb3ec",
+    "ops": {
+      "viewBox": "-40 -40 1080.001 493.334"
+    },
+    "showsName": true
+  },
+  {
+    "teamId": "MOVIE-TOTORO",
+    "id": "primary",
+    "label": "Ghibli forest-spirit silhouette",
+    "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/d/d3/Studio_Ghibli_2020.svg/revision/latest?cb=20230926153413",
+    "sourcePage": "https://logos.fandom.com/wiki/File:Studio_Ghibli_2020.svg",
+    "sourceSha256": "fa659f92a03dfc4d0480b30bc33f391afba592986f198639af9f563ca5214922",
+    "ops": {
+      "viewBox": "-10 -45 1272 1411",
+      "clipToViewBox": true
+    }
+  },
+  {
+    "teamId": "MOVIE-FRANKENSTEIN",
+    "id": "primary",
+    "label": "Flat-top monster bust",
+    "sourceUrl": "https://api.iconify.design/game-icons/frankenstein-creature.svg?color=%233A7D44",
+    "sourcePage": "https://icon-sets.iconify.design/game-icons/frankenstein-creature/",
+    "sourceSha256": "f2f1aefe885001124e3c4907015102ea157e108f06bb5a1c30de145d5fd78d95",
+    "ops": {
+      "viewBox": "41.943 -0.041 428.114 507.986"
+    }
   }
 ]

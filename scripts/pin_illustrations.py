@@ -9,13 +9,16 @@ import json
 from pathlib import Path
 import landmark_artwork
 import character_artwork
+from brand_rosters import ROSTERS
 ROOT=Path(__file__).resolve().parent.parent
 sources_path=ROOT/'scripts/brand_artwork_sources.json'
 sources=json.loads(sources_path.read_text())
 for league,module in [('LANDMARK',landmark_artwork),('CHAR',character_artwork)]:
     for abbr in module.FIGURES:
         variant,label=('primary','Architectural study') if league=='LANDMARK' else module.FIGURES[abbr][:2]
-        entry={'teamId':f'{league}-{abbr}','id':variant,'label':label,
+        # A character study pins under the collection that now holds its entry (CHARACTERS, MOVIES or VIDEO GAMES).
+        owner=league if league=='LANDMARK' else next(lg for lg in ('CHAR','MOVIE','GAME') if any(row[0]==abbr for row in ROSTERS[lg]))
+        entry={'teamId':f'{owner}-{abbr}','id':variant,'label':label,
                'sourceUrl':f'https://github.com/andysolomon/logo-remix-challenge/blob/main/scripts/{module.__name__}.py',
                'sourceSha256':hashlib.sha256(module.render(abbr).encode()).hexdigest(),
                'generator':module.__name__,'license':'Original project illustration; depicted character rights remain with their owners' if league=='CHAR' else 'Original project illustration'}

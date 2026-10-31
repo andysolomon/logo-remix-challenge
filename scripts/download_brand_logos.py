@@ -97,7 +97,8 @@ def pinned_sources(league: str) -> list[dict]:
         if not re.fullmatch(r"[a-z0-9]+(?:-[a-z0-9]+)*", source["id"]) or not source.get("label"):
             raise ValueError(f"{source['teamId']}: invalid variant id or missing label")
         generator = source.get("generator")
-        if generator and (league not in ('LANDMARK', 'CHAR') or generator != ('landmark_artwork' if league == 'LANDMARK' else 'character_artwork')):
+        # Character studies follow their entry when it moves to MOVIES or VIDEO GAMES.
+        if generator and (league not in ('LANDMARK', 'CHAR', 'MOVIE', 'GAME') or generator != ('landmark_artwork' if league == 'LANDMARK' else 'character_artwork')):
             raise ValueError(f"{source['teamId']}: unrecognized artwork generator")
         if not source["sourceUrl"].startswith("https://") or not re.fullmatch(r"[0-9a-f]{64}", source.get("sourceSha256", "")):
             raise ValueError(f"{source['teamId']}/{source['id']}: pin an https source and its SHA-256")

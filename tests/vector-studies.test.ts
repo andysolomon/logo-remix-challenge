@@ -15,7 +15,7 @@ from pathlib import Path
 sys.path.insert(0, 'scripts')
 from download_brand_logos import source_bytes, pinned_sources, manifest_path
 from brand_vector import import_brand_vector
-for league, count in [('LANDMARK', 16), ('CHAR', 10)]:
+for league, count in [('LANDMARK', 16), ('CHAR', 6), ('GAME', 4)]:
     sources=[s for s in pinned_sources(league) if s.get('generator')]
     assert len(sources)==count
     assets={(t['id'],a['id']):a for t in json.loads(manifest_path(league).read_text())['assets'] for a in t['artwork']}
@@ -36,7 +36,7 @@ import json,re
 from pathlib import Path
 from xml.etree import ElementTree as ET
 paths=[a['path'] for a in json.loads(Path('public/logos/svg/education-manifest.json').read_text())['assets']]
-for league in ('characters','landmarks'):
+for league in ('characters','games','landmarks'):
     paths += [a['path'] for t in json.loads(Path(f'public/logos/svg/{league}-manifest.json').read_text())['assets'] for a in t['artwork'] if a.get('generator')]
 for path in paths:
     raw=(Path('public')/path.lstrip('/')).read_text();root=ET.fromstring(raw)

@@ -1,0 +1,2495 @@
+{
+  "assets": [
+    {
+      "id": "GAME-AC",
+      "league": "GAME",
+      "conference": "Adventure",
+      "region": "Assassin's Creed",
+      "name": "",
+      "abbr": "AC",
+      "aliases": [
+        "Assassins Creed",
+        "Assassin's",
+        "Assassins",
+        "Assassin Creed"
+      ],
+      "palette": [
+        "#C7C8CA",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Assassin insignia",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/3/37/Assassins_Creed_Logo.svg/revision/latest?cb=20230521104810",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Assassins_Creed_Logo.svg",
+          "sourceSha256": "61fde73b72985753fea8b048e6295bdd75c72dbb8045481bb2fe3aa0d80644e5",
+          "ops": {
+            "keepNodes": [
+              "0",
+              "1"
+            ],
+            "viewBox": "84.86 -3.813 126.499 149.839"
+          },
+          "path": "/logos/svg/games/ac.svg",
+          "format": "svg",
+          "colors": [
+            "#C7C8CA"
+          ],
+          "sourcePalette": [
+            "#C7C8CA",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "3e82f5108480f75d735afcc887d9f3f324ee059ed54ebb61020c211e743029fc"
+        }
+      ]
+    },
+    {
+      "id": "GAME-ANIMALCROSSING",
+      "league": "GAME",
+      "conference": "Nintendo",
+      "region": "Animal Crossing",
+      "name": "",
+      "abbr": "ANIMALCROSSING",
+      "aliases": [
+        "Nook Inc",
+        "Nook Inc.",
+        "Animal Crossing: New Horizons",
+        "Tom Nook"
+      ],
+      "palette": [
+        "#61B948",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Nook Inc. leaf",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/2/2e/Nook_Inc.svg/revision/latest?cb=20200331090306",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Nook_Inc.svg",
+          "sourceSha256": "655c6e1a329a1bf7258a362053850b3bbadac983087a92f06b0c396f9dab6bfd",
+          "ops": {
+            "viewBox": "-44.864 -44.864 1211.328 1211.328"
+          },
+          "path": "/logos/svg/games/animalcrossing.svg",
+          "format": "svg",
+          "colors": [
+            "#61B948"
+          ],
+          "sourcePalette": [
+            "#61B948",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "b088c4db7e62a586808a07d74f3d6354d0bad4fbe91ac63098afd0493b3802b9"
+        },
+        {
+          "id": "leaf",
+          "label": "Plain leaf",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Animal_Crossing_Leaf.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Animal_Crossing_Leaf.svg",
+          "sourceSha256": "fbc479259a157193aa81c441bffc72beacd24e7783ed65792a722837efc6f3fb",
+          "ops": {
+            "viewBox": "-13.05 -13.047 352.335 337.147"
+          },
+          "path": "/logos/svg/games/alternates/animalcrossing-leaf.svg",
+          "format": "svg",
+          "colors": [
+            "#1AAE5E"
+          ],
+          "sourcePalette": [
+            "#1AAE5E",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "1bd067c5d2022650afc42c34b84bd3db4e005100bf9e2bfd5b73a22eadb9bdc2"
+        }
+      ]
+    },
+    {
+      "id": "GAME-APERTURE",
+      "league": "GAME",
+      "conference": "Adventure",
+      "region": "Aperture Science",
+      "name": "",
+      "abbr": "APERTURE",
+      "aliases": [
+        "Aperture",
+        "Aperture Laboratories",
+        "Portal",
+        "Portal 2"
+      ],
+      "palette": [
+        "#0099FF",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Shutter ring",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Aperture_Science.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Aperture_Science.svg",
+          "sourceSha256": "2d50cb602fcd80461a68455f966987d4279becd2350df07ab8bf9f03efe6e693",
+          "ops": {
+            "viewBox": "-89.873 -89.873 711.745 711.745"
+          },
+          "path": "/logos/svg/games/aperture.svg",
+          "format": "svg",
+          "colors": [
+            "#0099FF"
+          ],
+          "sourcePalette": [
+            "#0099FF",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "9a005a971b59755258722aa11f8bc8f6ac5271e868521de5e6e8ac9719cc8b30"
+        },
+        {
+          "id": "black",
+          "label": "One-color shutter",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/5/52/Aperture_Science_Symbol.svg/revision/latest?cb=20190609012652",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Aperture_Science_Symbol.svg",
+          "sourceSha256": "8fbbb87f3544693722105b3429aec96f563812ac5873cf8b7bc72aab9b27d8d6",
+          "ops": {
+            "viewBox": "-24.995 -24.995 674.867 674.868"
+          },
+          "path": "/logos/svg/games/alternates/aperture-black.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "844e726ded9a66801ee821ebf2a4188dba2a2f4ce0900df3a383a75a2620eb1c"
+        },
+        {
+          "id": "stripes-70s",
+          "label": "Striped symbol (70s)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/5/51/Aperture_Science_70s_Symbol.svg/revision/latest?cb=20190609012132",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Aperture_Science_70s_Symbol.svg",
+          "sourceSha256": "ee9440abc2e66be3c7b67671880cdd2f57de2c78fc0e4b98312574503a1b7af5",
+          "ops": {
+            "viewBox": "-5.776 -5.776 155.919 155.961"
+          },
+          "path": "/logos/svg/games/alternates/aperture-stripes-70s.svg",
+          "format": "svg",
+          "colors": [
+            "#9B4410",
+            "#A06810",
+            "#9E5610"
+          ],
+          "sourcePalette": [
+            "#9E5610",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "a72ad3f2fda09d1071356ee622902b35d6047ba9ab09448be14d77564671f52a"
+        }
+      ]
+    },
+    {
+      "id": "GAME-APEX",
+      "league": "GAME",
+      "conference": "Battle & Shooters",
+      "region": "Apex Legends",
+      "name": "",
+      "abbr": "APEX",
+      "aliases": [
+        "Apex"
+      ],
+      "palette": [
+        "#130C0D",
+        "#808080",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Apex symbol",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/f/f8/Apex_Legends_Symbol.svg/revision/latest?cb=20260805094800",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Apex_Legends_Symbol.svg",
+          "sourceSha256": "faf4678cdce48c8acb42db426530ff8dc9043c259de33fff0f933f485bfaea1e",
+          "ops": {
+            "viewBox": "-39.96 -39.96 1078.92 1049.92"
+          },
+          "path": "/logos/svg/games/apex.svg",
+          "format": "svg",
+          "colors": [
+            "#130C0D"
+          ],
+          "sourcePalette": [
+            "#130C0D",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "0238e93e97d4a1cbc1b7e8df058ecef54b3b7f928b7bf29d6b533cd45589ca50"
+        }
+      ]
+    },
+    {
+      "id": "GAME-BRAWL",
+      "league": "GAME",
+      "conference": "Battle & Shooters",
+      "region": "Brawl Stars",
+      "name": "",
+      "abbr": "BRAWL",
+      "aliases": [
+        "Brawl"
+      ],
+      "palette": [
+        "#FFE25B",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Skull tile",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/e/ec/Brawl-Stars-Icon.svg/revision/latest?cb=20241020030356",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Brawl-Stars-Icon.svg",
+          "sourceSha256": "b9c6457a3eb62e7b9b47419a733d7eefb24dd40be9a55fdd5f4664bc652831d8",
+          "ops": {
+            "viewBox": "-14.4 -14.4 388.8 388.8"
+          },
+          "path": "/logos/svg/games/brawl.svg",
+          "format": "svg",
+          "colors": [
+            "#FFE25B",
+            "#000000",
+            "#FFBE20",
+            "#FFFFFF",
+            "#FFB820",
+            "#EF7527"
+          ],
+          "sourcePalette": [
+            "#FBB330",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "18796dca2e176f792d9a32e15f7e1694828658495db3fce3486397f2cf42a3f6"
+        }
+      ]
+    },
+    {
+      "id": "GAME-COD",
+      "league": "GAME",
+      "conference": "Battle & Shooters",
+      "region": "Call of Duty",
+      "name": "",
+      "abbr": "COD",
+      "aliases": [
+        "CoD",
+        "COD",
+        "Call of Duty: Warzone",
+        "Warzone"
+      ],
+      "palette": [
+        "#000000",
+        "#808080",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Wordmark",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/c/c9/Call_of_Duty_2003.svg/revision/latest?cb=20220623131848",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Call_of_Duty_2003.svg",
+          "sourceSha256": "25e4c7aceda68567fa4a03117ae21c9ca33b4bd64322ae1371c05a74101e6f3d",
+          "ops": {
+            "viewBox": "-40 -40 1080 263.026"
+          },
+          "showsName": true,
+          "path": "/logos/svg/games/cod.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "243429d2599b29ba8ce878ef813bf038920f8e3cd4d69a4f0ba29f5968a86395"
+        }
+      ]
+    },
+    {
+      "id": "GAME-CRASH",
+      "league": "GAME",
+      "conference": "Adventure",
+      "region": "Crash Bandicoot",
+      "name": "",
+      "abbr": "CRASH",
+      "aliases": [
+        "Crash Bandicoot N. Sane Trilogy",
+        "Crash Bandicoot 4"
+      ],
+      "palette": [
+        "#F3B900",
+        "#4F2114",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Orange cartoon title lettering",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/9/95/Crash_Bandicoot_2020_logo.svg/revision/latest?cb=20240405125253",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Crash_Bandicoot_2020_logo.svg",
+          "sourceSha256": "62723153847297b4204112e15346664a5070a8cefc3b995812a539e342c3c3d4",
+          "ops": {
+            "viewBox": "-17.281 127.921 534.562 244.158"
+          },
+          "showsName": true,
+          "path": "/logos/svg/games/crash.svg",
+          "format": "svg",
+          "colors": [
+            "#4F2114",
+            "#F3B900",
+            "#562815",
+            "#F2B700",
+            "#FAD700",
+            "#F3BD00",
+            "#F4C000",
+            "#F5C500",
+            "#F6C900",
+            "#F7CD00",
+            "#F7D000",
+            "#FAD400",
+            "#F8D500",
+            "#F9D700",
+            "#350F10",
+            "#50120E",
+            "#EB6025"
+          ],
+          "sourcePalette": [
+            "#F3B900",
+            "#4A1A12",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "2d3351e171457c422e43594a6ab61ba126657e912ffa3e7f9d9b0598645db382"
+        }
+      ]
+    },
+    {
+      "id": "GAME-CREEPER",
+      "league": "GAME",
+      "conference": "Adventure",
+      "region": "Creeper",
+      "name": "",
+      "abbr": "CREEPER",
+      "aliases": [
+        "Minecraft Creeper",
+        "Minecraft"
+      ],
+      "palette": [
+        "#1DB53C",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Creeper face",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Minecraft-creeper-face.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Minecraft-creeper-face.svg",
+          "sourceSha256": "9e4987019836edd39f87414bb07cbc0453760703ff66b84f5ca995d59a8ddff8",
+          "ops": {
+            "viewBox": "-43.003 -42.003 1165.443 1163.933"
+          },
+          "path": "/logos/svg/games/creeper.svg",
+          "format": "svg",
+          "colors": [
+            "#1DB53C",
+            "#000000",
+            "#073E21",
+            "#083D20"
+          ],
+          "sourcePalette": [
+            "#1DB53C",
+            "#052916",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "44ee1711540e0cef28fdc75703686690eb6da42ee14d8e140f587ac8450c8725"
+        },
+        {
+          "id": "grass-block",
+          "label": "Grass block",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/b/b4/Minecraft_2014_Bedrock.svg/revision/latest?cb=20230630003941",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Minecraft_2014_Bedrock.svg",
+          "sourceSha256": "8e6d5740479b0afb8596516f500801b280d54efaa36bfb15fb5570d0011cee0c",
+          "ops": {
+            "viewBox": "-42.521 -42.147 1064.305 1215.004"
+          },
+          "path": "/logos/svg/games/alternates/creeper-grass-block.svg",
+          "format": "svg",
+          "colors": [
+            "#94E16A",
+            "#7B6E41",
+            "#302E11",
+            "#A5CF6F",
+            "#8DC65F",
+            "#BBD77E",
+            "#A8D071",
+            "#B5D579",
+            "#A6CF6F",
+            "#98C964",
+            "#95C863",
+            "#97C965",
+            "#9CCB69",
+            "#8BC55C",
+            "#90C65F",
+            "#84C256",
+            "#A1CD6B",
+            "#B0D376",
+            "#B5D576",
+            "#9FCC6B",
+            "#A3D087",
+            "#84C471",
+            "#C3DB83",
+            "#AFD275",
+            "#B8D67B",
+            "#C0D980",
+            "#B8D679",
+            "#BED983",
+            "#956C4E",
+            "#78553D",
+            "#6C6C6C",
+            "#629F48",
+            "#67A449",
+            "#6EAA4A",
+            "#583D2B",
+            "#B7845F",
+            "#9BC76E",
+            "#569346",
+            "#81BE5B",
+            "#92BE65",
+            "#75B34F",
+            "#6BA749",
+            "#3C3027",
+            "#4B3D32",
+            "#5C4B3E",
+            "#45663C",
+            "#2C221B",
+            "#365F30",
+            "#3A6332",
+            "#2E532A",
+            "#335B2E",
+            "#3C6635",
+            "#363E48",
+            "#4B6E45",
+            "#386131",
+            "#434D5A",
+            "#416C3B",
+            "#325A2E"
+          ],
+          "sourcePalette": [
+            "#569346",
+            "#3D412C",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "c707e687c3a54dab8a44ff65a6e579a151ad2d81dbf4c412387f70832243576e"
+        },
+        {
+          "id": "voxel-head",
+          "label": "Voxel head",
+          "sourceUrl": "https://github.com/andysolomon/logo-remix-challenge/blob/main/scripts/character_artwork.py",
+          "sourceSha256": "54cb847b8180c4526ad7c488cce5923ba89cfcdb563ae8cda4613c5dda621acb",
+          "generator": "character_artwork",
+          "license": "Original project illustration; depicted character rights remain with their owners",
+          "path": "/logos/svg/games/alternates/creeper-voxel-head.svg",
+          "format": "svg",
+          "colors": [
+            "#72AA45",
+            "#17202C",
+            "#FFFFFF",
+            "#4E8B39"
+          ],
+          "sourcePalette": [
+            "#609A3F",
+            "#17202C",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "3da9975cb3f7623230d4b1ba46a4190c0cb79b873be4dca85d37835bd65814dc"
+        }
+      ]
+    },
+    {
+      "id": "GAME-DESTINY",
+      "league": "GAME",
+      "conference": "Battle & Shooters",
+      "region": "Destiny",
+      "name": "",
+      "abbr": "DESTINY",
+      "aliases": [
+        "Destiny 2"
+      ],
+      "palette": [
+        "#C2C8CE",
+        "#9CA5AE",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Three-horned crest",
+          "sourceUrl": "https://raw.githubusercontent.com/chouhan-rahul/icons_plus/v5.0.0/assets/images/logos/video-games/destiny-2.svg",
+          "sourcePage": "https://github.com/chouhan-rahul/icons_plus/blob/v5.0.0/assets/images/logos/video-games/destiny-2.svg",
+          "sourceSha256": "4cf5bd772af6e4602c04e064a664aa09b49f19c2198c363d072e092d27d3f59a",
+          "ops": {
+            "viewBox": "4.557 7.561 38.886 35.879"
+          },
+          "path": "/logos/svg/games/destiny.svg",
+          "format": "svg",
+          "colors": [
+            "#C2C8CE",
+            "#B5BCC3",
+            "#A9B1B9",
+            "#9CA5AE"
+          ],
+          "sourcePalette": [
+            "#BCC2C8",
+            "#A2ABB4",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "d2491a255d0d9338067231ec930d8b11cd52553836b0d48ec2703a54bfb4f14d"
+        }
+      ]
+    },
+    {
+      "id": "GAME-DK",
+      "league": "GAME",
+      "conference": "Nintendo",
+      "region": "Donkey Kong",
+      "name": "",
+      "abbr": "DK",
+      "aliases": [
+        "DK",
+        "Donkey Kong Country"
+      ],
+      "palette": [
+        "#E70013",
+        "#F6EC1C",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Wordmark (2024)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/0/0e/Donkey_Kong_2024.svg/revision/latest?cb=20260917224102",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Donkey_Kong_2024.svg",
+          "sourceSha256": "1a937d7f275e24a1bde1cb2a90fe7967a46c2cabfb0175b4db9b90cb6b4bddbc",
+          "ops": {
+            "viewBox": "-23.927 -23.938 646.048 147.565"
+          },
+          "showsName": true,
+          "path": "/logos/svg/games/dk.svg",
+          "format": "svg",
+          "colors": [
+            "#E70013",
+            "#F6EC1C"
+          ],
+          "sourcePalette": [
+            "#E70013",
+            "#F6EC1C",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "b7a3b89204c1d0509ca65a3e85189a3f196f7bfdb9020b50d894206929817d57"
+        }
+      ]
+    },
+    {
+      "id": "GAME-EAFC",
+      "league": "GAME",
+      "conference": "Sports & Racing",
+      "region": "EA Sports FC",
+      "name": "",
+      "abbr": "EAFC",
+      "aliases": [
+        "FIFA",
+        "EA FC",
+        "EAFC",
+        "EA Sports FC 25",
+        "EA Sports FC 26",
+        "FC 25",
+        "FC 26"
+      ],
+      "palette": [
+        "#151516",
+        "#808080",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Round badge beside slanted letters",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/3/31/EA_Sports_FC_logo.svg/revision/latest?cb=20230412041159",
+          "sourcePage": "https://logos.fandom.com/wiki/File:EA_Sports_FC_logo.svg",
+          "sourceSha256": "d703a7be1d831d50c6c78a3dd2e843daae65a52c6b062492a4dfc91552d2169e",
+          "ops": {
+            "viewBox": "-40 -40 1080 576.414"
+          },
+          "showsName": true,
+          "path": "/logos/svg/games/eafc.svg",
+          "format": "svg",
+          "colors": [
+            "#151516"
+          ],
+          "sourcePalette": [
+            "#151516",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "96d625251ccb31b6f08a2d4a5d10c7733c427b411d69c9831f65971f5ea8bbc1"
+        }
+      ]
+    },
+    {
+      "id": "GAME-ELDENRING",
+      "league": "GAME",
+      "conference": "Adventure",
+      "region": "Elden Ring",
+      "name": "",
+      "abbr": "ELDENRING",
+      "aliases": [
+        "Elden Ring Nightreign",
+        "Tarnished"
+      ],
+      "palette": [
+        "#000000",
+        "#808080",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Title wordmark",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/c/c9/Elden_Ring.svg/revision/latest?cb=20220615200010",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Elden_Ring.svg",
+          "sourceSha256": "3c7895adea828faed8d65a8fc78d43b7422237e5995be6b5a7e423ad2c6e6abc",
+          "ops": {
+            "viewBox": "-35.126 -35.126 948.391 198.675"
+          },
+          "showsName": true,
+          "path": "/logos/svg/games/eldenring.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "a52bfad29cba03b275fb0070d3a04f69fbdad3689c82ad2cf1986565a8bdf2bc"
+        }
+      ]
+    },
+    {
+      "id": "GAME-FALLGUYS",
+      "league": "GAME",
+      "conference": "Arcade & Puzzle",
+      "region": "Fall Guys",
+      "name": "",
+      "abbr": "FALLGUYS",
+      "aliases": [
+        "Fall Guys: Ultimate Knockout"
+      ],
+      "palette": [
+        "#30D8DE",
+        "#08AFBB",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Wordmark",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/a/a3/Fall_Guys.svg/revision/latest?cb=20220517231053",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Fall_Guys.svg",
+          "sourceSha256": "2b16c1dab1ace416f79ef22dd5ec2d2afdfa0d30ecf240ee0d7ae45236f5b8a7",
+          "ops": {
+            "viewBox": "-16.669 -16.669 639.06 567.127"
+          },
+          "showsName": true,
+          "path": "/logos/svg/games/fallguys.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#30D8DE",
+            "#08AFBB",
+            "#F73CA3",
+            "#E81A87",
+            "#222326",
+            "#257EA5",
+            "#B5097A",
+            "#D6D6D6",
+            "#E5E5E5",
+            "#4D4D4D"
+          ],
+          "sourcePalette": [
+            "#30D8DE",
+            "#297E8F",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "bb32f9db152a30415b9e5269668bc765423ce58852c44cf6827b80c286cd55d4"
+        }
+      ]
+    },
+    {
+      "id": "GAME-FNAF",
+      "league": "GAME",
+      "conference": "Indie",
+      "region": "Five Nights at Freddy's",
+      "name": "",
+      "abbr": "FNAF",
+      "aliases": [
+        "FNAF",
+        "Five Nights at Freddys",
+        "Five Nights at Freddy",
+        "Freddy Fazbear",
+        "Five Nights"
+      ],
+      "palette": [
+        "#000000",
+        "#808080",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Bold stacked horror-movie title",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/c/cb/FNAF_%28Film%29_%28Print%29.svg/revision/latest?cb=20240420151912",
+          "sourcePage": "https://logos.fandom.com/wiki/File:FNAF_(Film)_(Print).svg",
+          "sourceSha256": "b8ca95c2f784a7e275d5769e1b5754ff19f131445bb56265df0f21c27cad2fac",
+          "ops": {
+            "viewBox": "-50.4 -50.4 1360.8 570.8"
+          },
+          "showsName": true,
+          "path": "/logos/svg/games/fnaf.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "c3385f1e4b8e6464fde5b2f4ad2ca0e2a79b5c12ba4886d989a6cea796fd8082"
+        }
+      ]
+    },
+    {
+      "id": "GAME-FORZA",
+      "league": "GAME",
+      "conference": "Sports & Racing",
+      "region": "Forza",
+      "name": "",
+      "abbr": "FORZA",
+      "aliases": [
+        "Forza Horizon",
+        "Forza Motorsport",
+        "Forza Horizon 5"
+      ],
+      "palette": [
+        "#000000",
+        "#808080",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Speed-striped F emblem",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/2/2f/ForzaSymbol.svg/revision/latest?cb=20191021000650",
+          "sourcePage": "https://logos.fandom.com/wiki/File:ForzaSymbol.svg",
+          "sourceSha256": "48e2f6bc921477870e1fe8e5b45bf3a1f462368d03887d2a4e2bfff2a3852cb8",
+          "ops": {
+            "viewBox": "-48.386 -102.284 2977.67 1474.37"
+          },
+          "path": "/logos/svg/games/forza.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "156866be4298804a91167a44fe0624a4797cad15572737ec267df2f421b66c84"
+        }
+      ]
+    },
+    {
+      "id": "GAME-GOW",
+      "league": "GAME",
+      "conference": "Adventure",
+      "region": "God of War",
+      "name": "",
+      "abbr": "GOW",
+      "aliases": [
+        "Kratos"
+      ],
+      "palette": [
+        "#000000",
+        "#808080",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Omega icon (2016)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/b/b3/God_of_War_2016_%28Icon%29.svg/revision/latest?cb=20221110002755",
+          "sourcePage": "https://logos.fandom.com/wiki/File:God_of_War_2016_(Icon).svg",
+          "sourceSha256": "3d9b992abf77e2378e2497f709edb22338915f57cf32bf6a2dd142c4d429d476",
+          "ops": {
+            "viewBox": "-5.701 -5.701 153.928 136.842"
+          },
+          "path": "/logos/svg/games/gow.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "5de75beea4cac2473fe61eb11186ca5f6ff66c5d7fe45cde69ce8086c8b28b91"
+        }
+      ]
+    },
+    {
+      "id": "GAME-GRANTURISMO",
+      "league": "GAME",
+      "conference": "Sports & Racing",
+      "region": "Gran Turismo",
+      "name": "",
+      "abbr": "GRANTURISMO",
+      "aliases": [
+        "Gran Turismo 7",
+        "GT7"
+      ],
+      "palette": [
+        "#1D50A1",
+        "#D80B17",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Red-and-blue racing monogram",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/e/e1/Gran_Turismo_%28textless%2C_coloured%29.svg/revision/latest?cb=20231031092749",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Gran_Turismo_(textless,_coloured).svg",
+          "sourceSha256": "2b1d4dcf5119ed0fe38f8de010d3d999eaff0f162e8988f38bc4fcd0155e8c0f",
+          "ops": {
+            "viewBox": "-14.659 -14.648 419.239 278.646"
+          },
+          "path": "/logos/svg/games/granturismo.svg",
+          "format": "svg",
+          "colors": [
+            "#D80B17",
+            "#1D50A1"
+          ],
+          "sourcePalette": [
+            "#1D50A1",
+            "#D80B17",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "6cdc27024f7c5325a803c77a850a0eb2707bc97fe621ac84b577ab9a26307d94"
+        }
+      ]
+    },
+    {
+      "id": "GAME-GTA",
+      "league": "GAME",
+      "conference": "Adventure",
+      "region": "Grand Theft Auto",
+      "name": "",
+      "abbr": "GTA",
+      "aliases": [
+        "GTA",
+        "GTA V",
+        "GTA 5",
+        "GTA VI",
+        "Grand Theft Auto V"
+      ],
+      "palette": [
+        "#000000",
+        "#808080",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Oval wordmark (1999)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/5/51/Grand_Theft_Auto_1999.svg/revision/latest?cb=20171114080401",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Grand_Theft_Auto_1999.svg",
+          "sourceSha256": "5da4745e8bfce93123e722684ea47b3c1290fe6ca8fac139ad88dbe18f39e71c",
+          "ops": {
+            "viewBox": "-10.583 -10.583 285.75 131.485"
+          },
+          "showsName": true,
+          "path": "/logos/svg/games/gta.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "2a59d7a60f2d7d115fad6d980b6325d1dc120a3a6843bec8083a8dbb7b2827c6"
+        }
+      ]
+    },
+    {
+      "id": "GAME-HALFLIFE",
+      "league": "GAME",
+      "conference": "Adventure",
+      "region": "Half-Life",
+      "name": "",
+      "abbr": "HALFLIFE",
+      "aliases": [
+        "Half Life",
+        "Lambda",
+        "Half-Life 2"
+      ],
+      "palette": [
+        "#000000",
+        "#808080",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Lambda",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/4/46/Half-Life_Lambda.svg/revision/latest?cb=20190608140846",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Half-Life_Lambda.svg",
+          "sourceSha256": "28b2f306d249e3481c48d1d31ae9a41785fe0a3b44c044cdbbcbbeab92bad798",
+          "ops": {
+            "viewBox": "1.995 1.995 144.953 144.952"
+          },
+          "path": "/logos/svg/games/halflife.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "7519a3f166b6821026dc879dd185adf98006effa7ddc1a0461e8fc346003039f"
+        },
+        {
+          "id": "orange-lambda",
+          "label": "Orange symbol (sequel)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/8/88/Half-Life_logo.svg/revision/latest?cb=20190608235422",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Half-Life_logo.svg",
+          "sourceSha256": "a222c886ff049ab0492083b398ee22b6f0bcb3c898d8df52fd73558f99b7efb7",
+          "ops": {
+            "viewBox": "-27.843 -6.972 751.775 557.122"
+          },
+          "path": "/logos/svg/games/alternates/halflife-orange-lambda.svg",
+          "format": "svg",
+          "colors": [
+            "#FB7E14"
+          ],
+          "sourcePalette": [
+            "#FB7E14",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "10f06c755d789b8b89eada71af6138aa31b01ad7274322e49544ff56ddf6838f"
+        }
+      ]
+    },
+    {
+      "id": "GAME-HALO",
+      "league": "GAME",
+      "conference": "Battle & Shooters",
+      "region": "Halo",
+      "name": "",
+      "abbr": "HALO",
+      "aliases": [
+        "Halo Infinite",
+        "Halo Combat Evolved",
+        "Master Chief"
+      ],
+      "palette": [
+        "#000000",
+        "#808080",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Spaced-out sci-fi wordmark",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/2/26/Halo_print_logo_%282001-2010%29.svg/revision/latest?cb=20210515025917",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Halo_print_logo_(2001-2010).svg",
+          "sourceSha256": "610ef9b8691b2bb6b2999cfc4a3273dd465be34edf05eaaba51852d750a56e6b",
+          "ops": {
+            "viewBox": "-11.379 -11.379 307.239 61.493"
+          },
+          "showsName": true,
+          "path": "/logos/svg/games/halo.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "5dcd959249a92fba0a0b71439f2261dd035646a7d364fffbda875a5ad8bcd958"
+        }
+      ]
+    },
+    {
+      "id": "GAME-HOLLOWKNIGHT",
+      "league": "GAME",
+      "conference": "Indie",
+      "region": "Hollow Knight",
+      "name": "",
+      "abbr": "HOLLOWKNIGHT",
+      "aliases": [
+        "HollowKnight",
+        "Hollow Knight Silksong",
+        "Silksong"
+      ],
+      "palette": [
+        "#000000",
+        "#808080",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Ornate gothic wordmark",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/9/96/Hollow_Knight.svg/revision/latest?cb=20220430220711",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Hollow_Knight.svg",
+          "sourceSha256": "7dd81e9616e98d2c307986dbe618a9659bd6db3059881b77de6d111c18a06713",
+          "ops": {
+            "viewBox": "-28.859 -28.859 779.198 321.438"
+          },
+          "showsName": true,
+          "path": "/logos/svg/games/hollowknight.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "2971fdc105e0cfbd3b7cd845ad88b2a7d173157f2ec9cbebb0cc76d34b2751ce"
+        }
+      ]
+    },
+    {
+      "id": "GAME-INVADER",
+      "league": "GAME",
+      "conference": "Arcade & Puzzle",
+      "region": "Space Invaders",
+      "name": "",
+      "abbr": "INVADER",
+      "aliases": [
+        "Space Invader",
+        "Invaders"
+      ],
+      "palette": [
+        "#553986",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Pixel alien",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Twemoji_1f47e.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Twemoji_1f47e.svg",
+          "sourceSha256": "0e071b6a2d2c3d8c6246bff5c17af0a775a90527eab5946e40bba2a7bdfe517c",
+          "ops": {
+            "viewBox": "-0.55 1.95 48.6 44.85"
+          },
+          "path": "/logos/svg/games/invader.svg",
+          "format": "svg",
+          "colors": [
+            "#553986"
+          ],
+          "sourcePalette": [
+            "#553986",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "bf9ce1a69957a1bbb3981b3c3f825f7c420d63b05656dce84d3ede5cfd78b7c4"
+        },
+        {
+          "id": "wordmark",
+          "label": "Wordmark",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/e/e5/Space_Invaders.svg/revision/latest?cb=20230104233928",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Space_Invaders.svg",
+          "sourceSha256": "5f8281273d2fe14c1b2b8b7fbd39ac837aba22e4740754da6241874ff8bcdee2",
+          "ops": {
+            "viewBox": "-40 -40 1080 513.107"
+          },
+          "showsName": true,
+          "path": "/logos/svg/games/alternates/invader-wordmark.svg",
+          "format": "svg",
+          "colors": [
+            "#007482",
+            "#000000",
+            "#5C6DB4",
+            "#EFCD17"
+          ],
+          "sourcePalette": [
+            "#2E709B",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "74399576d933eea48e993e496503328bd3b6a63da65cd596907e54a130909de9"
+        }
+      ]
+    },
+    {
+      "id": "GAME-KIRBY",
+      "league": "GAME",
+      "conference": "Nintendo",
+      "region": "Kirby",
+      "name": "",
+      "abbr": "KIRBY",
+      "aliases": [
+        "Kirby's Dream Land"
+      ],
+      "palette": [
+        "#000000",
+        "#151858",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Wordmark",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Kirby-Logo-New.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Kirby-Logo-New.svg",
+          "sourceSha256": "c89bea95bd4eabb136e28291095955dc1d75e6563e4b0686339115676be5d656",
+          "ops": {
+            "viewBox": "-10.527 -10.527 284.218 134.368"
+          },
+          "showsName": true,
+          "path": "/logos/svg/games/kirby.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#151858",
+            "#A30D1D",
+            "#F7D355",
+            "#FDF1C6",
+            "#FA888A",
+            "#FCC5C1",
+            "#E14964"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#5C123A",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "e9dc82424f00980db7e617f1fbcaff663f1b0392bb46c42add5953264e7e44fe"
+        }
+      ]
+    },
+    {
+      "id": "GAME-LOL",
+      "league": "GAME",
+      "conference": "Battle & Shooters",
+      "region": "League of Legends",
+      "name": "",
+      "abbr": "LOL",
+      "aliases": [
+        "LoL",
+        "League",
+        "Riot Games"
+      ],
+      "palette": [
+        "#C28F2C",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "L mark",
+          "sourceUrl": "https://api.iconify.design/simple-icons/leagueoflegends.svg?color=%23C28F2C",
+          "sourcePage": "https://icon-sets.iconify.design/simple-icons/leagueoflegends/",
+          "sourceSha256": "cf37f18c7aeb706eeb78a691071cf2127627eef22b9f246b1e31be80bd59346e",
+          "ops": {
+            "viewBox": "-0.21 -0.96 24.421 25.92"
+          },
+          "path": "/logos/svg/games/lol.svg",
+          "format": "svg",
+          "colors": [
+            "#C28F2C"
+          ],
+          "sourcePalette": [
+            "#C28F2C",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "c42515e4fb749f7ec16e7097d05199a17cf07b09ccb1ee716b199376251f0e3c"
+        }
+      ]
+    },
+    {
+      "id": "GAME-MARIO",
+      "league": "GAME",
+      "conference": "Nintendo",
+      "region": "Super Mario",
+      "name": "",
+      "abbr": "MARIO",
+      "aliases": [
+        "Mario",
+        "Power Star",
+        "Super Star",
+        "Super Mushroom",
+        "Super Mario Bros"
+      ],
+      "palette": [
+        "#F7EA04",
+        "#808080",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Power Star",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/SM64_Power_Star.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:SM64_Power_Star.svg",
+          "sourceSha256": "f24b0dd990b495900a936075362bf5c02ce1834805b8af00141f67d9ca092281",
+          "ops": {
+            "viewBox": "-6.48 -6.48 174.96 154.96"
+          },
+          "path": "/logos/svg/games/mario.svg",
+          "format": "svg",
+          "colors": [
+            "#F7EA04",
+            "#FFFFFF",
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#F7EA04",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "231a66b472d025115b21cb0ff696ca8d2fea276e45e3689c9b6e9215a1348cfb"
+        },
+        {
+          "id": "grand-star",
+          "label": "Grand Star",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/6/63/Grand_Star.svg/revision/latest?cb=20250106225113",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Grand_Star.svg",
+          "sourceSha256": "d9f25943e0b567f1ab9aa0295c6f68798011c650424574503a7ddea01d6c01f7",
+          "ops": {
+            "viewBox": "-9.171 -10.598 290.619 280.389"
+          },
+          "path": "/logos/svg/games/alternates/mario-grand-star.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#FFD800"
+          ],
+          "sourcePalette": [
+            "#FFD800",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "c2068f5700f95a8249a2f683936dd1ae0d5598681c3ef665855a2d25d463fcea"
+        },
+        {
+          "id": "mushroom",
+          "label": "Red-capped power-up",
+          "sourceUrl": "https://api.iconify.design/game-icons/super-mushroom.svg?color=%23E52521",
+          "sourcePage": "https://icon-sets.iconify.design/game-icons/super-mushroom/",
+          "sourceSha256": "02caec1c4b2542329e60ce8fe6c05094f2d0bf8076944c999c8eed515cf6b72e",
+          "ops": {
+            "viewBox": "3.75 6.862 503.575 505.744"
+          },
+          "path": "/logos/svg/games/alternates/mario-mushroom.svg",
+          "format": "svg",
+          "colors": [
+            "#E52521"
+          ],
+          "sourcePalette": [
+            "#E52521",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "6aed524c4f2c4124ac97efbfc4a9e3c3373c76aae970751c4f54c7adfae4c257"
+        },
+        {
+          "id": "wordmark",
+          "label": "Series wordmark",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Mario_Series_Logo.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Mario_Series_Logo.svg",
+          "sourceSha256": "76a0825015d61e09d870fa75e5dc2aa0eec547a161451eaf93c19f6451ff9a94",
+          "ops": {
+            "viewBox": "-435.328 -435.296 11753.856 5966.16"
+          },
+          "showsName": true,
+          "path": "/logos/svg/games/alternates/mario-wordmark.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#FCCF00",
+            "#44AF35",
+            "#E62310",
+            "#009BD9"
+          ],
+          "sourcePalette": [
+            "#F17908",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "aa76f82da363fdefcfb42ad55401b870aed1b106e1b95e5ee6ee599be854f665"
+        },
+        {
+          "id": "fire-flower",
+          "label": "Fire flower",
+          "sourceUrl": "https://github.com/andysolomon/logo-remix-challenge/blob/main/scripts/character_artwork.py",
+          "sourceSha256": "bd5b6e0f6d25f2f1806c3cb1b673198cd8293d0907df9207da143bcdd641c879",
+          "generator": "character_artwork",
+          "license": "Original project illustration; depicted character rights remain with their owners",
+          "path": "/logos/svg/games/alternates/mario-fire-flower.svg",
+          "format": "svg",
+          "colors": [
+            "#E84522",
+            "#17202C",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#E84522",
+            "#17202C",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "afe37e83d7212cb97df93d1f6678f4ac10415f1d457705aa912d604b6767adc0"
+        }
+      ]
+    },
+    {
+      "id": "GAME-MARIOKART",
+      "league": "GAME",
+      "conference": "Sports & Racing",
+      "region": "Mario Kart",
+      "name": "",
+      "abbr": "MARIOKART",
+      "aliases": [
+        "Mario Kart 8",
+        "Mario Kart 8 Deluxe",
+        "MarioKart",
+        "Mario Kart World"
+      ],
+      "palette": [
+        "#004087",
+        "#808080",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Blue racing wordmark with a big 8",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/1/10/Mario_Kart_8_-_Monochrome_logo.svg/revision/latest?cb=20210224231529",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Mario_Kart_8_-_Monochrome_logo.svg",
+          "sourceSha256": "75181659e742047c6030ded181117c06d325c2440f5612774c7bc6810143132b",
+          "ops": {
+            "viewBox": "-5532.649 -1906.12 11325.298 3888.237"
+          },
+          "showsName": true,
+          "path": "/logos/svg/games/mariokart.svg",
+          "format": "svg",
+          "colors": [
+            "#004087"
+          ],
+          "sourcePalette": [
+            "#004087",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "31b2141878182fe23df4b7164c2f6265cc7f6b2641a52b2cde2dc69e8f322f5f"
+        }
+      ]
+    },
+    {
+      "id": "GAME-MEGAMAN",
+      "league": "GAME",
+      "conference": "Arcade & Puzzle",
+      "region": "Mega Man",
+      "name": "",
+      "abbr": "MEGAMAN",
+      "aliases": [
+        "Megaman",
+        "Mega Man X",
+        "Rockman"
+      ],
+      "palette": [
+        "#0877C3",
+        "#E70012",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Striped blue-and-pink arcade title",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/a/a0/Mega_Man.svg/revision/latest?cb=20231225132919",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Mega_Man.svg",
+          "sourceSha256": "6a04e10c2e581d4fb1bfd3277bd096e150a99164cfd679664c4aeaa0dcf798f7",
+          "ops": {
+            "viewBox": "-29.46 -29.273 808.92 206.17"
+          },
+          "showsName": true,
+          "path": "/logos/svg/games/megaman.svg",
+          "format": "svg",
+          "colors": [
+            "#E70012",
+            "#7FCEF5",
+            "#000000",
+            "#0877C3",
+            "#66C5F4",
+            "#E7F4FC",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#379EDC",
+            "#E70012",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "e6b5766e2332f187df646bd27c440f9b2998eb029b636b8d00cf79f12f7a00e6"
+        }
+      ]
+    },
+    {
+      "id": "GAME-METROID",
+      "league": "GAME",
+      "conference": "Nintendo",
+      "region": "Metroid",
+      "name": "",
+      "abbr": "METROID",
+      "aliases": [
+        "Samus",
+        "Samus Aran",
+        "Screw Attack"
+      ],
+      "palette": [
+        "#000000",
+        "#808080",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Screw Attack symbol",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Metroid_Symbol_Smash_Bros_Brawl.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Metroid_Symbol_Smash_Bros_Brawl.svg",
+          "sourceSha256": "b7f14643806444c2e53428f44803370378fc117b37a3a95c2226ba55e4b177ee",
+          "ops": {
+            "viewBox": "30.484 21.046 195.032 213.907"
+          },
+          "path": "/logos/svg/games/metroid.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "77b44db875927463c578e86ebf2410792ea2864d282cbb5fb1f6e891ee10bd0e"
+        }
+      ]
+    },
+    {
+      "id": "GAME-NBA2K",
+      "league": "GAME",
+      "conference": "Sports & Racing",
+      "region": "NBA 2K",
+      "name": "",
+      "abbr": "NBA2K",
+      "aliases": [
+        "2K",
+        "NBA2K",
+        "NBA 2K25",
+        "NBA 2K26"
+      ],
+      "palette": [
+        "#E30101",
+        "#1D428A",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Red numeral-and-letter mark with league silhouette",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/1/13/NBA_2K26.svg/revision/latest?cb=20260430212758",
+          "sourcePage": "https://logos.fandom.com/wiki/File:NBA_2K26.svg",
+          "sourceSha256": "cd7bd3e131824d2b48e143e02529236ebcc4bc31abff46c1ac1d299c80285ea5",
+          "ops": {
+            "removeNodes": [
+              "2/0/3",
+              "2/0/4"
+            ],
+            "viewBox": "-23.118 -23.118 624.192 259.21"
+          },
+          "showsName": true,
+          "path": "/logos/svg/games/nba2k.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#C8102E",
+            "#1D428A",
+            "#E30101"
+          ],
+          "sourcePalette": [
+            "#D60818",
+            "#1D428A",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "1f33706cafad73caf51082091b92c1547762dc606c4783dd6b0c4532bca23200"
+        }
+      ]
+    },
+    {
+      "id": "GAME-OVERWATCH",
+      "league": "GAME",
+      "conference": "Battle & Shooters",
+      "region": "Overwatch",
+      "name": "",
+      "abbr": "OVERWATCH",
+      "aliases": [
+        "Overwatch 2"
+      ],
+      "palette": [
+        "#ED6516",
+        "#333E48",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Overwatch symbol",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Overwatch_2_full_logo.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Overwatch_2_full_logo.svg",
+          "sourceSha256": "1e06848fa13d8086cfd490c1b05f78184eddc318b4cc47a78be47abca8bbe7a4",
+          "ops": {
+            "keepNodes": [
+              "0",
+              "1"
+            ],
+            "viewBox": "173.28 -8.706 235.44 235.388"
+          },
+          "path": "/logos/svg/games/overwatch.svg",
+          "format": "svg",
+          "colors": [
+            "#ED6516",
+            "#333E48"
+          ],
+          "sourcePalette": [
+            "#ED6516",
+            "#333E48",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "42de909ea10650420431c3944f0b58376a0dbb755aaa3613fce58f51952527cd"
+        }
+      ]
+    },
+    {
+      "id": "GAME-PACMAN",
+      "league": "GAME",
+      "conference": "Arcade & Puzzle",
+      "region": "Pac-Man",
+      "name": "",
+      "abbr": "PACMAN",
+      "aliases": [
+        "Pacman",
+        "Pac Man",
+        "Ms. Pac-Man"
+      ],
+      "palette": [
+        "#FFF000",
+        "#FFB9AF",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Chomper with dots",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Pac-Man_eating_dots.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Pac-Man_eating_dots.svg",
+          "sourceSha256": "cc273cbc4c73d6f1d49e791e323fe02b16e8903ceeb5ae742910452cd009cc1c",
+          "ops": {
+            "keepNodes": [
+              "1",
+              "2"
+            ],
+            "viewBox": "0.84 0.84 31.32 15.32"
+          },
+          "path": "/logos/svg/games/pacman.svg",
+          "format": "svg",
+          "colors": [
+            "#FFF000",
+            "#FFB9AF"
+          ],
+          "sourcePalette": [
+            "#FFF000",
+            "#FFB9AF",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "6e63249c0d2ac8e3388a01dd04afb570c8369a08a6be5dd45daa286d3d4022dd"
+        },
+        {
+          "id": "ghost",
+          "label": "Red pixel ghost",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Blinky%2C_Pinky%2C_Inky_and_Clyde.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Blinky%2C_Pinky%2C_Inky_and_Clyde.svg",
+          "sourceSha256": "fbeb711fce47f28ac16deffc776398e7b396c56dba3f6efe78f1d200fb432e42",
+          "ops": {
+            "keepNodes": [
+              "3-5"
+            ],
+            "viewBox": "-2.222 -2.222 78.528 78.528"
+          },
+          "path": "/logos/svg/games/alternates/pacman-ghost.svg",
+          "format": "svg",
+          "colors": [
+            "#FF0000",
+            "#DFDFDF",
+            "#1B1BDF"
+          ],
+          "sourcePalette": [
+            "#FF0000",
+            "#DFDFDF",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "47028602deae91f1f0d38d73770dd49d29949ec64395e048ba8cf47cb11e2b34"
+        }
+      ]
+    },
+    {
+      "id": "GAME-PIKACHU",
+      "league": "GAME",
+      "conference": "Nintendo",
+      "region": "Pikachu",
+      "name": "",
+      "abbr": "PIKACHU",
+      "aliases": [],
+      "palette": [
+        "#FDDC00",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Pikachu silhouette",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/4/43/25_years_pikachu.svg/revision/latest?cb=20210117230703",
+          "sourcePage": "https://logos.fandom.com/wiki/File:25_years_pikachu.svg",
+          "sourceSha256": "149a9ead612fd7b4ddc0f1ebeb78d52696da482621a64987267918a4c50c15fc",
+          "ops": {
+            "keepNodes": [
+              "0",
+              "1/0/0",
+              "1/0/1",
+              "1/0/2"
+            ],
+            "viewBox": "-78.264 -78.291 2113.612 1601.823"
+          },
+          "path": "/logos/svg/games/pikachu.svg",
+          "format": "svg",
+          "colors": [
+            "#FDDC00",
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#FDDC00",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "964a9d60fefe262c8f520cbe48541d0782edc555d4c133d0d6e4ac781f921967"
+        },
+        {
+          "id": "face-portrait",
+          "label": "Face portrait",
+          "sourceUrl": "https://github.com/andysolomon/logo-remix-challenge/blob/main/scripts/character_artwork.py",
+          "sourceSha256": "3638266bef7abb9fb24c91cd9e989655f0582ff461980b1691257e071c33bd68",
+          "generator": "character_artwork",
+          "license": "Original project illustration; depicted character rights remain with their owners",
+          "path": "/logos/svg/games/alternates/pikachu-face-portrait.svg",
+          "format": "svg",
+          "colors": [
+            "#17202C",
+            "#FFFFFF",
+            "#E54132",
+            "#E9BA2B"
+          ],
+          "sourcePalette": [
+            "#E77E2E",
+            "#17202C",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "44214aa1ba0191ac65c52d2ac4c6347cf0483584eb148f660c62177ceafefc88"
+        }
+      ]
+    },
+    {
+      "id": "GAME-POKEBALL",
+      "league": "GAME",
+      "conference": "Nintendo",
+      "region": "Pokémon",
+      "name": "",
+      "abbr": "POKEBALL",
+      "aliases": [
+        "Pokemon",
+        "Poké Ball",
+        "Pokeball",
+        "Poke Ball",
+        "Pocket Monsters"
+      ],
+      "palette": [
+        "#DFDFDF",
+        "#FF1C1C",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Poké Ball",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Pok%C3%A9_Ball_icon.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Poké_Ball_icon.svg",
+          "sourceSha256": "6f1121045b551300d6f9a4651d37b9232edb30aa8465e8a0d0951f43361022cf",
+          "ops": {
+            "viewBox": "21.44 20.84 552.42 552.32"
+          },
+          "path": "/logos/svg/games/pokeball.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#DFDFDF",
+            "#FF1C1C",
+            "#DF1818",
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#DFDFDF",
+            "#EF1A1A",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "2325b6c54bd30a5db3fbbeb6118bf9605c407978f67ef906475fb9943b8e8d36"
+        },
+        {
+          "id": "great-ball",
+          "label": "Great ball",
+          "sourceUrl": "https://github.com/andysolomon/logo-remix-challenge/blob/main/scripts/character_artwork.py",
+          "sourceSha256": "0c85df88aa6ed586b7dfdd1b7894d56da4ba52d78349d1cab5e5c94fa40317ad",
+          "generator": "character_artwork",
+          "license": "Original project illustration; depicted character rights remain with their owners",
+          "path": "/logos/svg/games/alternates/pokeball-great-ball.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#17202C",
+            "#DC3A32",
+            "#3074C0"
+          ],
+          "sourcePalette": [
+            "#244A76",
+            "#DC3A32",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "50521d6f79da4fbb3285f7edf35bafb44f8614356da5cef2a9d2ea0f83f392fa"
+        }
+      ]
+    },
+    {
+      "id": "GAME-PUBG",
+      "league": "GAME",
+      "conference": "Battle & Shooters",
+      "region": "PUBG",
+      "name": "",
+      "abbr": "PUBG",
+      "aliases": [
+        "PUBG: Battlegrounds",
+        "PlayerUnknown's Battlegrounds",
+        "Battlegrounds",
+        "Player Unknown's Battlegrounds"
+      ],
+      "palette": [
+        "#F2A900",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Helmet",
+          "sourceUrl": "https://api.iconify.design/simple-icons/pubg.svg?color=%23F2A900",
+          "sourcePage": "https://icon-sets.iconify.design/simple-icons/pubg/",
+          "sourceSha256": "28274addfd8b368ed0e6571904eaaacba716e7b4c4faf3c6d70809ae694e08e0",
+          "ops": {
+            "viewBox": "-0.96 2.233 25.92 19.534"
+          },
+          "path": "/logos/svg/games/pubg.svg",
+          "format": "svg",
+          "colors": [
+            "#F2A900"
+          ],
+          "sourcePalette": [
+            "#F2A900",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "e2a0a6326f2eaa73a5d2671696e4e8ddc927f16ccf573fee7dc84cf59c5eee59"
+        }
+      ]
+    },
+    {
+      "id": "GAME-SMASHBROS",
+      "league": "GAME",
+      "conference": "Nintendo",
+      "region": "Super Smash Bros.",
+      "name": "",
+      "abbr": "SMASHBROS",
+      "aliases": [
+        "Smash Bros",
+        "Smash Bros.",
+        "Super Smash Brothers",
+        "Smash Brothers",
+        "Smash Ultimate",
+        "Super Smash Bros Ultimate"
+      ],
+      "palette": [
+        "#000000",
+        "#808080",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Cross-split ball emblem",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/1/1b/SmashBall.svg/revision/latest?cb=20260613223222",
+          "sourcePage": "https://logos.fandom.com/wiki/File:SmashBall.svg",
+          "sourceSha256": "0189ea12b016c4861961577ee9ea43647efd1efc04c98c7017d089ce75519c6d",
+          "ops": {
+            "viewBox": "-30 -30 810 810"
+          },
+          "path": "/logos/svg/games/smashbros.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "22ca5fd148907220ffc3a7646cba0064f14fa17903a143f69420752b72712553"
+        }
+      ]
+    },
+    {
+      "id": "GAME-SONIC",
+      "league": "GAME",
+      "conference": "Adventure",
+      "region": "Sonic the Hedgehog",
+      "name": "",
+      "abbr": "SONIC",
+      "aliases": [
+        "Sonic"
+      ],
+      "palette": [
+        "#FB252A",
+        "#0F0FA5",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Wordmark (2020)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/6/66/Sonic_the_Hedgehog_2020.svg/revision/latest?cb=20200108121328",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Sonic_the_Hedgehog_2020.svg",
+          "sourceSha256": "4d83c7b6b4fd55465aee9f983ac60b3c1cb45e9b83f1965a0058244e78ac9471",
+          "ops": {
+            "viewBox": "-40 -40 1080 411.223"
+          },
+          "showsName": true,
+          "path": "/logos/svg/games/sonic.svg",
+          "format": "svg",
+          "colors": [
+            "#FB252A",
+            "#FFFFFF",
+            "#0F0FA5"
+          ],
+          "sourcePalette": [
+            "#FB252A",
+            "#0F0FA5",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "7f0fa7277127aaa2ee550e6114cf1a363459de8d4fa3de6e3ca7b3d9667a8be9"
+        }
+      ]
+    },
+    {
+      "id": "GAME-SPLATOON",
+      "league": "GAME",
+      "conference": "Nintendo",
+      "region": "Splatoon",
+      "name": "",
+      "abbr": "SPLATOON",
+      "aliases": [
+        "Splatoon 2",
+        "Splatoon 3",
+        "Inklings"
+      ],
+      "palette": [
+        "#A4CE4C",
+        "#231F20",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Wordmark",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/f/f3/Splatoon.svg/revision/latest?cb=20220625150051",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Splatoon.svg",
+          "sourceSha256": "1abc77e5f26db5c3021bba72b6a29f3a7185607c1e5487084bbfd9b5ca43fa4e",
+          "ops": {
+            "viewBox": "-40 -40 1080 547.127"
+          },
+          "showsName": true,
+          "path": "/logos/svg/games/splatoon.svg",
+          "format": "svg",
+          "colors": [
+            "#A4CE4C",
+            "#231F20",
+            "#FFFFFF",
+            "#DBDCDD",
+            "#BBBDBF"
+          ],
+          "sourcePalette": [
+            "#A4CE4C",
+            "#231F20",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "f7ff6cbba41b6e60f1d747dbed7da3a34e615f319cdd5327871261e79fa1542f"
+        }
+      ]
+    },
+    {
+      "id": "GAME-STREETFIGHTER",
+      "league": "GAME",
+      "conference": "Battle & Shooters",
+      "region": "Street Fighter",
+      "name": "",
+      "abbr": "STREETFIGHTER",
+      "aliases": [
+        "Street Fighter II",
+        "Street Fighter 2",
+        "Street Fighter 6",
+        "SF6",
+        "Streetfighter"
+      ],
+      "palette": [
+        "#CC2229",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Red brush-script title with Roman numeral",
+          "sourceUrl": "https://iconape.com/wp-content/files/nr/99748/svg/street-fighter-ii.svg",
+          "sourcePage": "https://iconape.com/street-fighter-ii-logo-icon-svg-png.html",
+          "sourceSha256": "6271e062c321eb2d4053fecc421c7c625a61972eebdfe268d31dc9c76ae261d3",
+          "ops": {
+            "removeNodes": [
+              "0/0"
+            ],
+            "viewBox": "-4.65 41.134 202.055 110.488"
+          },
+          "showsName": true,
+          "path": "/logos/svg/games/streetfighter.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#CC2229"
+          ],
+          "sourcePalette": [
+            "#CC2229",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "f8bbce3ad8f0c6e975a7b6b30a92dd8f56f3f7c09bf352ce2cc1a325fdccd07f"
+        }
+      ]
+    },
+    {
+      "id": "GAME-TEAMROCKET",
+      "league": "GAME",
+      "conference": "Nintendo",
+      "region": "Team Rocket",
+      "name": "",
+      "abbr": "TEAMROCKET",
+      "aliases": [
+        "Rocket",
+        "Team Rocket Grunt"
+      ],
+      "palette": [
+        "#C90000",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Red R",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Team_Rocket_Logo.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Team_Rocket_Logo.svg",
+          "sourceSha256": "20020ec3daff8963ed29cf1a5b582af72b0da9894b1b29f8f06e2a229d7f76cf",
+          "ops": {
+            "viewBox": "301.146 72.873 283.451 272.051"
+          },
+          "path": "/logos/svg/games/teamrocket.svg",
+          "format": "svg",
+          "colors": [
+            "#C90000"
+          ],
+          "sourcePalette": [
+            "#C90000",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "8c8a3c7aff092a95d71987371289618f5e32685cb4b4ac7ab8d863ea8e18a959"
+        }
+      ]
+    },
+    {
+      "id": "GAME-TETRIS",
+      "league": "GAME",
+      "conference": "Arcade & Puzzle",
+      "region": "Tetris",
+      "name": "",
+      "abbr": "TETRIS",
+      "aliases": [],
+      "palette": [
+        "#1A428A",
+        "#F32735",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "T-tetromino wordmark",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Tetris_logo_2019.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Tetris_logo_2019.svg",
+          "sourceSha256": "e8637af0e0ccd618874498ba8f8643a23361364a93d9dbe2bb9229c8268f4891",
+          "ops": {
+            "viewBox": "-25.812 -25.812 696.924 499.714"
+          },
+          "showsName": true,
+          "path": "/logos/svg/games/tetris.svg",
+          "format": "svg",
+          "colors": [
+            "#1A428A",
+            "#F32735",
+            "#FFB71B",
+            "#FF6C0E",
+            "#00A0DF",
+            "#9D1D96",
+            "#3DAE2B",
+            "#2D2E83",
+            "#000F1F",
+            "#FFFFFF",
+            "#1D1D1B"
+          ],
+          "sourcePalette": [
+            "#1A428A",
+            "#F32735",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "58d4399dc56ed2e5032d8d86b397f542f804c12d7be544b7afbdbb0431c5ff14"
+        }
+      ]
+    },
+    {
+      "id": "GAME-TRIFORCE",
+      "league": "GAME",
+      "conference": "Nintendo",
+      "region": "The Legend of Zelda",
+      "name": "",
+      "abbr": "TRIFORCE",
+      "aliases": [
+        "Zelda",
+        "Triforce",
+        "Legend of Zelda",
+        "Hyrule"
+      ],
+      "palette": [
+        "#000000",
+        "#FFCC00",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Golden triangles",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Triforce.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Triforce.svg",
+          "sourceSha256": "d6dd2c0a612bd51e4109395ccbdfe32cb536deb6542c761b326efa4d26503f4f",
+          "ops": {
+            "viewBox": "-8 -8 216 189.2"
+          },
+          "path": "/logos/svg/games/triforce.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#FFCC00",
+            "#C19A00",
+            "#FFFFBA",
+            "#FFFF00"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#EACC00",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "1c96d6cac00382af816a83fa138dc3824272ea3b87bf2237a352e24ce5d99037"
+        },
+        {
+          "id": "black",
+          "label": "One-color triangles",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Triforce_-_Delapouite_-_game-icons.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Triforce_-_Delapouite_-_game-icons.svg",
+          "sourceSha256": "9b52cae53fe997ac5558122a39b8f889050254be3512909cd03f758be7f1e9c1",
+          "ops": {
+            "viewBox": "11.246 41.59 489.509 428.82"
+          },
+          "path": "/logos/svg/games/alternates/triforce-black.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#FFCC00",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "f62ea41bb24b7f3bc8492fc4fc881f763b1353def2cb6d1110407075d2a11bba"
+        }
+      ]
+    },
+    {
+      "id": "GAME-UMBRELLA",
+      "league": "GAME",
+      "conference": "Adventure",
+      "region": "Umbrella Corporation",
+      "name": "",
+      "abbr": "UMBRELLA",
+      "aliases": [
+        "Umbrella Corp",
+        "Umbrella",
+        "Resident Evil"
+      ],
+      "palette": [
+        "#000000",
+        "#ED1C24",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Umbrella emblem",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/0/0e/Umbrella_Corporation_logo.svg/revision/latest?cb=20200727061909",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Umbrella_Corporation_logo.svg",
+          "sourceSha256": "612eb128bf731f812ad2d5f22302e8910cb9a5cbd190ac29d31da8b26a916606",
+          "ops": {
+            "viewBox": "-12.96 -12.96 349.92 349.82"
+          },
+          "path": "/logos/svg/games/umbrella.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#ED1C24",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#ED1C24",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "4fbca5f95ab69d7c44ede5bc18c7df93f62655ccecd9a69e701dd4bf2110b4a2"
+        }
+      ]
+    },
+    {
+      "id": "GAME-UNDERTALE",
+      "league": "GAME",
+      "conference": "Indie",
+      "region": "Undertale",
+      "name": "",
+      "abbr": "UNDERTALE",
+      "aliases": [
+        "Under Tale"
+      ],
+      "palette": [
+        "#000000",
+        "#ED1C24",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Pixel title with a red heart",
+          "sourceUrl": "https://iconape.com/wp-content/files/gt/247022/svg/undertale-seeklogo.com.svg",
+          "sourcePage": "https://iconape.com/undertale-logo-logo-icon-svg-png.html",
+          "sourceSha256": "8dd83e4268b017b58cbd7c6fa2684cc7c20ed16dc35206472553e2d5729cbbb9",
+          "ops": {
+            "viewBox": "-22.56 -22.56 609.12 123.12"
+          },
+          "showsName": true,
+          "path": "/logos/svg/games/undertale.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#FFFFFF",
+            "#ED1C24",
+            "#848484"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#B85054",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "64f63d73aca07308a2a6aec73c332fe0ba6146deb7ace726c42ab31b75ea2531"
+        }
+      ]
+    },
+    {
+      "id": "GAME-VALORANT",
+      "league": "GAME",
+      "conference": "Battle & Shooters",
+      "region": "Valorant",
+      "name": "",
+      "abbr": "VALORANT",
+      "aliases": [],
+      "palette": [
+        "#0F1923",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "V mark",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/e/e6/Valorant_%28Black%29.svg/revision/latest?cb=20240803235908",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Valorant_(Black).svg",
+          "sourceSha256": "25ead9df89e404a3da3dc37439a2cc0c266f021c520715912d597d21521656f0",
+          "ops": {
+            "keepNodes": [
+              "0",
+              "1/0"
+            ],
+            "viewBox": "93.826 -8.67 233.85 195.064"
+          },
+          "path": "/logos/svg/games/valorant.svg",
+          "format": "svg",
+          "colors": [
+            "#0F1923"
+          ],
+          "sourcePalette": [
+            "#0F1923",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "69b3dae29630b225da0e56f4ce3a88aa4abbdc231a5b7fa984094302c19676a3"
+        }
+      ]
+    }
+  ]
+}

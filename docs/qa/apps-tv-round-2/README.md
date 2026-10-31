@@ -28,7 +28,7 @@ Adds 97 entries and 68 alternates: **175 apps, 98 TV channels, 1515 total entrie
 ## Validation
 
 - `npm run logos:apps` and `npm run logos:tv` reuse every checked-in asset offline (a forbidden-fetch check passes), and every brand builder leaves `teams.json` byte-for-byte unchanged.
-- Full suite: 204 passed, 1 skipped (the optional Potrace test), 3 failed. All three are time-limit failures in tests these changes don't touch: two high-school tests with 5 s limits pass when rerun with `bun test --timeout 180000`, and the alternates-rebuild test in `team-alternates.test.ts` keeps its own 30 s limit and times out identically on an untouched `main` checkout in this container. The brand, backdrop, collection, dark-plate and color-donor tests all pass. `npm run build` passes with Vite's standard >500 KB bundle advisory.
+- Full suite after merging `main`, run with `bun test --timeout 180000`: 222 passed, 1 skipped (the optional Potrace test), 1 failed. The failure is the alternates-rebuild test in `team-alternates.test.ts`, which keeps its own 30 s limit and times out identically on an untouched `main` checkout in this container; these changes don't touch it. The brand, backdrop, collection, dark-plate and color-donor tests all pass. `npm run build` passes with Vite's standard >500 KB bundle advisory.
 - Playwright Chromium, 1024×1366 with touch: TV → International shows 24 tiles; Nippon TV's Nandarou picked and remixed in Los Angeles Lakers colors.
 - Playwright Chromium, 390×844 with touch, dark mode: APPS → Games shows 23 tiles and TV → Sports shows 15; no page-wide horizontal overflow, no page errors and no failed requests.
 

@@ -46,6 +46,94 @@
       ]
     },
     {
+      "id": "TV-ABCAU",
+      "league": "TV",
+      "conference": "International",
+      "region": "ABC Australia",
+      "name": "",
+      "abbr": "ABCAU",
+      "aliases": [
+        "Australian Broadcasting Corporation",
+        "ABC TV Australia",
+        "ABC Aus"
+      ],
+      "palette": [
+        "#000000",
+        "#808080",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Lissajous ribbon",
+          "sourceUrl": "https://api.iconify.design/cbi/abc-australia.svg?color=%23000000",
+          "sourcePage": "https://icon-sets.iconify.design/cbi/abc-australia/",
+          "sourceSha256": "0c5477532fa7592cb775b96910ff9c93faa8f3b7bb545268541a45459cfb102e",
+          "ops": {
+            "viewBox": "1.4 3.923 21.2 16.154"
+          },
+          "path": "/logos/svg/tv/abcau.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "2c47f72b8e8c23167e982e22397a9cae4d51ec74e1695b93224a9c8c98294dcd"
+        }
+      ]
+    },
+    {
+      "id": "TV-ADULTSWIM",
+      "league": "TV",
+      "conference": "Cable",
+      "region": "Adult Swim",
+      "name": "",
+      "abbr": "ADULTSWIM",
+      "aliases": [
+        "Cartoon Network Adult Swim"
+      ],
+      "palette": [
+        "#000000",
+        "#808080",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Bracketed initials",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Adult_Swim_%28Symbol%29.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Adult_Swim_%28Symbol%29.svg",
+          "sourceSha256": "d30061a7f9dc8929542417c9da6044eedf1259cc33c7958423145e8a62f4c8c4",
+          "ops": {
+            "viewBox": "-30 -30 1060 703.777"
+          },
+          "path": "/logos/svg/tv/adultswim.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "325c0740d5e0fc107dce5691ce0163cfbbb4ebb8297adca95af33510ecf7bc67"
+        }
+      ]
+    },
+    {
       "id": "TV-ALJAZEERA",
       "league": "TV",
       "conference": "International",
@@ -131,6 +219,96 @@
             1
           ],
           "sha256": "3bac06305a23a76a9e52b735a2764777170786e0596335572ef575983330c87c"
+        }
+      ]
+    },
+    {
+      "id": "TV-ANTENA3",
+      "league": "TV",
+      "conference": "International",
+      "region": "Antena 3",
+      "name": "",
+      "abbr": "ANTENA3",
+      "aliases": [
+        "Antena 3 Televisión",
+        "Antena Tres"
+      ],
+      "palette": [
+        "#FF7328",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Three-petal A",
+          "sourceUrl": "https://api.iconify.design/thesvg-color/antena-3.svg",
+          "sourcePage": "https://icon-sets.iconify.design/thesvg-color/antena-3/",
+          "sourceSha256": "7e8ea6e877b169312f99737b0f0e0deec181d68146c2c401b91e71e19e460642",
+          "ops": {
+            "viewBox": "-0.72 0.954 25.44 22.09"
+          },
+          "path": "/logos/svg/tv/antena3.svg",
+          "format": "svg",
+          "colors": [
+            "#FF7328"
+          ],
+          "sourcePalette": [
+            "#FF7328",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "a098c42691927a360fdcf72cbc7bd58135945164fb4dedcce7244721146a55c4"
+        }
+      ]
+    },
+    {
+      "id": "TV-ANTENNATV",
+      "league": "TV",
+      "conference": "Broadcast",
+      "region": "Antenna TV",
+      "name": "",
+      "abbr": "ANTENNATV",
+      "aliases": [
+        "Antenna Television"
+      ],
+      "palette": [
+        "#EE4F23",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Retro TV set with rabbit ears",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/b/b0/Antenna_TV_2022.svg/revision/latest?cb=20221203024109",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Antenna_TV_2022.svg",
+          "sourceSha256": "7cbeaf59160424c42e36961065844e0a326facce4539d2a502634a933622a312",
+          "ops": {
+            "keepNodes": [
+              "2/1/2"
+            ],
+            "viewBox": "2088.012 -29.788 874.326 1052.521"
+          },
+          "path": "/logos/svg/tv/antennatv.svg",
+          "format": "svg",
+          "colors": [
+            "#EE4F23"
+          ],
+          "sourcePalette": [
+            "#EE4F23",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "2cee39bcd91b838f7dea1e3fdc4a2f1acce21a61e55a7c6863eeec72316842a2"
         }
       ]
     },
@@ -396,6 +574,51 @@
       ]
     },
     {
+      "id": "TV-BEIN",
+      "league": "TV",
+      "conference": "Sports",
+      "region": "beIN Sports",
+      "name": "",
+      "abbr": "BEIN",
+      "aliases": [
+        "beIN Sport",
+        "Al Jazeera Sport"
+      ],
+      "palette": [
+        "#5D2E8F",
+        "#808080",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Purple tab wordmark",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/5/50/BeIN_Sports.svg/revision/latest?cb=20200823182724",
+          "sourcePage": "https://logos.fandom.com/wiki/File:BeIN_Sports.svg",
+          "sourceSha256": "f3b2af1b6060cf5bcf069562089bf18583b10781fc0aa5fca67d4b7117d51775",
+          "ops": {
+            "viewBox": "-30 -181.302 1060 924.605"
+          },
+          "showsName": true,
+          "path": "/logos/svg/tv/bein.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#5D2E8F"
+          ],
+          "sourcePalette": [
+            "#5D2E8F",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "7112c44c3395428465d16f1719b16a655252b609b33f7f8dc2951c92dab1334d"
+        }
+      ]
+    },
+    {
       "id": "TV-BET",
       "league": "TV",
       "conference": "Music & Pop",
@@ -598,6 +821,54 @@
       ]
     },
     {
+      "id": "TV-BRAVO",
+      "league": "TV",
+      "conference": "Cable",
+      "region": "Bravo",
+      "name": "",
+      "abbr": "BRAVO",
+      "aliases": [
+        "Bravo TV",
+        "Bravo Network"
+      ],
+      "palette": [
+        "#A67AFF",
+        "#4DC9FF",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Speech bubble wordmark",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/2/22/Bravo_2024.svg/revision/latest?cb=20240508041547",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Bravo_2024.svg",
+          "sourceSha256": "28deccd7152fd726b126744cd27481d59abd9f746922885b24539d574851d103",
+          "ops": {
+            "viewBox": "-11.871 -11.871 419.453 323.643"
+          },
+          "showsName": true,
+          "path": "/logos/svg/tv/bravo.svg",
+          "format": "svg",
+          "colors": [
+            "#4DC9FF",
+            "#52C4FF",
+            "#6BACFF",
+            "#A37CFF",
+            "#A67AFF"
+          ],
+          "sourcePalette": [
+            "#A47BFF",
+            "#59BEFF",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "ac8e2b994e0a7673faecd0c04d85d4b63bb997a09bdb8048c6ce52db78e70d5a"
+        }
+      ]
+    },
+    {
       "id": "TV-C4",
       "league": "TV",
       "conference": "International",
@@ -693,6 +964,277 @@
             2
           ],
           "sha256": "725c2efd37f5252b00982eecafbd3077cc0e0d2c7c984d89f3d94447561e7290"
+        }
+      ]
+    },
+    {
+      "id": "TV-C5",
+      "league": "TV",
+      "conference": "International",
+      "region": "Channel 5",
+      "name": "",
+      "abbr": "C5",
+      "aliases": [
+        "Channel Five",
+        "Channel 5 UK"
+      ],
+      "palette": [
+        "#000000",
+        "#C81E3B",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Stencil numeral",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/9/9d/Channel_5_2016.svg/revision/latest?cb=20160211232158",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Channel_5_2016.svg",
+          "sourceSha256": "06316aadf0249739f8a19882fb6acc9434655fb3450dceec065d45546c8b2d11",
+          "ops": {
+            "viewBox": "-43.104 -43.104 1086.208 1540.67"
+          },
+          "path": "/logos/svg/tv/c5.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#C81E3B",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "09cbef0948ada1ca1c6a1f6356388bad1676f956ffbc972df517b32674145a5a"
+        },
+        {
+          "id": "1997-ring",
+          "label": "Hand-drawn ring numeral (1997)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/e/e7/Channel_5_1997.svg/revision/latest?cb=20260423205940",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Channel_5_1997.svg",
+          "sourceSha256": "5eec2a8eff3b06ee92d7a6aa4062b6385f925609bd925d46bf3b9acaccdc509a",
+          "ops": {
+            "viewBox": "-30 -30 1060 1048.713"
+          },
+          "path": "/logos/svg/tv/alternates/c5-1997-ring.svg",
+          "format": "svg",
+          "colors": [
+            "#030203"
+          ],
+          "sourcePalette": [
+            "#030203",
+            "#C81E3B",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "ff530e164ede34536ebdd9d2e58cdc4b0a3c9eefa30c9268302de8e7f3d54ea0"
+        },
+        {
+          "id": "2011-disc",
+          "label": "Red disc numeral (2011)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/5/57/Channel_5_logo_2011.svg/revision/latest?cb=20111103235207",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Channel_5_logo_2011.svg",
+          "sourceSha256": "150118012933425178c726431064cf8cfe91cf1e93c69d903bb5815363754f02",
+          "ops": {
+            "viewBox": "-4.937 -4.938 209.88 209.88"
+          },
+          "path": "/logos/svg/tv/alternates/c5-2011-disc.svg",
+          "format": "svg",
+          "colors": [
+            "#C81E3B",
+            "#FFFFFF",
+            "#CC1D3C",
+            "#CD1E3B",
+            "#C61D3A",
+            "#C41D38",
+            "#C01D38",
+            "#B91B37",
+            "#B21736",
+            "#A51731",
+            "#931129",
+            "#7F0120"
+          ],
+          "sourcePalette": [
+            "#C31C39",
+            "#920E29",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "2f69a67fdf7b670295a19bd6c7c56b0c10b1ef3f9f9000e4a8eff46084370cb3"
+        }
+      ]
+    },
+    {
+      "id": "TV-CANAL13",
+      "league": "TV",
+      "conference": "International",
+      "region": "Canal 13",
+      "name": "",
+      "abbr": "CANAL13",
+      "aliases": [
+        "Canal 13 Chile",
+        "Canal Trece",
+        "UCTV"
+      ],
+      "palette": [
+        "#FF4001",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Numeral over an arc",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/9/9f/Logocanal13cl2021.svg/revision/latest?cb=20210316180321",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Logocanal13cl2021.svg",
+          "sourceSha256": "7feae5dab21da392eff4a3442ab0779e1eb6b2fecd5d32f860cee9c3788130f2",
+          "ops": {
+            "viewBox": "-92.232 72.885 804.464 315.524"
+          },
+          "path": "/logos/svg/tv/canal13.svg",
+          "format": "svg",
+          "colors": [
+            "#FF4001"
+          ],
+          "sourcePalette": [
+            "#FF4001",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "c871d7a9d0535db7ad2fb15e4a8945134ba05454821b66c1229c287701bad1d5"
+        },
+        {
+          "id": "2010-disc",
+          "label": "Orange disc numeral (2010)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/3/34/Canal-13-chile_%282010%29.svg/revision/latest?cb=20180903183022",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Canal-13-chile_%282010%29.svg",
+          "sourceSha256": "7e8ca371deac4ab08301e40ba980b1d4a4655941bc9e2f90cb16fff1a92339f2",
+          "ops": {
+            "viewBox": "-14.873 -14.873 525.523 525.523"
+          },
+          "path": "/logos/svg/tv/alternates/canal13-2010-disc.svg",
+          "format": "svg",
+          "colors": [
+            "#F16821",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#F16821",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "7f09d1d2892f840401264d91327600c245c875eb7f42e5e944ebde56542bba34"
+        },
+        {
+          "id": "1969-numeral",
+          "label": "Numeral over tv (1969)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/5/55/Canal_13_%28Chile_1969%29.svg/revision/latest?cb=20201213085101",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Canal_13_%28Chile_1969%29.svg",
+          "sourceSha256": "598a650a142bf329cea96aa3851f8a8a579262c3944709b0aa6dc84b854601f6",
+          "ops": {
+            "viewBox": "-4.482 -28.141 1877.633 1366.382"
+          },
+          "path": "/logos/svg/tv/alternates/canal13-1969-numeral.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#000000",
+            "#030303"
+          ],
+          "sourcePalette": [
+            "#020202",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "595d0829cff456c6a387e669bc8783f47e737a5892bab7b0c4f6ec5abe99d09b"
+        }
+      ]
+    },
+    {
+      "id": "TV-CANALE5",
+      "league": "TV",
+      "conference": "International",
+      "region": "Canale 5",
+      "name": "",
+      "abbr": "CANALE5",
+      "aliases": [
+        "Canale Cinque",
+        "Mediaset Canale 5"
+      ],
+      "palette": [
+        "#163764",
+        "#FF5402",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Flower and numeral",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/c/cb/Canale_5_-_Logo_2018.svg/revision/latest?cb=20180419101751",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Canale_5_-_Logo_2018.svg",
+          "sourceSha256": "9099d147f9d9b37992823b0ab7b546f1d1ea8d8dd74f08ef537389bab7e17e96",
+          "ops": {
+            "viewBox": "-38.597 -38.597 1363.748 1154.654"
+          },
+          "path": "/logos/svg/tv/canale5.svg",
+          "format": "svg",
+          "colors": [
+            "#163764"
+          ],
+          "sourcePalette": [
+            "#163764",
+            "#FF5402",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "48c9116d8c63177ced1da04943949b36e6849b321a42a0dcc6f6de5c448220e0"
+        },
+        {
+          "id": "1980-serpent",
+          "label": "Serpent numeral with flower (1980)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/8/8a/Canale_5_logo_1980.svg/revision/latest?cb=20240410063535",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Canale_5_logo_1980.svg",
+          "sourceSha256": "669fd2f0cf7d43fff4dd1f8d994c5b0674e48e1c040a7f680f12a23b7155341d",
+          "ops": {
+            "removeNodes": [
+              "3",
+              "2/5"
+            ],
+            "viewBox": "15.131 14.431 373.438 359.338"
+          },
+          "path": "/logos/svg/tv/alternates/canale5-1980-serpent.svg",
+          "format": "svg",
+          "colors": [
+            "#88421C",
+            "#FF5402"
+          ],
+          "sourcePalette": [
+            "#88421C",
+            "#FF5402",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "52023940bbd5849445ef54a757bfb76ce7df786b2ded3a62d3377d44b83393ce"
         }
       ]
     },
@@ -966,6 +1508,37 @@
             2
           ],
           "sha256": "466ba4a87a83e8a59ed58158024a58219683fcf58886bebd70322c7422e2624f"
+        },
+        {
+          "id": "1935-dial-badge",
+          "label": "Dial badge in a ring (1935)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/3/33/CBS_1935.svg/revision/latest?cb=20251122173525",
+          "sourcePage": "https://logos.fandom.com/wiki/File:CBS_1935.svg",
+          "sourceSha256": "5c96f1ad1e4a8602c6228ba6defcbd6a97ab229628f71049d6a3f9cb88d4b5be",
+          "ops": {
+            "removeNodes": [
+              "1/0",
+              "1/2",
+              "1/3"
+            ],
+            "fill": "#000000",
+            "viewBox": "-24.372 163.213 861.159 861.159"
+          },
+          "path": "/logos/svg/tv/alternates/cbs-1935-dial-badge.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "32c38d604f8b824bac58b849110d81fde425f47e33975d86ff625d915bb567ba"
         }
       ]
     },
@@ -1284,6 +1857,50 @@
       ]
     },
     {
+      "id": "TV-DAZN",
+      "league": "TV",
+      "conference": "Sports",
+      "region": "DAZN",
+      "name": "",
+      "abbr": "DAZN",
+      "aliases": [
+        "Da Zone"
+      ],
+      "palette": [
+        "#000000",
+        "#808080",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Stacked letters box",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/7/7c/DAZN.svg/revision/latest?cb=20210824163814",
+          "sourcePage": "https://logos.fandom.com/wiki/File:DAZN.svg",
+          "sourceSha256": "9f72983c55b9e7846e2a67cecf15f81fa3cfcb888d81b9e3b4682ef62d556cc1",
+          "ops": {
+            "viewBox": "-15.36 -15.36 542.72 542.72"
+          },
+          "showsName": true,
+          "path": "/logos/svg/tv/dazn.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "19df60706782f52c482085c6813dedef17f32779ea24f58793b48b9d3b9c8854"
+        }
+      ]
+    },
+    {
       "id": "TV-DISC",
       "league": "TV",
       "conference": "Discovery & Lifestyle",
@@ -1381,6 +1998,32 @@
             2
           ],
           "sha256": "5defc9e3df9e1347c548cff859b4d70e5e8173af68c08cea8d7af2fb35f17190"
+        },
+        {
+          "id": "1985-map-screen",
+          "label": "World map screen (1985)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/b/bc/DiscoveryChannel1985.svg/revision/latest?cb=20190216195151",
+          "sourcePage": "https://logos.fandom.com/wiki/File:DiscoveryChannel1985.svg",
+          "sourceSha256": "53daa376dea7aedd97cdf16b06cff7c2c98209cff9317b268f3375a98c1a8783",
+          "ops": {
+            "viewBox": "18696 -784 27705 20635",
+            "clipToViewBox": true
+          },
+          "path": "/logos/svg/tv/alternates/disc-1985-map-screen.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "f2b418763804312f4189a347f0bd618d1df06d233cb24d6bbcc0b81f394789ed"
         }
       ]
     },
@@ -1607,6 +2250,76 @@
       ]
     },
     {
+      "id": "TV-ERSTE",
+      "league": "TV",
+      "conference": "International",
+      "region": "Das Erste",
+      "name": "",
+      "abbr": "ERSTE",
+      "aliases": [
+        "ARD",
+        "Erstes Deutsches Fernsehen",
+        "ARD Das Erste"
+      ],
+      "palette": [
+        "#001A4B",
+        "#004181",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Numeral in a circle",
+          "sourceUrl": "https://api.iconify.design/thesvg-color/das-erste.svg",
+          "sourcePage": "https://icon-sets.iconify.design/thesvg-color/das-erste/",
+          "sourceSha256": "2bc821b5a0bd5e8a7a411b6b31e9d48a9a75f61841af7b2e5b2ae6a84d383307",
+          "ops": {
+            "viewBox": "-0.72 -0.72 25.44 25.44"
+          },
+          "path": "/logos/svg/tv/erste.svg",
+          "format": "svg",
+          "colors": [
+            "#001A4B"
+          ],
+          "sourcePalette": [
+            "#001A4B",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "3d83ba32437566fc2eb52fbfb26e47f2f3558093175d6ecaf0741f55d64b4b76"
+        },
+        {
+          "id": "1997-numeral",
+          "label": "Slanted numeral (1997)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/2/2c/Das_Erste_symbol_wo_ard_1997.svg/revision/latest?cb=20190429080459",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Das_Erste_symbol_wo_ard_1997.svg",
+          "sourceSha256": "2fa20fa465e37862ab70186e4ff7b3485076fbd0677fa7eb336e5198a9e3d13e",
+          "ops": {
+            "viewBox": "-63.681 -63.681 1733.462 2250.062"
+          },
+          "path": "/logos/svg/tv/alternates/erste-1997-numeral.svg",
+          "format": "svg",
+          "colors": [
+            "#004181"
+          ],
+          "sourcePalette": [
+            "#004181",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "9f7edb9371a3854e608400e5e1e91cb076c6efef0186d29baaa5232c27fb390a"
+        }
+      ]
+    },
+    {
       "id": "TV-ESPN",
       "league": "TV",
       "conference": "Cable",
@@ -1733,6 +2446,51 @@
       ]
     },
     {
+      "id": "TV-FOODNETWORK",
+      "league": "TV",
+      "conference": "Discovery & Lifestyle",
+      "region": "Food Network",
+      "name": "",
+      "abbr": "FOODNETWORK",
+      "aliases": [
+        "Television Food Network",
+        "TV Food Network"
+      ],
+      "palette": [
+        "#6E2337",
+        "#AADC89",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Maroon circle wordmark",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/8/8d/Food_Network_%282026%29.svg/revision/latest?cb=20260113194623",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Food_Network_%282026%29.svg",
+          "sourceSha256": "d33d9b0cd90ddf5cc681d0a228ed99cf2268d1ec154e6c40e7d768469f05b201",
+          "ops": {
+            "viewBox": "-30.001 -30 1060.002 1060.001"
+          },
+          "showsName": true,
+          "path": "/logos/svg/tv/foodnetwork.svg",
+          "format": "svg",
+          "colors": [
+            "#AADC89",
+            "#6E2337"
+          ],
+          "sourcePalette": [
+            "#6E2337",
+            "#AADC89",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "ba5253c9f209ec87751a13208e81d40a2c7fd6122366fcfb14a49dd05a4fe16b"
+        }
+      ]
+    },
+    {
       "id": "TV-FOX",
       "league": "TV",
       "conference": "Broadcast",
@@ -1775,6 +2533,206 @@
             2
           ],
           "sha256": "8a43ffda80967ad9eee8a48b5a2760016166f9a4776c09e33b449147f44fbd0c"
+        }
+      ]
+    },
+    {
+      "id": "TV-FRANCE2",
+      "league": "TV",
+      "conference": "International",
+      "region": "France 2",
+      "name": "",
+      "abbr": "FRANCE2",
+      "aliases": [
+        "France Deux",
+        "Antenne 2"
+      ],
+      "palette": [
+        "#ED1B2F",
+        "#808080",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Red tile numeral",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/b/b4/France_2_logo_2008.svg/revision/latest?cb=20100804204126",
+          "sourcePage": "https://logos.fandom.com/wiki/File:France_2_logo_2008.svg",
+          "sourceSha256": "a7a2ac5139f4eefefafe4f2e9616669dd0a7e0511ae8071b581b389b9c46199d",
+          "ops": {
+            "removeNodes": [
+              "8",
+              "9",
+              "10",
+              "11",
+              "12",
+              "13"
+            ],
+            "viewBox": "-18.09 -18.09 385.16 639.18"
+          },
+          "path": "/logos/svg/tv/france2.svg",
+          "format": "svg",
+          "colors": [
+            "#ED1B2F",
+            "#F37364",
+            "#F37060",
+            "#F26556",
+            "#F16152",
+            "#F16253",
+            "#F26758",
+            "#F26D5E",
+            "#F26A5B",
+            "#F16353",
+            "#F15544",
+            "#EF4032",
+            "#EF3B2F",
+            "#FFFFFF",
+            "#F9F9FA",
+            "#E9EAEB",
+            "#CED0D3",
+            "#ADB1B5"
+          ],
+          "sourcePalette": [
+            "#F15A4E",
+            "#BEC0C4",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "c79c26edf386b6bc1cc395ce0b772c15fcf53188ef90743793942528e7e171e3"
+        },
+        {
+          "id": "1992-numeral",
+          "label": "Bold red numeral (1992)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/a/a4/France_2_logo_1992.svg/revision/latest?cb=20100204160255",
+          "sourcePage": "https://logos.fandom.com/wiki/File:France_2_logo_1992.svg",
+          "sourceSha256": "8c2ab764480792c44fd7f76fd7ad5e3a9c5cf63b271d46eced485454b5aa9068",
+          "ops": {
+            "keepNodes": [
+              "0/0/0"
+            ],
+            "viewBox": "-10.74 -10.735 323.48 379.471"
+          },
+          "path": "/logos/svg/tv/alternates/france2-1992-numeral.svg",
+          "format": "svg",
+          "colors": [
+            "#E73522"
+          ],
+          "sourcePalette": [
+            "#E73522",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "92b829530af97ac3b0a2d59ba4199517544ceb1f9b61d7bdbbe4fc3e183fa5eb"
+        },
+        {
+          "id": "1975-star",
+          "label": "Star and numeral (1975)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/a/aa/Antenne_2_FR_%281975%29.svg/revision/latest?cb=20220827072253",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Antenne_2_FR_%281975%29.svg",
+          "sourceSha256": "8ee653aca5300b1b3e7d46e658bb019673110356f17d1946e2c134882d859134",
+          "ops": {
+            "viewBox": "-18.27 -18.27 536.54 645.54"
+          },
+          "path": "/logos/svg/tv/alternates/france2-1975-star.svg",
+          "format": "svg",
+          "colors": [
+            "#0151FF",
+            "#FF0101",
+            "#5AA914"
+          ],
+          "sourcePalette": [
+            "#FF0101",
+            "#0151FF",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "11a6219f31751c9e6d8aa28aa049e6db7aa754266a91998c4498bdef60374dee"
+        },
+        {
+          "id": "1986-script",
+          "label": "Script monogram (1986)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/9/9b/Antenne_2_%281986%29.svg/revision/latest?cb=20230507074319",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Antenne_2_%281986%29.svg",
+          "sourceSha256": "4ecccb9314a0897c7b4e1694a1f353d15b1810221ea1509f51d585dd4a5988a8",
+          "ops": {
+            "removeNodes": [
+              "3"
+            ],
+            "viewBox": "-24.51 -24.51 866.02 549.02"
+          },
+          "path": "/logos/svg/tv/alternates/france2-1986-script.svg",
+          "format": "svg",
+          "colors": [
+            "#555A6E",
+            "#4D4D4D",
+            "#E43222",
+            "#2D303B",
+            "#8C64A0",
+            "#7896D7",
+            "#AA91BE",
+            "#FFFFFF",
+            "#B4CD00",
+            "#E69100",
+            "#E6506E"
+          ],
+          "sourcePalette": [
+            "#E43222",
+            "#8C64A0",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "6c3736a3c5a2415f4e36e2e0dc368b382a90847aea40eba67a561b48a1df890e"
+        }
+      ]
+    },
+    {
+      "id": "TV-FREEFORM",
+      "league": "TV",
+      "conference": "Cable",
+      "region": "Freeform",
+      "name": "",
+      "abbr": "FREEFORM",
+      "aliases": [
+        "ABC Family",
+        "Fox Family",
+        "The Family Channel"
+      ],
+      "palette": [
+        "#007AFF",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Lowercase ff in a blue circle",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/2/27/Freeform_%282018%29_%27FF%27.svg/revision/latest?cb=20201201101758",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Freeform_%282018%29_%27FF%27.svg",
+          "sourceSha256": "06e33227980a7c938755dd72d79cab51bc091c6ee75f4b15f31bdc44d7b1d840",
+          "ops": {
+            "viewBox": "-30 -30 1060 1060"
+          },
+          "path": "/logos/svg/tv/freeform.svg",
+          "format": "svg",
+          "colors": [
+            "#007AFF",
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#007AFF",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "161590587bc96383149ae0f8a69b1667229627b9d4105e736dab0b86b5a172e2"
         }
       ]
     },
@@ -1946,6 +2904,82 @@
       ]
     },
     {
+      "id": "TV-GALAVISION",
+      "league": "TV",
+      "conference": "Broadcast",
+      "region": "Galavisión",
+      "name": "",
+      "abbr": "GALAVISION",
+      "aliases": [
+        "Galavision"
+      ],
+      "palette": [
+        "#F15926",
+        "#747271",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Orange swirl G",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/9/9e/Galavisi%C3%B3n_logo_2013.svg/revision/latest?cb=20260323161252",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Galavisi%C3%B3n_logo_2013.svg",
+          "sourceSha256": "f8397d33f4053abf2d30e7c53409338a9c230382d361438bfec37c9ccb6d810d",
+          "ops": {
+            "keepNodes": [
+              "11",
+              "12"
+            ],
+            "viewBox": "192.598 -18.13 616.699 640.583"
+          },
+          "path": "/logos/svg/tv/galavision.svg",
+          "format": "svg",
+          "colors": [
+            "#F15926"
+          ],
+          "sourcePalette": [
+            "#F15926",
+            "#747271",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "c16c5261355c4f34e3d9240a299768335f8e5b34de21b03fbecd88aa7f77727e"
+        },
+        {
+          "id": "1996-blue-g",
+          "label": "Blue G on orange oval (1996)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/7/73/Galavisi%C3%B3n_USA_logo.svg/revision/latest?cb=20100602105820",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Galavisi%C3%B3n_USA_logo.svg",
+          "sourceSha256": "b23217ffbea343e9c74c368267808955fa48b74788573c754f0e9bdb6a529973",
+          "ops": {
+            "keepNodes": [
+              "0/0",
+              "0/1"
+            ],
+            "viewBox": "15.637 -14.401 508.839 308.3"
+          },
+          "path": "/logos/svg/tv/alternates/galavision-1996-blue-g.svg",
+          "format": "svg",
+          "colors": [
+            "#F67A2D",
+            "#28409E"
+          ],
+          "sourcePalette": [
+            "#F67A2D",
+            "#28409E",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "9ae9321855915ccdc3a2a4e50020dad435d2a0f1f6f95f6169a0d2c31d4f6ace"
+        }
+      ]
+    },
+    {
       "id": "TV-GLOBO",
       "league": "TV",
       "conference": "International",
@@ -2076,6 +3110,32 @@
             2
           ],
           "sha256": "8c6c1134471bb24b1a475d811609b3f0a0cadf450ff9ede1445758f45932d1bf"
+        },
+        {
+          "id": "1965-star",
+          "label": "Line-drawn star (1965)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/0/05/Globo_Logo_1965.svg/revision/latest?cb=20260602080933",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Globo_Logo_1965.svg",
+          "sourceSha256": "32ff7dea4e736a61a1d0ddb75c7e32e95650ab1957fbf602ec0ececbff666592",
+          "ops": {
+            "fill": "#000000",
+            "viewBox": "-11.52 -11.52 407.04 407.04"
+          },
+          "path": "/logos/svg/tv/alternates/globo-1965-star.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#FD3100",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "ef014ada94eadc86effb05e4eb99b606f7dfe045f2458072777e3e96b43cea06"
         }
       ]
     },
@@ -2126,6 +3186,53 @@
       ]
     },
     {
+      "id": "TV-GOLTV",
+      "league": "TV",
+      "conference": "Sports",
+      "region": "GolTV",
+      "name": "",
+      "abbr": "GOLTV",
+      "aliases": [
+        "Gol Television"
+      ],
+      "palette": [
+        "#000000",
+        "#3875BC",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Ball in a screen",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/3/38/GolTV_2003.svg/revision/latest?cb=20240821235608",
+          "sourcePage": "https://logos.fandom.com/wiki/File:GolTV_2003.svg",
+          "sourceSha256": "73e94847ce36d28f4e32a2ba28282f0504623f97c14d64e6d3deafac8b8af3f0",
+          "ops": {
+            "keepNodes": [
+              "0-2"
+            ],
+            "viewBox": "-7.938 -7.937 280.458 237.134"
+          },
+          "path": "/logos/svg/tv/goltv.svg",
+          "format": "svg",
+          "colors": [
+            "#020000",
+            "#FFFFFF",
+            "#000000",
+            "#3875BC",
+            "#3F73BB"
+          ],
+          "sourcePalette": [
+            "#010000",
+            "#3C74BC",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "51c3ebcb5232468ee6f96dd92e2d56f0b768639a555f6d5b8c25ac13fc9f07b8"
+        }
+      ]
+    },
+    {
       "id": "TV-HALLMARK",
       "league": "TV",
       "conference": "Cable",
@@ -2170,6 +3277,34 @@
             2
           ],
           "sha256": "4af3656922efc834bfc4cc0ad64e9ea3b9b1a89ba4d3c8cc92649b687bd5181c"
+        },
+        {
+          "id": "1996-spiral",
+          "label": "Spiral square (1996)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/6/6d/Odyssey_Network.svg/revision/latest?cb=20180328225219",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Odyssey_Network.svg",
+          "sourceSha256": "28e91d13cef8a270ea4d75b4304c6f0c8f6c87b2c923aeb607dc103ed0e29f0d",
+          "ops": {
+            "keepNodes": [
+              "3/7"
+            ],
+            "viewBox": "-6.828 43.693 275.612 265.114"
+          },
+          "path": "/logos/svg/tv/alternates/hallmark-1996-spiral.svg",
+          "format": "svg",
+          "colors": [
+            "#0D62A9"
+          ],
+          "sourcePalette": [
+            "#0D62A9",
+            "#C9A227",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "5be79639dc04e63fa29f91ea2350c8a3b7b9ca5a157f8d4deb973f24816a6a83"
         }
       ]
     },
@@ -2733,6 +3868,174 @@
       ]
     },
     {
+      "id": "TV-ION",
+      "league": "TV",
+      "conference": "Broadcast",
+      "region": "ION Television",
+      "name": "",
+      "abbr": "ION",
+      "aliases": [
+        "Ion TV",
+        "ION TV",
+        "Pax TV"
+      ],
+      "palette": [
+        "#000000",
+        "#808080",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Lowercase wordmark",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/a/ae/Ion_Television_%282021%29.svg/revision/latest?cb=20210412034718",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Ion_Television_%282021%29.svg",
+          "sourceSha256": "54c5b07f31ca31570ae198b51f619016021e26c2da5e3562859f49e9a4061858",
+          "ops": {
+            "viewBox": "-30 -30 1060 630"
+          },
+          "showsName": true,
+          "path": "/logos/svg/tv/ion.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "a46fdcc63949d01a24e6ef4891d943533ded9a2b4bc81aabface733bd8eb96c6"
+        }
+      ]
+    },
+    {
+      "id": "TV-KBS",
+      "league": "TV",
+      "conference": "International",
+      "region": "KBS",
+      "name": "",
+      "abbr": "KBS",
+      "aliases": [
+        "Korean Broadcasting System",
+        "KBS1",
+        "KBS Korea"
+      ],
+      "palette": [
+        "#000898",
+        "#00C5FF",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Striped sphere",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/6/69/KBS_Symbol_2023.svg/revision/latest?cb=20230728135333",
+          "sourcePage": "https://logos.fandom.com/wiki/File:KBS_Symbol_2023.svg",
+          "sourceSha256": "ddcfb6d483f160f42a1097781a0447047c0209424951ce1907486e907367dd10",
+          "ops": {
+            "viewBox": "-4.215 -4.223 147.641 149.084"
+          },
+          "path": "/logos/svg/tv/kbs.svg",
+          "format": "svg",
+          "colors": [
+            "#00C5FF",
+            "#000898"
+          ],
+          "sourcePalette": [
+            "#000898",
+            "#00C5FF",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "8a3fd4895965a94e7d55a9f66620282cf5f5d91c97f8369b61ef6a2cdd150ac7"
+        }
+      ]
+    },
+    {
+      "id": "TV-LIFETIME",
+      "league": "TV",
+      "conference": "Cable",
+      "region": "Lifetime",
+      "name": "",
+      "abbr": "LIFETIME",
+      "aliases": [
+        "Lifetime Television",
+        "Lifetime TV",
+        "Lifetime Network"
+      ],
+      "palette": [
+        "#EA514F",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Red circle with stylized L",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/c/c4/Lifetime_2012.svg/revision/latest?cb=20210802124353",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Lifetime_2012.svg",
+          "sourceSha256": "d0e0d93da293626659ceec14e2e141920d9778a3cb779cb261c6d2fc4b2ff963",
+          "ops": {
+            "keepNodes": [
+              "3/0/0/8"
+            ],
+            "viewBox": "-5.635 -6.42 276.272 276.304"
+          },
+          "path": "/logos/svg/tv/lifetime.svg",
+          "format": "svg",
+          "colors": [
+            "#EA514F"
+          ],
+          "sourcePalette": [
+            "#EA514F",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "6d907afafb598eccb8e7c8b44622fac9545e42c99a299079a92663481466411a"
+        },
+        {
+          "id": "1984-heart",
+          "label": "Heart with leaves (1984)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/7/79/Lifetime_logo_1984.svg/revision/latest?cb=20261027184514",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Lifetime_logo_1984.svg",
+          "sourceSha256": "76361146a702842dff98695616f8383dfa400a4a3e457870853b0df31f25ad27",
+          "ops": {
+            "removeNodes": [
+              "2",
+              "3"
+            ],
+            "viewBox": "-5.03 -4.613 211.061 273.143"
+          },
+          "path": "/logos/svg/tv/alternates/lifetime-1984-heart.svg",
+          "format": "svg",
+          "colors": [
+            "#FF0000",
+            "#008000"
+          ],
+          "sourcePalette": [
+            "#FF0000",
+            "#008000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "870d0bf652d9feb5d386bdcc8a4d0813dd789bce95cacb4c978deb4e647d6faf"
+        }
+      ]
+    },
+    {
       "id": "TV-MAGNOLIA",
       "league": "TV",
       "conference": "Discovery & Lifestyle",
@@ -3121,6 +4424,52 @@
       ]
     },
     {
+      "id": "TV-NESN",
+      "league": "TV",
+      "conference": "Sports",
+      "region": "NESN",
+      "name": "",
+      "abbr": "NESN",
+      "aliases": [
+        "New England Sports Network"
+      ],
+      "palette": [
+        "#383A3F",
+        "#808080",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Stitch wave",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/7/74/NESN_2019_Stacked.svg/revision/latest?cb=20191005005100",
+          "sourcePage": "https://logos.fandom.com/wiki/File:NESN_2019_Stacked.svg",
+          "sourceSha256": "9280d6fd586a158092bdea34c6462ddd557616fa636e18f54618aceeca892165",
+          "ops": {
+            "keepNodes": [
+              "3/0-2"
+            ],
+            "viewBox": "-25.113 -25.113 887.318 320.177"
+          },
+          "path": "/logos/svg/tv/nesn.svg",
+          "format": "svg",
+          "colors": [
+            "#383A3F"
+          ],
+          "sourcePalette": [
+            "#383A3F",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "c6de9f30c0987c5ba5989e617818cd89c27b1770f458ce8c0be3e2d55bc1e4ae"
+        }
+      ]
+    },
+    {
       "id": "TV-NFLN",
       "league": "TV",
       "conference": "Sports",
@@ -3160,6 +4509,50 @@
           ],
           "unusedSourceSlots": [],
           "sha256": "16b00b9b962ef39348e5117a43c10a6eb0e3400d523ce4b32660d6ec2247c3da"
+        }
+      ]
+    },
+    {
+      "id": "TV-NHLN",
+      "league": "TV",
+      "conference": "Sports",
+      "region": "NHL Network",
+      "name": "",
+      "abbr": "NHLN",
+      "aliases": [
+        "NHL Net"
+      ],
+      "palette": [
+        "#000000",
+        "#94979A",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Shield wordmark",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/c/cd/NHL_Network_2011.svg/revision/latest?cb=20250214105505",
+          "sourcePage": "https://logos.fandom.com/wiki/File:NHL_Network_2011.svg",
+          "sourceSha256": "ecfbd5179398f14eb6418ba2935657b8786d212f6aafe0ace7b1eadac30b2a6c",
+          "ops": {
+            "viewBox": "-29.999 -30.034 1059.999 693.133"
+          },
+          "showsName": true,
+          "path": "/logos/svg/tv/nhln.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#FBFBFB",
+            "#FFFFFF",
+            "#94979A"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#94979A",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "6b043037425ca6436f9f9eec4d5faf8d29c45d5cd78649adeb539ec6b6b64bd2"
         }
       ]
     },
@@ -3402,6 +4795,64 @@
             2
           ],
           "sha256": "eab66cfb297457e27a7e74e9a5472830a1c97a9387ad40111150fad218f94265"
+        },
+        {
+          "id": "1993-hippos",
+          "label": "1993 hippo pair",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/2/23/Nick_Jr._1993_%28Hippos%29.svg/revision/latest?cb=20240726175339",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Nick_Jr._1993_(Hippos).svg",
+          "sourceSha256": "9143afcc8bde29f7a944cc2fd045fb8f946fac41abd183c456220f07132ed046",
+          "ops": {
+            "removeNodes": [
+              "2/1",
+              "2/3"
+            ],
+            "viewBox": "-230.023 -230.023 8127.485 4633.309"
+          },
+          "path": "/logos/svg/tv/alternates/nickjr-1993-hippos.svg",
+          "format": "svg",
+          "colors": [
+            "#FF7300",
+            "#00B5E2"
+          ],
+          "sourcePalette": [
+            "#FF7300",
+            "#00B5E2",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "2d7b72de5ed2929abf2e21f86e925d88ef1b21e58f6ef98dbb330537aa338c3e"
+        },
+        {
+          "id": "1988-elephants",
+          "label": "1988 elephant pair",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/1/14/Nick_Jr._1988_%28Elephants%29.svg/revision/latest?cb=20200924162036",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Nick_Jr._1988_(Elephants).svg",
+          "sourceSha256": "ee21e21d15ed84707b69349744f5dbfa3a6e8f3b12d80c5d07569719746aaa66",
+          "ops": {
+            "removeNodes": [
+              "3/0/2",
+              "3/0/3"
+            ],
+            "viewBox": "-7.938 -8.001 280.458 223.435"
+          },
+          "path": "/logos/svg/tv/alternates/nickjr-1988-elephants.svg",
+          "format": "svg",
+          "colors": [
+            "#FF6702",
+            "#005AFF"
+          ],
+          "sourcePalette": [
+            "#FF6702",
+            "#005AFF",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "29aa876cc10abd98ebd0010ece29c83d8f228c25c72487f69e84d89cfbc9fa0c"
         }
       ]
     },
@@ -3459,6 +4910,165 @@
       ]
     },
     {
+      "id": "TV-NOGGIN",
+      "league": "TV",
+      "conference": "Kids",
+      "region": "Noggin",
+      "name": "",
+      "abbr": "NOGGIN",
+      "aliases": [
+        "Noggin TV",
+        "Noggin Channel"
+      ],
+      "palette": [
+        "#000000",
+        "#1B4995",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Smiling head with a headband",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/b/b9/Noggin.svg/revision/latest?cb=20241110001628",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Noggin.svg",
+          "sourceSha256": "4ea3e583aee7e83462c5882bf697097672e5f9832f057f6f3adbc9a69dbc3ba3",
+          "ops": {
+            "removeNodes": [
+              "3/1",
+              "3/2",
+              "3/3",
+              "3/4",
+              "3/5",
+              "3/6",
+              "3/7"
+            ],
+            "viewBox": "-30 -30.001 1060 689.797"
+          },
+          "path": "/logos/svg/tv/noggin.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#1B4995",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "2f8f71965c3885cf3939b886336e46300f6319fe46fa9a2aa9845e558cfd4345"
+        },
+        {
+          "id": "1999-jar-head",
+          "label": "Jar-topped head (1999)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/8/87/Noggin_1999.svg/revision/latest?cb=20210709212509",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Noggin_1999.svg",
+          "sourceSha256": "51b38bf8b02afe872e4bfb4061310d9b1de429f246ba588fe53f9284b84c40de",
+          "ops": {
+            "removeNodes": [
+              "3/0/9",
+              "3/0/10",
+              "3/0/11"
+            ],
+            "viewBox": "-3.406 -3.406 99.244 120.339"
+          },
+          "path": "/logos/svg/tv/alternates/noggin-1999-jar-head.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#CCE210",
+            "#0A94DB",
+            "#F03120",
+            "#F9A60C",
+            "#1B4995",
+            "#D9F3FD"
+          ],
+          "sourcePalette": [
+            "#E2C40E",
+            "#126EB8",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "05094168632c03e4c91b275fd7223f04e8ac7889aaace79aaf1c7ac9acb6a5dd"
+        }
+      ]
+    },
+    {
+      "id": "TV-NTV",
+      "league": "TV",
+      "conference": "International",
+      "region": "Nippon TV",
+      "name": "",
+      "abbr": "NTV",
+      "aliases": [
+        "Nippon Television",
+        "Nihon TV",
+        "Nittele"
+      ],
+      "palette": [
+        "#45BA48",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Big-eyed mascot",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/9/97/Nippon_Television_%281993_with_Nandarou%29.svg/revision/latest?cb=20210622181301",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Nippon_Television_%281993_with_Nandarou%29.svg",
+          "sourceSha256": "6532943d511681f2734fa3fcc3facbd83c868d1afdb91fd43c097cb6755e32ad",
+          "ops": {
+            "keepNodes": [
+              "4/19-23"
+            ],
+            "viewBox": "-6.05 -6.05 567.1 399.363"
+          },
+          "path": "/logos/svg/tv/ntv.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#45BA48",
+            "#FFFFFF",
+            "#000200"
+          ],
+          "sourcePalette": [
+            "#45BA48",
+            "#000100",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "6a1a200a09fef077ec59c67a1e79ebbcc1a9c854973a5b9e4496b0d1634c799d"
+        },
+        {
+          "id": "1978-ovals",
+          "label": "Nested ovals (1978)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/4/4a/Nippon_TV_%281978%29.svg/revision/latest?cb=20240702070919",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Nippon_TV_%281978%29.svg",
+          "sourceSha256": "2d061385e2aa8784526f69c88516bc0a6754376a1560221a6a82a690e645ec59",
+          "ops": {
+            "viewBox": "-20.805 -20.805 735.11 476.81"
+          },
+          "path": "/logos/svg/tv/alternates/ntv-1978-ovals.svg",
+          "format": "svg",
+          "colors": [
+            "#174CC0"
+          ],
+          "sourcePalette": [
+            "#174CC0",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "eba706328577e07a86e0fbe14ac947f07b72bbce8d66bad24c0bddf54ba17c8c"
+        }
+      ]
+    },
+    {
       "id": "TV-OUTDOORCH",
       "league": "TV",
       "conference": "Sports",
@@ -3502,6 +5112,81 @@
             2
           ],
           "sha256": "f9de8d6f6e70bc92507faffeb8b995e8b9bca6699732264b17546b44f76a8b17"
+        }
+      ]
+    },
+    {
+      "id": "TV-OVATION",
+      "league": "TV",
+      "conference": "Discovery & Lifestyle",
+      "region": "Ovation",
+      "name": "",
+      "abbr": "OVATION",
+      "aliases": [
+        "Ovation TV",
+        "Ovation Network"
+      ],
+      "palette": [
+        "#FFD400",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Yellow concentric rings",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/d/d8/Ovation_logo_2010.svg/revision/latest?cb=20101122153741",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Ovation_logo_2010.svg",
+          "sourceSha256": "4357fd8d8ee429347db93763c1a5470be08332280615bb8897ad135d400ed008",
+          "ops": {
+            "keepNodes": [
+              "0-4"
+            ],
+            "viewBox": "-10.209 -11.976 423.136 423.097"
+          },
+          "path": "/logos/svg/tv/ovation.svg",
+          "format": "svg",
+          "colors": [
+            "#FFD400"
+          ],
+          "sourcePalette": [
+            "#FFD400",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "c6d45fb69cd449c40354075e96577e5ca239a2d7653e40af6f0294e3e320dc4c"
+        },
+        {
+          "id": "2000-capital",
+          "label": "Gold column capital (2000)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/1/14/Ovation_logo_2000.svg/revision/latest?cb=20100328183509",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Ovation_logo_2000.svg",
+          "sourceSha256": "c7513d4e60194b1178834951f7fd8a8bb94f6d078b59bbec5f02dc7e2980b862",
+          "ops": {
+            "keepNodes": [
+              "0/0-20"
+            ],
+            "viewBox": "72.909 75.815 247.799 178.106"
+          },
+          "path": "/logos/svg/tv/alternates/ovation-2000-capital.svg",
+          "format": "svg",
+          "colors": [
+            "#C69E4D"
+          ],
+          "sourcePalette": [
+            "#C69E4D",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "2408757cac1df628a81e10f8889bf43a47cedcc16ae01df46bee50334551505d"
         }
       ]
     },
@@ -3751,6 +5436,101 @@
       ]
     },
     {
+      "id": "TV-PHOENIXTV",
+      "league": "TV",
+      "conference": "International",
+      "region": "Phoenix TV",
+      "name": "",
+      "abbr": "PHOENIXTV",
+      "aliases": [
+        "Phoenix Television",
+        "Phoenix Satellite Television",
+        "Phoenix Chinese Channel"
+      ],
+      "palette": [
+        "#ED802F",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Twin phoenix swirl",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/e/ea/PhoenixTV_logo.svg/revision/latest?cb=20211019062944",
+          "sourcePage": "https://logos.fandom.com/wiki/File:PhoenixTV_logo.svg",
+          "sourceSha256": "94138b285034f1a908c102eb80bb0c79bf126ae0bc3502122fbfd501c92e289c",
+          "ops": {
+            "keepNodes": [
+              "0/0/17-19"
+            ],
+            "viewBox": "-0.346 0.172 24.504 24.591"
+          },
+          "path": "/logos/svg/tv/phoenixtv.svg",
+          "format": "svg",
+          "colors": [
+            "#ED802F"
+          ],
+          "sourcePalette": [
+            "#ED802F",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "f1fc9fb0cfab99d6694f6056351302eb4642f0a263ffb1ad50a3b7b8c0c212ab"
+        }
+      ]
+    },
+    {
+      "id": "TV-QUBO",
+      "league": "TV",
+      "conference": "Kids",
+      "region": "Qubo",
+      "name": "",
+      "abbr": "QUBO",
+      "aliases": [
+        "Qubo Channel"
+      ],
+      "palette": [
+        "#3A98E0",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Blue and black blob cube",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/5/5c/Qubo_Channel_2007.svg/revision/latest?cb=20240722202719",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Qubo_Channel_2007.svg",
+          "sourceSha256": "dc4a2b418e577f9c14c0fe9f6397da51c86abfd78dbc8fb2a0f564d80601c593",
+          "ops": {
+            "keepNodes": [
+              "12",
+              "13"
+            ],
+            "viewBox": "1.8 -3.867 122.853 136.65"
+          },
+          "path": "/logos/svg/tv/qubo.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#3A98E0"
+          ],
+          "sourcePalette": [
+            "#3A98E0",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "a827d8d25ae6d7340abbf3d4852023c8bb4424e8bc426108d5199a8d46df856d"
+        }
+      ]
+    },
+    {
       "id": "TV-QVC",
       "league": "TV",
       "conference": "Cable",
@@ -3932,6 +5712,90 @@
           ],
           "unusedSourceSlots": [],
           "sha256": "47d6ceed226d4b3e2e4e720ec7433af4d10868e06cf04f0a255574057c748e6d"
+        },
+        {
+          "id": "1976-spiral-sun",
+          "label": "Spiral sun (1976)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/8/82/Rede_Record_logo_1976.svg/revision/latest?cb=20251204194706",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Rede_Record_logo_1976.svg",
+          "sourceSha256": "86d1719e458db3d7f48ca57d0b9974b512c20a129b3635b305d336e459ba3ba2",
+          "ops": {
+            "removeNodes": [
+              "62",
+              "63",
+              "64",
+              "65",
+              "66",
+              "67",
+              "68",
+              "69"
+            ],
+            "fill": "#000000",
+            "viewBox": "30.097 -6.273 221.646 221.626"
+          },
+          "path": "/logos/svg/tv/alternates/recordtv-1976-spiral-sun.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#FFC400",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "720c061c15e3e1728cda603097e22b8ce11553e06aea2bc39c982fe3f825005c"
+        }
+      ]
+    },
+    {
+      "id": "TV-SBS",
+      "league": "TV",
+      "conference": "International",
+      "region": "SBS",
+      "name": "",
+      "abbr": "SBS",
+      "aliases": [
+        "Seoul Broadcasting System",
+        "SBS Korea"
+      ],
+      "palette": [
+        "#0086CE",
+        "#F6AC00",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Seed ring",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/c/c0/Seoul_broadcasting_System_logo.svg/revision/latest?cb=20210214211339",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Seoul_broadcasting_System_logo.svg",
+          "sourceSha256": "4f8a7e86725c1c92b0988d1f5b2b66501e2e9e50088b6ba44a5f9cb8a98510e7",
+          "ops": {
+            "removeNodes": [
+              "1/0/0",
+              "1/0/1",
+              "1/0/2"
+            ],
+            "viewBox": "-2.221 -2.215 78.195 78.274"
+          },
+          "path": "/logos/svg/tv/sbs.svg",
+          "format": "svg",
+          "colors": [
+            "#0086CE",
+            "#F6AC00",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#0086CE",
+            "#F6AC00",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "ed5c122f14ddebb33d812c309b72cc2bb80e72be90c111e8752394726268574f"
         }
       ]
     },
@@ -4104,6 +5968,129 @@
       ]
     },
     {
+      "id": "TV-SPROUT",
+      "league": "TV",
+      "conference": "Kids",
+      "region": "Sprout",
+      "name": "",
+      "abbr": "SPROUT",
+      "aliases": [
+        "PBS Kids Sprout",
+        "Sprout TV",
+        "Sprout Channel"
+      ],
+      "palette": [
+        "#82BA49",
+        "#0A96CE",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Green flower",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/2/2e/Sprout_Flower_Logo_2005-2018_%28in_SVG%29.svg/revision/latest?cb=20251210024916",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Sprout_Flower_Logo_2005-2018_%28in_SVG%29.svg",
+          "sourceSha256": "26c9a9ec6dbb239b698cd9441d63364d2428bdf9e91e4eeaa880a64141096a7f",
+          "ops": {
+            "viewBox": "-10.019 -10.019 334.471 354.014"
+          },
+          "path": "/logos/svg/tv/sprout.svg",
+          "format": "svg",
+          "colors": [
+            "#82BA49"
+          ],
+          "sourcePalette": [
+            "#82BA49",
+            "#0A96CE",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "1d2ce2ba9f59fb9628869b06a6c49fb3892423ebff309a8fe88e722f1d7ebc94"
+        }
+      ]
+    },
+    {
+      "id": "TV-STARSPORTS",
+      "league": "TV",
+      "conference": "Sports",
+      "region": "Star Sports",
+      "name": "",
+      "abbr": "STARSPORTS",
+      "aliases": [
+        "Star Sports India",
+        "Star Sports Network"
+      ],
+      "palette": [
+        "#000000",
+        "#808080",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Outlined star with swoosh",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/3/38/Star_Sports_-_Believe_%28Print%29.svg/revision/latest?cb=20210611074545",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Star_Sports_-_Believe_%28Print%29.svg",
+          "sourceSha256": "c4ef6c7f1d46ec55bb951da99237e7427db45f3a7f7a20dcb83af165deaf739b",
+          "ops": {
+            "keepNodes": [
+              "0/2",
+              "0/3"
+            ],
+            "fill": "#000000",
+            "viewBox": "4.359 -24.084 850.971 655.643"
+          },
+          "path": "/logos/svg/tv/starsports.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "5da07a7041e227b7b11154c02057233c881c6f90fa90d47e883bb5aa3c36e744"
+        },
+        {
+          "id": "1996-badge",
+          "label": "Starburst figure badge (1996)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/3/36/Star_Sports_1996.svg/revision/latest?cb=20231029060648",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Star_Sports_1996.svg",
+          "sourceSha256": "6127c6d0cf2fe37b5aa311f7f6964f5cc11bc7a9178040f5435a87cf5dabaea9",
+          "ops": {
+            "keepNodes": [
+              "1-4"
+            ],
+            "viewBox": "-15.253 89.997 492.606 538.946"
+          },
+          "path": "/logos/svg/tv/alternates/starsports-1996-badge.svg",
+          "format": "svg",
+          "colors": [
+            "#FF6600",
+            "#000066",
+            "#FFFF00"
+          ],
+          "sourcePalette": [
+            "#FFB200",
+            "#000066",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "176cb3c8bc76fa3cb04ec5c59ce3db5797e587bbafc81bebba6b597a483e0d9a"
+        }
+      ]
+    },
+    {
       "id": "TV-STARZ",
       "league": "TV",
       "conference": "Cable",
@@ -4172,6 +6159,203 @@
             2
           ],
           "sha256": "81019153ab9fd88d09aa13c6834e609b51f358a7f4856ae4959a476573896f5f"
+        }
+      ]
+    },
+    {
+      "id": "TV-SYFY",
+      "league": "TV",
+      "conference": "Cable",
+      "region": "Syfy",
+      "name": "",
+      "abbr": "SYFY",
+      "aliases": [
+        "Sci Fi",
+        "Sci Fi Channel",
+        "Sci-Fi Channel",
+        "SyFy Channel"
+      ],
+      "palette": [
+        "#2656A4",
+        "#6B3092",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Blue ringed planet (1999)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/f/fa/Sci_Fi_1999_alt.svg/revision/latest?cb=20240716153534",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Sci_Fi_1999_alt.svg",
+          "sourceSha256": "b9b0aa5b09af9e963f406312e0e1141582351d72dc4f80691d33933bd4db5a5b",
+          "ops": {
+            "keepNodes": [
+              "6",
+              "7"
+            ],
+            "viewBox": "-7.938 -7.937 280.458 142.24"
+          },
+          "path": "/logos/svg/tv/syfy.svg",
+          "format": "svg",
+          "colors": [
+            "#2656A4"
+          ],
+          "sourcePalette": [
+            "#2656A4",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "51c97996b19032cd35e424a19a31ded26b328552550883bb3255cafa96284f30"
+        },
+        {
+          "id": "2002-orbit",
+          "label": "Purple orbit swoosh (2002)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/1/11/Sci_Fi_2002.svg/revision/latest?cb=20210221082435",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Sci_Fi_2002.svg",
+          "sourceSha256": "ee4c1e64e6a485501318a5d5b838e7c3000812e3157ae78b867a7b63c0453abf",
+          "ops": {
+            "keepNodes": [
+              "0/0"
+            ],
+            "viewBox": "-17.701 -17.701 625.436 345.321"
+          },
+          "path": "/logos/svg/tv/alternates/syfy-2002-orbit.svg",
+          "format": "svg",
+          "colors": [
+            "#6B3092"
+          ],
+          "sourcePalette": [
+            "#6B3092",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "d3b1823c619d198fafdcf9999e2adb12607573b32a0542f963af11affd25fe91"
+        }
+      ]
+    },
+    {
+      "id": "TV-TBS",
+      "league": "TV",
+      "conference": "Cable",
+      "region": "TBS",
+      "name": "",
+      "abbr": "TBS",
+      "aliases": [
+        "Turner Broadcasting System",
+        "TBS Superstation",
+        "SuperStation TBS"
+      ],
+      "palette": [
+        "#000000",
+        "#808080",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Black tab wordmark",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/a/a7/TBS_2015.svg/revision/latest?cb=20250804025829",
+          "sourcePage": "https://logos.fandom.com/wiki/File:TBS_2015.svg",
+          "sourceSha256": "b2b9c618c3f708b7010d84e5fcf78fe85ab9f4d3f70a7d3e2ccf887d8cd7c0ee",
+          "ops": {
+            "viewBox": "-18 -18 636 378.3"
+          },
+          "showsName": true,
+          "path": "/logos/svg/tv/tbs.svg",
+          "format": "svg",
+          "colors": [
+            "#1E1E1E",
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#1E1E1E",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "a6f6548650471b1ca254a35d9e9ecc868c0415d3d6c10abc5c5d9edce2934e40"
+        }
+      ]
+    },
+    {
+      "id": "TV-TELEFE",
+      "league": "TV",
+      "conference": "International",
+      "region": "Telefe",
+      "name": "",
+      "abbr": "TELEFE",
+      "aliases": [
+        "Televisión Federal",
+        "Telefe Argentina"
+      ],
+      "palette": [
+        "#0072BC",
+        "#C4161C",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Three colored balls",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/1/18/Telefe.svg/revision/latest?cb=20181204173802",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Telefe.svg",
+          "sourceSha256": "285025ecad16730e0b45aaa11f24d75ed2cc91b015ddebe815ea43d213ac63f3",
+          "ops": {
+            "keepNodes": [
+              "0/0-2"
+            ],
+            "viewBox": "-30 -30 1060 380.095"
+          },
+          "path": "/logos/svg/tv/telefe.svg",
+          "format": "svg",
+          "colors": [
+            "#0072BC",
+            "#00A651",
+            "#C4161C"
+          ],
+          "sourcePalette": [
+            "#008C86",
+            "#C4161C",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "cc16bca4d4f366b727cfb4ab333ca1e1ca6620dc733e42ebb99f4bde61bdeff7"
+        },
+        {
+          "id": "1989-roundel",
+          "label": "Numeral 11 roundel (1989)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/9/99/Telefe-1989-1990.svg/revision/latest?cb=20231108001042",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Telefe-1989-1990.svg",
+          "sourceSha256": "baee2b9a17f85e8dd4975626ff023f98dd4cbf5ebaeaf52227686e57786fbcf2",
+          "ops": {
+            "viewBox": "-28.518 -28.518 954.236 1007.636"
+          },
+          "path": "/logos/svg/tv/alternates/telefe-1989-roundel.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#C4161C",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "4b4d3ea991b7ec2a568ded8f74a72ebe17d55f210c6cb7e3ccbd2e6148f4afb9"
         }
       ]
     },
@@ -4278,6 +6462,34 @@
             2
           ],
           "sha256": "49fcdc0d94e305a875aa5d1e9a26cd7f705ae50c06cb9ab13acaea1483a7dff0"
+        },
+        {
+          "id": "1987-striped-ball",
+          "label": "Striped red ball (1987)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/6/6b/Telemundo1987.svg/revision/latest?cb=20190216162016",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Telemundo1987.svg",
+          "sourceSha256": "4e053ee5f5506694efced21723e798f4819c4fce31a2385ddb2ffe6fcac5a24c",
+          "ops": {
+            "removeNodes": [
+              "1/1/1"
+            ],
+            "viewBox": "21529.65 -760.35 26865.7 26865.7"
+          },
+          "path": "/logos/svg/tv/alternates/telemundo-1987-striped-ball.svg",
+          "format": "svg",
+          "colors": [
+            "#ED1D26"
+          ],
+          "sourcePalette": [
+            "#ED1D26",
+            "#911010",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "72f670239d2a0a641c3de282f580c04d32eb9204aecbd1ec72bd9d51c3b490c2"
         }
       ]
     },
@@ -4841,6 +7053,35 @@
             2
           ],
           "sha256": "d07202fe82e2d6f8a8298b28cc4aaa131d06ea0d32b56ca37c6c9cb2b06762d5"
+        },
+        {
+          "id": "1976-op-art",
+          "label": "Op-art square (1976)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/3/38/Univision_-_1976.svg/revision/latest?cb=20260301070947",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Univision_-_1976.svg",
+          "sourceSha256": "42449ccacdbd80dc4e329e0aa5dafb78cf1b7b320aec7ce0964a063951354bbb",
+          "ops": {
+            "removeNodes": [
+              "1/1"
+            ],
+            "fill": "#000000",
+            "viewBox": "126.005 -6.495 345.99 346.09"
+          },
+          "path": "/logos/svg/tv/alternates/univision-1976-op-art.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#00A3E1",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "110dc209dc7d98094a08cd76a277b5ef92ea505a5b7c8d53f700df9ffa79a39b"
         }
       ]
     },
@@ -4890,6 +7131,103 @@
             2
           ],
           "sha256": "ac99a0ecffa06d086830ff12bfaeac5c88db7da1e51b1452d278da9656a2146f"
+        }
+      ]
+    },
+    {
+      "id": "TV-WWENETWORK",
+      "league": "TV",
+      "conference": "Sports",
+      "region": "WWE Network",
+      "name": "",
+      "abbr": "WWENETWORK",
+      "aliases": [
+        "WWE",
+        "World Wrestling Entertainment",
+        "WWE Net"
+      ],
+      "palette": [
+        "#000000",
+        "#EE2624",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "W with red swoosh",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/5/52/WWE_Network.svg/revision/latest?cb=20220607135045",
+          "sourcePage": "https://logos.fandom.com/wiki/File:WWE_Network.svg",
+          "sourceSha256": "e1755da3735a7aeb4b10bfbcf9efce86b33c382185b7e4b68891bb37776b6fce",
+          "ops": {
+            "removeNodes": [
+              "0/3",
+              "0/4",
+              "0/5"
+            ],
+            "viewBox": "165.914 181.074 983.171 902.206"
+          },
+          "path": "/logos/svg/tv/wwenetwork.svg",
+          "format": "svg",
+          "colors": [
+            "#EE2624",
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#EE2624",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "e0fe222b09bf64bee7f1ce2b845436e6df21e57c416145491d077fd02840a612"
+        }
+      ]
+    },
+    {
+      "id": "TV-ZEETV",
+      "league": "TV",
+      "conference": "International",
+      "region": "Zee TV",
+      "name": "",
+      "abbr": "ZEETV",
+      "aliases": [
+        "Zee",
+        "Zee Television"
+      ],
+      "palette": [
+        "#0D8ACD",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Swooshed Z",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/b/ba/Zee_TV_logo_January_2017.svg/revision/latest?cb=20250319192058",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Zee_TV_logo_January_2017.svg",
+          "sourceSha256": "de8e836c8003ef5a5bb3eb84b035c20bc7a4c56937ef9392e2c9f1cfff02f54e",
+          "ops": {
+            "keepNodes": [
+              "4"
+            ],
+            "viewBox": "-11.876 -11.876 401.568 419.628"
+          },
+          "path": "/logos/svg/tv/zeetv.svg",
+          "format": "svg",
+          "colors": [
+            "#0D8ACD"
+          ],
+          "sourcePalette": [
+            "#0D8ACD",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "ac429fd970dc574ec78810d8f9fbf305cffa3a1d31eeb381e9ef537b71e8d1d1"
         }
       ]
     }

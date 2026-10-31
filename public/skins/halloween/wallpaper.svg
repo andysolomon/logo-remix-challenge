@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMax slice">
+  <defs>
+    <radialGradient id="moonGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#F7E7B5" stop-opacity="0.32"/>
+      <stop offset="45%" stop-color="#F7E7B5" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#F7E7B5" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="pumpkinGlow" cx="50%" cy="60%" r="50%">
+      <stop offset="0%" stop-color="#FF7A1F" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#FF7A1F" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <!-- stars -->
+  <g fill="#FBF0E4">
+    <circle cx="120" cy="90" r="2"/><circle cx="260" cy="200" r="1.4"/><circle cx="410" cy="60" r="1.8"/><circle cx="560" cy="150" r="1.2"/>
+    <circle cx="700" cy="40" r="2.2"/><circle cx="840" cy="120" r="1.4"/><circle cx="960" cy="60" r="1.6"/><circle cx="1090" cy="230" r="1.2"/>
+    <circle cx="1480" cy="80" r="2"/><circle cx="1540" cy="300" r="1.4"/><circle cx="60" cy="320" r="1.6"/><circle cx="330" cy="330" r="1.2"/>
+    <circle cx="640" cy="280" r="1.8"/><circle cx="780" cy="220" r="1.2"/><circle cx="1010" cy="330" r="1.5"/><circle cx="1150" cy="40" r="1.2"/>
+    <circle cx="200" cy="440" r="1.3"/><circle cx="900" cy="400" r="1.1"/><circle cx="1380" cy="400" r="1.6"/><circle cx="500" cy="420" r="1.1"/>
+  </g>
+  <!-- moon -->
+  <circle cx="1270" cy="190" r="260" fill="url(#moonGlow)"/>
+  <circle cx="1270" cy="190" r="86" fill="#F7E7B5"/>
+  <circle cx="1240" cy="165" r="14" fill="#E9D7A2"/><circle cx="1295" cy="215" r="20" fill="#E9D7A2"/><circle cx="1255" cy="225" r="9" fill="#E9D7A2"/>
+  <!-- far hills -->
+  <path d="M0 760 C 180 700, 320 740, 480 710 S 760 690, 900 720 S 1180 760, 1320 700 S 1520 690, 1600 720 L 1600 900 L 0 900 Z" fill="#160C24"/>
+  <!-- bare tree -->
+  <g fill="none" stroke="#09040F" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M150 820 L150 640 M150 700 L95 640 M95 640 L70 650 M95 640 L85 605 M150 660 L205 600 M205 600 L240 595 M205 600 L200 560 M150 640 L135 590 M135 590 L110 580 M150 640 L170 585" stroke-width="12"/>
+    <path d="M150 820 L150 640 M150 700 L95 640 M150 660 L205 600 M150 640 L135 590" stroke-width="18"/>
+  </g>
+  <!-- near hill with graves and a pumpkin -->
+  <path d="M0 830 C 200 790, 420 820, 600 800 S 900 770, 1100 800 S 1400 830, 1600 790 L 1600 900 L 0 900 Z" fill="#09040F"/>
+  <g fill="#09040F">
+    <path d="M1180 820 L1180 760 Q1180 730 1210 730 Q1240 730 1240 760 L1240 820 Z"/>
+    <path d="M1300 812 L1300 766 Q1300 744 1322 744 Q1344 744 1344 766 L1344 812 Z"/>
+    <rect x="1256" y="748" width="10" height="68" rx="3"/><rect x="1240" y="766" width="42" height="10" rx="3"/>
+    <path d="M520 806 L520 770 Q520 752 540 752 Q560 752 560 770 L560 806 Z"/>
+  </g>
+  <!-- jack-o'-lantern on the hill -->
+  <ellipse cx="780" cy="805" rx="80" ry="60" fill="url(#pumpkinGlow)"/>
+  <g>
+    <rect x="774" y="758" width="10" height="16" rx="3" fill="#3C6B2A"/>
+    <ellipse cx="760" cy="792" rx="22" ry="24" fill="#D85A14"/><ellipse cx="800" cy="792" rx="22" ry="24" fill="#D85A14"/>
+    <ellipse cx="780" cy="793" rx="24" ry="26" fill="#F26A1B"/>
+    <path d="M766 786 L776 779 L778 790 Z M794 786 L784 779 L782 790 Z" fill="#FFE3A8"/>
+    <path d="M764 800 L771 806 L776 802 L780 807 L784 802 L789 806 L796 800 L794 798 L766 798 Z" fill="#FFE3A8"/>
+  </g>
+</svg>

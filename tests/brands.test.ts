@@ -25,7 +25,8 @@ const WORDMARK_ONLY = [
   'CHAR-FROZEN', 'CHAR-GOT', 'CHAR-GTA', 'CHAR-HUNGER', 'CHAR-IRONMAN', 'CHAR-JJK', 'CHAR-JL', 'CHAR-KIRBY', 'CHAR-KUNGFUPANDA', 'CHAR-LIONKING', 'CHAR-MHA', 'CHAR-MINIONS',
   'CHAR-MOANA', 'CHAR-NARUTO', 'CHAR-NEMO', 'CHAR-ONEPIECE', 'CHAR-PAW', 'CHAR-POOH', 'CHAR-SAILORMOON', 'CHAR-SCOOBY', 'CHAR-SESAME', 'CHAR-SHREK', 'CHAR-SIMPSONS', 'CHAR-SMURFS',
   'CHAR-SONIC', 'CHAR-SPLATOON', 'CHAR-SPONGEBOB', 'CHAR-STARWARS', 'CHAR-STITCH', 'CHAR-STRANGER', 'CHAR-TEENTITANS', 'CHAR-TETRIS', 'CHAR-TMNT', 'CHAR-TOYSTORY',
-  'CLOTH-DRMARTENS', 'CLOTH-GAP', 'CLOTH-HM', 'CLOTH-OLDNAVY', 'CLOTH-SUPREME', 'CLOTH-UGG', 'CLOTH-UNIQLO', 'CLOTH-ZARA',
+  'CLOTH-DRMARTENS', 'CLOTH-GANT', 'CLOTH-GAP', 'CLOTH-HM', 'CLOTH-JCREW', 'CLOTH-LEE', 'CLOTH-OLDNAVY', 'CLOTH-SUPREME', 'CLOTH-THRASHER', 'CLOTH-UGG', 'CLOTH-UNIQLO',
+  'CLOTH-ZARA',
   'FOOD-BOJ', 'FOOD-BOSTON', 'FOOD-CANE', 'FOOD-CARVEL', 'FOOD-CB', 'FOOD-CHEESE', 'FOOD-CINNABON', 'FOOD-CUL', 'FOOD-DENNYS', 'FOOD-EPL', 'FOOD-FAT', 'FOOD-FIREHOUSE',
   'FOOD-FIVE', 'FOOD-FREDDYS', 'FOOD-GC', 'FOOD-HABIT', 'FOOD-HD', 'FOOD-HRC', 'FOOD-IHOP', 'FOOD-JM', 'FOOD-KRISPY', 'FOOD-MOES', 'FOOD-OUTBACK', 'FOOD-PAPA',
   'FOOD-PFC', 'FOOD-PM', 'FOOD-QDOBA', 'FOOD-RAIN', 'FOOD-RUBY', 'FOOD-SNS', 'FOOD-TIMS', 'FOOD-WINGSTOP',
@@ -68,8 +69,8 @@ describe('brand collections', () => {
     expect(LEAGUES.LUX).toEqual({ label: 'LUXURY', conferences: ['Fashion House', 'Leather Goods', 'Watchmaker', 'Jeweler'] })
     expect(LEAGUES.LUX.conferences.map((c) => filterTeams('LUX', c, '').length)).toEqual([10, 6, 8, 6])
     expect(LEAGUES.CLOTH).toEqual({ label: 'CLOTHING', conferences: ['Sportswear', 'Streetwear', 'Outdoor', 'Preppy', 'Everyday', 'Surf & Skate', 'Footwear'] })
-    expect(LEAGUES.CLOTH.conferences.map((c) => filterTeams('CLOTH', c, '').length)).toEqual([17, 11, 15, 12, 9, 10, 7])
-    for (const [league, size] of [['FOOD', 93], ['BRAND', 135], ['FLAG', 123], ['APP', 175], ['TV', 98], ['CAR', 30], ['LUX', 30], ['CLOTH', 81], ['CHAR', 115], ['SWEET', 52]] as const) {
+    expect(LEAGUES.CLOTH.conferences.map((c) => filterTeams('CLOTH', c, '').length)).toEqual([27, 19, 26, 19, 17, 23, 16])
+    for (const [league, size] of [['FOOD', 93], ['BRAND', 135], ['FLAG', 123], ['APP', 175], ['TV', 98], ['CAR', 30], ['LUX', 30], ['CLOTH', 147], ['CHAR', 115], ['SWEET', 52]] as const) {
       expect(filterTeams(league, 'All', '')).toHaveLength(size)
       expect(new Set(filterTeams(league, 'All', '').map(fullName)).size).toBe(size)
     }
@@ -85,7 +86,7 @@ describe('brand collections', () => {
       }
       expect(new Set(logoVariants(team).map((v) => v.logo)).size).toBe(logoVariants(team).length)
     }
-    expect(entries.filter((t) => t.alternateLogos?.length).length).toBeGreaterThanOrEqual(380)
+    expect(entries.filter((t) => t.alternateLogos?.length).length).toBeGreaterThanOrEqual(400)
   })
 
   test('artwork never spells the answer, apart from the wordmark-only entries kept for manual selection', () => {
@@ -125,7 +126,7 @@ for league, roster in ROSTERS.items():
     rows = {row[0]: row for row in roster}
     pinned = {(s['teamId'], s['id']): s for s in pinned_sources(league)}
     items = json.loads(manifest_path(league).read_text())['assets']
-    assert len(items) == len(rows) == {'FOOD': 93, 'BRAND': 135, 'FLAG': 123, 'APP': 175, 'TV': 98, 'CLOTH': 81, 'NHL': 32, 'WNBA': 15, 'CHAR': 115, 'LANDMARK': 40, 'SWEET': 52}.get(league, 30), league
+    assert len(items) == len(rows) == {'FOOD': 93, 'BRAND': 135, 'FLAG': 123, 'APP': 175, 'TV': 98, 'CLOTH': 147, 'NHL': 32, 'WNBA': 15, 'CHAR': 115, 'LANDMARK': 40, 'SWEET': 52}.get(league, 30), league
     for item in items:
         assert teams[item['id']] == build_entry(league, item, rows[item['abbr']]), item['id']
         for art in item['artwork']:
@@ -183,7 +184,7 @@ for league, roster in ROSTERS.items():
     expect(poolTeams(['Characters'])).toHaveLength(115)
     expect(poolTeams(['Sweets'])).toHaveLength(52)
     expect(poolTeams(['TV', 'Cars'])).toHaveLength(128)
-    expect(poolTeams(['Luxury', 'Clothing'])).toHaveLength(111)
+    expect(poolTeams(['Luxury', 'Clothing'])).toHaveLength(177)
     expect(logoPoolTeams(['Fast Food'])).toHaveLength(93 - wordmarks('FOOD'))
     expect(logoPoolTeams(['Brands'])).toHaveLength(135 - wordmarks('BRAND'))
     expect(logoPoolTeams(['Characters'])).toHaveLength(115 - wordmarks('CHAR'))
@@ -191,7 +192,7 @@ for league, roster in ROSTERS.items():
     expect(logoPoolTeams(['TV'])).toHaveLength(98 - wordmarks('TV'))
     expect(logoPoolTeams(['Cars'])).toHaveLength(30 - wordmarks('CAR'))
     expect(logoPoolTeams(['Luxury'])).toHaveLength(30 - wordmarks('LUX'))
-    expect(logoPoolTeams(['Clothing'])).toHaveLength(81 - wordmarks('CLOTH'))
+    expect(logoPoolTeams(['Clothing'])).toHaveLength(147 - wordmarks('CLOTH'))
     // Brand palettes never color a round, so a wordmark-only brand sits random decks out entirely.
     expect(colorPoolTeams(['Fast Food', 'Brands', 'Apps', 'TV', 'Cars', 'Luxury', 'Clothing', 'Characters', 'Sweets'])).toEqual([])
     expect(randomDeck({ rounds: 20, logoPools: ['Brands'], colorPools: ['Apps'], guess: 'both', hints: true })).toEqual([])

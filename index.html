@@ -7,8 +7,12 @@
     <meta name="theme-color" content="#F7F5F1" />
     <title>Logo Remix Challenge</title>
     <script>
-      // Apply the saved theme before first paint so dark mode doesn't flash light (App.tsx keeps it in sync after).
+      // Apply the saved theme and holiday skin before first paint so neither flashes the plain light look (App.tsx keeps them in sync after).
       try {
+        var s = localStorage.getItem('lrx-skin')
+        // Auto follows the calendar; App.tsx caches what it resolved to, so the same skin comes back on the next load.
+        if (s === 'auto' || s === null) s = localStorage.getItem('lrx-skin-active')
+        if (s && s !== 'off') document.documentElement.dataset.skin = s
         var t = localStorage.getItem('lrx-theme')
         var dark = t === 'dark' || (t !== 'light' && matchMedia('(prefers-color-scheme: dark)').matches)
         document.documentElement.dataset.theme = dark ? 'dark' : 'light'

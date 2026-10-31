@@ -19332,18 +19332,30 @@
   {
     "teamId": "LANDMARK-LIBERTY",
     "id": "primary",
-    "label": "Silhouette",
-    "sourceUrl": "https://openclipart.org/download/312625/1545770176.svg",
-    "sourcePage": "https://openclipart.org/detail/312625/statue-of-liberty-with-pedestal-silhouette",
-    "sourceSha256": "0bc5d86123ab7d6653113f784d666650dd4075108a934d007c91cafa845b5bda"
+    "label": "Architectural study",
+    "sourceUrl": "https://github.com/andysolomon/logo-remix-challenge/blob/main/scripts/landmark_artwork.py",
+    "sourceSha256": "046bb1dd150ac1c03bd4711c8739f1fc19c5e946a402965f01f9cec2e089e88e",
+    "generator": "landmark_artwork",
+    "license": "Original project illustration",
+    "previousSource": {
+      "sourceUrl": "https://openclipart.org/download/312625/1545770176.svg",
+      "sourcePage": "https://openclipart.org/detail/312625/statue-of-liberty-with-pedestal-silhouette",
+      "sourceSha256": "0bc5d86123ab7d6653113f784d666650dd4075108a934d007c91cafa845b5bda"
+    }
   },
   {
     "teamId": "LANDMARK-GOLDENGATE",
     "id": "primary",
-    "label": "Silhouette",
-    "sourceUrl": "https://openclipart.org/download/315125/1549922106.svg",
-    "sourcePage": "https://openclipart.org/detail/315125/golden-gate-bridge-silhouette-2-by-3dman-eu",
-    "sourceSha256": "5b6680799dddfebe0466fbb68a1ed0083c7019cddb95187d3f0b1f8519401d75"
+    "label": "Architectural study",
+    "sourceUrl": "https://github.com/andysolomon/logo-remix-challenge/blob/main/scripts/landmark_artwork.py",
+    "sourceSha256": "d25fb40cd3750ca7a31a9c0cc434a9823e2f243f0c57b01b9d61f02eac737692",
+    "generator": "landmark_artwork",
+    "license": "Original project illustration",
+    "previousSource": {
+      "sourceUrl": "https://openclipart.org/download/315125/1549922106.svg",
+      "sourcePage": "https://openclipart.org/detail/315125/golden-gate-bridge-silhouette-2-by-3dman-eu",
+      "sourceSha256": "5b6680799dddfebe0466fbb68a1ed0083c7019cddb95187d3f0b1f8519401d75"
+    }
   },
   {
     "teamId": "LANDMARK-NEEDLE",
@@ -19364,10 +19376,16 @@
   {
     "teamId": "LANDMARK-REDEEMER",
     "id": "primary",
-    "label": "Silhouette",
-    "sourceUrl": "https://openclipart.org/download/280167/Christ-The-Redeemer-Statue-Silhouette.svg",
-    "sourcePage": "https://openclipart.org/detail/280167/christ-the-redeemer-statue-silhouette",
-    "sourceSha256": "549258bf7ed2e41f6bec2972fb2cbab9a38f6ef6e4e13371d36c147343d26008"
+    "label": "Architectural study",
+    "sourceUrl": "https://github.com/andysolomon/logo-remix-challenge/blob/main/scripts/landmark_artwork.py",
+    "sourceSha256": "800fe2255d08e9d4e11a717436fe86f0aeb6eabc80020ed2f858da352b9826e9",
+    "generator": "landmark_artwork",
+    "license": "Original project illustration",
+    "previousSource": {
+      "sourceUrl": "https://openclipart.org/download/280167/Christ-The-Redeemer-Statue-Silhouette.svg",
+      "sourcePage": "https://openclipart.org/detail/280167/christ-the-redeemer-statue-silhouette",
+      "sourceSha256": "549258bf7ed2e41f6bec2972fb2cbab9a38f6ef6e4e13371d36c147343d26008"
+    }
   },
   {
     "teamId": "LANDMARK-WHITEHOUSE",
@@ -19380,10 +19398,16 @@
   {
     "teamId": "LANDMARK-BROOKLYN",
     "id": "primary",
-    "label": "Silhouette",
-    "sourceUrl": "https://openclipart.org/download/315155/1549923654.svg",
-    "sourcePage": "https://openclipart.org/detail/315155/brooklyn-bridge-silhouette",
-    "sourceSha256": "50e23277d7bc55e57c41178fc5c9bec26d53d5424832f3d51b0a24f303b1cb79"
+    "label": "Architectural study",
+    "sourceUrl": "https://github.com/andysolomon/logo-remix-challenge/blob/main/scripts/landmark_artwork.py",
+    "sourceSha256": "f8dea1c58e7a2762c7695c8bb309d4cfbc8a97e7702bd27d04655356f70d9109",
+    "generator": "landmark_artwork",
+    "license": "Original project illustration",
+    "previousSource": {
+      "sourceUrl": "https://openclipart.org/download/315155/1549923654.svg",
+      "sourcePage": "https://openclipart.org/detail/315155/brooklyn-bridge-silhouette",
+      "sourceSha256": "50e23277d7bc55e57c41178fc5c9bec26d53d5424832f3d51b0a24f303b1cb79"
+    }
   },
   {
     "teamId": "LANDMARK-RUSHMORE",
@@ -19416,10 +19440,16 @@
   {
     "teamId": "LANDMARK-TOWERBRIDGE",
     "id": "primary",
-    "label": "Silhouette",
-    "sourceUrl": "https://openclipart.org/download/315116/1549921571.svg",
-    "sourcePage": "https://openclipart.org/detail/315116/london-tower-bridge-silhouette-by-maja7777",
-    "sourceSha256": "a52cdab55b36cbb900d3d117b523505e1b06b1029c304bf3b147718d751dad91"
+    "label": "Architectural study",
+    "sourceUrl": "https://github.com/andysolomon/logo-remix-challenge/blob/main/scripts/landmark_artwork.py",
+    "sourceSha256": "164a386e810ef8bb2b396847908c551d9b4a452d4454a1273c3b839665f582e7",
+    "generator": "landmark_artwork",
+    "license": "Original project illustration",
+    "previousSource": {
+      "sourceUrl": "https://openclipart.org/download/315116/1549921571.svg",
+      "sourcePage": "https://openclipart.org/detail/315116/london-tower-bridge-silhouette-by-maja7777",
+      "sourceSha256": "a52cdab55b36cbb900d3d117b523505e1b06b1029c304bf3b147718d751dad91"
+    }
   },
   {
     "teamId": "LANDMARK-COLOSSEUM",
@@ -19437,18 +19467,30 @@
   {
     "teamId": "LANDMARK-PISA",
     "id": "primary",
-    "label": "Silhouette",
-    "sourceUrl": "https://openclipart.org/download/317629/1553893467.svg",
-    "sourcePage": "https://openclipart.org/detail/317629/leaning-tower-of-pisa-silhouette-by-maja7777",
-    "sourceSha256": "2ac43f1d200de0690a31227db4ec798a5fdc2c12d4b100960f724889175f41da"
+    "label": "Architectural study",
+    "sourceUrl": "https://github.com/andysolomon/logo-remix-challenge/blob/main/scripts/landmark_artwork.py",
+    "sourceSha256": "de7df36dfc3a541900a3b82f5d956fd4c91ef2e8fc500414d3942a0a0596a28f",
+    "generator": "landmark_artwork",
+    "license": "Original project illustration",
+    "previousSource": {
+      "sourceUrl": "https://openclipart.org/download/317629/1553893467.svg",
+      "sourcePage": "https://openclipart.org/detail/317629/leaning-tower-of-pisa-silhouette-by-maja7777",
+      "sourceSha256": "2ac43f1d200de0690a31227db4ec798a5fdc2c12d4b100960f724889175f41da"
+    }
   },
   {
     "teamId": "LANDMARK-STONEHENGE",
     "id": "primary",
-    "label": "Silhouette",
-    "sourceUrl": "https://openclipart.org/download/223210/Stonehenge4.svg",
-    "sourcePage": "https://openclipart.org/detail/223210/stonehenge-silhouette",
-    "sourceSha256": "1a771d79315384bd97ea2b28147b092eb76590195ae49af528fd56dbc1ad5862"
+    "label": "Architectural study",
+    "sourceUrl": "https://github.com/andysolomon/logo-remix-challenge/blob/main/scripts/landmark_artwork.py",
+    "sourceSha256": "e736770999919d5bc41dcc44433b52e1a447a289c33aa4ed7179f6be9be0d10f",
+    "generator": "landmark_artwork",
+    "license": "Original project illustration",
+    "previousSource": {
+      "sourceUrl": "https://openclipart.org/download/223210/Stonehenge4.svg",
+      "sourcePage": "https://openclipart.org/detail/223210/stonehenge-silhouette",
+      "sourceSha256": "1a771d79315384bd97ea2b28147b092eb76590195ae49af528fd56dbc1ad5862"
+    }
   },
   {
     "teamId": "LANDMARK-ARC",
@@ -19485,10 +19527,16 @@
   {
     "teamId": "LANDMARK-STBASIL",
     "id": "primary",
-    "label": "Silhouette",
-    "sourceUrl": "https://openclipart.org/download/308025/1539372982.svg",
-    "sourcePage": "https://openclipart.org/detail/308025/saint-basils-cathedral-silhouette",
-    "sourceSha256": "e74e0efd2fab3f3a6fbde15c0aa400b7c1d1718945f5a67b82723c03a661301c"
+    "label": "Architectural study",
+    "sourceUrl": "https://github.com/andysolomon/logo-remix-challenge/blob/main/scripts/landmark_artwork.py",
+    "sourceSha256": "bd544c072e247676e8e206a58fa1b188a7f3b02cca4473bd17e953a6b4d72fde",
+    "generator": "landmark_artwork",
+    "license": "Original project illustration",
+    "previousSource": {
+      "sourceUrl": "https://openclipart.org/download/308025/1539372982.svg",
+      "sourcePage": "https://openclipart.org/detail/308025/saint-basils-cathedral-silhouette",
+      "sourceSha256": "e74e0efd2fab3f3a6fbde15c0aa400b7c1d1718945f5a67b82723c03a661301c"
+    }
   },
   {
     "teamId": "LANDMARK-ATOMIUM",
@@ -19509,18 +19557,30 @@
   {
     "teamId": "LANDMARK-MONTSTMICHEL",
     "id": "primary",
-    "label": "Silhouette",
-    "sourceUrl": "https://openclipart.org/download/311069/1543528284.svg",
-    "sourcePage": "https://openclipart.org/detail/311069/mont-saint-michel-silhouette-2",
-    "sourceSha256": "3e6b095a8344ed20e35c346cddebbd16fabd6518664f56d2e442c4e1530fb6db"
+    "label": "Architectural study",
+    "sourceUrl": "https://github.com/andysolomon/logo-remix-challenge/blob/main/scripts/landmark_artwork.py",
+    "sourceSha256": "7546f15e7563db22f49ab52b962b9416ecb37106cc1dbe75f5bae1ebf7725661",
+    "generator": "landmark_artwork",
+    "license": "Original project illustration",
+    "previousSource": {
+      "sourceUrl": "https://openclipart.org/download/311069/1543528284.svg",
+      "sourcePage": "https://openclipart.org/detail/311069/mont-saint-michel-silhouette-2",
+      "sourceSha256": "3e6b095a8344ed20e35c346cddebbd16fabd6518664f56d2e442c4e1530fb6db"
+    }
   },
   {
     "teamId": "LANDMARK-TAJ",
     "id": "primary",
-    "label": "Silhouette",
-    "sourceUrl": "https://openclipart.org/download/162985/1317917164.svg",
-    "sourcePage": "https://openclipart.org/detail/162985/taj-mahal",
-    "sourceSha256": "0f8e559508575560b6dd5ff19bf0efac6206b2a59ee7fb12334692c2e9f6691b"
+    "label": "Architectural study",
+    "sourceUrl": "https://github.com/andysolomon/logo-remix-challenge/blob/main/scripts/landmark_artwork.py",
+    "sourceSha256": "320e9e94501354b4eb0643c2387db0ed37d6b11da202d50fe51d4273118d2cca",
+    "generator": "landmark_artwork",
+    "license": "Original project illustration",
+    "previousSource": {
+      "sourceUrl": "https://openclipart.org/download/162985/1317917164.svg",
+      "sourcePage": "https://openclipart.org/detail/162985/taj-mahal",
+      "sourceSha256": "0f8e559508575560b6dd5ff19bf0efac6206b2a59ee7fb12334692c2e9f6691b"
+    }
   },
   {
     "teamId": "LANDMARK-GREATWALL",
@@ -19533,10 +19593,16 @@
   {
     "teamId": "LANDMARK-PETRONAS",
     "id": "primary",
-    "label": "Illustration",
-    "sourceUrl": "https://openclipart.org/download/221033/klcc.svg",
-    "sourcePage": "https://openclipart.org/detail/221033/petronas-twin-towers-silhouette",
-    "sourceSha256": "c8ce65ecee15c55504d2c2702cd9766d2a5cc433e41eec29454329d59f6a680f"
+    "label": "Architectural study",
+    "sourceUrl": "https://github.com/andysolomon/logo-remix-challenge/blob/main/scripts/landmark_artwork.py",
+    "sourceSha256": "0d0211ac013814989e5b8c93015f0474aa00af0ab58ecd95cd7a2a44f3e30317",
+    "generator": "landmark_artwork",
+    "license": "Original project illustration",
+    "previousSource": {
+      "sourceUrl": "https://openclipart.org/download/221033/klcc.svg",
+      "sourcePage": "https://openclipart.org/detail/221033/petronas-twin-towers-silhouette",
+      "sourceSha256": "c8ce65ecee15c55504d2c2702cd9766d2a5cc433e41eec29454329d59f6a680f"
+    }
   },
   {
     "teamId": "LANDMARK-ANGKOR",
@@ -19564,10 +19630,16 @@
   {
     "teamId": "LANDMARK-TORII",
     "id": "primary",
-    "label": "Silhouette",
-    "sourceUrl": "https://openclipart.org/download/314875/1549491218.svg",
-    "sourcePage": "https://openclipart.org/detail/314875/japanese-torii-gate-silhouette",
-    "sourceSha256": "af610d50187182b444c92ef0cd4ffa7ce9f6b465e66e7b85443a96d0028157c7"
+    "label": "Architectural study",
+    "sourceUrl": "https://github.com/andysolomon/logo-remix-challenge/blob/main/scripts/landmark_artwork.py",
+    "sourceSha256": "3764c4a7d6733c1a32029b9547912fa9a7c675c73b120cc02b388f5cea7a77f4",
+    "generator": "landmark_artwork",
+    "license": "Original project illustration",
+    "previousSource": {
+      "sourceUrl": "https://openclipart.org/download/314875/1549491218.svg",
+      "sourcePage": "https://openclipart.org/detail/314875/japanese-torii-gate-silhouette",
+      "sourceSha256": "af610d50187182b444c92ef0cd4ffa7ce9f6b465e66e7b85443a96d0028157c7"
+    }
   },
   {
     "teamId": "LANDMARK-OPERA",
@@ -19588,10 +19660,16 @@
   {
     "teamId": "LANDMARK-MOAI",
     "id": "primary",
-    "label": "Silhouette",
-    "sourceUrl": "https://openclipart.org/download/253282/Moai-Statues-Silhouette.svg",
-    "sourcePage": "https://openclipart.org/detail/253282/moai-statues-silhouette",
-    "sourceSha256": "7b411f062259f9588ea6eb0cc14d46505c3524f28f6c877f68d9909dad151c83"
+    "label": "Architectural study",
+    "sourceUrl": "https://github.com/andysolomon/logo-remix-challenge/blob/main/scripts/landmark_artwork.py",
+    "sourceSha256": "eda5165f8d54ada4a00f1c23ec399d52958ecccc52d7f293f2b530f91efba4c8",
+    "generator": "landmark_artwork",
+    "license": "Original project illustration",
+    "previousSource": {
+      "sourceUrl": "https://openclipart.org/download/253282/Moai-Statues-Silhouette.svg",
+      "sourcePage": "https://openclipart.org/detail/253282/moai-statues-silhouette",
+      "sourceSha256": "7b411f062259f9588ea6eb0cc14d46505c3524f28f6c877f68d9909dad151c83"
+    }
   },
   {
     "teamId": "LANDMARK-MARINABAY",
@@ -19604,10 +19682,16 @@
   {
     "teamId": "LANDMARK-PEARL",
     "id": "primary",
-    "label": "Silhouette",
-    "sourceUrl": "https://openclipart.org/download/313554/1547385900.svg",
-    "sourcePage": "https://openclipart.org/detail/313554/oriental-pearl-tower",
-    "sourceSha256": "28625538a7d0d892c03b746d280169ab9c6f879653a19d4e437d20d3939e83af"
+    "label": "Architectural study",
+    "sourceUrl": "https://github.com/andysolomon/logo-remix-challenge/blob/main/scripts/landmark_artwork.py",
+    "sourceSha256": "7cf12df6f5938d5a1ff16004e0587f4e5e7fef57c3192a38ac24b417cba1e940",
+    "generator": "landmark_artwork",
+    "license": "Original project illustration",
+    "previousSource": {
+      "sourceUrl": "https://openclipart.org/download/313554/1547385900.svg",
+      "sourcePage": "https://openclipart.org/detail/313554/oriental-pearl-tower",
+      "sourceSha256": "28625538a7d0d892c03b746d280169ab9c6f879653a19d4e437d20d3939e83af"
+    }
   },
   {
     "teamId": "LANDMARK-HIMEJI",
@@ -19657,18 +19741,30 @@
   {
     "teamId": "LANDMARK-BURJ",
     "id": "primary",
-    "label": "Silhouette",
-    "sourceUrl": "https://openclipart.org/download/275637/BurjKhalifa.svg",
-    "sourcePage": "https://openclipart.org/detail/275637/burj-khalifa-silhouette",
-    "sourceSha256": "99ac9b1142a4a997b2e58a116abc42e60d7d6d0534b81dc027ea58594b632352"
+    "label": "Architectural study",
+    "sourceUrl": "https://github.com/andysolomon/logo-remix-challenge/blob/main/scripts/landmark_artwork.py",
+    "sourceSha256": "1f89b4738fc79e464a2b37b3ba1dc79ee6c8b7074e8d0645f798fac8e37bdb55",
+    "generator": "landmark_artwork",
+    "license": "Original project illustration",
+    "previousSource": {
+      "sourceUrl": "https://openclipart.org/download/275637/BurjKhalifa.svg",
+      "sourcePage": "https://openclipart.org/detail/275637/burj-khalifa-silhouette",
+      "sourceSha256": "99ac9b1142a4a997b2e58a116abc42e60d7d6d0534b81dc027ea58594b632352"
+    }
   },
   {
     "teamId": "LANDMARK-SKYTREE",
     "id": "primary",
-    "label": "Silhouette",
-    "sourceUrl": "https://openclipart.org/download/313553/1547383891.svg",
-    "sourcePage": "https://openclipart.org/detail/313553/tokyo-skytree-silhouette",
-    "sourceSha256": "e6a759533df2859728b5b67401352939596544bde6898c8321925fbe49735f30"
+    "label": "Architectural study",
+    "sourceUrl": "https://github.com/andysolomon/logo-remix-challenge/blob/main/scripts/landmark_artwork.py",
+    "sourceSha256": "b37168e81ab44bcaee7d300e756920abc8649e14c3afbbef719915c1d8bdac4e",
+    "generator": "landmark_artwork",
+    "license": "Original project illustration",
+    "previousSource": {
+      "sourceUrl": "https://openclipart.org/download/313553/1547383891.svg",
+      "sourcePage": "https://openclipart.org/detail/313553/tokyo-skytree-silhouette",
+      "sourceSha256": "e6a759533df2859728b5b67401352939596544bde6898c8321925fbe49735f30"
+    }
   },
   {
     "teamId": "SWEET-REESES",
@@ -20366,5 +20462,95 @@
       "viewBox": "-7.954 -7.954 214.77 119.814"
     },
     "showsName": true
+  },
+  {
+    "teamId": "CHAR-SPIDEY",
+    "id": "webbed-mask",
+    "label": "Webbed mask",
+    "sourceUrl": "https://github.com/andysolomon/logo-remix-challenge/blob/main/scripts/character_artwork.py",
+    "sourceSha256": "0d018fe1e075f2115232cd751ab2ccd0d6e37f65c19c00826b55040c06ada06e",
+    "generator": "character_artwork",
+    "license": "Original project illustration; depicted character rights remain with their owners"
+  },
+  {
+    "teamId": "CHAR-DEADPOOL",
+    "id": "mask-portrait",
+    "label": "Mask portrait",
+    "sourceUrl": "https://github.com/andysolomon/logo-remix-challenge/blob/main/scripts/character_artwork.py",
+    "sourceSha256": "f3745bd5abdac35b8b05cf91110f6c312fc356156bcd75f275aa79172f109d84",
+    "generator": "character_artwork",
+    "license": "Original project illustration; depicted character rights remain with their owners"
+  },
+  {
+    "teamId": "CHAR-VADER",
+    "id": "helmet-study",
+    "label": "Helmet study",
+    "sourceUrl": "https://github.com/andysolomon/logo-remix-challenge/blob/main/scripts/character_artwork.py",
+    "sourceSha256": "476bfb3b0069ebd199bd1acb24fa2b24a178cc6b758e5f537e25db9e0531f452",
+    "generator": "character_artwork",
+    "license": "Original project illustration; depicted character rights remain with their owners"
+  },
+  {
+    "teamId": "CHAR-MANDO",
+    "id": "beskar-helmet",
+    "label": "Armored helmet",
+    "sourceUrl": "https://github.com/andysolomon/logo-remix-challenge/blob/main/scripts/character_artwork.py",
+    "sourceSha256": "73fa9b0fca3a8e4bfceac6364d0b2b7cd5d87f847f0081c6239de08f78f8620a",
+    "generator": "character_artwork",
+    "license": "Original project illustration; depicted character rights remain with their owners"
+  },
+  {
+    "teamId": "CHAR-THOR",
+    "id": "hammer",
+    "label": "Hammer",
+    "sourceUrl": "https://github.com/andysolomon/logo-remix-challenge/blob/main/scripts/character_artwork.py",
+    "sourceSha256": "2b517406bbf355c67b795d6c459d6e762916ec168e403aac832648a789ea52a0",
+    "generator": "character_artwork",
+    "license": "Original project illustration; depicted character rights remain with their owners"
+  },
+  {
+    "teamId": "CHAR-CAP",
+    "id": "heater-shield",
+    "label": "Heater shield",
+    "sourceUrl": "https://github.com/andysolomon/logo-remix-challenge/blob/main/scripts/character_artwork.py",
+    "sourceSha256": "b92f8c8b1126c18a2850a936ea248a968984be621ed9dcb9c97146f1a952a120",
+    "generator": "character_artwork",
+    "license": "Original project illustration; depicted character rights remain with their owners"
+  },
+  {
+    "teamId": "CHAR-CREEPER",
+    "id": "voxel-head",
+    "label": "Voxel head",
+    "sourceUrl": "https://github.com/andysolomon/logo-remix-challenge/blob/main/scripts/character_artwork.py",
+    "sourceSha256": "54cb847b8180c4526ad7c488cce5923ba89cfcdb563ae8cda4613c5dda621acb",
+    "generator": "character_artwork",
+    "license": "Original project illustration; depicted character rights remain with their owners"
+  },
+  {
+    "teamId": "CHAR-MARIO",
+    "id": "fire-flower",
+    "label": "Fire flower",
+    "sourceUrl": "https://github.com/andysolomon/logo-remix-challenge/blob/main/scripts/character_artwork.py",
+    "sourceSha256": "bd5b6e0f6d25f2f1806c3cb1b673198cd8293d0907df9207da143bcdd641c879",
+    "generator": "character_artwork",
+    "license": "Original project illustration; depicted character rights remain with their owners"
+  },
+  {
+    "teamId": "CHAR-POKEBALL",
+    "id": "great-ball",
+    "label": "Great ball",
+    "sourceUrl": "https://github.com/andysolomon/logo-remix-challenge/blob/main/scripts/character_artwork.py",
+    "sourceSha256": "0c85df88aa6ed586b7dfdd1b7894d56da4ba52d78349d1cab5e5c94fa40317ad",
+    "generator": "character_artwork",
+    "license": "Original project illustration; depicted character rights remain with their owners"
+  },
+  {
+    "teamId": "CHAR-PIKACHU",
+    "id": "face-portrait",
+    "label": "Face portrait",
+    "sourceUrl": "https://github.com/andysolomon/logo-remix-challenge/blob/main/scripts/character_artwork.py",
+    "sourceSha256": "3638266bef7abb9fb24c91cd9e989655f0582ff461980b1691257e071c33bd68",
+    "generator": "character_artwork",
+    "license": "Original project illustration; depicted character rights remain with their owners"
   }
 ]

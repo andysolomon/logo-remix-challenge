@@ -171,6 +171,93 @@
       ]
     },
     {
+      "id": "CLOTH-AIRWALK",
+      "league": "CLOTH",
+      "conference": "Footwear",
+      "region": "Airwalk",
+      "name": "",
+      "abbr": "AIRWALK",
+      "aliases": [],
+      "palette": [
+        "#E51635",
+        "#241D10",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "A in a red circle",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/c/cf/Airwalk_Logo.svg/revision/latest?cb=20211127163658",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Airwalk_Logo.svg",
+          "sourceSha256": "742f8dc6458455182c5f576250c77add933400894a694d5b974d932af398b735",
+          "ops": {
+            "keepNodes": [
+              "2/0/0-1"
+            ],
+            "viewBox": "-0.504 -0.46 143.017 143.006"
+          },
+          "path": "/logos/svg/clothing/airwalk.svg",
+          "format": "svg",
+          "colors": [
+            "#E51635",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#E51635",
+            "#241D10",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "54f130b5b3c40a3c9f6c207fcf996ddf8bd934c81b4a1f605156c882a6c95208"
+        }
+      ]
+    },
+    {
+      "id": "CLOTH-ANTA",
+      "league": "CLOTH",
+      "conference": "Sportswear",
+      "region": "Anta",
+      "name": "",
+      "abbr": "ANTA",
+      "aliases": [
+        "Anta Sports"
+      ],
+      "palette": [
+        "#D7000F",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Red swoosh arc",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/b/bc/ANTA.svg/revision/latest?cb=20231031165240",
+          "sourcePage": "https://logos.fandom.com/wiki/File:ANTA.svg",
+          "sourceSha256": "2b438f16684cfc63cbd847558de9ce84d39250d040e7c8985476c6e4984484b8",
+          "ops": {
+            "viewBox": "-5.352 -5.352 189.114 107.254"
+          },
+          "path": "/logos/svg/clothing/anta.svg",
+          "format": "svg",
+          "colors": [
+            "#D7000F"
+          ],
+          "sourcePalette": [
+            "#D7000F",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "eb50027ea5db0e694f8f970b0e032dac9e0dbf8b50d30371006b8309503edd2b"
+        }
+      ]
+    },
+    {
       "id": "CLOTH-ARCTERYX",
       "league": "CLOTH",
       "conference": "Outdoor",
@@ -215,6 +302,51 @@
             2
           ],
           "sha256": "5d390a0698dc85307c6e2a9e59a43f898002c35866d5696913f6d9dae2802f7e"
+        }
+      ]
+    },
+    {
+      "id": "CLOTH-ARIAT",
+      "league": "CLOTH",
+      "conference": "Footwear",
+      "region": "Ariat",
+      "name": "",
+      "abbr": "ARIAT",
+      "aliases": [
+        "Ariat International"
+      ],
+      "palette": [
+        "#000000",
+        "#8A8D8F",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Shield with interlocking loops",
+          "sourceUrl": "https://logowik.com/ariat-international-logo-vector-svg-pdf-ai-eps-cdr-free-download-19287.html",
+          "sourcePage": "https://logowik.com/ariat-international-logo-vector-svg-pdf-ai-eps-cdr-free-download-19287.html",
+          "sourceSha256": "30ba7b994a0f507378c28a56d5b865059546f2b41c6e6a5cb821439a5681a390",
+          "downloadForm": "logowik",
+          "ops": {
+            "viewBox": "41.66 168.75 110.22 113.21",
+            "clipToViewBox": true
+          },
+          "path": "/logos/svg/clothing/ariat.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#8A8D8F",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "a93197bcd5c7add6c6e77980fb2470e0ad56c8f13b30cabdbb0610fe08ac6dbc"
         }
       ]
     },
@@ -292,6 +424,51 @@
             2
           ],
           "sha256": "b09e883a3d46031200123a48218b715445cb4ee21d6bb76b700e0561c3162a50"
+        }
+      ]
+    },
+    {
+      "id": "CLOTH-BABYPHAT",
+      "league": "CLOTH",
+      "conference": "Streetwear",
+      "region": "Baby Phat",
+      "name": "",
+      "abbr": "BABYPHAT",
+      "aliases": [],
+      "palette": [
+        "#231F20",
+        "#EF80B3",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Line-drawn cat",
+          "sourceUrl": "https://iconape.com/wp-content/files/vp/186575/svg/186575.svg",
+          "sourcePage": "https://iconape.com/baby-phat-logo-logo-icon-svg-png.html",
+          "sourceSha256": "a5c691ec8eeffab0f74c9e10b00b7e44aab7d2ad6937963750afe3ab3716d5b8",
+          "ops": {
+            "keepNodes": [
+              "0",
+              "1/0-4"
+            ],
+            "viewBox": "61.191 -5.153 102.445 181.945"
+          },
+          "path": "/logos/svg/clothing/babyphat.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#231F20"
+          ],
+          "sourcePalette": [
+            "#231F20",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "c878e7216a2abf175cd5993a32025af9935a9817c9b2287efca194afd703de33"
         }
       ]
     },
@@ -390,6 +567,51 @@
       ]
     },
     {
+      "id": "CLOTH-BERGHAUS",
+      "league": "CLOTH",
+      "conference": "Outdoor",
+      "region": "Berghaus",
+      "name": "",
+      "abbr": "BERGHAUS",
+      "aliases": [],
+      "palette": [
+        "#ED1C24",
+        "#00529C",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Twin slanted bars",
+          "sourceUrl": "https://iconape.com/wp-content/files/ik/330346/svg/330346.svg",
+          "sourcePage": "https://iconape.com/berghaus-logo-logo-icon-svg-png.html",
+          "sourceSha256": "2665588a65ef8351d018395f36e4df2dfdf2c98568dcdb59e9ec6a9bf0cbb37f",
+          "ops": {
+            "keepNodes": [
+              "0/1-3"
+            ],
+            "viewBox": "-6.291 -6.769 240.121 170.389"
+          },
+          "path": "/logos/svg/clothing/berghaus.svg",
+          "format": "svg",
+          "colors": [
+            "#939598",
+            "#00529C",
+            "#ED1C24"
+          ],
+          "sourcePalette": [
+            "#ED1C24",
+            "#4A749A",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "01167ede1755bfff6e3e4ce216871049ada21443b98513995b669d3b628b7083"
+        }
+      ]
+    },
+    {
       "id": "CLOTH-BILLABONG",
       "league": "CLOTH",
       "conference": "Surf & Skate",
@@ -430,6 +652,172 @@
             2
           ],
           "sha256": "cc273de8b4814d71551741c847bc38eb9dd3686ccdfff3a0399dfca56ada7466"
+        }
+      ]
+    },
+    {
+      "id": "CLOTH-BILLIONAIREBOYS",
+      "league": "CLOTH",
+      "conference": "Streetwear",
+      "region": "Billionaire Boys Club",
+      "name": "",
+      "abbr": "BILLIONAIREBOYS",
+      "aliases": [
+        "BBC Ice Cream",
+        "BBC Icecream"
+      ],
+      "palette": [
+        "#000000",
+        "#377F5C",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Astronaut helmet",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/4/4d/Billionaire_Boys_Club_Icon.svg/revision/latest?cb=20220603022020",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Billionaire_Boys_Club_Icon.svg",
+          "sourceSha256": "a685e1119f7ce8b893ab8cb59b21bd5535798650f6b3ebd9f827a9a737d25b0c",
+          "ops": {
+            "viewBox": "-5.498 -5.498 158.55 194.271"
+          },
+          "path": "/logos/svg/clothing/billionaireboys.svg",
+          "format": "svg",
+          "colors": [
+            "#100F0D"
+          ],
+          "sourcePalette": [
+            "#100F0D",
+            "#377F5C",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "7768b4423b1f3652b6ca7eaa3f316d2fd33e2ac67f2396356bf234a8936e1ed1"
+        },
+        {
+          "id": "space-walker",
+          "label": "Floating astronaut",
+          "sourceUrl": "https://iconape.com/wp-content/files/ud/202166/svg/202166.svg",
+          "sourcePage": "https://iconape.com/billionaire-boys-club-logo-logo-icon-svg-png.html",
+          "sourceSha256": "b29ead650599b59fdae68e96000b3763305c223315f97b6bc0f5aab5bdd82222",
+          "ops": {
+            "keepNodes": [
+              "1/2-6"
+            ],
+            "viewBox": "-17.87 160.567 635.219 496.11"
+          },
+          "path": "/logos/svg/clothing/alternates/billionaireboys-space-walker.svg",
+          "format": "svg",
+          "colors": [
+            "#377F5C",
+            "#84D0D3",
+            "#E0DAD7",
+            "#D17737"
+          ],
+          "sourcePalette": [
+            "#847B4A",
+            "#84D0D3",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "e8957941977a0e428ccba2d753125feb58e0e827d845a35f2e2864620ab1d67b"
+        },
+        {
+          "id": "cone-head",
+          "label": "Ice cream cone head",
+          "sourceUrl": "https://iconape.com/wp-content/files/tp/203047/svg/203047.svg",
+          "sourcePage": "https://iconape.com/billionaire-boys-club-ice-cream-logo-logo-icon-svg-png.html",
+          "sourceSha256": "e873d70f2eb178cf5e9948b61a1fdcb4b5f46637c6a12f9bd9b9b21f672582a9",
+          "ops": {
+            "removeNodes": [
+              "0/0"
+            ],
+            "viewBox": "57.615 3.474 77.524 186.294"
+          },
+          "path": "/logos/svg/clothing/alternates/billionaireboys-cone-head.svg",
+          "format": "svg",
+          "colors": [
+            "#231F20"
+          ],
+          "sourcePalette": [
+            "#231F20",
+            "#377F5C",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "8db4c9e2c507e7dfe355aa05ff068958e69d7c451a631d9a0b843197027161f0"
+        }
+      ]
+    },
+    {
+      "id": "CLOTH-BOMBAS",
+      "league": "CLOTH",
+      "conference": "Everyday",
+      "region": "Bombas",
+      "name": "",
+      "abbr": "BOMBAS",
+      "aliases": [],
+      "palette": [
+        "#1A4D9C",
+        "#F2B33D",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Crowned bee",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/c/c2/Bombas_bee_2020.svg/revision/latest?cb=20251029155514",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Bombas_bee_2020.svg",
+          "sourceSha256": "a131e564b627ce9d0912837157b1e165e9cf72bd0559b5806d73d89590b0bc39",
+          "ops": {
+            "viewBox": "-1.68 -1.68 59.36 43.611"
+          },
+          "path": "/logos/svg/clothing/bombas.svg",
+          "format": "svg",
+          "colors": [
+            "#1A4D9C"
+          ],
+          "sourcePalette": [
+            "#1A4D9C",
+            "#F2B33D",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "cc15a9ea4a00666244727bdd84f091dbc91d2c67f5ff466d7e001ccaea09aec3"
+        },
+        {
+          "id": "2025-bee",
+          "label": "Simplified bee (2025)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/4/41/Bombas_bee_2025.svg/revision/latest?cb=20261012144031",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Bombas_bee_2025.svg",
+          "sourceSha256": "f2a519eb18358955ef584145d17e1e61e662b01ba598813f97a51d29bcc6f7c5",
+          "ops": {
+            "viewBox": "-2.482 -2.482 87.693 67.845"
+          },
+          "path": "/logos/svg/clothing/alternates/bombas-2025-bee.svg",
+          "format": "svg",
+          "colors": [
+            "#231F20"
+          ],
+          "sourcePalette": [
+            "#231F20",
+            "#F2B33D",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "b5e324aaba5bb6f538d48d4b89e4c9ffd2e724add7be40513f1791288fb0c484"
         }
       ]
     },
@@ -550,6 +938,81 @@
       ]
     },
     {
+      "id": "CLOTH-BURTON",
+      "league": "CLOTH",
+      "conference": "Outdoor",
+      "region": "Burton",
+      "name": "",
+      "abbr": "BURTON",
+      "aliases": [
+        "Burton Snowboards"
+      ],
+      "palette": [
+        "#000000",
+        "#EE3437",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Mountain peak",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/f/f8/Burton2020.svg/revision/latest?cb=20260325053516",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Burton2020.svg",
+          "sourceSha256": "677d89bdf9f32ec963d50dd78392334a0fb48aec598a4d8cf5ff573fc1ad9a08",
+          "ops": {
+            "keepNodes": [
+              "2"
+            ],
+            "viewBox": "-10.61 -10.652 376.749 331.097"
+          },
+          "path": "/logos/svg/clothing/burton.svg",
+          "format": "svg",
+          "colors": [
+            "#111111"
+          ],
+          "sourcePalette": [
+            "#111111",
+            "#EE3437",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "111147610cdf81eb93faa41d4a211515adf75e6295e53dd44168874f6e874ff1"
+        },
+        {
+          "id": "2002-tile",
+          "label": "Square B tile (2002)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/a/ac/Burton2002-color.svg/revision/latest?cb=20260327004229",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Burton2002-color.svg",
+          "sourceSha256": "54851f9fe7a1792a2b893f531039ad3d5ca625b862da628aa69209b99f44412b",
+          "ops": {
+            "keepNodes": [
+              "0",
+              "1"
+            ],
+            "viewBox": "-8.349 -8.499 300.309 291.769"
+          },
+          "path": "/logos/svg/clothing/alternates/burton-2002-tile.svg",
+          "format": "svg",
+          "colors": [
+            "#EE3437"
+          ],
+          "sourcePalette": [
+            "#EE3437",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "5d47c6a6208b608686a4a24d9eb874b8797076f8f629cb287f787dcb799db02f"
+        }
+      ]
+    },
+    {
       "id": "CLOTH-CARHARTT",
       "league": "CLOTH",
       "conference": "Outdoor",
@@ -617,6 +1080,97 @@
             2
           ],
           "sha256": "f3b4b9780560d4918736b4e0726cc71a179b3f6d6977d111511e0ec1613ec497"
+        }
+      ]
+    },
+    {
+      "id": "CLOTH-CASTORE",
+      "league": "CLOTH",
+      "conference": "Sportswear",
+      "region": "Castore",
+      "name": "",
+      "abbr": "CASTORE",
+      "aliases": [],
+      "palette": [
+        "#1A1A1A",
+        "#8A8D8F",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Winged V",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/f/f8/Castore_2015.svg/revision/latest?cb=20220709194221",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Castore_2015.svg",
+          "sourceSha256": "ff9cb072e4f7562c53d48721c3c51ac5af5359477bed8eb57deb1a223ec13421",
+          "ops": {
+            "keepNodes": [
+              "3-43"
+            ],
+            "viewBox": "-30 -30 1060 624.441"
+          },
+          "path": "/logos/svg/clothing/castore.svg",
+          "format": "svg",
+          "colors": [
+            "#1A1A1A"
+          ],
+          "sourcePalette": [
+            "#1A1A1A",
+            "#8A8D8F",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "8a218bdf7b5d64ee4e687fc71dcc6f99c5c9e43e7af69bc9854a6ad7612b5944"
+        }
+      ]
+    },
+    {
+      "id": "CLOTH-CDGPLAY",
+      "league": "CLOTH",
+      "conference": "Streetwear",
+      "region": "Comme des Garçons Play",
+      "name": "",
+      "abbr": "CDGPLAY",
+      "aliases": [
+        "Comme des Garçons",
+        "CDG",
+        "CDG Play",
+        "Play Comme des Garçons"
+      ],
+      "palette": [
+        "#000000",
+        "#E60012",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Heart with eyes",
+          "sourceUrl": "https://cdn.worldvectorlogo.com/logos/comme-des-garcons.svg",
+          "sourcePage": "https://worldvectorlogo.com/logo/comme-des-garcons",
+          "sourceSha256": "020bbbae68d336ecd9c18640928fd739f1703922f591158e29f2a9256aaa9e57",
+          "ops": {
+            "viewBox": "255.446 113.036 387.398 377.768",
+            "clipToViewBox": true
+          },
+          "path": "/logos/svg/clothing/cdgplay.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#E60012",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "cd34099a183ef5c27c2212ff1962ba4acb60c84ad4b0c3cd098eca96e8bba659"
         }
       ]
     },
@@ -909,6 +1463,76 @@
             1
           ],
           "sha256": "564de1a07c5a93844567df5135955dda51f1e900ffdc5f27a03bc11a71a8aa47"
+        },
+        {
+          "id": "slashed-star",
+          "label": "Slashed star (1990s)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/9/93/Converseedgystar.svg/revision/latest?cb=20250419234853",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Converseedgystar.svg",
+          "sourceSha256": "e8d6f8ca7c7b9f9a0c99ed8ecf0f2af3088bf3c7f52be2ec2033d25fa32427c0",
+          "ops": {
+            "viewBox": "9.803 7.003 130.629 111.566"
+          },
+          "path": "/logos/svg/clothing/alternates/converse-slashed-star.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#CF4037",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "a6fc87b419f9f35cee2805751684a8501688d000fb63556b88c281e5c31867c4"
+        }
+      ]
+    },
+    {
+      "id": "CLOTH-COTOPAXI",
+      "league": "CLOTH",
+      "conference": "Outdoor",
+      "region": "Cotopaxi",
+      "name": "",
+      "abbr": "COTOPAXI",
+      "aliases": [],
+      "palette": [
+        "#000000",
+        "#8A8D8F",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Llama",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/8/86/Cotopaxi_logo.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Cotopaxi_logo.svg",
+          "sourceSha256": "c11a0604e4b9e8fc05d94471e1a3c4bc6bd36ae6146e3c67c3c29dd48382478f",
+          "ops": {
+            "keepNodes": [
+              "0"
+            ],
+            "viewBox": "-9.78 -9.79 181.08 346.01",
+            "clipToViewBox": true
+          },
+          "path": "/logos/svg/clothing/cotopaxi.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#8A8D8F",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "b7533a42eadc7599fb34500798f72191a067a3c5d1b8ffbf203c3fc8de900c80"
         }
       ]
     },
@@ -1002,6 +1626,50 @@
       ]
     },
     {
+      "id": "CLOTH-DIADORA",
+      "league": "CLOTH",
+      "conference": "Sportswear",
+      "region": "Diadora",
+      "name": "",
+      "abbr": "DIADORA",
+      "aliases": [],
+      "palette": [
+        "#000000",
+        "#649F53",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Flying arrow",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/0/0f/Diadora_1948.svg/revision/latest?cb=20220507120159",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Diadora_1948.svg",
+          "sourceSha256": "277f20ea15c54a1ffe6156efccb6f8e880a593c0ee2c271c9297aaaf3dac5d49",
+          "ops": {
+            "keepNodes": [
+              "0/0/6"
+            ],
+            "viewBox": "86.964 -2.192 77.466 38.451"
+          },
+          "path": "/logos/svg/clothing/diadora.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#649F53",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "1135f27c185886423a79e07db6b5b94ddae695852623e91a2d7ce2d0101b1a34"
+        }
+      ]
+    },
+    {
       "id": "CLOTH-DICKIES",
       "league": "CLOTH",
       "conference": "Streetwear",
@@ -1059,6 +1727,76 @@
       ]
     },
     {
+      "id": "CLOTH-DOCKERS",
+      "league": "CLOTH",
+      "conference": "Everyday",
+      "region": "Dockers",
+      "name": "",
+      "abbr": "DOCKERS",
+      "aliases": [],
+      "palette": [
+        "#000000",
+        "#8A8D8F",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Winged anchor with rope",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/6/6e/Dockers-2019.svg/revision/latest?cb=20230108173009",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Dockers-2019.svg",
+          "sourceSha256": "74426ea40991430039f6ce7e1bf09a2e6294677af5f95189ab4210cd0bbefc4c",
+          "ops": {
+            "viewBox": "-5.8 -5.8 346.1 224.3",
+            "clipToViewBox": true
+          },
+          "path": "/logos/svg/clothing/dockers.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#8A8D8F",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "f75229a536c5ec9499471e91888c0ca18e3475125d70af45f2489eb45b627a4f"
+        },
+        {
+          "id": "2000-wings",
+          "label": "Minimal winged anchor (2000)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/b/b0/Dockers-2000.svg/revision/latest?cb=20230108173213",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Dockers-2000.svg",
+          "sourceSha256": "9ba5c539d0802a4587d19293dadd8b29e613aef355c91e17252223bcd3b92e39",
+          "ops": {
+            "keepNodes": [
+              "1"
+            ],
+            "viewBox": "26.082 15.239 51.721 22.934"
+          },
+          "path": "/logos/svg/clothing/alternates/dockers-2000-wings.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#8A8D8F",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "f81608c4f98bca2d3a6f1f34fd5c2bfef2e143899133ad0eb2d0424fbfda2404"
+        }
+      ]
+    },
+    {
       "id": "CLOTH-DRMARTENS",
       "league": "CLOTH",
       "conference": "Footwear",
@@ -1101,6 +1839,50 @@
           ],
           "unusedSourceSlots": [],
           "sha256": "9dd4bbd8e69b0aa0c11c190eb39250869bca069150bad9bbf1a8c07498a9762f"
+        }
+      ]
+    },
+    {
+      "id": "CLOTH-DYNAFIT",
+      "league": "CLOTH",
+      "conference": "Outdoor",
+      "region": "Dynafit",
+      "name": "",
+      "abbr": "DYNAFIT",
+      "aliases": [],
+      "palette": [
+        "#221F20",
+        "#8A8D8F",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Snow leopard",
+          "sourceUrl": "https://iconape.com/wp-content/files/wx/329780/svg/329780.svg",
+          "sourcePage": "https://iconape.com/dynafit-logo-logo-icon-svg-png.html",
+          "sourceSha256": "eac4a8aaaf37f13c7a98e27128196359d23fa6142e1caef81a4bf9981178eb0a",
+          "ops": {
+            "keepNodes": [
+              "1/7-11"
+            ],
+            "viewBox": "-17.426 -17.425 615.701 350.488"
+          },
+          "path": "/logos/svg/clothing/dynafit.svg",
+          "format": "svg",
+          "colors": [
+            "#221F20"
+          ],
+          "sourcePalette": [
+            "#221F20",
+            "#8A8D8F",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "5a028cea1a7136db87e52d94ce0be2a0e8b57a5b4421251063f7d46d4865036d"
         }
       ]
     },
@@ -1149,6 +1931,79 @@
             1
           ],
           "sha256": "c667f6e00b6eeab4edb4b2b033b364980884e80a5471d556eeba4ae117020a6e"
+        },
+        {
+          "id": "rhino-heart",
+          "label": "Rhino in a heart",
+          "sourceUrl": "https://iconape.com/wp-content/files/xg/202361/svg/202361.svg",
+          "sourcePage": "https://iconape.com/ecko-red-logo-logo-icon-svg-png.html",
+          "sourceSha256": "362e69e1e126bec8182eec8d1988f12137384adf70653d79a81fe9ba42bade0d",
+          "ops": {
+            "keepNodes": [
+              "0/1-5"
+            ],
+            "viewBox": "61.747 52.373 75.19 56.614"
+          },
+          "path": "/logos/svg/clothing/alternates/ecko-rhino-heart.svg",
+          "format": "svg",
+          "colors": [
+            "#ED1C24"
+          ],
+          "sourcePalette": [
+            "#ED1C24",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "e6ba8acbd46096d40b51ce18de29e8bcec4dd1d28c11ca4d166e493aa441d89f"
+        }
+      ]
+    },
+    {
+      "id": "CLOTH-EDDIEBAUER",
+      "league": "CLOTH",
+      "conference": "Outdoor",
+      "region": "Eddie Bauer",
+      "name": "",
+      "abbr": "EDDIEBAUER",
+      "aliases": [],
+      "palette": [
+        "#333333",
+        "#8A8D8F",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Flying goose",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/d/d4/Eddie_Bauer_2023_S.svg/revision/latest?cb=20231019192911",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Eddie_Bauer_2023_S.svg",
+          "sourceSha256": "11a66b30fcc3a6d94ad1108208fdc24bc151c9d07610d69f97afe8109242de2f",
+          "ops": {
+            "keepNodes": [
+              "13",
+              "14"
+            ],
+            "viewBox": "599.056 -11.678 412.622 362.366"
+          },
+          "path": "/logos/svg/clothing/eddiebauer.svg",
+          "format": "svg",
+          "colors": [
+            "#333333"
+          ],
+          "sourcePalette": [
+            "#333333",
+            "#8A8D8F",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "231cd26e455c92e3de14f7f4d1cc613e7deb2f37e032204a1ed9a1a0c1ca5e75"
         }
       ]
     },
@@ -1241,6 +2096,185 @@
             2
           ],
           "sha256": "58fc60097d0f4a3f317424ea922f06732d831741e0dc79be09daed93686a2e40"
+        }
+      ]
+    },
+    {
+      "id": "CLOTH-EMERICA",
+      "league": "CLOTH",
+      "conference": "Surf & Skate",
+      "region": "Emerica",
+      "name": "",
+      "abbr": "EMERICA",
+      "aliases": [],
+      "palette": [
+        "#378E52",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Striped green peak",
+          "sourceUrl": "https://cdn.worldvectorlogo.com/logos/emerica.svg",
+          "sourcePage": "https://worldvectorlogo.com/logo/emerica",
+          "sourceSha256": "dc157ae21d243bc1fc6f38ad4f29335c7f7ceb9305489551fda7ab1bd20298e3",
+          "ops": {
+            "keepNodes": [
+              "0/2"
+            ],
+            "viewBox": "21.801 20.795 151.252 98.519"
+          },
+          "path": "/logos/svg/clothing/emerica.svg",
+          "format": "svg",
+          "colors": [
+            "#378E52"
+          ],
+          "sourcePalette": [
+            "#378E52",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "008e2bbb7a8a3bdef07895c138d3e4699da9500c39012f9aec9d7d8ccc52e407"
+        }
+      ]
+    },
+    {
+      "id": "CLOTH-ENJOI",
+      "league": "CLOTH",
+      "conference": "Surf & Skate",
+      "region": "Enjoi",
+      "name": "",
+      "abbr": "ENJOI",
+      "aliases": [],
+      "palette": [
+        "#000000",
+        "#8A8D8F",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Crawling panda",
+          "sourceUrl": "https://iconape.com/wp-content/files/sb/321769/svg/321769.svg",
+          "sourcePage": "https://iconape.com/enjoi-logo-logo-icon-svg-png.html",
+          "sourceSha256": "e7e6ba8b73615eb6c8c83d51ef50c140348d0358b11829ae320e5fc0d452cfe3",
+          "ops": {
+            "viewBox": "-12.452 -12.455 444.668 290.536"
+          },
+          "path": "/logos/svg/clothing/enjoi.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#010000",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#8A8D8F",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "0147eeea7712001577e48cd2d006d1511e7887ae4f87f3250c4f353009517d9f"
+        }
+      ]
+    },
+    {
+      "id": "CLOTH-ETNIES",
+      "league": "CLOTH",
+      "conference": "Surf & Skate",
+      "region": "Etnies",
+      "name": "",
+      "abbr": "ETNIES",
+      "aliases": [],
+      "palette": [
+        "#F5E353",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Arrow E",
+          "sourceUrl": "https://cdn.worldvectorlogo.com/logos/etnies.svg",
+          "sourcePage": "https://worldvectorlogo.com/logo/etnies",
+          "sourceSha256": "72291d40b2c65b55031c8ba725c497953fde25a70c29b87abaa3f81bb0b2c47d",
+          "ops": {
+            "removeNodes": [
+              "0/0",
+              "0/3",
+              "0/4",
+              "0/5",
+              "0/6",
+              "0/7"
+            ],
+            "viewBox": "5.174 36.985 117.643 117.304"
+          },
+          "path": "/logos/svg/clothing/etnies.svg",
+          "format": "svg",
+          "colors": [
+            "#F5E353"
+          ],
+          "sourcePalette": [
+            "#F5E353",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "f1c593ddf6cb7c165ad4d31145ee2aee58f2c0abb4233bf4d8804c0916b52f1e"
+        }
+      ]
+    },
+    {
+      "id": "CLOTH-EVISU",
+      "league": "CLOTH",
+      "conference": "Streetwear",
+      "region": "Evisu",
+      "name": "",
+      "abbr": "EVISU",
+      "aliases": [],
+      "palette": [
+        "#000000",
+        "#EA2222",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Seagull stroke",
+          "sourceUrl": "https://cdn.worldvectorlogo.com/logos/evisu.svg",
+          "sourcePage": "https://worldvectorlogo.com/logo/evisu",
+          "sourceSha256": "8919219f527abc77bdcca7abce37d3082aca75bf9e68d3c36c0fb08f6208ba0b",
+          "ops": {
+            "removeNodes": [
+              "0/0"
+            ],
+            "viewBox": "3.232 46.67 186.293 99.42"
+          },
+          "path": "/logos/svg/clothing/evisu.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#EA2222",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "829f0bc9bf21a29ec243068bcf7f7b02ad588c85018ba0927ff02e2b9774af62"
         }
       ]
     },
@@ -1362,6 +2396,50 @@
       ]
     },
     {
+      "id": "CLOTH-FOOTLOCKER",
+      "league": "CLOTH",
+      "conference": "Footwear",
+      "region": "Foot Locker",
+      "name": "",
+      "abbr": "FOOTLOCKER",
+      "aliases": [],
+      "palette": [
+        "#231F20",
+        "#EE293D",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Referee",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/2/2f/Foot_Locker_Logo_1988.svg/revision/latest?cb=20180328184253",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Foot_Locker_Logo_1988.svg",
+          "sourceSha256": "730853d261541230da1a669ffdc1a8787c3028490ddbfddd21639723b7180ce9",
+          "ops": {
+            "keepNodes": [
+              "3/0"
+            ],
+            "viewBox": "90.716 -6.014 212.502 177.525"
+          },
+          "path": "/logos/svg/clothing/footlocker.svg",
+          "format": "svg",
+          "colors": [
+            "#231F20"
+          ],
+          "sourcePalette": [
+            "#231F20",
+            "#EE293D",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "a01dfd18ef4ff433b9e57aea199dabd6692e60384862bfb394cecd41ce911cef"
+        }
+      ]
+    },
+    {
       "id": "CLOTH-FOTL",
       "league": "CLOTH",
       "conference": "Everyday",
@@ -1424,6 +2502,35 @@
             2
           ],
           "sha256": "6a45f248c2931f02222916b4f3dd384ddfda8b554d3de56a1b277a5d6b84a6cb"
+        },
+        {
+          "id": "engraved-fruit",
+          "label": "Engraved fruit box",
+          "sourceUrl": "https://cdn.worldvectorlogo.com/logos/fruit-of-the-loom-3.svg",
+          "sourcePage": "https://worldvectorlogo.com/logo/fruit-of-the-loom-3",
+          "sourceSha256": "2bebe4342ea0f6de2b13224d4832b09361643768ed7615a8b1c6b5cf5a66e8b8",
+          "ops": {
+            "keepNodes": [
+              "0/1-29"
+            ],
+            "viewBox": "3.233 26.217 186.291 103.783",
+            "clipToViewBox": true
+          },
+          "path": "/logos/svg/clothing/alternates/fotl-engraved-fruit.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#CA509D",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "c57a33382e6a9fa4a3288cfde5d6bf5dae570ac429f6011c90d8c4cfee44e7b7"
         }
       ]
     },
@@ -1482,6 +2589,48 @@
       ]
     },
     {
+      "id": "CLOTH-GANT",
+      "league": "CLOTH",
+      "conference": "Preppy",
+      "region": "Gant",
+      "name": "",
+      "abbr": "GANT",
+      "aliases": [],
+      "palette": [
+        "#231F20",
+        "#8A8D8F",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Wordmark",
+          "sourceUrl": "https://raw.githubusercontent.com/detain/svg-logos/b02ee1ac30c7ff4757278337c95588b01ed0954b/svg/g/gant-logo.svg",
+          "sourcePage": "https://github.com/detain/svg-logos/blob/b02ee1ac30c7ff4757278337c95588b01ed0954b/svg/g/gant-logo.svg",
+          "sourceSha256": "0916b51475917ebdec283a981cc3ac2f34fd7ba00079f0d92a2a2110c8b7b3c0",
+          "ops": {
+            "viewBox": "-47.88 -45.563 1691.757 280.943"
+          },
+          "showsName": true,
+          "path": "/logos/svg/clothing/gant.svg",
+          "format": "svg",
+          "colors": [
+            "#231F20"
+          ],
+          "sourcePalette": [
+            "#231F20",
+            "#8A8D8F",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "c98397aea1eb5d6e133eb68c2b845e7daf91d11bf1a992208492214c235a4349"
+        }
+      ]
+    },
+    {
       "id": "CLOTH-GAP",
       "league": "CLOTH",
       "conference": "Everyday",
@@ -1522,6 +2671,317 @@
           ],
           "unusedSourceSlots": [],
           "sha256": "eb0c9e3adfa648e2d62ae42ee46f47dba91ca00937de6c7ff5dad7197eb2c994"
+        }
+      ]
+    },
+    {
+      "id": "CLOTH-GIRLSKATEBOARDS",
+      "league": "CLOTH",
+      "conference": "Surf & Skate",
+      "region": "Girl Skateboards",
+      "name": "",
+      "abbr": "GIRLSKATEBOARDS",
+      "aliases": [
+        "Girl Skateboard"
+      ],
+      "palette": [
+        "#F89725",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Pictogram girl sign",
+          "sourceUrl": "https://iconape.com/wp-content/files/xh/328975/svg/328975.svg",
+          "sourcePage": "https://iconape.com/girl-skateboard-logo-logo-icon-svg-png.html",
+          "sourceSha256": "cd00965026eb12623c4a8c40190024d1b2d5d4bb7a39ad6a0174c16b13600c29",
+          "ops": {
+            "viewBox": "-13.536 -13.54 296.158 479.646"
+          },
+          "path": "/logos/svg/clothing/girlskateboards.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#F89725"
+          ],
+          "sourcePalette": [
+            "#F89725",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "04989f5573ebddc460698264b13c9e740a60edb9de62dada1f8a47cabccaa7d1"
+        }
+      ]
+    },
+    {
+      "id": "CLOTH-GUESS",
+      "league": "CLOTH",
+      "conference": "Everyday",
+      "region": "Guess",
+      "name": "",
+      "abbr": "GUESS",
+      "aliases": [
+        "Guess Jeans"
+      ],
+      "palette": [
+        "#ED1B2C",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Question mark in red triangle",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/8/89/Guess_logo.svg/revision/latest?cb=20250515084440",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Guess_logo.svg",
+          "sourceSha256": "e6e662342664598f414e56022121640a69da4ea51ad8a188b22da8f0a09c3b64",
+          "ops": {
+            "keepNodes": [
+              "0/0/0-3",
+              "0/0/35"
+            ],
+            "viewBox": "-30 -30 1060 929.329"
+          },
+          "path": "/logos/svg/clothing/guess.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#ED1B2C"
+          ],
+          "sourcePalette": [
+            "#ED1B2C",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "21aefb43858e1beb41f4dffbd9ade60f475d2ce293aafb15981014f5b736594c"
+        }
+      ]
+    },
+    {
+      "id": "CLOTH-GYMSHARK",
+      "league": "CLOTH",
+      "conference": "Sportswear",
+      "region": "Gymshark",
+      "name": "",
+      "abbr": "GYMSHARK",
+      "aliases": [],
+      "palette": [
+        "#000000",
+        "#8A8D8F",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Shark head",
+          "sourceUrl": "https://iconape.com/wp-content/files/ly/202828/svg/gymshark-seeklogo.com.svg",
+          "sourcePage": "https://iconape.com/gymshark-logo-2-logo-icon-svg-png.html",
+          "sourceSha256": "f9dde8d0becaf5d0507983ffce1bfb5632aae7d1847770b14f784b459f07b045",
+          "ops": {
+            "viewBox": "-0.912 -0.912 32.224 25.024"
+          },
+          "path": "/logos/svg/clothing/gymshark.svg",
+          "format": "svg",
+          "colors": [
+            "#010101"
+          ],
+          "sourcePalette": [
+            "#010101",
+            "#8A8D8F",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "773326ee1f4deccb75aac79683e3007c1ce67697054d59db189551eb659f8c21"
+        }
+      ]
+    },
+    {
+      "id": "CLOTH-HAGLOFS",
+      "league": "CLOTH",
+      "conference": "Outdoor",
+      "region": "Haglöfs",
+      "name": "",
+      "abbr": "HAGLOFS",
+      "aliases": [
+        "Haglofs"
+      ],
+      "palette": [
+        "#000000",
+        "#8A8D8F",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Pill-shaped H",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/7/7c/Hagl%C3%B6fs_2025_symbol.svg/revision/latest?cb=20250603094226",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Hagl%C3%B6fs_2025_symbol.svg",
+          "sourceSha256": "a7497634ed57344f5ae2e1380e3180ecae1f6a69a4fce5a11cc89ce0e875ac27",
+          "ops": {
+            "viewBox": "-0.74 -0.74 21.075 26.15"
+          },
+          "path": "/logos/svg/clothing/haglofs.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#8A8D8F",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "13b3d64fee8e4cf7694124f5e5baee2b259b6486d808855214b0c390d4442754"
+        }
+      ]
+    },
+    {
+      "id": "CLOTH-HANES",
+      "league": "CLOTH",
+      "conference": "Everyday",
+      "region": "Hanes",
+      "name": "",
+      "abbr": "HANES",
+      "aliases": [
+        "Hanesbrands"
+      ],
+      "palette": [
+        "#231F20",
+        "#EE2722",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "H in a black block",
+          "sourceUrl": "https://iconape.com/wp-content/files/py/202510/svg/202510.svg",
+          "sourcePage": "https://iconape.com/hanes-logo-logo-icon-svg-png.html",
+          "sourceSha256": "6c6f89d82ba67192991e147761943ab3b5a5a1033693651009118f4641202fa3",
+          "ops": {
+            "keepNodes": [
+              "1/8"
+            ],
+            "viewBox": "0.984 71.367 63.911 50.075"
+          },
+          "path": "/logos/svg/clothing/hanes.svg",
+          "format": "svg",
+          "colors": [
+            "#231F20"
+          ],
+          "sourcePalette": [
+            "#231F20",
+            "#EE2722",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "e9cf2a716455ded72e25602623e1fcc04e1074e7892ff383a0d0d9239d099a36"
+        }
+      ]
+    },
+    {
+      "id": "CLOTH-HANGTEN",
+      "league": "CLOTH",
+      "conference": "Surf & Skate",
+      "region": "Hang Ten",
+      "name": "",
+      "abbr": "HANGTEN",
+      "aliases": [],
+      "palette": [
+        "#231F20",
+        "#8A8D8F",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Two bare feet",
+          "sourceUrl": "https://iconape.com/wp-content/files/gg/203260/svg/203260.svg",
+          "sourcePage": "https://iconape.com/hang-ten-logo-logo-icon-svg-png.html",
+          "sourceSha256": "7e22b7fc0aa86b5206ca4e7e9604a1cb234a582dae63ff02f97abd0ec4134c28",
+          "ops": {
+            "keepNodes": [
+              "0/17-22",
+              "0/24-29"
+            ],
+            "viewBox": "135.97 54.144 39.105 41.427"
+          },
+          "path": "/logos/svg/clothing/hangten.svg",
+          "format": "svg",
+          "colors": [
+            "#231F20"
+          ],
+          "sourcePalette": [
+            "#231F20",
+            "#8A8D8F",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "37f81ba8e88f9305008ae9ad59fd86380e17b458df476a14658635ee8e1a02ce"
+        }
+      ]
+    },
+    {
+      "id": "CLOTH-HEELYS",
+      "league": "CLOTH",
+      "conference": "Footwear",
+      "region": "Heelys",
+      "name": "",
+      "abbr": "HEELYS",
+      "aliases": [
+        "Heelies"
+      ],
+      "palette": [
+        "#E41535",
+        "#231F20",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Wheel in a red disc",
+          "sourceUrl": "https://iconape.com/wp-content/files/io/200268/svg/200268.svg",
+          "sourcePage": "https://iconape.com/heelys-logo-logo-icon-svg-png.html",
+          "sourceSha256": "2c2661f22872f08794f6a58f2248ef269e1886d82e6182484e5fafa37c0bd66b",
+          "ops": {
+            "keepNodes": [
+              "0/0"
+            ],
+            "viewBox": "70.965 -7.292 257.661 176.963"
+          },
+          "path": "/logos/svg/clothing/heelys.svg",
+          "format": "svg",
+          "colors": [
+            "#E41535"
+          ],
+          "sourcePalette": [
+            "#E41535",
+            "#231F20",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "343cf5519034518d2c68e8ae9f2d047f8e64fa42cdf7f8cff534189469bdbff4"
         }
       ]
     },
@@ -1810,6 +3270,212 @@
       ]
     },
     {
+      "id": "CLOTH-INDEPENDENT",
+      "league": "CLOTH",
+      "conference": "Surf & Skate",
+      "region": "Independent Truck Company",
+      "name": "",
+      "abbr": "INDEPENDENT",
+      "aliases": [
+        "Independent Trucks",
+        "Independent Truck Co."
+      ],
+      "palette": [
+        "#BA2025",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Iron cross",
+          "sourceUrl": "https://iconape.com/wp-content/files/fl/332058/svg/332058.svg",
+          "sourcePage": "https://iconape.com/independent-truck-company-logo-logo-icon-svg-png.html",
+          "sourceSha256": "fb48185993e6afbd172cbcef422b8b12ca4aa2521c1d381b7103b4e6fd1885c5",
+          "ops": {
+            "keepNodes": [
+              "1/1-7"
+            ],
+            "viewBox": "15.463 15.282 432.107 431.21"
+          },
+          "path": "/logos/svg/clothing/independent.svg",
+          "format": "svg",
+          "colors": [
+            "#020303",
+            "#FFFFFF",
+            "#BA2025",
+            "#B92025"
+          ],
+          "sourcePalette": [
+            "#BA2025",
+            "#020303",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "d8a02a98bc9ce33f282a3d8cbc49f481db5562f2bdd00d2f03c38609c18c2a3a"
+        }
+      ]
+    },
+    {
+      "id": "CLOTH-JACKWILLS",
+      "league": "CLOTH",
+      "conference": "Preppy",
+      "region": "Jack Wills",
+      "name": "",
+      "abbr": "JACKWILLS",
+      "aliases": [],
+      "palette": [
+        "#141B31",
+        "#8A8D8F",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Two-letter monogram",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/3/3c/Jack_Wills_2021_%28Icon%29.svg/revision/latest?cb=20220811150352",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Jack_Wills_2021_(Icon).svg",
+          "sourceSha256": "804ae1fe165b4fea748706933f7cd9240092992a872e2c875ec44e106da066ed",
+          "ops": {
+            "fill": "#141B31",
+            "viewBox": "-5.765 -5.765 203.694 105.001"
+          },
+          "path": "/logos/svg/clothing/jackwills.svg",
+          "format": "svg",
+          "colors": [
+            "#141B31"
+          ],
+          "sourcePalette": [
+            "#141B31",
+            "#8A8D8F",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "5731158b1e2dd9be8d2e4224721b9b2eb558c0a572030d62545ab0f2b414dc5e"
+        }
+      ]
+    },
+    {
+      "id": "CLOTH-JCREW",
+      "league": "CLOTH",
+      "conference": "Preppy",
+      "region": "J.Crew",
+      "name": "",
+      "abbr": "JCREW",
+      "aliases": [],
+      "palette": [
+        "#000000",
+        "#8A8D8F",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Serif wordmark",
+          "sourceUrl": "https://iconape.com/wp-content/files/to/202860/svg/202860.svg",
+          "sourcePage": "https://iconape.com/j-crew-logo-logo-icon-svg-png.html",
+          "sourceSha256": "5f7cf00d1de6babdf6ccd2fa89c112918b59972c3096af2c7c63efa6a22f2736",
+          "ops": {
+            "viewBox": "-45 -45 1590 511"
+          },
+          "showsName": true,
+          "path": "/logos/svg/clothing/jcrew.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#8A8D8F",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "339828043d6fc80696301de50e63c8b3fb6c7e06bb5e2c692bebd7519e193da4"
+        }
+      ]
+    },
+    {
+      "id": "CLOTH-JORDACHE",
+      "league": "CLOTH",
+      "conference": "Everyday",
+      "region": "Jordache",
+      "name": "",
+      "abbr": "JORDACHE",
+      "aliases": [
+        "Jordache Jeans"
+      ],
+      "palette": [
+        "#231F20",
+        "#ED1C24",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Horse head with flowing mane",
+          "sourceUrl": "https://iconape.com/wp-content/files/ew/202772/svg/202772.svg",
+          "sourcePage": "https://iconape.com/jordache-logo-logo-icon-svg-png.html",
+          "sourceSha256": "3af631938e92f485f78528613cd1b202ea1f99013df358dd9eb4c7da3dc4483b",
+          "ops": {
+            "keepNodes": [
+              "0/0"
+            ],
+            "viewBox": "181.5 250.0 327.8 187.8",
+            "clipToViewBox": true
+          },
+          "path": "/logos/svg/clothing/jordache.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#231F20"
+          ],
+          "sourcePalette": [
+            "#231F20",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "099a2543e9b9b04618873b8b9b61eaa2a57788600ed4262e75a0fd0e68d55d55"
+        },
+        {
+          "id": "silhouette",
+          "label": "Black horse silhouette",
+          "sourceUrl": "https://iconape.com/wp-content/files/lw/200548/svg/200548.svg",
+          "sourcePage": "https://iconape.com/jordache-new-logo-logo-icon-svg-png.html",
+          "sourceSha256": "c6bd503cefacacc82da15e5efd7a281068c919f8a4e7bd8a82f48dc2fc71beae",
+          "ops": {
+            "keepNodes": [
+              "1/12"
+            ],
+            "viewBox": "186.172 -7.191 220.92 254.033"
+          },
+          "path": "/logos/svg/clothing/alternates/jordache-silhouette.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#ED1C24",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "7824830e62043f9c6f04bc248380a1753c1f930ead5a8396e7bbcc4a2b106f49"
+        }
+      ]
+    },
+    {
       "id": "CLOTH-KANGOL",
       "league": "CLOTH",
       "conference": "Streetwear",
@@ -1902,6 +3568,127 @@
       ]
     },
     {
+      "id": "CLOTH-KELME",
+      "league": "CLOTH",
+      "conference": "Sportswear",
+      "region": "Kelme",
+      "name": "",
+      "abbr": "KELME",
+      "aliases": [],
+      "palette": [
+        "#28539C",
+        "#FFF22D",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Initial in an oval",
+          "sourceUrl": "https://cdn.worldvectorlogo.com/logos/kelme.svg",
+          "sourcePage": "https://worldvectorlogo.com/logo/kelme",
+          "sourceSha256": "1e5890cb420005f4143656792f3c2702349e9c5aeb5ebfb23406d122387362d7",
+          "ops": {
+            "keepNodes": [
+              "0/1-3"
+            ],
+            "viewBox": "39.295 48.71 114.174 52.693"
+          },
+          "path": "/logos/svg/clothing/kelme.svg",
+          "format": "svg",
+          "colors": [
+            "#28539C",
+            "#FFF22D"
+          ],
+          "sourcePalette": [
+            "#28539C",
+            "#FFF22D",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "66963a2f3afff684f69c04efe7eedf6bfbb998d359833124b168096228ec8a23"
+        }
+      ]
+    },
+    {
+      "id": "CLOTH-KSWISS",
+      "league": "CLOTH",
+      "conference": "Sportswear",
+      "region": "K-Swiss",
+      "name": "",
+      "abbr": "KSWISS",
+      "aliases": [],
+      "palette": [
+        "#000000",
+        "#8A8D8F",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Five-stripe shield",
+          "sourceUrl": "https://cdn.worldvectorlogo.com/logos/k-swiss.svg",
+          "sourcePage": "https://worldvectorlogo.com/logo/k-swiss",
+          "sourceSha256": "0a777a68a4ee5937ca1da3ae3f75aa77f1d2c598f79c93dadf09269ad85798d8",
+          "ops": {
+            "removeNodes": [
+              "0/0",
+              "0/5",
+              "0/6",
+              "0/7",
+              "0/8",
+              "0/9"
+            ],
+            "viewBox": "14.824 3.232 158.526 186.292"
+          },
+          "path": "/logos/svg/clothing/kswiss.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#8A8D8F",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "606fc594abfe5b8da88c462da16628b4d632027d4bab92d3414465e32a61413b"
+        },
+        {
+          "id": "2015-shield",
+          "label": "Red and blue striped shield (2015)",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fd/K-Swiss_logo_%282015%29.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:K-Swiss_logo_(2015).svg",
+          "sourceSha256": "8422d6c99fa77b42f8cd953ecb6d8042a2a31ae094e6a3824e608c8472f7c3d1",
+          "ops": {
+            "keepNodes": [
+              "3/0/0"
+            ],
+            "viewBox": "87.032 -2.651 75.935 93.682"
+          },
+          "path": "/logos/svg/clothing/alternates/kswiss-2015-shield.svg",
+          "format": "svg",
+          "colors": [
+            "#BE322D",
+            "#025688"
+          ],
+          "sourcePalette": [
+            "#BE322D",
+            "#025688",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "2f412f5b2bf34cfbb2f905bd7077fea27b3122f34346e34c10948f9d633aff36"
+        }
+      ]
+    },
+    {
       "id": "CLOTH-LACOSTE",
       "league": "CLOTH",
       "conference": "Preppy",
@@ -1942,6 +3729,50 @@
             2
           ],
           "sha256": "94c231a2915f43aa629bbfbfc208a78df03ee1fbeb31e16983df6e057c5bb21b"
+        }
+      ]
+    },
+    {
+      "id": "CLOTH-LANDSEND",
+      "league": "CLOTH",
+      "conference": "Everyday",
+      "region": "Lands' End",
+      "name": "",
+      "abbr": "LANDSEND",
+      "aliases": [],
+      "palette": [
+        "#0D2240",
+        "#8A8D8F",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Lighthouse on a wave",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/a/aa/Lands%27_End_2018.svg/revision/latest?cb=20180809162527",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Lands%27_End_2018.svg",
+          "sourceSha256": "0af6f1c39cf6465a4030896f426710122c4743af9dac7531da39eaf428b790d3",
+          "ops": {
+            "keepNodes": [
+              "3/6"
+            ],
+            "viewBox": "864.297 -4.841 140.544 171.042"
+          },
+          "path": "/logos/svg/clothing/landsend.svg",
+          "format": "svg",
+          "colors": [
+            "#0D2240"
+          ],
+          "sourcePalette": [
+            "#0D2240",
+            "#8A8D8F",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "2b02e0c56476a863d562b1223019269f17bb6b80689b741adef916ba3f450739"
         }
       ]
     },
@@ -2036,6 +3867,53 @@
       ]
     },
     {
+      "id": "CLOTH-LEE",
+      "league": "CLOTH",
+      "conference": "Everyday",
+      "region": "Lee",
+      "name": "",
+      "abbr": "LEE",
+      "aliases": [
+        "Lee Jeans"
+      ],
+      "palette": [
+        "#231F20",
+        "#C7911B",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Rope-lettered wordmark",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/7/7b/Lee_Logo.svg/revision/latest?cb=20181029032315",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Lee_Logo.svg",
+          "sourceSha256": "9236e94ac6f0cf91d5f7412e18f1bb7d92cfce138a6df5f89572b08b110cb30c",
+          "ops": {
+            "keepNodes": [
+              "1/0/0"
+            ],
+            "viewBox": "-1.051 29.44 794.29 467.701"
+          },
+          "showsName": true,
+          "path": "/logos/svg/clothing/lee.svg",
+          "format": "svg",
+          "colors": [
+            "#231F20"
+          ],
+          "sourcePalette": [
+            "#231F20",
+            "#C7911B",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "a0e0f498f0f85da256a1dfb62e1d733cb92a53753a656402d7e3e69dc813cf16"
+        }
+      ]
+    },
+    {
       "id": "CLOTH-LEVIS",
       "league": "CLOTH",
       "conference": "Everyday",
@@ -2080,6 +3958,50 @@
             2
           ],
           "sha256": "000c39001eb408138ab22fc54241beeff64559874a2461a80d7b0a0d32e686ff"
+        }
+      ]
+    },
+    {
+      "id": "CLOTH-LINING",
+      "league": "CLOTH",
+      "conference": "Sportswear",
+      "region": "Li-Ning",
+      "name": "",
+      "abbr": "LINING",
+      "aliases": [],
+      "palette": [
+        "#E83928",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Red swoosh",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/0/0b/Li-Ning_logo.svg/revision/latest?cb=20250822063955",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Li-Ning_logo.svg",
+          "sourceSha256": "2a1d46a15e0f0b8bb679c992131c5864bbb114bb6e0eadf7701b1e78a47ffc25",
+          "ops": {
+            "keepNodes": [
+              "3/0-1"
+            ],
+            "viewBox": "-10.052 -9.895 521.313 164.388"
+          },
+          "path": "/logos/svg/clothing/lining.svg",
+          "format": "svg",
+          "colors": [
+            "#E83928"
+          ],
+          "sourcePalette": [
+            "#E83928",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "61b450c5dbee2fa8b1d1d8a8c67a1ff4a8de8d03d9f88f8a45a197fa27142a8f"
         }
       ]
     },
@@ -2206,6 +4128,47 @@
       ]
     },
     {
+      "id": "CLOTH-MACRON",
+      "league": "CLOTH",
+      "conference": "Sportswear",
+      "region": "Macron",
+      "name": "",
+      "abbr": "MACRON",
+      "aliases": [],
+      "palette": [
+        "#000000",
+        "#8A8D8F",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Hero figure",
+          "sourceUrl": "https://cdn.worldvectorlogo.com/logos/macron-2.svg",
+          "sourcePage": "https://worldvectorlogo.com/logo/macron-2",
+          "sourceSha256": "8811b0bc4c23c8b4cdeee0f4cbedaf8b2e5fde53b8059fe551a9abe334d5932a",
+          "ops": {
+            "viewBox": "-22.062 -22.06 639.695 779.532"
+          },
+          "path": "/logos/svg/clothing/macron.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#8A8D8F",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "64708655e371cc316d67eb1621280beaeae2980b8ff7fc8dd268ae4405e5c187"
+        }
+      ]
+    },
+    {
       "id": "CLOTH-MAMMUT",
       "league": "CLOTH",
       "conference": "Outdoor",
@@ -2248,6 +4211,33 @@
             2
           ],
           "sha256": "b1b6be2a3820510025c2008e2dcfca1422e3afa40169e61ceef5c5d76f0c79fa"
+        },
+        {
+          "id": "shaggy-mammoth",
+          "label": "Shaggy mammoth on red disc",
+          "sourceUrl": "https://cdn.worldvectorlogo.com/logos/mammut-1.svg",
+          "sourcePage": "https://worldvectorlogo.com/logo/mammut-1",
+          "sourceSha256": "a8dcfc6ee52cfe188b0f3b110e725a9c46d0a5e9faf2f6b44f160af04c63a6b4",
+          "ops": {
+            "keepNodes": [
+              "0/1-3"
+            ],
+            "viewBox": "37.498 19.845 123.573 119.049"
+          },
+          "path": "/logos/svg/clothing/alternates/mammut-shaggy-mammoth.svg",
+          "format": "svg",
+          "colors": [
+            "#CB3B36",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#CB3B36",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "8d76d50a90a1a71f542455a5bad6e95fd08de3461c037ec2ede0cbadfec04586"
         }
       ]
     },
@@ -2334,6 +4324,53 @@
           ],
           "unusedSourceSlots": [],
           "sha256": "bfa978717a2bd8068da9c7ed82a83bf794a28e1c9d80df9fda32054de005e68e"
+        }
+      ]
+    },
+    {
+      "id": "CLOTH-MHW",
+      "league": "CLOTH",
+      "conference": "Outdoor",
+      "region": "Mountain Hardwear",
+      "name": "",
+      "abbr": "MHW",
+      "aliases": [
+        "Mountain Hardware"
+      ],
+      "palette": [
+        "#000000",
+        "#FEC20D",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Hex nut",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/a/a2/Mountain_Hardwear_2023.svg/revision/latest?cb=20231006190301",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Mountain_Hardwear_2023.svg",
+          "sourceSha256": "dde615cf814da235b9e553cd3a19fa24fc55a40fb76a8ded99c4b7133fb8c62c",
+          "ops": {
+            "keepNodes": [
+              "3"
+            ],
+            "viewBox": "-6.64 -6.64 234.58 234.53",
+            "clipToViewBox": true
+          },
+          "path": "/logos/svg/clothing/mhw.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#FEC20D",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "676b1ddc34639909bdf2e6bbbd9f53b002b49a1f4049b9d1ab781779f82f0b97"
         }
       ]
     },
@@ -2528,6 +4565,76 @@
             2
           ],
           "sha256": "697ce6bda17bb4ec7fe56caac9b21bc205b104415cd5fbc90d984bbf14d3d32a"
+        },
+        {
+          "id": "block-n",
+          "label": "Outlined block N",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/9/96/Blockn.svg/revision/latest?cb=20250503002015",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Blockn.svg",
+          "sourceSha256": "054a5a82acbfda279637eedcb2b5af34a7d2acb490ceb60ea02f5d33dc18196c",
+          "ops": {
+            "viewBox": "21.057 25.712 292.83 249.575"
+          },
+          "path": "/logos/svg/clothing/alternates/nb-block-n.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#75787B",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "5e740ec3be840e742c77bd82010445caf43b2c7b62b762dca0107aa3d56ab4b0"
+        }
+      ]
+    },
+    {
+      "id": "CLOTH-NORTHSAILS",
+      "league": "CLOTH",
+      "conference": "Preppy",
+      "region": "North Sails",
+      "name": "",
+      "abbr": "NORTHSAILS",
+      "aliases": [],
+      "palette": [
+        "#0D81C3",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Split disc with initials",
+          "sourceUrl": "https://iconape.com/wp-content/files/nt/203284/svg/203284.svg",
+          "sourcePage": "https://iconape.com/north-sails-logo-logo-icon-svg-png.html",
+          "sourceSha256": "38c4e08b56faaa2a7149885ab1ad82bc2c7ec032f2bfd6b74ae1bddeb9d2c19b",
+          "ops": {
+            "removeNodes": [
+              "0/0",
+              "0/6"
+            ],
+            "viewBox": "3.231 4.048 186.295 185.15"
+          },
+          "path": "/logos/svg/clothing/northsails.svg",
+          "format": "svg",
+          "colors": [
+            "#0D81C3",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#0D81C3",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "d0450843f63635219fa9c49977bbca1272f8a634c3bc67f398aa7cf453460850"
         }
       ]
     },
@@ -2887,6 +4994,103 @@
       ]
     },
     {
+      "id": "CLOTH-PAULSHARK",
+      "league": "CLOTH",
+      "conference": "Preppy",
+      "region": "Paul & Shark",
+      "name": "",
+      "abbr": "PAULSHARK",
+      "aliases": [
+        "Paul and Shark",
+        "Paul Shark"
+      ],
+      "palette": [
+        "#001F4A",
+        "#EE3424",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Shark",
+          "sourceUrl": "https://cdn.worldvectorlogo.com/logos/paul-shark.svg",
+          "sourcePage": "https://worldvectorlogo.com/logo/paul-shark",
+          "sourceSha256": "5e34c52708b0cd4c53d2759b11f7879db16a13b6611d687d5711a5d4b1edbcd2",
+          "ops": {
+            "removeNodes": [
+              "0/0"
+            ],
+            "fill": "#001F4A",
+            "viewBox": "4.016 52.055 184.726 88.647"
+          },
+          "path": "/logos/svg/clothing/paulshark.svg",
+          "format": "svg",
+          "colors": [
+            "#001F4A"
+          ],
+          "sourcePalette": [
+            "#001F4A",
+            "#EE3424",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "942c7b43cc9da2fbcc6a3f4de2cf403047db9156fbc4cc983853a6f4c73951f3"
+        }
+      ]
+    },
+    {
+      "id": "CLOTH-PAYLESS",
+      "league": "CLOTH",
+      "conference": "Footwear",
+      "region": "Payless",
+      "name": "",
+      "abbr": "PAYLESS",
+      "aliases": [
+        "Payless ShoeSource",
+        "Payless Shoes"
+      ],
+      "palette": [
+        "#F58026",
+        "#A8D7F4",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Orange P with a blue crescent",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/c/c6/Payless_-_2020.svg/revision/latest?cb=20230430003214",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Payless_-_2020.svg",
+          "sourceSha256": "72dbfe3c0e18a53cf557d49042354c2a835f9b96a62d9bc3ad9ca7e5c58305bd",
+          "ops": {
+            "keepNodes": [
+              "0",
+              "2",
+              "3"
+            ],
+            "viewBox": "-3.362 -3.365 118.786 118.76"
+          },
+          "path": "/logos/svg/clothing/payless.svg",
+          "format": "svg",
+          "colors": [
+            "#A8D7F4",
+            "#F58026"
+          ],
+          "sourcePalette": [
+            "#F58026",
+            "#A8D7F4",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "11004b798eb35be445d7dd6049c5736953b55e9fac07c20df612811399fc29d9"
+        }
+      ]
+    },
+    {
       "id": "CLOTH-POLO",
       "league": "CLOTH",
       "conference": "Preppy",
@@ -2962,6 +5166,90 @@
           ],
           "unusedSourceSlots": [],
           "sha256": "edaf6a720bd0fac6ad6cb8367122f16221f18035ba16facb507b4bb6de145c74"
+        }
+      ]
+    },
+    {
+      "id": "CLOTH-POWELL",
+      "league": "CLOTH",
+      "conference": "Surf & Skate",
+      "region": "Powell Peralta",
+      "name": "",
+      "abbr": "POWELL",
+      "aliases": [],
+      "palette": [
+        "#ED1C24",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Looped P",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Powell_Peralta_logo_icon_red.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Powell_Peralta_logo_icon_red.svg",
+          "sourceSha256": "de2f5d6fcb2601605eddaee98d1fb42185c67e3a93d389053c63a3a1815b4a15",
+          "ops": {
+            "viewBox": "-16.875 -16.875 509.404 596.24"
+          },
+          "path": "/logos/svg/clothing/powell.svg",
+          "format": "svg",
+          "colors": [
+            "#ED1C24"
+          ],
+          "sourcePalette": [
+            "#ED1C24",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "34594e797bda768e2e23245c20a649096fbde86548dd795a4ddeab583aee9e11"
+        }
+      ]
+    },
+    {
+      "id": "CLOTH-PSYCHOBUNNY",
+      "league": "CLOTH",
+      "conference": "Streetwear",
+      "region": "Psycho Bunny",
+      "name": "",
+      "abbr": "PSYCHOBUNNY",
+      "aliases": [],
+      "palette": [
+        "#051C2C",
+        "#EE6FBB",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Bunny skull and crossbones",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Special:FilePath/Psycho_Bunny_Logo.svg",
+          "sourcePage": "https://en.wikipedia.org/wiki/File:Psycho_Bunny_Logo.svg",
+          "sourceSha256": "7aaefcc37cd69f3f086df0e3d60b3ee41c3788fd603cf82256feac05d1858678",
+          "ops": {
+            "removeNodes": [
+              "1/7"
+            ],
+            "viewBox": "295.401 -5.326 132.793 188.192"
+          },
+          "path": "/logos/svg/clothing/psychobunny.svg",
+          "format": "svg",
+          "colors": [
+            "#051C2C",
+            "#FFFFFF",
+            "#EE6FBB"
+          ],
+          "sourcePalette": [
+            "#051C2C",
+            "#EE6FBB",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "1f182e592dfb58c66815d297b61073a069c40e2b935f60604cfbb8daa071a307"
         }
       ]
     },
@@ -3151,6 +5439,81 @@
             2
           ],
           "sha256": "535517a4665761a74a0254bd8aa67daa66fd088ee06127a9c59e6457bfe823cc"
+        },
+        {
+          "id": "q-monogram",
+          "label": "Q monogram",
+          "sourceUrl": "https://cdn.worldvectorlogo.com/logos/quiksilver-1.svg",
+          "sourcePage": "https://worldvectorlogo.com/logo/quiksilver-1",
+          "sourceSha256": "92d2ef180d9487529accf39b4e2800dba9e23ccb16080def58af2c9cb1516448",
+          "ops": {
+            "removeNodes": [
+              "0"
+            ],
+            "viewBox": "23.133 9.113 146.484 180.2"
+          },
+          "path": "/logos/svg/clothing/alternates/quiksilver-q-monogram.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#E31F26",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "0b5ca54cf47c42a645a91684bd3e31ce975f937c78cea15348fd20a130d349c2"
+        }
+      ]
+    },
+    {
+      "id": "CLOTH-REDWING",
+      "league": "CLOTH",
+      "conference": "Footwear",
+      "region": "Red Wing Shoes",
+      "name": "",
+      "abbr": "REDWING",
+      "aliases": [
+        "Red Wing",
+        "Red Wing Heritage"
+      ],
+      "palette": [
+        "#ED1C24",
+        "#231F20",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Red wing",
+          "sourceUrl": "https://iconape.com/wp-content/files/nv/153754/svg/153754.svg",
+          "sourcePage": "https://iconape.com/red-wing-shoes-logo-logo-icon-svg-png.html",
+          "sourceSha256": "3a6c325a2bb6f3564b5e03107f761d189a13f397de26b8891e1188d38568559d",
+          "ops": {
+            "keepNodes": [
+              "1/0-43"
+            ],
+            "viewBox": "45.784 -15.337 542.053 368.6"
+          },
+          "path": "/logos/svg/clothing/redwing.svg",
+          "format": "svg",
+          "colors": [
+            "#ED1C24"
+          ],
+          "sourcePalette": [
+            "#ED1C24",
+            "#231F20",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "672c9ed05665a76a59e87cdebc6e4514c7b373769f99813cd468aba7ab2b33a9"
         }
       ]
     },
@@ -3321,6 +5684,119 @@
             2
           ],
           "sha256": "422171b7df43c8330de31221d1b98d2809db9798f94bc0f8424415fbc1d8bc35"
+        },
+        {
+          "id": "jagged-diamond",
+          "label": "Wave in a jagged diamond",
+          "sourceUrl": "https://cdn.worldvectorlogo.com/logos/rip-curl.svg",
+          "sourcePage": "https://worldvectorlogo.com/logo/rip-curl",
+          "sourceSha256": "2de08dedfa48506ad6da0c66d99aea57631e7a6789046d39b67c9fce0ce254a1",
+          "ops": {
+            "keepNodes": [
+              "1-4"
+            ],
+            "viewBox": "3.233 51.467 186.292 76.318"
+          },
+          "path": "/logos/svg/clothing/alternates/ripcurl-jagged-diamond.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#FFFFFF",
+            "#407DB0"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#407DB0",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "7ff4a60c8be6d69bd4d823f3cffa96ebceb2d6245ca06d445d70cc8b866c183d"
+        }
+      ]
+    },
+    {
+      "id": "CLOTH-ROCAWEAR",
+      "league": "CLOTH",
+      "conference": "Streetwear",
+      "region": "Rocawear",
+      "name": "",
+      "abbr": "ROCAWEAR",
+      "aliases": [],
+      "palette": [
+        "#000000",
+        "#8A8D8F",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Swirling R",
+          "sourceUrl": "https://cdn.worldvectorlogo.com/logos/rocawear.svg",
+          "sourcePage": "https://worldvectorlogo.com/logo/rocawear",
+          "sourceSha256": "2ea63e1ead2452c6f955a5c558a1502e9ebb16a61c807dc1487d1244dfc08a83",
+          "ops": {
+            "removeNodes": [
+              "0/0"
+            ],
+            "viewBox": "43.163 21.473 100.844 123.204",
+            "clipToViewBox": true
+          },
+          "path": "/logos/svg/clothing/rocawear.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#8A8D8F",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "802f2f41c26624f7a01bd81d65241f64b8cf5f42d2d77ce4faafc34cc5d775fd"
+        }
+      ]
+    },
+    {
+      "id": "CLOTH-ROSSIGNOL",
+      "league": "CLOTH",
+      "conference": "Outdoor",
+      "region": "Rossignol",
+      "name": "",
+      "abbr": "ROSSIGNOL",
+      "aliases": [],
+      "palette": [
+        "#DA0019",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Initial in red disc",
+          "sourceUrl": "https://iconape.com/wp-content/files/xr/325442/svg/325442.svg",
+          "sourcePage": "https://iconape.com/rossignol-ski-logo-logo-icon-svg-png.html",
+          "sourceSha256": "de7da82731f08d28ad85bc1d13a594847c263d7a6704ecab2d59663a7a39c4c2",
+          "ops": {
+            "viewBox": "-16.838 -16.439 600.949 600.989"
+          },
+          "path": "/logos/svg/clothing/rossignol.svg",
+          "format": "svg",
+          "colors": [
+            "#DA0019"
+          ],
+          "sourcePalette": [
+            "#DA0019",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "ad44b53a227df1db85fdd81254bc2897e127cf37df5344070ce368560bea941a"
         }
       ]
     },
@@ -3411,6 +5887,158 @@
             2
           ],
           "sha256": "db638973689f83c52fd544b52b4279ce1745f9a06cb715d5097d3aa6a5651aa1"
+        }
+      ]
+    },
+    {
+      "id": "CLOTH-RVCA",
+      "league": "CLOTH",
+      "conference": "Surf & Skate",
+      "region": "RVCA",
+      "name": "",
+      "abbr": "RVCA",
+      "aliases": [],
+      "palette": [
+        "#231F20",
+        "#8A8D8F",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Balanced V and A",
+          "sourceUrl": "https://iconape.com/wp-content/files/lz/203156/svg/203156.svg",
+          "sourcePage": "https://iconape.com/rvca-va-logo-logo-icon-svg-png.html",
+          "sourceSha256": "8d710d17a1dbad85a3351345c4c3206624919b0501f0c33a69ae16abb5bcf48f",
+          "ops": {
+            "viewBox": "-2.885 -2.885 101.938 42.891"
+          },
+          "path": "/logos/svg/clothing/rvca.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#231F20"
+          ],
+          "sourcePalette": [
+            "#231F20",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "4ae751283c21100bbc9b39cf6480f138de7d0f45857526ec56753c46efca6ae8"
+        },
+        {
+          "id": "lion-crest",
+          "label": "Twin lions crest",
+          "sourceUrl": "https://iconape.com/wp-content/files/eb/203266/svg/203266.svg",
+          "sourcePage": "https://iconape.com/rvca-crest-logo-logo-icon-svg-png.html",
+          "sourceSha256": "785d291bdb5807b1c40b42536f9f856ee5c8b68d9de00fde564a2670b87d8bae",
+          "ops": {
+            "removeNodes": [
+              "1/3",
+              "1/4",
+              "1/5",
+              "1/6",
+              "1/7",
+              "1/8",
+              "1/12",
+              "1/13",
+              "1/14",
+              "1/15"
+            ],
+            "viewBox": "-13.267 -13.269 390.23 468.78"
+          },
+          "path": "/logos/svg/clothing/alternates/rvca-lion-crest.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#020303"
+          ],
+          "sourcePalette": [
+            "#010202",
+            "#8A8D8F",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "3229917e7db3de845d7a24ae2bdfc57a1dbd3f78e84463986bb79f0804f9e84b"
+        }
+      ]
+    },
+    {
+      "id": "CLOTH-SALEWA",
+      "league": "CLOTH",
+      "conference": "Outdoor",
+      "region": "Salewa",
+      "name": "",
+      "abbr": "SALEWA",
+      "aliases": [],
+      "palette": [
+        "#000000",
+        "#FFCC00",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Eagle wings",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/1/1f/Salewa_2014.svg/revision/latest?cb=20210612160619",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Salewa_2014.svg",
+          "sourceSha256": "44ff12c001fcb4ea41d8b4023e4f302f0821a59b0aceb707dfea33a3bd6e0bec",
+          "ops": {
+            "keepNodes": [
+              "7"
+            ],
+            "viewBox": "-30 -30 1060 509.647"
+          },
+          "path": "/logos/svg/clothing/salewa.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#FFCC00",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "e331ceec44cb48e722d717516308058f3ce107017eb6e2929a09c413ee45be47"
+        },
+        {
+          "id": "soaring-eagle",
+          "label": "Soaring eagle",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/8/87/Salewa_old.svg/revision/latest?cb=20210612160519",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Salewa_old.svg",
+          "sourceSha256": "d07e94840abfbdee5e595b10ee9f2ad7ed46512e736711cd9980e88bd7718851",
+          "ops": {
+            "keepNodes": [
+              "4"
+            ],
+            "viewBox": "-5.23 -5.23 184.84 96.43",
+            "clipToViewBox": true
+          },
+          "path": "/logos/svg/clothing/alternates/salewa-soaring-eagle.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#FFCC00",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "fcf50e3c6b15d1818625f7c31cfe46f7fab4bf3ec219e0d49fb20295b0961fac"
         }
       ]
     },
@@ -3694,6 +6322,113 @@
       ]
     },
     {
+      "id": "CLOTH-SOREL",
+      "league": "CLOTH",
+      "conference": "Footwear",
+      "region": "Sorel",
+      "name": "",
+      "abbr": "SOREL",
+      "aliases": [],
+      "palette": [
+        "#F05A30",
+        "#71220D",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Polar bear before an orange sun",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/5/53/Sorel-2.svg/revision/latest?cb=20250828023610",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Sorel-2.svg",
+          "sourceSha256": "2c49b76b6d5313ad0681b1caf3ff81808bfe18ed4939aaba6641b97917500490",
+          "ops": {
+            "removeNodes": [
+              "1/1",
+              "2",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "10",
+              "11",
+              "12",
+              "13",
+              "14",
+              "15",
+              "16",
+              "17",
+              "18",
+              "19",
+              "20",
+              "21",
+              "22",
+              "23",
+              "24",
+              "25"
+            ],
+            "viewBox": "-0.107 -0.107 125.341 61.087",
+            "clipToViewBox": true
+          },
+          "path": "/logos/svg/clothing/sorel.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#FFFFFF",
+            "#F05A30"
+          ],
+          "sourcePalette": [
+            "#F05A30",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "2d2825e16eb43e5d97469119244f265434c4de6e25dcd68882fa47cbe9f4b731"
+        }
+      ]
+    },
+    {
+      "id": "CLOTH-SOUTHERNMARSH",
+      "league": "CLOTH",
+      "conference": "Preppy",
+      "region": "Southern Marsh",
+      "name": "",
+      "abbr": "SOUTHERNMARSH",
+      "aliases": [],
+      "palette": [
+        "#3F465C",
+        "#647769",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Swimming duck",
+          "sourceUrl": "https://southernmarsh.com/cdn/shop/t/305/assets/safari-pinned-tab.svg?v=174545474681951731961792898267",
+          "sourcePage": "https://southernmarsh.com/",
+          "sourceSha256": "98745b2eea73341363cb9fc06658789e6e6f897474d586f7af41d592829aa026",
+          "ops": {
+            "viewBox": "-19.837 135.532 740.752 428.833"
+          },
+          "path": "/logos/svg/clothing/southernmarsh.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#647769",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "7f08b39df8d678fcdc89e8a8d76f8ef2e84079fa82eaf7a1cf6e9c48e5c5d6dc"
+        }
+      ]
+    },
+    {
       "id": "CLOTH-SOUTHERNTIDE",
       "league": "CLOTH",
       "conference": "Preppy",
@@ -3860,6 +6595,121 @@
       ]
     },
     {
+      "id": "CLOTH-SPITFIRE",
+      "league": "CLOTH",
+      "conference": "Surf & Skate",
+      "region": "Spitfire Wheels",
+      "name": "",
+      "abbr": "SPITFIRE",
+      "aliases": [],
+      "palette": [
+        "#C1352C",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Grinning flame head",
+          "sourceUrl": "https://cdn.worldvectorlogo.com/logos/spitfire-1.svg",
+          "sourcePage": "https://worldvectorlogo.com/logo/spitfire-1",
+          "sourceSha256": "4f4a7f96035de76e343ae5033b5e17c1b4cdaf3b4a1308260f36cd025684a3ee",
+          "ops": {
+            "removeNodes": [
+              "0/0"
+            ],
+            "viewBox": "27.693 7.457 137.373 177.839"
+          },
+          "path": "/logos/svg/clothing/spitfire.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#000000",
+            "#C1352C"
+          ],
+          "sourcePalette": [
+            "#C1352C",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "3d8472219be86548dc5fca1e0fc936684a872a5b2505d41df444541f8e9740a1"
+        },
+        {
+          "id": "crossbones",
+          "label": "Flame head over crossbones",
+          "sourceUrl": "https://cdn.worldvectorlogo.com/logos/spitfire.svg",
+          "sourcePage": "https://worldvectorlogo.com/logo/spitfire",
+          "sourceSha256": "17f21ecb64015abf906b876f40eefad9bb7fa4a957a498554bb0b5362c4e4329",
+          "ops": {
+            "removeNodes": [
+              "0/0"
+            ],
+            "viewBox": "7.339 24.264 178.082 144.216"
+          },
+          "path": "/logos/svg/clothing/alternates/spitfire-crossbones.svg",
+          "format": "svg",
+          "colors": [
+            "#FBE03C",
+            "#C1352C",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#C1352C",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "30c7dc2624c2361ba9dc5a66dc897e95141905a53865317e43d550fbc0c35676"
+        }
+      ]
+    },
+    {
+      "id": "CLOTH-SPYDER",
+      "league": "CLOTH",
+      "conference": "Outdoor",
+      "region": "Spyder",
+      "name": "",
+      "abbr": "SPYDER",
+      "aliases": [],
+      "palette": [
+        "#000000",
+        "#B01842",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Spider",
+          "sourceUrl": "https://cdn.worldvectorlogo.com/logos/spyder.svg",
+          "sourcePage": "https://worldvectorlogo.com/logo/spyder",
+          "sourceSha256": "0b190cbf5891b0f1ae348c6f772487944dd7f134c6fb74cade388e05c1dc5ada",
+          "ops": {
+            "removeNodes": [
+              "0/0"
+            ],
+            "viewBox": "45.93 3.231 100.897 186.291"
+          },
+          "path": "/logos/svg/clothing/spyder.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#B01842"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#B01842",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "95215513ff25f5ae095f16801e5e9376725d84939e67d67e1e356b38b0ddb671"
+        }
+      ]
+    },
+    {
       "id": "CLOTH-STARTER",
       "league": "CLOTH",
       "conference": "Sportswear",
@@ -3943,6 +6793,90 @@
             2
           ],
           "sha256": "e3476086c61ffe9bd6509a1331f14456225049f0436db56a6798d1a71895cc11"
+        }
+      ]
+    },
+    {
+      "id": "CLOTH-STRIDERITE",
+      "league": "CLOTH",
+      "conference": "Footwear",
+      "region": "Stride Rite",
+      "name": "",
+      "abbr": "STRIDERITE",
+      "aliases": [],
+      "palette": [
+        "#000000",
+        "#B94300",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Two kid faces",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/f/f0/Stride_Rite_-_1995.svg/revision/latest?cb=20250306085615",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Stride_Rite_-_1995.svg",
+          "sourceSha256": "d760357b99eec3d9bd1721462844f54c8e319b9d414a907ad7df19a3efeb1142",
+          "ops": {
+            "removeNodes": [
+              "2"
+            ],
+            "viewBox": "-62.786 -63.915 2255.954 1309.474"
+          },
+          "path": "/logos/svg/clothing/striderite.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#B94300",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "da2d71d4c539c996437a86f78176d8fec78db43eb64b69d156bde997cde9266b"
+        },
+        {
+          "id": "1972-flower",
+          "label": "Orange flower (1972)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/a/a6/Stride_Rite_-_1972.svg/revision/latest?cb=20211112122513",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Stride_Rite_-_1972.svg",
+          "sourceSha256": "cb2934c3d1e3614bc375ff4a5d471d749e4856159b727271752a060d936288af",
+          "ops": {
+            "removeNodes": [
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "10",
+              "11",
+              "12",
+              "13"
+            ],
+            "viewBox": "-3.803 -2.15 275.796 314.067"
+          },
+          "path": "/logos/svg/clothing/alternates/striderite-1972-flower.svg",
+          "format": "svg",
+          "colors": [
+            "#B94300",
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#B94300",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "572ea22d6378e73ef85e78a7fe02c9bc0aff8997bdf3bb524f1cceafae1d7aae"
         }
       ]
     },
@@ -4031,6 +6965,189 @@
             1
           ],
           "sha256": "c9b3bb8c3143aa5371e2e9145e0ce2795250e6416334a4331c91682c62d3ab24"
+        }
+      ]
+    },
+    {
+      "id": "CLOTH-TACCHINI",
+      "league": "CLOTH",
+      "conference": "Sportswear",
+      "region": "Sergio Tacchini",
+      "name": "",
+      "abbr": "TACCHINI",
+      "aliases": [],
+      "palette": [
+        "#000000",
+        "#33348E",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Interlocked initials in a circle",
+          "sourceUrl": "https://iconape.com/wp-content/files/lv/94207/svg/sergio-tacchini-3.svg",
+          "sourcePage": "https://iconape.com/sergio-tacchini-logo-icon-svg-png.html",
+          "sourceSha256": "12722c80fd800eddf84d4c0d71ea9b7821ab0dba14603a603505a4fc9c3f08c5",
+          "ops": {
+            "viewBox": "174.735 6.405 472.59 355.86",
+            "clipToViewBox": true
+          },
+          "path": "/logos/svg/clothing/tacchini.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#33348E",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "dad6825b75771df303d6293aea2c76f70af3bd23e209669f3eec536463d79c88"
+        }
+      ]
+    },
+    {
+      "id": "CLOTH-TCSURF",
+      "league": "CLOTH",
+      "conference": "Surf & Skate",
+      "region": "T&C Surf Designs",
+      "name": "",
+      "abbr": "TCSURF",
+      "aliases": [
+        "Town & Country",
+        "Town and Country",
+        "Town & Country Surf Designs",
+        "T&C Surf"
+      ],
+      "palette": [
+        "#231F20",
+        "#30ED22",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Yin-yang badge",
+          "sourceUrl": "https://iconape.com/wp-content/files/zl/300993/svg/300993.svg",
+          "sourcePage": "https://iconape.com/tc-surf-designs-logo-logo-icon-svg-png.html",
+          "sourceSha256": "d73d88febcda5f256d1ad5e7e7fe3ca051c6ec64dd21745f0695b1c4fc508fe2",
+          "ops": {
+            "keepNodes": [
+              "1/0-3",
+              "1/26"
+            ],
+            "viewBox": "-2.998 -2.998 105.926 105.926"
+          },
+          "path": "/logos/svg/clothing/tcsurf.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#221E1F"
+          ],
+          "sourcePalette": [
+            "#221E1F",
+            "#30ED22",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "aa1c6e2249b45ee194ac7b5674717dab5b5d6bc306a4972289b30c0daa0463f6"
+        }
+      ]
+    },
+    {
+      "id": "CLOTH-TEVA",
+      "league": "CLOTH",
+      "conference": "Footwear",
+      "region": "Teva",
+      "name": "",
+      "abbr": "TEVA",
+      "aliases": [],
+      "palette": [
+        "#00ADE2",
+        "#231F20",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Spiral handprint",
+          "sourceUrl": "https://iconape.com/wp-content/files/tm/306554/svg/306554.svg",
+          "sourcePage": "https://iconape.com/teva-sport-sandals-logo-logo-icon-svg-png.html",
+          "sourceSha256": "3acb2edb5699a80c7c7328f353f635c036d735f414678ac53c976bddc32f511f",
+          "ops": {
+            "keepNodes": [
+              "1/0"
+            ],
+            "viewBox": "-0.495 -0.471 24.678 35.277"
+          },
+          "path": "/logos/svg/clothing/teva.svg",
+          "format": "svg",
+          "colors": [
+            "#00ADE2"
+          ],
+          "sourcePalette": [
+            "#00ADE2",
+            "#231F20",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "a224c5b74ff3f9e111e181498e3b6fc130be36e32a818f2c2255644b20d7f080"
+        }
+      ]
+    },
+    {
+      "id": "CLOTH-THRASHER",
+      "league": "CLOTH",
+      "conference": "Surf & Skate",
+      "region": "Thrasher",
+      "name": "",
+      "abbr": "THRASHER",
+      "aliases": [
+        "Thrasher Magazine"
+      ],
+      "palette": [
+        "#D2232A",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Flame lettering",
+          "sourceUrl": "https://iconape.com/wp-content/files/xp/332264/svg/332264.svg",
+          "sourcePage": "https://iconape.com/thrasher-magazine-logo-logo-icon-svg-png.html",
+          "sourceSha256": "7a763da8f8bdad2b56659c2ddeb49894695dd66cc22b049352c32ff0d7da1c89",
+          "ops": {
+            "keepNodes": [
+              "0/0-8"
+            ],
+            "viewBox": "-11.647 -12.28 443.817 167.54"
+          },
+          "showsName": true,
+          "path": "/logos/svg/clothing/thrasher.svg",
+          "format": "svg",
+          "colors": [
+            "#231F20",
+            "#D2232A"
+          ],
+          "sourcePalette": [
+            "#D2232A",
+            "#231F20",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "956a844e1340a89dad286d95a77b1d179cca5da3eaaf68eb27dcc715db3e893f"
         }
       ]
     },
@@ -4173,6 +7290,199 @@
           ],
           "unusedSourceSlots": [],
           "sha256": "9d45659ea74b2ab42376bc26a601b039ce6990df3d80f98736a3e8b8d4e9253b"
+        },
+        {
+          "id": "lion-crest",
+          "label": "Lion crest",
+          "sourceUrl": "https://cdn.worldvectorlogo.com/logos/tommy-hilfiger-1.svg",
+          "sourcePage": "https://worldvectorlogo.com/logo/tommy-hilfiger-1",
+          "sourceSha256": "3cf134dc6334d1c059d04241e8c3438e80d7ef7846910bde63dbc8ad0aa2ed0d",
+          "ops": {
+            "keepNodes": [
+              "0/2-8"
+            ],
+            "viewBox": "71.184 81.853 27.069 29.049",
+            "clipToViewBox": true
+          },
+          "path": "/logos/svg/clothing/alternates/tommy-lion-crest.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#D61233",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "3af6c490c48762681b99eca695621b84605e2fdc2807ac6543180f33b7b52102"
+        }
+      ]
+    },
+    {
+      "id": "CLOTH-TOMMYBAHAMA",
+      "league": "CLOTH",
+      "conference": "Preppy",
+      "region": "Tommy Bahama",
+      "name": "",
+      "abbr": "TOMMYBAHAMA",
+      "aliases": [],
+      "palette": [
+        "#232323",
+        "#8A8D8F",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Leaping marlin",
+          "sourceUrl": "https://cdn.worldvectorlogo.com/logos/tommy-bahama-1.svg",
+          "sourcePage": "https://worldvectorlogo.com/logo/tommy-bahama-1",
+          "sourceSha256": "30c2ef434f54b8c69649b74e62c80f8094f1ec96bcba8015065491407da16df8",
+          "ops": {
+            "keepNodes": [
+              "1"
+            ],
+            "fill": "#232323",
+            "viewBox": "214.26 174.54 301.88 151.8",
+            "clipToViewBox": true
+          },
+          "path": "/logos/svg/clothing/tommybahama.svg",
+          "format": "svg",
+          "colors": [
+            "#232323"
+          ],
+          "sourcePalette": [
+            "#232323",
+            "#8A8D8F",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "90151400015f5190db09293acf10405934111e859370b6c711209c0ae5cbde85"
+        }
+      ]
+    },
+    {
+      "id": "CLOTH-TOYMACHINE",
+      "league": "CLOTH",
+      "conference": "Surf & Skate",
+      "region": "Toy Machine",
+      "name": "",
+      "abbr": "TOYMACHINE",
+      "aliases": [],
+      "palette": [
+        "#ED1C24",
+        "#FFF200",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Horned monster",
+          "sourceUrl": "https://iconape.com/wp-content/files/kf/203398/svg/203398.svg",
+          "sourcePage": "https://iconape.com/toy-machine-logo-logo-icon-svg-png.html",
+          "sourceSha256": "31e3458f8f97a68c3051823819dccf3d55ed43b168313c7b6392611de55accd5",
+          "ops": {
+            "removeNodes": [
+              "0/0",
+              "0/3",
+              "0/4",
+              "0/5"
+            ],
+            "viewBox": "8.1 23.7 176.7 113.3",
+            "clipToViewBox": true
+          },
+          "path": "/logos/svg/clothing/toymachine.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#FFFFFF",
+            "#231F20",
+            "#FFF200",
+            "#ED1C24"
+          ],
+          "sourcePalette": [
+            "#ED1C24",
+            "#FFF200",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "297f175b686797717884f71cbea5e539ffd225c7884b5b830347311cdd7f69a2"
+        }
+      ]
+    },
+    {
+      "id": "CLOTH-TRUERELIGION",
+      "league": "CLOTH",
+      "conference": "Everyday",
+      "region": "True Religion",
+      "name": "",
+      "abbr": "TRUERELIGION",
+      "aliases": [
+        "True Religion Brand Jeans",
+        "True Religion Jeans"
+      ],
+      "palette": [
+        "#1B1918",
+        "#C20A1B",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Buddha with guitar",
+          "sourceUrl": "https://iconape.com/wp-content/files/ek/202363/svg/202363.svg",
+          "sourcePage": "https://iconape.com/true-religion-buddah-logo-logo-icon-svg-png.html",
+          "sourceSha256": "83b2a1cdd40a892867d5d6a7a925db98ec44a3b8d7fde96b5b2c22e5aff37057",
+          "ops": {
+            "viewBox": "-11.095 -11.209 395.065 260.509"
+          },
+          "path": "/logos/svg/clothing/truereligion.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#1B1918"
+          ],
+          "sourcePalette": [
+            "#1B1918",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "fdfa271247a432ec3d6b5467b99f300bda362c9396ec6cf21e20f9509c9794a1"
+        },
+        {
+          "id": "horseshoe",
+          "label": "Horseshoe",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/0/09/True_Religion_2008_%28Icon%29.svg/revision/latest?cb=20220630142020",
+          "sourcePage": "https://logos.fandom.com/wiki/File:True_Religion_2008_(Icon).svg",
+          "sourceSha256": "41125ba37feb52e4780292dd108aa7bfd30b88d61a71c0d73a88679b22c472d1",
+          "ops": {
+            "viewBox": "-3.316 -3.316 117.148 93.162"
+          },
+          "path": "/logos/svg/clothing/alternates/truereligion-horseshoe.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#C20A1B",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "a82278b10467d765d89a32c14571966ebafc4cb2459005a74446b1b02fe1d322"
         }
       ]
     },
@@ -4369,6 +7679,47 @@
       ]
     },
     {
+      "id": "CLOTH-UNDFTD",
+      "league": "CLOTH",
+      "conference": "Streetwear",
+      "region": "Undefeated",
+      "name": "",
+      "abbr": "UNDFTD",
+      "aliases": [],
+      "palette": [
+        "#000000",
+        "#8A8D8F",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Five strikes",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/e/eb/Undefeated.svg/revision/latest?cb=20260616195017",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Undefeated.svg",
+          "sourceSha256": "70a501e00844f79829466f43fd563bd9d4a4ee9f34e5c2a7522dde582ec3651d",
+          "ops": {
+            "viewBox": "-240.18 -240.18 8486.36 7658.36"
+          },
+          "path": "/logos/svg/clothing/undftd.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#8A8D8F",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "7ccf91fba1365a7940988af61677d4e50a762e190cbfad11fdbea3374f7a9928"
+        }
+      ]
+    },
+    {
       "id": "CLOTH-UNIQLO",
       "league": "CLOTH",
       "conference": "Everyday",
@@ -4452,6 +7803,36 @@
             2
           ],
           "sha256": "adddd3a32c750b0b0e5d3ea574fbc4a1596e42a763ed1a8a245d803e98a355a6"
+        },
+        {
+          "id": "p-shield",
+          "label": "Quartered P shield",
+          "sourceUrl": "https://iconape.com/wp-content/files/qg/203251/svg/203251.svg",
+          "sourcePage": "https://iconape.com/us-polo-assn-logo-icon-svg-png.html",
+          "sourceSha256": "8c06b48d0d1aedb51022810ef72c07b7520c441bfc24c700e251b5a743bf3026",
+          "ops": {
+            "keepNodes": [
+              "0",
+              "1/54-62"
+            ],
+            "viewBox": "216.428 475.014 75.956 81.475"
+          },
+          "path": "/logos/svg/clothing/alternates/uspa-p-shield.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#001A4B",
+            "#B5191E",
+            "#FFFFFF",
+            "#C0C2C4"
+          ],
+          "sourcePalette": [
+            "#000D26",
+            "#B5191E",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "3041e122f952d8b979aeb275e7bde58da250098ef1ea18e1a839c28c22505a6a"
         }
       ]
     },
@@ -4533,6 +7914,94 @@
       ]
     },
     {
+      "id": "CLOTH-VAUDE",
+      "league": "CLOTH",
+      "conference": "Outdoor",
+      "region": "Vaude",
+      "name": "",
+      "abbr": "VAUDE",
+      "aliases": [],
+      "palette": [
+        "#008D7C",
+        "#231F20",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Green peaks",
+          "sourceUrl": "https://iconape.com/wp-content/files/sh/202839/svg/202839.svg",
+          "sourcePage": "https://iconape.com/vaude-logo-logo-icon-svg-png.html",
+          "sourceSha256": "a69078ac06101c5c28d0276bbe20ce7ab20ab5f5c86c32ff3c237fa929e227d5",
+          "ops": {
+            "keepNodes": [
+              "0/1-3"
+            ],
+            "viewBox": "38.753 20.853 115.197 79.877"
+          },
+          "path": "/logos/svg/clothing/vaude.svg",
+          "format": "svg",
+          "colors": [
+            "#008D7C"
+          ],
+          "sourcePalette": [
+            "#008D7C",
+            "#231F20",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "3a90f81e637cdf0bbe0e0712733c6905b5c2a26cb8767b8085527c4b388a4474"
+        }
+      ]
+    },
+    {
+      "id": "CLOTH-VISSLA",
+      "league": "CLOTH",
+      "conference": "Surf & Skate",
+      "region": "Vissla",
+      "name": "",
+      "abbr": "VISSLA",
+      "aliases": [],
+      "palette": [
+        "#7ECDC3",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "V in inverted trapezoid",
+          "sourceUrl": "https://iconape.com/wp-content/files/hi/202174/svg/202174.svg",
+          "sourcePage": "https://iconape.com/vissla-logo-logo-icon-svg-png.html",
+          "sourceSha256": "13bec592ecdb0554da0547ff824baf407499cbdb619c38d81b9ae7488ceff125",
+          "ops": {
+            "keepNodes": [
+              "1/0-2"
+            ],
+            "viewBox": "-14.467 -14.467 511.175 403.407"
+          },
+          "path": "/logos/svg/clothing/vissla.svg",
+          "format": "svg",
+          "colors": [
+            "#020202",
+            "#7ECDC3"
+          ],
+          "sourcePalette": [
+            "#7ECDC3",
+            "#020202",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "1ae7f43498b03a7ae60d71a85bdc28d4650c43405224168129d34e9ca82634fd"
+        }
+      ]
+    },
+    {
       "id": "CLOTH-VOLCOM",
       "league": "CLOTH",
       "conference": "Surf & Skate",
@@ -4570,6 +8039,49 @@
             1
           ],
           "sha256": "dd0c3f4e448110ec28a4412b13a8cae0ff6840f36a5d931b6c514a016c5960d7"
+        }
+      ]
+    },
+    {
+      "id": "CLOTH-VONDUTCH",
+      "league": "CLOTH",
+      "conference": "Streetwear",
+      "region": "Von Dutch",
+      "name": "",
+      "abbr": "VONDUTCH",
+      "aliases": [],
+      "palette": [
+        "#FFD100",
+        "#D2232A",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Flying eyeball",
+          "sourceUrl": "https://iconape.com/wp-content/files/lb/155246/svg/155246.svg",
+          "sourcePage": "https://iconape.com/von-dutch-eyeball-logo-logo-icon-svg-png.html",
+          "sourceSha256": "b30ef3502663f01c29e98b0c3cb8063a63cfa46a900f218443fd032f62fd3fa8",
+          "ops": {
+            "viewBox": "-24.376 -24.375 861.3 289.552"
+          },
+          "path": "/logos/svg/clothing/vondutch.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#FFD100",
+            "#F9A054",
+            "#FFFFFF",
+            "#D2232A",
+            "#1886C8"
+          ],
+          "sourcePalette": [
+            "#FCB82A",
+            "#D2232A",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "c17d4681ff092b9be16dc6f6698d7fecac50f826877520b30ad59bebcf7cf86c"
         }
       ]
     },
@@ -4736,6 +8248,47 @@
             2
           ],
           "sha256": "83fbfa5a0832f15e1819d4f26d5ada0eef5f754a410b688d1cbd6ca57c2805b8"
+        }
+      ]
+    },
+    {
+      "id": "CLOTH-YONEX",
+      "league": "CLOTH",
+      "conference": "Sportswear",
+      "region": "Yonex",
+      "name": "",
+      "abbr": "YONEX",
+      "aliases": [],
+      "palette": [
+        "#000000",
+        "#487D45",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Twin Y mark",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/2/23/Yonex_Symbol.svg/revision/latest?cb=20170701064049",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Yonex_Symbol.svg",
+          "sourceSha256": "d80e4797951ac107c02c249d997623cf28bd06d8bbd3a508ac11e988b0e15653",
+          "ops": {
+            "viewBox": "-30 -30.031 1060 592.058"
+          },
+          "path": "/logos/svg/clothing/yonex.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#487D45",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "3f8c12bcfb48bdf90a46c45c7ca5b53f9b08f2fc7e64251ef4cdbd841be189c8"
         }
       ]
     },

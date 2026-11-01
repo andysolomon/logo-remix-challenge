@@ -3270,14 +3270,13 @@
       ]
     },
     {
-      "id": "CLOTH-INDY",
+      "id": "CLOTH-INDEPENDENT",
       "league": "CLOTH",
       "conference": "Surf & Skate",
       "region": "Independent Truck Company",
       "name": "",
-      "abbr": "INDY",
+      "abbr": "INDEPENDENT",
       "aliases": [
-        "Indy",
         "Independent Trucks",
         "Independent Truck Co."
       ],
@@ -3299,7 +3298,7 @@
             ],
             "viewBox": "15.463 15.282 432.107 431.21"
           },
-          "path": "/logos/svg/clothing/indy.svg",
+          "path": "/logos/svg/clothing/independent.svg",
           "format": "svg",
           "colors": [
             "#020303",

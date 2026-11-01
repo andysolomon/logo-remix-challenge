@@ -574,7 +574,7 @@ describe('high-school league gameplay integration', () => {
     expect(TEAMS.filter((t) => t.league === 'COL')).toHaveLength(126)
     expect(LEAGUES.PRO.label).toBe('NFL')
     expect(LEAGUES.COL.conferences).toEqual(['ACC', 'Big 12', 'Big Ten', 'Pac-12', 'SEC', 'Ivy', 'HBCU'])
-    expect(TEAM_POOLS.map((p) => p.id)).toEqual(['NFL', 'NBA', 'MLB', 'Soccer', 'MLS', 'Fast Food', 'Brands', 'Flags', 'Apps', 'TV', 'Cars', 'Luxury', 'Clothing', 'NHL', 'WNBA', 'Characters', 'Sweets', 'US States', 'ELEMENTS', 'MATH', 'SHAPES', 'SPACE', 'SCIENCE', 'LANDMARKS', ...LEAGUES.COL.conferences, ...COUNTIES])
+    expect(TEAM_POOLS.map((p) => p.id)).toEqual(['NFL', 'NBA', 'MLB', 'Soccer', 'MLS', 'Fast Food', 'Brands', 'Flags', 'Apps', 'TV', 'Cars', 'Luxury', 'Clothing', 'NHL', 'WNBA', 'Characters', 'Sweets', 'Movies', 'Video Games', 'US States', 'ELEMENTS', 'MATH', 'SHAPES', 'SPACE', 'SCIENCE', 'LANDMARKS', ...LEAGUES.COL.conferences, ...COUNTIES])
   })
 
   test('the team browser uses original league controls with compact HS copy', () => {
@@ -589,8 +589,8 @@ describe('high-school league gameplay integration', () => {
     expect(browser).not.toContain('league-seg')
 
     const leagueKeys = Object.keys(LEAGUES)
-    expect(leagueKeys).toEqual(['PRO', 'NBA', 'MLB', 'SOCCER', 'MLS', 'COL', 'HS', 'FOOD', 'BRAND', 'FLAG', 'APP', 'TV', 'CAR', 'LUX', 'CLOTH', 'ELEMENT', 'MATH', 'SHAPE', 'SPACE', 'SCIENCE', 'NHL', 'WNBA', 'LANDMARK', 'CHAR', 'SWEET'])
-    expect(leagueKeys.map((lg) => (lg === 'HS' ? 'HS' : LEAGUES[lg as keyof typeof LEAGUES].label))).toEqual(['NFL', 'NBA', 'MLB', 'SOCCER', 'MLS', 'COLLEGE', 'HS', 'RESTAURANTS', 'BRANDS', 'FLAGS', 'APPS', 'TV', 'CARS', 'LUXURY', 'CLOTHING', 'ELEMENTS', 'MATH', 'SHAPES', 'SPACE', 'SCIENCE', 'NHL', 'WNBA', 'LANDMARKS', 'CHARACTERS', 'SWEETS'])
+    expect(leagueKeys).toEqual(['PRO', 'NBA', 'MLB', 'SOCCER', 'MLS', 'COL', 'HS', 'FOOD', 'BRAND', 'FLAG', 'APP', 'TV', 'CAR', 'LUX', 'CLOTH', 'ELEMENT', 'MATH', 'SHAPE', 'SPACE', 'SCIENCE', 'NHL', 'WNBA', 'LANDMARK', 'CHAR', 'SWEET', 'MOVIE', 'GAME'])
+    expect(leagueKeys.map((lg) => (lg === 'HS' ? 'HS' : LEAGUES[lg as keyof typeof LEAGUES].label))).toEqual(['NFL', 'NBA', 'MLB', 'SOCCER', 'MLS', 'COLLEGE', 'HS', 'RESTAURANTS', 'BRANDS', 'FLAGS', 'APPS', 'TV', 'CARS', 'LUXURY', 'CLOTHING', 'ELEMENTS', 'MATH', 'SHAPES', 'SPACE', 'SCIENCE', 'NHL', 'WNBA', 'LANDMARKS', 'CHARACTERS', 'SWEETS', 'MOVIES', 'VIDEO GAMES'])
     expect(css).toMatch(/^\.seg \{[^\n]*display: flex;[^\n]*flex-wrap: wrap;[^\n]*max-width: 100%;[^\n]*\}$/m)
     expect(css).toMatch(/^\.seg-btn \{[^\n]*min-width: 54px;[^\n]*flex: 1 0 auto;[^\n]*height: 38px;[^\n]*\}$/m)
     expect(css).not.toContain('.league-seg')

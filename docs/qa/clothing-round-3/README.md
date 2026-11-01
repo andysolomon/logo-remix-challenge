@@ -1,6 +1,6 @@
 # Clothing, third round
 
-Adds 66 clothing brands and 21 alternates: **147 clothing brands, 1581 total entries and 847 alternates**.
+Adds 66 clothing brands and 21 alternates: **147 clothing brands, 1627 total entries and 847 alternates** (merged on top of the MOVIES and VIDEO GAMES split).
 
 | Category | Before | After | New brands |
 |---|---|---|---|
@@ -18,7 +18,7 @@ Adds 66 clothing brands and 21 alternates: **147 clothing brands, 1581 total ent
 
 - No new categories; every addition sits at the end of its existing category. Existing entries, IDs, artwork and palettes are unchanged; existing entries only gained `alternateLogos`, appended after their current ones (checked field by field against `main`), so saved rounds and Shuffle Logo order load as before.
 - Lee, J.Crew, Gant and Thrasher only publish wordmarks, so they are flagged `showsName` and sit random logo pools out. Every other new primary and every alternate is a name-free symbol, mascot, icon or monogram, and no alternate label contains the answer.
-- No new name, short code or alias is an accepted answer for any other catalog entry (Billionaire Boys Club's short code avoids "BBC", T&C Surf Designs avoids "TC", the element), and every second palette color is a real brand color, never white. Bombas' second color is its yellow: its file carries an inert black `stop-color`, and a black second color would have looked painted to the backdrop check.
+- No new name, short code or alias is an accepted answer for any other catalog entry (Billionaire Boys Club's short code avoids "BBC", T&C Surf Designs avoids "TC", the element, and Independent Truck Company avoids "Indy", which belongs to Indiana Jones), and every second palette color is a real brand color, never white. Bombas' second color is its yellow: its file carries an inert black `stop-color`, and a black second color would have looked painted to the backdrop check.
 - Left out on purpose: marks that look like existing entries (Lotto and Erreà's diamonds next to Umbro, Rossignol's rooster shield next to Le Coq Sportif, La Martina's polo riders next to U.S. Polo Assn., Ben Sherman's roundel next to Target, a plain lightning bolt next to the Tampa Bay Lightning), names that are plain English words (Peak, Palace, Osprey, Black Diamond, Globe), Birkenstock and Body Glove (lettering fused into the symbol), and wordmark-only brands beyond the four above.
 
 ## Artwork

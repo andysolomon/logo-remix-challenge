@@ -40,6 +40,13 @@ describe('gameplay polish scaffolding', () => {
     expect(css).toContain('html.kb-open .guess-suggest-item { flex: none; min-height: 44px;')
     expect(css).toContain('html.kb-open .guess-form.both .btn-submit { grid-area: 1 / 2 / 3 / 3;')
 
+    // Landscape tablets (and phones): a strip at least twice as wide as tall puts the logo beside the answer stack at full height.
+    expect(css).toContain('.play { container: play / size; }')
+    expect(css).toContain('@container play (min-aspect-ratio: 2 / 1) {')
+    expect(css).toContain('html.kb-open .question > .q-hero { grid-area: 3 / 1 / -1 / 2;')
+    expect(css).toContain('html.kb-open .question > .q-ask { grid-area: 5 / 3; }')
+    expect(css).toContain('html.kb-open .question > .guess-form, html.kb-open .question > .host { grid-area: 6 / 3;')
+
     // A swipe across the chip row scrolls it; only a tap (click) picks a suggestion. Mouse-down holds focus;
     // preventing pointer-down instead makes iOS Safari drop the click, so a tapped suggestion never filled the field.
     const gi = read('src/components/GuessInput.tsx')

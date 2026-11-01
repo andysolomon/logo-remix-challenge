@@ -4,7 +4,7 @@ import { isSkinSetting, type SkinSetting } from './skins'
 
 export { findPlayer, PLAYERS, type Player, type PlayerLeague }
 
-export type League = 'PRO' | 'NBA' | 'MLB' | 'SOCCER' | 'MLS' | 'COL' | 'HS' | 'FOOD' | 'BRAND' | 'FLAG' | 'APP' | 'TV' | 'CAR' | 'LUX' | 'CLOTH' | 'NHL' | 'ELEMENT' | 'MATH' | 'SHAPE' | 'SPACE' | 'SCIENCE' | 'WNBA' | 'LANDMARK' | 'CHAR' | 'SWEET'
+export type League = 'PRO' | 'NBA' | 'MLB' | 'SOCCER' | 'MLS' | 'COL' | 'HS' | 'FOOD' | 'BRAND' | 'FLAG' | 'APP' | 'TV' | 'CAR' | 'LUX' | 'CLOTH' | 'NHL' | 'ELEMENT' | 'MATH' | 'SHAPE' | 'SPACE' | 'SCIENCE' | 'WNBA' | 'LANDMARK' | 'CHAR' | 'SWEET' | 'MOVIE' | 'GAME'
 
 export interface LogoVariant {
   id: string
@@ -95,6 +95,13 @@ const MOVED_TEAMS = new Map([
     .map((abbr): [string, string] => [`BRAND-${abbr}`, `FLAG-${abbr}`]),
   // Hershey's, M&M's and Oreo opened in BRANDS and now live in SWEETS.
   ...['HERSHEY', 'MMS', 'OREO'].map((abbr): [string, string] => [`BRAND-${abbr}`, `SWEET-${abbr}`]),
+  // CHARACTERS' movie franchises and video games now have collections of their own.
+  ...['GHOSTBUSTERS', 'SCOOBY', 'JURASSIC', 'HP', 'BTTF', 'GODZILLA', 'BOND', 'LOTR', 'HUNGER', 'MINIONS', 'SHREK', 'KUNGFUPANDA']
+    .map((abbr): [string, string] => [`CHAR-${abbr}`, `MOVIE-${abbr}`]),
+  ...['TRIFORCE', 'POKEBALL', 'PIKACHU', 'TEAMROCKET', 'METROID', 'ANIMALCROSSING', 'MARIO', 'KIRBY', 'DK', 'SPLATOON', 'AC', 'GOW', 'GTA',
+    'ELDENRING', 'SONIC', 'CREEPER', 'HALFLIFE', 'APERTURE', 'UMBRELLA', 'OVERWATCH', 'VALORANT', 'LOL', 'PUBG', 'APEX', 'COD', 'BRAWL', 'PACMAN',
+    'INVADER', 'TETRIS', 'FALLGUYS']
+    .map((abbr): [string, string] => [`CHAR-${abbr}`, `GAME-${abbr}`]),
 ])
 const followMove = (round: unknown) => {
   if (typeof round !== 'object' || round === null) return round
@@ -654,18 +661,18 @@ export const roundColors = (r: Round): Team => findTeam(r.c ?? r.o)!
 export const guessPrompt = (t: RoundTarget) => (t === 'player' ? 'Who wore it?' : t === 'both' ? 'Guess the Logo and the Colors!' : t === 'colors' ? 'Guess the Colors!' : 'Guess the Logo!')
 /** What one entry of a collection is called in search and result labels. */
 export const entryNoun = (league: League) =>
-  league === 'ELEMENT' ? 'element' : league === 'MATH' ? 'symbol' : league === 'SHAPE' ? 'shape' : league === 'SPACE' ? 'object' : league === 'SCIENCE' ? 'science image' : league === 'LANDMARK' ? 'landmark' : league === 'CHAR' ? 'character' : league === 'APP' ? 'app' : league === 'TV' ? 'channel' : league === 'FLAG' ? 'flag' : ['FOOD', 'BRAND', 'CAR', 'LUX', 'CLOTH', 'SWEET'].includes(league) ? 'brand' : league === 'SOCCER' || league === 'MLS' ? 'club' : 'team'
+  league === 'ELEMENT' ? 'element' : league === 'MATH' ? 'symbol' : league === 'SHAPE' ? 'shape' : league === 'SPACE' ? 'object' : league === 'SCIENCE' ? 'science image' : league === 'LANDMARK' ? 'landmark' : league === 'CHAR' ? 'character' : league === 'MOVIE' ? 'movie' : league === 'GAME' ? 'game' : league === 'APP' ? 'app' : league === 'TV' ? 'channel' : league === 'FLAG' ? 'flag' : ['FOOD', 'BRAND', 'CAR', 'LUX', 'CLOTH', 'SWEET'].includes(league) ? 'brand' : league === 'SOCCER' || league === 'MLS' ? 'club' : 'team'
 /**
  * Where a team plays: the league and conference for NFL teams ("NFL - AFC"), the league label for other pro teams,
  * MLS clubs and fast food, the conference for college and high school, the domestic league for soccer clubs outside
  * "Rest of World", the region for flags and landmarks ("FLAGS - Europe", "LANDMARKS - Asia & Pacific"), the type for brands, apps, channels,
- * cars, luxury houses ("Luxury watchmaker") and clothing brands ("Outdoor brand"), the franchise for characters ("CHARACTERS - Marvel")
- * and the kind of treat for sweets ("SWEETS - Chocolate").
+ * cars, luxury houses ("Luxury watchmaker") and clothing brands ("Outdoor brand"), the franchise for characters ("CHARACTERS - Marvel"),
+ * the kind of treat for sweets ("SWEETS - Chocolate") and the genre for movies and video games ("MOVIES - Halloween", "VIDEO GAMES - Nintendo").
  */
 export const teamHint = (t: Team) =>
   t.league === 'COL' || t.league === 'HS' || (t.league === 'SOCCER' && t.conference !== 'Rest of World')
     ? t.conference
-    : t.league === 'PRO' || t.league === 'FLAG' || ['ELEMENT', 'MATH', 'SHAPE', 'SPACE', 'SCIENCE', 'LANDMARK', 'NHL', 'WNBA', 'CHAR', 'SWEET'].includes(t.league)
+    : t.league === 'PRO' || t.league === 'FLAG' || ['ELEMENT', 'MATH', 'SHAPE', 'SPACE', 'SCIENCE', 'LANDMARK', 'NHL', 'WNBA', 'CHAR', 'SWEET', 'MOVIE', 'GAME'].includes(t.league)
       ? `${LEAGUES[t.league].label} - ${t.conference}`
       : t.league === 'BRAND'
         ? `${t.conference} brand`
@@ -712,6 +719,8 @@ export const TEAM_POOLS: TeamPool[] = [
   { id: 'WNBA', label: LEAGUES.WNBA.label, league: 'WNBA', match: (t) => t.league === 'WNBA' },
   { id: 'Characters', label: LEAGUES.CHAR.label, league: 'CHAR', match: (t) => t.league === 'CHAR' },
   { id: 'Sweets', label: LEAGUES.SWEET.label, league: 'SWEET', match: (t) => t.league === 'SWEET' },
+  { id: 'Movies', label: LEAGUES.MOVIE.label, league: 'MOVIE', match: (t) => t.league === 'MOVIE' },
+  { id: 'Video Games', label: LEAGUES.GAME.label, league: 'GAME', match: (t) => t.league === 'GAME' },
   { id: 'US States', label: 'US STATES', league: 'FLAG', match: (t) => t.league === 'FLAG' && t.conference === 'US States' },
   ...(['ELEMENT', 'MATH', 'SHAPE', 'SPACE', 'SCIENCE', 'LANDMARK'] as const).map((league) => ({
     id: LEAGUES[league].label, label: LEAGUES[league].label, league, match: (t: Team) => t.league === league,

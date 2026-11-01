@@ -10,7 +10,7 @@ import {
 
 const root = join(import.meta.dir, '..')
 const python = (code: string) => execFileSync('python3', ['-c', code], { cwd: root })
-const COLLECTIONS: League[] = ['FOOD', 'BRAND', 'FLAG', 'APP', 'TV', 'CAR', 'LUX', 'CLOTH', 'CHAR', 'SWEET']
+const COLLECTIONS: League[] = ['FOOD', 'BRAND', 'FLAG', 'APP', 'TV', 'CAR', 'LUX', 'CLOTH', 'CHAR', 'SWEET', 'MOVIE', 'GAME']
 const entries = TEAMS.filter((t) => COLLECTIONS.includes(t.league))
 const norm = (s: string) => s.toLowerCase().replace(/[^a-z0-9]/g, '')
 /** Entries with name-visible imported artwork; random decks skip them, but they can still be picked by hand. */
@@ -21,16 +21,21 @@ const WORDMARK_ONLY = [
   'BRAND-MARVEL', 'BRAND-MATTEL', 'BRAND-MOBIL', 'BRAND-MTNDEW', 'BRAND-NASA', 'BRAND-NERF', 'BRAND-ORACLE', 'BRAND-PARAMOUNT', 'BRAND-SAMSUNG', 'BRAND-SEGA',
   'BRAND-SONY', 'BRAND-SPRITE', 'BRAND-UBER', 'BRAND-UPS', 'BRAND-VISA', 'BRAND-WHOLEFOODS',
   'CAR-FIAT', 'CAR-FORD',
-  'CHAR-AOT', 'CHAR-AVENGERS', 'CHAR-BLUEY', 'CHAR-BOND', 'CHAR-BTTF', 'CHAR-COD', 'CHAR-DEMONSLAYER', 'CHAR-DK', 'CHAR-DRAGONBALL', 'CHAR-ELDENRING', 'CHAR-ENCANTO', 'CHAR-FALLGUYS',
-  'CHAR-FROZEN', 'CHAR-GOT', 'CHAR-GTA', 'CHAR-HUNGER', 'CHAR-IRONMAN', 'CHAR-JJK', 'CHAR-JL', 'CHAR-KIRBY', 'CHAR-KUNGFUPANDA', 'CHAR-LIONKING', 'CHAR-MHA', 'CHAR-MINIONS',
-  'CHAR-MOANA', 'CHAR-NARUTO', 'CHAR-NEMO', 'CHAR-ONEPIECE', 'CHAR-PAW', 'CHAR-POOH', 'CHAR-SAILORMOON', 'CHAR-SCOOBY', 'CHAR-SESAME', 'CHAR-SHREK', 'CHAR-SIMPSONS', 'CHAR-SMURFS',
-  'CHAR-SONIC', 'CHAR-SPLATOON', 'CHAR-SPONGEBOB', 'CHAR-STARWARS', 'CHAR-STITCH', 'CHAR-STRANGER', 'CHAR-TEENTITANS', 'CHAR-TETRIS', 'CHAR-TMNT', 'CHAR-TOYSTORY',
+  'CHAR-AOT', 'CHAR-AVENGERS', 'CHAR-BLUEY', 'CHAR-DEMONSLAYER', 'CHAR-DRAGONBALL', 'CHAR-ENCANTO', 'CHAR-FROZEN', 'CHAR-GOT', 'CHAR-IRONMAN', 'CHAR-JJK', 'CHAR-JL',
+  'CHAR-LIONKING', 'CHAR-MHA', 'CHAR-MOANA', 'CHAR-NARUTO', 'CHAR-NEMO', 'CHAR-ONEPIECE', 'CHAR-PAW', 'CHAR-POOH', 'CHAR-SAILORMOON', 'CHAR-SESAME', 'CHAR-SIMPSONS',
+  'CHAR-SMURFS', 'CHAR-SPONGEBOB', 'CHAR-STARWARS', 'CHAR-STITCH', 'CHAR-STRANGER', 'CHAR-TEENTITANS', 'CHAR-TMNT', 'CHAR-TOYSTORY',
   'CLOTH-DRMARTENS', 'CLOTH-GANT', 'CLOTH-GAP', 'CLOTH-HM', 'CLOTH-JCREW', 'CLOTH-LEE', 'CLOTH-OLDNAVY', 'CLOTH-SUPREME', 'CLOTH-THRASHER', 'CLOTH-UGG', 'CLOTH-UNIQLO',
   'CLOTH-ZARA',
   'FOOD-BOJ', 'FOOD-BOSTON', 'FOOD-CANE', 'FOOD-CARVEL', 'FOOD-CB', 'FOOD-CHEESE', 'FOOD-CINNABON', 'FOOD-CUL', 'FOOD-DENNYS', 'FOOD-EPL', 'FOOD-FAT', 'FOOD-FIREHOUSE',
   'FOOD-FIVE', 'FOOD-FREDDYS', 'FOOD-GC', 'FOOD-HABIT', 'FOOD-HD', 'FOOD-HRC', 'FOOD-IHOP', 'FOOD-JM', 'FOOD-KRISPY', 'FOOD-MOES', 'FOOD-OUTBACK', 'FOOD-PAPA',
   'FOOD-PFC', 'FOOD-PM', 'FOOD-QDOBA', 'FOOD-RAIN', 'FOOD-RUBY', 'FOOD-SNS', 'FOOD-TIMS', 'FOOD-WINGSTOP',
+  'GAME-COD', 'GAME-CRASH', 'GAME-DK', 'GAME-EAFC', 'GAME-ELDENRING', 'GAME-FALLGUYS', 'GAME-FNAF', 'GAME-GTA', 'GAME-HALO', 'GAME-HOLLOWKNIGHT', 'GAME-KIRBY', 'GAME-MARIOKART',
+  'GAME-MEGAMAN', 'GAME-NBA2K', 'GAME-SONIC', 'GAME-SPLATOON', 'GAME-STREETFIGHTER', 'GAME-TETRIS', 'GAME-UNDERTALE',
   'LUX-BVLGARI', 'LUX-DIOR', 'LUX-PRADA', 'LUX-RM', 'LUX-TAG', 'LUX-TIFFANY', 'LUX-VCA',
+  'MOVIE-ADDAMS', 'MOVIE-AVATAR', 'MOVIE-BEETLEJUICE', 'MOVIE-BOND', 'MOVIE-BTTF', 'MOVIE-CASPER', 'MOVIE-CORALINE', 'MOVIE-ET', 'MOVIE-FAST', 'MOVIE-GREMLINS',
+  'MOVIE-HAUNTEDMANSION', 'MOVIE-HOTELT', 'MOVIE-HUNGER', 'MOVIE-ICEAGE', 'MOVIE-INDY', 'MOVIE-JAWS', 'MOVIE-KARATEKID', 'MOVIE-KONG', 'MOVIE-KUNGFUPANDA', 'MOVIE-MADAGASCAR',
+  'MOVIE-MAZERUNNER', 'MOVIE-MIB', 'MOVIE-MINIONS', 'MOVIE-MISSIONIMP', 'MOVIE-NARNIA', 'MOVIE-NIGHTMARE', 'MOVIE-NIGHTMUSEUM', 'MOVIE-PIRATES', 'MOVIE-SCOOBY', 'MOVIE-SHREK',
+  'MOVIE-SPYKIDS', 'MOVIE-TOPGUN', 'MOVIE-TROLLS', 'MOVIE-TRON', 'MOVIE-WIZARDOFOZ', 'MOVIE-WONKA',
   'SWEET-ALTOIDS', 'SWEET-BENJERRY', 'SWEET-BREYERS', 'SWEET-BUTTERFINGER', 'SWEET-CADBURY', 'SWEET-CHIPSAHOY', 'SWEET-DOUBLEMINT', 'SWEET-DUMDUMS', 'SWEET-ENTENMANNS',
   'SWEET-EXTRA', 'SWEET-FERRERO', 'SWEET-HARIBO', 'SWEET-HOSTESS', 'SWEET-HUBBA', 'SWEET-JELLYBELLY', 'SWEET-JOLLY', 'SWEET-JUICYFRUIT', 'SWEET-KEEBLER',
   'SWEET-KINDER', 'SWEET-KITKAT', 'SWEET-LIFESAVERS', 'SWEET-LITTLEDEBBIE', 'SWEET-MAGNUM', 'SWEET-MENTOS', 'SWEET-MILKA', 'SWEET-MMS', 'SWEET-NERDS',
@@ -45,7 +50,7 @@ const WORDMARK_ONLY = [
  * the ice-cream heart, the Klondike bear, Lindt's crest and Toblerone's mountain.
  */
 const WORDMARK_ALTERNATES = [
-  'BRAND-BARBIE', 'BRAND-DC', 'BRAND-WELLS', 'CHAR-DOCTORWHO', 'CHAR-INVADER', 'CHAR-MARIO', 'CLOTH-VANS', 'FOOD-DUNK', 'FOOD-WAFFLE', 'LUX-MK',
+  'BRAND-BARBIE', 'BRAND-DC', 'BRAND-WELLS', 'CHAR-DOCTORWHO', 'CLOTH-VANS', 'FOOD-DUNK', 'FOOD-WAFFLE', 'GAME-INVADER', 'GAME-MARIO', 'LUX-MK',
   'SWEET-CHUPA', 'SWEET-GODIVA', 'SWEET-GOODHUMOR', 'SWEET-KLONDIKE', 'SWEET-LINDT', 'SWEET-TOBLERONE',
 ]
 const wordmarks = (league: League) => WORDMARK_ONLY.filter((id) => id.startsWith(`${league}-`)).length
@@ -57,8 +62,12 @@ describe('brand collections', () => {
     expect(LEAGUES.BRAND.conferences.map((c) => filterTeams('BRAND', c, '').length)).toEqual([30, 37, 52, 4, 12])
     expect(LEAGUES.FOOD).toEqual({ label: 'RESTAURANTS', conferences: ['Burgers', 'Chicken', 'Sandwiches', 'Pizza', 'Mexican & Asian', 'Coffee & Treats', 'Casual Dining'] })
     expect(LEAGUES.FOOD.conferences.map((c) => filterTeams('FOOD', c, '').length)).toEqual([19, 11, 8, 8, 8, 15, 24])
-    expect(LEAGUES.CHAR).toEqual({ label: 'CHARACTERS', conferences: ['Marvel', 'DC', 'Disney & Pixar', 'Star Wars', 'Movies & TV', 'Video Games', 'Cartoons & Anime'] })
-    expect(LEAGUES.CHAR.conferences.map((c) => filterTeams('CHAR', c, '').length)).toEqual([10, 8, 13, 11, 21, 29, 23])
+    expect(LEAGUES.CHAR).toEqual({ label: 'CHARACTERS', conferences: ['Marvel', 'DC', 'Disney & Pixar', 'Star Wars', 'TV', 'Cartoons & Anime'] })
+    expect(LEAGUES.CHAR.conferences.map((c) => filterTeams('CHAR', c, '').length)).toEqual([10, 8, 13, 11, 9, 22])
+    expect(LEAGUES.MOVIE).toEqual({ label: 'MOVIES', conferences: ['Animated', 'Adventure & Fantasy', 'Sci-Fi & Action', 'Halloween'] })
+    expect(LEAGUES.MOVIE.conferences.map((c) => filterTeams('MOVIE', c, '').length)).toEqual([7, 10, 15, 12])
+    expect(LEAGUES.GAME).toEqual({ label: 'VIDEO GAMES', conferences: ['Nintendo', 'Adventure', 'Battle & Shooters', 'Arcade & Puzzle', 'Sports & Racing', 'Indie'] })
+    expect(LEAGUES.GAME.conferences.map((c) => filterTeams('GAME', c, '').length)).toEqual([11, 10, 10, 5, 5, 3])
     expect(LEAGUES.SWEET).toEqual({ label: 'SWEETS', conferences: ['Chocolate', 'Gummy & Chewy', 'Hard Candy', 'Gum & Mints', 'Cookies & Cakes', 'Ice Cream'] })
     expect(LEAGUES.SWEET.conferences.map((c) => filterTeams('SWEET', c, '').length)).toEqual([15, 7, 6, 9, 9, 6])
     expect(LEAGUES.APP.conferences.map((c) => filterTeams('APP', c, '').length)).toEqual([35, 32, 23, 27, 32, 26])
@@ -70,7 +79,7 @@ describe('brand collections', () => {
     expect(LEAGUES.LUX.conferences.map((c) => filterTeams('LUX', c, '').length)).toEqual([10, 6, 8, 6])
     expect(LEAGUES.CLOTH).toEqual({ label: 'CLOTHING', conferences: ['Sportswear', 'Streetwear', 'Outdoor', 'Preppy', 'Everyday', 'Surf & Skate', 'Footwear'] })
     expect(LEAGUES.CLOTH.conferences.map((c) => filterTeams('CLOTH', c, '').length)).toEqual([27, 19, 26, 19, 17, 23, 16])
-    for (const [league, size] of [['FOOD', 93], ['BRAND', 135], ['FLAG', 123], ['APP', 175], ['TV', 98], ['CAR', 30], ['LUX', 30], ['CLOTH', 147], ['CHAR', 115], ['SWEET', 52]] as const) {
+    for (const [league, size] of [['FOOD', 93], ['BRAND', 135], ['FLAG', 123], ['APP', 175], ['TV', 98], ['CAR', 30], ['LUX', 30], ['CLOTH', 147], ['CHAR', 73], ['SWEET', 52], ['MOVIE', 44], ['GAME', 44]] as const) {
       expect(filterTeams(league, 'All', '')).toHaveLength(size)
       expect(new Set(filterTeams(league, 'All', '').map(fullName)).size).toBe(size)
     }
@@ -81,7 +90,7 @@ describe('brand collections', () => {
   test('every logo and alternate is local vector artwork; extra marks exist only where they are distinct', () => {
     for (const team of entries) {
       for (const variant of logoVariants(team)) {
-        expect(variant.logo).toMatch(/^\/logos\/svg\/(fast-food|brands|flags|apps|tv|cars|luxury|clothing|characters|sweets)\/.+\.svg$/)
+        expect(variant.logo).toMatch(/^\/logos\/svg\/(fast-food|brands|flags|apps|tv|cars|luxury|clothing|characters|sweets|movies|games)\/.+\.svg$/)
         expect(existsSync(join(root, 'public', variant.logo))).toBe(true)
       }
       expect(new Set(logoVariants(team).map((v) => v.logo)).size).toBe(logoVariants(team).length)
@@ -126,7 +135,7 @@ for league, roster in ROSTERS.items():
     rows = {row[0]: row for row in roster}
     pinned = {(s['teamId'], s['id']): s for s in pinned_sources(league)}
     items = json.loads(manifest_path(league).read_text())['assets']
-    assert len(items) == len(rows) == {'FOOD': 93, 'BRAND': 135, 'FLAG': 123, 'APP': 175, 'TV': 98, 'CLOTH': 147, 'NHL': 32, 'WNBA': 15, 'CHAR': 115, 'LANDMARK': 40, 'SWEET': 52}.get(league, 30), league
+    assert len(items) == len(rows) == {'FOOD': 93, 'BRAND': 135, 'FLAG': 123, 'APP': 175, 'TV': 98, 'CLOTH': 147, 'NHL': 32, 'WNBA': 15, 'CHAR': 73, 'LANDMARK': 40, 'SWEET': 52, 'MOVIE': 44, 'GAME': 44}.get(league, 30), league
     for item in items:
         assert teams[item['id']] == build_entry(league, item, rows[item['abbr']]), item['id']
         for art in item['artwork']:
@@ -181,13 +190,16 @@ for league, roster in ROSTERS.items():
   test('random decks draw brand, app, channel, car, luxury, clothing, character and sweets logos, skip wordmarks, take colors from teams and show the type as a hint', () => {
     expect(ALL_POOL_IDS).toEqual(expect.arrayContaining(['Fast Food', 'Brands', 'Apps', 'TV', 'Cars', 'Luxury', 'Clothing', 'Characters', 'Sweets']))
     expect(poolTeams(['Brands', 'Apps'])).toHaveLength(310)
-    expect(poolTeams(['Characters'])).toHaveLength(115)
+    expect(poolTeams(['Characters'])).toHaveLength(73)
+    expect(poolTeams(['Movies', 'Video Games'])).toHaveLength(88)
     expect(poolTeams(['Sweets'])).toHaveLength(52)
     expect(poolTeams(['TV', 'Cars'])).toHaveLength(128)
     expect(poolTeams(['Luxury', 'Clothing'])).toHaveLength(177)
     expect(logoPoolTeams(['Fast Food'])).toHaveLength(93 - wordmarks('FOOD'))
     expect(logoPoolTeams(['Brands'])).toHaveLength(135 - wordmarks('BRAND'))
-    expect(logoPoolTeams(['Characters'])).toHaveLength(115 - wordmarks('CHAR'))
+    expect(logoPoolTeams(['Characters'])).toHaveLength(73 - wordmarks('CHAR'))
+    expect(logoPoolTeams(['Movies'])).toHaveLength(44 - wordmarks('MOVIE'))
+    expect(logoPoolTeams(['Video Games'])).toHaveLength(44 - wordmarks('GAME'))
     expect(logoPoolTeams(['Sweets'])).toHaveLength(52 - wordmarks('SWEET'))
     expect(logoPoolTeams(['TV'])).toHaveLength(98 - wordmarks('TV'))
     expect(logoPoolTeams(['Cars'])).toHaveLength(30 - wordmarks('CAR'))
@@ -219,7 +231,8 @@ for league, roster in ROSTERS.items():
     expect(roundHints({ o: 'APP-MSWORD', c: 'TV-GOLFCH', v: 0 })).toEqual(['Logo: Productivity app', 'Colors: Sports channel'])
     expect(roundHints({ o: 'CLOTH-QUIKSILVER', c: 'NBA-ATL', v: 0 })).toEqual(['Logo: Surf & Skate brand', 'Colors: NBA'])
     expect(roundHints({ o: 'CHAR-BATMAN', c: 'PRO-KC', v: 0 })).toEqual(['Logo: CHARACTERS - DC', 'Colors: NFL - AFC'])
-    expect(roundHints({ o: 'CHAR-TRIFORCE', v: 0 })).toEqual(['Logo: CHARACTERS - Video Games'])
+    expect(roundHints({ o: 'GAME-TRIFORCE', v: 0 })).toEqual(['Logo: VIDEO GAMES - Nintendo'])
+    expect(roundHints({ o: 'MOVIE-GOOSEBUMPS', c: 'PRO-KC', v: 0 })).toEqual(['Logo: MOVIES - Halloween', 'Colors: NFL - AFC'])
     expect(roundHints({ o: 'SWEET-GODIVA', c: 'NBA-ATL', v: 0 })).toEqual(['Logo: SWEETS - Chocolate', 'Colors: NBA'])
   })
 })

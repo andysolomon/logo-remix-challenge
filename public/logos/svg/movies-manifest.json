@@ -1,0 +1,2543 @@
+{
+  "assets": [
+    {
+      "id": "MOVIE-ADDAMS",
+      "league": "MOVIE",
+      "conference": "Halloween",
+      "region": "The Addams Family",
+      "name": "",
+      "abbr": "ADDAMS",
+      "aliases": [
+        "Addams Family",
+        "Addams Family Values",
+        "Wednesday Addams",
+        "Gomez Addams",
+        "Morticia Addams"
+      ],
+      "palette": [
+        "#000000",
+        "#808080",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Stacked black serif title",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Addams_Family_%28Tee_%26_Charles_Addams_Foundation%29_franchise_logo_%281%29.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:The_Addams_Family_%28Tee_%26_Charles_Addams_Foundation%29_franchise_logo_%281%29.svg",
+          "sourceSha256": "6e2830a986b3a41715a662cb6e712bb4f51db65cfe79e9df6449082298d6f799",
+          "ops": {
+            "viewBox": "-28.4 -25.56 904.824 723.632"
+          },
+          "showsName": true,
+          "path": "/logos/svg/movies/addams.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "b02d821509d59e42ecb85918a73934952160b8ebb7bf963e58e4f9ec1dbe5ea4"
+        }
+      ]
+    },
+    {
+      "id": "MOVIE-AVATAR",
+      "league": "MOVIE",
+      "conference": "Sci-Fi & Action",
+      "region": "Avatar",
+      "name": "",
+      "abbr": "AVATAR",
+      "aliases": [
+        "Avatar: The Way of Water",
+        "James Cameron's Avatar"
+      ],
+      "palette": [
+        "#006DA5",
+        "#808080",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Brushy blue letters",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/d/d6/Avatar_Logo_%282009%29.svg/revision/latest?cb=20200926032232",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Avatar_Logo_(2009).svg",
+          "sourceSha256": "b21922a9a0a47892a8a9d0bb32fc7a873de1be6bc9d92ee8d468026dbc613a62",
+          "ops": {
+            "viewBox": "-40 40 1080 204",
+            "clipToViewBox": true
+          },
+          "showsName": true,
+          "path": "/logos/svg/movies/avatar.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#006DA5"
+          ],
+          "sourcePalette": [
+            "#006DA5",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "2d66a9f39a17c4a4f391910bcfc735793a717d1f2ae59bae584ea9018cb05fd8"
+        }
+      ]
+    },
+    {
+      "id": "MOVIE-BEETLEJUICE",
+      "league": "MOVIE",
+      "conference": "Halloween",
+      "region": "Beetlejuice",
+      "name": "",
+      "abbr": "BEETLEJUICE",
+      "aliases": [
+        "Beetlejuice Beetlejuice",
+        "Beetle Juice",
+        "Betelgeuse",
+        "Beetlejuice 2"
+      ],
+      "palette": [
+        "#000000",
+        "#808080",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "1988 framed sign wordmark",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Beetlejuice_logo.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Beetlejuice_logo.svg",
+          "sourceSha256": "d82767bd025aa0e69bbd65ae74a70b55ce4191010467e808987d7381de5ca504",
+          "ops": {
+            "viewBox": "3.987 -6.22 443.528 268.511"
+          },
+          "showsName": true,
+          "path": "/logos/svg/movies/beetlejuice.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "76aaa82d0c87164a58d6770a8ed31b3de6eaad0620f4915c11051514ab1757b9"
+        }
+      ]
+    },
+    {
+      "id": "MOVIE-BOND",
+      "league": "MOVIE",
+      "conference": "Sci-Fi & Action",
+      "region": "James Bond",
+      "name": "",
+      "abbr": "BOND",
+      "aliases": [
+        "007",
+        "Bond",
+        "Agent 007"
+      ],
+      "palette": [
+        "#000000",
+        "#808080",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Gun logo",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/4/4c/007_Logo_2.svg/revision/latest?cb=20170912112900",
+          "sourcePage": "https://logos.fandom.com/wiki/File:007_Logo_2.svg",
+          "sourceSha256": "7474efae62671789f53061b4e3884c260fc1c328315a146e80360529e0971de0",
+          "ops": {
+            "viewBox": "-40.5 -40.2 1080 397.155"
+          },
+          "showsName": true,
+          "path": "/logos/svg/movies/bond.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "4a52e401252e1c33ae44b188fce15142339df24b10645f38d9edc0cbbb0a28c1"
+        }
+      ]
+    },
+    {
+      "id": "MOVIE-BTTF",
+      "league": "MOVIE",
+      "conference": "Sci-Fi & Action",
+      "region": "Back to the Future",
+      "name": "",
+      "abbr": "BTTF",
+      "aliases": [
+        "BTTF"
+      ],
+      "palette": [
+        "#0089CF",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Title wordmark",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Back-to-the-future-logo.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Back-to-the-future-logo.svg",
+          "sourceSha256": "aa464f6bccb38ed120ff8c9820d6171f44a02b2ffe078365b45d2667b7c71700",
+          "ops": {
+            "viewBox": "-40 -40 1080.001 525.1"
+          },
+          "showsName": true,
+          "path": "/logos/svg/movies/bttf.svg",
+          "format": "svg",
+          "colors": [
+            "#0089CF",
+            "#000000",
+            "#F04E27",
+            "#FFC91B"
+          ],
+          "sourcePalette": [
+            "#0089CF",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "6cfa3f89287f0e1833eb623615421fd35891c2a98f34995fbff57e1c15f27981"
+        }
+      ]
+    },
+    {
+      "id": "MOVIE-CASPER",
+      "league": "MOVIE",
+      "conference": "Halloween",
+      "region": "Casper",
+      "name": "",
+      "abbr": "CASPER",
+      "aliases": [
+        "Casper the Friendly Ghost",
+        "Casper the Ghost",
+        "Casper 1995"
+      ],
+      "palette": [
+        "#D60052",
+        "#FFD600",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Classic cartoon title lettering",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/9/9c/Casper.svg/revision/latest?cb=20201126215822",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Casper.svg",
+          "sourceSha256": "c76b5bc8108a2f94b072e64ef0e43da18ad83c985d19bc2b8f983016cdad5139",
+          "ops": {
+            "viewBox": "-40 -40 1080 475.333"
+          },
+          "showsName": true,
+          "path": "/logos/svg/movies/casper.svg",
+          "format": "svg",
+          "colors": [
+            "#084284",
+            "#FFD600",
+            "#000000",
+            "#D60052"
+          ],
+          "sourcePalette": [
+            "#D60052",
+            "#FFD600",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "a8e8b16517c049de754a3bf180d3876c2182519c91867a02396e1d8633b0355e"
+        }
+      ]
+    },
+    {
+      "id": "MOVIE-CORALINE",
+      "league": "MOVIE",
+      "conference": "Halloween",
+      "region": "Coraline",
+      "name": "",
+      "abbr": "CORALINE",
+      "aliases": [
+        "Coraline Jones",
+        "The Other Mother"
+      ],
+      "palette": [
+        "#000000",
+        "#808080",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Button-eye title lettering",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Coraline.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Coraline.svg",
+          "sourceSha256": "e19e899b96c428e988beb946ab109566246357a4f400fa0f53a22829a4ad921e",
+          "ops": {
+            "viewBox": "-2.095 -2.423 168.531 63.008"
+          },
+          "showsName": true,
+          "path": "/logos/svg/movies/coraline.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "97620912f98379ded4c0905e997f69b67fac4752ced288d051148af9f04afed7"
+        }
+      ]
+    },
+    {
+      "id": "MOVIE-ET",
+      "league": "MOVIE",
+      "conference": "Sci-Fi & Action",
+      "region": "E.T. the Extra-Terrestrial",
+      "name": "",
+      "abbr": "ET",
+      "aliases": [
+        "E.T.",
+        "ET",
+        "ET the Extra-Terrestrial",
+        "The Extra-Terrestrial"
+      ],
+      "palette": [
+        "#000000",
+        "#808080",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Rough black initials",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/4/4c/E.T._The_Extra-Terrestrial.svg/revision/latest?cb=20180410174838",
+          "sourcePage": "https://logos.fandom.com/wiki/File:E.T._The_Extra-Terrestrial.svg",
+          "sourceSha256": "3950ff542253f89f071943e16b8264483bdf27bd48a923ccc8f94ff48857a4d2",
+          "ops": {
+            "viewBox": "-40 -40 1080 740"
+          },
+          "showsName": true,
+          "path": "/logos/svg/movies/et.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "acec3c4c48424bc31fceac60ca3607578038c40e04dbbcdf1ff9e7b506c59bf2"
+        }
+      ]
+    },
+    {
+      "id": "MOVIE-FAST",
+      "league": "MOVIE",
+      "conference": "Sci-Fi & Action",
+      "region": "Fast & Furious",
+      "name": "",
+      "abbr": "FAST",
+      "aliases": [
+        "Fast and Furious",
+        "The Fast and the Furious",
+        "Fast and the Furious"
+      ],
+      "palette": [
+        "#000000",
+        "#808080",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Black italic racing title",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/3/30/Fast_%26_Furious.svg/revision/latest?cb=20220606030614",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Fast_&_Furious.svg",
+          "sourceSha256": "1b2b1f0a41e9b8c0616ec58dfd3929f1c8610e2c2836988f59767f2e1f8040f0",
+          "ops": {
+            "viewBox": "-2.57 -2.57 69.392 22.148"
+          },
+          "showsName": true,
+          "path": "/logos/svg/movies/fast.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "9f007b38db487985bb25e7d59cc83cdbadf170cae64770eec59e086753ff7564"
+        }
+      ]
+    },
+    {
+      "id": "MOVIE-FRANKENSTEIN",
+      "league": "MOVIE",
+      "conference": "Halloween",
+      "region": "Frankenstein",
+      "name": "",
+      "abbr": "FRANKENSTEIN",
+      "aliases": [
+        "Frankenstein's Monster",
+        "Frankenstein 1931",
+        "Frankenstein's Creature",
+        "Frankenstein Monster"
+      ],
+      "palette": [
+        "#3A7D44",
+        "#808080",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Flat-top monster bust",
+          "sourceUrl": "https://api.iconify.design/game-icons/frankenstein-creature.svg?color=%233A7D44",
+          "sourcePage": "https://icon-sets.iconify.design/game-icons/frankenstein-creature/",
+          "sourceSha256": "f2f1aefe885001124e3c4907015102ea157e108f06bb5a1c30de145d5fd78d95",
+          "ops": {
+            "viewBox": "41.943 -0.041 428.114 507.986"
+          },
+          "path": "/logos/svg/movies/frankenstein.svg",
+          "format": "svg",
+          "colors": [
+            "#3A7D44"
+          ],
+          "sourcePalette": [
+            "#3A7D44",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "b5e50afc5470a0d423633b57510ee2079720113eb9f147f0f077c1357e64c8d2"
+        }
+      ]
+    },
+    {
+      "id": "MOVIE-GHOSTBUSTERS",
+      "league": "MOVIE",
+      "conference": "Halloween",
+      "region": "Ghostbusters",
+      "name": "",
+      "abbr": "GHOSTBUSTERS",
+      "aliases": [
+        "Ghost Busters",
+        "No-Ghost",
+        "No Ghost"
+      ],
+      "palette": [
+        "#000000",
+        "#1D1D1B",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "No-ghost sign",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/3/3d/Ghostbusters.svg/revision/latest?cb=20211028203058",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Ghostbusters.svg",
+          "sourceSha256": "2718a9ab1cae9201498d49b9c3122df6bbf12f3d5200fde5802f6a4f3dd9872f",
+          "ops": {
+            "keepNodes": [
+              "1",
+              "5"
+            ],
+            "viewBox": "153.427 -5.682 153.41 132.272"
+          },
+          "path": "/logos/svg/movies/ghostbusters.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#FFFFFF",
+            "#1D1D1B",
+            "#E52713"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#1D1D1B",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "b9a62f0f2da2051a1969712c5d140defdb07498f57932502c7724181858ee1af"
+        }
+      ]
+    },
+    {
+      "id": "MOVIE-GODZILLA",
+      "league": "MOVIE",
+      "conference": "Sci-Fi & Action",
+      "region": "Godzilla",
+      "name": "",
+      "abbr": "GODZILLA",
+      "aliases": [
+        "Gojira",
+        "King of the Monsters"
+      ],
+      "palette": [
+        "#000000",
+        "#808080",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Head silhouette (2023)",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/7/7e/Godzilla_2023_logo.svg/revision/latest?cb=20251106024942",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Godzilla_2023_logo.svg",
+          "sourceSha256": "f6dd417cb3b70fe0bc8045f038c77f7d2e66c42d2cc8e038e6ba8ed702cf38b6",
+          "ops": {
+            "viewBox": "-44.403 92.588 1700.901 1822.46"
+          },
+          "path": "/logos/svg/movies/godzilla.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "148131a91ebc49ac1960241a2588d93cc459161ff104689bc0c8425f3517934f"
+        }
+      ]
+    },
+    {
+      "id": "MOVIE-GOOSEBUMPS",
+      "league": "MOVIE",
+      "conference": "Halloween",
+      "region": "Goosebumps",
+      "name": "",
+      "abbr": "GOOSEBUMPS",
+      "aliases": [
+        "Goosebumps 2",
+        "Goosebumps 2: Haunted Halloween",
+        "R.L. Stine's Goosebumps",
+        "Slappy the Dummy"
+      ],
+      "palette": [
+        "#5C04BC",
+        "#44BA1D",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Slime splat with drippy G",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/8/88/Goosebumps_splat.svg/revision/latest?cb=20260311014309",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Goosebumps_splat.svg",
+          "sourceSha256": "28611b29214dc392c93524cc7e5577349ecbd3db791cbafa504a9ffbf746b5fb",
+          "ops": {
+            "viewBox": "-15.723 -15.723 431.712 391.712"
+          },
+          "path": "/logos/svg/movies/goosebumps.svg",
+          "format": "svg",
+          "colors": [
+            "#44BA1D",
+            "#5C04BC"
+          ],
+          "sourcePalette": [
+            "#5C04BC",
+            "#44BA1D",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "b34ec722d030a1618a686363b4f66051dfcbaf2a6c243e6a3e3ad71996244bdd"
+        }
+      ]
+    },
+    {
+      "id": "MOVIE-GREMLINS",
+      "league": "MOVIE",
+      "conference": "Halloween",
+      "region": "Gremlins",
+      "name": "",
+      "abbr": "GREMLINS",
+      "aliases": [
+        "Gremlins 2",
+        "Gremlins 2: The New Batch",
+        "Gizmo the Mogwai",
+        "Mogwai"
+      ],
+      "palette": [
+        "#ED2127",
+        "#FFFFFF",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "1984 red title lettering",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/9/91/Gremlins.svg/revision/latest?cb=20200717171856",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Gremlins.svg",
+          "sourceSha256": "2296f3130d377884f935fc6aa814ceff2cebe787dbb1986d56ace20117323ffe",
+          "ops": {
+            "viewBox": "-40 -40 1080 263.877"
+          },
+          "showsName": true,
+          "path": "/logos/svg/movies/gremlins.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#ED2127",
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#ED2127",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "d1aa58ee86181a8f1e664b6a0df1e79a32c3129f5e3e538d55a70366efb356b8"
+        }
+      ]
+    },
+    {
+      "id": "MOVIE-HAUNTEDMANSION",
+      "league": "MOVIE",
+      "conference": "Halloween",
+      "region": "The Haunted Mansion",
+      "name": "",
+      "abbr": "HAUNTEDMANSION",
+      "aliases": [
+        "Haunted Mansion",
+        "Disney's The Haunted Mansion",
+        "Disney Haunted Mansion"
+      ],
+      "palette": [
+        "#000000",
+        "#808080",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Gothic film title lettering",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Haunted_Mansion_logo.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:The_Haunted_Mansion_logo.svg",
+          "sourceSha256": "ce992d742e05e17febcc3b2c1a02382829b00d34e5a96beb7bf8d9009bacbbaa",
+          "ops": {
+            "removeNodes": [
+              "1/4"
+            ]
+          },
+          "showsName": true,
+          "path": "/logos/svg/movies/hauntedmansion.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "0e8323e2a891a45ae3495631a81df6047c511537cd1ee5370cd5130bb937aa41"
+        }
+      ]
+    },
+    {
+      "id": "MOVIE-HOTELT",
+      "league": "MOVIE",
+      "conference": "Halloween",
+      "region": "Hotel Transylvania",
+      "name": "",
+      "abbr": "HOTELT",
+      "aliases": [
+        "Hotel T",
+        "Hotel Transylvania 2",
+        "Hotel Transylvania 3",
+        "Hotel Transylvania: Transformania"
+      ],
+      "palette": [
+        "#000000",
+        "#808080",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Spooky stacked title lettering",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Hotel_Transylvania_logo.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Hotel_Transylvania_logo.svg",
+          "sourceSha256": "cbfc6228706114b183c47e5c5a94bbc72422fd407bfa171e7074853650059642",
+          "ops": {
+            "viewBox": "-12 -12 324 159.71"
+          },
+          "showsName": true,
+          "path": "/logos/svg/movies/hotelt.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "46c65368b316b64e88f7c46a828acfd3ca65895d8f684ccb99723cdc71ac24b3"
+        }
+      ]
+    },
+    {
+      "id": "MOVIE-HP",
+      "league": "MOVIE",
+      "conference": "Adventure & Fantasy",
+      "region": "Harry Potter",
+      "name": "",
+      "abbr": "HP",
+      "aliases": [
+        "Deathly Hallows",
+        "The Deathly Hallows",
+        "Wizarding World",
+        "Hogwarts"
+      ],
+      "palette": [
+        "#000000",
+        "#808080",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Deathly Hallows",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Deathly_Hallows_Sign.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Deathly_Hallows_Sign.svg",
+          "sourceSha256": "1165ce8aaff9d8cb90ca44379871b177cd657970d317de4b1dd864de2b5b10f0",
+          "ops": {
+            "viewBox": "4.393 4.604 478.764 419.264"
+          },
+          "path": "/logos/svg/movies/hp.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "c3176f93bd6332609a28d0433b166191a36a48bf8db6ee931eb1667a810ff6b1"
+        },
+        {
+          "id": "monogram",
+          "label": "Lightning monogram",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/d/dd/Harry_Potter_HP.svg/revision/latest?cb=20170702152413",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Harry_Potter_HP.svg",
+          "sourceSha256": "472999d02ccbe2bd095d937e9abd9d8794b878de5b82dfea708f4f2c1fdea376",
+          "ops": {
+            "viewBox": "-32 -32 793.209 864"
+          },
+          "path": "/logos/svg/movies/alternates/hp-monogram.svg",
+          "format": "svg",
+          "colors": [
+            "#030303"
+          ],
+          "sourcePalette": [
+            "#030303",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "fce8fee4c9862c088219a9450a1637abd3ce01c97204f20d69509e736326fb4d"
+        }
+      ]
+    },
+    {
+      "id": "MOVIE-HUNGER",
+      "league": "MOVIE",
+      "conference": "Adventure & Fantasy",
+      "region": "The Hunger Games",
+      "name": "",
+      "abbr": "HUNGER",
+      "aliases": [
+        "Hunger Games",
+        "Mockingjay",
+        "Panem"
+      ],
+      "palette": [
+        "#000000",
+        "#808080",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Title wordmark",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Hunger_Games_%28Liongate_films%29_logo.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:The_Hunger_Games_(Liongate_films)_logo.svg",
+          "sourceSha256": "01afc07685a23f0d07ece9422c41eb6cd905cc0ee223067667c4e1d1448896ad",
+          "ops": {
+            "viewBox": "-4.134 -3.966 321.082 128.047"
+          },
+          "showsName": true,
+          "path": "/logos/svg/movies/hunger.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "18d6b41e4c1b80e27199673e6780903409debfc28e7bb0f8a4d4e29be668d33f"
+        }
+      ]
+    },
+    {
+      "id": "MOVIE-ICEAGE",
+      "league": "MOVIE",
+      "conference": "Animated",
+      "region": "Ice Age",
+      "name": "",
+      "abbr": "ICEAGE",
+      "aliases": [
+        "Ice Age 2",
+        "Ice Age: The Meltdown",
+        "Ice Age: Dawn of the Dinosaurs",
+        "Scrat",
+        "Sid the Sloth"
+      ],
+      "palette": [
+        "#39BBF0",
+        "#231F20",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Stacked blue block title",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Iceage-logo.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Iceage-logo.svg",
+          "sourceSha256": "8834f5f9d02b75a2ab67173920ded8ec61ed668acb0838ebd8c386ee04de6660",
+          "ops": {
+            "viewBox": "-4.127 -3.988 216.415 193.502"
+          },
+          "showsName": true,
+          "path": "/logos/svg/movies/iceage.svg",
+          "format": "svg",
+          "colors": [
+            "#231F20",
+            "#39BBF0"
+          ],
+          "sourcePalette": [
+            "#39BBF0",
+            "#231F20",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "ee774d18d3db91cac61b2b328a7451b2c4652a63c47c1c0100adae77b0665044"
+        }
+      ]
+    },
+    {
+      "id": "MOVIE-INDY",
+      "league": "MOVIE",
+      "conference": "Adventure & Fantasy",
+      "region": "Indiana Jones",
+      "name": "",
+      "abbr": "INDY",
+      "aliases": [
+        "Indy",
+        "Raiders of the Lost Ark"
+      ],
+      "palette": [
+        "#F06018",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Fiery adventure title",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/a/a2/Indiana_Jones.svg/revision/latest?cb=20180106213547",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Indiana_Jones.svg",
+          "sourceSha256": "b4c234bd6d9f487dff31906fcd2c809b1ed45f7a80d2474e8078f360a9164c35",
+          "showsName": true,
+          "path": "/logos/svg/movies/indy.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#FFFCDF",
+            "#FFFCDE",
+            "#FFFCDD",
+            "#FFFCDB",
+            "#FFFCD9",
+            "#FFFBD6",
+            "#FFFBD3",
+            "#FFFBD0",
+            "#FFFBCD",
+            "#FFFACA",
+            "#FFFAC6",
+            "#FFFAC2",
+            "#FFFABE",
+            "#FFF9BA",
+            "#FFF9B7",
+            "#FFF9B3",
+            "#FFF9AF",
+            "#FFF8AA",
+            "#FFF8A6",
+            "#FFF7A1",
+            "#FFF79D",
+            "#FFF798",
+            "#FFF794",
+            "#FFF68F",
+            "#FFF68A",
+            "#FFF685",
+            "#FFF680",
+            "#FFF57B",
+            "#FFF575",
+            "#FFF56F",
+            "#FFF568",
+            "#FFF461",
+            "#FFF459",
+            "#FFF351",
+            "#FFF349",
+            "#FFF33F",
+            "#FFF336",
+            "#FFF228",
+            "#FFF21A",
+            "#FFF110",
+            "#FFF007",
+            "#FFEE07",
+            "#FFEB07",
+            "#FFEA09",
+            "#FFE90B",
+            "#FFE70B",
+            "#FFE60A",
+            "#FFE40B",
+            "#FFE30C",
+            "#FFE10D",
+            "#FFE00D",
+            "#FFDE0D",
+            "#FFDD0C",
+            "#FFDB0E",
+            "#FFD90F",
+            "#FFD80F",
+            "#FFD70F",
+            "#FFD50F",
+            "#FFD410",
+            "#FFD310",
+            "#FFD20F",
+            "#FFD010",
+            "#FFCE11",
+            "#FFCD11",
+            "#FFCB11",
+            "#FFCA11",
+            "#FFC811",
+            "#FFC613",
+            "#FFC514",
+            "#FFC414",
+            "#FFC214",
+            "#FEC114",
+            "#FEBF15",
+            "#FEBE15",
+            "#FEBC16",
+            "#FDBB16",
+            "#FDB915",
+            "#FDB816",
+            "#FDB716",
+            "#FCB516",
+            "#FCB416",
+            "#FCB217",
+            "#FCB117",
+            "#FBAF17",
+            "#FBAD18",
+            "#FBAB18",
+            "#FBA919",
+            "#FAA719",
+            "#FAA61A",
+            "#FAA41A",
+            "#FAA21B",
+            "#F9A01B",
+            "#F99E1C",
+            "#F99C1C",
+            "#F89B1C",
+            "#F8991C",
+            "#F8981D",
+            "#F7961D",
+            "#F7941D",
+            "#F7921D",
+            "#F7901E",
+            "#F78E1E",
+            "#F68D1E",
+            "#F68B1E",
+            "#F68A1F",
+            "#F6881F",
+            "#F6861F",
+            "#F5841F",
+            "#F5831F",
+            "#F5811F",
+            "#F57F20",
+            "#F47D20",
+            "#F47C20",
+            "#F47A20",
+            "#F47820",
+            "#F47620",
+            "#F37421",
+            "#F37221",
+            "#F37021",
+            "#F36F21",
+            "#F36D21",
+            "#F26B21",
+            "#F26921",
+            "#F26721",
+            "#F26422",
+            "#F16222",
+            "#F16022",
+            "#F15E22",
+            "#F15C22",
+            "#F15B22",
+            "#F15A22",
+            "#FFFCDC",
+            "#FFFCD7",
+            "#FFFBD5",
+            "#FFFBD1",
+            "#FFFBCF",
+            "#FFFBCC",
+            "#FFFBCA",
+            "#FFFAC8",
+            "#FFFAC3",
+            "#FFFAC0",
+            "#FFF9BB",
+            "#FFF9B8",
+            "#FFF9B5",
+            "#FFF9B2",
+            "#FFF8AC",
+            "#FFF8A9",
+            "#FFF8A2",
+            "#FFF79F",
+            "#FFF79C",
+            "#FFF799",
+            "#FFF796",
+            "#FFF793",
+            "#FFF78F",
+            "#FFF68C",
+            "#FFF688",
+            "#FFF681",
+            "#FFF57D",
+            "#FFF579",
+            "#FFF576",
+            "#FFF572",
+            "#FFF56D",
+            "#FFF468",
+            "#FFF463",
+            "#FFF45D",
+            "#FFF458",
+            "#FFF452",
+            "#FFF34C",
+            "#FFF346",
+            "#FFF338",
+            "#FFF330",
+            "#FFF328",
+            "#FFF219",
+            "#FFF20A",
+            "#FFF109",
+            "#FFEC07",
+            "#FFEB08",
+            "#FFE90A",
+            "#FFE80C",
+            "#FFE50B",
+            "#FFE40C",
+            "#FFE30B",
+            "#FFE20A",
+            "#FFE10C",
+            "#FFDF0E",
+            "#FFDE0F",
+            "#FFDC0E",
+            "#FFDA0F",
+            "#FFD70E",
+            "#FFD60F",
+            "#FFD40F",
+            "#FFD210",
+            "#FFCF11",
+            "#FFCE10",
+            "#FFCC10",
+            "#FFCC11",
+            "#FFCB13",
+            "#FFC911",
+            "#FFC713",
+            "#FFC614",
+            "#FEC015",
+            "#FEBD15",
+            "#FDBA16",
+            "#FDB916",
+            "#FDB617",
+            "#FCB517",
+            "#FCB017",
+            "#FCAF17",
+            "#FBAE17",
+            "#FBAA19",
+            "#FAA819",
+            "#FAA51A",
+            "#FAA31A",
+            "#F9A11B",
+            "#F99F1B",
+            "#F99E1B",
+            "#F99D1C",
+            "#F89A1C",
+            "#F8971D",
+            "#F8951D",
+            "#F7931D",
+            "#F78F1E",
+            "#F68B1F",
+            "#F6891F",
+            "#F6871F",
+            "#F5861F",
+            "#F5821F",
+            "#F58120",
+            "#F47E20",
+            "#F47B20",
+            "#F47920",
+            "#F47521",
+            "#F37321",
+            "#F37121",
+            "#F36E21",
+            "#F36C21",
+            "#F26A21",
+            "#F26621",
+            "#F26322",
+            "#F16122",
+            "#FFFCD8",
+            "#FFFCD6",
+            "#FFFBC9",
+            "#FFFAC5",
+            "#FFFAC1",
+            "#FFF9BD",
+            "#FFF9B9",
+            "#FFF9B0",
+            "#FFF8A7",
+            "#FFF8A3",
+            "#FFF79E",
+            "#FFF57A",
+            "#FFF574",
+            "#FFF46D",
+            "#FFF466",
+            "#FFF455",
+            "#FFF344",
+            "#FFF32D",
+            "#FFF204",
+            "#FFEF07",
+            "#FFED0A",
+            "#FFEB09",
+            "#FFE809",
+            "#FFE709",
+            "#FFE20C",
+            "#FFDF0D",
+            "#FFDE0E",
+            "#FFD110",
+            "#FFC913",
+            "#FFC314",
+            "#FEC115",
+            "#FEBB16",
+            "#FDB616",
+            "#FCB417",
+            "#FCB317",
+            "#FBAC18",
+            "#FAA31B",
+            "#F68E1E",
+            "#F68C1E",
+            "#F5851F",
+            "#F47520",
+            "#F26C21",
+            "#F26522",
+            "#F16322",
+            "#F15F22",
+            "#FFFCDA",
+            "#FFFBD4",
+            "#FFFBD2",
+            "#FFFABD",
+            "#FFF9B4",
+            "#FFF9B1",
+            "#FFF9AD",
+            "#FFF8A4",
+            "#FFF8A0",
+            "#FFF68B",
+            "#FFF687",
+            "#FFF684",
+            "#FFF580",
+            "#FFF57C",
+            "#FFF578",
+            "#FFF56E",
+            "#FFF569",
+            "#FFF464",
+            "#FFF45E",
+            "#FFF345",
+            "#FFF33E",
+            "#FFF337",
+            "#FFF32E",
+            "#FFF225",
+            "#FFF215",
+            "#FFF006",
+            "#FFEE08",
+            "#FFED08",
+            "#FFEA08",
+            "#FFE80A",
+            "#FFDD0E",
+            "#FFD80E",
+            "#FFD30F",
+            "#FFCA13",
+            "#FEC214",
+            "#FBAD17",
+            "#F8991D",
+            "#F7951D",
+            "#F7911E",
+            "#F58220",
+            "#F58020",
+            "#F57E20",
+            "#F37521",
+            "#F36B21",
+            "#F26821",
+            "#F15D22",
+            "#FFFBD7",
+            "#FFFABF",
+            "#FFFABC",
+            "#FFF8A5",
+            "#FFF8A1",
+            "#FFF795",
+            "#FFF791",
+            "#FFF68D",
+            "#FFF57F",
+            "#FFF570",
+            "#FFF46A",
+            "#FFF34E",
+            "#FFF347",
+            "#FFF335",
+            "#FFF22A",
+            "#FFF21F",
+            "#FFF111",
+            "#FFF106",
+            "#FFE70A",
+            "#FFE00C",
+            "#F8961D",
+            "#F7911D",
+            "#F47F20",
+            "#F37520",
+            "#FFF9AC",
+            "#FFF89F",
+            "#FFF792",
+            "#FFF68E",
+            "#FFF683",
+            "#FFF56A",
+            "#FFF45F",
+            "#FFF453",
+            "#FFF34D",
+            "#FFF340",
+            "#FFF339",
+            "#FFF331",
+            "#FFF329",
+            "#FFF20B",
+            "#FFE20B",
+            "#FFDD0D",
+            "#FFDC0D",
+            "#FFCF10",
+            "#F47720",
+            "#F26222",
+            "#FFF686",
+            "#FFF682",
+            "#FFF57E",
+            "#FFF577",
+            "#FFF573",
+            "#FFF32F",
+            "#FFF226",
+            "#FFF205",
+            "#FFED07",
+            "#FFEC06",
+            "#FFE80B",
+            "#FFE60B",
+            "#FFE30D",
+            "#FFD011",
+            "#FFCD10",
+            "#FFC813",
+            "#F7921E",
+            "#FFF571",
+            "#FFF56B",
+            "#FFF45C",
+            "#FFF456",
+            "#FFF34A",
+            "#FFF33D",
+            "#FBAA18",
+            "#F78D1E",
+            "#F26622",
+            "#FFFBCE",
+            "#FFFAC7",
+            "#FFFAC4",
+            "#FFF8AB",
+            "#FFF79A",
+            "#FFF582",
+            "#FFF45B",
+            "#FFF34B",
+            "#FFF342",
+            "#FFF206",
+            "#FFF008",
+            "#FFED09",
+            "#FFEC09",
+            "#FFE909",
+            "#FEC314",
+            "#FEBC15",
+            "#FAA919",
+            "#F9A21A",
+            "#FFFABB",
+            "#FFF8AE",
+            "#FFF797",
+            "#FFF353",
+            "#FFF10F",
+            "#FFEA0A",
+            "#FDBB15",
+            "#F89C1C",
+            "#FFFAC9",
+            "#FFF9B6",
+            "#FFF8A8",
+            "#FFF790",
+            "#FFF467",
+            "#FFF357",
+            "#FFF34F",
+            "#FFF33B",
+            "#FFF223",
+            "#FFF115",
+            "#FFEE06",
+            "#FFF8AD",
+            "#FFF78E",
+            "#FFF462",
+            "#FFF343",
+            "#FFF21B",
+            "#FFF20F",
+            "#FFF10A",
+            "#FFEF08",
+            "#FFE10B",
+            "#FFC711",
+            "#FBA819"
+          ],
+          "sourcePalette": [
+            "#F16022",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "64abe8ee2c606e0d82dd54ffda057ba6456027066572231917418e7589f9f716"
+        }
+      ]
+    },
+    {
+      "id": "MOVIE-JAWS",
+      "league": "MOVIE",
+      "conference": "Sci-Fi & Action",
+      "region": "Jaws",
+      "name": "",
+      "abbr": "JAWS",
+      "aliases": [],
+      "palette": [
+        "#E20001",
+        "#808080",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Bold red title",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/9/9a/Jaws_SVG.svg/revision/latest?cb=20250328204249",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Jaws_SVG.svg",
+          "sourceSha256": "5373fd641ed72bc95a51db6e47eb6e38e025f36796510a6da10e378e9a30047e",
+          "ops": {
+            "removeNodes": [
+              "2",
+              "3"
+            ],
+            "viewBox": "-9.44 -9.44 254.88 104.88"
+          },
+          "showsName": true,
+          "path": "/logos/svg/movies/jaws.svg",
+          "format": "svg",
+          "colors": [
+            "#E20001"
+          ],
+          "sourcePalette": [
+            "#E20001",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "1bdfe7a12cd635c2298c690bd8a55fbee9e29f3dc4eb753aec20c23a3d9b1b51"
+        }
+      ]
+    },
+    {
+      "id": "MOVIE-JURASSIC",
+      "league": "MOVIE",
+      "conference": "Sci-Fi & Action",
+      "region": "Jurassic Park",
+      "name": "",
+      "abbr": "JURASSIC",
+      "aliases": [
+        "Jurassic World"
+      ],
+      "palette": [
+        "#000000",
+        "#FFDD00",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "T. rex badge",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/1/1a/Jurassic_Park.svg/revision/latest?cb=20260525084549",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Jurassic_Park.svg",
+          "sourceSha256": "568e033c77cb95feb5439fb354503908b699377e544e8064a36d329c65b0c58e",
+          "ops": {
+            "keepNodes": [
+              "0/0/0",
+              "0/0/1"
+            ],
+            "clipToViewBox": true,
+            "viewBox": "-18.999 -18.999 526.483 288.7"
+          },
+          "path": "/logos/svg/movies/jurassic.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#FFDD00",
+            "#E3000B",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#FFDD00",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "79f2593a9a2496d9bc9784ea5d52a2c483bdcca10651cada583e3b5d4a5db35c"
+        }
+      ]
+    },
+    {
+      "id": "MOVIE-KARATEKID",
+      "league": "MOVIE",
+      "conference": "Sci-Fi & Action",
+      "region": "The Karate Kid",
+      "name": "",
+      "abbr": "KARATEKID",
+      "aliases": [
+        "Karate Kid"
+      ],
+      "palette": [
+        "#D44B45",
+        "#808080",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Red serif title",
+          "sourceUrl": "https://iconape.com/wp-content/files/em/179357/svg/179357.svg",
+          "sourcePage": "https://iconape.com/the-karate-kid-logo-logo-icon-svg-png.html",
+          "sourceSha256": "a1f4157aa998276266c741cd9fc8bf32ccf535fcb1ae26da919425f8395a8ff4",
+          "ops": {
+            "removeNodes": [
+              "0/0",
+              "0/13",
+              "0/14",
+              "0/15",
+              "0/16",
+              "0/17",
+              "0/18",
+              "0/19",
+              "0/20",
+              "0/21",
+              "0/22",
+              "0/23",
+              "0/24"
+            ],
+            "viewBox": "224.4 377.07 163.2 37.86"
+          },
+          "showsName": true,
+          "path": "/logos/svg/movies/karatekid.svg",
+          "format": "svg",
+          "colors": [
+            "#D44B45"
+          ],
+          "sourcePalette": [
+            "#D44B45",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "727b358a76cebb18eb82ebb3bc99432c1f0e8f2007a073fb4ab0ed9347a889b4"
+        }
+      ]
+    },
+    {
+      "id": "MOVIE-KONG",
+      "league": "MOVIE",
+      "conference": "Sci-Fi & Action",
+      "region": "King Kong",
+      "name": "",
+      "abbr": "KONG",
+      "aliases": [
+        "Kong",
+        "Kong: Skull Island"
+      ],
+      "palette": [
+        "#ED2224",
+        "#F5E620",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Red and yellow jagged title",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/2/26/King_Kong_%281933%29.svg/revision/latest?cb=20200717171904",
+          "sourcePage": "https://logos.fandom.com/wiki/File:King_Kong_(1933).svg",
+          "sourceSha256": "4d26c48287854c992fe5c29175c1a4f845cc8539ceed90a5bb8bd31e342680a3",
+          "ops": {
+            "viewBox": "-40 -40 1080 428.572"
+          },
+          "showsName": true,
+          "path": "/logos/svg/movies/kong.svg",
+          "format": "svg",
+          "colors": [
+            "#F5E620",
+            "#ED2224"
+          ],
+          "sourcePalette": [
+            "#ED2224",
+            "#F5E620",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "5bd0649edc7529d610438199fc3e253aa8535f5ac50142d4f8c781e203f83745"
+        }
+      ]
+    },
+    {
+      "id": "MOVIE-KUNGFUPANDA",
+      "league": "MOVIE",
+      "conference": "Animated",
+      "region": "Kung Fu Panda",
+      "name": "",
+      "abbr": "KUNGFUPANDA",
+      "aliases": [
+        "Po",
+        "Kung Fu Panda 4"
+      ],
+      "palette": [
+        "#010101",
+        "#808080",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Title wordmark",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/2/22/Kung_Fu_Panda_%28Print%29.svg/revision/latest?cb=20210107222448",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Kung_Fu_Panda_(Print).svg",
+          "sourceSha256": "4971dfbe8d396f9af2ea89ba2f2313430a420f5b402636eac6500329a348ce10",
+          "ops": {
+            "viewBox": "-40 -40 1080 358.853"
+          },
+          "showsName": true,
+          "path": "/logos/svg/movies/kungfupanda.svg",
+          "format": "svg",
+          "colors": [
+            "#010101"
+          ],
+          "sourcePalette": [
+            "#010101",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "0d7b3ee9df3959a69ec6f8ef149459aa608af3e7ad03ab798713181880fb912f"
+        }
+      ]
+    },
+    {
+      "id": "MOVIE-LOTR",
+      "league": "MOVIE",
+      "conference": "Adventure & Fantasy",
+      "region": "The Lord of the Rings",
+      "name": "",
+      "abbr": "LOTR",
+      "aliases": [
+        "Lord of the Rings",
+        "LOTR",
+        "One Ring",
+        "The One Ring",
+        "Ring inscription"
+      ],
+      "palette": [
+        "#000000",
+        "#808080",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Ring inscription",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/One_Ring_inscription.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:One_Ring_inscription.svg",
+          "sourceSha256": "05952cbb5359df8614044f012beee6680660af447e711d47a13851e36c24979e",
+          "ops": {
+            "viewBox": "-29.202 -128.202 4595.45 1535.404"
+          },
+          "path": "/logos/svg/movies/lotr.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "22b65127c36b6ee75c8c8f265c8c2cac0c78dbc6b2357c5670638da565c8d98c"
+        }
+      ]
+    },
+    {
+      "id": "MOVIE-MADAGASCAR",
+      "league": "MOVIE",
+      "conference": "Animated",
+      "region": "Madagascar",
+      "name": "",
+      "abbr": "MADAGASCAR",
+      "aliases": [
+        "Madagascar 2",
+        "Madagascar: Escape 2 Africa",
+        "Madagascar 3",
+        "Madagascar 3: Europe's Most Wanted",
+        "King Julien"
+      ],
+      "palette": [
+        "#FFE03A",
+        "#ED1C24",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "2005 yellow island title",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/d/dd/Madagascar_film_logo_SVG.svg/revision/latest?cb=20251021143512",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Madagascar_film_logo_SVG.svg",
+          "sourceSha256": "2d83caaef037d1316b1f01e7aa9ac8f28b1bf2238d42c1337bcc3e1ebd42d75b",
+          "ops": {
+            "removeNodes": [
+              "2",
+              "3"
+            ],
+            "viewBox": "-17.842 103.422 1305.988 438.484"
+          },
+          "showsName": true,
+          "path": "/logos/svg/movies/madagascar.svg",
+          "format": "svg",
+          "colors": [
+            "#FFE03A",
+            "#ED1C24",
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#FFE03A",
+            "#ED1C24",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "e2c921ff93a9047cac9217a957205f0e625cf5d974adf7cd7de91b3498a318d1"
+        }
+      ]
+    },
+    {
+      "id": "MOVIE-MAZERUNNER",
+      "league": "MOVIE",
+      "conference": "Adventure & Fantasy",
+      "region": "The Maze Runner",
+      "name": "",
+      "abbr": "MAZERUNNER",
+      "aliases": [
+        "Maze Runner"
+      ],
+      "palette": [
+        "#030303",
+        "#808080",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Stacked black block letters",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Maze_Runner_Logo.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Maze_Runner_Logo.svg",
+          "sourceSha256": "247271d910d46fc8679d3aa6cc2b4194033127787aafcd33f0ff3bd5410a0daa",
+          "ops": {
+            "removeNodes": [
+              "0"
+            ],
+            "viewBox": "-23 -22 696 271"
+          },
+          "showsName": true,
+          "path": "/logos/svg/movies/mazerunner.svg",
+          "format": "svg",
+          "colors": [
+            "#030303"
+          ],
+          "sourcePalette": [
+            "#030303",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "41a6a0e9ea9b5caf61630fd7b976bddd0463fa444f6b2778c00a94d220d844b7"
+        }
+      ]
+    },
+    {
+      "id": "MOVIE-MIB",
+      "league": "MOVIE",
+      "conference": "Sci-Fi & Action",
+      "region": "Men in Black",
+      "name": "",
+      "abbr": "MIB",
+      "aliases": [
+        "MIB",
+        "M.I.B."
+      ],
+      "palette": [
+        "#000000",
+        "#808080",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Heavy black initials",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Men_In_Black_(film_franchise)_logo.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Men_In_Black_(film_franchise)_logo.svg",
+          "sourceSha256": "3970fde0594b14971c03a84e164bc8e14a99c0352698437767ced198f6127be8",
+          "ops": {
+            "viewBox": "-35 -29 954 474"
+          },
+          "showsName": true,
+          "path": "/logos/svg/movies/mib.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "5f916146773221caa56f6b543ad0ca49b1d23b7142d3ca8f06a167f7bbb71e39"
+        }
+      ]
+    },
+    {
+      "id": "MOVIE-MINIONS",
+      "league": "MOVIE",
+      "conference": "Animated",
+      "region": "Minions",
+      "name": "",
+      "abbr": "MINIONS",
+      "aliases": [
+        "Despicable Me",
+        "Minion",
+        "Gru"
+      ],
+      "palette": [
+        "#000000",
+        "#808080",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Title wordmark",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Minions_%28film%29_logo.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Minions_(film)_logo.svg",
+          "sourceSha256": "89ddf694f0fff4650ede5186739747f34451cef9d1a98a2cd292990e171b53b0",
+          "ops": {
+            "viewBox": "-12 -12 324 96.746"
+          },
+          "showsName": true,
+          "path": "/logos/svg/movies/minions.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#FFFFFF"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1
+          ],
+          "sha256": "ea1985873aa9c37f9575c5dd24f3730e4010250508b1b1de7480562597dd3c38"
+        }
+      ]
+    },
+    {
+      "id": "MOVIE-MISSIONIMP",
+      "league": "MOVIE",
+      "conference": "Sci-Fi & Action",
+      "region": "Mission: Impossible",
+      "name": "",
+      "abbr": "MISSIONIMP",
+      "aliases": [
+        "Mission Impossible"
+      ],
+      "palette": [
+        "#F60200",
+        "#808080",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Red condensed title",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/d/d2/Mission_Impossible_1996.svg/revision/latest?cb=20161208070818",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Mission_Impossible_1996.svg",
+          "sourceSha256": "a52d41109ea1a91b73d719d1d86823a68c6651890cc3f9aa6fd78732f3c8f29a",
+          "ops": {
+            "viewBox": "-31.106 -31.106 839.858 184.228"
+          },
+          "showsName": true,
+          "path": "/logos/svg/movies/missionimp.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#F60200",
+            "#650D16",
+            "#150200",
+            "#610D17"
+          ],
+          "sourcePalette": [
+            "#F60200",
+            "#37070B",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "05d0b1365f02cf055ff3c6c4d7c90d40d202e7b10e7956a6326221a55edb9d5a"
+        }
+      ]
+    },
+    {
+      "id": "MOVIE-NARNIA",
+      "league": "MOVIE",
+      "conference": "Adventure & Fantasy",
+      "region": "The Chronicles of Narnia",
+      "name": "",
+      "abbr": "NARNIA",
+      "aliases": [
+        "Narnia",
+        "Chronicles of Narnia",
+        "The Lion, the Witch and the Wardrobe",
+        "The Lion the Witch and the Wardrobe"
+      ],
+      "palette": [
+        "#E4192A",
+        "#F2BB1B",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Red flourished title",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Chronicles_of_Narnia_logo.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:The_Chronicles_of_Narnia_logo.svg",
+          "sourceSha256": "b8a8d4e06a7c50fcad53706e79f6f82b34a75bb6bd521ff60189227f8228b3cb",
+          "ops": {
+            "viewBox": "-12 -12 324 102.65"
+          },
+          "showsName": true,
+          "path": "/logos/svg/movies/narnia.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#F2BB1B",
+            "#E4192A"
+          ],
+          "sourcePalette": [
+            "#E4192A",
+            "#F2BB1B",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "2cd54949179ced585c1173ba447773ed7a7d32f7f47d18e3303b7b51ed7daab8"
+        }
+      ]
+    },
+    {
+      "id": "MOVIE-NIGHTMARE",
+      "league": "MOVIE",
+      "conference": "Halloween",
+      "region": "The Nightmare Before Christmas",
+      "name": "",
+      "abbr": "NIGHTMARE",
+      "aliases": [
+        "Nightmare Before Christmas",
+        "Tim Burton's The Nightmare Before Christmas",
+        "Jack Skellington",
+        "Oogie Boogie"
+      ],
+      "palette": [
+        "#000000",
+        "#808080",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Spindly Burton title lettering",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/a/a6/Tim_Burton%27s_The_Nightmare_Before_Christmas.svg/revision/latest?cb=20200710070859",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Tim_Burton's_The_Nightmare_Before_Christmas.svg",
+          "sourceSha256": "65c2043d1058d56cfb770816329938af0ab19c3793b8c8aacbb1cc8858f7e42d",
+          "ops": {
+            "viewBox": "-40 -40 1080 526"
+          },
+          "showsName": true,
+          "path": "/logos/svg/movies/nightmare.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "9e7c627c3a45338fd35c85c324cc8b377b2c553eb1523530dc5de0c3f019d731"
+        }
+      ]
+    },
+    {
+      "id": "MOVIE-NIGHTMUSEUM",
+      "league": "MOVIE",
+      "conference": "Adventure & Fantasy",
+      "region": "Night at the Museum",
+      "name": "",
+      "abbr": "NIGHTMUSEUM",
+      "aliases": [
+        "Night at Museum"
+      ],
+      "palette": [
+        "#F0DE13",
+        "#808080",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Tall yellow art-deco title",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Night-at-the-museum-logo.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Night-at-the-museum-logo.svg",
+          "sourceSha256": "a12f25369655b72726c85087045f12fbdeed5597beb8b466912212e7a3e36d1e",
+          "ops": {
+            "viewBox": "-23.9 -15.9 942.2 212.9"
+          },
+          "showsName": true,
+          "path": "/logos/svg/movies/nightmuseum.svg",
+          "format": "svg",
+          "colors": [
+            "#F0DE13"
+          ],
+          "sourcePalette": [
+            "#F0DE13",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "06779676221121a7903b5c7ea728a633b51830fd8b431506f93d609eb88cab25"
+        }
+      ]
+    },
+    {
+      "id": "MOVIE-PIRATES",
+      "league": "MOVIE",
+      "conference": "Adventure & Fantasy",
+      "region": "Pirates of the Caribbean",
+      "name": "",
+      "abbr": "PIRATES",
+      "aliases": [
+        "Pirates",
+        "Pirates of Caribbean",
+        "Jack Sparrow",
+        "Captain Jack Sparrow",
+        "POTC"
+      ],
+      "palette": [
+        "#000000",
+        "#808080",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Weathered seafaring title",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/e/e8/Pirates_of_the_Caribbean.svg/revision/latest?cb=20230705015400",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Pirates_of_the_Caribbean.svg",
+          "sourceSha256": "b293b954537e6d9841e486044d22f96820bcb61bab7197ab402fd6da9f307e63",
+          "ops": {
+            "viewBox": "-48 -48 1310 241"
+          },
+          "showsName": true,
+          "path": "/logos/svg/movies/pirates.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "5546f70af80d71d94d861262925b3ca82588318af7884e796bfeb1ea02be234a"
+        }
+      ]
+    },
+    {
+      "id": "MOVIE-SCOOBY",
+      "league": "MOVIE",
+      "conference": "Halloween",
+      "region": "Scooby-Doo",
+      "name": "",
+      "abbr": "SCOOBY",
+      "aliases": [
+        "Scooby Doo",
+        "Scooby",
+        "Scoob",
+        "Scoob!",
+        "Mystery Inc",
+        "Mystery Machine",
+        "Shaggy"
+      ],
+      "palette": [
+        "#F3AF5E",
+        "#75278A",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Title wordmark",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/d/d9/Scooby-Doo%21_II.svg/revision/latest?cb=20200710083926",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Scooby-Doo!_II.svg",
+          "sourceSha256": "26d09b0114947bce91799160fcbdb16765bd440ea77ebed379e66a42f87325aa",
+          "ops": {
+            "viewBox": "-40 -40 1079.997 452.005"
+          },
+          "showsName": true,
+          "path": "/logos/svg/movies/scooby.svg",
+          "format": "svg",
+          "colors": [
+            "#FFFFFF",
+            "#F3AF5E",
+            "#75278A"
+          ],
+          "sourcePalette": [
+            "#F3AF5E",
+            "#75278A",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "369e2ec7b3837e1fbe1ad1506b4c2ed880490b80dbe0e892398f4d39e4fd4a37"
+        }
+      ]
+    },
+    {
+      "id": "MOVIE-SHREK",
+      "league": "MOVIE",
+      "conference": "Animated",
+      "region": "Shrek",
+      "name": "",
+      "abbr": "SHREK",
+      "aliases": [
+        "Shrek 2",
+        "Shrek the Third"
+      ],
+      "palette": [
+        "#000000",
+        "#808080",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Title wordmark",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Shrek_logo.svg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Shrek_logo.svg",
+          "sourceSha256": "a806259bba6aa79d00604ad2970e74ebfeec4e4c1d4bd41cc13ccae9f547ff30",
+          "ops": {
+            "viewBox": "-2317.56 -2321.56 65328.12 22104.12"
+          },
+          "showsName": true,
+          "path": "/logos/svg/movies/shrek.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "776c087084ca640836b7dfa454b1ceaa2d0c7e63e4e1fff36cbe8c58147db3e3"
+        }
+      ]
+    },
+    {
+      "id": "MOVIE-SPYKIDS",
+      "league": "MOVIE",
+      "conference": "Sci-Fi & Action",
+      "region": "Spy Kids",
+      "name": "",
+      "abbr": "SPYKIDS",
+      "aliases": [
+        "Spykids"
+      ],
+      "palette": [
+        "#000000",
+        "#CA2C4A",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Red and black title with eye swoosh",
+          "sourceUrl": "https://cdn.worldvectorlogo.com/logos/spy-kids.svg",
+          "sourcePage": "https://worldvectorlogo.com/logo/spy-kids",
+          "sourceSha256": "4de5b9daac5c74c63058ed40265d81a5145b8ea32c9e48c1a8c7823e9fd947e7",
+          "ops": {
+            "removeNodes": [
+              "0"
+            ],
+            "viewBox": "9.6 58.9 181.4 77.9"
+          },
+          "showsName": true,
+          "path": "/logos/svg/movies/spykids.svg",
+          "format": "svg",
+          "colors": [
+            "#CA2C4A",
+            "#000000",
+            "#C9222F",
+            "#FFFFFF",
+            "#DADADA"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#CA273C",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [],
+          "sha256": "f72468bf132b5a79c17853b9986df70ecd3bf0f999b8abd6cef86231f47b4fc0"
+        }
+      ]
+    },
+    {
+      "id": "MOVIE-TOPGUN",
+      "league": "MOVIE",
+      "conference": "Sci-Fi & Action",
+      "region": "Top Gun",
+      "name": "",
+      "abbr": "TOPGUN",
+      "aliases": [
+        "Top Gun: Maverick",
+        "Top Gun Maverick",
+        "Topgun"
+      ],
+      "palette": [
+        "#2E3192",
+        "#ED1F24",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Winged title with star",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/2/2c/Top_Gun.svg/revision/latest?cb=20210420211517",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Top_Gun.svg",
+          "sourceSha256": "6f177a93a8e606891a71ff5a54f62aa58990fe6372ba5ecaf4a8147351a1fdf8",
+          "ops": {
+            "viewBox": "-40 -40 1080 345.951"
+          },
+          "showsName": true,
+          "path": "/logos/svg/movies/topgun.svg",
+          "format": "svg",
+          "colors": [
+            "#2E3192",
+            "#ED1F24"
+          ],
+          "sourcePalette": [
+            "#2E3192",
+            "#ED1F24",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "3aeff452a65f1a16c6ca5542bbbe46b0bb5f76d881debd6252bee2ce6d3e03c8"
+        }
+      ]
+    },
+    {
+      "id": "MOVIE-TOTORO",
+      "league": "MOVIE",
+      "conference": "Animated",
+      "region": "My Neighbor Totoro",
+      "name": "",
+      "abbr": "TOTORO",
+      "aliases": [
+        "Totoro",
+        "My Neighbour Totoro",
+        "Tonari no Totoro",
+        "Studio Ghibli",
+        "Chibi Totoro"
+      ],
+      "palette": [
+        "#000000",
+        "#808080",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Ghibli forest-spirit silhouette",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/d/d3/Studio_Ghibli_2020.svg/revision/latest?cb=20230926153413",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Studio_Ghibli_2020.svg",
+          "sourceSha256": "fa659f92a03dfc4d0480b30bc33f391afba592986f198639af9f563ca5214922",
+          "ops": {
+            "viewBox": "-10 -45 1272 1411",
+            "clipToViewBox": true
+          },
+          "path": "/logos/svg/movies/totoro.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "6045be693fd469909dbf8b3918dbf0e01ba4a587a4d637a26b00acc3254ae3c5"
+        }
+      ]
+    },
+    {
+      "id": "MOVIE-TROLLS",
+      "league": "MOVIE",
+      "conference": "Animated",
+      "region": "Trolls",
+      "name": "",
+      "abbr": "TROLLS",
+      "aliases": [
+        "DreamWorks Trolls",
+        "Trolls World Tour",
+        "Trolls Band Together",
+        "Poppy and Branch",
+        "Princess Poppy"
+      ],
+      "palette": [
+        "#FF6400",
+        "#808080",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Orange bubbly title",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/1/11/Trolls.svg/revision/latest?cb=20180424085529",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Trolls.svg",
+          "sourceSha256": "20009303c3a420adf3573a5a0d19f51a6d8a23a36e228022752b044dd0ccb3ec",
+          "ops": {
+            "viewBox": "-40 -40 1080.001 493.334"
+          },
+          "showsName": true,
+          "path": "/logos/svg/movies/trolls.svg",
+          "format": "svg",
+          "colors": [
+            "#FF6400"
+          ],
+          "sourcePalette": [
+            "#FF6400",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "7374f9f561afdc35d3b2d38763b9e43d0e04f181e20264d3d05b128c2c558871"
+        }
+      ]
+    },
+    {
+      "id": "MOVIE-TRON",
+      "league": "MOVIE",
+      "conference": "Sci-Fi & Action",
+      "region": "Tron",
+      "name": "",
+      "abbr": "TRON",
+      "aliases": [
+        "Tron: Legacy",
+        "Tron Legacy",
+        "Tron: Ares"
+      ],
+      "palette": [
+        "#6CCEF4",
+        "#808080",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Glowing outline letters",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/a/af/Tron_franchise_logo_%281%29.svg/revision/latest?cb=20240106010453",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Tron_franchise_logo_(1).svg",
+          "sourceSha256": "33b8e491854d46f83c667237eff3c2803e72ac4f28322a5e2b53f0148126c396",
+          "ops": {
+            "viewBox": "-40 140 2080 511",
+            "clipToViewBox": true
+          },
+          "showsName": true,
+          "path": "/logos/svg/movies/tron.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#6CCEF4"
+          ],
+          "sourcePalette": [
+            "#6CCEF4",
+            "#000000",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "420e807d0ecc4413c7ce2cfbdc624980f7e41934cd6441193784e12aa9e69c05"
+        }
+      ]
+    },
+    {
+      "id": "MOVIE-WIZARDOFOZ",
+      "league": "MOVIE",
+      "conference": "Adventure & Fantasy",
+      "region": "The Wizard of Oz",
+      "name": "",
+      "abbr": "WIZARDOFOZ",
+      "aliases": [
+        "Wizard of Oz"
+      ],
+      "palette": [
+        "#000000",
+        "#808080",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Swirly black title",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/4/40/The_Wizard_of_Oz_%28Print%29.svg/revision/latest?cb=20210103174547",
+          "sourcePage": "https://logos.fandom.com/wiki/File:The_Wizard_of_Oz_(Print).svg",
+          "sourceSha256": "3e98ffa47e514bbd6512d248f0e1033312f7573563851d95ac8ce1fa77f25b04",
+          "ops": {
+            "viewBox": "-40 -40 1080 594.5"
+          },
+          "showsName": true,
+          "path": "/logos/svg/movies/wizardofoz.svg",
+          "format": "svg",
+          "colors": [
+            "#000000"
+          ],
+          "sourcePalette": [
+            "#000000",
+            "#808080",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            1,
+            2
+          ],
+          "sha256": "081bf09e90f8e5edb4ffaa20a0bd442b8caef3b405f37be0e2c3f0a75fa61d68"
+        }
+      ]
+    },
+    {
+      "id": "MOVIE-WONKA",
+      "league": "MOVIE",
+      "conference": "Adventure & Fantasy",
+      "region": "Willy Wonka & the Chocolate Factory",
+      "name": "",
+      "abbr": "WONKA",
+      "aliases": [
+        "Wonka",
+        "Willy Wonka",
+        "Willy Wonka and the Chocolate Factory",
+        "Charlie and the Chocolate Factory"
+      ],
+      "palette": [
+        "#00AEEF",
+        "#FFE512",
+        "#FFFFFF"
+      ],
+      "artwork": [
+        {
+          "id": "primary",
+          "label": "Candy-colored 1971 title",
+          "sourceUrl": "https://static.wikia.nocookie.net/logopedia/images/5/55/Willy_Wonka_and_the_Chocolate_Factory.svg/revision/latest?cb=20200710173320",
+          "sourcePage": "https://logos.fandom.com/wiki/File:Willy_Wonka_and_the_Chocolate_Factory.svg",
+          "sourceSha256": "17b7e6bf559c8ebc0d6c9ae53f0b219aa80f72b226414e0a4908d91458da9f6f",
+          "ops": {
+            "viewBox": "-40 -40 1080 582.043"
+          },
+          "showsName": true,
+          "path": "/logos/svg/movies/wonka.svg",
+          "format": "svg",
+          "colors": [
+            "#000000",
+            "#00AEEF",
+            "#FFE512",
+            "#7EB0CC",
+            "#FDB813",
+            "#9E6614"
+          ],
+          "sourcePalette": [
+            "#3FAFDE",
+            "#FFE512",
+            "#FFFFFF"
+          ],
+          "unusedSourceSlots": [
+            2
+          ],
+          "sha256": "381cad5175ef8d3b1791b7e41c18152d5cd5c406e3763c502dbefdcb83bb04cc"
+        }
+      ]
+    }
+  ]
+}

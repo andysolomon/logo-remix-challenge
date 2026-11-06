@@ -22,6 +22,8 @@ import {
   seedColors,
   slotRoles,
   sourceColors,
+  wheelColor,
+  wheelPosition,
   svgIntrinsicSize,
 } from '../src/lib/designer'
 import { LS, TEAMS, backdropSlot, contrastSafePermutations, findTeam, frameSlot, loadDesigner, saveDesigner, withLogoVariant } from '../src/lib/teams'
@@ -186,6 +188,24 @@ describe('color picker conversions', () => {
   test('hsvToHex clamps out-of-range input', () => {
     expect(hsvToHex({ h: 360, s: 2, v: 1 })).toBe('#FF0000')
     expect(hsvToHex({ h: -120, s: 1, v: -1 })).toBe('#000000')
+  })
+
+  test('the wheel puts hue clockwise from the top and saturation out from the center', () => {
+    expect(wheelColor(0.5, 0)).toEqual({ h: 0, s: 1 })
+    expect(wheelColor(1, 0.5)).toEqual({ h: 90, s: 1 })
+    expect(wheelColor(0.5, 1)).toEqual({ h: 180, s: 1 })
+    expect(wheelColor(0.5, 0.5)).toEqual({ h: 0, s: 0 })
+    // Outside the rim clamps to full saturation.
+    expect(wheelColor(0, 0).s).toBe(1)
+  })
+
+  test('wheel positions and wheel colors invert each other', () => {
+    for (const hsv of [{ h: 0, s: 1 }, { h: 45, s: 0.5 }, { h: 200, s: 0.8 }, { h: 300, s: 0.25 }]) {
+      const { x, y } = wheelPosition(hsv)
+      const back = wheelColor(x, y)
+      expect(back.h).toBeCloseTo(hsv.h, 6)
+      expect(back.s).toBeCloseTo(hsv.s, 6)
+    }
   })
 })
 

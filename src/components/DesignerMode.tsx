@@ -6,7 +6,6 @@ import {
   DEFAULT_EXPORT_SIZE,
   EXPORT_SIZES,
   designFileName,
-  normalizeHex,
   rotateColors,
   sameColors,
   seedColors,
@@ -77,36 +76,6 @@ const colorCountLabel = (c: TraceColors) => (c === 'auto' ? 'Auto' : c === 1 ? '
 const reseed = (s: DesignerState, team: Team): DesignColors | null => {
   const seed = s.cId ? findTeam(s.cId) : undefined
   return seed ? seedColors(team, seed.palette) : s.colors
-}
-
-/** Hex text field that commits valid colors on blur or Enter and reverts anything else. */
-function HexField({ value, label, disabled, onChange }: { value: string; label: string; disabled?: boolean; onChange: (hex: string) => void }) {
-  const [text, setText] = useState(value)
-  const [lastValue, setLastValue] = useState(value)
-  // Follow the committed color immediately (during render, not in an effect) so the field never shows stale text.
-  if (value !== lastValue) {
-    setLastValue(value)
-    setText(value)
-  }
-  const commit = () => {
-    const hex = normalizeHex(text)
-    setText(hex ?? value)
-    if (hex && hex !== value) onChange(hex)
-  }
-  return (
-    <input
-      className="hex-input"
-      value={text}
-      disabled={disabled}
-      spellCheck={false}
-      autoCapitalize="characters"
-      maxLength={7}
-      aria-label={`${label} hex code`}
-      onChange={(e) => setText(e.target.value)}
-      onBlur={commit}
-      onKeyDown={(e) => e.key === 'Enter' && commit()}
-    />
-  )
 }
 
 export function DesignerMode({ state, setState, portrait, hidden }: Props) {
@@ -413,22 +382,27 @@ export function DesignerMode({ state, setState, portrait, hidden }: Props) {
       <div className={`color-name${team ? '' : ' placeholder'}`}>{team ? colorText : 'Each slot gets its own color'}</div>
       {team && shown && roles && source && (
         <div className="design-slots" role="group" aria-label="Logo colors by slot">
-          {roles.map((role, i) => (
-            <div key={i} className={`design-slot${role.editable ? '' : ' unused'}`}>
-              <span className="design-slot-label">{role.label}</span>
-              <span className="swatch s16" style={{ background: source[i] }} title={`Original ${source[i]}`} aria-hidden="true" />
+          <div className="design-chips">
+            {roles.map((role, i) => (
               <button
+                key={i}
                 type="button"
-                className={`color-input${picker === i ? ' open' : ''}`}
-                style={{ '--swatch': shown[i] } as CSSProperties}
+                className={`design-chip${picker === i ? ' open' : ''}`}
                 disabled={!role.editable}
                 aria-label={`${role.label} color, ${shown[i]}`}
                 aria-expanded={picker === i}
                 onClick={() => togglePicker(i)}
-              />
-              <HexField value={shown[i]} label={role.label} disabled={!role.editable} onChange={(hex) => setSlot(i, hex)} />
-            </div>
-          ))}
+              >
+                <span className="design-chip-swatch" style={{ background: shown[i] }} aria-hidden="true">
+                  {shown[i] !== source[i] && <span className="design-chip-orig" style={{ background: source[i] }} title={`Original ${source[i]}`} />}
+                </span>
+                <span className="design-chip-text" aria-hidden="true">
+                  <span className="design-slot-label">{role.label}</span>
+                  <span className="design-chip-hex">{shown[i]}</span>
+                </span>
+              </button>
+            ))}
+          </div>
           {typeof picker === 'number' && roles[picker] && (
             <ColorPicker
               key={picker}

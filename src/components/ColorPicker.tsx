@@ -1,5 +1,5 @@
-import { useEffect, useRef, useState, type KeyboardEvent, type PointerEvent, type ReactNode } from 'react'
-import { hexToHsv, hsvToHex, normalizeHex, type HSV } from '../lib/designer'
+import { useEffect, useRef, useState, type CSSProperties, type KeyboardEvent, type PointerEvent, type ReactNode } from 'react'
+import { hexToHsv, hsvToHex, normalizeHex, wheelColor, wheelPosition, type HSV } from '../lib/designer'
 
 interface Props {
   value: string
@@ -12,10 +12,40 @@ interface Props {
 
 const clamp01 = (n: number) => Math.min(1, Math.max(0, n))
 
+/** Hex text field that commits valid colors on blur or Enter and reverts anything else. */
+export function HexField({ value, label, disabled, onChange }: { value: string; label: string; disabled?: boolean; onChange: (hex: string) => void }) {
+  const [text, setText] = useState(value)
+  const [lastValue, setLastValue] = useState(value)
+  // Follow the committed color immediately (during render, not in an effect) so the field never shows stale text.
+  if (value !== lastValue) {
+    setLastValue(value)
+    setText(value)
+  }
+  const commit = () => {
+    const hex = normalizeHex(text)
+    setText(hex ?? value)
+    if (hex && hex !== value) onChange(hex)
+  }
+  return (
+    <input
+      className="hex-input"
+      value={text}
+      disabled={disabled}
+      spellCheck={false}
+      autoCapitalize="characters"
+      maxLength={7}
+      aria-label={`${label} hex code`}
+      onChange={(e) => setText(e.target.value)}
+      onBlur={commit}
+      onKeyDown={(e) => e.key === 'Enter' && commit()}
+    />
+  )
+}
+
 /**
- * In-page color picker for Designer mode. It sits in the controls column, in normal flow,
- * instead of the browser's native picker: on iPad that one is a system popover the page
- * cannot place, and it opens over the logo being recolored.
+ * In-page color picker for Designer mode: a hue/saturation wheel, a brightness slider and a hex field.
+ * It sits in the canvas column, in normal flow, instead of the browser's native picker: on iPad that one
+ * is a system popover the page cannot place, and it opens over the logo being recolored.
  */
 export function ColorPicker({ value, label, onChange, onClose, preview }: Props) {
   // Hue and saturation live here so dragging through black or gray does not lose them.
@@ -28,6 +58,13 @@ export function ColorPicker({ value, label, onChange, onClose, preview }: Props)
       setHsv(hexToHsv(value))
     }
   }, [value])
+
+  // Bring the whole picker into view when it opens; scroll-margin keeps it clear of the sticky Download bar.
+  const root = useRef<HTMLDivElement>(null)
+  useEffect(() => {
+    const reduce = window.matchMedia?.('(prefers-reduced-motion: reduce)').matches
+    root.current?.scrollIntoView?.({ block: 'nearest', behavior: reduce ? 'auto' : 'smooth' })
+  }, [])
 
   // Coalesce drag updates to one per frame: each new color re-renders the recolored logo.
   const frame = useRef(0)
@@ -56,18 +93,19 @@ export function ColorPicker({ value, label, onChange, onClose, preview }: Props)
     }
   }
 
-  const area = useRef<HTMLDivElement>(null)
+  const wheel = useRef<HTMLDivElement>(null)
   const pickAt = (e: PointerEvent<HTMLDivElement>) => {
-    const r = area.current!.getBoundingClientRect()
-    update({ ...hsv, s: clamp01((e.clientX - r.left) / r.width), v: 1 - clamp01((e.clientY - r.top) / r.height) })
+    const r = wheel.current!.getBoundingClientRect()
+    update({ ...hsv, ...wheelColor((e.clientX - r.left) / r.width, (e.clientY - r.top) / r.height) })
   }
-  const onAreaKey = (e: KeyboardEvent<HTMLDivElement>) => {
-    const step = e.shiftKey ? 0.1 : 0.02
+  const onWheelKey = (e: KeyboardEvent<HTMLDivElement>) => {
+    const hueStep = e.shiftKey ? 15 : 3
+    const satStep = e.shiftKey ? 0.1 : 0.02
     const moves: Record<string, Partial<HSV>> = {
-      ArrowLeft: { s: clamp01(hsv.s - step) },
-      ArrowRight: { s: clamp01(hsv.s + step) },
-      ArrowUp: { v: clamp01(hsv.v + step) },
-      ArrowDown: { v: clamp01(hsv.v - step) },
+      ArrowLeft: { h: (hsv.h - hueStep + 360) % 360 },
+      ArrowRight: { h: (hsv.h + hueStep) % 360 },
+      ArrowUp: { s: clamp01(hsv.s + satStep) },
+      ArrowDown: { s: clamp01(hsv.s - satStep) },
     }
     if (moves[e.key]) {
       e.preventDefault()
@@ -79,51 +117,54 @@ export function ColorPicker({ value, label, onChange, onClose, preview }: Props)
   }
 
   const hex = hsvToHex(hsv)
+  const thumb = wheelPosition(hsv)
   return (
-    <div className="color-picker" role="group" aria-label={`${label} color picker`}>
-      <div className="cp-main">
+    <div ref={root} className="color-picker" role="group" aria-label={`${label} color picker`}>
+      <div
+        ref={wheel}
+        className="cp-wheel"
+        style={{ '--dim': 1 - hsv.v } as CSSProperties}
+        tabIndex={0}
+        role="slider"
+        aria-label={`${label} hue and saturation`}
+        aria-valuemin={0}
+        aria-valuemax={359}
+        aria-valuenow={Math.round(hsv.h)}
+        aria-valuetext={`Hue ${Math.round(hsv.h)}°, saturation ${Math.round(hsv.s * 100)}%, ${hex}`}
+        onKeyDown={onWheelKey}
+        onPointerDown={(e) => {
+          e.currentTarget.setPointerCapture(e.pointerId)
+          e.currentTarget.focus({ preventScroll: true })
+          pickAt(e)
+        }}
+        onPointerMove={(e) => e.currentTarget.hasPointerCapture(e.pointerId) && pickAt(e)}
+      >
+        <span className="cp-thumb" style={{ left: `${thumb.x * 100}%`, top: `${thumb.y * 100}%`, background: hex }} aria-hidden="true" />
+      </div>
+      <div className="cp-side">
         {preview && (
           <div className="cp-preview" aria-hidden="true">
             {preview}
           </div>
         )}
-        <div
-          ref={area}
-          className="cp-area"
-          style={{ backgroundColor: hsvToHex({ h: hsv.h, s: 1, v: 1 }) }}
-          tabIndex={0}
-          role="slider"
-          aria-label={`${label} saturation and brightness`}
-          aria-valuemin={0}
-          aria-valuemax={100}
-          aria-valuenow={Math.round(hsv.s * 100)}
-          aria-valuetext={`Saturation ${Math.round(hsv.s * 100)}%, brightness ${Math.round(hsv.v * 100)}%, ${hex}`}
-          onKeyDown={onAreaKey}
-          onPointerDown={(e) => {
-            e.currentTarget.setPointerCapture(e.pointerId)
-            e.currentTarget.focus({ preventScroll: true })
-            pickAt(e)
-          }}
-          onPointerMove={(e) => e.currentTarget.hasPointerCapture(e.pointerId) && pickAt(e)}
-        >
-          <span className="cp-thumb" style={{ left: `${hsv.s * 100}%`, top: `${(1 - hsv.v) * 100}%`, background: hex }} aria-hidden="true" />
-        </div>
-      </div>
-      <div className="cp-row">
         <input
           type="range"
-          className="cp-hue"
+          className="cp-value"
+          style={{ '--full': hsvToHex({ ...hsv, v: 1 }) } as CSSProperties}
           min={0}
-          max={359}
+          max={100}
           step={1}
-          value={Math.round(hsv.h)}
-          aria-label={`${label} hue`}
-          onChange={(e) => update({ ...hsv, h: +e.target.value })}
+          value={Math.round(hsv.v * 100)}
+          aria-label={`${label} brightness`}
+          onChange={(e) => update({ ...hsv, v: +e.target.value / 100 })}
           onKeyDown={(e) => (e.key === 'Escape' || e.key === 'Enter') && onClose()}
         />
-        <button type="button" className="cp-done" onClick={onClose}>
-          Done
-        </button>
+        <div className="cp-row">
+          <HexField value={hex} label={label} onChange={onChange} />
+          <button type="button" className="cp-done" onClick={onClose}>
+            Done
+          </button>
+        </div>
       </div>
     </div>
   )

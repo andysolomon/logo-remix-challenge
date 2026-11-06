@@ -281,3 +281,18 @@ export function composeSvg(inner: string, opts: { backdrop?: string; frame?: str
   }
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${size}" height="${size}" viewBox="0 0 ${size} ${size}">${layers.join('')}${nested}</svg>`
 }
+
+/** Where a color sits on the wheel: hue is the angle clockwise from the top, saturation the distance from the center. */
+export function wheelPosition({ h, s }: Pick<HSV, 'h' | 's'>): { x: number; y: number } {
+  const a = (h * Math.PI) / 180
+  return { x: 0.5 + (s * Math.sin(a)) / 2, y: 0.5 - (s * Math.cos(a)) / 2 }
+}
+
+/** The hue and saturation at a point on the wheel, given as fractions of its box (0..1, center at 0.5). */
+export function wheelColor(x: number, y: number): Pick<HSV, 'h' | 's'> {
+  const dx = x - 0.5
+  const dy = y - 0.5
+  const s = Math.min(1, Math.hypot(dx, dy) * 2)
+  const h = s === 0 ? 0 : ((Math.atan2(dx, -dy) * 180) / Math.PI + 360) % 360
+  return { h, s }
+}

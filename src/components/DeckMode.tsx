@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useReducer, useRef, useState } from 'react'
-import { canShuffleRoundColors, deckUndoReducer, findTeam, formatScore, fullName, GUESS_TARGETS, GUESS_LABEL, jerseyLine, roundHints, roundPlayer, roundTarget, shuffleRoundColors, shuffleRoundLogo, speak, voiceSupported, TIMER_OPTIONS, HIGH_SCORE_LIMIT, MAX_DECK_ROUNDS, type GameMode, type HighScore, type GuessTarget, type Round, type TimerSeconds } from '../lib/teams'
+import { canShuffleRoundColors, deckUndoReducer, findTeam, formatPercent, formatScore, fullName, GUESS_TARGETS, GUESS_LABEL, jerseyLine, roundHints, roundPlayer, roundTarget, shuffleRoundColors, shuffleRoundLogo, speak, voiceSupported, TIMER_OPTIONS, HIGH_SCORE_LIMIT, MAX_DECK_ROUNDS, type GameMode, type HighScore, type GuessTarget, type Round, type TimerSeconds } from '../lib/teams'
 import { RoundLogo } from './Logo'
 import { RandomDeckModal } from './RandomDeckModal'
 import { useDialogA11y } from './SettingsModal'
@@ -287,7 +287,7 @@ export function DeckMode({ deck, portrait, timer, gameMode, guessTarget, voice, 
             {highScores.length ? (
               <>
                 <span className="hs-initials">{highScores[0].initials}</span>
-                <span className="hs-score">{formatScore(highScores[0].score)}<span className="hs-total"> / {highScores[0].total}</span></span>
+                <span className="hs-score">{formatScore(highScores[0].score)}<span className="hs-total"> / {highScores[0].total} · {formatPercent(highScores[0])}</span></span>
               </>
             ) : (
               <span className="hs-empty">No scores yet</span>
@@ -332,6 +332,7 @@ function HighScoresModal({ highScores, onClose }: { highScores: HighScore[]; onC
                   <span className="hs-rank">{String(i + 1).padStart(2, '0')}</span>
                   <span className="hs-initials">{h.initials}</span>
                   <span className="hs-score">{formatScore(h.score)}<span className="hs-total"> / {h.total}</span></span>
+                  <span className="hs-pct">{formatPercent(h)}</span>
                 </li>
               ))}
             </ol>

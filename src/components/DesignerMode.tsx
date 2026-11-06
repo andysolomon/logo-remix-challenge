@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState } from 'react'
+import { useEffect, useMemo, useRef, useState, type CSSProperties } from 'react'
 import {
   BACKGROUND_PRESETS,
   CUSTOM_BACKGROUND_DEFAULT,
@@ -19,6 +19,7 @@ import { canExportSvg, designPngBlob, designSvgBlob, downloadBlob } from '../lib
 import { TRACE_COLOR_OPTIONS, TraceError, DEFAULT_TRACE_OPTIONS, type TraceColors, type TraceOptions } from '../lib/trace'
 import { UPLOAD_ACCEPT, fileStem, readRaster, traceUpload, uploadTeam, type UploadedLogo } from '../lib/traceUpload'
 import { DESIGNER_PALETTE_LEAGUES, DESIGNER_PALETTE_NOTE, findTeam, fullName, nextLogoVariant, withLogoVariant, type Team } from '../lib/teams'
+import { ColorPicker } from './ColorPicker'
 import { Logo } from './Logo'
 import { TeamBrowser, type BrowserState } from './TeamBrowser'
 
@@ -203,11 +204,18 @@ export function DesignerMode({ state, setState, portrait, hidden }: Props) {
     if (!shown || !roles) return
     setState((s) => ({ ...s, colors: rotateColors(s.colors ?? shown, roles) }))
   }
-  const setSlot = (slot: number, hex: string) => {
+  // Which color the in-page picker is editing: a slot index, the custom background, or none.
+  const [picker, setPicker] = useState<number | 'bg' | null>(null)
+  const togglePicker = (which: number | 'bg') => setPicker((p) => (p === which ? null : which))
+  useEffect(() => setPicker(null), [state.oId, state.upload, state.logoVariant])
+  // Colors the picker set: the logo recolors in place while dragging instead of re-popping every frame.
+  const pickedColors = useRef<DesignColors | null>(null)
+  const setSlot = (slot: number, hex: string, fromPicker = false) => {
     if (!shown) return
     setState((s) => {
       const colors: DesignColors = [...(s.colors ?? shown)]
       colors[slot] = hex
+      if (fromPicker) pickedColors.current = colors
       return { ...s, cId: null, colors }
     })
   }
@@ -236,8 +244,19 @@ export function DesignerMode({ state, setState, portrait, hidden }: Props) {
 
   const customBackground = state.background !== null && !BACKGROUND_PRESETS.some((p) => p.color === state.background)
   const colorText = seed ? `${fullName(seed)} colors` : isOriginal ? 'Original colors' : 'Custom colors'
-  const heroKey = `${state.upload ? `upload-${state.upload.serial}` : team?.logo}-${(isOriginal ? source : state.colors)?.join('|')}`
+  const heroBase = `${state.upload ? `upload-${state.upload.serial}` : team?.logo}`
+  const lastHeroKey = useRef('')
+  const heroKey =
+    state.colors && state.colors === pickedColors.current && lastHeroKey.current.startsWith(`${heroBase}-`)
+      ? lastHeroKey.current
+      : `${heroBase}-${(isOriginal ? source : state.colors)?.join('|')}`
+  lastHeroKey.current = heroKey
   const upload = state.upload
+  const pickerPreview = team && (
+    <div className={`cp-stage${state.background ? ' bg' : ''}`} style={state.background ? { background: state.background } : undefined}>
+      {isOriginal ? <Logo team={team} /> : <Logo team={team} targetColors={state.colors!} />}
+    </div>
+  )
 
   const uploadButton = (
     <button type="button" className="btn-shuffle" onClick={() => fileRef.current?.click()} disabled={tracing} aria-label="Upload a logo to trace">
@@ -346,20 +365,28 @@ export function DesignerMode({ state, setState, portrait, hidden }: Props) {
             <div key={i} className={`design-slot${role.editable ? '' : ' unused'}`}>
               <span className="design-slot-label">{role.label}</span>
               <span className="swatch s16" style={{ background: source[i] }} title={`Original ${source[i]}`} aria-hidden="true" />
-              <input
-                type="color"
-                className="color-input"
-                value={shown[i].toLowerCase()}
+              <button
+                type="button"
+                className={`color-input${picker === i ? ' open' : ''}`}
+                style={{ '--swatch': shown[i] } as CSSProperties}
                 disabled={!role.editable}
-                aria-label={`${role.label} color`}
-                onChange={(e) => {
-                  const hex = normalizeHex(e.target.value)
-                  if (hex) setSlot(i, hex)
-                }}
+                aria-label={`${role.label} color, ${shown[i]}`}
+                aria-expanded={picker === i}
+                onClick={() => togglePicker(i)}
               />
               <HexField value={shown[i]} label={role.label} disabled={!role.editable} onChange={(hex) => setSlot(i, hex)} />
             </div>
           ))}
+          {typeof picker === 'number' && roles[picker] && (
+            <ColorPicker
+              key={picker}
+              value={shown[picker]}
+              label={roles[picker].label}
+              onChange={(hex) => setSlot(picker, hex, true)}
+              onClose={() => setPicker(null)}
+              preview={pickerPreview}
+            />
+          )}
         </div>
       )}
 
@@ -398,18 +425,19 @@ export function DesignerMode({ state, setState, portrait, hidden }: Props) {
             Custom
           </button>
           {customBackground && (
-            <input
-              type="color"
-              className="color-input"
-              value={state.background!.toLowerCase()}
-              aria-label="Custom background color"
-              onChange={(e) => {
-                const hex = normalizeHex(e.target.value)
-                if (hex) setBackground(hex)
-              }}
+            <button
+              type="button"
+              className={`color-input${picker === 'bg' ? ' open' : ''}`}
+              style={{ '--swatch': state.background! } as CSSProperties}
+              aria-label={`Custom background color, ${state.background}`}
+              aria-expanded={picker === 'bg'}
+              onClick={() => togglePicker('bg')}
             />
           )}
         </div>
+        {customBackground && picker === 'bg' && (
+          <ColorPicker value={state.background!} label="Background" onChange={setBackground} onClose={() => setPicker(null)} preview={pickerPreview} />
+        )}
         <div className="mode-hint">
           {upload && format === 'svg'
             ? 'Traced vector outlines, one shape per color; sharp at any size.'

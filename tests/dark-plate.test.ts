@@ -59,7 +59,7 @@ describe('dark artwork sits on a light plate wherever the screen is dark', () =>
 
   test('Logo.tsx adds the plate class once the artwork shows, and styles.css paints it only on dark screens', () => {
     const logo = readFileSync(join(root, 'src/components/Logo.tsx'), 'utf8')
-    expect(logo).toContain("const showPlate = sinksIntoDark(team, target ?? undefined) && (!hasTargetPalette || remixStatus === 'ready')")
+    expect(logo).toContain("const showPlate = sinksIntoDark(team, target ?? undefined) && (!hasTargetPalette || remixStatus === 'ready' || heldSrc !== undefined)")
     expect(logo).toContain("(showPlate ? ' dark-ink' : '')")
     const css = readFileSync(join(root, 'src/styles.css'), 'utf8')
     expect(css).toMatch(/:root\[data-theme="dark"\] \.logo\.dark-ink:not\(\.backdrop\), \.play \.logo\.dark-ink:not\(\.backdrop\) \{[^\n]*background-color: #F7F5F1;/)

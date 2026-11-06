@@ -73,8 +73,8 @@ ROSTER: dict[str, list[School]] = {
          "https://cdn2.sportngin.com/attachments/logo_graphic/88c1-180228065/MariettaHS_Mascot_large.png",
          "official", "https://www.marietta-athletics.com"),
         ("MCEA", "McEachern", "Indians",
-         "https://s3-us-west-2.amazonaws.com/scorestream-team-profile-pictures/4530/20190119073353_718_mascot300.png",
-         "community", "https://s3-us-west-2.amazonaws.com/scorestream-team-profile-pictures/4530/20190119073353_718_mascot300.png"),
+         "https://allatoonabucs.com/wp-content/uploads/2021/03/mceachernindians.svg",
+         "community", "https://allatoonabucs.com/mceachernindians/"),
         ("NCOB", "North Cobb", "Warriors",
          "https://allatoonabucs.com/wp-content/uploads/2021/02/ncobb-logo-01-2.svg",
          "community", "https://allatoonabucs.com/ncobb-logo-01-2/"),
@@ -232,9 +232,7 @@ BRAND_COLORS: dict[str, tuple[str, str]] = {
     "KELL": ("#000000", "#F1E6B2"),   # black and vegas gold (the longhorn mark)
     "KMHS": ("#02A653", "#BBBCBF"),   # green and silver
     "LASS": ("#6D1418", "#000000"),   # maroon (the mark carries no gold)
-    # This mark is drawn in web-safe navy and khaki rather than the seal's
-    # deeper blue and gold, so the roster names the colors the artwork uses.
-    "MCEA": ("#000099", "#CCCC99"),   # navy and khaki gold
+    "MCEA": ("#0F4B8B", "#CEB888"),   # blue and khaki gold
     "NCOB": ("#E1622E", "#232F6B"),   # orange and navy
     "OSBO": ("#D22030", "#000000"),   # cardinal red
     "PEBB": ("#003B5C", "#AF272F"),   # navy and red (the falcon mark)

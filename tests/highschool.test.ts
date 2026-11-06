@@ -184,7 +184,7 @@ assert {r['abbr'] for r in rows if r['sourceKind'] == 'community'} == MIRRORED
 LIBRARIES = ('https://allatoonabucs.com', 'https://gowoodland.org')
 library = {r['abbr'] for r in rows if r['sourceUrl'].startswith(tuple(f'{l}/wp-content/uploads/' for l in LIBRARIES))}
 assert library == {'ALLA', 'CAMP', 'HARR', 'NCOB', 'NATL', 'WEST', 'DHIL', 'BUFO', 'GRAY',
-                   'BTRI', 'CREE', 'MILT', 'CARR', 'TCC', 'VALD', 'NGWI', 'COLQ'}, library
+                   'BTRI', 'CREE', 'MILT', 'CARR', 'TCC', 'VALD', 'NGWI', 'COLQ', 'MCEA'}, library
 for row in rows:
     if row['abbr'] in library:
         assert row['format'] == 'svg', row['abbr']

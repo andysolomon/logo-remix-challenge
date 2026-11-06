@@ -308,33 +308,33 @@
       "name": "Indians",
       "abbr": "MCEA",
       "displayName": "McEachern Indians",
-      "sourceUrl": "https://s3-us-west-2.amazonaws.com/scorestream-team-profile-pictures/4530/20190119073353_718_mascot300.png",
+      "sourceUrl": "https://allatoonabucs.com/wp-content/uploads/2021/03/mceachernindians.svg",
       "sourceKind": "community",
-      "sourcePage": "https://s3-us-west-2.amazonaws.com/scorestream-team-profile-pictures/4530/20190119073353_718_mascot300.png",
-      "path": "/logos/svg/high-school/mcea.png",
-      "format": "png",
+      "sourcePage": "https://allatoonabucs.com/mceachernindians/",
+      "path": "/logos/svg/high-school/mcea.svg",
+      "format": "svg",
       "colors": [
-        "#CCCC99",
-        "#000099",
+        "#104C8B",
         "#FFFFFF",
-        "#2222AA",
-        "#EEEEFF",
-        "#111199",
-        "#DDDDEE",
-        "#3333AA"
+        "#CEB888",
+        "#0F4B8B",
+        "#FDFBFB",
+        "#FCFAFA",
+        "#FBF9F9",
+        "#FBF8F8"
       ],
       "brand": [
-        "#000099",
-        "#CCCC99"
+        "#0F4B8B",
+        "#CEB888"
       ],
       "palette": [
-        "#000099",
-        "#CCCC99",
+        "#0F4B8B",
+        "#CEB888",
         "#FFFFFF"
       ],
       "sourcePalette": [
-        "#000099",
-        "#CCCC99",
+        "#0F4B8B",
+        "#CEB888",
         "#FFFFFF"
       ],
       "unusedSourceSlots": []

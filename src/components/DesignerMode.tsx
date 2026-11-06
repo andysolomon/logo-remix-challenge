@@ -40,6 +40,8 @@ export interface DesignerState {
   step: 1 | 2 | 3
   browserO: BrowserState
   browserC: BrowserState
+  /** Landscape: show the Logo and Palette columns at full width; they start skinny to leave room for the design. */
+  wideSides?: boolean
 }
 
 export const initialDesignerState: DesignerState = {
@@ -108,6 +110,12 @@ export function DesignerMode({ state, setState, portrait, hidden }: Props) {
   const [exporting, setExporting] = useState(false)
   const [exportStatus, setExportStatus] = useState('')
   useEffect(() => setExportStatus(''), [state.oId, state.upload, state.logoVariant])
+  // The status floats over the canvas, so finished messages clear themselves.
+  useEffect(() => {
+    if (!exportStatus || exportStatus.endsWith('…')) return
+    const id = window.setTimeout(() => setExportStatus(''), 6000)
+    return () => window.clearTimeout(id)
+  }, [exportStatus])
 
   // iPhone/iPad: PNGs can go straight to Photos through the share sheet ("Save Image").
   const [photosOk] = useState(canSaveToPhotos)
@@ -236,13 +244,38 @@ export function DesignerMode({ state, setState, portrait, hidden }: Props) {
           : result === 'cancelled'
           ? ''
           : result === 'blocked'
-          ? 'Your image is ready. Tap SAVE TO PHOTOS again.'
-          : 'Could not open the share sheet. Use Download file instead.',
+          ? 'Your image is ready. Tap Save to Photos again.'
+          : 'Could not open the share sheet. Use the download button instead.',
       )
     } finally {
       setExporting(false)
     }
   }
+
+  // Export options open from a corner icon so they never take room from the logo and color wheel.
+  const [exportOpen, setExportOpen] = useState(false)
+  const exportPanel = useRef<HTMLDivElement>(null)
+  const exportToggle = useRef<HTMLButtonElement>(null)
+  useEffect(() => {
+    if (!exportOpen) return
+    const onDown = (e: globalThis.PointerEvent) => {
+      const t = e.target as Node
+      if (!exportPanel.current?.contains(t) && !exportToggle.current?.contains(t)) setExportOpen(false)
+    }
+    const onKey = (e: globalThis.KeyboardEvent) => {
+      // A color picker inside the panel handles its own Escape first.
+      if (e.key !== 'Escape' || e.defaultPrevented) return
+      setExportOpen(false)
+      exportToggle.current?.focus()
+    }
+    document.addEventListener('pointerdown', onDown)
+    document.addEventListener('keydown', onKey)
+    return () => {
+      document.removeEventListener('pointerdown', onDown)
+      document.removeEventListener('keydown', onKey)
+    }
+  }, [exportOpen])
+  const fileLabel = format === 'svg' ? 'SVG' : `PNG, ${state.size}px`
 
   const doExport = async () => {
     if (!team || exporting) return
@@ -308,13 +341,121 @@ export function DesignerMode({ state, setState, portrait, hidden }: Props) {
           e.target.value = ''
         }}
       />
-      <div className="micro-row">
-        <div className="micro">LOGO</div>
-        {team && (
-          <button type="button" className="btn-clear" onClick={clearLogo} aria-label="Clear logo">
-            clear
+      <div className="design-corner left">
+        <button
+          ref={exportToggle}
+          type="button"
+          className={`icon-btn${exportOpen ? ' active' : ''}`}
+          aria-label={`Export options, ${fileLabel}`}
+          title="Export options"
+          aria-expanded={exportOpen}
+          aria-controls="design-export-panel"
+          onClick={() => setExportOpen((o) => !o)}
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M4 7h10M18 7h2M4 17h4M12 17h8" />
+            <circle cx="16" cy="7" r="2" />
+            <circle cx="10" cy="17" r="2" />
+          </svg>
+          <span className="icon-btn-tag">{format === 'svg' ? 'SVG' : 'PNG'}</span>
+        </button>
+      </div>
+      <div className="design-corner right">
+        {photosOk && format === 'png' && (
+          <button type="button" className="icon-btn" onClick={saveToPhotos} disabled={!team || exporting} aria-busy={exporting} aria-label={team ? 'Save PNG to Photos' : 'Pick a logo before saving'} title="Save to Photos">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 3v12M8 7l4-4 4 4" />
+              <path d="M7 10H5v10h14V10h-2" />
+            </svg>
           </button>
         )}
+        <button
+          type="button"
+          className="icon-btn accent"
+          onClick={doExport}
+          disabled={!team || exporting}
+          aria-busy={exporting}
+          aria-label={team ? `Download ${fileLabel}` : 'Pick a logo before downloading'}
+          title={`Download ${fileLabel}`}
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 4v11M7 10l5 5 5-5" />
+            <path d="M5 19h14" />
+          </svg>
+        </button>
+      </div>
+      {exportOpen && (
+        <div ref={exportPanel} id="design-export-panel" className="design-export" role="dialog" aria-label="Export options">
+          <div className="micro">EXPORT</div>
+          <div className="design-opts" role="group" aria-label="File">
+            {[...EXPORT_SIZES].reverse().map((px) => {
+              const active = format === 'png' && state.size === px
+              return (
+                <button key={px} type="button" className={`design-opt${active ? ' active' : ''}`} aria-pressed={active} onClick={() => setFile(px)}>
+                  PNG · {px}
+                </button>
+              )
+            })}
+            <button type="button" className={`design-opt${format === 'svg' ? ' active' : ''}`} aria-pressed={format === 'svg'} disabled={svgOk === false} onClick={() => setFormat('svg')}>
+              SVG
+            </button>
+          </div>
+          <div className="design-opts" role="group" aria-label="Background">
+            {BACKGROUND_PRESETS.map((p) => (
+              <button key={p.id} type="button" className={`design-opt${state.background === p.color ? ' active' : ''}`} aria-pressed={state.background === p.color} onClick={() => setBackground(p.color)}>
+                {p.label}
+              </button>
+            ))}
+            <button type="button" className={`design-opt${customBackground ? ' active' : ''}`} aria-pressed={customBackground} onClick={() => setBackground(CUSTOM_BACKGROUND_DEFAULT)}>
+              Custom
+            </button>
+            {customBackground && (
+              <button
+                type="button"
+                className={`color-input${picker === 'bg' ? ' open' : ''}`}
+                style={{ '--swatch': state.background! } as CSSProperties}
+                aria-label={`Custom background color, ${state.background}`}
+                aria-expanded={picker === 'bg'}
+                onClick={() => togglePicker('bg')}
+              />
+            )}
+          </div>
+          {customBackground && picker === 'bg' && (
+            <ColorPicker value={state.background!} label="Background" onChange={setBackground} onClose={() => setPicker(null)} preview={pickerPreview} />
+          )}
+          <div className="mode-hint">
+            {upload && format === 'svg'
+              ? 'Traced vector outlines, one shape per color; sharp at any size.'
+              : svgOk === false
+              ? 'This artwork is a bitmap, so it exports as PNG only.'
+              : format === 'svg'
+                ? 'Vector file that stays sharp at any size; opens in Illustrator, Figma or a browser.'
+                : `Square ${state.size}px image${state.background ? '' : ' with a transparent background'}.${photosOk ? ' Save to Photos opens the share sheet; tap “Save Image”.' : ''}`}
+          </div>
+        </div>
+      )}
+      {exportStatus && (
+        <div className="design-toast" role="status" aria-live="polite" aria-atomic="true">
+          {exportStatus}
+        </div>
+      )}
+      <div className={`micro-row design-top${photosOk && format === 'png' ? ' two-icons' : ''}`}>
+        <div className="micro-row">
+          <div className="micro">LOGO</div>
+          {team && (
+            <button type="button" className="btn-clear" onClick={clearLogo} aria-label="Clear logo">
+              clear
+            </button>
+          )}
+        </div>
+        <div className="micro-row">
+          <div className="micro">COLORS</div>
+          {team && !isOriginal && (
+            <button type="button" className="btn-clear" onClick={resetColors} aria-label="Reset to the original colors">
+              reset
+            </button>
+          )}
+        </div>
       </div>
       <div className={`canvas-name${baseTeam ? '' : ' placeholder'}`}>{baseTeam ? fullName(baseTeam) : 'Pick a logo to design'}</div>
       {alternates.length > 0 && (
@@ -371,15 +512,7 @@ export function DesignerMode({ state, setState, portrait, hidden }: Props) {
         </div>
       )}
 
-      <div className="micro-row">
-        <div className="micro">COLORS</div>
-        {team && !isOriginal && (
-          <button type="button" className="btn-clear" onClick={resetColors} aria-label="Reset to the original colors">
-            reset
-          </button>
-        )}
-      </div>
-      <div className={`color-name${team ? '' : ' placeholder'}`}>{team ? colorText : 'Each slot gets its own color'}</div>
+      {!team && <div className="color-caption placeholder">Each slot gets its own color</div>}
       {team && shown && roles && source && (
         <div className="design-slots" role="group" aria-label="Logo colors by slot">
           <div className="design-chips">
@@ -388,21 +521,16 @@ export function DesignerMode({ state, setState, portrait, hidden }: Props) {
                 key={i}
                 type="button"
                 className={`design-chip${picker === i ? ' open' : ''}`}
+                style={{ background: shown[i] }}
                 disabled={!role.editable}
+                title={role.label}
                 aria-label={`${role.label} color, ${shown[i]}`}
                 aria-expanded={picker === i}
                 onClick={() => togglePicker(i)}
-              >
-                <span className="design-chip-swatch" style={{ background: shown[i] }} aria-hidden="true">
-                  {shown[i] !== source[i] && <span className="design-chip-orig" style={{ background: source[i] }} title={`Original ${source[i]}`} />}
-                </span>
-                <span className="design-chip-text" aria-hidden="true">
-                  <span className="design-slot-label">{role.label}</span>
-                  <span className="design-chip-hex">{shown[i]}</span>
-                </span>
-              </button>
+              />
             ))}
           </div>
+          <div className="color-caption">{colorText}</div>
           {typeof picker === 'number' && roles[picker] && (
             <ColorPicker
               key={picker}
@@ -426,73 +554,6 @@ export function DesignerMode({ state, setState, portrait, hidden }: Props) {
         </button>
       </div>
 
-      <div className="design-export">
-        <div className="micro">EXPORT</div>
-        <div className="design-opts" role="group" aria-label="File">
-          {[...EXPORT_SIZES].reverse().map((px) => {
-            const active = format === 'png' && state.size === px
-            return (
-              <button key={px} type="button" className={`design-opt${active ? ' active' : ''}`} aria-pressed={active} onClick={() => setFile(px)}>
-                PNG · {px}
-              </button>
-            )
-          })}
-          <button type="button" className={`design-opt${format === 'svg' ? ' active' : ''}`} aria-pressed={format === 'svg'} disabled={svgOk === false} onClick={() => setFormat('svg')}>
-            SVG
-          </button>
-        </div>
-        <div className="design-opts" role="group" aria-label="Background">
-          {BACKGROUND_PRESETS.map((p) => (
-            <button key={p.id} type="button" className={`design-opt${state.background === p.color ? ' active' : ''}`} aria-pressed={state.background === p.color} onClick={() => setBackground(p.color)}>
-              {p.label}
-            </button>
-          ))}
-          <button type="button" className={`design-opt${customBackground ? ' active' : ''}`} aria-pressed={customBackground} onClick={() => setBackground(CUSTOM_BACKGROUND_DEFAULT)}>
-            Custom
-          </button>
-          {customBackground && (
-            <button
-              type="button"
-              className={`color-input${picker === 'bg' ? ' open' : ''}`}
-              style={{ '--swatch': state.background! } as CSSProperties}
-              aria-label={`Custom background color, ${state.background}`}
-              aria-expanded={picker === 'bg'}
-              onClick={() => togglePicker('bg')}
-            />
-          )}
-        </div>
-        {customBackground && picker === 'bg' && (
-          <ColorPicker value={state.background!} label="Background" onChange={setBackground} onClose={() => setPicker(null)} preview={pickerPreview} />
-        )}
-        <div className="mode-hint">
-          {upload && format === 'svg'
-            ? 'Traced vector outlines, one shape per color; sharp at any size.'
-            : svgOk === false
-            ? 'This artwork is a bitmap, so it exports as PNG only.'
-            : format === 'svg'
-              ? 'Vector file that stays sharp at any size; opens in Illustrator, Figma or a browser.'
-              : `Square ${state.size}px image${state.background ? '' : ' with a transparent background'}.${photosOk ? ' Save to Photos opens the share sheet; tap “Save Image”.' : ''}`}
-        </div>
-      </div>
-      <div className="canvas-footer design-footer">
-        {photosOk && format === 'png' ? (
-          <>
-            <button type="button" className="btn-add design-download" onClick={saveToPhotos} disabled={!team || exporting} aria-label={team ? 'Save PNG to Photos' : 'Pick a logo before saving'}>
-              {exporting ? 'EXPORTING…' : '⬇ SAVE TO PHOTOS'}
-            </button>
-            <button type="button" className="design-opt design-file-link" onClick={doExport} disabled={!team || exporting} aria-label={team ? 'Download PNG file' : 'Pick a logo before downloading'}>
-              Download file
-            </button>
-          </>
-        ) : (
-          <button type="button" className="btn-add design-download" onClick={doExport} disabled={!team || exporting} aria-label={team ? `Download ${format.toUpperCase()}` : 'Pick a logo before downloading'}>
-            {exporting ? 'EXPORTING…' : `⬇ DOWNLOAD ${format.toUpperCase()}`}
-          </button>
-        )}
-        <div className="mode-hint design-status" role="status" aria-live="polite" aria-atomic="true">
-          {exportStatus}
-        </div>
-      </div>
     </section>
   )
 
@@ -545,14 +606,31 @@ export function DesignerMode({ state, setState, portrait, hidden }: Props) {
     )
   }
 
+  const wide = !!state.wideSides
+  const sidesToggle = (
+    <button
+      type="button"
+      className="icon-btn small"
+      onClick={() => setState((s) => ({ ...s, wideSides: !s.wideSides }))}
+      aria-pressed={wide}
+      aria-label={wide ? 'Make the side columns skinny' : 'Widen the side columns'}
+      title={wide ? 'Skinny columns' : 'Wide columns'}
+    >
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        {wide ? <path d="M4 12h6M7 9l3 3-3 3M20 12h-6M17 9l-3 3 3 3" /> : <path d="M3 12h7M6 9l-3 3 3 3M21 12h-7M18 9l3 3-3 3" />}
+      </svg>
+    </button>
+  )
   return (
-    <div className="create-land" {...panelProps} hidden={hidden}>
+    <div className={`create-land${wide ? '' : ' slim-sides'}`} {...panelProps} hidden={hidden}>
       <TeamBrowser
         title="LOGO"
         state={state.browserO}
         onState={(b) => setState((s) => ({ ...s, browserO: b }))}
         selectedId={state.oId}
         onSelect={selectLogo}
+        compact={!wide}
+        headAction={sidesToggle}
       />
       {canvas}
       <TeamBrowser
@@ -564,6 +642,8 @@ export function DesignerMode({ state, setState, portrait, hidden }: Props) {
         showSwatches
         leagues={DESIGNER_PALETTE_LEAGUES}
         note={DESIGNER_PALETTE_NOTE}
+        compact={!wide}
+        headAction={sidesToggle}
       />
     </div>
   )

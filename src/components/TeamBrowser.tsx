@@ -1,4 +1,4 @@
-import { useEffect, useRef, type WheelEvent } from 'react'
+import { useEffect, useRef, type ReactNode, type WheelEvent } from 'react'
 import { entryNoun, filterPlayers, filterTeams, findTeam, fullName, hasJerseys, JERSEYS_FILTER, LEAGUES, seasonLabel, type League, type Player, type Team } from '../lib/teams'
 import { Jersey } from './Jersey'
 import { Logo } from './Logo'
@@ -22,6 +22,10 @@ interface Props {
   note?: string
   /** Offer a Jerseys filter in leagues with famous jerseys; picking one makes a "Who wore it?" round. */
   jerseys?: { selectedId: string | null; onSelect: (p: Player) => void }
+  /** Skinny column: one tile per row, rows of filters that swipe, no note. */
+  compact?: boolean
+  /** A small control shown beside the title. */
+  headAction?: ReactNode
 }
 
 /** A mouse wheel scrolls a swipeable row sideways; trackpads and touch already scroll it natively. */
@@ -31,7 +35,7 @@ function wheelSideways(e: WheelEvent<HTMLDivElement>) {
   row.scrollLeft += e.deltaY
 }
 
-export function TeamBrowser({ title, state: rawState, onState, selectedId, onSelect, showSwatches, portrait, leagues, note, jerseys }: Props) {
+export function TeamBrowser({ title, state: rawState, onState, selectedId, onSelect, showSwatches, portrait, leagues, note, jerseys, compact, headAction }: Props) {
   const offered = (Object.keys(LEAGUES) as League[]).filter((lg) => !leagues || leagues.includes(lg))
   const state = offered.includes(rawState.league) ? rawState : { league: offered[0], conference: 'All' }
   const leagueRef = useRef<HTMLDivElement>(null)
@@ -46,7 +50,7 @@ export function TeamBrowser({ title, state: rawState, onState, selectedId, onSel
       if (button.left < bounds.left + 6) group.scrollLeft -= bounds.left + 6 - button.left
       else if (button.right > bounds.right - 6) group.scrollLeft += button.right - bounds.right + 6
     }
-  }, [state.league, state.conference, portrait])
+  }, [state.league, state.conference, portrait, compact])
   const jerseyLeague = jerseys && hasJerseys(state.league) ? state.league : null
   const players = jerseyLeague && state.conference === JERSEYS_FILTER ? filterPlayers(jerseyLeague, 'All') : null
   const teams = players ? [] : filterTeams(state.league, state.conference, '')
@@ -54,9 +58,16 @@ export function TeamBrowser({ title, state: rawState, onState, selectedId, onSel
   const noun = entryNoun(state.league)
   const panelId = `browser-${title.replace(/\s+/g, '-').toLowerCase()}`
   return (
-    <section className="panel" aria-labelledby={panelId}>
+    <section className={`panel${compact ? ' compact' : ''}`} aria-labelledby={panelId}>
       <div className={`panel-head${portrait ? ' wrap' : ''}`}>
-        <div id={panelId} className="panel-title">{title}</div>
+        {headAction ? (
+          <div className="panel-title-row">
+            <div id={panelId} className="panel-title">{title}</div>
+            {headAction}
+          </div>
+        ) : (
+          <div id={panelId} className="panel-title">{title}</div>
+        )}
         <div ref={leagueRef} className="seg" role="group" aria-label="League or category" onWheel={wheelSideways}>
           {offered.map((lg) => (
             <button

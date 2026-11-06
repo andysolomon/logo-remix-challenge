@@ -79,6 +79,13 @@ export const isColorDonorLeague = (league: League) => COLOR_DONOR_LEAGUES.includ
 export const isColorDonor = (t: Team) => isColorDonorLeague(t.league)
 /** One-line explanation shown wherever colors are picked. */
 export const COLOR_SOURCE_NOTE = 'Colors come from NFL, NBA and college teams only.'
+/**
+ * Collections the Designer's palette panel offers. Designs never become game rounds, so besides the
+ * game's donors the Designer can also start from college and high school palettes.
+ */
+export const DESIGNER_PALETTE_LEAGUES: readonly League[] = [...COLOR_DONOR_LEAGUES, 'HS']
+/** One-line explanation under the Designer's palette panel. */
+export const DESIGNER_PALETTE_NOTE = 'Start from any NFL, NBA, college or high school palette.'
 export const PERMS = data.permutations as number[][]
 export const SEED_DECK: Round[] = data.seed_deck.map((r) => ({ ...r, h: true }))
 export const LS = data.localStorage_keys

@@ -18,7 +18,7 @@ import {
 import { canExportSvg, designPngBlob, designSvgBlob, downloadBlob } from '../lib/exportLogo'
 import { TRACE_COLOR_OPTIONS, TraceError, DEFAULT_TRACE_OPTIONS, type TraceColors, type TraceOptions } from '../lib/trace'
 import { UPLOAD_ACCEPT, fileStem, readRaster, traceUpload, uploadTeam, type UploadedLogo } from '../lib/traceUpload'
-import { COLOR_DONOR_LEAGUES, COLOR_SOURCE_NOTE, findTeam, fullName, nextLogoVariant, withLogoVariant, type Team } from '../lib/teams'
+import { DESIGNER_PALETTE_LEAGUES, DESIGNER_PALETTE_NOTE, findTeam, fullName, nextLogoVariant, withLogoVariant, type Team } from '../lib/teams'
 import { ColorPicker } from './ColorPicker'
 import { Logo } from './Logo'
 import { TeamBrowser, type BrowserState } from './TeamBrowser'
@@ -498,8 +498,8 @@ export function DesignerMode({ state, setState, portrait, hidden }: Props) {
             selectedId={state.cId}
             onSelect={selectColors}
             showSwatches
-            leagues={COLOR_DONOR_LEAGUES}
-            note={COLOR_SOURCE_NOTE}
+            leagues={DESIGNER_PALETTE_LEAGUES}
+            note={DESIGNER_PALETTE_NOTE}
             portrait
           />
         )}
@@ -525,8 +525,8 @@ export function DesignerMode({ state, setState, portrait, hidden }: Props) {
         selectedId={state.cId}
         onSelect={selectColors}
         showSwatches
-        leagues={COLOR_DONOR_LEAGUES}
-        note={COLOR_SOURCE_NOTE}
+        leagues={DESIGNER_PALETTE_LEAGUES}
+        note={DESIGNER_PALETTE_NOTE}
       />
     </div>
   )

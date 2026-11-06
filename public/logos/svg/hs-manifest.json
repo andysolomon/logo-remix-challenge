@@ -1007,6 +1007,45 @@
       }
     },
     {
+      "id": "HS-BROO",
+      "league": "HS",
+      "conference": "Gwinnett County",
+      "region": "Brookwood",
+      "name": "Broncos",
+      "abbr": "BROO",
+      "displayName": "Brookwood Broncos",
+      "sourceUrl": "https://logos.vnn-prod.zone/9349.png",
+      "sourceKind": "community",
+      "sourcePage": "https://logos.vnn-prod.zone/9349.png",
+      "path": "/logos/svg/high-school/broo.svg",
+      "format": "svg",
+      "colors": [
+        "#8C2131",
+        "#C7B682",
+        "#F9F9FA"
+      ],
+      "brand": [
+        "#7B2235",
+        "#C9B47E"
+      ],
+      "palette": [
+        "#8C2131",
+        "#C7B682",
+        "#FFFFFF"
+      ],
+      "sourcePalette": [
+        "#8C2131",
+        "#C7B682",
+        "#F9F9FA"
+      ],
+      "unusedSourceSlots": [],
+      "trace": {
+        "sha256": "fcc60da90bb9ebc77bec7abe078c82c8a4802694caf2bbdc603216fc341d2e80",
+        "colors": "auto",
+        "removeBackground": true
+      }
+    },
+    {
       "id": "HS-BUFO",
       "league": "HS",
       "conference": "Gwinnett County",
@@ -1075,6 +1114,45 @@
       "sourcePalette": [
         "#014812",
         "#C4A006",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": []
+    },
+    {
+      "id": "HS-NGWI",
+      "league": "HS",
+      "conference": "Gwinnett County",
+      "region": "North Gwinnett",
+      "name": "Bulldogs",
+      "abbr": "NGWI",
+      "displayName": "North Gwinnett Bulldogs",
+      "sourceUrl": "https://allatoonabucs.com/wp-content/uploads/2021/10/n.-gwinnett.svg",
+      "sourceKind": "community",
+      "sourcePage": "https://allatoonabucs.com/n-gwinnett/",
+      "path": "/logos/svg/high-school/ngwi.svg",
+      "format": "svg",
+      "colors": [
+        "#0D0D0D",
+        "#FFFFFF",
+        "#CD202F",
+        "#B1B1B1",
+        "#F6F6F6",
+        "#F8F8F8",
+        "#E1E1E1",
+        "#F0F0F0"
+      ],
+      "brand": [
+        "#D22630",
+        "#000000"
+      ],
+      "palette": [
+        "#CD202F",
+        "#0D0D0D",
+        "#FFFFFF"
+      ],
+      "sourcePalette": [
+        "#CD202F",
+        "#0D0D0D",
         "#FFFFFF"
       ],
       "unusedSourceSlots": []
@@ -1153,6 +1231,39 @@
       ]
     },
     {
+      "id": "HS-COLQ",
+      "league": "HS",
+      "conference": "Colquitt County",
+      "region": "Colquitt County",
+      "name": "Packers",
+      "abbr": "COLQ",
+      "displayName": "Colquitt County Packers",
+      "sourceUrl": "https://allatoonabucs.com/wp-content/uploads/2021/03/colquitcounty-01.svg",
+      "sourceKind": "community",
+      "sourcePage": "https://allatoonabucs.com/colquitcounty-01/",
+      "path": "/logos/svg/high-school/colq.svg",
+      "format": "svg",
+      "colors": [
+        "#C1A226",
+        "#FFFFFF"
+      ],
+      "brand": [
+        "#000000",
+        "#C1A226"
+      ],
+      "palette": [
+        "#000000",
+        "#C1A226",
+        "#FFFFFF"
+      ],
+      "sourcePalette": [
+        "#000000",
+        "#C1A226",
+        "#FFFFFF"
+      ],
+      "unusedSourceSlots": []
+    },
+    {
       "id": "HS-GAIN",
       "league": "HS",
       "conference": "Hall County",
@@ -1226,6 +1337,46 @@
       "unusedSourceSlots": [],
       "trace": {
         "sha256": "f22fb277108a80a239a16f59dc380af86ef9d0b0645b36075f06c8101970f1cb",
+        "colors": "auto",
+        "removeBackground": true
+      }
+    },
+    {
+      "id": "HS-LOWN",
+      "league": "HS",
+      "conference": "Lowndes County",
+      "region": "Lowndes",
+      "name": "Vikings",
+      "abbr": "LOWN",
+      "displayName": "Lowndes Vikings",
+      "sourceUrl": "https://cmsv2-assets.apptegy.net/uploads/19445/logo/21693/Lowndes_High_School_logo.png",
+      "sourceKind": "official",
+      "sourcePage": "https://lhs.lowndes.k12.ga.us",
+      "path": "/logos/svg/high-school/lown.svg",
+      "format": "svg",
+      "colors": [
+        "#990000",
+        "#FFFEFE"
+      ],
+      "brand": [
+        "#990000",
+        "#000000"
+      ],
+      "palette": [
+        "#990000",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "sourcePalette": [
+        "#990000",
+        "#000000",
+        "#FFFEFE"
+      ],
+      "unusedSourceSlots": [
+        1
+      ],
+      "trace": {
+        "sha256": "bbddacfd1b7bfa8485a5e6e3996910739946f93d6c49cbac5728395857eef963",
         "colors": "auto",
         "removeBackground": true
       }

@@ -1075,6 +1075,28 @@
     "ops": {}
   },
   {
+    "teamId": "HS-CARR",
+    "id": "plumed-helmet",
+    "label": "Gold plumed helmet profile",
+    "sourceUrl": "https://gowoodland.org/wp-content/uploads/2021/01/carrolton-01.svg",
+    "sourcePage": "https://gowoodland.org/carrolton-01/",
+    "sourceSha256": "46a47b06f88d16dd14ba0888b40667a1b45a963bf47f8adedbedefd95529ae38",
+    "ops": {}
+  },
+  {
+    "teamId": "HS-GRAY",
+    "id": "horn-wordmark",
+    "label": "Wordmark with curled horn",
+    "sourceUrl": "https://logos.vnn-prod.zone/9328.png",
+    "sourcePage": "https://www.parkviewhighathletics.com",
+    "sourceSha256": "0f8b7a320caec7f9cca1f2d5f75f5082b2050192f0f205b2531ec4402a66fe4b",
+    "traceColors": {
+      "colors": "auto",
+      "removeBackground": true
+    },
+    "ops": {}
+  },
+  {
     "teamId": "HS-KELL",
     "id": "longhorn-head",
     "label": "Long-horned steer head",
@@ -1118,12 +1140,45 @@
     "ops": {}
   },
   {
+    "teamId": "HS-NGWI",
+    "id": "ng-oval",
+    "label": "NG oval",
+    "sourceUrl": "https://resources.finalsite.net/images/v1718202758/gcpsk12org/hrwof6jyoggwxuvo3oxs/SchoolLogo2880x1100px.png",
+    "sourcePage": "https://northgwinnetths.gcpsk12.org/",
+    "sourceSha256": "01196ff54a678b6f0846426b5702363a40ee79a2b4e5bbeee200a7852c5f4d5d",
+    "traceColors": {
+      "colors": "auto",
+      "removeBackground": true,
+      "crop": [
+        995,
+        243,
+        1885,
+        857
+      ],
+      "mask": "ellipse"
+    },
+    "ops": {}
+  },
+  {
     "teamId": "HS-OSBO",
     "id": "cardinal-head",
     "label": "Cardinal head",
     "sourceUrl": "https://allatoonabucs.com/wp-content/uploads/2021/03/osborne.svg",
     "sourcePage": "https://allatoonabucs.com/osborne-2/",
     "sourceSha256": "cf2e7c79fcd4d559caa11b79fd7714c619c515634072f6e9cd931b232574b0a9",
+    "ops": {}
+  },
+  {
+    "teamId": "HS-PARK",
+    "id": "paw-print",
+    "label": "Paw print",
+    "sourceUrl": "https://5starassets.blob.core.windows.net/athleticsites/2484216/974/images/e0294306-08fb-4f41-b9d3-20cd3db22338.png",
+    "sourcePage": "https://www.brookwoodathletics.com",
+    "sourceSha256": "ca27247c99532c43732d84aef199ae97116990bdeace9f86bde89284cd6a0764",
+    "traceColors": {
+      "colors": "auto",
+      "removeBackground": true
+    },
     "ops": {}
   },
   {

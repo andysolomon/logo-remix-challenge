@@ -100,6 +100,7 @@ UNUSED_SOURCE_SLOTS = {
     "OSBO": [1],
     "PEBB": [2],
     "WALT": [1],
+    "LOWN": [1],
 }
 # Kennesaw Mountain has green, silver, and black artwork; white remains its
 # useful light game color while black is the actual third recolor source.
@@ -116,6 +117,8 @@ SOURCE_PALETTE_OVERRIDES = {
     "MARI": {2: "#FDFEFE"},
     "LEEC": {2: "#FEFEFE"},
     "NEWT": {2: "#FEFEFD"},
+    "LOWN": {2: "#FFFEFE"},
+    "BROO": {2: "#F9F9FA"},
     # Thomas County Central's TC is navy only; its unused slot holds the school's
     # vegas gold rather than a fallback black that would read as the navy.
     "TCC": {1: "#B0A876"},

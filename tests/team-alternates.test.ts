@@ -11,7 +11,7 @@ const root = join(import.meta.dir, '..')
 const python = (code: string) => execFileSync('python3', ['-c', code], { cwd: root })
 const norm = (s: string) => s.toLowerCase().replace(/[^a-z0-9]/g, '')
 // Minimum number of teams carrying at least one alternate, and the folder that holds them.
-const LEAGUES_WITH_ALTERNATES = { NBA: [18, 'nba'], COL: [19, 'ncaa'], MLB: [26, 'mlb'], MLS: [17, 'mls'], HS: [10, 'high-school'] } as const
+const LEAGUES_WITH_ALTERNATES = { NBA: [18, 'nba'], COL: [19, 'ncaa'], MLB: [26, 'mlb'], MLS: [17, 'mls'], HS: [14, 'high-school'] } as const
 const withAlternates = TEAMS.filter((t) => t.league in LEAGUES_WITH_ALTERNATES && t.alternateLogos?.length)
 
 describe('NBA, MLB, MLS, college and high-school alternate logos', () => {
@@ -75,6 +75,29 @@ assert traced == [('HS-KMHS', 'km-monogram')], traced
 item = next(i for i in json.loads(d.manifest_path('HS').read_text())['assets'] if i['id'] == 'km-monogram')
 assert item['trace'] == {'fill': '#004621', 'threshold': 0.5, 'turdsize': 8}
 assert item['colors'] == ['#004621'] and item['unusedSourceSlots'] == [1, 2]
+`)
+  })
+
+  test('only the requested multi-color bitmap marks run through the Designer tracer, and keep that edit', () => {
+    python(`
+import json, sys
+from pathlib import Path
+sys.path.insert(0, 'scripts')
+import download_team_alternates as d
+traced = {(s['teamId'], s['id']): s['traceColors'] for s in json.loads(d.SOURCES.read_text()) if 'traceColors' in s}
+assert set(traced) == {('HS-GRAY', 'horn-wordmark'), ('HS-NGWI', 'ng-oval'), ('HS-PARK', 'paw-print')}, traced
+items = {(i['teamId'], i['id']): i for i in json.loads(d.manifest_path('HS').read_text())['assets']}
+for key, spec in traced.items():
+    assert items[key]['traceColors'] == spec, key
+    assert b'fill-rule="evenodd"' in (Path('public') / items[key]['path'].lstrip('/')).read_bytes(), key
+# The NG oval is cut out of the district's banner, so its crop and mask are part of the reviewed edit.
+assert traced[('HS-NGWI', 'ng-oval')] == {'colors': 'auto', 'removeBackground': True, 'crop': [995, 243, 1885, 857], 'mask': 'ellipse'}
+for spec in ({'colors': 'auto'}, {'colors': 1, 'removeBackground': True}, {'colors': 'auto', 'removeBackground': 'yes'},
+             {'colors': 'auto', 'removeBackground': True, 'blur': 2}, {'colors': 'auto', 'removeBackground': True, 'mask': 'ellipse'},
+             {'colors': 'auto', 'removeBackground': True, 'crop': [10, 10, 5, 20]}):
+    try: d.trace_colors(b'not an image', spec)
+    except ValueError: pass
+    else: raise AssertionError(f'accepted {spec}')
 `)
   })
 

@@ -138,12 +138,21 @@ ROSTER: dict[str, list[School]] = {
          "community", "https://production-gofan-assets.s3.amazonaws.com/uploads/school/logo/GA5321/GA5321.png"),
     ],
     "Gwinnett County": [
+        # Brookwood's bronco head is the VNN opponent logo Parkview's athletics site
+        # (parkviewhighathletics.com) shows: a 450px bitmap, sharper than the
+        # 256px copy on the district site.
+        ("BROO", "Brookwood", "Broncos",
+         "https://logos.vnn-prod.zone/9349.png",
+         "community", "https://logos.vnn-prod.zone/9349.png"),
         ("BUFO", "Buford", "Wolves",
          "https://allatoonabucs.com/wp-content/uploads/2021/02/buford-01-2.svg",
          "community", "https://allatoonabucs.com/buford-01-2/"),
         ("GRAY", "Grayson", "Rams",
          "https://allatoonabucs.com/wp-content/uploads/2021/04/grayson.svg",
          "community", "https://allatoonabucs.com/grayson/"),
+        ("NGWI", "North Gwinnett", "Bulldogs",
+         "https://allatoonabucs.com/wp-content/uploads/2021/10/n.-gwinnett.svg",
+         "community", "https://allatoonabucs.com/n-gwinnett/"),
         ("PARK", "Parkview", "Panthers",
          "https://production-gofan-assets.s3.amazonaws.com/uploads/school/logo/GA5226/Logo_-_P.png",
          "community", "https://production-gofan-assets.s3.amazonaws.com/uploads/school/logo/GA5226/Logo_-_P.png"),
@@ -152,6 +161,11 @@ ROSTER: dict[str, list[School]] = {
         ("CARR", "Carrollton", "Trojans",
          "https://allatoonabucs.com/wp-content/uploads/2021/02/carrolton-02.svg",
          "community", "https://allatoonabucs.com/carrolton-02/"),
+    ],
+    "Colquitt County": [
+        ("COLQ", "Colquitt County", "Packers",
+         "https://allatoonabucs.com/wp-content/uploads/2021/03/colquitcounty-01.svg",
+         "community", "https://allatoonabucs.com/colquitcounty-01/"),
     ],
     "Hall County": [
         ("GAIN", "Gainesville", "Red Elephants",
@@ -164,6 +178,9 @@ ROSTER: dict[str, list[School]] = {
          "district", "https://www.lee.k12.ga.us"),
     ],
     "Lowndes County": [
+        ("LOWN", "Lowndes", "Vikings",
+         "https://cmsv2-assets.apptegy.net/uploads/19445/logo/21693/Lowndes_High_School_logo.png",
+         "official", "https://lhs.lowndes.k12.ga.us"),
         ("VALD", "Valdosta", "Wildcats",
          "https://gowoodland.org/wp-content/uploads/2021/01/VALDOSTAcatsLOGO-01.svg",
          "community", "https://gowoodland.org/valdostacatslogo-01/"),
@@ -198,6 +215,8 @@ TRACED: dict[str, dict] = {
     "NEWT": {"sha256": "8ff5c743a0cdc1037705bb7e5d14f6e628fb6ba139a56577facfa1437f749d19", "colors": "auto", "removeBackground": True},
     "LEEC": {"sha256": "f22fb277108a80a239a16f59dc380af86ef9d0b0645b36075f06c8101970f1cb", "colors": "auto", "removeBackground": True},
     "MARI": {"sha256": "4acfd0a34ae24170f381720e4658622e91d8b451f1d14f502b22d56247e35363", "colors": "auto", "removeBackground": True},
+    "BROO": {"sha256": "fcc60da90bb9ebc77bec7abe078c82c8a4802694caf2bbdc603216fc341d2e80", "colors": "auto", "removeBackground": True},
+    "LOWN": {"sha256": "bbddacfd1b7bfa8485a5e6e3996910739946f93d6c49cbac5728395857eef963", "colors": "auto", "removeBackground": True},
 }
 
 # abbr -> (primary, secondary) school colors, snapped to the nearest color
@@ -245,4 +264,8 @@ BRAND_COLORS: dict[str, tuple[str, str]] = {
     "VALD": ("#FAB61E", "#000000"),   # gold and black
     "NEWT": ("#134897", "#04050D"),   # royal blue, with the ram's black
     "TCC": ("#012D56", "#B0A876"),    # navy and vegas gold (the TC is navy only)
+    "BROO": ("#7B2235", "#C9B47E"),   # maroon and gold
+    "NGWI": ("#D22630", "#000000"),   # red and black (the bulldog's collar and outline)
+    "COLQ": ("#000000", "#C1A226"),   # black and gold
+    "LOWN": ("#990000", "#000000"),   # red and black (the Viking shield is red and white only)
 }

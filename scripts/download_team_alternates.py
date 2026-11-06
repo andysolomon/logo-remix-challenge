@@ -8,9 +8,14 @@ or build_hs_teams.py (HS); each attaches the alternates.
 team_alternate_sources.json pins every alternate the way brand_artwork_sources.json pins
 brand artwork: the source URL, the SHA-256 of the source file and the reviewed
 brand_vector.py edits that remove a page background or crop the mark. Only real vector
-outlines are accepted, so every alternate recolors like the primary. The one exception is
-a reviewed ``trace`` edit (see trace_vector.py) for a requested mark that is only
-published as a bitmap; the manifest keeps that edit, so a traced mark stays labeled.
+outlines are accepted, so every alternate recolors like the primary. The exceptions are
+reviewed trace edits for a requested mark that is only published as a bitmap: ``trace``
+(see trace_vector.py) outlines a flat one-color mark, and ``traceColors`` runs a
+multi-color mark through Designer mode's tracer exactly as cobb_roster.TRACED does for
+high-school primaries (``colors`` and ``removeBackground`` are the tracer's settings;
+an optional pixel ``crop`` box, with ``mask: "ellipse"`` to clear the corners around an
+oval, cuts the mark out of a larger banner first). The manifest keeps either edit, so a
+traced mark stays labeled.
 An alternate is artwork only: the team's name, answers and donor palette never change.
 Checked-in assets
 whose checksum matches the manifest are reused unless --force is given; --cache-dir keeps
@@ -34,7 +39,45 @@ ROOT = Path(__file__).resolve().parent.parent
 SOURCES = ROOT / "scripts/team_alternate_sources.json"
 TEAMS_JSON = ROOT / "src/lib/teams.json"
 FOLDERS = {"NBA": "nba", "MLB": "mlb", "MLS": "mls", "COL": "ncaa", "HS": "high-school"}
-SOURCE_KEYS = ("sourceUrl", "sourceSha256", "downloadForm", "trace", "ops")
+SOURCE_KEYS = ("sourceUrl", "sourceSha256", "downloadForm", "trace", "traceColors", "ops")
+TRACE_COLORS_KEYS = {"colors", "removeBackground", "crop", "mask"}
+
+
+def trace_colors(raw: bytes, spec: dict) -> bytes:
+    """Trace a pinned multi-color bitmap into flat-color SVG outlines with Designer mode's tracer."""
+    unknown = set(spec) - TRACE_COLORS_KEYS
+    if unknown or not {"colors", "removeBackground"} <= set(spec):
+        raise ValueError(f"traceColors needs colors and removeBackground, and supports only {sorted(TRACE_COLORS_KEYS)}")
+    if spec["colors"] != "auto" and not (type(spec["colors"]) is int and 2 <= spec["colors"] <= 8):
+        raise ValueError("traceColors colors must be 'auto' or 2-8")
+    if type(spec["removeBackground"]) is not bool:
+        raise ValueError("traceColors removeBackground must be true or false")
+    crop = spec.get("crop")
+    if crop is not None and not (isinstance(crop, list) and len(crop) == 4 and all(type(v) is int and v >= 0 for v in crop)
+                                 and crop[0] < crop[2] and crop[1] < crop[3]):
+        raise ValueError("traceColors crop must be a [left, top, right, bottom] pixel box")
+    if spec.get("mask", "ellipse") != "ellipse" or ("mask" in spec and crop is None):
+        raise ValueError("traceColors mask must be 'ellipse' and needs a crop")
+    # Imported here: only a re-trace needs Pillow and bun.
+    import io
+    from PIL import Image, ImageDraw
+    from download_cobb_svgs import trace_bitmap
+
+    image = Image.open(io.BytesIO(raw)).convert("RGBA")
+    if crop is not None:
+        if crop[2] > image.width or crop[3] > image.height:
+            raise ValueError("traceColors crop falls outside the image")
+        image = image.crop(tuple(crop))
+    if spec.get("mask") == "ellipse":
+        mask = Image.new("L", image.size, 0)
+        ImageDraw.Draw(mask).ellipse((0, 0, image.width - 1, image.height - 1), fill=255)
+        alpha = image.getchannel("A")
+        image.putalpha(Image.composite(alpha, mask, mask))
+    buffer = io.BytesIO()
+    image.save(buffer, "PNG")
+    png = buffer.getvalue()
+    options = {"colors": spec["colors"], "removeBackground": spec["removeBackground"]}
+    return trace_bitmap(png, {"sha256": hashlib.sha256(png).hexdigest(), **options})
 
 
 def manifest_path(league: str) -> Path:
@@ -91,8 +134,12 @@ def refresh(league: str, force: bool = False, cache_dir: Path | None = None) -> 
                 raise ValueError(f"{path}: checked-in artwork differs from the manifest; review or refresh with --force")
         else:
             raw = source_bytes(source, cache_dir)
+            if "trace" in source and "traceColors" in source:
+                raise ValueError(f"{source['teamId']}/{source['id']}: pick one trace edit")
             if "trace" in source:
                 raw = trace_raster(raw, source["trace"])
+            elif "traceColors" in source:
+                raw = trace_colors(raw, source["traceColors"])
             raw = import_brand_vector(raw, source.get("ops", {}))
         validate_vector(raw)
         if len(raw) > MAX_BYTES:

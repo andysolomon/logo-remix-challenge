@@ -7,6 +7,8 @@ import {
   COLOR_POOLS,
   COLOR_POOL_IDS,
   COLOR_SOURCE_NOTE,
+  DESIGNER_PALETTE_LEAGUES,
+  DESIGNER_PALETTE_NOTE,
   LEAGUES,
   SEED_DECK,
   TEAMS,
@@ -78,16 +80,31 @@ describe('only NFL, NBA and college palettes color a remix', () => {
     expect(browser).toContain('leagues?: readonly League[]')
     expect(browser).toContain("const offered = (Object.keys(LEAGUES) as League[]).filter((lg) => !leagues || leagues.includes(lg))")
     expect(browser).toContain("const state = offered.includes(rawState.league) ? rawState : { league: offered[0], conference: 'All' }")
-    for (const file of ['src/components/CreateMode.tsx', 'src/components/DesignerMode.tsx']) {
-      const source = read(file)
-      // Both layouts of the colors browser carry the restriction; the logo browser stays unrestricted.
-      expect(source.match(/leagues=\{COLOR_DONOR_LEAGUES\}/g)).toHaveLength(2)
-      expect(source.match(/note=\{COLOR_SOURCE_NOTE\}/g)).toHaveLength(2)
-      expect(source.match(/showSwatches/g)).toHaveLength(2)
-    }
+    const create = read('src/components/CreateMode.tsx')
+    // Both layouts of the colors browser carry the restriction; the logo browser stays unrestricted.
+    expect(create.match(/leagues=\{COLOR_DONOR_LEAGUES\}/g)).toHaveLength(2)
+    expect(create.match(/note=\{COLOR_SOURCE_NOTE\}/g)).toHaveLength(2)
+    expect(create.match(/showSwatches/g)).toHaveLength(2)
     const modal = read('src/components/RandomDeckModal.tsx')
     expect(modal).toContain('pools={COLOR_POOLS} allIds={COLOR_POOL_IDS}')
     expect(modal).toContain('colorPoolTeams(opts.colorPools)')
     expect(modal).toContain('{COLOR_SOURCE_NOTE}')
+  })
+})
+
+describe('the Designer palette panel', () => {
+  test('offers NFL, NBA, college and high school palettes in both layouts', () => {
+    expect(DESIGNER_PALETTE_LEAGUES).toEqual(['PRO', 'NBA', 'COL', 'HS'])
+    expect(DESIGNER_PALETTE_NOTE).toBe('Start from any NFL, NBA, college or high school palette.')
+    for (const league of ['COL', 'HS'] as League[]) {
+      const teams = filterTeams(league, 'All', '')
+      expect(teams.length).toBeGreaterThan(0)
+      expect(teams.every((t) => t.palette.length > 0)).toBe(true)
+    }
+    const source = read('src/components/DesignerMode.tsx')
+    expect(source.match(/leagues=\{DESIGNER_PALETTE_LEAGUES\}/g)).toHaveLength(2)
+    expect(source.match(/note=\{DESIGNER_PALETTE_NOTE\}/g)).toHaveLength(2)
+    expect(source.match(/showSwatches/g)).toHaveLength(2)
+    expect(source).not.toContain('COLOR_DONOR_LEAGUES')
   })
 })

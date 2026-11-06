@@ -758,27 +758,52 @@ html.kb-open .guess-field-mark { width: 22px; }
 .design-stage { display: flex; align-items: center; justify-content: center; border-radius: 22px; }
 .design-stage.bg { padding: clamp(12px, 3vh, 28px); box-shadow: 0 0 0 1px var(--swatch-ring); }
 .design-stage.bg .hero-logo { width: min(30vh, 300px, calc(90cqw - 56px), calc(90cqh - 56px)); height: min(30vh, 300px, calc(90cqw - 56px), calc(90cqh - 56px)); }
-.design-slots { width: min(420px, 100%); display: flex; flex-direction: column; gap: 4px; margin-top: 6px; }
-.design-slot { display: grid; grid-template-columns: 82px 16px 48px minmax(0, 1fr); align-items: center; gap: 8px; }
+.design-slots { width: min(420px, 100%); display: flex; flex-direction: column; gap: 6px; margin-top: 6px; }
+/* One compact chip per slot; the hex field lives in the picker, which leaves room for the wheel. */
+.design-chips { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; }
+.design-chip { display: flex; align-items: center; gap: 8px; min-width: 0; padding: 5px 8px 5px 5px; border: 1.5px solid var(--line); border-radius: 12px; background: var(--surface); color: var(--ink); text-align: left; cursor: pointer; }
+.design-chip.open { border-color: var(--ink); box-shadow: 0 0 0 1px var(--ink); }
+.design-chip:disabled { opacity: 0.4; cursor: not-allowed; }
+.design-chip-swatch { position: relative; flex: 0 0 32px; height: 32px; border-radius: 8px; box-shadow: inset 0 0 0 1px var(--swatch-ring); }
+/* The slot's original color, shown once it has been changed. */
+.design-chip-orig { position: absolute; right: -3px; bottom: -3px; width: 12px; height: 12px; border-radius: 50%; border: 2px solid var(--surface); }
+.design-chip-text { display: flex; flex-direction: column; min-width: 0; gap: 1px; }
+.design-chip-text .design-slot-label { font-size: 10px; letter-spacing: 1px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.design-chip-hex { font: 600 12px var(--ui); font-variant-numeric: tabular-nums; white-space: nowrap; }
 .design-slot-label { font: 600 11px var(--ui); letter-spacing: 1.5px; text-transform: uppercase; color: var(--muted); }
-.design-slot.unused .design-slot-label, .design-slot.unused .swatch { opacity: 0.45; }
 .color-input { width: 48px; height: 34px; padding: 0; border: 1.5px solid var(--line); border-radius: 10px; background: var(--swatch, var(--surface)) content-box; box-shadow: inset 0 0 0 3px var(--surface); cursor: pointer; }
 .color-input.open { border-color: var(--ink); }
 .color-input:disabled { opacity: 0.4; cursor: not-allowed; }
-/* In-page picker: in flow under the swatches, so it never covers the logo (iPad's native picker is a system popover that does). */
-.color-picker { display: flex; flex-direction: column; gap: 8px; width: 100%; margin-top: 4px; padding: 8px; border: 1.5px solid var(--line); border-radius: 12px; background: var(--input-bg); }
-.cp-main { display: flex; gap: 8px; }
-.cp-preview { flex: 0 0 96px; height: 96px; }
+/* In-page picker: in flow under the swatches, so it never covers the logo (iPad's native picker is a system popover that does).
+   The bottom scroll margin keeps it clear of the sticky Download bar when it scrolls itself into view. */
+.color-picker { display: flex; gap: 10px; width: 100%; margin-top: 4px; padding: 8px; border: 1.5px solid var(--line); border-radius: 12px; background: var(--input-bg); scroll-margin: 12px 0 110px; }
+/* Hue around the rim, saturation out from the white center; --dim darkens it to the brightness slider's value. */
+.cp-wheel { position: relative; flex: 0 0 auto; width: 136px; height: 136px; border-radius: 50%; background: radial-gradient(closest-side, #fff, rgba(255, 255, 255, 0)), conic-gradient(#f00, #ff0, #0f0, #0ff, #00f, #f0f, #f00); box-shadow: 0 0 0 1px var(--swatch-ring); touch-action: none; cursor: crosshair; }
+.cp-wheel::after { content: ''; position: absolute; inset: 0; border-radius: 50%; background: #000; opacity: var(--dim, 0); pointer-events: none; }
+.cp-side { flex: 1; min-width: 0; display: flex; flex-direction: column; justify-content: space-between; gap: 8px; }
+.cp-preview { height: 56px; }
 .cp-stage { width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; border-radius: 8px; }
-.cp-stage.bg { padding: 8px; box-shadow: 0 0 0 1px var(--swatch-ring); }
-.cp-area { flex: 1; min-width: 0; position: relative; height: 96px; border-radius: 8px; background-image: linear-gradient(to top, #000, transparent), linear-gradient(to right, #fff, transparent); touch-action: none; cursor: crosshair; }
-.cp-thumb { position: absolute; width: 18px; height: 18px; margin: -9px 0 0 -9px; border: 2px solid #fff; border-radius: 50%; box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.5), 0 1px 3px rgba(0, 0, 0, 0.4); pointer-events: none; }
+.cp-stage .logo { width: 56px; height: 56px; }
+.cp-stage.bg { padding: 6px; box-shadow: 0 0 0 1px var(--swatch-ring); }
+.cp-stage.bg .logo { width: 44px; height: 44px; }
+.cp-thumb { position: absolute; z-index: 1; width: 20px; height: 20px; margin: -10px 0 0 -10px; border: 2px solid #fff; border-radius: 50%; box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.5), 0 1px 3px rgba(0, 0, 0, 0.4); pointer-events: none; }
 .cp-row { display: flex; align-items: center; gap: 8px; }
-.cp-hue { flex: 1; min-width: 0; height: 22px; margin: 0; border-radius: 11px; background: linear-gradient(to right, #f00, #ff0, #0f0, #0ff, #00f, #f0f, #f00); appearance: none; -webkit-appearance: none; cursor: pointer; }
-.cp-hue::-webkit-slider-thumb { width: 22px; height: 22px; border: 2px solid #fff; border-radius: 50%; background: transparent; box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.5); -webkit-appearance: none; appearance: none; }
-.cp-hue::-moz-range-thumb { width: 18px; height: 18px; border: 2px solid #fff; border-radius: 50%; background: transparent; box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.5); }
+.cp-row .hex-input { flex: 1; width: 0; }
+.cp-value { width: 100%; height: 22px; margin: 0; border-radius: 11px; background: linear-gradient(to right, #000, var(--full, #fff)); box-shadow: inset 0 0 0 1px var(--swatch-ring); appearance: none; -webkit-appearance: none; cursor: pointer; }
+.cp-value::-webkit-slider-thumb { width: 22px; height: 22px; border: 2px solid #fff; border-radius: 50%; background: transparent; box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.5); -webkit-appearance: none; appearance: none; }
+.cp-value::-moz-range-thumb { width: 18px; height: 18px; border: 2px solid #fff; border-radius: 50%; background: transparent; box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.5); }
 .cp-done { height: 34px; padding: 0 14px; border: 1.5px solid var(--line); border-radius: 10px; background: var(--surface); color: var(--ink); font: 600 13px var(--ui); cursor: pointer; }
-.cp-area:focus-visible, .cp-hue:focus-visible, .cp-done:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.cp-wheel:focus-visible, .cp-value:focus-visible, .cp-done:focus-visible, .design-chip:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+@media (max-width: 480px) {
+  .design-chip { gap: 6px; padding-right: 4px; }
+  .design-chip-swatch { flex-basis: 26px; height: 26px; }
+  .design-chip-text .design-slot-label { letter-spacing: 0.3px; }
+  .cp-wheel { width: 112px; height: 112px; }
+  .color-picker { gap: 8px; }
+  .cp-row { gap: 6px; }
+  .cp-row .hex-input { padding: 0 6px; font-size: 13px; }
+  .cp-done { padding: 0 10px; }
+}
 .hex-input { height: 34px; min-width: 0; padding: 0 10px; border: 1.5px solid var(--line); border-radius: 10px; background: var(--input-bg); color: var(--ink); font: 600 14px var(--ui); text-transform: uppercase; font-variant-numeric: tabular-nums; }
 .hex-input:disabled { opacity: 0.4; }
 .design-actions { margin-top: 10px; }
@@ -801,8 +826,9 @@ html.kb-open .guess-field-mark { width: 22px; }
   .color-input { min-height: 44px; height: 44px; }
   .hex-input { min-height: 44px; height: 44px; }
   .cp-done { min-height: 44px; height: 44px; }
-  .cp-hue { height: 28px; border-radius: 14px; }
-  .cp-hue::-webkit-slider-thumb { width: 28px; height: 28px; }
+  .cp-value { height: 28px; border-radius: 14px; }
+  .cp-value::-webkit-slider-thumb { width: 28px; height: 28px; }
+  .design-chip { min-height: 44px; }
   .design-opts .color-input { height: 44px; }
 }
 @media (max-width: 640px) {

@@ -58,6 +58,41 @@ export function normalizeHex(raw: string): string | null {
   return null
 }
 
+/** Hue in degrees [0, 360), saturation and value in [0, 1]; drives the in-app color picker. */
+export interface HSV {
+  h: number
+  s: number
+  v: number
+}
+
+/** `#RRGGBB` → HSV. Grays report hue 0. */
+export function hexToHsv(hex: string): HSV {
+  const n = normalizeHex(hex) ?? '#000000'
+  const [r, g, b] = [1, 3, 5].map((i) => parseInt(n.slice(i, i + 2), 16) / 255)
+  const max = Math.max(r, g, b)
+  const d = max - Math.min(r, g, b)
+  let h = 0
+  if (d) {
+    if (max === r) h = ((g - b) / d) % 6
+    else if (max === g) h = (b - r) / d + 2
+    else h = (r - g) / d + 4
+    h = (h * 60 + 360) % 360
+  }
+  return { h, s: max ? d / max : 0, v: max }
+}
+
+/** HSV → `#RRGGBB` (uppercase, like `normalizeHex`); out-of-range inputs are clamped. */
+export function hsvToHex({ h, s, v }: HSV): string {
+  const hue = (((h % 360) + 360) % 360) / 60
+  const sat = Math.min(1, Math.max(0, s))
+  const val = Math.min(1, Math.max(0, v))
+  const f = (k: number) => {
+    const x = (k + hue) % 6
+    return val - val * sat * Math.max(0, Math.min(x, 4 - x, 1))
+  }
+  return ('#' + [f(5), f(3), f(1)].map((c) => Math.round(c * 255).toString(16).padStart(2, '0')).join('')).toUpperCase()
+}
+
 export const slug = (s: string) =>
   s
     .toLowerCase()

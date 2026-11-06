@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { framedTileImage } from '../lib/designer'
 import { Jersey } from './Jersey'
 import { findPlayer, findTeam, remixLayout, resolveRemixTargetColors, sinksIntoDark, withLogoVariant, type Round, type Team } from '../lib/teams'
@@ -311,12 +311,18 @@ export function Logo({ team: baseTeam, palette, perm = 0, variantId, targetColor
     }
   }, [key, team.logo])
 
-  const imageSrc = !hasTargetPalette ? team.logo : key && remixStatus === 'ready' ? urlCache.get(key) ?? TRANSPARENT_PIXEL : TRANSPARENT_PIXEL
+  const readySrc = key && remixStatus === 'ready' ? urlCache.get(key) : undefined
+  // Designer recolors live while a color is dragged: keep the last recolor of this artwork up
+  // until the next one is ready instead of blanking between frames.
+  const lastReady = useRef<{ logo: string; src: string } | null>(null)
+  if (readySrc) lastReady.current = { logo: team.logo, src: readySrc }
+  const heldSrc = targetColors && !readySrc && remixStatus !== 'error' && lastReady.current?.logo === team.logo ? lastReady.current.src : undefined
+  const imageSrc = !hasTargetPalette ? team.logo : readySrc ?? heldSrc ?? TRANSPARENT_PIXEL
   // The backdrop appears with the recolored artwork, never as an empty tile while it loads.
-  const showBackdrop = backdrop !== undefined && remixStatus === 'ready'
+  const showBackdrop = backdrop !== undefined && (remixStatus === 'ready' || heldSrc !== undefined)
   // Dark artwork (a black wordmark, a navy crest) sits on a light plate wherever the screen is dark;
   // styles.css applies it only there. Like the backdrop, a remix's plate waits for the recolor.
-  const showPlate = sinksIntoDark(team, target ?? undefined) && (!hasTargetPalette || remixStatus === 'ready')
+  const showPlate = sinksIntoDark(team, target ?? undefined) && (!hasTargetPalette || remixStatus === 'ready' || heldSrc !== undefined)
   const tileStyle = showBackdrop
     ? frame !== undefined
       ? { backgroundColor: backdrop, backgroundImage: framedTileImage(backdrop, frame) }

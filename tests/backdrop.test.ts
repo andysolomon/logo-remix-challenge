@@ -268,7 +268,7 @@ print(json.dumps(out))
 
   test('Logo renders the tile and frame only on remixes, once the recolored artwork is ready', () => {
     const logo = readFileSync(join(root, 'src/components/Logo.tsx'), 'utf8')
-    expect(logo).toContain("const showBackdrop = backdrop !== undefined && remixStatus === 'ready'")
+    expect(logo).toContain("const showBackdrop = backdrop !== undefined && (remixStatus === 'ready' || heldSrc !== undefined)")
     expect(logo).toContain('const backdrop = target && layout.backdrop !== undefined ? target[layout.backdrop] : undefined')
     expect(logo).toContain('const frame = target && layout.frame !== undefined ? target[layout.frame] : undefined')
     expect(logo).toContain('backgroundImage: framedTileImage(backdrop, frame)')

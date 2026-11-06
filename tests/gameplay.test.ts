@@ -75,7 +75,10 @@ describe('gameplay polish scaffolding', () => {
     expect(logo).toContain('TRANSPARENT_PIXEL')
     expect(logo).not.toContain('fullName')
     expect(logo).not.toContain('speechSynthesis')
-    expect(logo).toContain("!hasTargetPalette ? team.logo : key && remixStatus === 'ready'")
+    expect(logo).toContain("const readySrc = key && remixStatus === 'ready' ? urlCache.get(key) : undefined")
+    expect(logo).toContain("!hasTargetPalette ? team.logo : readySrc ?? heldSrc ?? TRANSPARENT_PIXEL")
+    // Only Designer (exact target colors) holds the previous recolor of the same artwork; game rounds never show a stale remix.
+    expect(logo).toContain("const heldSrc = targetColors && !readySrc && remixStatus !== 'error' && lastReady.current?.logo === team.logo")
   })
 
   test('both rounds award half credit, including a half locked in before time runs out', () => {

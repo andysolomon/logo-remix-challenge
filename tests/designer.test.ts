@@ -9,6 +9,8 @@ import {
   ensureSvgSize,
   framedTileImage,
   framedTileSvg,
+  hexToHsv,
+  hsvToHex,
   normalizeHex,
   parseViewBox,
   rotateColors,
@@ -161,6 +163,25 @@ describe('colors', () => {
   test('background presets include a transparent default', () => {
     expect(BACKGROUND_PRESETS[0]).toEqual({ id: 'none', label: 'None', color: null })
     expect(BACKGROUND_PRESETS.map((p) => p.color)).toContain('#FFFFFF')
+  })
+})
+
+describe('color picker conversions', () => {
+  test('hsv round-trips every primary, secondary and gray', () => {
+    for (const hex of ['#FF0000', '#00FF00', '#0000FF', '#FFFF00', '#00FFFF', '#FF00FF', '#FFFFFF', '#000000', '#808080', '#00338D', '#C60C30']) {
+      expect(hsvToHex(hexToHsv(hex))).toBe(hex)
+    }
+  })
+
+  test('hexToHsv reports hue in degrees and saturation/value as fractions', () => {
+    expect(hexToHsv('#FF0000')).toEqual({ h: 0, s: 1, v: 1 })
+    expect(hexToHsv('#0000FF')).toEqual({ h: 240, s: 1, v: 1 })
+    expect(hexToHsv('#808080').s).toBe(0)
+  })
+
+  test('hsvToHex clamps out-of-range input', () => {
+    expect(hsvToHex({ h: 360, s: 2, v: 1 })).toBe('#FF0000')
+    expect(hsvToHex({ h: -120, s: 1, v: -1 })).toBe('#000000')
   })
 })
 

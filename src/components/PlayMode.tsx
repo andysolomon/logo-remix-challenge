@@ -1,6 +1,6 @@
 import { SkinStage } from './SkinStage'
 import { useCallback, useEffect, useRef, useState, type FormEvent, type KeyboardEvent } from 'react'
-import { findTeam, formatScore, fullName, jerseyLine, roundColors, roundCredit, roundHints, roundPlayer, spokenScore, roundTarget, speak, speakScore, stopSpeak, isCorrectGuess, isCorrectPlayerGuess, insertHighScore, qualifiesForHighScore, INITIALS_LENGTH, INITIALS_ALPHABET, type GameMode, type GuessTarget, type HighScore, type Round, type RoundTarget, type TimerSeconds } from '../lib/teams'
+import { findTeam, formatPercent, formatScore, fullName, jerseyLine, roundColors, roundCredit, roundHints, roundPlayer, spokenScore, roundTarget, speak, speakScore, stopSpeak, isCorrectGuess, isCorrectPlayerGuess, insertHighScore, qualifiesForHighScore, INITIALS_LENGTH, INITIALS_ALPHABET, type GameMode, type GuessTarget, type HighScore, type Round, type RoundTarget, type TimerSeconds } from '../lib/teams'
 import { Logo, RoundLogo } from './Logo'
 import { GuessInput } from './GuessInput'
 
@@ -122,7 +122,7 @@ export function PlayMode({ deck, timer, gameMode, guessTarget, voice, highScores
   const finish = useCallback(() => {
     if (phaseRef.current !== 'reveal') return
     if (voice) speakScore(scoreRef.current, deck.length)
-    const nextPhase = qualifiesForHighScore(scoreRef.current, highScores) ? 'initials' : 'results'
+    const nextPhase = qualifiesForHighScore(scoreRef.current, deck.length, highScores) ? 'initials' : 'results'
     phaseRef.current = nextPhase
     setPhase(nextPhase)
   }, [highScores, voice, deck.length])
@@ -543,6 +543,7 @@ export function PlayMode({ deck, timer, gameMode, guessTarget, voice, highScores
                   <span className="hs-rank">{String(i + 1).padStart(2, '0')}</span>
                   <span className="hs-initials">{h.initials}</span>
                   <span className="hs-score">{formatScore(h.score)}<span className="hs-total"> / {h.total}</span></span>
+                  <span className="hs-pct">{formatPercent(h)}</span>
                 </li>
               ))}
             </ol>

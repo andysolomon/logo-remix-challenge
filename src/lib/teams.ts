@@ -279,9 +279,21 @@ export interface HighScore {
   date: number
 }
 
-// Higher score first; on ties the earlier entry keeps its spot, like an arcade cabinet.
+/** Share of the run answered correctly, 0–100. */
+export const scorePercent = (h: Pick<HighScore, 'score' | 'total'>) => (h.total > 0 ? (h.score / h.total) * 100 : 0)
+export const formatPercent = (h: Pick<HighScore, 'score' | 'total'>) => `${Math.round(scorePercent(h))}%`
+
+/**
+ * Board order ignoring dates: higher percentage first (compared by cross-multiplying,
+ * so 2/3 vs 4/6 is an exact tie), then the longer run, since 10/10 beats 5/5.
+ * Negative when `a` ranks ahead of `b`.
+ */
+const compareRuns = (a: Pick<HighScore, 'score' | 'total'>, b: Pick<HighScore, 'score' | 'total'>) =>
+  b.score * a.total - a.score * b.total || b.total - a.total
+
+// On a full tie the earlier entry keeps its spot, like an arcade cabinet.
 const rankHighScores = (list: HighScore[]) =>
-  [...list].sort((a, b) => b.score - a.score || a.date - b.date).slice(0, HIGH_SCORE_LIMIT)
+  [...list].sort((a, b) => compareRuns(a, b) || a.date - b.date).slice(0, HIGH_SCORE_LIMIT)
 
 const isSafeNonNegInt = (n: unknown, max = Number.MAX_SAFE_INTEGER): n is number =>
   typeof n === 'number' &&
@@ -327,9 +339,11 @@ export function loadHighScores(): HighScore[] {
 export const saveHighScores = (list: HighScore[]) =>
   safeSet(LS.highScores, JSON.stringify(rankHighScores(list.filter(isHighScore))))
 
-// A run makes the board when there is an open slot or it beats the lowest entry (ties do not bump anyone).
-export const qualifiesForHighScore = (score: number, list: HighScore[]) =>
-  score > 0 && (list.length < HIGH_SCORE_LIMIT || score > list[list.length - 1].score)
+// A run makes the board when there is an open slot or it outranks the lowest entry (ties do not bump anyone).
+export const qualifiesForHighScore = (score: number, total: number, list: HighScore[]) =>
+  score > 0 &&
+  total > 0 &&
+  (list.length < HIGH_SCORE_LIMIT || compareRuns({ score, total }, list[list.length - 1]) < 0)
 
 export const insertHighScore = (list: HighScore[], entry: HighScore) => rankHighScores([...list, entry])
 

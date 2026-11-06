@@ -11,6 +11,7 @@ import {
   deckFromStorage,
   deckUndoReducer,
   findTeam,
+  formatPercent,
   formatScore,
   insertHighScore,
   isCorrectGuess,
@@ -212,7 +213,7 @@ describe('high score persistence and validation', () => {
     ...overrides,
   })
 
-  test('loads valid persisted records and ranks by score then earlier date', () => {
+  test('loads valid persisted records and ranks by percentage then earlier date', () => {
     const entries = [
       validEntry({ initials: 'LOW', score: 5, date: 3 }),
       validEntry({ initials: 'TOP', score: 18, date: 2 }),
@@ -315,8 +316,8 @@ describe('high score persistence and validation', () => {
       ]),
     )
     expect(loadHighScores().map((h) => h.initials)).toEqual(['TOP', 'EGT', 'HLF', 'SVN', 'MIN'])
-    expect(qualifiesForHighScore(0.5, [])).toBe(true)
-    expect(qualifiesForHighScore(0, [])).toBe(false)
+    expect(qualifiesForHighScore(0.5, 20, [])).toBe(true)
+    expect(qualifiesForHighScore(0, 20, [])).toBe(false)
   })
 
   test('keeps top-10 ordering and tie behavior when saving and inserting', () => {
@@ -334,6 +335,40 @@ describe('high score persistence and validation', () => {
     expect(bumped).toHaveLength(HIGH_SCORE_LIMIT)
     expect(bumped.some((entry) => entry.initials === 'NEW')).toBe(true)
     expect(bumped.at(-1)?.score).toBe(2)
+  })
+})
+
+describe('high score percentage ranking', () => {
+  const run = (initials: string, score: number, total: number, date: number): HighScore => ({ initials, score, total, date })
+
+  test('ranks by share of rounds right, not raw points', () => {
+    stored.set(
+      LS.highScores,
+      JSON.stringify([run('BIG', 12, 20, 1), run('SML', 5, 5, 2), run('HLF', 7.5, 10, 3), run('MID', 9, 12, 4)]),
+    )
+    expect(loadHighScores().map((h) => h.initials)).toEqual(['SML', 'MID', 'HLF', 'BIG'])
+  })
+
+  test('breaks equal percentages by the longer run, then the earlier date', () => {
+    const ranked = insertHighScore([], run('TWO', 2, 3, 1))
+    const next = insertHighScore(insertHighScore(ranked, run('SIX', 4, 6, 2)), run('LAT', 4, 6, 3))
+    expect(next.map((h) => h.initials)).toEqual(['SIX', 'LAT', 'TWO'])
+  })
+
+  test('qualifies a run by percentage against the lowest entry; exact ties do not bump', () => {
+    const full = Array.from({ length: HIGH_SCORE_LIMIT }, (_, i) => run('AAA', 5, 10, i + 1))
+    expect(qualifiesForHighScore(3, 5, full)).toBe(true)
+    expect(qualifiesForHighScore(5, 10, full)).toBe(false)
+    expect(qualifiesForHighScore(5.5, 10, full)).toBe(true)
+    expect(qualifiesForHighScore(4.5, 10, full)).toBe(false)
+    expect(qualifiesForHighScore(10, 20, full)).toBe(true) // same %, longer run
+    expect(qualifiesForHighScore(6, 20, full)).toBe(false) // more points, lower %
+  })
+
+  test('formats the percentage rounded to a whole number', () => {
+    expect(formatPercent({ score: 7.5, total: 10 })).toBe('75%')
+    expect(formatPercent({ score: 2, total: 3 })).toBe('67%')
+    expect(formatPercent({ score: 0, total: 5 })).toBe('0%')
   })
 })
 

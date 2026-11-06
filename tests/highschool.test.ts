@@ -37,12 +37,13 @@ const HS_SCHOOLS: Record<string, string[]> = {
     'Walton',
     'Wheeler',
   ],
+  'Colquitt County': ['Colquitt County'],
   'DeKalb County': ['Druid Hills', 'Southwest DeKalb', 'Stephenson'],
   'Fulton County': ['Blessed Trinity', 'Creekside', 'Langston Hughes', 'Milton', 'North Atlanta', 'Westlake'],
-  'Gwinnett County': ['Buford', 'Grayson', 'Parkview'],
+  'Gwinnett County': ['Brookwood', 'Buford', 'Grayson', 'North Gwinnett', 'Parkview'],
   'Hall County': ['Gainesville'],
   'Lee County': ['Lee County'],
-  'Lowndes County': ['Valdosta'],
+  'Lowndes County': ['Lowndes', 'Valdosta'],
   'Newton County': ['Newton'],
   'Paulding County': ['North Paulding'],
   'Thomas County': ['Thomas County Central'],
@@ -139,7 +140,7 @@ import json, pathlib, sys
 sys.path.insert(0, 'scripts')
 from download_cobb_svgs import UNUSED_SOURCE_SLOTS, artwork_colors
 items = json.load(open('public/logos/svg/hs-manifest.json'))['assets']
-assert UNUSED_SOURCE_SLOTS == {'BTRI': [2], 'CARR': [2], 'LASS': [1], 'MILT': [2], 'OSBO': [1], 'PEBB': [2], 'STEP': [1], 'TCC': [1, 2], 'WALT': [1]}
+assert UNUSED_SOURCE_SLOTS == {'BTRI': [2], 'CARR': [2], 'LASS': [1], 'LOWN': [1], 'MILT': [2], 'OSBO': [1], 'PEBB': [2], 'STEP': [1], 'TCC': [1, 2], 'WALT': [1]}
 for a in items:
     colors, _ = artwork_colors(pathlib.Path('public') / a['path'].lstrip('/'))
     for slot, source in enumerate(a['sourcePalette']):
@@ -147,7 +148,7 @@ for a in items:
             assert source in colors, (a['abbr'], slot)
 `)
     expect(checked).toEqual({ status: 0, stdout: '', stderr: '' })
-    for (const abbr of ['BTRI', 'CARR', 'LASS', 'MILT', 'OSBO', 'PEBB', 'STEP', 'TCC', 'WALT']) {
+    for (const abbr of ['BTRI', 'CARR', 'LASS', 'LOWN', 'MILT', 'OSBO', 'PEBB', 'STEP', 'TCC', 'WALT']) {
       expect(hsTeams.find((t) => t.abbr === abbr)?.unusedSourceSlots).toBeDefined()
     }
   })
@@ -171,7 +172,7 @@ assert {s[4] for s in b.SCHOOLS} <= SOURCE_KINDS
 # mirror carries, in the roster and in the manifest the builder validates.
 MIRRORED = {'CAMP', 'HARR', 'KELL', 'MCEA', 'NCOB', 'PEBB',
             'NPAU', 'LHUG', 'NATL', 'WEST', 'DHIL', 'SWDK', 'STEP', 'BUFO', 'GRAY', 'PARK',
-            'BTRI', 'CREE', 'MILT', 'CARR', 'GAIN', 'VALD', 'NEWT', 'TCC'}
+            'BTRI', 'CREE', 'MILT', 'CARR', 'GAIN', 'VALD', 'NEWT', 'TCC', 'BROO', 'NGWI', 'COLQ'}
 assert {s[0] for s in b.SCHOOLS if s[4] == 'community'} == MIRRORED
 rows = b.validate_manifest()
 assert len(rows) == len(b.SCHOOLS)
@@ -183,7 +184,7 @@ assert {r['abbr'] for r in rows if r['sourceKind'] == 'community'} == MIRRORED
 LIBRARIES = ('https://allatoonabucs.com', 'https://gowoodland.org')
 library = {r['abbr'] for r in rows if r['sourceUrl'].startswith(tuple(f'{l}/wp-content/uploads/' for l in LIBRARIES))}
 assert library == {'ALLA', 'CAMP', 'HARR', 'NCOB', 'NATL', 'WEST', 'DHIL', 'BUFO', 'GRAY',
-                   'BTRI', 'CREE', 'MILT', 'CARR', 'TCC', 'VALD'}, library
+                   'BTRI', 'CREE', 'MILT', 'CARR', 'TCC', 'VALD', 'NGWI', 'COLQ', 'MCEA'}, library
 for row in rows:
     if row['abbr'] in library:
         assert row['format'] == 'svg', row['abbr']
@@ -217,7 +218,7 @@ sys.path.insert(0, 'scripts')
 import build_hs_teams as b
 import download_cobb_svgs as d
 from nfl_vector_artwork import validate_vector
-assert set(d.TRACED) == {'NPAU', 'LHUG', 'SWDK', 'STEP', 'PARK', 'GAIN', 'NEWT', 'LEEC', 'MARI'}, set(d.TRACED)
+assert set(d.TRACED) == {'NPAU', 'LHUG', 'SWDK', 'STEP', 'PARK', 'GAIN', 'NEWT', 'LEEC', 'MARI', 'BROO', 'LOWN'}, set(d.TRACED)
 rows = {r['abbr']: r for r in b.validate_manifest()}
 for abbr, spec in d.TRACED.items():
     row = rows[abbr]

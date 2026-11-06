@@ -1,5 +1,5 @@
 import { hasEmbeddedRaster, hexToRgb, isSvg, loadSvg, recolorRaster, recolorSvg, svgToDataUrl } from '../components/Logo'
-import { composeSvg, designLayout, ensureSvgSize, sourceColors, type DesignColors, type ExportSize } from './designer'
+import { composeSvg, designLayout, ensureSvgSize, isAppleMobile, sourceColors, type DesignColors, type ExportSize } from './designer'
 import { remixLayout, type Team } from './teams'
 
 /** A Designer-mode design: the artwork (variant already applied), its slot colors (null = as drawn) and an export background. */
@@ -81,6 +81,8 @@ export async function designPngBlob(d: Design, size: ExportSize): Promise<Blob |
   canvas.height = size
   const ctx = canvas.getContext('2d')
   if (!ctx) return null
+  ctx.imageSmoothingEnabled = true
+  ctx.imageSmoothingQuality = 'high'
   const { backdrop, frame } = tileOf(d)
   const layout = designLayout(size, !!backdrop, !!d.background, !!frame)
   if (d.background) {
@@ -128,4 +130,36 @@ export function downloadBlob(blob: Blob, filename: string) {
   a.click()
   a.remove()
   window.setTimeout(() => URL.revokeObjectURL(url), 10_000)
+}
+
+/**
+ * Whether this device can save a PNG straight to Photos: an iPhone/iPad whose browser
+ * shares image files (the share sheet's "Save Image" adds it to the Photos library).
+ */
+export function canSaveToPhotos(): boolean {
+  if (typeof navigator === 'undefined' || typeof navigator.share !== 'function' || typeof navigator.canShare !== 'function') return false
+  if (!isAppleMobile({ userAgent: navigator.userAgent, platform: navigator.platform, maxTouchPoints: navigator.maxTouchPoints })) return false
+  try {
+    return navigator.canShare({ files: [new File([new Uint8Array(0)], 'logo.png', { type: 'image/png' })] })
+  } catch {
+    return false
+  }
+}
+
+/** Outcome of handing an image to the share sheet. `blocked` means the browser wants a fresh tap. */
+export type ShareResult = 'shared' | 'cancelled' | 'blocked' | 'failed'
+
+/** Open the system share sheet with the PNG so it can be saved to Photos. */
+export async function shareImage(blob: Blob, filename: string): Promise<ShareResult> {
+  const file = new File([blob], filename, { type: blob.type || 'image/png' })
+  try {
+    if (navigator.canShare && !navigator.canShare({ files: [file] })) return 'failed'
+    await navigator.share({ files: [file] })
+    return 'shared'
+  } catch (err) {
+    const name = err instanceof DOMException ? err.name : ''
+    if (name === 'AbortError') return 'cancelled'
+    if (name === 'NotAllowedError') return 'blocked'
+    return 'failed'
+  }
 }

@@ -8,10 +8,23 @@ import { contrastSafePermutation, fullName, PERMS, remixLayout, type Team } from
 
 export type DesignColors = [string, string, string]
 export type ExportFormat = 'svg' | 'png'
-export const EXPORT_FORMATS: readonly ExportFormat[] = ['svg', 'png']
+export const EXPORT_FORMATS: readonly ExportFormat[] = ['png', 'svg']
 export const EXPORT_SIZES = [512, 1024, 2048] as const
 export type ExportSize = (typeof EXPORT_SIZES)[number]
-export const DEFAULT_EXPORT_SIZE: ExportSize = 1024
+/** Designer exports default to a PNG at the largest (highest quality) size. */
+export const DEFAULT_EXPORT_FORMAT: ExportFormat = 'png'
+export const DEFAULT_EXPORT_SIZE: ExportSize = EXPORT_SIZES[EXPORT_SIZES.length - 1]
+
+/** Navigator fields that identify an iPhone, iPod or iPad (iPadOS reports itself as a touch Mac). */
+export interface DeviceInfo {
+  userAgent: string
+  platform?: string
+  maxTouchPoints?: number
+}
+
+/** Whether this is an iPhone/iPad, where the share sheet's "Save Image" puts a file in Photos. */
+export const isAppleMobile = ({ userAgent, platform, maxTouchPoints = 0 }: DeviceInfo): boolean =>
+  /iPad|iPhone|iPod/.test(userAgent) || ((platform === 'MacIntel' || /Macintosh/.test(userAgent)) && maxTouchPoints > 1)
 /** Canvas size of a composed SVG export (backdrop tile and/or background); plain exports keep the artwork's own viewBox. */
 export const SVG_EXPORT_SIZE = 1024
 /** Fraction of the canvas left around the logo when it sits on a solid background. */

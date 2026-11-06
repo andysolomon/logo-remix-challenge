@@ -3,6 +3,9 @@ import { readFileSync } from 'node:fs'
 import { join } from 'node:path'
 import {
   BACKGROUND_PRESETS,
+  DEFAULT_EXPORT_FORMAT,
+  DEFAULT_EXPORT_SIZE,
+  EXPORT_SIZES,
   composeSvg,
   designFileName,
   designLayout,
@@ -11,6 +14,7 @@ import {
   framedTileSvg,
   hexToHsv,
   hsvToHex,
+  isAppleMobile,
   normalizeHex,
   parseViewBox,
   rotateColors,
@@ -292,5 +296,42 @@ describe('export composition', () => {
     const tileOnly = composeSvg('<svg viewBox="0 0 10 10"/>', { backdrop: '#000000', size: 100 })
     expect(tileOnly).toContain('<rect x="0" y="0" width="100" height="100" rx="22" fill="#000000"/>')
     expect(tileOnly).toContain('<svg x="12" y="12" width="76" height="76" viewBox="0 0 10 10"')
+  })
+})
+
+describe('designer export defaults', () => {
+  test('defaults to a PNG at the largest offered size', () => {
+    expect(DEFAULT_EXPORT_FORMAT).toBe('png')
+    expect(DEFAULT_EXPORT_SIZE).toBe(Math.max(...EXPORT_SIZES))
+    expect(DEFAULT_EXPORT_SIZE).toBe(2048)
+  })
+
+  test('the designer starts on the default PNG and lists PNG before SVG', () => {
+    const src = read('src/components/DesignerMode.tsx')
+    expect(src).toContain('format: DEFAULT_EXPORT_FORMAT')
+    expect(src).toContain('size: DEFAULT_EXPORT_SIZE')
+    expect(src.indexOf('PNG · {px}')).toBeLessThan(src.indexOf("onClick={() => setFormat('svg')}"))
+  })
+})
+
+describe('save to Photos', () => {
+  test('recognizes iPhone, iPod and iPad, including iPadOS desktop-class Safari', () => {
+    expect(isAppleMobile({ userAgent: 'Mozilla/5.0 (iPhone; CPU iPhone OS 18_0 like Mac OS X)', platform: 'iPhone', maxTouchPoints: 5 })).toBe(true)
+    expect(isAppleMobile({ userAgent: 'Mozilla/5.0 (iPad; CPU OS 17_0 like Mac OS X)', platform: 'iPad', maxTouchPoints: 5 })).toBe(true)
+    expect(isAppleMobile({ userAgent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)', platform: 'MacIntel', maxTouchPoints: 5 })).toBe(true)
+  })
+
+  test('leaves desktop Macs and other devices on the regular download', () => {
+    expect(isAppleMobile({ userAgent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)', platform: 'MacIntel', maxTouchPoints: 0 })).toBe(false)
+    expect(isAppleMobile({ userAgent: 'Mozilla/5.0 (Linux; Android 14; Pixel 8)', platform: 'Linux armv8l', maxTouchPoints: 5 })).toBe(false)
+    expect(isAppleMobile({ userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)', platform: 'Win32' })).toBe(false)
+  })
+
+  test('the designer offers Save to Photos for PNGs and keeps a plain file download', () => {
+    const src = read('src/components/DesignerMode.tsx')
+    expect(src).toContain('canSaveToPhotos')
+    expect(src).toContain("photosOk && format === 'png'")
+    expect(src).toContain('SAVE TO PHOTOS')
+    expect(src).toContain('Download file')
   })
 })

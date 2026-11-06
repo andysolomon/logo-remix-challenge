@@ -2,6 +2,7 @@ import { useEffect, useMemo, useRef, useState, type CSSProperties } from 'react'
 import {
   BACKGROUND_PRESETS,
   CUSTOM_BACKGROUND_DEFAULT,
+  DEFAULT_EXPORT_FORMAT,
   DEFAULT_EXPORT_SIZE,
   EXPORT_SIZES,
   designFileName,
@@ -15,7 +16,7 @@ import {
   type ExportFormat,
   type ExportSize,
 } from '../lib/designer'
-import { canExportSvg, designPngBlob, designSvgBlob, downloadBlob } from '../lib/exportLogo'
+import { canExportSvg, canSaveToPhotos, designPngBlob, designSvgBlob, downloadBlob, shareImage } from '../lib/exportLogo'
 import { TRACE_COLOR_OPTIONS, TraceError, DEFAULT_TRACE_OPTIONS, type TraceColors, type TraceOptions } from '../lib/trace'
 import { UPLOAD_ACCEPT, fileStem, readRaster, traceUpload, uploadTeam, type UploadedLogo } from '../lib/traceUpload'
 import { DESIGNER_PALETTE_LEAGUES, DESIGNER_PALETTE_NOTE, findTeam, fullName, nextLogoVariant, withLogoVariant, type Team } from '../lib/teams'
@@ -48,7 +49,7 @@ export const initialDesignerState: DesignerState = {
   cId: null,
   colors: null,
   background: null,
-  format: 'svg',
+  format: DEFAULT_EXPORT_FORMAT,
   size: DEFAULT_EXPORT_SIZE,
   step: 1,
   browserO: { league: 'PRO', conference: 'All' },
@@ -139,6 +140,27 @@ export function DesignerMode({ state, setState, portrait, hidden }: Props) {
   const [exportStatus, setExportStatus] = useState('')
   useEffect(() => setExportStatus(''), [state.oId, state.upload, state.logoVariant])
 
+  // iPhone/iPad: PNGs can go straight to Photos through the share sheet ("Save Image").
+  const [photosOk] = useState(canSaveToPhotos)
+  const exportColors = isOriginal ? null : state.colors
+  const pngKey = team ? JSON.stringify([team.logo, exportColors, state.background, state.size]) : ''
+  // Safari only opens the share sheet close to the tap, so render the PNG ahead of time.
+  const prepared = useRef<{ key: string; blob: Blob } | null>(null)
+  useEffect(() => {
+    if (!photosOk || format !== 'png' || !team || !pngKey) return
+    if (prepared.current?.key === pngKey) return
+    let alive = true
+    const id = window.setTimeout(() => {
+      designPngBlob({ team, colors: exportColors, background: state.background }, state.size).then((blob) => {
+        if (alive && blob) prepared.current = { key: pngKey, blob }
+      })
+    }, 250)
+    return () => {
+      alive = false
+      window.clearTimeout(id)
+    }
+  }, [photosOk, format, pngKey])
+
   // Upload: decode the file, trace it, and design the result like any other logo.
   const fileRef = useRef<HTMLInputElement>(null)
   const [tracing, setTracing] = useState(false)
@@ -223,12 +245,42 @@ export function DesignerMode({ state, setState, portrait, hidden }: Props) {
   const setFormat = (format: ExportFormat) => setState((s) => ({ ...s, format }))
   const setFile = (size: ExportSize) => setState((s) => ({ ...s, format: 'png', size }))
 
+  const saveToPhotos = async () => {
+    if (!team || exporting) return
+    const name = designFileName(team, state.logoVariant, 'png')
+    let blob = prepared.current?.key === pngKey ? prepared.current.blob : null
+    setExporting(true)
+    try {
+      if (!blob) {
+        setExportStatus('Preparing your image…')
+        blob = await designPngBlob({ team, colors: exportColors, background: state.background }, state.size)
+        if (!blob) {
+          setExportStatus('Export failed. Try again or pick another logo.')
+          return
+        }
+        prepared.current = { key: pngKey, blob }
+      }
+      const result = await shareImage(blob, name)
+      setExportStatus(
+        result === 'shared'
+          ? 'Done. If you tapped “Save Image”, it’s in your Photos.'
+          : result === 'cancelled'
+          ? ''
+          : result === 'blocked'
+          ? 'Your image is ready. Tap SAVE TO PHOTOS again.'
+          : 'Could not open the share sheet. Use Download file instead.',
+      )
+    } finally {
+      setExporting(false)
+    }
+  }
+
   const doExport = async () => {
     if (!team || exporting) return
     setExporting(true)
     setExportStatus('Preparing your file…')
     try {
-      const design = { team, colors: isOriginal ? null : state.colors, background: state.background }
+      const design = { team, colors: exportColors, background: state.background }
       const blob = format === 'svg' ? await designSvgBlob(design) : await designPngBlob(design, state.size)
       if (!blob) {
         setExportStatus(format === 'svg' ? 'This artwork cannot be exported as SVG. Try PNG.' : 'Export failed. Try again or pick another logo.')
@@ -403,10 +455,7 @@ export function DesignerMode({ state, setState, portrait, hidden }: Props) {
       <div className="design-export">
         <div className="micro">EXPORT</div>
         <div className="design-opts" role="group" aria-label="File">
-          <button type="button" className={`design-opt${format === 'svg' ? ' active' : ''}`} aria-pressed={format === 'svg'} disabled={svgOk === false} onClick={() => setFormat('svg')}>
-            SVG
-          </button>
-          {EXPORT_SIZES.map((px) => {
+          {[...EXPORT_SIZES].reverse().map((px) => {
             const active = format === 'png' && state.size === px
             return (
               <button key={px} type="button" className={`design-opt${active ? ' active' : ''}`} aria-pressed={active} onClick={() => setFile(px)}>
@@ -414,6 +463,9 @@ export function DesignerMode({ state, setState, portrait, hidden }: Props) {
               </button>
             )
           })}
+          <button type="button" className={`design-opt${format === 'svg' ? ' active' : ''}`} aria-pressed={format === 'svg'} disabled={svgOk === false} onClick={() => setFormat('svg')}>
+            SVG
+          </button>
         </div>
         <div className="design-opts" role="group" aria-label="Background">
           {BACKGROUND_PRESETS.map((p) => (
@@ -445,13 +497,24 @@ export function DesignerMode({ state, setState, portrait, hidden }: Props) {
             ? 'This artwork is a bitmap, so it exports as PNG only.'
             : format === 'svg'
               ? 'Vector file that stays sharp at any size; opens in Illustrator, Figma or a browser.'
-              : `Square ${state.size}px image${state.background ? '' : ' with a transparent background'}.`}
+              : `Square ${state.size}px image${state.background ? '' : ' with a transparent background'}.${photosOk ? ' Save to Photos opens the share sheet; tap “Save Image”.' : ''}`}
         </div>
       </div>
       <div className="canvas-footer design-footer">
-        <button type="button" className="btn-add design-download" onClick={doExport} disabled={!team || exporting} aria-label={team ? `Download ${format.toUpperCase()}` : 'Pick a logo before downloading'}>
-          {exporting ? 'EXPORTING…' : `⬇ DOWNLOAD ${format.toUpperCase()}`}
-        </button>
+        {photosOk && format === 'png' ? (
+          <>
+            <button type="button" className="btn-add design-download" onClick={saveToPhotos} disabled={!team || exporting} aria-label={team ? 'Save PNG to Photos' : 'Pick a logo before saving'}>
+              {exporting ? 'EXPORTING…' : '⬇ SAVE TO PHOTOS'}
+            </button>
+            <button type="button" className="design-opt design-file-link" onClick={doExport} disabled={!team || exporting} aria-label={team ? 'Download PNG file' : 'Pick a logo before downloading'}>
+              Download file
+            </button>
+          </>
+        ) : (
+          <button type="button" className="btn-add design-download" onClick={doExport} disabled={!team || exporting} aria-label={team ? `Download ${format.toUpperCase()}` : 'Pick a logo before downloading'}>
+            {exporting ? 'EXPORTING…' : `⬇ DOWNLOAD ${format.toUpperCase()}`}
+          </button>
+        )}
         <div className="mode-hint design-status" role="status" aria-live="polite" aria-atomic="true">
           {exportStatus}
         </div>

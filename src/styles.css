@@ -794,6 +794,7 @@ html.kb-open .guess-field-mark { width: 22px; }
 .design-opts .color-input { flex: 0 0 48px; height: 40px; }
 .design-footer { margin-top: 6px; padding-top: 6px; }
 .design-download { width: 100%; }
+.design-file-link { width: 100%; margin-top: 6px; }
 .design-status { min-height: 1.4em; margin-top: 4px; text-align: center; }
 .color-input:focus-visible, .hex-input:focus-visible, .design-opt:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 @media (pointer: coarse) {

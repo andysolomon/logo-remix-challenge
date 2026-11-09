@@ -59,7 +59,7 @@ Client-only SPA — no backend, no auth. Deck, timer, game mode, guess mode, voi
 
 - Vite + React 18 + TypeScript
 - Plain CSS with design tokens from `design_handoff_logo_remix/DESIGN_SYSTEM.md` (`src/styles.css`); a dark theme (Settings → Appearance: System / Light / Dark) swaps the same tokens, and holiday skins (`src/lib/skins.ts`, Settings → Holiday skin) layer a second swap on top under `:root[data-skin]`
-- Google Fonts: Chakra Petch (600/700), Space Grotesk (400–700)
+- Chakra Petch (600/700) and Space Grotesk (400–700), bundled with `@fontsource` (latin and latin-ext) so the UI renders with no network
 - Local SVG logos recolored in-browser by fill substitution, with a canvas fallback for PNGs (`src/components/Logo.tsx`, `public/logos/svg/`)
 - Voice announcer: baked Chatterbox Turbo wavs in `public/voice/` — round prompts, correct / not quite / time's up, and score fragments (regenerate with `scripts/generate_voice.py`)
 
@@ -77,6 +77,43 @@ Announcer clips live in `public/voice/`. To regenerate them you need a Chatterbo
 ```sh
 ~/Documents/Github/chatterbox/.venv/bin/python scripts/generate_voice.py
 ```
+
+## iOS app
+
+Capacitor 8 wraps the Vite production build in a native app. The Xcode project is `ios/App/App.xcodeproj` and uses Swift Package Manager. `webDir` is `dist/`. After `ios:sync`, the web view loads those bundled files on the device, so the installed app runs offline.
+
+| | |
+|---|---|
+| Bundle id | `dev.andrewsolomon.logoremix` |
+| Home-screen name | Logo Remix |
+| Deployment target | iOS 15.0 |
+| Signing | Automatic, team `F255EDQNK9` |
+
+The bundle id is a private reverse-DNS name under the owner's name (`andrewsolomon` from the app skill) plus `logoremix`, which matches this personal-team signing identity. The home-screen name is the wordmark. The full title "Logo Remix Challenge" is what the in-app intro says; it is too long for a home-screen label. iOS 15.0 is Capacitor 8's minimum, and it is what this project is generated with, so Xcode 26 can build it and older iPads that still run iOS 15 can install it.
+
+The game already lays itself out from the current orientation (three columns in landscape, stepped columns in portrait), including short landscape phones. iPhone is portrait plus both landscapes. iPad adds upside down, which is how an iPad is usually held. The shell pads `env(safe-area-inset-*)` so the header, Play, modals, and the undo bar stay clear of the status bar, the home indicator, and the landscape notch. The status bar text follows the screen: dark on the paper background, light during Play.
+
+The repo had no icon file. The app icon and launch screen are the wordmark set in Chakra Petch: LOGO in `#17150F`, REMIX in `#D8442B`, on the paper background `#F7F5F1` (`assets/logo.png`). `assets/logo-dark.png` is the same mark with light type for the dark launch screen.
+
+On the Mac mini, from the repo:
+
+```sh
+bun install          # or: npm install
+bun run ios:sync     # type-check, production build, copy dist/ into the Xcode project
+bun run ios:open     # opens ios/App/App.xcodeproj
+```
+
+`npm run ios:sync` and `npm run ios:open` do the same thing. Run `ios:sync` before the first Xcode build, and again after any web change. The copied web bundle (`ios/App/App/public`) and the generated `capacitor.config.json` are gitignored.
+
+The first Xcode build downloads the Capacitor Swift package from `https://github.com/ionic-team/capacitor-swift-pm.git`. That needs a network connection once.
+
+Then in Xcode:
+
+1. The App target is already set to team `F255EDQNK9` with automatic signing. If that Apple ID is not signed in yet, add it under Xcode → Settings → Accounts, then confirm the team under the App target → Signing & Capabilities. Xcode creates the provisioning profile.
+2. Simulator: choose an iPhone or iPad simulator and press Run.
+3. A device: connect the iPhone or iPad, choose it, and press Run. On the device, turn on Developer Mode (Settings → Privacy & Security) and trust the certificate (Settings → General → VPN & Device Management). A free personal-team profile expires after 7 days; press Run again to refresh it.
+
+Version in Xcode is 1.0 (build 1), separate from the web app's package version.
 
 ## Adding a holiday skin
 

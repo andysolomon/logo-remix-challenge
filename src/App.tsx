@@ -1,3 +1,5 @@
+import { Capacitor } from '@capacitor/core'
+import { StatusBar, Style } from '@capacitor/status-bar'
 import { useCallback, useEffect, useRef, useState } from 'react'
 import { CreateMode, initialCreateState, type CreateState } from './components/CreateMode'
 import { DeckMode } from './components/DeckMode'
@@ -133,6 +135,13 @@ export default function App() {
     // The skin may have recolored the page background, so read the token back rather than assuming the base palette.
     const bg = getComputedStyle(root).getPropertyValue(dark ? '--dark-bg' : '--bg').trim() || (dark ? '#12100D' : '#F7F5F1')
     document.querySelector('meta[name="theme-color"]')?.setAttribute('content', bg)
+    // WKWebView draws under the status bar. Match its text to the screen behind it
+    // (light paper in Create/Deck, dark in Play). Ignored in the browser.
+    if (Capacitor.isNativePlatform()) {
+      void StatusBar.setOverlaysWebView({ overlay: true })
+      void StatusBar.setStyle({ style: dark ? Style.Dark : Style.Light })
+      if (/^#[0-9A-Fa-f]{6}$/.test(bg)) void StatusBar.setBackgroundColor({ color: bg })
+    }
   }, [mode, themeDark, skinId])
 
   const addRound =(round: Round, editIdx: number | null) => {

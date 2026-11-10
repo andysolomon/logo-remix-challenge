@@ -49,6 +49,8 @@ Each round asks for the **logo's team**, the **team whose colors it wears**, or 
 
 **Designer mode** is tucked away under Settings → Advanced. Switch it on and a **Designer** tab joins Create and Deck: pick any logo (and any of its alternates), start from an NFL, NBA or college team's palette or type exact hex codes for each of the artwork's color slots, and download the result as an **SVG** (vector, any size) or a square **PNG** at 512, 1024 or 2048 px with a transparent, white, black or custom background. Tiled logos keep their backdrop tile (and one-color logos their frame) in the export, bitmap artwork exports as PNG only, and the tab disappears again when the mode is switched off.
 
+Designer mode has three tools, on tabs across the top of its canvas (on a phone, **Recolor a logo** or **Build from parts** in step 1): **Recolor** is the per-slot recoloring above, **Parts** takes logos apart and **Build** composes a new logo from the pieces. In **Parts**, pick any logo and it is split into the shapes it is drawn from: every connected region of one color is a part, a shape that sits under other artwork (a shield behind a star, the outline around a crest) is taken as the whole shape, and a hole that shows the page through stays a hole. Tap the parts you want (on the logo or in the list) and add them to **Your Parts**, a tray that collects parts from as many logos as you like. When the piece you want is fused into a bigger shape, **Cut a piece** lets you draw a loop around it, freehand or point by point, and keep what is inside the loop or everything outside it. In **Build**, each part in the tray is placed on a stage where it sat in its own logo, then dragged, resized from the corner handles, turned from the handle above it (it snaps to 45°), flipped, copied, reordered back to front or deleted; arrow keys, `+`/`-` and `[`/`]` do the same from the keyboard. The logo has three color slots like every other logo in the game: a part brings its color to a free slot, **Color** on a selected part moves it to the next slot, and the slots open the same color wheel as Recolor, start from any team palette or rotate. The corner icons export the built logo as SVG or PNG, trimmed to the artwork, under the name typed above the stage. Parts are found in the browser by rendering the logo and tracing its regions (`src/lib/parts.ts`, on the upload tracer's segmentation), so they work for every logo in the catalog, uploads included.
+
 **Upload Logo** in Designer mode traces any image you bring (JPG, PNG, WebP, GIF or SVG; drop it on the canvas or pick a file) into flat-color vector outlines, right in the browser; nothing is sent anywhere. The tracer (`src/lib/trace.ts`) finds the artwork's flat fills as peaks in a color histogram, so JPEG noise and anti-aliased edges don't become extra colors, removes the background around the logo while keeping white details enclosed by it, and smooths each color's outline with potrace's corner rule. **Auto** keeps up to three colors (the Designer's three slots) and drops thin anti-aliasing halos; 1, 2 or 3 forces a count, and **Remove background** can be switched off. The traced logo then recolors slot by slot, picks up a backdrop tile and frame when it has fewer than three colors, and downloads as SVG or PNG like any other logo.
 
 **Holiday skins** dress the whole app for the season on top of the light or dark scheme. Settings → Holiday skin is **Auto** by default, which follows the calendar (Halloween from October 24 through November 1: pumpkin orange, midnight purple and a jack-o'-lantern beside the wordmark and on the game intro, and in Play a moonlit graveyard wallpaper with bats, ghosts and clouds drifting behind the game); **Off** keeps the plain look all year, and any skin can be picked by hand out of season. Thanksgiving, Christmas and the rest slot in the same way (see *Adding a holiday skin* below).
@@ -191,6 +193,9 @@ src/
   lib/teams.ts             dataset, answer matching, filtering, localStorage
   lib/designer.ts          Designer mode: slot roles, palette seeding, SVG sizing/composition (pure)
   lib/exportLogo.ts        Designer exports: recolored SVG files, canvas-rendered PNGs, downloads
+  lib/parts.ts             Designer parts: split a logo into its shapes, cut a piece along a loop (pure)
+  lib/partsScan.ts         Designer parts: render a logo to pixels in the browser and scan it
+  lib/build.ts             Designer build: layers, color slots, transforms, SVG of the built logo (pure)
   lib/trace.ts             Designer uploads: trace a bitmap logo into flat-color SVG outlines (pure)
   lib/traceUpload.ts       Designer uploads: decode the file in the browser, trace it, wrap it as a logo
   lib/players.ts           151 famous NFL and NBA jerseys (team, number, season, player) for "Who wore it?" rounds
@@ -204,7 +209,10 @@ src/
     Jersey.tsx             a jersey in team colors with number, logo patch and season tag
     JerseyCanvas.tsx       Who wore it?: jersey preview, answer, + ADD ROUND
     CreateMode.tsx         landscape columns / portrait stepped composition; a picked jersey swaps in the jersey preview
-    DesignerMode.tsx       opt-in logo designer: per-slot colors, SVG / PNG export
+    DesignerMode.tsx       opt-in logo designer: Recolor / Parts / Build tools, SVG / PNG export
+    PartsCanvas.tsx        Designer Parts tool: tap a logo's parts or cut a piece out by hand
+    BuildCanvas.tsx        Designer Build tool: move, resize, turn, layer and color parts on a stage
+    PartsTray.tsx          Designer tray of taken parts (column, or a bar on phones), part thumbnails
     DeckMode.tsx           round cards, game setup rail, high score
     PlayMode.tsx           intro → question (type / host) → reveal → results
     DeckMode.tsx           deck cards (per-round guess mode) + settings rail

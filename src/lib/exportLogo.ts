@@ -119,6 +119,30 @@ export async function designPngBlob(d: Design, size: ExportSize): Promise<Blob |
   })
 }
 
+/** A standalone SVG document as a downloadable file. */
+export const svgBlob = (markup: string) => new Blob([markup], { type: 'image/svg+xml;charset=utf-8' })
+
+/** Square PNG of a square SVG document (a logo built from parts) at `size` px. */
+export async function svgPngBlob(markup: string, size: ExportSize): Promise<Blob | null> {
+  const img = await loadImageElement(svgToDataUrl(markup))
+  if (!img) return null
+  const canvas = document.createElement('canvas')
+  canvas.width = size
+  canvas.height = size
+  const ctx = canvas.getContext('2d')
+  if (!ctx) return null
+  ctx.imageSmoothingEnabled = true
+  ctx.imageSmoothingQuality = 'high'
+  ctx.drawImage(img, 0, 0, size, size)
+  return new Promise((resolve) => {
+    try {
+      canvas.toBlob((blob) => resolve(blob), 'image/png')
+    } catch {
+      resolve(null)
+    }
+  })
+}
+
 /** Save a blob through a temporary download link. */
 export function downloadBlob(blob: Blob, filename: string) {
   const url = URL.createObjectURL(blob)

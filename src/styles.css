@@ -952,8 +952,10 @@ html.kb-open .guess-field-mark { width: 22px; }
 .part-tools { width: 100%; align-items: center; justify-content: center; margin-top: 8px; }
 
 /* Build stage: parts are dragged on it, so it never scrolls the page under a finger. */
-.build-stage { position: relative; touch-action: none; user-select: none; -webkit-user-select: none; border-radius: 4px; }
-.build-art { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.18)); }
+.build-stage { position: relative; touch-action: none; user-select: none; -webkit-user-select: none; }
+/* The stage is the logo's canvas: the dashed edge is where the exported file ends, and artwork past it is cropped here as it is in the file. */
+.parts-frame.stage-edge { padding: 0; border-radius: 0; }
+.build-art { position: absolute; inset: 0; width: 100%; height: 100%; overflow: hidden; }
 .build-art path { cursor: move; }
 .build-empty { position: absolute; inset: 0; pointer-events: none; }
 .build-sel { position: absolute; border: 1.5px solid #B9331D; cursor: move; }
@@ -966,7 +968,7 @@ html.kb-open .guess-field-mark { width: 22px; }
 .build-handle.se { left: 100%; top: 100%; cursor: nwse-resize; }
 .build-handle.turn { left: 50%; top: -28px; width: 16px; height: 16px; margin: -8px; border-radius: 50%; cursor: grab; }
 .build-turn-line { position: absolute; left: 50%; top: -28px; width: 1.5px; height: 28px; margin-left: -0.75px; background: #B9331D; pointer-events: none; }
-.build-mini { display: block; width: 56px; height: 56px; overflow: visible; }
+.build-mini { display: block; width: 56px; height: 56px; overflow: hidden; }
 .cp-stage.bg .build-mini { width: 44px; height: 44px; }
 .build-layers { width: 100%; display: flex; flex-direction: column; align-items: center; gap: 6px; margin-top: 8px; }
 .layer-strip { max-width: 100%; display: flex; gap: 10px; overflow-x: auto; -webkit-overflow-scrolling: touch; padding: 2px 2px 6px; }

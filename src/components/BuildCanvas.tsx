@@ -181,10 +181,11 @@ export function BuildCanvas({ parts, build, onBuild, name, onName, background, p
       </div>
 
       <div className="canvas-hero">
-        <div className={`parts-frame${background ? ' bg' : ''}`} style={background ? { background } : undefined}>
+        <div className={`parts-frame stage-edge${background ? ' bg' : ''}`}>
           <div
             ref={stage}
             className="parts-stage build-stage"
+            style={background ? { background } : undefined}
             tabIndex={0}
             role="group"
             aria-label={`${describe}${selectedPart ? ` ${selectedPart.name} is selected: arrow keys move it, plus and minus resize it, brackets turn it.` : ''}`}

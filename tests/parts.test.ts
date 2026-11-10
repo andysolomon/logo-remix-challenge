@@ -3,7 +3,6 @@ import { readFileSync } from 'node:fs'
 import { join } from 'node:path'
 import {
   BUILD_COLORS,
-  buildBounds,
   buildFileName,
   buildSvg,
   duplicateLayer,
@@ -318,29 +317,27 @@ describe('building a logo from parts', () => {
     expect(rotateBuildColors({ ...emptyBuild, colors: ['#111111', '#222222', '#333333'] }).colors).toEqual(['#222222', '#333333', '#111111'])
   })
 
-  test('the export is a square trimmed to the artwork, with every layer in its slot color', () => {
+  test('the export is the stage itself: same view box, artwork past its edge cropped', () => {
     const a = part('p1', '#4A2A6B', { x: 10, y: 10, w: 40, h: 20 })
     const b = part('p2', '#F2B72E', { x: 60, y: 40, w: 20, h: 40 })
-    const build = placePart(placePart(emptyBuild, a), b)
-    expect(buildBounds(build.layers, [a, b])).toEqual({ x: 10, y: 10, w: 70, h: 70 })
+    let build = placePart(placePart(emptyBuild, a), b)
     const svg = buildSvg(build, [a, b])!
-    expect(svg.startsWith('<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="7.9 7.9 74.2 74.2">')).toBe(true)
+    expect(svg.startsWith('<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 100 100">')).toBe(true)
     expect(svg.match(/<path /g)).toHaveLength(2)
     expect(svg.indexOf('#4A2A6B')).toBeLessThan(svg.indexOf('#F2B72E'))
     expect(svg).toContain('fill-rule="evenodd"')
-    expect(svg).not.toContain('<rect')
+    // Every layer sits inside a clip the size of the stage, so an editor crops it like the stage does.
+    expect(svg).toContain('<clipPath id="stage"><rect width="100" height="100"/></clipPath><g clip-path="url(#stage)"><path ')
+    expect(svg.endsWith('</g></svg>')).toBe(true)
+    expect(svg).not.toContain('fill="#FFFFFF"')
+    // Moving or enlarging a part past the edge does not move the frame.
+    build = updateLayer(build, build.layers[1].id, { x: 100, y: 100, scale: 4, rotation: 30 })
+    expect(buildSvg(build, [a, b])).toContain('viewBox="0 0 100 100"')
     const onWhite = buildSvg(build, [a, b], { background: '#FFFFFF', size: 512 })!
-    expect(onWhite).toContain('width="512"')
-    expect(onWhite).toContain('viewBox="4.4 4.4 81.2 81.2"')
-    expect(onWhite).toContain('<rect x="4.4" y="4.4" width="81.2" height="81.2" fill="#FFFFFF"/>')
+    expect(onWhite).toContain('width="512" height="512" viewBox="0 0 100 100"')
+    expect(onWhite).toContain('</clipPath><rect width="100" height="100" fill="#FFFFFF"/><g clip-path="url(#stage)">')
     expect(buildSvg(emptyBuild, [])).toBeNull()
-  })
-
-  test('a turned layer widens the bounds', () => {
-    const a = part('p1', '#4A2A6B', { x: 30, y: 40, w: 40, h: 20 })
-    const build = updateLayer(placePart(emptyBuild, a), 'L1', { rotation: 90 })
-    const bounds = buildBounds(build.layers, [a])!
-    expect(near(bounds.w, 20, 0.001) && near(bounds.h, 40, 0.001)).toBe(true)
+    expect(buildSvg({ ...build, layers: [{ ...build.layers[0], partId: 'gone' }] }, [a, b])).toBeNull()
   })
 
   test('summaries and file names', () => {
@@ -374,5 +371,7 @@ describe('designer tools', () => {
     expect(css).toMatch(/\.build-stage \{[^}]*touch-action: none/)
     expect(css).toMatch(/\.cut-stage \{[^}]*touch-action: none/)
     expect(css).toContain('.part-tool { min-height: 44px')
+    // The stage crops artwork at its edge, like the exported file.
+    expect(css).toMatch(/\.build-art \{[^}]*overflow: hidden/)
   })
 })

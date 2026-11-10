@@ -195,50 +195,30 @@ const lookup = (parts: readonly LogoPart[]): PartLookup => {
   return (id) => byId.get(id)
 }
 
-/** Box around everything on the logo (rotated boxes included); null for an empty logo. */
-export function buildBounds(layers: readonly BuildLayer[], parts: readonly LogoPart[]): { x: number; y: number; w: number; h: number } | null {
-  const find = lookup(parts)
-  let x0 = Infinity, y0 = Infinity, x1 = -Infinity, y1 = -Infinity
-  for (const layer of layers) {
-    const part = find(layer.partId)
-    if (!part) continue
-    const { cx, cy, w, h } = layerBox(layer, part)
-    const a = (layer.rotation * Math.PI) / 180
-    const ex = (Math.abs(Math.cos(a)) * w + Math.abs(Math.sin(a)) * h) / 2
-    const ey = (Math.abs(Math.sin(a)) * w + Math.abs(Math.cos(a)) * h) / 2
-    x0 = Math.min(x0, cx - ex)
-    y0 = Math.min(y0, cy - ey)
-    x1 = Math.max(x1, cx + ex)
-    y1 = Math.max(y1, cy + ey)
-  }
-  return Number.isFinite(x0) ? { x: x0, y: y0, w: x1 - x0, h: y1 - y0 } : null
-}
-
-/** Air around an exported logo, as a share of its longer side: more when it sits on a solid background. */
-const EXPORT_PADDING = 0.03
-const BACKGROUND_PADDING = 0.08
 export const BUILD_SVG_SIZE = 1024
 
 /**
- * Standalone SVG of the built logo: a square trimmed to the artwork, wherever it sits on the stage,
- * with an optional solid background. Null for an empty logo.
+ * Standalone SVG of the built logo: the stage itself, edge to edge, so the file shows exactly what the
+ * stage shows. Artwork that runs past the stage is cropped at its edge, and an optional solid
+ * background fills it. Null for an empty logo.
  */
 export function buildSvg(build: Pick<BuildState, 'layers' | 'colors'>, parts: readonly LogoPart[], opts: { background?: string | null; size?: number } = {}): string | null {
-  const bounds = buildBounds(build.layers, parts)
-  if (!bounds) return null
   const find = lookup(parts)
-  const size = opts.size ?? BUILD_SVG_SIZE
-  const side = Math.max(bounds.w, bounds.h, 1) * (1 + 2 * (opts.background ? BACKGROUND_PADDING : EXPORT_PADDING))
-  const x = bounds.x + bounds.w / 2 - side / 2
-  const y = bounds.y + bounds.h / 2 - side / 2
   const body = build.layers
     .map((layer) => {
       const part = find(layer.partId)
       return part ? `<path transform="${layerTransform(layer, part)}" fill="${build.colors[layer.slot]}" fill-rule="evenodd" d="${part.d}"/>` : ''
     })
     .join('')
-  const background = opts.background ? `<rect x="${fmt(x)}" y="${fmt(y)}" width="${fmt(side)}" height="${fmt(side)}" fill="${opts.background}"/>` : ''
-  return `<svg xmlns="http://www.w3.org/2000/svg" width="${size}" height="${size}" viewBox="${fmt(x)} ${fmt(y)} ${fmt(side)} ${fmt(side)}">${background}${body}</svg>`
+  if (!body) return null
+  const size = opts.size ?? BUILD_SVG_SIZE
+  const stage = `width="${PART_UNITS}" height="${PART_UNITS}"`
+  const background = opts.background ? `<rect ${stage} fill="${opts.background}"/>` : ''
+  // The clip keeps the crop when the file is opened in an editor, which shows what lies outside the view box.
+  return (
+    `<svg xmlns="http://www.w3.org/2000/svg" width="${size}" height="${size}" viewBox="0 0 ${PART_UNITS} ${PART_UNITS}">` +
+    `<clipPath id="stage"><rect ${stage}/></clipPath>${background}<g clip-path="url(#stage)">${body}</g></svg>`
+  )
 }
 
 // ---------------------------------------------------------------- words

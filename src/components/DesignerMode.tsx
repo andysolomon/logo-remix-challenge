@@ -264,6 +264,8 @@ export function DesignerMode({ state, setState, portrait, hidden }: Props) {
       const added: LogoPart[] = taken.filter((t) => !t.origin || !have.has(t.origin)).map((t) => ({ ...t, id: `P${++serial}`, source: fullName(baseTeam), sourceId }))
       return added.length ? { ...s, tray: [...s.tray, ...added], partSerial: serial } : s
     })
+  // Start over: the tray empties, and the logo with it. Layer ids keep counting, so nothing old can be mistaken for new.
+  const clearParts = () => setState((s) => ({ ...s, tray: [], build: { ...emptyBuild, serial: s.build.serial }, palettePick: false }))
   const dropPart = (id: string) => setState((s) => ({ ...s, tray: s.tray.filter((p) => p.id !== id), build: removePart(s.build, id) }))
   const placeTrayPart = (id: string) =>
     setState((s) => {
@@ -543,6 +545,7 @@ export function DesignerMode({ state, setState, portrait, hidden }: Props) {
           paletteName={buildPalette ? fullName(buildPalette) : null}
           onPalette={() => setState((s) => ({ ...s, palettePick: true }))}
           onTakeParts={() => setTool('parts')}
+          onClearParts={clearParts}
           portrait={portrait}
         />
       )}
@@ -678,6 +681,7 @@ export function DesignerMode({ state, setState, portrait, hidden }: Props) {
       onSelectLayer={(id) => setBuild((b) => ({ ...b, selected: id }))}
       onBuild={() => setTool('build')}
       onTakeParts={() => setTool('parts')}
+      onClear={clearParts}
     />
   )
   // Build borrows the palette browser to start its colors from a team; this closes it again.

@@ -181,6 +181,68 @@ export function layerBox(layer: BuildLayer, part: LogoPart) {
   return { cx: layer.x, cy: layer.y, w: part.box.w * layer.scale, h: part.box.h * layer.scale, rotation: layer.rotation }
 }
 
+/** Half the width and height the layer takes up on the stage, its turn included. */
+export function layerExtent(layer: BuildLayer, part: LogoPart): { ex: number; ey: number } {
+  const { w, h } = layerBox(layer, part)
+  const a = (layer.rotation * Math.PI) / 180
+  const cos = Math.abs(Math.cos(a)), sin = Math.abs(Math.sin(a))
+  return { ex: (cos * w + sin * h) / 2, ey: (sin * w + cos * h) / 2 }
+}
+
+/** Lines of the stage a layer lines up with: its edges (0 and 100) and its middle (50), per axis. */
+export interface SnapGuides {
+  x: number[]
+  y: number[]
+}
+
+const MIDDLE = PART_UNITS / 2
+const TOUCHING = 0.01
+
+/** The stage lines a layer sits on right now: an edge of its box on an edge of the stage, or its center on the middle. */
+export function snapGuides(layer: BuildLayer, part: LogoPart): SnapGuides {
+  const { ex, ey } = layerExtent(layer, part)
+  const on = (center: number, half: number) =>
+    [0, MIDDLE, PART_UNITS].filter((line) => (line === MIDDLE ? [center] : [center - half, center + half]).some((v) => Math.abs(v - line) <= TOUCHING))
+  return { x: on(layer.x, ex), y: on(layer.y, ey) }
+}
+
+/**
+ * Snap a dragged layer to the stage: within `within` units, an edge of its box locks onto the edge of
+ * the stage it is nearest, or its center onto the middle. Each axis snaps on its own.
+ */
+export function snapMove(layer: BuildLayer, part: LogoPart, within: number): BuildLayer {
+  const { ex, ey } = layerExtent(layer, part)
+  const pull = (center: number, half: number) => {
+    // How far each candidate is from its line; the closest one within reach wins.
+    const offers = [0 - (center - half), PART_UNITS - (center + half), MIDDLE - center]
+    const best = offers.reduce((a, b) => (Math.abs(b) < Math.abs(a) ? b : a))
+    return Math.abs(best) <= within ? center + best : center
+  }
+  return { ...layer, x: pull(layer.x, ex), y: pull(layer.y, ey) }
+}
+
+/** Snap a resized layer to the stage: within `within` units, the size at which an edge of its box meets an edge of the stage. */
+export function snapScale(layer: BuildLayer, part: LogoPart, within: number): BuildLayer {
+  const { ex, ey } = layerExtent(layer, part)
+  if (!layer.scale || !ex || !ey) return layer
+  // Half extents at scale 1, and the scale at which each edge reaches its side of the stage.
+  const ux = ex / layer.scale, uy = ey / layer.scale
+  const offers = [
+    { scale: layer.x / ux, unit: ux },
+    { scale: (PART_UNITS - layer.x) / ux, unit: ux },
+    { scale: layer.y / uy, unit: uy },
+    { scale: (PART_UNITS - layer.y) / uy, unit: uy },
+  ]
+    .filter((o) => o.scale >= MIN_SCALE && o.scale <= MAX_SCALE)
+    .map((o) => ({ scale: o.scale, move: Math.abs(o.scale - layer.scale) * o.unit }))
+    .filter((o) => o.move <= within)
+    .sort((a, b) => a.move - b.move)
+  return offers.length ? { ...layer, scale: offers[0].scale } : layer
+}
+
+/** Take every part off the logo; its colors and palette stay for the next attempt. */
+export const clearLayers = (build: BuildState): BuildState => ({ ...build, layers: [], selected: null })
+
 /** SVG transform that carries the part's path from where it was taken to where the layer puts it. */
 export function layerTransform(layer: BuildLayer, part: LogoPart): string {
   const { x: cx, y: cy } = centerOf(part)

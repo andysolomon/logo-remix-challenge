@@ -968,6 +968,11 @@ html.kb-open .guess-field-mark { width: 22px; }
 .build-handle.se { left: 100%; top: 100%; cursor: nwse-resize; }
 .build-handle.turn { left: 50%; top: -28px; width: 16px; height: 16px; margin: -8px; border-radius: 50%; cursor: grab; }
 .build-turn-line { position: absolute; left: 50%; top: -28px; width: 1.5px; height: 28px; margin-left: -0.75px; background: #B9331D; pointer-events: none; }
+/* Stage lines a dragged part has snapped onto: an edge of the canvas, or its middle. */
+.build-guide { position: absolute; background: #D8442B; pointer-events: none; }
+.build-guide.v { top: 0; bottom: 0; width: 1.5px; margin-left: -0.75px; }
+.build-guide.h { left: 0; right: 0; height: 1.5px; margin-top: -0.75px; }
+.tray-head .btn-clear { margin-left: auto; }
 .build-mini { display: block; width: 56px; height: 56px; overflow: hidden; }
 .cp-stage.bg .build-mini { width: 44px; height: 44px; }
 .build-layers { width: 100%; display: flex; flex-direction: column; align-items: center; gap: 6px; margin-top: 8px; }

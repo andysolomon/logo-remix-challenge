@@ -36,6 +36,8 @@ interface Props {
   onSelectLayer: (layerId: string) => void
   onBuild: () => void
   onTakeParts: () => void
+  /** Empty the tray and start the logo over. */
+  onClear: () => void
 }
 
 /** Color a part shows in the tray: its slot color once it is on the logo, its own color until then. */
@@ -45,11 +47,16 @@ export const trayColor = (part: LogoPart, build: BuildState) => {
 }
 
 /** The tray: every part taken so far, from any logo. The right column in landscape. */
-export function PartsTray({ parts, build, tool, sourceId, onRemove, onPlace, onSelectLayer, onBuild, onTakeParts }: Props) {
+export function PartsTray({ parts, build, tool, sourceId, onRemove, onPlace, onSelectLayer, onBuild, onTakeParts, onClear }: Props) {
   return (
     <section className="panel parts-tray" aria-labelledby="parts-tray-title">
       <div className="tray-head">
         <div id="parts-tray-title" className="panel-title">YOUR PARTS</div>
+        {parts.length > 0 && (
+          <button type="button" className="btn-clear" onClick={onClear} aria-label="Remove all your parts and start over">
+            clear
+          </button>
+        )}
         <div className="tray-count" aria-label={partsSummary(parts)}>{parts.length}</div>
       </div>
       <div className="panel-note">{tool === 'build' ? 'Tap Place to drop a part onto your logo.' : 'Parts you take from any logo collect here.'}</div>

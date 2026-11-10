@@ -4,6 +4,7 @@ import { join } from 'node:path'
 import {
   BUILD_COLORS,
   buildFileName,
+  clearLayers,
   buildSvg,
   duplicateLayer,
   emptyBuild,
@@ -18,7 +19,10 @@ import {
   seedBuildColors,
   shiftLayer,
   slotForPart,
+  snapGuides,
+  snapMove,
   snapRotation,
+  snapScale,
   updateLayer,
   type BuildState,
 } from '../src/lib/build'
@@ -340,6 +344,58 @@ describe('building a logo from parts', () => {
     expect(buildSvg({ ...build, layers: [{ ...build.layers[0], partId: 'gone' }] }, [a, b])).toBeNull()
   })
 
+  test('a dragged part snaps its edges to the edges of the canvas and its center to the middle', () => {
+    // 40 x 20 box: half extents 20 and 10.
+    const p = part('p1', '#4A2A6B', { x: 30, y: 40, w: 40, h: 20 })
+    const layer = placePart(emptyBuild, p).layers[0]
+    const snapped = (l: typeof layer, shape = p, within = 2) => {
+      const out = snapMove(l, shape, within)
+      return [Math.round(out.x * 1e6) / 1e6, Math.round(out.y * 1e6) / 1e6]
+    }
+    // Left edge at 1.5 and top edge at -1: both lock onto the canvas edge.
+    expect(snapped({ ...layer, x: 21.5, y: 9 })).toEqual([20, 10])
+    // Right and bottom edges.
+    expect(snapped({ ...layer, x: 81.2, y: 88.5 })).toEqual([80, 90])
+    // Center on the middle, one axis at a time; out of reach stays put.
+    expect(snapped({ ...layer, x: 51, y: 30 })).toEqual([50, 30])
+    expect(snapped({ ...layer, x: 30, y: 30 })).toEqual([30, 30])
+    // The nearest line wins when two are in reach.
+    expect(snapped({ ...layer, x: 21.9, y: 50 }, { ...p, box: { x: 0, y: 0, w: 58, h: 20 } }, 8)).toEqual([29, 50])
+    // A turned part snaps by the room it takes up: on its side, it is 20 wide and 40 tall.
+    expect(snapped({ ...layer, rotation: 90, x: 11, y: 21 })).toEqual([10, 20])
+  })
+
+  test('a resized part snaps to the size at which an edge meets the canvas edge', () => {
+    const p = part('p1', '#4A2A6B', { x: 30, y: 40, w: 40, h: 20 })
+    const layer = { ...placePart(emptyBuild, p).layers[0], x: 50, y: 50 }
+    // At 2.45 the box is 98 wide: one unit short of both side edges.
+    expect(snapScale({ ...layer, scale: 2.45 }, p, 2).scale).toBeCloseTo(2.5, 6)
+    expect(snapScale({ ...layer, scale: 2.2 }, p, 2).scale).toBe(2.2)
+    // Off center, the nearer edge is the one that is met.
+    expect(snapScale({ ...layer, x: 30, scale: 1.45 }, p, 2).scale).toBeCloseTo(1.5, 6)
+  })
+
+  test('guides name the canvas lines a part sits on', () => {
+    const p = part('p1', '#4A2A6B', { x: 30, y: 40, w: 40, h: 20 })
+    const layer = placePart(emptyBuild, p).layers[0]
+    expect(snapGuides({ ...layer, x: 20, y: 50 }, p)).toEqual({ x: [0], y: [50] })
+    expect(snapGuides({ ...layer, x: 80, y: 90 }, p)).toEqual({ x: [100], y: [100] })
+    expect(snapGuides({ ...layer, x: 50, y: 50, scale: 2.5 }, p)).toEqual({ x: [0, 50, 100], y: [50] })
+    expect(snapGuides({ ...layer, x: 33, y: 41 }, p)).toEqual({ x: [], y: [] })
+  })
+
+  test('clearing the logo takes every part off it and keeps its colors', () => {
+    const seeded = seedBuildColors(emptyBuild, 'KC', ['#E31837', '#FFB81C', '#FFFFFF'])
+    const build = placePart(placePart(seeded, part('p1', '#4A2A6B')), part('p2', '#F2B72E'))
+    const cleared = clearLayers(build)
+    expect(cleared.layers).toEqual([])
+    expect(cleared.selected).toBeNull()
+    expect(cleared.colors).toEqual(seeded.colors)
+    expect(cleared.paletteId).toBe('KC')
+    // New layers never reuse an id.
+    expect(placePart(cleared, part('p3', '#111111')).layers[0].id).toBe('L3')
+  })
+
   test('summaries and file names', () => {
     const parts = [part('p1', '#111111', undefined, 'A'), part('p2', '#222222', undefined, 'A'), part('p3', '#333333', undefined, 'B')]
     expect(partsSummary(parts)).toBe('3 parts from 2 logos')
@@ -364,6 +420,9 @@ describe('designer tools', () => {
     expect(designer).toContain("'1 · Logos'")
     expect(designer).toContain("'2 · Parts'")
     expect(designer).toContain("'3 · Build'")
+    // Starting over empties the tray and the logo together.
+    expect(designer).toContain('tray: [], build: { ...emptyBuild, serial: s.build.serial }')
+    expect(designer.match(/clearParts\}/g)).toHaveLength(2)
   })
 
   test('the stage takes drags without scrolling the page, and controls keep 44px targets on touch', () => {

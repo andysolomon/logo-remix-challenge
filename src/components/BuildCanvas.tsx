@@ -1,6 +1,7 @@
 import { useRef, useState, type KeyboardEvent, type PointerEvent } from 'react'
 import {
   DEFAULT_BUILD_NAME,
+  clearLayers,
   duplicateLayer,
   layerBox,
   layerTransform,
@@ -10,7 +11,10 @@ import {
   removeLayer,
   rotateBuildColors,
   shiftLayer,
+  snapGuides,
+  snapMove,
   snapRotation,
+  snapScale,
   updateLayer,
   type BuildLayer,
   type BuildState,
@@ -31,19 +35,23 @@ interface Props {
   paletteName: string | null
   onPalette: () => void
   onTakeParts: () => void
+  /** Empty the tray and start the logo over. */
+  onClearParts: () => void
   portrait: boolean
 }
 
 type Gesture = { kind: 'move' | 'scale' | 'rotate'; start: BuildLayer; x: number; y: number; rect: DOMRect; moved: boolean; fromBox: boolean }
 
 const SLOT_NAMES = ['Color 1', 'Color 2', 'Color 3']
+/** A dragged part snaps to the stage's edges and middle from this many screen pixels away. */
+const SNAP_PX = 8
 
 /**
  * Designer's Build tool: the stage where taken parts become a logo. A part is dragged to move it,
  * resized from the corner handles, turned from the handle above it, and painted in one of three
  * color slots.
  */
-export function BuildCanvas({ parts, build, onBuild, name, onName, background, paletteName, onPalette, onTakeParts, portrait }: Props) {
+export function BuildCanvas({ parts, build, onBuild, name, onName, background, paletteName, onPalette, onTakeParts, onClearParts, portrait }: Props) {
   const partOf = (layer: BuildLayer) => parts.find((p) => p.id === layer.partId)
   // The layer being dragged, with its in-flight change; committed on release so a drag re-renders only the stage.
   const [live, setLive] = useState<BuildLayer | null>(null)
@@ -91,7 +99,12 @@ export function BuildCanvas({ parts, build, onBuild, name, onName, background, p
       next = { ...g.start, rotation: snapRotation(g.start.rotation + ((a1 - a0) * 180) / Math.PI) }
     }
     // Same limits as a committed change, so the drag never shows what a release would undo.
-    next = updateLayer({ ...build, layers: [next] }, next.id, {}).layers[0]
+    const limit = (l: BuildLayer) => updateLayer({ ...build, layers: [l] }, l.id, {}).layers[0]
+    const part = partOf(next)
+    if (part && g.kind !== 'rotate') {
+      const within = (SNAP_PX * 100) / g.rect.width
+      next = limit(g.kind === 'move' ? snapMove(limit(next), part, within) : snapScale(limit(next), part, within))
+    } else next = limit(next)
     liveRef.current = next
     setLive(next)
   }
@@ -104,11 +117,12 @@ export function BuildCanvas({ parts, build, onBuild, name, onName, background, p
     if (!g) return
     if (done) {
       onBuild((b) => updateLayer(b, done.id, done))
-    } else if (g.fromBox && !g.moved) {
-      // A tap inside the selection box picks the part under the finger, which may be another one.
+    } else if (g.fromBox && g.kind === 'move' && !g.moved) {
+      // A tap inside the selection box: another part under the finger takes the selection;
+      // the selected part itself, or bare canvas, lets go of it.
       const under = document.elementsFromPoint(e.clientX, e.clientY).find((el) => el instanceof SVGElement && el.dataset.layer)
       const id = (under as SVGElement | undefined)?.dataset.layer
-      if (id && id !== g.start.id) select(id)
+      select(id && id !== g.start.id ? id : null)
     }
   }
 
@@ -150,6 +164,9 @@ export function BuildCanvas({ parts, build, onBuild, name, onName, background, p
     </svg>
   )
   const box = selected && selectedPart ? layerBox(selected, selectedPart) : null
+  // While a part is dragged or resized, the stage lines it has snapped onto light up.
+  const livePart = live ? partOf(live) : undefined
+  const guides = live && livePart ? snapGuides(live, livePart) : null
   const preview = (
     <div className={`cp-stage${background ? ' bg' : ''}`} style={background ? { background } : undefined}>
       <svg className="build-mini" viewBox="0 0 100 100" aria-hidden="true">
@@ -167,7 +184,14 @@ export function BuildCanvas({ parts, build, onBuild, name, onName, background, p
   return (
     <>
       <div className="parts-head">
-        <div className="micro">YOUR LOGO</div>
+        <div className="micro-row">
+          <div className="micro">YOUR LOGO</div>
+          {build.layers.length > 0 && (
+            <button type="button" className="btn-clear" onClick={() => onBuild(clearLayers)} aria-label="Clear your logo: take every part off it">
+              clear
+            </button>
+          )}
+        </div>
         <input
           className="canvas-name build-name"
           value={name}
@@ -180,7 +204,13 @@ export function BuildCanvas({ parts, build, onBuild, name, onName, background, p
         <div className="parts-status">{onLogo.length ? partsSummary(onLogo) : 'Place parts to start your logo'}</div>
       </div>
 
-      <div className="canvas-hero">
+      <div
+        className="canvas-hero"
+        onPointerDown={(e) => {
+          // A press beside the stage lets go of the selection too.
+          if (e.target === e.currentTarget) select(null)
+        }}
+      >
         <div className={`parts-frame stage-edge${background ? ' bg' : ''}`}>
           <div
             ref={stage}
@@ -204,6 +234,8 @@ export function BuildCanvas({ parts, build, onBuild, name, onName, background, p
                 {parts.length ? (portrait ? 'Tap a part below to place it' : 'Tap Place on a part to put it here') : 'Take parts from a logo, then place them here'}
               </div>
             )}
+            {guides?.x.map((x) => <span key={`x${x}`} className="build-guide v" style={{ left: `${x}%` }} />)}
+            {guides?.y.map((y) => <span key={`y${y}`} className="build-guide h" style={{ top: `${y}%` }} />)}
             {box && selected && (
               <div
                 className="build-sel"
@@ -307,7 +339,14 @@ export function BuildCanvas({ parts, build, onBuild, name, onName, background, p
 
       {portrait && (
         <div className="build-layers">
-          <div className="micro">YOUR PARTS</div>
+          <div className="micro-row">
+            <div className="micro">YOUR PARTS</div>
+            {parts.length > 0 && (
+              <button type="button" className="btn-clear" onClick={onClearParts} aria-label="Remove all your parts and start over">
+                clear
+              </button>
+            )}
+          </div>
           <div className="layer-strip" role="group" aria-label="Your parts">
             {parts.map((p) => {
               const placed = build.layers.filter((l) => l.partId === p.id)

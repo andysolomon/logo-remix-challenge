@@ -62,12 +62,12 @@ const MERGE_DIST = 56
 /** A fill only needs to clear the background by this much: a dark logo on a dark field is still a logo. */
 const BACKGROUND_DIST = 24
 /** Minimum share of the logo a color needs: 'auto' ignores small blends, an explicit count takes smaller details. */
-const AUTO_MIN_SHARE = 0.015
+export const AUTO_MIN_SHARE = 0.015
 const EXPLICIT_MIN_SHARE = 0.002
 /** Buckets within this distance of a color refine its exact value. */
 const REFINE_DIST = 40
 /** Straightening tolerance in pixels. */
-const RDP_EPSILON = 0.9
+export const RDP_EPSILON = 0.9
 /** potrace's corner threshold: larger alphas stay sharp corners. */
 const ALPHAMAX = 1
 const CROP_PADDING = 0.02
@@ -79,7 +79,8 @@ const PLACEHOLDERS = ['#FFFFFF', '#000000', '#808080', '#FF0000', '#0000FF', '#0
 /** Placeholder slots must stay farther than Logo.tsx's recolor tolerance from every traced color. */
 const PLACEHOLDER_DIST = 90
 
-const TRANSPARENT = 255
+/** Label of a pixel no color paints. */
+export const TRANSPARENT = 255
 
 const dist2 = (a: RGB, b: RGB) => (a[0] - b[0]) ** 2 + (a[1] - b[1]) ** 2 + (a[2] - b[2]) ** 2
 const hex = (c: RGB) => '#' + c.map((n) => Math.round(n).toString(16).padStart(2, '0')).join('').toUpperCase()
@@ -320,7 +321,7 @@ function dropBlends(labels: Uint8Array, w: number, h: number, centers: RGB[], bg
 }
 
 // ---------------------------------------------------------------- outlines
-type Point = [number, number]
+export type Point = [number, number]
 // Directions: east, south, west, north (y grows downward).
 const DX = [1, 0, -1, 0]
 const DY = [0, 1, 0, -1]
@@ -329,7 +330,7 @@ const DY = [0, 1, 0, -1]
  * Closed outlines of a mask along pixel edges, ink on the right of travel. At a vertex where two
  * pixels touch only diagonally, the walk turns right, keeping them separate. Returns the corners.
  */
-function outlines(mask: Uint8Array, w: number, h: number): Point[][] {
+export function outlines(mask: Uint8Array, w: number, h: number): Point[][] {
   const vw = w + 1
   const out = new Uint8Array(vw * (h + 1))
   const at = (x: number, y: number) => x >= 0 && y >= 0 && x < w && y < h && mask[y * w + x] === 1
@@ -364,7 +365,7 @@ function outlines(mask: Uint8Array, w: number, h: number): Point[][] {
   return loops
 }
 
-const area = (p: Point[]) => {
+export const loopArea = (p: Point[]) => {
   let a = 0
   for (let i = 0; i < p.length; i++) {
     const [x1, y1] = p[i], [x2, y2] = p[(i + 1) % p.length]
@@ -374,7 +375,7 @@ const area = (p: Point[]) => {
 }
 
 /** Ramer-Douglas-Peucker on a closed polygon, anchored at its first point and the point farthest from it. */
-function straighten(p: Point[], epsilon: number): Point[] {
+export function straighten(p: Point[], epsilon: number): Point[] {
   if (p.length <= 4) return p
   let far = 0, farD = -1
   for (let i = 1; i < p.length; i++) {
@@ -417,10 +418,15 @@ const toward = (from: Point, to: Point, t: number): Point => [from[0] + (to[0] -
  * potrace's smoothing: each vertex becomes a curve from the midpoint of its incoming edge to the
  * midpoint of its outgoing edge, unless the corner is sharp enough (alpha >= ALPHAMAX) to stay a corner.
  */
-function smoothPath(p: Point[]): string {
+export function smoothPath(p: Point[], at?: (q: Point) => Point): string {
   const n = p.length
   if (n < 3) return ''
-  let d = `M${num(mid(p[n - 1], p[0])[0])} ${num(mid(p[n - 1], p[0])[1])}`
+  // Corners are judged in pixels; `at` only moves the points that are written out (parts.ts scales them).
+  const xy = (q: Point) => {
+    const o = at ? at(q) : q
+    return `${num(o[0])} ${num(o[1])}`
+  }
+  let d = `M${xy(mid(p[n - 1], p[0]))}`
   for (let j = 0; j < n; j++) {
     const i = p[(j + n - 1) % n], v = p[j], k = p[(j + 1) % n]
     const end = mid(v, k)
@@ -432,19 +438,40 @@ function smoothPath(p: Point[]): string {
       alpha = (dd > 1 ? 1 - 1 / dd : 0) / 0.75
     }
     if (alpha >= ALPHAMAX) {
-      d += `L${num(v[0])} ${num(v[1])}L${num(end[0])} ${num(end[1])}`
+      d += `L${xy(v)}L${xy(end)}`
     } else {
       const a = Math.min(1, Math.max(0.55, alpha))
       const c1 = toward(i, v, 0.5 + 0.5 * a)
       const c2 = toward(k, v, 0.5 + 0.5 * a)
-      d += `C${num(c1[0])} ${num(c1[1])} ${num(c2[0])} ${num(c2[1])} ${num(end[0])} ${num(end[1])}`
+      d += `C${xy(c1)} ${xy(c2)} ${xy(end)}`
     }
   }
   return d + 'Z'
 }
 
 // ---------------------------------------------------------------- trace
-export function traceImage(img: RasterImage, options: TraceOptions = DEFAULT_TRACE_OPTIONS): TraceResult {
+/** An image split into its flat colors: which color paints each pixel, and the colors kept, largest first. */
+export interface Segmentation {
+  /** Color label per pixel; TRANSPARENT where nothing is drawn. */
+  labels: Uint8Array
+  /** Kept colors, largest area first; pixels of a layer carry its `label`. */
+  layers: { color: RGB; label: number; count: number }[]
+  /** Layer index by label; TRANSPARENT for a label that is not drawn. */
+  rank: Uint8Array
+}
+
+export interface SegmentOptions {
+  /** Most colors to keep. */
+  limit: number
+  /** Smallest share of the logo a color needs to count. */
+  minShare: number
+  removeBackground: boolean
+  /** Fold thin anti-aliasing bands into their neighbors. */
+  dropBlends: boolean
+}
+
+/** Steps 1 and 2 of the tracer: find the flat colors, drop the background, give every pixel its color. */
+export function segmentImage(img: RasterImage, options: SegmentOptions): Segmentation {
   const { width: w, height: h } = img
   if (!w || !h || img.data.length < w * h * 4) throw new TraceError('The image is empty.')
   const n = w * h
@@ -454,9 +481,8 @@ export function traceImage(img: RasterImage, options: TraceOptions = DEFAULT_TRA
   const opaque = (i: number) => img.data[i * 4 + 3] >= ALPHA_CUTOFF
   const background = !hasAlpha && options.removeBackground ? borderBackground(img) : null
 
-  const limit = options.colors === 'auto' ? 3 : options.colors
-  const minShare = options.colors === 'auto' ? AUTO_MIN_SHARE : EXPLICIT_MIN_SHARE
-  const inks = pickColors(img, opaque, background, limit, minShare)
+  const { limit } = options
+  const inks = pickColors(img, opaque, background, limit, options.minShare)
   if (!inks.length) throw new TraceError('No logo found in the image. Try a different file or turn off background removal.')
 
   // Label every pixel with its nearest color; the background, if any, is the last label.
@@ -466,7 +492,7 @@ export function traceImage(img: RasterImage, options: TraceOptions = DEFAULT_TRA
   for (let i = 0; i < n; i++) labels[i] = opaque(i) ? nearest(pixel(img, i), centers) : TRANSPARENT
   if (background) clearOuterBackground(labels, w, h, bgLabel)
   despeckle(labels, w, h, Math.max(8, Math.round(n / 40000)))
-  if (options.colors === 'auto') dropBlends(labels, w, h, centers, bgLabel)
+  if (options.dropBlends) dropBlends(labels, w, h, centers, bgLabel)
 
   // Keep the largest colors, enclosed background-colored details included, up to the limit.
   const counts = new Float64Array(centers.length)
@@ -486,6 +512,17 @@ export function traceImage(img: RasterImage, options: TraceOptions = DEFAULT_TRA
     // A dropped enclosed background becomes a hole; a dropped ink joins the nearest kept color.
     labels[i] = l === bgLabel ? TRANSPARENT : layers[nearest(centers[l], kept)].label
   }
+  return { labels, layers, rank }
+}
+
+export const rgbHex = (c: readonly number[]) => hex(c as RGB)
+
+export function traceImage(img: RasterImage, options: TraceOptions = DEFAULT_TRACE_OPTIONS): TraceResult {
+  const { width: w, height: h } = img
+  const n = w * h
+  const limit = options.colors === 'auto' ? 3 : options.colors
+  const minShare = options.colors === 'auto' ? AUTO_MIN_SHARE : EXPLICIT_MIN_SHARE
+  const { labels, layers, rank } = segmentImage(img, { limit, minShare, removeBackground: options.removeBackground, dropBlends: options.colors === 'auto' })
 
   // Trace each layer over itself plus everything drawn above it.
   const minLoop = Math.max(4, n / 40000)
@@ -496,7 +533,7 @@ export function traceImage(img: RasterImage, options: TraceOptions = DEFAULT_TRA
     for (let i = 0; i < n; i++) if (labels[i] !== TRANSPARENT && rank[labels[i]] >= r) mask[i] = 1
     let d = ''
     for (const loop of outlines(mask, w, h)) {
-      if (Math.abs(area(loop)) < minLoop) continue
+      if (Math.abs(loopArea(loop)) < minLoop) continue
       for (const [x, y] of loop) {
         minX = Math.min(minX, x)
         minY = Math.min(minY, y)

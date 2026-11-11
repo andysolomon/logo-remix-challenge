@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="660.032 191.832 80.136 90.936" width="80.136" height="90.936" fill="none"><defs><clipPath id="state-outline-oh" clipPathUnits="userSpaceOnUse"><path d="m 685.7,208.8 1.9,-.4 3,1.3 2.1,.6 .7,.9 h 1 l 1,-1.5 1.3,.8 h 1.5 l -.1,1 -3.1,.5 -2,1.1 1.9,.8 1.6,-1.5 2.4,-.4 2.2,1.5 1.5,-.1 2.5,-1.7 3.6,-2.1 5.2,-.3 4.9,-5.9 3.8,-3.1 9.3,-5.1 4.9,29.9 -2.2,1.2 1.4,2.1 -.1,2.2 .6,2 -1.1,3.4 -.1,5.4 -1,3.6 .5,1.1 -.4,2.2 -1.1,.5 -2,3.3 -1.8,2 h -.6 l -1.8,1.7 -1.3,-1.2 -1.5,1.8 -.3,1.2 h -1.3 l -1.3,2.2 .1,2.1 -1,.5 1.4,1.1 v 1.9 l -1,.2 -.7,.8 -1,.5 -.6,-2.1 -1.6,-.5 -1,2.3 -.3,2.2 -1.1,1.3 1.3,3.6 -1.5,.8 -.4,3.5 h -1.5 l -3.2,1.4 -1.2,-2.1 -3.5,-1.4 -.8,-2.9 -.5,-.8 -3.4,1.8 -.6,1.7 h -.9 l -1.3,.7 -1.2,-.8 -3,-.8 -1.9,.8 v 1 l -2.2,-.2 -1.9,-2.1 -2.3,.2 -4.1,-.7 v -1 l -2.2,-3.4 -2.9,-1.2 -1.9,.8 -2.2,-.1 -1.3,-.5 -6.6,-57.2 21.4,-3.5 z" clip-rule="nonzero" /></clipPath></defs><g clip-path="url(#state-outline-oh)"><rect x="660.032" y="191.832" width="80.136" height="90.936" fill="#FFFFFF" /><svg width="80.136" height="90.936" viewBox="0.011143 0.011293 25.977714 15.977415" x="660.032" y="191.832" preserveAspectRatio="xMidYMid slice" overflow="hidden" fill="#000000">
+<defs>
+
+<g id="flag-oh-s" fill="#fff" transform="translate(3.944272,0) scale(0.625)">
+<g id="flag-oh-f">
+<g id="flag-oh-t">
+<path id="flag-oh-o" d="M1,0H0V0.5z" transform="rotate(18,1,0)" />
+<use xlink:href="#flag-oh-o" transform="scale(1,-1)" />
+</g>
+<use xlink:href="#flag-oh-t" transform="rotate(72)" />
+</g>
+<use xlink:href="#flag-oh-t" transform="rotate(-72)" />
+<use xlink:href="#flag-oh-f" transform="rotate(144)" />
+</g>
+<clipPath id="flag-oh-c">
+<path d="M0,16V0L26,3 20,8 26,13z" />
+</clipPath>
+</defs>
+<g fill="#fff" stroke="#bf0a30" clip-path="url(#flag-oh-c)">
+<path d="M26,3 0,0V16L26,13" stroke-width="4" />
+<path d="M0,8H26" stroke-width="2" />
+</g>
+<path d="M0,0V16L16,8z" fill="#00205B" />
+
+<g transform="translate(4.944272,8)">
+<circle r="3" fill="#fff" />
+<circle r="2" fill="#bf0a30" />
+<use xlink:href="#flag-oh-s" x="4" />
+<g id="flag-oh-s3">
+<use xlink:href="#flag-oh-s" />
+
+<use xlink:href="#flag-oh-s" x="2" transform="rotate(-9.650225)" />
+<use xlink:href="#flag-oh-s" x="2" transform="rotate(9.650225)" />
+</g>
+<g id="flag-oh-s6">
+
+<use xlink:href="#flag-oh-s" transform="rotate(63.434949)" />
+
+<use xlink:href="#flag-oh-s" transform="rotate(92.576212)" />
+
+<use xlink:href="#flag-oh-s3" transform="rotate(121.717474)" />
+
+<use xlink:href="#flag-oh-s" transform="rotate(150.858737)" />
+</g>
+<use xlink:href="#flag-oh-s" transform="rotate(180)" />
+<use xlink:href="#flag-oh-s6" transform="scale(1,-1)" />
+</g>
+</svg></g></svg>

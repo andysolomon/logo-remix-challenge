@@ -1,0 +1,116 @@
+{
+  "savedAlternate": "flag-map",
+  "exported": [
+    {
+      "id": "FLAG-AK",
+      "remixed": false,
+      "svgBytes": 7459,
+      "pngBytes": 54205
+    },
+    {
+      "id": "FLAG-AK",
+      "remixed": true,
+      "svgBytes": 7610,
+      "pngBytes": 50799
+    },
+    {
+      "id": "FLAG-HI",
+      "remixed": false,
+      "svgBytes": 2010,
+      "pngBytes": 33618
+    },
+    {
+      "id": "FLAG-HI",
+      "remixed": true,
+      "svgBytes": 2019,
+      "pngBytes": 33623
+    },
+    {
+      "id": "FLAG-MI",
+      "remixed": false,
+      "svgBytes": 252697,
+      "pngBytes": 95796
+    },
+    {
+      "id": "FLAG-MI",
+      "remixed": true,
+      "svgBytes": 252721,
+      "pngBytes": 96957
+    },
+    {
+      "id": "FLAG-GA",
+      "remixed": false,
+      "svgBytes": 47764,
+      "pngBytes": 72725
+    },
+    {
+      "id": "FLAG-GA",
+      "remixed": true,
+      "svgBytes": 47770,
+      "pngBytes": 72605
+    },
+    {
+      "id": "FLAG-NV",
+      "remixed": false,
+      "svgBytes": 132391,
+      "pngBytes": 95919
+    },
+    {
+      "id": "FLAG-NV",
+      "remixed": true,
+      "svgBytes": 132394,
+      "pngBytes": 84740
+    },
+    {
+      "id": "FLAG-MN",
+      "remixed": false,
+      "svgBytes": 1918,
+      "pngBytes": 41290
+    },
+    {
+      "id": "FLAG-MN",
+      "remixed": true,
+      "svgBytes": 1921,
+      "pngBytes": 41793
+    },
+    {
+      "id": "FLAG-RI",
+      "remixed": false,
+      "svgBytes": 6958,
+      "pngBytes": 58327
+    },
+    {
+      "id": "FLAG-RI",
+      "remixed": true,
+      "svgBytes": 6973,
+      "pngBytes": 57894
+    },
+    {
+      "id": "FLAG-OH",
+      "remixed": false,
+      "svgBytes": 2762,
+      "pngBytes": 53037
+    },
+    {
+      "id": "FLAG-OH",
+      "remixed": true,
+      "svgBytes": 2771,
+      "pngBytes": 53506
+    },
+    {
+      "id": "FLAG-TX",
+      "remixed": false,
+      "svgBytes": 27076,
+      "pngBytes": 42515
+    },
+    {
+      "id": "FLAG-TX",
+      "remixed": true,
+      "svgBytes": 27076,
+      "pngBytes": 43409
+    }
+  ],
+  "pageErrors": [],
+  "coverageStates": 49,
+  "coverageExceptions": []
+}
